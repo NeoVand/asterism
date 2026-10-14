@@ -30,6 +30,13 @@ Rebuild the graph: `parse → extract → resolve → sources → assemble → l
 - + hyphen/spelling-aware tokenizer, blocks graded too: 3.90 · 68% · 86% · 99.5%
 - + probe fixes (scope rule, ask_user only after research, Level-9 aliases, explore focus): 3.93 · 69.5% · 90.5% · 98%
 - + evidence_brief (ranked, folded evidence pack before writing): 4.07 · 68% · 86% · 97.8%
+- + search_graph shows strong matches outside a chapter filter: 3.97 · 70% · 89% · 97.8%
+- 33 cases (SOTIF, detection range, proven in use); judge gives partial credit (half) for a claim
+  missing a secondary detail, strict figure kept as "full". Two identical runs: 3.85 · 71.4% (full
+  62.2%) · 87.7% · 97.7% and 3.85 · 70.9% (62.0%) · 90% · 97.7% — run-to-run noise ≈ ±1%.
+- A/B, same judge: evidence_brief without the 20-fact floor and user-question ranking: 3.91 · 71.3%
+  · 88.8% — neutral, kept. Injecting unread synthesis conclusions into the brief: 3.73 · 68.4% ·
+  91.7% — retrieval up, answers worse; reverted.
 
 ## Done
 
