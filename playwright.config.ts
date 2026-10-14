@@ -2,7 +2,8 @@ import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
 	webServer: {
-		command: 'npm run build && npm run preview -- --port 4173',
+		// ASTERISM_EVAL keeps tests away from the user's agent memory.
+		command: 'npm run build && ASTERISM_EVAL=1 npm run preview -- --port 4173',
 		port: 4173,
 		timeout: 180_000,
 		reuseExistingServer: true
