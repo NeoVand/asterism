@@ -104,7 +104,7 @@
 			</div>
 		{/key}
 		<div class="flex items-center gap-1.5 px-5 pb-3.5">
-			{#each STEPS as _, i (i)}
+			{#each STEPS, i (i)}
 				<button
 					type="button"
 					class="h-1 rounded-full transition-all duration-500 {i === step ? 'w-6' : 'w-1.5 bg-white/15 hover:bg-white/30'}"

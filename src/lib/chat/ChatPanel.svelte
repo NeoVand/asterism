@@ -165,8 +165,8 @@
 				{#each messages as m, i (m.id)}
 					<svelte:boundary onerror={(e) => console.error('message failed to render', e)}>
 						<MessageView msg={m} last={i === messages.length - 1} onanswer={(a) => chat.resume(a)} />
-						{#snippet failed(_, reset)}
-							<div class="rounded-xl bg-white/[0.02] px-3.5 py-2.5 text-[12px] text-fg-3">
+						{#snippet failed(error, reset)}
+							<div class="rounded-xl bg-white/[0.02] px-3.5 py-2.5 text-[12px] text-fg-3" title={String(error)}>
 								This message could not be shown.
 								<button type="button" class="ml-1 text-fg-2 underline-offset-2 hover:underline" onclick={reset}>Try again</button>
 							</div>

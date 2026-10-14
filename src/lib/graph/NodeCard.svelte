@@ -186,6 +186,7 @@
 								<span class="ml-1 text-[10.5px] {s.evidence === 'Independent' ? 'text-ok/80' : s.evidence === 'Vendor' ? 'text-warn/80' : 'text-[#c4b5fd]/80'}">{s.evidence ?? ''}{s.onRoad ? ' · on-road' : ''}</span>
 							</button>
 							{#if s.url}
+								<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- external source URL -->
 								<a href={s.url} target="_blank" rel="noreferrer" class="mt-0.5 shrink-0 text-fg-4 hover:text-glow" aria-label="Open source">
 									<Icon icon={ExternalIcon} size={13} />
 								</a>
@@ -196,6 +197,7 @@
 			{/if}
 
 			{#if detail.url && detail.type === 'source'}
+				<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- external source URL -->
 				<a href={detail.url} target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 text-[12px] text-glow hover:underline">
 					Open source <Icon icon={ExternalIcon} size={12} />
 				</a>

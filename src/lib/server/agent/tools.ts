@@ -11,7 +11,6 @@ import type { KGNode, NodeType, RelType } from '#lib/kg/types.ts';
 import { Block, QuestionForm, type Answers } from '#lib/blocks/schema.ts';
 import { getStore, type GraphStore } from '../kg/store.ts';
 import { alsoNote, byImportance, chapterName, chapterTag, clip, foldDuplicates, line } from './format.ts';
-import { CHAPTER_TITLES } from '#lib/kg/types.ts';
 
 export type GraphEventMode = 'touch' | 'read';
 
@@ -422,7 +421,7 @@ export function makeTools() {
 	const findSources = tool(
 		async ({ query, evidence, excludeOnRoad, chapters, limit }, config) => {
 			const store = getStore();
-			let hits = store.search(query, { types: ['source'], limit: 80 });
+			const hits = store.search(query, { types: ['source'], limit: 80 });
 			// Also surface sources cited by the best matching facts.
 			const factHits = store.search(query, { types: ['fact'], chapters, limit: 25 });
 			const viaFacts = new Map<string, number>();
@@ -436,7 +435,6 @@ export function makeTools() {
 			if (chapters?.length) list = list.filter((x) => store.sourceChapters(x.node.id).some((c) => chapters.includes(c)));
 			list.sort((a, b) => b.score - a.score);
 			list = list.slice(0, Math.min(limit ?? 12, 30));
-			hits = [];
 			await emit(config, 'touch', list.map((x) => x.node.id));
 			if (!list.length) return `No sources found for "${query}" with these filters.`;
 			return [

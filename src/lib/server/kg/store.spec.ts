@@ -99,7 +99,11 @@ describe('graph shape', () => {
 		const queue = [ids[0]];
 		while (queue.length) {
 			const id = queue.pop()!;
-			for (const a of store.adj.get(id) ?? []) if (!seen.has(a.id)) (seen.add(a.id), queue.push(a.id));
+			for (const a of store.adj.get(id) ?? []) {
+				if (seen.has(a.id)) continue;
+				seen.add(a.id);
+				queue.push(a.id);
+			}
 		}
 		expect(seen.size).toBe(ids.length);
 	});

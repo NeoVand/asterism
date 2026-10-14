@@ -303,7 +303,7 @@ export function assemble(): KGraph {
 			if (chunk.part) vote(chunk.part, 3);
 			x.terms.forEach((t, i) => vote(byId.get(t)?.topic, i === 0 ? 1.2 : 0.7));
 			const topic = topicVote(votes, chunk.part ?? CHAPTER_TOPIC[chunk.chapter ?? 0]);
-			const node = add({
+			add({
 				id,
 				type: 'fact',
 				label: x.text.length > 120 ? x.text.slice(0, 118).trim() + '…' : x.text,

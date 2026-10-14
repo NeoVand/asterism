@@ -59,6 +59,7 @@
 	];
 	const LABEL_H = 20;
 	const widths = new WeakMap<HTMLElement, number>();
+	// eslint-disable-next-line svelte/prefer-svelte-reactivity -- per-frame cache, not state
 	const slots = new Map<number, number>();
 	let lastCentroid = 0;
 

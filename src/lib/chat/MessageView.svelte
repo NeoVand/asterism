@@ -53,14 +53,9 @@
 		return t?.closest?.('.cite-chip') ?? null;
 	}
 
-	const chapters = $derived.by(() => {
-		const s = new Set<number>();
-		for (const id of order) {
-			const b = app.brief(id);
-			if (b && b.chapter > 0) s.add(b.chapter);
-		}
-		return s.size;
-	});
+	const chapters = $derived(
+		new Set(order.map((id) => app.brief(id)?.chapter ?? 0).filter((c) => c > 0)).size
+	);
 
 	let copied = $state(false);
 	async function copy() {

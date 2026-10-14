@@ -38,6 +38,7 @@
 	let panel: ChatPanel;
 	let adjacency: Map<number, number[]> | null = null;
 
+	// eslint-disable-next-line svelte/prefer-svelte-reactivity -- request cache, not state
 	const detailCache = new Map<string, Promise<NodeDetail | null>>();
 	const idx = (ids: string[]) => ids.map((id) => index.get(id)).filter((i): i is number => i != null);
 
@@ -143,6 +144,7 @@
 	/** The best-connected concepts and entities of a topic: what a tour step lights up. */
 	function topicHubs(t: number, count: number): number[] {
 		if (!graph) return [];
+		// eslint-disable-next-line svelte/prefer-svelte-reactivity -- local tally
 		const deg = new Map<number, number>();
 		for (let e = 0; e < graph.edgeSrc.length; e++) {
 			const a = graph.edgeSrc[e];
@@ -220,6 +222,7 @@
 		const i = index.get(id);
 		if (i == null || !graph || !renderer) return;
 		if (!adjacency) {
+			// eslint-disable-next-line svelte/prefer-svelte-reactivity -- lazily built lookup, not state
 			adjacency = new Map();
 			for (let e = 0; e < graph.edgeSrc.length; e++) {
 				const s = graph.edgeSrc[e];
