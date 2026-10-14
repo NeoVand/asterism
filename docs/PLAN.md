@@ -41,6 +41,7 @@ Rebuild the graph: `parse → extract → resolve → sources → assemble → l
   restatements; evals no longer see the user's memory: 3.91 · 71.4% (full 63.7%) · 89.4% · 97.8%
 - + write_todos (todoListMiddleware, used in 6/33 multi-part cases); last turn's reads carry into
   follow-ups: **4.00 · 74.5% (full 66.0%) · 91.3% · 98.2%**, 44 s per answer
+- Prompt "don't re-read researcher facts": 3.79 · 70.6% · 87.1%, no faster; reverted.
 
 ## Done
 
