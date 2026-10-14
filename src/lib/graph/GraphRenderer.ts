@@ -149,6 +149,8 @@ export class GraphRenderer {
 	private frame = 0;
 	private reading = false;
 	private settledFired = false;
+	/** Frame-rate sampling for adaptive resolution (only once the layout has settled). */
+	private perf = { frames: 0, time: 0 };
 	private lastInteraction = 0;
 	private fly: { from: THREE.Vector3; to: THREE.Vector3; tFrom: THREE.Vector3; tTo: THREE.Vector3; t0: number; dur: number } | null = null;
 	private hoverIndex: number | null = null;
@@ -861,7 +863,26 @@ export class GraphRenderer {
 		this.controls.autoRotate = this.autoRotate && performance.now() - this.lastInteraction > 9000 && !this.fly;
 		this.controls.update(dt);
 		this.pipeline.render();
+		this.adaptResolution(dt);
 	};
+
+	/**
+	 * Large Retina canvases with bloom can fall below a smooth frame rate; step the pixel ratio
+	 * down (not below 1.25, to stay crisp) until it holds. Bloom hides most of the difference.
+	 */
+	private adaptResolution(dt: number) {
+		if (!this.settledFired || document.hidden) return;
+		this.perf.frames++;
+		this.perf.time += dt;
+		if (this.perf.frames < 90) return;
+		const fps = this.perf.frames / this.perf.time;
+		this.perf = { frames: 0, time: 0 };
+		const ratio = this.renderer.getPixelRatio();
+		if (fps < 45 && ratio > 1.25) {
+			this.renderer.setPixelRatio(Math.max(1.25, ratio - 0.25));
+			this.resize();
+		}
+	}
 
 	/** Reheat the layout (after the graph changes). */
 	reheat(alpha = 0.5) {
