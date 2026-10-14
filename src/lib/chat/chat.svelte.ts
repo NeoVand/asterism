@@ -90,7 +90,8 @@ export function citedIds(m: Msg): string[] {
 	};
 	for (const p of m.parts) {
 		if (p.k === 'text') {
-			for (const match of p.text.matchAll(CITE_RE)) for (const id of match[1].split(/\s*[,;]\s*/)) add(id);
+			for (const match of p.text.matchAll(CITE_RE))
+				for (const id of match[1].split(/\s*[,;]\s*/)) add(id);
 		} else if (p.k === 'ui') {
 			for (const match of JSON.stringify(p.block).matchAll(/"([fstecx]\d+)"/g)) add(match[1]);
 		}
@@ -279,7 +280,8 @@ class ChatStore {
 				msg.error = e instanceof Error ? e.message : String(e);
 			}
 		} finally {
-			for (const st of msg.steps) if (st.status === 'run') st.status = msg.status === 'error' ? 'error' : 'done';
+			for (const st of msg.steps)
+				if (st.status === 'run') st.status = msg.status === 'error' ? 'error' : 'done';
 			for (const t of msg.tasks) if (t.status === 'run') t.status = 'done';
 			msg.endedAt ??= Date.now();
 			this.busy = false;
@@ -305,7 +307,12 @@ class ChatStore {
 			case 'tool': {
 				// Text written before more research is an interim note, not the answer.
 				const last = msg.parts[msg.parts.length - 1];
-				if (last?.k === 'text' && ev.agent === 'main' && ev.name !== 'show_ui' && ev.name !== 'ask_user') {
+				if (
+					last?.k === 'text' &&
+					ev.agent === 'main' &&
+					ev.name !== 'show_ui' &&
+					ev.name !== 'ask_user'
+				) {
 					msg.parts[msg.parts.length - 1] = { k: 'note', text: last.text };
 				}
 				msg.steps.push({
@@ -339,7 +346,8 @@ class ChatStore {
 				msg.todos = ev.items;
 				break;
 			case 'task':
-				if (ev.status === 'start') msg.tasks.push({ id: ev.id, description: ev.description, status: 'run', at: Date.now() });
+				if (ev.status === 'start')
+					msg.tasks.push({ id: ev.id, description: ev.description, status: 'run', at: Date.now() });
 				else {
 					const t = msg.tasks.find((x) => x.id === ev.id);
 					if (t) {

@@ -28,7 +28,8 @@ function evidenceTag(n: KGNode, store?: GraphStore): string {
 			.neighbors(n.id, { rels: ['same', 'elaborates'] })
 			.map((a) => store.get(a.id)!)
 			.find((m) => m.evidence);
-		if (via) return `${via.evidence!.replace('Expert opinion', 'Expert')}${via.onRoad ? ' on-road' : ''} via ${via.id}`;
+		if (via)
+			return `${via.evidence!.replace('Expert opinion', 'Expert')}${via.onRoad ? ' on-road' : ''} via ${via.id}`;
 	}
 	if (!n.evidence && !n.onRoad) return '';
 	const ev = n.evidence ? n.evidence.replace('Expert opinion', 'Expert') : '';
@@ -76,7 +77,10 @@ export function chapterName(c: number) {
 
 /** Sort facts: importance first, then booklet before glossary. */
 export function byImportance(a: KGNode, b: KGNode) {
-	return (b.importance ?? 0) - (a.importance ?? 0) || (a.doc === 'glossary' ? 1 : 0) - (b.doc === 'glossary' ? 1 : 0);
+	return (
+		(b.importance ?? 0) - (a.importance ?? 0) ||
+		(a.doc === 'glossary' ? 1 : 0) - (b.doc === 'glossary' ? 1 : 0)
+	);
 }
 
 const WORD = /[a-z0-9]+(?:[.-][a-z0-9]+)*/g;
@@ -115,14 +119,19 @@ function authority(store: GraphStore, n: KGNode): number {
 	return 1;
 }
 
-export function foldDuplicates(store: GraphStore, nodes: KGNode[], limit: number): { node: KGNode; also: KGNode[] }[] {
+export function foldDuplicates(
+	store: GraphStore,
+	nodes: KGNode[],
+	limit: number
+): { node: KGNode; also: KGNode[] }[] {
 	const kept: { node: KGNode; also: KGNode[] }[] = [];
 	for (const n of nodes) {
 		if (n.type === 'fact') {
 			const dup = kept.find(
 				(k) =>
 					k.node.type === 'fact' &&
-					(store.edgeBetween(k.node.id, n.id)?.r === 'same' || similarity(k.node.text, n.text) >= 0.72)
+					(store.edgeBetween(k.node.id, n.id)?.r === 'same' ||
+						similarity(k.node.text, n.text) >= 0.72)
 			);
 			if (dup) {
 				if (authority(store, n) > authority(store, dup.node)) {

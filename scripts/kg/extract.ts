@@ -7,7 +7,14 @@
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import type { ParsedCorpus } from '../../src/lib/kg/types';
-import { SCHEMA, chunkHash, systemPrompt, userPrompt, type ExtractResult, type ExtractedFact } from '../../src/lib/server/kg/extraction.ts';
+import {
+	SCHEMA,
+	chunkHash,
+	systemPrompt,
+	userPrompt,
+	type ExtractResult,
+	type ExtractedFact
+} from '../../src/lib/server/kg/extraction.ts';
 import { jsonCall, pool, usage } from './llm';
 
 const ROOT = new URL('../../', import.meta.url).pathname;
@@ -39,7 +46,9 @@ async function main() {
 		if (!existsSync(f)) return true;
 		return (JSON.parse(readFileSync(f, 'utf8')) as ExtractResult).hash !== chunkHash(c);
 	});
-	console.log(`extracting ${todo.length}/${chunks.length} chunks with ${model} (${effort}), concurrency ${concurrency}`);
+	console.log(
+		`extracting ${todo.length}/${chunks.length} chunks with ${model} (${effort}), concurrency ${concurrency}`
+	);
 	const t0 = Date.now();
 	let facts = 0;
 	await pool(
@@ -54,7 +63,11 @@ async function main() {
 				schema: SCHEMA,
 				effort
 			});
-			const cited = new Set([...chunk.text.matchAll(/\[(\d+(?:\s*,\s*\d+)*)\]/g)].flatMap((m) => m[1].split(/\s*,\s*/).map(Number)));
+			const cited = new Set(
+				[...chunk.text.matchAll(/\[(\d+(?:\s*,\s*\d+)*)\]/g)].flatMap((m) =>
+					m[1].split(/\s*,\s*/).map(Number)
+				)
+			);
 			for (const f of res.facts) {
 				f.cites = f.cites.filter((n) => cited.has(n));
 				f.terms = [...new Set(f.terms.filter((t) => termIds.has(t)))];

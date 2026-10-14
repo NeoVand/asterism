@@ -25,7 +25,11 @@ const marked = new Marked({
 
 export function renderMarkdown(
 	text: string,
-	opts: { streaming: boolean; number: (id: string) => number; brief: (id: string) => NodeBrief | null }
+	opts: {
+		streaming: boolean;
+		number: (id: string) => number;
+		brief: (id: string) => NodeBrief | null;
+	}
 ): string {
 	let src = text;
 	if (opts.streaming) src = src.replace(PARTIAL_TAIL, '');

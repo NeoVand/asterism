@@ -6,5 +6,10 @@ import type { RequestHandler } from './$types';
 
 export const GET: RequestHandler = () => {
 	const s = getStore().stats();
-	return json({ defaultPrompt: DEFAULT_SYSTEM_PROMPT, serverKey: Boolean(OPENAI_API_KEY), types: s.types, edges: s.edges });
+	return json({
+		defaultPrompt: DEFAULT_SYSTEM_PROMPT,
+		serverKey: Boolean(OPENAI_API_KEY),
+		types: s.types,
+		edges: s.edges
+	});
 };

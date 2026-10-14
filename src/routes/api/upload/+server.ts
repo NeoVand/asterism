@@ -5,17 +5,31 @@ import type { RequestHandler } from './$types';
 
 /** POST { name, text, apiKey? } → SSE stream of ingestion progress. */
 export const POST: RequestHandler = async ({ request }) => {
-	const body = (await request.json()) as { name?: string; text?: string; apiKey?: string; model?: string };
+	const body = (await request.json()) as {
+		name?: string;
+		text?: string;
+		apiKey?: string;
+		model?: string;
+	};
 	if (!body.text?.trim() || !body.name) error(400, 'name and text are required');
-	if (body.text.length > 400_000) error(413, 'This file is too long to weave in at once (limit about 100 pages). Split it into parts.');
+	if (body.text.length > 400_000)
+		error(
+			413,
+			'This file is too long to weave in at once (limit about 100 pages). Split it into parts.'
+		);
 	const apiKey = body.apiKey?.trim() || OPENAI_API_KEY;
 	if (!apiKey) error(401, 'No OpenAI API key. Add yours in Settings.');
 	const encoder = new TextEncoder();
 	const stream = new ReadableStream({
 		async start(controller) {
-			const send = (d: unknown) => controller.enqueue(encoder.encode(`data: ${JSON.stringify(d)}\n\n`));
+			const send = (d: unknown) =>
+				controller.enqueue(encoder.encode(`data: ${JSON.stringify(d)}\n\n`));
 			try {
-				for await (const ev of ingest(body.name!, body.text!, { apiKey, model: body.model || ASTERISM_MODEL })) send(ev);
+				for await (const ev of ingest(body.name!, body.text!, {
+					apiKey,
+					model: body.model || ASTERISM_MODEL
+				}))
+					send(ev);
 			} catch (e) {
 				send({ t: 'error', message: e instanceof Error ? e.message : String(e) });
 			} finally {
@@ -23,5 +37,7 @@ export const POST: RequestHandler = async ({ request }) => {
 			}
 		}
 	});
-	return new Response(stream, { headers: { 'content-type': 'text/event-stream', 'cache-control': 'no-cache' } });
+	return new Response(stream, {
+		headers: { 'content-type': 'text/event-stream', 'cache-control': 'no-cache' }
+	});
 };

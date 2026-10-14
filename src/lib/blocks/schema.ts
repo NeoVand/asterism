@@ -5,7 +5,10 @@
  */
 import { z } from 'zod';
 
-const cites = z.array(z.string()).describe('Graph ids backing this item, e.g. ["f123","f456"]').default([]);
+const cites = z
+	.array(z.string())
+	.describe('Graph ids backing this item, e.g. ["f123","f456"]')
+	.default([]);
 const tone = z.enum(['good', 'warn', 'bad', 'neutral']).optional();
 
 export const PlanBlock = z.object({
@@ -62,7 +65,9 @@ export const MetricsBlock = z.object({
 	type: z.literal('metrics'),
 	title: z.string().optional(),
 	items: z
-		.array(z.object({ value: z.string(), label: z.string(), detail: z.string().optional(), tone, cites }))
+		.array(
+			z.object({ value: z.string(), label: z.string(), detail: z.string().optional(), tone, cites })
+		)
 		.min(1)
 		.max(8)
 });
@@ -92,7 +97,10 @@ export const ChecklistBlock = z.object({
 export const FlowBlock = z.object({
 	type: z.literal('flow'),
 	title: z.string(),
-	steps: z.array(z.object({ label: z.string(), detail: z.string().optional(), cites })).min(2).max(9)
+	steps: z
+		.array(z.object({ label: z.string(), detail: z.string().optional(), cites }))
+		.min(2)
+		.max(9)
 });
 
 export const SourcesBlock = z.object({

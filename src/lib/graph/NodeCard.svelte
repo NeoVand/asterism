@@ -51,7 +51,15 @@
 		}
 	});
 
-	const TYPE_ICON = { fact: FactIcon, source: SourceIcon, term: TermIcon, entity: EntityIcon, section: SectionIcon, chapter: ChapterIcon, doc: ChapterIcon };
+	const TYPE_ICON = {
+		fact: FactIcon,
+		source: SourceIcon,
+		term: TermIcon,
+		entity: EntityIcon,
+		section: SectionIcon,
+		chapter: ChapterIcon,
+		doc: ChapterIcon
+	};
 	const REL: Record<string, string> = {
 		same: 'Restated in',
 		supports: 'Supports',
@@ -61,12 +69,17 @@
 	};
 
 	const color = $derived(TOPIC_COLORS[detail?.topic ?? 0]);
-	const factCount = $derived((detail?.counts.uses ?? 0) + (detail?.counts.about ?? 0) + (detail?.counts.states ?? 0));
+	const factCount = $derived(
+		(detail?.counts.uses ?? 0) + (detail?.counts.about ?? 0) + (detail?.counts.states ?? 0)
+	);
 
 	function askText(d: NodeDetail) {
-		if (d.type === 'fact') return `Explain this finding and connect it to what other chapters say: “${d.text}”`;
-		if (d.type === 'source') return `What does the research take from this source, and how strong is it? ${d.label}`;
-		if (d.type === 'term') return `Explain ${d.label} in plain words and what the booklet concluded about it.`;
+		if (d.type === 'fact')
+			return `Explain this finding and connect it to what other chapters say: “${d.text}”`;
+		if (d.type === 'source')
+			return `What does the research take from this source, and how strong is it? ${d.label}`;
+		if (d.type === 'term')
+			return `Explain ${d.label} in plain words and what the booklet concluded about it.`;
 		return `What does the research say about ${d.label} across chapters?`;
 	}
 
@@ -93,14 +106,23 @@
 >
 	<div class="flex items-center gap-2 px-4 pt-3.5 pb-2">
 		{#if detail}
-			<span class="flex size-6 items-center justify-center rounded-md" style:background="{color}22" style:color>
+			<span
+				class="flex size-6 items-center justify-center rounded-md"
+				style:background="{color}22"
+				style:color
+			>
 				<Icon icon={TYPE_ICON[detail.type] ?? FactIcon} size={13} />
 			</span>
 			<span class="text-[11px] tracking-wide text-fg-3 uppercase">{TYPE_LABEL[detail.type]}</span>
 			<span class="text-[11px] text-fg-4">·</span>
 			<span class="truncate text-[11px]" style:color>{TOPICS[detail.topic]?.name}</span>
 		{/if}
-		<button type="button" class="ml-auto rounded-md p-1 text-fg-3 hover:bg-white/[0.06] hover:text-fg" onclick={onclose} aria-label="Close">
+		<button
+			type="button"
+			class="ml-auto rounded-md p-1 text-fg-3 hover:bg-white/[0.06] hover:text-fg"
+			onclick={onclose}
+			aria-label="Close"
+		>
 			<Icon icon={CloseIcon} size={14} />
 		</button>
 	</div>
@@ -139,8 +161,12 @@
 			</div>
 
 			<div class="flex flex-wrap items-center gap-1.5 text-[10.5px]">
-				{#if detail.where}<span class="rounded-md bg-white/[0.05] px-1.5 py-0.5 text-fg-3">{detail.where}</span>{/if}
-				{#if detail.kind}<span class="rounded-md bg-white/[0.05] px-1.5 py-0.5 text-fg-3">{detail.kind}</span>{/if}
+				{#if detail.where}<span class="rounded-md bg-white/[0.05] px-1.5 py-0.5 text-fg-3"
+						>{detail.where}</span
+					>{/if}
+				{#if detail.kind}<span class="rounded-md bg-white/[0.05] px-1.5 py-0.5 text-fg-3"
+						>{detail.kind}</span
+					>{/if}
 				{#if detail.evidence}
 					<span
 						class="rounded-md px-1.5 py-0.5 {detail.evidence === 'Independent'
@@ -151,12 +177,17 @@
 						use:tip={'Evidence label from the booklet'}>{detail.evidence}</span
 					>
 				{/if}
-				{#if detail.onRoad}<span class="rounded-md bg-[#5b9dff]/12 px-1.5 py-0.5 text-[#93bbff]" use:tip={'Proven only for road vehicles'}>on-road evidence</span>{/if}
+				{#if detail.onRoad}<span
+						class="rounded-md bg-[#5b9dff]/12 px-1.5 py-0.5 text-[#93bbff]"
+						use:tip={'Proven only for road vehicles'}>on-road evidence</span
+					>{/if}
 				{#if detail.year}<span class="font-mono text-fg-4">{detail.year}</span>{/if}
 			</div>
 
 			{#if detail.quote}
-				<div class="flex gap-2 rounded-lg bg-white/[0.025] px-3 py-2 text-[12px] leading-relaxed text-fg-2">
+				<div
+					class="flex gap-2 rounded-lg bg-white/[0.025] px-3 py-2 text-[12px] leading-relaxed text-fg-2"
+				>
 					<Icon icon={QuoteIcon} size={13} class="mt-0.5 shrink-0 text-fg-4" />
 					<span>{detail.quote}</span>
 				</div>
@@ -181,13 +212,29 @@
 					<div class="text-[10.5px] tracking-wide text-fg-4 uppercase">Sources</div>
 					{#each detail.sources as s (s.id)}
 						<div class="group flex items-start gap-2 rounded-lg px-1.5 py-1 hover:bg-white/[0.035]">
-							<button type="button" class="min-w-0 flex-1 text-left text-[12px] leading-snug text-fg-2 group-hover:text-fg" onclick={() => app.select(s.id)}>
+							<button
+								type="button"
+								class="min-w-0 flex-1 text-left text-[12px] leading-snug text-fg-2 group-hover:text-fg"
+								onclick={() => app.select(s.id)}
+							>
 								{s.label}
-								<span class="ml-1 text-[10.5px] {s.evidence === 'Independent' ? 'text-ok/80' : s.evidence === 'Vendor' ? 'text-warn/80' : 'text-[#c4b5fd]/80'}">{s.evidence ?? ''}{s.onRoad ? ' · on-road' : ''}</span>
+								<span
+									class="ml-1 text-[10.5px] {s.evidence === 'Independent'
+										? 'text-ok/80'
+										: s.evidence === 'Vendor'
+											? 'text-warn/80'
+											: 'text-[#c4b5fd]/80'}">{s.evidence ?? ''}{s.onRoad ? ' · on-road' : ''}</span
+								>
 							</button>
 							{#if s.url}
 								<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- external source URL -->
-								<a href={s.url} target="_blank" rel="noreferrer" class="mt-0.5 shrink-0 text-fg-4 hover:text-glow" aria-label="Open source">
+								<a
+									href={s.url}
+									target="_blank"
+									rel="noreferrer"
+									class="mt-0.5 shrink-0 text-fg-4 hover:text-glow"
+									aria-label="Open source"
+								>
 									<Icon icon={ExternalIcon} size={13} />
 								</a>
 							{/if}
@@ -198,7 +245,12 @@
 
 			{#if detail.url && detail.type === 'source'}
 				<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- external source URL -->
-				<a href={detail.url} target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 text-[12px] text-glow hover:underline">
+				<a
+					href={detail.url}
+					target="_blank"
+					rel="noreferrer"
+					class="inline-flex items-center gap-1.5 text-[12px] text-glow hover:underline"
+				>
 					Open source <Icon icon={ExternalIcon} size={12} />
 				</a>
 			{/if}
@@ -214,9 +266,14 @@
 							onpointerleave={() => app.spotlight(null)}
 							onclick={() => app.select(l.id)}
 						>
-							<span class="mt-[5px] size-1.5 shrink-0 rounded-full" style:background={TOPIC_COLORS[l.topic]}></span>
+							<span
+								class="mt-[5px] size-1.5 shrink-0 rounded-full"
+								style:background={TOPIC_COLORS[l.topic]}
+							></span>
 							<span class="min-w-0 text-[12px] leading-snug text-fg-2">
-								<span class="text-fg-4">{REL[l.rel] ?? l.rel}{l.chapter > 0 ? ` Ch ${l.chapter}` : ''} · </span>{l.label}
+								<span class="text-fg-4"
+									>{REL[l.rel] ?? l.rel}{l.chapter > 0 ? ` Ch ${l.chapter}` : ''} ·
+								</span>{l.label}
 							</span>
 						</button>
 					{/each}
@@ -233,7 +290,10 @@
 							onpointerleave={() => app.spotlight(null)}
 							onclick={() => app.select(c.id)}
 						>
-							<span class="mr-1 inline-block size-1.5 rounded-full align-middle" style:background={TOPIC_COLORS[c.topic]}></span>{c.label.replace(/\s*\(.*\)$/, '')}
+							<span
+								class="mr-1 inline-block size-1.5 rounded-full align-middle"
+								style:background={TOPIC_COLORS[c.topic]}
+							></span>{c.label.replace(/\s*\(.*\)$/, '')}
 						</button>
 					{/each}
 				</div>

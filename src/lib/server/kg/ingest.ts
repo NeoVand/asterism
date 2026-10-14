@@ -8,7 +8,14 @@ import OpenAI from 'openai';
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import type { ParsedChunk, ParsedCorpus, UploadMeta } from '#lib/kg/types.ts';
-import { SCHEMA, chunkHash, systemPrompt, userPrompt, type ExtractResult, type ExtractedFact } from './extraction.ts';
+import {
+	SCHEMA,
+	chunkHash,
+	systemPrompt,
+	userPrompt,
+	type ExtractResult,
+	type ExtractedFact
+} from './extraction.ts';
 import { writeAssembled } from './assemble.ts';
 import { getStore } from './store.ts';
 
@@ -22,14 +29,24 @@ const DATA = resolve(process.cwd(), 'data/kg');
 const MAX_CHARS = 4200;
 
 /** Markdown (or plain text) → sections by heading, chunks of whole blocks up to MAX_CHARS. */
-export function chunkDocument(id: string, name: string, text: string): Pick<UploadMeta, 'sections' | 'chunks'> {
+export function chunkDocument(
+	id: string,
+	name: string,
+	text: string
+): Pick<UploadMeta, 'sections' | 'chunks'> {
 	const lines = text.replace(/\r\n?/g, '\n').split('\n');
 	const sections: UploadMeta['sections'] = [];
 	const stack: { level: number; title: string }[] = [];
 	let cur = { title: name, path: [name], body: [] as string[] };
 	const flush = () => {
 		const body = cur.body.join('\n').trim();
-		if (body) sections.push({ id: `${id}-s${sections.length + 1}`, title: cur.title, path: cur.path, text: body });
+		if (body)
+			sections.push({
+				id: `${id}-s${sections.length + 1}`,
+				title: cur.title,
+				path: cur.path,
+				text: body
+			});
 	};
 	let fence = false;
 	for (const line of lines) {
@@ -47,7 +64,10 @@ export function chunkDocument(id: string, name: string, text: string): Pick<Uplo
 
 	const chunks: ParsedChunk[] = [];
 	for (const sec of sections) {
-		const blocks = sec.text.split(/\n\s*\n/).map((b) => b.trim()).filter(Boolean);
+		const blocks = sec.text
+			.split(/\n\s*\n/)
+			.map((b) => b.trim())
+			.filter(Boolean);
 		let buf: string[] = [];
 		const emit = () => {
 			if (!buf.length) return;
@@ -69,7 +89,9 @@ export function chunkDocument(id: string, name: string, text: string): Pick<Uplo
 			if (buf.length && size + b.length > MAX_CHARS) emit();
 			// Very long blocks (no blank lines) are split on sentence boundaries.
 			if (b.length > MAX_CHARS) {
-				for (const piece of b.match(new RegExp(`[\\s\\S]{1,${MAX_CHARS}}(?=\\.\\s|$)`, 'g')) ?? [b]) {
+				for (const piece of b.match(new RegExp(`[\\s\\S]{1,${MAX_CHARS}}(?=\\.\\s|$)`, 'g')) ?? [
+					b
+				]) {
 					buf.push(piece.trim());
 					emit();
 				}
@@ -82,7 +104,13 @@ export function chunkDocument(id: string, name: string, text: string): Pick<Uplo
 	return { sections, chunks };
 }
 
-async function extractChunk(client: OpenAI, model: string, system: string, chunk: ParsedChunk, name: string): Promise<ExtractedFact[]> {
+async function extractChunk(
+	client: OpenAI,
+	model: string,
+	system: string,
+	chunk: ParsedChunk,
+	name: string
+): Promise<ExtractedFact[]> {
 	for (let attempt = 0; ; attempt++) {
 		try {
 			const r = (await client.responses.create({
@@ -100,7 +128,11 @@ async function extractChunk(client: OpenAI, model: string, system: string, chunk
 	}
 }
 
-export async function* ingest(name: string, text: string, opts: { apiKey: string; model?: string }): AsyncGenerator<IngestEvent> {
+export async function* ingest(
+	name: string,
+	text: string,
+	opts: { apiKey: string; model?: string }
+): AsyncGenerator<IngestEvent> {
 	const clean = name.replace(/\.(md|markdown|txt)$/i, '').slice(0, 80) || 'Document';
 	if (text.trim().length < 80) {
 		yield { t: 'error', message: 'The document is too short to extract facts from.' };
@@ -116,7 +148,13 @@ export async function* ingest(name: string, text: string, opts: { apiKey: string
 
 	yield { t: 'stage', stage: 'chunking' };
 	const { sections, chunks } = chunkDocument(id, clean, text);
-	const meta: UploadMeta = { id, name: clean, createdAt: new Date().toISOString(), sections, chunks };
+	const meta: UploadMeta = {
+		id,
+		name: clean,
+		createdAt: new Date().toISOString(),
+		sections,
+		chunks
+	};
 
 	yield { t: 'stage', stage: 'extracting', detail: `${chunks.length} passages` };
 	const corpus = JSON.parse(readFileSync(`${DATA}/parsed.json`, 'utf8')) as ParsedCorpus;
@@ -164,7 +202,9 @@ export async function* ingest(name: string, text: string, opts: { apiKey: string
 	writeFileSync(`${dir}/meta.json`, JSON.stringify(meta));
 	writeAssembled();
 	const store = getStore();
-	const factIds = store.nodes.filter((n) => n.type === 'fact' && n.doc === 'upload' && n.sectionId?.startsWith(`${id}-`)).map((n) => n.id);
+	const factIds = store.nodes
+		.filter((n) => n.type === 'fact' && n.doc === 'upload' && n.sectionId?.startsWith(`${id}-`))
+		.map((n) => n.id);
 	const hubs = new Set<string>();
 	let entities = 0;
 	for (const f of factIds)
@@ -173,5 +213,12 @@ export async function* ingest(name: string, text: string, opts: { apiKey: string
 			hubs.add(a.id);
 		}
 	yield { t: 'stage', stage: 'done' };
-	yield { t: 'done', docId: id, name: clean, facts: factIds, entities, concepts: [...hubs].filter((h) => store.get(h)?.type === 'term').length };
+	yield {
+		t: 'done',
+		docId: id,
+		name: clean,
+		facts: factIds,
+		entities,
+		concepts: [...hubs].filter((h) => store.get(h)?.type === 'term').length
+	};
 }

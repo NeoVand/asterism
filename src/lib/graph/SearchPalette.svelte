@@ -72,7 +72,11 @@
 
 {#if open}
 	<!-- svelte-ignore a11y_click_events_have_key_events, a11y_no_static_element_interactions -->
-	<div class="fixed inset-0 z-40 bg-ink-950/40" transition:fade={{ duration: 140 }} onclick={onclose}></div>
+	<div
+		class="fixed inset-0 z-40 bg-ink-950/40"
+		transition:fade={{ duration: 140 }}
+		onclick={onclose}
+	></div>
 	<div
 		class="glass-strong fixed top-[12vh] left-[calc((100vw-480px)/2)] z-50 w-[560px] -translate-x-1/2 overflow-hidden rounded-2xl"
 		transition:scale={{ start: 0.98, duration: 160 }}
@@ -112,17 +116,26 @@
 				{#each results as r, i (r.id)}
 					<button
 						type="button"
-						class="flex w-full items-start gap-2.5 rounded-lg px-2.5 py-2 text-left transition-colors {i === active ? 'bg-white/[0.07]' : 'hover:bg-white/[0.04]'}"
+						class="flex w-full items-start gap-2.5 rounded-lg px-2.5 py-2 text-left transition-colors {i ===
+						active
+							? 'bg-white/[0.07]'
+							: 'hover:bg-white/[0.04]'}"
 						onpointerenter={() => {
 							active = i;
 							app.spotlight([r.id]);
 						}}
 						onclick={() => pick(r)}
 					>
-						<span class="mt-[5px] size-2 shrink-0 rounded-full" style:background={TOPIC_COLORS[r.topic]} style:box-shadow="0 0 8px {TOPIC_COLORS[r.topic]}"></span>
+						<span
+							class="mt-[5px] size-2 shrink-0 rounded-full"
+							style:background={TOPIC_COLORS[r.topic]}
+							style:box-shadow="0 0 8px {TOPIC_COLORS[r.topic]}"
+						></span>
 						<span class="min-w-0 flex-1">
 							<span class="line-clamp-2 text-[12.5px] leading-snug text-fg">{r.label}</span>
-							<span class="mt-0.5 block truncate text-[10.5px] text-fg-4">{TYPE_LABEL[r.type]}{r.where ? ` · ${r.where}` : ''}</span>
+							<span class="mt-0.5 block truncate text-[10.5px] text-fg-4"
+								>{TYPE_LABEL[r.type]}{r.where ? ` · ${r.where}` : ''}</span
+							>
 						</span>
 					</button>
 				{/each}
@@ -133,7 +146,9 @@
 				>
 					<Icon icon={SparklesIcon} size={14} />
 					Ask the agent: “{q.trim()}”
-					<kbd class="ml-auto rounded bg-white/[0.06] px-1.5 py-0.5 font-mono text-[10px] text-fg-4">⌘↵</kbd>
+					<kbd class="ml-auto rounded bg-white/[0.06] px-1.5 py-0.5 font-mono text-[10px] text-fg-4"
+						>⌘↵</kbd
+					>
 				</button>
 			</div>
 		{/if}

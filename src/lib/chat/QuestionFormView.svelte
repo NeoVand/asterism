@@ -70,7 +70,11 @@
 						<Icon icon={CheckIcon} size={13} class="mt-0.5 shrink-0 text-ok/80" />
 						<div class="min-w-0">
 							<div class="text-[11px] text-fg-3">{q.label}</div>
-							<div class="text-fg">{shown(answers[q.id])}{q.unit && typeof answers[q.id] === 'number' ? ` ${q.unit}` : ''}</div>
+							<div class="text-fg">
+								{shown(answers[q.id])}{q.unit && typeof answers[q.id] === 'number'
+									? ` ${q.unit}`
+									: ''}
+							</div>
 						</div>
 					</div>
 				{/each}
@@ -86,7 +90,10 @@
 					{#if q.kind === 'single' || q.kind === 'multi'}
 						<div class="flex flex-wrap gap-1.5">
 							{#each q.options ?? [] as opt (opt)}
-								{@const on = q.kind === 'multi' ? ((values[q.id] as string[]) ?? []).includes(opt) : values[q.id] === opt}
+								{@const on =
+									q.kind === 'multi'
+										? ((values[q.id] as string[]) ?? []).includes(opt)
+										: values[q.id] === opt}
 								<button
 									type="button"
 									disabled={!active}
@@ -104,7 +111,9 @@
 								<button
 									type="button"
 									disabled={!active}
-									class="rounded-lg border px-2.5 py-1 text-[12px] transition-all duration-150 {values[q.id] === '__other'
+									class="rounded-lg border px-2.5 py-1 text-[12px] transition-all duration-150 {values[
+										q.id
+									] === '__other'
 										? 'border-glow/50 bg-glow/15 text-fg'
 										: 'border-dashed border-white/[0.12] text-fg-3 hover:text-fg-2'}"
 									onclick={() => (values[q.id] = '__other')}
@@ -137,14 +146,20 @@
 								disabled={!active}
 								bind:value={values[q.id]}
 							/>
-							<span class="w-20 text-right font-mono text-[12px] text-fg">{values[q.id]}{q.unit ? ` ${q.unit}` : ''}</span>
+							<span class="w-20 text-right font-mono text-[12px] text-fg"
+								>{values[q.id]}{q.unit ? ` ${q.unit}` : ''}</span
+							>
 						</div>
 					{/if}
 				</fieldset>
 			{/each}
 			{#if active}
 				<div class="flex items-center justify-end gap-2 pt-1">
-					<button type="button" class="rounded-lg px-3 py-1.5 text-[12px] text-fg-3 transition-colors hover:text-fg" onclick={() => onsubmit('skipped')}>
+					<button
+						type="button"
+						class="rounded-lg px-3 py-1.5 text-[12px] text-fg-3 transition-colors hover:text-fg"
+						onclick={() => onsubmit('skipped')}
+					>
 						Skip
 					</button>
 					<button

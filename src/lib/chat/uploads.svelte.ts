@@ -32,7 +32,14 @@ class Uploads {
 	async upload(file: File) {
 		if (this.busy) return;
 		if (!/\.(md|markdown|txt)$/i.test(file.name) && !/^text\//.test(file.type)) {
-			this.current = { name: file.name, stage: 'error', done: 0, total: 0, facts: 0, error: 'Only Markdown or plain-text files can be woven in for now.' };
+			this.current = {
+				name: file.name,
+				stage: 'error',
+				done: 0,
+				total: 0,
+				facts: 0,
+				error: 'Only Markdown or plain-text files can be woven in for now.'
+			};
 			return;
 		}
 		this.current = { name: file.name, stage: 'reading', done: 0, total: 0, facts: 0 };
@@ -40,11 +47,19 @@ class Uploads {
 		try {
 			const text = await file.text();
 			if (!text.trim()) throw new Error('The file is empty.');
-			if (text.length > MAX_CHARS) throw new Error(`This file is too long to weave in at once (about ${Math.round(text.length / 4000)} pages; the limit is about 100). Split it into parts.`);
+			if (text.length > MAX_CHARS)
+				throw new Error(
+					`This file is too long to weave in at once (about ${Math.round(text.length / 4000)} pages; the limit is about 100). Split it into parts.`
+				);
 			const res = await fetch('/api/upload', {
 				method: 'POST',
 				headers: { 'content-type': 'application/json' },
-				body: JSON.stringify({ name: file.name, text, apiKey: settings.value.apiKey || undefined, model: settings.value.model })
+				body: JSON.stringify({
+					name: file.name,
+					text,
+					apiKey: settings.value.apiKey || undefined,
+					model: settings.value.model
+				})
 			});
 			if (!res.ok || !res.body) {
 				const body = await res.text();
@@ -65,7 +80,10 @@ class Uploads {
 				buf += decoder.decode(value, { stream: true });
 				let i: number;
 				while ((i = buf.indexOf('\n\n')) >= 0) {
-					const line = buf.slice(0, i).split('\n').find((l) => l.startsWith('data: '));
+					const line = buf
+						.slice(0, i)
+						.split('\n')
+						.find((l) => l.startsWith('data: '));
 					buf = buf.slice(i + 2);
 					if (!line) continue;
 					const ev = JSON.parse(line.slice(6));
@@ -78,7 +96,13 @@ class Uploads {
 						state.facts = ev.facts;
 					} else if (ev.t === 'done') {
 						state.stage = 'done';
-						state.result = { docId: ev.docId, name: ev.name, facts: ev.facts, entities: ev.entities, concepts: ev.concepts };
+						state.result = {
+							docId: ev.docId,
+							name: ev.name,
+							facts: ev.facts,
+							entities: ev.entities,
+							concepts: ev.concepts
+						};
 						this.onDone?.(state.result);
 					} else if (ev.t === 'error') {
 						state.stage = 'error';

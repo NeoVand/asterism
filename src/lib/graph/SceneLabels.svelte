@@ -36,7 +36,17 @@
 
 	let { renderer, graph, hovered, cited, showTopics, dimTopics, ontopic, onpick }: Props = $props();
 
-	const TOPIC_ICONS = [TopicAIcon, TopicBIcon, TopicCIcon, TopicDIcon, TopicEIcon, TopicFIcon, TopicGIcon, TopicHIcon, TopicIIcon];
+	const TOPIC_ICONS = [
+		TopicAIcon,
+		TopicBIcon,
+		TopicCIcon,
+		TopicDIcon,
+		TopicEIcon,
+		TopicFIcon,
+		TopicGIcon,
+		TopicHIcon,
+		TopicIIcon
+	];
 
 	const topicCounts = $derived.by(() => {
 		const c = new Array(9).fill(0);
@@ -158,9 +168,13 @@
 				>
 					<Icon icon={TOPIC_ICONS[i]} size={14} />
 				</span>
-				<span class="text-left leading-tight [text-shadow:0_0_4px_rgb(0_0_0),0_1px_10px_rgb(0_0_0/0.95)]">
+				<span
+					class="text-left leading-tight [text-shadow:0_0_4px_rgb(0_0_0),0_1px_10px_rgb(0_0_0/0.95)]"
+				>
 					<span class="block text-[12.5px] font-medium text-fg">{t.name}</span>
-					<span class="block font-mono text-[10px] text-fg-2">{topicCounts[i].toLocaleString()} nodes</span>
+					<span class="block font-mono text-[10px] text-fg-2"
+						>{topicCounts[i].toLocaleString()} nodes</span
+					>
 				</span>
 			</button>
 		{/each}
@@ -187,9 +201,12 @@
 			class="absolute top-0 left-0 w-max max-w-[300px] rounded-lg border border-white/10 bg-ink-900/90 px-2.5 py-1.5 shadow-xl backdrop-blur-md will-change-transform"
 		>
 			<div class="mb-0.5 flex items-center gap-1.5 text-[10px] tracking-wide text-fg-3 uppercase">
-				<span class="size-1.5 rounded-full" style:background={TOPIC_COLORS[graph.topics[hovered]]}></span>
+				<span class="size-1.5 rounded-full" style:background={TOPIC_COLORS[graph.topics[hovered]]}
+				></span>
 				{TYPE_LABEL[graph.types[hovered]]}
-				{#if graph.chapters[hovered] > 0}<span class="font-mono normal-case">· Ch {graph.chapters[hovered]}</span>{/if}
+				{#if graph.chapters[hovered] > 0}<span class="font-mono normal-case"
+						>· Ch {graph.chapters[hovered]}</span
+					>{/if}
 			</div>
 			<div class="line-clamp-3 text-[12px] leading-snug text-fg">{graph.labels[hovered]}</div>
 		</div>

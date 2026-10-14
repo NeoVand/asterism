@@ -26,17 +26,63 @@
 
 	let { onstep, onclose }: Props = $props();
 
-	const ICONS = [TopicAIcon, TopicBIcon, TopicCIcon, TopicDIcon, TopicEIcon, TopicFIcon, TopicGIcon, TopicHIcon, TopicIIcon];
+	const ICONS = [
+		TopicAIcon,
+		TopicBIcon,
+		TopicCIcon,
+		TopicDIcon,
+		TopicEIcon,
+		TopicFIcon,
+		TopicGIcon,
+		TopicHIcon,
+		TopicIIcon
+	];
 	const STEPS = [
-		{ learn: 'Picture the machines, the sites and the people.', insight: 'In 12 of 13 US haul-truck collision deaths the truck was moving forward; smaller trucks and loaders back over people.' },
-		{ learn: 'Follow a safety argument from hazard to release.', insight: 'Adding a brake command makes this a new safety-control function: failing to intervene and intervening when unsafe are separate hazards.' },
-		{ learn: 'Know what each sensor measures and why it fails.', insight: 'Lidar in rain and fog is the best-validated case; dust is the biggest off-road gap and has no validated model.' },
-		{ learn: 'Every test method, from a computer run to a shadow fleet.', insight: 'No single method builds valid job sites for every sensor: the evidence points to a hybrid “environment factory” anchored to surveyed sites.' },
-		{ learn: 'Stopping distance, latency and the decision to brake.', insight: 'Off-road brakes deliver 0.60–2.94 m/s² against 5.0 m/s² for car AEB, and latency can be half the stopping distance.' },
-		{ learn: 'Judge whether a test campaign proves what it claims.', insight: 'Zero misses in 299 independent trials shows a miss rate of at most 1% at 95% confidence — and frames are not trials.' },
-		{ learn: 'Ask an assessor’s questions about a simulation.', insight: 'Every credibility framework asks for a context of use, validation data, uncertainty and a declared envelope; none sets a universal test percentage.' },
-		{ learn: 'Place every standard, rule and precedent.', insight: 'The EU Machinery Regulation applies from 20 January 2027; South Africa has required automatic braking since December 2022.' },
-		{ learn: 'Read the tool market and write the plan.', insight: 'The four months cannot be compressed — but most of the work can be moved in front of them.' }
+		{
+			learn: 'Picture the machines, the sites and the people.',
+			insight:
+				'In 12 of 13 US haul-truck collision deaths the truck was moving forward; smaller trucks and loaders back over people.'
+		},
+		{
+			learn: 'Follow a safety argument from hazard to release.',
+			insight:
+				'Adding a brake command makes this a new safety-control function: failing to intervene and intervening when unsafe are separate hazards.'
+		},
+		{
+			learn: 'Know what each sensor measures and why it fails.',
+			insight:
+				'Lidar in rain and fog is the best-validated case; dust is the biggest off-road gap and has no validated model.'
+		},
+		{
+			learn: 'Every test method, from a computer run to a shadow fleet.',
+			insight:
+				'No single method builds valid job sites for every sensor: the evidence points to a hybrid “environment factory” anchored to surveyed sites.'
+		},
+		{
+			learn: 'Stopping distance, latency and the decision to brake.',
+			insight:
+				'Off-road brakes deliver 0.60–2.94 m/s² against 5.0 m/s² for car AEB, and latency can be half the stopping distance.'
+		},
+		{
+			learn: 'Judge whether a test campaign proves what it claims.',
+			insight:
+				'Zero misses in 299 independent trials shows a miss rate of at most 1% at 95% confidence — and frames are not trials.'
+		},
+		{
+			learn: 'Ask an assessor’s questions about a simulation.',
+			insight:
+				'Every credibility framework asks for a context of use, validation data, uncertainty and a declared envelope; none sets a universal test percentage.'
+		},
+		{
+			learn: 'Place every standard, rule and precedent.',
+			insight:
+				'The EU Machinery Regulation applies from 20 January 2027; South Africa has required automatic braking since December 2022.'
+		},
+		{
+			learn: 'Read the tool market and write the plan.',
+			insight:
+				'The four months cannot be compressed — but most of the work can be moved in front of them.'
+		}
 	];
 
 	let step = $state(0);
@@ -107,13 +153,19 @@
 			{#each STEPS, i (i)}
 				<button
 					type="button"
-					class="h-1 rounded-full transition-all duration-500 {i === step ? 'w-6' : 'w-1.5 bg-white/15 hover:bg-white/30'}"
+					class="h-1 rounded-full transition-all duration-500 {i === step
+						? 'w-6'
+						: 'w-1.5 bg-white/15 hover:bg-white/30'}"
 					style:background={i === step ? TOPIC_COLORS[i] : undefined}
 					onclick={() => go(i)}
 					aria-label={`Go to ${TOPICS[i].name}`}
 				></button>
 			{/each}
-			<button type="button" class="ml-auto rounded-lg px-2 py-1 text-[11.5px] text-fg-3 hover:text-fg" onclick={onclose}>
+			<button
+				type="button"
+				class="ml-auto rounded-lg px-2 py-1 text-[11.5px] text-fg-3 hover:text-fg"
+				onclick={onclose}
+			>
 				<span class="flex items-center gap-1"><Icon icon={CloseIcon} size={12} /> End tour</span>
 			</button>
 			<button

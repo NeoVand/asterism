@@ -10,11 +10,21 @@ const ask = process.argv.includes('--ask');
 const out = new URL('../../docs/screens/', import.meta.url).pathname;
 mkdirSync(out, { recursive: true });
 
-const browser = await chromium.launch({ args: ['--enable-unsafe-webgpu', '--enable-gpu', '--use-angle=metal', '--ignore-gpu-blocklist'] });
-const page = await browser.newPage({ viewport: { width: 1600, height: 940 }, deviceScaleFactor: 2 });
-const shot = (name: string) => page.screenshot({ path: `${out}${name}.jpg`, type: 'jpeg', quality: 86 });
+const browser = await chromium.launch({
+	args: ['--enable-unsafe-webgpu', '--enable-gpu', '--use-angle=metal', '--ignore-gpu-blocklist']
+});
+const page = await browser.newPage({
+	viewport: { width: 1600, height: 940 },
+	deviceScaleFactor: 2
+});
+const shot = (name: string) =>
+	page.screenshot({ path: `${out}${name}.jpg`, type: 'jpeg', quality: 86 });
 await page.goto(base);
-await page.getByText(/^\s*WebGPU\s*$|^\s*WebGL\s*$/).first().waitFor({ timeout: 90_000 }).catch(() => {});
+await page
+	.getByText(/^\s*WebGPU\s*$|^\s*WebGL\s*$/)
+	.first()
+	.waitFor({ timeout: 90_000 })
+	.catch(() => {});
 await page.waitForTimeout(4000);
 await shot('01-constellation');
 console.log('01 constellation');
@@ -30,7 +40,9 @@ await page.keyboard.press('Escape');
 console.log('02–03 tour');
 
 await page.keyboard.press('Meta+k');
-await page.getByPlaceholder('Search facts, concepts, standards, sources…').fill('Volvo CE Collision Mitigation System');
+await page
+	.getByPlaceholder('Search facts, concepts, standards, sources…')
+	.fill('Volvo CE Collision Mitigation System');
 await page.waitForTimeout(1200);
 await shot('04-search');
 await page.keyboard.press('Enter');
@@ -41,7 +53,9 @@ console.log('04–05 search and card');
 
 if (ask) {
 	const box = page.getByPlaceholder('Ask, plan, or explore the research…');
-	await box.fill('Which rules and deadlines constrain an automatic braking system that uses machine learning, and what evidence do they demand? Include a timeline.');
+	await box.fill(
+		'Which rules and deadlines constrain an automatic braking system that uses machine learning, and what evidence do they demand? Include a timeline.'
+	);
 	await box.press('Enter');
 	await page.waitForTimeout(12_000);
 	await shot('06-working');

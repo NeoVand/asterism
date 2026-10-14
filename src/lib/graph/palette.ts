@@ -11,7 +11,15 @@ export const TOPIC_COLORS = [
 	'#f472d0' // I Tools, cost & planning — magenta
 ] as const;
 
-export const NODE_TYPES = ['doc', 'chapter', 'section', 'fact', 'source', 'term', 'entity'] as const;
+export const NODE_TYPES = [
+	'doc',
+	'chapter',
+	'section',
+	'fact',
+	'source',
+	'term',
+	'entity'
+] as const;
 export type ClientNodeType = (typeof NODE_TYPES)[number];
 
 export const TYPE_INDEX: Record<ClientNodeType, number> = {

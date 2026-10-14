@@ -18,7 +18,14 @@ export interface ClientGraph {
 /** Wire format of /api/graph (compact JSON). */
 export interface GraphWire {
 	version: number;
-	nodes: [id: string, type: ClientNodeType, topic: number, label: string, chapter: number, weight: number][];
+	nodes: [
+		id: string,
+		type: ClientNodeType,
+		topic: number,
+		label: string,
+		chapter: number,
+		weight: number
+	][];
 	edges: [s: number, t: number, r: number][];
 	rels: string[];
 }

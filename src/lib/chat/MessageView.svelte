@@ -33,7 +33,9 @@
 	// Reading order: interim notes, the answer, then its blocks, then any question form.
 	const RANK = { note: 0, text: 1, ui: 2, form: 3 } as const;
 	const ordered = $derived(
-		msg.parts.map((part, i) => ({ part, i })).sort((a, b) => RANK[a.part.k] - RANK[b.part.k] || a.i - b.i)
+		msg.parts
+			.map((part, i) => ({ part, i }))
+			.sort((a, b) => RANK[a.part.k] - RANK[b.part.k] || a.i - b.i)
 	);
 	const lastTextIndex = $derived(msg.parts.findLastIndex((p) => p.k === 'text'));
 
@@ -99,19 +101,30 @@
 						{@html html(part.text, i === lastTextIndex)}
 					</div>
 				{:else if part.k === 'note'}
-					<p class="border-l border-white/[0.07] pl-3.5 text-[11.5px] leading-relaxed text-fg-3 italic">{part.text.trim().slice(0, 400)}</p>
+					<p
+						class="border-l border-white/[0.07] pl-3.5 text-[11.5px] leading-relaxed text-fg-3 italic"
+					>
+						{part.text.trim().slice(0, 400)}
+					</p>
 				{:else if part.k === 'ui'}
 					<div in:fade={{ duration: 260 }}>
 						<BlockView block={part.block} />
 					</div>
 				{:else}
-					<QuestionFormView form={part.form} answers={part.answers} active={last && msg.status === 'waiting'} onsubmit={onanswer} />
+					<QuestionFormView
+						form={part.form}
+						answers={part.answers}
+						active={last && msg.status === 'waiting'}
+						onsubmit={onanswer}
+					/>
 				{/if}
 			{/each}
 		</div>
 
 		{#if msg.status === 'error'}
-			<div class="mt-2 flex items-start gap-2 rounded-lg border border-bad/25 bg-bad/[0.06] px-3 py-2 text-[12px] text-bad">
+			<div
+				class="mt-2 flex items-start gap-2 rounded-lg border border-bad/25 bg-bad/[0.06] px-3 py-2 text-[12px] text-bad"
+			>
 				<Icon icon={AlertIcon} size={14} class="mt-px shrink-0" />
 				<span>{msg.error}</span>
 			</div>
@@ -130,7 +143,9 @@
 					use:tip={'Hover to light up the answer’s constellation'}
 				>
 					<span class="size-1.5 rounded-full bg-gold shadow-[0_0_8px_var(--color-gold)]"></span>
-					{order.length} cited{chapters ? ` · ${chapters} ${chapters === 1 ? 'chapter' : 'chapters'}` : ''}
+					{order.length} cited{chapters
+						? ` · ${chapters} ${chapters === 1 ? 'chapter' : 'chapters'}`
+						: ''}
 				</button>
 				<button
 					type="button"

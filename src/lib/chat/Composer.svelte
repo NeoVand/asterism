@@ -43,7 +43,9 @@
 		requestAnimationFrame(resize);
 	}
 
-	const model = $derived(MODELS.find((m) => m.id === settings.value.model)?.name ?? settings.value.model);
+	const model = $derived(
+		MODELS.find((m) => m.id === settings.value.model)?.name ?? settings.value.model
+	);
 </script>
 
 <div
@@ -54,7 +56,9 @@
 		bind:value={text}
 		rows="1"
 		disabled={waiting}
-		placeholder={waiting ? 'Answer the questions above to continue…' : 'Ask, plan, or explore the research…'}
+		placeholder={waiting
+			? 'Answer the questions above to continue…'
+			: 'Ask, plan, or explore the research…'}
 		class="block max-h-[168px] w-full resize-none bg-transparent px-4 pt-3 pb-1 text-[13.5px] leading-relaxed text-fg outline-none placeholder:text-fg-4 disabled:cursor-not-allowed"
 		oninput={resize}
 		onkeydown={(e) => {
@@ -62,8 +66,7 @@
 				e.preventDefault();
 				submit();
 			}
-		}}
-	></textarea>
+		}}></textarea>
 	<div class="flex items-center gap-1.5 px-2.5 pb-2.5">
 		<button
 			type="button"
@@ -76,7 +79,8 @@
 		</button>
 		<button
 			type="button"
-			class="flex items-center gap-1.5 rounded-lg px-2 py-1 text-[11.5px] transition-colors {settings.value.deep
+			class="flex items-center gap-1.5 rounded-lg px-2 py-1 text-[11.5px] transition-colors {settings
+				.value.deep
 				? 'bg-[#a78bfa]/15 text-[#c4b5fd]'
 				: 'text-fg-3 hover:bg-white/[0.04] hover:text-fg-2'}"
 			onclick={() => settings.update({ deep: !settings.value.deep })}

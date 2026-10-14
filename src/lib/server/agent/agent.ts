@@ -24,7 +24,12 @@ export interface AgentSettings {
 export function todayLine(today?: string): string {
 	const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(today ?? '');
 	const d = m ? new Date(+m[1], +m[2] - 1, +m[3]) : new Date();
-	return d.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+	return d.toLocaleDateString('en-GB', {
+		weekday: 'long',
+		day: 'numeric',
+		month: 'long',
+		year: 'numeric'
+	});
 }
 
 const ROOT = process.cwd();
@@ -59,7 +64,14 @@ async function build(s: AgentSettings) {
 		reasoning: { effort: 'low' }
 	});
 	const t = makeTools();
-	const graphTools = [t.searchGraph, t.explore, t.readFacts, t.connect, t.readSection, t.findSources];
+	const graphTools = [
+		t.searchGraph,
+		t.explore,
+		t.readFacts,
+		t.connect,
+		t.readSection,
+		t.findSources
+	];
 
 	return createDeepAgent({
 		name: 'asterism',
@@ -86,7 +98,9 @@ async function build(s: AgentSettings) {
 		backend: (config) =>
 			new CompositeBackend(new StateBackend(config), {
 				'/skills/': new FilesystemBackend({ rootDir: SKILLS_DIR, virtualMode: true }),
-				...(process.env.ASTERISM_EVAL ? {} : { '/memories/': new FilesystemBackend({ rootDir: MEMORY_DIR, virtualMode: true }) })
+				...(process.env.ASTERISM_EVAL
+					? {}
+					: { '/memories/': new FilesystemBackend({ rootDir: MEMORY_DIR, virtualMode: true }) })
 			}),
 		skills: ['/skills/'],
 		memory: process.env.ASTERISM_EVAL ? [] : ['/memories/AGENTS.md'],
@@ -96,7 +110,13 @@ async function build(s: AgentSettings) {
 }
 
 export async function getAgent(s: AgentSettings) {
-	const key = JSON.stringify([s.apiKey.slice(-8), s.model, s.systemPrompt ?? '', s.effort ?? 'low', todayLine(s.today)]);
+	const key = JSON.stringify([
+		s.apiKey.slice(-8),
+		s.model,
+		s.systemPrompt ?? '',
+		s.effort ?? 'low',
+		todayLine(s.today)
+	]);
 	let agent = cache.get(key);
 	if (!agent) {
 		agent = await build(s);

@@ -91,7 +91,8 @@ export async function* runTurn(
 
 	let input: unknown;
 	const pendingInterrupt = async () => {
-		const st = (await agent.getState({ configurable: { thread_id: req.threadId } })) as { tasks?: { interrupts?: unknown[] }[] } | undefined;
+		const st = (await agent.getState({ configurable: { thread_id: req.threadId } })) as
+			{ tasks?: { interrupts?: unknown[] }[] } | undefined;
 		return (st?.tasks ?? []).some((t) => (t.interrupts ?? []).length > 0);
 	};
 	if (req.resume && (await pendingInterrupt())) {
@@ -105,7 +106,9 @@ export async function* runTurn(
 				: `My answers to your questions:\n${Object.entries(answers)
 						.map(([k, v]) => `- ${k}: ${Array.isArray(v) ? v.join(', ') : String(v)}`)
 						.join('\n')}`;
-		const prior = req.history?.length ? req.history.map((m) => ({ role: m.role, content: m.content })) : [];
+		const prior = req.history?.length
+			? req.history.map((m) => ({ role: m.role, content: m.content }))
+			: [];
 		input = { messages: [...prior, { role: 'user', content: text }] };
 	} else {
 		const state = (await agent.getState({ configurable: { thread_id: req.threadId } })) as

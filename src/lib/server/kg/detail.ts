@@ -12,15 +12,35 @@ export function nodeDetail(store: GraphStore, id: string): NodeDetail | null {
 	for (const a of nb) counts[a.r] = (counts[a.r] ?? 0) + 1;
 	const brief = (x: string) => {
 		const m = store.get(x)!;
-		return { id: m.id, label: m.label, topic: topicIndex.get(m.topic) ?? 0, chapter: m.chapter ?? -1 };
+		return {
+			id: m.id,
+			label: m.label,
+			topic: topicIndex.get(m.topic) ?? 0,
+			chapter: m.chapter ?? -1
+		};
 	};
 	const sources = nb
 		.filter((a) => a.r === 'cites' && a.out)
 		.map((a) => store.get(a.id)!)
-		.map((s) => ({ id: s.id, label: s.label, evidence: s.evidence ?? null, onRoad: !!s.onRoad, url: s.url ?? null, year: s.year ?? null }));
-	const once = <T extends { id: string }>(list: T[]) => list.filter((x, i) => list.findIndex((y) => y.id === x.id) === i);
-	const concepts = once(nb.filter((a) => a.r === 'uses' || a.r === 'related' || a.r === 'is_a').filter((a) => store.get(a.id)?.type === 'term').map((a) => brief(a.id)));
-	const entities = once(nb.filter((a) => a.r === 'about' && store.get(a.id)?.type === 'entity').map((a) => brief(a.id)));
+		.map((s) => ({
+			id: s.id,
+			label: s.label,
+			evidence: s.evidence ?? null,
+			onRoad: !!s.onRoad,
+			url: s.url ?? null,
+			year: s.year ?? null
+		}));
+	const once = <T extends { id: string }>(list: T[]) =>
+		list.filter((x, i) => list.findIndex((y) => y.id === x.id) === i);
+	const concepts = once(
+		nb
+			.filter((a) => a.r === 'uses' || a.r === 'related' || a.r === 'is_a')
+			.filter((a) => store.get(a.id)?.type === 'term')
+			.map((a) => brief(a.id))
+	);
+	const entities = once(
+		nb.filter((a) => a.r === 'about' && store.get(a.id)?.type === 'entity').map((a) => brief(a.id))
+	);
 	// A relation can be stored in both directions; show each linked fact once.
 	const seenLink = new Set<string>();
 	const linked = nb

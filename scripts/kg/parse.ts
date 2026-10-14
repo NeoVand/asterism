@@ -160,7 +160,8 @@ function splitBlocks(sec: ParsedSection, lines: Line[], out: ParsedBlock[]) {
 		}
 		if (/^>/.test(text)) {
 			const buf: string[] = [];
-			while (i < lines.length && /^>/.test(lines[i].text)) buf.push(lines[i++].text.replace(/^>\s?/, ''));
+			while (i < lines.length && /^>/.test(lines[i].text))
+				buf.push(lines[i++].text.replace(/^>\s?/, ''));
 			push('quote', buf.join(' '), n);
 			continue;
 		}
@@ -220,7 +221,10 @@ function parseSourceLine(text: string) {
 		label ??= m[1] as EvidenceLabel;
 		if (m[2]) m[2].split(/[;,]\s*/).forEach((q) => qualifiers.add(q.trim()));
 	}
-	const body = text.replace(LABEL_RE, '').replace(/https?:\/\/[^\s]+/g, '').trim();
+	const body = text
+		.replace(LABEL_RE, '')
+		.replace(/https?:\/\/[^\s]+/g, '')
+		.trim();
 	const segs = body.split(/\.\s+(?=[A-Z0-9"'“(])/).map((s) => s.trim());
 	let authors = '';
 	let title = segs[0] ?? body;
@@ -230,7 +234,14 @@ function parseSourceLine(text: string) {
 	}
 	const years = [...body.matchAll(/\b(19[5-9]\d|20[0-3]\d)\b/g)].map((m) => Number(m[1]));
 	const year = years.length ? years[years.length - 1] : null;
-	return { url, label, qualifiers: [...qualifiers], authors, title: title.replace(/\.$/, ''), year };
+	return {
+		url,
+		label,
+		qualifiers: [...qualifiers],
+		authors,
+		title: title.replace(/\.$/, ''),
+		year
+	};
 }
 
 /* ---------------------------------------------------------------------- */
@@ -348,7 +359,12 @@ export function parseCorpus(): ParsedCorpus {
 		bySection.get(b.sectionId)!.push(b);
 	}
 	for (const sec of sections) {
-		if (sec.role === 'sources' || sec.role === 'glossary-index' || sec.role === 'other' && sec.doc === 'glossary') continue;
+		if (
+			sec.role === 'sources' ||
+			sec.role === 'glossary-index' ||
+			(sec.role === 'other' && sec.doc === 'glossary')
+		)
+			continue;
 		let own = (bySection.get(sec.id) ?? []).filter((b) => b.kind !== 'figure');
 		if (sec.role === 'glossary-entry') {
 			own = own.filter((b) => !b.text.startsWith('**Related terms.**'));

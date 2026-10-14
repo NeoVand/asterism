@@ -82,7 +82,10 @@ export const SCHEMA = {
 					text: { type: 'string' },
 					quote: { type: 'string' },
 					kind: { type: 'string', enum: FACT_KINDS },
-					evidence: { type: ['string', 'null'], enum: ['Independent', 'Vendor', 'Expert opinion', null] },
+					evidence: {
+						type: ['string', 'null'],
+						enum: ['Independent', 'Vendor', 'Expert opinion', null]
+					},
 					onRoad: { type: 'boolean' },
 					cites: { type: 'array', items: { type: 'integer' } },
 					chapters: { type: 'array', items: { type: 'integer' } },
@@ -140,9 +143,12 @@ export function userPrompt(chunk: ParsedChunk, docLabel?: string): string {
 			? `Booklet, ${chunk.chapter ? `Chapter ${chunk.chapter}: ${CHAPTER_TITLES[chunk.chapter]}` : 'front matter (introduction, research map, cross-chapter synthesis)'}`
 			: `Glossary, Part ${chunk.part ?? '-'}`;
 	const roleHint: Record<string, string> = {
-		uncertain: 'This passage lists what is UNCERTAIN: use kind "uncertain" unless a fact is clearly something else.',
-		disagree: 'This passage lists where EXPERTS DISAGREE: use kind "disagreement" and state both positions.',
-		'blind-spots': 'This passage lists BLIND SPOTS (what was not found or not asked): prefer kind "gap".',
+		uncertain:
+			'This passage lists what is UNCERTAIN: use kind "uncertain" unless a fact is clearly something else.',
+		disagree:
+			'This passage lists where EXPERTS DISAGREE: use kind "disagreement" and state both positions.',
+		'blind-spots':
+			'This passage lists BLIND SPOTS (what was not found or not asked): prefer kind "gap".',
 		established: 'This passage lists what is WELL ESTABLISHED.',
 		'key-findings': "This passage is the chapter's KEY FINDINGS: importance is usually 3.",
 		'glossary-entry':
@@ -159,6 +165,10 @@ ${chunk.text}
 }
 
 export function chunkHash(chunk: ParsedChunk) {
-	return createHash('sha1').update(EXTRACT_VERSION).update(chunk.text).update(chunk.headingPath.join('/')).digest('hex').slice(0, 16);
+	return createHash('sha1')
+		.update(EXTRACT_VERSION)
+		.update(chunk.text)
+		.update(chunk.headingPath.join('/'))
+		.digest('hex')
+		.slice(0, 16);
 }
-

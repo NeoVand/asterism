@@ -35,7 +35,10 @@ const SCHEMA = {
 				properties: {
 					a: { type: 'string' },
 					b: { type: 'string' },
-					type: { type: 'string', enum: ['same', 'supports', 'contradicts', 'elaborates', 'depends'] },
+					type: {
+						type: 'string',
+						enum: ['same', 'supports', 'contradicts', 'elaborates', 'depends']
+					},
 					note: { type: 'string' }
 				}
 			}
@@ -80,7 +83,12 @@ async function main() {
 	mkdirSync(OUT, { recursive: true });
 	const hubs = [...factsOf.entries()]
 		.map(([id, fs]) => ({ hub: byId.get(id)!, facts: fs.map((f) => byId.get(f)!) }))
-		.filter(({ hub, facts }) => (hub.type === 'term' || hub.type === 'entity') && facts.length >= 3 && new Set(facts.map(loc)).size >= 2)
+		.filter(
+			({ hub, facts }) =>
+				(hub.type === 'term' || hub.type === 'entity') &&
+				facts.length >= 3 &&
+				new Set(facts.map(loc)).size >= 2
+		)
 		.sort((a, b) => b.facts.length - a.facts.length);
 	let todo = hubs;
 	const limit = arg('--limit');
@@ -88,7 +96,10 @@ async function main() {
 	const force = args.includes('--force');
 
 	const key = (hub: KGNode) => (hub.type === 'term' ? hub.id : `e:${entityKey(hub.label)}`);
-	const file = (hub: KGNode) => `${OUT}/${key(hub).replace(/[^a-z0-9:_-]+/gi, '_').slice(0, 80)}.json`;
+	const file = (hub: KGNode) =>
+		`${OUT}/${key(hub)
+			.replace(/[^a-z0-9:_-]+/gi, '_')
+			.slice(0, 80)}.json`;
 
 	const jobs = todo
 		.map(({ hub, facts }) => {
@@ -99,7 +110,8 @@ async function main() {
 				if (!byLoc.has(l)) byLoc.set(l, []);
 				byLoc.get(l)!.push(f);
 			}
-			for (const list of byLoc.values()) list.sort((a, b) => (b.importance ?? 0) - (a.importance ?? 0));
+			for (const list of byLoc.values())
+				list.sort((a, b) => (b.importance ?? 0) - (a.importance ?? 0));
 			const picked: KGNode[] = [];
 			let round = 0;
 			while (picked.length < Math.min(MAX_FACTS, facts.length)) {
@@ -114,14 +126,23 @@ async function main() {
 				round++;
 			}
 			const user = `Hub: ${hub.label} (${hub.type === 'term' ? 'glossary concept' : `entity, ${hub.entityKind}`})${hub.type === 'term' ? `\nDefinition: ${hub.text}` : ''}\n\nFacts (${picked.length} of ${facts.length}):\n${picked
-				.map((f) => `${f.id} [${loc(f)}${f.kind ? `, ${f.kind}` : ''}${f.evidence ? `, ${f.evidence}` : ''}${f.onRoad ? ', on-road' : ''}] ${f.text}`)
+				.map(
+					(f) =>
+						`${f.id} [${loc(f)}${f.kind ? `, ${f.kind}` : ''}${f.evidence ? `, ${f.evidence}` : ''}${f.onRoad ? ', on-road' : ''}] ${f.text}`
+				)
 				.join('\n')}`;
-			const hash = createHash('sha1').update(VERSION + user).digest('hex').slice(0, 16);
+			const hash = createHash('sha1')
+				.update(VERSION + user)
+				.digest('hex')
+				.slice(0, 16);
 			return { hub, user, hash, ids: new Set(picked.map((p) => p.id)) };
 		})
 		.filter((j) => {
 			if (force || !existsSync(file(j.hub))) return true;
-			return (JSON.parse(readFileSync(file(j.hub), 'utf8')) as LinkResult & { hash?: string }).hash !== j.hash;
+			return (
+				(JSON.parse(readFileSync(file(j.hub), 'utf8')) as LinkResult & { hash?: string }).hash !==
+				j.hash
+			);
 		});
 
 	console.log(`linking ${jobs.length} of ${hubs.length} hubs`);
@@ -138,13 +159,24 @@ async function main() {
 				schema: SCHEMA,
 				effort: 'low'
 			});
-			const relations = res.relations.filter((r) => j.ids.has(r.a) && j.ids.has(r.b) && r.a !== r.b);
+			const relations = res.relations.filter(
+				(r) => j.ids.has(r.a) && j.ids.has(r.b) && r.a !== r.b
+			);
 			rels += relations.length;
-			writeFileSync(file(j.hub), JSON.stringify({ key: key(j.hub), hash: j.hash, synopsis: res.synopsis, relations }, null, 1));
+			writeFileSync(
+				file(j.hub),
+				JSON.stringify(
+					{ key: key(j.hub), hash: j.hash, synopsis: res.synopsis, relations },
+					null,
+					1
+				)
+			);
 		},
 		(done, total) => {
 			if (done % 20 === 0 || done === total)
-				console.log(`  ${done}/${total} hubs, ${rels} relations, ${((Date.now() - t0) / 1000).toFixed(0)}s, tokens in ${usage.input} out ${usage.output}`);
+				console.log(
+					`  ${done}/${total} hubs, ${rels} relations, ${((Date.now() - t0) / 1000).toFixed(0)}s, tokens in ${usage.input} out ${usage.output}`
+				);
 		}
 	);
 }

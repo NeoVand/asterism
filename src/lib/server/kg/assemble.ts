@@ -55,7 +55,12 @@ export interface Resolution {
 export interface LinkResult {
 	key: string;
 	synopsis: string;
-	relations: { a: string; b: string; type: 'same' | 'supports' | 'contradicts' | 'elaborates' | 'depends'; note: string }[];
+	relations: {
+		a: string;
+		b: string;
+		type: 'same' | 'supports' | 'contradicts' | 'elaborates' | 'depends';
+		note: string;
+	}[];
 }
 
 function topicVote(votes: Map<TopicKey, number>, fallback: TopicKey): TopicKey {
@@ -118,14 +123,38 @@ export function assemble(): KGraph {
 	const partIntro = new Map<string, string>();
 	for (const sec of corpus.sections) {
 		const ch = /^Chapter (\d+):/.exec(sec.title);
-		if (sec.doc === 'booklet' && ch && !chapterIntro.has(+ch[1])) chapterIntro.set(+ch[1], intro(sec.id));
+		if (sec.doc === 'booklet' && ch && !chapterIntro.has(+ch[1]))
+			chapterIntro.set(+ch[1], intro(sec.id));
 		const part = /^Part ([A-I]):/.exec(sec.title);
-		if (sec.doc === 'glossary' && sec.role === 'glossary-guide' && part) partIntro.set(part[1], intro(sec.id));
+		if (sec.doc === 'glossary' && sec.role === 'glossary-guide' && part)
+			partIntro.set(part[1], intro(sec.id));
 	}
-	const glossaryGuide = intro(corpus.sections.find((x) => x.doc === 'glossary' && /How to use this document/i.test(x.title))?.id);
-	const synthesisIntro = intro(corpus.sections.find((x) => x.role === 'synthesis' && /Cross-chapter synthesis/i.test(x.title))?.id);
-	add({ id: 'd1', type: 'doc', label: 'Research booklet', text: 'Virtual Validation of a Collision Mitigation System for Heavy Off-Road Machines — pre-project research: thirteen questions answered from the published evidence (October 2026).', topic: 'I', chapter: null, doc: 'booklet' });
-	add({ id: 'd2', type: 'doc', label: 'Glossary & prerequisites', text: `Glossary and Prerequisites — a plain-language companion to the research booklet: every term, acronym, standard, tool, method and organization explained from zero. ${glossaryGuide}`.trim(), topic: 'B', chapter: null, doc: 'glossary' });
+	const glossaryGuide = intro(
+		corpus.sections.find((x) => x.doc === 'glossary' && /How to use this document/i.test(x.title))
+			?.id
+	);
+	const synthesisIntro = intro(
+		corpus.sections.find((x) => x.role === 'synthesis' && /Cross-chapter synthesis/i.test(x.title))
+			?.id
+	);
+	add({
+		id: 'd1',
+		type: 'doc',
+		label: 'Research booklet',
+		text: 'Virtual Validation of a Collision Mitigation System for Heavy Off-Road Machines — pre-project research: thirteen questions answered from the published evidence (October 2026).',
+		topic: 'I',
+		chapter: null,
+		doc: 'booklet'
+	});
+	add({
+		id: 'd2',
+		type: 'doc',
+		label: 'Glossary & prerequisites',
+		text: `Glossary and Prerequisites — a plain-language companion to the research booklet: every term, acronym, standard, tool, method and organization explained from zero. ${glossaryGuide}`.trim(),
+		topic: 'B',
+		chapter: null,
+		doc: 'glossary'
+	});
 	for (let c = 0; c <= 13; c++) {
 		add({
 			id: `c${c}`,
@@ -141,18 +170,44 @@ export function assemble(): KGraph {
 		link('d1', `c${c}`, 'contains');
 	}
 	for (const t of TOPICS) {
-		add({ id: `g${t.key}`, type: 'chapter', label: `Glossary Part ${t.key}: ${t.name}`, text: `Glossary Part ${t.key}: ${t.name}. ${partIntro.get(t.key) ?? ''}`.trim(), topic: t.key, chapter: null, doc: 'glossary', part: t.key });
+		add({
+			id: `g${t.key}`,
+			type: 'chapter',
+			label: `Glossary Part ${t.key}: ${t.name}`,
+			text: `Glossary Part ${t.key}: ${t.name}. ${partIntro.get(t.key) ?? ''}`.trim(),
+			topic: t.key,
+			chapter: null,
+			doc: 'glossary',
+			part: t.key
+		});
 		link('d2', `g${t.key}`, 'contains');
 	}
 
 	// Sections (booklet + glossary guide) -------------------------------------------
 	const sectionNode = new Map<string, string>(); // parsed section id → node id
 	for (const s of corpus.sections) {
-		if (s.role === 'glossary-entry' || s.role === 'glossary-index' || s.role === 'sources') continue;
-		if (s.level === 2 && s.doc === 'booklet' && /^Chapter \d+:|^Introduction$|^Research map$|^Cross-chapter synthesis$|^Part [IVX]+:/.test(s.title)) {
+		if (s.role === 'glossary-entry' || s.role === 'glossary-index' || s.role === 'sources')
+			continue;
+		if (
+			s.level === 2 &&
+			s.doc === 'booklet' &&
+			/^Chapter \d+:|^Introduction$|^Research map$|^Cross-chapter synthesis$|^Part [IVX]+:/.test(
+				s.title
+			)
+		) {
 			sectionNode.set(s.id, s.chapter != null ? `c${s.chapter}` : 'd1');
 			if (/^Introduction$|^Research map$|^Cross-chapter synthesis$/.test(s.title)) {
-				add({ id: s.id, type: 'section', label: s.title, text: s.path.join(' › '), topic: 'I', chapter: 0, doc: 'booklet', path: s.path, role: s.role });
+				add({
+					id: s.id,
+					type: 'section',
+					label: s.title,
+					text: s.path.join(' › '),
+					topic: 'I',
+					chapter: 0,
+					doc: 'booklet',
+					path: s.path,
+					role: s.role
+				});
 				sectionNode.set(s.id, s.id);
 				link('c0', s.id, 'contains');
 			}
@@ -166,7 +221,17 @@ export function assemble(): KGraph {
 			}
 		}
 		const topic: TopicKey = s.doc === 'booklet' ? CHAPTER_TOPIC[s.chapter ?? 0] : (s.part ?? 'B');
-		add({ id: s.id, type: 'section', label: s.title, text: s.path.join(' › '), topic, chapter: s.chapter, doc: s.doc, path: s.path, role: s.role });
+		add({
+			id: s.id,
+			type: 'section',
+			label: s.title,
+			text: s.path.join(' › '),
+			topic,
+			chapter: s.chapter,
+			doc: s.doc,
+			path: s.path,
+			role: s.role
+		});
 		sectionNode.set(s.id, s.id);
 		const parent = s.parentId ? sectionNode.get(s.parentId) : null;
 		link(parent ?? (s.doc === 'booklet' ? `c${s.chapter ?? 0}` : 'd2'), s.id, 'contains');
@@ -204,8 +269,11 @@ export function assemble(): KGraph {
 			})
 			.map((t) => t.id)
 	);
-	const titleKey = new Map(corpus.terms.map((t) => [t.id, entityKey(t.title.replace(/\s*\(.*?\)\s*/g, ' '))]));
-	const mergesInto = (name: string, termId: string) => !groupTerm.has(termId) || entityKey(name) === titleKey.get(termId);
+	const titleKey = new Map(
+		corpus.terms.map((t) => [t.id, entityKey(t.title.replace(/\s*\(.*?\)\s*/g, ' '))])
+	);
+	const mergesInto = (name: string, termId: string) =>
+		!groupTerm.has(termId) || entityKey(name) === titleKey.get(termId);
 	for (const t of corpus.terms) {
 		for (const slug of t.related) {
 			const o = termBySlug.get(slug);
@@ -216,7 +284,10 @@ export function assemble(): KGraph {
 
 	// Sources --------------------------------------------------------------------
 	const sourceRef = new Map<string, string>(); // `${chapter}:${num}` → source id
-	const sourceMeta: Record<string, { title: string; by: string; year: number | null; kind: string }> = existsSync(`${DATA}/sources.json`)
+	const sourceMeta: Record<
+		string,
+		{ title: string; by: string; year: number | null; kind: string }
+	> = existsSync(`${DATA}/sources.json`)
 		? JSON.parse(readFileSync(`${DATA}/sources.json`, 'utf8'))
 		: {};
 	// The same work is often cited from several URLs (publisher, PMC, a PDF mirror): merge
@@ -256,14 +327,18 @@ export function assemble(): KGraph {
 
 	// Facts ----------------------------------------------------------------------
 	const chunkById = new Map(corpus.chunks.map((c) => [c.id, c]));
-	const files = existsSync(`${DATA}/extract`) ? readdirSync(`${DATA}/extract`).filter((f) => f.endsWith('.json')) : [];
+	const files = existsSync(`${DATA}/extract`)
+		? readdirSync(`${DATA}/extract`).filter((f) => f.endsWith('.json'))
+		: [];
 	files.sort((a, b) => Number(a.slice(1, -5)) - Number(b.slice(1, -5)));
 	const entityNodes = new Map<string, KGNode>();
 	const entityVotes = new Map<string, Map<TopicKey, number>>();
 	const termOfEntry = new Map(corpus.terms.map((t) => [t.sectionId, t.id]));
 	// Stable fact ids across rebuilds: chunk + text hash → id, persisted.
 	const idFile = `${DATA}/fact-ids.json`;
-	const factIds: Record<string, string> = existsSync(idFile) ? JSON.parse(readFileSync(idFile, 'utf8')) : {};
+	const factIds: Record<string, string> = existsSync(idFile)
+		? JSON.parse(readFileSync(idFile, 'utf8'))
+		: {};
 	let nextId = Object.values(factIds).reduce((m, id) => Math.max(m, Number(id.slice(1))), 0);
 	const usedIds = new Set<string>();
 	const pairs: { res: ExtractResult; chunk: ParsedChunk }[] = [];
@@ -274,9 +349,27 @@ export function assemble(): KGraph {
 	}
 	// Uploaded documents: a doc node, its sections, and its chunks' facts in the same pipeline.
 	for (const u of listUploads()) {
-		add({ id: u.id, type: 'doc', label: u.name, text: `Uploaded document: ${u.name} (${u.createdAt.slice(0, 10)})`, topic: 'I', chapter: null, doc: 'upload' });
+		add({
+			id: u.id,
+			type: 'doc',
+			label: u.name,
+			text: `Uploaded document: ${u.name} (${u.createdAt.slice(0, 10)})`,
+			topic: 'I',
+			chapter: null,
+			doc: 'upload'
+		});
 		for (const sec of u.sections) {
-			add({ id: sec.id, type: 'section', label: sec.title, text: sec.path.join(' › '), topic: 'I', chapter: null, doc: 'upload', path: sec.path, role: 'detailed' });
+			add({
+				id: sec.id,
+				type: 'section',
+				label: sec.title,
+				text: sec.path.join(' › '),
+				topic: 'I',
+				chapter: null,
+				doc: 'upload',
+				path: sec.path,
+				role: 'detailed'
+			});
 			sectionNode.set(sec.id, sec.id);
 			link(u.id, sec.id, 'contains');
 		}
@@ -286,7 +379,8 @@ export function assemble(): KGraph {
 		}
 	}
 	for (const { res, chunk } of pairs) {
-		const entryTerm = chunk.role === 'glossary-entry' ? termOfEntry.get(chunk.sectionId) : undefined;
+		const entryTerm =
+			chunk.role === 'glossary-entry' ? termOfEntry.get(chunk.sectionId) : undefined;
 		const texts = new Set<string>();
 		for (const x of res.facts) {
 			// The extractor occasionally repeats a fact verbatim within a chunk.
@@ -298,8 +392,10 @@ export function assemble(): KGraph {
 			usedIds.add(id);
 			// Topic vote: chapter prior, glossary part, then the concepts the fact uses.
 			const votes = new Map<TopicKey, number>();
-			const vote = (k: TopicKey | null | undefined, w: number) => k && votes.set(k, (votes.get(k) ?? 0) + w);
-			if (chunk.doc === 'booklet') vote(CHAPTER_TOPIC[chunk.chapter ?? 0], chunk.chapter ? 1.6 : 0.5);
+			const vote = (k: TopicKey | null | undefined, w: number) =>
+				k && votes.set(k, (votes.get(k) ?? 0) + w);
+			if (chunk.doc === 'booklet')
+				vote(CHAPTER_TOPIC[chunk.chapter ?? 0], chunk.chapter ? 1.6 : 0.5);
 			if (chunk.part) vote(chunk.part, 3);
 			x.terms.forEach((t, i) => vote(byId.get(t)?.topic, i === 0 ? 1.2 : 0.7));
 			const topic = topicVote(votes, chunk.part ?? CHAPTER_TOPIC[chunk.chapter ?? 0]);
@@ -327,7 +423,9 @@ export function assemble(): KGraph {
 					if (s) link(id, s, 'cites');
 				}
 			}
-			for (const c of x.chapters) if (c >= 0 && c <= 13 && (chunk.doc === 'glossary' || c !== chunk.chapter)) link(id, `c${c}`, 'discussed_in');
+			for (const c of x.chapters)
+				if (c >= 0 && c <= 13 && (chunk.doc === 'glossary' || c !== chunk.chapter))
+					link(id, `c${c}`, 'discussed_in');
 			const termsUsed = new Set(x.terms);
 			if (entryTerm) termsUsed.add(entryTerm);
 			for (const t of termsUsed) if (byId.has(t)) link(id, t, 'uses');
@@ -350,7 +448,10 @@ export function assemble(): KGraph {
 					}
 					isA = tid;
 				}
-				const canonical = resolved && !('term' in resolved) ? resolved : { name: ent.name, kind: ent.kind as EntityKind };
+				const canonical =
+					resolved && !('term' in resolved)
+						? resolved
+						: { name: ent.name, kind: ent.kind as EntityKind };
 				const ck = entityKey(canonical.name);
 				let en = entityNodes.get(ck);
 				if (!en) {
@@ -382,13 +483,19 @@ export function assemble(): KGraph {
 	for (const n of nodes) {
 		if (n.doc !== 'upload' || (n.type !== 'section' && n.type !== 'doc')) continue;
 		const v = new Map<TopicKey, number>();
-		const facts = n.type === 'section' ? edges.filter((e) => e.s === n.id && e.r === 'states').map((e) => byId.get(e.t)!) : nodes.filter((m) => m.type === 'fact' && m.doc === 'upload' && m.sectionId?.startsWith(n.id));
+		const facts =
+			n.type === 'section'
+				? edges.filter((e) => e.s === n.id && e.r === 'states').map((e) => byId.get(e.t)!)
+				: nodes.filter(
+						(m) => m.type === 'fact' && m.doc === 'upload' && m.sectionId?.startsWith(n.id)
+					);
 		for (const f of facts) v.set(f.topic, (v.get(f.topic) ?? 0) + 1);
 		n.topic = topicVote(v, 'I');
 	}
 
 	// Entity and source topics by majority of their facts.
-	for (const [eid, votes] of entityVotes) byId.get(eid)!.topic = topicVote(votes, byId.get(eid)!.topic);
+	for (const [eid, votes] of entityVotes)
+		byId.get(eid)!.topic = topicVote(votes, byId.get(eid)!.topic);
 	const srcVotes = new Map<string, Map<TopicKey, number>>();
 	for (const e of edges) {
 		if (e.r !== 'cites') continue;
@@ -404,16 +511,21 @@ export function assemble(): KGraph {
 		for (const f of readdirSync(`${DATA}/links`)) {
 			if (!f.endsWith('.json')) continue;
 			const lr: LinkResult = JSON.parse(readFileSync(`${DATA}/links/${f}`, 'utf8'));
-			const target = lr.key.startsWith('t') ? byId.get(lr.key) : [...entityNodes.values()].find((e) => entityKey(e.label) === lr.key.slice(2));
+			const target = lr.key.startsWith('t')
+				? byId.get(lr.key)
+				: [...entityNodes.values()].find((e) => entityKey(e.label) === lr.key.slice(2));
 			if (target && lr.synopsis) target.synopsis = lr.synopsis;
-			for (const r of lr.relations) if (byId.has(r.a) && byId.has(r.b)) link(r.a, r.b, r.type, r.note);
+			for (const r of lr.relations)
+				if (byId.has(r.a) && byId.has(r.b)) link(r.a, r.b, r.type, r.note);
 		}
 	}
 
 	// Drop structural sections that ended up empty (no facts, no children).
 	const outDeg = new Map<string, number>();
 	for (const e of edges) outDeg.set(e.s, (outDeg.get(e.s) ?? 0) + 1);
-	const drop = new Set(nodes.filter((n) => n.type === 'section' && !outDeg.get(n.id)).map((n) => n.id));
+	const drop = new Set(
+		nodes.filter((n) => n.type === 'section' && !outDeg.get(n.id)).map((n) => n.id)
+	);
 	return {
 		version: 1,
 		builtAt: new Date().toISOString(),

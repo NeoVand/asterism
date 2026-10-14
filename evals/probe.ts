@@ -41,7 +41,9 @@ const SCENARIOS: Record<string, string[]> = {
 		'How does the winter recording issue connect to the statistics on how many trials we need?',
 		'Is there any tension between what the regulations require and what the vendors claim?'
 	],
-	priorwork: ['Find me the strongest independent studies on simulating radar, and tell me what they showed.'],
+	priorwork: [
+		'Find me the strongest independent studies on simulating radar, and tell me what they showed.'
+	],
 	planner: [
 		'Help me build a phased plan to validate the new collision mitigation system before the prototype arrives in mid-2027.',
 		'Make the first phase more concrete: who does what in the next eight weeks?'
@@ -75,18 +77,25 @@ async function run(id: string) {
 		let text = '';
 		const steps: string[] = [];
 		let ms = 0;
-		for await (const ev of runTurn(req, { apiKey: env.OPENAI_API_KEY, model: 'gpt-6.1-sol' }) as AsyncGenerator<ChatEvent>) {
+		for await (const ev of runTurn(req, {
+			apiKey: env.OPENAI_API_KEY,
+			model: 'gpt-6.1-sol'
+		}) as AsyncGenerator<ChatEvent>) {
 			if (ev.t === 'text') text += ev.delta;
-			else if (ev.t === 'tool') steps.push(`${ev.agent === 'main' ? '' : '  ↳ '}${ev.name} ${JSON.stringify(ev.args).slice(0, 140)}`);
+			else if (ev.t === 'tool')
+				steps.push(
+					`${ev.agent === 'main' ? '' : '  ↳ '}${ev.name} ${JSON.stringify(ev.args).slice(0, 140)}`
+				);
 			else if (ev.t === 'ui') steps.push(`[ui block: ${ev.block.type}]`);
 			else if (ev.t === 'interrupt') {
 				steps.push(`[asked: ${ev.form.questions.map((q) => q.label).join(' | ')}]`);
 				pending = answerForm(ev.form);
-			}
-			else if (ev.t === 'error') text += `\n[ERROR ${ev.message}]`;
+			} else if (ev.t === 'error') text += `\n[ERROR ${ev.message}]`;
 			else if (ev.t === 'done') ms = ev.ms;
 		}
-		out.push(`<details><summary>${steps.length} tool calls · ${(ms / 1000).toFixed(0)}s</summary>\n\n${steps.map((s) => `- ${s}`).join('\n')}\n</details>\n`);
+		out.push(
+			`<details><summary>${steps.length} tool calls · ${(ms / 1000).toFixed(0)}s</summary>\n\n${steps.map((s) => `- ${s}`).join('\n')}\n</details>\n`
+		);
 		out.push(`## Agent\n${text}\n`);
 	}
 	mkdirSync(`${ROOT}evals/out/probe`, { recursive: true });

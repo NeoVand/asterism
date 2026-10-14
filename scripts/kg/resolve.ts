@@ -16,9 +16,18 @@ const ROOT = new URL('../../', import.meta.url).pathname;
 const DATA = `${ROOT}data/kg`;
 
 const GROUPS: { name: string; kinds: string[] }[] = [
-	{ name: 'organizations, companies, programs, places, people', kinds: ['organization', 'company', 'program', 'place', 'person'] },
-	{ name: 'standards, regulations, publications, datasets', kinds: ['standard', 'regulation', 'publication', 'dataset'] },
-	{ name: 'products, tools, methods, machines, metrics, other', kinds: ['product', 'tool', 'method', 'machine', 'metric', 'other'] }
+	{
+		name: 'organizations, companies, programs, places, people',
+		kinds: ['organization', 'company', 'program', 'place', 'person']
+	},
+	{
+		name: 'standards, regulations, publications, datasets',
+		kinds: ['standard', 'regulation', 'publication', 'dataset']
+	},
+	{
+		name: 'products, tools, methods, machines, metrics, other',
+		kinds: ['product', 'tool', 'method', 'machine', 'metric', 'other']
+	}
 ];
 
 const SCHEMA = {
@@ -36,7 +45,23 @@ const SCHEMA = {
 					canonical: { type: 'string' },
 					kind: {
 						type: 'string',
-						enum: ['organization', 'company', 'standard', 'regulation', 'product', 'tool', 'method', 'machine', 'program', 'place', 'person', 'dataset', 'publication', 'metric', 'other']
+						enum: [
+							'organization',
+							'company',
+							'standard',
+							'regulation',
+							'product',
+							'tool',
+							'method',
+							'machine',
+							'program',
+							'place',
+							'person',
+							'dataset',
+							'publication',
+							'metric',
+							'other'
+						]
 					},
 					members: { type: 'array', items: { type: 'string' } },
 					term: { type: ['string', 'null'] }
@@ -58,12 +83,18 @@ async function main() {
 				const v = names.get(k) ?? { name: e.name, kinds: new Map(), count: 0 };
 				v.count++;
 				v.kinds.set(e.kind, (v.kinds.get(e.kind) ?? 0) + 1);
-				if (e.name.length > v.name.length && e.name.toLowerCase() === v.name.toLowerCase()) v.name = e.name;
+				if (e.name.length > v.name.length && e.name.toLowerCase() === v.name.toLowerCase())
+					v.name = e.name;
 				names.set(k, v);
 			}
 	}
-	const kindOf = (v: { kinds: Map<string, number> }) => [...v.kinds.entries()].sort((a, b) => b[1] - a[1])[0][0];
-	const vocab = corpus.terms.map((t) => `${t.id} ${t.title}${t.aliases.length ? ` [${t.aliases.slice(0, 6).join('; ')}]` : ''}`).join('\n');
+	const kindOf = (v: { kinds: Map<string, number> }) =>
+		[...v.kinds.entries()].sort((a, b) => b[1] - a[1])[0][0];
+	const vocab = corpus.terms
+		.map(
+			(t) => `${t.id} ${t.title}${t.aliases.length ? ` [${t.aliases.slice(0, 6).join('; ')}]` : ''}`
+		)
+		.join('\n');
 	const system = `You resolve named entities extracted from a research booklet on validating a collision mitigation (automatic braking) system for heavy off-road machines, and its glossary.
 
 Given a list of entity names (with their kind and mention count), return GROUPS:
@@ -80,7 +111,9 @@ ${vocab}`;
 			.filter(([, v]) => g.kinds.includes(kindOf(v)))
 			.sort((a, b) => a[0].localeCompare(b[0]));
 		console.log(`resolving ${list.length} ${g.name}`);
-		const res = await jsonCall<{ groups: { canonical: string; kind: string; members: string[]; term: string | null }[] }>({
+		const res = await jsonCall<{
+			groups: { canonical: string; kind: string; members: string[]; term: string | null }[];
+		}>({
 			system,
 			user: `Entities (${g.name}):\n${list.map(([, v]) => `${v.name} (${kindOf(v)}, ${v.count})`).join('\n')}`,
 			schemaName: 'resolution',
@@ -93,14 +126,19 @@ ${vocab}`;
 			for (const m of grp.members) {
 				const k = entityKey(m);
 				if (!names.has(k)) continue;
-				map[k] = grp.term && termIds.has(grp.term) ? { term: grp.term } : { name: grp.canonical, kind: grp.kind as never };
+				map[k] =
+					grp.term && termIds.has(grp.term)
+						? { term: grp.term }
+						: { name: grp.canonical, kind: grp.kind as never };
 			}
 		}
 		console.log(`  ${g.name}: ${res.groups.length} groups`);
 	});
 	writeFileSync(`${DATA}/entities.json`, JSON.stringify({ map } satisfies Resolution, null, 1));
 	const toTerm = Object.values(map).filter((v) => 'term' in v).length;
-	console.log(`resolved ${Object.keys(map).length} names (${toTerm} → concepts); tokens in ${usage.input} out ${usage.output}`);
+	console.log(
+		`resolved ${Object.keys(map).length} names (${toTerm} → concepts); tokens in ${usage.input} out ${usage.output}`
+	);
 }
 
 main();

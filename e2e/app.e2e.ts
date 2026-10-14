@@ -16,7 +16,9 @@ test('search palette finds a node and opens its card', async ({ page }) => {
 	const input = page.getByPlaceholder('Search facts, concepts, standards, sources…');
 	await expect(input).toBeFocused();
 	await input.fill('Volvo CE Collision Mitigation System');
-	await expect(page.getByRole('dialog', { name: 'Search the graph' }).getByRole('button').first()).toBeVisible();
+	await expect(
+		page.getByRole('dialog', { name: 'Search the graph' }).getByRole('button').first()
+	).toBeVisible();
 	await page.keyboard.press('Enter');
 	await expect(page.getByRole('heading', { name: /Volvo CE/ })).toBeVisible();
 	await expect(page.getByText('Light neighbors')).toBeVisible();
@@ -28,8 +30,12 @@ test('a fact card with restatements opens without errors', async ({ page }) => {
 	await page.goto('/');
 	await expect(page.getByText(/nodes$/).first()).toBeVisible({ timeout: 30_000 });
 	await page.keyboard.press('Meta+k');
-	await page.getByPlaceholder('Search facts, concepts, standards, sources…').fill('299 independent trials miss rate');
-	await expect(page.getByRole('dialog', { name: 'Search the graph' }).getByRole('button').first()).toBeVisible();
+	await page
+		.getByPlaceholder('Search facts, concepts, standards, sources…')
+		.fill('299 independent trials miss rate');
+	await expect(
+		page.getByRole('dialog', { name: 'Search the graph' }).getByRole('button').first()
+	).toBeVisible();
 	await page.keyboard.press('Enter');
 	await expect(page.getByText('Connected elsewhere')).toBeVisible();
 	await expect(page.getByText(/Restated in/).first()).toBeVisible();

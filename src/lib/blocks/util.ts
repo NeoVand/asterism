@@ -89,7 +89,11 @@ export interface YMD {
 
 /** The viewer's local date. */
 const now = new Date();
-export const TODAY: Required<YMD> = { y: now.getFullYear(), m: now.getMonth() + 1, d: now.getDate() };
+export const TODAY: Required<YMD> = {
+	y: now.getFullYear(),
+	m: now.getMonth() + 1,
+	d: now.getDate()
+};
 
 /** Parses `YYYY-MM-DD` or `YYYY-MM`; anything else → null. */
 export function parseDate(s: string | undefined | null): YMD | null {

@@ -11,7 +11,8 @@ function read() {
 	}
 }
 
-export const GET: RequestHandler = () => json({ content: read(), empty: read().trim() === MEMORY_TEMPLATE.trim() });
+export const GET: RequestHandler = () =>
+	json({ content: read(), empty: read().trim() === MEMORY_TEMPLATE.trim() });
 
 export const DELETE: RequestHandler = () => {
 	writeFileSync(MEMORY_FILE, MEMORY_TEMPLATE);

@@ -38,6 +38,8 @@
 	{/if}
 
 	{#snippet failed()}
-		<div class="rounded-xl bg-white/[0.02] px-3.5 py-2.5 text-[12px] text-fg-3">This {block.type} block could not be drawn.</div>
+		<div class="rounded-xl bg-white/[0.02] px-3.5 py-2.5 text-[12px] text-fg-3">
+			This {block.type} block could not be drawn.
+		</div>
 	{/snippet}
 </svelte:boundary>

@@ -51,7 +51,8 @@
 	$effect(() => {
 		// track content growth
 		void JSON.stringify(messages.map((m) => [m.parts.length, m.steps.length, m.parts.at(-1)]));
-		if (stick && scroller) requestAnimationFrame(() => scroller?.scrollTo({ top: scroller.scrollHeight }));
+		if (stick && scroller)
+			requestAnimationFrame(() => scroller?.scrollTo({ top: scroller.scrollHeight }));
 	});
 
 	function onscroll() {
@@ -75,7 +76,9 @@
 />
 
 <section class="glass relative flex h-full flex-col overflow-hidden rounded-2xl">
-	<header class="relative z-20 flex h-12 shrink-0 items-center gap-1 border-b border-white/[0.05] px-3">
+	<header
+		class="relative z-20 flex h-12 shrink-0 items-center gap-1 border-b border-white/[0.05] px-3"
+	>
 		<div class="min-w-0 flex-1 pl-1">
 			{#key thread?.id}
 				<div class="truncate text-[13px] font-medium text-fg" in:fade={{ duration: 200 }}>
@@ -85,7 +88,9 @@
 		</div>
 		<button
 			type="button"
-			class="rounded-lg p-1.5 text-fg-3 transition-colors hover:bg-white/[0.05] hover:text-fg {historyOpen ? 'bg-white/[0.06] text-fg' : ''}"
+			class="rounded-lg p-1.5 text-fg-3 transition-colors hover:bg-white/[0.05] hover:text-fg {historyOpen
+				? 'bg-white/[0.06] text-fg'
+				: ''}"
 			onclick={() => (historyOpen = !historyOpen)}
 			aria-label="Conversations"
 			use:tip={'Conversations'}
@@ -127,7 +132,8 @@
 				{:else}
 					{#each chat.threads as t (t.id)}
 						<div
-							class="group flex items-center gap-2 rounded-lg px-2.5 py-2 transition-colors hover:bg-white/[0.05] {t.id === chat.currentId
+							class="group flex items-center gap-2 rounded-lg px-2.5 py-2 transition-colors hover:bg-white/[0.05] {t.id ===
+							chat.currentId
 								? 'bg-white/[0.06]'
 								: ''}"
 						>
@@ -141,7 +147,8 @@
 							>
 								{t.title}
 							</button>
-							<span class="shrink-0 font-mono text-[10.5px] text-fg-4">{relative(t.updatedAt)}</span>
+							<span class="shrink-0 font-mono text-[10.5px] text-fg-4">{relative(t.updatedAt)}</span
+							>
 							<button
 								type="button"
 								class="shrink-0 rounded p-0.5 text-fg-4 opacity-0 transition-opacity group-hover:opacity-100 hover:text-bad"
@@ -164,11 +171,22 @@
 			<div class="space-y-6 px-4 pt-5 pb-8">
 				{#each messages as m, i (m.id)}
 					<svelte:boundary onerror={(e) => console.error('message failed to render', e)}>
-						<MessageView msg={m} last={i === messages.length - 1} onanswer={(a) => chat.resume(a)} />
+						<MessageView
+							msg={m}
+							last={i === messages.length - 1}
+							onanswer={(a) => chat.resume(a)}
+						/>
 						{#snippet failed(error, reset)}
-							<div class="rounded-xl bg-white/[0.02] px-3.5 py-2.5 text-[12px] text-fg-3" title={String(error)}>
+							<div
+								class="rounded-xl bg-white/[0.02] px-3.5 py-2.5 text-[12px] text-fg-3"
+								title={String(error)}
+							>
 								This message could not be shown.
-								<button type="button" class="ml-1 text-fg-2 underline-offset-2 hover:underline" onclick={reset}>Try again</button>
+								<button
+									type="button"
+									class="ml-1 text-fg-2 underline-offset-2 hover:underline"
+									onclick={reset}>Try again</button
+								>
 							</div>
 						{/snippet}
 					</svelte:boundary>
@@ -178,7 +196,9 @@
 	</div>
 
 	<div class="relative shrink-0 px-3 pb-3">
-		<div class="pointer-events-none absolute -top-8 right-0 left-0 h-8 bg-gradient-to-t from-ink-900/60 to-transparent"></div>
+		<div
+			class="pointer-events-none absolute -top-8 right-0 left-0 h-8 bg-gradient-to-t from-ink-900/60 to-transparent"
+		></div>
 		<UploadCard onshow={onshowupload} onask={(t) => composer?.fill(t, true)} />
 		<input
 			bind:this={fileInput}

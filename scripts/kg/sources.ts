@@ -39,7 +39,20 @@ const SCHEMA = {
 					year: { type: ['integer', 'null'] },
 					kind: {
 						type: 'string',
-						enum: ['paper', 'standard', 'regulation', 'report', 'guidance', 'vendor', 'press', 'web', 'dataset', 'thesis', 'book', 'other']
+						enum: [
+							'paper',
+							'standard',
+							'regulation',
+							'report',
+							'guidance',
+							'vendor',
+							'press',
+							'web',
+							'dataset',
+							'thesis',
+							'book',
+							'other'
+						]
 					}
 				}
 			}
@@ -49,7 +62,9 @@ const SCHEMA = {
 
 async function main() {
 	const corpus: ParsedCorpus = JSON.parse(readFileSync(`${DATA}/parsed.json`, 'utf8'));
-	const done: Record<string, SourceMeta> = existsSync(OUT) ? JSON.parse(readFileSync(OUT, 'utf8')) : {};
+	const done: Record<string, SourceMeta> = existsSync(OUT)
+		? JSON.parse(readFileSync(OUT, 'utf8'))
+		: {};
 	const todo = corpus.sources.filter((s) => !done[s.id]);
 	const batches: (typeof todo)[] = [];
 	for (let i = 0; i < todo.length; i += 40) batches.push(todo.slice(i, i + 40));
@@ -68,11 +83,14 @@ Keep ids unchanged.`,
 			effort: 'low'
 		});
 		for (const it of res.items) {
-			if (batch.some((s) => s.id === it.id)) done[it.id] = { title: it.title, by: it.by, year: it.year, kind: it.kind };
+			if (batch.some((s) => s.id === it.id))
+				done[it.id] = { title: it.title, by: it.by, year: it.year, kind: it.kind };
 		}
 		writeFileSync(OUT, JSON.stringify(done, null, 1));
 	});
-	console.log(`done: ${Object.keys(done).length} sources; tokens in ${usage.input} out ${usage.output}`);
+	console.log(
+		`done: ${Object.keys(done).length} sources; tokens in ${usage.input} out ${usage.output}`
+	);
 }
 
 main();

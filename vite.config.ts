@@ -8,7 +8,9 @@ import { sveltekit } from '@sveltejs/kit/vite';
 export default defineConfig({
 	server: {
 		// Graph rebuilds, uploads, memories and eval reports are data, not source: never reload for them.
-		watch: { ignored: ['**/data/**', '**/evals/out/**', '**/test-results/**', '**/agent/skills/**'] }
+		watch: {
+			ignored: ['**/data/**', '**/evals/out/**', '**/test-results/**', '**/agent/skills/**']
+		}
 	},
 	plugins: [
 		tailwindcss(),

@@ -6,7 +6,15 @@
 import MiniSearch from 'minisearch';
 import { existsSync, readFileSync, statSync } from 'node:fs';
 import { resolve } from 'node:path';
-import type { KGEdge, KGNode, KGraph, NodeType, ParsedCorpus, ParsedSection, RelType } from '#lib/kg/types.ts';
+import type {
+	KGEdge,
+	KGNode,
+	KGraph,
+	NodeType,
+	ParsedCorpus,
+	ParsedSection,
+	RelType
+} from '#lib/kg/types.ts';
 import { CHAPTER_TITLES, TOPICS } from '#lib/kg/types.ts';
 import type { GraphWire } from '#lib/graph/types.ts';
 import { listUploads } from './assemble.ts';
@@ -180,7 +188,9 @@ export class GraphStore {
 		if (!existsSync(path)) throw new Error(`knowledge graph not built: ${path}`);
 		this.mtime = statSync(path).mtimeMs;
 		this.graph = JSON.parse(readFileSync(path, 'utf8')) as KGraph;
-		this.corpus = JSON.parse(readFileSync(resolve(this.root, 'data/kg/parsed.json'), 'utf8')) as ParsedCorpus;
+		this.corpus = JSON.parse(
+			readFileSync(resolve(this.root, 'data/kg/parsed.json'), 'utf8')
+		) as ParsedCorpus;
 		this.nodes = this.graph.nodes;
 		this.byId.clear();
 		this.index.clear();
@@ -199,7 +209,20 @@ export class GraphStore {
 		for (const u of listUploads()) {
 			for (const sec of u.sections) {
 				this.uploadSections.set(sec.id, sec.text);
-				this.sectionById.set(sec.id, { id: sec.id, doc: 'upload', level: sec.path.length, title: sec.title, slug: sec.id, parentId: null, chapter: null, part: null, role: 'detailed', path: sec.path, startLine: 0, endLine: 0 });
+				this.sectionById.set(sec.id, {
+					id: sec.id,
+					doc: 'upload',
+					level: sec.path.length,
+					title: sec.title,
+					slug: sec.id,
+					parentId: null,
+					chapter: null,
+					part: null,
+					role: 'detailed',
+					path: sec.path,
+					startLine: 0,
+					endLine: 0
+				});
 			}
 		}
 		this.chapterFacts.clear();
@@ -209,14 +232,21 @@ export class GraphStore {
 			this.chapterFacts.get(n.chapter)!.push(n);
 		}
 		this.raw = {
-			booklet: readFileSync(resolve(this.root, 'references/CMS-Research-Booklet.md'), 'utf8').split('\n'),
-			glossary: readFileSync(resolve(this.root, 'references/CMS-Glossary-and-Prerequisites.md'), 'utf8').split('\n')
+			booklet: readFileSync(resolve(this.root, 'references/CMS-Research-Booklet.md'), 'utf8').split(
+				'\n'
+			),
+			glossary: readFileSync(
+				resolve(this.root, 'references/CMS-Glossary-and-Prerequisites.md'),
+				'utf8'
+			).split('\n')
 		};
 
 		// Alias expansion: acronym or alternative name → the concept's title words.
 		this.aliasIndex.clear();
 		for (const [alias, title] of EXTRA_ALIASES) {
-			const t = this.nodes.find((n) => n.type === 'term' && n.label.toLowerCase().startsWith(title));
+			const t = this.nodes.find(
+				(n) => n.type === 'term' && n.label.toLowerCase().startsWith(title)
+			);
 			if (t) this.aliasIndex.set(alias, [t.id]);
 		}
 		for (const n of this.nodes) {
@@ -256,7 +286,8 @@ export class GraphStore {
 	}
 
 	private contextText(n: KGNode): string {
-		if (n.type === 'fact' && n.sectionId) return this.sectionById.get(n.sectionId)?.path.slice(-2).join(' ') ?? '';
+		if (n.type === 'fact' && n.sectionId)
+			return this.sectionById.get(n.sectionId)?.path.slice(-2).join(' ') ?? '';
 		if (n.type === 'section') return (n.path ?? []).join(' ');
 		return '';
 	}
@@ -284,8 +315,12 @@ export class GraphStore {
 		const lower = q.toLowerCase();
 		for (const [alias, ids] of this.aliasIndex) {
 			if (alias.length < 2) continue;
-			const re = new RegExp(`(^|[^a-z0-9])${alias.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}($|[^a-z0-9])`, 'i');
-			if (re.test(lower)) for (const id of ids) extra.push(this.byId.get(id)!.label.replace(/\(.*?\)/g, ''));
+			const re = new RegExp(
+				`(^|[^a-z0-9])${alias.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}($|[^a-z0-9])`,
+				'i'
+			);
+			if (re.test(lower))
+				for (const id of ids) extra.push(this.byId.get(id)!.label.replace(/\(.*?\)/g, ''));
 		}
 		return extra.length ? `${q} ${extra.join(' ')}` : q;
 	}
@@ -298,7 +333,8 @@ export class GraphStore {
 				const n = this.byId.get(r.id as string);
 				if (!n) return false;
 				if (opts.types && !opts.types.includes(n.type)) return false;
-				if (opts.chapters && (n.chapter == null || !opts.chapters.includes(n.chapter))) return false;
+				if (opts.chapters && (n.chapter == null || !opts.chapters.includes(n.chapter)))
+					return false;
 				if (opts.kinds && (!n.kind || !opts.kinds.includes(n.kind))) return false;
 				if (near && !near.has(n.id)) return false;
 				if (opts.roles && !opts.roles.includes(this.roleOf(n) ?? '')) return false;
@@ -325,7 +361,10 @@ export class GraphStore {
 	/** BM25 scores of a query restricted to a given set of node ids (question-focused views). */
 	scoreWithin(query: string, ids: Set<string>): Map<string, number> {
 		const out = new Map<string, number>();
-		for (const r of this.mini.search(this.expandQuery(query), { filter: (x) => ids.has(x.id as string) })) out.set(r.id as string, r.score);
+		for (const r of this.mini.search(this.expandQuery(query), {
+			filter: (x) => ids.has(x.id as string)
+		}))
+			out.set(r.id as string, r.score);
 		return out;
 	}
 
@@ -371,7 +410,13 @@ export class GraphStore {
 				for (const nb of this.adj.get(cur) ?? []) {
 					if (prev.has(nb.id) || banned.has(nb.id)) continue;
 					const n = this.byId.get(nb.id)!;
-					if (nb.id !== b && (n.type === 'doc' || n.type === 'chapter' || (n.type === 'section' && this.degree(nb.id) > 60))) continue;
+					if (
+						nb.id !== b &&
+						(n.type === 'doc' ||
+							n.type === 'chapter' ||
+							(n.type === 'section' && this.degree(nb.id) > 60))
+					)
+						continue;
 					prev.set(nb.id, cur);
 					if (nb.id === b) {
 						found = true;
@@ -414,7 +459,11 @@ export class GraphStore {
 	}
 
 	/** Raw markdown of a section (with its subsections), paginated by characters. */
-	sectionText(id: string, offset = 0, max = 6000): { text: string; total: number; next: number | null } {
+	sectionText(
+		id: string,
+		offset = 0,
+		max = 6000
+	): { text: string; total: number; next: number | null } {
 		const up = this.uploadSections.get(id);
 		if (up) {
 			const text = up.slice(offset, offset + max);
@@ -443,7 +492,9 @@ export class GraphStore {
 		if (n.type === 'section') return (n.path ?? []).join(' › ');
 		if (n.type === 'source') {
 			const chs = this.sourceChapters(n.id);
-			return chs.length ? `Cited in ${chs.map((c) => (c ? `Ch ${c}` : 'the introduction')).join(', ')}` : 'Cited source';
+			return chs.length
+				? `Cited in ${chs.map((c) => (c ? `Ch ${c}` : 'the introduction')).join(', ')}`
+				: 'Cited source';
 		}
 		return '';
 	}
@@ -483,7 +534,12 @@ export class GraphStore {
 	stats() {
 		const types: Record<string, number> = {};
 		for (const n of this.nodes) types[n.type] = (types[n.type] ?? 0) + 1;
-		return { nodes: this.nodes.length, edges: this.graph.edges.length, types, chapters: CHAPTER_TITLES };
+		return {
+			nodes: this.nodes.length,
+			edges: this.graph.edges.length,
+			types,
+			chapters: CHAPTER_TITLES
+		};
 	}
 }
 

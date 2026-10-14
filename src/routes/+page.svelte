@@ -9,7 +9,15 @@
 	import SettingsModal from '#lib/chat/SettingsModal.svelte';
 	import Tour from '#lib/app/Tour.svelte';
 	import Icon from '#lib/ui/Icon.svelte';
-	import { CloseIcon, FocusIcon, LogoIcon, MinusIcon, PlusIcon, ResetIcon, SearchIcon } from '#lib/ui/icons.ts';
+	import {
+		CloseIcon,
+		FocusIcon,
+		LogoIcon,
+		MinusIcon,
+		PlusIcon,
+		ResetIcon,
+		SearchIcon
+	} from '#lib/ui/icons.ts';
 	import { tip } from '#lib/ui/tooltip.ts';
 	import { decodeGraph, type ClientGraph, type GraphWire } from '#lib/graph/types.ts';
 	import type { GraphRenderer } from '#lib/graph/GraphRenderer.ts';
@@ -32,7 +40,9 @@
 	let settingsOpen = $state(false);
 	let cited = $state<{ index: number; n: number }[]>([]);
 	let answerIds = $state<string[]>([]);
-	let meta = $state<{ defaultPrompt: string; types: Record<string, number>; edges: number } | null>(null);
+	let meta = $state<{ defaultPrompt: string; types: Record<string, number>; edges: number } | null>(
+		null
+	);
 	let error = $state('');
 	let settled = $state(false);
 	let panel: ChatPanel;
@@ -40,7 +50,8 @@
 
 	// eslint-disable-next-line svelte/prefer-svelte-reactivity -- request cache, not state
 	const detailCache = new Map<string, Promise<NodeDetail | null>>();
-	const idx = (ids: string[]) => ids.map((id) => index.get(id)).filter((i): i is number => i != null);
+	const idx = (ids: string[]) =>
+		ids.map((id) => index.get(id)).filter((i): i is number => i != null);
 
 	function provideSelect(id: string) {
 		ctx.select(id);
@@ -52,13 +63,21 @@
 			if (!graph) return null;
 			const i = index.get(id);
 			if (i == null) return null;
-			return { id, type: graph.types[i], label: graph.labels[i], topic: graph.topics[i], chapter: graph.chapters[i] };
+			return {
+				id,
+				type: graph.types[i],
+				label: graph.labels[i],
+				topic: graph.topics[i],
+				chapter: graph.chapters[i]
+			};
 		},
 		detail(id) {
 			if (!detailCache.has(id))
 				detailCache.set(
 					id,
-					fetch(`/api/node/${encodeURIComponent(id)}`).then((r) => (r.ok ? (r.json() as Promise<NodeDetail>) : null))
+					fetch(`/api/node/${encodeURIComponent(id)}`).then((r) =>
+						r.ok ? (r.json() as Promise<NodeDetail>) : null
+					)
 				);
 			return detailCache.get(id)!;
 		},
@@ -154,7 +173,8 @@
 		}
 		const list: number[] = [];
 		for (let i = 0; i < graph.ids.length; i++)
-			if (graph.topics[i] === t && (graph.types[i] === 'term' || graph.types[i] === 'entity')) list.push(i);
+			if (graph.topics[i] === t && (graph.types[i] === 'term' || graph.types[i] === 'entity'))
+				list.push(i);
 		return list.sort((a, b) => (deg.get(b) ?? 0) - (deg.get(a) ?? 0)).slice(0, count);
 	}
 
@@ -243,15 +263,24 @@
 		if (!graph || !renderer) return;
 		const list: number[] = [];
 		for (let i = 0; i < graph.topics.length; i++)
-			if (graph.topics[i] === t && (graph.types[i] === 'term' || graph.types[i] === 'entity')) list.push(i);
+			if (graph.topics[i] === t && (graph.types[i] === 'term' || graph.types[i] === 'entity'))
+				list.push(i);
 		renderer.flyTo(list);
 	}
 
 	const stats = $derived(
-		meta?.types ? { facts: meta.types.fact ?? 0, sources: meta.types.source ?? 0, concepts: meta.types.term ?? 0 } : null
+		meta?.types
+			? {
+					facts: meta.types.fact ?? 0,
+					sources: meta.types.source ?? 0,
+					concepts: meta.types.term ?? 0
+				}
+			: null
 	);
 	const answerChapters = $derived(
-		new Set(answerIds.map((id) => graph?.chapters[index.get(id) ?? -1]).filter((c) => c != null && c > 0)).size
+		new Set(
+			answerIds.map((id) => graph?.chapters[index.get(id) ?? -1]).filter((c) => c != null && c > 0)
+		).size
 	);
 </script>
 
@@ -289,11 +318,18 @@
 
 <main class="relative h-screen w-screen overflow-hidden bg-ink-950 select-none">
 	{#if dragging}
-		<div class="pointer-events-none fixed inset-0 z-[60] flex items-center justify-center bg-ink-950/55 backdrop-blur-sm" transition:fade={{ duration: 150 }}>
-			<div class="flex flex-col items-center gap-3 rounded-2xl border border-dashed border-glow/40 bg-ink-900/70 px-10 py-8">
+		<div
+			class="pointer-events-none fixed inset-0 z-[60] flex items-center justify-center bg-ink-950/55 backdrop-blur-sm"
+			transition:fade={{ duration: 150 }}
+		>
+			<div
+				class="flex flex-col items-center gap-3 rounded-2xl border border-dashed border-glow/40 bg-ink-900/70 px-10 py-8"
+			>
 				<Icon icon={UploadIcon} size={28} class="text-glow" />
 				<div class="text-[14px] font-medium text-fg">Drop to weave it into the graph</div>
-				<div class="text-[12px] text-fg-3">Markdown or plain text · facts are extracted and linked to what the research already knows</div>
+				<div class="text-[12px] text-fg-3">
+					Markdown or plain text · facts are extracted and linked to what the research already knows
+				</div>
 			</div>
 		</div>
 	{/if}
@@ -333,7 +369,10 @@
 			ontopic={flyTopic}
 		/>
 
-		<div class="pointer-events-auto absolute top-4 left-4 flex items-center gap-2.5" in:fade={{ duration: 600 }}>
+		<div
+			class="pointer-events-auto absolute top-4 left-4 flex items-center gap-2.5"
+			in:fade={{ duration: 600 }}
+		>
 			<div
 				class="relative flex size-9 items-center justify-center rounded-xl border border-white/10 bg-ink-900/70 text-glow backdrop-blur-md"
 			>
@@ -372,7 +411,10 @@
 		{/if}
 
 		{#if answerIds.length && !chat.busy && !touring}
-			<div class="pointer-events-auto absolute bottom-4 left-1/2 -translate-x-1/2" transition:fly={{ y: 10, duration: 300 }}>
+			<div
+				class="pointer-events-auto absolute bottom-4 left-1/2 -translate-x-1/2"
+				transition:fly={{ y: 10, duration: 300 }}
+			>
 				<div
 					class="flex items-center gap-2.5 rounded-full border border-gold/20 bg-ink-900/70 py-1.5 pr-1.5 pl-3.5 text-[12px] whitespace-nowrap text-fg-2 backdrop-blur-md"
 				>
@@ -406,14 +448,26 @@
 			</div>
 		{/if}
 
-		<div class="absolute bottom-4 left-4 flex items-center gap-3 font-mono text-[10.5px] text-fg-4 [text-shadow:0_1px_8px_rgb(0_0_0/0.9)]">
+		<div
+			class="absolute bottom-4 left-4 flex items-center gap-3 font-mono text-[10.5px] text-fg-4 [text-shadow:0_1px_8px_rgb(0_0_0/0.9)]"
+		>
 			{#if graph}
 				<span class="flex items-center gap-1.5">
 					<span
-						class="size-1.5 rounded-full {chat.busy ? 'bg-glow' : settled ? 'bg-ok/80' : 'bg-warn/80'}"
+						class="size-1.5 rounded-full {chat.busy
+							? 'bg-glow'
+							: settled
+								? 'bg-ok/80'
+								: 'bg-warn/80'}"
 						style:animation={chat.busy || !settled ? 'breathe 1.6s ease-in-out infinite' : ''}
 					></span>
-					{chat.busy ? 'agent working' : settled ? (renderer?.backend === 'webgpu' ? 'WebGPU' : 'WebGL') : 'laying out'}
+					{chat.busy
+						? 'agent working'
+						: settled
+							? renderer?.backend === 'webgpu'
+								? 'WebGPU'
+								: 'WebGL'
+							: 'laying out'}
 				</span>
 				<span>{graph.ids.length.toLocaleString()} nodes</span>
 				<span>{graph.edgeSrc.length.toLocaleString()} links</span>
@@ -452,5 +506,9 @@
 	</div>
 
 	<SearchPalette open={paletteOpen} onclose={() => (paletteOpen = false)} />
-	<SettingsModal open={settingsOpen} defaultPrompt={meta?.defaultPrompt ?? ''} onclose={() => (settingsOpen = false)} />
+	<SettingsModal
+		open={settingsOpen}
+		defaultPrompt={meta?.defaultPrompt ?? ''}
+		onclose={() => (settingsOpen = false)}
+	/>
 </main>

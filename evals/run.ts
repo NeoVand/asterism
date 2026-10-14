@@ -98,26 +98,32 @@ async function main() {
 			{ apiKey: env.OPENAI_API_KEY, model }
 		) as AsyncGenerator<ChatEvent>) {
 			if (ev.t === 'text') text += ev.delta;
-			else if (ev.t === 'graph') for (const id of ev.ids) (ev.mode === 'read' ? read : touched).add(id);
+			else if (ev.t === 'graph')
+				for (const id of ev.ids) (ev.mode === 'read' ? read : touched).add(id);
 			else if (ev.t === 'tool') {
 				if (ev.agent === 'main' && ev.name !== 'show_ui' && ev.name !== 'ask_user') text = '';
 				tools.push(ev.name);
-				steps.push(`${ev.agent === 'main' ? '' : '  '}${ev.name} ${JSON.stringify(ev.args).slice(0, 160)}`);
-			}
-			else if (ev.t === 'error') error = ev.message;
+				steps.push(
+					`${ev.agent === 'main' ? '' : '  '}${ev.name} ${JSON.stringify(ev.args).slice(0, 160)}`
+				);
+			} else if (ev.t === 'error') error = ev.message;
 			else if (ev.t === 'done') usage = ev.usage;
 			else if (ev.t === 'interrupt') text += '\n[asked the user questions]';
 			else if (ev.t === 'ui') blocks.push(blockToMarkdown(ev.block));
 		}
 		const ms = Date.now() - t0;
 		if (blocks.length) text += `\n\n${blocks.join('\n\n')}`;
-		const cited = [...new Set([...text.matchAll(CITE_RE)].flatMap((m) => m[1].split(/\s*[,;]\s*/)))];
+		const cited = [
+			...new Set([...text.matchAll(CITE_RE)].flatMap((m) => m[1].split(/\s*[,;]\s*/)))
+		];
 		const factText = (id: string) => {
 			const n = store.get(id);
 			return n ? `${id}: ${n.text}` : `${id}: (unknown id)`;
 		};
 		// What the agent saw: read facts plus touched facts (search results it looked at).
-		const seen = [...new Set([...read, ...touched])].filter((id) => store.get(id)?.type === 'fact').slice(0, 400);
+		const seen = [...new Set([...read, ...touched])]
+			.filter((id) => store.get(id)?.type === 'fact')
+			.slice(0, 400);
 		const judge = await jsonCall<{
 			claims: { i: number; in_answer: 'full' | 'partial' | 'no'; in_retrieved: boolean }[];
 			citations: { id: string; supported: boolean }[];
@@ -148,10 +154,16 @@ ${seen.map(factText).join('\n') || '(none)'}`,
 			effort: 'low'
 		});
 		// Partial coverage earns half credit; `fullRecall` keeps the strict all-or-nothing figure.
-		const answerRecall = judge.claims.reduce((n, x) => n + (x.in_answer === 'full' ? 1 : x.in_answer === 'partial' ? 0.5 : 0), 0) / c.must.length;
+		const answerRecall =
+			judge.claims.reduce(
+				(n, x) => n + (x.in_answer === 'full' ? 1 : x.in_answer === 'partial' ? 0.5 : 0),
+				0
+			) / c.must.length;
 		const fullRecall = judge.claims.filter((x) => x.in_answer === 'full').length / c.must.length;
 		const retrievalRecall = judge.claims.filter((x) => x.in_retrieved).length / c.must.length;
-		const citePrecision = judge.citations.length ? judge.citations.filter((x) => x.supported).length / judge.citations.length : 0;
+		const citePrecision = judge.citations.length
+			? judge.citations.filter((x) => x.supported).length / judge.citations.length
+			: 0;
 		const regexHits = c.must.filter((m) => new RegExp(m.re, 'i').test(text)).length / c.must.length;
 		const r = {
 			id: c.id,
@@ -167,7 +179,9 @@ ${seen.map(factText).join('\n') || '(none)'}`,
 			regexHits,
 			score: judge.score,
 			fullRecall,
-			missed: judge.claims.filter((x) => x.in_answer !== 'full').map((x) => `${x.in_answer === 'partial' ? '(partial) ' : ''}${c.must[x.i]?.claim}`),
+			missed: judge.claims
+				.filter((x) => x.in_answer !== 'full')
+				.map((x) => `${x.in_answer === 'partial' ? '(partial) ' : ''}${c.must[x.i]?.claim}`),
 			notRetrieved: judge.claims.filter((x) => !x.in_retrieved).map((x) => c.must[x.i]?.claim),
 			unsupported: judge.unsupported,
 			badCites: judge.citations.filter((x) => !x.supported).map((x) => x.id),

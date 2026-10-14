@@ -152,7 +152,14 @@ export class GraphRenderer {
 	/** Frame-rate sampling for adaptive resolution (only once the layout has settled). */
 	private perf = { frames: 0, time: 0 };
 	private lastInteraction = 0;
-	private fly: { from: THREE.Vector3; to: THREE.Vector3; tFrom: THREE.Vector3; tTo: THREE.Vector3; t0: number; dur: number } | null = null;
+	private fly: {
+		from: THREE.Vector3;
+		to: THREE.Vector3;
+		tFrom: THREE.Vector3;
+		tTo: THREE.Vector3;
+		t0: number;
+		dur: number;
+	} | null = null;
 	private hoverIndex: number | null = null;
 	private resizeObs: ResizeObserver | null = null;
 	private litAny = false;
@@ -163,7 +170,11 @@ export class GraphRenderer {
 	}
 
 	async init() {
-		this.renderer = new THREE.WebGPURenderer({ canvas: this.canvas, antialias: true, alpha: false });
+		this.renderer = new THREE.WebGPURenderer({
+			canvas: this.canvas,
+			antialias: true,
+			alpha: false
+		});
 		this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 		await this.renderer.init();
 		this.backend = (this.renderer.backend as N).isWebGPUBackend ? 'webgpu' : 'webgl';
@@ -188,7 +199,9 @@ export class GraphRenderer {
 		const top = color(new THREE.Color('#0a1020'));
 		const bottom = color(new THREE.Color('#02040a'));
 		const vign = smoothstep(float(1.25), float(0.2), length(screenUV.sub(0.5)).mul(1.6));
-		this.scene.backgroundNode = mix(bottom, top, screenUV.y.oneMinus()).mul(vign.mul(0.55).add(0.45));
+		this.scene.backgroundNode = mix(bottom, top, screenUV.y.oneMinus()).mul(
+			vign.mul(0.55).add(0.45)
+		);
 
 		this.buildStars();
 
@@ -206,7 +219,9 @@ export class GraphRenderer {
 		this.canvas.addEventListener('pointerdown', this.onPointerDown);
 		this.canvas.addEventListener('pointerup', this.onPointerUp);
 		this.canvas.addEventListener('pointerleave', () => this.setHover(null));
-		this.canvas.addEventListener('wheel', () => (this.lastInteraction = performance.now()), { passive: true });
+		this.canvas.addEventListener('wheel', () => (this.lastInteraction = performance.now()), {
+			passive: true
+		});
 
 		this.running = true;
 		this.renderer.setAnimationLoop(this.tick);
@@ -218,7 +233,8 @@ export class GraphRenderer {
 
 	setGraph(g: ClientGraph) {
 		// When the graph grows (an upload), keep every known star where it is.
-		const previous = this.graph && this.positions.length ? { ids: this.graph.ids, pos: this.positions } : null;
+		const previous =
+			this.graph && this.positions.length ? { ids: this.graph.ids, pos: this.positions } : null;
 		this.prevTopics = this.graph?.topics ?? new Uint8Array(0);
 		this.centers.clear();
 		this.graph = g;
@@ -266,7 +282,10 @@ export class GraphRenderer {
 			const type = TYPE_INDEX[g.types[i]];
 			info[i * 4] = g.topics[i];
 			info[i * 4 + 1] = type;
-			info[i * 4 + 2] = TYPE_SIZE[type] * (0.75 + 0.25 * g.weights[i]) * (1 + Math.min(1.2, Math.log2(1 + deg[i]) * 0.08));
+			info[i * 4 + 2] =
+				TYPE_SIZE[type] *
+				(0.75 + 0.25 * g.weights[i]) *
+				(1 + Math.min(1.2, Math.log2(1 + deg[i]) * 0.08));
 			info[i * 4 + 3] = 1 + Math.sqrt(deg[i]) * 0.35;
 		}
 		let kept = 0;
@@ -339,7 +358,12 @@ export class GraphRenderer {
 				const dist = length(d).add(0.001);
 				// LinLog attraction: gentle on long edges, so clusters stay legible.
 				const pull = dist.div(uSpringLen).add(1).log().sub(0.69).max(0);
-				f.addAssign(d.div(dist).mul(pull).mul(uSpringK.mul(adjWBuf.element(k))));
+				f.addAssign(
+					d
+						.div(dist)
+						.mul(pull)
+						.mul(uSpringK.mul(adjWBuf.element(k)))
+				);
 				k.addAssign(1);
 			});
 
@@ -348,7 +372,10 @@ export class GraphRenderer {
 			f.addAssign(anchor.sub(p).mul(uGravity.mul(nodeInfo.w)));
 
 			const v = this.velBuf.element(i);
-			const nv = v.xyz.add(f.div(nodeInfo.w).mul(this.uAlpha.mul(0.9).add(0.1))).mul(uDamping).toVar();
+			const nv = v.xyz
+				.add(f.div(nodeInfo.w).mul(this.uAlpha.mul(0.9).add(0.1)))
+				.mul(uDamping)
+				.toVar();
 			const sp = length(nv).add(0.0001);
 			v.assign(vec4(nv.mul(min(float(1), uMaxSpeed.div(sp))), 0));
 		})().compute(n);
@@ -411,20 +438,30 @@ export class GraphRenderer {
 
 		const litKind = state.x;
 		const age = this.uTime.sub(state.y);
-		const flash = exp(age.mul(-2.6).min(0)).mul(select(litKind.greaterThan(0.5), float(1), float(0)));
+		const flash = exp(age.mul(-2.6).min(0)).mul(
+			select(litKind.greaterThan(0.5), float(1), float(0))
+		);
 		const isHover = select(this.uHover.equal(float(instanceIndex)), float(1), float(0));
 		const litScale = select(
 			litKind.greaterThan(3.5),
 			float(3.0),
 			select(
-			litKind.greaterThan(2.5),
-			float(2.1),
-			select(litKind.greaterThan(1.5), float(1.55), select(litKind.greaterThan(0.5), float(1.25), float(1)))
-		));
+				litKind.greaterThan(2.5),
+				float(2.1),
+				select(
+					litKind.greaterThan(1.5),
+					float(1.55),
+					select(litKind.greaterThan(0.5), float(1.25), float(1))
+				)
+			)
+		);
 		// Cap on-screen size when the camera is close, so a close-up stays crisp instead of a wall of bokeh.
 		const camDist = cameraPosition.sub(nodePos).length();
 		const cap = camDist.mul(select(litKind.greaterThan(0.5), float(0.05), float(0.02)));
-		mat.scaleNode = min(info.z.mul(litScale).mul(flash.mul(0.9).add(1)).mul(isHover.mul(0.8).add(1)), cap.max(0.6));
+		mat.scaleNode = min(
+			info.z.mul(litScale).mul(flash.mul(0.9).add(1)).mul(isHover.mul(0.8).add(1)),
+			cap.max(0.6)
+		);
 
 		mat.colorNode = Fn(() => {
 			const type = info.y;
@@ -434,13 +471,22 @@ export class GraphRenderer {
 			const soft = smoothstep(float(1), float(0), d).pow(2.6);
 			const core = smoothstep(float(0.38), float(0), d);
 			// Shapes: sources are rings, entities are diamonds, concepts carry a hot core.
-			const ring = smoothstep(float(0.16), float(0), abs(d.sub(0.58))).mul(0.9).add(soft.mul(0.35));
+			const ring = smoothstep(float(0.16), float(0), abs(d.sub(0.58)))
+				.mul(0.9)
+				.add(soft.mul(0.35));
 			// Entities: a bright core inside a faint halo ring.
-			const diamond = core.mul(0.95).add(smoothstep(float(0.1), float(0), abs(d.sub(0.72))).mul(0.45)).add(soft.mul(0.25));
+			const diamond = core
+				.mul(0.95)
+				.add(smoothstep(float(0.1), float(0), abs(d.sub(0.72))).mul(0.45))
+				.add(soft.mul(0.25));
 			const shapeA = select(
 				type.equal(4),
 				ring,
-				select(type.equal(6), diamond, select(type.greaterThan(4.5), soft.add(core.mul(0.9)), soft.add(core.mul(0.35))))
+				select(
+					type.equal(6),
+					diamond,
+					select(type.greaterThan(4.5), soft.add(core.mul(0.9)), soft.add(core.mul(0.35)))
+				)
 			);
 			const white = vec3(1, 0.97, 0.92);
 			const gold = vec3(1, 0.78, 0.36);
@@ -448,18 +494,25 @@ export class GraphRenderer {
 				litKind.greaterThan(3.5),
 				mix(base, white, 0.6),
 				select(
-				litKind.greaterThan(2.5),
-				mix(base, gold, 0.55),
-				select(litKind.greaterThan(0.5), mix(base, white, 0.35), base)
-			));
+					litKind.greaterThan(2.5),
+					mix(base, gold, 0.55),
+					select(litKind.greaterThan(0.5), mix(base, white, 0.35), base)
+				)
+			);
 			const pulse = select(
 				litKind.greaterThan(2.5),
-				sin(this.uTime.mul(2.4).add(float(instanceIndex).mul(0.37))).mul(0.25).add(1.15),
+				sin(this.uTime.mul(2.4).add(float(instanceIndex).mul(0.37)))
+					.mul(0.25)
+					.add(1.15),
 				float(1)
 			);
 			const lit = select(litKind.greaterThan(0.5), float(1), float(0));
 			const dimmed = mix(float(1), float(0.16), this.uDim.mul(lit.oneMinus()));
-			const typeGain = select(type.lessThan(2.5), float(0.85), select(type.equal(5), float(1.25), float(1)));
+			const typeGain = select(
+				type.lessThan(2.5),
+				float(0.85),
+				select(type.equal(5), float(1.25), float(1))
+			);
 			const intensity = dimmed
 				.mul(typeGain)
 				.mul(pulse)
@@ -477,7 +530,12 @@ export class GraphRenderer {
 		this.scene.add(sprite);
 
 		// Selection reticle: a slowly breathing ring around the selected star.
-		const rmat = new THREE.SpriteNodeMaterial({ transparent: true, depthWrite: false, depthTest: false, blending: THREE.AdditiveBlending });
+		const rmat = new THREE.SpriteNodeMaterial({
+			transparent: true,
+			depthWrite: false,
+			depthTest: false,
+			blending: THREE.AdditiveBlending
+		});
 		const sel = this.posBuf.element((max as N)(this.uSelected, int(0))).xyz;
 		rmat.positionNode = sel;
 		const rDist = cameraPosition.sub(sel).length();
@@ -486,7 +544,9 @@ export class GraphRenderer {
 			const q = uv().sub(0.5).mul(2);
 			const d = length(q);
 			const ring = smoothstep(float(0.05), float(0), abs(d.sub(0.82)));
-			const ticks = smoothstep(float(0.18), float(0), abs(q.x)).add(smoothstep(float(0.18), float(0), abs(q.y))).mul(smoothstep(float(0.9), float(0.98), d).mul(smoothstep(float(1.0), float(0.98), d)));
+			const ticks = smoothstep(float(0.18), float(0), abs(q.x))
+				.add(smoothstep(float(0.18), float(0), abs(q.y)))
+				.mul(smoothstep(float(0.9), float(0.98), d).mul(smoothstep(float(1.0), float(0.98), d)));
 			const on = select(this.uSelected.greaterThanEqual(0), float(1), float(0));
 			const v = ring.mul(0.9).add(ticks.mul(0.8)).mul(on);
 			return vec4(vec3(0.75, 0.93, 1).mul(v), v);
@@ -543,12 +603,20 @@ export class GraphRenderer {
 
 		mat.colorNode = Fn(() => {
 			if (opts.trail) {
-				const flow = sin(vT.mul(14).sub(this.uTime.mul(3.2))).mul(0.5).add(0.5).pow(3);
+				const flow = sin(vT.mul(14).sub(this.uTime.mul(3.2)))
+					.mul(0.5)
+					.add(0.5)
+					.pow(3);
 				const gold = vec3(1, 0.8, 0.42);
 				return vec4(gold.mul(flow.mul(1.6).add(0.55)), 1);
 			}
-			const flow = sin(vT.mul(9).sub(this.uTime.mul(2.6))).mul(0.5).add(0.5);
-			const base = this.uEdgeAlpha.mul(vW).mul(mix(float(1), float(0.22), this.uDim)).mul(this.uEdgeFade);
+			const flow = sin(vT.mul(9).sub(this.uTime.mul(2.6)))
+				.mul(0.5)
+				.add(0.5);
+			const base = this.uEdgeAlpha
+				.mul(vW)
+				.mul(mix(float(1), float(0.22), this.uDim))
+				.mul(this.uEdgeFade);
 			const litGain = vBoth.mul(flow.mul(0.6).add(0.45)).mul(mix(float(0.55), float(1.25), vCited));
 			const c = mix(vCol, vec3(1, 0.85, 0.5), vCited.mul(0.5));
 			return vec4(c.mul(base.add(litGain.mul(this.uEdgeLit.mul(0.6).add(0.4)))), 1);
@@ -564,7 +632,11 @@ export class GraphRenderer {
 		for (let e = 0; e < m; e++) {
 			const s = g.edgeSrc[e];
 			const t = g.edgeDst[e];
-			rel.fill(REL_VISUAL[g.relNames[g.edgeRel[e]]] ?? 0.6, e * EDGE_SEGMENTS * 2, (e + 1) * EDGE_SEGMENTS * 2);
+			rel.fill(
+				REL_VISUAL[g.relNames[g.edgeRel[e]]] ?? 0.6,
+				e * EDGE_SEGMENTS * 2,
+				(e + 1) * EDGE_SEGMENTS * 2
+			);
 			for (let k = 0; k < EDGE_SEGMENTS; k++) {
 				verts[o++] = s;
 				verts[o++] = t;
@@ -599,13 +671,19 @@ export class GraphRenderer {
 		let o = 0;
 		for (let k = 0; k < indices.length - 1; k++) {
 			for (let q = 0; q < segs; q++) {
-				verts.set([indices[k], indices[k + 1], q / segs, indices[k], indices[k + 1], (q + 1) / segs], o);
+				verts.set(
+					[indices[k], indices[k + 1], q / segs, indices[k], indices[k + 1], (q + 1) / segs],
+					o
+				);
 				o += 6;
 			}
 		}
 		const geo = new THREE.BufferGeometry();
 		geo.setAttribute('position', new THREE.BufferAttribute(verts, 3));
-		const lines = new THREE.LineSegments(geo, this.edgeMaterial((this as N)._anchorsU, { trail: true }));
+		const lines = new THREE.LineSegments(
+			geo,
+			this.edgeMaterial((this as N)._anchorsU, { trail: true })
+		);
 		lines.frustumCulled = false;
 		lines.renderOrder = 3;
 		this.trails = lines;
@@ -618,17 +696,25 @@ export class GraphRenderer {
 		let seed = 7;
 		const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647) * 2 - 1;
 		for (let i = 0; i < n; i++) {
-			const v = new THREE.Vector3(rnd(), rnd(), rnd()).normalize().multiplyScalar(2600 + Math.abs(rnd()) * 2400);
+			const v = new THREE.Vector3(rnd(), rnd(), rnd())
+				.normalize()
+				.multiplyScalar(2600 + Math.abs(rnd()) * 2400);
 			arr.set([v.x, v.y, v.z, Math.abs(rnd())], i * 4);
 		}
 		const buf = instancedArray(arr, 'vec4');
-		const mat = new THREE.SpriteNodeMaterial({ transparent: true, depthWrite: false, blending: THREE.AdditiveBlending });
+		const mat = new THREE.SpriteNodeMaterial({
+			transparent: true,
+			depthWrite: false,
+			blending: THREE.AdditiveBlending
+		});
 		const a = buf.toAttribute();
 		mat.positionNode = a.xyz;
 		mat.scaleNode = a.w.mul(5).add(3);
 		mat.colorNode = Fn(() => {
 			const d = length(uv().sub(0.5).mul(2));
-			const tw = sin(this.uTime.mul(a.w.mul(1.5).add(0.3)).add(a.w.mul(40))).mul(0.35).add(0.65);
+			const tw = sin(this.uTime.mul(a.w.mul(1.5).add(0.3)).add(a.w.mul(40)))
+				.mul(0.35)
+				.add(0.65);
 			const v = smoothstep(float(1), float(0), d).pow(3).mul(tw).mul(0.5);
 			return vec4(vec3(0.7, 0.8, 1).mul(v), v);
 		})();
@@ -695,7 +781,8 @@ export class GraphRenderer {
 	/** Lower every lit node to at most `kind` (e.g. finished answers settle to "read"). */
 	settleLights(maxKind: LitKind) {
 		const lvl = LIT[maxKind];
-		for (let i = 0; i < this.count; i++) if (this.stateArray[i * 4] > lvl) this.stateArray[i * 4] = lvl;
+		for (let i = 0; i < this.count; i++)
+			if (this.stateArray[i * 4] > lvl) this.stateArray[i * 4] = lvl;
 		this.flushState();
 	}
 
@@ -724,7 +811,11 @@ export class GraphRenderer {
 	/* ------------------------------------------------------------------ */
 
 	position(i: number) {
-		return new THREE.Vector3(this.positions[i * 4], this.positions[i * 4 + 1], this.positions[i * 4 + 2]);
+		return new THREE.Vector3(
+			this.positions[i * 4],
+			this.positions[i * 4 + 1],
+			this.positions[i * 4 + 2]
+		);
 	}
 
 	/** Fly the camera to frame a set of nodes (or one). */
@@ -775,7 +866,11 @@ export class GraphRenderer {
 
 	zoom(factor: number) {
 		const dir = this.camera.position.clone().sub(this.controls.target);
-		const len = THREE.MathUtils.clamp(dir.length() * factor, this.controls.minDistance, this.controls.maxDistance);
+		const len = THREE.MathUtils.clamp(
+			dir.length() * factor,
+			this.controls.minDistance,
+			this.controls.maxDistance
+		);
 		this.fly = {
 			from: this.camera.position.clone(),
 			to: this.controls.target.clone().add(dir.setLength(len)),
@@ -788,7 +883,11 @@ export class GraphRenderer {
 	}
 
 	project(i: number, out: Projected = { x: 0, y: 0, z: 0, visible: false }): Projected {
-		const v = new THREE.Vector3(this.positions[i * 4], this.positions[i * 4 + 1], this.positions[i * 4 + 2]);
+		const v = new THREE.Vector3(
+			this.positions[i * 4],
+			this.positions[i * 4 + 1],
+			this.positions[i * 4 + 2]
+		);
 		return this.projectPoint(v, out);
 	}
 
@@ -799,7 +898,8 @@ export class GraphRenderer {
 		out.x = (v.x * 0.5 + 0.5) * w;
 		out.y = (-v.y * 0.5 + 0.5) * h;
 		out.z = v.z;
-		out.visible = v.z > -1 && v.z < 1 && out.x > -40 && out.x < w + 40 && out.y > -40 && out.y < h + 40;
+		out.visible =
+			v.z > -1 && v.z < 1 && out.x > -40 && out.x < w + 40 && out.y > -40 && out.y < h + 40;
 		return out;
 	}
 
@@ -860,7 +960,8 @@ export class GraphRenderer {
 			this.controls.target.lerpVectors(this.fly.tFrom, this.fly.tTo, e);
 			if (k >= 1) this.fly = null;
 		}
-		this.controls.autoRotate = this.autoRotate && performance.now() - this.lastInteraction > 9000 && !this.fly;
+		this.controls.autoRotate =
+			this.autoRotate && performance.now() - this.lastInteraction > 9000 && !this.fly;
 		this.controls.update(dt);
 		this.pipeline.render();
 		this.adaptResolution(dt);

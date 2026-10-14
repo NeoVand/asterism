@@ -44,7 +44,12 @@ describe('search', () => {
 	});
 
 	it('filters by chapter and kind', () => {
-		const hits = store.search('not found', { types: ['fact'], chapters: [8], kinds: ['gap'], limit: 10 });
+		const hits = store.search('not found', {
+			types: ['fact'],
+			chapters: [8],
+			kinds: ['gap'],
+			limit: 10
+		});
 		expect(hits.length).toBeGreaterThan(0);
 		expect(hits.every((h) => h.node.chapter === 8 && h.node.kind === 'gap')).toBe(true);
 	});
@@ -53,9 +58,11 @@ describe('search', () => {
 describe('graph structure', () => {
 	it('has every node type and cross-chapter fact relations', () => {
 		const s = store.stats();
-		for (const t of ['fact', 'term', 'entity', 'source', 'section', 'chapter']) expect(s.types[t]).toBeGreaterThan(0);
+		for (const t of ['fact', 'term', 'entity', 'source', 'section', 'chapter'])
+			expect(s.types[t]).toBeGreaterThan(0);
 		const rels = new Set(store.graph.edges.map((e) => e.r));
-		for (const r of ['cites', 'uses', 'about', 'related', 'same', 'contradicts']) expect(rels.has(r as never)).toBe(true);
+		for (const r of ['cites', 'uses', 'about', 'related', 'same', 'contradicts'])
+			expect(rels.has(r as never)).toBe(true);
 	});
 
 	it('connects two concepts through meaningful paths', () => {
@@ -84,8 +91,15 @@ describe('graph structure', () => {
 
 describe('duplicate folding', () => {
 	it('folds restatements of the same claim', () => {
-		expect(similarity('The Machinery Regulation applies from 20 January 2027.', 'EU Machinery Regulation applies from 20 January 2027.')).toBeGreaterThan(0.72);
-		const facts = store.search('Machinery Regulation applies 20 January 2027', { types: ['fact'], limit: 20 }).map((h) => h.node);
+		expect(
+			similarity(
+				'The Machinery Regulation applies from 20 January 2027.',
+				'EU Machinery Regulation applies from 20 January 2027.'
+			)
+		).toBeGreaterThan(0.72);
+		const facts = store
+			.search('Machinery Regulation applies 20 January 2027', { types: ['fact'], limit: 20 })
+			.map((h) => h.node);
 		const folded = foldDuplicates(store, facts, 20);
 		expect(folded.length).toBeLessThan(facts.length);
 		expect(folded.some((f) => f.also.length > 0)).toBe(true);
@@ -110,7 +124,9 @@ describe('graph shape', () => {
 
 	it('links nearly every fact to a concept, entity, source or another fact', () => {
 		const facts = store.nodes.filter((n) => n.type === 'fact');
-		const bare = facts.filter((f) => !(store.adj.get(f.id) ?? []).some((a) => a.r !== 'states' && a.r !== 'contains'));
+		const bare = facts.filter(
+			(f) => !(store.adj.get(f.id) ?? []).some((a) => a.r !== 'states' && a.r !== 'contains')
+		);
 		expect(bare.length / facts.length).toBeLessThan(0.001);
 	});
 });

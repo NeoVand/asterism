@@ -38,44 +38,74 @@
 			case 'read_file': {
 				const path = String(a.file_path ?? '');
 				const skill = /\/skills\/([^/]+)\//.exec(path)?.[1];
-				if (skill) return { icon: SkillIcon, text: `Opened the ${skill.replace(/-/g, ' ').replace(/^ui\b/, 'UI')} playbook` };
-				if (path.startsWith('/memories/')) return { icon: MemoryIcon, text: 'Recalled what it knows about you' };
+				if (skill)
+					return {
+						icon: SkillIcon,
+						text: `Opened the ${skill.replace(/-/g, ' ').replace(/^ui\b/, 'UI')} playbook`
+					};
+				if (path.startsWith('/memories/'))
+					return { icon: MemoryIcon, text: 'Recalled what it knows about you' };
 				return { icon: ReadIcon, text: 'Reread its working notes' };
 			}
 			case 'ls':
 			case 'glob':
 			case 'grep': {
 				const path = String(a.path ?? a.pattern ?? '');
-				if (path.includes('skills')) return { icon: SkillIcon, text: 'Looked through its playbooks' };
+				if (path.includes('skills'))
+					return { icon: SkillIcon, text: 'Looked through its playbooks' };
 				if (path.includes('memories')) return { icon: MemoryIcon, text: 'Checked its memory' };
 				return { icon: ReadIcon, text: 'Looked through its working notes' };
 			}
 			case 'search_graph':
-				return { icon: GraphSearchIcon, text: `Searched “${a.query}”`, detail: matchDetail(s.summary) };
+				return {
+					icon: GraphSearchIcon,
+					text: `Searched “${a.query}”`,
+					detail: matchDetail(s.summary)
+				};
 			case 'find_sources':
-				return { icon: SourcesIcon, text: `Searched prior work “${a.query}”`, detail: s.summary?.match(/^\d+ sources/)?.[0] };
+				return {
+					icon: SourcesIcon,
+					text: `Searched prior work “${a.query}”`,
+					detail: s.summary?.match(/^\d+ sources/)?.[0]
+				};
 			case 'explore':
 				return { icon: ConnectIcon, text: `Explored ${name(a.id)}` };
 			case 'read_facts': {
 				const ids = (a.ids as string[]) ?? [];
-				return { icon: ReadIcon, text: `Read ${ids.length} ${ids.length === 1 ? 'fact' : 'facts'}` };
+				return {
+					icon: ReadIcon,
+					text: `Read ${ids.length} ${ids.length === 1 ? 'fact' : 'facts'}`
+				};
 			}
 			case 'connect':
 				return { icon: ConnectIcon, text: `Traced ${name(a.from)} ↔ ${name(a.to)}` };
 			case 'read_section':
 				return { icon: ReadIcon, text: `Read the section of ${name(a.id)}` };
 			case 'evidence_brief':
-				return { icon: TodoIcon, text: 'Gathered the evidence', detail: s.summary?.match(/\((\d+) most relevant/)?.[1] ? `${s.summary.match(/\((\d+) most relevant/)![1]} facts` : undefined };
+				return {
+					icon: TodoIcon,
+					text: 'Gathered the evidence',
+					detail: s.summary?.match(/\((\d+) most relevant/)?.[1]
+						? `${s.summary.match(/\((\d+) most relevant/)![1]} facts`
+						: undefined
+				};
 			case 'show_ui': {
 				const t = (a.block as { type?: string; title?: string } | undefined) ?? {};
-				return { icon: BlockIcon, text: `Built a ${t.type ?? 'block'}${t.title ? ` · ${t.title}` : ''}` };
+				return {
+					icon: BlockIcon,
+					text: `Built a ${t.type ?? 'block'}${t.title ? ` · ${t.title}` : ''}`
+				};
 			}
 			case 'ask_user':
-				return { icon: AskIcon, text: `Asked you ${((a.questions as unknown[]) ?? []).length} questions` };
+				return {
+					icon: AskIcon,
+					text: `Asked you ${((a.questions as unknown[]) ?? []).length} questions`
+				};
 			case 'edit_file':
 			case 'write_file': {
 				const path = String(a.file_path ?? '');
-				if (path.startsWith('/memories/')) return { icon: MemoryIcon, text: 'Remembered this for next time' };
+				if (path.startsWith('/memories/'))
+					return { icon: MemoryIcon, text: 'Remembered this for next time' };
 				return { icon: ReadIcon, text: 'Wrote working notes' };
 			}
 			case 'write_todos':
@@ -91,7 +121,9 @@
 	 */
 	function researchTopic(description: string): string {
 		const first = description.split(/(?<=[.?!])\s+|\n/)[0] ?? description;
-		const topic = first.replace(/^(please\s+)?(research|investigate|find out|look into)\s*:?\s*/i, '').replace(/[.:;]\s*$/, '');
+		const topic = first
+			.replace(/^(please\s+)?(research|investigate|find out|look into)\s*:?\s*/i, '')
+			.replace(/[.:;]\s*$/, '');
 		return topic.charAt(0).toUpperCase() + topic.slice(1);
 	}
 
@@ -100,7 +132,9 @@
 		const m = summary?.match(/^(\d+) matches.*?(?: across (.+?))?:?$/);
 		if (!m) return undefined;
 		const chs = m[2]?.split(', ') ?? [];
-		return chs.length ? `${m[1]} hits · ${chs.slice(0, 2).join(', ')}${chs.length > 2 ? ` +${chs.length - 2}` : ''}` : `${m[1]} matches`;
+		return chs.length
+			? `${m[1]} hits · ${chs.slice(0, 2).join(', ')}${chs.length > 2 ? ` +${chs.length - 2}` : ''}`
+			: `${m[1]} matches`;
 	}
 
 	const mainSteps = $derived(msg.steps.filter((s) => s.agent === 'main' && s.name !== 'task'));
@@ -142,7 +176,10 @@
 		>
 			<span class="relative flex size-4 items-center justify-center">
 				{#if live}
-					<span class="absolute size-2 rounded-full bg-glow" style="animation: breathe 1.6s ease-in-out infinite"></span>
+					<span
+						class="absolute size-2 rounded-full bg-glow"
+						style="animation: breathe 1.6s ease-in-out infinite"
+					></span>
 					<span class="absolute size-4 rounded-full bg-glow/20 blur-[3px]"></span>
 				{:else}
 					<Icon icon={CheckIcon} size={13} class="text-ok/80" />
@@ -155,13 +192,19 @@
 					{summary || 'Answered from memory'} · {seconds.toFixed(1)}s
 				{/if}
 			</span>
-			<span class="ml-auto opacity-0 transition-opacity group-hover:opacity-100" class:rotate-180={expanded}>
+			<span
+				class="ml-auto opacity-0 transition-opacity group-hover:opacity-100"
+				class:rotate-180={expanded}
+			>
 				<Icon icon={ChevronDownIcon} size={13} />
 			</span>
 		</button>
 
 		{#if expanded}
-			<div transition:slide={{ duration: 220 }} class="mt-1 ml-[7px] border-l border-white/[0.07] pl-3.5">
+			<div
+				transition:slide={{ duration: 220 }}
+				class="mt-1 ml-[7px] border-l border-white/[0.07] pl-3.5"
+			>
 				{#if live && thought && !msg.parts.length}
 					<div class="flex items-start gap-2 py-[3px] text-[11.5px] text-fg-3 italic">
 						<Icon icon={ThinkIcon} size={13} class="mt-px shrink-0 text-fg-4" />
@@ -172,7 +215,10 @@
 					{@const l = label(s)}
 					<!-- svelte-ignore a11y_no_static_element_interactions -->
 					<div
-						class="-mx-1.5 flex items-start gap-2 rounded-md px-1.5 py-[3px] text-[11.5px] leading-snug transition-colors {s.ids?.length ? 'cursor-default hover:bg-white/[0.04]' : ''}"
+						class="-mx-1.5 flex items-start gap-2 rounded-md px-1.5 py-[3px] text-[11.5px] leading-snug transition-colors {s
+							.ids?.length
+							? 'cursor-default hover:bg-white/[0.04]'
+							: ''}"
 						in:slide={{ duration: 160 }}
 						onpointerenter={() => s.ids?.length && app.spotlight(s.ids)}
 						onpointerleave={() => s.ids?.length && app.spotlight(null)}
@@ -180,9 +226,15 @@
 						<Icon
 							icon={l.icon}
 							size={13}
-							class="mt-px shrink-0 {s.status === 'run' ? 'text-glow' : s.status === 'error' ? 'text-bad' : 'text-fg-4'}"
+							class="mt-px shrink-0 {s.status === 'run'
+								? 'text-glow'
+								: s.status === 'error'
+									? 'text-bad'
+									: 'text-fg-4'}"
 						/>
-						<span class="min-w-0 flex-1 truncate {s.status === 'run' ? 'text-fg-2' : 'text-fg-3'}">{l.text}</span>
+						<span class="min-w-0 flex-1 truncate {s.status === 'run' ? 'text-fg-2' : 'text-fg-3'}"
+							>{l.text}</span
+						>
 						{#if l.detail && s.status !== 'run'}
 							<span class="shrink-0 font-mono text-[10.5px] text-fg-4">{l.detail}</span>
 						{/if}
@@ -197,17 +249,26 @@
 								size={13}
 								class="mt-px shrink-0 {t.status === 'run' ? 'text-[#a78bfa]' : 'text-fg-4'}"
 							/>
-							<span class="line-clamp-2 min-w-0 flex-1 {t.status === 'run' ? 'text-fg-2' : 'text-fg-3'}">
+							<span
+								class="line-clamp-2 min-w-0 flex-1 {t.status === 'run' ? 'text-fg-2' : 'text-fg-3'}"
+							>
 								<span class="text-fg-2">Researcher</span> · {researchTopic(t.description)}
 							</span>
 							{#if sub.length}
-								<span class="shrink-0 font-mono text-[10.5px] text-fg-4">{sub.length} {sub.length === 1 ? 'step' : 'steps'}</span>
+								<span class="shrink-0 font-mono text-[10.5px] text-fg-4"
+									>{sub.length} {sub.length === 1 ? 'step' : 'steps'}</span
+								>
 							{/if}
 						</div>
 						{#if t.status === 'run' && sub.length}
 							{@const last = label(sub[sub.length - 1])}
 							{#key sub.length}
-								<div class="mt-0.5 ml-[21px] truncate text-[11px] text-fg-4" in:fade={{ duration: 200 }}>{last.text}</div>
+								<div
+									class="mt-0.5 ml-[21px] truncate text-[11px] text-fg-4"
+									in:fade={{ duration: 200 }}
+								>
+									{last.text}
+								</div>
 							{/key}
 						{/if}
 					</div>
@@ -223,7 +284,9 @@
 											? 'border-glow bg-glow/30'
 											: 'border-fg-4'}"
 								></span>
-								<span class={td.status === 'completed' ? 'text-fg-4 line-through' : 'text-fg-3'}>{td.content}</span>
+								<span class={td.status === 'completed' ? 'text-fg-4 line-through' : 'text-fg-3'}
+									>{td.content}</span
+								>
 							</div>
 						{/each}
 					</div>

@@ -11,7 +11,11 @@ describe('search_graph', () => {
 	});
 
 	it('points at strong matches a chapter filter left out', async () => {
-		const out: string = await t.searchGraph.invoke({ query: 'Caterpillar', chapters: [2], limit: 6 });
+		const out: string = await t.searchGraph.invoke({
+			query: 'Caterpillar',
+			chapters: [2],
+			limit: 6
+		});
 		const [inside, outside] = out.split(/Strong matches outside Ch2/);
 		expect(outside).toBeDefined();
 		expect(inside).not.toMatch(/\[Ch(?!2)\d+/);

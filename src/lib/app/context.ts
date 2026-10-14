@@ -25,10 +25,24 @@ export interface NodeDetail extends NodeBrief {
 	year?: number | null;
 	synopsis?: string;
 	aliases?: string[];
-	sources: { id: string; label: string; evidence: string | null; onRoad: boolean; url: string | null; year: number | null }[];
+	sources: {
+		id: string;
+		label: string;
+		evidence: string | null;
+		onRoad: boolean;
+		url: string | null;
+		year: number | null;
+	}[];
 	concepts: { id: string; label: string; topic: number }[];
 	entities: { id: string; label: string; topic: number }[];
-	linked: { id: string; rel: string; label: string; note?: string; topic: number; chapter: number }[];
+	linked: {
+		id: string;
+		rel: string;
+		label: string;
+		note?: string;
+		topic: number;
+		chapter: number;
+	}[];
 	degree: number;
 	counts: Record<string, number>;
 }
