@@ -25,9 +25,11 @@
 		id: string;
 		onclose: () => void;
 		onneighbors: (id: string) => void;
+		/** The neighbours are lit (the button toggles them). */
+		neighborsLit?: boolean;
 	}
 
-	let { id, onclose, onneighbors }: Props = $props();
+	let { id, onclose, onneighbors, neighborsLit = false }: Props = $props();
 	const app = useAsterism();
 	let detail = $state<NodeDetail | null>(null);
 	let loading = $state(true);
@@ -312,7 +314,10 @@
 			</button>
 			<button
 				type="button"
-				class="flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-[12px] text-fg-3 transition-colors hover:bg-white/[0.05] hover:text-fg"
+				class="flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-[12px] transition-colors hover:bg-white/[0.05] hover:text-fg {neighborsLit
+					? 'bg-white/[0.06] text-fg'
+					: 'text-fg-3'}"
+				aria-pressed={neighborsLit}
 				onclick={() => onneighbors(detail!.id)}
 			>
 				<Icon icon={ConnectIcon} size={13} /> Light neighbors

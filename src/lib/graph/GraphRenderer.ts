@@ -96,6 +96,9 @@ const REL_VISUAL: Record<string, number> = {
 	depends: 1.3
 };
 
+/** Transient light layers composed over the lasting lights. */
+export type LightLayer = 'focus' | 'reading' | 'spot';
+
 export interface RendererEvents {
 	hover?: (index: number | null) => void;
 	click?: (index: number | null, event: PointerEvent) => void;
@@ -129,7 +132,15 @@ export class GraphRenderer {
 	private velBuf: N;
 	private infoBuf: N;
 	private stateBuf: N;
+	/** What the GPU sees: per node (lit level, lit time, -, -), composed by flushState. */
 	private stateArray = new Float32Array(0);
+	/** The lasting lights, per node (level, time). */
+	private baseState = new Float32Array(0);
+	private layers: Record<LightLayer, Map<number, { level: number; t: number }>> = {
+		focus: new Map(),
+		reading: new Map(),
+		spot: new Map()
+	};
 	private computeForces: N;
 	private computeIntegrate: N;
 	private anchors: THREE.Vector3[] = [];
@@ -166,6 +177,8 @@ export class GraphRenderer {
 	/** Flat (2D) view: top-down camera, panning instead of orbiting. */
 	flat = false;
 	private uEdgeLit = uniform(0);
+	/** Glow per lit edge in the bundled overlay, softer the more edges are lit. */
+	private uLitGain = uniform(0.35);
 	/** Edges fade in as the layout unfolds. */
 	private uEdgeFade = uniform(0);
 	/** 0 → 1 as the layout settles (drives label reveal). */
@@ -345,6 +358,8 @@ export class GraphRenderer {
 		}
 		this.positions = pos.slice();
 		this.stateArray = new Float32Array(n * 4);
+		this.baseState = new Float32Array(n * 2);
+		this.layers = { focus: new Map(), reading: new Map(), spot: new Map() };
 
 		this.disposeGraphObjects();
 		this.posBuf = instancedArray(pos, 'vec4');
@@ -689,16 +704,23 @@ export class GraphRenderer {
 						: shape === 'bundled'
 							? float(0.5 / BUNDLE_SAMPLE)
 							: float(0);
+			// Highlights dim the rest; bundles stack dozens of edges per pixel, so they dim harder.
+			const dimFloor =
+				shape === 'curve'
+					? float(0.13)
+					: shape === 'blend'
+						? mix(float(0.13), float(0.05), this.uBundleMix)
+						: float(0.05);
 			const base = this.uEdgeAlpha
 				.mul(vW)
-				.mul(mix(float(1), float(0.22), this.uDim))
+				.mul(mix(float(1), dimFloor, this.uDim))
 				.mul(this.uEdgeFade)
 				.mul(bundleDim);
 			const litGain = vBoth
 				.mul(flow.mul(0.6).add(0.45))
 				.mul(mix(float(0.55), float(1.25), vCited))
-				// Lit edges stack along shared bundles too: a softer glow per edge keeps the colour.
-				.mul(shape === 'bundled' ? 0 : shape === 'bundledLit' ? 0.35 : 1);
+				// Lit edges stack along shared bundles too: the more of them, the softer each glows.
+				.mul(shape === 'bundled' ? float(0) : shape === 'bundledLit' ? this.uLitGain : float(1));
 			const c = mix(vCol, vec3(1, 0.85, 0.5), vCited.mul(0.5));
 			return vec4(c.mul(base.add(litGain.mul(this.uEdgeLit.mul(0.6).add(0.4)))), 1);
 		})();
@@ -826,6 +848,11 @@ export class GraphRenderer {
 				lit.push(e);
 		}
 		if (!lit.length) return;
+		this.uLitGain.value = THREE.MathUtils.clamp(
+			1.2 / Math.sqrt(Math.max(1, lit.length / 60)),
+			0.3,
+			1
+		);
 		const lines = new THREE.LineSegments(this.edgeGeometry(g, lit), this.edgeMaterials.bundledLit);
 		lines.frustumCulled = false;
 		lines.renderOrder = 1;
@@ -905,7 +932,10 @@ export class GraphRenderer {
 	/* Highlights                                                          */
 	/* ------------------------------------------------------------------ */
 
-	/** Light nodes. Higher kinds win over lower ones unless `force`. */
+	/**
+	 * Light nodes. These are the lasting lights (what the agent read, an answer's citations, a
+	 * tour step); higher kinds win over lower ones unless `force`.
+	 */
 	light(indices: Iterable<number>, kind: LitKind, force = false) {
 		if (!this.graph) return;
 		const level = LIT[kind];
@@ -913,52 +943,66 @@ export class GraphRenderer {
 		let changed = false;
 		for (const i of indices) {
 			if (i < 0 || i >= this.count) continue;
-			const cur = this.stateArray[i * 4];
-			if (force || level > cur) {
-				this.stateArray[i * 4] = level;
-				this.stateArray[i * 4 + 1] = now;
+			if (force || level > this.baseState[i * 2]) {
+				this.baseState[i * 2] = level;
+				this.baseState[i * 2 + 1] = now;
 				changed = true;
 			}
 		}
 		if (changed) this.flushState();
 	}
 
-	private spot: { i: number; level: number; t: number }[] = [];
+	/**
+	 * Replace a transient light layer: 'focus' (the selected star and, when asked, its
+	 * neighbours), 'reading' (what is on screen in the reader) or 'spot' (hovering a citation).
+	 * Layers sit on top of the lasting lights and vanish without a trace when cleared.
+	 */
+	setLayer(layer: LightLayer, entries: Iterable<[number, LitKind]> | null) {
+		const prev = this.layers[layer];
+		const next = new Map<number, { level: number; t: number }>();
+		const now = this.uTime.value as number;
+		for (const [i, kind] of entries ?? []) {
+			if (i < 0 || i >= this.count) continue;
+			const level = LIT[kind];
+			if ((next.get(i)?.level ?? 0) >= level) continue;
+			// Stars that stay lit keep their flash time, so re-applying a layer doesn't re-flash them.
+			const old = prev.get(i);
+			next.set(i, { level, t: old && old.level === level ? old.t : now });
+		}
+		if (!next.size && !prev.size) return;
+		this.layers[layer] = next;
+		this.flushState();
+	}
 
 	/** Temporarily flare nodes (hovering a citation or a block item); null restores them. */
 	spotlight(indices: number[] | null) {
-		for (const sp of this.spot) {
-			this.stateArray[sp.i * 4] = sp.level;
-			this.stateArray[sp.i * 4 + 1] = sp.t;
-		}
-		this.spot = [];
-		if (indices?.length) {
-			const now = this.uTime.value as number;
-			for (const i of indices) {
-				if (i < 0 || i >= this.count) continue;
-				this.spot.push({ i, level: this.stateArray[i * 4], t: this.stateArray[i * 4 + 1] });
-				this.stateArray[i * 4] = LIT.focus;
-				this.stateArray[i * 4 + 1] = now;
-			}
-		}
-		this.flushState();
+		this.setLayer('spot', indices?.map((i) => [i, 'focus'] as [number, LitKind]) ?? null);
+	}
+
+	/** The selected star (lit 'read') and optionally its neighbours ('touched'); null clears. */
+	focus(center: number | null, ring: Iterable<number> = []) {
+		if (center == null) return this.setLayer('focus', null);
+		const entries: [number, LitKind][] = [];
+		for (const i of ring) entries.push([i, 'touched']);
+		entries.push([center, 'read']);
+		this.setLayer('focus', entries);
 	}
 
 	autoRotate = true;
 
-	/** Clear every highlight (fade back to the full constellation). */
+	/** Clear the lasting highlights (an answer, a tour step) and any hover flare. */
 	clearLights() {
-		this.spot = [];
-		this.stateArray.fill(0);
+		this.layers.spot = new Map();
+		this.baseState.fill(0);
 		this.flushState();
 		this.setTrail([]);
 	}
 
-	/** Lower every lit node to at most `kind` (e.g. finished answers settle to "read"). */
+	/** Lower every lasting light to at most `kind` (e.g. finished answers settle to "read"). */
 	settleLights(maxKind: LitKind) {
 		const lvl = LIT[maxKind];
 		for (let i = 0; i < this.count; i++)
-			if (this.stateArray[i * 4] > lvl) this.stateArray[i * 4] = lvl;
+			if (this.baseState[i * 2] > lvl) this.baseState[i * 2] = lvl;
 		this.flushState();
 	}
 
@@ -966,14 +1010,29 @@ export class GraphRenderer {
 		return this.stateArray[i * 4] ?? 0;
 	}
 
+	/** Compose the lasting lights and the layers (the brightest wins) and upload them. */
 	private flushState() {
+		const st = this.stateArray;
+		const base = this.baseState;
+		for (let i = 0; i < this.count; i++) {
+			st[i * 4] = base[i * 2];
+			st[i * 4 + 1] = base[i * 2 + 1];
+		}
+		for (const layer of Object.values(this.layers)) {
+			for (const [i, { level, t }] of layer) {
+				if (level > st[i * 4]) {
+					st[i * 4] = level;
+					st[i * 4 + 1] = t;
+				}
+			}
+		}
 		const attr = this.stateBuf?.value as THREE.StorageInstancedBufferAttribute | undefined;
 		if (!attr) return;
-		(attr.array as Float32Array).set(this.stateArray);
+		(attr.array as Float32Array).set(st);
 		attr.needsUpdate = true;
 		let any = false;
 		for (let i = 0; i < this.count; i++) {
-			if (this.stateArray[i * 4] > 0.5) {
+			if (st[i * 4] > 0.5) {
 				any = true;
 				break;
 			}

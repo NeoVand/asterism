@@ -37,6 +37,8 @@
 	let index = new Map<string, number>();
 	let hovered = $state<number | null>(null);
 	let selected = $state<string | null>(null);
+	/** The star whose neighbours are lit; they go out as soon as the selection moves on. */
+	let neighborsOf = $state<string | null>(null);
 	let paletteOpen = $state(false);
 	let settingsOpen = $state(false);
 	let cited = $state<{ index: number; n: number }[]>([]);
@@ -90,7 +92,6 @@
 			if (i == null) return;
 			selected = id;
 			renderer?.spotlight(null);
-			renderer?.light([i], 'read');
 			renderer?.flyTo([i], { distance: 300 });
 		},
 		ask(text) {
@@ -159,8 +160,12 @@
 		renderer?.setBundled(settings.value.bundle);
 	});
 
+	// The selection (and its neighbours, when asked) is a transient light: it follows `selected`.
 	$effect(() => {
-		renderer?.setSelected(selected ? (index.get(selected) ?? null) : null);
+		void shownGraph; // re-apply after a reload (setGraph clears the layers)
+		const i = selected ? (index.get(selected) ?? null) : null;
+		renderer?.setSelected(i);
+		renderer?.focus(i, i != null && neighborsOf === selected ? neighborsList(i) : []);
 	});
 
 	let dragging = $state(false);
@@ -244,9 +249,8 @@
 			.catch((e) => (error = String(e)));
 	});
 
-	function neighbors(id: string) {
-		const i = index.get(id);
-		if (i == null || !graph || !renderer) return;
+	function neighborsList(i: number): number[] {
+		if (!graph) return [];
 		if (!adjacency) {
 			// eslint-disable-next-line svelte/prefer-svelte-reactivity -- lazily built lookup, not state
 			adjacency = new Map();
@@ -259,10 +263,19 @@
 				adjacency.get(t)!.push(s);
 			}
 		}
-		const nb = adjacency.get(i) ?? [];
-		renderer.light(nb, 'touched');
-		renderer.light([i], 'read');
-		renderer.flyTo([i, ...nb.slice(0, 200)]);
+		return adjacency.get(i) ?? [];
+	}
+
+	/** Toggle the selected star's neighbours on and frame them. */
+	function neighbors(id: string) {
+		const i = index.get(id);
+		if (i == null || !renderer) return;
+		if (neighborsOf === id) {
+			neighborsOf = null;
+			return;
+		}
+		neighborsOf = id;
+		renderer.flyTo([i, ...neighborsList(i).slice(0, 200)]);
 	}
 
 	function flyTopic(t: number) {
@@ -357,10 +370,7 @@
 				return;
 			}
 			const id = graph?.ids[i];
-			if (id) {
-				selected = id;
-				renderer?.light([i], 'read');
-			}
+			if (id) selected = id;
 		}}
 		onsettled={() => (settled = true)}
 		onunsettled={() => (settled = false)}
@@ -409,7 +419,12 @@
 			<div class="absolute top-[68px] bottom-16 left-4 flex items-start">
 				{#key selected}
 					<svelte:boundary onerror={(e) => console.error('node card failed to render', e)}>
-						<NodeCard id={selected} onclose={() => (selected = null)} onneighbors={neighbors} />
+						<NodeCard
+							id={selected}
+							onclose={() => (selected = null)}
+							neighborsLit={neighborsOf === selected}
+							onneighbors={neighbors}
+						/>
 						{#snippet failed()}{/snippet}
 					</svelte:boundary>
 				{/key}

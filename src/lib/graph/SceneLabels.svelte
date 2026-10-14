@@ -73,6 +73,29 @@
 	const slots = new Map<number, number>();
 	let lastCentroid = 0;
 
+	// The hover box is created at the corner of the screen and must be moved before the browser
+	// paints it, or it flashes there for a frame: place it as soon as it mounts or its star changes
+	// (effects run before paint), and keep it hidden until it has a position.
+	const hp: Projected = { x: 0, y: 0, z: 0, visible: false };
+	function placeHover() {
+		if (!hoverEl || hovered == null || !renderer) return;
+		renderer.project(hovered, hp);
+		if (!hp.visible) {
+			hoverEl.style.visibility = 'hidden';
+			return;
+		}
+		const w = hoverEl.offsetWidth;
+		const right = hp.x + 16 + w > window.innerWidth - 500;
+		hoverEl.style.transform = `translate3d(${right ? hp.x - 16 - w : hp.x + 16}px, ${hp.y - 14}px, 0)`;
+		hoverEl.style.visibility = 'visible';
+	}
+
+	$effect(() => {
+		void hovered;
+		void hoverEl;
+		placeHover();
+	});
+
 	onMount(() => {
 		let raf = 0;
 		const p: Projected = { x: 0, y: 0, z: 0, visible: false };
@@ -134,12 +157,7 @@
 				el.style.opacity = '1';
 				placed.push([x, y, x + w, y + LABEL_H]);
 			}
-			if (hoverEl && hovered != null) {
-				renderer.project(hovered, p);
-				const w = hoverEl.offsetWidth;
-				const right = p.x + 16 + w > window.innerWidth - 500;
-				hoverEl.style.transform = `translate3d(${right ? p.x - 16 - w : p.x + 16}px, ${p.y - 14}px, 0)`;
-			}
+			placeHover();
 		};
 		raf = requestAnimationFrame(loop);
 		return () => cancelAnimationFrame(raf);
@@ -184,6 +202,7 @@
 		<button
 			type="button"
 			bind:this={citedEls[k]}
+			style="opacity: 0"
 			class="pointer-events-auto absolute top-0 left-0 flex max-w-[220px] items-center gap-1.5 rounded-md bg-ink-950/75 py-0.5 pr-2 pl-0.5 text-[11px] text-fg-2 backdrop-blur-sm transition-[opacity,color] duration-300 will-change-transform hover:text-fg"
 			onclick={() => onpick(c.index)}
 		>
@@ -198,6 +217,7 @@
 	{#if hovered != null && graph}
 		<div
 			bind:this={hoverEl}
+			style="visibility: hidden"
 			class="absolute top-0 left-0 w-max max-w-[300px] rounded-lg border border-white/10 bg-ink-900/90 px-2.5 py-1.5 shadow-xl backdrop-blur-md will-change-transform"
 		>
 			<div class="mb-0.5 flex items-center gap-1.5 text-[10px] tracking-wide text-fg-3 uppercase">
