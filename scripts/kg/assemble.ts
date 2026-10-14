@@ -6,6 +6,7 @@
  *
  * Output: data/kg/graph.json
  */
+import { createHash } from 'node:crypto';
 import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import type {
 	EntityKind,
@@ -156,6 +157,19 @@ export function assemble(): KGraph {
 		termKey.set(entityKey(t.title.replace(/\s*\(.*?\)\s*/g, ' ')), t.id);
 		for (const a of t.aliases) if (a.length > 2) termKey.set(entityKey(a), t.id);
 	}
+	// A concept that bundles several things ("NIOSH, MSHA, BLS and CPWR", "Standards bodies (ISO,
+	// IEC, …)") must not swallow its members: they stay entities linked with is_a.
+	const groupTerm = new Set(
+		corpus.terms
+			.filter((t) => {
+				const bare = t.title.replace(/\s*\(.*?\)\s*/g, ' ').trim();
+				const parens = [...t.title.matchAll(/\(([^)]*)\)/g)].map((m) => m[1]).join(',');
+				return /,| and /.test(bare) || /,/.test(parens);
+			})
+			.map((t) => t.id)
+	);
+	const titleKey = new Map(corpus.terms.map((t) => [t.id, entityKey(t.title.replace(/\s*\(.*?\)\s*/g, ' '))]));
+	const mergesInto = (name: string, termId: string) => !groupTerm.has(termId) || entityKey(name) === titleKey.get(termId);
 	for (const t of corpus.terms) {
 		for (const slug of t.related) {
 			const o = termBySlug.get(slug);
@@ -191,14 +205,21 @@ export function assemble(): KGraph {
 	const entityNodes = new Map<string, KGNode>();
 	const entityVotes = new Map<string, Map<TopicKey, number>>();
 	const termOfEntry = new Map(corpus.terms.map((t) => [t.sectionId, t.id]));
-	let fid = 0;
+	// Stable fact ids across rebuilds: chunk + text hash → id, persisted.
+	const idFile = `${DATA}/fact-ids.json`;
+	const factIds: Record<string, string> = existsSync(idFile) ? JSON.parse(readFileSync(idFile, 'utf8')) : {};
+	let nextId = Object.values(factIds).reduce((m, id) => Math.max(m, Number(id.slice(1))), 0);
+	const usedIds = new Set<string>();
 	for (const f of files) {
 		const res: ExtractResult = JSON.parse(readFileSync(`${DATA}/extract/${f}`, 'utf8'));
 		const chunk = chunkById.get(res.chunkId);
 		if (!chunk) continue;
 		const entryTerm = chunk.role === 'glossary-entry' ? termOfEntry.get(chunk.sectionId) : undefined;
 		for (const x of res.facts) {
-			const id = `f${++fid}`;
+			const fkey = `${res.chunkId}:${createHash('sha1').update(x.text).digest('hex').slice(0, 12)}`;
+			let id = factIds[fkey];
+			if (!id || usedIds.has(id)) factIds[fkey] = id = `f${++nextId}`;
+			usedIds.add(id);
 			// Topic vote: chapter prior, glossary part, then the concepts the fact uses.
 			const votes = new Map<TopicKey, number>();
 			const vote = (k: TopicKey | null | undefined, w: number) => k && votes.set(k, (votes.get(k) ?? 0) + w);
@@ -238,15 +259,22 @@ export function assemble(): KGraph {
 				const key = entityKey(ent.name);
 				if (!key || key.length < 2) continue;
 				const resolved = resolution.map[key];
+				let isA: string | null = null;
 				if (resolved && 'term' in resolved) {
-					link(id, resolved.term, 'uses');
-					continue;
+					if (mergesInto(ent.name, resolved.term)) {
+						link(id, resolved.term, 'uses');
+						continue;
+					}
+					isA = resolved.term;
+				} else if (!resolved && termKey.has(key)) {
+					const tid = termKey.get(key)!;
+					if (mergesInto(ent.name, tid)) {
+						link(id, tid, 'uses');
+						continue;
+					}
+					isA = tid;
 				}
-				if (!resolved && termKey.has(key)) {
-					link(id, termKey.get(key)!, 'uses');
-					continue;
-				}
-				const canonical = resolved ?? { name: ent.name, kind: ent.kind as EntityKind };
+				const canonical = resolved && !('term' in resolved) ? resolved : { name: ent.name, kind: ent.kind as EntityKind };
 				const ck = entityKey(canonical.name);
 				let en = entityNodes.get(ck);
 				if (!en) {
@@ -264,12 +292,15 @@ export function assemble(): KGraph {
 					const tk = termKey.get(ck);
 					if (tk) link(en.id, tk, 'is_a');
 				}
+				if (isA) link(en.id, isA, 'is_a');
 				link(id, en.id, 'about');
 				const ev = entityVotes.get(en.id)!;
 				ev.set(topic, (ev.get(topic) ?? 0) + 1);
 			}
 		}
 	}
+
+	writeFileSync(idFile, JSON.stringify(factIds));
 
 	// Entity and source topics by majority of their facts.
 	for (const [eid, votes] of entityVotes) byId.get(eid)!.topic = topicVote(votes, byId.get(eid)!.topic);

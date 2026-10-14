@@ -1,0 +1,257 @@
+{
+ "chunkId": "k651",
+ "hash": "dc63cfb83294c549",
+ "facts": [
+  {
+   "text": "Perception is the chain of steps by which a machine turns raw sensor signals into a list of surrounding objects, with positions and speeds, that braking logic can act on.",
+   "quote": "Perception is the chain of steps by which a machine turns raw sensor signals into a short list of the things around it, with positions and speeds, that the braking logic can act on.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t85",
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The usual perception steps are detection, classification, tracking and fusion of several sensors.",
+   "quote": "The usual steps are detection (something is there), classification (what it is), tracking (where it is going) and fusion (combining several sensors).",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t85",
+    "t86",
+    "t99"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Decision logic judges whether perceived objects pose a collision risk and whether to warn, slow or brake.",
+   "quote": "The decision logic then judges whether any object is a collision risk and whether to warn, slow or brake.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t85",
+    "t18"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The sensing-to-braking distance budget comprises detection, confirmation and risk determination, intervention command, brake response, physical stopping and residual safe distance.",
+   "quote": "a distance budget: detection, confirmation and risk determination, intervention command, brake response, physical stopping, residual safe distance [Chapter 8].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t172",
+    "t170",
+    "t194",
+    "t85"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Each step from sensing to braking adds delay and can fail in its own way.",
+   "quote": "From sensing to braking: each step adds delay, and each can be wrong in its own way.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t172",
+    "t56",
+    "t85"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Perception can miss a real person, producing a false negative, or report a nonexistent threat such as a harmless rock pile, producing a false positive.",
+   "quote": "Perception fails in two directions: it can miss a real person (a false negative) or report a threat that is not there, such as a harmless rock pile (a false positive).",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t85",
+    "t108"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "False-positive perception is common on job sites because loading a truck, backing to a berm and working beside a spotter can look like collisions to a sensor.",
+   "quote": "On a job site the second is common, because loading a truck, backing to a berm and working beside a spotter all look like collisions to a sensor [Chapter 4].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    4
+   ],
+   "entities": [],
+   "terms": [
+    "t39",
+    "t108",
+    "t85",
+    "t11"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 16001 allows at most 300 milliseconds for detection.",
+   "quote": "the international standard ISO 16001 allows at most 300 milliseconds for detection [Chapter 3].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t283",
+    "t88",
+    "t86"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor realism in simulation matters only insofar as it changes the decisions of detection, tracking and braking logic; validation should therefore be judged at the function level using false brakes and missed brakes.",
+   "quote": "sensor realism in simulation matters only as far as it changes what the detection, tracking and braking logic decides, so validation should be judged at the function level, in false brakes and missed brakes [Chapter 6].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t256",
+    "t127",
+    "t85",
+    "t31"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Testing decision logic with perfect, hand-made object lists is cheap but cannot prove perception performance.",
+   "quote": "Testing the logic with perfect, hand-made object lists is cheap but cannot prove perception [Chapter 7]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t156",
+    "t85",
+    "t185"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An ideal sensor model can appear realistic at the tracking output while hiding the largest errors in raw data.",
+   "quote": "an \"ideal\" sensor model can look realistic at the tracking output while hiding the largest errors in the raw data [Chapter 6].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t85",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "If dust, glare or mud reduce reliable detection range below stopping distance, no brake model can recover the lost margin.",
+   "quote": "If dust, glare or mud cut the reliable detection range below the stopping distance, no brake model can recover the lost margin [Chapter 8].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t193",
+    "t170",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Perception in dust, rain, mud and occlusion is identified as the hardest gap in the heavy off-road machine collision-mitigation program.",
+   "quote": "Perception in dust, rain, mud and occlusion is named as the hardest gap in the program [Chapter 12]",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12
+   ],
+   "entities": [],
+   "terms": [
+    "t85",
+    "t102",
+    "t103",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No public demonstration was found covering heavy machines, severe weather and closed-loop braking together.",
+   "quote": "no public demonstration was found that covers heavy machines, severe weather and closed-loop braking together [Chapter 6].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t1",
+    "t102",
+    "t154",
+    "t70"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t104",
+ "hash": "9f844afe35fc25d1",
+ "synopsis": "Cluttered off-road environments create both missed-detection and unnecessary-braking risks: idealized perception cannot establish that radar resolves a worker beside a large metal structure, while operational triggers include rock piles, berms, adjacent machines and the truck’s own tyres [f2578, f3022, f4362]. Radar is considered most likely to remain useful in dust and darkness, but radar and ultrasonic simulation of off-road clutter remains low credibility until correlated with the company’s own measurements [f12650, f12774]. The strongest direct off-road radar evidence is the 2025 wheel-loader study, whose synthetic results required hand-built geometry and tuned materials yet still missed real double reflections; validated simulation of piles, highwalls, large steel structures and machine self-reflection was not found for any sensor [f4714, f4422, f12768, f4718]. Real site captures preserve geometry, clutter and unexpected correlations, although photogrammetry itself can fail on textureless soil, glare, reflections and moving objects [f3701, f3753, f4203]. Planning should therefore pair high-value simulated phenomena with physical reference tests before prototype arrival and retain physical testing for unresolved effects within the four-month validation window, rather than treating bench stimulation as realistic reproduction of terrain clutter or steel-structure multipath [f7374, f12751, f5327].",
+ "relations": [
+  {
+   "a": "f4422",
+   "b": "f4717",
+   "type": "same",
+   "note": "Both report missing real double reflections in the wheel-loader experiment."
+  },
+  {
+   "a": "f4717",
+   "b": "f12769",
+   "type": "same",
+   "note": "Glossary restates the wheel-loader experiment’s missing double reflections."
+  },
+  {
+   "a": "f5006",
+   "b": "f4717",
+   "type": "same",
+   "note": "Both identify double reflections absent from radar simulation."
+  },
+  {
+   "a": "f4718",
+   "b": "f12770",
+   "type": "same",
+   "note": "Same absence of validated pile, highwall, steel-structure and machine-body simulation."
+  },
+  {
+   "a": "f3936",
+   "b": "f12771",
+   "type": "same",
+   "note": "Both reject simple ray-hit detection models around large metal bodies."
+  },
+  {
+   "a": "f5194",
+   "b": "f5327",
+   "type": "same",
+   "note": "Both describe stimulation hardware’s inability to reproduce off-road clutter and steel multipath."
+  },
+  {
+   "a": "f5194",
+   "b": "f13045",
+   "type": "same",
+   "note": "Glossary repeats stimulation limitations and additionally names soiling."
+  },
+  {
+   "a": "f7085",
+   "b": "f7419",
+   "type": "same",
+   "note": "Both report missing validation evidence for radar and ultrasonic simulation in weather and clutter."
+  },
+  {
+   "a": "f12650",
+   "b": "f12774",
+   "type": "same",
+   "note": "Both require company measurements before treating off-road radar clutter simulation as credible."
+  },
+  {
+   "a": "f3722",
+   "b": "f4203",
+   "type": "same",
+   "note": "Both identify textureless soil, reflections, glare and moving objects as photogrammetry failures."
+  },
+  {
+   "a": "f3800",
+   "b": "f4040",
+   "type": "same",
+   "note": "Both cite COLMAP warnings about high dynamic range and specular scenes."
+  },
+  {
+   "a": "f3701",
+   "b": "f13142",
+   "type": "same",
+   "note": "Both identify survey capture as a source of real geometry and clutter anchors."
+  },
+  {
+   "a": "f4422",
+   "b": "f1739",
+   "type": "supports",
+   "note": "Residual reflection errors justify physical correlation of radar multipath and material effects."
+  },
+  {
+   "a": "f2578",
+   "b": "f493",
+   "type": "supports",
+   "note": "Unproven worker detection beside metal supports separate physical sensor validation."
+  },
+  {
+   "a": "f3022",
+   "b": "f4362",
+   "type": "supports",
+   "note": "Observed benign triggers motivate false-positive braking and productivity tests."
+  },
+  {
+   "a": "f4087",
+   "b": "f13142",
+   "type": "supports",
+   "note": "Unspecified real clutter combinations explain why captured sites serve as validation anchors."
+  },
+  {
+   "a": "f12751",
+   "b": "f7374",
+   "type": "depends",
+   "note": "Residual modeling gaps and the four-month window drive early paired physical reference tests."
+  },
+  {
+   "a": "f5393",
+   "b": "f7374",
+   "type": "elaborates",
+   "note": "Physical reference testing must account for imperfect radar in reflective and multipath environments."
+  }
+ ]
+}

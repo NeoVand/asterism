@@ -1,0 +1,115 @@
+{
+ "key": "e:united states",
+ "hash": "15d92f0122f5794f",
+ "synopsis": "For the off-road scope discussed, US rules require warnings, detection and written safety programs that evaluate technologies, but not automatic braking; the MSHA surface-mobile-equipment rule was finalised on 20 December 2023, became effective on 19 January 2024, and had a compliance date of 17 July 2024, with 863 citations reported by April 2026 [f2861, f2087, f2777, f2088]. Powered haulage caused 13 of 33 US mining deaths (39%) and 426 of 4,792 nonfatal injuries (9%) in 2025, supporting its continued importance as a safety priority [f2978, f2979, f2980]. Historical evidence distinguishes collision hazards from other haul-truck hazards: among 54 deaths in January 2005–June 2021, 13 were collisions with people or vehicles, 21 involved berms and 12 occurred at dump points; 12 of the 13 collisions involved forward movement, while a separate blind-area dataset found 67% of victims behind reversing equipment [f2989, f2990, f2986]. MSHA Table M-1 uses approximately 2.94 m/s² constant deceleration, weight-dependent system response of 0.5–2.5 seconds and one second of operator response, whereas a historic mining report gives approximately two seconds of nominal operator reaction and another 1–2 seconds of dynamic-retarder lag [f5989, f6058, f6059, f6060]. US on-road evidence offers threshold-and-latency evaluation methods and cautions about false or unexpected braking, but FMVSS No. 127 is not applicable to off-road machines and the final status of the July 2023 heavy-vehicle AEB proposal remains uncertain [f6346, f6189, f6304, f2831, f1964]. Regulatory compliance should not be treated as proof of proximity-detection feasibility, and the corpus found no dedicated US off-road requirement for an ML collision-avoidance function to meet a specified ML validation standard by 2028 [f11228, f2393].",
+ "relations": [
+  {
+   "a": "f142",
+   "b": "f237",
+   "type": "same",
+   "note": "Both give the MSHA table deceleration as approximately 2.94 m/s²."
+  },
+  {
+   "a": "f142",
+   "b": "f5890",
+   "type": "same",
+   "note": "Chapter 8 restates the deceleration and supplies its imperial equivalent."
+  },
+  {
+   "a": "f5890",
+   "b": "f5989",
+   "type": "elaborates",
+   "note": "Adds stopping-distance calculation scope, system response and operator response assumptions."
+  },
+  {
+   "a": "f166",
+   "b": "f2082",
+   "type": "same",
+   "note": "Both state US requirements do not mandate automatic braking."
+  },
+  {
+   "a": "f2082",
+   "b": "f2861",
+   "type": "same",
+   "note": "Restates warnings and programs rather than automatic braking, adding detection."
+  },
+  {
+   "a": "f2087",
+   "b": "f7497",
+   "type": "same",
+   "note": "Both require written safety programs evaluating technologies under the surface-equipment rule."
+  },
+  {
+   "a": "f1368",
+   "b": "f7496",
+   "type": "same",
+   "note": "Same rule publication and effectiveness chronology; Chapter 9 specifies the January day."
+  },
+  {
+   "a": "f7496",
+   "b": "f2777",
+   "type": "elaborates",
+   "note": "Adds exact December publication date and July 2024 compliance deadline."
+  },
+  {
+   "a": "f2979",
+   "b": "f7499",
+   "type": "same",
+   "note": "Both report 13 of 33 mining deaths, or 39%, in 2025."
+  },
+  {
+   "a": "f2980",
+   "b": "f7500",
+   "type": "same",
+   "note": "Both report 426 of 4,792 nonfatal injuries, or 9%, in 2025."
+  },
+  {
+   "a": "f228",
+   "b": "f2990",
+   "type": "same",
+   "note": "Both report forward movement in 12 of 13 fatal haul-truck collisions."
+  },
+  {
+   "a": "f2990",
+   "b": "f11405",
+   "type": "same",
+   "note": "Glossary repeats the forward-moving truck finding for the same collision dataset."
+  },
+  {
+   "a": "f2991",
+   "b": "f11406",
+   "type": "same",
+   "note": "Both identify four startup collisions with people within approximately 15 metres."
+  },
+  {
+   "a": "f2989",
+   "b": "f11404",
+   "type": "same",
+   "note": "Same 54-death dataset and four-category fatality breakdown."
+  },
+  {
+   "a": "f2985",
+   "b": "f11389",
+   "type": "same",
+   "note": "Both report loaders in 33% of 22 blind-area deaths, behind dump trucks."
+  },
+  {
+   "a": "f2986",
+   "b": "f11530",
+   "type": "same",
+   "note": "Both report 67% of blind-area victims behind reversing equipment."
+  },
+  {
+   "a": "f2532",
+   "b": "f2831",
+   "type": "elaborates",
+   "note": "Adds covered safety functions and explicitly excludes off-road machines."
+  },
+  {
+   "a": "f6346",
+   "b": "f6189",
+   "type": "supports",
+   "note": "The trigger-and-latency simulation provides the basis for the reported tuning trade-off."
+  }
+ ]
+}

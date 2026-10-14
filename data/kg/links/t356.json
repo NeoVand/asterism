@@ -1,0 +1,115 @@
+{
+ "key": "t356",
+ "hash": "205dd7526ed1757a",
+ "synopsis": "The booklet defines useful visuals as drawings that expose dependencies and gaps, not decoration; it found no credible basis for claiming that any one format universally earns engineering reviewers’ trust [f16469, f9476, f9864, f16470]. It recommends dividing the work among six kinds: layered roadmaps with gates, claim-to-evidence maps, coverage maps, architecture views, probabilistic schedules and risk views [f16473, f16474, f16475, f16476, f16478, f16479, f16480]. Coverage gaps should remain visibly blank rather than disappear into an “85% coverage” score, and simulation credibility should be mapped into supported and unsupported regions with physical evidence rather than reduced to “95% accurate” or a green dashboard [f9880, f8019]. Schedule communication should show distributions or confidence windows, P50, P80 and deadline probability; risk heat maps may serve familiarity but must not drive prioritization because of documented ranking defects [f9889, f9863, f9894, f9895]. Evidence is narrower than a general trust claim: individual experiments found decision or comprehension benefits, decorative-graph persuasion failed to replicate, and uncertainty-display effects depend on context; plain charts and words should expose caveats, while a pilot traffic light should show both the trusted envelope and failures [f9482, f9858, f9484, f9892, f8020, f9920].",
+ "relations": [
+  {
+   "a": "f9864",
+   "b": "f16470",
+   "type": "same",
+   "note": "Both report no credible evidence that one format universally earns engineering reviewers’ trust."
+  },
+  {
+   "a": "f9476",
+   "b": "f16469",
+   "type": "same",
+   "note": "Useful visuals expose dependencies and gaps rather than decorate."
+  },
+  {
+   "a": "f9880",
+   "b": "f16477",
+   "type": "same",
+   "note": "Both require visibly blank coverage gaps instead of an aggregate 85% score."
+  },
+  {
+   "a": "f9482",
+   "b": "f16333",
+   "type": "same",
+   "note": "Both report one experiment’s decision benefits from quantile dotplots and cumulative curves."
+  },
+  {
+   "a": "f9484",
+   "b": "f16471",
+   "type": "same",
+   "note": "Both report failure to replicate decorative graphs’ persuasion benefit."
+  },
+  {
+   "a": "f9858",
+   "b": "f16464",
+   "type": "same",
+   "note": "Both describe improved comprehension with assertion-evidence slides in a quasi-experiment."
+  },
+  {
+   "a": "f9889",
+   "b": "f16479",
+   "type": "same",
+   "note": "Both recommend Monte Carlo S-curves marked P50 and P80, or fan charts."
+  },
+  {
+   "a": "f9920",
+   "b": "f16397",
+   "type": "same",
+   "note": "Both recommend pilot traffic lights showing the trusted envelope and failures."
+  },
+  {
+   "a": "f8020",
+   "b": "f14982",
+   "type": "same",
+   "note": "Both recommend plain charts and words rather than slides burying caveats."
+  },
+  {
+   "a": "f8020",
+   "b": "f15855",
+   "type": "same",
+   "note": "Both derive plain-language presentation guidance from Columbia’s criticism."
+  },
+  {
+   "a": "f7959",
+   "b": "f15852",
+   "type": "same",
+   "note": "Both report Columbia’s criticism of slides burying information in vague wording."
+  },
+  {
+   "a": "f14937",
+   "b": "f15852",
+   "type": "same",
+   "note": "Both restate Columbia’s criticism of briefing slides and vague words."
+  },
+  {
+   "a": "f16474",
+   "b": "f9477",
+   "type": "elaborates",
+   "note": "Specifies roadmap axes, evidence streams and dependencies behind the gate-diamond recommendation."
+  },
+  {
+   "a": "f16478",
+   "b": "f9480",
+   "type": "elaborates",
+   "note": "Lists architecture components and adds substituted elements to the real/modelled/emulated distinction."
+  },
+  {
+   "a": "f9895",
+   "b": "f16481",
+   "type": "supports",
+   "note": "Documented ranking defects explain limiting heat maps to familiarity."
+  },
+  {
+   "a": "f9860",
+   "b": "f9863",
+   "type": "supports",
+   "note": "Numeric ranges’ smaller trust penalty supports stating schedule uncertainty numerically rather than verbally."
+  },
+  {
+   "a": "f9882",
+   "b": "f16476",
+   "type": "depends",
+   "note": "Constructing the coverage map requires defining its scenario or hazard taxonomy."
+  },
+  {
+   "a": "f16482",
+   "b": "f8019",
+   "type": "elaborates",
+   "note": "Adds one-page credibility maps and pilot reports exposing both trusted regions and failures."
+  }
+ ]
+}

@@ -1,0 +1,723 @@
+{
+ "chunkId": "k460",
+ "hash": "b849ccaf8418e9d7",
+ "facts": [
+  {
+   "text": "An offline-accurate renderer may fail to meet ECU timing deterministically in real-time hardware-in-the-loop testing.",
+   "quote": "A renderer accurate offline may not meet ECU timing deterministically",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t153",
+    "t119"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Real-time HIL mismatch should be mitigated by benchmarking latency and jitter early and keeping separate offline high-fidelity and real-time models if needed.",
+   "quote": "Benchmark latency and jitter early; keep separate offline high-fidelity and real-time models if needed",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t88",
+    "t125",
+    "t153"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Cloud GPU availability varies by location and quota; Google's documentation lists location and capacity constraints.",
+   "quote": "GPU availability varies by location and quota | Google's documentation lists location and capacity constraints. **Vendor** [23]",
+   "kind": "risk",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    23
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Google",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t330",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Cloud capacity and region-availability risks should be mitigated through multi-region capacity planning, reservations where justified, and a local fallback.",
+   "quote": "Multi-region capacity planning, reservations where justified, local fallback",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t330",
+    "t83"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Requirements and safety arguments frozen against an old standard edition may need rework when standards transition.",
+   "quote": "Requirements and safety arguments frozen on an old edition may need rework",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    29
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t271",
+    "t67",
+    "t63"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 19014-1 Edition 2 is under publication in October 2026 and replaces the 2018 edition.",
+   "quote": "ISO 19014-1 Edition 2 is under publication in October 2026 and replaces the 2018 edition",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    29
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Other parts of ISO 19014 are in revision as of October 2026.",
+   "quote": "other ISO 19014 parts are in revision",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    29
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t274"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The safety argument should be checked against the final 2026 standards publications rather than an older interpretation.",
+   "quote": "Check the safety argument against the final 2026 publications rather than an older interpretation",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t67",
+    "t271"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-1:2022 covers collision warning and avoidance by speed reduction or motion inhibit, but not automatic manoeuvring.",
+   "quote": "ISO 21815-1:2022 covers collision warning and avoidance \"by speed reduction or motion inhibit\", not automatic manoeuvring",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    146
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t23"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-1:2022 places responsibility on the operator because technologies cannot achieve full collision warning or avoidance in every situation.",
+   "quote": "places responsibility on the operator because \"technologies are unable to achieve full collision warning/avoidance in every situation\"",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    146
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t10",
+    "t23"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO/TS 21815-2:2021 is confirmed and defines the J1939 interface.",
+   "quote": "ISO/TS 21815-2:2021 (confirmed) defines the J1939 interface",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    27
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    },
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t120",
+    "t274"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The introduction to ISO/TS 21815-2:2021 states that collision warning and avoidance systems are developing technologies whose algorithms are not yet mature and well understood.",
+   "quote": "\"Collision warning and avoidance systems are developing technologies; and the algorithms are not yet mature and well understood\"",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    27
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t23"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-4 addresses swing and rotation; edition 1 is at stage 60.00, under publication and listed for October 2026.",
+   "quote": "ISO 21815-4 (swing and rotation; edition 1, stage 60.00 under publication, listed for October 2026)",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    147
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t274"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-4 excludes automatic braking.",
+   "quote": "ISO 21815-4 (swing and rotation; edition 1, stage 60.00 under publication, listed for October 2026) excludes automatic braking.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    147
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t25"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 17757:2019, reviewed and confirmed in 2024, covers autonomous and semi-autonomous machine system safety and includes braking and steering test methods adapted for autonomous operation.",
+   "quote": "ISO 17757:2019 (reviewed and confirmed 2024) covers autonomous and semi-autonomous machine system safety, with braking and steering test methods adapted for autonomous operation",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    28,
+    148
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 17757",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t284",
+    "t279"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 17757:2019 requires testing in both manual mode and autonomous mode.",
+   "quote": "testing \"shall be carried out in both manual mode ... and autonomous mode\"",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    28,
+    148
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 17757",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t284",
+    "t279"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Function-specific automated features are outside ISO 17757:2019's scope unless used as part of an autonomous or semi-autonomous machine system.",
+   "quote": "function-specific automated features are outside its scope unless used as part of such a system",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    28,
+    148
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 17757",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t284",
+    "t48"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Public previews did not establish whether ISO 17757:2019 permits simulation to substitute for its braking and steering tests.",
+   "quote": "Whether it permits simulation to substitute for these tests was not found in public previews.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    28,
+    148
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 17757",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t264",
+    "t284",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 19014 addresses earth-moving functional safety and also notes applicability to other off-road mobile machinery.",
+   "quote": "ISO 19014 (earth-moving functional safety, which also notes applicability to other off-road mobile machinery)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t49",
+    "t1"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 19014, ISO 13849, ISO 25119, ISO 26262 and ISO 21448 were not reviewed in full text; explicit rules for accepting simulation evidence or qualifying tools were not verified.",
+   "quote": "ISO 13849, ISO 25119, ISO 26262 and ISO 21448 were not reviewed in full text; explicit rules on accepting simulation evidence or qualifying tools were not verified (not found).",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 13849",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 25119",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 26262",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 21448",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t70",
+    "t127",
+    "t281",
+    "t289"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 26262-8 contains software-tool confidence and qualification clauses that on-road teams apply to simulation tools.",
+   "quote": "ISO 26262-8 contains software-tool confidence and qualification clauses that on-road teams apply to simulation tools",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    149
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 26262-8",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t289",
+    "t234",
+    "t320"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21448 (SOTIF) is explicitly a road-vehicle standard.",
+   "quote": "ISO 21448 (SOTIF) is explicitly a road-vehicle standard",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    149
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21448",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t50",
+    "t289"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Neither ISO 26262 nor ISO 21448 should be presented as automatically governing an off-road machine.",
+   "quote": "neither should be presented as automatically governing an off-road machine",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 26262",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 21448",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t289",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 3450:2011, confirmed in 2022, remains the braking performance and test standard for relevant wheeled and high-speed tracked machines.",
+   "quote": "ISO 3450:2011 (confirmed 2022) remains the braking performance and test standard for relevant wheeled and high-speed tracked machines",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    150,
+    151,
+    152
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 3450",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t282",
+    "t175",
+    "t279"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Slow crawler machines fall under ISO 10265:2008 for braking performance and testing.",
+   "quote": "slow crawler machines fall under ISO 10265:2008",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    150,
+    151,
+    152
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 10265",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t282",
+    "t175"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Agriculture has the ISO 18497:2024 series, which includes obstacle protection and verification and validation principles.",
+   "quote": "agriculture has the ISO 18497:2024 series with obstacle protection and verification and validation principles",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    150,
+    151,
+    152
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 18497",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t288",
+    "t65"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The SET Level Credible Simulation Process includes credibility levels and is cited in a 2025 Sensors paper on continuous verification and validation of active perception sensor simulations.",
+   "quote": "the SET Level Credible Simulation Process with credibility levels (cited in a 2025 Sensors paper on continuous V&V of active perception sensor simulations)",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    30,
+    31,
+    42
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "SET Level",
+     "kind": "program"
+    },
+    {
+     "name": "Credible Simulation Process",
+     "kind": "method"
+    },
+    {
+     "name": "Sensors",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t241",
+    "t240",
+    "t235",
+    "t310"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "IAMTS has a four-step reference process for correlating virtual and real worlds.",
+   "quote": "the IAMTS four-step reference process for correlating virtual and real worlds",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    30,
+    31,
+    42
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "IAMTS",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t250",
+    "t234"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An AVL presentation to ASAM describes the UNECE WP.29 NATM credibility assessment.",
+   "quote": "the UNECE WP.29 NATM credibility assessment (AVL presentation to ASAM)",
+   "kind": "method",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    153
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "AVL",
+     "kind": "company"
+    },
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    },
+    {
+     "name": "UNECE WP.29",
+     "kind": "organization"
+    },
+    {
+     "name": "NATM",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t295",
+    "t234"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM QSQ (2025) states that no standardized metrics exist to assess the quality of simulation frameworks and models, particularly in sensor simulation.",
+   "quote": "ASAM QSQ (2025): \"no standardized metrics exist to assess the quality of simulation frameworks and models, particularly in sensor simulation\"",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    30,
+    31,
+    42
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM QSQ",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t241",
+    "t323",
+    "t224",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "2026 research argues that safety-relevant virtual evidence requires model verification, validation, sensitivity analysis, assumptions management and intended-use-specific credibility, rather than large simulation counts.",
+   "quote": "2026 research arguing that safety-relevant virtual evidence requires model verification, validation, sensitivity analysis, assumptions management and intended-use-specific credibility, not large simulation counts",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    33
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t235",
+    "t260",
+    "t238",
+    "t70"
+   ],
+   "importance": 3
+  }
+ ]
+}

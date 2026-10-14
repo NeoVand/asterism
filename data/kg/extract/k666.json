@@ -1,0 +1,198 @@
+{
+ "chunkId": "k666",
+ "hash": "8dcafbf81aa31f67",
+ "facts": [
+  {
+   "text": "Sensor calibration measures a sensor's internal intrinsic properties and its external position and angle on a machine so that readings can be placed correctly in the real world.",
+   "quote": "Calibration is the measurement of how a sensor sees (its internal, intrinsic properties) and where it sits on the machine (its external, extrinsic position and angle), so that its readings can be placed correctly in the real world.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t100"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor calibration should be logged per run with drift checks, mounting revision and frame conventions because calibration is part of the data.",
+   "quote": "Calibration is part of the data, not background. It should be logged per run with drift checks, mounting revision and frame conventions",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t121"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Without sensor coordinate transforms, sensor readings cannot later be projected into a common frame.",
+   "quote": "without the transforms, sensors cannot later be projected into a common frame [Chapter 7]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t99"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Vibration on rough terrain is documented to shift sensor calibration.",
+   "quote": "Vibration on rough terrain is documented to shift sensor calibration",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Several accurate sensors can build an inaccurate scene if their coordinate transforms or timestamps are wrong.",
+   "quote": "several accurate sensors build an inaccurate scene if their transforms or timestamps are wrong [Chapter 5]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t101",
+    "t99"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor mounting differs across 100 or more machine models, so a virtual campaign using one nominal sensor position tests an ideal machine that does not exist.",
+   "quote": "Mounting differs across 100 or more machine models, so a virtual campaign using one nominal position tests an ideal machine that does not exist [Chapter 13].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t230",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Moving a sensor changes occlusion, angle of incidence, ground returns, vibration and contamination patterns.",
+   "quote": "Moving a sensor changes occlusion, angle of incidence, ground returns, vibration and contamination patterns",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t103",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor pose should be a simulation model input with an explicit validated range.",
+   "quote": "sensor pose should be a model input with an explicit validated range [Chapter 10]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t262",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet asks who calibrates sensors at the factory, what happens after a bumper or bracket is changed, and how an out-of-tolerance installation is detected.",
+   "quote": "The booklet also asks who calibrates at the factory, what happens after a bumper or bracket is changed, and how an out-of-tolerance installation is detected [Chapter 13].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t258"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A braking system that misplaces an object by half a meter because of a calibration error can brake too late or unnecessarily.",
+   "quote": "A braking system that misplaces an object by half a meter through a calibration error brakes too late or for nothing",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t22",
+    "t31"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No evidence was found on how a model validated at one sensor height transfers to other machine models.",
+   "quote": "no evidence was found on how a model validated at one sensor height transfers to other machine models [Chapters 6, 10]",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t100",
+    "t76"
+   ],
+   "importance": 3
+  }
+ ]
+}

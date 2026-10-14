@@ -1,0 +1,266 @@
+{
+ "chunkId": "k714",
+ "hash": "d8f22f3dfc673d66",
+ "facts": [
+  {
+   "text": "Software-in-the-loop (SIL) testing runs real braking software compiled for an ordinary computer inside a simulated machine on a simulated site, allowing thousands of scenarios to be tried without hardware.",
+   "quote": "Software-in-the-loop testing runs the real braking software, compiled for an ordinary computer, inside a simulated machine on a simulated site, so that thousands of scenarios can be tried without any hardware.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t22"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Software-in-the-loop testing can run faster than real time and execute hundreds of copies in parallel because the real world is absent.",
+   "quote": "Because the real world is absent, time can run faster than real time and hundreds of copies can run in parallel.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t153"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Software-in-the-loop testing needs a scenario or world model, environment simulation with ideal, phenomenological or physics-based sensor models or semantic object inputs, a machine-dynamics model including braking, articulation and load, and a test oracle that scores each run.",
+   "quote": "a scenario or world model, an environment simulation with sensor models (ideal, phenomenological or physics-based) or semantic object inputs, a machine-dynamics model that includes braking, articulation and load, and a test oracle that scores each run",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t179",
+    "t125",
+    "t62"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Software-in-the-loop testing proves logic correctness, timing in simulated time, boundary exploration, requirements tests, very high-volume regression and closed-loop coverage of large scenario sets.",
+   "quote": "It proves logic correctness, timing in simulated time, boundary exploration, requirements tests, very high-volume regression and closed-loop coverage of large scenario sets",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t161",
+    "t63",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet identifies software-in-the-loop testing as the right tool for parametrically sweeping 100+ site types and 10+ scenarios.",
+   "quote": "the right tool for sweeping the 100+ site types and 10+ scenarios parametrically",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t44",
+    "t199"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Software-in-the-loop testing cannot prove real sensor physics in dust, snow or glare unless its sensor models are validated.",
+   "quote": "It cannot prove real sensor physics in dust, snow or glare unless the sensor models are validated",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t102",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Software-in-the-loop testing cannot prove the final controller's timing, processor and input-output faults, or the real brake hardware.",
+   "quote": "nor the timing, processor and input-output faults of the final controller, nor the real brake hardware.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t119",
+    "t56",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Software-in-the-loop testing is only as credible as its models.",
+   "quote": "It is only as credible as its models",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t234",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In functional-safety standards, SIL means Safety Integrity Level, a grade of how reliable a safety function must be; this meaning is unrelated to software-in-the-loop testing and must be distinguished by context.",
+   "quote": "in functional-safety standards, SIL also means Safety Integrity Level, a grade of how reliable a safety function must be. The two have nothing in common; context tells them apart.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t53",
+    "t147",
+    "t49"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Standard support for software-in-the-loop testing is thin: ISO 18497-4:2024 for agricultural machines explicitly lists simulation alongside measurement, test and analysis as a verification method, providing the closest off-road support found.",
+   "quote": "Standard support is thin. ISO 18497-4:2024 for agricultural machines explicitly lists simulation beside measurement, test and analysis as a verification method, the closest off-road support found",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "ISO 18497-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t147",
+    "t288",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM states that no standardized metrics exist to assess sensor-simulation quality.",
+   "quote": "ASAM states that no standardized metrics exist to assess sensor-simulation quality",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t224",
+    "t234",
+    "t323"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Before hardware testing, the booklet recommends running software-in-the-loop testing first with ideal or semantic sensors to debug threat assessment and braking logic, then adding realistic sensor error models for each candidate sensor type validated against recordings from existing machines.",
+   "quote": "run SIL first with ideal or semantic sensors to debug threat assessment and braking logic, then add realistic sensor error models for each candidate sensor type, validated against recordings from existing machines",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t185",
+    "t237",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 1% miss-rate claim in each of 20 critical strata needs about 6,000 zero-miss trials, which the booklet says is only feasible in simulation or hardware-in-the-loop testing.",
+   "quote": "a 1% miss-rate claim in each of 20 critical strata needs about 6,000 zero-miss trials, \"which is only feasible in simulation or hardware-in-the-loop\"",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t210",
+    "t147",
+    "t148"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Software-in-the-loop results are trusted only after replay and sensor-model correlation; this is the first of the booklet's three ordering rules.",
+   "quote": "SIL results are trusted only after replay and sensor-model correlation, the first of the booklet's three ordering rules",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t155",
+    "t250",
+    "t234"
+   ],
+   "importance": 3
+  }
+ ]
+}

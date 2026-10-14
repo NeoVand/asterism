@@ -1,0 +1,115 @@
+{
+ "key": "t203",
+ "hash": "b145b763552f0e36",
+ "synopsis": "Exhaustive field coverage of more than 7,000 testing strata is infeasible; the booklet therefore calls for stratified sampling plus simulation, with important machine, site and weather strata deliberately sampled and weighted back to operational prevalence [f132, f6829]. Coverage, failure discovery and performance estimation must remain separate: release-rate claims require a frozen, stratified random sample drawn from the declared operating-domain distribution before tuning and never used for tuning [f11334, f14131]. Random and probability-weighted sampling can support unbiased detection and false-alarm estimates with classical confidence intervals, but those claims fail if the assumed scenario distribution does not match real operation; defensible parameter distributions are an identified weak point, and the required field distribution is unavailable in public sources [f6830, f6833, f14086, f14132]. The booklet consequently urges shadow-mode logging on the existing warning fleet now, and requires acceptance criteria, strata, confidence levels and stopping rules to be fixed before hardware arrives [f14133, f14292]. A claim of at most 1% misses in each of 20 critical strata needs about 6,000 independent zero-miss trials; encounters, runs, shifts or sites—not individual frames—must determine the effective sampling units [f6887, f5462].",
+ "relations": [
+  {
+   "a": "f132",
+   "b": "f5207",
+   "type": "same",
+   "note": "Both deem exhaustive coverage of over 7,000 strata infeasible and require stratified sampling plus simulation."
+  },
+  {
+   "a": "f1264",
+   "b": "f2511",
+   "type": "same",
+   "note": "Both describe Euro NCAP randomly selecting virtual-grid cells for physical verification."
+  },
+  {
+   "a": "f6648",
+   "b": "f14095",
+   "type": "same",
+   "note": "Both restrict release-rate claims to a frozen stratified random sample."
+  },
+  {
+   "a": "f6648",
+   "b": "f6867",
+   "type": "same",
+   "note": "Both state the same exclusive basis for release-rate claims."
+  },
+  {
+   "a": "f6761",
+   "b": "f13284",
+   "type": "same",
+   "note": "Both attach field- or expert-derived parameter distributions to scenario families for subsequent rate estimation."
+  },
+  {
+   "a": "f6761",
+   "b": "f14082",
+   "type": "same",
+   "note": "Both specify scenario-family parameter distributions derived from field data or expert estimates."
+  },
+  {
+   "a": "f11334",
+   "b": "f14098",
+   "type": "same",
+   "note": "Both separate coverage, failure discovery and frozen-sample statistical estimation."
+  },
+  {
+   "a": "f6833",
+   "b": "f14128",
+   "type": "same",
+   "note": "Both make rate-claim validity conditional on matching the real operational distribution."
+  },
+  {
+   "a": "f6939",
+   "b": "f14284",
+   "type": "same",
+   "note": "Both define estimation through a frozen stratified sample drawn before tuning from the declared domain."
+  },
+  {
+   "a": "f6956",
+   "b": "f14292",
+   "type": "same",
+   "note": "Both require pre-registration of criteria, strata, confidence levels and stopping rules before hardware arrives."
+  },
+  {
+   "a": "f6956",
+   "b": "f14297",
+   "type": "same",
+   "note": "Both fix the same statistical planning elements before hardware arrives."
+  },
+  {
+   "a": "f14292",
+   "b": "f14297",
+   "type": "same",
+   "note": "Glossary restatements of the same pre-registration requirements and timing."
+  },
+  {
+   "a": "f6830",
+   "b": "f7240",
+   "type": "same",
+   "note": "Both describe distribution-specific unbiased or weighted estimation with classical confidence intervals."
+  },
+  {
+   "a": "f6830",
+   "b": "f14126",
+   "type": "same",
+   "note": "Both describe unbiased detection and false-alarm estimation under scenario-distribution sampling with classical confidence intervals."
+  },
+  {
+   "a": "f14131",
+   "b": "f6648",
+   "type": "elaborates",
+   "note": "Specifies drawing before tuning from the declared distribution and prohibiting tuning use."
+  },
+  {
+   "a": "f14133",
+   "b": "f14132",
+   "type": "depends",
+   "note": "The missing public field distribution motivates immediate shadow-mode logging."
+  },
+  {
+   "a": "f5661",
+   "b": "f640",
+   "type": "supports",
+   "note": "Good-weather, day-shift and cooperative-site selection illustrates why sampling strata must represent the real domain."
+  },
+  {
+   "a": "f5462",
+   "b": "f6887",
+   "type": "elaborates",
+   "note": "Clarifies what independence means when counting the approximately 6,000 required trials."
+  }
+ ]
+}

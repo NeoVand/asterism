@@ -1,0 +1,261 @@
+{
+ "chunkId": "k718",
+ "hash": "5a150eb8b2767f38",
+ "facts": [
+  {
+   "text": "Vehicle-in-the-loop (VIL) testing drives a complete real machine in a safe, empty test area while virtual hazards are fed to its sensors or controller to trigger real braking.",
+   "quote": "Vehicle-in-the-loop testing drives the complete real machine on a safe, empty test area while virtual hazards are fed to its sensors or controller",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "VIL sends simulated detections to the real braking system through injection or over-the-air stimulation and feeds the machine's real position and speed back into the simulation to align subsequent stimuli.",
+   "quote": "the simulated detection reaches the braking system by injection or over-the-air stimulation, the machine really brakes, and its real position and speed are fed back into the simulation so that the next stimuli match.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t149",
+    "t150",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "VIL is also called mixed reality or augmented-reality testing because a real machine moves through an empty area while reacting to virtual objects.",
+   "quote": "Because the machine moves through an empty area while reacting to virtual objects, this is also called mixed reality or augmented-reality testing",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t151"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "One cited on-road VIL approach injects virtual hazards into a real vehicle's controller on a test track.",
+   "quote": "one cited approach injects virtual hazards into a real vehicle's controller on a test track",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t149",
+    "t158"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An augmented-reality proving-ground platform was published in 2024; the passage identifies the VIL evidence as on-road only.",
+   "quote": "an augmented-reality proving-ground platform was published in 2024 [Chapter 1].",
+   "kind": "event",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t158"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "VIL proves real braking dynamics, actuator and controller delays, end-to-end latency, and the real operator interface without endangering people or targets, providing a bridge between simulation and field testing.",
+   "quote": "VIL proves real braking dynamics, real actuator and controller delays, real end-to-end latency and the real operator interface without endangering people or targets; \"it is the bridge between simulation and field\"",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t172",
+    "t179",
+    "t37",
+    "t216"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "VIL cannot prove perception of injected objects unless the objects are stimulated over the air.",
+   "quote": "It cannot prove perception of the injected objects unless they are stimulated over the air",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t85",
+    "t150",
+    "t149"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A test bench cannot reproduce soft soil, grades, sinkage, articulated dynamics, payload behavior, vibration, dust or weather.",
+   "quote": "a bench cannot reproduce soft soil, grades, sinkage, articulated dynamics, payload behavior, vibration, dust or weather",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t174",
+    "t176",
+    "t102",
+    "t168"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The size of heavy machines makes VIL facilities difficult.",
+   "quote": "the size of heavy machines makes facilities difficult [Chapter 7].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t1"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2024 survey of on-road VIL evidence reports limitations in testbench fidelity, multi-target radar simulation, multi-camera systems and especially lidar stimulation.",
+   "quote": "A 2024 survey reports limitations in testbench fidelity, multi-target radar simulation, multi-camera systems and especially lidar stimulation",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t125",
+    "t94",
+    "t89",
+    "t92"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2024 survey of on-road VIL evidence did not identify a full-scale VIL platform ready for comprehensive industrial testing.",
+   "quote": "A 2024 survey reports limitations in testbench fidelity, multi-target radar simulation, multi-camera systems and especially lidar stimulation, and did not identify a full-scale VIL platform ready for comprehensive industrial testing",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t248"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Off-road VIL on production-scale haul trucks, loaders, dozers or excavators was not found; the available VIL evidence is on-road only.",
+   "quote": "off-road VIL on production-scale haul trucks, loaders, dozers or excavators was not found [Chapters 1, 7].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t3",
+    "t2",
+    "t6",
+    "t5"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends using VIL only where its extra physical fidelity justifies the investment.",
+   "quote": "The booklet's hierarchy uses VIL \"only where its extra physical fidelity justifies the investment\"",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t125",
+    "t358"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet treats VIL as emerging and capital-intensive rather than a proven shortcut for heavy machines.",
+   "quote": "treats it as emerging and capital-intensive rather than a proven shortcut for heavy machines [Chapter 1].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t1",
+    "t358",
+    "t248"
+   ],
+   "importance": 3
+  }
+ ]
+}

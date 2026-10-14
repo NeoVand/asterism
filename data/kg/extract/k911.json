@@ -1,0 +1,275 @@
+{
+ "chunkId": "k911",
+ "hash": "c1944127c43715db",
+ "facts": [
+  {
+   "text": "Compute cost is the cost of running simulations, determined by the computer's hourly price, the hours it runs, and the simulated time produced per computer hour.",
+   "quote": "Compute cost is what it costs to run the simulations, and it is set by three numbers: the price per hour of the computer, how many hours it runs, and how much simulated time each hour produces.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simulation cost per simulated hour equals the cloud price per wall-clock hour divided by the real-time factor (RTF), where RTF is simulated seconds produced per wall-clock second.",
+   "quote": "cost per simulated hour equals the cloud price per wall-clock hour divided by the real-time factor.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "real-time factor (RTF)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t339",
+    "t163"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "At the same hourly computer price, a simulator running at 10 times real time costs one tenth as much per simulated hour as a real-time simulator; a simulator running at 0.1 times real time costs ten times as much.",
+   "quote": "A tool at 10 times real time therefore costs one tenth as much per simulated hour as one at real time, and one at 0.1 times costs ten times as much",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "real-time factor (RTF)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "To estimate the number of simulation runs affordable within a budget, divide the budget by hourly computer price, multiply the resulting purchased hours by RTF, and divide the resulting simulated hours by one scenario's duration.",
+   "quote": "hours bought equals budget divided by hourly price; simulated hours equals hours bought times RTF; runs equals simulated hours divided by the length of one scenario.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "real-time factor (RTF)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t339",
+    "t163",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet's compute-budget example uses ten cloud instances with one GPU each, running 24 hours a day for 122 days, to obtain about 29,000 GPU-hours for about USD 54,490 on demand.",
+   "quote": "ten cloud instances, each with one graphics processing unit (GPU), running 24 hours a day for 122 days give about 29,000 GPU-hours for about USD 54,490 on demand.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t163",
+    "t336"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "If sensor-realistic simulation runs near real time, the booklet's 29,000-GPU-hour example yields roughly 29,000 hours of simulated driving; this limits full-fidelity coverage of 100-plus sites multiplied by 10-plus scenarios, weather conditions and machine variants, forcing a tiered strategy.",
+   "quote": "roughly 29,000 hours of simulated driving, which caps how many of the 100-plus sites times 10-plus scenarios times weather times machine variants can run at full fidelity and forces a tiered strategy",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t198",
+    "t44",
+    "t125",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet's reference compute-cost table estimates 1,000 GPU-hours at about USD 1,734–1,861, excluding licenses, storage, network traffic and support.",
+   "quote": "1,000 GPU-hours cost about USD 1,734 to 1,861",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet's reference compute-cost table estimates 10,000 GPU-hours at about USD 17,344–18,610, excluding licenses, storage, network traffic and support.",
+   "quote": "10,000 about USD 17,344 to 18,610",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet's reference compute-cost table estimates 100,000 GPU-hours at about USD 173,438–186,100, excluding licenses, storage, network traffic and support.",
+   "quote": "100,000 about USD 173,438 to 186,100, excluding licenses, storage, network traffic and support.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A radar solver running on a CPU took 14 hours to simulate a 12-second scenario, corresponding to an RTF of about 0.0002.",
+   "quote": "A radar solver on a central processor (CPU) took 14 hours to simulate a 12-second scenario, an RTF of about 0.0002",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    11
+   ],
+   "entities": [
+    {
+     "name": "real-time factor (RTF)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t339",
+    "t94",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The GPU version of the vendor method used for the CPU radar-solver example produced a frame in about 12 milliseconds.",
+   "quote": "the GPU version of the same vendor's method produced a frame in about 12 milliseconds.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t94",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Chrono's continuum soil simulation runs 50–200 times slower than real time.",
+   "quote": "Chrono's continuum soil runs 50 to 200 times slower than real time",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Chrono",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t339",
+    "t181",
+    "t325"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet concludes that compute is cheap relative to engineering labor, estimated at roughly USD 150,000–260,000 per specialist per year.",
+   "quote": "Compute is cheap relative to engineering labor, which the booklet puts at roughly USD 150,000 to 260,000 per specialist per year.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    11,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t358",
+    "t359"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet identifies model preparation, correlation measurements and human triage of failures as larger risks than compute cost, and recommends benchmarking these activities end to end before scaling infrastructure.",
+   "quote": "The larger risks it names are model preparation, correlation measurements and human triage of failures, to be benchmarked end to end before scaling infrastructure",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    11,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t250",
+    "t347",
+    "t163"
+   ],
+   "importance": 3
+  }
+ ]
+}

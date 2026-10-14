@@ -1,0 +1,115 @@
+{
+ "key": "t63",
+ "hash": "e0b03c3834ed83b3",
+ "synopsis": "Requirements engineering is the organizing backbone of validation: hazard analysis grounds requirements and acceptance criteria, and the traceability chain runs from hazard through safety and functional requirements, scenarios, tests, runs and results to safety-case evidence [f11978, f7105, f11969]. Starting in October 2026, planning should establish hazards, standards mappings and acceptance metrics before sensor and prototype freeze; the requirement–hazard–scenario hierarchy should be frozen during October 2026 to mid-2027, and an approved machine control system safety analysis should precede prototype arrival to avoid consuming the four-month validation window in requirements debate [f725, f7361, f12006, f10540]. SIL can establish requirements tests and large-scale closed-loop regression, but each safety requirement should be allocated to a test level containing its failure mechanisms; the new braking stage must be assessed against its own requirements rather than against a warning-only predecessor [f5266, f5780, f5500]. Requirements must address incorrect intervention as well as failure to intervene, with a remaining gap around unnecessary-braking rates and machine-stability consequences; object-class braking semantics also need safety requirements before threshold tuning [f10530, f9370, f6591]. South African mining provides performance requirements and a verification regime dated 11 October 2025, including TRL4 and TRL7 gates, while the program must baseline actually published ISO 19014 editions rather than assume planned October 2026 reissues are available, because standards transitions can force rework [f556, f2590, f12001, f8927].",
+ "relations": [
+  {
+   "a": "f651",
+   "b": "f1001",
+   "type": "same",
+   "note": "Both establish test scope and hazard-to-evidence traceability through requirements engineering and a safety case."
+  },
+  {
+   "a": "f10530",
+   "b": "f12006",
+   "type": "same",
+   "note": "Both require pre-prototype safety analysis, intervention-failure requirements, performance levels and requirement-to-test traceability."
+  },
+  {
+   "a": "f2331",
+   "b": "f12001",
+   "type": "same",
+   "note": "Both recommend baselining published ISO 19014 editions rather than assuming or mixing editions."
+  },
+  {
+   "a": "f5445",
+   "b": "f5500",
+   "type": "same",
+   "note": "Both assess new braking against requirements, not a warning-only predecessor's braking metrics."
+  },
+  {
+   "a": "f925",
+   "b": "f5266",
+   "type": "elaborates",
+   "note": "Chapter 7 adds simulated timing, boundary exploration and scenario coverage to SIL requirements testing."
+  },
+  {
+   "a": "f651",
+   "b": "f7105",
+   "type": "elaborates",
+   "note": "The ordered traceability chain specifies how hazards connect to requirements, tests and safety-case evidence."
+  },
+  {
+   "a": "f7105",
+   "b": "f10183",
+   "type": "depends",
+   "note": "The proposed verification matrix documents the hazard-to-evidence traceability chain."
+  },
+  {
+   "a": "f11978",
+   "b": "f11969",
+   "type": "supports",
+   "note": "Hazard analysis as the foundation supports tracing requirements, tests and acceptance criteria to hazards."
+  },
+  {
+   "a": "f9370",
+   "b": "f10530",
+   "type": "elaborates",
+   "note": "Unnecessary-intervention rates and stability consequences specify missing content for incorrect-intervention requirements."
+  },
+  {
+   "a": "f6591",
+   "b": "f3979",
+   "type": "supports",
+   "note": "Safety-defined braking class semantics support deriving labeling ontology from safety requirements."
+  },
+  {
+   "a": "f5780",
+   "b": "f10542",
+   "type": "elaborates",
+   "note": "Failure-mechanism coverage and cost guide allocation to simulation, hardware-in-the-loop or machine tests."
+  },
+  {
+   "a": "f4331",
+   "b": "f5780",
+   "type": "supports",
+   "note": "Requirement-specific fidelity supports choosing test levels by relevant failure mechanisms rather than visual realism."
+  },
+  {
+   "a": "f8927",
+   "b": "f2331",
+   "type": "supports",
+   "note": "Standards-transition rework risk motivates an explicit published-edition baseline at verification freeze."
+  },
+  {
+   "a": "f10540",
+   "b": "f10764",
+   "type": "elaborates",
+   "note": "Chapter 13 identifies unresolved safety requirements and standards as causes of four-month-window debate."
+  },
+  {
+   "a": "f10540",
+   "b": "f7361",
+   "type": "supports",
+   "note": "The risk of post-delivery debate supports freezing the hierarchy before prototype arrival."
+  },
+  {
+   "a": "f556",
+   "b": "f2590",
+   "type": "elaborates",
+   "note": "Chapter 3 places the verification regime alongside specifications, TRL gates and fail-to-safe provisions."
+  },
+  {
+   "a": "f2590",
+   "b": "f1855",
+   "type": "supports",
+   "note": "Named specifications and verification gates substantiate the South African requirements-based compliance approach."
+  },
+  {
+   "a": "f6668",
+   "b": "f6665",
+   "type": "supports",
+   "note": "Deterministic tests' regression purpose supports separating them from discovery and estimation campaigns."
+  }
+ ]
+}

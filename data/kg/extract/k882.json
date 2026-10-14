@@ -1,0 +1,345 @@
+{
+ "chunkId": "k882",
+ "hash": "f953aba95423f814",
+ "facts": [
+  {
+   "text": "Waymo and Motional develop self-driving road vehicles and publish safety methods that layer simulation, replay, closed-course tests, public-road tests and shadow mode; the booklet treats these methods as vendor evidence from on-road vehicles.",
+   "quote": "Waymo and Motional are developers of self-driving road vehicles whose published safety methods show how simulation, replay, closed-course tests, public roads and shadow mode are layered",
+   "kind": "definition",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Waymo",
+     "kind": "company"
+    },
+    {
+     "name": "Motional",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t311",
+    "t216",
+    "t157"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Waymo published a collision avoidance testing methodology in 2022.",
+   "quote": "Waymo published a collision avoidance testing methodology in 2022",
+   "kind": "event",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "Waymo",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t311"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Waymo documented city-by-city release in which vehicles' operating areas are widened only as evidence accumulates.",
+   "quote": "documented city-by-city release, in which the vehicles' operating area is widened only as evidence accumulates",
+   "kind": "method",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "Waymo",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t73",
+    "t140",
+    "t311"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Waymo's safety material distinguishes open-loop replay of recorded data from closed-loop simulation.",
+   "quote": "Its material distinguishes open-loop replay of recorded data from closed-loop simulation",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1,
+    7
+   ],
+   "entities": [
+    {
+     "name": "Waymo",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t155",
+    "t154",
+    "t311"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The Waymo Open Dataset illustrates that a reproducible reference needs synchronized lidar and camera data, calibration, vehicle poses and tracked 3D labels.",
+   "quote": "its Open Dataset illustrates what a reproducible reference needs: synchronized lidar and camera data, calibration, vehicle poses and tracked 3D labels",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1,
+    7
+   ],
+   "entities": [
+    {
+     "name": "Waymo Open Dataset",
+     "kind": "dataset"
+    },
+    {
+     "name": "Waymo",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t105",
+    "t107",
+    "t101",
+    "t100",
+    "t106"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A Waymo study on automatic labeling found that human labels lack the consistency one might expect, providing a caution for building ground truth.",
+   "quote": "A Waymo study on automatic labeling found that \"human labels do not have the consistency one may expect\", a caution for anyone building ground truth",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "Waymo",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t106",
+    "t105"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Waymo's 2026 world model for generating driving scenes is a vendor claim with no off-road qualification.",
+   "quote": "Its 2026 \"world model\" for generating driving scenes is a vendor claim with no off-road qualification",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Waymo",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t311",
+    "t114",
+    "t130"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Motional's 2026 safety material describes progression from synthetic simulation and re-simulation of recorded data through closed-course and public-road testing to deployment.",
+   "quote": "Motional's 2026 safety material describes a progression from synthetic simulation and re-simulation of recorded data through closed-course and public-road testing to deployment",
+   "kind": "method",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "Motional",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t311",
+    "t155",
+    "t158",
+    "t216"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Motional's 2026 safety material describes daily testing that includes shadow-mode deployment of features before broader roll-out.",
+   "quote": "with daily testing that includes shadow-mode deployment of features before broader roll-out",
+   "kind": "method",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "Motional",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t157",
+    "t73",
+    "t311"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In Motional's described shadow mode, new software runs on the vehicle and produces decisions that the actuator system does not execute, allowing behavior to be measured without risk.",
+   "quote": "Shadow mode means the new software runs on the vehicle and produces decisions \"which are not executed by the actuator system\", so its behavior can be measured without risk",
+   "kind": "method",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "Motional",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t157"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Neither Waymo nor Motional discloses validation durations or physical-test shares that would count as verified sign-off; both are vendor sources from on-road vehicles.",
+   "quote": "Both are vendor sources, both are on-road, and neither discloses validation durations or physical-test shares that would count as verified sign-off",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1,
+    2
+   ],
+   "entities": [
+    {
+     "name": "Waymo",
+     "kind": "company"
+    },
+    {
+     "name": "Motional",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t311",
+    "t70",
+    "t216",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet uses Waymo and Motional to show that the best-documented developers use simulation, replay and shadow mode as filters before scarce physical testing time, not as substitutes for physical testing.",
+   "quote": "the best-documented developers use simulation, replay and shadow mode as filters before scarce physical time, not as substitutes for it",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "Waymo",
+     "kind": "company"
+    },
+    {
+     "name": "Motional",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t216",
+    "t157",
+    "t155",
+    "t311"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet uses Waymo and Motional's programs to show that staged release with a limited operating domain is standard practice.",
+   "quote": "staged release with a limited operating domain is standard practice",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "Waymo",
+     "kind": "company"
+    },
+    {
+     "name": "Motional",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t73",
+    "t140",
+    "t311"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet identifies shadow mode on the existing warning-only fleet as the single most valuable lever for gathering false-positive evidence before the prototype arrives.",
+   "quote": "Shadow mode on the existing warning-only fleet is the booklet's single most valuable lever for gathering false-positive evidence before the prototype arrives",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    2
+   ],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t41",
+    "t108",
+    "t42"
+   ],
+   "importance": 3
+  }
+ ]
+}

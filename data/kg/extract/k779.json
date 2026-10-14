@@ -1,0 +1,278 @@
+{
+ "chunkId": "k779",
+ "hash": "3ac179443bb571bc",
+ "facts": [
+  {
+   "text": "A binomial claim states the probability of a yes-or-no outcome based on a count of trials; the rule of three says that zero failures in n trials gives about 95 percent confidence that the true failure probability is below 3/n.",
+   "quote": "A binomial claim is a statement about the probability of a yes-or-no outcome (detected or missed) based on a count of trials, and the rule of three is the shortcut that says: with zero failures in n trials, you can be about 95 percent confident that the true failure probability is below 3 divided by n.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In staged approaches of a worker toward a reversing haul truck, each trial ends with the system detecting and stopping or missing the worker.",
+   "quote": "Each staged approach of a worker toward a reversing haul truck ends in one of two ways: the system detects and stops, or it misses.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t14",
+    "t16",
+    "t3"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "When trials are independent and conditions are the same, the number of misses in n trials follows a binomial distribution, allowing the count to be converted into a confidence statement about the underlying miss probability.",
+   "quote": "If the trials are independent and the conditions are the same, the number of misses in n trials follows the binomial distribution, and standard formulas turn the count into a confidence statement about the underlying miss probability.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Claiming a reverse-worker-encounter miss rate of at most 1 percent with 95 percent confidence requires about 300 zero-miss trials by the rule of three; the passage gives 299 trials using n = ln(0.05) / ln(0.99).",
+   "quote": "The rule says n must be about 3 divided by 0.01, which is 300 clean trials. The exact formula n = ln(0.05) / ln(0.99) gives 299.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209",
+    "t16",
+    "t14"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The passage checks its 299-trial example by stating that 0.99 raised to the power 299 is about 0.0495, just below a 5 percent chance of being wrong.",
+   "quote": "Check it: 0.99 raised to the power 299 is about 0.0495, just under the 5 percent chance of being wrong.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For a miss-rate claim of at most 0.1 percent at 95 percent confidence, the rule of three gives 3,000 zero-miss trials, while the passage gives an exact figure of 2,995.",
+   "quote": "If the program wants at most 0.1 percent, the rule gives 3 divided by 0.001 = 3,000 trials, and the exact figure is 2,995.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For a miss-rate claim of at most 5 percent at 95 percent confidence, the passage states that 59 zero-miss trials suffice.",
+   "quote": "If the claim is only at most 5 percent, 59 clean trials suffice [Chapter 9, Chapter 7].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Claiming a miss rate of at most 1 percent at 95 percent confidence requires about 474 trials if one miss is allowed, or about 630 trials if two misses are allowed.",
+   "quote": "Allowing one miss while still claiming at most 1 percent needs about 474 trials; allowing two needs about 630.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The rule of three is the zero-failure special case of exact binomial inference.",
+   "quote": "The rule of three is the zero-failure special case of exact binomial inference",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t210"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet names Clopper-Pearson intervals as the conservative default when misses occur, with the Wilson interval as a less conservative alternative at moderate sample sizes.",
+   "quote": "the booklet names Clopper-Pearson intervals as the conservative default when misses occur, with the Wilson interval as a less conservative alternative at moderate sample sizes [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Clopper-Pearson intervals",
+     "kind": "method"
+    },
+    {
+     "name": "Wilson interval",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t210",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The passage's 299 zero-miss trials support only one claim about one defined population; separate claims for rain, darkness, dust, each machine family and each scenario type require their own 299 trials or a justified statistical pooling model.",
+   "quote": "If separate claims are demanded for rain, darkness, dust, each machine family and each scenario type, each needs its own 299, or a justified statistical model that pools them.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209",
+    "t214"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet's example of a 1 percent miss-rate claim in each of 20 critical strata requires about 6,000 zero-miss trials.",
+   "quote": "The booklet's example is a 1 percent claim in each of 20 critical strata: about 6,000 zero-miss trials.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209",
+    "t214"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Physical tests validate simulation in each stratum and provide smaller independent confirmation; the booklet gives 59 trials per stratum as an example for a bound of at least 95 percent detection.",
+   "quote": "Physical tests then validate the simulation in each stratum and give a smaller independent confirmation, for example 59 trials per stratum for a bound of at least 95 percent detection [Chapter 9].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t216",
+    "t210",
+    "t263",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Three to four years of physical testing previously produced the evidence for the program; the booklet argues that the rule of three shows why four months of physical testing cannot produce that evidence.",
+   "quote": "Three to four years of physical testing previously produced the evidence; the rule of three shows why four months of physical testing cannot.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t43",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet treats a claim of 20,000 scenarios with 99.8 percent success as meaningless until the population and selection method are stated, because the binomial formula applies only to independent trials drawn from a defined population.",
+   "quote": "the booklet treats \"we ran 20,000 scenarios with 99.8 percent success\" as meaningless until the population and the selection method are stated: the formula applies only to independent trials drawn from a defined population [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t200",
+    "t267",
+    "t209"
+   ],
+   "importance": 3
+  }
+ ]
+}

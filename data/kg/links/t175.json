@@ -1,0 +1,115 @@
+{
+ "key": "t175",
+ "hash": "7ce905ad82952ebf",
+ "synopsis": "The booklet uses wheeled versus crawler as the first discriminator for machine families with separate braking models, because their physics, brake standards and test methods differ; machine types and brake systems were not yet confirmed during the research [f13733, f5864]. ISO 3450:2011, confirmed in 2022, covers wheeled earth-moving machines and rubber-tracked machines with top speeds of at least 20 km/h, while ISO 10265:2008 covers crawlers at 20 km/h or less; the stated scopes therefore meet at exactly 20 km/h [f15190, f5979]. Tracks retain more shear force than tires in soft soil, and crawler modeling must account for distributed ground contact, sinkage, differential track speed, skid steering and counter-rotation; collisions can occur without longitudinal closing speed [f6007, f6023, f6024, f6218]. No universal safe deceleration was found across machine types, loads and slopes, so the proposed operating-domain taxonomy includes surface conditions, grade, cross-slope, tire or track state and payload [f6310, f6724]. A published 2026 tracked-vehicle electro-hydraulic brake response is under 0.3 seconds, and a single-machine hydraulic model reported pressure accuracy above 96% and response-time accuracy above 95%; these results are architecture-specific and do not establish temperature or wear effects [f5893, f13668, f6438, f13816]. Virtual validation has supporting tools and calibration examples: Chrono models wheeled and tracked vehicles on deformable terrain, while TERA compared track deformation and terrain-dependent velocity against a real excavator, with a December 2024 preprint and SIMPAR 2025 publication [f9333, f4130].",
+ "relations": [
+  {
+   "a": "f2360",
+   "b": "f2707",
+   "type": "same",
+   "note": "Both specify ISO 3450 service, secondary and parking brake scope."
+  },
+  {
+   "a": "f2432",
+   "b": "f6020",
+   "type": "same",
+   "note": "Both identify ISO 3450 coverage for wheeled and high-speed rubber-tracked machines."
+  },
+  {
+   "a": "f8946",
+   "b": "f15190",
+   "type": "same",
+   "note": "Both identify ISO 3450:2011 and its 2022 confirmation; glossary adds scope details."
+  },
+  {
+   "a": "f5975",
+   "b": "f15190",
+   "type": "same",
+   "note": "Both specify wheeled machines and rubber-tracked machines reaching at least 20 km/h."
+  },
+  {
+   "a": "f5979",
+   "b": "f6021",
+   "type": "same",
+   "note": "Both assign crawlers at 20 km/h or less to ISO 10265."
+  },
+  {
+   "a": "f8947",
+   "b": "f11439",
+   "type": "same",
+   "note": "Both identify ISO 10265 as the slow-crawler brake standard."
+  },
+  {
+   "a": "f3969",
+   "b": "f4130",
+   "type": "same",
+   "note": "Both describe TERA evaluation against real excavator track deformation and terrain-dependent velocity."
+  },
+  {
+   "a": "f5893",
+   "b": "f12560",
+   "type": "same",
+   "note": "Both report tracked-vehicle brake response under 0.3 seconds."
+  },
+  {
+   "a": "f5893",
+   "b": "f13668",
+   "type": "same",
+   "note": "Same 2026 electro-hydraulic response figure; glossary emphasizes architecture specificity."
+  },
+  {
+   "a": "f5893",
+   "b": "f13734",
+   "type": "same",
+   "note": "Same response figure; glossary identifies it as fastest quoted and single-machine evidence."
+  },
+  {
+   "a": "f6438",
+   "b": "f13816",
+   "type": "same",
+   "note": "Same single-machine pressure and response-time accuracy results; each adds validation limitations."
+  },
+  {
+   "a": "f6007",
+   "b": "f13719",
+   "type": "same",
+   "note": "Both report greater track shear force than tire shear force in soft soil."
+  },
+  {
+   "a": "f6007",
+   "b": "f11438",
+   "type": "supports",
+   "note": "Soft-soil shear-force evidence explains differing tracked and wheeled braking behavior."
+  },
+  {
+   "a": "f5970",
+   "b": "f13621",
+   "type": "same",
+   "note": "Both link payload to braking capability at individual wheels or tracks."
+  },
+  {
+   "a": "f6027",
+   "b": "f13732",
+   "type": "same",
+   "note": "Both identify differential speed, skid turning and counter-rotation in the forthcoming standard."
+  },
+  {
+   "a": "f6218",
+   "b": "f13731",
+   "type": "supports",
+   "note": "Counter-rotation collision risk explains why zero forward speed does not ensure safety."
+  },
+  {
+   "a": "f6310",
+   "b": "f13733",
+   "type": "supports",
+   "note": "Absence of universal safe deceleration supports separate machine-family braking models."
+  },
+  {
+   "a": "f6354",
+   "b": "f13733",
+   "type": "supports",
+   "note": "Crawler detection zones may not cover faster wheeled stopping distances, supporting family separation."
+  }
+ ]
+}

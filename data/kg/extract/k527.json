@@ -1,0 +1,587 @@
+{
+ "chunkId": "k527",
+ "hash": "93f0bee79f68ff79",
+ "facts": [
+  {
+   "text": "Realistic-looking synthetic scenes do not establish validated sensor behavior.",
+   "quote": "realistic-looking synthetic scenes are being confused with validated sensor behavior.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t256",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NIOSH's 2022 review of collision warning and avoidance testing in mining, construction, automotive and agriculture identified outstanding gaps in environmental effects including sun glare, false-positive test methods, simulation procedures, target-recognition testing and real-world validation of collision systems.",
+   "quote": "identified outstanding gaps in environmental effects including sun glare, false-positive test methods, simulation procedures, target-recognition testing and real-world validation of collision systems.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    23
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t102",
+    "t32",
+    "t126",
+    "t86",
+    "t23"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NIOSH's 2022 review reported construction and off-road work in which rain, snow, mud, mounting position, field of view and nuisance alarms mattered.",
+   "quote": "The same review reports construction and off-road work in which rain, snow, mud, mounting position, field of view and nuisance alarms mattered",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    23
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t102",
+    "t100",
+    "t87",
+    "t32"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NIOSH's 2022 review reported that snow and grime degraded camera-based systems in winter in construction and off-road work.",
+   "quote": "snow and grime degraded camera-based systems in winter.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    23
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t102",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor-model validation should provide a report for each sensor technology and mounting family, based on withheld real raw sensor data, demonstrating that synthetic changes reproduce sensor-output distributions and downstream perception behavior rather than merely visual appearance.",
+   "quote": "a sensor-model validation report for each sensor technology and mounting family, based on withheld real raw sensor data, with evidence that synthetic changes reproduce sensor-output distributions and downstream perception behavior, not merely visual appearance.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t263",
+    "t256",
+    "t253",
+    "t100",
+    "t85"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A peer-reviewed field study by Phillips, Guenther and McAree in Journal of Field Robotics (2017) found that lidar responded to the leading edge of dust clouds rather than as random noise.",
+   "quote": "In a peer-reviewed field study, lidar responded to the leading edge of dust clouds rather than as random noise",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    32
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Phillips",
+     "kind": "person"
+    },
+    {
+     "name": "Guenther",
+     "kind": "person"
+    },
+    {
+     "name": "McAree",
+     "kind": "person"
+    },
+    {
+     "name": "Journal of Field Robotics",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t102",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The 2017 Journal of Field Robotics study by Phillips, Guenther and McAree found that dust began affecting lidar measurements at about 71–74 percent atmospheric transmittance, with the effect quite variable with conditions.",
+   "quote": "dust began to affect measurements at about 71 to 74 percent atmospheric transmittance, but the effect was \"quite variable with conditions\"",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    32
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Phillips",
+     "kind": "person"
+    },
+    {
+     "name": "Guenther",
+     "kind": "person"
+    },
+    {
+     "name": "McAree",
+     "kind": "person"
+    },
+    {
+     "name": "Journal of Field Robotics",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Modeling work on lidar disturbance by airborne particles exists in a 2021 preprint, but has not been validated against the booklet organization's sites or sensors.",
+   "quote": "Modeling work on lidar disturbance by airborne particles exists (2021 preprint), but it has not been validated against this organization's sites or sensors [35].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    35
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t102",
+    "t237",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Validation of dust effects should use a sensor-model correlation campaign that measures real dust events with transmittance instrumentation and compares real and simulated point clouds and detection outcomes.",
+   "quote": "a sensor-model correlation campaign that measures real dust events with transmittance instrumentation and compares real and simulated point clouds and detection outcomes.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t160",
+    "t102",
+    "t93",
+    "t86"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An off-road lidar de-dusting filter published in Sensors in 2022 reported an F1 score of 97.55 percent on its own collected dataset.",
+   "quote": "An off-road lidar de-dusting filter reported an F1 score of 97.55 percent on its own collected dataset (Sensors, 2022) [33].",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    33
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sensors",
+     "kind": "publication"
+    },
+    {
+     "name": "F1 score",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t109",
+    "t92",
+    "t102",
+    "t107"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An RGB and lidar fusion de-dusting model for excavation by Parsons, Hanafi Sheikhha, Seo and Lee, published in Automation in Construction volume 168 in December 2024, scored 65.58 percent in one \"far dense dust\" case versus 94.85–96.73 percent in other cases of the same scenario.",
+   "quote": "(Parsons, Hanafi Sheikhha, Seo and Lee, Automation in Construction, volume 168, December 2024) scored 65.58 percent in one \"far dense dust\" case against 94.85 to 96.73 percent in the other cases of the same scenario [34].",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Parsons",
+     "kind": "person"
+    },
+    {
+     "name": "Hanafi Sheikhha",
+     "kind": "person"
+    },
+    {
+     "name": "Seo",
+     "kind": "person"
+    },
+    {
+     "name": "Lee",
+     "kind": "person"
+    },
+    {
+     "name": "Automation in Construction",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t99",
+    "t92",
+    "t89",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Published de-dusting mitigation results do not transfer automatically between datasets, sites or sensors.",
+   "quote": "Results do not transfer automatically between datasets, sites or sensors.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t107",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Detection performance for validating de-dusting mitigations should be reported per condition bin, with confidence intervals, on real data.",
+   "quote": "detection performance reported per condition bin, with confidence intervals, on real data.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t86",
+    "t209",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An on-road lidar rain-and-fog study published in Sensors in 2023 noted that degradation had so far been demonstrated through simulation or at a limited test site such as a climate chamber.",
+   "quote": "An on-road study of lidar in rain and fog noted that degradation had so far been shown \"through simulation or in a limited test site, such as a climate chamber\" (Sensors, 2023) [36].",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    36
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sensors",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t102",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Controlled on-road experiments by Sezgin and others dated 2 May 2023 tested radar, lidar and camera under rain, fog, day and night.",
+   "quote": "Controlled on-road experiments by Sezgin and others (2 May 2023) tested radar, lidar and camera under rain, fog, day and night",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    37
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sezgin",
+     "kind": "person"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t92",
+    "t89",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The controlled on-road experiments by Sezgin and others dated 2 May 2023 found that camera performance was strongly lighting-dependent.",
+   "quote": "camera performance was strongly lighting-dependent",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    37
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sezgin",
+     "kind": "person"
+    }
+   ],
+   "terms": [
+    "t89",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The controlled on-road experiments by Sezgin and others dated 2 May 2023 found that lidar lost information in fog.",
+   "quote": "lidar lost information in fog",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    37
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sezgin",
+     "kind": "person"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The controlled on-road experiments by Sezgin and others dated 2 May 2023 found that radar behavior changed in heavy rain.",
+   "quote": "radar behavior changed in heavy rain [37].",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    37
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sezgin",
+     "kind": "person"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Reference data needed to validate a weather simulator is thin.",
+   "quote": "The reference data needed to validate a weather simulator is therefore thin",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t237",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The cited on-road weather-degradation results provide physics evidence, not proof of off-road performance.",
+   "quote": "the on-road results are physics evidence, not proof of off-road performance.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t70",
+    "t261",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Weather-simulator development should use time in fog and rain chambers for calibration and field time for validation.",
+   "quote": "chamber time (fog and rain facilities) and field time, with chamber data used to calibrate the simulator and field data used to validate it.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t102",
+    "t126"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Barrick's 2015 field trial reported that the tested system survived the weather encountered.",
+   "quote": "Barrick's 2015 field trial reported that the tested system survived the weather encountered",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    22
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Barrick",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t102",
+    "t23"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Barrick's 2015 field trial reported that radar remained effective in heavy rain.",
+   "quote": "radar remained effective in heavy rain",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    22
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Barrick",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The system in Barrick's 2015 field trial had not yet been tested in snow.",
+   "quote": "the system \"had not yet been tested in snow\"",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    22
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Barrick",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t102",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Barrick's 2015 field trial found significantly high nuisance alarms on auxiliary machines such as blades and dozers working close to other equipment.",
+   "quote": "it also found significantly high nuisance alarms on auxiliary machines such as blades and dozers working close to other equipment.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    22
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Barrick",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t32",
+    "t6",
+    "t17"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Barrick's 2015 field trial does not establish that modern systems share the tested system's weaknesses; environmental and equipment-specific gaps remain invisible until the corresponding field conditions are sampled.",
+   "quote": "The lesson is not that modern systems share those weaknesses; it is that environmental and equipment-specific gaps remain invisible until the corresponding field conditions are actually sampled.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Barrick",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t102",
+    "t70",
+    "t261"
+   ],
+   "importance": 3
+  }
+ ]
+}

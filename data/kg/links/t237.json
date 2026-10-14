@@ -1,0 +1,115 @@
+{
+ "key": "t237",
+ "hash": "9693db90e7606537",
+ "synopsis": "The corpus treats model credibility as a separate task requiring comparison with reality, independent validation evidence, and distinct calibration, validation and withheld-confirmation datasets; failed validation cases must remain recorded [f11310, f12123, f7589, f7590]. Physical tests anchor the validated domain, simulation fills its interior, and physical confirmation remains necessary at boundaries and after influential changes; existing warning-system history cannot validate the new closed-loop braking chain [f7536, f7575]. Important evidence gaps persist: no published validation of heavy-machine braking distance on gravel, mud, ice or slopes was found, sensor studies mostly address individual effects on road vehicles or in laboratories, and the organization currently lacks the described simulation-credibility foundations [f253, f4408, f10414]. A program starting in October 2026 could realistically achieve SIL with partly validated sensor models by mid-2027, but sensor calibration requires real sensors; the final four-month campaign is variously framed as confirmation plus calibration, calibration and testing, or confirmation rather than tuning [f65, f914, f70, f3772, f1611]. The recommended stopping-distance core is a calibrated point-mass model with measured latency, brake build-up lag and condition-dependent worst-case deceleration, while machine-class VIL or proving-ground stops should validate the brake model; the 2025 AGX wheel-loader example demonstrates calibration against a physical machine, not a stated independent-validation result [f5905, f5558, f8292].",
+ "relations": [
+  {
+   "a": "f8292",
+   "b": "f8572",
+   "type": "same",
+   "note": "Both describe the 2025 AGX wheel-loader calibration, including terrain parameters."
+  },
+  {
+   "a": "f146",
+   "b": "f5905",
+   "type": "same",
+   "note": "Both recommend the same calibrated point-mass stopping-distance model."
+  },
+  {
+   "a": "f70",
+   "b": "f11929",
+   "type": "same",
+   "note": "Both frame the prototype window as confirmation and calibration of an already proven method."
+  },
+  {
+   "a": "f253",
+   "b": "f3743",
+   "type": "same",
+   "note": "Both report no published heavy-machine braking validation on the listed surfaces and slopes."
+  },
+  {
+   "a": "f910",
+   "b": "f5268",
+   "type": "same",
+   "note": "Both deny proof of adverse-condition sensor physics without validated sensor models."
+  },
+  {
+   "a": "f5949",
+   "b": "f6082",
+   "type": "same",
+   "note": "Both report that NIOSH's 2018 stopping model still needed validation."
+  },
+  {
+   "a": "f7589",
+   "b": "f193",
+   "type": "elaborates",
+   "note": "The reporting set adds uncertainty, credibility, validity envelope and failure records to dataset separation."
+  },
+  {
+   "a": "f7590",
+   "b": "f193",
+   "type": "supports",
+   "note": "Retaining failed validation cases is an explicit component of the expected reporting set."
+  },
+  {
+   "a": "f3772",
+   "b": "f1611",
+   "type": "contradicts",
+   "note": "The final physical window emphasizes calibration in one recommendation, confirmation rather than tuning in another."
+  },
+  {
+   "a": "f7536",
+   "b": "f6889",
+   "type": "elaborates",
+   "note": "Stratum-specific physical validation and independent confirmation operationalize the physical-anchoring requirement."
+  },
+  {
+   "a": "f5558",
+   "b": "f5905",
+   "type": "elaborates",
+   "note": "Machine-class physical stops supply a validation route for the recommended brake model."
+  },
+  {
+   "a": "f4421",
+   "b": "f7086",
+   "type": "supports",
+   "note": "Manual tuning in limited heavy-machine radar evidence supports caution pending company measurements."
+  },
+  {
+   "a": "f7385",
+   "b": "f7589",
+   "type": "supports",
+   "note": "Updating discrepancy models rather than silently tuning preserves the separation of confirmation from calibration."
+  },
+  {
+   "a": "f4057",
+   "b": "f7589",
+   "type": "supports",
+   "note": "Qualification against held-out measurements implements separation from fitting data."
+  },
+  {
+   "a": "f3498",
+   "b": "f10350",
+   "type": "supports",
+   "note": "Passenger-car response validation does not transfer directly, supporting dedicated operator-model validation."
+  },
+  {
+   "a": "f253",
+   "b": "f10433",
+   "type": "elaborates",
+   "note": "The review extends the braking-validation gap to adequate prediction across 100+ site types."
+  },
+  {
+   "a": "f12121",
+   "b": "f12123",
+   "type": "elaborates",
+   "note": "The aviation restriction exemplifies independence from shared simulator assumptions."
+  },
+  {
+   "a": "f914",
+   "b": "f65",
+   "type": "depends",
+   "note": "The partly validated sensor-model milestone requires real-sensor availability for calibration."
+  }
+ ]
+}

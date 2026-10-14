@@ -1,0 +1,375 @@
+{
+ "chunkId": "k671",
+ "hash": "a9a1f349329f269d",
+ "facts": [
+  {
+   "text": "Ground truth is the trusted, independent record of what was in front of a machine, where and when, against which system detections and warnings are scored.",
+   "quote": "Ground truth is the trusted, independent record of what was really in front of the machine, where and when, against which the system's detections and warnings are scored.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ground truth for collision-system evaluation includes object identity and class, three-dimensional position and trajectory in a common frame, machine pose and velocity, and time stamps needed to calculate distances, risk-area transitions and warning timing.",
+   "quote": "object identity and class, three-dimensional position and trajectory in a common frame, machine pose and velocity, and the time stamps needed to work out distances, risk-area transitions and warning timing [Chapter 7]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t101",
+    "t86"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Using the production detector's own output as ground truth creates circular validation: missed objects disappear from both prediction and truth, making the baseline look deceptively good.",
+   "quote": "If the production detector's own output is used as truth, every object it missed disappears from both the prediction and the \"truth\", and the baseline looks deceptively good",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t108",
+    "t221"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Measuring latency to tens of milliseconds and stopping distance to centimeters requires target-position, time-synchronization and machine-state instrumentation as part of the ground-truth measurement system.",
+   "quote": "measuring latency to tens of milliseconds and stopping distance to centimeters makes target position, time synchronization and machine-state instrumentation part of the measurement system",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t88",
+    "t170",
+    "t101"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An inaccurate ground-truth reference can make a good system look bad or a bad system look good.",
+   "quote": "a bad reference can make a good system look bad or a bad one look good [Chapter 1]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends hybrid ground truth combining reference sensors, manual labeling, automatic labeling and surveyed targets.",
+   "quote": "The booklet compares four sources and recommends a hybrid [Chapter 7].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t106"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Reference sensors comprising high-resolution lidar, centimeter-level satellite positioning and an inertial unit on the machine provide continuous distance and timing ground truth over natural encounters.",
+   "quote": "Reference sensors, a high-resolution lidar plus centimeter-level satellite positioning and an inertial unit on the machine, give continuous distance and timing truth over natural encounters",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t92",
+    "t98"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "One agricultural ground-truth benchmark achieved position error below 0.03 m with more than 80% coverage in dusty conditions.",
+   "quote": "one agricultural benchmark reached a position error below 0.03 m with more than 80% coverage in dusty conditions.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Manual ground-truth labeling handles any object class and ambiguous cases, but is slow, costly and less consistent than expected.",
+   "quote": "Manual labeling handles any object class and ambiguous cases but is slow, costly and less consistent than expected.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t105"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Automatic ground-truth labeling with large offline models scales to volume but inherits training-data biases and can silently contaminate thousands of labels.",
+   "quote": "Automatic labeling with large offline models scales to volume but inherits the biases of its training data and can silently contaminate thousands of labels",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t113",
+    "t105"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Automatic ground-truth labeling needs human audit and must never become an unaudited safety oracle.",
+   "quote": "so it needs human audit and must never become an unaudited safety oracle.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t105"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Surveyed targets positioned by survey instruments anchor ground-truth accuracy and calibrate the whole measurement chain, but cover only staged scenes.",
+   "quote": "Surveyed targets, positioned by survey instruments, anchor accuracy and calibrate the whole chain but cover only staged scenes.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t100"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The ground-truth reference system needs its own uncertainty budget and an explicit state for truth that is unavailable or ambiguous.",
+   "quote": "The reference system needs its own uncertainty budget and an explicit \"truth unavailable or ambiguous\" state",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t259"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Label precision and recall measured on the audited subset should be reported alongside every metric.",
+   "quote": "label precision and recall from the audited subset should be reported next to every metric [Chapter 7].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t109",
+    "t224"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In sensor simulation, ground truth also means the real measurements against which a sensor model is checked.",
+   "quote": "Ground truth has a second meaning in sensor simulation: the real measurements a sensor model is checked against.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t125",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Weather chambers are the main source of ground truth for weather models.",
+   "quote": "Weather chambers are the main ground truth for weather models",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t102",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No public mining or construction adverse-weather dataset suitable for model validation was found.",
+   "quote": "no public mining or construction adverse-weather dataset suited to model validation was found [Chapter 6].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t107",
+    "t102",
+    "t237",
+    "t105"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Having no ground-truth plan at recording time is a common data-logging mistake.",
+   "quote": "Having no ground-truth plan at recording time is one of the common logging mistakes [Chapter 7].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t121"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Every detection-rate, false-alarm-rate and warning-time figure in the program is a comparison against ground truth; ground-truth independence and accuracy therefore determine whether the evidence is meaningful.",
+   "quote": "Every detection rate, false-alarm rate and warning-time figure in the program is a comparison against ground truth, so its independence and accuracy decide whether the evidence means anything",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t70",
+    "t224",
+    "t32"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The program proposal may require more ground truth than management expects.",
+   "quote": "the proposal may need more ground truth than management expects",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t342"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Ground-truth labeling cost figures were not found.",
+   "quote": "labeling cost figures were not found [Chapters 7, 13].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t105",
+    "t358"
+   ],
+   "importance": 3
+  }
+ ]
+}

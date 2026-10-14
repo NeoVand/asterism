@@ -1,0 +1,115 @@
+{
+ "key": "t258",
+ "hash": "c0f04d0eedd67223",
+ "synopsis": "Across the corpus, no credibility framework supplies a universal simulation-to-test tolerance or physical-test percentage; acceptance must reflect model influence, decision consequence, applicability and uncertainty [f187, f7535, f14577]. Sector-specific numbers are precedents, not off-road defaults: FAA seat guidance uses 10% tolerances that must not be copied to braking, while Euro NCAP VT v1.00 (2025) requires at least 75% qualification per verification-test cluster but leaves several ISO-score and KPI tolerances provisional [f7537, f14668, f2627, f2628, f2503]. The off-road evidence gap remains material: no sensor-simulation fidelity thresholds were found, few realism studies predefine acceptance thresholds, and documented terrain-model capabilities do not establish machine-specific stopping-distance accuracy [f5220, f5764, f4839, f6016]. The programme should pre-agree tolerances and metrics, distinguish advisory, urgent-warning, speed-reduction and full-braking interventions, and bound its conclusions by operating regime and configuration [f9930, f2634, f9934]. A narrow simulated clearance is not a robust pass when uncertainty is comparable to the safety margin; reference measurements must be substantially more precise than acceptance margins, and reports should carry tolerances alongside results [f4343, f14013, f7473, f4344]. The example roadmap places initial checks in December–January, a correlation campaign in February–March and a threshold decision at an April gate; failed calibration criteria, excessive stopping-distance residuals or tolerances beyond production capability should trigger recalibration, stopping or escalation [f9872, f6422, f10942, f10945].",
+ "relations": [
+  {
+   "a": "f187",
+   "b": "f7535",
+   "type": "same",
+   "note": "Both report that checked credibility frameworks prescribe no universal simulation-to-test tolerance."
+  },
+  {
+   "a": "f187",
+   "b": "f14577",
+   "type": "same",
+   "note": "Both reject universal physical-test percentages and tolerances; glossary adds the derivation principles."
+  },
+  {
+   "a": "f2502",
+   "b": "f2628",
+   "type": "same",
+   "note": "Both identify bracketed Euro NCAP ISO-score and KPI tolerances as provisional."
+  },
+  {
+   "a": "f5220",
+   "b": "f5764",
+   "type": "same",
+   "note": "Duplicate findings that no off-road sensor-simulation fidelity thresholds were found."
+  },
+  {
+   "a": "f1110",
+   "b": "f5220",
+   "type": "supports",
+   "note": "Independent research supplies no threshold, supporting the reported off-road fidelity-threshold gap."
+  },
+  {
+   "a": "f7627",
+   "b": "f14668",
+   "type": "same",
+   "note": "Both prohibit transferring FAA seat tolerances to braking validation."
+  },
+  {
+   "a": "f7770",
+   "b": "f14680",
+   "type": "elaborates",
+   "note": "Glossary details per-quantity comparisons and limits on comparison-set means and standard deviations."
+  },
+  {
+   "a": "f2634",
+   "b": "f13942",
+   "type": "same",
+   "note": "Both call for separate acceptance tolerances for different intervention stages."
+  },
+  {
+   "a": "f4343",
+   "b": "f12173",
+   "type": "same",
+   "note": "Both reject passes whose safety margin is no larger than model uncertainty."
+  },
+  {
+   "a": "f4344",
+   "b": "f12173",
+   "type": "same",
+   "note": "Both recommend reporting tolerance alongside simulation results."
+  },
+  {
+   "a": "f2502",
+   "b": "f2503",
+   "type": "depends",
+   "note": "Provisional protocol values motivate the warning against adopting them as final off-road thresholds."
+  },
+  {
+   "a": "f7537",
+   "b": "f7627",
+   "type": "supports",
+   "note": "Application-specific seat criteria justify rejecting their transfer to perception or braking."
+  },
+  {
+   "a": "f7538",
+   "b": "f14637",
+   "type": "elaborates",
+   "note": "FDA decision justification details the risk-based approach to setting agreement thresholds."
+  },
+  {
+   "a": "f7473",
+   "b": "f3911",
+   "type": "elaborates",
+   "note": "Ground-truth validation adds measurement uncertainty budgets and calibrated reference chains to geometric checking."
+  },
+  {
+   "a": "f9930",
+   "b": "f9934",
+   "type": "depends",
+   "note": "A bounded pilot conclusion requires discrepancy criteria and metrics agreed before evaluation."
+  },
+  {
+   "a": "f14013",
+   "b": "f10942",
+   "type": "depends",
+   "note": "The safe-margin requirement drives stopping or escalation when stopping-distance residuals exceed that margin."
+  },
+  {
+   "a": "f10590",
+   "b": "f4840",
+   "type": "elaborates",
+   "note": "Explicit sensor error envelopes refine the credibility file's required thresholds and uncertainty documentation."
+  },
+  {
+   "a": "f14534",
+   "b": "f6169",
+   "type": "supports",
+   "note": "Average agreement can conceal unsafe uncertainty, supporting boundary-specific error-bound sufficiency checks."
+  }
+ ]
+}

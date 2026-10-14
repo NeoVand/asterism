@@ -1,0 +1,115 @@
+{
+ "key": "t154",
+ "hash": "035db249ca5b3c66",
+ "synopsis": "Recorded-data replay is open loop: it remains useful for perception and brake-trigger timing, but its recorded future ceases to represent the machine’s counterfactual future at the first brake command absent from the original run [f11321, f109, f108]. Braking consequences therefore require new closed-loop evidence from simulation, bench or hardware-in-the-loop testing, and physical tests; warning-system fleet history can validate inputs and submodels, not the new braking chain [f11711, f110, f7575]. Converting recordings into closed-loop environments requires explicit geometry, sensor properties, controllable actors and machine dynamics, with substantial conversion and calibration beyond ordinary reconstruction [f3726, f4000]. MineSim demonstrated mining-specific closed-loop feasibility in April 2025, and abstract machine-and-site simulation is considered realistic by mid-2027 for a team starting in October 2026, but scenario infrastructure is not validated sensor physics and no public demonstration was found combining heavy machines, severe weather and closed-loop braking [f330, f844, f845, f12532]. Detector-threshold tuning must be followed by closed-loop evaluation of stopping margin and unnecessary interventions; independently validating perception and the brake plant cannot exclude emergent failures in their combination, so physical tests at the collision/no-collision boundary remain recommended [f6982, f8196, f7888].",
+ "relations": [
+  {
+   "a": "f108",
+   "b": "f5183",
+   "type": "same",
+   "note": "Both place replay’s validity boundary at the first previously absent brake command."
+  },
+  {
+   "a": "f109",
+   "b": "f5185",
+   "type": "same",
+   "note": "Both assign perception and trigger-timing evaluation to open-loop logs."
+  },
+  {
+   "a": "f7575",
+   "b": "f11901",
+   "type": "same",
+   "note": "Field history validates inputs and submodels, not the new closed-loop braking chain."
+  },
+  {
+   "a": "f7304",
+   "b": "f12851",
+   "type": "same",
+   "note": "Detector operating-point tuning ignores closed-loop timing and braking and uses one objective."
+  },
+  {
+   "a": "f7305",
+   "b": "f12852",
+   "type": "same",
+   "note": "Both recommend validation-split threshold selection followed by closed-loop evaluation."
+  },
+  {
+   "a": "f4566",
+   "b": "f4880",
+   "type": "same",
+   "note": "Both report NeuroNCAP’s small open-loop real-to-sim perception gap."
+  },
+  {
+   "a": "f4544",
+   "b": "f4955",
+   "type": "elaborates",
+   "note": "Commercial radar HIL capability includes dynamic targets and over-the-air scene emulation."
+  },
+  {
+   "a": "f330",
+   "b": "f845",
+   "type": "elaborates",
+   "note": "MineSim’s feasibility demonstration does not establish validated sensor physics."
+  },
+  {
+   "a": "f11321",
+   "b": "f3996",
+   "type": "elaborates",
+   "note": "Replay’s fixed recording also fixes paths, sensor positions, actors and site state."
+  },
+  {
+   "a": "f479",
+   "b": "f13069",
+   "type": "same",
+   "note": "Changed braking alters subsequent positions and collision geometry beyond ordinary playback."
+  },
+  {
+   "a": "f336",
+   "b": "f512",
+   "type": "same",
+   "note": "Both say replay cannot show closed-loop consequences."
+  },
+  {
+   "a": "f3726",
+   "b": "f3999",
+   "type": "elaborates",
+   "note": "The environment definition specifies terrain and calibrated sensors alongside dynamics and agents."
+  },
+  {
+   "a": "f3726",
+   "b": "f4000",
+   "type": "supports",
+   "note": "Required interactive assets explain why reconstruction alone needs substantial conversion and calibration."
+  },
+  {
+   "a": "f108",
+   "b": "f11711",
+   "type": "depends",
+   "note": "Replay’s intervention boundary necessitates new evidence for post-command behavior."
+  },
+  {
+   "a": "f7578",
+   "b": "f7575",
+   "type": "supports",
+   "note": "Operator censoring and normal-operation bias further limit warning logs as braking-chain evidence."
+  },
+  {
+   "a": "f8196",
+   "b": "f7888",
+   "type": "supports",
+   "note": "Emergent integration failures justify retaining physical closed-loop boundary tests."
+  },
+  {
+   "a": "f6982",
+   "b": "f12852",
+   "type": "elaborates",
+   "note": "Follow-up evaluation must measure stopping margin and unnecessary interventions across the complete chain."
+  },
+  {
+   "a": "f4482",
+   "b": "f9323",
+   "type": "supports",
+   "note": "Validated simplified sensor models support broad medium-fidelity closed-loop regression."
+  }
+ ]
+}

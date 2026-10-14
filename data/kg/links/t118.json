@@ -1,0 +1,115 @@
+{
+ "key": "t118",
+ "hash": "5259231f2780d20e",
+ "synopsis": "Ray tracing follows light, radio or sound rays through a scene; radar shooting-and-bouncing rays (SBR) sums multiple reflections, enabling multipath ghosts and Doppler effects rather than treating every surface hit as a detection [f12952, f12953, f12956]. The corpus identifies ray-traced lidar using the actual scan pattern and full signal chain as the best-validated sensor-model type, reporting errors of 1.7% for amplitude, 8.5% for point count and 9.3% for mean intensity only when processing and sensor imperfections were included [f12955, f4417]. Radar material models improve agreement with real images, but Sim2Radar (February 2026), using standard 77 GHz material values in five indoor scenes, produced only about 12% of real point density—251 versus 2,057 points per frame—so ray tracing alone does not guarantee fidelity [f4531, f3931, f4305, f13191]. Transfer to untested machines or mounting positions depends on known materials and sensor internals; reliable 77 GHz material values were lacking in one on-road study, heavy precipitation increases errors, and the booklet's most directly relevant heavy-machine result was RadaRays tested on a wheel loader in a hall [f12964, f12958, f4530, f12959, f15952]. Whole-quarry full-wave simulation is considered impractical, motivating combinations of ray tracing, approximations and statistical electronics models, but no published scene-scale benchmark comparing full-wave simulation with modern real-time radar ray tracers was found [f4536, f4537]. Available tools include dSPACE AURELION and Chrono::Sensor; runtime examples range from 14 hours for a 12-second CPU scenario to about 12 ms per GPU frame and 7.8–18.8 ms per independent ray-traced image, and the corpus explicitly warns against using these as planning constants [f8446, f8495, f12960, f12961, f12962, f12963].",
+ "relations": [
+  {
+   "a": "f3716",
+   "b": "f4305",
+   "type": "same",
+   "note": "Both report approximately 12% of real radar point density in the 2026 study."
+  },
+  {
+   "a": "f4305",
+   "b": "f13191",
+   "type": "same",
+   "note": "Glossary adds point counts and an explanation to the same density result."
+  },
+  {
+   "a": "f13572",
+   "b": "f3716",
+   "type": "same",
+   "note": "Both repeat the approximately 12% radar point-density result."
+  },
+  {
+   "a": "f4417",
+   "b": "f12605",
+   "type": "same",
+   "note": "Identical lidar error figures and requirement for the complete processing chain."
+  },
+  {
+   "a": "f8495",
+   "b": "f8545",
+   "type": "same",
+   "note": "Both identify Chrono::Sensor's OptiX camera, lidar and SPAD simulation."
+  },
+  {
+   "a": "f4531",
+   "b": "f12956",
+   "type": "same",
+   "note": "Both contrast inadequate one-hit radar with better material-aware ray tracing."
+  },
+  {
+   "a": "f4531",
+   "b": "f5054",
+   "type": "same",
+   "note": "Both report improved sim-to-real agreement from material interaction and multipath modelling."
+  },
+  {
+   "a": "f4455",
+   "b": "f12962",
+   "type": "same",
+   "note": "Both give independent radar ray-tracer runtime of 7.8–18.8 ms per image."
+  },
+  {
+   "a": "f8446",
+   "b": "f15896",
+   "type": "same",
+   "note": "Both list AURELION's camera, ray-traced radar, lidar, infrared and ultrasonic models."
+  },
+  {
+   "a": "f4536",
+   "b": "f12954",
+   "type": "same",
+   "note": "Both say whole-quarry full-wave radar simulation is impractical."
+  },
+  {
+   "a": "f4526",
+   "b": "f12953",
+   "type": "elaborates",
+   "note": "SBR description specifies multiple machine-ground-structure bounces producing ghosts and Doppler."
+  },
+  {
+   "a": "f4417",
+   "b": "f12955",
+   "type": "supports",
+   "note": "Measured lidar errors support the glossary's strongest-validation assessment."
+  },
+  {
+   "a": "f4529",
+   "b": "f12964",
+   "type": "supports",
+   "note": "Radar study's signal-chain requirement supports conditional trust for untested mounting positions."
+  },
+  {
+   "a": "f4530",
+   "b": "f12958",
+   "type": "supports",
+   "note": "Missing reliable 77 GHz parameters demonstrates the need for material data."
+  },
+  {
+   "a": "f3931",
+   "b": "f13191",
+   "type": "elaborates",
+   "note": "Study method identifies frequency, material standard, renderer and five-scene scope behind density shortfall."
+  },
+  {
+   "a": "f4531",
+   "b": "f12771",
+   "type": "supports",
+   "note": "One-hit radar's omissions explain why mesh intersections alone cannot reproduce sensor behaviour."
+  },
+  {
+   "a": "f4455",
+   "b": "f12963",
+   "type": "elaborates",
+   "note": "Provides one runtime example explicitly cautioned against as a planning constant."
+  },
+  {
+   "a": "f8843",
+   "b": "f13558",
+   "type": "supports",
+   "note": "Substantial lidar GPU load supports the warning that ray rendering slows simulation."
+  }
+ ]
+}

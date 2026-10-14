@@ -1,0 +1,115 @@
+{
+ "key": "t246",
+ "hash": "5c9600613e16b57c",
+ "synopsis": "FAA Advisory Circular 20-146A, dated June 2018, is the booklet’s clearest simulation-as-compliance precedent: a baseline seat undergoes physical dynamic testing and model validation, after which eligible variants within the same family may use simulation; changes to load paths, failure mechanisms, materials or interfaces require new physical evidence [f14654, f14655, f14656, f14657]. Aerospace also accepts satisfactory service history for sufficiently similar systems when differences are identified and justified, but simulation extrapolation remains limited to conditions similar to those physically validated [f14659, f14658]. The transferable rules are that calibration is not validation and agreement with another validated model is insufficient; the seat guidance’s 10% agreement criteria are application-specific and must not become generic off-road braking tolerances [f7625, f7626, f7779]. Validation must address decision-relevant quantities and uncertainty: one FAA example had only 0.3% peak error but 60.4% time-history error, while another required about 1,430 lb to provide 95% confidence below a 1,500 lb limit [f7622, f7555, f7794]. DO-178C concerns airborne software, DO-330 qualifies tools whose outputs are relied upon without further checking but does not establish physics-model validity, and MIL-STD-3022 documents model verification, validation and accreditation; the booklet did not verify these three standards [f14660, f14661, f14662, f14663, f14664]. For the collision-mitigation program, simulator errors can mask defects, so tool qualification should be budgeted separately from establishing model validity [f14669, f14670, f14662].",
+ "relations": [
+  {
+   "a": "f7619",
+   "b": "f14654",
+   "type": "same",
+   "note": "Both identify AC 20-146A as the clearest simulation compliance precedent."
+  },
+  {
+   "a": "f7625",
+   "b": "f14551",
+   "type": "same",
+   "note": "Both state that calibration is not validation."
+  },
+  {
+   "a": "f7625",
+   "b": "f14666",
+   "type": "same",
+   "note": "The glossary carries the calibration distinction into collision-mitigation planning."
+  },
+  {
+   "a": "f7626",
+   "b": "f14552",
+   "type": "same",
+   "note": "Agreement with another validated model is insufficient for validation."
+  },
+  {
+   "a": "f7626",
+   "b": "f14667",
+   "type": "same",
+   "note": "The glossary repeats the prohibition as a collision-mitigation validation rule."
+  },
+  {
+   "a": "f12121",
+   "b": "f14552",
+   "type": "elaborates",
+   "note": "Independence against common-cause errors explains the model-comparison prohibition."
+  },
+  {
+   "a": "f7624",
+   "b": "f14658",
+   "type": "same",
+   "note": "Both restrict extrapolation to conditions similar to physical validation."
+  },
+  {
+   "a": "f14658",
+   "b": "f14858",
+   "type": "same",
+   "note": "Duplicate glossary statements of the similarity restriction."
+  },
+  {
+   "a": "f7838",
+   "b": "f14656",
+   "type": "same",
+   "note": "Validated baseline models permit simulation for eligible seat-family modifications."
+  },
+  {
+   "a": "f7839",
+   "b": "f14657",
+   "type": "same",
+   "note": "Material changes to mechanisms, load paths or interfaces require renewed physical evidence."
+  },
+  {
+   "a": "f7900",
+   "b": "f7839",
+   "type": "same",
+   "note": "Both identify substantial seat changes that invalidate validation-domain extension."
+  },
+  {
+   "a": "f7630",
+   "b": "f14659",
+   "type": "same",
+   "note": "Both circulars accept service history subject to justified system similarity."
+  },
+  {
+   "a": "f7637",
+   "b": "f14662",
+   "type": "same",
+   "note": "DO-330 does not establish physics-model validity."
+  },
+  {
+   "a": "f14662",
+   "b": "f15368",
+   "type": "same",
+   "note": "Duplicate glossary statements of DO-330's scope limitation."
+  },
+  {
+   "a": "f7779",
+   "b": "f14668",
+   "type": "same",
+   "note": "Seat-specific tolerances must not be copied into braking validation."
+  },
+  {
+   "a": "f7537",
+   "b": "f14816",
+   "type": "same",
+   "note": "The 10% criteria are application-specific, not universal."
+  },
+  {
+   "a": "f7555",
+   "b": "f7622",
+   "type": "supports",
+   "note": "Small peak error can conceal large time-history disagreement, motivating decision-relevant metrics."
+  },
+  {
+   "a": "f14669",
+   "b": "f14670",
+   "type": "depends",
+   "note": "Risk of simulator-masked defects drives budgeting for tool qualification."
+  }
+ ]
+}

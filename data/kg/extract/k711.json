@@ -1,0 +1,211 @@
+{
+ "chunkId": "k711",
+ "hash": "9b13456bb43414b6",
+ "facts": [
+  {
+   "text": "An edge case lies at the limit of one parameter, a corner case lies at the limits of several parameters simultaneously, and a rare event occurs so seldom in normal operation that waiting for it is not a practical testing method.",
+   "quote": "An edge case sits at the limit of one parameter, a corner case sits at the limits of several at once, and a rare event is a situation that happens so seldom in normal operation that waiting for it is not a practical way to test it.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t144"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Systems that work well away from parameter limits often fail in corner cases, motivating failure-seeking tests at those limits.",
+   "quote": "Systems that work well in the middle often fail in the corners, which is why test engineers hunt there.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t144",
+    "t205"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A worker stepping out from behind a parked truck exactly as a loader starts reversing is a rare event and a fatal accident pattern.",
+   "quote": "A worker who steps out from behind a parked truck exactly as a loader starts to reverse is rare, and it is also the accident pattern that kills.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t144",
+    "t14",
+    "t16",
+    "t19"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Demonstrating a miss rate of at most 1% with zero observed misses requires 299 independent trials.",
+   "quote": "showing a miss rate of at most 1% with zero misses needs 299 independent trials",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Demonstrating a miss rate of at most 0.01% with zero observed misses requires 29,956 independent trials.",
+   "quote": "showing a miss rate of at most 1% with zero misses needs 299 independent trials; 0.01% needs 29,956",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For on-road demonstration of rare-failure performance, RAND calculated that hundreds of millions of miles would be needed.",
+   "quote": "On roads, the research organization RAND calculated hundreds of millions of miles for the same job",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "RAND Corporation",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t215",
+    "t317",
+    "t144"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The \"curse of rarity\" (2024) explains why the tail becomes harder to test as the number of variables grows.",
+   "quote": "the \"curse of rarity\" (2024) explains why the tail gets harder as the number of variables grows",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "curse of rarity",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t144",
+    "t198"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simulation's greatest strength is producing rare events and corner cases on demand, but that capability is limited to hazard classes that somebody has conceived and parameterized.",
+   "quote": "Simulation can produce rare and corner cases on demand, which is its greatest strength, but only for hazard classes somebody has conceived and parameterized",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t126",
+    "t144",
+    "t199",
+    "t46"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Scenario generators cannot invent a hazard category that nobody encoded.",
+   "quote": "generators cannot invent a category nobody encoded",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t134",
+    "t144",
+    "t46"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Real captured sites expose unknown clutter that generation rules miss.",
+   "quote": "real captured sites expose unknown clutter that rules miss",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t104",
+    "t134"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet separates failure-seeking tests into a different campaign from the frozen sample used to estimate system success frequency, because the failure fraction from a corner-case hunt is not a field failure rate.",
+   "quote": "The booklet keeps failure-seeking tests (\"can we break it?\") in a separate campaign from the frozen sample that estimates how often the system succeeds, because the failure fraction of a corner-case hunt is not a field failure rate",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t217",
+    "t205",
+    "t144",
+    "t233",
+    "t213"
+   ],
+   "importance": 3
+  }
+ ]
+}

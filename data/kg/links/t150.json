@@ -1,0 +1,115 @@
+{
+ "key": "t150",
+ "hash": "e5616cfe2146d9ca",
+ "synopsis": "Over-the-air stimulation exposes a complete real sensor and its downstream system to controlled optical, RF or acoustic stimuli from a virtual scene, testing the front end and firmware; ordinary HIL or injected objects alone cannot establish optical or RF perception [f5299, f5302, f932, f13394]. Its suitability depends on the manufacturer's sensor types, and the booklet reserves it for sensor/ECU regression, timing tests and supplier-independent characterization rather than strong close-range off-road validation [f267, f13387, f13386]. Radar processing latency adds 1 m of apparent range per 6.67 ns: a review published on 19 May 2021 reported typical minimum ranges of 20–30 m, whereas vendors claim minima of 0.6–1.5 m and capacities from five to several hundred objects; workers 0.5–5 m behind a machine are consequently a critical weak point [f5305, f5306, f13381, f13386]. Stimulation does not reproduce the described off-road terrain clutter, dust plumes or steel-structure reflections, weather and soiling are mostly not reproducible, and physical lidar stimulation—especially solid-state lidar—remains a gap [f13385, f4497, f13383]. Documented sensor-stimulated VIL evidence is limited to road vehicles, a 2024 survey describes it as costly with varying accuracy, and neither a neutral cross-technology benchmark nor exemption from validating the stimulation equipment is available [f340, f341, f4605, f4864].",
+ "relations": [
+  {
+   "a": "f340",
+   "b": "f13318",
+   "type": "same",
+   "note": "Both restrict documented sensor-stimulated VIL evidence to road vehicles."
+  },
+  {
+   "a": "f341",
+   "b": "f13319",
+   "type": "same",
+   "note": "Both report the 2024 survey's cost and varying-accuracy findings."
+  },
+  {
+   "a": "f536",
+   "b": "f932",
+   "type": "same",
+   "note": "HIL alone cannot establish optical or RF perception without physical front-end stimulation."
+  },
+  {
+   "a": "f4436",
+   "b": "f5302",
+   "type": "same",
+   "note": "Both describe testing the real sensor and its firmware."
+  },
+  {
+   "a": "f5188",
+   "b": "f13379",
+   "type": "same",
+   "note": "Both give one metre of apparent range per 6.67 ns processing delay."
+  },
+  {
+   "a": "f5188",
+   "b": "f5305",
+   "type": "same",
+   "note": "Identical latency-to-minimum-range relationship."
+  },
+  {
+   "a": "f5305",
+   "b": "f13379",
+   "type": "same",
+   "note": "Both state the same radar processing-delay range limit."
+  },
+  {
+   "a": "f12615",
+   "b": "f5192",
+   "type": "same",
+   "note": "Both identify physical lidar stimulation, especially solid-state lidar, as a gap."
+  },
+  {
+   "a": "f12615",
+   "b": "f13383",
+   "type": "same",
+   "note": "Both identify the remaining real-lidar stimulation gap."
+  },
+  {
+   "a": "f5192",
+   "b": "f13383",
+   "type": "same",
+   "note": "Both identify lidar stimulation, especially solid-state lidar, as unresolved."
+  },
+  {
+   "a": "f5194",
+   "b": "f13385",
+   "type": "same",
+   "note": "Both identify missing off-road clutter, dust and steel-structure multipath reproduction."
+  },
+  {
+   "a": "f5189",
+   "b": "f13380",
+   "type": "elaborates",
+   "note": "Glossary adds equipment cost to the same review's range and target-count findings."
+  },
+  {
+   "a": "f5195",
+   "b": "f13386",
+   "type": "elaborates",
+   "note": "Glossary adds the resulting low rating for close-range off-road use."
+  },
+  {
+   "a": "f5189",
+   "b": "f13381",
+   "type": "contradicts",
+   "note": "Review and vendor claims differ substantially on minimum ranges and target capacities."
+  },
+  {
+   "a": "f5195",
+   "b": "f4551",
+   "type": "supports",
+   "note": "Workers' proximity explains why short minimum radar emulation range matters."
+  },
+  {
+   "a": "f4523",
+   "b": "f13383",
+   "type": "supports",
+   "note": "Wide-field optical echo generation difficulties support the identified lidar stimulation gap."
+  },
+  {
+   "a": "f5194",
+   "b": "f4552",
+   "type": "supports",
+   "note": "Missing off-road phenomena undermine claims of universally realistic radar scenes."
+  },
+  {
+   "a": "f4437",
+   "b": "f940",
+   "type": "supports",
+   "note": "Physical stimulation limits explain one constraint on complete-machine VIL fidelity."
+  }
+ ]
+}

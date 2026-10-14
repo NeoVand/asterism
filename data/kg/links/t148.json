@@ -1,0 +1,115 @@
+{
+ "key": "t148",
+ "hash": "bdc9a7a78b2ae5ad",
+ "synopsis": "HIL with data injection connects a production ECU and its real interfaces to deterministic real-time simulation, proving timing, communications, diagnostics, faults and fail-to-safe behaviour; the booklet allocates SIL to volume and HIL to timing, interfaces and faults [f533, f5283, f12057]. Injection cannot prove the sensor front end or true machine and brake behaviour when those components are bypassed or modeled, and post-intervention evidence depends on model validation [f5286, f5287, f5553]. Physical sensor stimulation tests real sensors and firmware, but has limits on targets, field of view, weather and soiling; raw-signal HIL also carries the highest relative integration effort [f4436, f4437, f8731]. A program starting in October 2026 could realistically commission one HIL bench by mid-2027, using the ISO/TS 21815-2 J1939 intervention interface, with deterministic real time prioritized over throughput [f66, f538, f8848]. About 6,000 zero-miss trials are required for a 1% miss-rate claim across 20 critical strata at 95% one-sided confidence, judged feasible only in simulation or HIL, but the required compute or HIL throughput remains unquantified [f6654, f7449]. Published on-road work provides a physical-track benchmarking precedent, but neither an off-road perception-AEB end-to-end HIL case nor an off-road OEM statement demonstrating reduced validation time was found [f10416, f535, f257].",
+ "relations": [
+  {
+   "a": "f257",
+   "b": "f377",
+   "type": "same",
+   "note": "Both report no published off-road OEM claim of reduced validation time."
+  },
+  {
+   "a": "f6654",
+   "b": "f6888",
+   "type": "same",
+   "note": "Both allocate approximately 6,000 zero-miss trials to simulation or HIL."
+  },
+  {
+   "a": "f549",
+   "b": "f12057",
+   "type": "same",
+   "note": "Both assign HIL to timing, interfaces and faults."
+  },
+  {
+   "a": "f533",
+   "b": "f12968",
+   "type": "same",
+   "note": "Both describe real ECU interfaces and production behaviour tested against real-time simulation."
+  },
+  {
+   "a": "f5286",
+   "b": "f12970",
+   "type": "same",
+   "note": "Both state downstream injection cannot prove sensor front-end behaviour."
+  },
+  {
+   "a": "f10416",
+   "b": "f10604",
+   "type": "same",
+   "note": "Both describe physical track tests benchmarking equivalent simulated AEB scenarios."
+  },
+  {
+   "a": "f110",
+   "b": "f5186",
+   "type": "same",
+   "note": "Both assign braking-consequence evaluation to closed-loop simulation, HIL and physical vehicle testing."
+  },
+  {
+   "a": "f10542",
+   "b": "f11095",
+   "type": "same",
+   "note": "Both require mapping safety requirements to their test environments."
+  },
+  {
+   "a": "f4437",
+   "b": "f4497",
+   "type": "elaborates",
+   "note": "Stimulation limits detail why weather and soiling are mostly not reproducible."
+  },
+  {
+   "a": "f5286",
+   "b": "f4572",
+   "type": "elaborates",
+   "note": "Camera injection specifically excludes real lens flare, soiling and full HDR response."
+  },
+  {
+   "a": "f5283",
+   "b": "f12969",
+   "type": "elaborates",
+   "note": "Mining example specifies 500 ms disconnection detection and 50 ms machine response."
+  },
+  {
+   "a": "f8319",
+   "b": "f538",
+   "type": "supports",
+   "note": "The standardized stop, slowdown and inhibit command path supports the recommended HIL interface."
+  },
+  {
+   "a": "f3894",
+   "b": "f4348",
+   "type": "supports",
+   "note": "The 23-million-Gaussian scene's 17 FPS illustrates real-time budget constraints."
+  },
+  {
+   "a": "f8848",
+   "b": "f4348",
+   "type": "supports",
+   "note": "Prioritizing deterministic real time explains why scene rendering performance matters."
+  },
+  {
+   "a": "f6654",
+   "b": "f7449",
+   "type": "contradicts",
+   "note": "Claimed trial-volume feasibility remains qualified by unquantified compute and HIL throughput."
+  },
+  {
+   "a": "f10416",
+   "b": "f5553",
+   "type": "supports",
+   "note": "Physical benchmarking provides a precedent for validating models underlying simulated braking evidence."
+  },
+  {
+   "a": "f8641",
+   "b": "f8731",
+   "type": "supports",
+   "note": "Sensor-specific injection engineering helps explain raw-signal HIL's highest relative integration effort."
+  },
+  {
+   "a": "f11911",
+   "b": "f267",
+   "type": "depends",
+   "note": "Sensor-specific bench work depends on which sensor technologies the systems use."
+  }
+ ]
+}

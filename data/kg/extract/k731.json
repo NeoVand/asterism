@@ -1,0 +1,153 @@
+{
+ "chunkId": "k731",
+ "hash": "b934e7e0e0996bf4",
+ "facts": [
+  {
+   "text": "A headless simulation computes only the numbers a test needs without drawing pictures, whereas a rendered simulation produces images or sensor views at a much greater computing cost.",
+   "quote": "A headless simulation runs without drawing any picture, computing only the numbers a test needs, while a rendered simulation produces images or sensor views, which costs far more computing.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t164",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An object-list braking-logic test can run without rendering, representing the machine as a point with a speed and the worker as a point with a position, and producing a stopping distance.",
+   "quote": "A braking-logic test with an object list does not need to see anything: the machine is a point with a speed, the worker is a point with a position, and the result is a stopping distance.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t164",
+    "t185",
+    "t170",
+    "t156"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Headless object-list braking-logic runs use ordinary processors, run far faster than real time, and can spread across thousands of cheap processor cores.",
+   "quote": "Such runs use ordinary processors, run far faster than real time and spread across thousands of cheap processor cores [Chapter 11].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t164",
+    "t336",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Rendering is needed only when a camera, lidar or radar model must receive a view of the scene; a graphics processing unit traces rays through geometry and materials, slowing the simulation toward real time or below.",
+   "quote": "Rendering is needed only when a camera, lidar or radar model must be fed with a view of the scene; then a graphics processing unit (GPU) traces rays through geometry and materials, and the run slows toward real time or below [Chapters 5, 11].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t164",
+    "t118",
+    "t336",
+    "t339",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Within the program's four-month window, tests per wall-clock hour matter more than real-time rendering.",
+   "quote": "in a four-month window, tests per wall-clock hour matter more than real-time rendering",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t164",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Lower-fidelity simulation models can screen the broad test space, while high-fidelity rendering should be reserved for perception-sensitive subsets.",
+   "quote": "lower-fidelity models can screen the broad space, and high-fidelity rendering is reserved for perception-sensitive subsets [Chapters 5, 11].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t164",
+    "t198",
+    "t85"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Most of the millions of braking-logic combinations should run headless.",
+   "quote": "Most of the millions of braking-logic combinations should run headless",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t164",
+    "t185",
+    "t198"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Rendered simulation runs are a scarce, expensive resource and should be allocated to cases identified by correlation and sensitivity work.",
+   "quote": "rendered runs are the scarce, expensive resource to be spent on the cases that correlation and sensitivity work identify [Chapter 11].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t164",
+    "t250",
+    "t260",
+    "t339"
+   ],
+   "importance": 3
+  }
+ ]
+}

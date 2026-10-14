@@ -1,0 +1,115 @@
+{
+ "key": "t216",
+ "hash": "1284fb6bc7064a45",
+ "synopsis": "Across the corpus, simulation complements rather than eliminates physical testing: it selects tests deserving scarce prototype time and expands evidence around physical anchors, while documented validation programmes retain physical tests and staged field operation [f11311, f484, f309]. Exhaustive field coverage of more than 7,000 validation cells is infeasible, so simulation or HIL should supply large stratified trial counts, with physical validation in each stratum and smaller-sample independent confirmation [f5207, f6889]. Substitution is defensible only inside a measured, independently reviewed credibility envelope; physical confirmation remains necessary at boundaries, after influential changes, and where models are weak [f10467, f7536, f10470]. On-road precedents retain physical checks: Euro NCAP's 2026 Virtual Testing protocol, version 1.00 dated March 2025, requires randomly selected physical verification after simulation predictions, but no prescribed simulation share or off-road regulatory acceptance of simulation-based rate claims was found [f1216, f4316, f6931]. For a four-month off-road validation programme, the recommended approach is an analytical safety case with targeted physical tests and credible simulation, organized as an integrated strategy; the principal calendar saving comes from moving work before prototype availability, not removing physical validation [f2137, f9555, f311].",
+ "relations": [
+  {
+   "a": "f74",
+   "b": "f10470",
+   "type": "same",
+   "note": "Both recommend retaining physical testing wherever simulation is weak."
+  },
+  {
+   "a": "f74",
+   "b": "f11955",
+   "type": "same",
+   "note": "Glossary repeats the synthesis recommendation on weak simulation models."
+  },
+  {
+   "a": "f10470",
+   "b": "f11955",
+   "type": "same",
+   "note": "Identical recommendation to retain physical testing where simulation is weak."
+  },
+  {
+   "a": "f72",
+   "b": "f10467",
+   "type": "elaborates",
+   "note": "Credibility envelope must be measured and independently reviewed."
+  },
+  {
+   "a": "f484",
+   "b": "f11311",
+   "type": "same",
+   "note": "Simulation selects scarce physical tests and expands evidence around their anchors."
+  },
+  {
+   "a": "f1216",
+   "b": "f2110",
+   "type": "same",
+   "note": "Both identify random physical checks required by Euro NCAP version 1.00."
+  },
+  {
+   "a": "f1264",
+   "b": "f1216",
+   "type": "elaborates",
+   "note": "Random verification tests select cells from manufacturers' virtual prediction grids."
+  },
+  {
+   "a": "f2106",
+   "b": "f1282",
+   "type": "same",
+   "note": "NATM places simulation alongside track and real-world evidence."
+  },
+  {
+   "a": "f7677",
+   "b": "f2106",
+   "type": "elaborates",
+   "note": "Enumerates all five NATM pillars, including audit and in-service monitoring."
+  },
+  {
+   "a": "f7679",
+   "b": "f2106",
+   "type": "same",
+   "note": "Both describe virtual testing as one component, not standalone approval."
+  },
+  {
+   "a": "f5207",
+   "b": "f6889",
+   "type": "supports",
+   "note": "Infeasible exhaustive coverage motivates virtual trial volume with stratified physical confirmation."
+  },
+  {
+   "a": "f7536",
+   "b": "f9376",
+   "type": "supports",
+   "note": "Required anchoring and boundary confirmation justify redesigning the physical test plan."
+  },
+  {
+   "a": "f490",
+   "b": "f4972",
+   "type": "supports",
+   "note": "Real camera hardware and environmental effects justify physical tests on the fidelity ladder."
+  },
+  {
+   "a": "f5345",
+   "b": "f11711",
+   "type": "supports",
+   "note": "Proving-ground reality anchors support requiring new evidence for post-command machine behavior."
+  },
+  {
+   "a": "f9551",
+   "b": "f9555",
+   "type": "supports",
+   "note": "Integrated DoD testing precedent supports a unified virtual and physical planning strategy."
+  },
+  {
+   "a": "f9746",
+   "b": "f10467",
+   "type": "supports",
+   "note": "On-road toolchain qualification exemplifies physical correlation followed by envelope-limited virtual use."
+  },
+  {
+   "a": "f6931",
+   "b": "f9697",
+   "type": "supports",
+   "note": "Missing off-road acceptance supports fallback to physical verification as the acceptance basis."
+  },
+  {
+   "a": "f7384",
+   "b": "f7536",
+   "type": "elaborates",
+   "note": "Physical confirmation should include important virtual failures and representative boundaries."
+  }
+ ]
+}

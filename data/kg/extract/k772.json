@@ -1,0 +1,178 @@
+{
+ "chunkId": "k772",
+ "hash": "eb54b49c0b1a989e",
+ "facts": [
+  {
+   "text": "Random sampling picks tests by chance according to real-operation frequencies; stratified sampling divides situations into groups and deliberately samples each group; probability-weighted sampling tracks each test's real-world frequency so results can be scaled back to the field.",
+   "quote": "Random sampling picks tests by chance according to how often each situation occurs in real operation, stratified sampling first divides the situations into groups (strata) and samples each group deliberately",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t203",
+    "t214"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For the braking system, the sampling population comprises every encounter the machine will have in real operation, including reversing toward workers and approaching light vehicles across weather conditions, lighting conditions and machine models.",
+   "quote": "the \"population\" is every encounter the machine will have in real operation: each reverse toward a worker, each approach to a light vehicle, in each weather and light condition, on each machine model.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t203",
+    "t141",
+    "t140"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A random sample drawn from parameterized scenario families using their probability distributions gives an unbiased estimate of braking-system detection rate and false alarm rate, with a classical confidence interval.",
+   "quote": "A random sample drawn from the parameterized scenario families, using their probability distributions, gives an unbiased estimate of the detection rate and the false alarm rate, with a classical confidence interval.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t203",
+    "t199",
+    "t209",
+    "t109",
+    "t32"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet recommends stratified sampling over plain random sampling: ensure enough samples from dust at night, each machine family and each critical scenario, then weight the strata back to their real-operation frequencies.",
+   "quote": "Stratification is usually better: deliberately ensure enough samples from dust at night, from each machine family, from each critical scenario, then weight the strata back to how often they occur [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t203",
+    "t214",
+    "t102",
+    "t230"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A sampling-based braking-system rate estimate is valid only if the assumed distribution of situations matches reality.",
+   "quote": "The estimate is only valid if the assumed distribution of situations matches reality.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t203",
+    "t214"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "If dust at dusk occurs three times more often than the sampling model assumes, the estimated braking-system rate is wrong.",
+   "quote": "If dust at dusk happens three times more often than the model assumed, the estimated rate is wrong.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t203",
+    "t214",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Plain random sampling is extremely inefficient for rare dangerous events because most random simulation runs are uneventful.",
+   "quote": "plain random sampling is extremely inefficient for rare dangerous events, because most random runs are uneventful [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t203",
+    "t144"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet states that the only basis for the braking-system release rate claim is a frozen, stratified random sample drawn from the declared operating-domain distribution before tuning starts and never used for tuning.",
+   "quote": "a frozen, stratified random sample, drawn from the declared operating-domain distribution before tuning starts and never used for tuning, is the only basis for the release rate claim.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t203",
+    "t220",
+    "t140",
+    "t219",
+    "t218"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The field distribution needed to weight the braking-system release sample is not available in public sources.",
+   "quote": "The field distribution needed to weight it is not available in public sources",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t214",
+    "t203"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet urges starting shadow-mode logging on the existing warning fleet now because public sources do not provide the field distribution needed to weight the braking-system release sample.",
+   "quote": "The field distribution needed to weight it is not available in public sources, which is why the booklet urges shadow-mode logging on the existing warning fleet to begin now [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t41",
+    "t121",
+    "t214"
+   ],
+   "importance": 3
+  }
+ ]
+}

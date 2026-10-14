@@ -1,0 +1,115 @@
+{
+ "key": "t336",
+ "hash": "02fd91bb5ddeb743",
+ "synopsis": "The corpus rejects a single simulation hardware specification: logic and object-list tests suit commodity CPUs or cloud containers, sensor rendering suits GPU workers, soil simulation suits dedicated GPU/HPC workers, and HIL needs a local deterministic real-time system [f8839, f16220]. Radar figures illustrate workload-dependent performance: a vendor CPU solver took 14 hours for a 12-second scenario, a vendor GPU solver reported about 12 ms per frame, and independent RadaRays measurements ranged from 7.8–18.8 ms per image on an RTX 2070 Super, only for the tested radar, model and scene [f4931, f12961, f4936]. CARLA UE5 requires at least an RTX 3000-series GPU with 16 GB VRAM and 130 GB disk, while Chrono CRM requires an NVIDIA GPU and reportedly runs 50–200 times slower than real time; consumer hardware can also struggle with fields containing thousands of vegetation assets [f8469, f8851, f15989, f3895]. For HIL, timing matters more than throughput: missing a required sensor-message deadline of 50 milliseconds can produce a false test result [f16187, f16179]. The cloud-budget example buys about 29,000 GPU-hours for USD 54,490 using ten single-GPU instances continuously for 122 days, but actual geometry, sensors and achieved real-time factors must be benchmarked before infrastructure commitments [f16226, f16190, f10832]. Remaining sizing gaps include insufficient mostly on-road neural-rendering evidence and unestablished data rates, storage sizes and ruggedized logger requirements for continuous raw recording on working machines [f4948, f5801].",
+ "relations": [
+  {
+   "a": "f4453",
+   "b": "f4931",
+   "type": "same",
+   "note": "Same 14-hour CPU result; the detailed account identifies vendor provenance."
+  },
+  {
+   "a": "f4931",
+   "b": "f12960",
+   "type": "same",
+   "note": "Glossary repeats the 14-hour simulation of a 12-second scenario."
+  },
+  {
+   "a": "f4454",
+   "b": "f12961",
+   "type": "same",
+   "note": "Same approximately 12 ms GPU radar frame time."
+  },
+  {
+   "a": "f4455",
+   "b": "f4936",
+   "type": "same",
+   "note": "Same ray-tracer timing range; detailed account specifies hardware and tested conditions."
+  },
+  {
+   "a": "f4936",
+   "b": "f12962",
+   "type": "same",
+   "note": "Glossary repeats the independent GPU ray-tracer timing range."
+  },
+  {
+   "a": "f13802",
+   "b": "f15989",
+   "type": "same",
+   "note": "Same continuum slowdown and single-vendor GPU dependency; the latter names Chrono."
+  },
+  {
+   "a": "f15989",
+   "b": "f16186",
+   "type": "same",
+   "note": "Both report Chrono continuum terrain running 50–200 times slower than real time."
+  },
+  {
+   "a": "f8500",
+   "b": "f8851",
+   "type": "same",
+   "note": "Both identify Chrono CRM's NVIDIA GPU requirement."
+  },
+  {
+   "a": "f8469",
+   "b": "f16195",
+   "type": "same",
+   "note": "Same minimum CARLA UE5 graphics card and VRAM requirement."
+  },
+  {
+   "a": "f16195",
+   "b": "f16177",
+   "type": "elaborates",
+   "note": "Adds cloud and workstation VRAM capacities to CARLA's minimum."
+  },
+  {
+   "a": "f13546",
+   "b": "f16226",
+   "type": "same",
+   "note": "Same ten-instance, 122-day cloud cost and GPU-hour example."
+  },
+  {
+   "a": "f16226",
+   "b": "f16509",
+   "type": "same",
+   "note": "Rounded restatement of the four-month, ten-GPU compute budget."
+  },
+  {
+   "a": "f8848",
+   "b": "f16187",
+   "type": "same",
+   "note": "Both prioritize deterministic HIL timing using real-time CPU, FPGA and I/O hardware."
+  },
+  {
+   "a": "f16179",
+   "b": "f8848",
+   "type": "supports",
+   "note": "False results from missed message deadlines justify prioritizing deterministic timing."
+  },
+  {
+   "a": "f8839",
+   "b": "f16189",
+   "type": "same",
+   "note": "Both reject one hardware requirement because workloads differ by orders of magnitude."
+  },
+  {
+   "a": "f4921",
+   "b": "f8839",
+   "type": "supports",
+   "note": "Scene, sensor and hardware runtime dependencies explain why no universal GPU requirement exists."
+  },
+  {
+   "a": "f16190",
+   "b": "f10832",
+   "type": "supports",
+   "note": "Achieved real-time factor determines budget value, motivating benchmarking before infrastructure commitments."
+  },
+  {
+   "a": "f4226",
+   "b": "f5721",
+   "type": "same",
+   "note": "Both describe log-based neural scene reconstruction requiring detailed sensor logs and GPU compute."
+  }
+ ]
+}

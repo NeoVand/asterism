@@ -1,0 +1,115 @@
+{
+ "key": "t17",
+ "hash": "7266153ea0d960d3",
+ "synopsis": "EMESRT PR-5A Rev 3.0, dated September 2024, provides mining surface-interaction scenarios and a nine-layer control model whose Level 9 automatically slows and stops machines; intervention is only one layer, not a silver bullet [f2120, f7744, f390]. Collisions remain a practical problem: New South Wales reported no meaningful year-on-year reduction in vehicle interactions in July 2023 and recorded 30 underground collisions involving load-haul-dump machines and personnel transports in the 12 months to mid-2025 [f3003, f3004, f11446]. Validation coverage is misaligned with fatality evidence: 85% of research cases addressed vehicle–vehicle interactions, but these accounted for only 9% of the 91 fatal haul-truck accidents reviewed for 2005–2018, while vehicle–environment events accounted for the largest share [f5822, f5824]. Virtual tests therefore need multiple actors, site traffic rules and geometry, and recognition that other actors may react to braking; automatic or partial braking can itself create following-machine conflicts [f4358, f10670, f5547, f6267, f11260]. Scenario-based acceptance already covers following, overtaking, head-on encounters, junctions, multiple interactors and congested areas, while representative-mine interaction tests follow laboratory testing and a controlled mixed-traffic pilot is expected by the site operations manager [f2456, f1355, f11142]. Important uncertainties remain: no comparable large off-road naturalistic interaction dataset was found, published descriptions cite 24 PR-5A scenarios versus 17 storyboards, and one planning passage explicitly did not review EMESRT interaction controls [f6859, f7745, f9808].",
+ "relations": [
+  {
+   "a": "f1221",
+   "b": "f1297",
+   "type": "same",
+   "note": "Both report 2,000–20,000 acceleration factors for importance-sampled lane-change conflicts."
+  },
+  {
+   "a": "f1244",
+   "b": "f1355",
+   "type": "same",
+   "note": "Both describe Pretoria's progression from laboratory tests to representative-mine interaction tests."
+  },
+  {
+   "a": "f3004",
+   "b": "f11568",
+   "type": "same",
+   "note": "Both report no meaningful NSW year-on-year interaction reduction in 2023."
+  },
+  {
+   "a": "f561",
+   "b": "f803",
+   "type": "same",
+   "note": "Both identify excluded site controls and complex dynamic interactions in ACARP's framework."
+  },
+  {
+   "a": "f317",
+   "b": "f3748",
+   "type": "same",
+   "note": "Both identify PR-5A as the mining surface-interaction scenario source."
+  },
+  {
+   "a": "f317",
+   "b": "f4078",
+   "type": "same",
+   "note": "Both identify PR-5A's surface vehicle-interaction scenarios."
+  },
+  {
+   "a": "f3748",
+   "b": "f4078",
+   "type": "same",
+   "note": "Both describe PR-5A as a mining-specific scenario list or taxonomy."
+  },
+  {
+   "a": "f395",
+   "b": "f5935",
+   "type": "same",
+   "note": "Both identify research emphasis on vehicle collisions despite substantial vehicle–environment fatalities."
+  },
+  {
+   "a": "f5824",
+   "b": "f395",
+   "type": "supports",
+   "note": "The 85% research share quantifies the research–accident mismatch."
+  },
+  {
+   "a": "f5822",
+   "b": "f5935",
+   "type": "supports",
+   "note": "Only 9% vehicle–vehicle fatalities supports concern about narrow collision-research coverage."
+  },
+  {
+   "a": "f2582",
+   "b": "f7744",
+   "type": "elaborates",
+   "note": "Level 9 intervention is specified as automatically slowing and stopping."
+  },
+  {
+   "a": "f2120",
+   "b": "f317",
+   "type": "elaborates",
+   "note": "Adds revision date and the nine-layer control model."
+  },
+  {
+   "a": "f5547",
+   "b": "f5548",
+   "type": "contradicts",
+   "note": "Reactive actors challenge replay's assumption that braking leaves historical trajectories unaffected."
+  },
+  {
+   "a": "f6513",
+   "b": "f6267",
+   "type": "elaborates",
+   "note": "Adds prolonged hazard exposure and abrupt load transfer to following-machine conflict risk."
+  },
+  {
+   "a": "f6267",
+   "b": "f11260",
+   "type": "elaborates",
+   "note": "The skeptic identifies rear-end collision risk in haul-road traffic."
+  },
+  {
+   "a": "f3063",
+   "b": "f4358",
+   "type": "supports",
+   "note": "Fatal blind-spot encounters motivate multi-actor tests addressing occlusion."
+  },
+  {
+   "a": "f804",
+   "b": "f10670",
+   "type": "supports",
+   "note": "Site-dependent safety outcomes justify explicitly modelling traffic rules and geometry."
+  },
+  {
+   "a": "f6592",
+   "b": "f4358",
+   "type": "supports",
+   "note": "Secondary conflicts in crowded zones justify testing multiple actors rather than single targets."
+  }
+ ]
+}

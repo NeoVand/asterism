@@ -1,0 +1,459 @@
+{
+ "chunkId": "k895",
+ "hash": "599a3f047b8da28d",
+ "facts": [
+  {
+   "text": "A sensor simulation tool produces artificial camera images, radar returns, lidar point clouds or ultrasonic echoes from a virtual scene, allowing braking software to be tested without a real sensor.",
+   "quote": "A sensor simulation tool produces artificial camera images, radar returns, lidar point clouds or ultrasonic echoes from a virtual scene, so the braking software can be tested without a real sensor.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t323",
+    "t127"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For automatic braking, sensor presence does not establish sensor credibility: \"radar supported\" can mean a perfect object list, simple geometric ray casting, tuned statistical detections or raw radio-signal simulation, and these levels are not interchangeable.",
+   "quote": "A checkbox saying \"radar supported\" may mean anything from a perfect list of objects, to simple geometric ray casting, to tuned statistical detections, to simulation of the raw radio signal, and for automatic braking those levels are not interchangeable [Chapter 11].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t323",
+    "t234",
+    "t94",
+    "t25"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The sensor-simulation realism ladder comprises ideal object lists, geometric ray casting, phenomenological models tuned to measurements, physics-based raw-signal models using ray tracing and material properties, and full-wave electromagnetic solvers.",
+   "quote": "The ladder of realism runs: ideal object lists; geometric ray casting; phenomenological models tuned to measurements; physics-based raw-signal models using ray tracing and material properties; and full-wave electromagnetic solvers",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t323",
+    "t125",
+    "t118",
+    "t117"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Full-wave electromagnetic solvers are far too slow for sensor simulation of whole job sites.",
+   "quote": "full-wave electromagnetic solvers, far too slow for whole job sites [Chapter 6].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t323",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "dSPACE AURELION provides camera, ray-traced radar, lidar, infrared and ultrasonic simulation, with a material database.",
+   "quote": "dSPACE AURELION (camera, ray-traced radar, lidar, infrared, ultrasonic, with a material database)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "dSPACE AURELION",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t323",
+    "t118",
+    "t136"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Synopsys AVxcelerate Sensors, formerly Ansys, provides camera, lidar, radar and thermal simulation; co-simulation with CarMaker and CARLA is documented.",
+   "quote": "Synopsys AVxcelerate Sensors, formerly Ansys (camera, lidar, radar, thermal; co-simulation with CarMaker and CARLA documented)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Synopsys AVxcelerate Sensors",
+     "kind": "tool"
+    },
+    {
+     "name": "Ansys",
+     "kind": "company"
+    },
+    {
+     "name": "CarMaker",
+     "kind": "tool"
+    },
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t323",
+    "t139"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Commercial sensor-simulation tools named in the booklet include Simcenter Prescan sensor models and rFpro's camera pipeline.",
+   "quote": "Simcenter Prescan sensor models; rFpro's camera pipeline",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Simcenter Prescan",
+     "kind": "tool"
+    },
+    {
+     "name": "rFpro",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t323",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Persival builds sensor models to the ASAM Open Simulation Interface (OSI) standard, packages them as Functional Mock-up Units (FMUs), and correlates them against real sensor output.",
+   "quote": "Persival, which builds sensor models to the ASAM Open Simulation Interface (OSI) standard, packaged as Functional Mock-up Units (FMUs), and correlates them against real sensor output.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Persival",
+     "kind": "company"
+    },
+    {
+     "name": "ASAM Open Simulation Interface",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t323",
+    "t138",
+    "t139",
+    "t250"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet lists RTX sensors in Isaac Sim, Chrono::Sensor and CARLA's sensors as open-source sensor-simulation options.",
+   "quote": "Open-source options are the RTX sensors in Isaac Sim, Chrono::Sensor and CARLA's sensors",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Isaac Sim",
+     "kind": "tool"
+    },
+    {
+     "name": "Chrono::Sensor",
+     "kind": "tool"
+    },
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t323",
+    "t322"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Physics-based ultrasonic simulation was not found in the listed open-source options: RTX sensors in Isaac Sim, Chrono::Sensor and CARLA's sensors.",
+   "quote": "Open-source options are the RTX sensors in Isaac Sim, Chrono::Sensor and CARLA's sensors; physics-based ultrasonic simulation in these was not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Isaac Sim",
+     "kind": "tool"
+    },
+    {
+     "name": "Chrono::Sensor",
+     "kind": "tool"
+    },
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t323",
+    "t95"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "None of the named commercial sensor-simulation tools—dSPACE AURELION, Synopsys AVxcelerate Sensors, Simcenter Prescan, rFpro and Persival—had public off-road validation.",
+   "quote": "None of the commercial tools had public off-road validation [Chapter 11].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "dSPACE AURELION",
+     "kind": "tool"
+    },
+    {
+     "name": "Synopsys AVxcelerate Sensors",
+     "kind": "tool"
+    },
+    {
+     "name": "Simcenter Prescan",
+     "kind": "tool"
+    },
+    {
+     "name": "rFpro",
+     "kind": "tool"
+    },
+    {
+     "name": "Persival",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t323",
+    "t234",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "RadaRays is a real-time radar ray tracer whose authors mounted a radar on a wheel loader in a hall; the booklet identified this as the most directly relevant heavy-machine result found.",
+   "quote": "RadaRays, a real-time radar ray tracer whose authors mounted a radar on a wheel loader in a hall, the most directly relevant heavy-machine result found",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    6
+   ],
+   "entities": [
+    {
+     "name": "RadaRays",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t323",
+    "t94",
+    "t118",
+    "t2"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "RadSimReal and Sim2Radar are research tools discussed for the radar gap between simulation and reality.",
+   "quote": "RadSimReal and Sim2Radar, on the radar gap between simulation and reality",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    6
+   ],
+   "entities": [
+    {
+     "name": "RadSimReal",
+     "kind": "tool"
+    },
+    {
+     "name": "Sim2Radar",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t323",
+    "t94",
+    "t165"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "SplatAD and the NVIDIA NuRec engine rebuild scenes from recordings with Gaussian splatting.",
+   "quote": "SplatAD and the NVIDIA NuRec engine, which rebuild scenes from recordings with Gaussian splatting",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    6
+   ],
+   "entities": [
+    {
+     "name": "SplatAD",
+     "kind": "tool"
+    },
+    {
+     "name": "NVIDIA NuRec",
+     "kind": "tool"
+    },
+    {
+     "name": "Gaussian splatting",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t326"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "LiDARsim-style meshing from machine logs is a research approach discussed in the booklet.",
+   "quote": "LiDARsim-style meshing from machine logs",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    6
+   ],
+   "entities": [
+    {
+     "name": "LiDARsim",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t323",
+    "t131",
+    "t121"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Boreal3D provides synthetic forest lidar plots.",
+   "quote": "Boreal3D, synthetic forest lidar plots [Chapters 5, 6].",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    6
+   ],
+   "entities": [
+    {
+     "name": "Boreal3D",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t114",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor and environment fidelity is the hardest uncertainty in the collision-mitigation validation program and is weakest in the risk-critical conditions of dust, fog, snow, rain, glare and darkness.",
+   "quote": "Sensor and environment fidelity is the hardest uncertainty in the whole program, and it is weakest exactly where the risk is: dust, fog, snow, rain, glare and darkness [Chapter 13].",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t323",
+    "t125",
+    "t102",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM states that no standardized metrics exist to assess the quality of sensor simulation.",
+   "quote": "ASAM itself states that no standardized metrics exist to assess the quality of sensor simulation [Chapter 11].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t323",
+    "t234",
+    "t224"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,282 @@
+{
+ "chunkId": "k826",
+ "hash": "c6ab5b3e7aff8a93",
+ "facts": [
+  {
+   "text": "Pixel-level similarity asks whether simulated sensor output looks like real output; task-level gap asks whether the detector, tracker and braking logic behave the same on both. Visually convincing output can still fail the task-level test.",
+   "quote": "Pixel-level similarity asks whether a simulated sensor output looks like the real one; task-level gap asks whether the software that uses it (detector, tracker, braking logic) behaves the same on both",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t256"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Pixel-level or signal-level metrics such as PSNR, SSIM and point-cloud distances judge appearance and structure rather than perception and decision software behavior.",
+   "quote": "Pixel-level or signal-level metrics (PSNR, SSIM, point-cloud distances) judge appearance and structure.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "PSNR",
+     "kind": "metric"
+    },
+    {
+     "name": "SSIM",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254",
+    "t256"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Task-level metrics assess detection rate, false alarms, tracking error, estimated time to collision, trigger distance and whether braking occurred at the right moment.",
+   "quote": "Task-level metrics judge the behavior of the perception and decision software: detection rate, false alarms, tracking error, estimated time to collision, trigger distance, and finally whether the brake fired at the right moment.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t256",
+    "t86",
+    "t111",
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A physics-based radar simulator dramatically improved mutual-information and structural-similarity scores, yet a detector trained only on real radar data failed to detect most cars in the simulated images.",
+   "quote": "a physics-based simulator improved mutual-information and structural-similarity scores dramatically, yet a detector trained only on real radar data failed to detect most cars in the simulated images.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "mutual information",
+     "kind": "metric"
+    },
+    {
+     "name": "SSIM",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t256",
+    "t165",
+    "t112"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Common point-cloud metrics disagree with one another; the metric that best tracked perception still yielded a score of 0.63 alongside 21% segmentation accuracy.",
+   "quote": "For point clouds, common metrics disagree with one another, and the one that tracked perception best still gave 0.63 alongside 21% segmentation accuracy.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t93",
+    "t256"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2024 paper cited in Chapter 6 warns that mean average precision can mislead because broader synthetic coverage can raise the detector score even when synthetic and real domains differ.",
+   "quote": "A 2024 paper warns that mean average precision, a detector score, can mislead because broader synthetic coverage raises it even when the domains differ",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "mean average precision",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t256",
+    "t114",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The 2024 paper cited in Chapter 6 warns that FID targets no particular algorithm.",
+   "quote": "and that FID targets no particular algorithm [Chapter 6].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "FID",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254",
+    "t256"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Chapter 6 recommends a layered assessment running from component response through signal accuracy, distributional agreement and image similarity to task-level gap and closed-loop agreement. Upper layers must be checked rather than inferred from lower layers.",
+   "quote": "runs from component response through signal accuracy, distributional agreement and image similarity to task-level gap and closed-loop agreement, and insists the upper layers be checked rather than inferred from the lower ones [Chapter 6].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t256",
+    "t257",
+    "t253",
+    "t254"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Chapter 6 distinguishes three claims: a generated image looks plausible, the image reproduces real sensor output statistics under a condition, and the real system meets its requirement under that condition. Only the third is a safety claim, requiring separate calibration and validation.",
+   "quote": "Only the third is a safety claim, and it needs separate calibration and validation [Chapter 6].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t256",
+    "t237",
+    "t63",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Chapter 13 recommends that a sensor-model correlation pilot compare detection outcomes, not just images, against pre-registered metrics.",
+   "quote": "A sensor-model correlation pilot should therefore compare detection outcomes, not just images, against pre-registered metrics",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t160",
+    "t218",
+    "t256",
+    "t350"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Chapter 13 identifies a stop signal for a sensor-model correlation pilot: clean simulated detections where the real sensor degrades, or the reverse.",
+   "quote": "the stop signal is \"the simulator shows clean detections where the real sensor degrades, or vice versa\" [Chapter 13].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t160",
+    "t102",
+    "t349",
+    "t256"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The perception engineer's leading objection in Chapter 13 is that realistic-looking synthetic scenes are being confused with validated sensor behavior.",
+   "quote": "The perception engineer's leading objection in Chapter 13 is that \"realistic-looking synthetic scenes are being confused with validated sensor behavior\"",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t256",
+    "t267",
+    "t85"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Chapter 1 concludes that the 2025 sim-to-real evidence argues against treating visually plausible synthetic weather as validation.",
+   "quote": "Chapter 1 concludes that the 2025 sim-to-real evidence argues against treating visually plausible synthetic weather as validation.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t165",
+    "t102",
+    "t256",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For a braking decision, Chapters 1, 6 and 13 identify the ultimately relevant validation layer as whether the machine stops when it should and does not stop when it should not.",
+   "quote": "For a braking decision the only layer that finally matters is whether the machine stops when it should and does not stop when it should not [Chapters 1, 6, 13].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    6,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t256",
+    "t257",
+    "t22",
+    "t31"
+   ],
+   "importance": 3
+  }
+ ]
+}

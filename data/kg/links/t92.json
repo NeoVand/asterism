@@ -1,0 +1,115 @@
+{
+ "key": "t92",
+ "hash": "add2f5a180821173",
+ "synopsis": "Lidar remains an option rather than a confirmed sensor for the heavy off-road automatic braking system, and ISO 16001:2017 has no dedicated lidar annex; lidar also should not be described as approved under MSHA 30 CFR 77.410, although it could qualify as “another effective device” [f2035, f6625, f2069, f2235]. Rain and fog are the best-validated lidar simulation cases, but the evidence is on-road: model agreement depends on rain distributions, signal processing and sensor imperfections, and mismatch increases as fog visibility falls [f4412, f7557, f4417, f7821]. Target properties strongly affect performance: 2023 field measurements found aluminium and steel targets unobserved at 20–30 m in rain of 30–40 mm/h and fog visibility below 50 m, while retroreflective targets retained at least 74% of clear-weather point count [f6382, f6383]. Dust is identified as the biggest off-road lidar gap: field evidence shows returns from cloud leading edges, effects beginning around 71–74% atmospheric transmittance with substantial variability, and published de-dusting results limited to single datasets [f12498, f10559, f10560, f10427]. Planning therefore still requires physical correlation for weather, reflectivity, contamination, ghost returns and scanner timing, supported by surveyed targets, reference lidar with RTK-GNSS/INS, and human-audited auto-labels; lidar stimulation, especially for solid-state devices, remains a gap [f1741, f5197, f5192].",
+ "relations": [
+  {
+   "a": "f2035",
+   "b": "f3678",
+   "type": "same",
+   "note": "Both require broad sensor coverage because the braking system's sensor set is unconfirmed."
+  },
+  {
+   "a": "f3678",
+   "b": "f5133",
+   "type": "same",
+   "note": "Both repeat the unconfirmed sensor set and resulting research scope."
+  },
+  {
+   "a": "f5133",
+   "b": "f6625",
+   "type": "same",
+   "note": "Both state that sensor selection remains open across the same modalities."
+  },
+  {
+   "a": "f6625",
+   "b": "f8257",
+   "type": "same",
+   "note": "Both identify an unconfirmed sensor set spanning camera, radar, lidar and ultrasonic."
+  },
+  {
+   "a": "f1180",
+   "b": "f2035",
+   "type": "same",
+   "note": "Both link unconfirmed sensor selection to research covering multiple sensing options."
+  },
+  {
+   "a": "f80",
+   "b": "f3725",
+   "type": "same",
+   "note": "Both describe accurately posed camera and lidar logs supporting replay and novel views."
+  },
+  {
+   "a": "f87",
+   "b": "f4412",
+   "type": "same",
+   "note": "Both identify rain and fog as the best-validated lidar simulation case."
+  },
+  {
+   "a": "f100",
+   "b": "f5197",
+   "type": "same",
+   "note": "Both specify surveyed targets, reference lidar with RTK-GNSS/INS, and audited auto-labels."
+  },
+  {
+   "a": "f2069",
+   "b": "f2416",
+   "type": "same",
+   "note": "Both report no dedicated lidar annex in ISO 16001:2017."
+  },
+  {
+   "a": "f1356",
+   "b": "f1726",
+   "type": "same",
+   "note": "Both describe Pretoria's surface GPS and underground lidar, camera and radar methodology."
+  },
+  {
+   "a": "f10426",
+   "b": "f10559",
+   "type": "same",
+   "note": "The latter identifies the 2017 field study establishing leading-edge dust returns."
+  },
+  {
+   "a": "f7558",
+   "b": "f7821",
+   "type": "same",
+   "note": "Both report increasing fog-model mismatch as visibility decreases."
+  },
+  {
+   "a": "f4413",
+   "b": "f4414",
+   "type": "elaborates",
+   "note": "Good low-rain agreement is bounded by increasing rain rates and drop-size assumptions."
+  },
+  {
+   "a": "f4413",
+   "b": "f4417",
+   "type": "elaborates",
+   "note": "Quantifies model errors and identifies required signal-processing and sensor-imperfection modeling."
+  },
+  {
+   "a": "f6382",
+   "b": "f6383",
+   "type": "elaborates",
+   "note": "Contrasting target outcomes under identical weather show strong material dependence."
+  },
+  {
+   "a": "f10559",
+   "b": "f10560",
+   "type": "elaborates",
+   "note": "Adds the dust-effect onset range and variability from the same field study."
+  },
+  {
+   "a": "f496",
+   "b": "f1741",
+   "type": "elaborates",
+   "note": "Specifies physical correlation needs, including reflectivity, dirty windows, ghost returns and scanner timing."
+  },
+  {
+   "a": "f3715",
+   "b": "f569",
+   "type": "supports",
+   "note": "Wavelength-specific material requirements support sensor-realistic lidar reflectivity in test targets."
+  }
+ ]
+}

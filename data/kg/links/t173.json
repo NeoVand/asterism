@@ -1,0 +1,115 @@
+{
+ "key": "t173",
+ "hash": "b5366a091edecfad",
+ "synopsis": "Grade and payload can change available deceleration by an amount comparable to deceleration itself; in the New South Wales example, a 100 t rigid truck designed for a 20% grade and tested on 9% requires 1.79 m/s² deceleration, with about 1.04 m/s² attributable to grade correction alone [f145, f5900, f5901, f5902]. NIOSH reports retarder disadvantage at excessive speed on descents steeper than 9%, and a stopping model found combinations where downhill grade exceeded brake capacity and the simulated machine did not stop [f3085, f5903]. Automatic braking can itself create instability and other secondary hazards on grades, supporting context-dependent intervention rather than a universal brake command; Komatsu documentation accessed in 2026 tells wheel-loader users to disable stop control on steep slopes and in several other hazardous operating conditions [f1129, f1975, f10550]. Published validation of simulated heavy-machine stopping distances on slopes and difficult surfaces was not found, while the cited MOSH closed-loop testing is restricted to unloaded machines on gradients of 1% or less and does not cover slope and loaded cases [f253, f3743, f3970, f5564, f5565]. The booklet therefore recommends retaining physical stopping tests across machine classes, load, slope and surface extremes, and documenting the grades and environmental ranges for which validation is valid rather than assuming a model conservative on dry soil remains conservative on an icy grade [f7881, f8009, f7965].",
+ "relations": [
+  {
+   "a": "f253",
+   "b": "f3743",
+   "type": "same",
+   "note": "Both report no published validation of simulated braking on difficult surfaces or slopes."
+  },
+  {
+   "a": "f253",
+   "b": "f3970",
+   "type": "same",
+   "note": "Same missing-validation finding; the latter highlights automatic-braking relevance."
+  },
+  {
+   "a": "f3743",
+   "b": "f3970",
+   "type": "same",
+   "note": "Same validation gap repeated within Chapter 5."
+  },
+  {
+   "a": "f145",
+   "b": "f5900",
+   "type": "same",
+   "note": "Both quantify grade and payload effects as comparable to deceleration itself."
+  },
+  {
+   "a": "f10420",
+   "b": "f10550",
+   "type": "same",
+   "note": "Same Komatsu disablement advice; latter adds documentation access date and steep-slope wording."
+  },
+  {
+   "a": "f1384",
+   "b": "f10631",
+   "type": "same",
+   "note": "Both describe slope memory preventing false activation while reversing down piles."
+  },
+  {
+   "a": "f1236",
+   "b": "f1733",
+   "type": "same",
+   "note": "Both identify road-to-off-road transfer as the larger validation change."
+  },
+  {
+   "a": "f5564",
+   "b": "f5182",
+   "type": "supports",
+   "note": "Specification restrictions substantiate the reported unloaded, near-level stopping-test scope."
+  },
+  {
+   "a": "f5564",
+   "b": "f5565",
+   "type": "supports",
+   "note": "Unloaded, near-level test requirements explain missing loaded and slope coverage."
+  },
+  {
+   "a": "f3403",
+   "b": "f3231",
+   "type": "elaborates",
+   "note": "Adds maximum speed, full load, tyre condition, human factors and brake delay."
+  },
+  {
+   "a": "f5902",
+   "b": "f5900",
+   "type": "supports",
+   "note": "Grade correction of 1.04 m/s² illustrates the substantial magnitude of grade effects."
+  },
+  {
+   "a": "f5902",
+   "b": "f5901",
+   "type": "elaborates",
+   "note": "Separates the grade-correction contribution in the same truck example."
+  },
+  {
+   "a": "f5903",
+   "b": "f3085",
+   "type": "supports",
+   "note": "Modelled brake-capacity exceedance reinforces concern about downhill retarder disadvantage."
+  },
+  {
+   "a": "f1129",
+   "b": "f1975",
+   "type": "supports",
+   "note": "Specific nuisance-braking hazards justify context-dependent intervention on loaded machines and slopes."
+  },
+  {
+   "a": "f10550",
+   "b": "f10640",
+   "type": "supports",
+   "note": "Documented slope and trailer exclusions exemplify field-informed launch scope limits."
+  },
+  {
+   "a": "f3970",
+   "b": "f7881",
+   "type": "supports",
+   "note": "Missing simulation validation supports retaining physical tests across slope, load and surface extremes."
+  },
+  {
+   "a": "f7965",
+   "b": "f8009",
+   "type": "supports",
+   "note": "Surface-dependent conservatism motivates explicitly recording validated grades and environmental ranges."
+  },
+  {
+   "a": "f6724",
+   "b": "f8214",
+   "type": "supports",
+   "note": "A braking-focused taxonomy supplies attributes needed for a meaningful site-coverage argument."
+  }
+ ]
+}

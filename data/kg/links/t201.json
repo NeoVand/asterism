@@ -1,0 +1,115 @@
+{
+ "key": "t201",
+ "hash": "7c71608e68adce80",
+ "synopsis": "DOE is strongest for estimating how factors and low-order interactions affect detection distance, stopping margin and false alarms; screening identifies influential factors, while response-surface designs support fine tuning of a few smooth parameters [f6799, f6805, f6801, f6673]. The booklet places modest DOE or D-optimal tests in post-prototype calibration, and recommends sequential braking-model experiments whose stopping criterion is sufficiently small safety-relevant error bounds at every declared operating boundary—not a fixed test count [f14109, f14504, f6166, f6169]. DOE points are not weighted by operational frequency, so they cannot establish field failure probability; fractional designs also alias higher-order effects and cannot rule out narrow, nonlinear failures between test points [f6807, f6800, f6808, f6809]. NIST software research reports equivalent fault detection with test sets reduced by factors of 20–700, but this does not demonstrate that pairwise or other low-order coverage suffices for off-road collision avoidance or coupled perception failures [f6820, f4075, f7425]. No off-road collision-avoidance study using DOE was found, and NIOSH's 2022 review identifies DOE and standard simulation-method gaps that additional synthetic runs do not close [f6812, f10508].",
+ "relations": [
+  {
+   "a": "f6805",
+   "b": "f14106",
+   "type": "same",
+   "note": "Both describe estimating main effects and low-order interactions on continuous responses."
+  },
+  {
+   "a": "f6807",
+   "b": "f14107",
+   "type": "same",
+   "note": "Unweighted design points cannot establish field failure probability."
+  },
+  {
+   "a": "f6809",
+   "b": "f14108",
+   "type": "same",
+   "note": "Both warn that no fog main effect cannot exclude a localized coupled failure."
+  },
+  {
+   "a": "f6812",
+   "b": "f14110",
+   "type": "same",
+   "note": "Both report no off-road collision-avoidance DOE study found."
+  },
+  {
+   "a": "f6819",
+   "b": "f14112",
+   "type": "same",
+   "note": "Both report NIST's distribution of software failures by interaction order."
+  },
+  {
+   "a": "f6820",
+   "b": "f14113",
+   "type": "same",
+   "note": "Both report equivalent fault detection with 20–700-fold smaller test sets."
+  },
+  {
+   "a": "f6800",
+   "b": "f14102",
+   "type": "same",
+   "note": "Fractional factorial designs reduce runs while aliasing higher-order effects."
+  },
+  {
+   "a": "f6801",
+   "b": "f14103",
+   "type": "same",
+   "note": "Screening designs identify influential factors."
+  },
+  {
+   "a": "f3747",
+   "b": "f4075",
+   "type": "same",
+   "note": "Combinatorial reductions do not prove low-order coverage sufficient for collision avoidance."
+  },
+  {
+   "a": "f4075",
+   "b": "f4332",
+   "type": "same",
+   "note": "General NIST coverage evidence does not establish off-road collision-avoidance sufficiency."
+  },
+  {
+   "a": "f5756",
+   "b": "f5449",
+   "type": "same",
+   "note": "Sample size follows the performance or precision claim being demonstrated."
+  },
+  {
+   "a": "f10780",
+   "b": "f10508",
+   "type": "elaborates",
+   "note": "Adds the 2022 review date and explains why additional synthetic runs are insufficient."
+  },
+  {
+   "a": "f6673",
+   "b": "f14104",
+   "type": "elaborates",
+   "note": "Adds curvature mapping and threshold-and-zone tuning applications."
+  },
+  {
+   "a": "f6166",
+   "b": "f6169",
+   "type": "elaborates",
+   "note": "Defines the quantitative stopping criterion through boundary-specific safety error bounds."
+  },
+  {
+   "a": "f14109",
+   "b": "f14504",
+   "type": "elaborates",
+   "note": "Positions DOE calibration between initial safety checks and broad combinatorial virtual testing."
+  },
+  {
+   "a": "f6800",
+   "b": "f14108",
+   "type": "supports",
+   "note": "Aliased higher-order effects explain why absent main effects cannot exclude coupled failures."
+  },
+  {
+   "a": "f6798",
+   "b": "f6797",
+   "type": "supports",
+   "note": "No single method provides all coverage forms, motivating a portfolio."
+  },
+  {
+   "a": "f7425",
+   "b": "f4075",
+   "type": "elaborates",
+   "note": "Specifies coupled weather, contamination, geometry and signal-processing perception failures as unresolved transfer risks."
+  }
+ ]
+}

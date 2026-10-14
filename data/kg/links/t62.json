@@ -1,0 +1,115 @@
+{
+ "key": "t62",
+ "hash": "8acd790bc15a19c6",
+ "synopsis": "Published off-road acceptance targets remain sparse: ISO 16001:2017 is the only off-road standard found with hard detection and warning numbers, including 300 ms detection time; South Africa's braking regulation supplies no detection percentage, false-alarm limit or stopping test, while the MOSH surface specification requires at least 200 m detection range [f160, f165, f174, f2063, f2081]. No accepted off-road false-alarm rate was found, although ISO 21815-1:2022 requires physical performance tests with pass/fail criteria and a false-positive test; South African mine acceptance rests with the operator against the regulation, using industry guidelines as reference [f3605, f7726, f1367]. Automatic braking must be validated as a new safety-control function rather than against warning-system equivalence, with nuisance interventions weighted equally to missed interventions and stopping distance assessed against ISO 3450 or MOSH requirements [f10417, f10476, f5931, f5443]. Acceptance thresholds, statistical tests, confidence levels and stopping rules should be fixed before testing or hardware arrival, and the program should define criteria approved by technical authority [f644, f6956, f10600]. Test sufficiency should follow the claim and safety-relevant error bounds at declared operating boundaries—not fixed test or virtual-site counts—and public literature alone cannot establish whether the proposed architecture meets company release criteria [f5201, f6169, f4113, f4975]. Expert recommendations call for mature acceptance metrics and assessor agreement, plus a statistical acceptance plan and supporting validation infrastructure, by mid-2027; the manufacturer should retain ownership of acceptance criteria even when implementation is outsourced or hybrid [f7592, f5616, f8765, f8771, f8797].",
+ "relations": [
+  {
+   "a": "f160",
+   "b": "f2063",
+   "type": "same",
+   "note": "Both identify ISO 16001 as the sole off-road source of hard detection and warning numbers."
+  },
+  {
+   "a": "f165",
+   "b": "f2081",
+   "type": "same",
+   "note": "Both report absent numerical acceptance limits in South Africa's braking regulation."
+  },
+  {
+   "a": "f3605",
+   "b": "f11687",
+   "type": "same",
+   "note": "Both report no accepted off-road false-alarm rate found."
+  },
+  {
+   "a": "f3605",
+   "b": "f11781",
+   "type": "same",
+   "note": "Both identify the unresolved operator-acceptable off-road false-alarm rate."
+  },
+  {
+   "a": "f11687",
+   "b": "f11781",
+   "type": "same",
+   "note": "Glossary entries restate the absence of an accepted off-road false-alarm rate."
+  },
+  {
+   "a": "f5931",
+   "b": "f11769",
+   "type": "same",
+   "note": "Both recommend equal acceptance weight for nuisance and missed interventions."
+  },
+  {
+   "a": "f10417",
+   "b": "f10476",
+   "type": "same",
+   "note": "Both reject warning-system equivalence as the acceptance target for automatic braking."
+  },
+  {
+   "a": "f8771",
+   "b": "f8797",
+   "type": "same",
+   "note": "Both retain internal ownership of operating domain, scenarios, acceptance criteria and correlation data."
+  },
+  {
+   "a": "f8797",
+   "b": "f8765",
+   "type": "elaborates",
+   "note": "Specifies assets retained internally and why manufacturer ownership matters."
+  },
+  {
+   "a": "f644",
+   "b": "f6956",
+   "type": "supports",
+   "note": "Sequential testing's advance-fix requirement supports pre-registration before hardware arrival."
+  },
+  {
+   "a": "f7598",
+   "b": "f10600",
+   "type": "elaborates",
+   "note": "Technical-authority approval adds governance to advance definition of simulation acceptance criteria."
+  },
+  {
+   "a": "f324",
+   "b": "f7726",
+   "type": "elaborates",
+   "note": "Required pass/fail and false-positive tests do not supply a statistical acceptance target."
+  },
+  {
+   "a": "f3605",
+   "b": "f10716",
+   "type": "depends",
+   "note": "Without a published accepted rate, field nuisance measurements need a site-agreed threshold."
+  },
+  {
+   "a": "f1480",
+   "b": "f5931",
+   "type": "supports",
+   "note": "On-road failure experience supports treating nuisance interventions as central acceptance measures."
+  },
+  {
+   "a": "f5201",
+   "b": "f6169",
+   "type": "elaborates",
+   "note": "Boundary-specific safety error bounds provide a concrete alternative to fixed test counts."
+  },
+  {
+   "a": "f4061",
+   "b": "f4113",
+   "type": "supports",
+   "note": "Missing prescribed site counts motivates coverage-and-uncertainty stopping criteria."
+  },
+  {
+   "a": "f7592",
+   "b": "f5616",
+   "type": "elaborates",
+   "note": "Adds concrete statistical-plan and test-infrastructure deliverables to the mid-2027 readiness target."
+  },
+  {
+   "a": "f5086",
+   "b": "f7649",
+   "type": "elaborates",
+   "note": "Expands function-level validation outcomes into distinct defensible automatic-braking simulation claims."
+  }
+ ]
+}

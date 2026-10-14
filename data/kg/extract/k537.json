@@ -1,0 +1,154 @@
+{
+ "chunkId": "k537",
+ "hash": "73475c6e420bb715",
+ "facts": [
+  {
+   "text": "Compute and defect triage, rather than simulation execution, are identified as a potential program bottleneck.",
+   "quote": "Compute and defect triage, not execution, become the bottleneck.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t82",
+    "t163",
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Program-specific evidence for compute and defect triage becoming the bottleneck was not found.",
+   "quote": "Program-specific evidence: **not found**.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t82",
+    "t70",
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Early warning signs of a compute and defect-triage bottleneck are simulations queuing faster than humans can diagnose failures, reruns and data retention dominating cost, and dashboards accumulating unexplained failures.",
+   "quote": "simulations queue faster than humans can diagnose failures; reruns and data retention dominate cost; dashboards accumulate unexplained failures.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t82",
+    "t339",
+    "t341"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Schedule and cost collapse is identified as a potential program failure mode.",
+   "quote": "**Schedule and cost collapse.**",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t82",
+    "t346",
+    "t358"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Early warning signs of schedule and cost collapse are milestone slips during the toolchain build in 2026 to 2027, scope creep to all models, and unbudgeted cloud and labeling invoices.",
+   "quote": "milestone slips during the toolchain build in 2026 to 2027; scope creep to all models; unbudgeted cloud and labeling invoices.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t82",
+    "t320",
+    "t343",
+    "t163",
+    "t106"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The program-level early warning is not a late simulator but the team's inability, by the first half of 2027, to produce one short, auditable chain of evidence for a single representative requirement.",
+   "quote": "It is that by the first half of 2027 the team still cannot produce one short, auditable chain of evidence for a single representative requirement:",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t82",
+    "t64",
+    "t67",
+    "t63",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The proposed auditable evidence chain links a hazard to a requirement, a real-world referent, model credibility, a scenario or test, uncertainty, a result, and a residual risk decision, in that order.",
+   "quote": "H[Hazard] --> R[Requirement]\n  R --> F[Real-world referent]\n  F --> M[Model credibility]\n  M --> T[Scenario or test]\n  T --> U[Uncertainty]\n  U --> S[Result]\n  S --> D[Residual risk decision]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t64",
+    "t234",
+    "t63",
+    "t259",
+    "t61"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "If an auditable evidence chain cannot be demonstrated for one slice before the prototype arrives, increasing the number of simulated scenarios will increase questionable evidence rather than assurance; this is an inference from NASA and ASME principles.",
+   "quote": "If that chain cannot be shown on one slice before the prototype arrives, scaling the number of simulated scenarios will scale the amount of questionable evidence rather than the amount of assurance. This is an inference from the NASA and ASME principles [4, 5].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    4,
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NASA",
+     "kind": "organization"
+    },
+    {
+     "name": "ASME",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t267",
+    "t64",
+    "t70",
+    "t234",
+    "t127"
+   ],
+   "importance": 3
+  }
+ ]
+}

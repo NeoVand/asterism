@@ -1,0 +1,548 @@
+{
+ "chunkId": "k860",
+ "hash": "0b2b938039c9f9ba",
+ "facts": [
+  {
+   "text": "ISO 26262 and ISO 21448 are road-vehicle standards for functional safety and safety when sensors or software misjudge a situation without failing; ISO/PAS 8800 and the ISO/IEC AI documents are early, mostly unfinished attempts to standardize machine learning in safety functions.",
+   "quote": "ISO 26262 and ISO 21448 are the road-vehicle standards for functional safety and for safety when sensors and software misjudge a situation without failing",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 26262",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 21448",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO/PAS 8800",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t289",
+    "t79",
+    "t49",
+    "t50"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 26262 governs functional safety of electronic systems in road vehicles and uses the Automotive Safety Integrity Level (ASIL) risk scale.",
+   "quote": "ISO 26262 is the functional-safety standard for electronic systems in road vehicles, with its own risk scale, the Automotive Safety Integrity Level (ASIL).",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 26262",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t289",
+    "t54",
+    "t49"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21448:2022, known as Safety of the Intended Functionality (SOTIF), addresses harm when a system misreads the world despite nothing being broken, such as a camera blinded by glare.",
+   "quote": "ISO 21448:2022, known as SOTIF (Safety of the Intended Functionality), deals with harm that occurs when nothing is broken but the system misreads the world, for example a camera blinded by glare.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21448",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t50",
+    "t289",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 26262 and ISO 21448 do not apply by scope to the booklet's heavy off-road machine program.",
+   "quote": "both \"are road-vehicle standards and do not apply by scope\"",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 26262",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 21448",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t289",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The Machine Performance Level scale in ISO 19014 is not the Automotive Safety Integrity Level scale.",
+   "quote": "the Machine Performance Level scale of ISO 19014 is not the ASIL scale",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t52",
+    "t54",
+    "t281"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet's safety-case skeleton borrows ISO 21448 triggering-condition logic for perception as a method.",
+   "quote": "the booklet's safety-case skeleton borrows ISO 21448's triggering-condition logic for perception",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1,
+    10,
+    12
+   ],
+   "entities": [
+    {
+     "name": "ISO 21448",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t67",
+    "t50",
+    "t85"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 26262-8 is the booklet's reference for tool qualification in clause 11 and proven in use in clause 14.",
+   "quote": "ISO 26262-8 is the reference for tool qualification (clause 11) and \"proven in use\" (clause 14)",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1,
+    10,
+    12
+   ],
+   "entities": [
+    {
+     "name": "ISO 26262-8",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t75",
+    "t289"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The ISO 26262-8 proven-in-use approach rests on a 70 percent confidence level and does not carry the warning system's history over to the braking function.",
+   "quote": "the latter resting on a 70 percent confidence level and not carrying the warning system's history over to the braking function",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1,
+    10,
+    12
+   ],
+   "entities": [
+    {
+     "name": "ISO 26262-8",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t75",
+    "t209",
+    "t266",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO/PAS 8800:2024, dated December 2024, tailors ISO 26262 for AI in road vehicles and applies only to road vehicles.",
+   "quote": "ISO/PAS 8800:2024 (December 2024) tailors ISO 26262 for AI in road vehicles and is road-vehicle only.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/PAS 8800",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 26262",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t289",
+    "t79"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO/IEC TR 5469:2024, dated January 2024, provides guidance on AI and functional safety rather than requirements.",
+   "quote": "ISO/IEC TR 5469:2024 (January 2024) is guidance on AI and functional safety, \"not a requirements document\".",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/IEC TR 5469",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t289",
+    "t79",
+    "t49"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO/IEC CD TS 22440-1, -2 and -3 were committee drafts in 2026; publication much before 2027 or 2028 is unlikely.",
+   "quote": "ISO/IEC CD TS 22440-1, -2 and -3 were committee drafts in 2026, so publication much before 2027 or 2028 is unlikely.",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/IEC TS 22440-1",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO/IEC TS 22440-2",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO/IEC TS 22440-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t274",
+    "t79"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet lists the published ISO and IEC documents ISO/IEC 42001 on AI management systems, ISO/IEC 23894 on AI risk management, and ISO/IEC 24029 on neural-network robustness as not verified.",
+   "quote": "ISO/IEC 42001 (AI management systems), ISO/IEC 23894 (AI risk management) and ISO/IEC 24029 (robustness of neural networks) are published ISO and IEC documents",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO/IEC 42001",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO/IEC 23894",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO/IEC 24029",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO",
+     "kind": "organization"
+    },
+    {
+     "name": "IEC",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t289",
+    "t79"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet lists UL 4600 from Underwriters Laboratories and the European standards bodies' committee CEN/CENELEC JTC 21 as not verified.",
+   "quote": "with UL 4600 (from Underwriters Laboratories) and the European standards bodies' committee CEN/CENELEC JTC 21, as not verified",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "UL 4600",
+     "kind": "standard"
+    },
+    {
+     "name": "Underwriters Laboratories",
+     "kind": "organization"
+    },
+    {
+     "name": "CEN/CENELEC JTC 21",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t294",
+    "t272",
+    "t79"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet found no off-road or mining standards with machine-learning clauses.",
+   "quote": "Off-road and mining standards with machine-learning clauses: not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t79",
+    "t271",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 19014 has no separate acceptance process for machine-learning perception.",
+   "quote": "ISO 19014 has no separate acceptance process for machine-learning perception",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t79",
+    "t85",
+    "t62"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Training-set coverage, distribution shift, retraining, non-determinism, confidence calibration and change control must be additional safety-case subjects rather than treated as resolved by ISO 19014 compliance.",
+   "quote": "training-set coverage, distribution shift, retraining, non-determinism, confidence calibration and change control \"must be treated as additional safety-case subjects rather than closed by ISO 19014 compliance\"",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t79",
+    "t67",
+    "t281",
+    "t113"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The European Union's Machinery Regulation brings machine-learning safety components into notified-body assessment from 20 January 2027.",
+   "quote": "the European Union's Machinery Regulation pulls machine-learning safety components into notified-body assessment from 20 January 2027",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "EU Machinery Regulation 2023/1230",
+     "kind": "regulation"
+    },
+    {
+     "name": "European Union",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t298",
+    "t278",
+    "t79"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "AI-specific machinery requirements are expected by 2 August 2028 through delegated acts that had not been adopted in October 2026.",
+   "quote": "AI-specific machinery requirements are expected by 2 August 2028 through delegated acts not yet adopted in October 2026",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "EU Machinery Regulation 2023/1230",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t298",
+    "t79"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No standard yet tells a manufacturer how to validate a neural network that decides when to brake on an off-road machine.",
+   "quote": "If a neural network decides when to brake, no standard yet tells the manufacturer how to validate it for an off-road machine",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t79",
+    "t65",
+    "t22",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends borrowing the road-vehicle standards' structure as a method and keeping machine-learning subjects explicit in the off-road braking safety case.",
+   "quote": "borrow their structure as method, keep the machine-learning subjects explicit in the safety case",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 21448",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 26262",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t67",
+    "t79",
+    "t289"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends considering a deterministic safety channel to reduce what must be proved about the learned part of the braking system.",
+   "quote": "consider a deterministic safety channel so that less has to be proved about the learned part",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t79",
+    "t48",
+    "t67"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet presents competing views on machine learning in safety functions: exclude machine learning entirely, or accept machine learning under ISO/PAS 8800-style assurance.",
+   "quote": "one view keeps machine learning out of the safety function entirely, the other accepts it under ISO/PAS 8800-style assurance",
+   "kind": "disagreement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO/PAS 8800",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t79",
+    "t48",
+    "t289",
+    "t67"
+   ],
+   "importance": 3
+  }
+ ]
+}

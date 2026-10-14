@@ -1,0 +1,561 @@
+{
+ "chunkId": "k650",
+ "hash": "79b80b9e3a204fc7",
+ "facts": [
+  {
+   "text": "A sensor is a device that measures something about the world, such as distance, light or speed, and converts the measurement into an electrical signal a computer can read.",
+   "quote": "A sensor is a device that measures something about the world, such as distance, light or speed, and turns the measurement into an electrical signal a computer can read.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t84"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensors relevant to a collision system must establish whether something is near the machine, where the object is and how fast the object is moving.",
+   "quote": "The sensors that matter for a collision system answer one question: is there something near the machine, where is it, and how fast is it moving?",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t84",
+    "t86",
+    "t22"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor types use different physical principles, so each performs well in some conditions and is blind in others.",
+   "quote": "Each sensor type works on a different physical principle, so each is good in some conditions and blind in others.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t84",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Cooperative sensing systems require a tag on every person or vehicle.",
+   "quote": "\"cooperative\" systems that need a tag on every person or vehicle [Chapter 6]",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t97"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor behavior in dust, fog and darkness must be distinguished from how well that behavior can be simulated.",
+   "quote": "The dust, fog and darkness columns describe how the sensor itself behaves, which the booklet treats separately from how well that behavior can be simulated [Chapter 6].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t84",
+    "t102",
+    "t125",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A camera measures visible light as a flat color image, providing rich detail that can distinguish a person from a post at low cost.",
+   "quote": "Camera | Visible light as a flat color image | Rich detail; can tell a person from a post; cheap",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t86"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Camera performance in dust is weak because dust hides objects and coats the lens.",
+   "quote": "Weak: dust hides objects and coats the lens; simulated only as haze overlays",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t102",
+    "t103"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Camera dust effects are simulated only as haze overlays.",
+   "quote": "dust hides objects and coats the lens; simulated only as haze overlays",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t102",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Camera performance in fog is weak to partial because image contrast falls as fog density increases.",
+   "quote": "Weak to partial: contrast falls with density; the best-reproduced camera condition in simulation",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Fog is the best-reproduced camera condition in simulation.",
+   "quote": "the best-reproduced camera condition in simulation",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t102",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Camera performance in darkness is weak because cameras need light and image noise increases in the dark.",
+   "quote": "Weak: needs light; noise rises in the dark; night is the hardest condition for generated images",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t90",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Night is the hardest camera condition for generated images.",
+   "quote": "night is the hardest condition for generated images",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t115",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Lidar measures distance to many points using laser time of flight and also measures return strength, or intensity; lidar provides precise long-range 3D geometry and works day and night.",
+   "quote": "Lidar | Distance to many points from laser time of flight, plus return strength (intensity) | Precise 3D geometry at long range; works day and night",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t93",
+    "t87"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Lidar performance in dust is partial because dust scatters the beam, adding false returns and causing lost returns.",
+   "quote": "Partial: dust scatters the beam, adding false and lost returns",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t102",
+    "t108"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Four distinct lidar behaviors have been seen in field dust, and lidar behavior in dust is identified as the biggest off-road gap.",
+   "quote": "four distinct behaviors seen in field dust; the biggest off-road gap",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t102",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Lidar performance in fog is partial to good: attenuation and backscatter are well studied, but dense fog remains difficult.",
+   "quote": "Partial to good: attenuation and backscatter well studied; dense fog still hard",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Lidar performance in darkness is good and largely unaffected apart from background light.",
+   "quote": "Good: largely unaffected apart from background light",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Radar measures distance and closing speed from radio echoes in the 77 GHz band and measures speed directly.",
+   "quote": "Radar | Distance and closing speed from radio echoes (77 GHz band) | Largely unaffected by airborne dust, fog and darkness; measures speed directly",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Radar sees shapes coarsely and can be confused by metal.",
+   "quote": "but it sees shapes coarsely and is confused by metal.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t104"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Radar measurements show little effect from airborne dust, but the effect of dust caking the radar cover remains an open question.",
+   "quote": "Good: measurements show little effect from airborne dust; dust caking the cover is a separate open question",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t102",
+    "t103"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ordinary fog has only a minor effect on radar, and darkness does not affect radar.",
+   "quote": "Good: ordinary fog has minor effect | Not affected",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Ultrasonic sensors measure distance to the nearest surface over a few meters using sound echoes; ultrasonic sensors are cheap and perform well at very close range.",
+   "quote": "Ultrasonic | Distance to the nearest surface over a few meters, from sound echoes | Cheap; good at very close range; ignores light",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t95",
+    "t87"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Ultrasonic sensor performance in dust is unknown because no validation was found; contamination and rough surfaces are weak points.",
+   "quote": "Unknown: no validation found; contamination and rough surfaces are weak points",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t95",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ultrasonic sensor performance in fog is weak and weakly evidenced, with behavior dependent on temperature and humidity.",
+   "quote": "Weak: depends on temperature and humidity; weakly evidenced",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t95",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Ultrasonic sensors ignore light and are unaffected by darkness.",
+   "quote": "Cheap; good at very close range; ignores light",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t95",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Thermal cameras measure heat radiation in the long-wave infrared band as an image and can see warm people and engines without light.",
+   "quote": "Thermal camera | Heat radiation (long-wave infrared) as an image | Sees warm people and engines without light",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t96"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Thermal camera performance in dust is weak and depends on particle size and temperature; no validation was found.",
+   "quote": "Weak: particle size and temperature matter; no validation found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Thermal camera performance in fog is weak because moisture absorbs infrared; no off-road validation was found.",
+   "quote": "Weak: moisture absorbs infrared; no off-road validation",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Thermal camera performance in darkness is partial: thermal cameras work without light, but image contrast depends on temperature differences.",
+   "quote": "Partial: works without light, but contrast depends on temperature differences",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Lidar has ranged to a retroreflective target through dust with only 2% light transmission, and to a dark target with only 6% light transmission.",
+   "quote": "Lidar has ranged to a target through dust with only 2% light transmission (a retroreflective target) or 6% (a dark one) [Chapter 6].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A tractor-mounted lidar's position error increased by up to 27% with speed.",
+   "quote": "A tractor-mounted lidar's position error rose by up to 27% with speed",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t169"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A stabilizer reduced a tractor-mounted lidar's average position error by 57%, from 382 mm to 161 mm.",
+   "quote": "a stabilizer cut the average error by 57%, from 382 mm to 161 mm [Chapter 6].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The sensor types for the new collision mitigation system were unconfirmed when the booklet was written; every later step depends on the sensor choice, creating a schedule risk.",
+   "quote": "The sensor types for the new system were not confirmed when the booklet was written, and every later step depends on that choice; the booklet calls this a schedule risk",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t84",
+    "t22",
+    "t42",
+    "t344"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor-model and data requirements should be written into the sourcing contract now.",
+   "quote": "recommends writing sensor-model and data requirements into the sourcing contract now [Chapter 6].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t84",
+    "t125",
+    "t357"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The combination of sensors and disagreements between sensors must be validated because no sensor performs well in every condition.",
+   "quote": "No sensor is good in every condition, so the combination of sensors, and the disagreement between them, is itself part of what must be validated [Chapters 1, 6].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t99",
+    "t84",
+    "t65",
+    "t102"
+   ],
+   "importance": 3
+  }
+ ]
+}

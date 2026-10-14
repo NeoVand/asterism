@@ -1,0 +1,115 @@
+{
+ "key": "t100",
+ "hash": "f929fc7ea377d51d",
+ "synopsis": "The braking system must work across machine models with different sizes and sensor positions, but mounting-dependent blind areas prevent evidence from transferring freely; the existing proximity-awareness system took years of calibration to balance detection and false positives [f286, f11552, f10]. Physics-based sensor models can respond causally to changed sensor pose, but no published perception-evidence transfer approach or universally acceptable off-road transfer distance or angle was found; new mounting heights should be expected to require retraining or adaptation, not just threshold changes [f4466, f370, f7905, f7037]. Raw-log replay is limited to recorded sensors, mounts and scenarios, and raw detections and per-sensor statistics are not comparable when modality, mounting or processing changes [f5166, f5211]. Mounting geometry has demonstrated practical consequences: NIOSH found that one rear radar missed people near haul-truck rear tyres, while two antennas approximately 1.8 m apart with beams crossed inward approximately 20 degrees improved detection there [f7039, f7040]. Planning should retain physical characterization at mounting-geometry extremes, document calibration and measurement uncertainty, and validate each sensor technology and mounting family against withheld real raw data; a sensor change in 2027 would invalidate multiple evidence streams, and a validated sensor digital twin should not be claimed before hardware and mounting are frozen and correlated [f7885, f9729, f10558, f11912, f11917].",
+ "relations": [
+  {
+   "a": "f286",
+   "b": "f1178",
+   "type": "same",
+   "note": "Both require operation across machine sizes and sensor positions."
+  },
+  {
+   "a": "f1178",
+   "b": "f2034",
+   "type": "same",
+   "note": "Restates the cross-model, cross-mounting requirement."
+  },
+  {
+   "a": "f2034",
+   "b": "f3677",
+   "type": "same",
+   "note": "Restates the cross-model, cross-mounting requirement."
+  },
+  {
+   "a": "f3677",
+   "b": "f4395",
+   "type": "same",
+   "note": "Restates the cross-model, cross-mounting requirement."
+  },
+  {
+   "a": "f4395",
+   "b": "f5862",
+   "type": "same",
+   "note": "Restates the cross-model, cross-mounting requirement."
+  },
+  {
+   "a": "f5862",
+   "b": "f7511",
+   "type": "same",
+   "note": "Restates the cross-model, cross-mounting requirement."
+  },
+  {
+   "a": "f7511",
+   "b": "f8256",
+   "type": "same",
+   "note": "Restates the cross-model, cross-mounting requirement."
+  },
+  {
+   "a": "f95",
+   "b": "f5166",
+   "type": "same",
+   "note": "Replay evidence covers only recorded sensors, mounts and scenarios."
+  },
+  {
+   "a": "f107",
+   "b": "f5211",
+   "type": "same",
+   "note": "Sensor, mounting or processing changes invalidate direct comparison of raw perception statistics."
+  },
+  {
+   "a": "f82",
+   "b": "f7037",
+   "type": "supports",
+   "note": "Height-sensitive reconstruction degradation supports retraining or adaptation for new mounting heights."
+  },
+  {
+   "a": "f11552",
+   "b": "f6586",
+   "type": "supports",
+   "note": "Changing blind-area geometry explains why mounting changes require geometric modeling, not merely recalibration."
+  },
+  {
+   "a": "f5166",
+   "b": "f5212",
+   "type": "elaborates",
+   "note": "Changed sensors or mounting require synthesized data beyond the scope of recorded-log replay."
+  },
+  {
+   "a": "f7039",
+   "b": "f7040",
+   "type": "elaborates",
+   "note": "Specifies a two-antenna mounting arrangement improving the single-radar blind-area problem."
+  },
+  {
+   "a": "f9729",
+   "b": "f10346",
+   "type": "elaborates",
+   "note": "Defines a dedicated data-pedigree workstream and additional measurement uncertainties."
+  },
+  {
+   "a": "f7850",
+   "b": "f7885",
+   "type": "elaborates",
+   "note": "Specifies physical sensor characterization at mounting extremes and degraded-visibility classes."
+  },
+  {
+   "a": "f11912",
+   "b": "f11917",
+   "type": "supports",
+   "note": "Sensor-change invalidation supports freezing and correlating hardware and mounting before claiming a validated twin."
+  },
+  {
+   "a": "f10558",
+   "b": "f10590",
+   "type": "elaborates",
+   "note": "Adds explicit calibration-error envelopes to sensor-technology and mounting-family validation reporting."
+  },
+  {
+   "a": "f138",
+   "b": "f6138",
+   "type": "depends",
+   "note": "Physics-based per-model transfer requires measured machine geometry, loads and sensor positions."
+  }
+ ]
+}

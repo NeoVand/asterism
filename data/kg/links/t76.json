@@ -1,0 +1,115 @@
+{
+ "key": "t76",
+ "hash": "6eb0f1c823449b38",
+ "synopsis": "Equivalence is a reasoned, evidenced claim that variant differences do not affect safety-relevant behavior; transferring validation to another machine model or sensor position is therefore a validation-domain extension requiring similarity and bridging evidence, not automatic inheritance [f12362, f189, f7569]. Evidence reuse is described as the biggest validation lever but the least documented, and neither quantified time savings nor a demonstrated reduction of large-family validation from years to months was found [f366, f261, f12361]. The recommended approach is common-core evidence plus explicit variant deltas, a parameterized family model validated at envelope corners, sensitivity analysis, and targeted bridge tests; whether the product range can actually be reduced to a few such families remains an experiment [f12359, f7573, f12365, f10887]. Machine-specific braking, dynamics, integration and sensing geometry limit transfer, while the reported MOSH regime requires independent verification of every type, model and serial number where braking characteristics differ [f3437, f11552, f5613]. As of the October 2026 basis described in the booklet, similarity arguments draw on ISO 19014-5, machine-specific ISO 21815-3 calculations and sampled physical verification, but no formal off-road regulatory acceptance, universal representative-machine rule, accepted transferred-brake-model test count or published off-road variant-transfer example was found [f2942, f2943, f6683, f6557, f7574]. Planning must also account for a 2027 sensor change invalidating parts of the reuse argument and for the unexamined requalification process following brake-component or control-software changes [f11912, f6612].",
+ "relations": [
+  {
+   "a": "f189",
+   "b": "f7569",
+   "type": "same",
+   "note": "Both define transfer as domain extension with bridging evidence, not inherited validation."
+  },
+  {
+   "a": "f261",
+   "b": "f371",
+   "type": "same",
+   "note": "Both report no published case quantifying time saved through machine-model evidence reuse."
+  },
+  {
+   "a": "f6683",
+   "b": "f7044",
+   "type": "same",
+   "note": "Both report no ISO rule qualifying a family through N representative machines."
+  },
+  {
+   "a": "f5181",
+   "b": "f5613",
+   "type": "same",
+   "note": "Both require separate verification where machine braking characteristics differ; the latter names MOSH."
+  },
+  {
+   "a": "f7574",
+   "b": "f7904",
+   "type": "same",
+   "note": "Both report no published off-road example of validated-model transfer between variants."
+  },
+  {
+   "a": "f7576",
+   "b": "f7630",
+   "type": "same",
+   "note": "Both describe aerospace acceptance of service history with justified similarity; the latter names FAA guidance."
+  },
+  {
+   "a": "f3437",
+   "b": "f10993",
+   "type": "supports",
+   "note": "Variant-specific braking and integration explain why one family's success cannot establish another's coverage."
+  },
+  {
+   "a": "f11552",
+   "b": "f2916",
+   "type": "supports",
+   "note": "Changing blind-area geometry necessitates an equivalence argument across models and mounting heights."
+  },
+  {
+   "a": "f7573",
+   "b": "f12359",
+   "type": "elaborates",
+   "note": "Envelope-corner validation and bridge tests operationalize common-core evidence plus explicit variant deltas."
+  },
+  {
+   "a": "f12363",
+   "b": "f7573",
+   "type": "elaborates",
+   "note": "Lists the geometry, dynamics, sensing and environmental parameters needed in the proposed family model."
+  },
+  {
+   "a": "f12365",
+   "b": "f7045",
+   "type": "elaborates",
+   "note": "Sensitivity analysis specifies how to justify shared evidence for each variant transition."
+  },
+  {
+   "a": "f7046",
+   "b": "f5471",
+   "type": "elaborates",
+   "note": "Requires variant-level confirmation alongside equivalence-based coverage and targeted physical boundary tests."
+  },
+  {
+   "a": "f10887",
+   "b": "f7573",
+   "type": "depends",
+   "note": "The proposed family-model transfer method depends on demonstrating that meaningful parameterized families exist."
+  },
+  {
+   "a": "f2138",
+   "b": "f2942",
+   "type": "elaborates",
+   "note": "Specifies ISO 3450 brake data underlying machine-specific ISO 21815-3 CxS calculations."
+  },
+  {
+   "a": "f10483",
+   "b": "f11017",
+   "type": "supports",
+   "note": "Barrick's machine-specific observations substantiate the risk of dynamics and braking failing to generalize."
+  },
+  {
+   "a": "f11912",
+   "b": "f8044",
+   "type": "depends",
+   "note": "Sensor-change invalidation requires revisiting applicability boundaries and identifying necessary bridge tests."
+  },
+  {
+   "a": "f1959",
+   "b": "f1960",
+   "type": "elaborates",
+   "note": "Likely substantial test-reduction potential remains unquantified in safely removable physical tests."
+  },
+  {
+   "a": "f366",
+   "b": "f617",
+   "type": "elaborates",
+   "note": "The major reuse opportunity requires evidence-sharing architecture designed in from the start."
+  }
+ ]
+}

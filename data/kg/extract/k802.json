@@ -1,0 +1,365 @@
+{
+ "chunkId": "k802",
+ "hash": "dbdc4fab725035d9",
+ "facts": [
+  {
+   "text": "A test campaign is a planned set of test runs executed together for one purpose; campaign architecture is the overall arrangement of campaigns in time and by purpose that turns a limited window into a defensible safety claim.",
+   "quote": "A test campaign is a planned set of test runs executed together for one purpose, and the campaign architecture is the overall arrangement of campaigns, in time and by purpose, that turns a limited window into a defensible safety claim.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t233",
+    "t67"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet distinguishes test campaigns by the claims they support—coverage, discovery, estimation and regression—and insists that different campaign kinds never share data.",
+   "quote": "The booklet distinguishes campaigns by what they can claim (coverage, discovery, estimation, regression) and insists that the different kinds never share data.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t233",
+    "t231",
+    "t217"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The proposed campaign architecture divides the four-month validation window into preparation before prototype arrival, from October 2026 to mid-2027, and about 16 weeks of testing after prototype arrival.",
+   "quote": "After the prototype arrives, about 16 weeks run as a funnel of eight steps",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t233",
+    "t43",
+    "t343"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Before prototype arrival, from October 2026 to mid-2027, the program should freeze a machine-readable requirement, hazard and scenario hierarchy and build the operating-domain taxonomy and logical scenario families.",
+   "quote": "Before the prototype arrives (October 2026 to mid-2027): freeze a machine-readable requirement, hazard and scenario hierarchy; build the operating-domain taxonomy and logical scenario families;",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t233",
+    "t63",
+    "t47",
+    "t140",
+    "t142"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Before prototype arrival, the program should write a pre-registered statistical plan specifying claims, strata, confidence levels and stopping rules, and engage a notified body early.",
+   "quote": "write the pre-registered statistical plan (claims, strata, confidence levels, stopping rules); engage a notified body early;",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t218",
+    "t209",
+    "t278",
+    "t233"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Before prototype arrival, the program should start shadow-mode logging on the existing warning fleet immediately and ingest years of fleet logs to estimate the operational distribution.",
+   "quote": "start shadow-mode logging on the existing warning fleet now and ingest years of its logs to estimate the operational distribution;",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t41",
+    "t121",
+    "t266"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Before prototype arrival, the program should measure braking curves, latencies, footprints and sensor positions on current machines.",
+   "quote": "measure braking curves, latencies, footprints and sensor positions on current machines;",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t184",
+    "t88",
+    "t100"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Before prototype arrival, the program should pre-build a simulator-independent scenario library, a campaign generator and automated verdict functions.",
+   "quote": "pre-build a simulator-independent scenario library, a campaign generator and automated verdict functions;",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t233",
+    "t62",
+    "t327"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Before prototype arrival, the program should build paired simulation-to-real correlation tests and hardware-in-the-loop rigs, and dry-run the tuning pipeline on the warning-only system.",
+   "quote": "build paired simulation-to-real correlation tests, hardware-in-the-loop (HIL) rigs and a dry run of the tuning pipeline on the warning-only system",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t160",
+    "t148",
+    "t197",
+    "t233"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The post-prototype testing funnel should begin with integration smoke tests and safety-envelope checks, followed by calibration using modest design-of-experiments tests and then a broad virtual campaign of combinatorial coverage across the logical space.",
+   "quote": "integration smoke tests and safety-envelope checks; calibration with modest design-of-experiments tests; a broad virtual campaign of combinatorial coverage across the logical space;",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "design of experiments",
+     "kind": "method"
+    },
+    {
+     "name": "combinatorial testing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t233",
+    "t201",
+    "t202",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The post-prototype testing funnel should search for failures around stopping boundaries, partial visibility, high closing speed, field-of-view edges and sensor degradation.",
+   "quote": "failure search around stopping boundaries, partial visibility, high closing speed, field-of-view edges and sensor degradation;",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t205",
+    "t103",
+    "t169",
+    "t87",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Important virtual failures should receive physical confirmation, with the results used to update simulator discrepancy models rather than tune the simulation to match.",
+   "quote": "physical confirmation of important virtual failures, updating simulator discrepancy models rather than tuning the simulation to match;",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t216",
+    "t165",
+    "t237",
+    "t219"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "After freezing the final tuned settings, the program should conduct a statistical audit on the pre-declared sample without further tuning; that audit produces the detection and false-intervention claims.",
+   "quote": "frozen tuning of the final settings; a statistical audit on the pre-declared sample without tuning, which produces the detection and false-intervention claims;",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t218",
+    "t220",
+    "t219",
+    "t108",
+    "t31"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Any late correction during the post-prototype validation funnel should be followed by impact-selected regression testing.",
+   "quote": "impact-selected regression after any late correction",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t233"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Every physical run should estimate a population rate, identify a model parameter, validate simulation fidelity, confirm a boundary or satisfy a deterministic requirement; runs without an evidentiary role should not consume the validation window.",
+   "quote": "does it estimate a population rate, identify a model parameter, validate simulation fidelity, confirm a boundary or satisfy a deterministic requirement? Runs with no evidentiary role should not consume the window.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t264",
+    "t70",
+    "t233",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The proposed validation workload includes about 6,000 zero-miss trials for 20 strata, plus hundreds of exposure hours, with an expectation of thousands of runs per night.",
+   "quote": "about 6,000 zero-miss trials for 20 strata plus hundreds of exposure hours, \"thousands of runs per night\"",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t210",
+    "t20",
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The compute needed for the proposed validation workload has not been quantified and should be budgeted before mid-2027.",
+   "quote": "has not been quantified and should be budgeted before mid-2027",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t163",
+    "t233"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No published off-road program has compressed collision-avoidance validation from three or four years to under four months.",
+   "quote": "No published off-road program has compressed collision-avoidance validation from three or four years to under four months.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t23",
+    "t43",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet judges the four-month collision-avoidance validation window credible only if most work happens before hardware arrival, organized according to the proposed campaign architecture.",
+   "quote": "The booklet judges the window credible only if most of the work happens before the hardware arrives, and the campaign architecture is the shape that work must take",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t233",
+    "t43",
+    "t342"
+   ],
+   "importance": 3
+  }
+ ]
+}

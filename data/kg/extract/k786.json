@@ -1,0 +1,272 @@
+{
+ "chunkId": "k786",
+ "hash": "77991f9f3f09931b",
+ "facts": [
+  {
+   "text": "Keeping failure-seeking tests separate from performance estimates means maintaining separate pools, data and rules for tests that seek failures and tests that estimate failure frequency, because mixing the pools biases the measured rate.",
+   "quote": "Tests designed to find failures and tests designed to measure how often failures happen must be kept in separate pools with separate data and separate rules",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t217"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Discovery or challenge testing uses combinatorial designs, screening, boundary tests, adversarial perturbations, falsification and replay of corner cases to identify weaknesses. Its failure percentage must never be reported as an operational failure rate, and its pool is labeled \"not for rate estimation\".",
+   "quote": "Its failure percentage must never be reported as an operational failure rate; the pool is labeled \"not for rate estimation\".",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t217",
+    "t205",
+    "t202",
+    "t144"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Performance-estimation testing uses a frozen, stratified random sample drawn from the declared operating-domain distribution before tuning starts to estimate success or nuisance-trigger frequency in a defined population.",
+   "quote": "Performance-estimation testing is a frozen, stratified random sample drawn from the declared operating-domain distribution before tuning starts",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t217",
+    "t203",
+    "t140",
+    "t31"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Performance-estimation testing stores a fixed random seed and content hash in the test-management system and freezes weights and estimators before inspecting any result.",
+   "quote": "with a fixed random seed and a content hash stored in the test-management system, and with weights and estimators frozen before any result is inspected.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t217",
+    "t162",
+    "t214"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Requirement and regression testing maintains deterministic pass-or-fail cases tied to individual requirements to determine whether a change broke a required behavior.",
+   "quote": "Requirement and regression testing holds deterministic pass-or-fail cases tied to individual requirements and answers \"did this change break a required behavior?\"",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t63",
+    "t161",
+    "t62"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Reporting discovery-pool failures as an operational failure rate overstates failures because the search was deliberately steered toward failures.",
+   "quote": "Reporting the discovery pool's failures as a rate overstates failures, because the search was steered toward them.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t217",
+    "t205"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Tuning thresholds on the estimation pool understates failures: inspecting failing audit cases and adjusting thresholds leaks audit information into development, so the final figure measures fit to those cases rather than field performance.",
+   "quote": "information leaks from the audit set into development, and the final figure measures how well the settings fit those cases rather than the field.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t217",
+    "t219",
+    "t220",
+    "t188"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A failure found during testing must become scenario knowledge, such as a new logical scenario or permanent regression test, rather than a data point for rate estimation.",
+   "quote": "a found failure becomes scenario knowledge (a new logical scenario or a permanent regression test), not a data point",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t217",
+    "t141",
+    "t161"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The audit set must not become a tuning set; contaminated audit cases must be retired and replaced.",
+   "quote": "the audit set must not become another tuning set, so contaminated cases are retired and replaced",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t217",
+    "t231"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "At release gates, the tuning team sees only aggregate pass or fail, following the reusable holdout principle from adaptive data analysis attributed to Dwork and colleagues in Science in 2015.",
+   "quote": "the tuning team sees only aggregate pass or fail at release gates, following the \"reusable holdout\" principle from adaptive data analysis (Dwork and colleagues, Science, 2015)",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Dwork",
+     "kind": "person"
+    },
+    {
+     "name": "Science",
+     "kind": "publication"
+    },
+    {
+     "name": "reusable holdout",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t220",
+    "t217",
+    "t349"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Acceptance criteria, strata, confidence levels and stopping rules must be pre-registered before hardware arrives.",
+   "quote": "acceptance criteria, strata, confidence levels and stopping rules are pre-registered before hardware arrives",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t218",
+    "t62",
+    "t209",
+    "t203"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Chapter 9's campaign architecture draws tuning data only from coverage and discovery streams, computes the release claim only from the frozen estimation sample plus physical anchors, and prohibits the three streams from sharing data. Physical anchors include calibration, correlation and confirmation and validate the coverage stream.",
+   "quote": "tuning draws only on the coverage and discovery streams, and the release claim is computed only on the frozen estimation sample plus the physical anchors.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t217",
+    "t233",
+    "t216",
+    "t237",
+    "t250"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet identifies the prohibition on using falsification and adaptive-search results as rate estimates as a well-established finding.",
+   "quote": "The booklet lists \"falsification and adaptive-search results cannot be used as rate estimates\" among its well-established findings",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t217",
+    "t205",
+    "t207"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Under a four-month deadline, the temptation to count every run toward the release claim is strongest, making separation of testing streams a governance rule rather than merely a statistical precaution.",
+   "quote": "Under a four-month deadline the temptation to count every run toward the release claim is strongest, which is why the separation is a governance rule and not only a statistical nicety",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t217",
+    "t43",
+    "t349"
+   ],
+   "importance": 3
+  }
+ ]
+}

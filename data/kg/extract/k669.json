@@ -1,0 +1,222 @@
+{
+ "chunkId": "k669",
+ "hash": "0ce25ab59acbd6e4",
+ "facts": [
+  {
+   "text": "Occlusion means an object is hidden behind something else so a sensor cannot see it; sensor obstruction means the sensor itself is blocked, for example by mud on its window.",
+   "quote": "Occlusion is when an object is hidden behind something else so the sensor cannot see it, and obstruction is when the sensor itself is blocked, for example by mud on its window.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t103"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Heavy machines can occlude their own sensors when booms, buckets and dump bodies swing into the field of view.",
+   "quote": "Heavy machines occlude themselves: booms, buckets and dump bodies swing into the field of view",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t103",
+    "t87",
+    "t1"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-3 excludes machine heights beyond the travel position from its scope.",
+   "quote": "ISO 21815-3, the international standard for this function, notes that machine heights beyond the travel position are out of its scope [Chapter 6].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t103"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ground-truth labeling rules must specify whether a partially hidden person counts as a detection opportunity.",
+   "quote": "the label rules must say whether a partially hidden person counts as a detection opportunity",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t105",
+    "t103"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The ground-truth reference system needs a “truth unavailable or ambiguous” state to prevent occlusion and dust from being forced into wrong labels.",
+   "quote": "the reference system needs a \"truth unavailable or ambiguous\" state so that occlusion and dust are not forced into wrong labels [Chapter 7].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t106",
+    "t103",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In virtual sites, a sensor cannot recover surfaces it never saw; gaps filled visually by neural methods should not silently become geometric truth.",
+   "quote": "In virtual sites, a sensor cannot recover surfaces it never saw, and gaps filled visually by neural methods should not silently become geometric truth [Chapter 5].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t103",
+    "t116",
+    "t105"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Mud on a lidar cover has been tested physically, but no validated simulation model for that soiling was found.",
+   "quote": "Mud on a lidar cover has been tested physically but no validated simulation model was found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t103",
+    "t102",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Camera soiling is simulated using overlays whose realism is judged by eye rather than by measured light transmission.",
+   "quote": "camera soiling is simulated with overlays whose realism is judged by eye, not by measured light transmission [Chapter 6].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t102",
+    "t126",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor contamination should be modeled as an independent state variable rather than as a texture on the scene.",
+   "quote": "Contamination should be an independent state variable, not a texture on the scene [Chapter 5]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t103",
+    "t102",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor blockage detection should be measured as part of availability.",
+   "quote": "blockage detection should be measured as part of availability [Chapter 7].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t103",
+    "t224"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Occlusion and sensor obstruction can both leave a person unseen, but require different remedies: occlusion needs sensor placement, prediction and cautious logic, while obstruction needs self-diagnosis, cleaning and a safe degraded mode.",
+   "quote": "Both cases leave a person unseen, but the remedies differ: occlusion needs sensor placement, prediction and cautious logic, while obstruction needs self-diagnosis, cleaning and a safe degraded mode",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t103",
+    "t100",
+    "t185",
+    "t55"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends concentrating failure-seeking tests on partial visibility and sensor degradation.",
+   "quote": "the booklet lists partial visibility and sensor degradation among the places to concentrate failure-seeking tests [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t205",
+    "t103",
+    "t102"
+   ],
+   "importance": 3
+  }
+ ]
+}

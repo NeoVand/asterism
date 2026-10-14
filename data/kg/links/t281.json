@@ -1,0 +1,115 @@
+{
+ "key": "t281",
+ "hash": "0351340912d589e2",
+ "synopsis": "For brake-commanding earth-moving functions, the corpus identifies ISO 19014—not ISO 26262—as the functional-safety framework using MPLr; adding braking crosses the boundary from excluded awareness-only systems into motion-affecting safety control [f2071, f2075, f11993]. Validation therefore needs to address brake-command integrity, faults, degraded modes and unintended activation, with machine-control safety analysis determining required risk reduction and performance level; Part 5 supplies tabulated MPLr intended to avoid a full safety analysis for every new model [f5223, f10516, f2076]. The series covers hardware, software and environmental testing, including documented performance under expected environmental conditions, while ISO 19014-4 leaves cybersecurity to separate coverage [f322, f7735, f7488]. The review found no simulation-credibility acceptance criteria, statistical acceptance target or wording permitting virtual-only validation, but incomplete access to paid texts means these findings do not establish that replacing physical tests is prohibited [f5110, f324, f9459, f7544]. Parts 1–4 edition 2 and Part 5 edition 1 reached publication stage 60.00 in August 2026 with October publication scheduled, but a separate chapter lists 22 November 2026 for revised Part 1, so final status should be rechecked before design freeze and the plan should allow re-baselining [f2073, f7738, f6286, f10369]. For most markets, the internal safety board and customers accept validation evidence, but applicability to the particular machine, function and jurisdiction remains unresolved; an assessor-quality package should trace simulation claims to requirements or hazards and the final pass/fail argument [f1613, f10316, f8029].",
+ "relations": [
+  {
+   "a": "f162",
+   "b": "f11993",
+   "type": "same",
+   "note": "Both identify ISO 19014, not ISO 26262, for brake-commanding functions."
+  },
+  {
+   "a": "f162",
+   "b": "f2071",
+   "type": "elaborates",
+   "note": "Chapter 3 adds MPLr as the governing functional-safety measure."
+  },
+  {
+   "a": "f112",
+   "b": "f11986",
+   "type": "same",
+   "note": "A brake command brings the system within ISO 19014-2 scope."
+  },
+  {
+   "a": "f113",
+   "b": "f11985",
+   "type": "same",
+   "note": "Both exclude awareness-only systems that do not affect motion."
+  },
+  {
+   "a": "f5222",
+   "b": "f5808",
+   "type": "same",
+   "note": "Both exclude awareness-only cameras and radar detectors."
+  },
+  {
+   "a": "f6283",
+   "b": "f10419",
+   "type": "same",
+   "note": "Both describe motion-affecting scope and the awareness-only exclusion in the second edition."
+  },
+  {
+   "a": "f112",
+   "b": "f5223",
+   "type": "elaborates",
+   "note": "Braking scope adds integrity, faults, degraded modes and unintended activation to validation."
+  },
+  {
+   "a": "f2075",
+   "b": "f10476",
+   "type": "supports",
+   "note": "The scope boundary supports treating automatic braking as a new safety-control function."
+  },
+  {
+   "a": "f662",
+   "b": "f781",
+   "type": "same",
+   "note": "Both require environmental qualification of safety-related electrical/electronic components under Part 3."
+  },
+  {
+   "a": "f8322",
+   "b": "f8928",
+   "type": "same",
+   "note": "Both report Part 1 edition 2 under publication in October 2026."
+  },
+  {
+   "a": "f48",
+   "b": "f2073",
+   "type": "elaborates",
+   "note": "Chapter 3 supplies August stage 60.00 and scheduled October publication."
+  },
+  {
+   "a": "f2073",
+   "b": "f7738",
+   "type": "contradicts",
+   "note": "October publication schedule conflicts with the separately listed 22 November date for Part 1."
+  },
+  {
+   "a": "f6285",
+   "b": "f6286",
+   "type": "depends",
+   "note": "Pending publication motivates checking final status before design freeze."
+  },
+  {
+   "a": "f10368",
+   "b": "f10369",
+   "type": "depends",
+   "note": "Ongoing revisions motivate allowing a validation-plan re-baseline."
+  },
+  {
+   "a": "f8321",
+   "b": "f9348",
+   "type": "same",
+   "note": "Both report no located acceptance of simulation evidence in the reviewed standards."
+  },
+  {
+   "a": "f9459",
+   "b": "f9774",
+   "type": "same",
+   "note": "Both report missing simulation wording in the ISO 19014 review."
+  },
+  {
+   "a": "f7544",
+   "b": "f9348",
+   "type": "supports",
+   "note": "Incomplete full-text access supports uncertainty rather than concluding simulation replacement is prohibited."
+  },
+  {
+   "a": "f2074",
+   "b": "f2076",
+   "type": "elaborates",
+   "note": "Explains the purpose of Part 5's performance-level tables."
+  }
+ ]
+}

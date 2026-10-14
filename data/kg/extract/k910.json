@@ -1,0 +1,228 @@
+{
+ "chunkId": "k910",
+ "hash": "ea2e031496358962",
+ "facts": [
+  {
+   "text": "A workstation is one powerful desktop computer; a cluster is many computers wired together and managed as one; high-performance computing (HPC) is the largest class of cluster, built for scientific calculation.",
+   "quote": "A workstation is one powerful desktop computer; a cluster is many computers wired together and managed as one; high-performance computing (HPC) is the largest class of cluster, built for scientific calculation.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t338"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An engineer running one simulation at a time needs a workstation with a strong CPU, a capable GPU and a large disk.",
+   "quote": "One engineer running one simulation at a time needs a workstation: a desktop with a strong central processor (CPU), a capable graphics processing unit (GPU) and a large disk.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t338",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "CARLA alone requires 130 GB of disk space.",
+   "quote": "CARLA alone asks for 130 GB of disk space [Chapter 11].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t322",
+    "t341"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A program that must run thousands of scenarios in four months needs a cluster rather than queuing simulations one by one on desktops. The cluster uses tens or hundreds of rack-mounted computers and scheduling software to assign runs to free machines and gather results.",
+   "quote": "It needs a cluster: tens or hundreds of computers in racks, with scheduling software that hands each run to a free machine and gathers the results.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t338",
+    "t339",
+    "t233"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A digital-twin off-road validation study used HPC clusters because sequential parameter sweeps could not explore the variability space within the time constraints.",
+   "quote": "A digital-twin off-road validation study ran on HPC clusters because sequential parameter sweeps could not explore the variability space under time constraints",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    5,
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t338",
+    "t129",
+    "t198",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The group conducting the digital-twin off-road validation study ran 128 simulated off-road braking cases using HPC clusters.",
+   "quote": "the same group ran 128 simulated off-road braking cases this way.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    5,
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t338",
+    "t127"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A radar signature calculation used eight supercomputer nodes with four GPUs per node.",
+   "quote": "A radar signature calculation used eight supercomputer nodes with four GPUs each.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    5,
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t338",
+    "t336",
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A European virtual-testing study needed more than 800 hours of compute.",
+   "quote": "A European virtual-testing study needed \"800+ hours\" of compute",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    5,
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t127"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A European virtual-testing study needed more than 300 hours of manual case selection.",
+   "quote": "A European virtual-testing study needed \"800+ hours\" of compute and \"300+ hours\" of manual case selection [Chapters 1, 5, 6].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    5,
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t200",
+    "t127"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In a four-month validation window, tests per wall-clock hour matter more than real-time rendering; low-fidelity models should screen the broad test space, and expensive models should run only where needed.",
+   "quote": "in a four-month window, tests per wall-clock hour matter more than real-time rendering: low-fidelity models should screen the broad space and expensive models should run only where they are needed [Chapter 5].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t125",
+    "t200",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The recommended compute architecture assigns logic tests to commodity servers or cloud containers, sensor tests to GPU workers, soil tests to dedicated GPU or HPC workers, and hardware-in-the-loop (HIL) testing to a local real-time system.",
+   "quote": "commodity servers or cloud containers for logic tests, GPU workers for sensors, dedicated GPU or HPC workers for soil, and a local real-time system for hardware-in-the-loop (HIL) testing",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t338",
+    "t336",
+    "t148",
+    "t320",
+    "t163"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Simulation orchestration and storage create their own CPU and database load, which must be considered in the compute architecture.",
+   "quote": "orchestration and storage become their own CPU and database load [Chapter 11].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t336",
+    "t341",
+    "t320"
+   ],
+   "importance": 2
+  }
+ ]
+}

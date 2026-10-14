@@ -1,0 +1,256 @@
+{
+ "chunkId": "k699",
+ "hash": "49a10124805a1911",
+ "facts": [
+  {
+   "text": "Photogrammetry, laser scanning and SLAM are three ways to measure a real site in three dimensions, using overlapping photographs, laser distance measurements, or a moving machine's own sensors as it drives.",
+   "quote": "These are three ways of measuring a real site in three dimensions: from overlapping photographs, from laser distance measurements, or from a moving machine's own sensors as it drives.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "SLAM",
+     "kind": "method"
+    },
+    {
+     "name": "Photogrammetry",
+     "kind": "method"
+    },
+    {
+     "name": "Laser scanning",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t132"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Photogrammetry produces very realistic textured surfaces, but fails predictably on bare, textureless soil, reflections and glare, moving objects, and camera motion consisting only of rotation without translation.",
+   "quote": "It gives very realistic textured surfaces, but it fails predictably on bare, textureless soil, on reflections and glare, on moving objects, and when the camera only rotates without moving",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Photogrammetry",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t132",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Photogrammetry bakes lighting into surface textures, so a new sun position looks wrong.",
+   "quote": "the lighting is baked into the texture, so a new sun position looks wrong [Chapter 5]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Photogrammetry",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t132",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Laser scanning measures geometry directly, independently of image texture, and is the only one of the three site-measurement families—photogrammetry, laser scanning and SLAM—whose accuracy can be checked against a published standard.",
+   "quote": "It measures geometry directly, independent of image texture, and is the only family whose accuracy can be checked against a published standard",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Laser scanning",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t132",
+    "t271"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For laser-scanning accuracy, the booklet cites the American Society for Photogrammetry and Remote Sensing (ASPRS) positional accuracy standards from 2024.",
+   "quote": "the booklet cites the positional accuracy standards of the American Society for Photogrammetry and Remote Sensing (ASPRS, 2024)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "American Society for Photogrammetry and Remote Sensing",
+     "kind": "organization"
+    },
+    {
+     "name": "ASPRS positional accuracy standards",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t132",
+    "t271"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet cites a laser-scanning road-scene result with a mean absolute error of 1.3 cm.",
+   "quote": "a road-scene result of 1.3 cm mean absolute error [Chapter 5]",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Laser scanning",
+     "kind": "method"
+    },
+    {
+     "name": "Mean absolute error",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t132",
+    "t255"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Laser scanning alone provides no color, and surfaces not observed during the survey are missing from the reconstruction.",
+   "quote": "Alone it gives no color, and surfaces it never saw are missing.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Laser scanning",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t132",
+    "t103"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "SLAM turns a machine's own recordings into a site model; the booklet treats SLAM as a method in its own right because a large installed fleet can serve as an acquisition system.",
+   "quote": "It is how a machine's own recordings become a site model. The booklet treats this as a method in its own right, because a large installed fleet can become an acquisition system",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "SLAM",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t132",
+    "t130",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "SLAM reconstruction from forward-facing route logs has visibility bias: the logs never observe the back of a stockpile or upper surfaces visible to a taller future sensor.",
+   "quote": "it warns of visibility bias: a forward-facing route log never sees the back of a stockpile or the upper surfaces that a taller future sensor would see [Chapter 5]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "SLAM",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t132",
+    "t103",
+    "t13",
+    "t265"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Survey capture supplies anchor sites for virtual validation because surveys capture real geometry and clutter that generated sites cannot invent.",
+   "quote": "Survey capture gives the real geometry and clutter that generated sites cannot invent, so it supplies the anchor sites.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t130",
+    "t134",
+    "t104"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends recording reconstruction-quality logs now, with synchronized clocks, retained calibration, multiple passes and clear weather.",
+   "quote": "The booklet recommends recording reconstruction-quality logs now, with synchronized clocks, retained calibration, multiple passes and clear weather [Chapter 5].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t121",
+    "t101",
+    "t100"
+   ],
+   "importance": 3
+  }
+ ]
+}

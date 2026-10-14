@@ -1,0 +1,115 @@
+{
+ "key": "t334",
+ "hash": "3e82c16241630891",
+ "synopsis": "Open-source tools are viable as a low-license-cost simulation core, but do not provide the lowest total cost; even free software can underpin a program costing seven figures annually because of engineering labor [f196, f8296, f13551]. Public tool prices are almost entirely absent and nearly every commercial tool is quote-only, so budgets should use vendor quotations; the few dated price points found include an unofficial January 2024 MathWorks list, a Falcon education license, an NI controller and cloud GPU rates [f8304, f8305, f16441]. License permissions vary by component and use: Isaac Sim's core is Apache 2.0 and free for internal R&D, but some assets have additional terms and redistribution with Omniverse Kit requires NVIDIA AI Enterprise, whose price was not found [f8483, f8484, f8486]. Procurement should price peak concurrent workers, continuous-integration and cloud rights, subcontractor access, HIL nodes and disaster recovery rather than desktop seats alone; marketplace asset terms may also prohibit redistribution or training use [f16486, f4373]. The plan needs ownership, budget, licences and revalidation rules after September 2027, an identified sustainment blind spot; supplier rights still under negotiation near prototype delivery and unbudgeted license invoices are warning signs [f10179, f10367, f11025, f11083].",
+ "relations": [
+  {
+   "a": "f196",
+   "b": "f8296",
+   "type": "same",
+   "note": "Both conclude open source lowers license costs without minimizing total cost."
+  },
+  {
+   "a": "f197",
+   "b": "f16141",
+   "type": "same",
+   "note": "Both report public software prices almost entirely absent."
+  },
+  {
+   "a": "f197",
+   "b": "f8304",
+   "type": "same",
+   "note": "Chapter 11 restates price scarcity and adds quote-only commercial procurement."
+  },
+  {
+   "a": "f6821",
+   "b": "f14114",
+   "type": "same",
+   "note": "Both identify NIST ACTS as public domain."
+  },
+  {
+   "a": "f3856",
+   "b": "f4258",
+   "type": "same",
+   "note": "Both require assets and licences as inputs to asset-library job-site creation."
+  },
+  {
+   "a": "f4374",
+   "b": "f3921",
+   "type": "same",
+   "note": "Both report per-material licence metadata in ASAM OpenMATERIAL."
+  },
+  {
+   "a": "f8485",
+   "b": "f15937",
+   "type": "same",
+   "note": "Both report vendor-described free Isaac Sim use for teams up to two."
+  },
+  {
+   "a": "f15922",
+   "b": "f16441",
+   "type": "same",
+   "note": "Both recommend vendor quotations as the basis for tool budgets."
+  },
+  {
+   "a": "f16154",
+   "b": "f16486",
+   "type": "same",
+   "note": "Both recommend workload-based RFP pricing beyond desktop seats; the latter also specifies HIL."
+  },
+  {
+   "a": "f10179",
+   "b": "f16514",
+   "type": "same",
+   "note": "Both require ownership, budget and licences for sustainment after September 2027."
+  },
+  {
+   "a": "f8483",
+   "b": "f15936",
+   "type": "elaborates",
+   "note": "Glossary adds asset exceptions and redistribution requirements to the Apache 2.0 core."
+  },
+  {
+   "a": "f8484",
+   "b": "f15936",
+   "type": "same",
+   "note": "Both state redistribution with certain components requires a paid enterprise license."
+  },
+  {
+   "a": "f13551",
+   "b": "f16505",
+   "type": "supports",
+   "note": "Seven-figure annual labor costs explain why free software does not ensure low ownership cost."
+  },
+  {
+   "a": "f8304",
+   "b": "f16441",
+   "type": "supports",
+   "note": "Absent public prices and quote-only tools justify budgeting from vendor quotations."
+  },
+  {
+   "a": "f16141",
+   "b": "f16441",
+   "type": "supports",
+   "note": "Public price scarcity supports the recommendation to obtain vendor quotations."
+  },
+  {
+   "a": "f16153",
+   "b": "f16486",
+   "type": "supports",
+   "note": "Separate deployment and access licensing explains why RFPs must price more than desktop seats."
+  },
+  {
+   "a": "f10367",
+   "b": "f10179",
+   "type": "supports",
+   "note": "The post-September-2027 sustainment blind spot motivates an explicit ownership, budget and licence policy."
+  },
+  {
+   "a": "f11025",
+   "b": "f12459",
+   "type": "elaborates",
+   "note": "Adds sensor parameters, interfaces and fault modes to supplier-data and licensing warning signs."
+  }
+ ]
+}

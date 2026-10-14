@@ -1,0 +1,323 @@
+{
+ "chunkId": "k430",
+ "hash": "40bd98bdf92cd78e",
+ "facts": [
+  {
+   "text": "Simulation credibility must be scaled to the risk of a wrong decision and is conditional on intended use.",
+   "quote": "Credibility must be scaled to the risk of a wrong decision, and it is conditional on intended use.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t239",
+    "t238"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A defensible simulation safety claim specifies the model version, inputs, decision and domain for which sufficient evidence exists; saying only that a simulator is validated is incomplete.",
+   "quote": "\"This simulator is validated\" is an incomplete safety statement; the defensible claim is \"version X of this model, using these inputs, has sufficient evidence for decision Y inside domain Z\".",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t238",
+    "t261",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Verification and validation are different activities.",
+   "quote": "Verification and validation are different activities",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4,
+    3,
+    5
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t65",
+    "t235"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Calibration against a test does not demonstrate predictive capability on independent data; the FAA states this explicitly, and ASME, NASA and NRC make the same separation.",
+   "quote": "calibration against a test is not demonstration of predictive capability on independent data. The FAA states this explicitly; ASME, NASA and NRC make the same separation.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4,
+    3,
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FAA",
+     "kind": "organization"
+    },
+    {
+     "name": "ASME",
+     "kind": "organization"
+    },
+    {
+     "name": "NASA",
+     "kind": "organization"
+    },
+    {
+     "name": "NRC",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t237",
+    "t263"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Model validation must use independent physical data from inside the intended envelope.",
+   "quote": "Validation must be against independent physical data from inside the intended envelope.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4,
+    6
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t263",
+    "t261",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Model-to-model comparison can help debugging but is not accepted as validation.",
+   "quote": "Model-to-model comparison can help debugging but is not accepted as validation.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4,
+    6
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Simulation credibility deteriorates fastest during extrapolation, which needs an explicit margin; Columbia provides a stark demonstration.",
+   "quote": "Extrapolation is where credibility deteriorates fastest, and it needs an explicit margin. Columbia is the stark demonstration",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    32,
+    4,
+    20
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Columbia",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t261",
+    "t234",
+    "t319"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The FAA limits simulation use to conditions similar to those used for validation.",
+   "quote": "the FAA limits use to conditions similar to the validation.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    32,
+    4,
+    20
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FAA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t261",
+    "t246"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Simulation reports to decision makers must include uncertainty and caveats.",
+   "quote": "Reports to decision makers must carry uncertainty and caveats",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    37,
+    39
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t259",
+    "t269"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No single scalar score represents simulation credibility.",
+   "quote": "no single scalar score represents credibility.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    37,
+    39
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t240"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No universal simulation-to-test tolerance exists.",
+   "quote": "No universal simulation-to-test tolerance exists",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4,
+    2
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t258",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No universal percentage of physical tests that must remain was found, and claims that a particular percentage is inherently sufficient are unsupported.",
+   "quote": "no universal percentage of remaining physical tests was found. Mature frameworks decide the allocation from model influence, decision consequence, applicability and uncertainty; claims that a particular percentage is inherently sufficient are not supported.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4,
+    2
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t264",
+    "t216"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Mature simulation frameworks allocate physical testing according to model influence, decision consequence, applicability and uncertainty.",
+   "quote": "Mature frameworks decide the allocation from model influence, decision consequence, applicability and uncertainty",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4,
+    2
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t264",
+    "t239",
+    "t259",
+    "t238"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Some physical confirmation remains in every regulator-level simulation scheme found.",
+   "quote": "Some physical confirmation always remains in every regulator-level scheme found.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    15,
+    6,
+    4,
+    9
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t264",
+    "t216"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "On-road evidence shows threshold effects in degraded visibility, including fog in chamber tests and darkness in AAA tests.",
+   "quote": "Field results show threshold effects in degraded visibility: fog in the chamber tests, darkness in the AAA tests.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    23,
+    35,
+    36
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "AAA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t102",
+    "t262"
+   ],
+   "importance": 2
+  }
+ ]
+}

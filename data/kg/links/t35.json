@@ -1,0 +1,115 @@
+{
+ "key": "t35",
+ "hash": "a7844c64b3ee2c7d",
+ "synopsis": "The manufacturer is developing automatic braking that intervenes if the operator does not react, so validation still requires assumptions about operator actions and intervention waiting time [f2955, f11484, f11821]. No representative field-measured distribution of heavy-machine operators’ responses to proximity warnings, or validated off-road operator model, was found; the booklet recommends uncertain response parameters and sensitivity analysis rather than a validated average [f11814, f3040, f11822]. Borrowed road-research delays are 0.5–1 s, while the broader cited assumptions span approximately 0.5–2.5 s and a Hitachi patent allows a 1–3 s margin; the illustrative combined operator-plus-mechanical delay of 2 s adds 22.2 m of travel at 40 km/h before braking distance [f3017, f6228, f6206, f3220]. ISO 3450:2011 excludes operator reaction from stopping distance, whereas US MSHA Table M-1 includes 1 s of operator time plus 0.5–2.5 s of system response; the corpus also says ISO 21815-3 both excludes operator time from stopping distance and accounts for operator action time, leaving the distinction insufficiently explained [f5976, f6058, f2898, f6241]. Machine simulators can establish responses to warnings, and warning-fleet history may anchor response timing, but behaviour under automatic braking may differ from warning-only behaviour [f960, f7931, f7479]. Human-machine interface timing and warning-zone extent must provide response opportunity, and driver-model choice materially affects predicted benefit: cited road research estimates warning-system benefits of 53–96% [f11843, f13901, f3045].",
+ "relations": [
+  {
+   "a": "f2955",
+   "b": "f3670",
+   "type": "same",
+   "note": "Both describe automatic braking when the operator does not react."
+  },
+  {
+   "a": "f3670",
+   "b": "f4388",
+   "type": "same",
+   "note": "Both describe the manufacturer's automatic-braking development."
+  },
+  {
+   "a": "f4388",
+   "b": "f5127",
+   "type": "same",
+   "note": "Both describe automatic intervention after operator nonresponse."
+  },
+  {
+   "a": "f5127",
+   "b": "f5855",
+   "type": "same",
+   "note": "Both describe automatic braking after operator nonresponse."
+  },
+  {
+   "a": "f5855",
+   "b": "f6617",
+   "type": "same",
+   "note": "Both describe the same automatic-braking development."
+  },
+  {
+   "a": "f6617",
+   "b": "f10380",
+   "type": "same",
+   "note": "Both describe automatic braking when the operator does not react."
+  },
+  {
+   "a": "f5976",
+   "b": "f6051",
+   "type": "same",
+   "note": "ISO 3450 includes brake-system response but excludes operator reaction."
+  },
+  {
+   "a": "f6051",
+   "b": "f13674",
+   "type": "same",
+   "note": "Same stopping-distance boundary, with brake dead time and build-up clarified."
+  },
+  {
+   "a": "f2422",
+   "b": "f2898",
+   "type": "same",
+   "note": "ISO 21815-3 stopping distance excludes operator action time."
+  },
+  {
+   "a": "f247",
+   "b": "f3016",
+   "type": "same",
+   "note": "Both report missing published machine-operator reaction-time evidence."
+  },
+  {
+   "a": "f11481",
+   "b": "f11814",
+   "type": "same",
+   "note": "Both report no field-measured heavy-machine proximity-warning reaction-time distribution."
+  },
+  {
+   "a": "f11485",
+   "b": "f11822",
+   "type": "same",
+   "note": "Both recommend uncertain operator response parameters and sensitivity analysis."
+  },
+  {
+   "a": "f3045",
+   "b": "f11820",
+   "type": "same",
+   "note": "Driver-model choice changes estimated warning benefit from 53% to 96%."
+  },
+  {
+   "a": "f7931",
+   "b": "f12355",
+   "type": "same",
+   "note": "Warning-fleet history can anchor response timing and environmental encounter distributions."
+  },
+  {
+   "a": "f3018",
+   "b": "f3220",
+   "type": "same",
+   "note": "Two seconds of combined delay means 22.2 metres at 40 km/h."
+  },
+  {
+   "a": "f2898",
+   "b": "f6241",
+   "type": "contradicts",
+   "note": "Exclusion from stopping distance contrasts with accounting for operator time; scope remains unclear."
+  },
+  {
+   "a": "f5989",
+   "b": "f6058",
+   "type": "elaborates",
+   "note": "Specifies weight-dependent system response as 0.5–2.5 seconds alongside one-second operator time."
+  },
+  {
+   "a": "f3042",
+   "b": "f11822",
+   "type": "supports",
+   "note": "Missing validated response distributions justify uncertain parameters and sensitivity analysis."
+  }
+ ]
+}

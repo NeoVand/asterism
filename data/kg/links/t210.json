@@ -1,0 +1,115 @@
+{
+ "key": "t210",
+ "hash": "53a0f74c2ec8abeb",
+ "synopsis": "The rule of three approximates the 95% upper failure-probability bound as 3/n after zero failures; exact one-sided binomial inference uses (1 − q)^n ≤ alpha [f14202, f6875]. At 95% confidence, miss-rate limits of 5%, 1%, 0.1% and 0.01% require respectively 59, 299, 2,995 and 29,956 independent zero-miss trials; at 99% confidence these rise to 90, 459, 4,603 and 46,050 [f14193, f14194]. These counts apply per claimed population, not across an entire product family: separate claims need their own evidence or justified pooling, and 20 critical strata with 1% miss-rate claims require about 6,000 zero-miss trials, described as feasible only in simulation or HIL [f6885, f6886, f14199]. Independence and sampling validity are essential: correlated sensor frames cannot count as separate encounters, and naive binomial intervals from adaptively selected tests are invalid [f5205, f6874, f6861]. When misses occur, exact binomial or another pre-declared interval is needed; the cited examples require about 474 trials with one allowed failure and 630 with two for a 1% miss-rate claim at 95% confidence, but provide no corresponding 99% counts [f14196, f6879, f6880]. False-alarm claims instead use exposure-based rates: zero events over T representative hours gives an approximately 3/T upper rate bound at 95% confidence, so 300 event-free hours supports fewer than one event per 100 hours [f5448, f6657, f224].",
+ "relations": [
+  {
+   "a": "f126",
+   "b": "f6650",
+   "type": "same",
+   "note": "Both require 299 independent zero-miss trials per population for the 1% claim."
+  },
+  {
+   "a": "f127",
+   "b": "f6651",
+   "type": "same",
+   "note": "Both require 2,995 independent zero-miss trials for the 0.1% claim."
+  },
+  {
+   "a": "f128",
+   "b": "f6652",
+   "type": "same",
+   "note": "Both require 29,956 independent zero-miss trials for the 0.01% claim."
+  },
+  {
+   "a": "f5202",
+   "b": "f12834",
+   "type": "same",
+   "note": "Both specify 59 successful encounters for 95% detection at 95% confidence."
+  },
+  {
+   "a": "f5203",
+   "b": "f12835",
+   "type": "same",
+   "note": "Both specify 299 successful encounters for 99% detection at 95% confidence."
+  },
+  {
+   "a": "f6875",
+   "b": "f14191",
+   "type": "same",
+   "note": "Both state the exact zero-miss confidence inequality and its parameters."
+  },
+  {
+   "a": "f6876",
+   "b": "f14192",
+   "type": "same",
+   "note": "Both give the logarithmic zero-miss sample-size formula."
+  },
+  {
+   "a": "f6654",
+   "b": "f13345",
+   "type": "same",
+   "note": "Both give about 6,000 trials across 20 strata and simulation-or-HIL feasibility."
+  },
+  {
+   "a": "f6861",
+   "b": "f14177",
+   "type": "same",
+   "note": "Both reject naive binomial intervals from intentionally biased adaptive sampling."
+  },
+  {
+   "a": "f223",
+   "b": "f6657",
+   "type": "elaborates",
+   "note": "Adds representative exposure, the Poisson basis, and exact coefficient 2.996."
+  },
+  {
+   "a": "f224",
+   "b": "f13480",
+   "type": "same",
+   "note": "The glossary applies the 300-hour event-free example specifically to unnecessary braking."
+  },
+  {
+   "a": "f5452",
+   "b": "f14196",
+   "type": "elaborates",
+   "note": "Adds pre-declared alternatives and warns against testing until a pleasing percentage appears."
+  },
+  {
+   "a": "f5205",
+   "b": "f6874",
+   "type": "supports",
+   "note": "Correlated frames explain why frame-level scoring produces overconfident intervals."
+  },
+  {
+   "a": "f6878",
+   "b": "f14205",
+   "type": "same",
+   "note": "Both distinguish 299 exact trials from approximately 300 by the rule of three."
+  },
+  {
+   "a": "f6881",
+   "b": "f14207",
+   "type": "elaborates",
+   "note": "Adds the rule-of-three approximation of 3,000 to the exact 2,995 count."
+  },
+  {
+   "a": "f6885",
+   "b": "f6886",
+   "type": "elaborates",
+   "note": "Explains evidence requirements when an aggregate claim becomes multiple condition-specific claims."
+  },
+  {
+   "a": "f6654",
+   "b": "f6655",
+   "type": "supports",
+   "note": "The multi-stratum trial burden supports statistical requirements being the binding validation constraint."
+  },
+  {
+   "a": "f6653",
+   "b": "f14194",
+   "type": "elaborates",
+   "note": "The glossary adds the 5% miss-rate threshold of 90 trials at 99% confidence."
+  }
+ ]
+}

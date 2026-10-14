@@ -1,0 +1,115 @@
+{
+ "key": "t95",
+ "hash": "08eb30cddefcf771",
+ "synopsis": "Ultrasonic remains a possible sensing option, not a confirmed component of the heavy off-road automatic braking system; the research therefore covers it alongside camera, radar, lidar and other options [f2035, f3678, f6625, f8257]. Expert opinion identifies low-speed near-field geometry and control logic as useful virtual-testing applications, but acoustic reflections, installation effects, weather and contamination still require physical correlation [f1742, f1743, f499]. The booklet rates ultrasonic simulation among its weakest-evidenced cases: it found no published simulation-versus-reality validation in rain, snow, wind, dust or mud, and the accessible 2024 road-sensor study did not establish performance across the requested heavy-off-road weather and soiling matrix [f4432, f4581, f4577, f12659]. Commercial acoustic stimulation is evidenced for automotive parking, but independent heavy-off-road HIL/VIL evidence was not found; Isaac Sim's ultrasonic implementation is a ray-cast range model rather than an acoustic model [f5321, f5322, f8548]. Planning should therefore treat ultrasonic simulation as low credibility until correlated with company measurements, obtain ultrasonic-specific range or echo recordings rather than rely on camera logs, and ensure test surrogates reproduce the relevant ultrasonic response [f7086, f7099, f5626, f84, f2556].",
+ "relations": [
+  {
+   "a": "f288",
+   "b": "f1180",
+   "type": "same",
+   "note": "Both require broad sensor coverage because the sensor set is unconfirmed."
+  },
+  {
+   "a": "f1180",
+   "b": "f2035",
+   "type": "same",
+   "note": "Both link the unfixed sensor set to coverage of ultrasonic and other options."
+  },
+  {
+   "a": "f2035",
+   "b": "f3678",
+   "type": "same",
+   "note": "Environment research inherits the same uncertainty about sensor selection."
+  },
+  {
+   "a": "f3678",
+   "b": "f5133",
+   "type": "same",
+   "note": "Both state unconfirmed sensor types require coverage of multiple sensing options."
+  },
+  {
+   "a": "f5133",
+   "b": "f6625",
+   "type": "same",
+   "note": "Both identify ultrasonic among the options for the unconfirmed sensor set."
+  },
+  {
+   "a": "f6625",
+   "b": "f8257",
+   "type": "same",
+   "note": "Tool research repeats the unresolved sensor-selection scope."
+  },
+  {
+   "a": "f91",
+   "b": "f4432",
+   "type": "same",
+   "note": "Both rank thermal and ultrasonic simulation as the weakest-evidenced cases."
+  },
+  {
+   "a": "f4580",
+   "b": "f12657",
+   "type": "same",
+   "note": "The glossary repeats scattering, contamination, weather-gradient and vibration risks."
+  },
+  {
+   "a": "f4581",
+   "b": "f12658",
+   "type": "same",
+   "note": "Both report no published ultrasonic simulation-versus-reality comparison across the listed adverse conditions."
+  },
+  {
+   "a": "f5193",
+   "b": "f12660",
+   "type": "same",
+   "note": "Both restrict evidenced ultrasonic stimulation to automotive parking."
+  },
+  {
+   "a": "f5321",
+   "b": "f5193",
+   "type": "elaborates",
+   "note": "Identifies commercial over-the-air acoustic stimulation as the parking implementation."
+  },
+  {
+   "a": "f3943",
+   "b": "f3717",
+   "type": "elaborates",
+   "note": "Specifies the job-site materials lacking published ultrasonic datasets."
+  },
+  {
+   "a": "f7085",
+   "b": "f7419",
+   "type": "same",
+   "note": "Both report missing credibility evidence for adverse-weather simulation amid off-road clutter."
+  },
+  {
+   "a": "f8548",
+   "b": "f9276",
+   "type": "supports",
+   "note": "Ray-cast implementation supports the open-source-core chain's physics-based ultrasonic simulation gap."
+  },
+  {
+   "a": "f1743",
+   "b": "f7099",
+   "type": "elaborates",
+   "note": "Specifies acoustic and installation effects requiring ultrasonic physical correlation."
+  },
+  {
+   "a": "f4581",
+   "b": "f7086",
+   "type": "supports",
+   "note": "Missing adverse-weather validation supports low credibility pending company measurements."
+  },
+  {
+   "a": "f84",
+   "b": "f5626",
+   "type": "supports",
+   "note": "Camera logs cannot recover ultrasonic responses, motivating ultrasonic-specific recordings."
+  },
+  {
+   "a": "f2914",
+   "b": "f2556",
+   "type": "supports",
+   "note": "A foam vehicle's potentially wrong response motivates modality-matched test surrogates."
+  }
+ ]
+}

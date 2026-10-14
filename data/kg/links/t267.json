@@ -1,0 +1,115 @@
+{
+ "key": "t267",
+ "hash": "ce9f72acd3991d2e",
+ "synopsis": "Across chapters, false confidence arises when plausible or repeatable simulation results exceed their evidence: millions of tests cannot establish operating-domain coverage, and statistical methods cannot repair missing hazards or an unvalidated simulator [f671, f650, f8916]. Extrapolation is a central warning: Columbia was lost in 2003 partly because a model was used outside its validity envelope, with debris estimated at about 400 times the size represented in its test database (640 times in an early briefing); even a well-calibrated braking model may fail on downhill or different-load conditions [f11326, f7582, f6171]. Metrics can conceal error: a 2021 radar study found deceptively realistic tracking despite the largest raw-point-cloud gap, while CVPR 2024 on-road research showed that open-loop planning metrics could be matched using vehicle state alone [f4540, f5518]. Test design also matters: incorrect scenario distributions invalidate sampling-based performance claims, correlated frames artificially narrow confidence intervals, and shared assumptions across sensors, collision logic and the pass/fail oracle can produce consistent but misleading results [f6833, f5461, f12118]. These risks extend beyond sensors to site generation, terrain physics and human response: generators may omit failure-generating structure, common handling tire models do not work on deformable terrain, and on-road warning-system benefit estimates ranged from 53% to 96% with the chosen driver model [f3736, f8339, f3045]. Planning should therefore avoid blanket validation claims, review oracle independence, and separate replay, post-intervention simulation and real-machine stopping evidence; the proposing organization has not yet validated its simulator against reality, leaving replacement of physical evidence unjustified [f9762, f10233, f5551, f10475].",
+ "relations": [
+  {
+   "a": "f192",
+   "b": "f7581",
+   "type": "same",
+   "note": "Both identify Columbia as the canonical warning against extrapolation."
+  },
+  {
+   "a": "f8339",
+   "b": "f8725",
+   "type": "same",
+   "note": "Both report Chrono developers' warning about handling tire models on deformable terrain."
+  },
+  {
+   "a": "f3736",
+   "b": "f3792",
+   "type": "same",
+   "note": "Both warn that omitted failure-generating structure makes procedural variety worthless."
+  },
+  {
+   "a": "f5184",
+   "b": "f5518",
+   "type": "same",
+   "note": "Same CVPR 2024 finding; the latter names authors and benchmark."
+  },
+  {
+   "a": "f12118",
+   "b": "f10606",
+   "type": "same",
+   "note": "Shared simplifying assumptions yield consistent but misleading virtual campaigns."
+  },
+  {
+   "a": "f745",
+   "b": "f8916",
+   "type": "same",
+   "note": "Millions of tests can remain systematically wrong rather than establish confidence."
+  },
+  {
+   "a": "f862",
+   "b": "f93",
+   "type": "supports",
+   "note": "2025 sim-to-real evidence supports caution about convincing synthetic weather edits."
+  },
+  {
+   "a": "f7582",
+   "b": "f192",
+   "type": "elaborates",
+   "note": "Quantifies how far Columbia debris exceeded the model's tested domain."
+  },
+  {
+   "a": "f7583",
+   "b": "f7581",
+   "type": "elaborates",
+   "note": "Specifies the unjustified assumption that conservative bias would persist outside the tested domain."
+  },
+  {
+   "a": "f6171",
+   "b": "f11324",
+   "type": "elaborates",
+   "note": "Adds downhill and load changes as braking-specific validity-envelope hazards."
+  },
+  {
+   "a": "f4540",
+   "b": "f4541",
+   "type": "supports",
+   "note": "Radar comparison demonstrates how final tracking output can hide raw-data errors."
+  },
+  {
+   "a": "f650",
+   "b": "f6854",
+   "type": "elaborates",
+   "note": "Importance sampling is a specific method unable to repair incorrect operational modelling."
+  },
+  {
+   "a": "f4094",
+   "b": "f3736",
+   "type": "elaborates",
+   "note": "Explains generators' inability to expose unencoded categories and contrasts captured real sites."
+  },
+  {
+   "a": "f12118",
+   "b": "f10233",
+   "type": "supports",
+   "note": "Shared-assumption failures motivate reviewing independence between simulator and test oracle."
+  },
+  {
+   "a": "f5522",
+   "b": "f5551",
+   "type": "supports",
+   "note": "Post-braking replay inconsistency motivates separating replay, simulation and real-machine evidence."
+  },
+  {
+   "a": "f3972",
+   "b": "f462",
+   "type": "supports",
+   "note": "Sensor-only evidence cannot establish collision avoidance, illustrating why simulation categories must remain distinct."
+  },
+  {
+   "a": "f10475",
+   "b": "f6423",
+   "type": "supports",
+   "note": "Missing reality validation reinforces using models for test selection, not standalone proof."
+  },
+  {
+   "a": "f10543",
+   "b": "f10277",
+   "type": "supports",
+   "note": "Simulator errors masking safety defects justify assessing the cost of incorrect virtual conclusions."
+  }
+ ]
+}

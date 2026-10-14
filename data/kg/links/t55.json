@@ -1,0 +1,115 @@
+{
+ "key": "t55",
+ "hash": "85cd02b06210a898",
+ "synopsis": "South African mining regulations require collision-prevention systems to fail to safe without human intervention; Regulation 8.10 describes warning, retardation toward a safe speed if the operator does not act, and then automatic braking [f1362, f2441]. MOSH specifies fail-to-safe within 500 ms of detecting a critical failure and lost-connection detection within 500 ms, although one HIL comparison lists both 500 ms and 50 ms fail-to-safe limits without explaining their respective scope [f2359, f12076, f5698]. MOSH specifies emergency-stop deceleration of 1.9 m/s² for machines exceeding 20 km/h and 1.0 m/s² for others, versus controlled-stop values of 1.0 or 0.5 m/s²; abrupt or false braking can itself create hazards and reduce acceptance [f5560, f5561, f1536, f3622]. Post-stop safety requires attention to brake hold and release: ISO 21815-3 recommends operator action before release where needed to prevent rollaway, but off-road implementation data was not found [f6305, f6525, f6526]. Human overrides and recovery are material risks: a June 2017 fatal-accident investigation recorded 87 prior emergency-stop overrides, while WorkSafe WA Report 286, dated 7 March 2025, describes autonomous trucks resuming movement after communications restoration while operators approached them [f3295, f10718]. HIL data injection can test timing, diagnostics and fail-to-safe behaviour, but functional safety does not establish perception capability; validation should explicitly cover degraded modes, recovery and post-stop hazards rather than nominal driving alone [f5697, f12021, f10778, f11035, f6600].",
+ "relations": [
+  {
+   "a": "f177",
+   "b": "f232",
+   "type": "same",
+   "note": "Both state the MOSH 500 ms fail-to-safe limit."
+  },
+  {
+   "a": "f1362",
+   "b": "f2080",
+   "type": "same",
+   "note": "Both require autonomous fail-to-safe behaviour under South African mining regulations."
+  },
+  {
+   "a": "f2080",
+   "b": "f11456",
+   "type": "same",
+   "note": "Glossary restates the regulatory requirement to fail safely without human intervention."
+  },
+  {
+   "a": "f2080",
+   "b": "f2276",
+   "type": "same",
+   "note": "Both restate the same South African fail-to-safe requirement."
+  },
+  {
+   "a": "f2359",
+   "b": "f12075",
+   "type": "same",
+   "note": "Both specify 500 ms from critical-failure detection."
+  },
+  {
+   "a": "f2118",
+   "b": "f2359",
+   "type": "elaborates",
+   "note": "Adds critical-failure detection as the starting point for the 500 ms limit."
+  },
+  {
+   "a": "f2359",
+   "b": "f5698",
+   "type": "contradicts",
+   "note": "HIL comparison additionally lists 50 ms; applicability is unexplained in the supplied facts."
+  },
+  {
+   "a": "f3014",
+   "b": "f3294",
+   "type": "same",
+   "note": "Both report routine emergency-stop override use at the coal mine."
+  },
+  {
+   "a": "f3015",
+   "b": "f3295",
+   "type": "same",
+   "note": "Both record 87 overrides before the June 2017 fatal accident."
+  },
+  {
+   "a": "f3295",
+   "b": "f11802",
+   "type": "same",
+   "note": "Glossary repeats the investigation's count of 87 prior overrides."
+  },
+  {
+   "a": "f5283",
+   "b": "f5697",
+   "type": "same",
+   "note": "Both identify HIL data injection as testing timing, diagnostics and fail-to-safe behaviour."
+  },
+  {
+   "a": "f6305",
+   "b": "f11887",
+   "type": "same",
+   "note": "Both recommend operator action before brake release to prevent rollaway."
+  },
+  {
+   "a": "f6525",
+   "b": "f6305",
+   "type": "supports",
+   "note": "Rollback and roll-forward risk explains requiring operator action before release."
+  },
+  {
+   "a": "f1536",
+   "b": "f3622",
+   "type": "supports",
+   "note": "Concrete false-braking hazards support concern about abrupt-stop risk and acceptance."
+  },
+  {
+   "a": "f3630",
+   "b": "f6600",
+   "type": "elaborates",
+   "note": "Extends post-stop hazard analysis to direction changes and braking-induced loss of detection."
+  },
+  {
+   "a": "f10718",
+   "b": "f10777",
+   "type": "supports",
+   "note": "Communications-restoration incident demonstrates unsafe recovery despite nominal collision avoidance."
+  },
+  {
+   "a": "f10777",
+   "b": "f11033",
+   "type": "same",
+   "note": "Both identify degraded and recovery modes as risks despite nominal avoidance working."
+  },
+  {
+   "a": "f2134",
+   "b": "f2303",
+   "type": "elaborates",
+   "note": "Identifies a 2025 circular and the requirement's pre-deployment timing."
+  }
+ ]
+}

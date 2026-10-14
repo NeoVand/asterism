@@ -1,0 +1,115 @@
+{
+ "key": "t143",
+ "hash": "a86bcce13e8a0c5b",
+ "synopsis": "The booklet requires the operating design domain to be written first, in October 2026, before scenarios, sites or sample sizes are planned, and recommends coverage through domain attributes, equivalence classes and interactions rather than repeated site names [f13253, f13251]. The proposed combinations exceed 7,000 cells, making 59–299 physical trials in every cell impractical; the indicative physical anchor matrix instead comprises roughly 60–100 instrumented runs per machine family [f5206, f5469, f6177]. Coverage must distinguish forward, reverse, start-from-rest, turning and swing, include degraded and recovery cases, and report safety-critical detection performance per cell rather than as one aggregate [f2996, f10778, f5454]. Correlated models should support large-matrix virtual regression, but simulation is not sole evidence; Euro NCAP's on-road precedent verifies randomly selected prediction-grid cells physically [f881, f1607, f1755]. No universal off-road coverage prescription or standardised national matrix in the reviewed India DGMS guidance was found, and neither scenario counts nor perfect sensor models establish adequate coverage [f5475, f2453, f10506, f5108]. Plans should leave uncovered cells visibly blank and predeclare primary statistical claims because checking hundreds of cells at 95% confidence produces chance passes or failures [f9479, f12172].",
+ "relations": [
+  {
+   "a": "f131",
+   "b": "f5206",
+   "type": "same",
+   "note": "Both estimate more than 7,000 validation cells."
+  },
+  {
+   "a": "f5206",
+   "b": "f5468",
+   "type": "same",
+   "note": "Both describe the same target strata and cell-count estimate."
+  },
+  {
+   "a": "f1210",
+   "b": "f1793",
+   "type": "same",
+   "note": "Same supplier case claims up to 75 percent lower test-design effort."
+  },
+  {
+   "a": "f747",
+   "b": "f718",
+   "type": "same",
+   "note": "Both prescribe virtual and bench matrix regression after prototype correlation."
+  },
+  {
+   "a": "f718",
+   "b": "f881",
+   "type": "same",
+   "note": "Both prescribe large-matrix virtual regression after prototype-based model correlation."
+  },
+  {
+   "a": "f7485",
+   "b": "f12172",
+   "type": "elaborates",
+   "note": "Glossary adds predeclared primary claims to the multiple-testing warning."
+  },
+  {
+   "a": "f7685",
+   "b": "f7843",
+   "type": "same",
+   "note": "Both report vendor interpretations requiring 30 percent physical testing and scenario-variant anchors."
+  },
+  {
+   "a": "f6732",
+   "b": "f7107",
+   "type": "same",
+   "note": "Both list ISO 34505 test-case attributes, including steps and expected results."
+  },
+  {
+   "a": "f6948",
+   "b": "f7107",
+   "type": "same",
+   "note": "Same structured test-case requirement; the latter also lists steps."
+  },
+  {
+   "a": "f10778",
+   "b": "f11034",
+   "type": "same",
+   "note": "Both flag omitted degraded and recovery cases as unsafe-plan warning signs."
+  },
+  {
+   "a": "f1755",
+   "b": "f13083",
+   "type": "elaborates",
+   "note": "Glossary specifies acceptance conditional on physical verification of randomly selected cells."
+  },
+  {
+   "a": "f2498",
+   "b": "f13083",
+   "type": "elaborates",
+   "note": "Chapter adds possible re-simulation when physical validation fails."
+  },
+  {
+   "a": "f7693",
+   "b": "f8120",
+   "type": "elaborates",
+   "note": "Latter explicitly identifies absent physical-data validation and includes draft ISO/PAS 34506."
+  },
+  {
+   "a": "f3882",
+   "b": "f3974",
+   "type": "supports",
+   "note": "Controllable scripted actors enable exact, reproducible boundary-condition placement."
+  },
+  {
+   "a": "f5206",
+   "b": "f5469",
+   "type": "supports",
+   "note": "Large cell count explains why exhaustive physical sampling is impractical."
+  },
+  {
+   "a": "f5108",
+   "b": "f10506",
+   "type": "supports",
+   "note": "Correct hazard combinations matter independently of sensor fidelity or scenario count."
+  },
+  {
+   "a": "f6172",
+   "b": "f6177",
+   "type": "elaborates",
+   "note": "Run estimate quantifies the physical matrix applied per machine family and architecture."
+  },
+  {
+   "a": "f13253",
+   "b": "f2553",
+   "type": "depends",
+   "note": "Planning the adapted scenario matrix requires the operating domain to be defined first."
+  }
+ ]
+}

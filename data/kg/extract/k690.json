@@ -1,0 +1,319 @@
+{
+ "chunkId": "k690",
+ "hash": "154b3a10e17d6861",
+ "facts": [
+  {
+   "text": "Over-the-air sensor stimulation presents an artificial signal, radio echo, projected image, laser return or sound to a real sensor's own antenna or lens so that the sensor perceives a real scene.",
+   "quote": "Over-the-air sensor stimulation means presenting an artificial signal, a radio echo, a projected image, a laser return or a sound, to a real sensor's own antenna or lens so that the sensor believes it is seeing a real scene.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t124",
+    "t150"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Data injection tests a sensor system without a real worker behind a real machine by bypassing the sensor and feeding recorded or simulated data into the computer behind the sensor.",
+   "quote": "One bypasses the sensor and feeds recorded or simulated data into the computer behind it.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t149",
+    "t84"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A radar target simulator receives the radar's transmitted wave and returns a delayed, shifted echo; the passage gives the example of simulating a vehicle at 20 meters approaching at 2 meters per second.",
+   "quote": "a radar target simulator receives the radar's transmitted wave and sends back a delayed, shifted echo so the radar \"sees\" a vehicle at 20 meters approaching at 2 meters per second",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t124",
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Over-the-air stimulation can show a camera a rendered scene using a screen or projector, return delayed light pulses using a lidar target emulator, or return echoes to an ultrasonic sensor using an acoustic device.",
+   "quote": "a screen or projector shows a camera a rendered scene; a lidar target emulator fires delayed light pulses back; an acoustic device returns echoes to an ultrasonic sensor.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t124",
+    "t89",
+    "t92",
+    "t95"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Over-the-air sensor stimulation exercises the real antenna, lens, receiver and firmware because the signal travels through the air to the real sensor front end; data injection cannot exercise all these components.",
+   "quote": "Because the signal goes through the air to the real front end, the real antenna, lens, receiver and firmware are all exercised, which data injection cannot do",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t124",
+    "t149"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Over-the-air sensor stimulation suits proprietary sensors whose suppliers will not share their internals.",
+   "quote": "this suits proprietary sensors whose internals the supplier will not share [Chapters 6, 7].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t124",
+    "t84"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Digital radar target simulators cannot simulate targets closer than their processing delay permits: every 6.67 nanoseconds of delay adds one meter of apparent range.",
+   "quote": "a digital target simulator cannot show a target closer than its processing delay allows, since every 6.67 nanoseconds adds one meter of apparent range",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t124",
+    "t94",
+    "t88"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A peer-reviewed review reports minimum ranges of about 20 to 30 meters and single-digit target counts for digital radar target simulators.",
+   "quote": "a peer-reviewed review gives about 20 to 30 meters minimum and single-digit target counts for digital systems",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t124",
+    "t94"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Vendors claim radar target simulator minimum ranges of 0.6 to 1.5 meters and capacities of five to 512 objects.",
+   "quote": "vendors claim 0.6 to 1.5 m minimums and from five to 512 objects.",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t124",
+    "t94"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Camera stimulation is limited by displays not being synchronized with cameras and by difficulty covering wide-angle cameras.",
+   "quote": "Camera: the display is not synchronized with the camera, and wide-angle cameras are hard to cover.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t124",
+    "t89",
+    "t101",
+    "t87"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Physical signal generation for lidar stimulation remains a gap, especially for solid-state lidar.",
+   "quote": "Lidar: physical signal generation, especially for solid-state lidar, is a remaining gap.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t124",
+    "t92"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Commercial ultrasonic sensor stimulation exists only for automotive parking.",
+   "quote": "Ultrasonic: commercial stimulation exists only for automotive parking.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t124",
+    "t95"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The radar, camera, lidar and ultrasonic stimulation systems described do not reproduce terrain clutter, dust plumes, soiling or multipath from steel structures.",
+   "quote": "None reproduces terrain clutter, dust plumes, soiling or multipath from steel structures",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t124",
+    "t102",
+    "t104",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Vendor statements that over-the-air sensor stimulation systems are \"realistic\" are not proof that the systems are equivalent to a mine environment.",
+   "quote": "vendor statements that such systems are \"realistic\" are claims, not proof of equivalence to a mine [Chapter 6].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t124",
+    "t234",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Workers 0.5 to 5 meters behind a machine occupy the range where digital radar simulators are weakest.",
+   "quote": "Workers at 0.5 to 5 meters behind a machine are exactly where digital radar simulators are weakest",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t124",
+    "t94",
+    "t14",
+    "t16"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Over-the-air sensor stimulation suits final sensor and controller regression and timing tests rather than proof of close-range detection.",
+   "quote": "this method suits final sensor and controller regression and timing tests rather than proof of close-range detection",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t124",
+    "t161",
+    "t86",
+    "t88"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Over-the-air sensor stimulation does not remove the need for separate weather and soiling tests.",
+   "quote": "it does not remove the need to test weather and soiling separately [Chapters 6, 7].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t124",
+    "t102"
+   ],
+   "importance": 3
+  }
+ ]
+}

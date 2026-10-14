@@ -1,0 +1,115 @@
+{
+ "key": "t102",
+ "hash": "a656ff6e5f942410",
+ "synopsis": "The braking system must work in rain, snow, fog, dust, dusk, darkness and glare, but the mid-2027 validation window will not include snow and cold conditions [f285, f2033, f3676, f8255, f4403]. Dust is identified as the biggest off-road sensor-simulation gap, and perception models for dust, rain, mud and occlusion are the hardest technical gap in virtual validation; construction and mining studies from 2023–2026 report lidar degradation in real dust [f89, f10338, f6688]. Lidar rain-and-fog simulation is the best-validated case, based on on-road evidence, but agreement depends on matching real conditions and deteriorates as fog visibility falls [f4412, f7556, f7557, f7558]. A fog-chamber test found that at 10 m visibility all lidars but one failed to detect a target at 10.5 m; if dust prevents person detection at the required stopping range, speed must decrease or stopping cannot be promised [f7559, f11330]. Snow, glare and darkness validation remains weak or absent, while raw sensor-log replay does not retest contamination, vibration or glare upstream of the re-injection point and cannot establish performance in environmental conditions absent from the logs [f6488, f96, f5241]. Incident evidence does not establish adverse weather's share of collisions, and published complete-system off-road false-positive and false-negative rates were not found; planning therefore must allocate environmental variability to simulation, uncertainty bounds or residual physical testing, with adverse-environment sensor models experimentally correlated [f3234, f3235, f6385, f10348, f5219].",
+ "relations": [
+  {
+   "a": "f285",
+   "b": "f2033",
+   "type": "same",
+   "note": "Both require operation across the same weather and lighting conditions."
+  },
+  {
+   "a": "f285",
+   "b": "f3676",
+   "type": "same",
+   "note": "Job-site chapter repeats the all-weather and lighting requirement."
+  },
+  {
+   "a": "f285",
+   "b": "f8255",
+   "type": "same",
+   "note": "Tools chapter repeats the all-weather and lighting requirement."
+  },
+  {
+   "a": "f2033",
+   "b": "f3676",
+   "type": "same",
+   "note": "Both state the same environmental operating requirement."
+  },
+  {
+   "a": "f2033",
+   "b": "f8255",
+   "type": "same",
+   "note": "Both state the same environmental operating requirement."
+  },
+  {
+   "a": "f3676",
+   "b": "f8255",
+   "type": "same",
+   "note": "Both state the same environmental operating requirement."
+  },
+  {
+   "a": "f96",
+   "b": "f5167",
+   "type": "same",
+   "note": "Both define replay's upstream exclusions by the data re-injection point."
+  },
+  {
+   "a": "f6384",
+   "b": "f6488",
+   "type": "same",
+   "note": "Both report absent or weak validation for snow, glare and darkness sensor models."
+  },
+  {
+   "a": "f11303",
+   "b": "f6768",
+   "type": "same",
+   "note": "Both state that environmental degradation differs across sensor modalities."
+  },
+  {
+   "a": "f6688",
+   "b": "f89",
+   "type": "supports",
+   "note": "Observed real-dust detector degradation substantiates the priority dust-simulation gap."
+  },
+  {
+   "a": "f10426",
+   "b": "f5219",
+   "type": "supports",
+   "note": "Dust-cloud leading-edge responses justify experimental correlation rather than generic noise assumptions."
+  },
+  {
+   "a": "f7557",
+   "b": "f7556",
+   "type": "supports",
+   "note": "Matched rain distributions provide concrete evidence for condition-dependent model agreement."
+  },
+  {
+   "a": "f7558",
+   "b": "f7556",
+   "type": "elaborates",
+   "note": "Falling fog visibility identifies a condition where model mismatch grows."
+  },
+  {
+   "a": "f4403",
+   "b": "f10348",
+   "type": "depends",
+   "note": "Missing seasonal coverage requires explicit allocation to uncertainty bounds or residual physical tests."
+  },
+  {
+   "a": "f3222",
+   "b": "f3234",
+   "type": "supports",
+   "note": "Anecdotal incident evidence cannot establish adverse conditions' share of collisions."
+  },
+  {
+   "a": "f3825",
+   "b": "f93",
+   "type": "supports",
+   "note": "Missing quantitative off-road validation supports caution about generative weather edits as evidence."
+  },
+  {
+   "a": "f5167",
+   "b": "f5241",
+   "type": "supports",
+   "note": "Upstream replay exclusions explain why replay cannot prove new environmental failure performance."
+  },
+  {
+   "a": "f4409",
+   "b": "f8281",
+   "type": "supports",
+   "note": "Missing integrated public demonstrations support the absence of publicly validated comprehensive tools."
+  }
+ ]
+}

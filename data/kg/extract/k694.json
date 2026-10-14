@@ -1,0 +1,228 @@
+{
+ "chunkId": "k694",
+ "hash": "5d3f8c69a73e2ce6",
+ "facts": [
+  {
+   "text": "Virtual validation means collecting evidence that a system meets its safety requirements through simulation and laboratory-bench testing instead of, or before, testing the complete real machine.",
+   "quote": "Virtual validation means collecting evidence that a system meets its safety requirements by testing it in simulation and on laboratory benches instead of, or before, testing the complete real machine.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t127",
+    "t63",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Virtual validation can run very large numbers of situations, repeat them exactly, include dangerous cases that would not be staged with a real worker, and begin long before a prototype exists.",
+   "quote": "It can run very large numbers of situations, repeat them exactly, include dangerous cases that nobody would stage with a real worker, and start long before the prototype exists.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t127",
+    "t141",
+    "t43"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Virtual validation alone cannot prove that a camera will detect a worker through real dust when the dust model and camera model are themselves unproven.",
+   "quote": "It cannot, by itself, prove that a camera will see a worker through real dust, because the dust model and the camera model are themselves unproven",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t127",
+    "t89",
+    "t102",
+    "t234",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Virtual validation cannot prove that a loaded hauler stops within the predicted distance on wet gravel because the booklet found no validated braking-distance model for heavy machines on loose surfaces.",
+   "quote": "it cannot prove that a loaded hauler stops in the predicted distance on wet gravel, because no validated braking-distance model for heavy machines on loose surfaces was found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t174",
+    "t182",
+    "t127",
+    "t168"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The documented validation programs use virtual methods as filters rather than substitutes for physical testing: define the operating domain and scenarios, verify the logic virtually at scale, confirm with fewer physical tests, and release in stages with field monitoring.",
+   "quote": "use virtual methods as filters, not substitutes: define the operating domain and scenarios first; verify the logic virtually at scale; confirm with a smaller set of physical tests; release in stages with field monitoring",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t127",
+    "t216",
+    "t140",
+    "t73",
+    "t74"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Every simulation credibility framework checked by the booklet, spanning aviation, nuclear power and road-vehicle regulation, requires physical anchoring: physical baseline tests validate models, simulation covers the interior of the validated domain, and physical confirmation remains necessary at boundaries and after influential changes.",
+   "quote": "requires physical anchoring: baseline physical tests validate the model, simulation fills the interior of the validated domain, and physical confirmation stays at the boundaries and after influential changes",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t237",
+    "t261",
+    "t216",
+    "t264"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Regulatory acceptance of virtual validation evidence identified by the booklet is limited to on-road applications.",
+   "quote": "Acceptance of virtual evidence by regulators is on-road only.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    3,
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t127",
+    "t277",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Euro NCAP's March 2025 virtual-testing protocol accepts a manufacturer's predictions for a scenario grid if randomly selected grid cells pass physical verification.",
+   "quote": "Euro NCAP's virtual-testing protocol (March 2025) accepts a manufacturer's predictions for a scenario grid if randomly selected cells pass physical verification.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    3,
+    10
+   ],
+   "entities": [
+    {
+     "name": "Euro NCAP",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t297",
+    "t143",
+    "t216",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet found no off-road standard or regulator that accepts simulation in place of physical tests for collision avoidance or automatic braking.",
+   "quote": "No off-road standard or regulator was found that accepts simulation in place of physical tests for collision avoidance or automatic braking",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t127",
+    "t271",
+    "t23",
+    "t25",
+    "t264"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Compressing validation from three or four years to under four months is credible only if the virtual pipeline—scenario library, replay adapters, software-in-the-loop (SIL) and hardware-in-the-loop (HIL) test suites, and correlated models—is finished before the prototype arrives, making the four months a confirmation campaign rather than the first iteration of the method.",
+   "quote": "Compressing validation from three or four years to under four months is credible only if the virtual pipeline (scenario library, replay adapters, software-in-the-loop (SIL) and hardware-in-the-loop (HIL) test suites, correlated models) is finished before the prototype arrives",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t127",
+    "t147",
+    "t148",
+    "t250"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet found no case of an off-road manufacturer validating a new perception-based braking function in under four months.",
+   "quote": "No case was found of an off-road manufacturer validating a new perception-based braking function in under four months",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t85",
+    "t25",
+    "t65"
+   ],
+   "importance": 3
+  }
+ ]
+}

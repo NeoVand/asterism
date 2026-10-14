@@ -1,0 +1,427 @@
+{
+ "chunkId": "k899",
+ "hash": "ebd241b1893c5430",
+ "facts": [
+  {
+   "text": "Scenario generation tools describe and vary test situations; test management tools select and execute runs and track their results.",
+   "quote": "Scenario generation tools describe and vary the test situations; test management tools decide which runs to execute, run them, and keep track of the results.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t327"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scenario generation tools let engineers describe tests in a standard language and vary speed, distance and weather to create thousands of related tests.",
+   "quote": "A scenario generation tool lets engineers write that story in a standard language, then vary its numbers (speed, distance, weather) to create thousands of related tests.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t327",
+    "t232",
+    "t199"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Test management tools schedule runs, record every result and show which situations have been covered.",
+   "quote": "it schedules the runs, records every result and shows which situations have been covered.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t327",
+    "t162"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenSCENARIO describes scenarios and OpenDRIVE describes roads; both languages are supported by VTD, the dSPACE chain, CARLA, RoadRunner, Prescan and MORAI.",
+   "quote": "The standard languages are ASAM OpenSCENARIO (the story) and OpenDRIVE (the road), supported by VTD, the dSPACE chain, CARLA, RoadRunner, Prescan and MORAI.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenSCENARIO",
+     "kind": "standard"
+    },
+    {
+     "name": "ASAM OpenDRIVE",
+     "kind": "standard"
+    },
+    {
+     "name": "VTD",
+     "kind": "tool"
+    },
+    {
+     "name": "dSPACE chain",
+     "kind": "tool"
+    },
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    },
+    {
+     "name": "RoadRunner",
+     "kind": "tool"
+    },
+    {
+     "name": "Prescan",
+     "kind": "tool"
+    },
+    {
+     "name": "MORAI",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t232",
+    "t327"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "OpenDRIVE assumes roads, so job sites without lane geometry fit the standard poorly.",
+   "quote": "OpenDRIVE assumes roads, so job sites without lane geometry fit poorly [Chapter 11].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "ASAM OpenDRIVE",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t11"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Foretellix Foretify provides coverage-driven scenario generation with constrained random variation and large-scale validation management.",
+   "quote": "Foretellix Foretify (coverage-driven generation with constrained random variation and large-scale validation management;",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Foretellix Foretify",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t327",
+    "t203"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2021 partnership with Volvo Autonomous Solutions adapted Foretellix Foretify for mines and quarries.",
+   "quote": "a 2021 partnership with Volvo Autonomous Solutions adapted it for mines and quarries",
+   "kind": "event",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Foretellix Foretify",
+     "kind": "tool"
+    },
+    {
+     "name": "Volvo Autonomous Solutions",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t327",
+    "t331"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Foretellix sells a mining suite.",
+   "quote": "and the vendor sells a mining suite",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Foretellix",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t331",
+    "t327"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "AVL SCENIUS supports the scenario lifecycle from requirements to reporting.",
+   "quote": "AVL SCENIUS (scenario lifecycle from requirements to reporting)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9,
+    11
+   ],
+   "entities": [
+    {
+     "name": "AVL SCENIUS",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t327",
+    "t63"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet names RoadRunner Scenario, the VTD 2025.2 ScenarioEngine and dSPACE SIMPHERA as scenario tools.",
+   "quote": "RoadRunner Scenario; the VTD 2025.2 ScenarioEngine; dSPACE SIMPHERA;",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9,
+    11
+   ],
+   "entities": [
+    {
+     "name": "RoadRunner Scenario",
+     "kind": "tool"
+    },
+    {
+     "name": "VTD 2025.2 ScenarioEngine",
+     "kind": "tool"
+    },
+    {
+     "name": "dSPACE SIMPHERA",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t327"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scenic is an open-source probabilistic scenario language that places objects without needing lanes and connects to several simulators.",
+   "quote": "Scenic, an open-source probabilistic scenario language that places objects without needing lanes and connects to several simulators.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Scenic",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t232",
+    "t327"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scenic integrates with VerifAI; Scenic and VerifAI, together with S-TaLiRo and Breach, are falsification tools that search for parameter combinations where a function fails.",
+   "quote": "Scenic integrates with VerifAI, and together with S-TaLiRo and Breach these are falsification tools that search for the parameter combinations where a function fails [Chapters 9, 11].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Scenic",
+     "kind": "tool"
+    },
+    {
+     "name": "VerifAI",
+     "kind": "tool"
+    },
+    {
+     "name": "S-TaLiRo",
+     "kind": "tool"
+    },
+    {
+     "name": "Breach",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t205",
+    "t327"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet did not assess the open-source editor esmini.",
+   "quote": "The open-source editor esmini was not assessed [Chapter 11].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "esmini",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t327"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet names no single product for test management.",
+   "quote": "For test management, the booklet names no single product.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t327"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A neutral test-management implementation needs a requirements platform for hazards and traceability, version control and continuous integration, a database and object store, and a campaign service that generates runs and computes verdicts and coverage.",
+   "quote": "a requirements platform for hazards and traceability, version control and continuous integration, a database and object store, and a campaign service that generates runs and computes verdicts and coverage;",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t327",
+    "t64",
+    "t161",
+    "t233",
+    "t341"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM ATX for test metadata and ASAM MDF for measured data are named as neutral formats for test management.",
+   "quote": "ASAM ATX for test metadata and ASAM MDF for measured data are named as neutral formats [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ASAM ATX",
+     "kind": "standard"
+    },
+    {
+     "name": "ASAM MDF",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t122",
+    "t327"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scenario count is not coverage, and the booklet warns that the program brief confuses the two.",
+   "quote": "Scenario count is not coverage; the booklet warns that the brief confuses the two",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t143",
+    "t327",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Interface standards are still being revised during the program.",
+   "quote": "interface standards are still being revised during the program [Chapters 11, 13].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t271",
+    "t274",
+    "t320"
+   ],
+   "importance": 3
+  }
+ ]
+}

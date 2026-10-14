@@ -1,0 +1,115 @@
+{
+ "key": "t161",
+ "hash": "a051442656d087ad",
+ "synopsis": "Continuous automated regression turns captured or synthesised scenarios into permanent tests that catch software-change failures, but neither automation nor millions of runs establishes that the test set represents the real operating domain [f1031, f1032, f671]. Regression must remain separate from failure-seeking discovery and frozen, pre-registered performance estimation; discovered failures should become permanent regression tests rather than estimation data [f133, f6665, f6946, f6949, f7137]. Simulation is intended to select informative physical tests and provide broad regression around physical anchors, with SIL supporting high-volume closed-loop testing, recorded-data replay supporting perception regression, and sensor stimulation supporting final sensor/ECU regression and timing tests [f484, f5266, f918, f4500]. For a team starting from zero in October 2026, an executable SIL framework with dynamics and braking models, continuous regression and fault injection is considered realistic by mid-2027 if software interfaces can be defined; the reported under-a-day incremental validation precedent is a vendor claim for on-road Level 3 assistance [f840, f1307]. Reproducibility and change control require configuration/version traceability, frozen generation inputs, regression testing of simulator upgrades, and physical re-correlation after prototype changes [f5106, f13167, f8897, f11029]. Post-launch perception or braking updates need defined regression and revalidation rules, otherwise 2027 evidence could certify an obsolete configuration; an off-road case addressing post-release software and model updates was not found [f11251, f11252, f11254].",
+ "relations": [
+  {
+   "a": "f484",
+   "b": "f13075",
+   "type": "same",
+   "note": "Both restrict simulation to physical-test selection and regression around physical anchors."
+  },
+  {
+   "a": "f10986",
+   "b": "f12474",
+   "type": "same",
+   "note": "Both describe the skeptical fallback: regression and physical-test prioritization."
+  },
+  {
+   "a": "f1795",
+   "b": "f1307",
+   "type": "same",
+   "note": "Both report HCLTech's under-a-day incremental Level 3 validation claim."
+  },
+  {
+   "a": "f133",
+   "b": "f6665",
+   "type": "same",
+   "note": "Both require separate discovery, estimation, and requirement/regression campaigns."
+  },
+  {
+   "a": "f3753",
+   "b": "f4096",
+   "type": "same",
+   "note": "Both identify captured sites as reality anchors, regression sites, and incident cases."
+  },
+  {
+   "a": "f4500",
+   "b": "f13387",
+   "type": "same",
+   "note": "Both reserve sensor stimulation for final regression, timing, and supplier-independent characterization."
+  },
+  {
+   "a": "f11072",
+   "b": "f11259",
+   "type": "same",
+   "note": "Both require site-configuration change control and regression."
+  },
+  {
+   "a": "f671",
+   "b": "f1032",
+   "type": "same",
+   "note": "Test volume or continuous regression alone cannot establish operating-domain representativeness."
+  },
+  {
+   "a": "f5236",
+   "b": "f918",
+   "type": "elaborates",
+   "note": "Recorded-data replay adds real-domain detection evidence and indefinite rare-event reproduction."
+  },
+  {
+   "a": "f6946",
+   "b": "f133",
+   "type": "supports",
+   "note": "Regression's distinct evidentiary purpose explains why campaign classes must remain separate."
+  },
+  {
+   "a": "f6949",
+   "b": "f7137",
+   "type": "elaborates",
+   "note": "Search failures become regression scenarios, not performance-estimation observations."
+  },
+  {
+   "a": "f13167",
+   "b": "f1031",
+   "type": "depends",
+   "note": "Permanent generated-scenario tests require frozen inputs for reproducible replay."
+  },
+  {
+   "a": "f1593",
+   "b": "f840",
+   "type": "supports",
+   "note": "Early CI and interface infrastructure supports the conditional mid-2027 SIL milestone."
+  },
+  {
+   "a": "f11252",
+   "b": "f11251",
+   "type": "supports",
+   "note": "Obsolete-configuration evidence risk motivates post-launch regression and revalidation rules."
+  },
+  {
+   "a": "f2014",
+   "b": "f11252",
+   "type": "elaborates",
+   "note": "The mid-2027 planning gap can leave evidence invalid after later updates."
+  },
+  {
+   "a": "f13237",
+   "b": "f8897",
+   "type": "supports",
+   "note": "Tool upgrades can change results, motivating regression before adoption."
+  },
+  {
+   "a": "f8584",
+   "b": "f8603",
+   "type": "supports",
+   "note": "CRM expense motivates simpler calibrated terrain models for large regression campaigns."
+  },
+  {
+   "a": "f13523",
+   "b": "f11029",
+   "type": "elaborates",
+   "note": "The change-impact graph specifies which scenarios model-impact analysis should select."
+  }
+ ]
+}

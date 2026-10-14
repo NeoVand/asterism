@@ -1,0 +1,115 @@
+{
+ "key": "t89",
+ "hash": "cc8f59ea55d0163c",
+ "synopsis": "The camera remains a candidate rather than a confirmed sensor for the heavy off-road braking system; the research therefore covers multiple sensing modalities, whose weather-related failures differ [f2035, f6625, f11303]. Camera and lidar logs with accurate poses support replay and near-path novel-view simulation, but camera logs cannot recover radar or ultrasonic responses, and injected video bypasses physical camera components rather than revalidating them [f80, f84, f5286]. Validation still needs physical correlation for optics, processing, contamination, vibration, glare, darkness and precipitation: visually convincing RGB output and simulator input specifications do not establish detector-level accuracy [f490, f1737, f4558, f3940]. Caterpillar warns of missed crouching or lying people and impaired detection in low light or snow, rain and fog; NIOSH's 2022 review also reported snow and grime degradation in off-road work [f1638, f10557]. UniSim (2023) and S2R-Bench (December 2025) show camera sim-to-real gaps, especially in adverse weather; no published validated camera dust model with a reported error metric was found, and fidelity for the exact units remains uncertain [f329, f254, f8174]. A December 2024 RGB–lidar excavation de-dusting study scored 65.58% in one far-dense-dust case versus 94.85–96.73% in other cases of that scenario, while evidence that pairwise or three-way coverage suffices for coupled sensor failures remains unproven [f10564, f6827].",
+ "relations": [
+  {
+   "a": "f2035",
+   "b": "f3678",
+   "type": "same",
+   "note": "Unconfirmed sensor selection requires research across multiple sensing modalities."
+  },
+  {
+   "a": "f3678",
+   "b": "f5133",
+   "type": "same",
+   "note": "Both repeat the unconfirmed sensor set and resulting broad research scope."
+  },
+  {
+   "a": "f5133",
+   "b": "f6625",
+   "type": "same",
+   "note": "Both state that sensor selection remains open."
+  },
+  {
+   "a": "f6625",
+   "b": "f8257",
+   "type": "same",
+   "note": "Both identify the same unresolved sensor options."
+  },
+  {
+   "a": "f254",
+   "b": "f7561",
+   "type": "same",
+   "note": "Both report no validated radar or camera dust model with an error metric."
+  },
+  {
+   "a": "f7561",
+   "b": "f7833",
+   "type": "same",
+   "note": "Duplicate dust-model validation gap within the trust chapter."
+  },
+  {
+   "a": "f80",
+   "b": "f3725",
+   "type": "same",
+   "note": "Both describe pose-aligned camera and lidar logs supporting replay and novel views."
+  },
+  {
+   "a": "f1638",
+   "b": "f11695",
+   "type": "same",
+   "note": "Both repeat Caterpillar's posture, low-light and weather detection warnings."
+  },
+  {
+   "a": "f1240",
+   "b": "f1952",
+   "type": "same",
+   "note": "Both report manufacturers' disclosures of weather and low-light camera weaknesses."
+  },
+  {
+   "a": "f10557",
+   "b": "f10463",
+   "type": "elaborates",
+   "note": "Adds the 2022 review, winter context and construction/off-road scope."
+  },
+  {
+   "a": "f10463",
+   "b": "f12016",
+   "type": "supports",
+   "note": "NIOSH evidence supports the glossary's snow-and-grime camera insufficiency."
+  },
+  {
+   "a": "f4572",
+   "b": "f5249",
+   "type": "elaborates",
+   "note": "Details optical effects bypassed by recorded-frame injection."
+  },
+  {
+   "a": "f5249",
+   "b": "f5286",
+   "type": "supports",
+   "note": "Untested camera components explain why injected HIL cannot prove front-end behaviour."
+  },
+  {
+   "a": "f5191",
+   "b": "f5251",
+   "type": "elaborates",
+   "note": "Adds synchronization and field-of-view limitations to monitor-based camera replay."
+  },
+  {
+   "a": "f329",
+   "b": "f488",
+   "type": "supports",
+   "note": "Measured adverse-weather domain gaps support the need for sim-to-real correlation."
+  },
+  {
+   "a": "f1737",
+   "b": "f490",
+   "type": "elaborates",
+   "note": "Adds motion blur, vibration and object appearance to required physical correlation."
+  },
+  {
+   "a": "f3950",
+   "b": "f6768",
+   "type": "elaborates",
+   "note": "Explains specific rain mechanisms behind unequal sensor weather effects."
+  },
+  {
+   "a": "f9345",
+   "b": "f9297",
+   "type": "supports",
+   "note": "Scene-editor weather features do not supply measured severe-weather sensor correlation."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t266",
+ "hash": "3e24644aacddbb33",
+ "synopsis": "The existing warning fleet is the best available source of real off-road exposure, sensor recordings and false-alarm history: its logs can validate simulation inputs and submodels, but not the new closed-loop braking chain [f1252, f5122, f6611, f7575]. Collection should begin immediately, with fleet logging through winter 2026–2027, a searchable event corpus and exposure model; several early experiments can start in October 2026 [f708, f730, f10914]. Open-loop replay against independent ground truth establishes the warning-system baseline, while direct sensor-model reuse requires equivalent sensors and mounting, usable ground truth and coverage of relevant conditions; prototype sensor equivalence remains unknown [f94, f7930, f10891]. Three central traps limit inference: relevant-encounter exposure may be unknown, operator braking censors counterfactual outcomes, and warning history never exercised the detection-to-command-to-stopping chain; automatic braking also changes future human-system interaction [f12357, f7480]. Independent alarm evidence remains old and sparse: the cited 2006 NIOSH Caterpillar 793B study reported 18% false alarms and 42% nuisance alarms, and found the audible alarm switched off after shifts [f101, f102, f103, f104]. Despite its value, Chapter 6 did not consider this field-data source, no standard or assessor acceptance of legacy history as a simulator-validation reference was found, and the new braking target must come from its own hazard analysis rather than matching warning performance [f5121, f7580, f11989].",
+ "relations": [
+  {
+   "a": "f94",
+   "b": "f5237",
+   "type": "same",
+   "note": "Both identify open-loop replay as the established warning-system baseline method."
+  },
+  {
+   "a": "f191",
+   "b": "f7575",
+   "type": "same",
+   "note": "Field history validates inputs and submodels, not the closed-loop braking chain."
+  },
+  {
+   "a": "f191",
+   "b": "f11901",
+   "type": "same",
+   "note": "Both distinguish reusable simulation evidence from unvalidated closed-loop braking."
+  },
+  {
+   "a": "f7575",
+   "b": "f11901",
+   "type": "same",
+   "note": "Glossary restates the chapter's limit on field-history validation."
+  },
+  {
+   "a": "f11625",
+   "b": "f11903",
+   "type": "same",
+   "note": "Operator braking after warnings censors outcomes without intervention."
+  },
+  {
+   "a": "f11625",
+   "b": "f7940",
+   "type": "same",
+   "note": "Both describe warning-induced operator braking as counterfactual censoring."
+  },
+  {
+   "a": "f7940",
+   "b": "f11903",
+   "type": "same",
+   "note": "Glossary restates the chapter's operator-response censoring risk."
+  },
+  {
+   "a": "f1168",
+   "b": "f11896",
+   "type": "same",
+   "note": "Recorded fleet false-alarm history is the best available intervention-threshold evidence."
+  },
+  {
+   "a": "f7931",
+   "b": "f12355",
+   "type": "same",
+   "note": "Both enumerate encounter, environment, detection, nuisance-warning and operator-response evidence reusable from fleet history."
+  },
+  {
+   "a": "f10417",
+   "b": "f11989",
+   "type": "same",
+   "note": "Matching warning performance is the wrong target for a distinct braking safety function."
+  },
+  {
+   "a": "f7924",
+   "b": "f7938",
+   "type": "same",
+   "note": "Warning-system history does not transfer as validation of the new braking function."
+  },
+  {
+   "a": "f5121",
+   "b": "f5122",
+   "type": "contradicts",
+   "note": "Research omitted the manufacturer's existing large-scale sensor-recording source."
+  },
+  {
+   "a": "f1254",
+   "b": "f708",
+   "type": "supports",
+   "note": "Existing vendor event logging provides a data path for proposed winter fleet collection."
+  },
+  {
+   "a": "f7367",
+   "b": "f6611",
+   "type": "elaborates",
+   "note": "Independent fleet distributions provide weighting for subsequent rate claims."
+  },
+  {
+   "a": "f7930",
+   "b": "f10892",
+   "type": "depends",
+   "note": "Direct reuse of sensor validation evidence requires compatible sensors, mounting and ground truth."
+  },
+  {
+   "a": "f5569",
+   "b": "f7930",
+   "type": "supports",
+   "note": "Synchronized independent reference sensing supplies ground truth required for direct sensor-model validation."
+  },
+  {
+   "a": "f11710",
+   "b": "f11654",
+   "type": "depends",
+   "note": "Evidence ending at the brake command requires new downstream braking evidence."
+  },
+  {
+   "a": "f7939",
+   "b": "f12357",
+   "type": "supports",
+   "note": "Unknown encounter exposure and recording completeness undermine inference from accumulated operating hours."
+  }
+ ]
+}

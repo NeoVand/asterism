@@ -1,0 +1,265 @@
+{
+ "chunkId": "k619",
+ "hash": "282e126e2da77285",
+ "facts": [
+  {
+   "text": "Automotive Safety Integrity Level (ASIL) grades how demanding a road-vehicle safety requirement is, from A (lowest) to D (highest), under ISO 26262; ASIL does not apply by scope to off-road machines.",
+   "quote": "ASIL is the road-vehicle grading of how demanding a safety requirement is, from A (lowest) to D (highest), defined in ISO 26262, and it does not apply by scope to off-road machines.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 26262",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t54",
+    "t289",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 26262 is the functional-safety standard for cars and trucks on public roads.",
+   "quote": "ISO 26262 is the functional-safety standard for cars and trucks on public roads.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 26262",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t289",
+    "t49"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 26262 determines a hazard's grade from injury severity (S0 to S3), exposure to the situation (E0 to E4), and the driver's ability to control the outcome (C0 to C3).",
+   "quote": "Its grade comes from three ratings of each hazard: how severe the injury would be (S0 to S3), how often the vehicle is in that situation (E0 to E4), and how easily the driver could control the outcome (C0 to C3).",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 26262",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t54",
+    "t47",
+    "t20"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The combination of hazard ratings under ISO 26262 yields ASIL A, B, C or D, or QM; QM means ordinary quality management with no safety requirement.",
+   "quote": "The combination gives ASIL A, B, C or D, or QM, meaning ordinary quality management with no safety requirement.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 26262",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t54"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Unintended hard braking at highway speed is typically rated high under the road-vehicle ASIL grading framework.",
+   "quote": "Unintended hard braking at highway speed is typically rated high.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t54",
+    "t40",
+    "t31"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 26262 and ISO 21448 do not apply by scope to the heavy off-road machine collision mitigation system considered in the booklet.",
+   "quote": "The booklet is clear that ISO 26262 and ISO 21448 do not apply by scope to this system",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 26262",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 21448",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t289",
+    "t22",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The Machine Performance Level (MPL) scale of ISO 19014 is not the Automotive Safety Integrity Level (ASIL) scale.",
+   "quote": "the MPL scale of ISO 19014 is not the ASIL scale [Chapter 3].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t52",
+    "t54",
+    "t281"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 26262 Part 8 is used as reference material for confidence in software tools and proven in use, always marked as on-road evidence.",
+   "quote": "always marked as on-road evidence: Part 8 on confidence in software tools and on proven in use",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    3,
+    10,
+    12
+   ],
+   "entities": [
+    {
+     "name": "ISO 26262-8",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t289",
+    "t75",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 26262 Part 2 requires a safety case and is used in the booklet as reference material marked as on-road evidence.",
+   "quote": "Part 2 which requires a safety case",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    3,
+    10,
+    12
+   ],
+   "entities": [
+    {
+     "name": "ISO 26262-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t67",
+    "t289"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO/PAS 8800 tailors ISO 26262 for artificial intelligence in road vehicles and is used in the booklet as reference material marked as on-road evidence.",
+   "quote": "ISO/PAS 8800 which tailors ISO 26262 for artificial intelligence in road vehicles [Chapters 3, 10, 12].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    3,
+    10,
+    12
+   ],
+   "entities": [
+    {
+     "name": "ISO/PAS 8800",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 26262",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t289",
+    "t79"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Many suppliers and engineers come from the car industry and use ASIL terminology.",
+   "quote": "Many suppliers and engineers come from the car industry and speak in ASIL.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t54",
+    "t359"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The heavy off-road collision mitigation program plan must translate ASIL terminology to MPL and must not treat ASIL targets, car deceleration values or passenger-car test scenarios as applicable to a loaded haul truck on gravel.",
+   "quote": "The plan must translate to MPL and must not import ASIL targets, car deceleration values or passenger-car test scenarios as if they applied to a loaded haul truck on gravel [Chapter 3].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t52",
+    "t54",
+    "t3",
+    "t169",
+    "t174"
+   ],
+   "importance": 3
+  }
+ ]
+}

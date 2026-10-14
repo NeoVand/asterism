@@ -1,0 +1,115 @@
+{
+ "key": "t31",
+ "hash": "d12f6351f0ea5f1c",
+ "synopsis": "Unnecessary braking is the dominant documented automatic-braking failure mode in the cited on-road evidence, while nuisance interventions, production loss and operator disabling are repeatedly identified as reasons deployed mining proximity systems failed [f115, f1223, f116, f6306]. The on-road evidence includes an April 2024 NHTSA investigation covering 2,997,604 Honda vehicles; mining interviews found unnecessary vehicle shutdowns ranging from once a day to 15 times during a single cut of coal [f10422, f3285]. False braking is itself a safety hazard, potentially causing load shift, rollover, instability near edges or rear-end impacts, so validation must address machine-stability consequences as well as collision avoidance [f8201, f9370]. Acceptance should report nuisance and missed-intervention rates together, but the research found no published off-road hourly acceptance values; MOSH requires no false interventions or false warnings at its TRL4 gate, and conservative fail-to-safe intervention remains in tension with productivity and adoption [f6418, f2121, f2119, f5781]. Under a zero-event Poisson calculation, 300 representative hours without unnecessary braking support a 95% upper bound below one event per 100 hours, and 3,000 hours support below one per 1,000 hours, although the field exposure needed to substantiate rare unintended-braking probabilities remains uncertain [f6658, f6659, f8181]. Shadow mode can measure hypothetical nuisance interventions at scale but cannot establish consequences such as a following-truck collision, while simulators cannot establish long-term operator responses; validation should cover benign clutter and legitimate close approaches, with field monitoring after limited-domain release [f589, f596, f580, f8206, f4362, f3342, f722].",
+ "relations": [
+  {
+   "a": "f115",
+   "b": "f1223",
+   "type": "same",
+   "note": "Both identify unnecessary braking as the dominant documented on-road failure mode."
+  },
+  {
+   "a": "f5225",
+   "b": "f5567",
+   "type": "same",
+   "note": "Both report Pretoria findings on production losses, wear and resistance to adoption."
+  },
+  {
+   "a": "f5567",
+   "b": "f5752",
+   "type": "same",
+   "note": "Restates the 2024 Pretoria findings, omitting wear."
+  },
+  {
+   "a": "f116",
+   "b": "f6306",
+   "type": "same",
+   "note": "Both identify nuisance-driven disabling as a main cause of deployed proximity-system failure."
+  },
+  {
+   "a": "f5928",
+   "b": "f6306",
+   "type": "same",
+   "note": "Both identify nuisance alarms or stops as the main reason deployed proximity systems failed."
+  },
+  {
+   "a": "f129",
+   "b": "f6658",
+   "type": "same",
+   "note": "Same 300-hour zero-event requirement; the latter specifies Poisson calculation and confidence."
+  },
+  {
+   "a": "f136",
+   "b": "f6671",
+   "type": "same",
+   "note": "Both constrain missed or late interventions while optimizing nuisance braking and productivity."
+  },
+  {
+   "a": "f1224",
+   "b": "f10422",
+   "type": "elaborates",
+   "note": "Adds complaint growth and earlier investigation history to the April 2024 Honda analysis."
+  },
+  {
+   "a": "f3285",
+   "b": "f3300",
+   "type": "supports",
+   "note": "Frequent unnecessary shutdowns substantiate warnings about production disruption."
+  },
+  {
+   "a": "f3300",
+   "b": "f11307",
+   "type": "supports",
+   "note": "MOSH describes production disruption severe enough to drive system switch-off."
+  },
+  {
+   "a": "f8201",
+   "b": "f5813",
+   "type": "elaborates",
+   "note": "Specifies physical hazards underlying the claim that false braking is a safety issue."
+  },
+  {
+   "a": "f4363",
+   "b": "f9369",
+   "type": "elaborates",
+   "note": "Extends grade and loading risks to edges, towing and following machines."
+  },
+  {
+   "a": "f8201",
+   "b": "f9370",
+   "type": "supports",
+   "note": "Instability and secondary collision risks justify testing consequences beyond collision avoidance."
+  },
+  {
+   "a": "f6658",
+   "b": "f6659",
+   "type": "elaborates",
+   "note": "Tenfold exposure supports a tenfold tighter rate bound at the same confidence."
+  },
+  {
+   "a": "f589",
+   "b": "f720",
+   "type": "supports",
+   "note": "Shadow-mode measurement capability supports its proposed use in live-operation Phase 2."
+  },
+  {
+   "a": "f596",
+   "b": "f8201",
+   "type": "depends",
+   "note": "Following-truck hazards require evidence beyond shadow-mode hypothetical interventions."
+  },
+  {
+   "a": "f580",
+   "b": "f8206",
+   "type": "elaborates",
+   "note": "Adds long-term behavioral limitations even for operator simulator studies."
+  },
+  {
+   "a": "f10432",
+   "b": "f3342",
+   "type": "supports",
+   "note": "Task-dependent nuisance behavior supports task-stratified acceptance metrics."
+  }
+ ]
+}

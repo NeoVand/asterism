@@ -1,0 +1,115 @@
+{
+ "key": "t185",
+ "hash": "9c006b4cd9327310",
+ "synopsis": "Decision-logic validation must establish when automatic braking should occur and cover the full chain from environment and sensing through warnings, operator opportunity, intervention, machine dynamics and collision outcome; the existing warning product's field history has never exercised that complete braking chain [f28, f11638, f7946]. The corpus favors stopping-distance and risk-zone intervention over a fixed time-to-collision threshold, which is weak at work-site speeds and gives no answer for a stationary machine starting up; ISO 21815-3:2023 places intervention at collision-risk level 4 or above [f149, f5917, f5921, f5912]. Intervention must reflect machine physics: a 2015 on-road simulation's grade-blind trigger worked at 0% grade but produced collisions at 11% and 17%, while the published earth-moving-machine position limits deceleration by avoidance need, stability, brake capacity and payload, with a jerk limit [f5904, f152]. Context matters: logic must avoid emergency braking for every nearby object during loading without suppressing the entire loading zone, and the same algorithm can produce different safety results under different site traffic and pedestrian controls [f3346, f3347, f804]. Semantic replay can isolate decision thresholds and brake-request logic, and hardware-in-the-loop can test production timing and control behavior, but replay alone cannot establish changed braking decisions' closed-loop consequences; detector tuning therefore requires closed-loop stopping-margin and unnecessary-intervention evaluation [f5256, f5283, f919, f6982]. Human-automation interaction remains safety-critical: the NTSB's 2019 report on the 18 March 2018 Uber crash found that the design precluded emergency braking in the relevant condition and relied on operator intervention, and found that one-second action suppression delayed planned braking [f10870, f10695, f10871].",
+ "relations": [
+  {
+   "a": "f148",
+   "b": "f5917",
+   "type": "same",
+   "note": "Both identify fixed time-to-collision thresholds as weak primary triggers at work-site speeds."
+  },
+  {
+   "a": "f11474",
+   "b": "f5921",
+   "type": "same",
+   "note": "Both identify the stationary-start case as lacking a time-to-collision answer."
+  },
+  {
+   "a": "f804",
+   "b": "f11499",
+   "type": "same",
+   "note": "Both state that site controls change the same algorithm's safety results."
+  },
+  {
+   "a": "f383",
+   "b": "f11638",
+   "type": "same",
+   "note": "Both define validation scope as the complete sensing-to-collision-outcome chain."
+  },
+  {
+   "a": "f10697",
+   "b": "f10871",
+   "type": "same",
+   "note": "Both report one-second action suppression delaying planned braking; attribution differs."
+  },
+  {
+   "a": "f5921",
+   "b": "f148",
+   "type": "supports",
+   "note": "Stationary startup exposes a limitation of time-to-collision-based intervention."
+  },
+  {
+   "a": "f5912",
+   "b": "f149",
+   "type": "elaborates",
+   "note": "Specifies the intervention risk level within the recommended risk-zone formulation."
+  },
+  {
+   "a": "f5904",
+   "b": "f7408",
+   "type": "supports",
+   "note": "Grade-dependent collision outcomes demonstrate why braking physics must determine intervention design."
+  },
+  {
+   "a": "f5939",
+   "b": "f152",
+   "type": "elaborates",
+   "note": "Connects the jerk-limited deceleration recommendation to the ISO 21815-3-associated position."
+  },
+  {
+   "a": "f3346",
+   "b": "f3347",
+   "type": "contradicts",
+   "note": "Competing constraints: avoid nuisance loading-zone braking without blanket suppression of genuine hazards."
+  },
+  {
+   "a": "f5504",
+   "b": "f5256",
+   "type": "supports",
+   "note": "A common semantic interface enables decision-logic testing independently of sensor modality."
+  },
+  {
+   "a": "f4478",
+   "b": "f4318",
+   "type": "elaborates",
+   "note": "Ideal geometry can test state transitions but not rain-dependent detection probability."
+  },
+  {
+   "a": "f6981",
+   "b": "f6982",
+   "type": "depends",
+   "note": "Operating-point metrics omit braking effects, necessitating downstream closed-loop evaluation."
+  },
+  {
+   "a": "f5523",
+   "b": "f919",
+   "type": "elaborates",
+   "note": "Historical intervention-request timing is valid evidence, not proof of changed closed-loop outcomes."
+  },
+  {
+   "a": "f5539",
+   "b": "f919",
+   "type": "supports",
+   "note": "Reactive dynamics and regenerated observations address replay's missing closed-loop consequences."
+  },
+  {
+   "a": "f7946",
+   "b": "f11638",
+   "type": "depends",
+   "note": "The unexercised braking chain leaves the complete-chain validation requirement unmet by warning-product history."
+  },
+  {
+   "a": "f10871",
+   "b": "f10870",
+   "type": "supports",
+   "note": "Suppression-delayed braking illustrates the safety stakes of intervention and human-automation decisions."
+  },
+  {
+   "a": "f9322",
+   "b": "f8840",
+   "type": "supports",
+   "note": "Millions of deterministic logic combinations motivate highly parallel CPU-based test infrastructure."
+  }
+ ]
+}

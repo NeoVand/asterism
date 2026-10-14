@@ -1,0 +1,496 @@
+{
+ "chunkId": "k907",
+ "hash": "5541790af84cf685",
+ "facts": [
+  {
+   "text": "The three example tool chains are an open-source core with in-house integration, a model-based engineering stack with heavy-machine physics, and an integrated commercial chain with a partner; lowest, middle and highest describe relative cost and integration posture, not dollar figures.",
+   "quote": "labels them lowest, middle and highest by relative cost and integration posture, not by dollar figures.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t335",
+    "t320",
+    "t333"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The three tool-chain cost levels are relative because almost every commercial vendor is quote-only.",
+   "quote": "Because almost every commercial vendor is quote-only, the levels are relative.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t335",
+    "t334"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "All three example tool chains are expert assessments built from tool entries, integration findings and compute figures.",
+   "quote": "All three are expert assessment built from the tool entries, the integration findings and the compute figures [Chapter 11].",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t335",
+    "t320",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The lowest-cost chain uses CARLA, Isaac Sim or Gazebo for sensors and environments, Project Chrono for machine dynamics and Soil Contact Model (SCM) terrain, and Robot Operating System 2 (ROS 2).",
+   "quote": "CARLA, Isaac Sim or Gazebo for sensors and environments; Project Chrono for machine dynamics and Soil Contact Model (SCM) terrain; Robot Operating System 2 (ROS 2)",
+   "kind": "example",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    },
+    {
+     "name": "Isaac Sim",
+     "kind": "tool"
+    },
+    {
+     "name": "Gazebo",
+     "kind": "tool"
+    },
+    {
+     "name": "Project Chrono",
+     "kind": "tool"
+    },
+    {
+     "name": "Soil Contact Model (SCM)",
+     "kind": "method"
+    },
+    {
+     "name": "Robot Operating System 2 (ROS 2)",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t335",
+    "t322",
+    "t181"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The lowest-cost chain adds in-house scenario scripts or Scenic, J1939 emulation to ISO/TS 21815-2, and on-premises RTX graphics cards or spot cloud.",
+   "quote": "in-house scenario scripts or Scenic; J1939 emulation to ISO/TS 21815-2; on-premises RTX graphics cards or spot cloud.",
+   "kind": "example",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Scenic",
+     "kind": "tool"
+    },
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    },
+    {
+     "name": "RTX",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t335",
+    "t120",
+    "t337",
+    "t330"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The lowest-cost chain can provide camera and lidar sensor-in-the-loop, articulated and tracked dynamics on deformable terrain, and scripted job-site scenarios, with full control of intellectual property.",
+   "quote": "It can do camera and lidar sensor-in-the-loop, articulated and tracked dynamics on deformable terrain and scripted job-site scenarios, with full control of intellectual property.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t335",
+    "t150",
+    "t179",
+    "t181"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Without major work, the lowest-cost chain cannot provide validated radar, physics-based ultrasonic, weather effects with correlation evidence, vendor support or tool-qualification evidence; the chain also depends on hiring scarce skills.",
+   "quote": "Without major work it cannot provide validated radar, physics-based ultrasonic, weather effects with correlation evidence, vendor support or tool-qualification evidence, and it depends on hiring scarce skills.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t335",
+    "t323",
+    "t359",
+    "t250"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The middle-cost chain uses MATLAB and Simulink with the Offroad Autonomy Library, RoadRunner, RoadRunner Scenario, Unreal and sensor toolboxes, plus Mevea or AGX Dynamics coupled through the Functional Mock-up Interface (FMI) for terrain, hydraulics and machine variants.",
+   "quote": "MATLAB and Simulink with the Offroad Autonomy Library, RoadRunner and RoadRunner Scenario, Unreal and the sensor toolboxes; Mevea or AGX Dynamics coupled through the Functional Mock-up Interface (FMI) for terrain, hydraulics and machine variants",
+   "kind": "example",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MATLAB",
+     "kind": "tool"
+    },
+    {
+     "name": "Simulink",
+     "kind": "tool"
+    },
+    {
+     "name": "Offroad Autonomy Library",
+     "kind": "tool"
+    },
+    {
+     "name": "RoadRunner",
+     "kind": "tool"
+    },
+    {
+     "name": "RoadRunner Scenario",
+     "kind": "tool"
+    },
+    {
+     "name": "Unreal Engine",
+     "kind": "tool"
+    },
+    {
+     "name": "Mevea",
+     "kind": "tool"
+    },
+    {
+     "name": "AGX Dynamics",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t335",
+    "t139",
+    "t324",
+    "t230"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The middle-cost chain includes one externally validated sensor model packaged to the ASAM Open Simulation Interface (OSI) as a Functional Mock-up Unit (FMU), Speedgoat or NI for later hardware-in-the-loop testing, and cloud GPUs for batch runs.",
+   "quote": "one externally validated sensor model packaged to the ASAM Open Simulation Interface (OSI) as a Functional Mock-up Unit (FMU); Speedgoat or NI for later hardware-in-the-loop (HIL) testing; cloud graphics processors (GPUs) for batch runs.",
+   "kind": "example",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM Open Simulation Interface (OSI)",
+     "kind": "standard"
+    },
+    {
+     "name": "Speedgoat",
+     "kind": "company"
+    },
+    {
+     "name": "NI",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t335",
+    "t138",
+    "t139",
+    "t148",
+    "t330"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The middle-cost chain provides credible machine dynamics, explicit construction and mining workflows, camera and lidar sensing, and HIL with real electronic control units, but not broad validated multi-sensor weather physics or large-scale coverage-driven scenario management.",
+   "quote": "It gives credible machine dynamics, explicit construction and mining workflows, camera and lidar sensing and HIL with real electronic control units (ECUs), but not broad validated multi-sensor weather physics or large-scale coverage-driven scenario management",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t335",
+    "t179",
+    "t148",
+    "t323",
+    "t327"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Module prices for the middle-cost tool chain are not public.",
+   "quote": "module prices are not public.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t335",
+    "t334"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The highest-cost chain uses a commercial validation platform, with examples including dSPACE AURELION with SIMPHERA, VEOS and SCALEXIO, Applied Intuition, Cognata, VTD or Foretellix.",
+   "quote": "a commercial validation platform (for example dSPACE AURELION with SIMPHERA, VEOS and SCALEXIO; Applied Intuition; Cognata; VTD; or Foretellix)",
+   "kind": "example",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "dSPACE AURELION",
+     "kind": "tool"
+    },
+    {
+     "name": "SIMPHERA",
+     "kind": "tool"
+    },
+    {
+     "name": "VEOS",
+     "kind": "tool"
+    },
+    {
+     "name": "SCALEXIO",
+     "kind": "tool"
+    },
+    {
+     "name": "Applied Intuition",
+     "kind": "company"
+    },
+    {
+     "name": "Cognata",
+     "kind": "company"
+    },
+    {
+     "name": "VTD",
+     "kind": "tool"
+    },
+    {
+     "name": "Foretellix",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t335",
+    "t321"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The highest-cost chain adds heavy-machine dynamics from IPG TruckMaker, Mevea, AGX or Vortex, specialist sensor simulation from AURELION or AVxcelerate, dSPACE or NI benches, and cloud execution.",
+   "quote": "heavy-machine dynamics from IPG TruckMaker, Mevea, AGX or Vortex; specialist sensor simulation (AURELION or AVxcelerate); dSPACE or NI benches; cloud execution",
+   "kind": "example",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "IPG TruckMaker",
+     "kind": "tool"
+    },
+    {
+     "name": "Mevea",
+     "kind": "tool"
+    },
+    {
+     "name": "AGX",
+     "kind": "tool"
+    },
+    {
+     "name": "Vortex",
+     "kind": "tool"
+    },
+    {
+     "name": "dSPACE AURELION",
+     "kind": "tool"
+    },
+    {
+     "name": "AVxcelerate",
+     "kind": "tool"
+    },
+    {
+     "name": "dSPACE",
+     "kind": "company"
+    },
+    {
+     "name": "NI",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t335",
+    "t324",
+    "t323",
+    "t328",
+    "t330"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The highest-cost chain includes an engineering partner such as AVL, IPG or Fraunhofer for integration and correlation.",
+   "quote": "an engineering partner such as AVL, IPG or Fraunhofer for integration and correlation.",
+   "kind": "example",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "AVL",
+     "kind": "company"
+    },
+    {
+     "name": "IPG",
+     "kind": "company"
+    },
+    {
+     "name": "Fraunhofer",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t335",
+    "t332",
+    "t250"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The highest-cost chain offers physics-based simulation of all four sensor types, large-scale regression and partner capacity for the four-month window.",
+   "quote": "It offers physics-based simulation of all four sensor types, large-scale regression and partner capacity for the four-month window",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t335",
+    "t323",
+    "t161",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The highest-cost chain cannot guarantee off-road sensor realism, avoid multi-vendor dependence or remove the manufacturer's own physical correlation tests.",
+   "quote": "but cannot guarantee off-road sensor realism, avoid multi-vendor dependence or remove the manufacturer's own physical correlation tests.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t335",
+    "t165",
+    "t160",
+    "t320"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No public evidence shows the highest-cost integrated commercial tool chain validated end to end for off-road automatic braking.",
+   "quote": "No public evidence shows this chain validated end to end for off-road automatic braking.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t335",
+    "t25",
+    "t70",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "At every tool-chain cost level, the recommended fourth architecture avoids making one simulator carry every test: use fast functional tests for millions of logic combinations, medium-fidelity dynamics for broad regression, high-fidelity rendering and soil only for sensitive subsets, HIL for timing, and targeted physical tests for correlation.",
+   "quote": "Use fast functional tests for millions of logic combinations, medium-fidelity dynamics for broad regression, high-fidelity rendering and soil only for sensitive subsets, HIL for timing, and targeted physical tests for correlation",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t167",
+    "t335",
+    "t148",
+    "t160",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Allocation of tests across the multi-simulator architecture should be decided by sensitivity and correlation work, not assumption.",
+   "quote": "with the allocation decided by sensitivity and correlation work, not assumption [Chapter 11].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t167",
+    "t260",
+    "t250",
+    "t264"
+   ],
+   "importance": 3
+  }
+ ]
+}

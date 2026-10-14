@@ -1,0 +1,115 @@
+{
+ "key": "t174",
+ "hash": "aa6f3bbc3125cf5e",
+ "synopsis": "Heavy off-road stopping depends on ground conditions as much as brakes, with grade, payload, tyre or track condition, brake temperature, hydraulic response and articulation changing stopping distance and the safe intervention point [f11374, f7452, f5818]. Transfer from road AEB remains unresolved: dry-asphalt assumptions and road-oriented standards do not establish validity for deformable surfaces or heavy machinery, and published validation of simulated heavy-machine braking distance on gravel, mud, ice or slopes was not found [f2571, f7696, f11349, f253, f3970]. The 2019 Jimblebar collision involved an unloaded autonomous truck losing traction in bad weather; unintended full braking can also be hazardous, and Komatsu documentation accessed in 2026 advises disabling loader stop control on steep slopes and slippery or soft ground [f1375, f2342, f10550]. Queensland guidance requires stopping assumptions to cover worst relevant combinations of wet or slippery roads, downhill grade, maximum speed, full load, poor tyres and brake delay, rather than a single proving-ground surface [f3403, f2901]. The recommended validation approach retains physical stopping tests across machine, load, slope and surface extremes, bounds dynamics models with those results, and reserves high-fidelity soil simulation for traction-sensitive cases; a proposed stopping-distance matrix covers two machine families across three surfaces and grades [f7881, f10612, f9325, f10940].",
+ "relations": [
+  {
+   "a": "f253",
+   "b": "f3743",
+   "type": "same",
+   "note": "Both report no published validation of simulated off-road heavy-machine stopping distances."
+  },
+  {
+   "a": "f253",
+   "b": "f3970",
+   "type": "same",
+   "note": "Same validation gap; the latter highlights its automatic-braking significance."
+  },
+  {
+   "a": "f3743",
+   "b": "f3970",
+   "type": "same",
+   "note": "Repeated validation gap within the virtual-job-sites chapter."
+  },
+  {
+   "a": "f10420",
+   "b": "f10550",
+   "type": "same",
+   "note": "Same Komatsu disabling advice; latter adds documentation access date."
+  },
+  {
+   "a": "f1371",
+   "b": "f1532",
+   "type": "same",
+   "note": "Same two 2019 collisions and failure categories; latter names sites."
+  },
+  {
+   "a": "f1375",
+   "b": "f1371",
+   "type": "supports",
+   "note": "Jimblebar traction-loss account substantiates the traction-failure classification."
+  },
+  {
+   "a": "f1536",
+   "b": "f2342",
+   "type": "elaborates",
+   "note": "Adds perception-confidence fail-safe policy and machine-specific examples of unintended-braking hazards."
+  },
+  {
+   "a": "f3403",
+   "b": "f3231",
+   "type": "elaborates",
+   "note": "Expands wet, slippery and downhill requirements into worst-case combined conditions."
+  },
+  {
+   "a": "f3403",
+   "b": "f3399",
+   "type": "elaborates",
+   "note": "Specifies the worst road and vehicle conditions required for stopping assumptions."
+  },
+  {
+   "a": "f5888",
+   "b": "f5885",
+   "type": "supports",
+   "note": "Physical brake, payload and ground effects explain why simple braking models are insufficient."
+  },
+  {
+   "a": "f3959",
+   "b": "f5885",
+   "type": "supports",
+   "note": "Ground mechanics affect stopping and attitude, motivating richer dynamics models."
+  },
+  {
+   "a": "f911",
+   "b": "f7881",
+   "type": "supports",
+   "note": "Simulation needs real-world correlation, supporting retention of physical brake tests."
+  },
+  {
+   "a": "f10940",
+   "b": "f10612",
+   "type": "elaborates",
+   "note": "Specifies a two-family, three-surface stopping matrix for physically bounding dynamics models."
+  },
+  {
+   "a": "f5906",
+   "b": "f9325",
+   "type": "supports",
+   "note": "Identifies deformable-ground cases where higher fidelity justifies targeted soil simulation."
+  },
+  {
+   "a": "f7965",
+   "b": "f2901",
+   "type": "supports",
+   "note": "Dry-soil conservatism does not transfer to icy grades, reinforcing site-specific calibration limits."
+  },
+  {
+   "a": "f7017",
+   "b": "f2901",
+   "type": "depends",
+   "note": "Surface-dependent calibration limits motivate stopping curves indexed by grade, load and surface."
+  },
+  {
+   "a": "f5919",
+   "b": "f11725",
+   "type": "supports",
+   "note": "Equal collision timing can conceal different stopping needs, supporting uncertainty-aware braking escalation."
+  },
+  {
+   "a": "f5336",
+   "b": "f5717",
+   "type": "same",
+   "note": "Both identify bench limitations for soil, grade, sinkage, articulation, payload and dust."
+  }
+ ]
+}

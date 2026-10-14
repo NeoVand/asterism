@@ -1,0 +1,115 @@
+{
+ "key": "t30",
+ "hash": "2860d4b012a5ac92",
+ "synopsis": "EMESRT PR-5A Revision 3.0, dated September 2024, supplies the nine-layer vehicle-interaction model: controls run from site requirements through operator awareness at Level 7, advisory controls at Level 8, and automatic slowing and stopping at Level 9 [f2120, f4080, f6229]. Level 9 is a machine-control capability rather than a standalone product, and effective upper-level controls require understanding and maintaining the Level 1–7 baseline; site conditions can make the same braking algorithm safe in one location and troublesome in another [f2585, f11750, f11753]. Regulatory emphasis differs: NSW and NIOSH favor lower-level controls with collision systems as backup, while South Africa mandated Level 9 for surface and underground trackless mobile mining machinery from 21 December 2022 without a transitional period; one earlier trade report instead suggested December 2023 [f3624, f1087, f1088, f1364]. That mandate pushed deployment followed by refinement, whereas Epiroc recommends evaluation before enforcing Level 9, and EMESRT/ICMM warn that unqualified deployment can impair production and accelerate brake wear [f359, f6420, f2892]. Wabtec's December 2021 Komatsu haul-truck tests demonstrated controlled deceleration up to 30 km/h but still relied on physical testing to adjust detection zones, while the reviewed sources yielded no public simulation-validated Level 9 collision-avoidance evidence from mining OEMs [f1345, f1247, f4128]. The ACARP framework separates proving object detection from proving Level 8 or 9 intervention, reinforcing the need to validate both sensing and machine response rather than treating the Level 9 label as sufficient evidence [f559, f11752].",
+ "relations": [
+  {
+   "a": "f5924",
+   "b": "f6229",
+   "type": "same",
+   "note": "Both define Levels 7–9 as awareness, advisory controls, and slowing/stopping intervention."
+  },
+  {
+   "a": "f2582",
+   "b": "f6229",
+   "type": "same",
+   "note": "The same upper-level definitions recur across rules and braking chapters."
+  },
+  {
+   "a": "f7744",
+   "b": "f11746",
+   "type": "same",
+   "note": "Both define Level 9 as intervention that slows and stops the machine."
+  },
+  {
+   "a": "f358",
+   "b": "f612",
+   "type": "same",
+   "note": "Duplicate commencement date and absence of a transitional period."
+  },
+  {
+   "a": "f612",
+   "b": "f1088",
+   "type": "same",
+   "note": "Both state commencement on 21 December 2022 without transition."
+  },
+  {
+   "a": "f1345",
+   "b": "f1833",
+   "type": "same",
+   "note": "Duplicate December 2021 controlled-deceleration result up to 30 km/h."
+  },
+  {
+   "a": "f1391",
+   "b": "f1687",
+   "type": "same",
+   "note": "Both describe Bell E-series Level 9 integration readiness through an ISO 21815-2 gateway."
+  },
+  {
+   "a": "f357",
+   "b": "f6420",
+   "type": "same",
+   "note": "Both describe Epiroc evaluation without immediately enforcing Level 9."
+  },
+  {
+   "a": "f559",
+   "b": "f11752",
+   "type": "same",
+   "note": "Both describe ACARP detection-first, intervention-second testing."
+  },
+  {
+   "a": "f702",
+   "b": "f11750",
+   "type": "same",
+   "note": "Both require understanding lower-level effectiveness before implementing Levels 8 and 9."
+  },
+  {
+   "a": "f3624",
+   "b": "f11751",
+   "type": "same",
+   "note": "Both contrast lower-level-first approaches with South Africa's legally mandated Level 9."
+  },
+  {
+   "a": "f2585",
+   "b": "f2736",
+   "type": "same",
+   "note": "Both characterize Level 9 as machine-control capability."
+  },
+  {
+   "a": "f1088",
+   "b": "f359",
+   "type": "depends",
+   "note": "Immediate legal commencement drove deployment followed by refinement."
+  },
+  {
+   "a": "f1364",
+   "b": "f1088",
+   "type": "contradicts",
+   "note": "Reported December 2023 timing conflicts with documented December 2022 commencement."
+  },
+  {
+   "a": "f6230",
+   "b": "f11640",
+   "type": "supports",
+   "note": "Upper-level dependence on baseline controls explains why CMS cannot replace them."
+  },
+  {
+   "a": "f11753",
+   "b": "f3602",
+   "type": "supports",
+   "note": "Site-dependent braking consequences justify site-specific scenarios and layered controls."
+  },
+  {
+   "a": "f1247",
+   "b": "f1347",
+   "type": "supports",
+   "note": "Physical detection-zone adjustment illustrates physical testing's dominance during integration."
+  },
+  {
+   "a": "f1087",
+   "b": "f8233",
+   "type": "elaborates",
+   "note": "Specifies surface and underground machinery scope of South Africa's Level 9 requirement."
+  }
+ ]
+}

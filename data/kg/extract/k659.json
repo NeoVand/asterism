@@ -1,0 +1,268 @@
+{
+ "chunkId": "k659",
+ "hash": "cf2d0b2461b956d1",
+ "facts": [
+  {
+   "text": "A point cloud is a large set of measured points in three-dimensional space, each with an x, y and z position and often a brightness value, that together outline the shapes around a sensor.",
+   "quote": "A point cloud is a large set of measured points in three-dimensional space, each with an x, y and z position and often a brightness value, that together outline the shapes around a sensor.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t93"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A lidar on a machine produces tens of thousands of points ten or more times per second, each with position, intensity, return number and time stamp.",
+   "quote": "a lidar on a machine produces tens of thousands of points, ten or more times per second, each with position, intensity, return number and time stamp.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t93",
+    "t92",
+    "t101"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Point clouds are the raw data used by lidar and some radars and depth cameras; perception groups the points into objects and tracks those objects.",
+   "quote": "Point clouds are the raw language of lidar and some radars and depth cameras. Perception groups the points into objects and tracks them.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t93",
+    "t86",
+    "t92",
+    "t94",
+    "t91"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A real site can be converted into a virtual site using lidar plus an inertial unit or satellite positioning to obtain a directly mapped point cloud, which is cleaned and turned into terrain and objects.",
+   "quote": "lidar plus an inertial unit or satellite positioning gives a directly mapped cloud, which is then cleaned and turned into terrain and objects [Chapter 5].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t93",
+    "t130",
+    "t98",
+    "t92",
+    "t131"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simulated and real point clouds are compared using distribution measures because individual points are partly random and two scans of the same scene never match point for point.",
+   "quote": "Because individual points are partly random, two scans of the same scene never match point for point, so simulated and real clouds are compared with distribution measures.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t93",
+    "t253",
+    "t249"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet lists Chamfer distance among measures for comparing simulated and real point clouds and reports that density-aware Chamfer distance (DCD) correlated best with perception results in a November 2025 study.",
+   "quote": "The booklet lists Chamfer distance and others, and reports a November 2025 study in which the density-aware Chamfer distance (DCD) correlated best with perception results",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Chamfer distance",
+     "kind": "metric"
+    },
+    {
+     "name": "density-aware Chamfer distance (DCD)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t93",
+    "t253",
+    "t256",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the November 2025 point-cloud study reported by the booklet, real and simulated scans averaged a density-aware Chamfer distance (DCD) of 0.63 with only 21% segmentation agreement.",
+   "quote": "real and simulated scans averaged a DCD of 0.63 with only 21% segmentation agreement [Chapter 6].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "density-aware Chamfer distance (DCD)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t93",
+    "t249",
+    "t256"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "One radar simulation produced about 12% of the real point density—251 versus 2,057 points per frame—because the model lacked diffuse scattering and multiple bounces present in real radar.",
+   "quote": "one radar simulation produced about 12% of the real density (251 against 2,057 points per frame) because real radar includes diffuse scattering and multiple bounces the model lacked [Chapter 5].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t93",
+    "t249",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Dust, rain and snow add false points in the air to point clouds and remove points from real surfaces.",
+   "quote": "Dust, rain and snow add false points in the air and remove points from real surfaces",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t93"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Off-road point-cloud de-dusting filters scored 97.55% on their own data.",
+   "quote": "off-road \"de-dusting\" filters scored 97.55% on their own data",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t93",
+    "t102",
+    "t113"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A construction fusion model fell to 65.58% in one dense-dust case, compared with 94.85% to 96.73% elsewhere.",
+   "quote": "a construction fusion model fell to 65.58% in one dense-dust case against 94.85% to 96.73% elsewhere [Chapter 13].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t99",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends recording point clouds in the rawest useful form with timestamps, positions, return and intensity, rather than recording a thinned visualization cloud.",
+   "quote": "For recordings, the booklet asks for the rawest useful form, timestamps, positions, return and intensity, rather than a thinned visualization cloud [Chapter 5].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t93",
+    "t101"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Point-cloud realism is central to the sensor-model credibility argument because point clouds are both what lidar perception consumes and what a lidar simulator must reproduce.",
+   "quote": "A point cloud is both what lidar perception consumes and what a lidar simulator must reproduce, so \"is this simulated cloud realistic enough\" sits at the heart of the sensor-model credibility argument",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t93",
+    "t234",
+    "t92",
+    "t85",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet finds no single accepted realism score for point clouds.",
+   "quote": "the booklet finds no single accepted realism score [Chapter 6].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t93",
+    "t234",
+    "t249"
+   ],
+   "importance": 3
+  }
+ ]
+}

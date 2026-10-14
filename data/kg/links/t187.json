@@ -1,0 +1,115 @@
+{
+ "key": "t187",
+ "hash": "80e7efeb07c987c8",
+ "synopsis": "ISO 21815-3:2023 defines forward and reverse risk areas using a stopping-distance framework, incorporating detection, determination, action, stopping and residual safe distance rather than time to collision alone [f2058, f5911, f6202]. The corpus recommends scaling zones with machine physics and geometry—not copied distance constants—and validating forward, reverse, start-from-rest, turning and swing separately; the cross-model transfer method is explicitly identified as expert opinion with independent supporting studies [f6681, f2996, f6770]. Field evidence reinforces the need for calibration: nine NIOSH underground tests found average between-site stop-zone differences of 4.7 ft (1.4 m), reaching 11.7 ft (3.6 m), while Wabtec's December 2021 integration still used physical testing to adjust detection zones [f5929, f1247]. Old-versus-new comparisons should use common ground truth and a common physical hazard zone, while the reviewed 2022 ISO draft recommends detection coverage at least as large as the collision-risk area and requires smaller coverage to be disclosed as a limitation [f5210, f5479, f2423, f2424]. Operational acceptance remains a design tension: proposed 3 ft stopping and 5 ft warning distances were not adopted in the US rule, fixed gaps can prevent loading, and nuisance interventions can encourage bypass or tag removal, yet suppressing an entire loading zone can leave unexpected entrants unprotected [f2241, f3344, f11764, f3347].",
+ "relations": [
+  {
+   "a": "f106",
+   "b": "f5210",
+   "type": "same",
+   "note": "Both prescribe identical comparison metrics, common ground truth and a common hazard zone."
+  },
+  {
+   "a": "f138",
+   "b": "f6681",
+   "type": "same",
+   "note": "Both transfer settings through physical parameterisation rather than copied constants."
+  },
+  {
+   "a": "f149",
+   "b": "f5922",
+   "type": "same",
+   "note": "Both favor stopping-distance risk zones, with time to collision as one input."
+  },
+  {
+   "a": "f2996",
+   "b": "f11410",
+   "type": "same",
+   "note": "Both require separate motion scenarios rather than one generic proximity zone."
+  },
+  {
+   "a": "f819",
+   "b": "f1346",
+   "type": "same",
+   "note": "Both describe Wabtec's planned zone adjustments for braking distance, speed, payload and grade."
+  },
+  {
+   "a": "f1134",
+   "b": "f819",
+   "type": "same",
+   "note": "Duplicate Wabtec plans for physically informed detection-zone adjustment."
+  },
+  {
+   "a": "f1247",
+   "b": "f1466",
+   "type": "same",
+   "note": "Both report Wabtec detection-zone adjustment through physical tests."
+  },
+  {
+   "a": "f2086",
+   "b": "f2241",
+   "type": "same",
+   "note": "Both report rejection of proposed 3 ft stopping and 5 ft warning distances."
+  },
+  {
+   "a": "f2241",
+   "b": "f2776",
+   "type": "same",
+   "note": "Both state proposed numeric distances were not adopted in 30 CFR 75.1732."
+  },
+  {
+   "a": "f3023",
+   "b": "f3344",
+   "type": "same",
+   "note": "Both identify fixed stopping gaps as incompatible with truck loading."
+  },
+  {
+   "a": "f3768",
+   "b": "f11234",
+   "type": "same",
+   "note": "Both state ISO 21815-3:2023 defines forward and reverse risk areas."
+  },
+  {
+   "a": "f10637",
+   "b": "f10978",
+   "type": "same",
+   "note": "Both describe reverse inhibition after 15 stationary seconds with an object in the critical zone."
+  },
+  {
+   "a": "f5911",
+   "b": "f6681",
+   "type": "supports",
+   "note": "Standardized stopping-distance components support physics-based zone parameterisation."
+  },
+  {
+   "a": "f5929",
+   "b": "f7409",
+   "type": "supports",
+   "note": "Large between-site stop-zone differences support parameterisation instead of independent distance tables."
+  },
+  {
+   "a": "f5479",
+   "b": "f5501",
+   "type": "elaborates",
+   "note": "Swept-envelope separation makes common-zone comparisons meaningful across different machine geometries."
+  },
+  {
+   "a": "f2423",
+   "b": "f2424",
+   "type": "elaborates",
+   "note": "Smaller-than-recommended detection coverage must be disclosed as an operator-manual limitation."
+  },
+  {
+   "a": "f3297",
+   "b": "f11764",
+   "type": "supports",
+   "note": "Recorded tag removal demonstrates the protection-loss pathway described in the glossary."
+  },
+  {
+   "a": "f3344",
+   "b": "f3347",
+   "type": "contradicts",
+   "note": "Loading needs close access, but blanket zone suppression exposes unexpected entrants."
+  }
+ ]
+}

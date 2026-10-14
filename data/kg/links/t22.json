@@ -1,0 +1,115 @@
+{
+ "key": "t22",
+ "hash": "0459783a95682cb5",
+ "synopsis": "The CMS is being developed as a successor to proximity warning: it automatically brakes when the operator does not react, and adding braking changes the safety-engineering scope rather than merely the performance metric [f1, f2955, f5221]. Prototype hardware and software are due in mid-2027, with validation required in under four months afterward—a substantial compression relative to the three-to-four-year validation history reported for comparable functions [f2, f3, f4, f4391]. Requirements span more than 100 job-site types, more than 10 operating scenarios per machine, multiple machine models, and weather and lighting conditions including rain, snow, fog, dust, dusk, darkness and glare [f5130, f2956, f285]. This broad scope is in tension with the glossary's expected reverse-only, low-speed wheel-loader operating domain and the recommendation to test forward, reverse, start-from-rest, turning and swing separately [f11397, f2996]. Evidence remains limited: independent off-road collision-system field data are old and sparse, underground injury figures lack speed and motion detail needed for braking design, and braking depends on sensor detection [f5169, f3256, f11302]. The recommended programme architecture combines systems-engineering V&V and TEMP-style test planning with evidence-based stage gates, reserving TRLs for critical-technology maturity [f9588, f9589, f9590].",
+ "relations": [
+  {
+   "a": "f1",
+   "b": "f279",
+   "type": "same",
+   "note": "Both describe automatic braking when the operator does not react."
+  },
+  {
+   "a": "f1",
+   "b": "f1172",
+   "type": "same",
+   "note": "Both describe the manufacturer's developing automatic-braking system."
+  },
+  {
+   "a": "f1",
+   "b": "f2027",
+   "type": "same",
+   "note": "Both state automatic braking follows operator nonresponse."
+  },
+  {
+   "a": "f1",
+   "b": "f2955",
+   "type": "same",
+   "note": "Same braking function; Chapter 4 identifies its proximity-warning predecessor."
+  },
+  {
+   "a": "f1",
+   "b": "f7504",
+   "type": "same",
+   "note": "Both explicitly link automatic braking to nonresponse to a proximity warning."
+  },
+  {
+   "a": "f1",
+   "b": "f11295",
+   "type": "same",
+   "note": "Glossary restates the system's automatic-braking distinction from warning alone."
+  },
+  {
+   "a": "f2",
+   "b": "f2028",
+   "type": "same",
+   "note": "Both place prototype hardware and software arrival in mid-2027."
+  },
+  {
+   "a": "f3",
+   "b": "f1173",
+   "type": "same",
+   "note": "Both require validation within four months after mid-2027 prototype arrival."
+  },
+  {
+   "a": "f3",
+   "b": "f10381",
+   "type": "same",
+   "note": "Skeptic's review repeats the prototype-linked validation deadline."
+  },
+  {
+   "a": "f3",
+   "b": "f7506",
+   "type": "same",
+   "note": "Both state the same compressed validation window."
+  },
+  {
+   "a": "f283",
+   "b": "f3674",
+   "type": "same",
+   "note": "Both require coverage of more than 100 job-site types."
+  },
+  {
+   "a": "f285",
+   "b": "f3676",
+   "type": "same",
+   "note": "Both specify the same adverse weather and lighting conditions."
+  },
+  {
+   "a": "f5130",
+   "b": "f2956",
+   "type": "elaborates",
+   "note": "Quantifies job-site and scenario breadth within the broader operating requirements."
+  },
+  {
+   "a": "f4",
+   "b": "f3",
+   "type": "contradicts",
+   "note": "Historical validation duration highlights tension with the new deadline, not a factual inconsistency."
+  },
+  {
+   "a": "f11397",
+   "b": "f2996",
+   "type": "contradicts",
+   "note": "Reverse-only domain conflicts with recommended forward, turning, and swing scenario coverage."
+  },
+  {
+   "a": "f11397",
+   "b": "f2956",
+   "type": "contradicts",
+   "note": "Narrow wheel-loader domain contrasts with requirements across many machine models."
+  },
+  {
+   "a": "f11302",
+   "b": "f1",
+   "type": "depends",
+   "note": "Automatic braking for an object requires sensors to detect it first."
+  },
+  {
+   "a": "f9589",
+   "b": "f9588",
+   "type": "elaborates",
+   "note": "Adds evidence-based governance gates to the recommended technical and evidence backbone."
+  }
+ ]
+}

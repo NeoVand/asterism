@@ -1,0 +1,206 @@
+{
+ "chunkId": "k729",
+ "hash": "9bf5acfa3c7829d0",
+ "facts": [
+  {
+   "text": "Test management is record-keeping that enables thousands of runs to be planned, reproduced and traced from the hazards they address to the evidence they produce; versioning assigns a fixed identifier to every run ingredient.",
+   "quote": "Test management is the record-keeping that lets thousands of runs be planned, reproduced and traced from the hazard they address to the evidence they produce, and versioning gives every ingredient of a run a fixed identifier.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t162",
+    "t64"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet requires every executed virtual test run to be treated as a reproducible experiment with an unchangeable manifest, so each run can be found and repeated exactly.",
+   "quote": "The booklet's rule is to treat every executed run as a reproducible experiment with an unchangeable manifest [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t162",
+    "t341"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The test traceability chain runs from hazard to safety requirement, functional performance requirement, logical scenario, test case, run, result and evidence item in the safety case. Functional performance requirements can include objectives from EMESRT PR-5A or an ISO 21815 risk level.",
+   "quote": "hazard, then safety requirement, then functional performance requirement (for example an objective from the mining industry's EMESRT PR-5A requirement or an ISO 21815 risk level), then logical scenario, then test case, then run, then result, then evidence item in the safety case [Chapter 9].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "EMESRT PR-5A",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 21815",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t64",
+    "t162",
+    "t63",
+    "t67",
+    "t304"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The minimum manifest stored with each test run includes requirement and hazard identifiers, scenario family and version, concrete parameter values, operating-domain tags, machine and sensor configuration, calibration, software build, simulator or rig version, random seed, raw-data identifiers with checksums, verdict and deviations.",
+   "quote": "the requirement and hazard identifiers, the scenario family and its version, the concrete parameter values, operating-domain tags, machine and sensor configuration, calibration, software build, simulator or rig version, random seed, raw-data identifiers with checksums, verdict and deviations",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t162",
+    "t341",
+    "t143",
+    "t140",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Versioning records an identifier with each run for everything that can change the result, including machine-learning model weights, terrain assets and hardware-in-the-loop (HIL) rig configuration. These identifiers are typically content hashes computed from the files themselves.",
+   "quote": "including machine-learning model weights, terrain assets and hardware-in-the-loop (HIL) rig configuration, typically as content hashes (fingerprints computed from the file itself) [Chapter 9].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t162",
+    "t112",
+    "t131",
+    "t148"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Neutral standards available for test management include ISO/IEC/IEEE 29119 for test documentation, ASAM MDF for measured signals and ASAM ATX for test specifications and results.",
+   "quote": "Neutral standards exist: ISO/IEC/IEEE 29119 for test documentation, ASAM MDF for measured signals, ASAM ATX for test specifications and results.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/IEC/IEEE 29119",
+     "kind": "standard"
+    },
+    {
+     "name": "ASAM MDF",
+     "kind": "standard"
+    },
+    {
+     "name": "ASAM ATX",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t162",
+    "t292",
+    "t122"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Test-management implementation can be commercial, open-source or in-house; the booklet prioritizes a stable machine-readable data model with immutable IDs rather than the implementation brand.",
+   "quote": "The implementation can be commercial, open-source or in-house; \"the important property is a stable machine-readable data model with immutable IDs, not the brand\" [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t162",
+    "t333",
+    "t341"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Site models need configuration-control discipline that records a capture date, coordinate reference and revision history.",
+   "quote": "Site models need the same discipline, with a capture date, a coordinate reference and a revision history [Chapter 5].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t162"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Once braking affects machine motion, reproducible configuration control becomes a safety obligation rather than a convenience.",
+   "quote": "Once braking affects motion, reproducible configuration control is a safety obligation rather than a convenience",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t162",
+    "t22",
+    "t48"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A test result that cannot be tied to an exact product state does not qualify as evidence.",
+   "quote": "a result that cannot be tied to an exact product state is not evidence [Chapter 7].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t70",
+    "t162",
+    "t64"
+   ],
+   "importance": 3
+  }
+ ]
+}

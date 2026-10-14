@@ -1,0 +1,115 @@
+{
+ "key": "t106",
+ "hash": "ac4f3b5371442562",
+ "synopsis": "Labels are a distinct simulation layer, not a by-product of visual realism: their ontology must follow safety requirements, and useful truth channels extend to geometry, trajectories, visibility, machine state and braking-related quantities [f86, f3979, f3978]. The recommended ground-truth approach combines surveyed targets, reference lidar with RTK-GNSS/INS and audited automatic labels, with an explicit “truth unavailable or ambiguous” state for dust, occlusion and reference-sensor failure [f5197, f5394]. Automatic labeling offers scale, but on-road successes do not establish validity near heavy off-road equipment; one 2026 labeler achieved recall of 0.88–0.98 but precision of only 0.52 in crowded indoor scenes, supporting pre-labeling with stratified human audits rather than an unaudited safety oracle [f5199, f5200, f5382, f5383]. Procedural simulation can supply automatically generated, nominally perfect labels, but this does not resolve whether those labels represent the safety-relevant categories and states [f3975, f4295, f3979]. For a team starting in October 2026, a labeled replay pipeline is considered realistic by mid-2027 only if suitable data exist; the indicative plan starts 180 days of labeling and replay work on January 1, 2027, while current retention of suitable logs and labels remains unestablished [f837, f898, f519]. Labeling is expected to dominate replay costs and may be its real bottleneck, yet project cost figures were not found, so a small representative annotation trial is recommended before budgeting at scale [f522, f1144, f10828, f10829].",
+ "relations": [
+  {
+   "a": "f519",
+   "b": "f11898",
+   "type": "same",
+   "note": "Both leave warning-system retention of replay-ready data and labels unestablished."
+  },
+  {
+   "a": "f100",
+   "b": "f5197",
+   "type": "same",
+   "note": "Both describe surveyed targets, reference lidar with positioning, and audited auto-labels."
+  },
+  {
+   "a": "f3975",
+   "b": "f3976",
+   "type": "same",
+   "note": "Same automatic-label pipeline claim, attributed to independent and vendor evidence."
+  },
+  {
+   "a": "f522",
+   "b": "f922",
+   "type": "same",
+   "note": "Both identify labeling as the dominant replay cost."
+  },
+  {
+   "a": "f5381",
+   "b": "f12785",
+   "type": "elaborates",
+   "note": "Glossary adds training-data bias and scale benefits to the contamination risk."
+  },
+  {
+   "a": "f5382",
+   "b": "f12803",
+   "type": "same",
+   "note": "Both report 2026 recall of 0.88–0.98 and precision of 0.52."
+  },
+  {
+   "a": "f5383",
+   "b": "f12786",
+   "type": "same",
+   "note": "Both require human audit and reject automatic labels as an unaudited safety oracle."
+  },
+  {
+   "a": "f5394",
+   "b": "f12756",
+   "type": "same",
+   "note": "Both require an ambiguous-truth state to avoid incorrect labels under dust and occlusion."
+  },
+  {
+   "a": "f5401",
+   "b": "f12805",
+   "type": "same",
+   "note": "Both specify taxonomy, reference points, occlusion, detection opportunities, continuity and disagreement resolution."
+  },
+  {
+   "a": "f5200",
+   "b": "f12804",
+   "type": "same",
+   "note": "Both report missing off-road validation for workers and machines near heavy equipment."
+  },
+  {
+   "a": "f5200",
+   "b": "f5384",
+   "type": "same",
+   "note": "Both report that the described automatic-labeling evidence lacks off-road validation."
+  },
+  {
+   "a": "f10828",
+   "b": "f12796",
+   "type": "same",
+   "note": "Both report unavailable project ground-truth labeling cost figures."
+  },
+  {
+   "a": "f10829",
+   "b": "f12807",
+   "type": "same",
+   "note": "Both recommend a small annotation trial to estimate labeling costs."
+  },
+  {
+   "a": "f3977",
+   "b": "f4295",
+   "type": "same",
+   "note": "Both describe simulated annotations as perfect or fully accurate."
+  },
+  {
+   "a": "f3979",
+   "b": "f5401",
+   "type": "elaborates",
+   "note": "Manual specification details operationalize a safety-driven labeling ontology."
+  },
+  {
+   "a": "f5382",
+   "b": "f12786",
+   "type": "supports",
+   "note": "Low precision despite high recall supports mandatory human auditing."
+  },
+  {
+   "a": "f837",
+   "b": "f11899",
+   "type": "depends",
+   "note": "The conditional replay schedule requires suitably recorded data, labels and independent truth."
+  },
+  {
+   "a": "f10828",
+   "b": "f10829",
+   "type": "supports",
+   "note": "Missing project cost figures motivate a representative annotation trial."
+  }
+ ]
+}

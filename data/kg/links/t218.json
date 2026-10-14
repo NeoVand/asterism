@@ -1,0 +1,115 @@
+{
+ "key": "t218",
+ "hash": "9e63eee8c191eb07",
+ "synopsis": "Pre-registration is a core control against result-driven analysis: before hardware arrives, the program should fix acceptance criteria, strata, confidence levels and stopping rules, with the statistical plan scheduled for October 2026 to mid-2027 [f6956, f7363]. Release-rate claims must use a frozen stratified random sample drawn from the declared operating-domain distribution before tuning and never used for tuning; discovery, estimation and regression tests must remain separate [f14131, f133]. Statistical safeguards include pre-declared binomial intervals when misses occur, fixed sequential stopping rules, and predefined primary claims with multiplicity methods where many claims must hold together [f6891, f14225, f7486]. The recommended pilot is a difficult thin vertical slice predicted blind against pre-registered criteria, with a proposed 10–30 physical test points and metrics such as detection-range error, stopping-distance error and false-negative agreement [f9485, f9917, f9919]. Evidence supporting pre-declared progression criteria and locked metrics comes from health and social research, so its transfer to engineering remains an analogy rather than direct proof; few sensor-realism studies define acceptance thresholds before testing [f9903, f9904, f4839]. A late change in sensor modalities can invalidate the frozen plan, requiring sensor-dependent strata to be re-derived and the sample redrawn, consuming validation time [f7490, f7491, f14303].",
+ "relations": [
+  {
+   "a": "f6648",
+   "b": "f6867",
+   "type": "same",
+   "note": "Both restrict release-rate claims to a frozen stratified random sample."
+  },
+  {
+   "a": "f8226",
+   "b": "f12887",
+   "type": "same",
+   "note": "Both require dataset allocation before prototype testing."
+  },
+  {
+   "a": "f6891",
+   "b": "f14196",
+   "type": "same",
+   "note": "Both prescribe pre-declared binomial intervals instead of outcome-driven continued testing."
+  },
+  {
+   "a": "f6905",
+   "b": "f14225",
+   "type": "same",
+   "note": "Both require sequential-testing stopping rules fixed in advance."
+  },
+  {
+   "a": "f6956",
+   "b": "f14292",
+   "type": "same",
+   "note": "Both specify the same four pre-hardware commitments."
+  },
+  {
+   "a": "f6956",
+   "b": "f14297",
+   "type": "same",
+   "note": "Both fix criteria, strata, confidence levels and stopping rules before hardware arrives."
+  },
+  {
+   "a": "f14292",
+   "b": "f14297",
+   "type": "same",
+   "note": "Glossary entries restate the same pre-hardware test-plan commitments."
+  },
+  {
+   "a": "f209",
+   "b": "f9485",
+   "type": "same",
+   "note": "Both define a difficult thin-slice pilot predicted blind against pre-registered criteria."
+  },
+  {
+   "a": "f9485",
+   "b": "f14301",
+   "type": "same",
+   "note": "Glossary restates the blind, pre-registered pilot recommendation."
+  },
+  {
+   "a": "f7486",
+   "b": "f14231",
+   "type": "same",
+   "note": "Both recommend predefined primary claims and multiplicity controls for joint claims."
+  },
+  {
+   "a": "f9690",
+   "b": "f10302",
+   "type": "same",
+   "note": "Both flag uncertain transfer of health-research progression criteria to engineering."
+  },
+  {
+   "a": "f9690",
+   "b": "f9904",
+   "type": "same",
+   "note": "Both characterize engineering transfer as analogy rather than proven evidence."
+  },
+  {
+   "a": "f8239",
+   "b": "f14300",
+   "type": "same",
+   "note": "Both recommend pre-registering acceptance criteria during pre-hardware work."
+  },
+  {
+   "a": "f7491",
+   "b": "f14303",
+   "type": "elaborates",
+   "note": "Glossary adds calendar costs to required re-stratification and sample redraw."
+  },
+  {
+   "a": "f14131",
+   "b": "f14298",
+   "type": "elaborates",
+   "note": "Fixed seeds and content hashes operationalize freezing the sample before tuning."
+  },
+  {
+   "a": "f10934",
+   "b": "f10935",
+   "type": "elaborates",
+   "note": "The pilot method yields a pass-or-fail record against its pre-registered metrics."
+  },
+  {
+   "a": "f12172",
+   "b": "f7486",
+   "type": "supports",
+   "note": "Chance outcomes across hundreds of 95-percent checks motivate primary claims and multiplicity controls."
+  },
+  {
+   "a": "f4839",
+   "b": "f8038",
+   "type": "supports",
+   "note": "Scarce advance thresholds motivate prospective validation plans with pre-declared acceptance criteria."
+  }
+ ]
+}

@@ -1,0 +1,181 @@
+{
+ "chunkId": "k728",
+ "hash": "9a4fb73347cff6b8",
+ "facts": [
+  {
+   "text": "Regression testing re-runs previously passing tests after software changes to detect new failures; continuous integration automates building and testing whenever a developer submits a change.",
+   "quote": "Regression testing re-runs old tests after every software change to make sure that nothing which used to work now fails, and continuous integration is the automated factory that does this on every change.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t223"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The validation program should use a change-impact graph: sensor-mounting changes select scenarios covering the sensor's field boundaries and occlusions, brake-model changes select stopping-margin scenarios, and perception changes select all downstream braking scenarios.",
+   "quote": "a change to sensor mounting selects the scenarios that cover that sensor's field boundaries and occlusions; a brake-model change selects stopping-margin scenarios; a perception change selects all downstream braking scenarios.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t100",
+    "t182",
+    "t85",
+    "t143"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The validation program should run a fast smoke subset of software-in-the-loop (SIL) tests on every submitted change and a small mandatory safety regression set on every eligible build.",
+   "quote": "Run a fast \"smoke\" subset of software-in-the-loop (SIL) runs on every submitted change, a small mandatory safety regression set on every eligible build",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t147"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The validation program should run larger virtual campaigns overnight or at release gates, with hardware-in-the-loop (HIL) and physical confirmation selected by risk.",
+   "quote": "larger virtual campaigns overnight or at release gates, and hardware-in-the-loop (HIL) and physical confirmation selected by risk.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t233",
+    "t148",
+    "t216",
+    "t349"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Every past failure in the validation program should be retained as a permanent regression test.",
+   "quote": "Keep every past failure as a permanent regression test.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t161"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The frozen estimation set must not be continuously rerun and used to optimize against its failures; the validation program should reserve that set for release candidates.",
+   "quote": "never continuously rerun the frozen estimation set and optimize to its failures; it is reserved for release candidates [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t219",
+    "t161",
+    "t217"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Road-autonomy programs turn every captured or synthesized scenario into a permanent test.",
+   "quote": "Road-autonomy programs turn every captured or synthesized scenario into a permanent test.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Running millions of tests does not demonstrate that the test set represents the real operating domain.",
+   "quote": "running millions of tests does not show that the test set represents the real operating domain [Chapter 1].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t140",
+    "t267",
+    "t161"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Simulator upgrades need regression tests before adoption.",
+   "quote": "Simulator upgrades themselves need regression tests before adoption [Chapter 11].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Within a four-month validation window, an already-existing automated pipeline is the only affordable way to prove that a late-campaign tuning change did not break an earlier result.",
+   "quote": "In a four-month window, the only affordable way to prove that a tuning change late in the campaign did not break an earlier result is an automated pipeline that already exists [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t43",
+    "t223"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t14",
+ "hash": "3b99a4ca0d3c781b",
+ "synopsis": "The corpus identifies unseen people and light vehicles being run over by large machines as the deadliest documented collision pattern; smaller trucks and loaders particularly back over people [f2983, f11293, f2995]. The January 2005–June 2021 US evidence covers 13 haul-truck collisions, including three pedestrian collisions, but one summary describes the category counts as victims while another describes incidents and notes a double fatality, requiring care with denominators [f2992, f3073]. Pedestrians can legitimately be close to machines: workers 0.5–5 m behind them occupy a weak range for digital radar simulators, and near-zero relative speed can make time-to-collision misleading even at centimeter separation [f6220, f5328, f6214]. Protection must account for camera limitations involving posture and weather, cooperative systems requiring everyone to carry tags, and reported worker responses including tag removal, riskier positioning and requests for bypasses [f1638, f1670, f3034]. Regulatory acceptance emphasizes timely detection or warning and risk reduction; US 30 CFR 77.410 specifically requires enough sensing coverage for an endangered person to escape [f2397, f2084, f2444]. Virtual validation therefore needs site-specific pedestrian controls and separately validated human models, yet no validated off-road pedestrian-behaviour model was found and transfer of on-road detection and rare-event methods remains unproven or uncertain [f11499, f10350, f4356, f5406, f1114].",
+ "relations": [
+  {
+   "a": "f2983",
+   "b": "f11293",
+   "type": "same",
+   "note": "Both identify unseen people or light vehicles being run over as the deadliest pattern."
+  },
+  {
+   "a": "f122",
+   "b": "f2995",
+   "type": "elaborates",
+   "note": "Adds quarry context and contrasts reversing smaller machines with forward-moving haul trucks."
+  },
+  {
+   "a": "f5918",
+   "b": "f6214",
+   "type": "same",
+   "note": "Both warn that near-zero relative speed makes time-to-collision unreliable at centimeter separation."
+  },
+  {
+   "a": "f5195",
+   "b": "f5328",
+   "type": "same",
+   "note": "Both locate workers 0.5–5 m behind machines in digital radar simulators' weakest range."
+  },
+  {
+   "a": "f804",
+   "b": "f11499",
+   "type": "same",
+   "note": "Both link braking safety outcomes to site traffic rules and pedestrian controls."
+  },
+  {
+   "a": "f415",
+   "b": "f575",
+   "type": "same",
+   "note": "Both report on-road pedestrian-in-the-loop VR and AR simulator precedents."
+  },
+  {
+   "a": "f2084",
+   "b": "f2444",
+   "type": "elaborates",
+   "note": "Clarifies that escape coverage must provide adequate time to leave the danger zone."
+  },
+  {
+   "a": "f2992",
+   "b": "f3073",
+   "type": "contradicts",
+   "note": "Identical category counts describe victims versus collisions; the latter also includes a double fatality."
+  },
+  {
+   "a": "f1670",
+   "b": "f503",
+   "type": "supports",
+   "note": "Universal tagging requirements explain why untagged people fall outside cooperative sensing."
+  },
+  {
+   "a": "f3034",
+   "b": "f503",
+   "type": "supports",
+   "note": "Reported tag removal provides a behavioral route to cooperative sensing's untagged-person limitation."
+  },
+  {
+   "a": "f4356",
+   "b": "f10350",
+   "type": "supports",
+   "note": "Missing validated pedestrian behavior models strengthens the need for separate human-model validation."
+  },
+  {
+   "a": "f1638",
+   "b": "f6719",
+   "type": "supports",
+   "note": "Posture-related detection limitations justify varying worker posture in the operating-domain taxonomy."
+  },
+  {
+   "a": "f7980",
+   "b": "f6719",
+   "type": "supports",
+   "note": "On-road hi-vis detection failures justify explicitly varying hi-vis presence in off-road tests."
+  },
+  {
+   "a": "f6220",
+   "b": "f3022",
+   "type": "supports",
+   "note": "Authorized ground-crew approaches exemplify legitimate close pedestrian presence."
+  },
+  {
+   "a": "f6244",
+   "b": "f6245",
+   "type": "depends",
+   "note": "Selective disabling of hazardous motions enables greater worker positioning freedom."
+  },
+  {
+   "a": "f3973",
+   "b": "f3974",
+   "type": "elaborates",
+   "note": "Adds exact boundary placement and deterministic reproducibility to controllable pedestrian assets."
+  },
+  {
+   "a": "f2555",
+   "b": "f6719",
+   "type": "elaborates",
+   "note": "Expands representative PPE surrogates into posture, hi-vis and occlusion variations."
+  },
+  {
+   "a": "f11421",
+   "b": "f6244",
+   "type": "supports",
+   "note": "Swing hazards demonstrate why protection must address hazardous motions beyond forward or reverse travel."
+  }
+ ]
+}

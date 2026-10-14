@@ -1,0 +1,196 @@
+{
+ "chunkId": "k631",
+ "hash": "5d193c77555d340c",
+ "facts": [
+  {
+   "text": "The V-model is a development process in which needs are decomposed into requirements and designs, parts are built, and tests check each development level against its matching design level.",
+   "quote": "the left arm breaks the need down into requirements and designs, the bottom is where the parts are built, and the right arm climbs back up through tests that check each level against the level opposite it.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "V-model",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t66"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In the V-model, each test is planned when its corresponding requirement or design is written; this establishes requirements-based testing and traceability.",
+   "quote": "each right-arm test is planned when its left-arm counterpart is written; that is where requirements-based testing and traceability come from.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "V-model",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t66",
+    "t63",
+    "t64"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "IEC 61508 and ISO 26262 explicitly depict the V-model, while machinery software standards such as ISO 19014-4 follow the same shape.",
+   "quote": "IEC 61508 and ISO 26262 draw the V explicitly, and machinery software standards such as ISO 19014-4 follow the same shape.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "IEC 61508",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 26262",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 19014-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t66",
+    "t287",
+    "t289",
+    "t281"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Extensions of the V-model exist for machine-learning software and treat training data as a development artifact.",
+   "quote": "Extensions exist for machine-learning software, in which training data is treated as a development artifact [Chapter 1].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "V-model",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t66",
+    "t113",
+    "t79"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet assigns software-in-the-loop testing to logic, hardware-in-the-loop testing to timing and interfaces, and whole-machine testing to stopping, followed by shadow mode and staged release.",
+   "quote": "software-in-the-loop for logic, hardware-in-the-loop for timing and interfaces, the whole machine for stopping, then shadow mode and staged release [Chapter 1].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t148",
+    "t158",
+    "t157",
+    "t73"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet's validation program defines the operating domain and scenarios, verifies logic virtually at scale, confirms results with a smaller set of physical tests, and releases in stages with field monitoring.",
+   "quote": "define the operating domain and scenarios, verify the logic virtually at scale, confirm with a smaller set of physical tests, release in stages with field monitoring [Chapter 1].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t66",
+    "t127",
+    "t216",
+    "t73",
+    "t74"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The validation toolchain can be built generically before hardware exists, but correlation requires the real sensor and machine.",
+   "quote": "the toolchain can be built generically before hardware exists, but correlation needs the real sensor and machine",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t250",
+    "t42"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Integrated product validation begins at prototype arrival, but the validation program must begin before prototype arrival.",
+   "quote": "integrated product validation begins at prototype arrival; the validation program cannot",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t42",
+    "t342"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet concludes that four months can cover only the top of the V-model's testing arm; the entire requirements-and-design arm and most test preparation must be completed before mid-2027.",
+   "quote": "The V shows why four months can only be the top of the right arm. The whole left arm and most test preparation must be finished before mid-2027.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "V-model",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t66",
+    "t43",
+    "t343"
+   ],
+   "importance": 3
+  }
+ ]
+}

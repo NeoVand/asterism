@@ -1,0 +1,115 @@
+{
+ "key": "t172",
+ "hash": "ca0755af964cd43a",
+ "synopsis": "The booklet treats latency as a first-order stopping-distance contributor: at 5–15 km/h it can account for half or more of stopping distance, and milliseconds in sensing, networking, decision and actuation change the stopping point [f144, f13659, f4346]. The reviewed 2022 DIS and ISO 21815-3:2023 distance structures include detection, determination and action, physical stopping and residual safety distance; a practical engineering model adds speed multiplied by detection, decision and actuation times to braking distance, machine-envelope offset and margin, but is not a verbatim ISO equation [f2419, f7007, f7010]. In the worked 40 t example at 15 km/h on a 10% downgrade with 1.0 s delay, stopping takes about 8.5 m and 1 m clearance raises minimum detection range to 9.5 m before sensor-error allowance; the US mining rule's assumed 2.0 s delay alone contributes 8.3 m at that speed [f13656, f13658]. Validation should timestamp a known object event through detection, confirmation, risk decision, brake request, interface receipt, actuator response and measurable deceleration, test the automated rather than merely pedal brake path, and include end-to-end integration latency when using the specified third-party J1939 interface [f6159, f6142, f8198]. When the prototype arrives in mid-2027, correlation measurements on representative variants should precede the full scenario matrix, establishing latency, detection range, brake-command timing, stopping dynamics, repeatability and model error [f744, f13512]. A coverage gap remains because the seven sensor questions omitted synchronization and latency, so realistic individual sensor values do not guarantee a working braking function; detector operating-point metrics also omit downstream braking logic and timing, while combined mining-document delays must not be interpreted as measured human reaction-time distributions [f5092, f6981, f3327].",
+ "relations": [
+  {
+   "a": "f144",
+   "b": "f13659",
+   "type": "same",
+   "note": "Both state latency can contribute half or more of stopping distance at 5–15 km/h."
+  },
+  {
+   "a": "f4346",
+   "b": "f13426",
+   "type": "same",
+   "note": "Both say millisecond processing and actuation delays move the stopping point."
+  },
+  {
+   "a": "f6680",
+   "b": "f6983",
+   "type": "same",
+   "note": "Both define avoidance distance using timing, stopping distance and safety distance."
+  },
+  {
+   "a": "f6680",
+   "b": "f7007",
+   "type": "same",
+   "note": "Both restate ISO 21815-3:2023's collision-avoidance distance components."
+  },
+  {
+   "a": "f6983",
+   "b": "f7007",
+   "type": "same",
+   "note": "Both give the same collision-avoidance distance components."
+  },
+  {
+   "a": "f2419",
+   "b": "f7007",
+   "type": "same",
+   "note": "Reviewed draft and 2023 standard give the same core distance components."
+  },
+  {
+   "a": "f744",
+   "b": "f13512",
+   "type": "same",
+   "note": "Both prioritize representative-variant correlation measurements before the full scenario matrix."
+  },
+  {
+   "a": "f879",
+   "b": "f13512",
+   "type": "same",
+   "note": "Both prescribe the same initial prototype measurement set."
+  },
+  {
+   "a": "f744",
+   "b": "f12573",
+   "type": "same",
+   "note": "Both require initial latency, range and brake-timing measurements before large scenario sweeps."
+  },
+  {
+   "a": "f8198",
+   "b": "f12984",
+   "type": "same",
+   "note": "Both require end-to-end integration latency validation for the J1939 actuation interface."
+  },
+  {
+   "a": "f6159",
+   "b": "f12572",
+   "type": "elaborates",
+   "note": "Specifies the individual stages to timestamp during known-object latency tests."
+  },
+  {
+   "a": "f6114",
+   "b": "f12858",
+   "type": "same",
+   "note": "Equation and glossary description partition trigger distance into the same components."
+  },
+  {
+   "a": "f7010",
+   "b": "f12570",
+   "type": "elaborates",
+   "note": "Adds explicit braking physics, machine-envelope offset and the non-verbatim-ISO qualification."
+  },
+  {
+   "a": "f5092",
+   "b": "f7786",
+   "type": "supports",
+   "note": "Uncovered timing failures justify validating the whole causal timing chain."
+  },
+  {
+   "a": "f2425",
+   "b": "f2638",
+   "type": "depends",
+   "note": "The proposed distance calculations require declared system delays."
+  },
+  {
+   "a": "f3326",
+   "b": "f3327",
+   "type": "supports",
+   "note": "Combined human and machine delay components explain why they are not human reaction distributions."
+  },
+  {
+   "a": "f10872",
+   "b": "f10871",
+   "type": "supports",
+   "note": "The one-second recognition-to-braking gap substantiates the action-suppression delay finding."
+  },
+  {
+   "a": "f13656",
+   "b": "f11329",
+   "type": "elaborates",
+   "note": "Worked example quantifies stopping-plus-clearance detection range before sensor-error allowance."
+  }
+ ]
+}

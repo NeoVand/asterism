@@ -1,0 +1,115 @@
+{
+ "key": "t357",
+ "hash": "2337cc20a315e963",
+ "synopsis": "Supplier data, models and usage rights are a major schedule risk: they can block validation before testing, and late or legally unusable deliveries are a critical failure mode, especially when brake maps, interfaces or licences remain under negotiation near prototype delivery [f214, f10446, f12459, f10770]. Supplier information determines whether simulation represents the production sensor rather than a generic device; physics-based, signal-level models require supplier internals and material data, and missing spectral information explicitly limited the 2026 LWIR validation [f4842, f4469, f4848]. Access remains uncertain: NIOSH's 2022 review found manufacturer documentation proprietary and mostly undisclosed, while this research did not investigate suppliers' willingness or contract terms for exposing pre-processing data needed to re-test perception from logs [f10448, f5805, f5806]. Contracts should therefore secure model delivery, validation data, recording rights and editable simulation assets; an IP-protecting FMU using FMI 2.0 is recommended when sensor internals cannot be shared, and outsourcing without asset delivery risks meeting the 2027 deadline at the cost of long-term dependency [f4866, f4371, f8798, f4857, f8799]. Budgets must use vendor quotations because public tool prices are largely absent; public provider contract values and delivery timelines were also not found, and RFP pricing should cover concurrent workers, CI/cloud rights, subcontractors and disaster recovery rather than desktop seats alone [f8304, f8308, f16126, f16154].",
+ "relations": [
+  {
+   "a": "f10446",
+   "b": "f10485",
+   "type": "same",
+   "note": "Both identify supplier data and rights as blockers before testing starts."
+  },
+  {
+   "a": "f10767",
+   "b": "f12459",
+   "type": "same",
+   "note": "Both identify late or legally unusable supplier data as a project failure risk."
+  },
+  {
+   "a": "f10447",
+   "b": "f10799",
+   "type": "same",
+   "note": "Both report Barrick's requirement for OEM cooperation and approval."
+  },
+  {
+   "a": "f10448",
+   "b": "f10800",
+   "type": "same",
+   "note": "Both cite NIOSH's 2022 finding of proprietary, mostly undisclosed manufacturer documentation."
+  },
+  {
+   "a": "f4866",
+   "b": "f12517",
+   "type": "same",
+   "note": "Both recommend putting sensor-model and validation-data requirements into sourcing contracts now."
+  },
+  {
+   "a": "f8798",
+   "b": "f16137",
+   "type": "same",
+   "note": "Both require editable models and supporting assets, not merely test reports."
+  },
+  {
+   "a": "f8308",
+   "b": "f15922",
+   "type": "same",
+   "note": "Both require quotation-based tool budgets; the glossary also explains quote-only pricing."
+  },
+  {
+   "a": "f8308",
+   "b": "f16441",
+   "type": "same",
+   "note": "Both recommend building tool budgets from vendor quotations."
+  },
+  {
+   "a": "f8304",
+   "b": "f8747",
+   "type": "same",
+   "note": "Both describe unavailable public commercial-tool pricing and the need for quotations."
+  },
+  {
+   "a": "f8772",
+   "b": "f16134",
+   "type": "elaborates",
+   "note": "The glossary explains hybrid implementation's benefits, conditional on unusually clear ownership clauses."
+  },
+  {
+   "a": "f1147",
+   "b": "f10448",
+   "type": "same",
+   "note": "Both report NIOSH's finding that manufacturer research and validation documentation are proprietary."
+  },
+  {
+   "a": "f10770",
+   "b": "f12459",
+   "type": "elaborates",
+   "note": "Adds interfaces, sensor models and fault modes to the warning signs near prototype delivery."
+  },
+  {
+   "a": "f4848",
+   "b": "f4847",
+   "type": "supports",
+   "note": "Observed LWIR validation limits support requesting spectral band and response information."
+  },
+  {
+   "a": "f4842",
+   "b": "f12517",
+   "type": "supports",
+   "note": "Production-sensor fidelity depends on supplier data, supporting early contractual requirements."
+  },
+  {
+   "a": "f5806",
+   "b": "f5805",
+   "type": "elaborates",
+   "note": "The access needed for log-based perception testing was not investigated."
+  },
+  {
+   "a": "f8766",
+   "b": "f13217",
+   "type": "supports",
+   "note": "Partner dependency risks support requiring open-format export against vendor lock-in."
+  },
+  {
+   "a": "f8799",
+   "b": "f16137",
+   "type": "supports",
+   "note": "Long-term outsourcing dependency supports contractual delivery of editable models and validation assets."
+  },
+  {
+   "a": "f4372",
+   "b": "f4371",
+   "type": "supports",
+   "note": "Missing off-road data-rights guidance reinforces settling recording ownership, retention and export contractually."
+  }
+ ]
+}

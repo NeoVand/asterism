@@ -1,0 +1,429 @@
+{
+ "chunkId": "k404",
+ "hash": "0800d4b17bbc2145",
+ "facts": [
+  {
+   "text": "A useful validation program separates at least four kinds of agreement: scalar-output agreement, time-history agreement, uncertainty-aware agreement and distributional agreement.",
+   "quote": "A useful validation program separates at least four kinds of agreement: scalar-output agreement, time-history agreement, uncertainty-aware agreement and distributional agreement.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t250",
+    "t251",
+    "t252",
+    "t253",
+    "t259"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Relative error on a scalar compares one safety quantity, such as peak load, stopping distance or detection range.",
+   "quote": "One safety quantity (peak load, stopping distance, detection range)",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    4,
+    6
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t251",
+    "t170",
+    "t193"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Relative error on a scalar is used in FAA seat certification and for EU 2022/1426 manufacturer thresholds.",
+   "quote": "FAA seat certification, EU 2022/1426 manufacturer thresholds",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    4,
+    6
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FAA",
+     "kind": "organization"
+    },
+    {
+     "name": "EU 2022/1426",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t251",
+    "t246",
+    "t258"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Typical acceptance for relative error on a scalar uses a percentage criterion agreed in advance; the FAA example is 10%.",
+   "quote": "Percentage criterion agreed in advance (FAA example: 10%)",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    4,
+    6
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FAA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t251",
+    "t258",
+    "t62"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sprague-Geers time-history error compares the magnitude and phase of a whole time trace.",
+   "quote": "Magnitude and phase of a whole time trace",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sprague-Geers time-history error",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t252"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sprague-Geers time-history error is used in FAA seat certification, with a typical percentage acceptance criterion; the FAA example is 10%.",
+   "quote": "FAA seat certification | Percentage criterion (FAA example: 10%)",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sprague-Geers time-history error",
+     "kind": "metric"
+    },
+    {
+     "name": "FAA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t252",
+    "t258",
+    "t246"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Mean absolute percentage error (MAPE) compares signal amplitude, range and point-cloud quantities in lidar sensor models.",
+   "quote": "Signal amplitude, range, point-cloud quantities | Lidar sensor models",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    22,
+    79
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Mean absolute percentage error (MAPE)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t255",
+    "t92",
+    "t93",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Mean absolute percentage error (MAPE) in the cited lidar sensor model applications is reported rather than thresholded.",
+   "quote": "Reported, not thresholded",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    22,
+    79
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Mean absolute percentage error (MAPE)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t255",
+    "t92",
+    "t258"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The area validation metric compares cumulative distributions of simulated and measured outputs and is used in V&V research and uncertainty frameworks.",
+   "quote": "Cumulative distributions of simulated and measured outputs | V&V research, uncertainty frameworks",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    20,
+    80
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Area validation metric",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t253",
+    "t235",
+    "t259"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The area validation metric expresses an area in units of the compared quantity, which is added as model-form uncertainty.",
+   "quote": "Area in units of the quantity, added as model-form uncertainty",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    20,
+    80
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Area validation metric",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t253",
+    "t259"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Comparison sets of deviations compare means and standard deviations over many sections or runs in EN 14363 rail acceptance.",
+   "quote": "Means and standard deviations over many sections or runs | EN 14363 rail acceptance",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    21,
+    9
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EN 14363",
+     "kind": "standard"
+    },
+    {
+     "name": "Comparison sets of deviations",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t247",
+    "t250"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "EN 14363 rail acceptance applies validation limits to a set of deviations comprising at least 24 comparisons from at least 12 sections.",
+   "quote": "Validation limits on the set of deviations (at least 24 comparisons from at least 12 sections)",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    21,
+    9
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EN 14363",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t247",
+    "t258",
+    "t62"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The curve-comparison correlation rate combines peak time, peak value, curve shape and error in the UTAC AEBS proposal from a technical service.",
+   "quote": "Peak time, peak value, curve shape, error combined | UTAC AEBS proposal (technical service)",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    26
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Curve-comparison correlation rate",
+     "kind": "metric"
+    },
+    {
+     "name": "UTAC",
+     "kind": "organization"
+    },
+    {
+     "name": "UTAC AEBS proposal",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t252",
+    "t250",
+    "t25"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The UTAC AEBS proposal evaluates a \"Final correlation rate\" against a requirement.",
+   "quote": "\"Final correlation rate\" against a requirement",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    26
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "UTAC AEBS proposal",
+     "kind": "publication"
+    },
+    {
+     "name": "Final correlation rate",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t250",
+    "t258",
+    "t25"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Time- and frequency-domain correlation compares trajectories in on-road virtual-physical platforms, for example using cosine similarity of power spectral density; the table identifies this as research use.",
+   "quote": "Trajectories (for example cosine similarity of power spectral density) | On-road virtual-physical platforms | Research use",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    81
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Time- and frequency-domain correlation",
+     "kind": "metric"
+    },
+    {
+     "name": "Cosine similarity of power spectral density",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t252",
+    "t250",
+    "t160"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A confidence-adjusted limit compares measured variability against a regulatory maximum in FAA seat certification.",
+   "quote": "Measured variability against a regulatory maximum | FAA seat certification",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FAA",
+     "kind": "organization"
+    },
+    {
+     "name": "Confidence-adjusted limit",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t259",
+    "t258",
+    "t246"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Under the confidence-adjusted limit used in FAA seat certification, the prediction must stay below the regulatory limit minus a confidence margin.",
+   "quote": "Prediction must stay below the limit minus a confidence margin",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FAA",
+     "kind": "organization"
+    },
+    {
+     "name": "Confidence-adjusted limit",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t258",
+    "t259",
+    "t62"
+   ],
+   "importance": 3
+  }
+ ]
+}

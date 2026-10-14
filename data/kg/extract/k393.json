@@ -1,0 +1,658 @@
+{
+ "chunkId": "k393",
+ "hash": "04eb9f971888e4fb",
+ "facts": [
+  {
+   "text": "Transfer of validation to another machine model or sensor position is validation-domain extension by similarity plus bridging evidence, not inheritance.",
+   "quote": "Transfer to another machine model or sensor position is \"validation-domain extension by similarity plus bridging evidence\", not inheritance.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    9,
+    28,
+    4,
+    5
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t261",
+    "t76"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Rail formalizes validation-domain extension through EN 14363 Annex U and the European Union Agency for Railways' guidance.",
+   "quote": "Rail (EN 14363 Annex U and the European Union Agency for Railways' guidance)",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    9,
+    28,
+    4,
+    5
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "EN 14363",
+     "kind": "standard"
+    },
+    {
+     "name": "European Union Agency for Railways",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t265",
+    "t247"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Aerospace formalizes validation-domain extension through FAA similarity rules.",
+   "quote": "aerospace (FAA similarity rules)",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    9,
+    28,
+    4,
+    5
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "FAA",
+     "kind": "organization"
+    },
+    {
+     "name": "FAA similarity rules",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t265",
+    "t246"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Nuclear practice formalizes validation-domain extension through EMDAP scaling analysis.",
+   "quote": "nuclear (EMDAP scaling analysis) all formalize it.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    9,
+    28,
+    4,
+    5
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "EMDAP scaling analysis",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t265",
+    "t245"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The practical method for transferring validation to new variants is a parameterized family model validated at the corners of the envelope, with a documented delta and targeted bridge tests for each new variant.",
+   "quote": "The practical form is a parameterized family model validated at the corners of the envelope, with a documented delta and targeted bridge tests for each new variant.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    9,
+    28,
+    4,
+    5
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t76",
+    "t261",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No published off-road example of variant transfer was found.",
+   "quote": "No published off-road example of variant transfer was found.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    9,
+    28,
+    4,
+    5
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t76"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Field history from an existing warning system can validate inputs and submodels, but cannot validate the new closed-loop braking chain.",
+   "quote": "Field history from the existing warning system can validate inputs and submodels, not the new closed-loop braking chain.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    29,
+    30,
+    31
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t237",
+    "t154",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Aerospace accepts service history for similar systems when differences are justified.",
+   "quote": "Aerospace accepts service history for similar systems when differences are justified",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    29,
+    30,
+    31
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t75",
+    "t246",
+    "t76"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Replaying logged data is common on-road practice.",
+   "quote": "replaying logged data is common on-road practice",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    29,
+    30,
+    31
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t121"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Existing warning-system logs are open-loop, censored by operator reactions and biased toward normal operation.",
+   "quote": "logs are open-loop, censored by operator reactions and biased toward normal operation.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    29,
+    30,
+    31
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t154",
+    "t121",
+    "t38"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "“Proven in use” under ISO 26262-8 clause 14 provides a route for reusing an element, not for validating a simulator.",
+   "quote": "\"Proven in use\" under ISO 26262-8 clause 14 is a route for reusing an element, not for validating a simulator",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    29,
+    30,
+    31
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "ISO 26262-8",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t75",
+    "t234",
+    "t289"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No standard or assessor statement accepting a legacy system's field history as the reference for validating a simulator was found.",
+   "quote": "no standard or assessor statement accepting a legacy system's field history as the reference for validating a simulator was found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    29,
+    30,
+    31
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t234",
+    "t71"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Columbia's Crater model is the canonical false-confidence case, illustrating the danger of extrapolation.",
+   "quote": "The canonical false-confidence case is Columbia's Crater model, and the lesson is extrapolation.",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    32,
+    33,
+    34,
+    35,
+    36
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "Columbia",
+     "kind": "machine"
+    },
+    {
+     "name": "Crater",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t267",
+    "t261",
+    "t319"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The debris assessed with Columbia's Crater model was estimated at about 400 times the size in the model's test database; an early briefing said 640 times.",
+   "quote": "The debris was estimated at about 400 times (an early briefing said 640 times) the size in the model's test database",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    32,
+    33,
+    34,
+    35,
+    36
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "Columbia",
+     "kind": "machine"
+    },
+    {
+     "name": "Crater",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t261",
+    "t267",
+    "t319"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The conservative bias of Columbia's Crater model was assumed to persist outside the model's test domain.",
+   "quote": "the model's conservative bias was assumed to persist outside that domain",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    32,
+    33,
+    34,
+    35,
+    36
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "Columbia",
+     "kind": "machine"
+    },
+    {
+     "name": "Crater",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t261",
+    "t267",
+    "t319"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Columbia's Crater model output outside its validated envelope was reinterpreted by judgment.",
+   "quote": "its out-of-envelope output was reinterpreted by judgment.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    32,
+    33,
+    34,
+    35,
+    36
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "Columbia",
+     "kind": "machine"
+    },
+    {
+     "name": "Crater",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t261",
+    "t267",
+    "t319"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Independent AEB tests revealed nighttime performance cliffs that daytime protocols did not reveal, with pedestrian avoidance at night of 0% in 2019 and 60% in 2025.",
+   "quote": "Independent AEB tests also show performance cliffs at night that daytime protocols did not reveal: 0% pedestrian avoidance at night in 2019, 60% in 2025.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    32,
+    33,
+    34,
+    35,
+    36
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t27",
+    "t102",
+    "t262",
+    "t25"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Decision makers and assessors expect a fixed reporting set and a declared validation envelope for simulation.",
+   "quote": "Decision makers and assessors expect a fixed reporting set and a declared envelope.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    37,
+    6,
+    4
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t269",
+    "t261",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NASA-STD-7009 requires a best estimate, an uncertainty statement, a factor-by-factor credibility assessment, explicit caveats on use outside the validated envelope and the risk of acting on the result.",
+   "quote": "NASA-STD-7009 requires a best estimate, an uncertainty statement, a factor-by-factor credibility assessment, explicit caveats on use outside the validated envelope and the risk of acting on the result",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    37,
+    6,
+    4
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "NASA-STD-7009",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t242",
+    "t269",
+    "t240",
+    "t261",
+    "t259"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "EU 2022/1426 requires the credibility assessment to define the envelope in which the virtual tool can be used.",
+   "quote": "EU 2022/1426 requires the credibility assessment to \"define the envelope in which the virtual tool can be used\".",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    37,
+    6,
+    4
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "EU 2022/1426",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t261",
+    "t234",
+    "t269"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Calibration data, validation data and withheld confirmation data must be kept separate for simulation credibility.",
+   "quote": "Calibration data, validation data and withheld confirmation data must be kept separate",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    37,
+    6,
+    4
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t263",
+    "t231",
+    "t220"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Failed simulation validation cases must remain in the record.",
+   "quote": "failed validation cases must stay in the record.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    37,
+    6,
+    4
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t269",
+    "t341",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The four-month validation window is feasible only if simulation credibility work is finished before the prototype arrives.",
+   "quote": "The four-month window is only feasible if the credibility work is finished before the prototype arrives.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t234",
+    "t42",
+    "t344"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Context-of-use definitions, the parameterized machine-family model, scenario catalogue, sensor characterization, field-data ingestion, acceptance metrics, uncertainty budget, physical-test design and agreement with the assessor must be mature by mid-2027.",
+   "quote": "The context-of-use definitions, parameterized machine-family model, scenario catalogue, sensor characterization, field-data ingestion, acceptance metrics, uncertainty budget, physical-test design and agreement with the assessor must be mature by mid-2027",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t43",
+    "t238",
+    "t269",
+    "t62"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The four-month validation window should be a confirmation and discrepancy-resolution campaign, rather than the first iteration of simulation methodology.",
+   "quote": "so that the four months are a confirmation and discrepancy-resolution campaign rather than the first iteration of simulation methodology.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t233",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No standard guarantees that a first-time simulation organization can meet the four-month validation schedule.",
+   "quote": "No standard guarantees that a first-time simulation organization can meet that schedule.",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t271",
+    "t344",
+    "t234"
+   ],
+   "importance": 3
+  }
+ ]
+}

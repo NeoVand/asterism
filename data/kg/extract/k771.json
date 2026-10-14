@@ -1,0 +1,254 @@
+{
+ "chunkId": "k771",
+ "hash": "66f837e1318bf046",
+ "facts": [
+  {
+   "text": "Combinatorial testing selects a small test set that guarantees every combination of values of any t factors appears at least once; pairwise testing provides this guarantee for any two factors.",
+   "quote": "Combinatorial testing chooses a small set of tests that still guarantees every combination of values of any t factors (for pairwise testing, any two) appears at least once.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t202"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NIST (the National Institute of Standards and Technology) found that most software bugs and failures are caused by one or two parameters, with progressively fewer caused by three or more, up to about six parameters.",
+   "quote": "NIST (the National Institute of Standards and Technology) found that \"most software bugs and failures are caused by one or two parameters, with progressively fewer by three or more\", up to about six.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "National Institute of Standards and Technology",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t202"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NIST reports fault detection equal to exhaustive testing with a 20 to 700 times reduction in test-set size using combinatorial testing in software research.",
+   "quote": "It reports fault detection equal to exhaustive testing with a 20 to 700 times reduction in test-set size.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "National Institute of Standards and Technology",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t202",
+    "t198"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NIST's ACTS (Automated Combinatorial Testing for Software) generator is public domain.",
+   "quote": "Its generator, ACTS (Automated Combinatorial Testing for Software), is public domain",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "National Institute of Standards and Technology",
+     "kind": "organization"
+    },
+    {
+     "name": "ACTS (Automated Combinatorial Testing for Software)",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t202",
+    "t327",
+    "t334"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "PICT (Pairwise Independent Combinatorial Testing) is an open-source combinatorial test generator.",
+   "quote": "PICT (Pairwise Independent Combinatorial Testing) is an open-source generator",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "PICT (Pairwise Independent Combinatorial Testing)",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t202",
+    "t327",
+    "t334"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Commercial test-design tools also perform combinatorial test generation.",
+   "quote": "commercial test-design tools do the same job [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t202",
+    "t327"
+   ],
+   "importance": 1
+  },
+  {
+   "text": "The discrete factors for combinatorial testing of the braking system are site type, weather, light, object type, machine model and sensor configuration.",
+   "quote": "For the braking system, the discrete factors are site type, weather, light, object type, machine model and sensor configuration.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t202",
+    "t199",
+    "t22"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A covering array for the braking system can guarantee that every machine model is tested in every weather type with every object type without running the full grid.",
+   "quote": "A covering array guarantees that, for example, every machine model has been tested in every weather type with every object type, without running the full grid.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t202",
+    "t198",
+    "t143"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A covering array does not establish coverage of continuous ranges or rates, or of failures that require more than t factors to align.",
+   "quote": "It says nothing about continuous ranges (a speed of 7.3 kilometers per hour is not a \"level\"), nothing about rates, and nothing about failures that need more than t factors to line up [Chapter 9].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t202",
+    "t199",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Chapter 9 recommends covering arrays for machine-by-sensor-by-weather-by-scenario configuration coverage.",
+   "quote": "Chapter 9 recommends covering arrays for \"machine by sensor by weather by scenario configuration coverage\".",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t202",
+    "t143"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Evidence that low-order interactions explain most bugs comes from software, not from camera, radar or lidar failures caused by coupled weather, contamination, geometry and signal processing.",
+   "quote": "the evidence that low-order interactions explain most bugs comes from software, not from camera, radar or lidar failures caused by coupled weather, contamination, geometry and signal processing.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t202",
+    "t85",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Whether the software interaction rule carries over to perception failures is uncertain.",
+   "quote": "Whether the \"interaction rule\" carries over to perception is listed as uncertain",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t202",
+    "t85"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "T-way test designs for perception should be supplemented by physics-guided interaction hypotheses and failure-seeking search.",
+   "quote": "t-way designs should be supplemented by physics-guided interaction hypotheses and by failure-seeking search [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t202",
+    "t205",
+    "t85"
+   ],
+   "importance": 3
+  }
+ ]
+}

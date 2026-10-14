@@ -1,0 +1,202 @@
+{
+ "chunkId": "k675",
+ "hash": "4a22443f2cbfe6fc",
+ "facts": [
+  {
+   "text": "Recall, also called true positive rate, is the share of real objects found; precision is the share of reported objects that are real. The F1 score combines precision and recall using their harmonic mean.",
+   "quote": "recall (the true positive rate) is the share of real objects that were found, precision is the share of reports that were real, and the F1 score blends the two.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "F1 score",
+     "kind": "metric"
+    },
+    {
+     "name": "Recall",
+     "kind": "metric"
+    },
+    {
+     "name": "Precision",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t109"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Broader synthetic coverage can raise mean average precision (mAP) even when real and simulated data differ, making mAP potentially misleading as a perception-performance measure.",
+   "quote": "mAP can mislead, because broader synthetic coverage can raise it even when real and simulated data differ",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Mean average precision (mAP)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t109",
+    "t114",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Pre-training on synthetic fog gained at most 0.0117 mean average precision (mAP) over a real-only baseline.",
+   "quote": "pre-training on synthetic fog gained at most 0.0117 mAP over a real-only baseline [Chapter 6]",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Mean average precision (mAP)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t114",
+    "t102",
+    "t109",
+    "t221"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The recommended detection-performance baseline reports probability of detection per encounter, or recall, by object class, distance band and condition, using curves or bins rather than one fleet average that hides weak conditions.",
+   "quote": "recommended baseline reports probability of detection per encounter, that is recall, by object class, distance band and condition, as curves or bins rather than one fleet average that hides weak conditions [Chapter 7]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "Recall",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t109",
+    "t221",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An automatic labeler reached recall of 0.88 to 0.98 with precision of only 0.52, demonstrating why both recall and precision are needed to describe detection performance.",
+   "quote": "An automatic labeler that reached recall of 0.88 to 0.98 with precision of only 0.52 shows why both numbers are needed [Chapter 7]",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "Recall",
+     "kind": "metric"
+    },
+    {
+     "name": "Precision",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t109",
+    "t106"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Per-frame precision and recall from systems with different sensors are not comparable.",
+   "quote": "Per-frame precision and recall from systems with different sensors are not comparable",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "Recall",
+     "kind": "metric"
+    },
+    {
+     "name": "Precision",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t109",
+    "t222",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Old and new detection systems should be compared on encounters and warnings in world coordinates rather than per-frame precision and recall.",
+   "quote": "old and new systems should be compared on encounters and warnings in world coordinates [Chapter 7]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t109",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A detection claim must include precision alongside recall: constant alarming can produce 100% recall, but such alarming causes operators to switch systems off.",
+   "quote": "A detection claim without its precision partner is half a claim: a system reaches 100% recall by alarming constantly, and that is exactly the failure that makes operators switch systems off [Chapters 4, 7].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    4,
+    7
+   ],
+   "entities": [
+    {
+     "name": "Recall",
+     "kind": "metric"
+    },
+    {
+     "name": "Precision",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t109",
+    "t34",
+    "t32"
+   ],
+   "importance": 3
+  }
+ ]
+}

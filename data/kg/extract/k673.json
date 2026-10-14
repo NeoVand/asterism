@@ -1,0 +1,326 @@
+{
+ "chunkId": "k673",
+ "hash": "2ad263273f649181",
+ "facts": [
+  {
+   "text": "A dataset is a large collection of recorded and labeled sensor data shared by researchers; a benchmark is a dataset plus an agreed scoring rule that allows different methods to be compared on the same test.",
+   "quote": "A dataset is a large collection of recorded and labeled sensor data that researchers share, and a benchmark is a dataset plus an agreed scoring rule, so that different methods can be compared on the same test.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t107"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MOCS (2021) contains 41,668 images from 174 construction sites with 13 object classes.",
+   "quote": "MOCS (2021) has 41,668 images from 174 construction sites with 13 object classes",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "MOCS",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t107"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "SODA (2022) contains 19,846 images with 15 classes.",
+   "quote": "SODA (2022) has 19,846 images with 15 classes",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "SODA",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t107"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MOCS and SODA are image-only datasets captured from fixed or aerial viewpoints rather than a machine-mounted multi-sensor rig.",
+   "quote": "both are image-only, shot from fixed or aerial viewpoints rather than a machine-mounted multi-sensor rig",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "MOCS",
+     "kind": "dataset"
+    },
+    {
+     "name": "SODA",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t107",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "AIDCON (2024) is an aerial dataset.",
+   "quote": "AIDCON (2024) is aerial",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "AIDCON",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t107"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "RELLIS-3D and RUGD are machine-mounted off-road datasets; GOOSE and TartanDrive are also listed, but were not verified in the research.",
+   "quote": "RELLIS-3D and RUGD are machine-mounted off-road datasets, with GOOSE and TartanDrive, not verified in the research",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "RELLIS-3D",
+     "kind": "dataset"
+    },
+    {
+     "name": "RUGD",
+     "kind": "dataset"
+    },
+    {
+     "name": "GOOSE",
+     "kind": "dataset"
+    },
+    {
+     "name": "TartanDrive",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t107"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No validation for off-road collision warning was found for the listed off-road datasets RELLIS-3D, RUGD, GOOSE and TartanDrive.",
+   "quote": "RELLIS-3D and RUGD are machine-mounted off-road datasets, with GOOSE and TartanDrive, not verified in the research, and none was found validated for off-road collision warning",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "RELLIS-3D",
+     "kind": "dataset"
+    },
+    {
+     "name": "RUGD",
+     "kind": "dataset"
+    },
+    {
+     "name": "GOOSE",
+     "kind": "dataset"
+    },
+    {
+     "name": "TartanDrive",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t107",
+    "t23"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Simulated data compared against RELLIS-3D showed large domain-shift effects.",
+   "quote": "Simulated data compared against RELLIS-3D showed large domain-shift effects",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "RELLIS-3D",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t114",
+    "t165",
+    "t107"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2025 mining dataset contains 30,000 lidar frames from a haul truck, more than 80% of them dusty, and shows state-of-the-art detectors degrading in dust.",
+   "quote": "a 2025 set of 30,000 lidar frames from a haul truck, more than 80% dusty, shows state-of-the-art detectors degrading in dust",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t107",
+    "t92",
+    "t102",
+    "t3",
+    "t86"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "SimMining-3D is a synthetic lidar dataset built because sensor height on mine benches degrades detection.",
+   "quote": "SimMining-3D is a synthetic lidar set built because sensor height on mine benches degrades detection",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    9
+   ],
+   "entities": [
+    {
+     "name": "SimMining-3D",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t114",
+    "t92",
+    "t100",
+    "t86",
+    "t12"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "One open-pit radar dataset exists.",
+   "quote": "one open-pit radar dataset exists",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t107",
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The Waymo Open Dataset is an on-road example illustrating that a reproducible reference needs synchronized lidar and camera data, calibration, vehicle poses and tracked labels.",
+   "quote": "The Waymo Open Dataset, an on-road example, illustrates what a reproducible reference needs: synchronized lidar and camera, calibration, vehicle poses and tracked labels",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "Waymo Open Dataset",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t107",
+    "t101",
+    "t100",
+    "t106"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No public mining or construction adverse-weather dataset suited to sensor-model validation exists, so the manufacturer must collect its own dataset.",
+   "quote": "No public mining or construction adverse-weather dataset suited to sensor-model validation exists, so the manufacturer must collect its own",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t107",
+    "t102",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The existing warning fleet is the one large source of off-road sensor recordings the manufacturer already owns.",
+   "quote": "the existing warning fleet is the one large source of off-road sensor recordings it already owns",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t41",
+    "t121",
+    "t107"
+   ],
+   "importance": 3
+  }
+ ]
+}

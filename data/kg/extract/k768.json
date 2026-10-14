@@ -1,0 +1,196 @@
+{
+ "chunkId": "k768",
+ "hash": "c13b5a633e2209b0",
+ "facts": [
+  {
+   "text": "A parameter is an adjustable quantity in a test, its range is the span of permitted values, and a parameterized scenario family is a scenario description with those quantities left open so that thousands of concrete tests can be generated.",
+   "quote": "A parameter is one adjustable quantity in a test (such as machine speed), its range is the span of values it may take, and a parameterized scenario family is one scenario description with those quantities left open so that thousands of concrete tests can be generated from it.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t199",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet uses a three-level scenario ladder from automated-driving research: functional scenarios describe events in words, logical scenarios add parameter ranges, and concrete scenarios fix every value.",
+   "quote": "The booklet follows a three-level ladder from automated-driving research.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t141",
+    "t199"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The logical scenario example for a machine reversing toward a person includes person distance from 0 to 30 meters, machine speed from 0 to 15 kilometers per hour, approach angle and dust density.",
+   "quote": "A logical scenario adds ranges: person distance 0 to 30 meters, machine speed 0 to 15 kilometers per hour, approach angle, dust density.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t199",
+    "t16",
+    "t14",
+    "t169",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Chapter 9's example scenario family concerns a machine reversing toward an initially visible or occluded human-shaped object while the operator does not brake.",
+   "quote": "Chapter 9's example family, \"machine reverses toward an initially visible or occluded human-shaped object while the operator does not brake\"",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t199",
+    "t16",
+    "t103",
+    "t10"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Chapter 9's reverse-toward-human-shaped-object scenario family varies speed, initial distance, the person's path, slope, load, sensor installation, illumination, visibility, system latency and braking friction; a concrete test selects one vector of these values.",
+   "quote": "has variables such as speed, initial distance, the person's path, slope, load, sensor installation, illumination, visibility, system latency and braking friction. A concrete test is one chosen vector of these values [Chapter 9].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t199",
+    "t141",
+    "t143"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Each parameterized scenario family carries a probability distribution over its parameters derived from field data or expert estimates.",
+   "quote": "Each family carries a probability distribution over its parameters, taken from field data or expert estimates",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t199",
+    "t203"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The probability distribution over a scenario family's parameters enables subsequent rate estimation.",
+   "quote": "That distribution is what later makes rate estimation possible.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t199",
+    "t214",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Scenario families record constraints and parameter dependencies: dust correlates with dry, windy, high-traffic conditions, and a distribution that ignores this dependency misweights the strata.",
+   "quote": "And constraints and dependencies are written down: dust correlates with dry, windy, high-traffic conditions, and a distribution that ignores this misweights the strata [Chapter 9].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t199",
+    "t214",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The scenario catalog stores one parameterized family rather than 10,000 copies of a reverse-toward-worker scenario; sampling, search and estimation methods operate on these families.",
+   "quote": "Instead of storing 10,000 copies of \"reverse toward worker\", the catalog stores one family, and every sampling, search and estimation method in this part operates on such families.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t199",
+    "t142",
+    "t200"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet identifies defensible parameter distributions as the weak point in parameterized scenario-family testing and estimation.",
+   "quote": "The booklet warns that defensible distributions are the weak point",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t199",
+    "t214",
+    "t203"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The only off-road scenario library found by the booklet was built for intelligent off-road vehicles, not collision avoidance.",
+   "quote": "the only off-road scenario library found was built for intelligent off-road vehicles, not collision avoidance [Chapter 9].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t23",
+    "t1"
+   ],
+   "importance": 3
+  }
+ ]
+}

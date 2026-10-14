@@ -1,0 +1,257 @@
+{
+ "chunkId": "k692",
+ "hash": "0d652a4eed6ae0ab",
+ "facts": [
+  {
+   "text": "A model is a simplified mathematical or computer-code description of a real thing that behaves closely enough like the real thing to answer a particular question; model fidelity describes how closely it does so.",
+   "quote": "A model is a simplified description of a real thing, written in mathematics or computer code, that behaves like the real thing closely enough to answer one particular question, and its fidelity is how closely it does so.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A braking model uses machine speed, mass, slope and ground surface to predict the distance the machine travels before stopping.",
+   "quote": "A braking model takes the machine's speed, mass, the slope and the ground surface and gives back how far the machine travels before it stops.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t182",
+    "t170",
+    "t168",
+    "t173",
+    "t174"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A sensor model uses a virtual scene to predict what a camera, radar or lidar would have measured.",
+   "quote": "A sensor model takes a virtual scene and gives back what a camera, radar or lidar would have measured.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t130",
+    "t89",
+    "t94",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A terrain model describes the shape and softness of the ground.",
+   "quote": "A terrain model describes the shape and softness of the ground.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t131"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Model parameters are numbers set once, such as haul-truck mass or the rate at which brakes build up pressure.",
+   "quote": "The parameters are numbers set once, such as the mass of a haul truck or how fast its brakes build up pressure.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t168",
+    "t171",
+    "t3"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Higher model fidelity requires more measurements to build the model, more computing time to run it and more expertise to check it.",
+   "quote": "Higher fidelity costs more: more measurements to build it, more computer time to run it, more expertise to check it.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A simple ground model assigns a friction number to a surface, whereas a high-fidelity ground model simulates sand or clay grain by grain.",
+   "quote": "A simple ground model is a friction number painted onto a surface. A high-fidelity one simulates sand or clay grain by grain",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t181",
+    "t174"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet reports a grain-by-grain ground model running 50 to 200 times slower than real time.",
+   "quote": "the booklet reports such a model running 50 to 200 times slower than real time [Chapter 11].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t125",
+    "t339",
+    "t153"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet describes four sensor-model families, ranging from a few lines of noise added to perfect detection to full simulation of the physics of light or radio waves.",
+   "quote": "For sensors, the booklet describes four families, from a few lines of noise added to a perfect detection up to the full physics of light or radio waves [Chapter 6].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t84",
+    "t128"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Model fidelity is specific to the test question rather than a single rating for an entire simulator: a simulator valid for worker-detection perception tests may still incorrectly predict machine sliding distance on wet gravel.",
+   "quote": "A simulator that predicts well whether a worker is detected may be valid for perception tests and still wrong about how far the machine slides on wet gravel [Chapter 5].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t238",
+    "t85",
+    "t174",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends layered models for each machine family: a fast threshold model for very large parameter sweeps, a stability model to derive deceleration limits and a high-fidelity multibody model only for selected cases that could disprove the simpler models.",
+   "quote": "a fast threshold model for very large parameter sweeps, a stability model to derive deceleration limits, and a high-fidelity multibody model only for the selected cases that could prove the simpler models wrong [Chapter 8].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t125",
+    "t179",
+    "t190",
+    "t199"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The virtual-validation plan relies on models standing in for a prototype that does not yet exist.",
+   "quote": "The whole virtual-validation plan rests on models standing in for a prototype that does not yet exist.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    8,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t127",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A model with less fidelity than a test demands can give false confidence even after millions of virtual runs.",
+   "quote": "If a model is less faithful than the test demands, millions of virtual runs give false confidence",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    8,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t267",
+    "t125",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Using more model fidelity than needed risks spending the four-month virtual-validation window on computing instead of evidence.",
+   "quote": "if it is more faithful than needed, the four-month window is spent on computing instead of on evidence [Chapters 1, 8, 11].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    8,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t43",
+    "t339",
+    "t70"
+   ],
+   "importance": 3
+  }
+ ]
+}

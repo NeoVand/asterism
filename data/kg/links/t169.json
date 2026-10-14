@@ -1,0 +1,115 @@
+{
+ "key": "t169",
+ "hash": "81cd2746cb4aced2",
+ "synopsis": "The corpus recommends transferring collision-mitigation settings across machines through physics-based zones using speed, latency, braking deceleration, sensor pose and machine envelope, rather than copying constants [f138, f6681]. At 5–15 km/h, latency can account for half or more of stopping distance; an engineering example adds 22.2 m before braking for a two-second combined operator and mechanical delay at 40 km/h, but this is not a measured reaction time or collision-speed distribution [f144, f5898, f3220]. Grade and payload can change available deceleration by an amount comparable to deceleration itself, so validation must include machine-state factors and cannot establish avoidance with incorrect simulated terrain-dependent deceleration and pitch [f145, f5900, f5819, f3972]. Vendor operating envelopes are narrow: Volvo CE's January 2023 system operates only in reverse at 3–15 km/h and brakes for 2–3 seconds, while Komatsu's stop function acts only at slow travel speeds or the start of motion; the cited Freightliner tests also show that higher-speed success does not imply lower-speed success [f1238, f10439, f1330]. Detection range must support stopping at the operating speed: dust may require slower driving, lidar positioning error increased by up to 27% with speed in one study, and fidelity for real mining dust remains uncertain [f11330, f4705, f5064]. Planning gaps include the absence of an identified collision-speed distribution and an identified test facility or target supplier capable of handling 50–400 t machines at representative speeds; validity records should explicitly bound speed, acceleration, deceleration, brake timing and friction [f3216, f1166, f8010].",
+ "relations": [
+  {
+   "a": "f138",
+   "b": "f6681",
+   "type": "same",
+   "note": "Both prescribe physics-based transfer rather than copying settings across machine models."
+  },
+  {
+   "a": "f144",
+   "b": "f5898",
+   "type": "same",
+   "note": "Both state latency can contribute half or more of stopping distance at 5–15 km/h."
+  },
+  {
+   "a": "f145",
+   "b": "f5900",
+   "type": "same",
+   "note": "Both identify grade and payload effects comparable to available deceleration itself."
+  },
+  {
+   "a": "f240",
+   "b": "f355",
+   "type": "same",
+   "note": "Both report Volvo's January 2023 reverse-only 3–15 km/h operating envelope."
+  },
+  {
+   "a": "f355",
+   "b": "f609",
+   "type": "same",
+   "note": "Duplicate Volvo operating-envelope claims within Chapter 1."
+  },
+  {
+   "a": "f240",
+   "b": "f10435",
+   "type": "same",
+   "note": "Both report Volvo's January 2023 reverse-only 3–15 km/h operating envelope."
+  },
+  {
+   "a": "f10435",
+   "b": "f10626",
+   "type": "same",
+   "note": "Duplicate Volvo reverse-only speed-envelope claims within Chapter 13."
+  },
+  {
+   "a": "f1238",
+   "b": "f11391",
+   "type": "same",
+   "note": "Both specify reverse-only 3–15 km/h operation and 2–3 seconds of braking."
+  },
+  {
+   "a": "f355",
+   "b": "f1238",
+   "type": "same",
+   "note": "Same Volvo operating envelope; Chapter 2 also specifies braking duration."
+  },
+  {
+   "a": "f420",
+   "b": "f1258",
+   "type": "same",
+   "note": "Both present Volvo's narrow reverse-only speed envelope as a deliberately limited release."
+  },
+  {
+   "a": "f240",
+   "b": "f420",
+   "type": "same",
+   "note": "Same dated Volvo operating envelope, framed in Chapter 1 as staged release."
+  },
+  {
+   "a": "f1235",
+   "b": "f1329",
+   "type": "same",
+   "note": "Both report Cascadia avoidance at 40–85 km/h but not below 40 km/h."
+  },
+  {
+   "a": "f3018",
+   "b": "f3220",
+   "type": "same",
+   "note": "Same two-second, 40 km/h, 22.2 m delay example; latter clarifies its engineering status."
+  },
+  {
+   "a": "f4429",
+   "b": "f4705",
+   "type": "same",
+   "note": "Same speed-related lidar error increase; latter identifies the study and approximate date."
+  },
+  {
+   "a": "f10439",
+   "b": "f10634",
+   "type": "same",
+   "note": "Duplicate Komatsu limitation to slow travel or the start of motion."
+  },
+  {
+   "a": "f5900",
+   "b": "f5819",
+   "type": "supports",
+   "note": "Large grade and payload effects justify testing machine-state influences on attainable deceleration."
+  },
+  {
+   "a": "f2434",
+   "b": "f7012",
+   "type": "elaborates",
+   "note": "Supplies reported ISO 3450 test speeds for the proposed braking-deceleration measurement source."
+  },
+  {
+   "a": "f1329",
+   "b": "f1330",
+   "type": "supports",
+   "note": "The observed speed-dependent outcomes demonstrate that higher-speed success cannot establish lower-speed success."
+  }
+ ]
+}

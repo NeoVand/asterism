@@ -1,0 +1,237 @@
+{
+ "chunkId": "k829",
+ "hash": "89e8917cb25e81f5",
+ "facts": [
+  {
+   "text": "Aleatory uncertainty is natural randomness that additional study cannot remove; epistemic uncertainty is lack of knowledge that more data or a better model could reduce. The two must be tracked separately.",
+   "quote": "Aleatory uncertainty is natural randomness that no amount of study removes; epistemic uncertainty is lack of knowledge that more data or a better model could reduce, and the two must be tracked separately.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t259"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the braking program, aleatory uncertainty includes run-to-run variation in dust density, rain rate, target reflectivity, tire grip and brake temperature.",
+   "quote": "aleatory uncertainty includes run-to-run variation in dust density, rain rate, target reflectivity, tire grip and brake temperature.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t259",
+    "t102",
+    "t174",
+    "t182"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Running the braking simulation repeatedly with uncertain inputs drawn from their distributions estimates how the outcome varies.",
+   "quote": "Running the simulation many times with those inputs drawn from their distributions estimates how the outcome varies.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t259",
+    "t126",
+    "t203"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Epistemic uncertainty in the braking program includes unknown true surface friction, unknown exact sensor response in dense dust, and especially model-form uncertainty: error caused by a simplified model omitting some physics.",
+   "quote": "Epistemic uncertainty includes not knowing a surface's true friction, not knowing a sensor's exact response in dense dust, and above all model-form uncertainty: the error from the model being a simplification that leaves out some physics.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t259",
+    "t125",
+    "t174",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Additional simulation runs do not reduce model-form uncertainty. Ten million simulated runs may estimate variability within the model very precisely while saying almost nothing about an omitted phenomenon.",
+   "quote": "More runs do nothing for model-form uncertainty. The booklet puts it starkly: ten million simulated runs may estimate variability within the model very precisely while saying almost nothing about an omitted phenomenon [Chapter 10].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t259",
+    "t267",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The area validation metric estimates model-form uncertainty from the gap between simulated and measured distributions.",
+   "quote": "The area validation metric estimates model-form uncertainty from the gap between simulated and measured distributions",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    10
+   ],
+   "entities": [
+    {
+     "name": "area validation metric",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t259",
+    "t253",
+    "t249"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The area validation metric can over- or under-compensate when aleatory and epistemic uncertainty are mixed.",
+   "quote": "but can over- or under-compensate when the two kinds are mixed",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    10
+   ],
+   "entities": [
+    {
+     "name": "area validation metric",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t259",
+    "t253"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Plain mean and RMSE errors cannot accommodate both aleatory and epistemic uncertainty in stochastic radar detections.",
+   "quote": "plain mean and RMSE errors cannot accommodate both in stochastic radar detections [Chapters 6, 10].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    10
+   ],
+   "entities": [
+    {
+     "name": "RMSE",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t259",
+    "t255",
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Even a hand-built virtual site carries epistemic risk because undocumented assumptions can become treated as truth.",
+   "quote": "Even a hand-built virtual site carries epistemic risk: undocumented assumptions can become \"truth\" [Chapter 5].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t259",
+    "t130",
+    "t267"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet asks the safety board to distinguish aleatory from epistemic uncertainty, as NASA and nuclear practice do.",
+   "quote": "The booklet asks the safety board to distinguish the two, as NASA and nuclear practice do",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "NASA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t259",
+    "t71",
+    "t245"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The credibility of rare-event simulation results, such as a missed detection, depends on input-distribution validity and tail modeling rather than run count.",
+   "quote": "especially for rare events such as a missed detection, whose credibility depends on input-distribution validity and tail modeling rather than on run count [Chapter 10].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t259",
+    "t144",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The simulation specialist asks for proof that simulation results are not dominated by model uncertainty.",
+   "quote": "The simulation specialist asks for proof that results are not dominated by model uncertainty [Chapter 13].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t268",
+    "t259",
+    "t234"
+   ],
+   "importance": 3
+  }
+ ]
+}

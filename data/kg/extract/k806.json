@@ -1,0 +1,133 @@
+{
+ "chunkId": "k806",
+ "hash": "06b56e5c8b514d09",
+ "facts": [
+  {
+   "text": "Code verification checks that simulation software has no errors in how it solves its equations; solution verification estimates the numerical error remaining in a particular run.",
+   "quote": "Code verification checks that the simulation software has no errors in how it solves its equations; solution verification estimates how much numerical error remains in one particular run.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t236"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Code verification tests simulation software against problems with known exact answers to catch programming mistakes and is performed once per software version.",
+   "quote": "Code verification tests the program against problems with known exact answers to catch programming mistakes; it is done once per software version.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t236"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Solution verification is performed for each kind of simulation run by shortening the time step or refining the spatial grid and checking whether the answer settles.",
+   "quote": "Solution verification is done for each kind of run: the engineer shortens the time step or refines the grid and watches whether the answer settles.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t236"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "If halving a simulation time step changes stopping distance from 41.9 m to 41.2 m, the numerical error is of that order and must be included in the uncertainty budget.",
+   "quote": "If a stopping distance moves from 41.9 m to 41.2 m when the time step is halved, the numerical error is of that order and belongs in the uncertainty budget.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t236",
+    "t170",
+    "t235"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The space agency standard lists “implementation and solution verification” as a simulation credibility factor.",
+   "quote": "The space agency standard lists \"implementation and solution verification\" as a credibility factor",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t236",
+    "t240"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The shared structure of all the simulation credibility frameworks places code and solution verification before any comparison with physical data.",
+   "quote": "the shared structure of all the frameworks places \"verify code and solution\" before any comparison with physical data [Chapter 10].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t236",
+    "t234",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A simulation model cannot be validated honestly until its numerical errors are known, because a numerical artifact may be mistaken for physics or tuned away.",
+   "quote": "Until its numerical errors are known, a model cannot be validated honestly, because a numerical artifact may be mistaken for physics or tuned away.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t236",
+    "t237",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet's assessor checklist asks for verification evidence that simulation equations were implemented and solved correctly rather than correlated after tuning.",
+   "quote": "The booklet's assessor checklist asks for verification evidence showing that the equations were \"implemented and solved correctly rather than correlated after tuning\" [Chapter 10].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t236",
+    "t269",
+    "t237"
+   ],
+   "importance": 3
+  }
+ ]
+}

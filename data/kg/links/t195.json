@@ -1,0 +1,115 @@
+{
+ "key": "t195",
+ "hash": "1b217573a2d8feb4",
+ "synopsis": "Automatic braking can create hazards of its own—operator jolts, shifted or spilled loads, slope instability, rear-end impacts and rollback—and stopping before an object is therefore not a complete safety result [f11877, f2896]. Risk varies by machine and operation, requiring machine-specific hazard analysis and potentially context-dependent braking rather than a universal fastest-stop command; Komatsu specifically requires KomVision to be off during trailer loading because rapid stopping can destabilize the machine [f808, f1977, f1975, f1646]. Validation must address both failure to brake and unsafe or unnecessary braking: shadow mode cannot establish closed-loop secondary effects, whereas branched closed-loop SIL or HIL evaluates stopping distance, clearance and secondary hazards [f5816, f968, f5529]. Most secondary hazards are reported rather than measured: off-road event frequencies and deceleration injury thresholds were not found, worker reports of jolting remain unresolved against MSHA's lack of known injuries, and on-road evidence varies—a reported 20% increase in rear-end strikes contrasts with no collision-producing loss of following distance in the cited Tesla investigation [f11878, f3613, f3612, f3619, f3032, f1503]. Post-stop safety also matters: ISO 21815-3 warns against rollaway when intervention ends and recommends operator action, such as applying the parking brake, before braking is released [f6157, f6158].",
+ "relations": [
+  {
+   "a": "f1241",
+   "b": "f1646",
+   "type": "same",
+   "note": "Both require disabling Komatsu's stop function during trailer loading because rapid stops destabilize."
+  },
+  {
+   "a": "f1241",
+   "b": "f11427",
+   "type": "same",
+   "note": "Glossary restates Komatsu's trailer-loading shutdown requirement."
+  },
+  {
+   "a": "f1646",
+   "b": "f11427",
+   "type": "same",
+   "note": "Both state KomVision must be off during trailer loading."
+  },
+  {
+   "a": "f1537",
+   "b": "f1974",
+   "type": "same",
+   "note": "Both attribute rapid-stop instability to Komatsu's report."
+  },
+  {
+   "a": "f809",
+   "b": "f11891",
+   "type": "same",
+   "note": "Both require hazard analysis rather than assuming earlier stopping is safe."
+  },
+  {
+   "a": "f6158",
+   "b": "f11887",
+   "type": "same",
+   "note": "Both recommend operator action before brake release to prevent rollaway."
+  },
+  {
+   "a": "f5940",
+   "b": "f11887",
+   "type": "same",
+   "note": "Both recommend retaining braking until operator action where rollaway is possible."
+  },
+  {
+   "a": "f5940",
+   "b": "f6158",
+   "type": "same",
+   "note": "Both describe operator-controlled release of collision-system braking."
+  },
+  {
+   "a": "f596",
+   "b": "f968",
+   "type": "elaborates",
+   "note": "Broader shadow-mode limitations include following-machine collisions and other closed-loop effects."
+  },
+  {
+   "a": "f1537",
+   "b": "f1241",
+   "type": "supports",
+   "note": "Rapid-stop instability explains the trailer-loading shutdown requirement."
+  },
+  {
+   "a": "f6287",
+   "b": "f117",
+   "type": "supports",
+   "note": "Combined longitudinal and lateral load transfer explains slope-related stop instability."
+  },
+  {
+   "a": "f6291",
+   "b": "f11413",
+   "type": "elaborates",
+   "note": "Glossary specifies articulated-hauler turning and side-slope manifestations of altered articulation dynamics."
+  },
+  {
+   "a": "f6157",
+   "b": "f11887",
+   "type": "depends",
+   "note": "Preventing rollaway motivates requiring operator action before brake release."
+  },
+  {
+   "a": "f968",
+   "b": "f5529",
+   "type": "supports",
+   "note": "Shadow-mode limitations motivate closed-loop testing of secondary hazards."
+  },
+  {
+   "a": "f3613",
+   "b": "f11878",
+   "type": "supports",
+   "note": "Missing off-road event frequencies substantiate the broader lack of measured secondary hazards."
+  },
+  {
+   "a": "f3032",
+   "b": "f11260",
+   "type": "supports",
+   "note": "On-road rear-end strike increase supports concern about following traffic, without quantifying off-road risk."
+  },
+  {
+   "a": "f1977",
+   "b": "f2896",
+   "type": "supports",
+   "note": "Machine-specific hazard analysis explains why stopping before a person is insufficient."
+  },
+  {
+   "a": "f2884",
+   "b": "f5816",
+   "type": "supports",
+   "note": "Unresolved missed-collision versus nuisance-braking trade-off supports evaluating both failure modes."
+  }
+ ]
+}

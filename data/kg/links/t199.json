@@ -1,0 +1,115 @@
+{
+ "key": "t199",
+ "hash": "000437dcb87c22dd",
+ "synopsis": "The booklet recommends structuring validation around an operating-domain taxonomy, a catalog that retains known fatal-accident patterns, and parameterized scenario families with probability distributions—not one exhaustive Cartesian matrix; impossible combinations and conditional factors should be encoded explicitly [f119, f6762]. A parameterized machine and brake model could realistically be working by mid-2027 for a program starting in October 2026, with SIL recommended for sweeping 100+ site types and 10+ scenarios [f67, f5267]. For virtual environments, the proposed route is representative parameterized archetypes anchored to surveyed sites; 15–30 archetypes and 3–5 surveyed sites are explicitly planning assumptions, not evidence of sufficiency [f11501, f11937]. Coverage should be judged against operating-domain parameters rather than site or scenario counts, and broad ranges cannot compensate for omitted failure-generating structures or hazard classes nobody has conceived [f4063, f10781, f3792, f789]. Probability distributions derived from field data or expert estimates enable later field-success estimates, but ignoring dependencies such as dust occurring with dry, windy, high-traffic conditions misweights the test strata [f6761, f13284, f6771]. Simulation is strongest for sweeps inside physically anchored, validated domains: validity is parameter-space specific, and even NIOSH’s 2018 stopping model with six variables at five values each still required validation [f7851, f5072, f5949].",
+ "relations": [
+  {
+   "a": "f3745",
+   "b": "f4063",
+   "type": "same",
+   "note": "Both define sufficiency through operating-domain parameter coverage."
+  },
+  {
+   "a": "f3745",
+   "b": "f11934",
+   "type": "same",
+   "note": "Glossary restates operating-domain coverage as the basis for sufficiency."
+  },
+  {
+   "a": "f4063",
+   "b": "f11934",
+   "type": "same",
+   "note": "Both explicitly favor domain coverage over counting sites."
+  },
+  {
+   "a": "f10781",
+   "b": "f11041",
+   "type": "same",
+   "note": "Duplicate warning against scenario counts without taxonomy or parameter boundaries."
+  },
+  {
+   "a": "f11501",
+   "b": "f11940",
+   "type": "same",
+   "note": "Duplicate recommendation for representative parameterized sites anchored to surveyed sites."
+  },
+  {
+   "a": "f11501",
+   "b": "f13117",
+   "type": "same",
+   "note": "Both recommend parameterized representative sites anchored to surveyed real sites."
+  },
+  {
+   "a": "f11940",
+   "b": "f13117",
+   "type": "same",
+   "note": "Hybrid environment factory restates the anchored representative-site library recommendation."
+  },
+  {
+   "a": "f4085",
+   "b": "f11498",
+   "type": "same",
+   "note": "Glossary repeats suggested job-site operating-domain parameters with less object-class detail."
+  },
+  {
+   "a": "f6761",
+   "b": "f13284",
+   "type": "same",
+   "note": "Both link field-derived or expert-estimated parameter distributions to later field-rate estimation."
+  },
+  {
+   "a": "f119",
+   "b": "f6703",
+   "type": "same",
+   "note": "Both prescribe operating domain, scenario catalog, and parameterized families together."
+  },
+  {
+   "a": "f11937",
+   "b": "f11501",
+   "type": "elaborates",
+   "note": "Adds tentative archetype and surveyed-site counts, explicitly not evidence."
+  },
+  {
+   "a": "f6762",
+   "b": "f119",
+   "type": "supports",
+   "note": "Impossible Cartesian combinations justify a structured test space instead of one exhaustive matrix."
+  },
+  {
+   "a": "f6771",
+   "b": "f6761",
+   "type": "elaborates",
+   "note": "Parameter distributions must preserve environmental dependencies to avoid misweighted strata."
+  },
+  {
+   "a": "f10669",
+   "b": "f6761",
+   "type": "supports",
+   "note": "Field-derived distributions address the objection that scripted scenarios omit actual site conditions."
+  },
+  {
+   "a": "f5072",
+   "b": "f7851",
+   "type": "supports",
+   "note": "Parameter-specific validity explains restricting replacement sweeps to physically anchored validated domains."
+  },
+  {
+   "a": "f3792",
+   "b": "f10781",
+   "type": "supports",
+   "note": "Broad ranges can omit failure structure, reinforcing warnings against raw scenario counts."
+  },
+  {
+   "a": "f13060",
+   "b": "f6407",
+   "type": "elaborates",
+   "note": "Places the fast sweep model within a layered machine-family modeling strategy."
+  },
+  {
+   "a": "f6413",
+   "b": "f8603",
+   "type": "elaborates",
+   "note": "Specifies friction-class parameterization for the simpler soil models recommended for regression."
+  }
+ ]
+}

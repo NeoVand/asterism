@@ -1,0 +1,115 @@
+{
+ "key": "t171",
+ "hash": "e96c8496431cf3fb",
+ "synopsis": "Brake dead time runs from brake command to the first braking effect, while build-up time continues until full braking force; ISO 3450 stopping distance includes both but excludes operator reaction time [f13664, f13674, f5976]. At 5–15 km/h, latency can account for half or more of stopping distance, and a half-second error in assumed dead time causes about 2 m of stopping-distance error at 15 km/h [f5898, f13682]. Published architecture-specific examples include under 0.3 s for a 2026 tracked-vehicle electro-hydraulic brake, 0.41 s for a 2025 mining electric vehicle brake-by-wire system, and historic retarder lags of 1–2 s; MSHA instead prescribes weight-class response assumptions of 0.5–2.5 s plus one second of operator time [f5893, f5894, f5897, f6053, f6058]. Queensland's two-second, 22.2 m delay example at 40 km/h combines operator reaction and mechanical delay, so it is not a measured automatic-brake response [f3220]. Modern production-loader, articulated-hauler and haul-truck delay distributions were not found, so prototype testing should measure the automated braking path before large scenario sweeps and characterize timing variability as well as average delay [f13683, f13684, f12573, f13678, f13680]. The recommended core is a calibrated point-mass stopping model with measured latency, build-up lag and worst-case deceleration by grade, payload and surface, validated against the full detection-to-position timing chain rather than minimum stopping distance alone [f146, f7786].",
+ "relations": [
+  {
+   "a": "f146",
+   "b": "f5905",
+   "type": "same",
+   "note": "Both recommend the same calibrated point-mass stopping model."
+  },
+  {
+   "a": "f146",
+   "b": "f13663",
+   "type": "same",
+   "note": "Glossary restates the core model recommendation, adding selective higher fidelity."
+  },
+  {
+   "a": "f5905",
+   "b": "f13663",
+   "type": "same",
+   "note": "Same core model with measured latency, build-up lag and worst-case deceleration."
+  },
+  {
+   "a": "f3018",
+   "b": "f3473",
+   "type": "same",
+   "note": "Same two-second combined delay and 22.2 metres at 40 km/h."
+  },
+  {
+   "a": "f3220",
+   "b": "f3473",
+   "type": "same",
+   "note": "Same Queensland example; f3220 clarifies that it is not a measurement."
+  },
+  {
+   "a": "f3312",
+   "b": "f3473",
+   "type": "same",
+   "note": "Same Queensland two-second combined operator and mechanical delay assumption."
+  },
+  {
+   "a": "f252",
+   "b": "f5899",
+   "type": "same",
+   "note": "Both report missing modern production-machine brake-delay distributions."
+  },
+  {
+   "a": "f5899",
+   "b": "f13683",
+   "type": "same",
+   "note": "Glossary repeats the evidence gap and specifies brake architectures."
+  },
+  {
+   "a": "f12565",
+   "b": "f13684",
+   "type": "same",
+   "note": "Both identify missing production-machine timing evidence and require measurement."
+  },
+  {
+   "a": "f5976",
+   "b": "f6051",
+   "type": "same",
+   "note": "Same ISO 3450 stopping-distance boundary and exclusion of operator reaction."
+  },
+  {
+   "a": "f5976",
+   "b": "f13674",
+   "type": "same",
+   "note": "Glossary explicitly identifies dead time and build-up within ISO stopping distance."
+  },
+  {
+   "a": "f5990",
+   "b": "f13671",
+   "type": "same",
+   "note": "Same MSHA weight-dependent response assumptions; glossary gives endpoint classes."
+  },
+  {
+   "a": "f5989",
+   "b": "f6058",
+   "type": "same",
+   "note": "Same MSHA response-time assumptions and additional one-second operator response."
+  },
+  {
+   "a": "f5898",
+   "b": "f13681",
+   "type": "same",
+   "note": "Both say delay can equal or exceed braking distance at work-site speeds."
+  },
+  {
+   "a": "f717",
+   "b": "f12573",
+   "type": "same",
+   "note": "Both prioritize prototype latency, detection-range and brake-timing tests."
+  },
+  {
+   "a": "f13677",
+   "b": "f13678",
+   "type": "supports",
+   "note": "Automated-path electronics affect dead time, requiring automated-path measurements."
+  },
+  {
+   "a": "f13683",
+   "b": "f13684",
+   "type": "depends",
+   "note": "Missing published distributions necessitate machine-specific measurement."
+  },
+  {
+   "a": "f7786",
+   "b": "f5442",
+   "type": "elaborates",
+   "note": "Full-chain validation extends brake-request, response and deceleration metrics through position history."
+  }
+ ]
+}

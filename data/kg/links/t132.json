@@ -1,0 +1,115 @@
+{
+ "key": "t132",
+ "hash": "9abe0585a98a6396",
+ "synopsis": "Photogrammetry, laser scanning and SLAM measure real sites from photographs, laser distances and machine recordings respectively; reality capture is strongest for preserving real geometry and clutter, but does not automatically yield simulation-ready truth [f13133, f3701, f5104]. The booklet recommends parameterised representative site types anchored to surveyed real sites; a possible starting portfolio of 15–30 archetypes and 3–5 lidar-plus-photogrammetry anchors is explicitly a planning assumption, not an evidence-based target [f3705, f4112]. Accuracy claims need reconciliation: survey capture is described as assessable against standards, while some passages restrict that distinction to laser scanning, despite ASPRS 2024 covering photogrammetry and a separate finding reporting controlled photogrammetric centimetre-level accuracy; the cited lidar result of 1.3 cm mean absolute error concerns road scenes [f78, f13136, f3719, f4198, f3721]. Photogrammetry is vulnerable to textureless soil, glare, motion and baked lighting, while forward-facing machine logs leave unseen surfaces that a taller future sensor may expose [f3722, f3873, f3811, f3812]. For the 2027 schedule, reconstruction-quality logs should be collected before sensor selection, with synchronised timestamps and retained calibration; adverse-weather replay should be separated from clean static-site mapping, although no off-road study was found quantifying weather contamination of reconstructed geometry [f4059, f4016, f4043, f4044]. Closed-loop braking requires substantial conversion beyond reconstruction, and captured moving objects need replacement with controllable agents; reusable site representation remains a bottleneck before scenario volume matters [f4000, f3885, f9364].",
+ "relations": [
+  {
+   "a": "f78",
+   "b": "f3718",
+   "type": "same",
+   "note": "Both identify survey capture as the standard-assessable environment-creation family."
+  },
+  {
+   "a": "f3705",
+   "b": "f13117",
+   "type": "same",
+   "note": "Both recommend parameterised site libraries anchored to surveyed real sites."
+  },
+  {
+   "a": "f12705",
+   "b": "f3728",
+   "type": "same",
+   "note": "RTK/INS trajectories alone were insufficient; lidar mapping was added."
+  },
+  {
+   "a": "f13138",
+   "b": "f3721",
+   "type": "same",
+   "note": "Both cite 1.3 cm mean absolute error for road-scene lidar mapping."
+  },
+  {
+   "a": "f3722",
+   "b": "f13134",
+   "type": "same",
+   "note": "Both describe predictable photogrammetry failures from texture, reflections, motion and pure rotation."
+  },
+  {
+   "a": "f3873",
+   "b": "f13135",
+   "type": "same",
+   "note": "Both warn that baked lighting becomes wrong under changed sun positions."
+  },
+  {
+   "a": "f13141",
+   "b": "f3811",
+   "type": "same",
+   "note": "Both identify unobserved surfaces caused by forward-facing route-log visibility bias."
+  },
+  {
+   "a": "f13141",
+   "b": "f3812",
+   "type": "elaborates",
+   "note": "A taller future sensor exposes surfaces absent from route-log reconstructions."
+  },
+  {
+   "a": "f13137",
+   "b": "f3719",
+   "type": "elaborates",
+   "note": "Chapter specifies the ASPRS edition, version and covered survey methods."
+  },
+  {
+   "a": "f13136",
+   "b": "f3857",
+   "type": "same",
+   "note": "Both single out laser survey as directly assessable against accuracy standards."
+  },
+  {
+   "a": "f13136",
+   "b": "f4198",
+   "type": "contradicts",
+   "note": "Laser-only standard assessability conflicts with photogrammetric accuracy measured using ASPRS 2024."
+  },
+  {
+   "a": "f13115",
+   "b": "f15997",
+   "type": "same",
+   "note": "Both enumerate eleven environment-creation families."
+  },
+  {
+   "a": "f13122",
+   "b": "f4059",
+   "type": "same",
+   "note": "Both recommend collecting reconstruction-quality logs before final sensor selection."
+  },
+  {
+   "a": "f13143",
+   "b": "f4016",
+   "type": "elaborates",
+   "note": "Chapter specifies hardware synchronisation and the calibration parameters to retain."
+  },
+  {
+   "a": "f3753",
+   "b": "f13142",
+   "type": "supports",
+   "note": "Preserved clutter and correlations explain captured sites' role as reality anchors."
+  },
+  {
+   "a": "f4031",
+   "b": "f12704",
+   "type": "supports",
+   "note": "Transform and timing errors explain why accurate poses are necessary."
+  },
+  {
+   "a": "f4000",
+   "b": "f5104",
+   "type": "supports",
+   "note": "Required conversion and calibration explain why reconstruction is not automatically simulation-ready."
+  },
+  {
+   "a": "f3883",
+   "b": "f3885",
+   "type": "depends",
+   "note": "Lack of controllable actors motivates replacing captured moving objects with separate agents."
+  }
+ ]
+}

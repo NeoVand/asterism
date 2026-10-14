@@ -1,0 +1,115 @@
+{
+ "key": "t101",
+ "hash": "fac2c7d7e7baf881",
+ "synopsis": "Synchronization is a prerequisite for reconstructing scenes, replaying recordings and assessing braking performance, but the existing warning system's retention of synchronized raw data and useful labels is not established [f3852, f5232, f1139, f519]. Recordings should preserve hardware timestamps on a common clock, calibration, clock offsets, synchronization status, dropped-data counters and resynchronization events; per-frame timestamps may be insufficient for moving machines with rolling or scanning sensors [f5629, f4016, f4018]. Unsynchronized clocks can create an entirely artificial algorithm latency of 100–300 ms, while smaller errors can reorder approach events; at 15 km/h, a 100 ms timing error shifts measured object position by 42 cm [f5654, f5655, f12738]. The booklet identifies timing and cross-sensor consistency as gaps in its seven sensor questions: realistic individual sensor values do not establish correct fused perception or braking when acquisition, network, controller or actuator timing is wrong [f5092, f5101]. Recommended validation includes known-event tests timestamping every stage from detection to measurable deceleration, independently calibrated and synchronized ground truth, and a dedicated data-pedigree workstream [f6159, f5642, f11244, f10346]. Tool integration must align clocks, time bases, dynamics and rendered sensor poses while preserving deterministic ECU replay; ASAM MDF 4.3.0, dated September 2025, provides a standardized recording format that includes synchronization metadata [f8718, f8721, f7115].",
+ "relations": [
+  {
+   "a": "f519",
+   "b": "f11898",
+   "type": "same",
+   "note": "Both leave the warning system's retention of replay-quality data unestablished."
+  },
+  {
+   "a": "f6159",
+   "b": "f12572",
+   "type": "same",
+   "note": "Both recommend known-event latency tests timestamping detection through measurable deceleration."
+  },
+  {
+   "a": "f5654",
+   "b": "f12571",
+   "type": "same",
+   "note": "Both attribute apparent 100–300 ms algorithm latency to recorder clock offsets."
+  },
+  {
+   "a": "f5654",
+   "b": "f12732",
+   "type": "same",
+   "note": "Both warn that apparent 100–300 ms latency may be entirely a timestamp offset."
+  },
+  {
+   "a": "f12571",
+   "b": "f12732",
+   "type": "same",
+   "note": "Glossary duplicates describe clock offsets masquerading as algorithm latency."
+  },
+  {
+   "a": "f5629",
+   "b": "f12736",
+   "type": "same",
+   "note": "Glossary restates common-clock hardware timestamping and synchronization-quality recording guidance."
+  },
+  {
+   "a": "f5092",
+   "b": "f12737",
+   "type": "same",
+   "note": "Both warn realistic sensor values cannot prevent braking failures caused by incorrect timing."
+  },
+  {
+   "a": "f5101",
+   "b": "f12713",
+   "type": "same",
+   "note": "Both require mutually consistent geometry and timing across synthetic sensors."
+  },
+  {
+   "a": "f3852",
+   "b": "f4216",
+   "type": "same",
+   "note": "Both require synchronized machine sensors and calibration for machine-log reconstruction."
+  },
+  {
+   "a": "f3852",
+   "b": "f4049",
+   "type": "same",
+   "note": "Both describe synchronized, calibrated machine logs as the basis for reconstruction."
+  },
+  {
+   "a": "f4216",
+   "b": "f4049",
+   "type": "same",
+   "note": "Both place calibration and synchronization at the foundation of log-based environment reconstruction."
+  },
+  {
+   "a": "f4018",
+   "b": "f5629",
+   "type": "elaborates",
+   "note": "Rolling or scanning acquisition may require finer timing detail than frame-level timestamps."
+  },
+  {
+   "a": "f4031",
+   "b": "f4016",
+   "type": "supports",
+   "note": "Timestamp and transform errors explain why reconstruction needs synchronized recordings and retained calibration."
+  },
+  {
+   "a": "f12738",
+   "b": "f11243",
+   "type": "elaborates",
+   "note": "Quantifies how timing offsets create misleading spatial and stopping-performance errors."
+  },
+  {
+   "a": "f11244",
+   "b": "f11243",
+   "type": "supports",
+   "note": "Controlled on-road research addresses offsets that otherwise masquerade as perception or simulation errors."
+  },
+  {
+   "a": "f5092",
+   "b": "f6159",
+   "type": "supports",
+   "note": "Timing-related braking failures motivate measurements across the complete detection-to-deceleration chain."
+  },
+  {
+   "a": "f5642",
+   "b": "f11242",
+   "type": "same",
+   "note": "Both require reference measurements to include calibration, timing and uncertainty treatment."
+  },
+  {
+   "a": "f519",
+   "b": "f5232",
+   "type": "depends",
+   "note": "Replay feasibility depends on establishing retention of the synchronized data and ground truth it requires."
+  }
+ ]
+}

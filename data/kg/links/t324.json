@@ -1,0 +1,115 @@
+{
+ "key": "t324",
+ "hash": "87de93e0fd577dd2",
+ "synopsis": "The market is modular: road-oriented tool chains are strong in sensors and scenarios but weak in soil physics, while heavy-machine physics tools are mature in dynamics, terrain and hydraulics but have thin sensor and scenario tooling [f195, f15860, f8290]. Braking-test quality depends on the machine model, which must include friction, slope, mass, payload, attachment position, tire or track state, and brake and hydraulic delay; implementation options range from point-mass models with lumped hydraulics to full multibody models with detailed plant [f15960, f15978, f6437, f6454]. Documented off-road options include Altair tracked-machine soft-soil workflows and Project Chrono 10.0.0, released on 27 March 2026, with wheeled, tracked and articulated vehicles on deformable terrain; however, common handling tire models do not work on Chrono's deformable terrain [f6388, f8301, f8496, f15970]. A coupled renderer, dynamics, soil and HIL chain requires high integration effort, and heavy-machine vendors' sensor physics is not independently validated in weather [f13240, f15980]. No public apples-to-apples stopping-distance benchmark or evidence of toolchain superiority was found, and the skeptic's review describes Project Chrono as an unverified lead despite documented capabilities and research use elsewhere in the booklet [f6397, f6561, f6396, f11206, f15908].",
+ "relations": [
+  {
+   "a": "f195",
+   "b": "f15860",
+   "type": "elaborates",
+   "note": "Glossary adds thin soil physics to the same modular-market contrast."
+  },
+  {
+   "a": "f8283",
+   "b": "f15860",
+   "type": "same",
+   "note": "Both describe strong heavy-machine terrain and hydraulics but thin sensor and scenario tooling."
+  },
+  {
+   "a": "f8290",
+   "b": "f15979",
+   "type": "same",
+   "note": "Both report mature dynamics and demonstrated off-road capability."
+  },
+  {
+   "a": "f6397",
+   "b": "f6561",
+   "type": "same",
+   "note": "Both report no comparable stopping-distance benchmark on the same production machines."
+  },
+  {
+   "a": "f6561",
+   "b": "f6396",
+   "type": "supports",
+   "note": "Missing comparative benchmarks support the absence of established toolchain superiority."
+  },
+  {
+   "a": "f8301",
+   "b": "f8496",
+   "type": "same",
+   "note": "Both identify Chrono 10.0.0 and its 27 March 2026 release date."
+  },
+  {
+   "a": "f6387",
+   "b": "f8301",
+   "type": "elaborates",
+   "note": "Version-specific evidence adds articulated vehicles to documented Chrono terrain and vehicle capabilities."
+  },
+  {
+   "a": "f8301",
+   "b": "f15908",
+   "type": "supports",
+   "note": "Documented vehicle and terrain capabilities support the reported off-road research use."
+  },
+  {
+   "a": "f11206",
+   "b": "f15908",
+   "type": "contradicts",
+   "note": "Chrono is called unverified despite reported demonstrated off-road research use."
+  },
+  {
+   "a": "f6387",
+   "b": "f15970",
+   "type": "elaborates",
+   "note": "The tire-model limitation qualifies Chrono's deformable-terrain capability."
+  },
+  {
+   "a": "f6391",
+   "b": "f8443",
+   "type": "same",
+   "note": "Both position IPG dynamics tools away from high-fidelity deformable-soil simulation."
+  },
+  {
+   "a": "f8354",
+   "b": "f15965",
+   "type": "same",
+   "note": "Both list AGX terrain, tire, track, hydraulics and granular modules."
+  },
+  {
+   "a": "f8402",
+   "b": "f15884",
+   "type": "same",
+   "note": "Both state Applied Intuition owns CarSim and TruckSim."
+  },
+  {
+   "a": "f8293",
+   "b": "f15963",
+   "type": "elaborates",
+   "note": "Glossary adds Mevea's physics capabilities and training-simulator use to crane digital twins."
+  },
+  {
+   "a": "f6393",
+   "b": "f6437",
+   "type": "supports",
+   "note": "Lumped-hydraulics availability enables the proposed point-mass braking implementation."
+  },
+  {
+   "a": "f6454",
+   "b": "f15961",
+   "type": "elaborates",
+   "note": "Glossary explains component forces, hydraulics and ground contact underlying full machine dynamics."
+  },
+  {
+   "a": "f13178",
+   "b": "f13240",
+   "type": "supports",
+   "note": "Separate coupled physics tools explain the chain's high integration effort."
+  },
+  {
+   "a": "f8356",
+   "b": "f9147",
+   "type": "elaborates",
+   "note": "Adams' catalog inclusion does not establish off-road evidence."
+  }
+ ]
+}

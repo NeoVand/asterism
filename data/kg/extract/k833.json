@@ -1,0 +1,198 @@
+{
+ "chunkId": "k833",
+ "hash": "195c37b2c33275ab",
+ "facts": [
+  {
+   "text": "Held-out measurements are physical test results deliberately kept away from the people and processes that build and tune a model, so they can later demonstrate that the model predicts reality.",
+   "quote": "Held-out measurements are physical test results deliberately kept away from the people and processes that build and tune the model, so that they can later prove, rather than suggest, that the model predicts reality.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t263",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Before prototype testing begins, physical tests are split into calibration, validation and withheld confirmation sets; the withheld confirmation set remains untouched until the model and its acceptance criteria are frozen.",
+   "quote": "Before prototype testing begins, the physical tests are split into calibration, validation and withheld confirmation sets, and nobody touches the last set until the model and its acceptance criteria are frozen",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t263",
+    "t237",
+    "t62"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Independent validation data must be physical measurements from the real machine or sensor. Comparing a model with another validated model helps debugging but is not accepted as validation because the evidence is circular.",
+   "quote": "The data must be physical, from the real machine or sensor, because comparing one model with another validated model is not accepted as validation; it helps debugging but is circular as evidence",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t263",
+    "t237",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Using every physical case to tune sensor, friction and brake parameters leaves no untouched evidence to demonstrate a model's predictive performance.",
+   "quote": "If every physical case is used to tune sensor, friction and brake parameters, no untouched evidence remains to demonstrate predictive performance",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t263",
+    "t237",
+    "t219"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Reusable-holdout governance allows the tuning team to see only aggregate pass or fail at release gates, never per-case results from the audit set.",
+   "quote": "The governance is the reusable holdout: the tuning team sees only aggregate pass or fail at release gates, never per-case results from the audit set",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t263",
+    "t72"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Blind prediction, in which a team predicts a physical test's outcome before the test is run, is the strongest form of independent validation described in the passage.",
+   "quote": "Blind prediction, in which the team predicts a test's outcome before it is run, is the strongest form",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12
+   ],
+   "entities": [],
+   "terms": [
+    "t263",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In structured challenges, expert teams' blind predictions often diverged from experimental results.",
+   "quote": "in structured challenges, expert teams' blind predictions often diverged from experiment",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12
+   ],
+   "entities": [],
+   "terms": [
+    "t263",
+    "t249"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The existing warning fleet's logs can serve as an independent replay set if the logs were not used to tune the simulation, subject to the limits discussed under field history.",
+   "quote": "The existing warning fleet's logs can serve as an independent replay set that was not used to tune the simulation, within the limits discussed under field history",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t155",
+    "t263",
+    "t41"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Improving virtual metrics while performance on held-out real data stalls or worsens is an early sign that the function is being overfitted to the simulator.",
+   "quote": "\"Virtual metrics keep improving while performance on held-out real data stalls or worsens\" is the early sign that the function is being overfitted to the simulator",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t219",
+    "t263",
+    "t82"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Withheld physical datasets and blind correlation tests are defenses against overfitting the function to the simulator.",
+   "quote": "withheld physical datasets and blind correlation tests are the defense.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t263",
+    "t160",
+    "t219"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The assessor will ask which data calibrated the model and which data remained independent.",
+   "quote": "The assessor will ask which data calibrated the model and which remained independent [Chapters 10, 13].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t71",
+    "t263",
+    "t237",
+    "t269"
+   ],
+   "importance": 3
+  }
+ ]
+}

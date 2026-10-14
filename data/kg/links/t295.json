@@ -1,0 +1,115 @@
+{
+ "key": "t295",
+ "hash": "cbf33b9f6b4aa47b",
+ "synopsis": "The corpus treats UNECE virtual-testing rules as on-road precedents, not direct off-road approval routes: NATM and DCAS require adaptation, and off-road simulation should provide coverage and design evidence qualified against physical tests [f7545, f5112, f2143]. R171 permits virtual testing for hard-to-reproduce scenarios only after rigorous toolchain credibility evaluation, with the Annex 5 assessment supplied to the Type Approval Authority; dSPACE reports that WP.29 added virtual testing at the end of 2024 [f1217, f2488, f1276]. NATM combines simulation with scenario catalogues, track and real-world tests, audit and in-service monitoring; credibility assessment defines the tool's usable envelope, while physical testing remains necessary [f9743, f9745, f10330]. WP.29 adopted R152 virtual-testing supplements in 2025, but the text dated 28 August 2025 leaves physical confirmation-test numbers to manufacturer–authority agreement, unlike the 30% minimum reported in a working document; January 2024 criticism had identified unresolved credibility issues [f7546, f7549, f7547, f7144]. R152's 5.0 m/s² threshold is a minimum braking demand, not measured deceleration, creating tension with glossary wording that calls it deceleration; R131 and R152 also permit conscious driver interruption of emergency braking [f5993, f6307, f13632, f6323]. The booklet proposes transferring R159-style small-cylinder geometry into machine digital twins for coverage and blind-zone analysis, but the reported 50 mm cylinder dimension was not confirmed against the regulation text [f15220, f5603, f5356].",
+ "relations": [
+  {
+   "a": "f171",
+   "b": "f2105",
+   "type": "same",
+   "note": "Both require R171 toolchain credibility assessment; Chapter 3 identifies Annex 5."
+  },
+  {
+   "a": "f2105",
+   "b": "f2488",
+   "type": "elaborates",
+   "note": "The Annex 5 assessment must be supplied to the Type Approval Authority."
+  },
+  {
+   "a": "f1217",
+   "b": "f1278",
+   "type": "same",
+   "note": "Independent and vendor accounts agree on restricted scenarios and rigorous credibility evaluation."
+  },
+  {
+   "a": "f1218",
+   "b": "f7144",
+   "type": "same",
+   "note": "Both report the January 2024 critique of incomplete R152 virtual-testing credibility provisions."
+  },
+  {
+   "a": "f172",
+   "b": "f7549",
+   "type": "same",
+   "note": "Physical confirmation-test numbers are agreed between manufacturer and authority."
+  },
+  {
+   "a": "f7547",
+   "b": "f7548",
+   "type": "same",
+   "note": "Working-document and vendor accounts both report a 30% physical-test minimum."
+  },
+  {
+   "a": "f7547",
+   "b": "f7549",
+   "type": "contradicts",
+   "note": "Working-document minimum differs from adopted text's negotiated test count."
+  },
+  {
+   "a": "f14895",
+   "b": "f7549",
+   "type": "elaborates",
+   "note": "Glossary contrasts the adopted agreement approach with the working document's 30% figure."
+  },
+  {
+   "a": "f6929",
+   "b": "f9745",
+   "type": "same",
+   "note": "Credibility assessment defines the envelope of permitted virtual-tool use."
+  },
+  {
+   "a": "f9745",
+   "b": "f14276",
+   "type": "same",
+   "note": "Glossary restates NATM's credibility-defined virtual-tool envelope."
+  },
+  {
+   "a": "f2106",
+   "b": "f9743",
+   "type": "elaborates",
+   "note": "Planning chapter names the additional NATM pillars beyond simulation, track and real-world tests."
+  },
+  {
+   "a": "f9743",
+   "b": "f10330",
+   "type": "depends",
+   "note": "NATM's multi-pillar logic entails retaining physical validation."
+  },
+  {
+   "a": "f5112",
+   "b": "f2143",
+   "type": "supports",
+   "note": "Off-road adaptation gap supports framing simulation as qualified evidence rather than direct approval."
+  },
+  {
+   "a": "f5891",
+   "b": "f5993",
+   "type": "same",
+   "note": "Both specify R152's minimum 5.0 m/s² braking demand."
+  },
+  {
+   "a": "f5993",
+   "b": "f13951",
+   "type": "same",
+   "note": "Both explicitly distinguish minimum braking demand from measured deceleration."
+  },
+  {
+   "a": "f5993",
+   "b": "f13632",
+   "type": "contradicts",
+   "note": "Glossary calls the threshold deceleration; Chapter 8 explicitly identifies demand, not measured deceleration."
+  },
+  {
+   "a": "f5943",
+   "b": "f6323",
+   "type": "same",
+   "note": "Both regulations permit conscious driver actions to interrupt automatic braking."
+  },
+  {
+   "a": "f5603",
+   "b": "f15220",
+   "type": "elaborates",
+   "note": "Glossary turns the geometric coverage illustration into a pre-hardware digital-twin proposal."
+  }
+ ]
+}

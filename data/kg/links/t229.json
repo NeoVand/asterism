@@ -1,0 +1,115 @@
+{
+ "key": "t229",
+ "hash": "8d73249cf7ab1362",
+ "synopsis": "The booklet recommends transferring collision-mitigation settings through measured physics—not copied thresholds—using speed, latency, braking deceleration, sensor pose and machine envelope; this aims to replace per-model tuning with per-model measurement [f138, f6681, f13909]. It proposes parameterized machine-family models rather than twenty unrelated models, covering dynamics, payload, articulation, sensor installation and environmental effects, with families identified before the 2027 hardware arrives [f7906, f7907, f6124]. This approach addresses a historical three-to-four-year physical-testing and per-model-tuning burden, but whether the product range actually reduces to a few validated families remains an experiment on which the schedule and business case depend [f2030, f6620, f12373]. NIOSH's work used 145 underground haulage machines in five categories to select representative parameter sets, but neither that precedent nor any published ISO rule found establishes how many representative machines validate a manufacturer's family; a published earth-moving benchmark proving model transfer across a machine range was also not found [f6131, f6362, f6132, f6683, f6107]. Partial pooling and transfer optimization are proposed for residual differences, but similarity must be justified, negative transfer is possible, safe multi-task optimization remains research, and no off-road collision-avoidance application of the discussed transfer optimization and meta-learning methods was found [f6682, f646, f7033, f7034, f7035]. Transfer should therefore be checked with envelope-corner validation, bridge tests, a six-week physical anchor campaign after hardware delivery and a substantially different second-machine portability test; extensive bespoke tuning and low reuse should trigger stopping or escalation [f190, f13494, f10946, f10948].",
+ "relations": [
+  {
+   "a": "f138",
+   "b": "f6681",
+   "type": "same",
+   "note": "Both replace copied constants with physics-based zones and per-model measurement."
+  },
+  {
+   "a": "f6681",
+   "b": "f13909",
+   "type": "same",
+   "note": "The glossary restates physical-coordinate transfer and its measured inputs."
+  },
+  {
+   "a": "f138",
+   "b": "f13909",
+   "type": "same",
+   "note": "Both describe transferring settings through physical functions rather than copied constants."
+  },
+  {
+   "a": "f2030",
+   "b": "f6620",
+   "type": "same",
+   "note": "Both report three-to-four-year historical testing and per-model tuning."
+  },
+  {
+   "a": "f7907",
+   "b": "f12363",
+   "type": "same",
+   "note": "The glossary repeats the required machine-family parameter coverage."
+  },
+  {
+   "a": "f10887",
+   "b": "f12373",
+   "type": "same",
+   "note": "Both say reducing the range to validated families remains an experiment."
+  },
+  {
+   "a": "f13494",
+   "b": "f13518",
+   "type": "same",
+   "note": "Both specify the same six-week physical anchor campaign and checks."
+  },
+  {
+   "a": "f6128",
+   "b": "f13626",
+   "type": "same",
+   "note": "Both distinguish variable-payload machines from nearly fixed-mass machines."
+  },
+  {
+   "a": "f6127",
+   "b": "f13757",
+   "type": "same",
+   "note": "Both separate friction-brake machines from hydrostatic or retarder-blended families."
+  },
+  {
+   "a": "f6131",
+   "b": "f6362",
+   "type": "same",
+   "note": "Both describe NIOSH's 145-machine, five-category representative-parameter work."
+  },
+  {
+   "a": "f7010",
+   "b": "f138",
+   "type": "elaborates",
+   "note": "The detection-distance equation operationalizes physics-based zone parameterization."
+  },
+  {
+   "a": "f6679",
+   "b": "f138",
+   "type": "supports",
+   "note": "ISO's kinematics-and-dimensions linkage supports physically parameterized collision-risk zones."
+  },
+  {
+   "a": "f7027",
+   "b": "f646",
+   "type": "supports",
+   "note": "The transfer demonstration does not establish machine exchangeability without justified similarity."
+  },
+  {
+   "a": "f7033",
+   "b": "f645",
+   "type": "supports",
+   "note": "Negative-transfer risk supports pooling only genuinely similar families while retaining uncertainty."
+  },
+  {
+   "a": "f10887",
+   "b": "f7906",
+   "type": "contradicts",
+   "note": "The recommended family approach is not yet demonstrated feasible across the product range."
+  },
+  {
+   "a": "f9368",
+   "b": "f10741",
+   "type": "supports",
+   "note": "Separate sensor tuning undermines cheap reuse and recreates the historical validation burden."
+  },
+  {
+   "a": "f11019",
+   "b": "f190",
+   "type": "elaborates",
+   "note": "Adds architecture-specific physical anchors and retained brake testing to family-domain extension."
+  },
+  {
+   "a": "f10946",
+   "b": "f10948",
+   "type": "depends",
+   "note": "Portability-test results determine stopping or escalation when bespoke tuning dominates."
+  }
+ ]
+}

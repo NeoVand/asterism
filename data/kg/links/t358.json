@@ -1,0 +1,115 @@
+{
+ "key": "t358",
+ "hash": "c9edc5b8a90510e7",
+ "synopsis": "Open-source simulation is viable as a low-license-cost core, but not the lowest-total-cost option: coupling, assets, scenario databases and validation evidence still require engineering and maintenance [f196, f8296, f8303]. The booklet judges compute cheap relative to engineering labor, estimates a labor floor of roughly USD 150,000–260,000 per specialist per year, and warns that even free-software programs can cost seven figures annually [f198, f13550, f13551]. On-road precedents demonstrate substantial resource commitments—PEGASUS ran January 2016–June 2019 with about EUR 34.5 million and 1,791 person-months, while VVM ran July 2019–June 2023 with EUR 47 million—but no public study supplies team size, timeline or total cost for an off-highway build-versus-buy decision [f1204, f1205, f8314]. Direct job-site creation costs, off-road labeling costs, and independently published off-road compute costs and return on investment remain missing; tool budgets therefore need vendor quotations rather than published benchmarks [f3847, f5424, f10615, f8308]. Vehicle-in-the-loop is emerging and capital-intensive, its economic justification for this program remains uncertain, and it is recommended only where extra physical fidelity warrants the investment [f338, f1119, f550]. Planning should quantify money and scarce engineering capacity, address ownership, budgets and licences after September 2027, and avoid counting physical-test substitution savings before they are earned; until simulator trust is established, dual simulator-and-physical-test costs are an explicit inference [f10273, f10179, f10510, f10511].",
+ "relations": [
+  {
+   "a": "f196",
+   "b": "f8296",
+   "type": "same",
+   "note": "Both distinguish low licence cost from lowest total cost."
+  },
+  {
+   "a": "f8303",
+   "b": "f196",
+   "type": "supports",
+   "note": "Continuing integration and maintenance work explains why open source does not minimize total cost."
+  },
+  {
+   "a": "f198",
+   "b": "f8309",
+   "type": "same",
+   "note": "Both judge compute cheap relative to engineering labor."
+  },
+  {
+   "a": "f13550",
+   "b": "f198",
+   "type": "elaborates",
+   "note": "Adds an estimated annual specialist labor floor."
+  },
+  {
+   "a": "f199",
+   "b": "f8314",
+   "type": "same",
+   "note": "Same off-highway build-versus-buy evidence gap; Chapter 11 adds the benchmark search period."
+  },
+  {
+   "a": "f338",
+   "b": "f13401",
+   "type": "same",
+   "note": "Both characterize VIL as emerging and capital-intensive."
+  },
+  {
+   "a": "f550",
+   "b": "f13400",
+   "type": "same",
+   "note": "Identical fidelity-versus-investment condition for using VIL."
+  },
+  {
+   "a": "f1204",
+   "b": "f1544",
+   "type": "same",
+   "note": "Same PEGASUS labor and project-cost totals."
+  },
+  {
+   "a": "f1288",
+   "b": "f1204",
+   "type": "elaborates",
+   "note": "Adds public subsidy and consortium provenance to the PEGASUS cost."
+  },
+  {
+   "a": "f1289",
+   "b": "f1544",
+   "type": "same",
+   "note": "Restates PEGASUS labor, adding its person-year equivalent."
+  },
+  {
+   "a": "f1205",
+   "b": "f1292",
+   "type": "same",
+   "note": "Same VVM dates and volume; latter identifies consortium self-reporting."
+  },
+  {
+   "a": "f1292",
+   "b": "f1547",
+   "type": "same",
+   "note": "Same VVM dates and EUR 47 million volume."
+  },
+  {
+   "a": "f3761",
+   "b": "f3847",
+   "type": "same",
+   "note": "Both report missing direct numeric job-site creation effort and costs."
+  },
+  {
+   "a": "f3761",
+   "b": "f3903",
+   "type": "same",
+   "note": "Both report no person-day or price figures for virtual job sites."
+  },
+  {
+   "a": "f5424",
+   "b": "f12796",
+   "type": "same",
+   "note": "Both report missing ground-truth labeling cost figures."
+  },
+  {
+   "a": "f219",
+   "b": "f10510",
+   "type": "same",
+   "note": "Both flag premature accounting of physical-test substitution savings."
+  },
+  {
+   "a": "f10509",
+   "b": "f10615",
+   "type": "same",
+   "note": "Same missing off-road compute-cost and ROI evidence; latter specifies independent sources."
+  },
+  {
+   "a": "f10511",
+   "b": "f10510",
+   "type": "supports",
+   "note": "Inferred dual costs explain why substitution savings cannot yet be assumed."
+  }
+ ]
+}

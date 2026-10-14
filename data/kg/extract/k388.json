@@ -1,0 +1,625 @@
+{
+ "chunkId": "k388",
+ "hash": "84ace990552c2e28",
+ "facts": [
+  {
+   "text": "The object taxonomy for collision mitigation should be risk-based rather than only perception-class-based.",
+   "quote": "The object taxonomy should be risk-based, not only perception-class-based.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t47",
+    "t85",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Braking depends on object vulnerability, motion uncertainty, collision severity and presence in the swept path, rather than whether a network labels the object as \"person\", \"vehicle\" or \"object\".",
+   "quote": "Braking depends on vulnerability, motion uncertainty, collision severity and whether the object is in the swept path, not on whether a network says \"person\", \"vehicle\" or \"object\".",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t196",
+    "t46",
+    "t86"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3 emphasises intended objects in the collision-risk area.",
+   "quote": "ISO 21815-3 emphasises intended objects in the collision-risk area",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t187"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-3 acknowledges both false positives and false negatives.",
+   "quote": "ISO 21815-3 emphasises intended objects in the collision-risk area and acknowledges both false positives and false negatives [2].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t108"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Operator behaviour changes after automation is introduced; reliance, reaction times and override behaviour under warning-only systems may differ from those under automatic braking.",
+   "quote": "Operator behaviour changes after automation is introduced: reliance, reaction times and override behaviour under a warning-only system may differ from those under automatic braking",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t38",
+    "t35",
+    "t36",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Distributions collected from today's fleet may not fully predict future human-system interaction under automatic braking.",
+   "quote": "so distributions collected from today's fleet may not fully predict future human-system interaction.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t38",
+    "t36"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The EMESRT Human Factors in Design Guide, dated August 2024, covers over-reliance and warning fatigue.",
+   "quote": "Over-reliance and warning fatigue are covered in the EMESRT Human Factors in Design Guide (August 2024) [86].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    86
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMESRT Human Factors in Design Guide",
+     "kind": "publication"
+    },
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t36",
+    "t33",
+    "t304"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An off-road study quantifying operator behaviour changes between warning-only systems and automatic braking for this kind of collision mitigation system was not found.",
+   "quote": "An off-road study quantifying the change for this kind of system was not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t38",
+    "t36",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO/TS 21815-2:2021 defines a J1939 interface for third-party collision-avoidance intervention.",
+   "quote": "ISO/TS 21815-2:2021 defines a J1939 interface for third-party collision-avoidance intervention",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    87
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    },
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t120",
+    "t28"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Mines may mix the manufacturer's collision-avoidance system with tag-based systems, creating a retrofit and interoperability consideration.",
+   "quote": "Retrofit and interoperability: ISO/TS 21815-2:2021 defines a J1939 interface for third-party collision-avoidance intervention, and mines may mix the manufacturer's system with tag-based systems [87].",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    87
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t97",
+    "t23"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Multiple testing can inflate confidence: when hundreds of machine, weather and scenario cells are each checked at 95% confidence, some pass or fail by chance.",
+   "quote": "Multiple testing quietly inflates confidence. If hundreds of machine, weather and scenario cells are each checked at 95% confidence, some pass or fail by chance.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t212",
+    "t143"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Primary statistical claims should be predefined, and simultaneous-confidence or multiplicity methods should be applied where many claims must hold together.",
+   "quote": "Predefine the primary claims and apply simultaneous-confidence or multiplicity methods where many claims must hold together.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "simultaneous-confidence methods",
+     "kind": "method"
+    },
+    {
+     "name": "multiplicity methods",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t218",
+    "t209",
+    "t212"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Cybersecurity of the safety function is a new essential requirement under EU Machinery Regulation 2023/1230.",
+   "quote": "Cybersecurity of the safety function is a new essential requirement under Regulation 2023/1230",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    51,
+    82
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EU Machinery Regulation 2023/1230",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t298",
+    "t48"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 19014-4 excludes cybersecurity from its scope, so cybersecurity of the safety function must be covered separately.",
+   "quote": "ISO 19014-4 leaves cybersecurity outside its scope, so it must be covered separately",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    51,
+    82
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t48"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Unintended command paths become more consequential once a collision mitigation system can command the brakes.",
+   "quote": "unintended command paths become more consequential once the system can command the brakes [51, 82].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    51,
+    82
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t40",
+    "t48",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A late sensor-type decision can invalidate a pre-registered statistical plan.",
+   "quote": "A sensor-type decision taken late can invalidate the pre-registered statistical plan.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t42",
+    "t218",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "If the sensor modality mix changes after strata and sample sizes are frozen, strata dependent on sensor physics, including dust, glare and rain, must be re-derived and the frozen sample re-drawn.",
+   "quote": "If the modality mix changes after the strata and sample sizes are frozen, the strata that depend on sensor physics (dust, glare, rain) must be re-derived and the frozen sample re-drawn",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t203",
+    "t209",
+    "t102",
+    "t218",
+    "t42"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Re-deriving sensor-physics-dependent strata and re-drawing a frozen sample after a sensor modality change costs calendar time within the four-month validation window.",
+   "quote": "the strata that depend on sensor physics (dust, glare, rain) must be re-derived and the frozen sample re-drawn, which costs calendar time inside the four-month window.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t344",
+    "t203",
+    "t42"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 16001's public preview, clause 4.5, states that ODS detection time shall not exceed 300 ms; this limit is used for the physics parameterisation.",
+   "quote": "The chapter relies on ISO 16001's 300 ms detection-time limit for the physics parameterisation; the figure comes from the standard's public preview (clause 4.5, \"the ODS detection time shall not exceed 300 ms\", as quoted in Chapter 3)",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t283",
+    "t88",
+    "t172"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The 300 ms ODS detection-time limit attributed to ISO 16001 was not verified against the full purchased standard.",
+   "quote": "the figure comes from the standard's public preview (clause 4.5, \"the ODS detection time shall not exceed 300 ms\", as quoted in Chapter 3) and was not verified against the full purchased text.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t283",
+    "t88",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The ISO 16001 detection-time limit should be confirmed against the purchased standard before being used in the safety case.",
+   "quote": "Confirm it against the purchased standard before using it in the safety case.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t283",
+    "t67",
+    "t88"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The US MSHA surface mobile equipment final rule, Subpart T, was published in December 2023 and became effective on 19 January 2024.",
+   "quote": "The US MSHA surface mobile equipment rule (Subpart T; final rule published December 2023, effective 19 January 2024)",
+   "kind": "event",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    88,
+    89,
+    90,
+    91
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MSHA",
+     "kind": "organization"
+    },
+    {
+     "name": "MSHA surface mobile equipment rule (Subpart T)",
+     "kind": "regulation"
+    },
+    {
+     "name": "United States",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t300",
+    "t275"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The US MSHA surface mobile equipment rule, Subpart T, requires written safety programs that evaluate technologies.",
+   "quote": "The US MSHA surface mobile equipment rule (Subpart T; final rule published December 2023, effective 19 January 2024) requires written safety programs that evaluate technologies",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    88,
+    89,
+    90,
+    91
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MSHA",
+     "kind": "organization"
+    },
+    {
+     "name": "MSHA surface mobile equipment rule (Subpart T)",
+     "kind": "regulation"
+    },
+    {
+     "name": "United States",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t300"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The US MSHA surface mobile equipment rule, Subpart T, does not mandate collision avoidance on surface equipment.",
+   "quote": "requires written safety programs that evaluate technologies but does not mandate collision avoidance on surface equipment [88, 89, 90, 91].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    88,
+    89,
+    90,
+    91
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MSHA",
+     "kind": "organization"
+    },
+    {
+     "name": "MSHA surface mobile equipment rule (Subpart T)",
+     "kind": "regulation"
+    },
+    {
+     "name": "United States",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t300",
+    "t23"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "MSHA's Powered Haulage Safety page reports that powered haulage caused 13 of the 33 US mining deaths in 2025, or 39%.",
+   "quote": "MSHA's Powered Haulage Safety page reports that in 2025 powered haulage caused 13 of the 33 US mining deaths (39%)",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    92
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MSHA",
+     "kind": "organization"
+    },
+    {
+     "name": "Powered Haulage Safety",
+     "kind": "publication"
+    },
+    {
+     "name": "United States",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t19",
+    "t308"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "MSHA's Powered Haulage Safety page reports that powered haulage caused 426 of the 4,792 US mining non-fatal injuries in 2025, or 9%.",
+   "quote": "MSHA's Powered Haulage Safety page reports that in 2025 powered haulage caused 13 of the 33 US mining deaths (39%) and 426 of the 4,792 non-fatal injuries (9%) [92].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    92
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MSHA",
+     "kind": "organization"
+    },
+    {
+     "name": "Powered Haulage Safety",
+     "kind": "publication"
+    },
+    {
+     "name": "United States",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t19",
+    "t308"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Australian state-specific collision-avoidance requirements were not found in this research.",
+   "quote": "Australian state-specific collision-avoidance requirements were not found in this research",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Australia",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t301",
+    "t23"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Australian state-specific collision-avoidance requirements should be checked before relying on any claim about them.",
+   "quote": "Australian state-specific collision-avoidance requirements were not found in this research and should be checked before relying on any claim.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Australia",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t301",
+    "t23"
+   ],
+   "importance": 3
+  }
+ ]
+}

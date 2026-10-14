@@ -1,0 +1,115 @@
+{
+ "key": "t224",
+ "hash": "85088f1c4728a7f2",
+ "synopsis": "The corpus recommends judging off-road automatic braking through multiple metrics, including detection and missed hazards, nuisance interventions, timing and stopping outcomes, rather than one aggregate score; comparisons require common ground truth and hazard zones [f188, f7818, f5210]. No fleet-statistical acceptance KPIs were found in off-road standards or regulations, and there is no accepted sensor-simulation realism score or agreed simulation-quality metric framework; recommended metrics therefore should not be mistaken for published thresholds [f2603, f92, f8952, f9357, f7818]. Operator acceptance requires task-specific unnecessary-warning and intervention rates, with nuisance interventions weighted equally to missed interventions; these rates require real operations, preferably shadow mode before braking is enabled, because an excellent overall false-positive rate can conceal an unwanted intervention in nearly every loading or dump cycle [f3342, f5931, f11767, f759, f3655]. Coverage and agreement claims need visible gaps, frozen-set comparisons, pre-agreed tolerances and explicit failures: a vendor reports coverage rising from 12% to 87% in six months, but the booklet warns against hiding uncovered cells inside an overall coverage score [f1558, f9880, f6678, f9934]. For a team starting from zero in October 2026, an initial statistical test plan and coverage metrics are considered realistic by mid-2027; the business case should track cost per credible campaign, wall-clock throughput and analyst hours, not merely raw simulated runs [f846, f10748, f10749].",
+ "relations": [
+  {
+   "a": "f92",
+   "b": "f4439",
+   "type": "same",
+   "note": "Both state that sensor simulation lacks an accepted realism score."
+  },
+  {
+   "a": "f8327",
+   "b": "f8952",
+   "type": "same",
+   "note": "Both attribute the absence of standardized simulation-quality metrics to ASAM."
+  },
+  {
+   "a": "f5217",
+   "b": "f8327",
+   "type": "same",
+   "note": "Both report ASAM's lack of standardized sensor-simulation quality metrics."
+  },
+  {
+   "a": "f8919",
+   "b": "f8952",
+   "type": "same",
+   "note": "Both report ASAM's absence of standardized simulation quality or credibility metrics."
+  },
+  {
+   "a": "f1212",
+   "b": "f1558",
+   "type": "same",
+   "note": "Same six-month coverage increase; the latter identifies Foretellix and the developer context."
+  },
+  {
+   "a": "f106",
+   "b": "f5210",
+   "type": "same",
+   "note": "Identical comparison metrics and common ground-truth and hazard-zone requirements."
+  },
+  {
+   "a": "f3342",
+   "b": "f11608",
+   "type": "same",
+   "note": "Both recommend task-stratified nuisance rates rather than false positives per detection."
+  },
+  {
+   "a": "f5931",
+   "b": "f11769",
+   "type": "same",
+   "note": "Both give nuisance interventions equal acceptance weight to missed interventions."
+  },
+  {
+   "a": "f720",
+   "b": "f759",
+   "type": "same",
+   "note": "Both recommend measuring nuisance braking in live shadow mode with braking disabled."
+  },
+  {
+   "a": "f3655",
+   "b": "f11608",
+   "type": "supports",
+   "note": "Cycle-level nuisance burden explains why task-specific rates matter more than aggregate false-positive rates."
+  },
+  {
+   "a": "f11767",
+   "b": "f720",
+   "type": "supports",
+   "note": "Real-operation measurement requirements justify live shadow-mode testing after track tests."
+  },
+  {
+   "a": "f2603",
+   "b": "f7818",
+   "type": "supports",
+   "note": "Missing off-road fleet KPIs reinforce the distinction between recommended metrics and published thresholds."
+  },
+  {
+   "a": "f2502",
+   "b": "f1262",
+   "type": "elaborates",
+   "note": "Required correlation uses some KPI tolerances whose values still await confirmation."
+  },
+  {
+   "a": "f6999",
+   "b": "f6678",
+   "type": "supports",
+   "note": "Tuned-versus-frozen performance gaps expose over-fitting, motivating side-by-side reporting."
+  },
+  {
+   "a": "f7309",
+   "b": "f188",
+   "type": "supports",
+   "note": "Aggregate weights can mask deterioration, supporting multi-metric assessment."
+  },
+  {
+   "a": "f2558",
+   "b": "f7373",
+   "type": "elaborates",
+   "note": "Campaign verdicts expand physical outcomes with detection, intervention, nuisance and sensor-state measures."
+  },
+  {
+   "a": "f9903",
+   "b": "f9934",
+   "type": "supports",
+   "note": "Advance metric locking supports pilot conclusions bounded by pre-agreed metrics and tolerances."
+  },
+  {
+   "a": "f10749",
+   "b": "f10748",
+   "type": "elaborates",
+   "note": "Throughput and analyst effort complement cost per credible campaign in the business case."
+  }
+ ]
+}

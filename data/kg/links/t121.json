@@ -1,0 +1,115 @@
+{
+ "key": "t121",
+ "hash": "1cf1e318b233a785",
+ "synopsis": "The existing warning fleet offers an immediate data source: vendors already log warning events and locations, and the booklet recommends starting sensor and shadow-mode logging in October 2026, continuing through winter toward a recording-and-replay pipeline by mid-2027 [f1254, f97, f7365, f64]. However, the research used no internal recordings or sensor specifications, and neither retention of replay-quality raw data nor use of existing field data to characterize sensors and site conditions was established [f7, f519, f5121]. Useful records need synchronized sensor streams, machine and braking state, calibration, environmental context and defensible ground truth; every warning and intervention should also capture operator response, task phase and whether braking was necessary [f520, f3652]. These logs can support exposure modeling and candidate-braking replay, but operator reactions censor the data, ignored-warning near misses often lack ground truth, and validation use depends on ground truth, consent and data rights [f11615, f1601, f7578, f7943, f8246]. MOSH requires 10 Hz intervention logging, seven days of onboard retention and three months on a server, with operator ID, firmware version and tamper resistance; no universal off-road event logging format was found [f2592, f2932, f2933]. Preserve raw data and model versions, verify platform compatibility with eventual sensors, and do not assume earlier recordings can replace final-hardware data: radar and ultrasonic responses cannot be recovered from camera logs [f10684, f8659, f7870, f84].",
+ "relations": [
+  {
+   "a": "f1254",
+   "b": "f1603",
+   "type": "same",
+   "note": "Both identify vendor warning-event and location logging as an existing data path."
+  },
+  {
+   "a": "f3652",
+   "b": "f11624",
+   "type": "same",
+   "note": "Identical recommended context fields for every warning and intervention."
+  },
+  {
+   "a": "f7578",
+   "b": "f11625",
+   "type": "elaborates",
+   "note": "Operator braking explains censoring; chapter also identifies open-loop and normal-operation biases."
+  },
+  {
+   "a": "f7943",
+   "b": "f11626",
+   "type": "same",
+   "note": "Both identify valuable ignored-warning near misses and their frequent lack of ground truth."
+  },
+  {
+   "a": "f2592",
+   "b": "f2932",
+   "type": "elaborates",
+   "note": "Adds operator identity, firmware version and tamper resistance to MOSH intervention logging."
+  },
+  {
+   "a": "f97",
+   "b": "f5168",
+   "type": "elaborates",
+   "note": "Adds winter continuation to the shared October 2026 recording start."
+  },
+  {
+   "a": "f7365",
+   "b": "f10650",
+   "type": "elaborates",
+   "note": "Explains how pre-prototype shadow logging addresses objections about unmodeled site effects."
+  },
+  {
+   "a": "f519",
+   "b": "f518",
+   "type": "depends",
+   "note": "Replay's projected leverage depends on resolving uncertainty about useful retained data."
+  },
+  {
+   "a": "f520",
+   "b": "f5165",
+   "type": "elaborates",
+   "note": "Specifies recording content needed for credible raw-log replay."
+  },
+  {
+   "a": "f4016",
+   "b": "f520",
+   "type": "elaborates",
+   "note": "Specifies hardware synchronization and calibration details for reconstruction-quality recordings."
+  },
+  {
+   "a": "f5411",
+   "b": "f5209",
+   "type": "depends",
+   "note": "Fair world-coordinate output comparisons require common frames and versioned transforms."
+  },
+  {
+   "a": "f3654",
+   "b": "f1601",
+   "type": "supports",
+   "note": "Video and alarm logs demonstrate how to distinguish unnecessary from legitimate warnings."
+  },
+  {
+   "a": "f6611",
+   "b": "f11615",
+   "type": "supports",
+   "note": "Cheap real scenario distributions support building an early fleet-based exposure model."
+  },
+  {
+   "a": "f7578",
+   "b": "f1601",
+   "type": "elaborates",
+   "note": "Operator-censored logs constrain interpretation of candidate-braking replay estimates."
+  },
+  {
+   "a": "f8246",
+   "b": "f5165",
+   "type": "depends",
+   "note": "Validation replay requires adequate ground truth and permissible data use."
+  },
+  {
+   "a": "f8659",
+   "b": "f8658",
+   "type": "depends",
+   "note": "Using vendor log-ingestion platforms requires checking compatibility with eventual sensors."
+  },
+  {
+   "a": "f7870",
+   "b": "f4059",
+   "type": "elaborates",
+   "note": "Limits reuse of early recordings when validation requires the final hardware setup."
+  },
+  {
+   "a": "f7108",
+   "b": "f10684",
+   "type": "elaborates",
+   "note": "Run manifests provide identifiers, checksums and versions linking preserved evidence to test verdicts."
+  }
+ ]
+}

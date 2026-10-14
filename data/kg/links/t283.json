@@ -1,0 +1,115 @@
+{
+ "key": "t283",
+ "hash": "5c9f89f68378fcf9",
+ "synopsis": "ISO 16001:2017, dated November 2017 and confirmed in 2023, sets performance and test requirements for object-detection systems and visibility aids; its scope is warning and visibility, not braking [f6744, f2181]. The booklet identifies it as the only off-road standard found with hard detection and warning numbers, reporting a maximum detection time of 300 ms, audible warnings at least 3 dB above ambient, and a flashing red light for the most severe warning [f160, f2065, f2066]. It also reports continuous self-checking and no single-action disablement, while noting that the 2017 edition has no dedicated lidar annex [f2067, f2068, f12614]. ISO 5006 and ISO 16001 visibility-type methods support geometric computation of coverage and blind zones for each machine model before hardware arrives, although ISO 5006 was not verified in the research [f5602, f11549, f2197]. ISO 16001 defines a test body, detection zone and detection time, and specifies physical-test-body procedures; evidence that it accepts simulation was not found, and it does not set statistical sample sizes or simulation-credibility rules [f5354, f11232, f11192, f6749]. Although the 300 ms limit is attributed to public-preview clause 4.5 and used in physics parameterisation, it was not verified against the purchased standard and should be confirmed before safety-case reliance [f7493, f7494, f7495].",
+ "relations": [
+  {
+   "a": "f160",
+   "b": "f2063",
+   "type": "same",
+   "note": "Both identify the only off-road standard found with hard detection and warning numbers."
+  },
+  {
+   "a": "f161",
+   "b": "f2070",
+   "type": "same",
+   "note": "Both distinguish warning coverage from braking coverage."
+  },
+  {
+   "a": "f2064",
+   "b": "f6745",
+   "type": "same",
+   "note": "Both require detection within 300 ms."
+  },
+  {
+   "a": "f5354",
+   "b": "f5741",
+   "type": "same",
+   "note": "Duplicate definitions of test body, detection zone and detection time."
+  },
+  {
+   "a": "f2067",
+   "b": "f12130",
+   "type": "same",
+   "note": "Both report mandatory continuous self-checking."
+  },
+  {
+   "a": "f2068",
+   "b": "f12131",
+   "type": "same",
+   "note": "Both prohibit single-action system disablement."
+  },
+  {
+   "a": "f7003",
+   "b": "f14438",
+   "type": "same",
+   "note": "Both prohibit disabling the warning with a single action."
+  },
+  {
+   "a": "f12526",
+   "b": "f13690",
+   "type": "same",
+   "note": "Duplicate glossary statements of the 300 ms detection limit."
+  },
+  {
+   "a": "f11192",
+   "b": "f11237",
+   "type": "same",
+   "note": "Both report missing evidence of simulation acceptance for ISO 16001 and ISO 21815."
+  },
+  {
+   "a": "f2069",
+   "b": "f12614",
+   "type": "elaborates",
+   "note": "The annex inventory details the glossary's missing-lidar-annex finding."
+  },
+  {
+   "a": "f11549",
+   "b": "f5602",
+   "type": "elaborates",
+   "note": "Adds per-model geometry and computation before hardware arrival to the geometric-method example."
+  },
+  {
+   "a": "f11232",
+   "b": "f5155",
+   "type": "elaborates",
+   "note": "Specifies that the testing framework uses a physical test body."
+  },
+  {
+   "a": "f5438",
+   "b": "f5354",
+   "type": "elaborates",
+   "note": "Operationalises detection time and distinguishes it from operator-interface warning latency."
+  },
+  {
+   "a": "f7493",
+   "b": "f7011",
+   "type": "supports",
+   "note": "Public-preview clause supplies the 300 ms cap used in the detection-distance model."
+  },
+  {
+   "a": "f7494",
+   "b": "f7495",
+   "type": "depends",
+   "note": "Missing full-standard verification motivates confirmation before safety-case use."
+  },
+  {
+   "a": "f6745",
+   "b": "f7494",
+   "type": "contradicts",
+   "note": "Categorical requirement attribution is qualified by lack of full-standard verification."
+  },
+  {
+   "a": "f2197",
+   "b": "f11549",
+   "type": "contradicts",
+   "note": "Unverified ISO 5006 evidence qualifies reliance on its proposed geometric methods."
+  },
+  {
+   "a": "f5733",
+   "b": "f5742",
+   "type": "supports",
+   "note": "Mature surveyed-target testing supports prioritising directly relevant off-road standards over passenger-car protocols."
+  }
+ ]
+}

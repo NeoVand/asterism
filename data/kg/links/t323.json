@@ -1,0 +1,115 @@
+{
+ "key": "t323",
+ "hash": "7d311b002fffe905",
+ "synopsis": "Sensor simulation adds a model that must itself be validated; photorealistic appearance alone is insufficient, and camera, lidar, radar and ultrasonic responses require separate simulation layers and material data [f470, f13068, f85, f86]. Across chapters, no validated off-road sensor models or fidelity thresholds were found, standardized quality metrics are lacking, and dust is identified as the biggest gap; evidence for snow, glare and darkness remains weak or absent [f5763, f5764, f5217, f89, f6488]. Lidar is described as the best-validated sensor type, but weather evidence is mostly on-road, and the 2021 lidar dust-cloud model compared with experiments was vendor-coauthored rather than independent evidence of broad off-road qualification [f12604, f7087, f6380]. Planning should start the environment and sensor-model pipeline in October 2026, with calibrated models for one or two sensor types in clear and dusty conditions only conditional mid-2027 targets; production-intent validation depends on sensor selection, mounting and calibration data [f3771, f860, f861]. The recommended use is qualification-quality testing of selected sensor effects and corner cases, feeding detection delay, range and error into braking simulation; compute costs span more than three orders of magnitude, and ten continuously running GPUs over four months provide at most about 29,000 GPU-hours [f4474, f6487, f4451, f8313].",
+ "relations": [
+  {
+   "a": "f470",
+   "b": "f13068",
+   "type": "same",
+   "note": "Both require validation of the additional sensor-simulation model."
+  },
+  {
+   "a": "f5217",
+   "b": "f5691",
+   "type": "same",
+   "note": "Both identify missing standardized sensor-simulation quality metrics."
+  },
+  {
+   "a": "f85",
+   "b": "f13114",
+   "type": "same",
+   "note": "Photorealistic appearance alone does not constitute valid sensor simulation."
+  },
+  {
+   "a": "f89",
+   "b": "f11949",
+   "type": "same",
+   "note": "Both identify dust as the biggest off-road sensor-simulation gap."
+  },
+  {
+   "a": "f6384",
+   "b": "f6488",
+   "type": "same",
+   "note": "Both report missing or weak off-road validation for snow, glare and darkness."
+  },
+  {
+   "a": "f6384",
+   "b": "f6559",
+   "type": "same",
+   "note": "Both report no established off-road sensor-simulation validity for snow, glare and darkness."
+  },
+  {
+   "a": "f6488",
+   "b": "f6559",
+   "type": "same",
+   "note": "Both describe the same adverse-condition validation gap."
+  },
+  {
+   "a": "f10757",
+   "b": "f11008",
+   "type": "same",
+   "note": "Both warn that synthetic appearance can fail to reproduce sensor physics."
+  },
+  {
+   "a": "f4341",
+   "b": "f3741",
+   "type": "supports",
+   "note": "Chrono provides a specific example of real-sensor validation remaining future work."
+  },
+  {
+   "a": "f86",
+   "b": "f3834",
+   "type": "supports",
+   "note": "Separate physical layers explain why visual assets may lack simulation-ready properties."
+  },
+  {
+   "a": "f88",
+   "b": "f86",
+   "type": "elaborates",
+   "note": "Radar specifically needs material properties at 77 GHz, usually measured."
+  },
+  {
+   "a": "f7087",
+   "b": "f12604",
+   "type": "elaborates",
+   "note": "Best-validated lidar still relies mostly on on-road weather evidence."
+  },
+  {
+   "a": "f861",
+   "b": "f860",
+   "type": "depends",
+   "note": "Conditional model targets require sensor selection, mounting and calibration inputs."
+  },
+  {
+   "a": "f4474",
+   "b": "f6487",
+   "type": "elaborates",
+   "note": "Braking simulation receives detection delay, range and error from selected high-fidelity sensor tests."
+  },
+  {
+   "a": "f4921",
+   "b": "f4923",
+   "type": "supports",
+   "note": "Runtime dependence on many configuration variables makes published compute figures unsuitable as constants."
+  },
+  {
+   "a": "f8313",
+   "b": "f75",
+   "type": "supports",
+   "note": "Finite full-fidelity compute capacity reinforces the difficulty of covering all modalities and site types."
+  },
+  {
+   "a": "f5763",
+   "b": "f6379",
+   "type": "supports",
+   "note": "Missing validated off-road models limits simulation-based threshold tuning."
+  },
+  {
+   "a": "f8283",
+   "b": "f8291",
+   "type": "elaborates",
+   "note": "Thin heavy-machine sensor tooling also lacks independent weather validation."
+  }
+ ]
+}

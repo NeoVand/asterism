@@ -1,0 +1,115 @@
+{
+ "key": "t256",
+ "hash": "60ea89e90b6db595",
+ "synopsis": "Across the booklet, visually convincing scenes and improved image-quality scores do not establish sensor fidelity or equivalent detector, tracker and braking behaviour; photorealism is insufficient as validation evidence [f3711, f7071, f10554, f14790]. Radar studies illustrate the gap: RadaRays improved image similarity and produced realistic odometry, yet a detector trained on real data failed to transfer, while the 2025 wheel-loader study reported failure on most simulated cars, partly because material properties were guessed [f4826, f4423]. In a November 2025 point-cloud study, density-aware Chamfer distance correlated best with perception among the metrics compared, but real-versus-simulated scans still averaged 0.63 DCD with only 21% segmentation mIoU; whether these distributional metrics predict safety-relevant perception errors remains uncertain [f4441, f4442, f5067]. Appearance metrics are not universally uninformative: a 2024 study found correlations with visual-odometry behaviour as gamma varied, and camera photorealism may matter, but fidelity must be selected for the sensor and tested requirement rather than ranked by screenshots [f4758, f4331]. Validation should compare withheld real raw data with simulation at sensor-output, perception, task and closed-loop levels, including TTC, trigger distance, false brakes and missed brakes; the booklet identifies function-level perception and fusion validity as a gap in its seven-question scope [f10558, f4444, f12867, f5086]. Practical checks include a pre-registered one-sensor correlation pilot and weather falsification tests against measured degradation, with good virtual metrics but rain-, dust-, night- or glare-clustered field failures treated as warning signs [f10934, f10937, f12455].",
+ "relations": [
+  {
+   "a": "f3711",
+   "b": "f10554",
+   "type": "same",
+   "note": "Realistic scene appearance does not establish validated sensor simulation."
+  },
+  {
+   "a": "f7071",
+   "b": "f12902",
+   "type": "same",
+   "note": "Image-quality metrics did not reliably predict system behaviour."
+  },
+  {
+   "a": "f4558",
+   "b": "f12575",
+   "type": "same",
+   "note": "A convincing camera image can remain physically wrong at the detector."
+  },
+  {
+   "a": "f4441",
+   "b": "f12622",
+   "type": "same",
+   "note": "Both report DCD best correlated with perception in the November 2025 study."
+  },
+  {
+   "a": "f4442",
+   "b": "f12623",
+   "type": "same",
+   "note": "Both report 0.63 DCD and only 21% segmentation agreement."
+  },
+  {
+   "a": "f4441",
+   "b": "f14759",
+   "type": "same",
+   "note": "Both identify DCD as the metric best tracking perception results."
+  },
+  {
+   "a": "f4442",
+   "b": "f14794",
+   "type": "same",
+   "note": "Both report 0.63 DCD alongside 21% segmentation performance."
+  },
+  {
+   "a": "f4826",
+   "b": "f14704",
+   "type": "same",
+   "note": "Improved radar image similarity did not enable real-trained detector transfer."
+  },
+  {
+   "a": "f14704",
+   "b": "f14776",
+   "type": "same",
+   "note": "Both restate improved radar similarity with persistent detector transfer failure."
+  },
+  {
+   "a": "f14776",
+   "b": "f14793",
+   "type": "same",
+   "note": "Same radar transfer failure; the latter specifies most cars were missed."
+  },
+  {
+   "a": "f4818",
+   "b": "f14795",
+   "type": "same",
+   "note": "Broader synthetic coverage can inflate mAP despite domain differences."
+  },
+  {
+   "a": "f5067",
+   "b": "f14766",
+   "type": "same",
+   "note": "Predicting safety-relevant perception errors from distributional metrics remains uncertain."
+  },
+  {
+   "a": "f5086",
+   "b": "f12527",
+   "type": "same",
+   "note": "Function-level validity should be judged through detection, tracking, false brakes and missed brakes."
+  },
+  {
+   "a": "f4444",
+   "b": "f14778",
+   "type": "same",
+   "note": "Image similarity must be accompanied by task-level and closed-loop validation."
+  },
+  {
+   "a": "f4804",
+   "b": "f14767",
+   "type": "same",
+   "note": "Image and field similarity can disagree with downstream task performance."
+  },
+  {
+   "a": "f4826",
+   "b": "f10558",
+   "type": "supports",
+   "note": "Detector transfer failure motivates validating downstream behaviour, not merely appearance."
+  },
+  {
+   "a": "f12867",
+   "b": "f4444",
+   "type": "elaborates",
+   "note": "Matched TTC and trigger-distance comparisons specify braking-relevant task metrics."
+  },
+  {
+   "a": "f4758",
+   "b": "f7071",
+   "type": "contradicts",
+   "note": "Gamma-varied odometry correlations qualify the broader finding that visual metrics are unreliable."
+  }
+ ]
+}

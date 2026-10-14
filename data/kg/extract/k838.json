@@ -1,0 +1,259 @@
+{
+ "chunkId": "k838",
+ "hash": "0f80a77b4d51959c",
+ "facts": [
+  {
+   "text": "The simulation specialist's objections in the booklet's hostile review are that the model is unvalidated, simulator architecture is being frozen against assumed hardware, and metrics risk being chosen for convenience after results are known.",
+   "quote": "the simulation specialist's objections reduce to three: the model is unvalidated, the simulator architecture is being frozen against assumed hardware, and metrics risk being chosen for convenience after the fact.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t268",
+    "t234",
+    "t125",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The simulation specialist's hostile review identifies the simulator as an uncalibrated and unvalidated measurement instrument with no defined validity envelope.",
+   "quote": "The simulator is a measurement instrument that has not been calibrated or validated and has no defined envelope.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t268",
+    "t237",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The European automated-vehicle regulation requires a credibility assessment defining the validity envelope, documented validation of each model, and evidence of the competence of teams that validate and use the toolchain.",
+   "quote": "The European automated-vehicle regulation requires a credibility assessment that defines the envelope, documented validation of each model, and evidence of the competence of the teams that validate and use the toolchain",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [
+    {
+     "name": "European automated-vehicle regulation",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t234",
+    "t261",
+    "t237",
+    "t359"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NASA and ASME require simulation validation against the real application rather than internal consistency.",
+   "quote": "NASA and ASME require validation against the real application, not internal consistency.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [
+    {
+     "name": "NASA",
+     "kind": "organization"
+    },
+    {
+     "name": "ASME",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t237",
+    "t234"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Common-mode error can make a large virtual campaign produce consistent but misleading results when the virtual sensor, collision logic and test oracle share the same simplifying assumptions.",
+   "quote": "if the virtual sensor, the collision logic and the test oracle share the same simplifying assumptions, a large virtual campaign gives very consistent, very misleading results",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t267",
+    "t59",
+    "t233"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The simulation toolchain is built against assumed hardware until mid-2027, while a model is credible only for its validated configuration.",
+   "quote": "The toolchain is built against assumed hardware until mid-2027, and a model is credible only for its validated configuration.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t42",
+    "t262",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Changes in sensor type, mounting, controller timing or brake controller in 2027 invalidate the pre-built simulator if made without impact analysis.",
+   "quote": "If sensor type, mounting, controller timing or brake controller change in 2027 without impact analysis, the pre-built simulator is invalidated.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t42",
+    "t100",
+    "t234",
+    "t265"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The simulation specialist recommends settling every supplier dependency before freezing simulator architecture, freezing sensors early, and reserving physical re-correlation tests after changes.",
+   "quote": "The counsel is to settle every supplier dependency before the architecture is frozen, freeze sensors early, and reserve physical re-correlation tests after changes",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t42",
+    "t320",
+    "t160"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The assessor package must include a prospective validation plan with pre-declared metrics and thresholds to prevent changing metrics or tolerances after seeing inconvenient results.",
+   "quote": "The assessor package must contain a prospective validation plan with pre-declared metrics and thresholds, precisely to prevent \"changing the metric or tolerance after seeing inconvenient results\"",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t269",
+    "t218",
+    "t224",
+    "t258"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Physical confirmatory tests should be selected by the assessor or by risk analysis rather than convenience.",
+   "quote": "physical confirmatory tests should be chosen by the assessor or by risk analysis \"rather than by convenience\"",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t264",
+    "t71",
+    "t47"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Having no agreed simulation correlation metrics by early 2027 is an early warning sign for the validation program.",
+   "quote": "Early warning signs: no agreed correlation metrics by early 2027",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t82",
+    "t250",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Huge virtual test counts without residuals, uncertainty or an approved validity envelope are an early warning sign for the validation program.",
+   "quote": "huge virtual test counts with no residuals, uncertainty or approved envelope",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t82",
+    "t267",
+    "t259",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "To satisfy the simulation specialist reviewer, the program should provide a verification report, a credibility assessment defining the envelope, validation against independent held-out physical referents, uncertainty and sensitivity analysis, configuration and provenance control, model-change revalidation rules, proof that results are not dominated by model uncertainty, and an explicit list of unsupported claims.",
+   "quote": "What would satisfy this reviewer: a verification report; a credibility assessment defining the envelope; validation against independent held-out physical referents; uncertainty and sensitivity analysis; configuration and provenance control; model-change revalidation rules;",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t269",
+    "t268",
+    "t263",
+    "t235",
+    "t261"
+   ],
+   "importance": 3
+  }
+ ]
+}

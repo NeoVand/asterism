@@ -1,0 +1,115 @@
+{
+ "key": "t39",
+ "hash": "44387ee48f302a34",
+ "synopsis": "Normal loading, stockpiling, dump-berm approaches and authorized ground-crew proximity can look dangerous to sensors; the booklet identifies wheel loaders as the clearest and hardest case for avoiding nuisance braking [f124, f3022, f11395]. A nuisance warning detects a real object without collision risk, unlike a false warning with no object present; in the NIOSH Caterpillar 793B study, 243 of 478 technically true alarms were nuisance alarms, accounting for 42% of all alarms, demonstrating the need for context rather than sensor precision alone [f5434, f3276, f3279]. Protection must distinguish intended approaches from intruding people or vehicles without simply ignoring loading zones, and legitimate ground-crew proximity requires a controlled task-and-mode concept [f11521, f11863, f3367]. Fixed stop gaps can prevent truck loading, Komatsu requires its stop function to be off during trailer loading, and Volvo uses slope memory to permit reversing down stockpiles; unnecessary automatic stops can themselves be hazardous [f3344, f1538, f10631, f7457]. Validation should use separate production-task scenarios, per-task metrics and shadow-mode reviews before brake actuation, rather than copying road-practice thresholds [f11874, f11876, f10729, f6196]. Evidence gaps remain for stockpile/wall nuisance-alarm frequency and intentional loading/spotting accident rates, while berm terminology is in tension: some facts classify berms as nuisance-warning objects, but another says their protective edge-reference detections should not be treated as nuisance [f3360, f3568, f5434, f11864].",
+ "relations": [
+  {
+   "a": "f124",
+   "b": "f3021",
+   "type": "same",
+   "note": "Both state that normal production work can look dangerous to a simple sensor."
+  },
+  {
+   "a": "f11384",
+   "b": "f11873",
+   "type": "elaborates",
+   "note": "The latter specifies nuisance braking as a consequence for validation."
+  },
+  {
+   "a": "f1538",
+   "b": "f11871",
+   "type": "same",
+   "note": "Both require Komatsu's stop system to be off during trailer loading."
+  },
+  {
+   "a": "f3023",
+   "b": "f3344",
+   "type": "same",
+   "note": "Both report that fixed stop gaps prevent truck loading."
+  },
+  {
+   "a": "f6276",
+   "b": "f6532",
+   "type": "same",
+   "note": "Both identify standstill motion inhibits as obstacles to legitimate close-proximity work."
+  },
+  {
+   "a": "f3271",
+   "b": "f5434",
+   "type": "elaborates",
+   "note": "The latter contrasts nuisance warnings with false warnings involving no object."
+  },
+  {
+   "a": "f3279",
+   "b": "f11766",
+   "type": "same",
+   "note": "Both conclude sensor improvement alone cannot resolve unwanted alerts; task context is needed."
+  },
+  {
+   "a": "f3367",
+   "b": "f11534",
+   "type": "same",
+   "note": "Identical exclusion zones for different worker roles require controlled task-and-mode handling."
+  },
+  {
+   "a": "f3533",
+   "b": "f11538",
+   "type": "same",
+   "note": "Both identify legitimate ground-crew proximity as a protection-zone design difficulty."
+  },
+  {
+   "a": "f3566",
+   "b": "f11863",
+   "type": "same",
+   "note": "Intended loading approaches are nuisance cases unless another vehicle or person intrudes."
+  },
+  {
+   "a": "f3276",
+   "b": "f11766",
+   "type": "supports",
+   "note": "Measured nuisance-alarm prevalence supports context-aware handling rather than sensor improvement alone."
+  },
+  {
+   "a": "f5434",
+   "b": "f11864",
+   "type": "contradicts",
+   "note": "Berms are nuisance-warning examples in one fact, protective detections not nuisance in the other."
+  },
+  {
+   "a": "f10631",
+   "b": "f10728",
+   "type": "supports",
+   "note": "Volvo's slope-memory mechanism substantiates ordinary stockpiling work creating false-stop problems."
+  },
+  {
+   "a": "f1538",
+   "b": "f10728",
+   "type": "supports",
+   "note": "Komatsu's trailer-loading restriction substantiates ordinary tasks creating false-stop problems."
+  },
+  {
+   "a": "f3344",
+   "b": "f11807",
+   "type": "supports",
+   "note": "Loading requiring system shutdown demonstrates why task compatibility belongs in the safety case."
+  },
+  {
+   "a": "f3022",
+   "b": "f11874",
+   "type": "supports",
+   "note": "Documented task-specific triggers justify separate production-task validation scenarios."
+  },
+  {
+   "a": "f10727",
+   "b": "f10729",
+   "type": "depends",
+   "note": "Expected false stops during ordinary work motivate shadow-mode trials before brake actuation."
+  },
+  {
+   "a": "f1226",
+   "b": "f1322",
+   "type": "supports",
+   "note": "Reproduced steel-plate hard braking supports concern about analogous everyday off-road metal objects."
+  }
+ ]
+}

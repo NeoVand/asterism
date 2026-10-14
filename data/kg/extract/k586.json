@@ -1,0 +1,289 @@
+{
+ "chunkId": "k586",
+ "hash": "24adee56d3ad9c8b",
+ "facts": [
+  {
+   "text": "A Collision Mitigation System (CMS) detects an object close to a machine, warns the operator, and automatically applies the brakes if the operator does not react, to avoid a collision or reduce its severity.",
+   "quote": "A Collision Mitigation System (CMS) detects an object close to a machine, warns the operator, and if the operator does not react, applies the brakes automatically to avoid the collision or make it less severe.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t22",
+    "t28",
+    "t18"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Collision mitigation means reducing harm rather than necessarily preventing a collision: late braking may still result in contact, but at lower speed.",
+   "quote": "To mitigate is to reduce the harm, not necessarily to prevent it: a system that brakes late may still make contact, but at lower speed.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t22",
+    "t18",
+    "t169"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Volvo CE and Caterpillar both use the name Collision Mitigation System for their wheel-loader functions.",
+   "quote": "Volvo CE and Caterpillar both use the name for their wheel-loader functions [Chapter 2].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    2
+   ],
+   "entities": [
+    {
+     "name": "Volvo CE",
+     "kind": "company"
+    },
+    {
+     "name": "Caterpillar",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t22",
+    "t2"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The CMS to be validated by the program is the manufacturer's next-generation system.",
+   "quote": "In this booklet, \"the CMS\" means the manufacturer's next-generation system that is the subject of the whole program.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t22"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The manufacturer already sells a proximity awareness system that warns the operator when the machine gets too close to an object.",
+   "quote": "The manufacturer already sells a proximity awareness system that warns the operator when the machine gets too close to an object",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t23",
+    "t41"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Achieving an acceptable balance between hazard detection and false alarms in the manufacturer's existing proximity awareness system took years of calibration, with separate tuning required for each platform.",
+   "quote": "Getting it to an acceptable balance between detecting hazards and crying wolf took years of calibration, and each platform needed its own tuning [Introduction].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    0
+   ],
+   "entities": [],
+   "terms": [
+    "t32",
+    "t229",
+    "t41"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The manufacturer's next-generation CMS retains the existing warnings and adds automatic braking.",
+   "quote": "The CMS keeps the warnings and adds the automatic brake.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t22",
+    "t25"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "CMS prototype hardware and software are expected in mid-2027, after which validation must finish in under four months.",
+   "quote": "Prototype hardware and software are expected in mid-2027, and validation must then finish in under four months",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    0
+   ],
+   "entities": [],
+   "terms": [
+    "t42",
+    "t43",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The last function comparable to the manufacturer's CMS took three to four years to validate.",
+   "quote": "validation must then finish in under four months, where the last comparable function took three to four years [Introduction].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    0
+   ],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "CMS validation must cover the complete chain: environment, sensor, object-recognition software, threat logic, warning and operator opportunity to act, intervention decision, machine-control interface, brake or retarder, actual machine motion, and resulting distance or collision.",
+   "quote": "Technically the CMS is a chain, and validation must cover all of it:",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t22",
+    "t65",
+    "t85",
+    "t185",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The governing standard ISO 21815 limits CMS intervention to reducing speed, stopping, or preventing motion from standstill; automatic steering is excluded.",
+   "quote": "The governing standard, ISO 21815, limits intervention to reducing speed, stopping or preventing motion from standstill, never automatic steering [Chapters 1, 8].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    8
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t28",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "CMS is not a replacement for site design, traffic rules, or operator skill; in the industry's nine-level model, CMS occupies the top intervention level and works only with a sound baseline of lower-level controls.",
+   "quote": "It is not a replacement for site design, traffic rules or operator skill: in the industry's nine-level model it is the top level, intervention, which works only on a sound baseline of the lower levels [Chapters 1, 4].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    4
+   ],
+   "entities": [],
+   "terms": [
+    "t22",
+    "t30",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The research found no case in any industry of a new automatic braking function progressing from first representative hardware to accepted validation in about four months.",
+   "quote": "the research found no case in any industry of a new automatic braking function going from first representative hardware to accepted validation in about that time [Introduction, Chapters 1, 2, 13].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    0,
+    1,
+    2,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t25",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet concludes that the CMS program's four-month validation window cannot be compressed, but most validation work can be moved before prototype arrival.",
+   "quote": "The booklet's central conclusion is that the four months cannot be compressed but most of the work can be moved in front of them",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    0,
+    1,
+    10,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t342",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Before the CMS prototype arrives, the program should build the scenario catalog, the existing-fleet data pipeline, simulation and bench tools, and credibility evidence, making the subsequent four months a confirmation and calibration campaign.",
+   "quote": "build the scenario catalog, the data pipeline on the existing fleet, the simulation and bench tools and the credibility evidence before the prototype arrives, so the four months become a confirmation and calibration campaign [Introduction, Chapters 1, 10, 13].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    0,
+    1,
+    10,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t121",
+    "t234",
+    "t43",
+    "t233"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,342 @@
+{
+ "chunkId": "k819",
+ "hash": "9a12f0f9bfc86423",
+ "facts": [
+  {
+   "text": "The measured sim-to-real gap is the difference between simulation output and real sensor, machine or function output in the same situation, expressed numerically with a stated metric and condition.",
+   "quote": "The measured sim-to-real gap is the difference between what a simulation produces and what the real sensor, machine or function produces in the same situation, expressed as a number with a stated metric and condition rather than as a general worry.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A sim-to-real gap measured for a named quantity under named conditions with a named metric can be compared with the safety margin and accepted, reduced or fenced off.",
+   "quote": "A gap measured for a named quantity, under named conditions, with a named metric, can be compared with the safety margin and then accepted, reduced or fenced off.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t249",
+    "t258"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Almost all sim-to-real gap measurements collected in the booklet come from road vehicles.",
+   "quote": "The booklet collects many such measurements, almost all from road vehicles.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t249",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A clear-weather automotive lidar model achieved a mean absolute percentage error of 1.7% on signal amplitude and an error under 2 cm on distance.",
+   "quote": "A clear-weather automotive lidar model reached a mean absolute percentage error of 1.7% on signal amplitude and under 2 cm on distance.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    6,
+    10
+   ],
+   "entities": [
+    {
+     "name": "mean absolute percentage error",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t249",
+    "t92",
+    "t255"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A lidar rain and fog model matched measurements well when simulated and real rain distributions were the same, but the mismatch increased as fog visibility decreased.",
+   "quote": "A lidar rain and fog model matched measurements well when the simulated and real rain distributions were the same, but the mismatch grew as fog visibility fell.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    6,
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t249",
+    "t92",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In a fog chamber at 10 m visibility, all lidars but one failed to detect a target at 10.5 m; a model calibrated in moderate fog would miss this performance cliff.",
+   "quote": "In a fog chamber at 10 m visibility, all lidars but one failed to see a target at 10.5 m, a cliff a model calibrated in moderate fog would miss",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    6,
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t102",
+    "t249",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Real and simulated point-cloud scans averaged a density-aware Chamfer distance of 0.63, while a segmentation algorithm achieved only 21% on the simulated data.",
+   "quote": "For point clouds, real and simulated scans averaged a density-aware Chamfer distance of 0.63 while a segmentation algorithm reached only 21% on the simulated data.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "density-aware Chamfer distance",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t93",
+    "t249",
+    "t256"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An end-to-end driving benchmark scored one planner at 0.449 on real data and 0.413 on simulated data, and another planner at 0.490 on real data versus 0.489 on simulated data.",
+   "quote": "An end-to-end driving benchmark scored one planner at 0.449 on real data and 0.413 on simulated data, another at 0.490 versus 0.489.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t249"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A physics-based radar simulator substantially improved image-similarity scores, but a detector trained on real radar images still failed on the simulated images.",
+   "quote": "A physics-based radar simulator improved image-similarity scores dramatically, yet a detector trained on real radar images still failed on the simulated ones.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t256",
+    "t249",
+    "t254"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A detector pre-trained on synthetic fog and fine-tuned on real fog improved mean average precision by only 0.0117 over the real-only baseline.",
+   "quote": "A detector pre-trained on synthetic fog and fine-tuned on real fog gained only 0.0117 in mean average precision over the real-only baseline",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "mean average precision",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t114",
+    "t102",
+    "t109",
+    "t221"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A small-scale self-driving-car study found that physical tests could safely be avoided for 40 of 61 configurations.",
+   "quote": "A small-scale self-driving-car study found physical tests could be safely avoided for 40 of 61 configurations",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t264",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The sim-to-real gap is small in benign conditions where the model has been validated, and grows near physical thresholds involving fog, darkness or dust.",
+   "quote": "The gap is small where conditions are benign and the model was validated there. It grows near physical thresholds (fog, darkness, dust)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t249",
+    "t102",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sim-to-real gaps differ by layer: a small appearance gap can coexist with a large gap in detector performance.",
+   "quote": "it differs by layer: a small gap in appearance can coexist with a large gap in what a detector sees.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t249",
+    "t256"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Conditions reproduced poorly everywhere include heavy rain at short range, non-uniform dust and its time dynamics, lens soiling, vibration, night and artificial lighting, multipath from large metal structures, and combinations of these conditions.",
+   "quote": "Several conditions are reproduced poorly everywhere: heavy rain at short range, non-uniform dust and its time dynamics, lens soiling, vibration, night and artificial lighting, multipath from large metal structures, and combinations of these",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t104",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No validated radar or camera dust model with a reported error metric was found.",
+   "quote": "No validated radar or camera dust model with a reported error metric was found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t89",
+    "t102",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The lidar dust model for mining has limited validation.",
+   "quote": "the lidar dust model for mining has limited validation.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t102",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The manufacturer must measure its own sim-to-real gaps sensor by sensor and condition by condition, using reference instrumentation and withheld real data.",
+   "quote": "The manufacturer must therefore measure its own gaps, sensor by sensor and condition by condition, with reference instrumentation and withheld real data",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t249",
+    "t263",
+    "t105"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "There is no mature rule for how much simulation-to-reality agreement is enough to support a braking claim.",
+   "quote": "\"how much agreement is enough\" for a braking claim has no mature rule",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t258",
+    "t249",
+    "t22"
+   ],
+   "importance": 3
+  }
+ ]
+}

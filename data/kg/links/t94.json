@@ -1,0 +1,115 @@
+{
+ "key": "t94",
+ "hash": "9360d4633a2108e4",
+ "synopsis": "The braking system’s sensor set remains unconfirmed, so radar is one option requiring investigation rather than a settled design choice [f2035, f6625]. Radar simulation requires wavelength-specific material data, often measured at 77 GHz, and a modeled processing chain; physical correlation remains necessary for signatures, multipath, mounting, clutter and interference [f3715, f4420, f1739, f493]. Evidence shows substantial fidelity limitations: a 2025 wheel-loader simulation required manual material tuning yet missed double reflections, one 2026 ray-tracing study produced about 12% of real point density, and no validated radar or camera dust model with a reported error metric was found [f4421, f4422, f3716, f254]. Historical haul-truck testing in 2004 recorded alarms during 94% of 618 reversals over seven days; the study reported in 2006 classified 18% of 580 alarms as false, 42% as nuisance and 40% as warranting action, with nuisance alarms associated with ignoring or disabling behavior [f3010, f3011, f5174, f5175, f3480]. Detection evidence does not establish braking performance: the 2005 Griffith study detected light vehicles at 75 m but did not study brake thresholds, and a single rear radar missed people near haul-truck rear tyres [f6368, f6369, f7039]. Radar-equipped commercial systems do not independently prove adverse-environment validation is solved, while site interoperability and radar interference remain Medium to High risks for which interface and radio-frequency coexistence tests are recommended [f1749, f11076, f11078].",
+ "relations": [
+  {
+   "a": "f2035",
+   "b": "f1180",
+   "type": "same",
+   "note": "Both require broad sensor research because the system’s sensor set is unconfirmed."
+  },
+  {
+   "a": "f1180",
+   "b": "f3678",
+   "type": "same",
+   "note": "Both describe unconfirmed sensors necessitating coverage of radar and other modalities."
+  },
+  {
+   "a": "f3678",
+   "b": "f5133",
+   "type": "same",
+   "note": "Restates the unconfirmed sensor set and resulting research scope."
+  },
+  {
+   "a": "f5133",
+   "b": "f6625",
+   "type": "same",
+   "note": "Both identify radar among options for an unfixed sensor set."
+  },
+  {
+   "a": "f6625",
+   "b": "f8257",
+   "type": "same",
+   "note": "Both state that the braking system’s sensors remain unconfirmed."
+  },
+  {
+   "a": "f254",
+   "b": "f7561",
+   "type": "same",
+   "note": "Both report no validated radar or camera dust model with an error metric."
+  },
+  {
+   "a": "f7561",
+   "b": "f7833",
+   "type": "same",
+   "note": "Duplicate dust-model evidence gap within Chapter 10."
+  },
+  {
+   "a": "f226",
+   "b": "f5174",
+   "type": "same",
+   "note": "Same 580-alarm, 618-reversal study and 18% false-alarm result."
+  },
+  {
+   "a": "f227",
+   "b": "f5175",
+   "type": "same",
+   "note": "Same exposure denominator and 42% nuisance-alarm result."
+  },
+  {
+   "a": "f3010",
+   "b": "f11611",
+   "type": "same",
+   "note": "Same seven-day study: alarms during 94% of 618 reversals."
+  },
+  {
+   "a": "f3011",
+   "b": "f11759",
+   "type": "same",
+   "note": "Same alarm breakdown: 18% false, 42% nuisance, 40% actionable."
+  },
+  {
+   "a": "f88",
+   "b": "f4420",
+   "type": "same",
+   "note": "Both say 77 GHz material parameters usually require measurement."
+  },
+  {
+   "a": "f4420",
+   "b": "f4418",
+   "type": "elaborates",
+   "note": "Specifies measured electromagnetic parameters and full processing-toolchain modeling."
+  },
+  {
+   "a": "f4422",
+   "b": "f1739",
+   "type": "supports",
+   "note": "Missed double reflections support requiring physical correlation for multipath."
+  },
+  {
+   "a": "f3011",
+   "b": "f3480",
+   "type": "supports",
+   "note": "Large nuisance-alarm share supports concern about operators ignoring or disabling warnings."
+  },
+  {
+   "a": "f6369",
+   "b": "f6368",
+   "type": "elaborates",
+   "note": "Limits the 75 m detection result: braking thresholds were not studied."
+  },
+  {
+   "a": "f84",
+   "b": "f3724",
+   "type": "supports",
+   "note": "Unrecoverable radar responses explain why recordings cannot directly provide radar validation environments."
+  },
+  {
+   "a": "f11078",
+   "b": "f11076",
+   "type": "depends",
+   "note": "Recommended interface and coexistence tests address the identified interoperability and interference risks."
+  }
+ ]
+}

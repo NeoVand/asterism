@@ -1,0 +1,115 @@
+{
+ "key": "t96",
+ "hash": "88a7f2f90c058de8",
+ "synopsis": "Thermal cameras image emitted heat in the LWIR band, roughly 8–14 micrometers, and can detect warm people without lighting, but useful contrast depends on temperature differences and NETD [f12509, f12665, f12512, f12667]. Simulation requires scene emissivity, temperatures and thermal history as well as camera spectral response, optics, NETD and processing; the booklet recommends matching the virtual and real camera in MTF and NETD before scene simulation [f3945, f12668, f12669, f12590]. Thermal and ultrasonic simulation have the weakest evidence reviewed: no public 2023–2026 automotive or off-road thermal-camera study was found covering the listed environmental conditions, and the cited 2026 model had only indoor quantitative validation and a qualitative real-camera comparison limited by unknown spectral response [f91, f4591, f12670, f12671]. Job-site thermal material and emissivity datasets were not found; the glossary's stronger claim that no emissivity dataset exists goes beyond the chapter's search finding, while missing validation is explicitly an evidence gap rather than proof that the physics cannot be modeled [f3717, f3946, f12673, f4592]. Although Cognata and dSPACE advertise thermal or infrared simulation capabilities, the corpus found no adverse-weather or off-road validation for thermal simulation [f8413, f8539, f4435]. Planning should therefore retain physical evidence for environmental contrast, contamination, calibration and correlated sensor failures, include modality disagreement in the fusion safety argument, and ensure test targets reproduce realistic thermal signatures [f506, f505, f569, f5389].",
+ "relations": [
+  {
+   "a": "f91",
+   "b": "f4432",
+   "type": "same",
+   "note": "Synthesis repeats the chapter's weakest-evidence assessment."
+  },
+  {
+   "a": "f3717",
+   "b": "f13193",
+   "type": "same",
+   "note": "Both report missing thermal and ultrasonic material datasets."
+  },
+  {
+   "a": "f4592",
+   "b": "f12674",
+   "type": "same",
+   "note": "Missing evidence does not establish that thermal physics cannot be modeled."
+  },
+  {
+   "a": "f4848",
+   "b": "f12670",
+   "type": "elaborates",
+   "note": "Glossary specifies that unknown spectral response restricted real-camera comparison to qualitative assessment."
+  },
+  {
+   "a": "f4696",
+   "b": "f12671",
+   "type": "elaborates",
+   "note": "Glossary identifies the cited 2026 model's quantitative validation as indoor-only."
+  },
+  {
+   "a": "f4680",
+   "b": "f5033",
+   "type": "same",
+   "note": "Both report missing evidence for mud or dirt on thermal sensors."
+  },
+  {
+   "a": "f4670",
+   "b": "f5032",
+   "type": "elaborates",
+   "note": "The rating adds weak simulation status and absence of simulation evidence."
+  },
+  {
+   "a": "f3946",
+   "b": "f12673",
+   "type": "contradicts",
+   "note": "Not finding a dataset is weaker than asserting none exists."
+  },
+  {
+   "a": "f3945",
+   "b": "f12668",
+   "type": "elaborates",
+   "note": "Glossary adds sunlight, wind cooling and thermal history to scene heat modeling."
+  },
+  {
+   "a": "f3945",
+   "b": "f12942",
+   "type": "same",
+   "note": "Both identify emissivity as a thermal-model requirement."
+  },
+  {
+   "a": "f5389",
+   "b": "f569",
+   "type": "supports",
+   "note": "Unrepresentative dummy signatures justify sensor-realistic test targets."
+  },
+  {
+   "a": "f4435",
+   "b": "f506",
+   "type": "supports",
+   "note": "Missing environmental validation supports retaining physical evidence."
+  },
+  {
+   "a": "f505",
+   "b": "f506",
+   "type": "elaborates",
+   "note": "Physical evidence must cover correlated failures underlying the fusion safety argument."
+  },
+  {
+   "a": "f4591",
+   "b": "f4592",
+   "type": "elaborates",
+   "note": "Clarifies how to interpret the unsuccessful validation-study search."
+  },
+  {
+   "a": "f4434",
+   "b": "f4766",
+   "type": "elaborates",
+   "note": "Qualitative or indoor comparisons do not establish off-road or adverse-weather validity."
+  },
+  {
+   "a": "f12669",
+   "b": "f12590",
+   "type": "depends",
+   "note": "Camera-response modeling requires matching real-camera MTF and NETD before scene simulation."
+  },
+  {
+   "a": "f12509",
+   "b": "f12512",
+   "type": "elaborates",
+   "note": "Operation without light does not guarantee sufficient thermal contrast."
+  },
+  {
+   "a": "f12675",
+   "b": "f12676",
+   "type": "depends",
+   "note": "Adding thermal sensing creates a validation problem requiring its own credibility argument."
+  }
+ ]
+}

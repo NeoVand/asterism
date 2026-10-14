@@ -1,0 +1,170 @@
+{
+ "chunkId": "k417",
+ "hash": "d87078c948b7b4d8",
+ "facts": [
+  {
+   "text": "FAA AC 25.1309-1B accepts satisfactory service history as evidence for certain compliance arguments when systems are sufficiently similar in relevant attributes, provided the applicant identifies differences and explains why the reference history applies.",
+   "quote": "satisfactory service history can be acceptable evidence for certain compliance arguments, provided the applicant identifies the differences and explains why the reference history applies.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    29,
+    40
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FAA AC 25.1309-1B",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t75",
+    "t246",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "FAA AC 00-72 accepts tool or service history as one contributor to confidence in development tools when similarity of version, operational environment, maturity and usage is substantiated.",
+   "quote": "FAA AC 00-72 accepts tool or service history as one contributor to confidence in development tools when similarity of version, operational environment, maturity and usage is substantiated.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    29,
+    40
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FAA AC 00-72",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t75",
+    "t246",
+    "t234"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Replaying or re-simulating logged sensor data is common industry practice in on-road ADAS and ADS development, subject to reuse limits noted under question 3.",
+   "quote": "Replaying or re-simulating logged sensor data is common industry practice in ADAS and ADS development, with the reuse limits noted under question 3.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    30
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t75"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "EU 2022/1426 requires the validation dataset to sufficiently reflect the operational design domain (ODD).",
+   "quote": "EU 2022/1426 requires the validation dataset to \"sufficiently reflect the ODD\"",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    6,
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EU 2022/1426",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t140",
+    "t113"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "EMDAP's assessment base is built from relevant physical data.",
+   "quote": "EMDAP's assessment base is built from relevant physical data.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    6,
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMDAP",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t245",
+    "t216"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "When a new system reuses the warning system's sensors and mounting, warning-system logs are direct validation data for the sensor and perception models, provided the logs contain usable ground truth and cover the conditions in question.",
+   "quote": "If the new system reuses the warning system's sensors and mounting, the logs are direct validation data for those models, provided they hold usable ground truth and cover the conditions in question.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t237",
+    "t105",
+    "t100",
+    "t85"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The warning fleet's history can anchor the frequency and geometry of encountered objects; reliably captured real detections and missed detections; weather and environment distributions; site topology; sensor contamination; nuisance-warning patterns; operator response timing; machine speeds; and approach trajectories.",
+   "quote": "frequency and geometry of encountered objects, real detections and missed detections where reliably captured, weather and environment distributions, site topology, sensor contamination, nuisance-warning patterns, operator response timing, machine speeds and approach trajectories.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t41",
+    "t102",
+    "t108",
+    "t35"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The warning fleet's history can serve as an independent replay set that was not used to tune the simulation.",
+   "quote": "It can also serve as an independent replay set that was not used to tune the simulation.",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t155",
+    "t113",
+    "t220"
+   ],
+   "importance": 3
+  }
+ ]
+}

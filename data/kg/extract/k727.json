@@ -1,0 +1,222 @@
+{
+ "chunkId": "k727",
+ "hash": "a27ea5d5dc6e20c2",
+ "facts": [
+  {
+   "text": "A correlation test is a physical test run specifically to check whether models predicted what the real machine did and quantify how much the predictions were wrong.",
+   "quote": "A correlation test is a physical test run specifically to check whether the models predicted what the real machine did, and by how much they were wrong.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t160",
+    "t250"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Before the prototype arrives, every braking, sensor and terrain model is a prediction.",
+   "quote": "Before the prototype arrives, every model (braking, sensor, terrain) is a prediction.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t160"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The first tests on the real machine should be a small set of carefully chosen, already-predicted measurements rather than the full scenario matrix: end-to-end latency, detection range, brake-command timing, stopping dynamics and repeatability on each representative machine variant.",
+   "quote": "a small set of carefully chosen measurements that the models have already predicted: end-to-end latency, detection range, brake-command timing, stopping dynamics and repeatability on each representative machine variant.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t160",
+    "t172",
+    "t170",
+    "t230",
+    "t143"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Differences between model predictions and real-machine measurements become model error bounds, which define the envelope within which virtual results may be trusted.",
+   "quote": "The differences become the models' error bounds, and the error bounds define the envelope within which virtual results may be trusted [Chapter 1].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t160",
+    "t261",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "If virtual and bench models are wrong, millions of virtual scenarios produce false confidence.",
+   "quote": "\"If the virtual and bench models are wrong, millions of virtual scenarios produce false confidence\" [Chapter 1].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t267",
+    "t125",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor models are correlated against measurements on existing machines in dust, rain and darkness in 2026 and 2027, before the prototype.",
+   "quote": "Sensor models are correlated against measurements on existing machines in dust, rain and darkness in 2026 and 2027, before the prototype [Chapter 11].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t160",
+    "t102",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Every high-value simulator phenomenon—dust, fog, glare, wet surfaces, reflective objects and occlusion—gets a smaller physical reference set.",
+   "quote": "Every high-value simulator phenomenon (dust, fog, glare, wet surfaces, reflective objects, occlusion) gets a smaller physical reference set",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t160",
+    "t102",
+    "t103",
+    "t104"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simulation is credible only in the dimensions where paired simulation and physical reference tests agree.",
+   "quote": "simulation is credible only in the dimensions where these paired tests agree [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t160",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The physical anchor campaign in the first six weeks after hardware delivery checks whether the machine's parameters are inside the family model, whether predicted bounds are conservative and where the model fails.",
+   "quote": "The physical anchor campaign in the first six weeks after hardware delivery asks whether the machine's parameters are inside the family model, whether the predicted bounds are conservative, and where the model fails [Chapter 8].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t160",
+    "t261",
+    "t229",
+    "t233"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Reviewers demand blind correlation using withheld physical data that were never used for tuning.",
+   "quote": "Reviewers demand blind correlation, with withheld physical data never used for tuning [Chapter 13].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t263",
+    "t160",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Correlation is the booklet's first ordering rule and turns the prototype from the only place to run scenarios into a model-correlation asset.",
+   "quote": "Correlation is the booklet's first ordering rule and the step that turns the prototype from the only place to run scenarios into a model-correlation asset",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t160",
+    "t127",
+    "t264"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The four-month prototype window can be a confirmation and discrepancy-resolution campaign only if the correlation plan exists beforehand.",
+   "quote": "the four-month window is a confirmation and discrepancy-resolution campaign only if the correlation plan exists beforehand [Chapters 1, 10].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t160",
+    "t233"
+   ],
+   "importance": 3
+  }
+ ]
+}

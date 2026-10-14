@@ -1,0 +1,253 @@
+{
+ "chunkId": "k618",
+ "hash": "6280df6c42124203",
+ "facts": [
+  {
+   "text": "A Safety Integrity Level is a grade from 1 to 4 in the IEC 61508 family specifying the risk reduction a safety function must deliver; the acronym SIL also means software-in-the-loop, a different concept.",
+   "quote": "A Safety Integrity Level is a grade from 1 to 4 used in the IEC 61508 family of standards to say how much risk reduction a safety function must deliver, and the same three letters are used in this booklet for software-in-the-loop, a completely different thing.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "IEC 61508",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t53",
+    "t147"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "IEC 61508 is the general standard for electrical, electronic and programmable safety systems, used in process plants and railways and, through IEC 62061, in machinery.",
+   "quote": "IEC 61508 is the general standard for electrical, electronic and programmable safety systems, used in process plants, railways and, through IEC 62061, in machinery.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "IEC 61508",
+     "kind": "standard"
+    },
+    {
+     "name": "IEC 62061",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t287",
+    "t49"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "IEC 61508 grades safety functions from SIL 1, the lowest grade, to SIL 4, the highest grade.",
+   "quote": "It grades safety functions from SIL 1 (lowest) to SIL 4 (highest).",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "IEC 61508",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t53"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For safety functions that act often, each Safety Integrity Level specifies a band of probability of dangerous failure per hour; SIL 1 allows between one dangerous failure in 100,000 hours and one in a million hours.",
+   "quote": "For a function that acts often, each grade is a band of probability of dangerous failure per hour: SIL 1 allows between one dangerous failure in 100,000 hours and one in a million",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "IEC 61508",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t53"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For safety functions that act often, each higher Safety Integrity Level is ten times stricter; SIL 3 has a dangerous-failure probability band between 10^-8 and 10^-7 per hour and is roughly as demanding as PL e.",
+   "quote": "each higher grade is ten times stricter, so SIL 3 (between 10^-8 and 10^-7 per hour) is roughly as demanding as PL e.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t53",
+    "t51"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The Safety Integrity Level also sets how rigorously hardware must be analyzed and software developed.",
+   "quote": "The grade also sets how rigorously hardware is analyzed and software developed.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t53",
+    "t49"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet identifies IEC 61508, IEC 62061 and ISO 25119 as general alternatives to ISO 19014, but their fit was not verified.",
+   "quote": "The booklet names IEC 61508, IEC 62061 and ISO 25119 as general alternatives to ISO 19014 whose fit was not verified [Chapter 3]",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "IEC 61508",
+     "kind": "standard"
+    },
+    {
+     "name": "IEC 62061",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 25119",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 19014",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t287",
+    "t291",
+    "t281"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet uses IEC 61508-3 tool classes T1 to T3 as a reference for qualifying tools, such as simulators, whose output becomes safety evidence.",
+   "quote": "uses the IEC 61508-3 tool classes T1 to T3 as a reference for qualifying tools, such as simulators, whose output becomes safety evidence [Chapters 12, 13]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12,
+    13
+   ],
+   "entities": [
+    {
+     "name": "IEC 61508-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t70",
+    "t234",
+    "t287"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "IEC 61508 practice uses a higher confidence level than ISO 26262 for proven-in-use claims.",
+   "quote": "notes that IEC 61508 practice uses a higher confidence level than ISO 26262 for proven-in-use claims [Chapter 10]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "IEC 61508",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 26262",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t75",
+    "t209"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet's test allocation rule is software-in-the-loop (SIL) for volume and hardware-in-the-loop (HIL) for timing, interfaces and faults.",
+   "quote": "\"SIL for volume, HIL for timing, interfaces and faults\" [Chapter 1]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t148",
+    "t56"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "When SIL appears in a sentence about test methods or benches, readers should interpret SIL as software-in-the-loop; when the sentence concerns required reliability, SIL means the safety grade.",
+   "quote": "A reading rule: if the sentence is about test methods or benches, SIL is software-in-the-loop; if it is about required reliability, it is the safety grade.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t53"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Mining customers include \"safety integrity\" in their specifications.",
+   "quote": "mining customers write \"safety integrity\" into their specifications [Chapter 3].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t53",
+    "t63"
+   ],
+   "importance": 3
+  }
+ ]
+}

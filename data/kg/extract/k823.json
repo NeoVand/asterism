@@ -1,0 +1,355 @@
+{
+ "chunkId": "k823",
+ "hash": "52409f4843945456",
+ "facts": [
+  {
+   "text": "Distributional agreement compares the whole spread of many simulated results with the whole spread of many measured results when repeated runs of the same situation legitimately differ.",
+   "quote": "Distributional agreement compares the whole spread of many simulated results with the whole spread of many measured results, which is needed when repeated runs of the same situation legitimately differ.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t253"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Repeated real-site perception trials produce different detections because dust density, target reflectivity, lighting, rain rate, sensor contamination and random software effects vary; comparison should therefore use distributions rather than a single simulated and real run.",
+   "quote": "Comparing one simulated run with one real run is then meaningless. The right comparison is between distributions: the collection of all outcomes and their spread [Chapter 10].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t253",
+    "t102",
+    "t85"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Rail acceptance compares distributions using at least 24 comparisons per quantity across at least 12 track sections, with limits on the set of deviations.",
+   "quote": "Rail acceptance works this way, with at least 24 comparisons per quantity across at least 12 track sections and limits on the set of deviations.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t247",
+    "t253",
+    "t258"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet's layered simulation-assessment scheme places distributional metrics between signal-level accuracy and image similarity.",
+   "quote": "The booklet's layered scheme places distributional metrics between signal-level accuracy and image similarity [Chapters 6, 10].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t253",
+    "t254",
+    "t234"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The Kolmogorov-Smirnov test (KS) compares the largest vertical gap between two cumulative curves: values near 0 indicate nearly alike spreads and values near 1 indicate very different spreads. The passage also describes the test as giving a probability that both sets came from the same source.",
+   "quote": "Near 0: the two sets are spread almost alike. Near 1: very different. Also gives a probability that both came from the same source.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Kolmogorov-Smirnov test",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t253"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Wasserstein distance (earth mover's distance) measures the work needed to reshape one distribution into another in the units of the quantity; small values indicate similarity. The passage gives 0.3 m of stopping distance as an example of a small distance.",
+   "quote": "Small, for example 0.3 m of stopping distance: alike. Large: far apart, and the number says by how much.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Wasserstein distance",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t253",
+    "t170"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Maximum mean discrepancy (MMD) compares two sets after mapping results into a rich mathematical feature space; 0 means the sets cannot be distinguished and larger values indicate greater differences. MMD works for point clouds and other multi-dimensional data.",
+   "quote": "0: the sets cannot be told apart. Larger: more different. Works for point clouds and other multi-dimensional data.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Maximum mean discrepancy",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t253",
+    "t93"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Kullback-Leibler divergence (KL) measures the discrepancy between an expected and observed distribution: 0 indicates identical distributions and values grow without limit. KL is not symmetric and is undefined where one distribution assigns zero probability to an outcome produced by the other.",
+   "quote": "0: identical. Grows without limit. Not symmetric, and undefined where one distribution gives zero chance to something the other produces.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Kullback-Leibler divergence",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t253"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Chamfer distance measures the average nearest-neighbor distance between two point clouds in both directions; small values indicate overlapping clouds and large values indicate different shapes. Chamfer distance ignores whether points are crowded or sparse.",
+   "quote": "For two point clouds, the average distance from each point to its nearest neighbor in the other cloud, both ways",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Chamfer distance",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t93",
+    "t253"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Density-aware Chamfer distance (DCD) corrects Chamfer distance for point density and is bounded between 0 and 1, where 0 means identical and 1 means completely different.",
+   "quote": "Chamfer distance corrected for point density, bounded between 0 and 1",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Density-aware Chamfer distance",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t93",
+    "t253"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2025 study reported an average density-aware Chamfer distance of 0.63 between real and simulated scans; density-aware Chamfer distance tracked perception results best.",
+   "quote": "Real versus simulated scans averaged 0.63 in a 2025 study, and this metric tracked perception results best.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Density-aware Chamfer distance",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t93",
+    "t253",
+    "t256",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The area validation metric (AVM) measures the area between two cumulative curves in the units of the quantity; small values indicate similarity and large values indicate the approximate error in the model's spread of results.",
+   "quote": "The area between the two cumulative curves, in the units of the quantity",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Area validation metric",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t253"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet treats the area validation metric value as model-form uncertainty to add to predictions.",
+   "quote": "The booklet treats the value as model-form uncertainty to add to predictions.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Area validation metric",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t253",
+    "t259"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Greater experimental scatter makes the area validation metric smaller and the model appear more valid; the metric can over- or under-compensate when random and knowledge-based uncertainty are mixed.",
+   "quote": "More experimental scatter makes the area validation metric smaller and the model look \"more valid\", and it can over- or under-compensate when random and knowledge-based uncertainty are mixed.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Area validation metric",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t253",
+    "t259",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A radar validation paper evaluated Kullback-Leibler divergence and dismissed the metric for its purpose.",
+   "quote": "A radar validation paper evaluated KL divergence and dismissed it for its purpose.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Kullback-Leibler divergence",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t253"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Point-cloud metrics disagree with one another, making the finding that density-aware Chamfer distance tracked perception best important for metric selection.",
+   "quote": "Point-cloud metrics disagree with one another, which is why the finding that density-aware Chamfer distance tracked perception best matters [Chapters 6, 10].",
+   "kind": "disagreement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    10
+   ],
+   "entities": [
+    {
+     "name": "Density-aware Chamfer distance",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t93",
+    "t253",
+    "t256"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Because perception in dust, rain and glare is stochastic, the booklet recommends distributional validation quantities including detection probability by condition, range-error distributions and the frequency of model residuals near decision boundaries.",
+   "quote": "the booklet recommends distributional validation quantities such as detection probability by condition, range-error distributions and the frequency of model residuals near decision boundaries.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t253",
+    "t85",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Whether distributional validation metrics predict safety-relevant perception errors remains uncertain.",
+   "quote": "Whether these metrics predict safety-relevant perception errors is listed as uncertain [Chapters 6, 10].",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t253",
+    "t256",
+    "t85"
+   ],
+   "importance": 3
+  }
+ ]
+}

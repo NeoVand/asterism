@@ -1,0 +1,115 @@
+{
+ "key": "t127",
+ "hash": "b38093a482ee3678",
+ "synopsis": "The manufacturer wants to validate most Collision Mitigation System behavior virtually, including establishing an existing-system baseline and comparing the new system in the same environments, but it has no current virtual-testing capability or prior experience with this validation [f6, f25, f26, f8258, f7512]. The programme has an eleven-month hard deadline, while the examined proposal allows four months to validate the new braking system; documented capability-building cases took years, and no single approach is documented as compressing validation from years to months [f9396, f10389, f1203, f308]. Simulation can multiply evidence and prioritize scarce prototype tests, but cannot certify perception alone; how much physical testing can safely be replaced remains uncertain, and sensor simulation can replace only part, not most, of physical sensor testing [f11311, f326, f5757, f4407]. No identified off-road document accepts simulation as compliance evidence or permits replacing prescribed physical tests, although ISO 18497-4:2024 was the closest off-road support found for simulation as a verification method; in contrast, 2025 supplements to UN Regulation No. 152 permit some virtual substitution for car and van AEBS [f2103, f5277, f7546]. Credibility rather than test volume is the central weakness: physical correlation is needed, dust remains the biggest off-road sensor-simulation gap, and no independent evidence supports purely virtual or HIL validation across 100+ site types and all relevant machines and environmental conditions without substantial real-world correlation [f10409, f8341, f4424, f5760]. For four-month validation, the recommended defensible route is an analytical safety case, targeted physical tests and simulation under a credibility framework, with closed-loop simulation required to capture braking-induced trajectory changes [f2137, f11322].",
+ "relations": [
+  {
+   "a": "f7512",
+   "b": "f10387",
+   "type": "same",
+   "note": "Both state the manufacturer has no prior experience with this kind of virtual validation."
+  },
+  {
+   "a": "f6664",
+   "b": "f6926",
+   "type": "same",
+   "note": "RAND mileage numbers do not transfer; off-road claims concern staged or simulated encounters."
+  },
+  {
+   "a": "f3765",
+   "b": "f3908",
+   "type": "elaborates",
+   "note": "Identifies reviewed standards lacking rules for simulation evidence."
+  },
+  {
+   "a": "f3908",
+   "b": "f8321",
+   "type": "elaborates",
+   "note": "Adds ISO 19014 to the public-text acceptance gap."
+  },
+  {
+   "a": "f5215",
+   "b": "f6931",
+   "type": "elaborates",
+   "note": "Specifies the regulator-acceptance gap for simulation-based rate claims."
+  },
+  {
+   "a": "f1203",
+   "b": "f1202",
+   "type": "supports",
+   "note": "Years-long capability building supports the prior-investment condition for reducing physical tests."
+  },
+  {
+   "a": "f1203",
+   "b": "f10389",
+   "type": "contradicts",
+   "note": "Documented years-long capability building challenges the proposed first-time four-month validation."
+  },
+  {
+   "a": "f308",
+   "b": "f310",
+   "type": "supports",
+   "note": "Absence of documented single-method acceleration supports mining guidance's no-silver-bullets warning."
+  },
+  {
+   "a": "f25",
+   "b": "f26",
+   "type": "depends",
+   "note": "New-system comparison requires establishing the existing-system baseline in matching environments."
+  },
+  {
+   "a": "f2103",
+   "b": "f2137",
+   "type": "supports",
+   "note": "Physical-test compliance constraints support targeted physical testing within the recommended safety case."
+  },
+  {
+   "a": "f7546",
+   "b": "f2104",
+   "type": "elaborates",
+   "note": "Provides a dated car-and-van AEBS example of regulatory acceptance."
+  },
+  {
+   "a": "f5277",
+   "b": "f2103",
+   "type": "elaborates",
+   "note": "Verification-method support is distinguished from replacing prescribed physical compliance tests."
+  },
+  {
+   "a": "f8341",
+   "b": "f10409",
+   "type": "supports",
+   "note": "Potential rejection without physical correlation explains why credibility is the core weakness."
+  },
+  {
+   "a": "f5760",
+   "b": "f4409",
+   "type": "supports",
+   "note": "Missing broad-coverage demonstrations reinforce the absence of independently established purely virtual validation."
+  },
+  {
+   "a": "f4407",
+   "b": "f6379",
+   "type": "supports",
+   "note": "Limited sensor-test substitution explains constraints on simulation-based threshold tuning."
+  },
+  {
+   "a": "f11322",
+   "b": "f3972",
+   "type": "supports",
+   "note": "Braking-induced trajectory changes explain why sensor-only simulation cannot establish collision avoidance."
+  },
+  {
+   "a": "f6609",
+   "b": "f6610",
+   "type": "supports",
+   "note": "Divergent outcomes under common scenarios motivate explicit versioned parameters and simulation assumptions."
+  },
+  {
+   "a": "f11311",
+   "b": "f2137",
+   "type": "supports",
+   "note": "Prioritizing physical tests aligns with the recommended combined simulation and physical-test strategy."
+  }
+ ]
+}

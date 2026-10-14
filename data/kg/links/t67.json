@@ -1,0 +1,115 @@
+{
+ "key": "t67",
+ "hash": "dfa98808b3562803",
+ "synopsis": "The safety case organizes claims, arguments and evidence; the plan should be built backwards from the top-level claim to required evidence, methods, credibility levels, work packages and gates, rather than treating a complete scenario spreadsheet as physical evidence [f11298, f9453, f656]. For a four-month validation, the recommended route is an analytical safety case plus targeted physical tests and credibility-qualified simulation; the four months after hardware arrival should include sensor and braking correlation, discrepancy investigation, high-risk physical spot-checks and evidence assembly [f2137, f1596]. The claim spans the full chain from environment and sensing to machine motion and collision outcome, must address both missed and unsafe or unnecessary braking, and should derive its assurance target from the new hazard analysis rather than comparison with the old warning system [f383, f2141, f5816, f10529]. Simulation acceptance requires physical correlation and demonstrated credibility, but model accuracy is not system safety, no mature rule establishes sufficient sim-to-real agreement, and public literature cannot establish whether the proposed plan meets company release criteria [f8341, f7756, f7814, f5071, f4975]. Evidence reuse across machine variants is safety-case-specific and requires explicit transfer justification, configuration-controlled differences and bridging tests where changes affect safety; quantified production precedents for reducing physical validation were not found in the cited forklift, automated guided vehicle and military ground-vehicle cases [f7394, f7045, f7908, f7910, f1413, f1426, f1894]. Safety-case efficacy evidence is mainly case studies and cases can become paperwork, so the argument should disclose validity limits, address operator-dependent protection and be checked against final 2026 standards publications; the general machinery-safety obligation and functional-safety case already exist in 2027 for ML elements [f9451, f9452, f10683, f11807, f11833, f8930, f2380].",
+ "relations": [
+  {
+   "a": "f2141",
+   "b": "f5816",
+   "type": "same",
+   "note": "Both require addressing missed braking and unsafe or unnecessary braking."
+  },
+  {
+   "a": "f8341",
+   "b": "f8917",
+   "type": "same",
+   "note": "Both warn that absent physical correlation can prevent acceptance of simulation evidence."
+  },
+  {
+   "a": "f3296",
+   "b": "f11807",
+   "type": "same",
+   "note": "Both place bypass resistance and task compatibility within the safety case."
+  },
+  {
+   "a": "f9450",
+   "b": "f9451",
+   "type": "supports",
+   "note": "The review supports the conclusion that efficacy evidence remains primarily case studies."
+  },
+  {
+   "a": "f1894",
+   "b": "f1413",
+   "type": "supports",
+   "note": "Named forklift examples reinforce the broader gap in quantified physical-validation reduction precedents."
+  },
+  {
+   "a": "f1596",
+   "b": "f2137",
+   "type": "elaborates",
+   "note": "Specifies how the four-month analytical-and-physical validation route should use arriving hardware."
+  },
+  {
+   "a": "f7105",
+   "b": "f651",
+   "type": "elaborates",
+   "note": "Provides the detailed hazard-to-evidence traceability chain."
+  },
+  {
+   "a": "f9453",
+   "b": "f203",
+   "type": "elaborates",
+   "note": "Turns safety-case-led evidence planning into a backwards planning sequence ending in gates."
+  },
+  {
+   "a": "f1996",
+   "b": "f7045",
+   "type": "same",
+   "note": "Both require explicit justification for evidence transfer across machine variants."
+  },
+  {
+   "a": "f7908",
+   "b": "f7045",
+   "type": "elaborates",
+   "note": "Configuration-controlled deltas specify what a product-family transfer justification must document."
+  },
+  {
+   "a": "f7909",
+   "b": "f7910",
+   "type": "depends",
+   "note": "Assessing safety influence determines whether transfer needs no tests, targeted tests or full-system anchors."
+  },
+  {
+   "a": "f4813",
+   "b": "f7814",
+   "type": "supports",
+   "note": "Behavioural and closed-loop agreement explain why model accuracy alone is not a safety criterion."
+  },
+  {
+   "a": "f7756",
+   "b": "f9386",
+   "type": "elaborates",
+   "note": "Archiving simulation configurations operationalizes configuration control and reproducibility for credible evidence."
+  },
+  {
+   "a": "f3504",
+   "b": "f11833",
+   "type": "elaborates",
+   "note": "Operator-response uncertainty may require human-in-the-loop evidence beyond vehicle-and-environment simulation."
+  },
+  {
+   "a": "f8927",
+   "b": "f8930",
+   "type": "depends",
+   "note": "Standards-transition rework risk motivates checking the argument against final 2026 publications."
+  },
+  {
+   "a": "f10682",
+   "b": "f10683",
+   "type": "depends",
+   "note": "Adversarial use of disclosed gaps motivates explicit validity limits and opposing-expert scrutiny."
+  },
+  {
+   "a": "f5467",
+   "b": "f7438",
+   "type": "contradicts",
+   "note": "Rejecting exposure alone contrasts with contested exposure-primary arguments, though the latter concern on-road validation."
+  },
+  {
+   "a": "f388",
+   "b": "f2137",
+   "type": "supports",
+   "note": "No single method proves safety, supporting a combined analytical, simulation and physical-test route."
+  }
+ ]
+}

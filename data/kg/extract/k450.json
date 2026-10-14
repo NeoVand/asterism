@@ -1,0 +1,563 @@
+{
+ "chunkId": "k450",
+ "hash": "c1a27afed29fa822",
+ "facts": [
+  {
+   "text": "ASAM OpenSCENARIO XML and OpenDRIVE are supported by VTD, the dSPACE tool chain, CARLA, RoadRunner, Prescan, MORAI and other tools.",
+   "quote": "**ASAM OpenSCENARIO XML and OpenDRIVE** are supported by VTD, the dSPACE tool chain, CARLA, RoadRunner, Prescan, MORAI and others.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    121
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenSCENARIO XML",
+     "kind": "standard"
+    },
+    {
+     "name": "ASAM OpenDRIVE",
+     "kind": "standard"
+    },
+    {
+     "name": "VTD",
+     "kind": "tool"
+    },
+    {
+     "name": "dSPACE",
+     "kind": "company"
+    },
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    },
+    {
+     "name": "RoadRunner",
+     "kind": "tool"
+    },
+    {
+     "name": "Prescan",
+     "kind": "tool"
+    },
+    {
+     "name": "MORAI",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t232",
+    "t320"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "OpenDRIVE assumes roads, so off-road job sites without lane geometry fit poorly.",
+   "quote": "OpenDRIVE assumes roads; off-road job sites without lane geometry fit poorly",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenDRIVE",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t130",
+    "t11"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM's OSI extensions for high-fidelity sensor simulation remain under standardization from April 2025 to March 2027.",
+   "quote": "ASAM's own OSI extensions for high-fidelity sensor simulation are still under standardization from April 2025 to March 2027",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    121
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    },
+    {
+     "name": "ASAM OSI",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t138",
+    "t274",
+    "t323"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Interface versioning is a project risk while ASAM's OSI extensions for high-fidelity sensor simulation remain under standardization.",
+   "quote": "ASAM's own OSI extensions for high-fidelity sensor simulation are still under standardization from April 2025 to March 2027, so interface versioning is a project risk.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    },
+    {
+     "name": "ASAM OSI",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t138",
+    "t347",
+    "t320"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Foretellix Foretify is a commercial tool.",
+   "quote": "**Foretellix Foretify (commercial).**",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Foretellix Foretify",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t327",
+    "t334"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Foretellix Foretify provides coverage-driven scenario generation with constrained random variation.",
+   "quote": "Coverage-driven scenario generation with constrained random variation",
+   "kind": "method",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    122,
+    123,
+    124
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Foretellix Foretify",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t327",
+    "t203",
+    "t142"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Foretellix Foretify provides large-scale validation management using an OpenSCENARIO DSL and integrations with external simulators.",
+   "quote": "large-scale validation management, using an OpenSCENARIO DSL and integrations with external simulators",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    122,
+    123,
+    124
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Foretellix Foretify",
+     "kind": "tool"
+    },
+    {
+     "name": "OpenSCENARIO DSL",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t327",
+    "t232",
+    "t162"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Foretellix's Series C closed at USD 85 million in December 2023.",
+   "quote": "Series C closed at USD 85 million in December 2023",
+   "kind": "event",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    122,
+    123,
+    124
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Foretellix",
+     "kind": "company"
+    }
+   ],
+   "terms": [],
+   "importance": 2
+  },
+  {
+   "text": "An integration of Foretellix Foretify with NVIDIA DRIVE was announced.",
+   "quote": "integration with NVIDIA DRIVE announced.",
+   "kind": "event",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    122,
+    123,
+    124
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Foretellix Foretify",
+     "kind": "tool"
+    },
+    {
+     "name": "NVIDIA DRIVE",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t320"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A March 2021 partnership with Volvo Autonomous Solutions documents Foretellix's mining relevance: the partnership aimed to adapt Foretellix's verification system for confined-area applications such as mines and quarries.",
+   "quote": "a March 2021 partnership with Volvo Autonomous Solutions to adapt Foretellix's verification system for confined-area applications such as mines and quarries",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    125
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Foretellix",
+     "kind": "company"
+    },
+    {
+     "name": "Volvo Autonomous Solutions",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t327",
+    "t11",
+    "t65"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Foretellix sells a Level-4 Mining V-Suite, according to the vendor.",
+   "quote": "the vendor also sells a \"Level-4 Mining V-Suite\".",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Foretellix",
+     "kind": "company"
+    },
+    {
+     "name": "Level-4 Mining V-Suite",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t327",
+    "t331"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Foretellix Foretify is not itself a machine or soil physics engine.",
+   "quote": "It is not itself a machine or soil physics engine",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Foretellix Foretify",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t327",
+    "t179",
+    "t181"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A price for Foretellix Foretify was not found.",
+   "quote": "price and version date not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Foretellix Foretify",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t334"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A version date for Foretellix Foretify was not found.",
+   "quote": "price and version date not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Foretellix Foretify",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t327"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "AVL SCENIUS is a commercial tool.",
+   "quote": "**AVL SCENIUS (commercial).**",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "AVL SCENIUS",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t327",
+    "t334"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "AVL SCENIUS supports the scenario lifecycle from requirements through creation, planning, execution and reporting, and is designed as part of an open scenario-based V&V tool chain.",
+   "quote": "Scenario lifecycle from requirements through creation, planning, execution and reporting, designed as part of an open scenario-based V&V tool chain",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    126
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "AVL SCENIUS",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t327",
+    "t65",
+    "t320",
+    "t63"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A heavy-machine deployment of AVL SCENIUS was not found.",
+   "quote": "a heavy-machine deployment, price and release were not found.",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    126
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "AVL SCENIUS",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t1",
+    "t327"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A price for AVL SCENIUS was not found.",
+   "quote": "a heavy-machine deployment, price and release were not found.",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    126
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "AVL SCENIUS",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t334"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A release for AVL SCENIUS was not found.",
+   "quote": "a heavy-machine deployment, price and release were not found.",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    126
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "AVL SCENIUS",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t327"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scenic is an open-source probabilistic scenario language that connects to multiple simulators.",
+   "quote": "**Scenic (open source).** A probabilistic scenario language connecting to multiple simulators",
+   "kind": "definition",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    127
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Scenic",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t232",
+    "t327",
+    "t334"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scenic's programmable semantics make the scenario language technically adaptable to job sites.",
+   "quote": "programmable semantics make it technically adaptable to job sites",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    127
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Scenic",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t232",
+    "t11"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No mining or construction deployment of Scenic was found.",
+   "quote": "no mining or construction deployment was found",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    127
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Scenic",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t327",
+    "t331"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Scenic's enterprise test governance is thinner than that of commercial tools.",
+   "quote": "enterprise test governance is thinner than commercial tools.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    127
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Scenic",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t162",
+    "t327"
+   ],
+   "importance": 2
+  }
+ ]
+}

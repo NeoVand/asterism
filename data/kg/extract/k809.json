@@ -1,0 +1,245 @@
+{
+ "chunkId": "k809",
+ "hash": "ec8361302841e19c",
+ "facts": [
+  {
+   "text": "Model risk combines how much a simulation's output drives a decision (model influence) with the severity of a wrong decision (decision consequence), and determines how much credibility evidence the simulation needs.",
+   "quote": "Model risk is how much a simulation's output drives a decision (its influence) combined with how severe a wrong decision would be (the consequence), and it sets how much credibility evidence the simulation must have.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t239",
+    "t234",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The medical-device standard ASME V&V 40, issued by the American Society of Mechanical Engineers in 2018, defines model risk as the combination of model influence and decision consequence.",
+   "quote": "The medical-device standard ASME V&V 40 (American Society of Mechanical Engineers, 2018) defines model risk as the combination of two things.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "ASME V&V 40",
+     "kind": "standard"
+    },
+    {
+     "name": "American Society of Mechanical Engineers",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t239",
+    "t243"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A simulation that is the only evidence for whether a 100 t machine stops before a person has very high model risk.",
+   "quote": "A model that is the only evidence for whether a 100 t machine stops before a person has very high model risk [Chapter 10].",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t239",
+    "t170",
+    "t168",
+    "t14"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Model risk is rated using a grid with low, medium and high model influence on one axis and low, medium and high decision consequence on the other, rather than a formula with units.",
+   "quote": "The rating is a grid, not a formula with units: low, medium and high influence on one axis, low, medium and high consequence on the other.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t239"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The model-risk grid position sets credibility goals agreed in advance for verification thoroughness, validation closeness and knowledge of inputs; these goals increase with risk.",
+   "quote": "The position sets credibility goals, agreed in advance, for each kind of evidence: how thorough verification must be, how close validation must come, how well inputs must be known. Goals rise with risk",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t239",
+    "t240",
+    "t235",
+    "t218"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The space agency standard uses a criticality assessment to make the same risk-based credibility decision as the model-risk grid.",
+   "quote": "The space agency standard makes the same move with a criticality assessment",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t239",
+    "t240"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The European automated-vehicle regulation requires a criticality assessment.",
+   "quote": "the European automated-vehicle regulation requires one [Chapter 10].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t239",
+    "t275"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For the collision-mitigation validation program, the booklet judges the physical brake model probably to be the highest-risk model in the chain because brake behavior varies with wear and temperature and has the highest decision consequence.",
+   "quote": "the physical brake model is probably the highest-risk model in the chain, because brake behavior varies with wear and temperature and has the highest decision consequence",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t239",
+    "t182",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For the collision-mitigation validation program, sensor models in dust, darkness and glare have high model risk because they are the least validated models.",
+   "quote": "sensor models in dust, darkness and glare are high risk because they are least validated.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t239",
+    "t102",
+    "t237",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A combinatorial sweep over site layouts and speeds carries lower model risk because the sweep exercises validated physics many times.",
+   "quote": "A combinatorial sweep over site layouts and speeds exercises validated physics many times and carries lower model risk [Chapter 10].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t239",
+    "t202",
+    "t143"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No framework prescribes a universal percentage of physical tests or a universal tolerance; mature practice derives both from model influence, decision consequence, applicability and uncertainty.",
+   "quote": "No framework prescribes a universal percentage of physical tests or a universal tolerance; mature practice derives both from model influence, decision consequence, applicability and uncertainty",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t264",
+    "t239",
+    "t258",
+    "t259"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Physical testing is retained where model risk is high and validation evidence is weakest.",
+   "quote": "physical testing is kept where model risk is high and validation evidence weakest [Chapter 10].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t264",
+    "t239",
+    "t237",
+    "t216"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Rating the model risk of each claim provides a defensible basis for splitting testing between simulation and physical tests.",
+   "quote": "Rating each claim's model risk is the honest route to a defensible test split.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t239",
+    "t264",
+    "t216"
+   ],
+   "importance": 3
+  }
+ ]
+}

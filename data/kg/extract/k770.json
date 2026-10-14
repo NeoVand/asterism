@@ -1,0 +1,286 @@
+{
+ "chunkId": "k770",
+ "hash": "507f1dd59c61129b",
+ "facts": [
+  {
+   "text": "Design of experiments (DOE) is the branch of statistics that plans combinations of settings to measure the effects of individual factors and factors acting together with the fewest runs.",
+   "quote": "Design of experiments (DOE) is the branch of statistics that plans which combinations of settings to test so that the effect of each factor, and of factors acting together, can be measured with the fewest runs.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Design of experiments",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t201"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet names classic DOE designs from the statistical handbook of the National Institute of Standards and Technology (NIST).",
+   "quote": "The booklet names the classic designs from the statistical handbook of the National Institute of Standards and Technology (NIST).",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "National Institute of Standards and Technology",
+     "kind": "organization"
+    },
+    {
+     "name": "Design of experiments",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t201"
+   ],
+   "importance": 1
+  },
+  {
+   "text": "A full factorial DOE tests every combination of a few factors at a few levels, and its run count grows exponentially.",
+   "quote": "A full factorial tests every combination of a few factors at a few levels; its run count grows exponentially.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Full factorial design",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t201",
+    "t198"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A fractional factorial DOE tests a chosen fraction of combinations and sharply reduces run count, but introduces aliasing: some higher-order effects become indistinguishable from others.",
+   "quote": "A fractional factorial tests a chosen fraction and cuts the run count sharply, at the price of \"aliasing\": some higher-order effects become indistinguishable from others.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Fractional factorial design",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t201"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "DOE screening designs identify influential factors.",
+   "quote": "Screening designs identify the influential factors.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Screening designs",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t201"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Response-surface DOE designs map curvature in the smaller space of influential factors and suit fine tuning of thresholds and zones.",
+   "quote": "Response-surface designs then map curvature in the smaller space of influential factors, which suits fine tuning of thresholds and zones.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Response-surface designs",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t201",
+    "t188",
+    "t187",
+    "t197"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "D-optimal DOE designs help when constraints make a regular test grid impossible.",
+   "quote": "D-optimal designs help when constraints make a regular grid impossible",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "D-optimal designs",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t201",
+    "t143"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "DOE can support claims about main effects and low-order interactions on a continuous response, such as how detection range changes with dust density and illumination.",
+   "quote": "DOE can claim main effects and low-order interactions on a continuous response, for example how detection range changes with dust density and illumination.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Design of experiments",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t201",
+    "t87",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "DOE cannot support a claim about field failure probability because DOE test points are not weighted by how often each condition occurs.",
+   "quote": "It cannot claim a failure probability in the field, because its points are not weighted by how often each condition occurs",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Design of experiments",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t201",
+    "t214",
+    "t217"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "DOE cannot find a narrow failure region hidden between design points; a fractional factorial showing no main effect for fog cannot rule out a localized failure at a particular combination of fog density, glare and sensor contamination.",
+   "quote": "it cannot find a narrow failure region hidden between design points: a fractional factorial showing no main effect for fog cannot rule out a localized failure at one combination of fog density, glare and sensor contamination",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Design of experiments",
+     "kind": "method"
+    },
+    {
+     "name": "Fractional factorial design",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t201",
+    "t144",
+    "t102",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet places DOE in the coverage stream and in calibration after prototype arrival, where modest DOE or D-optimal tests estimate sensor, latency and braking residuals.",
+   "quote": "The booklet places DOE in the coverage stream and in the calibration step after prototype arrival, where modest DOE or D-optimal tests estimate sensor, latency and braking residuals.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Design of experiments",
+     "kind": "method"
+    },
+    {
+     "name": "D-optimal designs",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t201",
+    "t237",
+    "t84",
+    "t88",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No off-road collision-avoidance study using DOE was found.",
+   "quote": "No off-road collision-avoidance study using DOE was found [Chapter 9].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Design of experiments",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t201",
+    "t23",
+    "t1"
+   ],
+   "importance": 3
+  }
+ ]
+}

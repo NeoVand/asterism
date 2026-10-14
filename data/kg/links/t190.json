@@ -1,0 +1,115 @@
+{
+ "key": "t190",
+ "hash": "714ba99b77cb93ce",
+ "synopsis": "The regulatory values are not directly comparable: UN R152 specifies commanded braking demand, ISO 3450 derives mean deceleration from stopping distance, MSHA assumes constant deceleration with separate response times, and New South Wales uses net deceleration on grade; pooled values therefore require conversion to a common definition [f13640, f13641]. NSW guidance proposes service/secondary-brake minima of 0.60/0.30 m/s² in service and 0.75/0.40 m/s² in type testing, with grade and mass corrections—not an adopted rule—whereas MSHA Table M-1 uses approximately 2.94 m/s² and MOSH emergency-stop targets are 1.9 m/s² above 20 km/h and 1.0 m/s² otherwise [f13946, f5989, f5560]. On-road requirements include braking demands of at least 5.0 m/s² under UN R152 and 4 m/s² under UN R131; the November 2024 FMVSS 127 amendment instead addresses false activation relative to manual braking, using a 0.25 g peak-deceleration threshold [f5993, f2520, f2617]. Although the synthesis says no universal maximum automatic deceleration exists, the more qualified finding is that no published universal safe maximum or tuned off-road deceleration values were found; South Africa Regulation 8.10 also prescribes no deceleration curve [f151, f13769, f5916, f2442]. The recommended approach is machine-family-specific limits: command the minimum of collision-avoidance need, traction, stability, brake capability and load limits, with a jerk limit, and derive stability caps through layered models and physical tests involving steering or articulation, cross-slope and relevant payloads [f11888, f152, f13840, f13770].",
+ "relations": [
+  {
+   "a": "f141",
+   "b": "f5889",
+   "type": "same",
+   "note": "Both report the NSW 0.60 m/s² in-service off-road minimum."
+  },
+  {
+   "a": "f141",
+   "b": "f236",
+   "type": "same",
+   "note": "Duplicate NSW in-service minimum within the synthesis."
+  },
+  {
+   "a": "f142",
+   "b": "f5890",
+   "type": "same",
+   "note": "Both give MSHA deceleration as approximately 2.94 m/s²."
+  },
+  {
+   "a": "f142",
+   "b": "f237",
+   "type": "same",
+   "note": "Duplicate MSHA deceleration within the synthesis."
+  },
+  {
+   "a": "f143",
+   "b": "f5891",
+   "type": "same",
+   "note": "Both report the car AEB braking demand of at least 5.0 m/s²."
+  },
+  {
+   "a": "f238",
+   "b": "f11667",
+   "type": "same",
+   "note": "Both identify the UN R152 car braking-demand requirement."
+  },
+  {
+   "a": "f2520",
+   "b": "f2818",
+   "type": "same",
+   "note": "Duplicate UN R131 minimum braking demand."
+  },
+  {
+   "a": "f5560",
+   "b": "f13635",
+   "type": "same",
+   "note": "Same South African industry emergency-stop targets and speed split."
+  },
+  {
+   "a": "f151",
+   "b": "f5936",
+   "type": "same",
+   "note": "Both state no universal maximum automatic deceleration exists for earth-moving machines."
+  },
+  {
+   "a": "f13060",
+   "b": "f13840",
+   "type": "same",
+   "note": "Both recommend threshold, stability and selected high-fidelity models per machine family."
+  },
+  {
+   "a": "f2122",
+   "b": "f2536",
+   "type": "elaborates",
+   "note": "Adds steel-trench-plate, 80 km/h and pass-through test scenarios to the false-activation threshold."
+  },
+  {
+   "a": "f5890",
+   "b": "f5989",
+   "type": "elaborates",
+   "note": "Adds weight-dependent system response and one-second operator response to MSHA stopping-distance calculations."
+  },
+  {
+   "a": "f5891",
+   "b": "f5993",
+   "type": "elaborates",
+   "note": "Clarifies that 5.0 m/s² is demanded braking, not measured deceleration."
+  },
+  {
+   "a": "f5889",
+   "b": "f13946",
+   "type": "elaborates",
+   "note": "Adds secondary brakes, type-testing values, corrections and proposed—not adopted—status."
+  },
+  {
+   "a": "f13640",
+   "b": "f13641",
+   "type": "supports",
+   "note": "Different regulatory definitions justify conversion before pooling deceleration values."
+  },
+  {
+   "a": "f2572",
+   "b": "f13770",
+   "type": "supports",
+   "note": "Off-road traction, payload and stability complications justify machine-family limits and physical stability tests."
+  },
+  {
+   "a": "f13769",
+   "b": "f13770",
+   "type": "depends",
+   "note": "Absent a published universal safe maximum, limits must be derived per machine family."
+  },
+  {
+   "a": "f5938",
+   "b": "f13742",
+   "type": "elaborates",
+   "note": "Articulation and roll state specify machine-state constraints on commanded deceleration."
+  }
+ ]
+}

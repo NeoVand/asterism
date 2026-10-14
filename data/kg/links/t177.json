@@ -1,0 +1,115 @@
+{
+ "key": "t177",
+ "hash": "338ee122fdd6cfd3",
+ "synopsis": "Heavy machines combine service brakes, drivetrain retarders and, on many machines, hydrostatic slowing; deployed intervention approaches differ, ranging from Toyota SEnS+ power shutoff to Liebherr hydrostatic stopping and Hexagon retarder/service-brake intervention [f13744, f1407, f1648, f1663]. Retarder deceleration is power-limited, declining with speed and mass and further reduced downhill; historic haul-truck studies reported 1–2 seconds of lag, but these are not valid design constants for a 2027 system [f5994, f5897, f6063]. Braking models should represent state-dependent actuator blending and hydrostatic capacity rather than a constant or single pedal-to-torque gain, because ignoring hydrostatic slowing can trigger collision intervention too early or too late [f6048, f6049, f6050, f6145]. ISO 3450 separates service, secondary and parking functions, and hydrostatic slowing cannot substitute for parking braking; meanwhile, no US federal construction or mining rule requiring automatic service-brake intervention after an ignored warning was found [f13746, f6544, f2247]. Higher-fidelity modeling is targeted at hydraulics and latency, articulated/high-center-of-gravity stability, hydrostatic capacity and deformable ground, but modern production brake-delay distributions and recent hydrostatic modeling evidence remain gaps [f5906, f6551, f6446].",
+ "relations": [
+  {
+   "a": "f147",
+   "b": "f5906",
+   "type": "same",
+   "note": "Synthesis restates the targeted areas where higher braking fidelity pays off."
+  },
+  {
+   "a": "f5906",
+   "b": "f13839",
+   "type": "same",
+   "note": "Glossary repeats the four priority areas for higher-fidelity braking models."
+  },
+  {
+   "a": "f1352",
+   "b": "f1663",
+   "type": "elaborates",
+   "note": "Adds following-distance and overspeed functions to the same Hexagon intervention capabilities."
+  },
+  {
+   "a": "f5897",
+   "b": "f13750",
+   "type": "same",
+   "note": "Both report historic retarder lag of one to two seconds."
+  },
+  {
+   "a": "f13750",
+   "b": "f12564",
+   "type": "same",
+   "note": "Duplicate historic haul-truck retarder lag figures."
+  },
+  {
+   "a": "f12564",
+   "b": "f13672",
+   "type": "same",
+   "note": "Same historic lag range; latter identifies a US mining study."
+  },
+  {
+   "a": "f11408",
+   "b": "f13748",
+   "type": "same",
+   "note": "Both describe declining power-limited retarder deceleration with increasing speed and mass."
+  },
+  {
+   "a": "f5994",
+   "b": "f13749",
+   "type": "same",
+   "note": "Glossary reproduces the patent's power-limited retarder deceleration formula."
+  },
+  {
+   "a": "f5994",
+   "b": "f3085",
+   "type": "supports",
+   "note": "Downgrade and speed penalties explain retarder disadvantage on steep, excessive-speed descents."
+  },
+  {
+   "a": "f6145",
+   "b": "f13755",
+   "type": "same",
+   "note": "Ignoring hydrostatic slowing can cause early or late collision-system triggers."
+  },
+  {
+   "a": "f6050",
+   "b": "f13756",
+   "type": "same",
+   "note": "Both require hydrostatic braking capacity to be modeled as a function."
+  },
+  {
+   "a": "f6049",
+   "b": "f13819",
+   "type": "same",
+   "note": "Same required hydrostatic model variables and rejection of single pedal-to-torque gain."
+  },
+  {
+   "a": "f6048",
+   "b": "f13757",
+   "type": "supports",
+   "note": "State-dependent braking blends justify separate model families for different drivetrain architectures."
+  },
+  {
+   "a": "f6045",
+   "b": "f6544",
+   "type": "same",
+   "note": "Hydrostatic slowing cannot substitute for parking-brake capability."
+  },
+  {
+   "a": "f6045",
+   "b": "f13752",
+   "type": "elaborates",
+   "note": "Glossary additionally explains that propel control may provide the service-brake function."
+  },
+  {
+   "a": "f6041",
+   "b": "f13751",
+   "type": "same",
+   "note": "Glossary restates auxiliary hydrostatic braking; chapter supplies a 2017 Yanmar example."
+  },
+  {
+   "a": "f6066",
+   "b": "f6551",
+   "type": "same",
+   "note": "Both report missing modern latency distributions across production braking architectures."
+  },
+  {
+   "a": "f13745",
+   "b": "f1407",
+   "type": "contradicts",
+   "note": "Blanket service-brake claim conflicts with Toyota's power-shutoff automatic stopping approach."
+  }
+ ]
+}

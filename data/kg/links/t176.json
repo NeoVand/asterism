@@ -1,0 +1,115 @@
+{
+ "key": "t176",
+ "hash": "74f6873ddb330516",
+ "synopsis": "Articulated machines cannot always be represented as straight point masses: braking while turning, on cross-slopes or at large articulation angles introduces yaw, roll, load-transfer and hinge dynamics that limit usable deceleration and warrant multibody modelling [f6028, f6030, f6077]. Automatic braking can itself create instability and secondary hazards, so commanded deceleration should be capped by articulation and roll state, with safe limits derived per machine family and physically tested across steering, cross-slope and payload conditions [f5941, f13742, f13770]. Validation should include load, slope and articulation in closed-loop SIL/HIL models, and express detection range relative to machine swept envelopes rather than sensor origins; changes in articulation or sensor placement can invalidate prior correlation [f5557, f5501, f1997]. Draft ISO/PRF 21815-5 covers articulation and other non-longitudinal motions; it was at proof stage in September 2026, with publication planned for November 2026 [f1136, f2176, f6747]. Tools offer articulated-machine capabilities, but accurate prediction of combined environmental and machine-motion effects remains uncertain, articulated-braking evidence is mostly academic and scaled, and published automatic-braking jackknife or roll-event data were not found [f8301, f8599, f9343, f6031, f6037].",
+ "relations": [
+  {
+   "a": "f1136",
+   "b": "f2176",
+   "type": "same",
+   "note": "Both describe the draft standard's coverage of articulation and other machine motions."
+  },
+  {
+   "a": "f1136",
+   "b": "f2672",
+   "type": "same",
+   "note": "Both list the same motion categories covered by draft ISO/PRF 21815-5."
+  },
+  {
+   "a": "f2176",
+   "b": "f2672",
+   "type": "same",
+   "note": "Duplicate scope descriptions; one additionally identifies intervention modes."
+  },
+  {
+   "a": "f6747",
+   "b": "f1136",
+   "type": "elaborates",
+   "note": "Adds planned November 2026 publication to the proof-stage status."
+  },
+  {
+   "a": "f1236",
+   "b": "f1733",
+   "type": "same",
+   "note": "Both judge road-to-off-road transfer larger than light-to-heavy road-vehicle transfer."
+  },
+  {
+   "a": "f6037",
+   "b": "f13739",
+   "type": "same",
+   "note": "Identical gap: no published automatic-braking jackknife or roll-event data were found."
+  },
+  {
+   "a": "f11419",
+   "b": "f5885",
+   "type": "elaborates",
+   "note": "Specifies the articulated hinge as a reason simple braking models are insufficient."
+  },
+  {
+   "a": "f6077",
+   "b": "f13741",
+   "type": "elaborates",
+   "note": "Specifies hard braking on side slopes as a multibody-model use case."
+  },
+  {
+   "a": "f6030",
+   "b": "f13742",
+   "type": "supports",
+   "note": "Articulation and roll dynamics limiting deceleration justify state-dependent brake-command caps."
+  },
+  {
+   "a": "f13770",
+   "b": "f6030",
+   "type": "depends",
+   "note": "Physical stability tests must cover conditions that limit articulated-machine deceleration."
+  },
+  {
+   "a": "f13763",
+   "b": "f5941",
+   "type": "elaborates",
+   "note": "Expands automatic-braking hazards to directional control, operator injury and ground failure."
+  },
+  {
+   "a": "f5814",
+   "b": "f1975",
+   "type": "supports",
+   "note": "Unexpected-stop hazards support context-dependent rather than universal braking commands."
+  },
+  {
+   "a": "f2573",
+   "b": "f5501",
+   "type": "supports",
+   "note": "Changing articulated footprints justify swept-envelope-based separation rather than sensor-origin range."
+  },
+  {
+   "a": "f7015",
+   "b": "f5501",
+   "type": "elaborates",
+   "note": "Provides state-dependent footprint and swept-volume data for geometry-based transfer."
+  },
+  {
+   "a": "f7921",
+   "b": "f1997",
+   "type": "elaborates",
+   "note": "Explains how sensor relocation changes perception geometry, contamination and apparent articulated motion."
+  },
+  {
+   "a": "f5885",
+   "b": "f5557",
+   "type": "supports",
+   "note": "Simple-model inadequacy supports validated SIL/HIL brake models including articulation."
+  },
+  {
+   "a": "f6031",
+   "b": "f13739",
+   "type": "elaborates",
+   "note": "Characterizes available dynamics evidence alongside the missing automatic-braking event data."
+  },
+  {
+   "a": "f8301",
+   "b": "f8493",
+   "type": "elaborates",
+   "note": "Adds a dated Chrono release and deformable-terrain capability to its articulated-vehicle dynamics support."
+  }
+ ]
+}

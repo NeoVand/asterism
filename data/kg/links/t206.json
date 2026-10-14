@@ -1,0 +1,115 @@
+{
+ "key": "t206",
+ "hash": "b79bdd77028ac9b1",
+ "synopsis": "Rare-event methods deliberately oversample dangerous simulated situations and reweight results to estimate normal-operation failure rates; unbiased estimation requires known likelihood ratios and sampling that reaches the failure region [f14159, f14160, f6851]. On-road Michigan studies in 2016 reported acceleration factors of roughly 300–100,000 for car-following and 2,000–20,000 for lane-change conflicts, while D2RL, reported on 22 March 2023, achieved 10^3–10^5-fold acceleration while remaining unbiased [f1220, f1221, f6848]. These are statistical exposure reductions, not product safety sign-offs: the Michigan evaluations did not eliminate model, sensor or vehicle testing, and no regulator accepted production AEB on their basis [f1219, f1299, f1300]. Transfer to heavy off-road machines remains unproven: the known exposure distribution needed across 100+ site types is absent, and no comparable large off-road naturalistic interaction dataset was found [f352, f6858, f6859]. High-dimensional or unknown distributions can produce unstable, high-variance weights, and acceleration cannot establish failure modes omitted from the simulation, including unrepresented sensor physics [f6852, f6853]. Although naive Monte Carlo cannot reach low failure rates in four months, the planning recommendation is to use importance sampling for estimation only where a defensible field distribution exists and otherwise classify it as discovery; experts disagree about how far acceleration can replace real exposure [f10337, f6866, f14170].",
+ "relations": [
+  {
+   "a": "f1220",
+   "b": "f1296",
+   "type": "same",
+   "note": "Same Michigan car-following acceleration range."
+  },
+  {
+   "a": "f1296",
+   "b": "f1781",
+   "type": "same",
+   "note": "Same Michigan car-following acceleration range."
+  },
+  {
+   "a": "f1221",
+   "b": "f1297",
+   "type": "same",
+   "note": "Same Michigan lane-change acceleration range."
+  },
+  {
+   "a": "f1297",
+   "b": "f1782",
+   "type": "same",
+   "note": "Same Michigan lane-change acceleration range."
+  },
+  {
+   "a": "f6647",
+   "b": "f14094",
+   "type": "same",
+   "note": "Both require a known field distribution to estimate small probabilities."
+  },
+  {
+   "a": "f352",
+   "b": "f11614",
+   "type": "same",
+   "note": "Required exposure distribution is absent for 100+ site types."
+  },
+  {
+   "a": "f6848",
+   "b": "f14163",
+   "type": "same",
+   "note": "Same March 2023 D2RL acceleration and unbiasedness result."
+  },
+  {
+   "a": "f6851",
+   "b": "f14164",
+   "type": "same",
+   "note": "Unbiasedness requires known likelihood ratios and coverage of the failure region."
+  },
+  {
+   "a": "f6850",
+   "b": "f14166",
+   "type": "same",
+   "note": "On-road successes depend on models learned from large naturalistic datasets."
+  },
+  {
+   "a": "f6852",
+   "b": "f14165",
+   "type": "same",
+   "note": "Unknown or high-dimensional distributions cause unstable, high-variance weights."
+  },
+  {
+   "a": "f6859",
+   "b": "f14167",
+   "type": "same",
+   "note": "No comparably large off-road naturalistic dataset was found."
+  },
+  {
+   "a": "f6854",
+   "b": "f14168",
+   "type": "same",
+   "note": "Importance sampling cannot rescue a poorly modeled quarry operation."
+  },
+  {
+   "a": "f6866",
+   "b": "f14169",
+   "type": "same",
+   "note": "Use defensible distributions for estimation; otherwise classify the campaign as discovery."
+  },
+  {
+   "a": "f6834",
+   "b": "f14186",
+   "type": "same",
+   "note": "Pure Monte Carlo is extremely inefficient for rare dangerous events."
+  },
+  {
+   "a": "f10337",
+   "b": "f10336",
+   "type": "supports",
+   "note": "Four-month Monte Carlo infeasibility motivates accelerated rare-event evaluation."
+  },
+  {
+   "a": "f352",
+   "b": "f6866",
+   "type": "depends",
+   "note": "Missing site distributions restrict campaigns to discovery rather than defensible rate estimation."
+  },
+  {
+   "a": "f1222",
+   "b": "f6853",
+   "type": "supports",
+   "note": "Kinematic studies do not establish sensor performance under adverse environmental conditions."
+  },
+  {
+   "a": "f1300",
+   "b": "f1219",
+   "type": "supports",
+   "note": "Absent regulatory acceptance reinforces the distinction between exposure reduction and safety sign-off."
+  }
+ ]
+}

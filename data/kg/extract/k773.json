@@ -1,0 +1,211 @@
+{
+ "chunkId": "k773",
+ "hash": "fa393eaba4d92c0a",
+ "facts": [
+  {
+   "text": "A space-filling design spreads test points as evenly as possible across the ranges of several continuous parameters at once so that no region of the space is left unexplored.",
+   "quote": "A space-filling design spreads test points as evenly as possible across the ranges of several continuous parameters at once, so that no region of the space is left unexplored.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t204",
+    "t199"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Latin hypercube is the best-known example of a space-filling design.",
+   "quote": "The Latin hypercube is the best-known example.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Latin hypercube",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t204"
+   ],
+   "importance": 1
+  },
+  {
+   "text": "A Latin hypercube design divides each parameter's range into n equal slices and places n points so that every slice of every parameter is used exactly once.",
+   "quote": "Each parameter's range is cut into n equal slices, and the design places n points so that every slice of every parameter is used exactly once",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Latin hypercube",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t204",
+    "t199"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sobol sequences and other quasi-random designs achieve an even spread of test points similar to Latin hypercube designs, but in a different way.",
+   "quote": "Sobol sequences and other quasi-random designs achieve a similar even spread in a different way.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sobol sequences",
+     "kind": "method"
+    },
+    {
+     "name": "Latin hypercube",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t204"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Space-filling designs cover continuous parameters more evenly than naive random draws.",
+   "quote": "these designs cover continuous parameters more evenly than naive random draws",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t204",
+    "t203",
+    "t199"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Space-filling designs are useful for exploration and for training surrogate models, which are fast approximate models of a simulator's response.",
+   "quote": "are useful for exploration and for training surrogate models, which are fast approximate models of the simulator's response [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t204",
+    "t125",
+    "t200"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Even parameter-space coverage does not represent operational probability: a uniformly covered parameter box does not represent real quarry traffic, where most approaches are slow and most weather is clear.",
+   "quote": "A uniformly covered box of parameters is not a picture of a real quarry's traffic, where most approaches are slow and most weather is clear.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t204",
+    "t214",
+    "t140"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Space-filling designs treat unrealistic parameter regions exactly like realistic regions unless constraints and distributions are added.",
+   "quote": "Space-filling designs treat unrealistic regions exactly like realistic ones unless constraints and distributions are added.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t204",
+    "t199"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Space-filling designs can support a claim of even geometric spread through the chosen region, but cannot support claims about rates, worst cases or operational frequency.",
+   "quote": "So they can claim \"even geometric spread through the chosen region\" and cannot claim rates, worst cases or operational frequency [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t204",
+    "t217",
+    "t213",
+    "t144"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet places space-filling designs alongside combinatorial designs in the coverage stream, never as a basis for the release claim.",
+   "quote": "The booklet puts space-filling designs in the coverage stream alongside combinatorial designs: good for understanding how detection range varies with dust, glare and speed, and for feeding surrogate-guided search, but never for the release claim [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t204",
+    "t202",
+    "t217",
+    "t349"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Space-filling designs are useful for understanding how detection range varies with dust, glare and speed, and for feeding surrogate-guided search.",
+   "quote": "good for understanding how detection range varies with dust, glare and speed, and for feeding surrogate-guided search",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t204",
+    "t193",
+    "t102",
+    "t200"
+   ],
+   "importance": 2
+  }
+ ]
+}

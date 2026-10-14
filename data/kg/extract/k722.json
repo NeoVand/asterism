@@ -1,0 +1,279 @@
+{
+ "chunkId": "k722",
+ "hash": "f986761645fbaae2",
+ "facts": [
+  {
+   "text": "Replay feeds sensor data recorded on real machines back into software exactly as recorded to determine what the software would have detected and decided.",
+   "quote": "Replay feeds sensor data recorded on real machines back into the software, exactly as recorded, to see what the software would have detected and decided.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Replay can evaluate new perception software frame by frame against recordings from a shift driven by a machine with the existing warning system, using precisely time-stamped camera, radar, machine-speed and gear data and independent ground truth of worker and vehicle positions.",
+   "quote": "Months later, a new version of the perception software is run against that recording, frame by frame, and its detections are compared with an independent ground truth of where the workers and vehicles really were.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t105",
+    "t101",
+    "t266"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Re-simulation may re-render or partly modify recorded data before feeding the data into software.",
+   "quote": "Re-simulation is the same idea with more processing: the recording may be re-rendered or partly modified before it is fed in.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Replay proves detection rate, false-alarm rate and warning timing only for the sensor set, mounting positions and situations actually recorded.",
+   "quote": "Replay proves detection rate, false-alarm rate and warning timing for the sensor set, mounting positions and situations that were actually recorded",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t109",
+    "t32",
+    "t100",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Replay provides repeatability, regression testing across software versions, an old-system baseline and a fair old-versus-new comparison when both systems accept the same inputs.",
+   "quote": "it gives repeatability, regression across software versions, the baseline of the old system, and a fair old-versus-new comparison when both accept the same inputs [Chapter 7].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t161",
+    "t221",
+    "t222"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Replay can reproduce a rare recorded event indefinitely.",
+   "quote": "It can reproduce a rare recorded event indefinitely [Chapter 1].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t144"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Replay cannot show the effects of actions differing from the recording, such as braking, steering or operator reaction; unrecorded sensor types or positions; conditions absent from the logs; or physical sensor effects upstream of the injection point.",
+   "quote": "It cannot show the effect of any action that differs from the recording (braking, steering, an operator reaction), anything about sensor types or positions that were not recorded, conditions not in the logs, or physical sensor effects upstream of the injection point [Chapter 7].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t154",
+    "t261",
+    "t149"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Replay fidelity is defined by the point at which recorded data are re-injected.",
+   "quote": "Its fidelity \"is defined by the point at which data are re-injected\" [Chapter 7].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t125",
+    "t149"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Neural re-simulation of camera and lidar logs from nearby new viewpoints exists, but degrades once the viewpoint moves 1 to 4 m from the recorded path, limiting its relevance to new sensor mounting positions.",
+   "quote": "Neural re-simulation of camera and lidar logs from nearby new viewpoints exists but degrades once the viewpoint moves 1 to 4 m from the recorded path, which matters for new mounting positions [Chapter 7].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t116",
+    "t100",
+    "t89",
+    "t92"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A useful replay record needs synchronized raw sensor streams, machine speed, gear, steering and articulation, brake state, calibration, weather and site metadata, and a defensible ground-truth channel; without these, large volumes of logs have little validation value.",
+   "quote": "A useful replay record needs synchronized raw sensor streams, machine speed, gear, steering and articulation, brake state, calibration, weather and site metadata and a defensible ground-truth channel; without that, large volumes of logs have little validation value [Chapter 1].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t121",
+    "t101",
+    "t105",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Common replay-recording mistakes include recording only object lists, missing calibration, unsynchronized clocks, lossy compression and event-triggered recording only.",
+   "quote": "The common mistakes (recording only object lists, missing calibration, unsynchronized clocks, lossy compression, event-triggered recording only) fill a page of Chapter 7.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t121",
+    "t156",
+    "t100",
+    "t101"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Labeling capacity dominates the cost of replay.",
+   "quote": "Labeling capacity dominates the cost [Chapter 1].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t106",
+    "t358"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Replay and shadow mode are the cheapest large-volume validation methods, and the company already owns the appropriate fleet.",
+   "quote": "Replay and shadow mode are the cheapest large-volume methods, and the company already owns the right fleet",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t157",
+    "t41"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Recording for replay must start in October 2026 and continue through the winter, rather than waiting for the prototype to arrive.",
+   "quote": "recording must start in October 2026, through the winter, not when the prototype arrives [Chapters 1, 7].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t121",
+    "t45",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet's first ordering rule requires replay and sensor-model correlation before simulation results can be trusted.",
+   "quote": "The booklet's first ordering rule is that replay and sensor-model correlation come before simulation results can be trusted [Chapter 1].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t160",
+    "t234"
+   ],
+   "importance": 3
+  }
+ ]
+}

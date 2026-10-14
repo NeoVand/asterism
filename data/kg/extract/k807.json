@@ -1,0 +1,180 @@
+{
+ "chunkId": "k807",
+ "hash": "d7534da5761f6b77",
+ "facts": [
+  {
+   "text": "Calibration adjusts a model's parameters to match measurements; validation tests whether the adjusted model predicts unseen measurements. Using the same data for calibration and validation is invalid.",
+   "quote": "Calibration adjusts a model's parameters until it matches a set of measurements; validation tests whether the adjusted model then predicts measurements it has never seen, and doing both on the same data is cheating.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t263"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Simulation calibration adjusts parameters such as tire friction on wet gravel, brake-pressure build-up delay and dust attenuation of a laser beam so that a model reproduces a measured test; this calibration is necessary.",
+   "quote": "Every simulation has knobs: tire friction on wet gravel, the delay before brake pressure builds, how strongly dust weakens a laser beam. Calibration sets the knobs so the model reproduces a measured test, which is necessary.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t174",
+    "t171",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A model can fit its calibration cases perfectly yet fail on the first downhill stop or heavier load because its parameters were tuned to those cases rather than to the physics.",
+   "quote": "A model can fit its calibration cases perfectly and fail on the first downhill stop or heavier load, because the knobs were tuned to those cases, not to the physics [Chapter 8].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t219",
+    "t173",
+    "t168"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Aviation guidance on certifying aircraft seats by analysis states that calibration is not validation.",
+   "quote": "Aviation guidance on certifying aircraft seats by analysis states that calibration is not validation",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t246"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Aviation guidance on certifying aircraft seats by analysis states that agreement with another validated model is not sufficient to validate a model.",
+   "quote": "a model cannot be validated merely by agreement with another validated model [Chapter 10].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t246",
+    "t263"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Physical tests should be split in advance into calibration data, validation data and withheld confirmation data.",
+   "quote": "The practical rule is to split the physical tests in advance into calibration data, validation data and withheld confirmation data",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t263",
+    "t220"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The simulation model should be frozen before the validation dataset is used.",
+   "quote": "freeze the model before touching the validation set [Chapter 10].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t263",
+    "t219"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Within the program's four-month window, there is a temptation to use every expensive prototype stop both to tune the model and to claim validation.",
+   "quote": "In a four-month window the temptation is to use every expensive prototype stop both to tune the model and to claim validation.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t237",
+    "t231"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An assessor will ask which data calibrated the simulation model and which data remained independent.",
+   "quote": "An assessor will ask which data calibrated the model and which stayed independent.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t71",
+    "t237",
+    "t263",
+    "t231"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet recommends never using the same physical stop both to tune a model and to claim validation.",
+   "quote": "Never use the same stop to both tune and claim validation",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8,
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t263",
+    "t231"
+   ],
+   "importance": 3
+  }
+ ]
+}

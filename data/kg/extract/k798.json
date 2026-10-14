@@ -1,0 +1,307 @@
+{
+ "chunkId": "k798",
+ "hash": "db0404a2145b90d8",
+ "facts": [
+  {
+   "text": "Transferring settings across machine models means adapting a braking system tuned on one machine model to another with different size, mass and sensor layout, using physical settings measurable on each machine rather than re-tuning each machine by hand.",
+   "quote": "Transferring settings means getting a braking system tuned on one machine model to work on another, with a different size, mass and sensor layout, by expressing the settings in physical terms that can be measured on each machine instead of re-tuning each one by hand.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t229"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3:2023 links collision-risk areas to machine kinematics and dimensions and defines avoidance distance using detection, decision and action time, stopping distance and a safety distance.",
+   "quote": "ISO 21815-3:2023, which links collision-risk areas to the machine's kinematics and dimensions and defines the avoidance distance through detection, decision and action time, stopping distance and a safety distance.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t229",
+    "t193",
+    "t170"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The common engineering rule for transferring braking settings is required detection distance = v × (t_detect + t_decision + t_actuation) + v² / (2 × a_brake) + machine-envelope offset + margin. Here v is speed, the three times cover detection, decision and actuation, a_brake is braking deceleration, and the offset accounts for the machine's own extent.",
+   "quote": "required detection distance = v × (t_detect + t_decision + t_actuation) + v^2 / (2 × a_brake) + machine-envelope offset + margin",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t193",
+    "t172",
+    "t170",
+    "t169"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 16001 caps detection time, t_detect, at 300 milliseconds.",
+   "quote": "t_detect is capped at 300 milliseconds by ISO 16001",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t283",
+    "t88",
+    "t193"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Braking deceleration in the physics-based detection-distance rule depends on machine mass, slope and surface.",
+   "quote": "a_brake is the braking deceleration, which depends on mass, slope and surface",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t169",
+    "t168",
+    "t173",
+    "t174"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Physics-based transfer of braking settings requires each machine model to supply measured footprint, sensor positions and fields of view, stopping curves by grade and load, and latencies instead of tuned constants.",
+   "quote": "Each machine model then supplies measured data (footprint, sensor positions and fields of view, stopping curves by grade and load, latencies) instead of tuned constants",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t184",
+    "t100",
+    "t87",
+    "t88"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Machine archetypes for transferring braking settings group machines by collision-relevant kinematics, mass and braking regime, footprint and sensor arrangement, not by marketing names. A new model is seeded from its archetype, calibrated with a small test set and confirmed at its boundaries.",
+   "quote": "Archetypes group machines by the features that affect collision behavior (kinematics, mass and braking regime, footprint, sensor arrangement), not by marketing names; a new model is seeded from its archetype, calibrated with a small test set, and confirmed at its boundaries.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t237",
+    "t261"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Partial pooling through hierarchical models estimates a population-level response plus per-model deviations, borrowing strength across similar machines while retaining uncertainty for sparsely tested models.",
+   "quote": "Partial pooling, through hierarchical models, estimates a population-level response plus per-model deviations, borrowing strength across similar machines while keeping uncertainty for sparsely tested ones",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Partial pooling",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t229",
+    "t259"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Partial pooling does not prove that a loader and an excavator are exchangeable for transferring braking settings.",
+   "quote": "it does not prove that a loader and an excavator are exchangeable.",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Partial pooling",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t229",
+    "t2",
+    "t5",
+    "t76"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Transfer and multi-task Bayesian optimization use a tuned machine model as a prior and search only residual parameters on a new machine model.",
+   "quote": "Transfer and multi-task Bayesian optimization use the tuned model as a prior and search only the residual parameters on a new model",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Transfer and multi-task Bayesian optimization",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t229",
+    "t227"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Transfer of braking settings can produce negative transfer when machines differ substantially.",
+   "quote": "negative transfer is possible when machines differ a lot",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t229"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Safe multi-task optimization for transferring braking settings remains research.",
+   "quote": "safe multi-task optimization remains research",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Safe multi-task optimization",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t229",
+    "t227"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Per-model tuning made the old braking-system tuning process take years.",
+   "quote": "Per-model tuning is what made the old process take years.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t229"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends transferring braking settings through physics rather than copying tuned constants between machine models.",
+   "quote": "The booklet's position is to transfer settings through physics, not copied constants",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t229"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No published ISO rule states that testing N representative machines validates a machine family; some confirmation evidence is therefore needed for every safety-relevant variant.",
+   "quote": "no published ISO rule says testing N representative machines validates a family, so some confirmation evidence is needed for every safety-relevant variant",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ISO",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t229",
+    "t76",
+    "t230",
+    "t70"
+   ],
+   "importance": 3
+  }
+ ]
+}

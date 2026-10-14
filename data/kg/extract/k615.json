@@ -1,0 +1,314 @@
+{
+ "chunkId": "k615",
+ "hash": "0d57c51d249b0711",
+ "facts": [
+  {
+   "text": "Safety of the Intended Functionality (SOTIF) concerns systems with no broken parts that nevertheless behave unsafely because their sensing or decision-making is insufficient for the situation encountered.",
+   "quote": "SOTIF is the part of safety concerned with a system that has no broken parts yet still behaves unsafely, because its sensing or decision-making is not good enough for the situation it meets.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t50",
+    "t85",
+    "t185"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The term SOTIF comes from the road-vehicle standard ISO 21448:2022.",
+   "quote": "The term comes from the road-vehicle standard ISO 21448:2022.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21448",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t50",
+    "t289"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In ISO 21448, functional insufficiencies are limitations in a system's specified capability or performance; examples include a camera confusing a worker in a reflective vest with a reflective sign and radar failing to separate a person from an adjacent steel structure.",
+   "quote": "a camera that cannot tell a worker in a reflective vest from a reflective sign, or a radar that cannot separate a person from the steel structure beside them.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21448",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t50",
+    "t89",
+    "t94",
+    "t86"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21448 triggering conditions activate a functional insufficiency and lead to dangerous behavior; examples include low sun entering a lens, a dust cloud, and a berm shaped like a person.",
+   "quote": "A triggering condition is a specific situation that activates the insufficiency and leads to dangerous behavior: low sun into the lens, a dust cloud, a berm shaped like a person.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21448",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t50",
+    "t102",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21448 divides situations into four areas: known safe, known unsafe, unknown unsafe, and unknown safe.",
+   "quote": "the standard divides all situations into four areas: known safe, known unsafe, unknown unsafe and unknown safe.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21448",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t50"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "SOTIF work uses analysis and testing to move situations out of unknown areas and uses design changes, operating limits, and better sensing to shrink unsafe areas.",
+   "quote": "The work of SOTIF is to move situations out of the unknown areas by analysis and testing, and to shrink the unsafe areas by design changes, operating limits and better sensing.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t50",
+    "t140",
+    "t84"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "SOTIF covers both missing a real person, which creates a hazard, and reacting to harmless objects, which causes nuisance braking.",
+   "quote": "It covers both missing a real person (a hazard) and reacting to something harmless (nuisance braking).",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t50",
+    "t108",
+    "t31",
+    "t14"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21448 is written for road vehicles and does not apply by scope to off-road machines.",
+   "quote": "ISO 21448 is written for road vehicles and does not apply by scope to off-road machines [Chapter 3]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 21448",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t50",
+    "t289",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet borrows ISO 21448 triggering-condition logic for scenario and requirements engineering and uses ISO 21448 to address perception limits.",
+   "quote": "it borrows the triggering-condition logic for scenario and requirements engineering and names the standard for perception limits [Chapters 1, 8, 12]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    8,
+    12
+   ],
+   "entities": [
+    {
+     "name": "ISO 21448",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t50",
+    "t141",
+    "t63",
+    "t85"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet catalogs functional insufficiencies including lidar reacting to the leading edge of a dust cloud, cameras degraded by snow and grime, radar changing in heavy rain, and glare.",
+   "quote": "The perception weaknesses it catalogs are functional insufficiencies: lidar reacting to the leading edge of a dust cloud, cameras degraded by snow and grime, radar changing in heavy rain, glare [Chapters 6, 13].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t50",
+    "t102",
+    "t92",
+    "t89",
+    "t94"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A mining company's field trial that had never been run in snow illustrates an unknown unsafe area that remains invisible until the condition is sampled.",
+   "quote": "A mining company's field trial that had never been run in snow is an unknown unsafe area: it stays invisible until the condition is sampled [Chapter 13].",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t50",
+    "t45",
+    "t102",
+    "t158"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet pairs ISO 19014 for the intervention chain with ISO 21448 and ISO/PAS 8800 concepts for perception.",
+   "quote": "The booklet pairs the frameworks: ISO 19014 for the intervention chain, ISO 21448 and ISO/PAS 8800 concepts for perception [Chapter 1].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 21448",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO/PAS 8800",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t49",
+    "t50",
+    "t281",
+    "t289",
+    "t85"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For an automatic brake, whether sensors can see in dust, snow, fog, glare, and darkness is the hardest uncertainty and the uncertainty least suited to simulation.",
+   "quote": "For an automatic brake the SOTIF question (can the sensors see in dust, snow, fog, glare and darkness?) is the hardest uncertainty and the one least suited to simulation.",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t50",
+    "t102",
+    "t85",
+    "t127",
+    "t25"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet concludes that perception robustness in dust, snow, fog, glare, and darkness must rest on physical and recorded-sensor evidence.",
+   "quote": "The booklet concludes that perception robustness in those conditions must rest on physical and recorded-sensor evidence [Chapter 3].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t85",
+    "t102",
+    "t70",
+    "t121",
+    "t50"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Proving functional safety alone demonstrates that a system fails safely, not that the system can see.",
+   "quote": "Proving functional safety alone shows that the system fails safely, not that it sees.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t49",
+    "t50",
+    "t85",
+    "t55"
+   ],
+   "importance": 3
+  }
+ ]
+}

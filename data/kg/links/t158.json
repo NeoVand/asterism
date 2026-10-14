@@ -1,0 +1,115 @@
+{
+ "key": "t158",
+ "hash": "b8cbda7396967c32",
+ "synopsis": "Comparable heavy off-road braking functions historically took three to four years to validate, largely through physical testing and tuning for each machine model; off-road validation remains more physical than automotive practice, with immature test infrastructure [f282, f11919, f1243, f344]. The recommended approach retains physical testing but reserves proving-ground and field work for calibration, simulator qualification, coupled behavior and final high-risk cases, using real machines to confirm stopping, terrain and environmental effects [f4110, f7669, f551]. Physical targets provide an end-to-end reality anchor, but level-track success can conceal grade-related trigger errors, and staged-target track tests cannot measure nuisance braking, which requires real operations [f5345, f6350, f11767]. Physical tests also remain part of acceptance frameworks: ISO 17757:2019 uses physical braking and steering tests, while Euro NCAP’s 2026 virtual-testing protocol requires random physical verification and rejects a cluster dossier below a 75% verification-test pass threshold [f7734, f1216, f2513]. A program starting in October 2026 could realistically have a proving-ground kit working by mid-2027, but unexamined booking lead times, capacity and machine suitability create a planning gap; post-prototype work should correlate models, rerun trusted scenarios, confirm worst cases on track and run shadow mode [f68, f5120, f11342].",
+ "relations": [
+  {
+   "a": "f282",
+   "b": "f1174",
+   "type": "same",
+   "note": "Both report three-to-four-year validation dominated by physical testing and per-model tuning."
+  },
+  {
+   "a": "f1174",
+   "b": "f2030",
+   "type": "same",
+   "note": "Restates the historical three-to-four-year physical validation baseline."
+  },
+  {
+   "a": "f2030",
+   "b": "f3673",
+   "type": "same",
+   "note": "Same historical duration and reliance on physical testing and per-model tuning."
+  },
+  {
+   "a": "f3673",
+   "b": "f4391",
+   "type": "same",
+   "note": "Repeats the three-to-four-year physical validation baseline."
+  },
+  {
+   "a": "f4391",
+   "b": "f5129",
+   "type": "same",
+   "note": "Both give three to four years of physical testing and tuning per model."
+  },
+  {
+   "a": "f5129",
+   "b": "f5858",
+   "type": "same",
+   "note": "Same duration and per-model physical testing process."
+  },
+  {
+   "a": "f5858",
+   "b": "f6620",
+   "type": "same",
+   "note": "Restates comparable functions' three-to-four-year physical validation history."
+  },
+  {
+   "a": "f6620",
+   "b": "f7507",
+   "type": "same",
+   "note": "Same historical validation duration and per-model physical tuning."
+  },
+  {
+   "a": "f7507",
+   "b": "f8252",
+   "type": "same",
+   "note": "Repeats three-to-four-year physical testing and tuning per machine model."
+  },
+  {
+   "a": "f8252",
+   "b": "f10382",
+   "type": "same",
+   "note": "Same historical duration and predominantly physical validation approach."
+  },
+  {
+   "a": "f10382",
+   "b": "f11919",
+   "type": "same",
+   "note": "Glossary restates the manufacturer's historical three-to-four-year validation baseline."
+  },
+  {
+   "a": "f170",
+   "b": "f1216",
+   "type": "same",
+   "note": "Both describe random physical verification under Euro NCAP's 2026 virtual-testing protocol."
+  },
+  {
+   "a": "f10416",
+   "b": "f10604",
+   "type": "same",
+   "note": "Same AEB precedent: physical track tests precede benchmarking equivalent simulated scenarios."
+  },
+  {
+   "a": "f68",
+   "b": "f5120",
+   "type": "contradicts",
+   "note": "Unexamined facility access constraints qualify confidence in the mid-2027 kit timeline."
+  },
+  {
+   "a": "f7734",
+   "b": "f343",
+   "type": "supports",
+   "note": "Required physical braking and steering tests substantiate physical testing's continued necessity."
+  },
+  {
+   "a": "f4110",
+   "b": "f7669",
+   "type": "elaborates",
+   "note": "Subsystem separation explains how to reserve fewer full-system tests for coupled behavior."
+  },
+  {
+   "a": "f11767",
+   "b": "f5345",
+   "type": "elaborates",
+   "note": "Limits the track's reality anchor: nuisance braking requires operational rather than staged-target measurements."
+  },
+  {
+   "a": "f7388",
+   "b": "f11342",
+   "type": "elaborates",
+   "note": "Late corrections require targeted virtual, HIL and affected physical confirmation regression."
+  }
+ ]
+}

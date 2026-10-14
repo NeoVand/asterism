@@ -1,0 +1,231 @@
+{
+ "chunkId": "k712",
+ "hash": "d2ca5d16c9814b6b",
+ "facts": [
+  {
+   "text": "X-in-the-loop is a family of test setups connecting a real part of a system to simulation of the remainder, forming a ladder from all-virtual to all-real testing.",
+   "quote": "\"X-in-the-loop\" names a family of test setups in which one real part of the system (the X) is connected to a simulation of everything else, and the family forms a ladder from all-virtual to all-real.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t145"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Moving the boundary of the real system under test outward from software to ECU to sensor to complete machine includes more real failure modes, at the cost of complexity, speed, scalability and controllability.",
+   "quote": "the farther outward that boundary moves, from software to ECU to sensor to complete machine, the more real failure modes are included, at the cost of complexity, speed, scalability and controllability [Chapter 7]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t145",
+    "t56"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The recommended test hierarchy uses SIL for volume, HIL for timing, interfaces and faults, VIL only when additional physical fidelity justifies the investment, and real machines for actual stopping, terrain and environment.",
+   "quote": "SIL for volume, HIL for timing, interfaces and faults, VIL only where its extra physical fidelity justifies the investment, and the real machine for actual stopping, terrain and environment [Chapter 1]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t145",
+    "t147",
+    "t148",
+    "t151",
+    "t158"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The recommended validation pipeline runs thousands of MIL and SIL cases per night.",
+   "quote": "In the recommended pipeline, MIL and SIL run thousands of cases per night",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t146",
+    "t147"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The recommended validation pipeline uses HIL to check the real controller, machine-in-the-loop or VIL with augmented reality for closed-loop braking, and proving-ground tests to supply anchors.",
+   "quote": "HIL checks the real controller, machine-in-the-loop or VIL with augmented reality covers closed-loop braking, and the proving ground supplies anchors",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t151",
+    "t154",
+    "t158"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The recommended MIL, SIL, HIL, VIL and proving-ground validation pipeline operates under continuous integration with automatic pass criteria.",
+   "quote": "all under continuous integration with automatic pass criteria [Chapter 9]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t62",
+    "t145"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "SIL and HIL are established across industries.",
+   "quote": "SIL and HIL are established across industries",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t148"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "VIL with sensor stimulation is documented only for road vehicles.",
+   "quote": "VIL with sensor stimulation is documented for road vehicles only",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t150"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2024 survey describes VIL with sensor stimulation as costly and having varying accuracy in the road-vehicle context.",
+   "quote": "VIL with sensor stimulation is documented for road vehicles only, a 2024 survey calls it costly with varying accuracy",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t150",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No end-to-end VIL case for heavy off-road automatic braking was found.",
+   "quote": "no end-to-end VIL case for heavy off-road automatic braking was found [Chapter 1]",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t1",
+    "t25"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Each step toward fully real testing on the X-in-the-loop ladder adds real components and failure modes, costs more per test, and sacrifices repeatability and test volume.",
+   "quote": "each step adds real components and real failure modes, costs more per test, and gives up repeatability and volume.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t145",
+    "t56"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The X-in-the-loop ladder allows most defects to be found before a prototype exists and reserves scarce prototype hours for phenomena only a real machine can demonstrate.",
+   "quote": "The ladder lets most defects be found before a prototype exists and keeps scarce prototype hours for what only a real machine can show.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t145",
+    "t158"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The validation allocation principle assigns software decision correctness to SIL, safe machine execution to HIL and whole-machine tests, and sensor perception correctness to replay, sensor simulation and physical tests.",
+   "quote": "assigns \"did the software decide correctly?\" to SIL, \"did the machine execute safely?\" to HIL and whole-machine tests, and \"did the sensor perceive correctly?\" to replay, sensor simulation and physical tests [Chapter 1]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t148",
+    "t158",
+    "t155",
+    "t85"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t131",
+ "hash": "9fd78ec6d3956e25",
+ "synopsis": "A terrain model describes ground shape, a digital elevation model is a grid of ground heights, a mesh represents surfaces with triangles, and simplified invisible collision proxies provide contact detection; the booklet also uses DEM for the unrelated discrete element method in soil physics [f13123, f13124, f13127, f13126]. Visual fidelity alone is insufficient for braking: neural scenes lack native collision surfaces, field-recording environments need explicit geometry and other simulation components, and a berm-edge error of tens of centimetres can corrupt stopping-distance tests [f3913, f3726, f3910]. Hybrid scenes can combine Gaussian appearance with invisible collision meshes, fill reconstruction holes with explicit geometry and enable terrain editing, whereas terrain edits in neural reconstructions were not demonstrated [f3818, f4284, f4283, f4231]. Practical evidence includes a 2025 quarry mesh optimized to 50,000 polygons, but reconstructed RadaRays meshes produced empty sensor frames and were too large to clean manually; the booklet found no validation of heavy-machine simulated braking distance on gravel, mud, ice or slopes [f3796, f5103, f13132]. Scenario standards remain incomplete for off-road terrain: OpenDRIVE covers haul roads but needs additional representations for dig faces, stockpiles and free terrain, OpenCRG fits haul-road surfaces rather than open terrain and had unverified status, and ASAM identified missing deformable-terrain and related concepts [f7158, f7159, f7160, f7195].",
+ "relations": [
+  {
+   "a": "f3910",
+   "b": "f13130",
+   "type": "same",
+   "note": "Both warn that centimetre-scale berm displacement corrupts stopping-distance tests."
+  },
+  {
+   "a": "f3913",
+   "b": "f13128",
+   "type": "same",
+   "note": "Neural reconstructions lack native collision surfaces."
+  },
+  {
+   "a": "f13126",
+   "b": "f13794",
+   "type": "same",
+   "note": "Both distinguish discrete element method from digital elevation model."
+  },
+  {
+   "a": "f3796",
+   "b": "f13125",
+   "type": "same",
+   "note": "Glossary restates the quarry mesh's 50,000-polygon optimization."
+  },
+  {
+   "a": "f7158",
+   "b": "f13202",
+   "type": "same",
+   "note": "OpenDRIVE supports haul roads but requires other representations for free terrain."
+  },
+  {
+   "a": "f7160",
+   "b": "f13203",
+   "type": "same",
+   "note": "OpenCRG fits haul-road surfaces, not open terrain."
+  },
+  {
+   "a": "f3786",
+   "b": "f13164",
+   "type": "same",
+   "note": "Both describe controllable off-road terrain, vegetation, haze and moonlight."
+  },
+  {
+   "a": "f6692",
+   "b": "f7195",
+   "type": "same",
+   "note": "Both identify missing ASAM concepts for terrain, vegetation, manipulation and sensor degradation."
+  },
+  {
+   "a": "f7195",
+   "b": "f14488",
+   "type": "same",
+   "note": "Glossary restates ASAM's missing off-road scenario-description concepts."
+  },
+  {
+   "a": "f6772",
+   "b": "f6790",
+   "type": "same",
+   "note": "Both describe the 2022 terrain-layer library as not designed for collision avoidance."
+  },
+  {
+   "a": "f3880",
+   "b": "f4231",
+   "type": "same",
+   "note": "Terrain editing in neural scenes was not demonstrated."
+  },
+  {
+   "a": "f3834",
+   "b": "f4266",
+   "type": "same",
+   "note": "Visual assets may lack collision geometry, labels and sensor materials."
+  },
+  {
+   "a": "f4963",
+   "b": "f5103",
+   "type": "same",
+   "note": "Both report reconstruction artifacts occluding simulated sensors and producing empty frames."
+  },
+  {
+   "a": "f4964",
+   "b": "f5103",
+   "type": "same",
+   "note": "Both report reconstructed meshes too large for manual cleanup."
+  },
+  {
+   "a": "f3818",
+   "b": "f13129",
+   "type": "same",
+   "note": "Both describe invisible collision geometry beneath Gaussian-rendered scenes."
+  },
+  {
+   "a": "f3913",
+   "b": "f12933",
+   "type": "depends",
+   "note": "Missing native collision surfaces necessitate hidden geometry for braking simulation."
+  },
+  {
+   "a": "f3726",
+   "b": "f13151",
+   "type": "elaborates",
+   "note": "The glossary supplies the reconstruction workflow for adding required simulation components."
+  },
+  {
+   "a": "f13131",
+   "b": "f4300",
+   "type": "supports",
+   "note": "Friction, sinkage, cohesion and moisture explain why rigid visual terrain is insufficient."
+  }
+ ]
+}

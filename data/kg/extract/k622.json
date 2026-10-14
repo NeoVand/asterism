@@ -1,0 +1,207 @@
+{
+ "chunkId": "k622",
+ "hash": "56078a7376ee00b4",
+ "facts": [
+  {
+   "text": "FMEA (Failure Mode and Effects Analysis), FMECA (Failure Mode, Effects and Criticality Analysis) and FMEDA (Failure Modes, Effects and Diagnostic Analysis) are related table-based methods that examine system parts for possible failures, effects and severity; FMEDA also examines whether the system detects failures.",
+   "quote": "These are three related table-based methods that go through a system part by part and ask, for each part, how it could fail, what would happen, how serious that would be and, in the FMEDA, whether the system would notice.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Failure Mode and Effects Analysis",
+     "kind": "method"
+    },
+    {
+     "name": "Failure Mode, Effects and Criticality Analysis",
+     "kind": "method"
+    },
+    {
+     "name": "Failure Modes, Effects and Diagnostic Analysis",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t57"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "FMEDA's split into safe and dangerous, detected and undetected failures feeds diagnostic coverage and the probability calculations behind PL, MPL and SIL.",
+   "quote": "its output, the split into safe and dangerous, detected and undetected failures, feeds the diagnostic coverage figure and the probability calculations behind PL, MPL and SIL.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Failure Modes, Effects and Diagnostic Analysis",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t57",
+    "t60",
+    "t51",
+    "t52",
+    "t53"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The illustrative FMEDA row classifies an open circuit in a radar power connector as dangerous because no detections occur and braking is never commanded.",
+   "quote": "Radar power connector: open circuit. Effect: no detections. System effect: brake never commanded. Dangerous.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t57",
+    "t56",
+    "t94",
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The illustrative radar power connector failure is detected by loss of heartbeat within 500 milliseconds, after which the machine fails to safe.",
+   "quote": "Detected by loss of heartbeat within 500 milliseconds; machine fails to safe.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t57",
+    "t60",
+    "t55"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The South African mining specification requires a supplier FMECA to define critical faults.",
+   "quote": "the South African mining specification requires a supplier FMECA to define the critical faults",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "South Africa",
+     "kind": "place"
+    },
+    {
+     "name": "Failure Mode, Effects and Criticality Analysis",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t57",
+    "t302",
+    "t56"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The South African mining specification requires fail-to-safe within 500 milliseconds of detecting a critical fault.",
+   "quote": "with fail-to-safe within 500 milliseconds of detecting one [Chapter 3]",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "South Africa",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t55",
+    "t60",
+    "t302"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet lists FMEA or FMEDA among the inputs to fault injection and diagnostic requirements.",
+   "quote": "lists FMEA or FMEDA among the inputs to fault injection and diagnostic requirements [Chapter 1]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "Failure Mode and Effects Analysis",
+     "kind": "method"
+    },
+    {
+     "name": "Failure Modes, Effects and Diagnostic Analysis",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t57",
+    "t56",
+    "t60"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "FMEDA identifies for the test team which faults to inject and which faults the diagnostics must catch.",
+   "quote": "The FMEDA tells the test team which faults to inject and which the diagnostics must catch",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Failure Modes, Effects and Diagnostic Analysis",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t57",
+    "t56",
+    "t60"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "FMEDA can be completed on paper before the prototype arrives.",
+   "quote": "it can be completed on paper before the prototype arrives.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Failure Modes, Effects and Diagnostic Analysis",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t57",
+    "t360"
+   ],
+   "importance": 2
+  }
+ ]
+}

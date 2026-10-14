@@ -1,0 +1,115 @@
+{
+ "key": "t234",
+ "hash": "9d0b4b4ef4ff67ac",
+ "synopsis": "Simulation credibility is an evidence-building process, not a tool feature: the checked frameworks require a defined use, risk-scaled effort, verification, physical-data validation, quantified uncertainty, independent review and a documented validity envelope [f5214, f7525]. On-road acceptance requires documented toolchain credibility and physical spot checks, but ISO 21815 does not explain how to establish credibility, and a 2026 preprint characterizes virtual-testing frameworks as “largely declarative” [f1214, f6928, f4411, f9455]. The ambition to provide confidence across all conditions and configurations faces substantial off-road gaps: no accepted sensor-model qualification method was found for dust, snow or fog, vendor sensor physics lacks independent weather validation, and photorealism alone does not establish validity [f31, f331, f8291, f3711]. Greater model complexity is not necessarily more accurate: a 2026 on-road round robin reported spreads of 0.033 seconds and 0.314 metres for more complex vehicle models, while point-mass models reproduced the prescribed profile exactly [f5907, f5908]. Credible capability took 42 months and 17 partners in PEGASUS and years in every other documented case; documented reductions in physical testing depended on earlier investment, a narrow operating envelope, or both, rather than a universal physical-test percentage [f60, f61, f59, f7534]. For a four-month heavy off-road validation, the recommended route is an analytical safety case, targeted physical tests and simulation under a credibility framework, with credibility evidence built before prototype arrival and no validated sensor-digital-twin claim before hardware and mounting are frozen and correlated [f2137, f11643, f11917].",
+ "relations": [
+  {
+   "a": "f331",
+   "b": "f477",
+   "type": "same",
+   "note": "Both report no accepted off-road sensor qualification method for dust, snow or fog."
+  },
+  {
+   "a": "f8327",
+   "b": "f5272",
+   "type": "same",
+   "note": "Both report ASAM's absence of standardized sensor-simulation quality metrics."
+  },
+  {
+   "a": "f9432",
+   "b": "f9530",
+   "type": "same",
+   "note": "Both distinguish component maturity from broader system readiness; the latter adds readiness dimensions."
+  },
+  {
+   "a": "f2105",
+   "b": "f6928",
+   "type": "elaborates",
+   "note": "R171 Annex 5 supplies a specific regulatory instance of required toolchain credibility assessment."
+  },
+  {
+   "a": "f10411",
+   "b": "f6929",
+   "type": "same",
+   "note": "Both require credibility assessment to define the virtual toolchain's permitted use envelope."
+  },
+  {
+   "a": "f11310",
+   "b": "f10413",
+   "type": "same",
+   "note": "Both make comparison against reality a prerequisite for credible model use."
+  },
+  {
+   "a": "f7525",
+   "b": "f11325",
+   "type": "elaborates",
+   "note": "The detailed framework requirements expand physical anchors, validity envelopes and uncertainty disclosure."
+  },
+  {
+   "a": "f9455",
+   "b": "f7524",
+   "type": "contradicts",
+   "note": "The preprint questions operational substance despite broad agreement on credibility principles."
+  },
+  {
+   "a": "f5907",
+   "b": "f5908",
+   "type": "supports",
+   "note": "Round-robin results demonstrate that greater complexity need not improve accuracy."
+  },
+  {
+   "a": "f3711",
+   "b": "f5214",
+   "type": "supports",
+   "note": "Photorealism's insufficiency supports treating credibility as a process rather than a tool feature."
+  },
+  {
+   "a": "f470",
+   "b": "f5271",
+   "type": "supports",
+   "note": "Sensor models requiring validation explain why SIL credibility depends on its models."
+  },
+  {
+   "a": "f331",
+   "b": "f31",
+   "type": "contradicts",
+   "note": "Missing weather qualification methods constrain the ambition of confidence across all conditions."
+  },
+  {
+   "a": "f4411",
+   "b": "f6749",
+   "type": "elaborates",
+   "note": "The broader standards gap includes statistical sample sizes and additional ISO standards."
+  },
+  {
+   "a": "f8291",
+   "b": "f8340",
+   "type": "supports",
+   "note": "Absent independent weather validation supports prioritizing credibility risk over tool selection."
+  },
+  {
+   "a": "f60",
+   "b": "f11643",
+   "type": "supports",
+   "note": "PEGASUS's long development effort supports building capability before the four-month confirmation campaign."
+  },
+  {
+   "a": "f2137",
+   "b": "f11643",
+   "type": "depends",
+   "note": "The four-month validation route relies on preparing tools, data and credibility evidence before prototype arrival."
+  },
+  {
+   "a": "f1214",
+   "b": "f7534",
+   "type": "elaborates",
+   "note": "Required physical checks do not imply a universally prescribed physical-test percentage."
+  },
+  {
+   "a": "f6925",
+   "b": "f10409",
+   "type": "supports",
+   "note": "Low-miss-rate claims require credibility as well as volume, reinforcing credibility as the core weakness."
+  }
+ ]
+}

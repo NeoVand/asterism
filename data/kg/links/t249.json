@@ -1,0 +1,115 @@
+{
+ "key": "t249",
+ "hash": "3636feb6f9370415",
+ "synopsis": "The recommended programme is a hybrid environment factory: parameterised representative sites anchored to surveyed real sites, with prototype tests measuring latency, detection-range correlation, brake timing, stopping dynamics, repeatability and model error [f76, f3705, f879]. Credibility should be quantified separately for each phenomenon using several metrics, not one universal score; the corpus reports no consensus on quantifying the domain gap and no accepted weather-realism score [f7468, f7552, f476, f11950]. Reported gaps are substantial but condition-specific: Sim2Radar produced 251 simulated versus 2,057 real points per frame across five indoor scenes, CropCraft reported a 9.9% average mIoU gap, and a November 2025 scan comparison reported DCD of 0.63 and segmentation mIoU of 21% [f3932, f3731, f4442]. Weather agreement depends on matching conditions: lidar rain mismatch increased with rain rate and depended on drop-size assumptions, while fog mismatch increased as visibility fell; realistic tracking outputs can also conceal large raw-data errors [f4414, f7556, f7557, f7821, f4540]. The main technical risk is the absence of a published quantitative off-road comparison of simulation-tuned brake thresholds against field results, alongside missing generic stopping-error benchmarks and validation gaps for dust, ultrasonic weather effects and thermal-camera conditions [f155, f251, f6094, f7561, f4581, f4591]. Physical confirmations should update discrepancy models rather than silently tune away errors, with comparisons at both sensor and perception-output levels; warning signs include no agreed correlation metrics by the first quarter of 2027, per-scene tuning, unreported residuals and uncertainty, and stalled or worsening held-out real performance [f7385, f11105, f10756, f10784].",
+ "relations": [
+  {
+   "a": "f76",
+   "b": "f3705",
+   "type": "same",
+   "note": "Both recommend representative procedural sites anchored to surveyed real sites."
+  },
+  {
+   "a": "f154",
+   "b": "f5947",
+   "type": "same",
+   "note": "Both identify missing off-road field checks of simulation-tuned intervention thresholds."
+  },
+  {
+   "a": "f154",
+   "b": "f251",
+   "type": "same",
+   "note": "Both report no published off-road threshold-to-field comparison."
+  },
+  {
+   "a": "f155",
+   "b": "f5952",
+   "type": "same",
+   "note": "Both identify the missing quantitative off-road comparison as the programme's main risk."
+  },
+  {
+   "a": "f3716",
+   "b": "f3932",
+   "type": "same",
+   "note": "Same radar point-density deficit; latter specifies counts, scenes and attributed causes."
+  },
+  {
+   "a": "f7558",
+   "b": "f7821",
+   "type": "same",
+   "note": "Both report increasing lidar fog mismatch as visibility decreases."
+  },
+  {
+   "a": "f10756",
+   "b": "f11006",
+   "type": "same",
+   "note": "Restate toolchain warning signs: missing metrics, residuals, validity envelope and per-scene tuning."
+  },
+  {
+   "a": "f11006",
+   "b": "f12454",
+   "type": "elaborates",
+   "note": "Adds uncertainty, validity-envelope and per-scene-tuning warnings to the glossary's credibility failure mode."
+  },
+  {
+   "a": "f4540",
+   "b": "f12541",
+   "type": "supports",
+   "note": "Realistic tracking concealed the ideal radar model's large raw-point-cloud gap."
+  },
+  {
+   "a": "f12541",
+   "b": "f11105",
+   "type": "supports",
+   "note": "Hidden raw-data errors justify comparisons at sensor and perception-output levels."
+  },
+  {
+   "a": "f7557",
+   "b": "f4414",
+   "type": "elaborates",
+   "note": "Rain-rate and drop-distribution sensitivity specify why matched weather conditions matter."
+  },
+  {
+   "a": "f7557",
+   "b": "f7556",
+   "type": "supports",
+   "note": "Matched rain distributions provide an example of condition-dependent sensor agreement."
+  },
+  {
+   "a": "f7796",
+   "b": "f7552",
+   "type": "elaborates",
+   "note": "Defines one available agreement metric using distribution differences in physical units."
+  },
+  {
+   "a": "f4442",
+   "b": "f12622",
+   "type": "elaborates",
+   "note": "Supplies DCD and segmentation values for the November 2025 point-cloud study."
+  },
+  {
+   "a": "f9752",
+   "b": "f10028",
+   "type": "supports",
+   "note": "Expert blind-prediction failures motivate formal modelling-and-simulation credibility frameworks."
+  },
+  {
+   "a": "f7385",
+   "b": "f10784",
+   "type": "supports",
+   "note": "Updating discrepancy models instead of silently tuning helps address simulator overfitting."
+  },
+  {
+   "a": "f879",
+   "b": "f11243",
+   "type": "elaborates",
+   "note": "Timing misalignment can confound the prototype's measured latency, correlation and model errors."
+  },
+  {
+   "a": "f4531",
+   "b": "f4422",
+   "type": "elaborates",
+   "note": "Closer radar agreement does not eliminate missing double reflections after material tuning."
+  }
+ ]
+}

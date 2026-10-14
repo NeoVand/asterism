@@ -1,0 +1,115 @@
+{
+ "key": "t64",
+ "hash": "cde5c3f057952a65",
+ "synopsis": "Traceability is a bidirectional written chain from safety claims through requirements, scenarios and tests to recorded evidence; the programme should establish this mapping before hardware is available and challenge disconnected work or unsupported claims [f12190, f1001, f727, f9818]. The operational test chain adds functional performance requirements, individual runs, results and safety-case evidence, while the credibility chain adds real-world referents, model credibility, uncertainty and residual-risk decisions [f7105, f10795]. Reproducibility requires detailed run manifests, archived tool and configuration versions, and traceable calibration inputs; missing binary or configuration provenance prevents results from being tied to an exact product state [f7108, f9386, f7043, f5664]. Before prototype arrival, the recommended safety analysis should derive requirements for failure to intervene and incorrect intervention, allocate performance levels, and map each safety requirement to simulation, hardware-in-the-loop or machine testing [f10530, f10542, f11095]. The decisive early demonstration is a single “golden thread” from a real test through a model and virtual result to a residual-risk decision: failure to demonstrate it by the first half of 2027 is an early warning, and simply multiplying scenarios would increase questionable evidence rather than assurance [f10919, f12195, f12196, f10796]. Traceability alone does not establish credibility: simulation traceability remains a validation item omitted from the machine-motion questions, and updates without regression and revalidation could leave 2027 evidence certifying an obsolete configuration [f6608, f11252].",
+ "relations": [
+  {
+   "a": "f651",
+   "b": "f1001",
+   "type": "same",
+   "note": "Both link scenario and requirements engineering to hazard-to-evidence traceability."
+  },
+  {
+   "a": "f666",
+   "b": "f1024",
+   "type": "same",
+   "note": "Both describe formal/static verification detecting logic, interface, timing and traceability defects."
+  },
+  {
+   "a": "f666",
+   "b": "f12182",
+   "type": "same",
+   "note": "Glossary restates verification finding defects and traceability gaps without field exposure."
+  },
+  {
+   "a": "f1024",
+   "b": "f12182",
+   "type": "same",
+   "note": "Both describe formal/static verification detecting logic errors, interface violations and traceability gaps."
+  },
+  {
+   "a": "f10530",
+   "b": "f12006",
+   "type": "same",
+   "note": "Same pre-prototype safety-analysis recommendation, failure cases, performance levels and requirements-to-test traceability."
+  },
+  {
+   "a": "f10542",
+   "b": "f11095",
+   "type": "same",
+   "note": "Both require mapping each requirement to simulation, HIL or machine testing."
+  },
+  {
+   "a": "f10542",
+   "b": "f12184",
+   "type": "same",
+   "note": "Glossary repeats requirements-to-test-environment mapping as functional-safety evidence."
+  },
+  {
+   "a": "f11095",
+   "b": "f12184",
+   "type": "same",
+   "note": "Both state the functional safety engineer expects requirements-to-test-environment traceability."
+  },
+  {
+   "a": "f727",
+   "b": "f12193",
+   "type": "same",
+   "note": "Both require a pre-prototype claim-to-requirement-to-scenario-to-test mapping."
+  },
+  {
+   "a": "f9818",
+   "b": "f12194",
+   "type": "same",
+   "note": "Both challenge disconnected items as unnecessary work or unsupported claims."
+  },
+  {
+   "a": "f10919",
+   "b": "f12195",
+   "type": "same",
+   "note": "Same golden-thread experiment linking real test, model, virtual result and residual-risk decision."
+  },
+  {
+   "a": "f10794",
+   "b": "f12196",
+   "type": "same",
+   "note": "Same first-half-2027 warning: inability to demonstrate one auditable requirement evidence chain."
+  },
+  {
+   "a": "f7105",
+   "b": "f12190",
+   "type": "elaborates",
+   "note": "Operational chain specifies performance requirements, test runs, results and safety-case evidence."
+  },
+  {
+   "a": "f7108",
+   "b": "f9386",
+   "type": "elaborates",
+   "note": "Run manifest adds identifiers, parameters, verdicts and checksums to archival requirements."
+  },
+  {
+   "a": "f5664",
+   "b": "f9386",
+   "type": "supports",
+   "note": "Provenance loss explains why binaries and configurations must be archived."
+  },
+  {
+   "a": "f7472",
+   "b": "f9761",
+   "type": "elaborates",
+   "note": "Credibility matrix operationalizes correlation of virtual claims with independent physical evidence."
+  },
+  {
+   "a": "f10796",
+   "b": "f12195",
+   "type": "supports",
+   "note": "Scaling questionable evidence explains prioritizing one decisive golden-thread experiment."
+  },
+  {
+   "a": "f11252",
+   "b": "f11029",
+   "type": "supports",
+   "note": "Obsolete-configuration risk motivates configuration traceability, regression analysis and physical re-correlation."
+  }
+ ]
+}

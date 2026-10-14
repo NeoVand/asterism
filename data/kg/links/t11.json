@@ -1,0 +1,115 @@
+{
+ "key": "t11",
+ "hash": "23ab3ca78789ab3b",
+ "synopsis": "A machine may operate across 100 or more job sites and applications, with different geometry, surfaces, traffic and light; the braking system must work across site types, weather, lighting and machine models [f16, f276, f2956]. Site controls materially affect the same braking algorithm’s safety results, and machinery conformity and functional-safety verification do not guarantee mine authorisation; destination-site legislation and site acceptance therefore remain essential [f804, f2930, f2271, f806]. The accident evidence underscores transport and pedestrian hazards: British quarry guidance attributes 40% of accidents and 60% of deaths to transport, while vehicle or machine strikes were the leading cause of death at US road construction sites during 2005–2016 [f11493, f3549, f11496]. Virtual coverage should include genuinely different captured environments, site-specific human behaviour, traffic rules and geometry, but no standard specifying the number of exact sites needed for broad coverage was found, and road-oriented tools require adaptation [f4106, f4355, f10670, f4320, f8337, f8607]. Confidence remains constrained by missing public off-road exposure data and uncertain transfer of on-road rare-event acceleration; the proposed response to field-engineer objections is field-derived parameter distributions and shadow-mode fleet collection through mid-2027 [f6918, f1114, f7440, f10659, f10669, f10650].",
+ "relations": [
+  {
+   "a": "f16",
+   "b": "f276",
+   "type": "same",
+   "note": "Both describe operation across 100 or more job sites."
+  },
+  {
+   "a": "f16",
+   "b": "f11497",
+   "type": "same",
+   "note": "Both state the 100-or-more sites and applications challenge."
+  },
+  {
+   "a": "f276",
+   "b": "f11497",
+   "type": "same",
+   "note": "Restate the scale of job-site diversity, with different detail."
+  },
+  {
+   "a": "f8337",
+   "b": "f8617",
+   "type": "same",
+   "note": "Duplicate finding that OpenDRIVE poorly fits sites without lane geometry."
+  },
+  {
+   "a": "f3155",
+   "b": "f11493",
+   "type": "same",
+   "note": "Both give transport's 40% share of quarry accidents."
+  },
+  {
+   "a": "f3156",
+   "b": "f11493",
+   "type": "same",
+   "note": "Both give transport's 60% share of quarry deaths."
+  },
+  {
+   "a": "f3259",
+   "b": "f3549",
+   "type": "same",
+   "note": "Restate struck-by incidents as the leading construction fatality cause during 2005–2016."
+  },
+  {
+   "a": "f3259",
+   "b": "f11496",
+   "type": "same",
+   "note": "Glossary specifies the US road-construction context of the same fatality finding."
+  },
+  {
+   "a": "f3549",
+   "b": "f11496",
+   "type": "same",
+   "note": "Both identify vehicle or machine strikes as the leading US road-construction fatality cause."
+  },
+  {
+   "a": "f804",
+   "b": "f10670",
+   "type": "supports",
+   "note": "Site-dependent safety outcomes justify explicitly modelling traffic rules and geometry."
+  },
+  {
+   "a": "f10659",
+   "b": "f10669",
+   "type": "depends",
+   "note": "The omitted-site objection motivates using field-derived parameter distributions."
+  },
+  {
+   "a": "f10642",
+   "b": "f10650",
+   "type": "depends",
+   "note": "Years spent discovering site effects motivate shadow-mode fleet collection through mid-2027."
+  },
+  {
+   "a": "f1114",
+   "b": "f7440",
+   "type": "elaborates",
+   "note": "Quarry complexity explains why narrow on-road acceleration results cannot establish off-road applicability."
+  },
+  {
+   "a": "f8337",
+   "b": "f9361",
+   "type": "depends",
+   "note": "OpenDRIVE's road assumptions create the need for a bespoke job-site taxonomy."
+  },
+  {
+   "a": "f6715",
+   "b": "f9361",
+   "type": "elaborates",
+   "note": "The proposed taxonomy supplies site categories for the identified tooling gap."
+  },
+  {
+   "a": "f4355",
+   "b": "f6796",
+   "type": "supports",
+   "note": "Distinct pedestrian behaviour supports treating shared human-machine zones as off-road-specific test spaces."
+  },
+  {
+   "a": "f7987",
+   "b": "f7988",
+   "type": "supports",
+   "note": "Less controlled mining environments justify additional mining-environment validation testing."
+  },
+  {
+   "a": "f2930",
+   "b": "f806",
+   "type": "supports",
+   "note": "Conformity alone cannot secure mine authorisation, supporting explicit site acceptance and safety-case controls."
+  }
+ ]
+}

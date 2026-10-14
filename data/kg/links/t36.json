@@ -1,0 +1,115 @@
+{
+ "key": "t36",
+ "hash": "c82f04bf80770e3b",
+ "synopsis": "As of October 2026, the booklet treats human factors as essential to heavy off-road collision-mitigation validation: coverage must include warning meaning, habituation, reaction time, predictable escalation and restart, while operator and pedestrian models require their own validation [f2957, f2924, f10350]. Acceptance is a material operational risk: 2024 mining research links false-positive interventions to production losses, wear and operator resistance; workers at seven coal mines reported unnecessary shutdowns from once daily to 15 times per cut, and nearly 70% worried about how and when proximity systems take control [f1530, f3013, f11660]. The booklet recommends measuring unwanted warnings and interventions by operating hour and task rather than per detection, because an excellent aggregate false-positive rate can conceal an intervention during nearly every loading cycle; no published operator-accepted false-alarm rate was found [f11608, f11609, f248]. Evidence remains incomplete: searches found no validated off-road operator model, reaction distributions or study quantifying the change from warning-only to automatic braking, so current fleet behavior may not predict future reliance, reactions or overrides [f250, f3042, f7482, f7479, f7480]. Human-in-the-loop evidence may be needed for operator-response claims, but simulator studies cannot establish long-term trust, complacency or production-pressure effects, and independently validated perception and braking components do not establish closed-loop safety [f8208, f961, f8196].",
+ "relations": [
+  {
+   "a": "f1530",
+   "b": "f5567",
+   "type": "same",
+   "note": "Both report the 2024 Pretoria findings on false interventions, production losses, wear and resistance."
+  },
+  {
+   "a": "f5637",
+   "b": "f5662",
+   "type": "same",
+   "note": "Both require operator-input and HMI records to assess warning usefulness."
+  },
+  {
+   "a": "f580",
+   "b": "f792",
+   "type": "same",
+   "note": "Simulator reactions cannot establish long-term adaptation; field exposure is needed."
+  },
+  {
+   "a": "f961",
+   "b": "f580",
+   "type": "elaborates",
+   "note": "Adds perception and brake-hardware limitations to the simulator's long-term human-factors limitations."
+  },
+  {
+   "a": "f250",
+   "b": "f5550",
+   "type": "elaborates",
+   "note": "Extends the missing validated models to workers, equipment operators and diverse sites."
+  },
+  {
+   "a": "f3042",
+   "b": "f6259",
+   "type": "elaborates",
+   "note": "Identifies missing validated distributions needed to characterize variable reactions and warning fatigue."
+  },
+  {
+   "a": "f7479",
+   "b": "f7480",
+   "type": "depends",
+   "note": "Changing behavior under automation limits transferability of current fleet distributions."
+  },
+  {
+   "a": "f8205",
+   "b": "f7479",
+   "type": "elaborates",
+   "note": "Specifies reliance, reaction time and overrides as potentially changing behaviors."
+  },
+  {
+   "a": "f9378",
+   "b": "f8208",
+   "type": "depends",
+   "note": "Dependence on operator reaction motivates human-in-the-loop evidence for safety claims."
+  },
+  {
+   "a": "f8206",
+   "b": "f9379",
+   "type": "supports",
+   "note": "Missing adaptation and nuisance-response modeling motivates possible human-in-the-loop simulation."
+  },
+  {
+   "a": "f6343",
+   "b": "f8196",
+   "type": "supports",
+   "note": "Operator-triggered stand-down exemplifies emergent closed-loop failures despite component validation."
+  },
+  {
+   "a": "f598",
+   "b": "f1982",
+   "type": "elaborates",
+   "note": "Shadow mode cannot test the identified risk of operators fighting automatic braking."
+  },
+  {
+   "a": "f11609",
+   "b": "f11608",
+   "type": "supports",
+   "note": "Cycle-level unusability explains why acceptance metrics need task-specific denominators."
+  },
+  {
+   "a": "f3013",
+   "b": "f11608",
+   "type": "supports",
+   "note": "Observed shutdown frequencies illustrate operating-time and task-based nuisance metrics."
+  },
+  {
+   "a": "f7002",
+   "b": "f5750",
+   "type": "supports",
+   "note": "Warnings about already-known objects provide a concrete source of trust-undermining nuisance alarms."
+  },
+  {
+   "a": "f10445",
+   "b": "f2924",
+   "type": "supports",
+   "note": "Documented mode misunderstanding and desensitization justify validating warning meaning and habituation."
+  },
+  {
+   "a": "f1489",
+   "b": "f1970",
+   "type": "elaborates",
+   "note": "Places Honda's misunderstanding conclusion alongside competing complaints of system misbehavior."
+  },
+  {
+   "a": "f10505",
+   "b": "f10685",
+   "type": "elaborates",
+   "note": "Adds verdict date, responsibility share and damages to the on-road liability precedent."
+  }
+ ]
+}

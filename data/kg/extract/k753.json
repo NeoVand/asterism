@@ -1,0 +1,377 @@
+{
+ "chunkId": "k753",
+ "hash": "2435c40125bd1a8b",
+ "facts": [
+  {
+   "text": "Decision logic is the set of rules inside a system that converts object detection into doing nothing, warning the operator or applying the brakes.",
+   "quote": "Decision logic is the set of rules inside the system that turns \"there is an object over there\" into \"do nothing\", \"warn the operator\" or \"apply the brakes\".",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Decision logic takes inputs comprising sensor-derived object position and movement; machine speed, direction, steering or articulation and load; and predicted stopping distance. Decision logic outputs the stages of intervention.",
+   "quote": "Its inputs are the object's position and movement from the sensors; the machine's speed, direction, steering or articulation and load; and the predicted stopping distance. Its outputs are the stages of intervention.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t189",
+    "t170"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Road systems mostly trigger braking using phased time-to-collision thresholds or when object distance equals required stopping distance (“time to brake”), with extra conditions to suppress false alarms. Time to collision is distance divided by closing speed.",
+   "quote": "brake when the time to collision (distance divided by closing speed) falls below a threshold, staged by phase, or when the distance to the object equals the required stopping distance (\"time to brake\"), with extra conditions to suppress false alarms",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t186",
+    "t188",
+    "t32"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Road-system time-to-collision rules transfer poorly to job sites because near zero closing speed, time to collision becomes huge or unstable even when a person is centimeters away.",
+   "quote": "near zero closing speed, time to collision becomes huge or unstable even when a person is centimeters away",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t186",
+    "t185",
+    "t14"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Two machines with the same time to collision can need very different stopping distances on grade or mud, limiting transfer of road-system decision rules to job sites.",
+   "quote": "two machines with the same time to collision need very different distances on grade or mud",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t186",
+    "t170",
+    "t173",
+    "t174"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Articulation and track counter-rotation can cause collisions without forward closing speed, limiting time-to-collision-based decision logic on job sites.",
+   "quote": "articulation and track counter-rotation can collide with no forward closing speed",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t186",
+    "t176",
+    "t175"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A stationary machine about to start has no time to collision, limiting time-to-collision-based decision logic on job sites.",
+   "quote": "a stationary machine about to start has no time to collision at all",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t186",
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-3 sizes an off-road collision-risk area from machine kinematics and requires the collision-system distance to cover detection, confirmation and determination, action, machine stopping and a safe distance.",
+   "quote": "ISO 21815-3 sizes a collision-risk area from the machine's kinematics: the collision-system distance must cover detection, confirmation and determination, action, machine stopping and a safe distance",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    8
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t185",
+    "t170",
+    "t194"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3 specifies intervention at collision-risk level 4 or above and permits a warning before intervention.",
+   "quote": "intervention happens at collision-risk level 4 or above, with a warning permitted before it",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    8
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t189"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet's practical stopping margin is M = R - (D_perception + D_decision + D_action + D_stop + D_safe), where R is distance along the predicted path to the collision point and the subtracted sum represents everything the machine needs.",
+   "quote": "a margin, `M = R - (D_perception + D_decision + D_action + D_stop + D_safe)`, where R is the distance along the predicted path to the collision point and the bracket is everything the machine needs",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t170",
+    "t194",
+    "t172"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the booklet's stopping-margin decision logic, positive M means margin remains, while falling or negative M raises the risk level.",
+   "quote": "Positive M means margin remains; a falling or negative M raises the risk level.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t170"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The stopping-distance term D_stop should be a conservative prediction including grade, speed, load, surface, brake state and articulation.",
+   "quote": "D_stop should be a conservative prediction that includes grade, speed, load, surface, brake state and articulation",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t173",
+    "t174",
+    "t176",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet's warn-or-brake flow computes stopping margin from speed, grade, load, surface and delays after an object is detected and confirmed near the predicted path. A healthy margin leads to showing the object and continued monitoring only.",
+   "quote": "A[\"Object detected and confirmed near the predicted path\"] --> B[\"Compute the stopping margin M from speed, grade, load, surface and delays\"]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t189",
+    "t170"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "When stopping margin is unhealthy but the operator still has time, the booklet's decision flow issues an urgent warning through sound, light or seat vibration.",
+   "quote": "C -->|No, but the operator still has time| E[\"Urgent warning: sound, light or seat vibration\"]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t189",
+    "t37"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "After an urgent warning, the booklet's decision flow stands down and continues monitoring if measured operator deceleration is sufficient; otherwise, the system automatically slows and then applies partial braking.",
+   "quote": "F -->|Yes, measured deceleration is enough| G[\"Stand down and keep monitoring\"]\n    F -->|No| H[\"Automatic slowing, then partial braking\"]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t189",
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Following partial braking, the booklet's decision flow maintains partial braking and re-evaluates if collision is not otherwise unavoidable. If collision is otherwise unavoidable, the system applies maximum safe braking and holds until the operator acts.",
+   "quote": "I -->|No| J[\"Keep partial braking and re-evaluate\"]\n    I -->|Yes| K[\"Maximum safe braking, then hold until the operator acts\"]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t189",
+    "t185",
+    "t55"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For a stationary machine with an object in its projected path, the booklet's decision flow inhibits motion by refusing the move command.",
+   "quote": "L[\"Machine stationary with an object in the projected path\"] --> M[\"Motion inhibit: refuse the move command\"]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t28"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet recommends freezing the decision architecture before hardware arrives, using a primary trigger based on predicted swept volume against a stopping-distance envelope: s = v x (t_sense + t_actuate) + v^2 / (2 x a_worst).",
+   "quote": "freeze the decision architecture before the hardware arrives: a primary trigger based on the predicted swept volume against a stopping-distance envelope, `s = v x (t_sense + t_actuate) + v^2 / (2 x a_worst)`",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t170",
+    "t172",
+    "t42"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends time to collision as a secondary decision-architecture layer for haul-speed traffic and operator-reaction suppression as a third layer.",
+   "quote": "with time to collision as a secondary layer for haul-speed traffic and operator-reaction suppression as a third",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t186",
+    "t191"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No standard or peer-reviewed study provides tuned time-to-collision or deceleration values for off-road machines; decision-logic values must therefore come from the program's own models and tests.",
+   "quote": "No standard or peer-reviewed study gives tuned time-to-collision or deceleration values for off-road machines, so the numbers inside the logic must come from the program's own models and tests",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t186",
+    "t169",
+    "t197"
+   ],
+   "importance": 3
+  }
+ ]
+}

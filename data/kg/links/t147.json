@@ -1,0 +1,115 @@
+{
+ "key": "t147",
+ "hash": "53935c538409a8c6",
+ "synopsis": "For a program starting in October 2026, an executable SIL regression framework with machine-dynamics and braking models is realistic by mid-2027 if interfaces can be defined; how much work starts earlier depends on when the manufacturer's software can run on a computer, and sensor models may still be only partly validated [f840, f270, f65]. SIL is the economical volume-testing stage for software correctness, requirements regression and closed-loop behavior, supporting sweeps of 100+ site types and 10+ scenarios and thousands of nightly runs [f527, f925, f5266, f5267, f13327]. Its credibility depends on correlated models: it cannot independently prove production ECU timing, actual brake hardware or sensor physics in dust, snow and glare, so the recommended allocation combines SIL with HIL and whole-machine tests [f5271, f711, f5269, f5270, f5268, f13323]. HCLTech's on-road Level 3 example reports up to 75 percent less test-design effort and incremental-release validation in under a day, but discloses neither platform build time, staffing nor retained physical testing, limiting its usefulness as a planning benchmark [f1791, f1306, f1307, f1308]. Compressing validation from three or four years to under four months is credible only if the scenario library, replay adapters, SIL/HIL suites and correlated models are ready before the prototype arrives, making that period a confirmation campaign [f13085].",
+ "relations": [
+  {
+   "a": "f1305",
+   "b": "f1792",
+   "type": "same",
+   "note": "Both describe HCLTech's virtualized SIL and keyword-driven automated testing."
+  },
+  {
+   "a": "f8652",
+   "b": "f8807",
+   "type": "same",
+   "note": "Both identify IPG's off-highway MIL, SIL, HIL and vehicle-in-the-loop capabilities."
+  },
+  {
+   "a": "f7138",
+   "b": "f13327",
+   "type": "same",
+   "note": "Both assign MIL/SIL thousands of nightly runs on cloud or on-premise compute."
+  },
+  {
+   "a": "f13314",
+   "b": "f13327",
+   "type": "same",
+   "note": "Both specify thousands of nightly MIL and SIL runs."
+  },
+  {
+   "a": "f5267",
+   "b": "f13337",
+   "type": "same",
+   "note": "Both recommend SIL sweeps across 100+ site types and 10+ scenarios."
+  },
+  {
+   "a": "f5268",
+   "b": "f13338",
+   "type": "same",
+   "note": "Both require validated sensor models for claims about dust, snow or glare."
+  },
+  {
+   "a": "f531",
+   "b": "f5270",
+   "type": "same",
+   "note": "Both deny SIL proof of actual brake hardware behavior."
+  },
+  {
+   "a": "f337",
+   "b": "f9329",
+   "type": "same",
+   "note": "Both describe SIL and HIL as mature on-road validation methods."
+  },
+  {
+   "a": "f840",
+   "b": "f65",
+   "type": "elaborates",
+   "note": "Specifies framework components and interface conditions behind the mid-2027 feasibility estimate."
+  },
+  {
+   "a": "f65",
+   "b": "f270",
+   "type": "depends",
+   "note": "Early SIL progress depends on availability of computer-executable manufacturer software."
+  },
+  {
+   "a": "f928",
+   "b": "f840",
+   "type": "supports",
+   "note": "Stable interfaces enable pre-hardware SIL, supporting the proposed framework schedule."
+  },
+  {
+   "a": "f527",
+   "b": "f7138",
+   "type": "supports",
+   "note": "SIL's volume economics support thousands of nightly tests."
+  },
+  {
+   "a": "f529",
+   "b": "f5269",
+   "type": "elaborates",
+   "note": "Final ECU limitations extend processor deadlines to timing and I/O faults."
+  },
+  {
+   "a": "f530",
+   "b": "f12057",
+   "type": "supports",
+   "note": "Unproven CAN/J1939 timing explains allocating interface testing to HIL."
+  },
+  {
+   "a": "f548",
+   "b": "f13313",
+   "type": "elaborates",
+   "note": "Expands SIL-for-volume guidance into a hierarchy including HIL, VIL and real machines."
+  },
+  {
+   "a": "f5581",
+   "b": "f5268",
+   "type": "supports",
+   "note": "Validated sensor error models address SIL's inability to prove unvalidated sensor physics."
+  },
+  {
+   "a": "f1308",
+   "b": "f1306",
+   "type": "elaborates",
+   "note": "Missing build-time, staffing and physical-testing disclosures qualify the reported effort savings."
+  },
+  {
+   "a": "f840",
+   "b": "f13085",
+   "type": "depends",
+   "note": "A prebuilt SIL framework is part of the prerequisite for compressed prototype confirmation."
+  }
+ ]
+}

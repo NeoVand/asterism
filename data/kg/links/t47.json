@@ -1,0 +1,115 @@
+{
+ "key": "t47",
+ "hash": "1ceb9d5f0f5dd549",
+ "synopsis": "Automatic braking requires a new, machine-specific hazard analysis: missed braking and unsafe or unnecessary intervention must be assessed separately, and neither stopping sooner nor matching the old warning system establishes safety [f1977, f118, f11891, f10529]. Its scope must include pedestrian strikes, shifted loads, downhill and loss-of-control cases, and post-brake hazards such as rollaway, brake latching and second collisions during restart; downhill and loss-of-control cases were omitted from the booklet's eight questions [f3102, f3400, f6599, f3630]. ISO 19014-1 requires safety analysis to determine risk reduction and machine performance level, while Part 5 tables can avoid a full analysis for every new model; ISO 13849-1:2023 alone does not specify the collision function's required performance level [f10516, f2076, f2350]. Validation should trace requirements, scenarios, tests and acceptance criteria to named hazards and justify coverage of the operating population; statistical methods cannot repair missing hazard classes or an unvalidated simulator [f11969, f8030, f9730, f650]. The indicative plan starts hazard-analysis and scenario work on 1 October 2026 for 90 days, calls for a machine-readable hierarchy during October 2026 to mid-2027, and requires approved intervention analysis before prototype arrival to avoid consuming the four-month validation window in debate [f893, f7361, f11970]. Risk prioritization should not be driven by a 5-by-5 heat map, because the corpus reports ranking defects and range compression in such matrices [f9894, f9442, f9895].",
+ "relations": [
+  {
+   "a": "f118",
+   "b": "f11967",
+   "type": "same",
+   "note": "Both require separate analysis of missed braking and unsafe or unnecessary braking."
+  },
+  {
+   "a": "f118",
+   "b": "f2341",
+   "type": "elaborates",
+   "note": "The regulatory chapter frames the two failure categories as separate safety functions."
+  },
+  {
+   "a": "f10551",
+   "b": "f11974",
+   "type": "same",
+   "note": "Both require intervention-specific analysis and separate ratings for false activation and missed detection."
+  },
+  {
+   "a": "f809",
+   "b": "f11891",
+   "type": "same",
+   "note": "Both reject assuming an earlier emergency stop is safe without analyzing secondary hazards."
+  },
+  {
+   "a": "f1128",
+   "b": "f10529",
+   "type": "elaborates",
+   "note": "The new intervention analysis must determine assurance targets, not comparison with the warning system."
+  },
+  {
+   "a": "f6600",
+   "b": "f3630",
+   "type": "elaborates",
+   "note": "Adds brake latching, acknowledgment, reset and second-collision prevention to post-stop analysis."
+  },
+  {
+   "a": "f3630",
+   "b": "f11975",
+   "type": "same",
+   "note": "The glossary restates brake locking, release rollaway and restart collision hazards."
+  },
+  {
+   "a": "f1370",
+   "b": "f11891",
+   "type": "supports",
+   "note": "NIOSH's warning about technology-created hazards supports assessing automatic braking's secondary hazards."
+  },
+  {
+   "a": "f10516",
+   "b": "f10530",
+   "type": "elaborates",
+   "note": "Adds approval timing, intervention requirements, performance-level allocation and test traceability."
+  },
+  {
+   "a": "f2076",
+   "b": "f2336",
+   "type": "elaborates",
+   "note": "Places Part 5 tables within the lifecycle alongside Part 1 risk-based allocation."
+  },
+  {
+   "a": "f11969",
+   "b": "f9730",
+   "type": "elaborates",
+   "note": "Adds a coverage rationale to hazard-to-scenario traceability."
+  },
+  {
+   "a": "f9730",
+   "b": "f8030",
+   "type": "elaborates",
+   "note": "Specifies scenario standards and ranked physical effects for an assessor-quality coverage argument."
+  },
+  {
+   "a": "f10781",
+   "b": "f9730",
+   "type": "supports",
+   "note": "Scenario counts without risk taxonomy explain why traceability and coverage rationale are needed."
+  },
+  {
+   "a": "f9442",
+   "b": "f9895",
+   "type": "same",
+   "note": "Both report ranking defects in risk heat maps."
+  },
+  {
+   "a": "f9442",
+   "b": "f9894",
+   "type": "supports",
+   "note": "Mis-ranking and range compression justify excluding heat maps from prioritization decisions."
+  },
+  {
+   "a": "f10530",
+   "b": "f11970",
+   "type": "elaborates",
+   "note": "Explains why pre-prototype approval protects the four-month evidence-gathering window."
+  },
+  {
+   "a": "f725",
+   "b": "f893",
+   "type": "elaborates",
+   "note": "Gives the planning work an explicit 1 October 2026 start and 90-day duration."
+  },
+  {
+   "a": "f3105",
+   "b": "f3102",
+   "type": "supports",
+   "note": "The worked loader-pedestrian critical-risk scenario reinforces prioritizing pedestrian strikes."
+  }
+ ]
+}

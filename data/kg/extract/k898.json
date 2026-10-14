@@ -1,0 +1,454 @@
+{
+ "chunkId": "k898",
+ "hash": "517936cea1c7d1b5",
+ "facts": [
+  {
+   "text": "Environment creation and reconstruction tools build three-dimensional virtual job sites through manual and rule-based design or reconstruction from photographs, laser scans and machine recordings.",
+   "quote": "Environment creation and reconstruction tools build the three-dimensional virtual job site, either by designing it by hand and by rules or by rebuilding a real site from photographs, laser scans and machine recordings.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t326",
+    "t130",
+    "t132",
+    "t134"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Virtual job-site creation requires objects and surfaces with properties visible to cameras, radar and lidar.",
+   "quote": "someone must make the pile, the ramp, the parked truck and the person, and give every surface the properties a camera, a radar and a lidar would see.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t326",
+    "t136"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet identifies eleven families of environment-creation methods, including hand-built models, procedural generation, drone photogrammetry, lidar survey, reconstruction from machine recordings, neural reconstruction and reuse of mine plans.",
+   "quote": "eleven families of method, from hand-built models and rule-based (procedural) generation to drone photogrammetry, lidar survey, reconstruction from the machine's own recordings, neural reconstruction and reuse of mine plans.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t326",
+    "t134",
+    "t132",
+    "t116"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Combining environment-creation methods matters more than choosing any single authoring package; a quarry model can combine a mine plan, a drone mesh of the active pit, manually filled gaps and hundreds of procedurally generated variants.",
+   "quote": "a quarry model might start from a mine plan, replace the active pit with a drone mesh, fill gaps by hand and then generate hundreds of variants by rules",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t326",
+    "t134",
+    "t130"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "MathWorks RoadRunner with Scene Builder imports map data and point clouds and exports to CARLA, dSPACE and IPG CarMaker, but its base editor remains road-oriented.",
+   "quote": "MathWorks RoadRunner with Scene Builder, which imports map data and point clouds and exports to CARLA, dSPACE and IPG CarMaker, but whose base editor remains road-oriented",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [
+    {
+     "name": "MathWorks RoadRunner",
+     "kind": "tool"
+    },
+    {
+     "name": "Scene Builder",
+     "kind": "tool"
+    },
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    },
+    {
+     "name": "dSPACE",
+     "kind": "company"
+    },
+    {
+     "name": "IPG CarMaker",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t326",
+    "t93"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The Fraunhofer ITWM VMC Road and Scene Generator builds scenes from fused real measurements.",
+   "quote": "the Fraunhofer ITWM VMC Road and Scene Generator, which builds scenes from fused real measurements",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Fraunhofer ITWM VMC Road and Scene Generator",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t326"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "OpenUSD and Omniverse tooling provide a domain-neutral way to describe scenes, combining an open standard with one vendor's components.",
+   "quote": "OpenUSD and Omniverse tooling, a domain-neutral way to describe scenes (an open standard plus one vendor's components)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [
+    {
+     "name": "OpenUSD",
+     "kind": "standard"
+    },
+    {
+     "name": "Omniverse",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t326"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Unreal Engine editors are used inside Falcon, CARLA and the MathWorks stack.",
+   "quote": "Unreal Engine editors inside Falcon, CARLA and the MathWorks stack",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Unreal Engine",
+     "kind": "tool"
+    },
+    {
+     "name": "Falcon",
+     "kind": "tool"
+    },
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    },
+    {
+     "name": "MathWorks",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t135",
+    "t326"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet names COLMAP as photogrammetry software and includes quarry examples from drone surveys.",
+   "quote": "photogrammetry software such as COLMAP, with quarry examples from drone surveys",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [
+    {
+     "name": "COLMAP",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t133",
+    "t132",
+    "t326"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NuRec, SplatAD and LiDAR-EVS reconstruct appearance from logs but struggle when the sensor viewpoint moves.",
+   "quote": "neural reconstruction such as NuRec, SplatAD and LiDAR-EVS, which rebuild appearance from logs but struggle when the sensor viewpoint moves",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [
+    {
+     "name": "NuRec",
+     "kind": "tool"
+    },
+    {
+     "name": "SplatAD",
+     "kind": "tool"
+    },
+    {
+     "name": "LiDAR-EVS",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t326"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Boreal3D is an environment-creation tool for forest plots.",
+   "quote": "Boreal3D for forest plots",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Boreal3D",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t326",
+    "t331"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "CropCraft is an open-source generator for farm fields.",
+   "quote": "CropCraft, an open-source generator for farm fields",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [
+    {
+     "name": "CropCraft",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t326",
+    "t134",
+    "t331"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "AgriGen generates large agricultural scenes in Isaac Sim.",
+   "quote": "AgriGen, which generates large agricultural scenes in Isaac Sim",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [
+    {
+     "name": "AgriGen",
+     "kind": "tool"
+    },
+    {
+     "name": "Isaac Sim",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t326",
+    "t331"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MAVS generates off-road terrain with controllable roughness and haze.",
+   "quote": "MAVS, which generates off-road terrain with controllable roughness and haze",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [
+    {
+     "name": "MAVS",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t326",
+    "t131",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenMATERIAL 3D version 1.0.0, dated April 2025, standardizes material properties that sensors react to.",
+   "quote": "ASAM OpenMATERIAL 3D (version 1.0.0, April 2025) standardizes the material properties sensors react to",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t136"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenMATERIAL 3D excludes dirt on the sensor itself.",
+   "quote": "it excludes dirt on the sensor itself",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t136",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet identifies job-site reconstruction as a bottleneck because a reusable representation of sites is needed before scenario volume matters.",
+   "quote": "The booklet calls job-site reconstruction a bottleneck: a reusable representation of sites is needed before scenario volume matters",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t326",
+    "t130",
+    "t142"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Open road formats assume lanes, so stockpiles, berms and ruts often need custom representations for virtual job sites.",
+   "quote": "the open road formats assume lanes, so stockpiles, berms and ruts often need custom representations",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t137",
+    "t130",
+    "t13",
+    "t12"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Every captured environment needs a capture date and revision history to avoid ambiguity about which site model is being used.",
+   "quote": "Every captured environment also needs a capture date and revision history, or \"the quarry model\" becomes ambiguous",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t326",
+    "t162",
+    "t341"
+   ],
+   "importance": 3
+  }
+ ]
+}

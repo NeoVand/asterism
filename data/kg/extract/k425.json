@@ -1,0 +1,614 @@
+{
+ "chunkId": "k425",
+ "hash": "362b344edfdf8385",
+ "facts": [
+  {
+   "text": "The simulation model should have an explicit credibility and applicability envelope, analogous to an operational design domain for the simulation itself.",
+   "quote": "The model should have an explicit **credibility and applicability envelope**, analogous to an operational design domain but for the simulation itself.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t234",
+    "t140"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The NASA-STD-7009 reporting set includes the best estimate, uncertainty, and a credibility score for each factor, with each factor's required threshold declared in advance.",
+   "quote": "best estimate; uncertainty; credibility score per factor, with the threshold required for each factor declared in advance",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    37,
+    1
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "NASA-STD-7009",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t242",
+    "t240",
+    "t259"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The NASA-STD-7009 reporting set includes caveats, including any use outside the model's assumptions.",
+   "quote": "caveats, including any use outside the model's assumptions",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    37,
+    1
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "NASA-STD-7009",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t242",
+    "t261"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The NASA-STD-7009 reporting set includes the risk of accepting the result, achieved credibility-factor levels, supporting evidence, assessor independence, rationale and limitations.",
+   "quote": "the risk of accepting the result, plus the achieved credibility-factor levels, supporting evidence, assessor independence, rationale and limitations.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    37,
+    1
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "NASA-STD-7009",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t242",
+    "t240",
+    "t269",
+    "t71"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The FDA context-of-use statement specifies the exact decision, the model output and the allowed role of that output.",
+   "quote": "**The FDA context-of-use statement:** the exact decision, the model output and the allowed role of that output.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "FDA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t244",
+    "t238"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "EU 2022/1426 requires defining the envelope.",
+   "quote": "**The EU 2022/1426 envelope requirement** (\"define the envelope\")",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    6
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "EU 2022/1426",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t261",
+    "t275"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The FAA restricts unsupported extrapolation.",
+   "quote": "the FAA restriction against unsupported extrapolation.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "FAA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t246",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The program's decision-maker-facing validity record should document covered machine models and variants, mass and payload range, dimensions, articulation and steering architecture, and braking-system configuration.",
+   "quote": "Models and variants covered; mass and payload range; dimensions; articulation and steering architecture; braking-system configuration.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t230",
+    "t168",
+    "t176",
+    "t182"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The program's validity record should document sensor hardware, firmware, calibration, installation coordinates and orientation, allowed mounting tolerances, and occlusion assumptions.",
+   "quote": "Hardware, firmware, calibration, installation coordinates and orientation, allowed mounting tolerances, occlusion assumptions.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t100",
+    "t84",
+    "t103"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The program's validity record should document perception and control versions, configuration parameters, and compiler and build identifiers where safety relevant.",
+   "quote": "Perception and control versions, configuration parameters, compiler and build identifiers where safety relevant.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t162",
+    "t85"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The program's validity record should document validated object classes, sizes, materials and reflectivity where relevant, static or moving behavior, and explicitly excluded objects.",
+   "quote": "Validated object classes, sizes, materials and reflectivity where relevant, static or moving behavior; explicitly excluded objects.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t262",
+    "t86"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The program's validity record should document surface types, grades, rain, snow, fog and dust ranges—including meteorological visibility, rain rate and dust optical density—as well as illuminance, glare, darkness, contamination and temperature.",
+   "quote": "Surface types, grades, rain, snow, fog and dust ranges (meteorological visibility, rain rate, dust optical density), illuminance, glare, darkness, contamination and temperature.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t102",
+    "t174",
+    "t173"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The program's validity record should document speed and relative-speed ranges, acceleration and deceleration, brake delay and build-up, and the friction domain.",
+   "quote": "Speed and relative-speed ranges, acceleration and deceleration, brake delay and build-up, friction domain.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t169",
+    "t171",
+    "t174"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The program's validity record should document maneuvers and encounter geometries that are covered and not covered.",
+   "quote": "Maneuvers and encounter geometries covered and not covered.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t141",
+    "t262"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The program's validity record should document where physical validation points exist versus where results are interpolated or extrapolated.",
+   "quote": "Where physical validation points exist versus where results are interpolated or extrapolated.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t263",
+    "t269"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The program's validity record should document measurement, parameter, numerical, stochastic and model-form uncertainty, and the resulting safety margin.",
+   "quote": "Measurement, parameter, numerical, stochastic and model-form uncertainty, and the resulting safety margin.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t259",
+    "t235",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The program's validity record should document known discrepancies: biases, unexplained residuals, non-conservative cases, workarounds and restrictions.",
+   "quote": "Biases, unexplained residuals, non-conservative cases, workarounds and restrictions.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t262",
+    "t269"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The program's validity record should identify product, software or environment changes that invalidate the evidence or require its re-evaluation.",
+   "quote": "Which product, software or environment changes invalidate or require re-evaluation of the evidence.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t162",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Every simulation result should be marked as interpolated, meaning inside the validated hull, or extrapolated.",
+   "quote": "**Mark every result as interpolated (inside the validated hull) or extrapolated**",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    20
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t262"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An extrapolated simulation result should never be presented without an extra uncertainty margin; an extrapolated area validation metric is an example.",
+   "quote": "never present an extrapolated result without an extra uncertainty margin, for example an extrapolated area validation metric.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    20
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "extrapolated area validation metric",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t261",
+    "t259",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NASA cautions that simulation credibility is multidimensional and decision-specific.",
+   "quote": "NASA cautions that credibility is multidimensional and decision-specific.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    39
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "NASA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t234",
+    "t240",
+    "t238"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The board should receive a map of validated, conditionally supported or interpolated, and unsupported or extrapolated simulation regions, with physical evidence beneath each, rather than only a claim that the model is 95% accurate or a green dashboard.",
+   "quote": "The better executive view is a map of **validated**, **conditionally supported or interpolated** and **unsupported or extrapolated** regions, with the physical evidence underneath each.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    39
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t269",
+    "t356",
+    "t71"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Simulation validity should be communicated with plain charts and words rather than slides that bury caveats; the Columbia Board's criticism of briefing slides is the reference case.",
+   "quote": "**Use plain charts and words, not slides that bury caveats.** The Columbia Board's criticism of the briefing slides is the reference case.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    32
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "Columbia Accident Investigation Board",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t356",
+    "t319",
+    "t269"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The simulation credibility argument should be represented in a structured form, such as Goal Structuring Notation.",
+   "quote": "**Represent the argument in a structured form**, such as Goal Structuring Notation",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    56,
+    64
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "Goal Structuring Notation",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t68",
+    "t67",
+    "t234"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "SET Level and NAFEMS work propose a credibility argument for assessors.",
+   "quote": "SET Level and NAFEMS work propose a \"credibility argument\" for assessors.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    56,
+    64
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "SET Level",
+     "kind": "program"
+    },
+    {
+     "name": "NAFEMS",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t310",
+    "t269",
+    "t234"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Failed simulation validation cases should be preserved.",
+   "quote": "**Preserve failed validation cases.**",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t269"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Removing a scenario from the validation report after tuning the model to that scenario destroys information about model-form weakness.",
+   "quote": "Removing a scenario from the validation report after the model has been tuned to it destroys information about model-form weakness.",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t219",
+    "t259"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The simulation validation report should distinguish calibration data, validation data and genuinely withheld confirmation data; the FAA's distinction between calibration and validation supports this separation.",
+   "quote": "The report should distinguish calibration data, validation data and genuinely withheld confirmation data; the FAA's distinction between calibration and validation supports this separation.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "FAA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t237",
+    "t263",
+    "t220",
+    "t246"
+   ],
+   "importance": 3
+  }
+ ]
+}

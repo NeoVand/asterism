@@ -1,0 +1,873 @@
+{
+ "chunkId": "k458",
+ "hash": "735e99dc0a725c45",
+ "facts": [
+  {
+   "text": "There is no single GPU requirement for simulation because workloads differ by orders of magnitude.",
+   "quote": "There is no single GPU requirement because the workloads differ by orders of magnitude.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t336",
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Logic and object-list braking tests are CPU-dominant with very high parallelism; suitable architectures are commodity servers or cloud containers.",
+   "quote": "Logic and object-list braking tests | CPU-dominant, very high parallelism | Commodity servers or cloud containers",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t336",
+    "t163"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Rigid vehicle dynamics workloads use CPUs and are often faster than real time; CPU workers are suitable, and some tools support GPUs.",
+   "quote": "Rigid vehicle dynamics | CPU; often faster than real time | CPU workers; some tools support GPU",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t179",
+    "t336",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Photorealistic camera simulation is GPU-heavy, with VRAM and ray tracing important; an RTX-class workstation or cloud GPUs are suitable.",
+   "quote": "Camera photorealism | GPU-heavy; VRAM and ray tracing matter | RTX-class workstation or cloud GPUs",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t118",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Lidar simulation can impose substantial GPU ray-tracing load; GPU workers are suitable.",
+   "quote": "Lidar | GPU ray-tracing load can be substantial | GPU workers",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t118",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Physics-oriented radar simulation is potentially very GPU- and compute-intensive; a high-end GPU or specialist simulator is suitable.",
+   "quote": "Physics-oriented radar | Potentially very GPU- and compute-intensive | High-end GPU or specialist simulator",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t323",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Ultrasonic simulation usually has modest compute requirements, but the environment and material model matter; CPU or GPU suitability depends on the product.",
+   "quote": "Ultrasonic | Usually modest, but the environment and material model matters | CPU or GPU depending on product",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t95",
+    "t136",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "DEM and granular-soil simulation are highly compute-intensive, GPU acceleration is valuable, and dedicated GPU or HPC workers are suitable.",
+   "quote": "DEM and granular soil | Highly compute-intensive; GPU acceleration valuable; Chrono CRM 50 to 200 times slower than real time | Dedicated GPU or HPC workers",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "DEM",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t338",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Chrono CRM runs 50 to 200 times slower than real time.",
+   "quote": "Chrono CRM 50 to 200 times slower than real time",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Chrono CRM",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For HIL, deterministic real time matters more than throughput; a local real-time CPU, FPGA and I/O system is suitable.",
+   "quote": "HIL | Deterministic real time matters more than throughput | Local real-time CPU, FPGA and I/O system",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t153",
+    "t336"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Campaign orchestration and results processing are CPU-, database- and storage-heavy; suitable architectures include Kubernetes, batch, cloud or HPC plus object storage.",
+   "quote": "Campaign orchestration and results | CPU, database and storage heavy | Kubernetes, batch, cloud or HPC plus object storage",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Kubernetes",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t233",
+    "t341",
+    "t338"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "CARLA on Unreal Engine 5 needs an NVIDIA RTX 3000-series GPU or better, at least 16 GB VRAM and 130 GB of disk.",
+   "quote": "CARLA on Unreal Engine 5 needs an NVIDIA RTX 3000-series GPU or better, at least 16 GB VRAM and 130 GB of disk",
+   "kind": "requirement",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    78
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    },
+    {
+     "name": "Unreal Engine 5",
+     "kind": "tool"
+    },
+    {
+     "name": "NVIDIA RTX 3000-series",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t337",
+    "t135",
+    "t322"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Chrono CRM terrain needs an NVIDIA GPU.",
+   "quote": "Chrono CRM terrain needs an NVIDIA GPU.",
+   "kind": "requirement",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    41
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Chrono CRM",
+     "kind": "tool"
+    },
+    {
+     "name": "NVIDIA",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The NVIDIA RTX PRO 6000 Blackwell is a workstation-class GPU with 96 GB of memory.",
+   "quote": "Workstation-class GPUs with 96 GB of memory exist (NVIDIA RTX PRO 6000 Blackwell)",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "NVIDIA RTX PRO 6000 Blackwell",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t337"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "On-premises GPU server prices were not found.",
+   "quote": "on-premises GPU server prices were not found.",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t338",
+    "t358"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "AWS G6e instances offer up to eight NVIDIA L40S GPUs with 48 GB each, up to 192 vCPUs, 1.536 TB of RAM and 400 Gbps networking.",
+   "quote": "AWS G6e instances offer up to eight NVIDIA L40S GPUs with 48 GB each, up to 192 vCPUs, 1.536 TB of RAM and 400 Gbps networking.",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    142
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "AWS",
+     "kind": "company"
+    },
+    {
+     "name": "AWS G6e",
+     "kind": "product"
+    },
+    {
+     "name": "NVIDIA L40S",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t330",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Third-party trackers list AWS g6e.xlarge with one L40S GPU, 4 vCPUs and 32 GiB at USD 1.861 per hour for us-east-1 Linux on-demand in 2026.",
+   "quote": "Third-party trackers for us-east-1 Linux on-demand (2026) list g6e.xlarge (one L40S, 4 vCPU, 32 GiB) at USD 1.861 per hour",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    20,
+    22,
+    143,
+    21
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "AWS g6e.xlarge",
+     "kind": "product"
+    },
+    {
+     "name": "NVIDIA L40S",
+     "kind": "product"
+    },
+    {
+     "name": "us-east-1",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t339",
+    "t330"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Third-party trackers list AWS g6e.4xlarge at USD 3.004 per hour for us-east-1 Linux on-demand in 2026.",
+   "quote": "g6e.4xlarge at 3.004",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    20,
+    22,
+    143,
+    21
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "AWS g6e.4xlarge",
+     "kind": "product"
+    },
+    {
+     "name": "us-east-1",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t339",
+    "t330"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Third-party trackers list AWS g6e.12xlarge with four L40S GPUs at USD 10.493 per hour for us-east-1 Linux on-demand in 2026.",
+   "quote": "g6e.12xlarge (four L40S) at 10.493",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    20,
+    22,
+    143,
+    21
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "AWS g6e.12xlarge",
+     "kind": "product"
+    },
+    {
+     "name": "NVIDIA L40S",
+     "kind": "product"
+    },
+    {
+     "name": "us-east-1",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t339",
+    "t330"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Third-party trackers list AWS g6e.48xlarge with eight L40S GPUs at USD 30.131 per hour for us-east-1 Linux on-demand in 2026.",
+   "quote": "g6e.48xlarge (eight L40S) at 30.131",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    20,
+    22,
+    143,
+    21
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "AWS g6e.48xlarge",
+     "kind": "product"
+    },
+    {
+     "name": "NVIDIA L40S",
+     "kind": "product"
+    },
+    {
+     "name": "us-east-1",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t339",
+    "t330"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For the quoted 2026 AWS pricing, a one-year EC2 Instance Savings Plan brings g6e.xlarge to about USD 1.17 per hour.",
+   "quote": "a one-year EC2 Instance Savings Plan brings g6e.xlarge to about 1.17 per hour",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    20,
+    22,
+    143,
+    21
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "EC2 Instance Savings Plan",
+     "kind": "product"
+    },
+    {
+     "name": "AWS g6e.xlarge",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t339",
+    "t330"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "AWS g6e.xlarge spot prices fluctuate widely: one tracker showed USD 0.427 per hour and another USD 1.8348 per hour in the quoted 2026 pricing.",
+   "quote": "spot prices fluctuate widely (one tracker showed 0.427, another 1.8348)",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    20,
+    22,
+    143,
+    21
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "AWS g6e.xlarge",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t339",
+    "t330"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Google lists g2-standard-32 with one NVIDIA L4 GPU, 32 vCPUs and 128 GiB at about USD 1.734 per hour.",
+   "quote": "Google lists g2-standard-32 (one NVIDIA L4, 32 vCPU, 128 GiB) at about USD 1.734 per hour",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    23
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Google",
+     "kind": "company"
+    },
+    {
+     "name": "Google g2-standard-32",
+     "kind": "product"
+    },
+    {
+     "name": "NVIDIA L4",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t330",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Google documentation notes location and capacity constraints for GPU families.",
+   "quote": "its documentation notes location and capacity constraints for GPU families.",
+   "kind": "risk",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    23
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Google",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t330",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "AWS advertises Spot discounts of up to 90% against on-demand pricing.",
+   "quote": "AWS advertises Spot discounts of up to 90% against on-demand",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    142
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "AWS Spot",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t330",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "AWS Spot suits checkpointable statistical regression but not deterministic HIL or irreplaceable long jobs.",
+   "quote": "which suits checkpointable statistical regression but not deterministic HIL or irreplaceable long jobs.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "AWS Spot",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t161",
+    "t148",
+    "t330"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Regional cloud prices should be rechecked at purchase.",
+   "quote": "Regional prices should be rechecked at purchase.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t330"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "At USD 1.7344 per wall-clock GPU-hour, Google g2-standard-32 costs about USD 1,734 for 1,000 GPU-hours, USD 17,344 for 10,000 GPU-hours and USD 173,438 for 100,000 GPU-hours.",
+   "quote": "| 1,000 GPU-hours | about USD 1,734 | about USD 1,861 |\n| 10,000 GPU-hours | about USD 17,344 | about USD 18,610 |\n| 100,000 GPU-hours | about USD 173,438 | about USD 186,100 |",
+   "kind": "number",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Google g2-standard-32",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t339",
+    "t163"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "At about USD 1.861 per wall-clock GPU-hour, AWS g6e.xlarge costs about USD 1,861 for 1,000 GPU-hours, USD 18,610 for 10,000 GPU-hours and USD 186,100 for 100,000 GPU-hours.",
+   "quote": "| 1,000 GPU-hours | about USD 1,734 | about USD 1,861 |\n| 10,000 GPU-hours | about USD 17,344 | about USD 18,610 |\n| 100,000 GPU-hours | about USD 173,438 | about USD 186,100 |",
+   "kind": "number",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "AWS g6e.xlarge",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t339",
+    "t163"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The illustrative Google g2-standard-32 and AWS g6e.xlarge GPU-hour costs exclude software licenses, storage, network egress, orchestration and support; the estimates are arithmetic from published rates.",
+   "quote": "These exclude software licenses, storage, network egress, orchestration and support. **Expert opinion** (arithmetic from the published rates).",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Google g2-standard-32",
+     "kind": "product"
+    },
+    {
+     "name": "AWS g6e.xlarge",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t358",
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ten AWS g6e.xlarge instances running 24 hours a day for 122 days, or 2,928 hours each, cost about USD 54,490 on demand and deliver at most about 29,000 GPU-hours.",
+   "quote": "Ten g6e.xlarge instances running 24 hours a day for 122 days (2,928 hours) cost about USD 54,490 on demand and deliver at most about 29,000 GPU-hours.",
+   "kind": "number",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "AWS g6e.xlarge",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t339",
+    "t163",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor-realistic simulation runs are typically near real time per GPU.",
+   "quote": "Sensor-realistic runs are typically near real time per GPU",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t323",
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A four-month simulation window caps full-sensor-fidelity coverage across 100-plus sites times 10-plus scenarios times weather times machine variants, forcing low-fidelity sweeps with high fidelity on critical cases.",
+   "quote": "a four-month window bounds throughput and caps how many of the 100-plus sites times 10-plus scenarios times weather times machine variants can be run at full sensor fidelity, forcing a tiered strategy (low-fidelity sweeps, high fidelity on critical cases).",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t198",
+    "t125",
+    "t44",
+    "t233"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Cost per simulated hour equals the cloud price per wall-clock hour divided by the simulation's real-time factor.",
+   "quote": "Cost per simulated hour equals cloud price per wall-clock hour divided by the simulation's real-time factor",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    14
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "At the same cloud hourly price, a simulator running at 10 times real time costs one tenth as much per simulated hour as one at real time, while a simulator at 0.1 times real time costs ten times as much.",
+   "quote": "a simulator running at 10 times real time costs one tenth as much per simulated hour as one at real time, and one at 0.1 times real time costs ten times as much.",
+   "kind": "number",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    14
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No generic simulation real-time factor should be assumed; benchmark the actual machine geometry, sensor count, resolution and rate, weather and terrain.",
+   "quote": "No generic real-time factor should be assumed; it must be benchmarked with the actual machine geometry, sensor count, resolution and rate, weather and terrain.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    14
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t87",
+    "t323"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Isaac Sim users report severe frame-rate loss in some multi-sensor scenes, reinforcing the need for workload-specific benchmarking.",
+   "quote": "Isaac Sim users report severe frame-rate loss in some multi-sensor scenes, which reinforces the need for workload-specific benchmarking.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    14
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Isaac Sim",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t339",
+    "t87",
+    "t323"
+   ],
+   "importance": 3
+  }
+ ]
+}

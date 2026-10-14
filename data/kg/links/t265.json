@@ -1,0 +1,115 @@
+{
+ "key": "t265",
+ "hash": "a66deee384b1402a",
+ "synopsis": "Evidence reuse across machine models is described as the biggest validation lever but the least documented; extension requires similarity arguments and bridging evidence, not automatic inheritance [f366, f189, f7569]. The proposed method uses a parameterized family model validated at envelope corners, a documented change assessment, and targeted bridge tests; a variant inside the validated family hull receives reduced physical tests, typically brake calibration and sensor field-of-view and detection checks [f7573, f12368]. Sensor relocation can invalidate the envelope even with unchanged software: blind-area geometry changes, height shifts degrade neural reconstruction more than sideways shifts, and learned sensor models extrapolate weakly to new viewpoints [f12370, f11552, f82, f4489]. Explicit geometry and physics-based sensor models offer useful transfer capabilities, but viewpoint-valid geometry alone does not validate appearance or sensor response [f4181, f4466, f4174]. Rail, aerospace and nuclear practice provide formal extension precedents, yet no published off-road variant-transfer example or formally accepting off-road regulator was found; neither the removable physical-test count for dozens of variants nor an accepted transferred-brake-model test count was established [f7570, f7571, f7572, f7574, f2943, f1960, f6557].",
+ "relations": [
+  {
+   "a": "f189",
+   "b": "f7569",
+   "type": "same",
+   "note": "Both define transfer as similarity plus bridging evidence, not inherited validation."
+  },
+  {
+   "a": "f190",
+   "b": "f7573",
+   "type": "same",
+   "note": "Both prescribe envelope-corner family validation and targeted variant bridge tests."
+  },
+  {
+   "a": "f260",
+   "b": "f370",
+   "type": "same",
+   "note": "Both report no published perception-transfer approach across sensor mounting positions."
+  },
+  {
+   "a": "f260",
+   "b": "f627",
+   "type": "same",
+   "note": "Both report the unsuccessful search for a mounting-position perception-transfer method."
+  },
+  {
+   "a": "f370",
+   "b": "f627",
+   "type": "same",
+   "note": "Duplicate reports of the missing published mounting-position perception-transfer approach."
+  },
+  {
+   "a": "f614",
+   "b": "f12323",
+   "type": "same",
+   "note": "Both reject extrapolating quarry validation to different environments, machines or sensor mounts."
+  },
+  {
+   "a": "f6107",
+   "b": "f6479",
+   "type": "same",
+   "note": "Both identify the missing earth-moving benchmark for reduced-order or surrogate model transfer."
+  },
+  {
+   "a": "f10430",
+   "b": "f10481",
+   "type": "same",
+   "note": "Both reject automatic portability of dynamics, brakes and sensing across machine families."
+  },
+  {
+   "a": "f2918",
+   "b": "f12370",
+   "type": "same",
+   "note": "Both warn sensor relocation can invalidate the envelope despite unchanged software."
+  },
+  {
+   "a": "f12368",
+   "b": "f7573",
+   "type": "elaborates",
+   "note": "Specifies family-hull membership and typical brake and sensor delta tests."
+  },
+  {
+   "a": "f12366",
+   "b": "f7573",
+   "type": "elaborates",
+   "note": "Grades bridging evidence by irrelevant differences, influential changes and newly introduced physics."
+  },
+  {
+   "a": "f11552",
+   "b": "f2918",
+   "type": "supports",
+   "note": "Changed blind-area geometry explains why sensor relocation can invalidate an existing envelope."
+  },
+  {
+   "a": "f82",
+   "b": "f4489",
+   "type": "elaborates",
+   "note": "Identifies sensor-height changes as especially damaging to neural reconstruction."
+  },
+  {
+   "a": "f4181",
+   "b": "f4173",
+   "type": "elaborates",
+   "note": "Viewpoint-valid hand-built geometry requires modelling hidden surfaces."
+  },
+  {
+   "a": "f4174",
+   "b": "f4173",
+   "type": "elaborates",
+   "note": "Limits the Valid rating to geometry, excluding validated appearance and sensor response."
+  },
+  {
+   "a": "f10432",
+   "b": "f10430",
+   "type": "supports",
+   "note": "Observed equipment, installation and task variation supports rejecting automatic family transfer."
+  },
+  {
+   "a": "f1960",
+   "b": "f1959",
+   "type": "elaborates",
+   "note": "Potentially large test savings remain unquantified for dozens of variants."
+  },
+  {
+   "a": "f6163",
+   "b": "f6557",
+   "type": "supports",
+   "note": "Machine performance standards do not establish statistical transfer-validation test counts."
+  }
+ ]
+}

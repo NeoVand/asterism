@@ -1,0 +1,115 @@
+{
+ "key": "t3",
+ "hash": "ea5c6f55c79e1c9c",
+ "synopsis": "The fatality evidence points beyond object collisions: of 54 US haul-truck deaths in January 2005–June 2021, 21 involved berms, 12 dump points, 13 collisions with people or vehicles, and eight other causes; 12 of the 13 collision deaths involved forward movement [f2989, f2990]. Unintended braking can itself create serious hazards, including load shift, loss of traction, rollover or instability, and rear-end impacts from following trucks; shadow mode cannot establish whether a false stop causes such a collision [f1129, f8201, f596]. Sensor validation must address substantial blind areas and occlusion: a 50 t truck's front-right blind area extends at least 18 m, while a 2026 mine study reported only 5.0% lidar visible-region recovery for an occluded truck [f11403, f4357]. The evidence base remains limited: the 2022 NIOSH review found detection-reliability testing in only 13 of 99 metric instances, avoidance or intervention systems in only 10% of 97 cases, and only 8% of articles above technology readiness level 7; the booklet still identifies the 2006 radar study as its best hard false-alarm source [f5170, f5171, f5172, f5173]. December 2021 Wabtec tests demonstrated controlled deceleration up to 30 km/h but still required physical detection-zone adjustment, while modern machine-delay distributions and site reconstruction studies at large-machine sensor heights of 3–6 m were not found [f1345, f1247, f5899, f4382]. Validation also needs to cover operational failures rather than perception alone: 2019 autonomous-haulage collisions implicated communications and traction, and a WorkSafe WA report dated 7 March 2025 records trucks resuming movement after communications returned while operators misunderstood their mode; transferring on-road evidence to loaded haul trucks on gravel remains an open question [f1371, f10718, f11349].",
+ "relations": [
+  {
+   "a": "f2989",
+   "b": "f11404",
+   "type": "same",
+   "note": "Restates the same 54-death breakdown."
+  },
+  {
+   "a": "f2990",
+   "b": "f11405",
+   "type": "same",
+   "note": "Same twelve forward-moving trucks among thirteen collision deaths."
+  },
+  {
+   "a": "f2990",
+   "b": "f228",
+   "type": "same",
+   "note": "Same forward-motion fatal collision count."
+  },
+  {
+   "a": "f228",
+   "b": "f11405",
+   "type": "same",
+   "note": "Same fatal collision statistic across synthesis and glossary."
+  },
+  {
+   "a": "f8285",
+   "b": "f8379",
+   "type": "same",
+   "note": "Same R2026b examples, with application details in the latter."
+  },
+  {
+   "a": "f2989",
+   "b": "f123",
+   "type": "supports",
+   "note": "Berm and dump-point deaths together outnumber object-collision deaths."
+  },
+  {
+   "a": "f2990",
+   "b": "f121",
+   "type": "supports",
+   "note": "Collision counts support forward-motion emphasis, but do not establish start-off timing."
+  },
+  {
+   "a": "f1129",
+   "b": "f8201",
+   "type": "same",
+   "note": "Both identify unintended braking as hazardous, listing overlapping consequences."
+  },
+  {
+   "a": "f2342",
+   "b": "f8201",
+   "type": "elaborates",
+   "note": "Adds loaded-machine, grade and low-friction conditions to braking hazards."
+  },
+  {
+   "a": "f596",
+   "b": "f8201",
+   "type": "elaborates",
+   "note": "Identifies shadow mode's inability to establish the rear-end consequence of false braking."
+  },
+  {
+   "a": "f1247",
+   "b": "f1345",
+   "type": "elaborates",
+   "note": "Adds truck models and demonstrated speed to the same December 2021 testing precedent."
+  },
+  {
+   "a": "f5897",
+   "b": "f5899",
+   "type": "elaborates",
+   "note": "Historical lag figures exist, but modern production-machine delay distributions remain missing."
+  },
+  {
+   "a": "f7039",
+   "b": "f7040",
+   "type": "elaborates",
+   "note": "Two crossed antennas improved the rear-tyre detection weakness of a single radar."
+  },
+  {
+   "a": "f10445",
+   "b": "f10718",
+   "type": "elaborates",
+   "note": "Provides the report date and specific mode misunderstanding behind the broader finding."
+  },
+  {
+   "a": "f226",
+   "b": "f5173",
+   "type": "supports",
+   "note": "Supplies the quantitative false-alarm result highlighted as the best hard evidence."
+  },
+  {
+   "a": "f5901",
+   "b": "f5902",
+   "type": "elaborates",
+   "note": "Separates the grade-correction component from the required test-grade deceleration."
+  },
+  {
+   "a": "f464",
+   "b": "f466",
+   "type": "elaborates",
+   "note": "Specifies mining-road geometry and heavy-truck lag represented by MineSim."
+  },
+  {
+   "a": "f10638",
+   "b": "f10639",
+   "type": "depends",
+   "note": "The documented launch motivates checking its scope as an off-road precedent."
+  }
+ ]
+}

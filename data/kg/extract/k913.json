@@ -1,0 +1,298 @@
+{
+ "chunkId": "k913",
+ "hash": "6c33a7149271df7b",
+ "facts": [
+  {
+   "text": "Record keeping for simulation means storing exactly what was run, its versions and inputs, and the origin of every input for every one of thousands of runs, so results can be reproduced and defended later.",
+   "quote": "Record keeping for simulation means storing, for every one of thousands of runs, exactly what was run, with which versions and inputs, and where every input came from, so that any result can be reproduced and defended later.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t341",
+    "t231",
+    "t162"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A simulation verdict of braking in time or not braking in time is worthless as evidence unless the run can later be recreated exactly.",
+   "quote": "A single simulation run produces a verdict: braked in time, or did not. That verdict is worthless as evidence unless someone can later recreate the run exactly.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t341",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Every executed simulation run should be treated as a reproducible experiment with an immutable provenance manifest.",
+   "quote": "The booklet's rule is to treat every executed run as a reproducible experiment with an immutable provenance manifest [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t341",
+    "t231",
+    "t162"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The minimum manifest stored with each simulation run includes requirement and hazard identifiers; scenario family and version; concrete parameter values; machine configuration; sensor hardware, mounting and calibration; software build or commit; simulator or rig version; random seed; environmental measurements; timestamp; raw-data identifiers and checksums; metric version; verdict; and deviations.",
+   "quote": "The minimum manifest stored with each run: requirement and hazard identifiers, scenario family and version, the concrete parameter values, machine configuration, sensor hardware, mounting and calibration, software build or commit, simulator or rig version, random seed, environmental measurements,",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t341",
+    "t162",
+    "t64",
+    "t231"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Everything that can change a simulation result should receive an immutable identifier; content hashes provide such identifiers.",
+   "quote": "Everything that can change a result gets an immutable identifier; content hashes do this.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t341",
+    "t162"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM MDF 4.3.0 is a named neutral format for measured signals, and ASAM ATX is a named neutral format for test metadata.",
+   "quote": "Neutral formats named are ASAM MDF 4.3.0 for measured signals and ASAM ATX for test metadata",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ASAM MDF",
+     "kind": "standard"
+    },
+    {
+     "name": "ASAM ATX",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t122",
+    "t341"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simulation record-keeping implementations can be commercial, open-source or in-house, provided the data model is stable and machine-readable.",
+   "quote": "the implementation can be commercial, open-source or in-house, as long as the data model is stable and machine-readable [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t341",
+    "t122"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The simulation traceability chain connects hazard, safety requirement, logical scenario, test case, run, result and evidence item in the safety case.",
+   "quote": "The traceability chain runs hazard, safety requirement, logical scenario, test case, run, result, evidence item in the safety case [Chapter 9].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t64",
+    "t162",
+    "t67"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Tool versions, binaries or containers, drivers, graphics-processor type, assets and seeds must be archived for the safety case.",
+   "quote": "Chapter 11 adds that tool versions, binaries or containers, drivers, graphics-processor type, assets and seeds must be archived for the safety case",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t341",
+    "t67",
+    "t162"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Version drift that makes evidence irreproducible is a program failure mode.",
+   "quote": "Chapter 13 lists version drift making evidence irreproducible as a failure mode.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t82",
+    "t341",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Large synchronized camera, lidar and radar programs incur storage costs and create retention, worker-imagery privacy and access-control obligations.",
+   "quote": "Storage itself is a cost: large synchronized camera, lidar and radar programs create storage, retention, worker-imagery privacy and access-control obligations [Chapter 7].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t341",
+    "t358",
+    "t89",
+    "t92",
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Data lineage enforces the independence rule that detector-validation data must be independent of data that generated or trained the detector.",
+   "quote": "Lineage also enforces the independence rule: data used to validate a detector must be independent of the data that generated or trained it [Chapter 9].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t231",
+    "t113",
+    "t341"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The EU Product Liability Directive applies to products placed on the market after 9 December 2026.",
+   "quote": "Under the EU Product Liability Directive, applying to products placed on the market after 9 December 2026",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12,
+    13
+   ],
+   "entities": [
+    {
+     "name": "EU Product Liability Directive",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t80",
+    "t298"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Under the EU Product Liability Directive, the program's evidence records may be disclosable in court, and defectiveness may be presumed if evidence is not disclosed.",
+   "quote": "the program's evidence records may be disclosable in court, and defectiveness may be presumed if evidence is not disclosed",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12,
+    13
+   ],
+   "entities": [
+    {
+     "name": "EU Product Liability Directive",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t80",
+    "t341",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A retention policy and auditable provenance are part of the program's safety case because of evidence-disclosure implications under the EU Product Liability Directive.",
+   "quote": "a retention policy and auditable provenance are therefore part of the safety case, not housekeeping [Chapters 12, 13].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12,
+    13
+   ],
+   "entities": [
+    {
+     "name": "EU Product Liability Directive",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t341",
+    "t67",
+    "t80",
+    "t231"
+   ],
+   "importance": 3
+  }
+ ]
+}

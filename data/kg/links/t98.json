@@ -1,0 +1,115 @@
+{
+ "key": "t98",
+ "hash": "c77779c23421fb4d",
+ "synopsis": "Satellite positioning and inertial sensing provide the position and motion reference for other measurements, so reference accuracy sets the floor for warning-distance and stopping-distance accuracy [f12695, f12707]. The recommended ground truth combines surveyed targets, reference lidar with RTK-GNSS/INS for continuous distance and timing, and human-audited auto-labels; lidar’s blindness in dust requires a “truth unavailable” state [f100, f5197, f12613]. Reconstruction needs synchronised, calibrated sensor logs, and Para-Lane found RTK/INS trajectories alone insufficient for frame alignment, adding lidar mapping and camera-to-lidar registration [f3852, f4020]. Underground and GNSS-denied sites undermine RTK/INS-dependent reconstruction, so the booklet recommends retaining state-estimation inputs and solutions; Pretoria’s methodology uses GPS truth on the surface and lidar, cameras and radar underground [f4365, f4019, f1726]. Position and message paths are comparatively easy to emulate, but physical coverage, propagation, synchronisation and failure evidence remain necessary; NIOSH observed a brief 15 m GPS position shift during 2007 field work [f500, f502, f689]. Several tools offer GPS/GNSS and IMU models, but the research found no fidelity studies for GNSS/V2X proximity systems and no current public heavy off-road standard prescribing their laboratory-injection architecture, leaving model availability distinct from demonstrated validation adequacy [f8381, f8468, f8495, f8511, f4598, f5325].",
+ "relations": [
+  {
+   "a": "f100",
+   "b": "f5197",
+   "type": "same",
+   "note": "Both specify surveyed anchors, lidar–RTK/INS continuity, and audited auto-labels."
+  },
+  {
+   "a": "f5197",
+   "b": "f12703",
+   "type": "elaborates",
+   "note": "Hybrid methodology adds surveyed anchors and audited labels to the continuous reference."
+  },
+  {
+   "a": "f12613",
+   "b": "f12703",
+   "type": "elaborates",
+   "note": "Dust blindness limits the recommended continuous reference and requires unavailable-truth handling."
+  },
+  {
+   "a": "f3728",
+   "b": "f4020",
+   "type": "same",
+   "note": "Same Para-Lane finding; latter specifies frame alignment and camera-to-lidar registration."
+  },
+  {
+   "a": "f3728",
+   "b": "f12705",
+   "type": "same",
+   "note": "Both report RTK/INS trajectories insufficient without lidar mapping."
+  },
+  {
+   "a": "f4020",
+   "b": "f12705",
+   "type": "same",
+   "note": "Glossary restates the frame-alignment limitation."
+  },
+  {
+   "a": "f1356",
+   "b": "f1726",
+   "type": "same",
+   "note": "Both describe Pretoria’s surface GPS and underground lidar, camera and radar ground truth."
+  },
+  {
+   "a": "f501",
+   "b": "f4593",
+   "type": "same",
+   "note": "Both identify these positioning and cooperative technologies in mining collision avoidance."
+  },
+  {
+   "a": "f8495",
+   "b": "f9078",
+   "type": "same",
+   "note": "Both list Chrono::Sensor’s camera, lidar, SPAD, GPS and IMU support."
+  },
+  {
+   "a": "f3990",
+   "b": "f12620",
+   "type": "elaborates",
+   "note": "Glossary extends directly mapped point clouds into cleaned terrain and objects."
+  },
+  {
+   "a": "f4365",
+   "b": "f4019",
+   "type": "supports",
+   "note": "GNSS-denied reconstruction failures motivate retaining state-estimation inputs and solutions."
+  },
+  {
+   "a": "f4019",
+   "b": "f12706",
+   "type": "same",
+   "note": "Both recommend retaining state-estimation inputs in GNSS-denied mines."
+  },
+  {
+   "a": "f689",
+   "b": "f502",
+   "type": "supports",
+   "note": "Observed GPS interference demonstrates why physical evidence remains necessary."
+  },
+  {
+   "a": "f500",
+   "b": "f1744",
+   "type": "supports",
+   "note": "Easy position-path emulation supports virtual fusion and deterministic location testing."
+  },
+  {
+   "a": "f502",
+   "b": "f1745",
+   "type": "elaborates",
+   "note": "Physical-correlation needs additionally cover unequipped objects, infrastructure, installation and maintenance."
+  },
+  {
+   "a": "f5323",
+   "b": "f500",
+   "type": "elaborates",
+   "note": "Distinguishes physical-interface stimulation from downstream measurement injection."
+  },
+  {
+   "a": "f5367",
+   "b": "f5362",
+   "type": "depends",
+   "note": "Target-equipped reference methods require alternatives for unequipped objects."
+  },
+  {
+   "a": "f3852",
+   "b": "f8656",
+   "type": "elaborates",
+   "note": "Specifies synchronisation and calibration requirements for the logs used by reconstruction tools."
+  }
+ ]
+}

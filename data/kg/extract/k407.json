@@ -1,0 +1,325 @@
+{
+ "chunkId": "k407",
+ "hash": "f9625fb6103e072b",
+ "facts": [
+  {
+   "text": "Whether an observed simulation–test discrepancy is meaningful depends on experimental and numerical uncertainty.",
+   "quote": "The question is whether an observed discrepancy is meaningful after experimental and numerical uncertainty are considered.",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t250",
+    "t259",
+    "t235"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "FDA cautions that validation thresholds must be justified for the decision being made.",
+   "quote": "FDA cautions that validation thresholds have to be justified for the decision",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    1,
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FDA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t244",
+    "t258",
+    "t238"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASME V&V 40 does not set a universal acceptance error.",
+   "quote": "V&V 40 does not set a universal acceptance error",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    1,
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASME V&V 40",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t243",
+    "t258"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NASA and nuclear practice require uncertainty characterization rather than treating test data as error-free truth.",
+   "quote": "NASA and nuclear practice require uncertainty characterization rather than treating test data as error-free truth.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    1,
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NASA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t242",
+    "t245",
+    "t259",
+    "t235"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the FAA lumbar-load worked example, the regulatory maximum is 1,500 lb.",
+   "quote": "Worked example (FAA): for lumbar load, the regulatory maximum is 1,500 lb",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FAA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t246",
+    "t258"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In the FAA lumbar-load worked example, measured test variability is about 42 lb standard deviation.",
+   "quote": "the measured test variability is about 42 lb standard deviation.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FAA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t259",
+    "t246"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "FAA guidance gives about 1,430 lb as the lumbar-load level needed for 95% confidence that the underlying load remains below the 1,500 lb limit; 1500 minus 1.645 times 42 is about 1,431 lb.",
+   "quote": "The guidance gives about 1,430 lb as the level needed for 95% confidence that the underlying load stays below the limit; the arithmetic is 1500 minus 1.645 times 42, which is about 1,431 lb.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FAA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t209",
+    "t259",
+    "t258",
+    "t246"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the FAA lumbar-load example, predicting 1,490 lb is insufficient merely because the prediction is below the 1,500 lb limit: uncertainty consumes part of the margin.",
+   "quote": "Predicting 1,490 lb is therefore not enough just because 1,490 is below 1,500: uncertainty consumes part of the margin.",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FAA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t259",
+    "t258",
+    "t246"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The area validation metric, attributed to peer-reviewed work by Ferson, Oberkampf and Ginzburg (2008) and Roy and Oberkampf (2011), is the area between cumulative distributions of simulated and measured outputs, expressed in the quantity's units, such as metres of stopping distance.",
+   "quote": "is the area between the cumulative distribution of simulated outputs and that of measured outputs, expressed in the units of the quantity of interest, for example metres of stopping distance.",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    20,
+    82,
+    83
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "area validation metric",
+     "kind": "metric"
+    },
+    {
+     "name": "Ferson",
+     "kind": "person"
+    },
+    {
+     "name": "Oberkampf",
+     "kind": "person"
+    },
+    {
+     "name": "Ginzburg",
+     "kind": "person"
+    },
+    {
+     "name": "Roy",
+     "kind": "person"
+    }
+   ],
+   "terms": [
+    "t253",
+    "t249",
+    "t170"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "To apply the area validation metric at a validation condition, run N physical stops and M simulated stops with input uncertainty propagated, then plot both empirical cumulative distributions; the area between them represents model-form uncertainty at that point.",
+   "quote": "run N physical stops at a validation condition and M simulated stops with input uncertainty propagated; plot both empirical cumulative distributions; the area between them is the model-form uncertainty at that point.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    84
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "area validation metric",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t253",
+    "t259",
+    "t235",
+    "t170"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Model-form uncertainty obtained with the area validation metric is extrapolated to untested conditions, for example by regression, and the extrapolated value is added to the prediction as an extra uncertainty margin.",
+   "quote": "That uncertainty is then extrapolated, for example by regression, to conditions that were not tested, and the extrapolated value is added to the prediction as an extra uncertainty margin.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    20,
+    82
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "area validation metric",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t259",
+    "t261",
+    "t253"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Peer-reviewed criticism warns that increased experimental scatter can reduce the area validation metric and make a model appear more valid.",
+   "quote": "More experimental scatter makes the area smaller and the model look \"more valid\"",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    80,
+    85
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "area validation metric",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t253",
+    "t259",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Peer-reviewed criticism warns that the area validation metric can over-compensate or under-compensate when epistemic and aleatory uncertainty are mixed.",
+   "quote": "it can over- or under-compensate when epistemic and aleatory uncertainty are mixed.",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    80,
+    85
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "area validation metric",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t259",
+    "t253",
+    "t267"
+   ],
+   "importance": 3
+  }
+ ]
+}

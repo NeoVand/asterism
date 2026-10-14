@@ -1,0 +1,133 @@
+{
+ "chunkId": "k656",
+ "hash": "9cf899adb4674caa",
+ "facts": [
+  {
+   "text": "Modulation transfer function (MTF), point spread function (PSF), noise and signal-to-noise ratio (SNR) describe sensor image sharpness and cleanliness, allowing a simulated camera to be checked against a real camera.",
+   "quote": "These measures say how sharp and how clean a sensor's picture is, so that a simulated camera can be checked against a real one.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t90",
+    "t89",
+    "t250"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet recommends that, before simulating any scene, the virtual camera match the real camera in MTF or PSF, vignetting, radiometric response, noise and HDR as the first layer of its validation ladder.",
+   "quote": "before any scene is simulated, the virtual instrument should match the real one in MTF or PSF, vignetting, radiometric response, noise and HDR for a camera",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t90",
+    "t89",
+    "t234",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends matching a virtual thermal camera to the real thermal camera in MTF and noise equivalent temperature difference before simulating any scene, as part of the first layer of its validation ladder.",
+   "quote": "and MTF and noise equivalent temperature difference for a thermal camera [Chapter 6]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t90",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet identifies SNR against rain rate or visibility as a signal-level validation check.",
+   "quote": "SNR against rain rate or visibility is a signal-level check",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t90",
+    "t102",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet lists PSF or MTF among the supplier information needed for a camera model.",
+   "quote": "PSF or MTF is on the list of supplier information a camera model needs [Chapter 6].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t90",
+    "t89",
+    "t357",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A detector trained on sharp, clean images can fail on blurred, noisy images.",
+   "quote": "A detector trained on sharp, clean images can fail on blurred, noisy ones",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t112",
+    "t90",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Matching MTF, PSF and SNR demonstrates that a virtual camera is as sharp and as noisy as the real camera before the program trusts detections from the virtual camera.",
+   "quote": "matching MTF, PSF and SNR is how a program shows the virtual camera is as sharp and as noisy as the real one before trusting detections from it [Chapter 6].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t90",
+    "t89",
+    "t237",
+    "t85"
+   ],
+   "importance": 3
+  }
+ ]
+}

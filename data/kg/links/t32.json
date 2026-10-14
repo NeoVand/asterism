@@ -1,0 +1,115 @@
+{
+ "key": "t32",
+ "hash": "900146b81f7f3067",
+ "synopsis": "False and nuisance alarms are repeatedly identified as a leading cause of deployed proximity-system failure, with documented distrust, disabling and operator rejection; achieving an acceptable detection–false-positive balance took the manufacturer years of calibration [f5928, f6494, f10496, f10]. The strongest cited quantitative evidence remains the 2006 NIOSH report of seven days of 2004 Caterpillar 793B testing: 580 alarms over 618 reversals, with 18% false alarms and 42% nuisance alarms; the chapters report the action-worthy share slightly differently, as 40% versus 235/580 (41%) [f5173, f3010, f3011, f5174, f5175, f5176]. Validation should use real operating exposure and fleet logging, including winter 2026–2027, rather than staged targets alone; replay results remain limited to the sensors, mounting positions and scenarios actually recorded [f6656, f11336, f728, f95]. Published off-road hourly acceptance limits and standard statistical sample sizes were not found, so the program must establish separate criteria for advisory warnings, urgent warnings, speed reduction and full braking, despite MOSH's requirement for no false warnings or interventions at TRL4 [f2121, f5160, f2124, f2119]. Tuning should constrain missed or late interventions while optimizing false warnings, unnecessary brakes and productivity loss, without suppressing genuinely dangerous repeated berm alarms; false alarms in automatic braking can cause a brake slam [f136, f11522, f11306].",
+ "relations": [
+  {
+   "a": "f95",
+   "b": "f5166",
+   "type": "same",
+   "note": "Both limit replay validity to recorded sensors, mounting positions and scenarios."
+  },
+  {
+   "a": "f509",
+   "b": "f918",
+   "type": "same",
+   "note": "Both say field-data replay establishes detection and false-alarm rates in the real domain."
+  },
+  {
+   "a": "f136",
+   "b": "f6671",
+   "type": "same",
+   "note": "Both prescribe constrained multi-objective tuning with missed or late interventions as hard constraints."
+  },
+  {
+   "a": "f6656",
+   "b": "f11336",
+   "type": "same",
+   "note": "Both require operational exposure rather than staged tests for false-alarm validation."
+  },
+  {
+   "a": "f102",
+   "b": "f5174",
+   "type": "same",
+   "note": "Both report 18% false alarms in the 2006 NIOSH Caterpillar study."
+  },
+  {
+   "a": "f103",
+   "b": "f5175",
+   "type": "same",
+   "note": "Both report 42% nuisance alarms in the same NIOSH study."
+  },
+  {
+   "a": "f5928",
+   "b": "f10443",
+   "type": "same",
+   "note": "Both identify false and nuisance alarms as the primary deployed proximity-system failure reason."
+  },
+  {
+   "a": "f3011",
+   "b": "f5176",
+   "type": "contradicts",
+   "note": "Action-worthy alarms are reported as 40% versus 235 of 580, rounded to 41%."
+  },
+  {
+   "a": "f3011",
+   "b": "f102",
+   "type": "elaborates",
+   "note": "Adds nuisance and action-worthy shares, field setting and test duration to the false-alarm figure."
+  },
+  {
+   "a": "f3012",
+   "b": "f6494",
+   "type": "supports",
+   "note": "An alarm found switched off provides field evidence of the disabling risk."
+  },
+  {
+   "a": "f10459",
+   "b": "f10",
+   "type": "supports",
+   "note": "Barrick's nuisance-alarm and configuration time sinks corroborate lengthy calibration challenges."
+  },
+  {
+   "a": "f2121",
+   "b": "f2124",
+   "type": "depends",
+   "note": "Missing published hourly limits necessitate program-level acceptance criteria."
+  },
+  {
+   "a": "f2119",
+   "b": "f2121",
+   "type": "contradicts",
+   "note": "A zero-false-event gate exists despite no published hourly acceptance values; scopes differ."
+  },
+  {
+   "a": "f728",
+   "b": "f1604",
+   "type": "supports",
+   "note": "Immediate fleet instrumentation enables field-representative shadow-mode evidence before prototype arrival."
+  },
+  {
+   "a": "f1617",
+   "b": "f95",
+   "type": "supports",
+   "note": "Sensor-specific false-positive behavior explains why replay evidence cannot generalize across sensor configurations."
+  },
+  {
+   "a": "f6906",
+   "b": "f11336",
+   "type": "elaborates",
+   "note": "Adds braking, mission, work-cycle and object-free encounter denominators to operating-hour measurement."
+  },
+  {
+   "a": "f11509",
+   "b": "f11522",
+   "type": "supports",
+   "note": "Excluding dangerous berm detections from nuisances supports preserving repeated dump-edge alarms."
+  },
+  {
+   "a": "f1517",
+   "b": "f1512",
+   "type": "supports",
+   "note": "Industry reconsideration petitions document the open dispute over FMVSS 127 false-positive risk."
+  }
+ ]
+}

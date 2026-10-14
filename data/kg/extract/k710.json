@@ -1,0 +1,207 @@
+{
+ "chunkId": "k710",
+ "hash": "adc134715899ef1a",
+ "facts": [
+  {
+   "text": "A test case is one fully specified test with an expected result; a test matrix is a table of test cases arranged by the factors they vary; a scenario grid is a matrix whose cells are concrete scenarios.",
+   "quote": "A test case is one fully specified test with an expected result, a test matrix is a table of test cases arranged by the factors they vary, and a scenario grid is a matrix whose cells are concrete scenarios.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t143",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 34505:2025 lists test-case attributes as an identifier, an objective, inputs, steps, the test platform (simulator, bench or track), and expected results.",
+   "quote": "ISO 34505:2025 lists its attributes: an identifier, an objective, inputs, steps, the test platform (simulator, bench or track) and expected results [Chapter 9].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ISO 34505",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t143",
+    "t290",
+    "t62"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An example test case specifies a loader reversing at 9 km/h toward a standing worker 12 m away on a 4% grade, with an expected brake request before 6 m and a stop with at least 1 m of clearance.",
+   "quote": "\"Loader reverses at 9 km/h toward a standing worker 12 m away on a 4% grade; expected: brake request before 6 m and a stop with at least 1 m of clearance\" is a test case.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t143",
+    "t2",
+    "t16",
+    "t173",
+    "t194"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The physical anchor campaign planned using a test matrix covers the first six weeks after hardware delivery and measures latency and stops on grades.",
+   "quote": "Chapter 8 uses one to plan the physical anchor campaign for the first six weeks after hardware delivery, measuring latency and stops on grades [Chapter 8].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t143",
+    "t160",
+    "t88",
+    "t173",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The Euro NCAP virtual-testing protocol requires the manufacturer to predict results for the full scenario grid, then physically tests randomly selected cells.",
+   "quote": "the Euro NCAP virtual-testing protocol has the manufacturer predict results for the full grid, then runs randomly selected cells physically",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "Euro NCAP",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t297",
+    "t143",
+    "t216"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The Euro NCAP virtual-testing protocol accepts virtual results if at least 75% of the verification tests in each cluster meet the criteria.",
+   "quote": "accepts the virtual results if at least 75% of the verification tests in each cluster meet the criteria [Chapter 3].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "Euro NCAP",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t297",
+    "t62",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The Euro NCAP virtual-testing protocol is an on-road consumer protocol, and no off-road body has adopted an equivalent.",
+   "quote": "It is an on-road consumer protocol; no off-road body has adopted an equivalent.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Euro NCAP",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t297",
+    "t127",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet warns against treating the entire validation program as one giant test matrix because every combination of site, scenario, weather, model and sensor cannot be run; test-selection methods must instead populate the matrix.",
+   "quote": "every site times every scenario, weather, model and sensor cannot be run, so the matrix is filled by the selection methods described in Part F [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t198",
+    "t200",
+    "t143"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Test cases carry traceability from hazard to evidence in the collision mitigation validation program.",
+   "quote": "Test cases are the units that carry traceability from hazard to evidence",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t143",
+    "t64",
+    "t46",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet identifies a scenario grid with physical spot checks as the only sourced model of how a regulator accepts virtual results.",
+   "quote": "the grid with physical spot checks is the only sourced model of how a regulator accepts virtual results [Chapters 3, 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    3,
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t143",
+    "t216",
+    "t127",
+    "t277"
+   ],
+   "importance": 3
+  }
+ ]
+}

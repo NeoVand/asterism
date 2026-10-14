@@ -1,0 +1,293 @@
+{
+ "chunkId": "k682",
+ "hash": "926057a70b2ff8d5",
+ "facts": [
+  {
+   "text": "Neural rendering learns a model of a real place from many photographs or scans and uses that model to produce views from positions where no camera stood.",
+   "quote": "Neural rendering takes many photographs or scans of a real place and learns a model of it that can then produce new views from positions where no camera ever stood.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t116"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NeRF (neural radiance field) uses a neural network to learn color and density at points in a scene from different directions, enabling photorealistic images from new viewpoints.",
+   "quote": "A NeRF (neural radiance field) is a neural network that learns from them what color and density to expect at every point in that space from every direction; asking it for a new viewpoint gives a photorealistic image.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NeRF",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t116"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "3D Gaussian splatting (3DGS) represents a scene as millions of translucent colored Gaussians that can be rendered very quickly.",
+   "quote": "3D Gaussian splatting (3DGS) represents the scene instead as millions of tiny translucent colored blobs (Gaussians) that can be drawn very quickly.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "3D Gaussian splatting (3DGS)",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t116"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Both NeRF and 3D Gaussian splatting can be extended to reproduce lidar scans.",
+   "quote": "Both can be extended to reproduce lidar scans [Chapter 5].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "NeRF",
+     "kind": "method"
+    },
+    {
+     "name": "3D Gaussian splatting (3DGS)",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Neural rendering could reconstruct real sites as virtual sites without an artist modeling every rock and enable re-simulation of a recorded drive along a different machine path.",
+   "quote": "The attraction is that real sites could become virtual ones without an artist modeling every rock, and a recorded drive could be \"re-simulated\" with the machine taking a different path.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t130",
+    "t155"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Neural-rendered scene quality is high near the recorded path; one on-road study reported a minimal real-to-simulated gap for perception.",
+   "quote": "Near the recorded path quality is high, and one on-road study reported a minimal real-to-simulated gap for perception [Chapter 6].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t249",
+    "t85"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In one benchmark, 3DGS image quality dropped from 30.87 dB PSNR at zero sideways shift to 23.26, 22.01 and 19.17 dB PSNR at sideways shifts of 1, 2 and 4 meters, respectively; higher PSNR indicates better image fidelity.",
+   "quote": "in one benchmark 3DGS image quality fell from 30.87 to 23.26, 22.01 and 19.17 dB PSNR (a standard image-fidelity score, higher is better) at 0, 1, 2 and 4 meters of sideways shift [Chapter 5].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "3D Gaussian splatting (3DGS)",
+     "kind": "method"
+    },
+    {
+     "name": "PSNR",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t254"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Neural re-simulation degrades when the viewpoint moves 1 to 4 meters from the recorded path.",
+   "quote": "Neural re-simulation degrades once the viewpoint moves 1 to 4 meters from the recorded path [Chapter 7]",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Large viewpoint height changes are relevant to neural rendering for machines whose sensors sit well above car height.",
+   "quote": "large height changes are the relevant case for machines whose sensors sit well above car height [Chapter 5].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t100",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Neural scenes have no native collision surface, so braking simulation requires hidden geometry beneath the neural-rendered scene.",
+   "quote": "Neural scenes have no native collision surface, so braking simulation needs hidden geometry beneath them",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t131",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Neural scenes do not support harsh weather.",
+   "quote": "they do not support harsh weather",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Reconstruction of neural scenes requires moving workers and booms to be separated from the static background.",
+   "quote": "moving workers and booms must be separated from the static background",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t116"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Recordings intended for neural scene reconstruction must use synchronized, calibrated sensors, multiple passes and clear weather.",
+   "quote": "recordings must be made for reconstruction, with synchronized, calibrated sensors, multiple passes and clear weather [Chapters 5, 6].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t121",
+    "t101",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Reconstruction-quality logs should be collected now because neural rendering can turn recordings from the current fleet into editable virtual sites.",
+   "quote": "Neural rendering can turn recordings from the current fleet into editable virtual sites, which is why reconstruction-quality logs should be collected now",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t121",
+    "t130"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Neural rendering cannot by itself serve new sensor positions, new sensor types such as radar, or added weather, so neural rendering should be one layer in the toolchain rather than the simulator.",
+   "quote": "it cannot by itself serve new sensor positions, new sensor types such as radar, or added weather, so it is one layer in the toolchain rather than the simulator [Chapters 5, 7].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t320",
+    "t94",
+    "t100",
+    "t102"
+   ],
+   "importance": 3
+  }
+ ]
+}

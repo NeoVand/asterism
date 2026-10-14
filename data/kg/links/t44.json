@@ -1,0 +1,115 @@
+{
+ "key": "t44",
+ "hash": "a8b49b0d3838ab0b",
+ "synopsis": "The challenge is that one machine may work across 100 or more job sites and applications; chapters repeatedly frame this as a requirement for braking coverage across more than 100 site types, with more than 10 operating scenarios per machine [f16, f283, f5130, f11497]. Combining sites, scenarios, roughly seven weather/light conditions and machine variants exceeds 7,000 validation cells, while finer combinations can reach millions [f5206, f5468, f11331]. Site counts alone are not evidence of coverage: the booklet recommends an auditable taxonomy of sensing- and stopping-relevant attributes, parameterised representative environments anchored to surveyed real sites, and testing of equivalence classes and interactions [f8213, f8214, f3705, f6729]. No single environment-creation method or tool has demonstrated the required breadth in the available time; expert judgment rejects a newcomer’s fully credible all-site, all-weather, all-sensor toolchain by mid-2027, and a four-month simulation window forces low-fidelity sweeps with high fidelity reserved for critical cases [f3699, f8281, f1590, f8871]. Statistical generalisation remains unresolved, with no known exposure distribution for the 100-plus site population; fielded warning-system logs and leave-one-site-type-out validation are proposed ways to improve evidence, not proofs of unrestricted coverage [f2879, f352, f6611, f6995].",
+ "relations": [
+  {
+   "a": "f283",
+   "b": "f1175",
+   "type": "same",
+   "note": "Both require braking coverage across more than 100 job-site types."
+  },
+  {
+   "a": "f2031",
+   "b": "f3674",
+   "type": "same",
+   "note": "Both repeat the more-than-100-site braking requirement."
+  },
+  {
+   "a": "f4392",
+   "b": "f5859",
+   "type": "same",
+   "note": "Both require automatic braking across more than 100 job-site types."
+  },
+  {
+   "a": "f6621",
+   "b": "f7508",
+   "type": "same",
+   "note": "Both repeat the more-than-100-site automatic-braking requirement."
+  },
+  {
+   "a": "f8253",
+   "b": "f10383",
+   "type": "same",
+   "note": "Both state the same broad site-coverage requirement."
+  },
+  {
+   "a": "f283",
+   "b": "f5130",
+   "type": "elaborates",
+   "note": "Adds more than ten operating scenarios per machine to the site requirement."
+  },
+  {
+   "a": "f16",
+   "b": "f11497",
+   "type": "same",
+   "note": "Both describe the challenge of one machine spanning 100-plus sites and applications."
+  },
+  {
+   "a": "f75",
+   "b": "f3699",
+   "type": "same",
+   "note": "Both reject a single timely environment-creation method covering all four sensor modalities."
+  },
+  {
+   "a": "f3699",
+   "b": "f11500",
+   "type": "same",
+   "note": "Glossary restates the conclusion that no single method covers all sites in time."
+  },
+  {
+   "a": "f131",
+   "b": "f5206",
+   "type": "same",
+   "note": "Both estimate more than 7,000 validation strata."
+  },
+  {
+   "a": "f5206",
+   "b": "f5468",
+   "type": "same",
+   "note": "Repeats the cell estimate with approximately seven weather and light conditions."
+  },
+  {
+   "a": "f194",
+   "b": "f8281",
+   "type": "same",
+   "note": "Both identify absent public evidence for a single broadly capable validation tool."
+  },
+  {
+   "a": "f10433",
+   "b": "f10611",
+   "type": "same",
+   "note": "Repeats the terramechanics validation gap; the latter discloses Chrono literature was not reviewed."
+  },
+  {
+   "a": "f3744",
+   "b": "f4320",
+   "type": "same",
+   "note": "Both report no prescribed environment count for broad site coverage."
+  },
+  {
+   "a": "f8214",
+   "b": "f6727",
+   "type": "supports",
+   "note": "The missing coverage taxonomy motivates attribute-based representation rather than unrelated site labels."
+  },
+  {
+   "a": "f6412",
+   "b": "f6727",
+   "type": "elaborates",
+   "note": "Specifies stopping-relevant attributes for the recommended attribute-based operating domain."
+  },
+  {
+   "a": "f3705",
+   "b": "f8213",
+   "type": "supports",
+   "note": "Surveyed real-site anchors provide evidence for auditable virtual-site representativeness."
+  },
+  {
+   "a": "f352",
+   "b": "f6611",
+   "type": "supports",
+   "note": "The missing exposure distribution motivates collecting real scenario distributions from fielded warning systems."
+  }
+ ]
+}

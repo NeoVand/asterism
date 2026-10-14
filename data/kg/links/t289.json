@@ -1,0 +1,115 @@
+{
+ "key": "t289",
+ "hash": "010649e95411a76c",
+ "synopsis": "For the heavy off-road braking function, the booklet identifies ISO 19014—not ISO 26262—as the governing functional-safety framework; ISO 26262 and ISO 21448 are road-vehicle standards outside this program's scope [f162, f2355, f12065]. Nevertheless, it recommends borrowing ISO 21448 and ISO/PAS 8800 perception-assurance concepts, with a safety-case skeleton realistically achievable by mid-2027 for a team starting in October 2026 [f12018, f829]. ISO/PAS 8800:2024, published in December 2024, addresses AI safety for road vehicles only, while ISO/IEC TR 5469:2024, published in January 2024, provides guidance rather than testing requirements [f2730, f2731, f2726, f2727]. Experts disagree over whether to exclude machine learning from safety functions or accept it through ISO/PAS 8800-style assurance, and the booklet found neither off-road/mining standards with ML clauses nor a separate ISO 19014 acceptance process for ML perception [f1125, f15303, f15304]. ISO 26262-8 tool-confidence provisions offer a reference regime, but clause 11 was confirmed only through contents and secondary sources; proven-in-use concerns element reuse, not simulator validation [f9758, f7703, f7579]. Important verification gaps remain: ISO 21448 and several other standards were not verified, ISO/IEC 42001, 23894 and 24029 were not verified in the ML-rules review, and the corpus characterizes ML safety standards as mostly draft [f4336, f2392, f2099].",
+ "relations": [
+  {
+   "a": "f162",
+   "b": "f11993",
+   "type": "same",
+   "note": "Both identify ISO 19014, not ISO 26262, for off-road brake-commanding functions."
+  },
+  {
+   "a": "f2355",
+   "b": "f12065",
+   "type": "same",
+   "note": "Both exclude ISO 26262 and ISO 21448 from the heavy off-road system's scope."
+  },
+  {
+   "a": "f12065",
+   "b": "f15293",
+   "type": "same",
+   "note": "Duplicate glossary statements excluding the road-vehicle standards from this program."
+  },
+  {
+   "a": "f8944",
+   "b": "f9382",
+   "type": "same",
+   "note": "Both identify ISO 21448 as a road-vehicle standard."
+  },
+  {
+   "a": "f8944",
+   "b": "f12014",
+   "type": "elaborates",
+   "note": "Glossary adds the consequence: ISO 21448 does not apply by scope off-road."
+  },
+  {
+   "a": "f1125",
+   "b": "f12416",
+   "type": "same",
+   "note": "Both describe opposing positions on ML versus certified deterministic sensors."
+  },
+  {
+   "a": "f2100",
+   "b": "f2383",
+   "type": "same",
+   "note": "Both classify TR 5469 as guidance, not a requirements document."
+  },
+  {
+   "a": "f2383",
+   "b": "f2727",
+   "type": "same",
+   "note": "Both state TR 5469 provides guidance rather than mandatory requirements."
+  },
+  {
+   "a": "f2382",
+   "b": "f2726",
+   "type": "same",
+   "note": "Both date TR 5469 publication to January 2024."
+  },
+  {
+   "a": "f2387",
+   "b": "f2730",
+   "type": "same",
+   "note": "Both date ISO/PAS 8800:2024 to December 2024."
+  },
+  {
+   "a": "f2388",
+   "b": "f12411",
+   "type": "same",
+   "note": "Both describe ISO/PAS 8800 tailoring ISO 26262 exclusively for road-vehicle AI."
+  },
+  {
+   "a": "f2388",
+   "b": "f2731",
+   "type": "same",
+   "note": "Vendor descriptions both identify road-vehicle AI scope and ISO 26262 tailoring."
+  },
+  {
+   "a": "f10544",
+   "b": "f11196",
+   "type": "same",
+   "note": "Both flag IEC 61508 tool classes and ISO 26262-8 as unverified."
+  },
+  {
+   "a": "f2355",
+   "b": "f8945",
+   "type": "supports",
+   "note": "Road-only scope supports avoiding claims that these standards automatically govern off-road machines."
+  },
+  {
+   "a": "f12018",
+   "b": "f829",
+   "type": "elaborates",
+   "note": "Planning adds a mid-2027 milestone to the intervention/perception assurance split."
+  },
+  {
+   "a": "f7703",
+   "b": "f8035",
+   "type": "contradicts",
+   "note": "Confident clause-11 attribution is qualified by limited verification from secondary sources."
+  },
+  {
+   "a": "f7579",
+   "b": "f15297",
+   "type": "elaborates",
+   "note": "Glossary adds 70 percent confidence and excludes transferring warning-system history to braking."
+  },
+  {
+   "a": "f15303",
+   "b": "f15304",
+   "type": "elaborates",
+   "note": "ISO 19014's missing ML-perception acceptance process specifies part of the broader off-road standards gap."
+  }
+ ]
+}

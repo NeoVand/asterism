@@ -1,0 +1,242 @@
+{
+ "chunkId": "k683",
+ "hash": "3fd4c17391ea27af",
+ "facts": [
+  {
+   "text": "Physically based rendering computes what a sensor sees using the physics of light and materials; a BRDF or BSDF mathematically describes how a surface sends incoming energy out in each direction.",
+   "quote": "Physically based rendering computes what a sensor sees from the real physics of light and materials, and a BRDF or BSDF is the mathematical description of how a given surface sends incoming energy back out in each direction.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t117"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A lidar model needs wavelength-specific reflectance and BRDF.",
+   "quote": "A lidar model needs wavelength-specific reflectance and BRDF",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t117"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A radar model needs permittivity, conductivity, roughness and multipath.",
+   "quote": "a radar model needs permittivity, conductivity, roughness and multipath",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t117"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A thermal model needs emissivity.",
+   "quote": "a thermal model needs emissivity",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t117"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A camera model needs physically based materials, spectral response and a physical sky.",
+   "quote": "a camera model needs physically based materials, spectral response and a physical sky [Chapter 5].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t117"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Non-visual material behavior cannot be guessed from how a surface looks.",
+   "quote": "Non-visual material behavior cannot be guessed from how a surface looks [Chapter 5].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t117",
+    "t136"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM OpenMATERIAL 3D version 1.0.0, dated April 2025, enables one asset to carry sensor-relevant properties for camera, lidar and radar.",
+   "quote": "The standard ASAM OpenMATERIAL 3D, version 1.0.0 (April 2025), exists so one asset can carry sensor-relevant properties for camera, lidar and radar",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    6
+   ],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t136",
+    "t117"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Weather and lighting are outside the scope of ASAM OpenMATERIAL 3D version 1.0.0 for now.",
+   "quote": "weather and lighting are outside its scope for now [Chapters 5, 6].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    6
+   ],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t136"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A radar study matched a reflective hall only after hand-tuning materials.",
+   "quote": "a radar study matched a reflective hall only after hand-tuning materials",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t117",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A detector failed partly because material properties had to be guessed.",
+   "quote": "a detector failed partly because material properties had to be guessed [Chapter 6].",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t117",
+    "t85"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Acquiring physically meaningful site and material assets may require more effort than rendering those assets.",
+   "quote": "Acquiring physically meaningful site and material assets may cost more effort than rendering them [Chapter 6].",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t136",
+    "t117"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No published material datasets exist for job-site materials such as rock, wet clay, gravel, steel buckets and high-visibility clothing.",
+   "quote": "No published material datasets exist for job-site materials such as rock, wet clay, gravel, steel buckets and high-visibility clothing",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t136",
+    "t107",
+    "t11"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The collision-mitigation validation program must measure or estimate job-site material properties itself; this work is a larger schedule item than computing power.",
+   "quote": "so the program must measure or estimate them itself, a larger schedule item than computing power [Chapters 5, 6].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t136",
+    "t117",
+    "t342",
+    "t127"
+   ],
+   "importance": 3
+  }
+ ]
+}

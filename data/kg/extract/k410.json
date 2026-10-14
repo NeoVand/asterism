@@ -1,0 +1,359 @@
+{
+ "chunkId": "k410",
+ "hash": "724c6d1c17fa0bb7",
+ "facts": [
+  {
+   "text": "The peer-reviewed lidar rain and fog model by Haider et al., published in Sensors 23(15):6891 in August 2023, was validated at time-domain and point-cloud level using on-road sensor evidence.",
+   "quote": "A lidar rain and fog model (Haider et al., Sensors 23(15):6891, August 2023; peer-reviewed) was validated at time-domain and point-cloud level.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    22
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Haider et al.",
+     "kind": "person"
+    },
+    {
+     "name": "Sensors 23(15):6891",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t102",
+    "t252",
+    "t93"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The Haider et al. lidar rain model produces results that match well when simulated and real rain distributions are the same; the evidence is from on-road sensors.",
+   "quote": "Results \"match well... if the simulated and real rain distributions are the same\"",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    22
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sensors 23(15):6891",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t102",
+    "t250"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For the Haider et al. lidar fog model, the mismatch between simulated and real measured signal attenuation increases as fog reduces visibility distance; the evidence is from on-road sensors.",
+   "quote": "\"as the visibility distance decreases due to fog, the simulated and real measured signal attenuation mismatch increases\"",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    22
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sensors 23(15):6891",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t102",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Point-cloud detection-rate validation of the Haider et al. lidar rain and fog model used the mean of 154 measurements on a 3%-reflective plate at 15.3 m in an on-road sensor setting.",
+   "quote": "The point-cloud detection-rate validation used the mean of 154 measurements on a 3%-reflective plate at 15.3 m.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    22
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sensors 23(15):6891",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t93",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A deviation figure under 7.5% was noted for the Haider et al. lidar rain and fog model, but the operating range covered by that figure was not confirmed.",
+   "quote": "A deviation figure of under 7.5% was noted for the model, but the operating range that figure covers was not confirmed.",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    22
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sensors 23(15):6891",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t249",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A clear-weather automotive lidar model published in Sensors 22(19):7556 in 2022 reports a signal-amplitude MAPE of 1.7%.",
+   "quote": "A clear-weather automotive lidar model (Sensors 22(19):7556, 2022) reports MAPE of 1.7% on signal amplitude",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    79
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sensors 22(19):7556",
+     "kind": "publication"
+    },
+    {
+     "name": "MAPE",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t255"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A clear-weather automotive lidar model published in Sensors 22(19):7556 in 2022 reports distance error under 2 cm.",
+   "quote": "A clear-weather automotive lidar model (Sensors 22(19):7556, 2022) reports MAPE of 1.7% on signal amplitude and distance error under 2 cm.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    79
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sensors 22(19):7556",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t249"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An on-road fog-chamber test published in Applied Sciences 9(11):2341 in 2019 found that, at 10 m meteorological visibility, all lidars but one failed to detect a target at 10.5 m.",
+   "quote": "A fog-chamber test (Applied Sciences 9(11):2341, 2019) found that at 10 m meteorological visibility, all lidars but one failed to see a target at 10.5 m.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    23
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Applied Sciences 9(11):2341",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t102",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Real sensors show threshold effects; a simulation calibrated in moderate conditions will miss those effects unless validated near the threshold cliff. This finding is based on on-road sensor evidence.",
+   "quote": "Real sensors show threshold effects; a simulation calibrated in moderate conditions will miss them unless it was validated near the cliff.",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    23
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t261",
+    "t102",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The ALDUS lidar dust model, published as arXiv 2105.04193 in 2021, was validated by reproducing a controlled experiment in the PROSIVIC simulator.",
+   "quote": "The ALDUS lidar dust model (arXiv 2105.04193, 2021) was validated by reproducing a controlled experiment in the PROSIVIC simulator",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    24
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ALDUS",
+     "kind": "product"
+    },
+    {
+     "name": "arXiv 2105.04193",
+     "kind": "publication"
+    },
+    {
+     "name": "PROSIVIC",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t102",
+    "t237",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Whether the ALDUS lidar dust model reports a numeric error was not confirmed.",
+   "quote": "whether it reports a numeric error was not confirmed.",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    24
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ALDUS",
+     "kind": "product"
+    },
+    {
+     "name": "arXiv 2105.04193",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t102",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Dust filtering for off-road lidar reaches F1 = 97.55, according to a Sensors publication from 2022.",
+   "quote": "Dust *filtering* for off-road lidar reaches F1 = 97.55 (Sensors 2022)",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    86,
+    87
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sensors",
+     "kind": "publication"
+    },
+    {
+     "name": "F1",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t102",
+    "t109"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Deep-learning dust filtering for mining point clouds has been published.",
+   "quote": "deep-learning dust filtering for mining point clouds has been published",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    86,
+    87
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t93",
+    "t112"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The reported off-road lidar dust-filtering F1 result and published deep-learning dust filtering for mining point clouds assess filter performance, not sensor-model fidelity.",
+   "quote": "but these score a filter, not the fidelity of a sensor model.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    86,
+    87
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t109",
+    "t102",
+    "t92"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A validated radar or camera dust model with an error metric was not found.",
+   "quote": "A validated radar or camera dust model with an error metric: **not found**.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t89",
+    "t102",
+    "t249"
+   ],
+   "importance": 3
+  }
+ ]
+}

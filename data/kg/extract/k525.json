@@ -1,0 +1,708 @@
+{
+ "chunkId": "k525",
+ "hash": "1b2cb220501c5bb8",
+ "facts": [
+  {
+   "text": "The functional safety review objects that the program treats a new safety-control function as an incremental feature.",
+   "quote": "the program treats a new safety-control function as an incremental feature.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t48",
+    "t49",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 19014-1 requires a machine control system safety analysis to determine the required risk reduction and corresponding machine performance level.",
+   "quote": "requires a machine control system safety analysis to determine the risk reduction required and the corresponding machine performance level [7].",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t47",
+    "t52"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The second edition of ISO 19014-1 was under publication in October 2026.",
+   "quote": "ISO 19014-1 (second edition, under publication October 2026)",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The second edition of ISO 19014-2 was under publication in October 2026.",
+   "quote": "ISO 19014-2 (second edition, under publication October 2026)",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    8
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t274"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 19014-2 applies architecture and hardware principles to control systems that control machine motion or mitigate a hazard.",
+   "quote": "applies architecture and hardware principles to control systems that control machine motion or mitigate a hazard",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    8
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t48",
+    "t49"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 19014-2 explicitly excludes awareness systems that do not impact machine motion, such as cameras and radar detectors.",
+   "quote": "explicitly excludes \"awareness systems that do not impact machine motion (e.g. cameras and radar detectors)\" [8].",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    8
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t23",
+    "t48"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The existing warning system falls on the awareness-system side of the ISO 19014-2 scope boundary, whereas the new braking function falls on the machine-motion-control side.",
+   "quote": "The existing warning system sits on one side of that boundary; the new braking function sits on the other.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t23",
+    "t22",
+    "t281",
+    "t48"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The first edition of ISO 19014-5 was under publication in October 2026 and was replacing ISO/TS 19014-5:2021.",
+   "quote": "ISO 19014-5 (first edition, under publication October 2026, replacing ISO/TS 19014-5:2021)",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    12,
+    13
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-5",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO/TS 19014-5",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t274"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 19014-5 adds normative tables of required machine performance levels for common machine functions.",
+   "quote": "adds normative tables of required machine performance levels for common machine functions [12, 13]",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    12,
+    13
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-5",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t52"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The European adoption of ISO 19014-5, prEN ISO 19014-5, is at draft stage.",
+   "quote": "its European adoption, prEN ISO 19014-5, is at draft stage [80].",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    80
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "prEN ISO 19014-5",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t274"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The second edition of ISO 19014-3 is under publication and specifies environmental testing for safety-related electronic components.",
+   "quote": "ISO 19014-3 (second edition, under publication) specifies environmental testing for safety-related electronic components",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    9,
+    10
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t48",
+    "t274"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The second edition of ISO 19014-4 is under publication and covers safety-related software and signal transmission.",
+   "quote": "ISO 19014-4 (second edition, under publication) covers safety-related software and signal transmission [9, 10].",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    9,
+    10
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t48",
+    "t274"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A missed warning and an unjustified brake application have different consequences.",
+   "quote": "A missed warning and an unjustified brake application have different consequences",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t23",
+    "t31",
+    "t40",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The new braking function's architecture must handle sensor, computation, communication and actuator faults.",
+   "quote": "the architecture must handle sensor, computation, communication and actuator faults",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t48",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The new braking function's assurance target must come from the new hazard analysis, rather than a target of being equal to or better than the old warning system.",
+   "quote": "the assurance target must come from the new hazard analysis, not from \"equal to or better than the old warning system\".",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t47",
+    "t67",
+    "t222",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The functional safety review recommends an approved machine control system safety analysis before prototype arrival, including explicitly derived requirements for failure to intervene and incorrect intervention, allocated machine performance levels, and requirements-to-test traceability.",
+   "quote": "an approved machine control system safety analysis before prototype arrival, with explicitly derived requirements for both failure to intervene and incorrect intervention, allocated machine performance levels, and requirements-to-test traceability.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t47",
+    "t52",
+    "t63",
+    "t64",
+    "t42"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The functional safety review objects that the program's evidence argument is undefined and its supporting standard changes mid-program.",
+   "quote": "the evidence argument is not defined, and the standard it rests on changes mid-program.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t67",
+    "t70",
+    "t271"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The 2020 edition of ISO 19014-4 contains normative Annex B, titled “Software validation test environments.”",
+   "quote": "The 2020 edition of ISO 19014-4 contains a normative Annex B, \"Software validation test environments\" [11].",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    11
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t65",
+    "t145"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The second edition of ISO 19014-4 carries a publication date of October 2026.",
+   "quote": "The second edition carries a publication date of October 2026",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    10
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The abstract of the second edition of ISO 19014-4 places cybersecurity out of scope.",
+   "quote": "its abstract puts cybersecurity out of scope [10].",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    10
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO/FDIS 19014-1 was registered on 5 February 2026.",
+   "quote": "ISO/FDIS 19014-1 was registered on 5 February 2026",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t274"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO/FDIS 19014-1 reached stage 60.00, “International Standard under publication,” on 22 August 2026.",
+   "quote": "reached stage 60.00 (\"International Standard under publication\") on 22 August 2026",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t274"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO/FDIS 19014-1 is due in October 2026.",
+   "quote": "is due in October 2026 [7].",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The European adoption FprEN ISO 19014-1 is linked to Regulation 2023/1230 under standardisation request M/605.",
+   "quote": "The European adoption FprEN ISO 19014-1 is linked to Regulation 2023/1230 under standardisation request M/605",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    79,
+    78
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FprEN ISO 19014-1",
+     "kind": "standard"
+    },
+    {
+     "name": "EU Machinery Regulation 2023/1230",
+     "kind": "regulation"
+    },
+    {
+     "name": "M/605",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t298",
+    "t276"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "FprEN ISO 19014-1 has a planned publication date of 22 November 2026.",
+   "quote": "with planned publication on 22 November 2026 [79, 78].",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    79,
+    78
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FprEN ISO 19014-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Waiting until prototype delivery to settle safety requirements, performance-level allocation, fault responses and the standards baseline risks spending the four-month validation window debating adequate evidence rather than gathering evidence.",
+   "quote": "will spend the four-month window arguing about what counts as adequate evidence rather than gathering it.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t63",
+    "t52",
+    "t70",
+    "t56"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The functional safety review recommends an immediate gap analysis against the second editions of ISO 19014-1 and ISO 19014-4.",
+   "quote": "a gap analysis now against the second editions of ISO 19014-1 and 19014-4",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-1",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 19014-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t63"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The functional safety review recommends mapping each requirement to its Annex B test environment: simulation, hardware-in-the-loop or machine.",
+   "quote": "a map showing which test environment in Annex B (simulation, hardware-in-the-loop, machine) is used for which requirement.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t64",
+    "t63",
+    "t126",
+    "t148",
+    "t158"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "When simulation results become safety evidence, simulator errors can mask defects.",
+   "quote": "If simulation results become safety evidence, the simulator is a tool whose errors can mask defects.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t126",
+    "t70",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "IEC 61508's off-line tool classes T1 to T3 and ISO 26262-8 tool qualification address tool confidence in other domains, but neither was verified in this research.",
+   "quote": "IEC 61508's off-line tool classes (T1 to T3) and ISO 26262-8 tool qualification address this in other domains, but neither was verified in this research",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "IEC 61508",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 26262-8",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t287",
+    "t289",
+    "t234",
+    "t320"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The research did not find whether ISO 19014-4 itself requires tool qualification.",
+   "quote": "whether ISO 19014-4 itself requires tool qualification was **not found**.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t234",
+    "t320"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The functional safety review recommends classifying every simulation tool by its impact on safety evidence.",
+   "quote": "classify every simulation tool by its impact on safety evidence",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t70",
+    "t239"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The functional safety review recommends qualifying simulation tools that carry safety evidence and budgeting tool qualification as work.",
+   "quote": "qualify the ones that carry evidence, and budget that qualification as work.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t70",
+    "t342"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t125",
+ "hash": "acb4b62cd351acff",
+ "synopsis": "A program starting in October 2026 can realistically reach software-in-the-loop simulation with partly validated sensor models by mid-2027, but credibility belongs to the model, configuration, intended use and evidence—not to a platform intrinsically [f65, f7755]. Sensor and environment fidelity remain the hardest uncertainty: no accepted qualification method was found for off-road dust, snow or fog, no off-road fidelity thresholds were found, and degraded-visibility conditions are least validated [f10424, f331, f5220, f7886]. Clear-weather sensor accuracy can be high when the complete signal chain is modeled: one ray-traced lidar study reported errors of 1.7% for amplitude, 8.5% for point count and 9.3% for mean intensity, but field dust behavior is not captured by simple attenuation models [f4416, f4417, f4426]. No validated off-road operator model was found; on-road warning-benefit estimates ranged from 53% to 96% depending on the driver model, illustrating the importance of behavioral assumptions [f250, f3040, f3045]. Greater vehicle-model complexity does not imply greater accuracy, yet articulated maneuvers and hydrostatic braking require appropriate physical detail rather than universally simplified representations [f5908, f6028, f6049, f6050]. Planning should identify the physical measurements validating each model, experimentally correlate adverse-environment sensors, and retain physical testing where models are weak; rare-event methods cannot establish claims about sensor physics outside simulation scope [f10229, f5219, f10470, f6853].",
+ "relations": [
+  {
+   "a": "f250",
+   "b": "f3040",
+   "type": "same",
+   "note": "Both report the absence of a validated off-road operator model."
+  },
+  {
+   "a": "f3045",
+   "b": "f11820",
+   "type": "same",
+   "note": "Both give the same driver-model-dependent warning benefit range."
+  },
+  {
+   "a": "f5167",
+   "b": "f5247",
+   "type": "same",
+   "note": "Both define replay fidelity by the data injection boundary."
+  },
+  {
+   "a": "f2499",
+   "b": "f2917",
+   "type": "elaborates",
+   "note": "Adds vehicle, function, target and environment requirements to sensor matching."
+  },
+  {
+   "a": "f4417",
+   "b": "f4416",
+   "type": "supports",
+   "note": "Quantified lidar accuracy supports the importance of complete signal-chain modeling."
+  },
+  {
+   "a": "f4426",
+   "b": "f10426",
+   "type": "elaborates",
+   "note": "Leading-edge dust responses specify behavior missed by simple dust models."
+  },
+  {
+   "a": "f331",
+   "b": "f1958",
+   "type": "elaborates",
+   "note": "Broadens the qualification gap to additional conditions and specified error bounds."
+  },
+  {
+   "a": "f7886",
+   "b": "f10424",
+   "type": "supports",
+   "note": "Degraded-visibility validation gaps substantiate the principal fidelity uncertainty."
+  },
+  {
+   "a": "f212",
+   "b": "f10424",
+   "type": "elaborates",
+   "note": "Ranks the same risk-aligned sensor credibility concern among the leading objections."
+  },
+  {
+   "a": "f11310",
+   "b": "f10229",
+   "type": "elaborates",
+   "note": "Turns measurement comparison into a review requirement covering each model category."
+  },
+  {
+   "a": "f5219",
+   "b": "f11310",
+   "type": "elaborates",
+   "note": "Specifies adverse-environment sensor conditions requiring experimental comparison."
+  },
+  {
+   "a": "f531",
+   "b": "f10470",
+   "type": "supports",
+   "note": "SIL cannot establish physical brake-chain behavior, supporting retained physical testing."
+  },
+  {
+   "a": "f6850",
+   "b": "f3040",
+   "type": "contradicts",
+   "note": "Behavior-model-dependent on-road acceleration faces an off-road validated-model gap."
+  },
+  {
+   "a": "f6853",
+   "b": "f6854",
+   "type": "elaborates",
+   "note": "Specifies omitted sensor physics as a limit acceleration cannot overcome."
+  },
+  {
+   "a": "f3045",
+   "b": "f3042",
+   "type": "supports",
+   "note": "Large benefit variation shows why missing validated reaction distributions matter."
+  },
+  {
+   "a": "f3738",
+   "b": "f3822",
+   "type": "supports",
+   "note": "Low novel-view fidelity reinforces that visual appearance alone is insufficient."
+  },
+  {
+   "a": "f7755",
+   "b": "f8454",
+   "type": "supports",
+   "note": "Use-specific credibility explains why on-road platform success does not validate quarry fidelity."
+  },
+  {
+   "a": "f6049",
+   "b": "f6050",
+   "type": "elaborates",
+   "note": "Lists physical parameters and transitions needed for functional hydrostatic braking capacity."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t75",
+ "hash": "7dd8a909e8a85745",
+ "synopsis": "Evidence reuse across machine models is described as the biggest validation lever and the least documented: it must be designed in early, using common-core evidence plus explicit variant deltas rather than blanket family qualification [f366, f617, f12359]. No published case quantified cross-model time savings or demonstrated a heavy-machine family's validation shrinking from years to months; an under-four-month window therefore requires a narrower release claim or substantial evidence already in place [f261, f12361, f889]. Aerospace provides a qualified precedent: Lockheed Martin attributes F-35 Auto-GCAS integration in 2019, seven years earlier than planned, to agile development and reuse of F-16 work, while the booklet emphasizes decades of foundational development behind that acceleration [f1443, f1569]. Formal proven-in-use credit concerns a reused element with identical or highly similar definition and operating conditions, supported by sufficient service history; the booklet reports a 70% confidence basis for ISO 26262 and higher confidence under IEC 61508, but did not verify either route comprehensively [f12351, f7935, f7936, f7704, f15271]. Warning-system history can anchor encounter frequencies, detections, environmental distributions and operator behavior, but cannot validate the simulator or new closed-loop braking chain: adding braking changes the item, and warning-era records do not establish post-intervention outcomes [f12355, f12357, f7938, f11710]. Aviation guidance likewise permits relevant service history only with justified similarity and differences, while machine-family reuse requires explicit applicability arguments and configuration control covering sensors, tyres, brakes, payloads and software versions [f7925, f7045, f1141].",
+ "relations": [
+  {
+   "a": "f366",
+   "b": "f14469",
+   "type": "same",
+   "note": "Both identify cross-model reuse as the biggest lever and least documented."
+  },
+  {
+   "a": "f617",
+   "b": "f12360",
+   "type": "same",
+   "note": "Both make early design a condition for realizing reuse's product-family value."
+  },
+  {
+   "a": "f261",
+   "b": "f371",
+   "type": "same",
+   "note": "Both report no published case quantifying cross-model reuse time savings."
+  },
+  {
+   "a": "f371",
+   "b": "f1118",
+   "type": "same",
+   "note": "Duplicate statements of the missing quantified time-saving case."
+  },
+  {
+   "a": "f1353",
+   "b": "f1845",
+   "type": "same",
+   "note": "Both report vendor claims exceeding 10,000 mine-testing hours for an earlier generation."
+  },
+  {
+   "a": "f1443",
+   "b": "f1568",
+   "type": "same",
+   "note": "Both report reuse enabling F-35 Auto-GCAS integration seven years early."
+  },
+  {
+   "a": "f7576",
+   "b": "f7630",
+   "type": "same",
+   "note": "Both describe aerospace acceptance of service history subject to justified similarity."
+  },
+  {
+   "a": "f7630",
+   "b": "f7925",
+   "type": "elaborates",
+   "note": "The latter specifies applicant obligations and relevant attributes for service-history applicability."
+  },
+  {
+   "a": "f7631",
+   "b": "f7926",
+   "type": "same",
+   "note": "Both condition tool-history confidence on similar versions, environments, maturity and usage."
+  },
+  {
+   "a": "f7937",
+   "b": "f14926",
+   "type": "same",
+   "note": "Both state that proven-in-use evidence does not validate a simulator."
+  },
+  {
+   "a": "f7938",
+   "b": "f15275",
+   "type": "same",
+   "note": "Both reject transferring warning-system history to braking because braking changes the item."
+  },
+  {
+   "a": "f7935",
+   "b": "f15297",
+   "type": "same",
+   "note": "Both identify a 70 percent confidence basis for ISO 26262 proven-in-use."
+  },
+  {
+   "a": "f7936",
+   "b": "f15270",
+   "type": "same",
+   "note": "Both say IEC 61508 demands higher confidence than the comparable ISO 26262 route."
+  },
+  {
+   "a": "f7934",
+   "b": "f12351",
+   "type": "elaborates",
+   "note": "The glossary adds sufficiently few failures to support the statistical service-history claim."
+  },
+  {
+   "a": "f191",
+   "b": "f12357",
+   "type": "elaborates",
+   "note": "The glossary explains exposure uncertainty, censored outcomes and the unexercised braking chain."
+  },
+  {
+   "a": "f984",
+   "b": "f12359",
+   "type": "supports",
+   "note": "Shared verified elements and variant-delta testing underpin the common-core-plus-deltas recommendation."
+  },
+  {
+   "a": "f1141",
+   "b": "f7045",
+   "type": "supports",
+   "note": "Configuration-dependent applicability explains why family evidence needs explicit justification."
+  },
+  {
+   "a": "f7704",
+   "b": "f12351",
+   "type": "contradicts",
+   "note": "Limited primary verification qualifies the glossary's categorical presentation of ISO clause requirements."
+  }
+ ]
+}

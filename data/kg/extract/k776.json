@@ -1,0 +1,162 @@
+{
+ "chunkId": "k776",
+ "hash": "e15990383eadb053",
+ "facts": [
+  {
+   "text": "Adaptive test selection chooses each new test based on previous test results, often using a Bayesian model to track remaining uncertainty.",
+   "quote": "Adaptive test selection chooses each new test based on the results of the tests so far, often using a Bayesian model that keeps track of what is still uncertain.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t207"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Adaptive test selection for a braking system updates a model of where the system passes and fails after each run and selects the next test where the model is least certain.",
+   "quote": "After each run it updates a model of where the system passes and fails, and picks the next test where that model is least sure.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t207",
+    "t62"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Bayesian test selection uses a surrogate model, a fast approximation of the simulator, to predict outcomes at untested points and estimate uncertainty for each prediction.",
+   "quote": "A surrogate model (a fast approximation of the simulator) predicts the outcome at untested points and gives an uncertainty for each prediction.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t207",
+    "t125",
+    "t259"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An acquisition rule in Bayesian test selection picks the next test point, for example where the predicted outcome is closest to the pass or fail boundary and uncertainty is high.",
+   "quote": "An acquisition rule then picks the next point, for example where the prediction is closest to the pass or fail boundary and the uncertainty is high.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t207",
+    "t62",
+    "t259"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Adaptive selection using a surrogate model and acquisition rule is called active learning when the aim is to learn the boundary, and Bayesian optimization when the aim is to find the best or worst setting.",
+   "quote": "This is called active learning when the aim is to learn the boundary, and Bayesian optimization when the aim is to find the best or worst setting [Chapter 9].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "active learning",
+     "kind": "method"
+    },
+    {
+     "name": "Bayesian optimization",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t207",
+    "t227"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Adaptive test selection can map the boundary between detection and miss with fewer runs.",
+   "quote": "The strength is efficiency: fewer runs to map the boundary between detection and miss.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t207",
+    "t108"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A naive binomial confidence interval computed from adaptively selected tests is invalid because adaptive sampling is intentionally biased toward interesting regions.",
+   "quote": "Because the sampling is intentionally biased toward interesting regions, a naive binomial confidence interval computed from adaptively selected tests is invalid",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t207",
+    "t210",
+    "t209",
+    "t217"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The surrogate model's own uncertainty estimate in adaptive test selection can be wrong.",
+   "quote": "the surrogate's own uncertainty estimate can be wrong [Chapter 9].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t207",
+    "t259",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet classifies adaptive selection as a discovery method that can learn decision boundaries efficiently, not as a basis for a rate claim.",
+   "quote": "The booklet classes adaptive selection as a discovery method that can \"learn decision boundaries efficiently\", not as a basis for a rate claim [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t207",
+    "t217"
+   ],
+   "importance": 3
+  }
+ ]
+}

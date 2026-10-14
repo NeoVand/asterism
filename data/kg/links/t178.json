@@ -1,0 +1,115 @@
+{
+ "key": "t178",
+ "hash": "85496cd617d57d0d",
+ "synopsis": "Automatic braking can itself destabilize heavy off-road machines through load shift, rollover, sliding, articulation effects and secondary collisions, particularly on slopes, with elevated or suspended loads, or during manoeuvres [f117, f5814, f5941]. Komatsu requires KomVision to be off during trailer loading; its wheel-loader guidance also calls for disabling stop control on slopes, slippery or soft ground and with suspended loads, on an undated page accessed in 2026 [f1646, f10550]. The booklet’s published position is to cap commanded deceleration at the minimum of collision-avoidance need, traction, stability, machine braking capability and load limits, while limiting jerk to reduce operator jolts and load shift [f11888, f13638]. Validation therefore needs loading and implement-position coverage, controllability outcomes beyond stopping distance, and richer models where articulation, high centres of gravity or deformable terrain matter [f3400, f6149, f6075, f6077]. These hazards are mechanically credible, but quantified off-road load-shift incidents and direct evidence of automatic-braking-induced rollover or slope instability were not found; shadow mode cannot establish actual stopping stability or load movement [f3397, f3405, f595, f597].",
+ "relations": [
+  {
+   "a": "f1537",
+   "b": "f1974",
+   "type": "same",
+   "note": "Both report Komatsu’s warning that rapid stops can destabilize the machine."
+  },
+  {
+   "a": "f1241",
+   "b": "f1646",
+   "type": "same",
+   "note": "Both require disabling Komatsu stop control during trailer loading because of instability."
+  },
+  {
+   "a": "f1241",
+   "b": "f11427",
+   "type": "same",
+   "note": "Glossary restates the trailer-loading shutdown requirement, specifying hydraulic excavators."
+  },
+  {
+   "a": "f1646",
+   "b": "f11427",
+   "type": "same",
+   "note": "Both state KomVision must be off during trailer loading to avoid instability."
+  },
+  {
+   "a": "f10420",
+   "b": "f10550",
+   "type": "same",
+   "note": "Same wheel-loader shutdown guidance; the latter supplies source dating information."
+  },
+  {
+   "a": "f147",
+   "b": "f5906",
+   "type": "same",
+   "note": "Both identify the limited areas where higher-fidelity braking models pay off."
+  },
+  {
+   "a": "f3397",
+   "b": "f11882",
+   "type": "same",
+   "note": "Both report no quantified automatic-braking load-spill or load-shift data."
+  },
+  {
+   "a": "f5938",
+   "b": "f11888",
+   "type": "same",
+   "note": "Both prescribe minimum-needed deceleration constrained by traction, stability, braking capability and payload."
+  },
+  {
+   "a": "f152",
+   "b": "f5938",
+   "type": "elaborates",
+   "note": "Chapter 8 specifies traction, roll, yaw and thermal constraints behind the synthesis."
+  },
+  {
+   "a": "f13638",
+   "b": "f152",
+   "type": "supports",
+   "note": "Operator jolts and load shift explain why the deceleration command needs a jerk limit."
+  },
+  {
+   "a": "f595",
+   "b": "f13471",
+   "type": "elaborates",
+   "note": "Glossary adds other intervention hazards and integration faults that shadow mode cannot establish."
+  },
+  {
+   "a": "f597",
+   "b": "f13471",
+   "type": "elaborates",
+   "note": "Glossary places untested load shifting among broader shadow-mode limitations."
+  },
+  {
+   "a": "f3397",
+   "b": "f3400",
+   "type": "depends",
+   "note": "Missing quantified evidence motivates hazard testing rather than asserting an established failure rate."
+  },
+  {
+   "a": "f6030",
+   "b": "f6077",
+   "type": "supports",
+   "note": "Coupled yaw, roll and articulation dynamics justify multibody modelling on side slopes."
+  },
+  {
+   "a": "f1979",
+   "b": "f13624",
+   "type": "supports",
+   "note": "Different loaded-machine dynamics justify knowing loading or assuming the worst case."
+  },
+  {
+   "a": "f2572",
+   "b": "f6149",
+   "type": "elaborates",
+   "note": "ISO 3450 controllability requirements specify why off-road acceptance exceeds deceleration targets."
+  },
+  {
+   "a": "f8201",
+   "b": "f9370",
+   "type": "supports",
+   "note": "False-stop stability hazards justify measuring unnecessary interventions and their consequences."
+  },
+  {
+   "a": "f11413",
+   "b": "f6030",
+   "type": "elaborates",
+   "note": "Chapter 8 explains the dynamics limiting deceleration in the glossary’s articulated-machine scenarios."
+  }
+ ]
+}

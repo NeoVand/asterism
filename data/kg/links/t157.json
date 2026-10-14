@@ -1,0 +1,115 @@
+{
+ "key": "t157",
+ "hash": "7a6eb21841f0338a",
+ "synopsis": "Shadow mode runs candidate braking software live on working machines with brake commands disconnected, recording hypothetical interventions; replay and shadow mode are the cheapest large-volume validation methods, and the company already has a suitable fleet [f13467, f332, f333]. The booklet recommends starting warning-fleet logging immediately during October 2026–mid-2027 to obtain field-representative false-positive evidence before the prototype arrives, then using the four-month physical campaign to confirm predictions rather than tune the system [f1600, f1604, f1611]. Nuisance-rate evidence must use representative real operating hours, with warnings, sensor data and context logged and results broken down by site type and weather; simultaneous old/new recording supports paired comparisons, ideally against independent common ground truth [f6912, f1601, f5480, f5495]. Before enabling braking, hypothetical interventions should be reviewed with operators and safety engineers, and frequent operationally unacceptable events should trigger stopping or escalation; acceptance thresholds must come from the organization's own shadow data and vendors' documented switch-off conditions [f10729, f10951, f10952, f11281]. Shadow mode remains open-loop and cannot establish actual braking consequences, including loaded wet-decline stability, following-truck collisions, load shifts, operator resistance or actuator faults [f335, f336, f13471]. No publicly documented heavy-off-road shadow-mode validation programme or warning-data-to-braking certification case was found, and sensor-specific evidence makes the sensor decision a gate for much pre-prototype work [f588, f1253, f2006].",
+ "relations": [
+  {
+   "a": "f332",
+   "b": "f13453",
+   "type": "same",
+   "note": "Both identify replay and shadow mode as the cheapest large-volume methods."
+  },
+  {
+   "a": "f333",
+   "b": "f13453",
+   "type": "same",
+   "note": "Both say the company already has an appropriate fleet."
+  },
+  {
+   "a": "f1600",
+   "b": "f7365",
+   "type": "same",
+   "note": "Both recommend immediate warning-fleet shadow logging during October 2026–mid-2027."
+  },
+  {
+   "a": "f6419",
+   "b": "f11768",
+   "type": "same",
+   "note": "Both recommend measuring hypothetical nuisance interventions before enabling braking."
+  },
+  {
+   "a": "f582",
+   "b": "f13467",
+   "type": "same",
+   "note": "Both describe live candidate software with brake actuation prevented and hypothetical events recorded."
+  },
+  {
+   "a": "f5480",
+   "b": "f5734",
+   "type": "elaborates",
+   "note": "Simultaneous recording yields paired results because both systems encounter the same hazards."
+  },
+  {
+   "a": "f5736",
+   "b": "f1601",
+   "type": "elaborates",
+   "note": "Warning replay adds sensor context and site/weather breakdowns to hourly false-alarm measurement."
+  },
+  {
+   "a": "f336",
+   "b": "f5737",
+   "type": "same",
+   "note": "Both state passive open-loop testing cannot prove braking consequences."
+  },
+  {
+   "a": "f595",
+   "b": "f13471",
+   "type": "same",
+   "note": "Both exclude proof of loaded automatic-stop stability on wet declines."
+  },
+  {
+   "a": "f596",
+   "b": "f13471",
+   "type": "same",
+   "note": "Both exclude proof of following-truck collision risk from false stops."
+  },
+  {
+   "a": "f597",
+   "b": "f13471",
+   "type": "same",
+   "note": "Both exclude proof of load shifting during real braking."
+  },
+  {
+   "a": "f598",
+   "b": "f13471",
+   "type": "same",
+   "note": "Both exclude proof of operator resistance to actual braking."
+  },
+  {
+   "a": "f599",
+   "b": "f13471",
+   "type": "same",
+   "note": "Both exclude proof of actuator integration faults."
+  },
+  {
+   "a": "f1617",
+   "b": "f2006",
+   "type": "same",
+   "note": "Both state sensor models, shadow data and false-positive behavior are sensor-specific."
+  },
+  {
+   "a": "f10981",
+   "b": "f12473",
+   "type": "same",
+   "note": "Both recommend shipping with shadow logging and expanding the operating envelope as evidence accrues."
+  },
+  {
+   "a": "f10772",
+   "b": "f12456",
+   "type": "same",
+   "note": "Both identify shadow nuisance events and off-switch requests as early failure warnings."
+  },
+  {
+   "a": "f1604",
+   "b": "f7444",
+   "type": "supports",
+   "note": "Pre-prototype field-representative evidence supports front-loading shadow logging to compress validation."
+  },
+  {
+   "a": "f6912",
+   "b": "f1601",
+   "type": "depends",
+   "note": "Hourly unnecessary-braking estimates require representative actual operation, not staged-test exposure."
+  }
+ ]
+}

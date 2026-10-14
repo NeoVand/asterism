@@ -1,0 +1,115 @@
+{
+ "key": "t2",
+ "hash": "4f5ca867e31a72ea",
+ "synopsis": "Wheel loaders are the booklet’s clearest nuisance-braking challenge because normal work can resemble a collision threat; its recommended starting domain is reverse-only, low-speed operation [f11395, f11397]. Vendor precedents are narrowly scoped: Volvo’s January 2023 system brakes in reverse at 3–15 km/h for 2–3 seconds on named models, while Cat’s May 2025 medium-loader system is reverse-only and can inhibit reverse engagement after at least 15 seconds stationary with an object in the critical zone [f1238, f1380, f356, f10637]. Front-end loaders were involved in 33% of 22 US surface-mine blind-area deaths from 2000 to mid-2006, but internationally comparable, exposure-adjusted rates were not found, so these counts cannot establish a reliable machine-type collision-rate ranking [f2985, f3238]. Virtual validation has some direct evidence—a 2025 radar hall experiment required manual material tuning and exposed missing double reflections, and a 2025 AGX digital twin was calibrated against a physical loader—but a 2024 digging simulation needed a friction coefficient of 2.0, flagged as a sim-to-field warning [f4421, f5049, f8292, f6090, f6376]. Major gaps remain in production-loader brake-delay distributions, peer-reviewed measured response times, production-scale vehicle-in-the-loop testing, and published vendor weather limits, false-intervention rates and validation methods [f252, f6065, f5342, f11394]. Safety planning must also account for abrupt-stop instability and operating exclusions: Komatsu advises disabling stop control on steep slopes, slippery or soft ground, with suspended loads and during trailer loading, while validated braking-related occupant-injury curves were not found [f10549, f10550, f3395].",
+ "relations": [
+  {
+   "a": "f252",
+   "b": "f5899",
+   "type": "same",
+   "note": "Both report missing modern production-machine brake-delay distributions."
+  },
+  {
+   "a": "f356",
+   "b": "f611",
+   "type": "same",
+   "note": "Both describe Cat's May 2025 medium-loader braking as reverse-only."
+  },
+  {
+   "a": "f611",
+   "b": "f814",
+   "type": "same",
+   "note": "Duplicate May 2025 reverse-only Cat braking description."
+  },
+  {
+   "a": "f1238",
+   "b": "f11391",
+   "type": "same",
+   "note": "Identical Volvo launch date, reverse speed range and braking duration."
+  },
+  {
+   "a": "f1063",
+   "b": "f12317",
+   "type": "same",
+   "note": "Both describe the Volvo intervention envelope: reverse at 3–15 km/h."
+  },
+  {
+   "a": "f2985",
+   "b": "f11389",
+   "type": "same",
+   "note": "Both report loaders involved in 33% of 22 blind-area deaths."
+  },
+  {
+   "a": "f3208",
+   "b": "f3245",
+   "type": "same",
+   "note": "Both attribute 67% of blind-area deaths to backing smaller trucks and loaders."
+  },
+  {
+   "a": "f8292",
+   "b": "f8572",
+   "type": "same",
+   "note": "Both describe physical-machine calibration of the 2025 AGX loader twin, including terrain."
+  },
+  {
+   "a": "f8671",
+   "b": "f9107",
+   "type": "same",
+   "note": "Both identify the 2025 wheel-loader calibration as independent AGX off-road evidence."
+  },
+  {
+   "a": "f6090",
+   "b": "f6455",
+   "type": "same",
+   "note": "Both report friction 2.0 in the 2024 loader-digging simulation."
+  },
+  {
+   "a": "f10420",
+   "b": "f10550",
+   "type": "same",
+   "note": "Both list Komatsu stop-control exclusions; the latter adds source-access context."
+  },
+  {
+   "a": "f10440",
+   "b": "f10635",
+   "type": "elaborates",
+   "note": "Rear-only targeting is supplemented by reverse-engagement inhibition."
+  },
+  {
+   "a": "f10637",
+   "b": "f10440",
+   "type": "elaborates",
+   "note": "Specifies the stationary duration and obstacle condition for reverse inhibition."
+  },
+  {
+   "a": "f1380",
+   "b": "f10438",
+   "type": "elaborates",
+   "note": "Names the models underlying the restricted Volvo offering."
+  },
+  {
+   "a": "f11396",
+   "b": "f11397",
+   "type": "supports",
+   "note": "Narrow fielded-product envelopes support a similarly narrow program starting domain."
+  },
+  {
+   "a": "f5049",
+   "b": "f5005",
+   "type": "supports",
+   "note": "Missing double reflections explain limited radar simulation agreement."
+  },
+  {
+   "a": "f6065",
+   "b": "f6067",
+   "type": "supports",
+   "note": "Missing measured response times motivate machine-specific measurement."
+  },
+  {
+   "a": "f10549",
+   "b": "f10550",
+   "type": "supports",
+   "note": "Abrupt-stop instability warning supports disabling stop control in specified operating conditions."
+  }
+ ]
+}

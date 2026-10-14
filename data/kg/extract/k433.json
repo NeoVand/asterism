@@ -1,0 +1,651 @@
+{
+ "chunkId": "k433",
+ "hash": "1b0a8872e54d9839",
+ "facts": [
+  {
+   "text": "Simulation must be validated at the same system boundary as the safety claim.",
+   "quote": "The simulation must be validated at the same system boundary as the safety claim.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    5
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t238",
+    "t67"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Validating perception and the brake plant independently does not prove their closed-loop combination safe: latency, asynchronous sampling, message delays, actuator saturation, control-state transitions and operator behavior can create emergent failures.",
+   "quote": "latency, asynchronous sampling, message delays, actuator saturation, control-state transitions and operator behavior can create emergent failures.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    5
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t154",
+    "t257",
+    "t88",
+    "t36",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Integral full-system tests remain important after submodels are validated, paralleling EMDAP's use of both separate-effects and integral-effects evidence.",
+   "quote": "Integral full-system tests remain important after submodels are validated, which parallels EMDAP's use of both separate-effects and integral-effects evidence.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMDAP",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t245",
+    "t234",
+    "t257"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For a system acting through a third-party J1939 interface under ISO/TS 21815-2, validation must include end-to-end integration latency.",
+   "quote": "If the system acts through a third-party J1939 interface (ISO/TS 21815-2), the validation scope must include end-to-end integration latency.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    66
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t120",
+    "t172",
+    "t280"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Cybersecurity and fault injection are separate from nominal simulation accuracy; a high-fidelity nominal model provides no evidence about corrupted messages, sensor dropout, timing faults, bus congestion, frozen values or actuator faults.",
+   "quote": "A high-fidelity nominal model says nothing about corrupted messages, sensor dropout, timing faults, bus congestion, frozen values or actuator faults",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t125",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Corrupted messages, sensor dropout, timing faults, bus congestion, frozen values and actuator faults require explicit fault testing.",
+   "quote": "corrupted messages, sensor dropout, timing faults, bus congestion, frozen values or actuator faults; those need explicit fault testing.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t120"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "False-positive braking is a safety hazard because it can cause load shift, rollover on slopes, machine instability near an edge, rear-end impacts from following haul trucks or hazards during a maneuver.",
+   "quote": "False-positive braking is itself a safety hazard: load shift, rollover on slopes, machine instability near an edge, rear-end impacts from following haul trucks, or hazards during a maneuver.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    10
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t40",
+    "t195",
+    "t178",
+    "t31",
+    "t3"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The ISO 21815-1 false-positive test exists because false-positive braking is itself a safety hazard.",
+   "quote": "The ISO 21815-1 false-positive test exists for this reason",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    10
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t40",
+    "t31"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The simulation matrix needs hazardous-unintended-intervention cases as well as failure-to-intervene cases.",
+   "quote": "the simulation matrix needs hazardous-unintended-intervention cases as well as failure-to-intervene cases",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    10
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t143",
+    "t40",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No off-road standard prescribing the balance between hazardous-unintended-intervention cases and failure-to-intervene cases was found.",
+   "quote": "no off-road standard prescribing the balance was found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    10
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t271",
+    "t143",
+    "t40"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Operator behavior changes when warnings become interventions.",
+   "quote": "Operator behavior changes when warnings become interventions.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    65
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t38",
+    "t28",
+    "t36"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A vehicle and environment simulator does not represent operator adaptation, over-reliance, override behavior, nuisance-brake response or mode confusion.",
+   "quote": "Adaptation, over-reliance, override behavior, nuisance-brake response and mode confusion are not represented by a vehicle and environment simulator",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    65
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t36",
+    "t38",
+    "t126",
+    "t31"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3 states that responsibility stays with the operator.",
+   "quote": "ISO 21815-3 states that responsibility stays with the operator.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    65
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t10"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Human-in-the-loop evidence may be required for safety claims involving operator response.",
+   "quote": "Human-in-the-loop evidence may be required for claims involving operator response.",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    65
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t152",
+    "t36",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Brake-system variability from wear, temperature and ISO 3450 conditions makes the physical brake model probably the highest-risk model in the simulation chain.",
+   "quote": "Brake-system variability (wear, temperature, ISO 3450 conditions) makes the physical brake model probably the highest-risk model in the chain.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 3450",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t182",
+    "t239",
+    "t282"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Scenario coverage and model credibility are separate problems.",
+   "quote": "Scenario coverage and model credibility are separate problems.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t234",
+    "t67"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A perfectly validated simulator can still support a weak safety case if its virtual scenarios omit important hazards.",
+   "quote": "A perfectly validated simulator can still support a weak safety case if the virtual scenarios omit important hazards",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t67",
+    "t141",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Millions of simulated scenarios do not help a safety case if the simulator is wrong in the relevant conditions.",
+   "quote": "millions of scenarios do not help if the simulator is wrong in the relevant conditions.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t267",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Site representativeness must be auditable.",
+   "quote": "Site representativeness must be auditable.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    55
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t44",
+    "t140",
+    "t64"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The claim of “100+ job-site types” is not a coverage argument until a taxonomy connects site characteristics to sensing and stopping variables: geometry, surface and friction, grade, object populations, visibility, dust generation, traffic patterns, machine interaction and operating speed.",
+   "quote": "a taxonomy connects site characteristics to the physical variables that affect sensing and stopping: geometry, surface and friction, grade, object populations, visibility, dust generation, traffic patterns, machine interaction and operating speed.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    55
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t44",
+    "t140",
+    "t174",
+    "t173",
+    "t193"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Without a taxonomy linking site characteristics to sensing and stopping variables, the number of simulated sites becomes a vanity metric.",
+   "quote": "Otherwise the number of simulated sites becomes a vanity metric.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    55
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t44",
+    "t224",
+    "t140"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The ISO 345xx scenario work provides a structural analogy for site coverage but remains on-road.",
+   "quote": "The ISO 345xx scenario work is a structural analogy but remains on-road.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    55
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 345xx",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t290",
+    "t142",
+    "t44"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Rare events and epistemic uncertainty need separate treatment.",
+   "quote": "Rare events and epistemic uncertainty need separate treatment.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    1,
+    5
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t144",
+    "t259"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ten million simulated runs may estimate variability within a model very precisely while saying almost nothing about an omitted phenomenon.",
+   "quote": "Ten million simulated runs may estimate variability within the model very precisely while saying almost nothing about an omitted phenomenon",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    1,
+    5
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t259",
+    "t267",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The safety board should distinguish aleatory uncertainty from epistemic, or model-form, uncertainty, as NASA and nuclear practice do.",
+   "quote": "the board should distinguish aleatory from epistemic (model-form) uncertainty, as NASA and nuclear practice do.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    1,
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NASA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t259",
+    "t242",
+    "t245",
+    "t71"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Machine-learned perception falls outside the FDA and V&V 40 scope, which covers physics-based models only; data-driven components need separate assurance.",
+   "quote": "Machine-learned perception falls outside the FDA and V&V 40 scope, which covers physics-based models only; data-driven components need separate assurance.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FDA",
+     "kind": "organization"
+    },
+    {
+     "name": "ASME V&V 40",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t79",
+    "t128",
+    "t243",
+    "t244"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Measurement-system uncertainty can become the limiting factor in simulation validation.",
+   "quote": "Measurement-system uncertainty can become the limiting factor.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t259",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Ground truth for object pose, relative speed, intervention timing, wheel or track slip and stopping distance must be more precise than the discrepancy being measured.",
+   "quote": "Ground truth for object pose, relative speed, intervention timing, wheel or track slip and stopping distance must be more precise than the discrepancy being measured",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t249",
+    "t170",
+    "t169"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The FAA notes that validation requirements should reflect measurement capability.",
+   "quote": "the FAA notes that validation requirements should reflect measurement capability.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FAA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t246",
+    "t237",
+    "t105"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Test independence must be designed rather than merely declared.",
+   "quote": "Test independence must be designed, not declared.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t263",
+    "t231"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Using every physical case to tune sensor, friction and brake parameters leaves no untouched evidence to demonstrate predictive performance.",
+   "quote": "If every physical case is used to tune sensor, friction and brake parameters, no untouched evidence remains to demonstrate predictive performance",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t263",
+    "t237",
+    "t220",
+    "t219"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Calibration, validation and final confirmation datasets should be preallocated before prototype testing begins.",
+   "quote": "calibration, validation and final confirmation datasets should be preallocated before prototype testing begins.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t263",
+    "t237",
+    "t113",
+    "t218"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A credible model run on an unqualified or uncontrolled toolchain is not evidence; simulation tool qualification and configuration control are necessary.",
+   "quote": "Simulation tool qualification and configuration control: a credible model run on an unqualified or uncontrolled toolchain is not evidence.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t234",
+    "t162",
+    "t70"
+   ],
+   "importance": 3
+  }
+ ]
+}

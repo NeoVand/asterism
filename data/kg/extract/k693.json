@@ -1,0 +1,219 @@
+{
+ "chunkId": "k693",
+ "hash": "b83084ae441d657d",
+ "facts": [
+  {
+   "text": "A simulation is a computer run in which models of the machine, site, sensors and people act together over time; a simulator is the software that runs the simulation.",
+   "quote": "A simulation is a computer run in which models of the machine, the site, the sensors and the people act together over time, and a simulator is the software that runs it.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Confusing behavioral or scenario simulation, sensor simulation and closed-loop simulation is a common source of overclaiming.",
+   "quote": "the word \"simulation\" hides three different things, and that mixing them up is a common source of overclaiming [Chapter 1]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t126",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Behavioral or scenario simulation models objects, roads, grades, machine motions, speeds and control responses, often with perfect ideal sensing, to answer questions about logic and timing.",
+   "quote": "Behavioral or scenario simulation models objects, roads, grades, machine motions, speeds and control responses, often with perfect \"ideal\" sensing; it answers questions about logic and timing.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t126",
+    "t141",
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor simulation produces synthetic camera images, radar returns or lidar point clouds to sweep rain, fog, dust, darkness and glare cheaply.",
+   "quote": "Sensor simulation produces synthetic camera images, radar returns or lidar point clouds so that rain, fog, dust, darkness and glare can be swept cheaply",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t323",
+    "t102",
+    "t114"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor simulation adds a new model that must itself be validated.",
+   "quote": "it adds a new model that must itself be validated.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t323",
+    "t237",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Closed-loop simulation lets the virtual world react to the machine: software braking changes every later position and the collision geometry, which a recording cannot show.",
+   "quote": "Closed-loop simulation lets the virtual world react to the machine: once the software brakes, every later position and the collision geometry change, which no recording can show.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t154",
+    "t155",
+    "t126"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A simulator normally combines a machine dynamics engine, a terrain and soil model, a sensor renderer or ray tracer, a scenario engine that places and moves actors, and a test manager that launches and scores runs.",
+   "quote": "a dynamics engine for machine motion, a terrain and soil model, a renderer or ray tracer for sensors, a scenario engine that places and moves the actors, and a test manager that launches runs and scores the results.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t126",
+    "t179",
+    "t325",
+    "t327"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet's market survey found no single commercial or open-source tool with public evidence of validating automatic braking for earth-moving machines across many site types and all-weather sensing; the market is modular.",
+   "quote": "no single tool, commercial or open-source, has public evidence of validating automatic braking for earth-moving machines across many site types and all-weather sensing; the market is modular [Chapter 11].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t321",
+    "t167",
+    "t25",
+    "t44",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "MineSim (April 2025) is an open-source, peer-reviewed scenario-based simulation system for autonomous trucks in open-pit mines, built with scenarios from two real mines and mining-specific features including unstructured roads and heavy-truck response lag.",
+   "quote": "MineSim (April 2025) is an open-source, peer-reviewed scenario-based simulation system for autonomous trucks in open-pit mines, built with scenarios from two real mines and with mining-specific features such as unstructured roads and heavy-truck response lag [Chapter 1].",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "MineSim",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t316",
+    "t322",
+    "t3",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An off-road study ran vision-guided automatic braking across 128 simulated test cases on a computing cluster.",
+   "quote": "Another study ran vision-guided automatic braking across 128 simulated off-road test cases on a computing cluster [Chapter 1].",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t25",
+    "t143",
+    "t338",
+    "t127"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For the program, simulation is the only way to exercise more than 100 site types, 10 or more scenarios per machine, many weather conditions and many machine models before and during a four-month window.",
+   "quote": "Simulation is the only way to exercise more than 100 site types, 10 or more scenarios per machine, many weather conditions and many machine models before and during a four-month window.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t127",
+    "t44",
+    "t43",
+    "t45",
+    "t142"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet concludes that simulation does not replace physical tests; simulation selects the physical tests that deserve scarce prototype time and supplies broad regression around a limited number of physical anchor points.",
+   "quote": "simulation does not replace physical tests; it decides which physical tests deserve scarce prototype time and supplies broad regression around a limited number of physical anchor points [Chapter 1].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t264",
+    "t216",
+    "t161",
+    "t127"
+   ],
+   "importance": 3
+  }
+ ]
+}

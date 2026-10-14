@@ -1,0 +1,251 @@
+{
+ "chunkId": "k905",
+ "hash": "e84bff80c5a9e247",
+ "facts": [
+  {
+   "text": "Build, buy or partner is the decision between developing simulation capability in-house on open-source parts, buying commercial products, or paying an outside company to deliver the capability.",
+   "quote": "Build, buy or partner is the decision between writing the simulation capability in-house on open-source parts, buying commercial products, or paying an outside company to deliver it.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t333"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Building simulation capability in-house on open source using CARLA, Isaac Sim or Gazebo, Chrono, and Robot Operating System 2 (ROS 2) offers the lowest license cost but requires the highest internal labor.",
+   "quote": "Build in-house on open source (CARLA or Isaac Sim or Gazebo, Chrono, Robot Operating System 2 or ROS 2): lowest license cost, highest internal labor",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    },
+    {
+     "name": "Isaac Sim",
+     "kind": "tool"
+    },
+    {
+     "name": "Gazebo",
+     "kind": "tool"
+    },
+    {
+     "name": "Chrono",
+     "kind": "tool"
+    },
+    {
+     "name": "Robot Operating System 2",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t333",
+    "t322",
+    "t334",
+    "t359"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Building simulation capability in-house on open source provides full ownership of source and models, but entails no vendor support, key-person dependence, and responsibility for all credibility evidence.",
+   "quote": "full ownership of source and models, but no vendor support, key-person dependence and the organization owns all the credibility evidence.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t333",
+    "t234",
+    "t359"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Buying an integrated commercial simulation stack lowers the integration burden, but domain modeling and correlation work remain substantial.",
+   "quote": "Buy an integrated commercial stack: lower integration burden, but domain modeling and correlation remain substantial",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t333",
+    "t321",
+    "t250"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Buying an integrated commercial simulation stack does not provide ownership of the core and entails off-road gaps, license dependence, and roadmap risk.",
+   "quote": "the core cannot be owned, and there are off-road gaps, license dependence and roadmap risk.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t333",
+    "t321",
+    "t334"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Buying specialist simulation tools and integrating them internally offers high flexibility but creates high interface and version complexity.",
+   "quote": "Buy specialist tools and integrate internally: high flexibility, high interface and version complexity.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t333",
+    "t320"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Partner-led implementation of simulation capability is potentially the fastest option, but knowledge and models stay with the partner and the dependency can become permanent.",
+   "quote": "Partner-led implementation: potentially fastest, but knowledge and models stay with the partner and the dependency can become permanent.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t333"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet judges a hybrid simulation implementation—an internal owner, a partner, and commercial or open-source tools—to offer the best balance of retained knowledge and outside specialization, provided the contract has unusually clear ownership clauses.",
+   "quote": "Hybrid: an internal owner plus a partner plus commercial or open-source tools, which the booklet judges the best balance of retained knowledge and outside specialization, provided the contract has unusually clear ownership clauses [Chapter 11].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t333",
+    "t357"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No independent benchmark from 2024 to 2026 states total cost, team headcount, or time to a first useful result for any of the five simulation implementation options.",
+   "quote": "no independent 2024 to 2026 benchmark states total cost, team headcount or time to a first useful result for any option",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t333",
+    "t358",
+    "t359",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Vendor case studies of simulation implementation options report large gains but are not controlled measurements.",
+   "quote": "vendor case studies report large gains but are not controlled measurements.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t333",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Regardless of the simulation implementation option chosen, the booklet recommends that partner contracts require editable machine models, scene and source assets, parameter provenance, correlation datasets, test definitions, continuous-integration scripts, simulator version manifests, known-limitation registers, and interface specifications—not only test reports.",
+   "quote": "delivery of editable machine models, scene and source assets, parameter provenance, correlation datasets, test definitions, continuous-integration scripts, simulator version manifests, known-limitation registers and interface specifications, not only test reports [Chapter 11].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t357",
+    "t333",
+    "t269",
+    "t162",
+    "t161"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "With no internal simulation capability and nine months before hardware, the booklet calls hybrid implementation the most defensible choice.",
+   "quote": "With no internal capability and nine months before hardware, the booklet calls the hybrid the most defensible choice",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t333",
+    "t43",
+    "t359"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet warns that outsourcing simulation capability alone solves the 2027 deadline while creating a larger long-term dependency.",
+   "quote": "outsourcing alone \"solves the 2027 deadline while creating a larger long-term dependency\" [Chapter 11].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t333",
+    "t344"
+   ],
+   "importance": 3
+  }
+ ]
+}

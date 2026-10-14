@@ -1,0 +1,287 @@
+{
+ "chunkId": "k836",
+ "hash": "82059f7f49cf22b4",
+ "facts": [
+  {
+   "text": "Using the existing warning system's field history as a reference means using years of recorded operation to validate simulation inputs and selected submodels, not the new closed-loop braking chain, subject to exposure, censored open-loop history and changed-system-boundary limitations.",
+   "quote": "The years of recorded operation of the current warning system can validate the simulation's inputs and some of its submodels, but not the new closed-loop braking chain, and only if three traps are respected.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t237",
+    "t154"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The manufacturer's warning systems have logged detections, warnings and operating conditions for years.",
+   "quote": "The manufacturer's warning systems have logged detections, warnings and conditions for years.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t121"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Aviation accepts service history as evidence for similar systems when differences between the systems are justified.",
+   "quote": "aviation accepts service history for similar systems when differences are justified",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t75",
+    "t266",
+    "t76"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Replaying logged sensor data is common road-vehicle practice.",
+   "quote": "replaying logged sensor data is common road-vehicle practice",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t266"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "European automated-vehicle rules require real-world data in the validation set.",
+   "quote": "the European automated-vehicle rules require real-world data in the validation set",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t263",
+    "t65"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "If the new braking system reuses the warning system's sensors and mounting, warning-system logs are direct validation data for those models, provided the logs contain usable ground truth.",
+   "quote": "If the new system reuses the warning system's sensors and mounting, the logs are direct validation data for those models, provided they hold usable ground truth.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t105",
+    "t100",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Warning-system field history can anchor the frequency and geometry of encountered objects, weather and site distributions, sensor contamination, nuisance-warning patterns and operator response timing.",
+   "quote": "The history can anchor the frequency and geometry of encountered objects, weather and site distributions, sensor contamination, nuisance-warning patterns and operator response timing",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t140",
+    "t102",
+    "t32",
+    "t35"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Warning-system field history can serve as an independent replay set.",
+   "quote": "and serve as an independent replay set [Chapter 10].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t155",
+    "t113"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "'Proven in use' under ISO 26262-8 clause 14 and IEC 61508 is a route for reusing an element whose conditions of use match those of the fielded element.",
+   "quote": "\"proven in use\" (ISO 26262-8 clause 14, IEC 61508) is a route for reusing an element whose conditions of use match the fielded ones.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "ISO 26262-8",
+     "kind": "standard"
+    },
+    {
+     "name": "IEC 61508",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t75",
+    "t266"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The 'proven in use' route does not validate a simulator; adding automatic braking changes the item relative to the fielded warning system.",
+   "quote": "It does not validate a simulator, and adding automatic braking changes the item.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "ISO 26262-8",
+     "kind": "standard"
+    },
+    {
+     "name": "IEC 61508",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t75",
+    "t266",
+    "t25",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No standard or assessor statement accepting a legacy system's history as the reference for validating a simulator was found.",
+   "quote": "No standard or assessor statement accepting a legacy system's history as the reference for validating a simulator was found [Chapter 10].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t234",
+    "t71"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Exposure must be known when using warning-system field history: 'few incidents in ten million hours' says little without the number of relevant encounters.",
+   "quote": "Exposure must be known: \"few incidents in ten million hours\" says little without the number of relevant encounters.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t20",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Warning-system field history is censored and open-loop because warnings may cause operators to brake; logs rarely show what would have happened without intervention or how the machine and operator behave once automatic braking intervenes.",
+   "quote": "Field history is censored and open-loop: a warning may cause the operator to brake, so the logs rarely show what would have happened without intervention, or how machine and operator behave once braking intervenes.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t154",
+    "t28",
+    "t36"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Changing from a warning product to automatic braking changes the system boundary: the warning product has no field evidence for brake command timing, pressure build-up, stability during intervention or unintended-braking hazards.",
+   "quote": "the warning product has no field evidence for brake command timing, pressure build-up, stability during intervention or unintended-braking hazards [Chapter 10].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t171",
+    "t178",
+    "t40"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The defensible program claim is that warning-system field history validates selected simulation inputs and submodels and supports a representative scenario distribution, not that the history validates the automatic-braking simulator or braking function.",
+   "quote": "The defensible claim is that field history validates selected inputs and submodels and supports the representativeness of the scenario distribution, not that it validates the automatic-braking simulator [Chapter 10].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t234",
+    "t237",
+    "t142"
+   ],
+   "importance": 3
+  }
+ ]
+}

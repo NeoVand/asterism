@@ -1,0 +1,213 @@
+{
+ "chunkId": "k767",
+ "hash": "33e4fd10b2b98923",
+ "facts": [
+  {
+   "text": "The test space is the set of every situation a braking system could encounter; combinatorial explosion is the growth of that set as conditions are multiplied together until exhaustive testing becomes infeasible.",
+   "quote": "The test space is the set of every situation the braking system could meet, and the combinatorial explosion is the way that set grows so fast, when conditions are multiplied together, that nobody can test it all.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t198"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The automatic braking test space includes job-site type, machine task, weather, light, machine model, sensor position, speed and object type.",
+   "quote": "the type of job site, the task the machine is doing, the weather, the light, the machine model, where the sensors sit, the speed, and what kind of object is in the way.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t198",
+    "t199"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet's automatic braking program must cover more than 100 site types, more than ten operating scenarios per machine, approximately seven weather and light conditions (rain, snow, fog, dust, dusk, darkness and glare), and many machine models.",
+   "quote": "must cover more than 100 site types, more than ten operating scenarios per machine, seven or so weather and light conditions (rain, snow, fog, dust, dusk, darkness, glare) and many machine models.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t198",
+    "t44",
+    "t45",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Chapter 7 counts 100 × 10 × 7 = 7,000 test cells from site types, operating scenarios and weather/light conditions alone, before machine model, speed or object type is counted.",
+   "quote": "Multiplying only the first three gives 100 × 10 × 7 = 7,000 cells before any machine model, speed or object type is counted. Chapter 7 makes the same count",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t198",
+    "t143"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Chapter 7 concludes that no program can fill every test-space cell with the 59 to 299 physical trials needed for a statistical claim.",
+   "quote": "notes that no program can fill each cell with the 59 to 299 physical trials a statistical claim would need [Chapter 7].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t198",
+    "t209",
+    "t158"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Chapter 9 recommends replacing a full Cartesian-product test grid with three layers: an operating-domain taxonomy setting boundaries, a scenario catalog ensuring known fatal-accident patterns are tested, and parameterized scenario families with probability distributions over their variables.",
+   "quote": "an operating-domain taxonomy that sets the boundaries, a scenario catalog that guarantees known fatal-accident patterns are always tested, and parameterized scenario families with a probability distribution over their variables.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t198",
+    "t140",
+    "t142",
+    "t199",
+    "t200"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Chapter 9 recommends describing sites by safety-relevant attributes, such as rough terrain, dusty air, bright sun, an 8 percent grade and frequent crossings, rather than treating 100 site names as unrelated cases; differently named quarries may represent the same test case.",
+   "quote": "describe sites by their safety-relevant attributes (rough terrain, dusty air, bright sun, an 8 percent grade, frequent crossings) rather than as 100 unrelated site names. Two quarries with different names may be the same test case.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t140",
+    "t44",
+    "t143",
+    "t198"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Chapter 9 identifies impossible test combinations that can be removed: direct sun glare underground and camera exposure settings for an ultrasonic-only sensor set.",
+   "quote": "Many combinations are also impossible and can be removed: there is no direct sun glare underground, and an ultrasonic-only sensor set has no camera exposure settings [Chapter 9].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t198",
+    "t200",
+    "t95",
+    "t89",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The size of the automatic braking test space requires validation to move largely into simulation.",
+   "quote": "The size of the space is the reason the validation has to move largely into simulation",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t198",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Selecting which combinations to test is a safety decision because of the size of the automatic braking test space.",
+   "quote": "The size of the space is the reason the validation has to move largely into simulation, and the reason the choice of which combinations to test becomes a safety decision.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t198",
+    "t200",
+    "t46"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Chapter 13 lists “compute and scenario explosion” as a standing objection to the validation plan.",
+   "quote": "Chapter 13 lists \"compute and scenario explosion\" as a standing objection to the plan",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t198",
+    "t163",
+    "t268"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Chapter 13 reports that published compute costs for virtual validation of off-road safety functions were not found.",
+   "quote": "published compute costs for virtual validation of off-road safety functions were not found [Chapter 13].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t127",
+    "t48"
+   ],
+   "importance": 3
+  }
+ ]
+}

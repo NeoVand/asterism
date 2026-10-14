@@ -1,0 +1,300 @@
+{
+ "chunkId": "k892",
+ "hash": "c651f079af414c35",
+ "facts": [
+  {
+   "text": "A tool chain is a set of separate software programs and hardware boxes connected so that a virtual test can run from start to finish.",
+   "quote": "A tool chain is the set of separate software programs and hardware boxes that are connected together so that one virtual test can run from start to finish.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t127"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Virtual testing requires different tools, often from different companies, for scenario description, three-dimensional job-site creation, machine motion and tire-soil and brake calculations, sensor-data simulation, braking-software execution, test execution, result collection and storage; no single program does everything.",
+   "quote": "Each of these jobs is done by a different tool, often from a different company.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The simulation-tool market is modular and comprises eight categories: complete platforms, sensor simulation, vehicle and machine dynamics, terrain and soil, environment creation, scenario generation and test management, data replay and hardware-in-the-loop (HIL), and cloud execution.",
+   "quote": "eight categories: complete platforms, sensor simulation, vehicle and machine dynamics, terrain and soil, environment creation, scenario generation and test management, data replay and hardware-in-the-loop (HIL), and cloud execution.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t321",
+    "t323",
+    "t324",
+    "t325"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Road-vehicle tool chains have strong sensor and scenario tooling but thin soil physics, whereas heavy-machine physics tools have strong terrain and hydraulics but thin sensor and scenario tooling.",
+   "quote": "Road-vehicle tool chains have strong sensor and scenario tooling but thin soil physics; heavy-machine physics tools have strong terrain and hydraulics but thin sensor and scenario tooling.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t323",
+    "t324",
+    "t325",
+    "t327"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No single open-source or commercial tool has public evidence of validating automatic braking for earth-moving machines across many job sites and all weather.",
+   "quote": "No single tool, open-source or commercial, has public evidence of validating automatic braking for earth-moving machines across many job sites and all weather",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t127",
+    "t25",
+    "t45",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Open standards used to connect simulation tools include the Functional Mock-up Interface (FMI), ASAM Open Simulation Interface (OSI), OpenSCENARIO and OpenDRIVE for scenarios and roads, OpenUSD for scenes, and Robot Operating System 2 (ROS 2) for robotics software.",
+   "quote": "the Functional Mock-up Interface (FMI, supported by about 250 tools by mid-2025), the ASAM Open Simulation Interface (OSI), OpenSCENARIO and OpenDRIVE for scenarios and roads, OpenUSD for scenes, and Robot Operating System 2 (ROS 2) for robotics software.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Functional Mock-up Interface",
+     "kind": "standard"
+    },
+    {
+     "name": "ASAM Open Simulation Interface",
+     "kind": "standard"
+    },
+    {
+     "name": "OpenSCENARIO",
+     "kind": "standard"
+    },
+    {
+     "name": "OpenDRIVE",
+     "kind": "standard"
+    },
+    {
+     "name": "OpenUSD",
+     "kind": "standard"
+    },
+    {
+     "name": "Robot Operating System 2",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t320",
+    "t139",
+    "t138",
+    "t137"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The Functional Mock-up Interface (FMI) was supported by about 250 tools by mid-2025.",
+   "quote": "Functional Mock-up Interface (FMI, supported by about 250 tools by mid-2025)",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Functional Mock-up Interface",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t139",
+    "t320"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Open standards reduce but do not eliminate tool-chain integration work; difficult tasks include aligning coordinate systems and clocks, supplying machine position to sensor simulation at exactly the same time step, matching surface materials, representing an articulated machine and its attachment, and proving software updates have not changed results.",
+   "quote": "The hard parts are making two programs agree on coordinate systems and clocks, feeding the machine's position to the sensor program at exactly the same time step, matching surface materials across programs, representing an articulated machine and its attachment",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t101",
+    "t136",
+    "t176",
+    "t161"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Project Chrono developers warn that common tire models silently do not work on deformable terrain, so connecting tools can quietly break the physics.",
+   "quote": "The booklet quotes the Project Chrono developers that common tire models silently do not work on deformable terrain: \"plugging together\" tools can quietly break the physics.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Project Chrono",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t180",
+    "t181",
+    "t320"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No benchmark of tool-chain integration effort measured in engineer-weeks was found.",
+   "quote": "No benchmark of integration effort in engineer-weeks was found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t339",
+    "t359"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Tool-chain integration effort is ranked only relatively: same-vendor modules are lower effort, standards-linked components medium, a separate sensor renderer plus third-party dynamics plus soil plus a hardware bench high, and raw-signal sensor benches highest.",
+   "quote": "from same-vendor modules (lower) through standards-linked components (medium) to a separate sensor renderer plus third-party dynamics plus soil plus a hardware bench (high) and raw-signal sensor benches (highest)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t148",
+    "t149"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A simulation tool chain becomes closed-loop when the braking function under test feeds back into machine dynamics.",
+   "quote": "the loop from the braking function back to the machine dynamics is what makes the test closed-loop.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t154",
+    "t320",
+    "t179"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The program organization has no virtual testing capability and about nine months before hardware arrives, making integration work rather than the choice of an individual tool the schedule risk.",
+   "quote": "The organization has no virtual testing capability and about nine months before hardware arrives, so the integration work, not the choice of any one tool, is the schedule risk.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t344",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The ASAM project refining OSI for high-fidelity sensors runs until March 2027, coinciding with the program's planned integration of its first tool chain.",
+   "quote": "the ASAM project refining OSI for high-fidelity sensors runs until March 2027, exactly when this program would be integrating its first chain",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    },
+    {
+     "name": "ASAM Open Simulation Interface",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t138",
+    "t320",
+    "t343"
+   ],
+   "importance": 3
+  }
+ ]
+}

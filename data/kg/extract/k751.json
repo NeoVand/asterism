@@ -1,0 +1,424 @@
+{
+ "chunkId": "k751",
+ "hash": "d430849d9a810c15",
+ "facts": [
+  {
+   "text": "Model fidelity is the amount of physical detail included in a model; braking fidelity ranges from a lookup table or single formula through a point-mass model with measured delays to full multibody simulation with soil.",
+   "quote": "Model fidelity is how much physical detail a model includes; for braking, the levels run from a lookup table or single formula, through a point-mass model with measured delays, to a full multibody simulation with soil.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Increasing braking-model detail costs more time and data and introduces more chances to be wrong; extra detail pays off only when it changes the answer.",
+   "quote": "more detail costs more time, more data and more chances to be wrong, and it pays off only when the extra detail changes the answer.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t234"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The simplest stopping-distance model is the constant-deceleration equation d = v^2 / (2a), augmented with grade and mass terms, and requires hours of effort.",
+   "quote": "Constant-deceleration equation, `d = v^2 / (2a)` plus grade and mass terms. Hours of effort.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t170",
+    "t173",
+    "t168"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The constant-deceleration stopping-distance equation is the basis of ISO 3450, the US mining rule and the New South Wales formulas.",
+   "quote": "The basis of ISO 3450, the US mining rule and the New South Wales formulas.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "ISO 3450",
+     "kind": "standard"
+    },
+    {
+     "name": "United States",
+     "kind": "place"
+    },
+    {
+     "name": "New South Wales",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t183",
+    "t282",
+    "t300",
+    "t301"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A constant-deceleration stopping-distance model is useful for sanity checks and conservative envelopes but misses delay, brake build-up, variable traction and stability.",
+   "quote": "Good for sanity checks and conservative envelopes; misses delay, build-up, variable traction and stability.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t171",
+    "t174",
+    "t178"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A point-mass transient braking model includes measured latency, a brake build-up lag and deceleration maps giving available deceleration by grade, payload, surface and drive state; the model requires low to moderate effort.",
+   "quote": "Point-mass transient model with measured latency, a brake build-up lag and deceleration maps (lookup tables of available deceleration by grade, payload, surface and drive state). Low to moderate effort.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t171",
+    "t182"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet selects the point-mass transient braking model for the runtime trigger and large Monte Carlo sweeps.",
+   "quote": "The booklet's choice for the runtime trigger and for large Monte Carlo sweeps.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "Monte Carlo methods",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t183",
+    "t185",
+    "t208"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Adding lumped brake hydraulics to a point-mass model represents pressure build-up and its spread and requires days to weeks of effort.",
+   "quote": "Point-mass plus lumped brake hydraulics: adds the pressure build-up and its spread. Days to weeks.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t182",
+    "t171"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A hydrostatic drivetrain braking model represents braking capacity as a function of operating state and requires weeks of effort.",
+   "quote": "Hydrostatic drivetrain model: braking capacity as a function of operating state. Weeks.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t177",
+    "t182"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A rigid multibody braking model with tire models and 3 to 8 degrees of freedom represents roll, yaw, jackknife and pitch under braking, is used to derive deceleration caps for turning and cross-slope, and requires weeks of effort.",
+   "quote": "Rigid multibody, 3 to 8 degrees of freedom, with tire models: roll, yaw, jackknife and pitch under braking; used to derive deceleration caps for turning and cross-slope. Weeks.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t179",
+    "t180",
+    "t178",
+    "t190"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Full multibody braking models with contact and detailed hydraulics or hydrostatics support design exploration and difficult transitions; these models are parameter-heavy and require months of effort.",
+   "quote": "Full multibody with contact and detailed hydraulics or hydrostatics: design exploration and difficult transitions. Months; parameter-heavy.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t182",
+    "t179"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Semi-empirical terramechanics using the Soil Contact Model represents soft-ground braking force and sinkage.",
+   "quote": "Semi-empirical terramechanics (Soil Contact Model): soft-ground braking force and sinkage.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "Soil Contact Model",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t183",
+    "t181",
+    "t174"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "DEM, SPH or FEM terrain models are recommended only for selected braking limit cases.",
+   "quote": "DEM, SPH or FEM terrain: selected limit cases only.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "DEM",
+     "kind": "method"
+    },
+    {
+     "name": "SPH",
+     "kind": "method"
+    },
+    {
+     "name": "FEM",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t183",
+    "t181",
+    "t144"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Reduced-order or surrogate braking models fitted to richer models enable millions of evaluations but are unsafe outside their training range.",
+   "quote": "Reduced-order or surrogate models fitted to the richer ones: millions of evaluations, but unsafe outside the range they were trained on.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t261",
+    "t262"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends selecting the lowest-fidelity braking model that predicts every safety-relevant output within a validated uncertainty envelope.",
+   "quote": "the right fidelity is \"the lowest model that predicts every safety-relevant output within a validated uncertainty envelope\" [Chapter 8]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t259",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In a 2026 simulation round robin on a road braking case, point-mass implementations reproduced the prescribed deceleration exactly, while more complex vehicle models formed the extremes of a 0.033 s and 0.314 m spread; greater complexity did not imply greater accuracy.",
+   "quote": "in a 2026 simulation round robin on a road braking case, the point-mass implementations reproduced the prescribed deceleration exactly, while the more complex vehicle models formed the extremes of a 0.033 s and 0.314 m spread",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t249",
+    "t250"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Higher braking-model fidelity pays off for brake-actuation hydraulics and latency spread, articulated and high-center-of-gravity stability during hard braking, hydrostatic drives with state-dependent capacity, and soft or deformable ground.",
+   "quote": "Higher fidelity pays off in four places: brake-actuation hydraulics (latency and its spread), articulated and high-center-of-gravity stability during hard braking, hydrostatic drives whose capacity varies with state, and soft or deformable ground [Chapter 8].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t171",
+    "t178",
+    "t177",
+    "t181"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends layered braking models per machine family rather than one ultimate digital twin: a fast threshold model for very large parameter sweeps, a stability challenge model to derive deceleration caps, and a high-fidelity model for selected edge cases that could invalidate simpler models.",
+   "quote": "a fast threshold model for very large parameter sweeps, a stability challenge model to derive deceleration caps, and a high-fidelity model for the selected edge cases that could invalidate the simpler ones",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t167",
+    "t129",
+    "t144",
+    "t190"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The recommended layered braking simulation uses sensor simulation to supply detection delay and error to the braking simulation.",
+   "quote": "with sensor simulation feeding detection delay and error into the braking simulation [Chapter 8]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t172",
+    "t85",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No published source gives a universal off-road prediction error for any braking-model fidelity level.",
+   "quote": "No published source gives a universal off-road prediction error for any level",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t249",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Each braking-model fidelity level must be calibrated and checked against the program's own physical tests.",
+   "quote": "each must be calibrated and checked against the program's own physical tests [Chapter 8].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t237",
+    "t184"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t84",
+ "hash": "1958e9aab4826167",
+ "synopsis": "The research had no internal sensor specifications or recordings, and sensor selection remained unconfirmed across chapters; the October 2026 plan therefore recommends a sensor-agnostic architecture, with sensor simulation selected only after a shortlist is known [f7, f8, f287, f8257, f485, f507, f8796]. A programme starting in October 2026 could realistically have software-in-the-loop simulation with partly validated sensor models working by mid-2027, but each sensor type needs its own credibility argument and simulation can replace only part—not most—of physical sensor testing [f65, f1577, f4407]. Sensor/environment fidelity is identified as a leading uncertainty precisely where risk lies: no accepted off-road qualification method was found for dust, snow or fog, glare-related effects are poorly validated, and physical characterization is recommended at mounting-geometry extremes and in degraded visibility [f10424, f212, f331, f4406, f7885]. Existing recordings cannot establish performance for unrecorded sensor types or positions, and rare-event methods cannot substantiate failure modes whose sensor physics the simulation omits [f3729, f5240, f6853]. Detection is necessary for braking but insufficient for safe overall performance: normal production tasks can appear dangerous to sensors, and improving sensors alone does not resolve task-dependent nuisance braking [f11302, f124, f3487, f11766].",
+ "relations": [
+  {
+   "a": "f287",
+   "b": "f1179",
+   "type": "same",
+   "note": "Both state that the sensor set remains unconfirmed."
+  },
+  {
+   "a": "f1179",
+   "b": "f4396",
+   "type": "same",
+   "note": "Both report unresolved sensor selection."
+  },
+  {
+   "a": "f4396",
+   "b": "f6625",
+   "type": "same",
+   "note": "Both report unresolved selection; the latter lists possible modalities."
+  },
+  {
+   "a": "f287",
+   "b": "f2035",
+   "type": "same",
+   "note": "Both state that sensor selection is not fixed."
+  },
+  {
+   "a": "f2035",
+   "b": "f3678",
+   "type": "same",
+   "note": "Unfixed sensors require research covering multiple sensor options."
+  },
+  {
+   "a": "f3678",
+   "b": "f5133",
+   "type": "same",
+   "note": "Both give the same uncertainty and resulting multi-modality research scope."
+  },
+  {
+   "a": "f5133",
+   "b": "f8257",
+   "type": "same",
+   "note": "Both repeat unresolved selection and coverage of multiple sensor options."
+  },
+  {
+   "a": "f124",
+   "b": "f3021",
+   "type": "same",
+   "note": "Normal production work can appear dangerous to simple sensors."
+  },
+  {
+   "a": "f3021",
+   "b": "f11384",
+   "type": "same",
+   "note": "Both identify legitimate tasks that sensors may interpret as collision threats."
+  },
+  {
+   "a": "f10430",
+   "b": "f10481",
+   "type": "same",
+   "note": "Both state that dynamics, brakes and sensing do not automatically transfer between machine families."
+  },
+  {
+   "a": "f10424",
+   "b": "f212",
+   "type": "same",
+   "note": "Both highlight weakest sensor credibility precisely where risk lies."
+  },
+  {
+   "a": "f3729",
+   "b": "f5240",
+   "type": "elaborates",
+   "note": "Replay limitation also covers unrecorded sensor positions."
+  },
+  {
+   "a": "f331",
+   "b": "f7885",
+   "type": "supports",
+   "note": "Missing off-road qualification methods reinforce retaining degraded-visibility physical characterization."
+  },
+  {
+   "a": "f4408",
+   "b": "f10424",
+   "type": "supports",
+   "note": "Narrow, mostly on-road or laboratory validation supports the sensor-fidelity uncertainty."
+  },
+  {
+   "a": "f287",
+   "b": "f8796",
+   "type": "depends",
+   "note": "Selecting sensor simulation requires resolving the sensor shortlist."
+  },
+  {
+   "a": "f6766",
+   "b": "f507",
+   "type": "elaborates",
+   "note": "Separating common scene phenomena from modality-specific nuisances implements sensor-independent scenario architecture."
+  },
+  {
+   "a": "f124",
+   "b": "f11766",
+   "type": "elaborates",
+   "note": "Task-dependent nuisance alarms explain why sensor improvement alone cannot resolve unwanted braking."
+  },
+  {
+   "a": "f1299",
+   "b": "f6853",
+   "type": "elaborates",
+   "note": "Rare-event acceleration cannot replace validation of sensor physics outside simulation scope."
+  }
+ ]
+}

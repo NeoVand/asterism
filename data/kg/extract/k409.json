@@ -1,0 +1,225 @@
+{
+ "chunkId": "k409",
+ "hash": "75e8d40fa7b1342e",
+ "facts": [
+  {
+   "text": "No published tolerance specific to an off-road automatic-braking stopping-distance model was found.",
+   "quote": "No published tolerance specific to an off-road automatic-braking stopping-distance model was found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t258",
+    "t170",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No exact numerical tolerances for off-road AEB were found in the reviewed standards.",
+   "quote": "no exact numerical tolerances for off-road AEB were found in the reviewed standards.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t258",
+    "t25",
+    "t271"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "EU 2022/1426 requires manufacturers to set and document their own acceptance thresholds for each model; this is on-road evidence.",
+   "quote": "EU 2022/1426 requires manufacturers to set and document their own acceptance thresholds per model",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    6,
+    54
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EU 2022/1426",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t258",
+    "t62"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "UN R152 leaves validity thresholds to the manufacturer's documented method, with authority agreement; this is on-road evidence.",
+   "quote": "UN R152 leaves validity thresholds to the manufacturer's documented method with authority agreement.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    6,
+    54
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "UN R152",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t258",
+    "t295"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In practice, tolerance for the off-road automatic-braking model has to be derived from the safety margin and measurement uncertainty.",
+   "quote": "In practice the tolerance has to be derived from the safety margin and the measurement uncertainty.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t258",
+    "t259",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "If the ISO 21815-3 risk area leaves X metres of margin, the combined model-form, numerical and input uncertainty must be demonstrably smaller than X; this is a design principle, not a published numerical tolerance.",
+   "quote": "if the ISO 21815-3 risk area leaves X metres of margin, the model-form uncertainty plus numerical and input uncertainty must be demonstrably smaller than X. This is a design principle, not a published number.",
+   "kind": "example",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t259",
+    "t258",
+    "t280"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A model accuracy criterion is not a system safety criterion.",
+   "quote": "A model accuracy criterion is not a system safety criterion.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    4
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t62",
+    "t234",
+    "t67"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A simulator can be demonstrably imperfect yet conservative enough for a particular decision.",
+   "quote": "A simulator can be demonstrably imperfect yet conservative enough for a particular decision",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    4
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t238",
+    "t234",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A simulator can have low average error while being dangerously optimistic around the collision boundary.",
+   "quote": "have low average error while being dangerously optimistic around the collision boundary.",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    4
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t267",
+    "t18",
+    "t255"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "FDA's threshold logic and FAA's treatment of safety margins support decision-oriented rather than goodness-of-fit-oriented validation.",
+   "quote": "FDA's threshold logic and the FAA's treatment of safety margins both support decision-oriented rather than goodness-of-fit-oriented validation.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FDA",
+     "kind": "organization"
+    },
+    {
+     "name": "FAA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t238",
+    "t234",
+    "t244",
+    "t246"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Recommended validation quantities for off-road automatic braking are detection probability and false-negative rate by condition, false-positive or unnecessary-braking rate, range and relative-speed error distributions, intervention-time error, brake-pressure and deceleration histories, stopping-distance error, residual impact-speed error, and frequency of model residuals near decision boundaries. These are recommended metrics, not published off-road thresholds.",
+   "quote": "detection probability and false-negative rate by condition, false-positive or unnecessary-braking rate, range and relative-speed error distributions, intervention-time error, brake-pressure and deceleration histories, stopping-distance error, residual impact-speed error",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t224",
+    "t250",
+    "t258",
+    "t25",
+    "t170"
+   ],
+   "importance": 3
+  }
+ ]
+}

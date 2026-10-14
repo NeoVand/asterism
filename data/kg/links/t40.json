@@ -1,0 +1,115 @@
+{
+ "key": "t40",
+ "hash": "9a9756f073576108",
+ "synopsis": "Automatic braking introduces hazards of its own: sudden operator jolts, load spill, rollover or articulation instability, sliding, secondary collisions and rollaway; allowable interventions depend on the machine and operating situation [f114, f5941, f7456, f1539]. Moving from warning to intervention turns a false classification into a machine-motion command, while nuisance stops can encourage disabling or bypass and ultimately remove protection when needed [f3024, f11706, f11764]. The booklet recommends separately analyzing missed interventions and unsafe or unnecessary interventions, assigning each its own acceptance thresholds and including both in the simulation matrix [f2642, f8203]. ISO 19014-2:2022 brings brake-command integrity, faults, degraded modes and unintended activation into validation, but no off-road standard prescribing the balance between the two intervention categories was found [f5223, f8204]. On-road evidence identifies unnecessary braking as the dominant documented failure mode and reports a 20% increase in being struck from behind, whereas off-road intervention-created risks remain unmeasured: workers report jolting stops, the regulator knows of no resulting injuries, and evidence of braking-caused load spills, slope instability or rear-end strikes was not found [f115, f11674, f3025, f3026, f3027, f3031]. Important validation gaps remain: no safe maximum automatic deceleration for articulated machines was found, warning-product field evidence does not establish braking consequences, and passive shadow recording cannot prove them [f6555, f7945, f5737].",
+ "relations": [
+  {
+   "a": "f118",
+   "b": "f2141",
+   "type": "same",
+   "note": "Both require separate analysis of missed interventions and unsafe or unnecessary interventions."
+  },
+  {
+   "a": "f118",
+   "b": "f2341",
+   "type": "same",
+   "note": "Both identify the same two safety functions."
+  },
+  {
+   "a": "f2141",
+   "b": "f2341",
+   "type": "same",
+   "note": "Duplicate recommendation to distinguish the two intervention safety functions."
+  },
+  {
+   "a": "f10441",
+   "b": "f10495",
+   "type": "same",
+   "note": "Both link nuisance interventions to disabling and new hazards."
+  },
+  {
+   "a": "f2642",
+   "b": "f118",
+   "type": "elaborates",
+   "note": "Adds separate acceptance thresholds for each safety function."
+  },
+  {
+   "a": "f8203",
+   "b": "f7458",
+   "type": "elaborates",
+   "note": "Specifies the simulation matrix as a vehicle for testing both intervention categories."
+  },
+  {
+   "a": "f8204",
+   "b": "f2642",
+   "type": "elaborates",
+   "note": "Identifies missing standard guidance for balancing the two acceptance categories."
+  },
+  {
+   "a": "f11706",
+   "b": "f3024",
+   "type": "elaborates",
+   "note": "Adds human-factors and vehicle-dynamics consequences of converting false classifications into commands."
+  },
+  {
+   "a": "f5941",
+   "b": "f114",
+   "type": "elaborates",
+   "note": "Enumerates intervention-created hazards, including rollaway."
+  },
+  {
+   "a": "f2895",
+   "b": "f809",
+   "type": "elaborates",
+   "note": "Lists the specific intervention-created hazards that validation must address."
+  },
+  {
+   "a": "f1536",
+   "b": "f2342",
+   "type": "elaborates",
+   "note": "Shows how low-confidence fail-safe braking can produce hazardous full-brake applications."
+  },
+  {
+   "a": "f5223",
+   "b": "f2343",
+   "type": "elaborates",
+   "note": "Identifies the standard edition and specific brake-command validation concerns."
+  },
+  {
+   "a": "f5737",
+   "b": "f7945",
+   "type": "supports",
+   "note": "Passive field recording cannot supply evidence of active braking consequences."
+  },
+  {
+   "a": "f3031",
+   "b": "f3025",
+   "type": "supports",
+   "note": "Specific missing off-road outcome evidence supports the broader measurement gap."
+  },
+  {
+   "a": "f3027",
+   "b": "f3026",
+   "type": "elaborates",
+   "note": "Qualifies reported jolting stops: the regulator knows of no resulting injuries."
+  },
+  {
+   "a": "f11674",
+   "b": "f7456",
+   "type": "supports",
+   "note": "On-road rear-impact evidence supports concern about following-machine collisions, without quantifying off-road risk."
+  },
+  {
+   "a": "f11764",
+   "b": "f10495",
+   "type": "elaborates",
+   "note": "Details the pathway from nuisance stops through workarounds to lost protection."
+  },
+  {
+   "a": "f8201",
+   "b": "f5813",
+   "type": "supports",
+   "note": "Concrete physical consequences explain why false braking is more than a nuisance."
+  }
+ ]
+}

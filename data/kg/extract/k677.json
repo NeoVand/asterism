@@ -1,0 +1,203 @@
+{
+ "chunkId": "k677",
+ "hash": "f229ce21ae2058e9",
+ "facts": [
+  {
+   "text": "Time to collision (TTC) is the number of seconds before a machine and an object meet if neither changes speed; trigger distance is the object distance at which the system decides to warn or brake. Both depend on the quality of distance and speed supplied by perception.",
+   "quote": "Time to collision is how many seconds remain before the machine and an object meet if neither changes speed, and trigger distance is how far away an object must be when the system decides to warn or brake; both are only as good as the distance and speed that perception delivers.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t111",
+    "t85",
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Trigger distance is built from the distance covered during detection and decision, the distance covered while the brakes respond, the physical stopping distance, and a residual safe distance.",
+   "quote": "the booklet builds it from the distance covered during detection and decision, the distance covered while the brakes respond, the physical stopping distance and a residual safe distance [Chapter 8]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t111",
+    "t170",
+    "t171",
+    "t194",
+    "t172"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "TTC and trigger distance are computed from perception outputs describing the object's range and relative speed.",
+   "quote": "Both are computed from perception outputs, the object's range and relative speed.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t111",
+    "t85"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A range error of one meter or a speed estimate lagging by a few tenths of a second directly changes TTC and shifts the trigger point.",
+   "quote": "A range error of one meter or a speed estimate that lags by a few tenths of a second changes TTC and shifts the trigger point directly.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t111",
+    "t88",
+    "t85"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "TTC estimates and trigger distance belong at the task level of sensor-model validation: a simulator is useful only if it reproduces the quantities actually used by the braking logic.",
+   "quote": "the booklet places TTC estimates and trigger distance at the task level of its sensor-model validation ladder: a simulator is useful only if it reproduces the quantities the braking logic actually uses [Chapter 6]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t111",
+    "t256",
+    "t234",
+    "t185"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "TTC at first warning is a baseline measure for the existing system.",
+   "quote": "TTC at first warning is a baseline measure for the existing system [Chapter 7]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t111",
+    "t221",
+    "t266"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "One mining specification asks for a warning 2.5 to 3.0 seconds before intervention; the passage does not name the specification.",
+   "quote": "one mining specification asks for a warning 2.5 to 3.0 seconds before intervention [Chapter 3]",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t29",
+    "t111",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "TTC alone is a weak trigger at work-site speeds because near-zero closing speed produces a very large TTC even when a person is centimeters away, and a stationary machine about to move has no TTC.",
+   "quote": "TTC alone is a weak trigger at work-site speeds: near zero closing speed it becomes very large even with a person centimeters away, and a stationary machine about to move has no TTC at all",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t111",
+    "t185",
+    "t14"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The standard and published consensus referenced in the passage favor stopping-distance and risk-zone logic with TTC as one input, rather than TTC alone.",
+   "quote": "the standard and the published consensus favor stopping-distance and risk-zone logic with TTC as one input [Chapter 8]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t170",
+    "t187",
+    "t111"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Perception errors propagate into braking errors through TTC and trigger distance; a sensor model that biases range or speed gives incorrect brake timing in every virtual run.",
+   "quote": "Perception errors become braking errors through TTC and trigger distance, so a sensor model that biases range or speed gives wrong brake timing in every virtual run",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t111",
+    "t85",
+    "t127",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor-model validation should compare matched real and simulated runs on TTC and trigger distance.",
+   "quote": "the booklet asks for matched real and simulated runs to be compared on exactly these quantities [Chapter 6]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t111",
+    "t160",
+    "t256",
+    "t250"
+   ],
+   "importance": 3
+  }
+ ]
+}

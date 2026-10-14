@@ -1,0 +1,288 @@
+{
+ "chunkId": "k717",
+ "hash": "fddd2a9625f88351",
+ "facts": [
+  {
+   "text": "Over-the-air sensor stimulation presents a real, complete sensor with artificial light, radio waves or sound generated from a virtual scene, placing the whole sensor, including its optics or antenna and firmware, in the loop.",
+   "quote": "Over-the-air stimulation presents a real, complete sensor with artificial light, radio waves or sound generated from the virtual scene, so that the whole sensor, including its optics or antenna and its firmware, is in the loop.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t150"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Radar over-the-air stimulation uses a target simulator that receives the radar's transmitted signal and returns echoes with chosen delay, speed shift and strength; the example simulates a worker 8 m away and approaching.",
+   "quote": "For radar, a target simulator receives the radar's transmitted signal and sends back echoes with a chosen delay, speed shift and strength, so the radar believes a worker is 8 m away and approaching.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Camera over-the-air stimulation uses a screen or projector to show a rendered scene.",
+   "quote": "For a camera, a screen or projector shows the rendered scene.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Lidar over-the-air stimulation uses an emulator that returns delayed light pulses.",
+   "quote": "For lidar, an emulator returns delayed light pulses.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Ultrasonic over-the-air stimulation uses an echo generator to return delayed sound echoes.",
+   "quote": "For ultrasonic sensors, an echo generator does the same with sound [Chapters 6, 7].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t95"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An over-the-air sensor stimulation rig needs a shielded or echo-free room, calibrated signal losses and real-time synchronization with the virtual scene.",
+   "quote": "The rig needs a shielded or echo-free room, calibrated signal losses and real-time synchronization with the scene",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t153",
+    "t100"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Over-the-air sensor stimulation rigs usually run closed-loop.",
+   "quote": "it usually runs closed-loop [Chapter 7].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Digital radar target simulators have a minimum simulated range set by processing delay: each 6.67 nanoseconds of delay adds 1 m of apparent distance.",
+   "quote": "Digital radar target simulators have a minimum simulated range set by their processing delay: each 6.67 nanoseconds of delay adds 1 m of apparent distance.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t94",
+    "t88"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2021 peer-reviewed review reports that digital radar target simulators typically have a minimum simulated range of about 20 to 30 m, support a single-digit number of targets and cost hundreds of thousands of dollars.",
+   "quote": "A 2021 peer-reviewed review gives about 20 to 30 m as a typical minimum for digital systems, with a single-digit number of targets, at a cost of \"hundreds of thousands of dollars\"",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t94"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Vendors claim radar target simulator minimum simulated ranges of 0.6 m or 1.5 m and capacity for five to several hundred objects.",
+   "quote": "vendors claim minimums of 0.6 m or 1.5 m and from five to several hundred objects [Chapters 6, 7].",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t94"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Camera over-the-air stimulation suffers from screen frame-rate mismatch and wide fields of view.",
+   "quote": "Camera stimulation suffers from screen frame-rate mismatch and wide fields of view",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t89",
+    "t87"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Lidar over-the-air stimulation, especially for solid-state lidar, is identified as a remaining gap.",
+   "quote": "lidar stimulation, especially for solid-state lidar, is identified as a remaining gap",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t92"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ultrasonic over-the-air stimulation exists only for automotive parking functions.",
+   "quote": "ultrasonic stimulation exists only for automotive parking functions [Chapter 7].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t95"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The radar, camera, lidar and ultrasonic over-the-air stimulation devices described do not reproduce terrain clutter, berms, dust plumes or radio reflections from steel structures.",
+   "quote": "None of these devices reproduces terrain clutter, berms, dust plumes or radio reflections from steel structures.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t104",
+    "t102",
+    "t12"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Workers 0.5 to 5 m behind a machine occupy the range where digital radar simulators are weakest; the booklet therefore rates over-the-air stimulation low for close-range off-road use.",
+   "quote": "Workers at 0.5 to 5 m behind a machine are exactly where digital radar simulators are weakest, so the booklet rates over-the-air stimulation low for close-range off-road use",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t94",
+    "t14",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet reserves over-the-air sensor stimulation for sensor and electronic control unit (ECU) regression, timing tests and supplier-independent characterization.",
+   "quote": "reserves it for sensor and ECU (electronic control unit) regression, timing tests and supplier-independent characterization [Chapters 6, 7].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t119",
+    "t161",
+    "t88"
+   ],
+   "importance": 3
+  }
+ ]
+}

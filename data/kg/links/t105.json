@@ -1,0 +1,115 @@
+{
+ "key": "t105",
+ "hash": "5ba43639180b6acd",
+ "synopsis": "Ground truth must independently describe the physical scene and machine state; using the production detector’s output as truth is circular and can conceal missed objects [f99, f5358, f5359]. Replay against this reference is an established way to baseline an existing warning system without driving the machine, but usable logs need synchronized raw sensors, machine signals, calibration and labels; valuable ignored-warning near misses often lack ground truth [f94, f520, f11899, f7943]. The recommended reference combines surveyed targets, reference lidar with RTK-GNSS/INS, and human-audited auto-labels, with complementary sensors and an explicit “truth unavailable” state when reference sensing degrades [f5197, f12715]. Ground truth itself requires calibration, synchronization and uncertainty budgets, with measurement uncertainty substantially below acceptance margins or measured discrepancies; otherwise reference errors can dominate system differences [f7473, f8222, f7474, f11243]. Weather facilities provide important validation references, but a 2019 survey says chambers cannot fully replace real weather, while a 2026 paper proposes rainfall corrections; reconstructed or generated environments likewise do not automatically supply trustworthy geometric truth [f5056, f5085, f5104, f4046]. For a team starting from zero in October 2026, preparing a ground-truth specification alongside physical-test procedures, a soft-target kit and independent-test-body engagement is considered realistic by mid-2027, although labeling and ground truth are identified as likely replay bottlenecks [f851, f1144].",
+ "relations": [
+  {
+   "a": "f94",
+   "b": "f5165",
+   "type": "same",
+   "note": "Both establish independent-ground-truth replay as an off-field warning-system baseline method."
+  },
+  {
+   "a": "f99",
+   "b": "f5196",
+   "type": "same",
+   "note": "Both prohibit production detector outputs as circular ground truth."
+  },
+  {
+   "a": "f11626",
+   "b": "f7943",
+   "type": "same",
+   "note": "Both identify valuable ignored-warning near misses lacking ground-truth records."
+  },
+  {
+   "a": "f106",
+   "b": "f5210",
+   "type": "same",
+   "note": "Both specify identical comparison metrics, common ground truth and a common hazard zone."
+  },
+  {
+   "a": "f100",
+   "b": "f5197",
+   "type": "same",
+   "note": "Both prescribe surveyed targets, reference lidar with RTK-GNSS/INS, and audited auto-labels."
+  },
+  {
+   "a": "f1356",
+   "b": "f1726",
+   "type": "same",
+   "note": "Both describe Pretoria’s surface GPS and underground lidar, camera and radar reference methodology."
+  },
+  {
+   "a": "f5197",
+   "b": "f12703",
+   "type": "elaborates",
+   "note": "The hybrid approach adds surveyed anchors and audited labels to the continuous reference."
+  },
+  {
+   "a": "f5359",
+   "b": "f99",
+   "type": "supports",
+   "note": "Explains how detector-derived truth hides misses and falsely improves the baseline."
+  },
+  {
+   "a": "f520",
+   "b": "f5165",
+   "type": "elaborates",
+   "note": "Specifies the recordings needed to make replay useful."
+  },
+  {
+   "a": "f7930",
+   "b": "f8246",
+   "type": "depends",
+   "note": "Sensor-model validation using fleet logs additionally requires permissible consent and data-rights status."
+  },
+  {
+   "a": "f7473",
+   "b": "f11242",
+   "type": "same",
+   "note": "Both require calibrated reference measurements with timing and uncertainty treatment."
+  },
+  {
+   "a": "f7474",
+   "b": "f1140",
+   "type": "elaborates",
+   "note": "Reference inaccuracy can dominate differences and reverse apparent system quality."
+  },
+  {
+   "a": "f12707",
+   "b": "f8221",
+   "type": "supports",
+   "note": "Positioning accuracy constrains other metrics, explaining measurement uncertainty’s limiting role."
+  },
+  {
+   "a": "f11243",
+   "b": "f10592",
+   "type": "supports",
+   "note": "Timing offsets masquerading as errors motivate synchronization and uncertainty budgets."
+  },
+  {
+   "a": "f12613",
+   "b": "f5198",
+   "type": "supports",
+   "note": "Lidar blindness in dust explains the need for a truth-unavailable state."
+  },
+  {
+   "a": "f5056",
+   "b": "f5085",
+   "type": "elaborates",
+   "note": "Qualifies facility-based weather truth with real-weather limitations and proposed rainfall corrections."
+  },
+  {
+   "a": "f3861",
+   "b": "f99",
+   "type": "supports",
+   "note": "Self-consistency rather than independent truth illustrates the independence requirement."
+  },
+  {
+   "a": "f4240",
+   "b": "f3757",
+   "type": "supports",
+   "note": "Nonmetric, uncertain geometry explains why generative world models remain least established for validation truth."
+  }
+ ]
+}

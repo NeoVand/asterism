@@ -1,0 +1,115 @@
+{
+ "key": "t181",
+ "hash": "bbe72d8d23062a04",
+ "synopsis": "Off-road braking depends on soil-mediated shear, sinkage, rolling resistance, slip and directional response; a ground model may therefore need friction, cohesion, compaction, rutting, moisture and roughness rather than merely visual terrain [f6005, f3960, f4300]. Some single-wheel semi-empirical studies report force errors below 10%, but the cited 2023 tuning varies with slip angle, and the validation evidence is limited to single-wheel rigs and sand rather than full machines [f6462, f6466, f6012]. The booklet found no published terramechanics validation adequate for braking-distance prediction across 100+ site types, but explicitly notes that Project Chrono validation literature was not reviewed; documented simulator capabilities do not establish machine-specific emergency-stopping accuracy [f10611, f6016]. Higher-fidelity CRM terrain reportedly runs 50–200 times slower than real time and requires an NVIDIA GPU, while uncertain soil inputs can overwhelm model fidelity; no evidence was found that DEM, SPH or FEM is required for automatic-braking threshold prediction across production machines [f8499, f8500, f6104, f6102]. The recommended approach is physical low-speed testing across hard, loose and wet surfaces for each machine family, conservative deceleration envelopes where transferable, and richer offline or detailed soil models only where necessary, retaining physical brake tests to address machine-ground uncertainty [f13724, f6151, f6075, f10613].",
+ "relations": [
+  {
+   "a": "f3742",
+   "b": "f3964",
+   "type": "same",
+   "note": "Both report prohibitive training times when combining deformable soil and deformable tires."
+  },
+  {
+   "a": "f7195",
+   "b": "f13213",
+   "type": "same",
+   "note": "Both identify missing OpenX concepts for off-road terrain and related phenomena."
+  },
+  {
+   "a": "f10433",
+   "b": "f10611",
+   "type": "same",
+   "note": "Same broad validation gap; the latter adds the Chrono literature-review limitation."
+  },
+  {
+   "a": "f10484",
+   "b": "f11189",
+   "type": "same",
+   "note": "Both report absent evidence of terramechanics fidelity adequate for braking prediction."
+  },
+  {
+   "a": "f8339",
+   "b": "f13238",
+   "type": "same",
+   "note": "Both warn that common tire models silently fail on deformable terrain."
+  },
+  {
+   "a": "f8498",
+   "b": "f13786",
+   "type": "same",
+   "note": "Both restrict deformable-terrain compatibility to rigid or finite-element tires and tracked vehicles."
+  },
+  {
+   "a": "f8499",
+   "b": "f13802",
+   "type": "same",
+   "note": "Both report continuum terrain running 50–200 times slower than real time."
+  },
+  {
+   "a": "f13057",
+   "b": "f13605",
+   "type": "same",
+   "note": "Both report soil simulation running 50–200 times slower than real time."
+  },
+  {
+   "a": "f6462",
+   "b": "f13797",
+   "type": "same",
+   "note": "Both report sub-10% single-wheel force errors and slip-angle-dependent tuning."
+  },
+  {
+   "a": "f6012",
+   "b": "f6466",
+   "type": "same",
+   "note": "Both limit cited validation to single-wheel rigs and sand."
+  },
+  {
+   "a": "f6102",
+   "b": "f13805",
+   "type": "same",
+   "note": "Both find no evidence requiring DEM, SPH or FEM for production braking thresholds."
+  },
+  {
+   "a": "f3739",
+   "b": "f3961",
+   "type": "elaborates",
+   "note": "Chrono::Vehicle details the soil-model families behind Chrono's off-road capabilities."
+  },
+  {
+   "a": "f86",
+   "b": "f8338",
+   "type": "elaborates",
+   "note": "Integration requires consistent materials and coordinated terrain-physics and sensor-rendering time steps."
+  },
+  {
+   "a": "f6466",
+   "b": "f4381",
+   "type": "supports",
+   "note": "Single-wheel evidence supports the broader concern about missing machine-scale environmental studies."
+  },
+  {
+   "a": "f8499",
+   "b": "f6103",
+   "type": "supports",
+   "note": "Reported slowdown supports rejecting high-fidelity terrain for exhaustive scenario sweeps."
+  },
+  {
+   "a": "f6103",
+   "b": "f13799",
+   "type": "supports",
+   "note": "Computational cost supports reserving DEM for selected limit cases."
+  },
+  {
+   "a": "f6151",
+   "b": "f13724",
+   "type": "supports",
+   "note": "Transferable conservative deceleration envelopes justify detailed soil modeling only where simpler approaches fail."
+  },
+  {
+   "a": "f10611",
+   "b": "f10613",
+   "type": "supports",
+   "note": "The braking-validation gap supports retaining physical brake testing."
+  }
+ ]
+}

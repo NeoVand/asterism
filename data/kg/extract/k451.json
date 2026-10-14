@@ -1,0 +1,646 @@
+{
+ "chunkId": "k451",
+ "hash": "791ab30ed7267eba",
+ "facts": [
+  {
+   "text": "dSPACE SCALEXIO, VEOS and AURELION support ECU and hardware-in-the-loop execution with virtual sensors.",
+   "quote": "ECU and HIL execution with virtual sensors",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    71
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "dSPACE SCALEXIO",
+     "kind": "tool"
+    },
+    {
+     "name": "dSPACE VEOS",
+     "kind": "tool"
+    },
+    {
+     "name": "dSPACE AURELION",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t148",
+    "t119",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "dSPACE SCALEXIO, VEOS and AURELION provide a strong route from software-in-the-loop to hardware-in-the-loop testing.",
+   "quote": "a strong route from SIL to HIL",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    71
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "dSPACE SCALEXIO",
+     "kind": "tool"
+    },
+    {
+     "name": "dSPACE VEOS",
+     "kind": "tool"
+    },
+    {
+     "name": "dSPACE AURELION",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t147",
+    "t148"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor injection for dSPACE SCALEXIO, VEOS and AURELION is sensor- and ECU-specific: camera video, radar targets, Ethernet streams and raw stimulation are materially different engineering problems.",
+   "quote": "sensor injection is sensor- and ECU-specific: camera video, radar targets, Ethernet streams and raw stimulation are materially different engineering problems.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    71
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "dSPACE SCALEXIO",
+     "kind": "tool"
+    },
+    {
+     "name": "dSPACE VEOS",
+     "kind": "tool"
+    },
+    {
+     "name": "dSPACE AURELION",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t149",
+    "t148",
+    "t119",
+    "t89",
+    "t94"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A full-system price for dSPACE SCALEXIO, VEOS and AURELION was not found.",
+   "quote": "Full-system price not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    71
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "dSPACE SCALEXIO",
+     "kind": "tool"
+    },
+    {
+     "name": "dSPACE VEOS",
+     "kind": "tool"
+    },
+    {
+     "name": "dSPACE AURELION",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t334",
+    "t328"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NI VeriStand with PXI and CompactRIO supports real-time testing, plant models, logging and hardware-in-the-loop I/O.",
+   "quote": "Real-time testing, plant models, logging and HIL I/O",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    19
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NI VeriStand",
+     "kind": "tool"
+    },
+    {
+     "name": "NI PXI",
+     "kind": "product"
+    },
+    {
+     "name": "NI CompactRIO",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t153",
+    "t148",
+    "t121",
+    "t328"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "One NI PXIe-8842 controller is publicly listed at around USD 5,200; this price covers only a controller, not a complete test bench.",
+   "quote": "one PXIe-8842 controller is publicly listed around USD 5,200, but that is only a controller, not a bench.",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    19
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NI PXIe-8842",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t334",
+    "t328"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Speedgoat and Simulink Real-Time provide turnkey real-time targets tightly coupled to Simulink.",
+   "quote": "Turnkey real-time targets tightly coupled to Simulink",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    128
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Speedgoat",
+     "kind": "company"
+    },
+    {
+     "name": "Simulink Real-Time",
+     "kind": "tool"
+    },
+    {
+     "name": "Simulink",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t153",
+    "t328"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The Speedgoat Pulse platform was announced on 15 May 2025.",
+   "quote": "the Pulse platform was announced on 15 May 2025",
+   "kind": "event",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    128
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Speedgoat Pulse",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t328"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A price for Speedgoat and Simulink Real-Time was not found.",
+   "quote": "price not found.",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    128
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Speedgoat",
+     "kind": "company"
+    },
+    {
+     "name": "Simulink Real-Time",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t334"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "OPAL-RT offers 4DV-SIM for autonomous and off-highway vehicles.",
+   "quote": "4DV-SIM for autonomous and off-highway vehicles",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    129,
+    130
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "OPAL-RT",
+     "kind": "company"
+    },
+    {
+     "name": "4DV-SIM",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t328",
+    "t1"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Named users of OPAL-RT 4DV-SIM include Safran, Valeo, Michelin and Milrem Robotics.",
+   "quote": "named users include Safran, Valeo, Michelin and Milrem Robotics",
+   "kind": "example",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    129,
+    130
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "4DV-SIM",
+     "kind": "tool"
+    },
+    {
+     "name": "Safran",
+     "kind": "company"
+    },
+    {
+     "name": "Valeo",
+     "kind": "company"
+    },
+    {
+     "name": "Michelin",
+     "kind": "company"
+    },
+    {
+     "name": "Milrem Robotics",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t328"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "OPAL-RT offers OP5707XG2 CPU/FPGA real-time systems.",
+   "quote": "OP5707XG2 CPU/FPGA real-time systems",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    129,
+    130
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "OPAL-RT",
+     "kind": "company"
+    },
+    {
+     "name": "OP5707XG2",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t336",
+    "t153",
+    "t328"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Pricing for the listed OPAL-RT offerings, 4DV-SIM and OP5707XG2, is quote only.",
+   "quote": "and OP5707XG2 CPU/FPGA real-time systems; quote only.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    129,
+    130
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "OPAL-RT",
+     "kind": "company"
+    },
+    {
+     "name": "4DV-SIM",
+     "kind": "tool"
+    },
+    {
+     "name": "OP5707XG2",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t334"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "IPG Automotive supports off-highway model-in-the-loop, software-in-the-loop and hardware-in-the-loop testing, as well as vehicle-in-the-loop testing with real tractors.",
+   "quote": "Off-highway MIL, SIL and HIL and vehicle-in-the-loop with real tractors.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    6
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "IPG Automotive",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t146",
+    "t147",
+    "t148",
+    "t151"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Mevea HIL is listed as a hardware-in-the-loop offering.",
+   "quote": "Mevea HIL, Vortex HIL, Applied Intuition HIL.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    102,
+    109,
+    51
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Mevea HIL",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t148",
+    "t328"
+   ],
+   "importance": 1
+  },
+  {
+   "text": "Vortex HIL is listed as a hardware-in-the-loop offering.",
+   "quote": "Mevea HIL, Vortex HIL, Applied Intuition HIL.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    102,
+    109,
+    51
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Vortex HIL",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t148",
+    "t328"
+   ],
+   "importance": 1
+  },
+  {
+   "text": "Applied Intuition HIL is listed as a hardware-in-the-loop offering.",
+   "quote": "Mevea HIL, Vortex HIL, Applied Intuition HIL.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    102,
+    109,
+    51
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Applied Intuition HIL",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t148",
+    "t328"
+   ],
+   "importance": 1
+  },
+  {
+   "text": "RoadRunner and Automated Driving Toolbox reconstruct scenarios from camera, lidar, GPS and IMU logs and replay saved scenarios.",
+   "quote": "Reconstructs scenarios from camera, lidar, GPS and IMU logs and replays saved scenarios",
+   "kind": "method",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    118
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "RoadRunner",
+     "kind": "tool"
+    },
+    {
+     "name": "Automated Driving Toolbox",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t155",
+    "t141",
+    "t89",
+    "t92",
+    "t98"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The quality of RoadRunner and Automated Driving Toolbox reconstruction and replay is bounded by tracking and map reconstruction accuracy.",
+   "quote": "quality is bounded by tracking and map reconstruction accuracy.",
+   "kind": "risk",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    118
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "RoadRunner",
+     "kind": "tool"
+    },
+    {
+     "name": "Automated Driving Toolbox",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t155",
+    "t86",
+    "t133"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Applied Intuition and Foretellix vendor data platforms ingest logs, derive scenarios and manage regression testing.",
+   "quote": "**Vendor data platforms (Applied Intuition, Foretellix)** ingest logs, derive scenarios and manage regression",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    51,
+    122
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Applied Intuition",
+     "kind": "company"
+    },
+    {
+     "name": "Foretellix",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t121",
+    "t141",
+    "t161"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Raw-data compatibility of Applied Intuition and Foretellix data platforms must be checked against the eventual sensors.",
+   "quote": "raw-data compatibility must be checked against the eventual sensors.",
+   "kind": "recommendation",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    51,
+    122
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Applied Intuition",
+     "kind": "company"
+    },
+    {
+     "name": "Foretellix",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t84",
+    "t121",
+    "t320"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO/TS 21815-2:2021 defines the J1939 interface between a collision-avoidance device and the machine, including propulsion set-points for braking, throttle and speed, and motion inhibit.",
+   "quote": "defines the J1939 interface, for example propulsion set-points (braking, throttle, speed) and motion inhibit",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    27
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    },
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t120",
+    "t23"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A hardware-in-the-loop bench can emulate the ISO/TS 21815-2:2021 J1939 interface between the collision-avoidance device and the machine.",
+   "quote": "that a HIL bench can emulate between the collision-avoidance device and the machine.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    27
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    },
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t148",
+    "t120",
+    "t280",
+    "t23"
+   ],
+   "importance": 2
+  }
+ ]
+}

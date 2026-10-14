@@ -1,0 +1,115 @@
+{
+ "key": "t321",
+ "hash": "52a3f9023c81fac6",
+ "synopsis": "Complete platforms aim to cover scenarios, environments, sensors, vehicle motion and test execution, but usually still require separate machine models, controllers, asset pipelines or hardware benches; “complete” is relative [f15871, f8344, f15872]. The market is modular: road-vehicle tools are strong in sensors and scenarios, heavy-machine tools in terrain and hydraulics, and no single tool has public evidence of validating earth-moving-machine automatic braking across many site types and all-weather sensing [f13604, f194, f13071]. Off-road evidence includes MathWorks’ shipped excavator, backhoe and haul-truck examples in R2026b, the September 2025 Applied Intuition–Komatsu partnership, and Duality Falcon’s military applications, but independent heavy-machine automatic-braking validation was not found [f15878, f15882, f15889, f15921]. Integrated commercial stacks are considered faster for on-road-like elements but still need heavy-machine content; no time-to-first-useful-result benchmark or independent evidence of a universal integrated-versus-modular winner was found [f8750, f8749, f9359]. Nearly every commercial platform requires vendor quotations for budgeting; Falcon’s USD 20/month education license is a limited public-price exception, with its commercial price unavailable [f15922, f15888]. AURELION 26.2 was released on 15 July 2026, but listed AURELION/SIMPHERA evidence remains on-road only, and frame rates were not found for AURELION, CarMaker, DRIVE Sim/Omniverse, CARLA or MAVS [f8451, f8997, f4957].",
+ "relations": [
+  {
+   "a": "f194",
+   "b": "f13071",
+   "type": "same",
+   "note": "Both report no publicly evidenced end-to-end heavy-machine braking validation across sites and weather."
+  },
+  {
+   "a": "f8344",
+   "b": "f15872",
+   "type": "same",
+   "note": "Complete platforms still depend on separate models, controllers, assets or hardware."
+  },
+  {
+   "a": "f8371",
+   "b": "f15873",
+   "type": "same",
+   "note": "Both define demonstration through documented use, studies, government programs or shipped examples."
+  },
+  {
+   "a": "f8372",
+   "b": "f15874",
+   "type": "same",
+   "note": "Claimed evidence means vendor statements without documented demonstration."
+  },
+  {
+   "a": "f8984",
+   "b": "f15890",
+   "type": "same",
+   "note": "Both classify VTD and VTDx evidence as on-road only."
+  },
+  {
+   "a": "f8373",
+   "b": "f15877",
+   "type": "same",
+   "note": "Both identify the MathWorks combination as commercial; glossary adds licensing terms."
+  },
+  {
+   "a": "f8392",
+   "b": "f15878",
+   "type": "elaborates",
+   "note": "Glossary names shipped heavy-machine examples and their R2026b release."
+  },
+  {
+   "a": "f15879",
+   "b": "f8392",
+   "type": "supports",
+   "note": "Volvo CE's excavator simulator supplies additional evidence of MathWorks off-road use."
+  },
+  {
+   "a": "f13604",
+   "b": "f8750",
+   "type": "supports",
+   "note": "Uneven road-versus-machine strengths explain why integrated stacks still need heavy-machine content."
+  },
+  {
+   "a": "f8749",
+   "b": "f8750",
+   "type": "contradicts",
+   "note": "Claimed faster results lack a time-to-first-useful-result benchmark."
+  },
+  {
+   "a": "f9359",
+   "b": "f15872",
+   "type": "elaborates",
+   "note": "Architecture trade-offs qualify completeness and explain the value of replaceable specialist components."
+  },
+  {
+   "a": "f8260",
+   "b": "f15859",
+   "type": "elaborates",
+   "note": "Glossary organizes the required market-research scope into eight tool categories."
+  },
+  {
+   "a": "f8347",
+   "b": "f15891",
+   "type": "elaborates",
+   "note": "Glossary dates VTD's ownership transfer from Hexagon to Cadence to February 2026."
+  },
+  {
+   "a": "f15880",
+   "b": "f15922",
+   "type": "supports",
+   "note": "MathWorks' quote-only public pricing supports quotation-based budgeting."
+  },
+  {
+   "a": "f15886",
+   "b": "f15920",
+   "type": "supports",
+   "note": "Cognata's vendor use-case claims exemplify claimed construction and mining positioning."
+  },
+  {
+   "a": "f15889",
+   "b": "f15920",
+   "type": "elaborates",
+   "note": "Demonstrated military off-road use does not establish construction or mining suitability."
+  },
+  {
+   "a": "f15882",
+   "b": "f8396",
+   "type": "elaborates",
+   "note": "Komatsu partnership adds demonstrated off-road use to Applied Intuition's broad tool-chain offering."
+  },
+  {
+   "a": "f15921",
+   "b": "f194",
+   "type": "supports",
+   "note": "Missing independent braking validation reinforces the broader end-to-end evidence gap."
+  }
+ ]
+}

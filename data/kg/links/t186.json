@@ -1,0 +1,115 @@
+{
+ "key": "t186",
+ "hash": "f6b5c1551fef7a9f",
+ "synopsis": "Across the synthesis, machine-motion chapter and glossary, a fixed TTC threshold is judged a weak primary brake trigger at work-site speeds; ISO 21815-3:2023 instead uses stopping-distance and risk-zone logic, retaining TTC as an input or secondary layer for faster haul traffic [f148, f6202, f13894]. TTC becomes huge or unstable near zero closing speed, is undefined for a stationary machine starting up, and can miss articulation or track counter-rotation hazards; however, no head-to-head off-road comparison of distance-and-zone logic against TTC alone was found [f6214, f6219, f6218, f6224]. The proposed trigger distance combines detection/confirmation distance, travel during machine-action delay, stopping distance and safety clearance; braking zones must cover that distance, warning zones must add operator-reaction travel, and cited reaction assumptions range from 0.5–2.5 s [f13891, f13901, f13895]. Road benchmarks include the 2024 NHTSA NCAP setup with 12–40 m headways and 0.3–0.5 g target deceleration, while a 2026 simulation round robin used a 1.0 s TTC trigger explicitly as a research definition, not an earth-moving threshold [f2630, f6194]. No standard or peer-reviewed study supplies tuned off-road TTC or deceleration values, so program-specific models and tests must establish them; validation also needs recorded machine and actuator state to reconstruct TTC, zone entry and braking [f13885, f5663].",
+ "relations": [
+  {
+   "a": "f148",
+   "b": "f5917",
+   "type": "same",
+   "note": "Both reject fixed TTC as a strong primary trigger at work-site speeds."
+  },
+  {
+   "a": "f149",
+   "b": "f5922",
+   "type": "same",
+   "note": "Both favor stopping-distance and risk-zone formulation with TTC as one input."
+  },
+  {
+   "a": "f5916",
+   "b": "f13885",
+   "type": "same",
+   "note": "Both identify missing published tuned off-road TTC and deceleration values."
+  },
+  {
+   "a": "f5663",
+   "b": "f13000",
+   "type": "same",
+   "note": "Missing machine and actuator state prevents reconstructing TTC and braking."
+  },
+  {
+   "a": "f2540",
+   "b": "f2630",
+   "type": "same",
+   "note": "Same NCAP headway and target-deceleration setup; latter identifies the 2024 decision."
+  },
+  {
+   "a": "f2841",
+   "b": "f2630",
+   "type": "same",
+   "note": "Both specify NCAP headways of 12–40 m."
+  },
+  {
+   "a": "f5918",
+   "b": "f13869",
+   "type": "same",
+   "note": "Near-zero closing speed makes TTC huge or unstable despite immediate proximity."
+  },
+  {
+   "a": "f5918",
+   "b": "f6214",
+   "type": "same",
+   "note": "Both describe TTC instability near zero relative speed despite centimeter-scale separation."
+  },
+  {
+   "a": "f5921",
+   "b": "f11474",
+   "type": "same",
+   "note": "TTC provides no answer for a stationary machine about to start moving."
+  },
+  {
+   "a": "f5921",
+   "b": "f6219",
+   "type": "same",
+   "note": "Both identify undefined TTC for stationary-machine start-up hazards."
+  },
+  {
+   "a": "f5919",
+   "b": "f6216",
+   "type": "same",
+   "note": "Equal TTC can mask radically different stopping distances due to grade or surface."
+  },
+  {
+   "a": "f5919",
+   "b": "f13870",
+   "type": "same",
+   "note": "Equal TTC does not imply equal stopping distance on grade or mud."
+  },
+  {
+   "a": "f6114",
+   "b": "f13891",
+   "type": "same",
+   "note": "Both express the ISO-structured trigger distance as four additive components."
+  },
+  {
+   "a": "f6957",
+   "b": "f13922",
+   "type": "same",
+   "note": "Both list the same collision-system tuning decision variables."
+  },
+  {
+   "a": "f6218",
+   "b": "f13871",
+   "type": "same",
+   "note": "Articulation and track counter-rotation can cause collisions without forward closing speed."
+  },
+  {
+   "a": "f5917",
+   "b": "f13894",
+   "type": "elaborates",
+   "note": "Adds preferred distance-and-zone architecture and retained TTC roles."
+  },
+  {
+   "a": "f6222",
+   "b": "f6224",
+   "type": "contradicts",
+   "note": "Claimed greater robustness lacks a found head-to-head off-road comparison."
+  },
+  {
+   "a": "f13895",
+   "b": "f3505",
+   "type": "supports",
+   "note": "Reaction-time variability illustrates uncertainty hidden by a single fixed TTC threshold."
+  }
+ ]
+}

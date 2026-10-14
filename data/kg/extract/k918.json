@@ -1,0 +1,280 @@
+{
+ "chunkId": "k918",
+ "hash": "61c099945885c8dd",
+ "facts": [
+  {
+   "text": "Schedule risk analysis assigns each task a range of possible durations; Monte Carlo schedule simulation runs the whole plan thousands of times using random draws from those ranges to estimate the likelihood of each finish date.",
+   "quote": "Schedule risk analysis gives every task a range of possible durations instead of one number, and a Monte Carlo schedule simulation runs the whole plan thousands of times with random draws from those ranges to find how likely each finish date is.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Monte Carlo schedule simulation",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t346"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A schedule built from single task durations produces a single end date that is almost always optimistic.",
+   "quote": "A plan built from single durations gives a single end date that is almost always optimistic.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t346",
+    "t345"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Schedule risk analysis uses low, likely and high estimates for each task duration and includes named risk events that may or may not occur.",
+   "quote": "Schedule risk analysis replaces each duration with a low, likely and high estimate, and adds named risk events that may or may not happen.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t346",
+    "t347"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Monte Carlo schedule simulation follows the task dependency network in each run and produces a curve showing the share of runs finished by each date. The 50% point is the P50 date, the 80% point is the P80 date, and the share finished by a fixed deadline is the probability of meeting that deadline.",
+   "quote": "Reading 50% off the curve gives the P50 date, 80% the P80 date, and the share finished by the fixed deadline gives the probability of meeting it.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Monte Carlo schedule simulation",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t346",
+    "t345",
+    "t343"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A schedule-risk tornado chart ranks tasks by how much their duration variation changes the end date, indicating where to allocate buffer or effort.",
+   "quote": "A tornado chart, which lists tasks by how much their variation moves the end date, shows where to spend buffer or effort [Chapter 12].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12
+   ],
+   "entities": [
+    {
+     "name": "Tornado chart",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t346",
+    "t344",
+    "t260"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Schedule risk analysis is a best practice in the United States Government Accountability Office's Schedule Assessment Guide.",
+   "quote": "The method is a best practice in the United States Government Accountability Office's Schedule Assessment Guide",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "United States Government Accountability Office",
+     "kind": "organization"
+    },
+    {
+     "name": "Schedule Assessment Guide",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t346",
+    "t353"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "AACE International's recommended practice 57R-09 describes schedule risk analysis.",
+   "quote": "is described in AACE International's recommended practice 57R-09.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "AACE International",
+     "kind": "organization"
+    },
+    {
+     "name": "AACE International recommended practice 57R-09",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t346",
+    "t353"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NASA requires joint confidence levels for its programs.",
+   "quote": "NASA requires joint confidence levels for its programs",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NASA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t346"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Evidence of the effect of NASA's requirement for joint confidence levels was not found.",
+   "quote": "NASA requires joint confidence levels for its programs, though evidence of the effect of that requirement was not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NASA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t346",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "One experiment found that presenting distributions as quantile dotplots or cumulative curves improved decisions.",
+   "quote": "One experiment found that showing distributions as quantile dotplots or cumulative curves improved decisions [Chapter 12].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12
+   ],
+   "entities": [],
+   "terms": [
+    "t346",
+    "t356"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet warns that the popular \"cone of uncertainty\" is not borne out by project data.",
+   "quote": "The booklet warns against a popular idea: the \"cone of uncertainty\" is not borne out by project data [Chapter 12].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12
+   ],
+   "entities": [
+    {
+     "name": "Cone of uncertainty",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t346",
+    "t345"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Monte Carlo schedule simulation uses the same Monte Carlo technique as the booklet's test-scenario sampling, but samples task duration rather than machine speed or weather.",
+   "quote": "This is the same Monte Carlo technique used elsewhere in the booklet to sample test scenarios; here the random variable is task duration rather than machine speed or weather.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Monte Carlo methods",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t346",
+    "t208"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The collision-mitigation program schedule should model possible prototype delay as an explicit assumption with a signpost and a hedge.",
+   "quote": "The booklet's schedule should carry the prototype's possible slip as an explicit modeled assumption with a signpost and a hedge",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12
+   ],
+   "entities": [],
+   "terms": [
+    "t346",
+    "t347",
+    "t42"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The collision-mitigation program schedule should show the probability of meeting the deadline rather than only a planned date, because finance or executive reviewers will ask for that probability.",
+   "quote": "should show the probability of the deadline rather than a planned date, because that is what a finance or executive reviewer will ask for [Chapter 12].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12
+   ],
+   "entities": [],
+   "terms": [
+    "t346",
+    "t361"
+   ],
+   "importance": 3
+  }
+ ]
+}

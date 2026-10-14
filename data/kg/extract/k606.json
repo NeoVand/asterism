@@ -1,0 +1,212 @@
+{
+ "chunkId": "k606",
+ "hash": "75a86298bf394c2d",
+ "facts": [
+  {
+   "text": "The sensor freeze is the milestone at which sensor types, numbers and mounting positions are fixed; the prototype freeze is the milestone at which the first representative hardware and software are fixed.",
+   "quote": "The sensor freeze is the project milestone at which the sensor types, numbers and mounting positions are fixed, and the prototype freeze is the milestone at which the first representative hardware and software are fixed",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t42"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Before sensor freeze, the collision mitigation program's sensor selection and mounting positions on each machine are unknown; the options include cameras, radar, lidar, ultrasonic sensors or a mix.",
+   "quote": "Until the sensors are frozen, nobody knows whether the system will use cameras, radar, lidar, ultrasonic sensors or a mix, or where on each machine they will sit",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t42",
+    "t84",
+    "t100"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The representative prototype is due in mid-2027 and is the first hardware and software built the way the product will be built.",
+   "quote": "The prototype, due in mid-2027, is the first hardware and software built the way the product will be built.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t42"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Before freeze, the collision mitigation program can build work that does not depend on sensor physics: hazard analysis, scenario catalog, acceptance metrics, safety-case structure, simulation architecture and the data pipeline on the existing fleet.",
+   "quote": "Before it, a program can build everything that does not depend on sensor physics: hazard analysis, scenario catalog, acceptance metrics, safety-case structure, simulation architecture and the data pipeline on the existing fleet",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    2
+   ],
+   "entities": [],
+   "terms": [
+    "t42",
+    "t47",
+    "t142",
+    "t67",
+    "t320"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "After freeze, sensor-specific work starts: matching simulated sensors to real sensors, bench testing with the real controller and choosing test targets that look right to the chosen sensor.",
+   "quote": "After it, the sensor-specific work starts: matching simulated sensors to real ones, bench testing with the real controller, choosing test targets that look right to the chosen sensor",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t42",
+    "t160",
+    "t148",
+    "t159"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A sensor change in 2027 invalidates sensor-model correlation, bench stimulation assumptions, detection-range evidence, mounting analysis and parts of the argument for reusing evidence across machine models.",
+   "quote": "A sensor change in 2027 invalidates the sensor-model correlation, the bench stimulation assumptions, the detection-range evidence, the mounting analysis and parts of the case for reusing evidence across models",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t42",
+    "t160",
+    "t193",
+    "t100",
+    "t76"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Several ISO parts were due to change in late 2026.",
+   "quote": "several ISO parts were due to change in late 2026",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t271",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The collision mitigation program plan should re-baseline on the ISO editions actually published.",
+   "quote": "the plan should re-baseline on the editions actually published",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t271",
+    "t342"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor and prototype freeze dates set the collision mitigation program's critical path.",
+   "quote": "The freeze dates set the critical path.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t42",
+    "t344"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The collision mitigation program should build its architecture sensor-interface-neutral but not sensor-physics-neutral, allowing final sensor models to be inserted as replaceable modules.",
+   "quote": "build the architecture sensor-interface-neutral but not sensor-physics-neutral, so final sensor models drop in as replaceable modules",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    2
+   ],
+   "entities": [],
+   "terms": [
+    "t42",
+    "t320",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The collision mitigation program should never claim a validated sensor digital twin before hardware and mounting are frozen and correlated.",
+   "quote": "never to claim a validated sensor digital twin before hardware and mounting are frozen and correlated",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    2
+   ],
+   "entities": [],
+   "terms": [
+    "t129",
+    "t42",
+    "t160",
+    "t100",
+    "t234"
+   ],
+   "importance": 3
+  }
+ ]
+}

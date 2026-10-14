@@ -1,0 +1,115 @@
+{
+ "key": "t261",
+ "hash": "e60e39618b3f48a5",
+ "synopsis": "The corpus recommends building a measured, independently reviewed credibility envelope before the prototype arrives, and substituting virtual for physical evidence only within that envelope [f71, f10466, f72, f10467]. Across credibility frameworks, this requires a defined use, risk-scaled effort, verification, physical validation, quantified uncertainty and independent review; physical tests anchor the model and confirm boundaries and influential changes [f186, f7536]. Validation does not automatically transfer across sites, weather, machine models or sensor positions: extensions require similarity arguments plus bridging evidence, while replay proves only conditions actually recorded [f614, f7569, f95, f5241]. Neural reconstruction illustrates the extrapolation risk: Para-Lane (2025) reports PSNR falling from 22.99 to 17.05 dB between recorded and adjacent lanes, while MV² (August 2026) reports 29.13 dB at drone height versus 10.36 dB from a car [f3707, f3709]. The planning gap is substantial: the organization reviewed lacks a documented credibility assessment, defined use envelope and validation against reality, and published operating limits were not found for several commercial precedents [f10414, f1656, f1660, f1666].",
+ "relations": [
+  {
+   "a": "f71",
+   "b": "f10466",
+   "type": "same",
+   "note": "Both recommend establishing the credibility envelope before prototype arrival."
+  },
+  {
+   "a": "f72",
+   "b": "f10467",
+   "type": "same",
+   "note": "Both restrict substitution of physical evidence to the established credibility envelope."
+  },
+  {
+   "a": "f72",
+   "b": "f2563",
+   "type": "elaborates",
+   "note": "Applies the substitution restriction specifically to machine variants."
+  },
+  {
+   "a": "f186",
+   "b": "f7525",
+   "type": "same",
+   "note": "Restate the same core simulation-credibility requirements across frameworks."
+  },
+  {
+   "a": "f6929",
+   "b": "f9745",
+   "type": "same",
+   "note": "Both state that NATM credibility assessment defines the virtual tool's use envelope."
+  },
+  {
+   "a": "f11325",
+   "b": "f186",
+   "type": "elaborates",
+   "note": "Details the glossary's shared requirements with verification, risk scaling and independent review."
+  },
+  {
+   "a": "f95",
+   "b": "f5240",
+   "type": "same",
+   "note": "Replay evidence is limited to recorded sensor types and mounting positions."
+  },
+  {
+   "a": "f5241",
+   "b": "f95",
+   "type": "elaborates",
+   "note": "Explicitly excludes new environments and failures absent from recorded logs."
+  },
+  {
+   "a": "f3707",
+   "b": "f3706",
+   "type": "supports",
+   "note": "Adjacent-lane PSNR loss evidences degradation away from the recorded path."
+  },
+  {
+   "a": "f3709",
+   "b": "f3706",
+   "type": "supports",
+   "note": "Drone-to-car PSNR loss evidences severe degradation with viewpoint height changes."
+  },
+  {
+   "a": "f3708",
+   "b": "f3706",
+   "type": "supports",
+   "note": "Measured translation-shift loss supports reconstruction's limited viewpoint envelope."
+  },
+  {
+   "a": "f7569",
+   "b": "f614",
+   "type": "elaborates",
+   "note": "Explains that machine and sensor transfers require similarity arguments and bridging evidence."
+  },
+  {
+   "a": "f2918",
+   "b": "f7536",
+   "type": "supports",
+   "note": "Sensor-mount changes illustrate why influential changes require physical confirmation."
+  },
+  {
+   "a": "f9376",
+   "b": "f7536",
+   "type": "same",
+   "note": "Both assign physical testing to model correlation and boundary confirmation."
+  },
+  {
+   "a": "f6841",
+   "b": "f6853",
+   "type": "elaborates",
+   "note": "Limits search-supported claims by excluding failure modes outside simulation scope."
+  },
+  {
+   "a": "f7556",
+   "b": "f4488",
+   "type": "supports",
+   "note": "Weather agreement requires matched conditions, supporting caution about unsupported harsh weather."
+  },
+  {
+   "a": "f10414",
+   "b": "f10466",
+   "type": "depends",
+   "note": "Missing credibility foundations motivate building a measured, independently reviewed envelope."
+  },
+  {
+   "a": "f746",
+   "b": "f71",
+   "type": "elaborates",
+   "note": "Prototype correlation supplies bounds and approval for the planned virtual-test envelope."
+  }
+ ]
+}

@@ -1,0 +1,285 @@
+{
+ "chunkId": "k702",
+ "hash": "5f10d0cfa963019c",
+ "facts": [
+  {
+   "text": "A game engine is the software core of a video game that draws three-dimensional worlds, moves objects with simple physics and runs in real time; many sensor simulators are built on a game engine.",
+   "quote": "A game engine is the software core of a video game, which draws three-dimensional worlds, moves objects with simple physics and runs in real time, and many sensor simulators are built on one.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t135",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Writing software that renders a realistic world at 30 or 60 frames per second is enormously expensive, which led the games industry to create reusable engines.",
+   "quote": "Writing a program that renders a realistic world at 30 or 60 frames per second is enormously expensive, so the games industry created reusable engines.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t135"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Unreal Engine and Unity are the two best-known game engines.",
+   "quote": "Unreal Engine and Unity are the two best known.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Unreal Engine",
+     "kind": "tool"
+    },
+    {
+     "name": "Unity",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t135"
+   ],
+   "importance": 1
+  },
+  {
+   "text": "A simulator vendor or research team can add machine models, sensor models and a scenario interface to a game engine to obtain a visual world without writing a renderer.",
+   "quote": "A simulator vendor or research team can take an engine, add machine models, sensor models and a scenario interface, and have a visual world without writing a renderer.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t135",
+    "t130",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet's tool survey reports that an open-source driving simulator moved to Unreal Engine 5.5 in December 2024 and added a mining earth-mover asset.",
+   "quote": "an open-source driving simulator moved to Unreal Engine 5.5 in December 2024 and added a mining earth-mover asset",
+   "kind": "event",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Unreal Engine",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t135",
+    "t322",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet's tool survey reports that an off-road autonomy library ships Unreal scenes.",
+   "quote": "an off-road autonomy library ships Unreal scenes",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Unreal Engine",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t135",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet's tool survey reports that a 2026 off-road digital-twin simulator and a construction excavator simulator are built on Unity.",
+   "quote": "a 2026 off-road digital-twin simulator and a construction excavator simulator are built on Unity",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Unity",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t135",
+    "t129",
+    "t5"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet's tool survey reports that a heavy-machine physics engine offers plugins for both Unreal Engine and Unity.",
+   "quote": "a heavy-machine physics engine offers plugins for both",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Unreal Engine",
+     "kind": "tool"
+    },
+    {
+     "name": "Unity",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t135",
+    "t324"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A game engine's built-in physics is designed to look right, rather than to be measured against a real machine.",
+   "quote": "an engine's built-in physics is designed to look right, not to be measured against a real machine",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t135",
+    "t125",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Deformable soil, hydraulics and tire or track behavior in a game-engine-based simulator come from separate physics tools coupled to the engine.",
+   "quote": "deformable soil, hydraulics and tire or track behavior come from separate physics tools coupled to the engine",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t135",
+    "t181",
+    "t180",
+    "t324"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Game-quality visuals are not sensor physics: radar, lidar and ultrasonic responses require wavelength-specific materials that a game engine's visual textures do not carry.",
+   "quote": "game-quality visuals are not sensor physics: radar, lidar and ultrasonic responses need wavelength-specific materials that an engine's visual textures do not carry",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t135",
+    "t136",
+    "t94",
+    "t92",
+    "t95"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "One simulator's current build requires a recent graphics card with at least 16 GB of video memory and 130 GB of disk space, illustrating the hardware demands imposed by game engines.",
+   "quote": "Engines also set hardware demands; one simulator's current build requires a recent graphics card with at least 16 GB of video memory and 130 GB of disk space",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t135",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Game engines make virtual job sites affordable and fast, which is needed for the program's four-month window.",
+   "quote": "Game engines make virtual job sites affordable and fast, which the four-month window needs",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t135",
+    "t130",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Game-engine realism must never be mistaken for validated sensor or braking physics in the virtual-validation program.",
+   "quote": "their realism must never be mistaken for validated sensor or braking physics",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t135",
+    "t234",
+    "t267",
+    "t182"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,399 @@
+{
+ "chunkId": "k687",
+ "hash": "debee802a1d1a6b8",
+ "facts": [
+  {
+   "text": "Data logging records what a machine's sensors saw, what the machine did and what the system decided, in enough detail to replay and judge the whole event later.",
+   "quote": "Data logging is recording what the machine's sensors saw, what the machine did and what the system decided, in enough detail that the whole event can be replayed and judged later.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Validation logging should record enough information to reproduce the input at the intended test boundary and enough external information to score the result independently, including when new software is run on recorded sensor input.",
+   "quote": "record enough to reproduce the input at the boundary you intend to test, plus enough external information to score the result independently [Chapter 7]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t155",
+    "t105"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Raw sensor data include camera frames before lossy compression, lidar packets with timing and intensity, and the lowest-level radar data the supplier exposes; processed data include detections, tracks, object lists and warnings.",
+   "quote": "Raw data are what the sensor produced: camera frames before lossy compression, lidar packets with timing and intensity, the lowest-level radar data the supplier exposes.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t89",
+    "t92",
+    "t94",
+    "t86"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Processed sensor data are small and convenient, but recorded processed data can test only software downstream of those data.",
+   "quote": "Processed data are small and convenient, but they can only test the software downstream of them.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t156"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Recording only object lists prevents testing a new perception algorithm, sensor model or mounting position on the recording.",
+   "quote": "If only object lists are recorded, a new perception algorithm, sensor model or mounting position can never be tested on the recording [Chapter 7].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t156",
+    "t85",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The minimum validation recording set includes sensor input at the earliest replayable interface for every existing and candidate sensor, a common time base with evidence of synchronization quality, and all geometry and calibration.",
+   "quote": "sensor input at the earliest replayable interface, for every existing and candidate sensor; a common time base with evidence of synchronization quality; all geometry and calibration",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t101",
+    "t100",
+    "t155"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The minimum validation recording set includes machine state from the network, operator inputs, every warning shown, and every system output needed to reconstruct behavior, including brake request and measured brake response.",
+   "quote": "machine state from the network; operator inputs and every warning shown; every system output needed to reconstruct behavior, including brake request and measured brake response",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t120",
+    "t37",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The minimum validation recording set includes machine pose and independent reference streams for ground truth.",
+   "quote": "machine pose and independent reference streams for ground truth",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t105"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Validation logs should include measurable environment context because a human tag of “rain” cannot substitute for measurement when weather sensitivity is a safety claim.",
+   "quote": "measurable environment context, since a human tag of \"rain\" cannot substitute for measurement once weather sensitivity is a safety claim",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The minimum validation recording set includes exact software and hardware provenance, including firmware and configuration versions, and data-loss counters to prevent damaged logs being mistaken for field behavior.",
+   "quote": "exact software and hardware provenance, including firmware and configuration versions; and data-loss counters, so a damaged log is not mistaken for field behavior.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t231",
+    "t162"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Missing or stale calibration, unsynchronized clocks, unrecorded packet loss and lossy compression are validation logging mistakes that destroy later uses; lossy compression means recorded data are no longer what the controller saw.",
+   "quote": "missing or stale calibration; unsynchronized clocks; lossy compression, so the data are no longer what the controller saw; unrecorded packet loss",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t100",
+    "t101"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Event-triggered-only recording or recording almost exclusively staged hazards destroys the denominator for false alarms per hour and biases detection toward events the old system noticed.",
+   "quote": "event-triggered recording only, or almost exclusively staged hazards, which destroys the denominator for false alarms per hour and biases detection toward events the old system noticed",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t213",
+    "t32",
+    "t221"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Selecting recordings toward good weather and day shifts is a validation logging mistake that destroys a later use of the data.",
+   "quote": "Each common mistake destroys a specific later use [Chapter 7]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t45",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Missing operator and display data in validation logs prevents judging whether a warning was useful.",
+   "quote": "missing operator and display data, so nobody can tell whether a warning was useful",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t37",
+    "t36"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Missing machine and actuator state in validation logs prevents reconstructing time to collision and braking.",
+   "quote": "missing machine and actuator state, so time to collision and braking cannot be reconstructed",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t186",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Missing software provenance, having no ground-truth plan, using the production detector to label itself, and failing to log attachment and body position are validation logging mistakes that destroy later uses of the data.",
+   "quote": "missing software provenance; no ground-truth plan, or using the production detector to label itself; not logging attachment and body position",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t231",
+    "t105",
+    "t106"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Treating frames as trials, having no “unknown truth” state, and discovering only at prototype arrival that the recorded format cannot be injected at the target interface are validation logging mistakes that destroy later uses of the data.",
+   "quote": "treating frames as trials; no \"unknown truth\" state; and discovering at prototype arrival that the recorded format cannot be injected at the target interface.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t209",
+    "t105",
+    "t149"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "One mining regime already demands 10 Hz intervention logs containing operator identity and firmware version, with tamper resistance; the passage does not identify the regime.",
+   "quote": "One mining regime already demands 10 Hz intervention logs with operator identity, firmware version and tamper resistance [Chapter 3].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t28",
+    "t275"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Recording on the existing warning fleet must start in October 2026 rather than waiting for prototype arrival.",
+   "quote": "Recording on the existing warning fleet must start now, in October 2026, not when the prototype arrives",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t41",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Replay of raw logs against independent ground truth is the established way to baseline the old warning system.",
+   "quote": "replay of raw logs against independent ground truth is the established way to baseline the old system",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t105",
+    "t221",
+    "t266"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Logs from the existing warning fleet are the one large source of off-road sensor recordings the manufacturer already owns.",
+   "quote": "those logs are the one large source of off-road sensor recordings the manufacturer already owns [Chapters 6, 7].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t41",
+    "t266"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A validation log missing one element of the minimum recording set cannot answer one later question.",
+   "quote": "A log missing one element on the list cannot answer one question later.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121"
+   ],
+   "importance": 2
+  }
+ ]
+}

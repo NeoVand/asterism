@@ -1,0 +1,115 @@
+{
+ "key": "t232",
+ "hash": "1550dcf7815d7645",
+ "synopsis": "Scenario-language choice determines whether thousands of concrete tests can be generated, varied and traced automatically; the booklet recommends an open, manufacturer-owned, domain-neutral, version-controlled catalogue using Scenic or an in-house YAML schema with an OpenODD-style taxonomy, exporting to OpenSCENARIO where required [f14493, f1606, f14491]. OpenSCENARIO XML 1.4.0 (2026) supports precise synchronized maneuvers, while DSL 2.2.0 (March 2026) supports abstract scenarios, parameter variation and performance indicators, but both retain road-traffic domain models [f13204, f13205, f13206]. OpenSCENARIO XML and OpenDRIVE have broad tool support, yet identified off-road gaps include deformable terrain, airborne particles, vegetation, heavy-machine manipulation and sensor degradation; extensions or a manufacturer domain model are therefore needed rather than abandoning OpenX [f8616, f14488, f7434]. Scenic 3 offers 3D geometry, occlusion-aware visibility and probabilistic placement without lanes, but is not an ISO or ASAM standard, leaving adopters responsible for requirements, rig and exchange-format mappings [f7174, f7177]. No single off-road scenario language covers the problem, and planning should not depend on an off-road standard arriving before mid-2027; existing EMESRT storyboards provide useful mining-hazard content but are not machine-readable [f7147, f7205, f7184].",
+ "relations": [
+  {
+   "a": "f6692",
+   "b": "f14488",
+   "type": "same",
+   "note": "Both list the same missing off-road scenario concepts."
+  },
+  {
+   "a": "f6695",
+   "b": "f14492",
+   "type": "same",
+   "note": "Both report no identified off-road standard arriving before mid-2027."
+  },
+  {
+   "a": "f6695",
+   "b": "f7206",
+   "type": "same",
+   "note": "Duplicate finding on the earliest plausible off-road standard arrival."
+  },
+  {
+   "a": "f14492",
+   "b": "f7206",
+   "type": "same",
+   "note": "Both report the same standard-development search gap."
+  },
+  {
+   "a": "f7196",
+   "b": "f7434",
+   "type": "same",
+   "note": "Both require extensions or manufacturer models without declaring OpenX unusable."
+  },
+  {
+   "a": "f8622",
+   "b": "f9185",
+   "type": "same",
+   "note": "Both identify Foretify's OpenSCENARIO DSL and external-simulator support."
+  },
+  {
+   "a": "f6757",
+   "b": "f7184",
+   "type": "elaborates",
+   "note": "Adds that non-machine-readable EMESRT storyboards provide useful mining-hazard content."
+  },
+  {
+   "a": "f7198",
+   "b": "f14491",
+   "type": "elaborates",
+   "note": "Adds manufacturer ownership and export to OpenSCENARIO for tool compatibility."
+  },
+  {
+   "a": "f13215",
+   "b": "f14491",
+   "type": "elaborates",
+   "note": "Adds an explicit OpenSCENARIO export strategy to the catalogue recommendation."
+  },
+  {
+   "a": "f13205",
+   "b": "f14486",
+   "type": "same",
+   "note": "Both describe DSL 2.2.0's abstract scenarios, parameter variation and performance indicators."
+  },
+  {
+   "a": "f7150",
+   "b": "f14485",
+   "type": "same",
+   "note": "Both rate road-network-oriented OpenSCENARIO XML poor to moderate for off-road use."
+  },
+  {
+   "a": "f7174",
+   "b": "f14489",
+   "type": "elaborates",
+   "note": "Adds Scenic 3's open-source status and 2023 peer-reviewed provenance."
+  },
+  {
+   "a": "f6694",
+   "b": "f14490",
+   "type": "same",
+   "note": "Both find Scenic suitable off-road while emphasizing its nonstandard status."
+  },
+  {
+   "a": "f8636",
+   "b": "f9210",
+   "type": "elaborates",
+   "note": "Explains that programmable semantics enable adaptation to job sites."
+  },
+  {
+   "a": "f8429",
+   "b": "f9200",
+   "type": "elaborates",
+   "note": "Dates native ScenarioEngine support to VTD 2025.2, released 1 October 2025."
+  },
+  {
+   "a": "f6692",
+   "b": "f7434",
+   "type": "supports",
+   "note": "Missing off-road concepts explain why extensions or a manufacturer domain model are needed."
+  },
+  {
+   "a": "f14492",
+   "b": "f7205",
+   "type": "depends",
+   "note": "The absence of a timely standard drives the recommendation not to wait."
+  },
+  {
+   "a": "f1606",
+   "b": "f14491",
+   "type": "elaborates",
+   "note": "Specifies catalogue ownership, encoding options and export strategy for simulator independence."
+  }
+ ]
+}

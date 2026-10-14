@@ -1,0 +1,262 @@
+{
+ "chunkId": "k775",
+ "hash": "fb7fc34a4b6eb7e7",
+ "facts": [
+  {
+   "text": "Rare-event methods deliberately increase the frequency of dangerous situations in simulation and mathematically correct the results so the estimated rate refers to normal operation.",
+   "quote": "Rare-event methods deliberately make dangerous situations happen more often in simulation, then mathematically correct the results so that the estimated rate still refers to normal operation.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t206"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Importance sampling weights each simulated run by the ratio of the situation's likelihood in reality to its likelihood under accelerated sampling; frequently sampled dangerous runs therefore receive small weights.",
+   "quote": "Each simulated run is weighted by the ratio between how likely the situation is in reality and how likely it was under the accelerated sampling. Dangerous runs are sampled often, but each counts for little.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "importance sampling",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t206"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet's rare-event methods family includes importance sampling, cross-entropy methods, subset simulation, multilevel splitting, accelerated evaluation and naturalistic-and-adversarial environments.",
+   "quote": "The booklet lists importance sampling, cross-entropy methods, subset simulation, multilevel splitting, accelerated evaluation and naturalistic-and-adversarial environments in this family.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "importance sampling",
+     "kind": "method"
+    },
+    {
+     "name": "cross-entropy methods",
+     "kind": "method"
+    },
+    {
+     "name": "subset simulation",
+     "kind": "method"
+    },
+    {
+     "name": "multilevel splitting",
+     "kind": "method"
+    },
+    {
+     "name": "accelerated evaluation",
+     "kind": "method"
+    },
+    {
+     "name": "naturalistic-and-adversarial environments",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t206"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "On-road accelerated evaluation of lane changes in 2017 showed very large evaluation speed-ups.",
+   "quote": "accelerated evaluation of lane changes (2017) showed very large speed-ups",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "accelerated evaluation",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t206"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Dense deep reinforcement learning (D2RL), published in Nature in March 2023, reported on-road evaluation 10^3 to 10^5 times faster while remaining unbiased.",
+   "quote": "dense deep reinforcement learning (D2RL, published in Nature in March 2023) reported evaluation \"10^3 to 10^5 times faster\" while remaining unbiased [Chapter 9].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "dense deep reinforcement learning (D2RL)",
+     "kind": "method"
+    },
+    {
+     "name": "Nature",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t206"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Importance sampling is unbiased only if the ratio between the real and accelerated distributions is known and accelerated sampling reaches the failure region.",
+   "quote": "The method is unbiased only if the ratio between the real and the accelerated distribution is known and the accelerated sampling actually reaches the failure region.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "importance sampling",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t206"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Importance-sampling weights become unstable and can have huge variance when the real distribution is unknown or has many dimensions.",
+   "quote": "When the real distribution is unknown or has many dimensions, the weights become unstable and their variance can be huge.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "importance sampling",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t206"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "All the cited on-road rare-event acceleration successes rely on behavior models learned from very large naturalistic driving datasets.",
+   "quote": "All the on-road successes rest on behavior models learned from very large naturalistic driving datasets",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t206",
+    "t107"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No off-road dataset comparable in scale to the very large naturalistic driving datasets supporting on-road rare-event acceleration successes was found.",
+   "quote": "All the on-road successes rest on behavior models learned from very large naturalistic driving datasets, and no off-road dataset of comparable scale was found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t206",
+    "t107"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet concludes that importance sampling cannot mathematically rescue a poorly modeled quarry operation.",
+   "quote": "The booklet's point is that a poorly modeled quarry operation cannot be rescued mathematically by importance sampling [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "importance sampling",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t206",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends using importance sampling in the estimation stream only where a defensible field distribution exists; otherwise the campaign counts as discovery.",
+   "quote": "The booklet's rule is to use importance sampling in the estimation stream only where a defensible field distribution exists; otherwise the campaign counts as discovery.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "importance sampling",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t206",
+    "t217"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Experts disagree about how far rare-event acceleration can replace real exposure.",
+   "quote": "How far rare-event acceleration can replace real exposure is listed among the points where experts disagree [Chapter 9].",
+   "kind": "disagreement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t206",
+    "t20",
+    "t216"
+   ],
+   "importance": 3
+  }
+ ]
+}

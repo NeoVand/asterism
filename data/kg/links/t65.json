@@ -1,0 +1,115 @@
+{
+ "key": "t65",
+ "hash": "fe53e0d97036f4a7",
+ "synopsis": "Validation must finish in less than four months after prototype hardware and software arrive in mid-2027, against a historical baseline of three to four years of physical testing and tuning per machine model [f3, f281, f2029, f1174, f5858]. The research found no case in any industry of a new automatic braking function reaching accepted validation about four months after first representative hardware; vendor claims of sub-day validation concern incremental on-road builds on an existing platform, not that milestone [f58, f1201, f1209, f1211]. The manufacturer has not previously used simulation for this kind of validation, and expert opinion considers a working evidence factory—not completed off-road collision mitigation validation—realistic by mid-2027 [f7512, f10387, f372]. Standards recognize simulation among verification methods and, in ISO 13849-2:2012, among validation methods, but neither passing ISO 3450 nor using example stopping-distance calculations establishes that the complete braking function works [f9456, f9457, f9458, f2361, f7729]. Credible validation requires independently established ground truth with controlled measurement uncertainty, validation of sensor stimulation equipment, and evidence matched to the sensor interface actually consumed by the function; credibility communities have not agreed on validation metrics [f5196, f7473, f4864, f4869, f9357]. Planning must also account for uncertain ISO 19014 revisions expected in October 2026 and baseline the editions actually published at design-verification freeze, while public evidence remains incomplete for manufacturer validation methods, ultrasonic material fidelity, and realistic operator responses [f2330, f2331, f11394, f3944, f3469].",
+ "relations": [
+  {
+   "a": "f3",
+   "b": "f281",
+   "type": "same",
+   "note": "Both require validation within four months of mid-2027 prototype arrival."
+  },
+  {
+   "a": "f281",
+   "b": "f2029",
+   "type": "same",
+   "note": "Identical prototype-arrival deadline across options and acceptance-criteria chapters."
+  },
+  {
+   "a": "f2029",
+   "b": "f3672",
+   "type": "same",
+   "note": "Both repeat the under-four-month validation requirement."
+  },
+  {
+   "a": "f3672",
+   "b": "f4390",
+   "type": "same",
+   "note": "Both repeat the same mid-2027 prototype-based validation deadline."
+  },
+  {
+   "a": "f4390",
+   "b": "f5857",
+   "type": "same",
+   "note": "Sensor and machine-motion chapters share the same validation deadline."
+  },
+  {
+   "a": "f5857",
+   "b": "f6619",
+   "type": "same",
+   "note": "Both require validation in under four months after prototype arrival."
+  },
+  {
+   "a": "f6619",
+   "b": "f7506",
+   "type": "same",
+   "note": "Coverage and simulation-credibility chapters repeat the same deadline."
+  },
+  {
+   "a": "f7506",
+   "b": "f8251",
+   "type": "same",
+   "note": "Both repeat the four-month limit after mid-2027 prototype arrival."
+  },
+  {
+   "a": "f1174",
+   "b": "f282",
+   "type": "same",
+   "note": "Both describe three-to-four-year validation dominated by physical testing and per-model tuning."
+  },
+  {
+   "a": "f1174",
+   "b": "f10382",
+   "type": "same",
+   "note": "The skeptic's review repeats the historical validation duration and approach."
+  },
+  {
+   "a": "f5858",
+   "b": "f8252",
+   "type": "same",
+   "note": "Both report three to four years of physical testing and tuning per model."
+  },
+  {
+   "a": "f4",
+   "b": "f15",
+   "type": "same",
+   "note": "Both give a three-to-four-year historical validation baseline for comparable functions."
+  },
+  {
+   "a": "f58",
+   "b": "f1201",
+   "type": "same",
+   "note": "Both report no cross-industry precedent for four-month first-hardware-to-accepted-validation progression."
+  },
+  {
+   "a": "f7512",
+   "b": "f10387",
+   "type": "same",
+   "note": "Both state the manufacturer lacks prior virtual validation experience for this function."
+  },
+  {
+   "a": "f9457",
+   "b": "f9456",
+   "type": "supports",
+   "note": "ISO 18497-4's simulation listing supports acceptance as one verification method."
+  },
+  {
+   "a": "f2331",
+   "b": "f2330",
+   "type": "depends",
+   "note": "Edition-baselining advice addresses uncertain revisions shortly before design-verification freeze."
+  },
+  {
+   "a": "f7473",
+   "b": "f5196",
+   "type": "elaborates",
+   "note": "Adds calibration, uncertainty budgets, and acceptance-margin requirements to independent ground truth."
+  },
+  {
+   "a": "f1211",
+   "b": "f1209",
+   "type": "supports",
+   "note": "Sub-day incremental-build claim supports fast release validation once a platform exists."
+  }
+ ]
+}

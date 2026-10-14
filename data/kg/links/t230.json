@@ -1,0 +1,115 @@
+{
+ "key": "t230",
+ "hash": "bf816e5497da42ee",
+ "synopsis": "Variant management must support confidence across machine configurations and operating conditions; historically, comparable braking-function validation took three to four years, largely through physical testing and tuning per machine model [f31, f282, f1174]. The proposed reuse strategy is a parameterized machine-family model validated at envelope corners, with configuration-controlled deltas and targeted bridge tests for each new variant; physics-based families should be identified before the 2027 hardware arrives [f190, f7573, f7908, f6124]. Reuse cannot rest on sensor validation alone, because braking architecture, latency, mass, payload, implements and software integration change outcomes, and the reported mining regime requires separate verification of machines with different braking characteristics [f3437, f5181]. Evidence reuse is potentially a major lever, but no published quantified time-saving case, safe number of removable physical tests, or ISO rule validating a family through N representative machines was found [f617, f261, f1960, f6683]. Even 2,995 independent zero-miss opportunities support only an aggregate detection-at-least-99.9% claim at 95% confidence for a defined population, not sufficient evidence for an entire product family [f6885]. Planning should explicitly delimit covered variants and exclusions, consider an initial release split by machine family with a restricted operating envelope, and establish which subsequent changes trigger partial or full revalidation [f10155, f12326, f10365].",
+ "relations": [
+  {
+   "a": "f282",
+   "b": "f1174",
+   "type": "same",
+   "note": "Both report three-to-four-year validation dominated by physical testing and per-model tuning."
+  },
+  {
+   "a": "f1174",
+   "b": "f3673",
+   "type": "same",
+   "note": "Both report the same historical per-model validation duration and approach."
+  },
+  {
+   "a": "f3673",
+   "b": "f5129",
+   "type": "same",
+   "note": "Both describe three to four years of physical testing and tuning per model."
+  },
+  {
+   "a": "f5129",
+   "b": "f5858",
+   "type": "same",
+   "note": "Both give the same historical per-model validation baseline."
+  },
+  {
+   "a": "f5858",
+   "b": "f10382",
+   "type": "same",
+   "note": "Both report three-to-four-year physical validation and tuning per model."
+  },
+  {
+   "a": "f10382",
+   "b": "f11919",
+   "type": "same",
+   "note": "Glossary repeats the historical validation duration and per-model testing approach."
+  },
+  {
+   "a": "f2034",
+   "b": "f4395",
+   "type": "same",
+   "note": "Both require operation across machine models with different sizes and sensor positions."
+  },
+  {
+   "a": "f7511",
+   "b": "f8256",
+   "type": "same",
+   "note": "Both repeat the cross-model size and sensor-position requirement."
+  },
+  {
+   "a": "f286",
+   "b": "f1178",
+   "type": "same",
+   "note": "Both state the same cross-model operating requirement."
+  },
+  {
+   "a": "f3677",
+   "b": "f5862",
+   "type": "same",
+   "note": "Both require braking across models with differing sizes and sensor positions."
+  },
+  {
+   "a": "f190",
+   "b": "f7573",
+   "type": "elaborates",
+   "note": "Transfer method adds a documented delta to envelope-corner validation and targeted bridge tests."
+  },
+  {
+   "a": "f7573",
+   "b": "f7908",
+   "type": "elaborates",
+   "note": "Specifies the configuration-controlled changes each transfer delta must cover."
+  },
+  {
+   "a": "f3437",
+   "b": "f3641",
+   "type": "supports",
+   "note": "Integration-dependent braking outcomes justify treating each integration as its own safety configuration."
+  },
+  {
+   "a": "f6683",
+   "b": "f6885",
+   "type": "supports",
+   "note": "Statistical limits reinforce that a test count alone does not validate an entire family."
+  },
+  {
+   "a": "f5181",
+   "b": "f6124",
+   "type": "contradicts",
+   "note": "Separate braking-characteristic verification constrains efficiency sought through representative physics-based family models."
+  },
+  {
+   "a": "f6132",
+   "b": "f6124",
+   "type": "supports",
+   "note": "Published parameterized clustering supports family modeling, without establishing the manufacturer's required family count."
+  },
+  {
+   "a": "f4354",
+   "b": "f9367",
+   "type": "elaborates",
+   "note": "Mounting-parameter scope extends tolerance sweeps to articulation, attachments, equipment state and body geometry."
+  },
+  {
+   "a": "f3664",
+   "b": "f10365",
+   "type": "supports",
+   "note": "Safety-relevant software changes justify an explicit policy defining revalidation triggers."
+  }
+ ]
+}

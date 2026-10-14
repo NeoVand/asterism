@@ -1,0 +1,115 @@
+{
+ "key": "t15",
+ "hash": "1768e77c72e6c9ca",
+ "synopsis": "Across the accident evidence, blind areas and the size mismatch between heavy machines and people or light vehicles are central to the deadliest collisions; although forward run-overs are identified as the deadliest documented pattern, 67% of the 22 US surface-mine blind-area deaths recorded from 2000 to mid-2006 involved victims behind reversing equipment [f2977, f3588, f2984, f2986]. In that dataset, dump trucks were involved in 38% of deaths and front-end loaders in 33%; a 50 t haul truck's front-right blind area extends 18 m or more and grows with truck size [f2985, f3221]. US construction and metal/non-metal mining rules require reverse warnings, specified alternatives or observers when rear visibility is obstructed, with OSHA interpretations accepting cameras only when they genuinely provide the required clear view [f2228, f2237, f2229]. Validation should map blind zones before hardware arrives and build scenarios around each machine model's blind areas, because geometry and sensor placement limit evidence transfer between models; low-speed work may still require relatively large warning zones measured in stopping distances [f5601, f7038, f11551, f11552, f6226]. The proposed geometric methods have verification gaps: ISO 5006 is listed as not verified, and UNECE R159's reported 50 mm cylinder detail was not confirmed against the regulation text [f15219, f5356, f15220].",
+ "relations": [
+  {
+   "a": "f2228",
+   "b": "f15505",
+   "type": "same",
+   "note": "Identical OSHA obstructed-rear-view alarm or observer requirement."
+  },
+  {
+   "a": "f2763",
+   "b": "f2229",
+   "type": "elaborates",
+   "note": "Camera acceptance depends on actually restoring the required clear rear view."
+  },
+  {
+   "a": "f2676",
+   "b": "f7406",
+   "type": "elaborates",
+   "note": "Adds warning-only scope to ISO 16001's detection and visibility coverage."
+  },
+  {
+   "a": "f2984",
+   "b": "f11543",
+   "type": "same",
+   "note": "Same 22 surface-mine blind-area deaths and reporting period."
+  },
+  {
+   "a": "f3060",
+   "b": "f2984",
+   "type": "same",
+   "note": "Identifies the NIOSH report behind the same fatality count."
+  },
+  {
+   "a": "f2985",
+   "b": "f11389",
+   "type": "elaborates",
+   "note": "Adds dump-truck share to the glossary's loader share and ranking."
+  },
+  {
+   "a": "f2986",
+   "b": "f11546",
+   "type": "same",
+   "note": "Same rear-blind-area proportion, fatality count and reporting period."
+  },
+  {
+   "a": "f3062",
+   "b": "f15520",
+   "type": "same",
+   "note": "Same NIOSH finding that 67% of victims were behind reversing equipment."
+  },
+  {
+   "a": "f3245",
+   "b": "f11581",
+   "type": "same",
+   "note": "Same reversing run-over pattern and 67% share of 22 deaths."
+  },
+  {
+   "a": "f3221",
+   "b": "f11403",
+   "type": "same",
+   "note": "Same 50 t haul-truck blind-zone extent and growth with truck size."
+  },
+  {
+   "a": "f11403",
+   "b": "f11540",
+   "type": "same",
+   "note": "Duplicate blind-zone extent; first also explains tall and long truck geometry."
+  },
+  {
+   "a": "f3221",
+   "b": "f3589",
+   "type": "same",
+   "note": "Same minimum front-right blind-zone extent for a 50 t haul truck."
+  },
+  {
+   "a": "f5601",
+   "b": "f7038",
+   "type": "supports",
+   "note": "Pre-hardware geometric computation makes model-specific blind-spot simulation feasible."
+  },
+  {
+   "a": "f6587",
+   "b": "f11552",
+   "type": "supports",
+   "note": "Geometry-dependent coverage and collision envelopes explain limited transferability between models."
+  },
+  {
+   "a": "f3063",
+   "b": "f11551",
+   "type": "supports",
+   "note": "Fatalities in blind spots justify building validation scenarios around those areas."
+  },
+  {
+   "a": "f6226",
+   "b": "f14044",
+   "type": "elaborates",
+   "note": "Specifies stopping-distance interpretation and additional reversing and start-up situations."
+  },
+  {
+   "a": "f5356",
+   "b": "f5603",
+   "type": "contradicts",
+   "note": "The illustrative cylinder method relies on a regulation detail explicitly reported as unconfirmed."
+  },
+  {
+   "a": "f15219",
+   "b": "f15220",
+   "type": "depends",
+   "note": "Proposed ISO 5006 reproduction requires resolving its unverified status."
+  }
+ ]
+}

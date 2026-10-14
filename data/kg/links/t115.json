@@ -1,0 +1,115 @@
+{
+ "key": "t115",
+ "hash": "38d3c4f37dcfd889",
+ "synopsis": "Generative models create realistic-looking images or sensor data; generated weather adds rain, fog, snow, dust or night to clear-weather recordings, potentially converting thousands of recorded hours into bad-weather data without waiting for winter [f12910, f12911]. Across chapters, the recommended role is training, failure discovery and wider test coverage—not stand-alone pass/fail evidence or a replacement for physically traceable sensor simulation [f93, f4871, f12922]. A 2026 on-road benchmark reported 94.8% realism acceptance for the best generative editor versus 26.3% for the best rule-based library, but this commercial, non-peer-reviewed preprint used a vision-language-model jury, and night-edit acceptance remained only 12.5–17.6% [f4447, f4878, f4894]. Visual plausibility does not establish sensor fidelity: generated images can violate radiance, geometry and cross-sensor consistency, while 2026 Waymo novel-view results of 13.19–20.82 dB PSNR were judged low fidelity for safety testing [f4904, f3758, f3822]. Experts disagree about generative world models as validation tools, quantitative off-road re-weathering validation was not found, and no standard or regulator treats generated weather as physically equivalent to real sensor measurements [f7442, f3825, f12919]. The recommended hybrid uses generation to propose tests while anchoring physics to models and measured weather-affected sensor behavior; labels such as “20 mm/h rain” or “50 m visibility” require calibration against real sensor data, otherwise their physical meaning remains unknown [f12923, f10888, f12921].",
+ "relations": [
+  {
+   "a": "f93",
+   "b": "f4446",
+   "type": "same",
+   "note": "Both distinguish convincing weather edits from trustworthy test evidence."
+  },
+  {
+   "a": "f862",
+   "b": "f4446",
+   "type": "supports",
+   "note": "On-road sim-to-real evidence supports rejecting visual plausibility as validation."
+  },
+  {
+   "a": "f3758",
+   "b": "f3821",
+   "type": "same",
+   "note": "Duplicate 2026 Waymo novel-view PSNR range."
+  },
+  {
+   "a": "f3821",
+   "b": "f4243",
+   "type": "same",
+   "note": "Same Waymo PSNR results, framed around new sensor positions."
+  },
+  {
+   "a": "f3822",
+   "b": "f14775",
+   "type": "same",
+   "note": "Same rounded PSNR results and inadequate safety or metric fidelity interpretation."
+  },
+  {
+   "a": "f4447",
+   "b": "f12913",
+   "type": "same",
+   "note": "Same 94.8% versus 26.3% realism acceptance comparison."
+  },
+  {
+   "a": "f4447",
+   "b": "f4872",
+   "type": "same",
+   "note": "Same best-editor realism result; latter names editor, benchmark and jury."
+  },
+  {
+   "a": "f4871",
+   "b": "f12912",
+   "type": "same",
+   "note": "Generated weather is not yet a substitute for physically traceable sensor simulation."
+  },
+  {
+   "a": "f4450",
+   "b": "f12919",
+   "type": "same",
+   "note": "Both report no standard recognizing generated weather as physically equivalent sensor evidence."
+  },
+  {
+   "a": "f4894",
+   "b": "f12916",
+   "type": "same",
+   "note": "Same night-edit acceptance range; chapter provides method-specific percentages."
+  },
+  {
+   "a": "f12495",
+   "b": "f12746",
+   "type": "same",
+   "note": "Both identify night as the hardest generated-image condition."
+  },
+  {
+   "a": "f4904",
+   "b": "f12920",
+   "type": "elaborates",
+   "note": "Chapter expands glossary risks with exposure, temporal consistency, reflectance and sensor SNR."
+  },
+  {
+   "a": "f4878",
+   "b": "f12913",
+   "type": "elaborates",
+   "note": "Adds publication-status and commercial-source caveats to the realism benchmark."
+  },
+  {
+   "a": "f4879",
+   "b": "f12922",
+   "type": "supports",
+   "note": "Empirical coverage gains support using generation to widen testing conditions."
+  },
+  {
+   "a": "f3825",
+   "b": "f12922",
+   "type": "supports",
+   "note": "Missing quantitative off-road validation supports withholding stand-alone pass/fail authority."
+  },
+  {
+   "a": "f10888",
+   "b": "f12923",
+   "type": "same",
+   "note": "Both recommend synthetic testing anchored to physical models and real measurements."
+  },
+  {
+   "a": "f12921",
+   "b": "f10888",
+   "type": "elaborates",
+   "note": "Specifies calibration requirements before generated weather receives physical severity labels."
+  },
+  {
+   "a": "f4903",
+   "b": "f7442",
+   "type": "elaborates",
+   "note": "Admissibility checks specify a proposed condition for trusting disputed world-model validation verdicts."
+  }
+ ]
+}

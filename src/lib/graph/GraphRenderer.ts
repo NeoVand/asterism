@@ -17,6 +17,7 @@ import {
 	abs,
 	add,
 	clamp,
+	color,
 	dot,
 	exp,
 	float,
@@ -173,18 +174,18 @@ export class GraphRenderer {
 		});
 
 		// Deep-space backdrop: vertical gradient with a faint vignette.
-		const top = vec3(new THREE.Color('#0a1020'));
-		const bottom = vec3(new THREE.Color('#02040a'));
+		const top = color(new THREE.Color('#0a1020'));
+		const bottom = color(new THREE.Color('#02040a'));
 		const vign = smoothstep(float(1.25), float(0.2), length(screenUV.sub(0.5)).mul(1.6));
 		this.scene.backgroundNode = mix(bottom, top, screenUV.y.oneMinus()).mul(vign.mul(0.55).add(0.45));
 
 		this.buildStars();
 
 		const scenePass = pass(this.scene, this.camera);
-		const color = scenePass.getTextureNode('output');
-		const glow = bloom(color, 0.85, 0.5, 0.12);
+		const sceneColor = scenePass.getTextureNode('output');
+		const glow = bloom(sceneColor, 0.85, 0.5, 0.12);
 		this.pipeline = new THREE.RenderPipeline(this.renderer);
-		this.pipeline.outputNode = color.add(glow);
+		this.pipeline.outputNode = sceneColor.add(glow);
 
 		this.resize();
 		this.resizeObs = new ResizeObserver(() => this.resize());
@@ -352,10 +353,13 @@ export class GraphRenderer {
 		const flash = exp(age.mul(-2.6).min(0)).mul(select(litKind.greaterThan(0.5), float(1), float(0)));
 		const isHover = select(this.uHover.equal(float(instanceIndex)), float(1), float(0));
 		const litScale = select(
+			litKind.greaterThan(3.5),
+			float(3.0),
+			select(
 			litKind.greaterThan(2.5),
 			float(2.1),
 			select(litKind.greaterThan(1.5), float(1.55), select(litKind.greaterThan(0.5), float(1.25), float(1)))
-		);
+		));
 		mat.scaleNode = info.z.mul(litScale).mul(flash.mul(0.9).add(1)).mul(isHover.mul(0.8).add(1));
 
 		mat.colorNode = Fn(() => {
@@ -376,10 +380,13 @@ export class GraphRenderer {
 			const white = vec3(1, 0.97, 0.92);
 			const gold = vec3(1, 0.78, 0.36);
 			const tint = select(
+				litKind.greaterThan(3.5),
+				mix(base, white, 0.6),
+				select(
 				litKind.greaterThan(2.5),
 				mix(base, gold, 0.55),
 				select(litKind.greaterThan(0.5), mix(base, white, 0.35), base)
-			);
+			));
 			const pulse = select(
 				litKind.greaterThan(2.5),
 				sin(this.uTime.mul(2.4).add(float(instanceIndex).mul(0.37))).mul(0.25).add(1.15),
@@ -563,8 +570,32 @@ export class GraphRenderer {
 		if (changed) this.flushState();
 	}
 
+	private spot: { i: number; level: number; t: number }[] = [];
+
+	/** Temporarily flare nodes (hovering a citation or a block item); null restores them. */
+	spotlight(indices: number[] | null) {
+		for (const sp of this.spot) {
+			this.stateArray[sp.i * 4] = sp.level;
+			this.stateArray[sp.i * 4 + 1] = sp.t;
+		}
+		this.spot = [];
+		if (indices?.length) {
+			const now = this.uTime.value as number;
+			for (const i of indices) {
+				if (i < 0 || i >= this.count) continue;
+				this.spot.push({ i, level: this.stateArray[i * 4], t: this.stateArray[i * 4 + 1] });
+				this.stateArray[i * 4] = LIT.focus;
+				this.stateArray[i * 4 + 1] = now;
+			}
+		}
+		this.flushState();
+	}
+
+	autoRotate = true;
+
 	/** Clear every highlight (fade back to the full constellation). */
 	clearLights() {
+		this.spot = [];
 		this.stateArray.fill(0);
 		this.flushState();
 		this.setTrail([]);
@@ -717,7 +748,7 @@ export class GraphRenderer {
 			this.controls.target.lerpVectors(this.fly.tFrom, this.fly.tTo, e);
 			if (k >= 1) this.fly = null;
 		}
-		this.controls.autoRotate = performance.now() - this.lastInteraction > 9000 && !this.fly;
+		this.controls.autoRotate = this.autoRotate && performance.now() - this.lastInteraction > 9000 && !this.fly;
 		this.controls.update(dt);
 		this.pipeline.render();
 	};
@@ -818,13 +849,24 @@ export class GraphRenderer {
 
 	/* ------------------------------------------------------------------ */
 
+	/** Pixels on the right covered by UI: the projection centre shifts to the visible area. */
+	insetRight = 0;
+
+	setInsetRight(px: number) {
+		this.insetRight = px;
+		this.resize();
+	}
+
 	resize() {
 		const parent = this.canvas.parentElement;
 		const w = parent?.clientWidth ?? window.innerWidth;
 		const h = parent?.clientHeight ?? window.innerHeight;
 		if (!w || !h) return;
 		this.renderer.setSize(w, h, false);
-		this.camera.aspect = w / h;
+		const inset = Math.min(this.insetRight, w * 0.6);
+		this.camera.aspect = (w + inset) / h;
+		if (inset > 0) this.camera.setViewOffset(w + inset, h, inset, 0, w, h);
+		else this.camera.clearViewOffset();
 		this.camera.updateProjectionMatrix();
 	}
 

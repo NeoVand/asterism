@@ -1,0 +1,115 @@
+{
+ "key": "t322",
+ "hash": "c1e83f44d844da77",
+ "synopsis": "Open-source simulators are viable low-license-cost cores for heavy off-road automatic-braking validation, but not the lowest-total-cost option: coupling, assets, scenarios and validation evidence still require specialist labor, potentially producing a seven-figure annual program [f196, f8303, f8318]. Expert judgment supports a narrow first-release toolchain if work starts in October 2026 and existing simulators are reused; precedents include MineSim, published in April 2025 for autonomous mining trucks, and AutoDRIVE-based vision-guided AEB testing across 128 simulated off-road cases [f1591, f464, f467]. Capabilities differ materially: Chrono offers deformable-soil models, MAVS has validated tire-soil and lidar-vegetation models, while CARLA has a mining earth-mover asset but no soil physics [f3739, f3740, f15901, f15902]. These capabilities do not establish safety-case credibility: CARLA, Gazebo and Isaac Sim were not verified in this research, none was found validated for off-road collision warning, and open-source availability alone does not establish verification, validation or applicability [f5850, f5851, f7758]. Planning should account for separate asset-license terms, freeze a qualified build as projects change, and investigate maintenance and security-patch arrangements, which the research did not examine [f8908, f15936, f15938, f9392, f9393].",
+ "relations": [
+  {
+   "a": "f196",
+   "b": "f8296",
+   "type": "same",
+   "note": "Both conclude low license cost does not mean lowest total cost."
+  },
+  {
+   "a": "f196",
+   "b": "f15940",
+   "type": "same",
+   "note": "Glossary restates the synthesis conclusion with integration and maintenance obligations."
+  },
+  {
+   "a": "f8296",
+   "b": "f15940",
+   "type": "same",
+   "note": "Glossary repeats the chapter's cost conclusion and explains remaining work."
+  },
+  {
+   "a": "f464",
+   "b": "f13072",
+   "type": "same",
+   "note": "Same MineSim publication and purpose; glossary adds real-mine scenarios and mining features."
+  },
+  {
+   "a": "f464",
+   "b": "f15805",
+   "type": "same",
+   "note": "Same publication date, journal, open-source status and autonomous mining-truck scope."
+  },
+  {
+   "a": "f13072",
+   "b": "f15805",
+   "type": "same",
+   "note": "Both describe the April 2025 MineSim system, with complementary details."
+  },
+  {
+   "a": "f9047",
+   "b": "f15916",
+   "type": "same",
+   "note": "Both report no off-road evidence for Gazebo and identify general-robotics scope."
+  },
+  {
+   "a": "f8297",
+   "b": "f15901",
+   "type": "same",
+   "note": "Both identify the mining earth-mover asset in CARLA's December 2024 release."
+  },
+  {
+   "a": "f8300",
+   "b": "f8481",
+   "type": "same",
+   "note": "Same Isaac Sim 6.1 release; one supplies the exact general-availability date."
+  },
+  {
+   "a": "f8463",
+   "b": "f15900",
+   "type": "same",
+   "note": "Both identify CARLA as open source with MIT-licensed code."
+  },
+  {
+   "a": "f8477",
+   "b": "f15903",
+   "type": "same",
+   "note": "Both identify Isaac Sim's Apache 2.0 open-source status, with different qualifications."
+  },
+  {
+   "a": "f9392",
+   "b": "f15939",
+   "type": "same",
+   "note": "Both identify unexamined project funding and maintenance; glossary also includes security patches."
+  },
+  {
+   "a": "f9393",
+   "b": "f15939",
+   "type": "same",
+   "note": "Both identify security-patch cadence as an unexamined research gap."
+  },
+  {
+   "a": "f8303",
+   "b": "f196",
+   "type": "supports",
+   "note": "Required integration and maintenance work explains why low-license-cost cores are not cheapest overall."
+  },
+  {
+   "a": "f6014",
+   "b": "f3739",
+   "type": "elaborates",
+   "note": "Details Chrono's soil-model options, parameters and computational-cost differences."
+  },
+  {
+   "a": "f5851",
+   "b": "f7758",
+   "type": "supports",
+   "note": "Missing off-road collision-warning validation illustrates why open-source availability cannot establish safety credibility."
+  },
+  {
+   "a": "f8464",
+   "b": "f15938",
+   "type": "supports",
+   "note": "CARLA's engine migration motivates freezing and qualifying a specific build."
+  },
+  {
+   "a": "f15936",
+   "b": "f8908",
+   "type": "elaborates",
+   "note": "Specifies separate asset terms and paid licensing for redistribution with certain components."
+  }
+ ]
+}

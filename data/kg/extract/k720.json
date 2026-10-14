@@ -1,0 +1,236 @@
+{
+ "chunkId": "k720",
+ "hash": "a7ea52faf11f29a2",
+ "facts": [
+  {
+   "text": "A simulation runs in real time when one simulated second takes exactly one real second; hard real time additionally guarantees that every computing step finishes within its deadline every time.",
+   "quote": "A simulation runs in real time when one simulated second takes exactly one real second, and in hard real time when every computing step is guaranteed to finish within its deadline, every time.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t153",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hardware-in-the-loop (HIL) needs hard real time because the real electronic control unit on the bench runs at its own pace and cannot wait for a slow simulator.",
+   "quote": "Hardware-in-the-loop (HIL) needs hard real time because the real electronic control unit on the bench runs at its own pace and cannot wait for a slow simulator [Chapter 7].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t153",
+    "t119"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Hardware-in-the-loop (HIL) uses dedicated real-time computers with deterministic operating systems and input-output hardware.",
+   "quote": "HIL uses dedicated real-time computers with deterministic operating systems and input-output hardware",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t153",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For hardware-in-the-loop (HIL), deterministic real time matters more than throughput.",
+   "quote": "for HIL \"deterministic real time matters more than throughput\" [Chapter 11]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t153",
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A neural scene of 23 million elements rendered at 17 frames per second cannot drive a hardware-in-the-loop (HIL) bench.",
+   "quote": "a neural scene of 23 million elements rendered at 17 frames per second, or a soil model running 50 to 200 times slower than real time, cannot drive a HIL bench",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t153",
+    "t116",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A soil model running 50 to 200 times slower than real time cannot drive a hardware-in-the-loop (HIL) bench.",
+   "quote": "a soil model running 50 to 200 times slower than real time, cannot drive a HIL bench",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t153",
+    "t181"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet recommends keeping separate offline high-fidelity models and real-time models where needed.",
+   "quote": "the booklet advises keeping separate offline high-fidelity models and real-time models where needed [Chapters 5, 11]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t167",
+    "t153",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The real-time factor is simulated time divided by wall-clock time and affects simulation cost: a simulator at 10 times real time costs one tenth per simulated hour of a simulator at real time.",
+   "quote": "The real-time factor (simulated time divided by wall-clock time) also decides cost: a simulator at 10 times real time costs one tenth per simulated hour of one at real time",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "real-time factor",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t339",
+    "t153"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No generic simulation real-time factor should be assumed without benchmarking on the actual machine geometry and sensor set.",
+   "quote": "no generic factor should be assumed without benchmarking on the actual machine geometry and sensor set [Chapter 11]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "real-time factor",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t339",
+    "t153",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Milliseconds in sensing, networking, decision and actuation move the machine's stopping point.",
+   "quote": "Milliseconds in sensing, networking, decision and actuation move the stopping point",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t172",
+    "t170",
+    "t88"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Timing can only be tested where the simulator keeps real time.",
+   "quote": "timing can only be tested where the simulator keeps real time",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t153",
+    "t172",
+    "t126"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Real-time limits cap the sensor fidelity available on a hardware-in-the-loop bench.",
+   "quote": "real-time limits cap the sensor fidelity available on the bench [Chapters 5, 7]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t153",
+    "t148",
+    "t125",
+    "t84"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,229 @@
+{
+ "chunkId": "k653",
+ "hash": "be5e9323f10f77b4",
+ "facts": [
+  {
+   "text": "Field of view, range, resolution and frame rate describe a sensor's angular coverage, farthest usable measurement distance, measurement detail and frequency of complete measurements, respectively.",
+   "quote": "These four numbers describe how much a sensor can see: how wide (field of view), how far (range), in how much detail (resolution) and how often (frame rate).",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t87"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "One radar product page cited in the booklet claims a resolution of 6 cm for separating objects at nearly the same distance.",
+   "quote": "for a radar how well it separates two objects at nearly the same distance (one product page in the booklet claims 6 cm) [Chapter 7]",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t87",
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "At 15 km/h, a machine moves 4.2 meters per second and travels 42 centimeters between sensor frames at 10 frames per second.",
+   "quote": "At 15 km/h a machine moves 4.2 meters per second, so at 10 frames per second it moves 42 centimeters between frames.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t87",
+    "t169"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet derives required sensor detection range by working backwards from stopping distance.",
+   "quote": "The booklet's required detection range works backwards from stopping distance to how far a sensor must see",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t193",
+    "t170",
+    "t87"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet determines sensor ground coverage by projecting the field of view from the sensor's mounting pose onto the ground.",
+   "quote": "projects the field of view from the mounting pose onto the ground to find what is covered [Chapter 9]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t87",
+    "t100"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Machine booms, buckets and dump bodies enter the sensor field of view.",
+   "quote": "Booms, buckets and dump bodies enter the field of view [Chapter 6]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t87",
+    "t103"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A single rear radar on a haul truck missed people near the rear tires until two antennas about 1.8 m apart were angled inward.",
+   "quote": "a single rear radar on a haul truck missed people near the rear tires until two antennas about 1.8 m apart were angled inward [Chapter 9]",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t100",
+    "t3",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A European consumer-test protocol requires virtual sensors to match the physical sensor's position, field of view and range.",
+   "quote": "A European consumer-test protocol requires virtual sensors to match the physical sensor's position, field of view and range",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t87",
+    "t100",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Moving a sensor can invalidate a validated simulation even when the software remains unchanged.",
+   "quote": "moving a sensor can invalidate a validated simulation even if the software is unchanged [Chapter 3]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t261",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Failure-seeking tests concentrate at the edge of the sensor field of view.",
+   "quote": "The edge of the field of view is a place where failure-seeking tests concentrate [Chapter 9].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t205",
+    "t87"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor field of view and range vary between machine models.",
+   "quote": "Field of view and range change from machine model to machine model",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t87",
+    "t230"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet treats sensor placement as a primary source of differences between machine models.",
+   "quote": "the booklet treats sensor placement as a primary source of model-to-model difference [Chapter 9]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t230",
+    "t265"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "One mining specification requires a minimum detection range of 200 m between surface machines.",
+   "quote": "one mining specification asks for a 200 m minimum detection range between surface machines [Chapter 3].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t193",
+    "t87",
+    "t17"
+   ],
+   "importance": 3
+  }
+ ]
+}

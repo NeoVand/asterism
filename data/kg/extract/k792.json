@@ -1,0 +1,231 @@
+{
+ "chunkId": "k792",
+ "hash": "4eab21f32b3d929e",
+ "facts": [
+  {
+   "text": "A regression is a previously passing case that fails after a software or settings change; regression testing reruns a fixed set of cases after every change to detect such failures.",
+   "quote": "A regression is a case that used to pass and now fails after a change to the software or the settings, and regression testing is the habit of rerunning a fixed set of cases after every change to catch exactly that.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t223",
+    "t161"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Lowering a threshold to detect a previously missed worker can cause braking for every berm.",
+   "quote": "a threshold lowered to catch one missed worker may now brake for every berm.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t188",
+    "t192",
+    "t14",
+    "t12"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Requirement and regression testing is one of the booklet's three campaign classes: deterministic pass-or-fail cases tied to individual requirements are rerun continually to check whether software or calibration changes broke required behavior.",
+   "quote": "requirement and regression testing is one of the three campaign classes: deterministic pass-or-fail cases tied to individual requirements, rerun continually",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t233",
+    "t161",
+    "t63",
+    "t223"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Every failure found by search becomes a permanent regression test.",
+   "quote": "Every failure found by search becomes a permanent regression test.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t205"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Chapter 9 specifies a fast smoke subset of software-in-the-loop runs on every code change.",
+   "quote": "a fast \"smoke\" subset of software-in-the-loop runs on every code change",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t161"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Chapter 9 specifies a small mandatory safety regression set on every eligible build.",
+   "quote": "a small mandatory safety regression set on every eligible build",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t161"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Chapter 9 specifies larger virtual test campaigns overnight or at release gates.",
+   "quote": "larger virtual campaigns overnight or at release gates",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t233",
+    "t127",
+    "t349"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Chapter 9 recommends choosing hardware-in-the-loop and physical confirmation tests by risk.",
+   "quote": "hardware-in-the-loop and physical confirmation chosen by risk.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t216",
+    "t46"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A change-impact graph selects scenarios affected by a change: a brake-model change selects stopping-margin scenarios, while a perception change selects everything downstream of detections.",
+   "quote": "A change-impact graph picks the scenarios a change touches: a brake-model change selects stopping-margin scenarios, a perception change selects everything downstream of detections",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t200",
+    "t161",
+    "t182",
+    "t85",
+    "t194"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "To protect statistical validity, the frozen estimation set is run only at release candidates and must not be continuously rerun and optimized against.",
+   "quote": "The frozen estimation set is run only at release candidates, never continuously rerun and optimized against.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t219",
+    "t161"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A late change to a safety-relevant decision threshold triggers new independent statistical confirmation for the affected claim, rather than merely rerunning the failures that prompted the change.",
+   "quote": "a late change to a safety-relevant decision threshold triggers a new independent statistical confirmation for the affected claim, not merely a rerun of the failures that caused the change",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t188",
+    "t231",
+    "t209",
+    "t161"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the program's four-month window with many late corrections, regression testing prevents a fix in one stratum from silently undoing a passing result in another.",
+   "quote": "In a four-month window with many late corrections, regression testing keeps a fix in one stratum from silently undoing a pass in another.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t223",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Running millions of regression tests does not demonstrate that the test set represents the real operating domain.",
+   "quote": "Chapter 1 cautions that running millions of regression tests does not show that the test set represents the real operating domain [Chapter 1, Chapter 9].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t140",
+    "t267"
+   ],
+   "importance": 3
+  }
+ ]
+}

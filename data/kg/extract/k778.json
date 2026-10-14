@@ -1,0 +1,219 @@
+{
+ "chunkId": "k778",
+ "hash": "da647e5805763e48",
+ "facts": [
+  {
+   "text": "Sample size is the number of independent trials run; confidence level expresses the desired degree of certainty; confidence interval is the range of true-rate values supported by the data at that confidence level.",
+   "quote": "The sample size is how many independent trials you run, the confidence level is how sure you want to be, and the confidence interval is the range of values for the true rate that the data support at that level of sureness.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For independent detection opportunities with zero misses, a claim that miss probability is at most q holds at confidence 1 − alpha when (1 − q)^n ≤ alpha. Here q is the largest claimed miss probability, alpha is the chance of being wrong (0.05 for 95 percent confidence), and n is the number of clean trials.",
+   "quote": "If each trial is an independent detection opportunity and none is missed, the claim \"the miss probability is at most q\" holds at confidence 1 minus alpha when (1 - q)^n is at most alpha.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The zero-miss sample-size formula is n = ln(alpha) / ln(1 − q), where ln is the natural logarithm, alpha is the chance of being wrong, and q is the largest miss probability claimed.",
+   "quote": "Solving gives n = ln(alpha) / ln(1 - q), where ln is the natural logarithm.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "At 95 percent one-sided confidence, demonstrating miss rates of at most 5 percent, 1 percent, 0.1 percent and 0.01 percent requires respectively 59, 299, 2,995 and 29,956 independent zero-miss trials.",
+   "quote": "At 95 percent one-sided confidence: a miss rate of at most 5 percent needs 59 clean trials; at most 1 percent needs 299; at most 0.1 percent needs 2,995; at most 0.01 percent needs 29,956.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t210"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "At 99 percent confidence, demonstrating miss rates of at most 5 percent, 1 percent, 0.1 percent and 0.01 percent requires respectively 90, 459, 4,603 and 46,050 independent zero-miss trials.",
+   "quote": "At 99 percent confidence the figures are 90, 459, 4,603 and 46,050 [Chapter 9].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t210"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Detection sample sizes must count independent trials: a ten-second encounter producing about 300 camera frames is one encounter, not 300 independent opportunities. Counting frames inflates the sample and makes confidence intervals grossly overconfident.",
+   "quote": "A ten-second encounter produces about 300 camera frames, but it is one encounter, not 300 chances; counting frames inflates the sample and makes intervals \"grossly overconfident\".",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t210",
+    "t89"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "When detection trials include misses, an exact binomial (Clopper-Pearson) interval or another pre-declared interval should be used instead of continuing testing until a pleasing percentage appears.",
+   "quote": "if some misses occur, an exact binomial (Clopper-Pearson) interval or another pre-declared interval should be used, rather than testing until a pleasing percentage appears.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Clopper-Pearson interval",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t209",
+    "t210",
+    "t218"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Estimating a rate precisely requires more observations than demonstrating that the rate is below a threshold: in the worst case, a generic 95 percent estimate within ±1 percentage point needs about 9,604 observations, and within ±0.5 percentage point needs about 38,415.",
+   "quote": "a generic 95 percent estimate within plus or minus 1 percentage point needs about 9,604 observations in the worst case, and plus or minus 0.5 point needs about 38,415 [Chapter 9].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Chapter 9 identifies statistics as the binding constraint for the collision-mitigation validation program.",
+   "quote": "Chapter 9 calls the statistics \"the binding constraint\".",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t127",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Each statistical claim about a separate population needs its own sample; demonstrating a 1 percent miss-rate claim in each of 20 critical strata needs about 6,000 zero-miss trials. The booklet says this trial volume is feasible only in simulation or hardware-in-the-loop (HIL) testing.",
+   "quote": "Each claim about a separate population needs its own sample: a 1 percent claim in each of 20 critical strata needs about 6,000 zero-miss trials, which is only feasible in simulation or hardware-in-the-loop (HIL) testing.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t210",
+    "t126",
+    "t148"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No standard sets the booklet's required statistical sample sizes; the numbers follow from the claim, confidence level and population definition.",
+   "quote": "no standard sets these numbers; they follow from the claim, the confidence level and the population definition",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t271"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Statistical sample-size requirements derived from the claim, confidence level and population definition should be fixed before data collection.",
+   "quote": "they follow from the claim, the confidence level and the population definition, and should be fixed before the data are collected [Chapter 9, Chapter 7].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t218"
+   ],
+   "importance": 3
+  }
+ ]
+}

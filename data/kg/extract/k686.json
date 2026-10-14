@@ -1,0 +1,221 @@
+{
+ "chunkId": "k686",
+ "hash": "4de782a50d6cbe75",
+ "facts": [
+  {
+   "text": "The vehicle network is the wiring and message system through which a machine's computers communicate; J1939 is the standard dialect heavy machines use on that network, including requests to slow or stop.",
+   "quote": "The vehicle network is the wiring and message system through which a machine's computers talk to one another, and J1939 is the standard dialect heavy machines use on it, including for the message that asks the machine to slow or stop.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t120"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "SAE J1939, from SAE International, defines heavy-duty vehicle message formats so that a brake controller from one supplier can understand a speed message from another.",
+   "quote": "SAE J1939, from SAE International, defines how heavy-duty vehicles format those messages so that a brake controller from one supplier understands a speed message from another.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    },
+    {
+     "name": "SAE International",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t120"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A DBC file specifies which bus messages carry which signals, the meanings of their bits, and scaling into physical units; without the correct DBC file, a recorded bus log is unreadable numbers.",
+   "quote": "A DBC file is the dictionary for a bus: which message carries which signal, which bits mean what, and how to scale them into physical units. Without the right DBC file a recorded bus log is unreadable numbers.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t120",
+    "t121"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The technical specification ISO/TS 21815-2:2021 defines the on-board J1939 interface between a collision-avoidance device and the machine, including slow-down, controlled-stop and emergency-stop commands, capability discovery and a keep-alive signal.",
+   "quote": "ISO/TS 21815-2:2021 defines the on-board J1939 interface between a collision-avoidance device and the machine, with commands to slow down, perform a controlled stop or an emergency stop, plus capability discovery and a keep-alive signal",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    11
+   ],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    },
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t120",
+    "t280",
+    "t55"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The collision-avoidance device-to-machine J1939 interface defined by ISO/TS 21815-2:2021 is not plug-and-play.",
+   "quote": "it is not plug-and-play [Chapters 3, 11]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    11
+   ],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    },
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t120",
+    "t280"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The bus carrying brake requests is a safety and security interface: spoofed or stale messages, bus faults and incompatible implementations must not create unsafe brake commands.",
+   "quote": "Because the brake request travels on this bus, it is a safety and security interface: spoofed or stale messages, bus faults and incompatible implementations must not create unsafe brake commands [Chapter 3].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t120",
+    "t49",
+    "t56"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The minimum machine-state recording list from CAN or J1939 includes speed, gear, steering or articulation angle, yaw rate, brake command and measured brake pressure, payload and attachment positions; DBC and message-schema versions must be recorded alongside.",
+   "quote": "Machine state from CAN or J1939 is on the minimum recording list: speed, gear, steering or articulation angle, yaw rate, brake command and measured brake pressure, payload and attachment positions, with DBC and message-schema versions recorded alongside [Chapter 7].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t121",
+    "t120",
+    "t122"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Hardware-in-the-loop benches emulate the rest of the machine's network traffic and the brake-request interface.",
+   "quote": "Hardware-in-the-loop benches emulate the rest of the network traffic and the brake-request interface [Chapters 7, 11].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t120"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "If the collision system acts through the J1939 interface, validation must include end-to-end integration latency.",
+   "quote": "If the system acts through the J1939 interface, validation must include end-to-end integration latency",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    10
+   ],
+   "entities": [
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t120",
+    "t172",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Recorded bus data allow engineers to reconstruct time to collision, zone entry and braking after the event.",
+   "quote": "the recorded bus data are what let engineers reconstruct time to collision, zone entry and braking afterwards [Chapters 7, 10].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t120",
+    "t186",
+    "t187"
+   ],
+   "importance": 2
+  }
+ ]
+}

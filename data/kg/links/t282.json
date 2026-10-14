@@ -1,0 +1,115 @@
+{
+ "key": "t282",
+ "hash": "0fd01ba19913a80f",
+ "synopsis": "ISO 3450:2011, reconfirmed in September 2022, specifies service, secondary and parking-brake performance and tests for wheeled and high-speed rubber-tracked earth-moving machines; ISO 10265:2008 covers crawlers at 20 km/h or less [f10651, f15190, f5979]. ISO 3450 measures stopping distance from brake-control actuation to standstill, including brake-system response but excluding operator reaction, and requires the most adverse braking configuration, including maximum specified payload for dumpers and certain other machines [f5976, f5967, f5968]. Stopping distance is not the sole acceptance outcome because controllability also matters, and passing ISO 3450 does not establish that perception, classification, threat assessment or trigger logic work [f6149, f2361]. The proposed four-month validation plan uses ISO 21815-3 CxS distances calculated for each machine model from ISO 3450 brake data and declared delays; physical brake testing remains necessary, with no identified off-road document accepting simulation as a replacement for prescribed physical tests [f2638, f10431, f2103]. These standards do not establish a calibration-stop count that guarantees prediction across 100-plus site types, multiple brake architectures and all stated weather conditions, supporting separate machine-family braking models rather than assuming universal transfer [f6162, f6163, f13733]. Verification is uneven across chapters: some report scope and edition details, while others say ISO 10265 or ISO 3450 details were not verified; the reported 32 km/h or 80%-of-maximum test speed and stopping-distance formulas come from secondary material requiring confirmation against the standard [f8946, f8947, f2197, f7013, f11197, f15193, f2436].",
+ "relations": [
+  {
+   "a": "f10431",
+   "b": "f10482",
+   "type": "same",
+   "note": "Both state that ISO 3450 brake testing is physical."
+  },
+  {
+   "a": "f2477",
+   "b": "f7882",
+   "type": "same",
+   "note": "Both identify ISO 3450 tests as physical, alongside different companion standards."
+  },
+  {
+   "a": "f5976",
+   "b": "f6051",
+   "type": "same",
+   "note": "Identical stopping-distance boundaries and treatment of brake response and operator reaction."
+  },
+  {
+   "a": "f5976",
+   "b": "f13674",
+   "type": "same",
+   "note": "Glossary restates stopping-distance timing, specifying dead time and build-up."
+  },
+  {
+   "a": "f6051",
+   "b": "f13674",
+   "type": "same",
+   "note": "Both include brake response and exclude operator reaction from stopping distance."
+  },
+  {
+   "a": "f6296",
+   "b": "f13761",
+   "type": "same",
+   "note": "Both state that ISO 3450 includes braking controllability requirements."
+  },
+  {
+   "a": "f5967",
+   "b": "f13623",
+   "type": "same",
+   "note": "Both require the configuration most adverse to braking; glossary adds dumper payload."
+  },
+  {
+   "a": "f5979",
+   "b": "f8947",
+   "type": "same",
+   "note": "Both assign slow crawler braking performance and testing to ISO 10265:2008."
+  },
+  {
+   "a": "f2360",
+   "b": "f2707",
+   "type": "same",
+   "note": "Both describe ISO 3450 service, secondary and parking-brake scope."
+  },
+  {
+   "a": "f2360",
+   "b": "f15190",
+   "type": "same",
+   "note": "Glossary restates brake-performance requirements and scope, adding edition and confirmation details."
+  },
+  {
+   "a": "f2638",
+   "b": "f15164",
+   "type": "same",
+   "note": "Both describe model-specific CxS calculations using ISO 3450 brake data and declared delays."
+  },
+  {
+   "a": "f2433",
+   "b": "f5975",
+   "type": "elaborates",
+   "note": "Underground-machine exclusion qualifies the stated ISO 3450 machine scope."
+  },
+  {
+   "a": "f2435",
+   "b": "f15194",
+   "type": "same",
+   "note": "Same secondary-source stopping-limit formula for dumpers under 32 tonnes."
+  },
+  {
+   "a": "f2434",
+   "b": "f15193",
+   "type": "same",
+   "note": "Same secondary-source test speed: 32 km/h or 80 percent of maximum."
+  },
+  {
+   "a": "f8947",
+   "b": "f2197",
+   "type": "contradicts",
+   "note": "One reports ISO 10265 scope; the other says its evidence was not verified."
+  },
+  {
+   "a": "f10651",
+   "b": "f7013",
+   "type": "contradicts",
+   "note": "Confirmed edition information contrasts with another chapter's unverified current-edition status."
+  },
+  {
+   "a": "f6163",
+   "b": "f6162",
+   "type": "supports",
+   "note": "Performance-standard purpose explains absence of a guaranteed model-transfer calibration count."
+  },
+  {
+   "a": "f10431",
+   "b": "f2103",
+   "type": "supports",
+   "note": "Physical brake-testing requirement supports rejecting simulation as a replacement for prescribed tests."
+  }
+ ]
+}

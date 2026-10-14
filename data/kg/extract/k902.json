@@ -1,0 +1,351 @@
+{
+ "chunkId": "k902",
+ "hash": "4453a92d1b329587",
+ "facts": [
+  {
+   "text": "Cloud execution means renting computers, including graphics processors, by the hour over the internet instead of buying them, enabling thousands of simulations to run in parallel.",
+   "quote": "Cloud execution means renting computers, including graphics processors, by the hour over the internet instead of buying them, so that thousands of simulations can run in parallel.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t330",
+    "t163",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simulation compute demand comes in bursts, potentially requiring a few hundred computers for a week and then none; buying that capacity would leave it idle most of the year.",
+   "quote": "the work comes in bursts: a few hundred computers for a week, then none. Buying that capacity would leave it idle most of the year.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t330",
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Vendor clouds run a specific simulator; examples reported in the booklet are FalconCloud, VTDx, AURELION cloud, and the large-scale services of Applied Intuition and MORAI.",
+   "quote": "Vendor clouds run a specific simulator: FalconCloud, VTDx, AURELION cloud, and the large-scale services of Applied Intuition and MORAI",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "FalconCloud",
+     "kind": "tool"
+    },
+    {
+     "name": "VTDx",
+     "kind": "tool"
+    },
+    {
+     "name": "AURELION cloud",
+     "kind": "tool"
+    },
+    {
+     "name": "Applied Intuition",
+     "kind": "company"
+    },
+    {
+     "name": "MORAI",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t330",
+    "t321"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Prices were not found for FalconCloud, VTDx, AURELION cloud, or the large-scale cloud services of Applied Intuition and MORAI.",
+   "quote": "FalconCloud, VTDx, AURELION cloud, and the large-scale services of Applied Intuition and MORAI; their prices were not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "FalconCloud",
+     "kind": "tool"
+    },
+    {
+     "name": "VTDx",
+     "kind": "tool"
+    },
+    {
+     "name": "AURELION cloud",
+     "kind": "tool"
+    },
+    {
+     "name": "Applied Intuition",
+     "kind": "company"
+    },
+    {
+     "name": "MORAI",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t330",
+    "t334"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Generic cloud services rent raw machines rather than running a specific simulator.",
+   "quote": "Generic cloud rents raw machines.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t330"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Third-party price trackers listed an AWS g6e.xlarge instance with one NVIDIA L40S graphics processor at about USD 1.861 per hour on demand in the US East region, rising to about USD 30.131 per hour for eight such processors.",
+   "quote": "at about USD 1.861 per hour on demand in the US East region, rising to about USD 30.131 per hour for eight such processors",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Amazon Web Services",
+     "kind": "company"
+    },
+    {
+     "name": "AWS g6e.xlarge",
+     "kind": "product"
+    },
+    {
+     "name": "NVIDIA L40S",
+     "kind": "product"
+    },
+    {
+     "name": "US East",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t330",
+    "t339",
+    "t337"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A one-year commitment brought the AWS single-NVIDIA-L40S-processor price to about USD 1.17 per hour, while spot prices for interruptible capacity fluctuated widely.",
+   "quote": "a one-year commitment brought the single-processor price to about USD 1.17, and \"spot\" prices for interruptible capacity fluctuated widely.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Amazon Web Services",
+     "kind": "company"
+    },
+    {
+     "name": "NVIDIA L40S",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t330",
+    "t339",
+    "t334"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Google Cloud listed a g2-standard-32 instance with one L4 processor at about USD 1.734 per hour.",
+   "quote": "Google Cloud listed a g2-standard-32 with one L4 processor at about USD 1.734 per hour.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Google Cloud",
+     "kind": "product"
+    },
+    {
+     "name": "g2-standard-32",
+     "kind": "product"
+    },
+    {
+     "name": "L4",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t330",
+    "t339",
+    "t337"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Spot pricing suits regression runs that can be paused and restarted, but not deterministic hardware-in-the-loop (HIL) tests or irreplaceable long jobs.",
+   "quote": "Spot pricing suits regression runs that can be paused and restarted, not deterministic hardware-in-the-loop (HIL) tests or irreplaceable long jobs.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t330",
+    "t161",
+    "t148"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Cloud regional availability and quotas vary, and cloud prices should be rechecked at purchase.",
+   "quote": "Regional availability and quotas vary, and prices should be rechecked at purchase [Chapter 11].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t330",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Cloud simulation orchestration distributes runs to machines and collects results using Kubernetes, batch systems, or high-performance computing (HPC) schedulers plus object storage.",
+   "quote": "Orchestration, the software that hands out runs to machines and collects results, is named as Kubernetes, batch systems or high-performance computing (HPC) schedulers plus object storage.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Kubernetes",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t330",
+    "t338",
+    "t341"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Vendor cloud terms, export control, and data residency were not researched in the booklet.",
+   "quote": "Vendor cloud terms, export control and data residency were not researched",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t330",
+    "t347"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Site scans, mine layouts, and machine CAD are commercially sensitive; an on-premises or private-cloud option is a mitigation for handling these data.",
+   "quote": "site scans, mine layouts and machine CAD are commercially sensitive and that an on-premises or private-cloud option is a mitigation [Chapter 11].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t330",
+    "t341"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Compute is cheap relative to engineering labor, but the four-month program window caps how many simulation runs can fit.",
+   "quote": "Compute is cheap relative to engineering labor, but the four-month window caps how many runs fit",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t43",
+    "t358"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ten single-processor instances running continuously for 122 days cost on the order of USD 54,000 and deliver at most about 29,000 processor-hours.",
+   "quote": "ten single-processor instances running continuously for 122 days cost on the order of USD 54,000 and deliver at most about 29,000 processor-hours [Chapter 11].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t330",
+    "t163",
+    "t43"
+   ],
+   "importance": 3
+  }
+ ]
+}

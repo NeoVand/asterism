@@ -1,0 +1,325 @@
+{
+ "chunkId": "k912",
+ "hash": "372184727a318169",
+ "facts": [
+  {
+   "text": "Software terms a planner meets describe how programs communicate, which programming tools simulators use, and how teams package, track and automatically test code.",
+   "quote": "how programs talk to each other, which programming tools the simulators use, and how teams package, track and automatically test their code.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t340"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "CARLA offers a Python API, Prescan offers Python and MATLAB APIs, and RoadRunner uses gRPC, a network protocol for calls between programs.",
+   "quote": "CARLA offers a Python API, Prescan offers Python and MATLAB APIs, and RoadRunner uses gRPC, a network protocol for calls between programs [Chapter 11].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    },
+    {
+     "name": "Prescan",
+     "kind": "tool"
+    },
+    {
+     "name": "RoadRunner",
+     "kind": "tool"
+    },
+    {
+     "name": "Python",
+     "kind": "tool"
+    },
+    {
+     "name": "MATLAB",
+     "kind": "tool"
+    },
+    {
+     "name": "gRPC",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t340",
+    "t320"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Many simulators and research generators, including Scenic, CropCraft and Demify, are driven from Python.",
+   "quote": "many simulators and research generators (Scenic, CropCraft, Demify) are driven from it.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Python",
+     "kind": "tool"
+    },
+    {
+     "name": "Scenic",
+     "kind": "tool"
+    },
+    {
+     "name": "CropCraft",
+     "kind": "tool"
+    },
+    {
+     "name": "Demify",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t340",
+    "t327"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MathWorks' off-road library, Simulink Real-Time and Simscape belong to the MATLAB and Simulink family, which is released twice a year; R2026b is the second 2026 release.",
+   "quote": "MathWorks' off-road library, Simulink Real-Time and Simscape belong to that family, released twice a year (R2026b is the second 2026 release) [Chapter 11].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "MathWorks",
+     "kind": "company"
+    },
+    {
+     "name": "MathWorks' off-road library",
+     "kind": "tool"
+    },
+    {
+     "name": "Simulink Real-Time",
+     "kind": "tool"
+    },
+    {
+     "name": "Simscape",
+     "kind": "tool"
+    },
+    {
+     "name": "MATLAB",
+     "kind": "tool"
+    },
+    {
+     "name": "Simulink",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t340",
+    "t320"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ROS 2 is the current generation of Robot Operating System and is integrated in CARLA, Isaac Sim, Gazebo and BeamNG.",
+   "quote": "ROS 2 is its current generation, integrated in CARLA, Isaac Sim, Gazebo and BeamNG [Chapter 11].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Robot Operating System",
+     "kind": "tool"
+    },
+    {
+     "name": "ROS 2",
+     "kind": "tool"
+    },
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    },
+    {
+     "name": "Isaac Sim",
+     "kind": "tool"
+    },
+    {
+     "name": "Gazebo",
+     "kind": "tool"
+    },
+    {
+     "name": "BeamNG",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t340",
+    "t320"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet advises containerizing a frozen tool-chain version and archiving the containers for the safety case.",
+   "quote": "the booklet advises containerizing a frozen tool-chain version and archiving the containers for the safety case [Chapter 11].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t340",
+    "t320",
+    "t67",
+    "t162"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "GitHub is a widely used hosting service for version control.",
+   "quote": "Version control records every change to code and files with a unique identifier (a commit hash) for each state; GitHub is a widely used hosting service",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "GitHub",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t340"
+   ],
+   "importance": 1
+  },
+  {
+   "text": "The booklet requires the software build or commit to be included in every run record.",
+   "quote": "the booklet requires the software build or commit in every run record [Chapter 9].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t162",
+    "t341",
+    "t340"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet lists DevOps among the internal labor required for an open-source build.",
+   "quote": "the booklet lists it among the internal labor an open-source build requires [Chapter 11].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t359",
+    "t333",
+    "t340"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet identifies cloud and continuous integration as a skill to acquire.",
+   "quote": "the booklet names cloud and CI as a skill to acquire",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t359",
+    "t161",
+    "t163"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet identifies continuous integration scripts as a deliverable that a partner must hand over.",
+   "quote": "CI scripts as a deliverable a partner must hand over [Chapter 11].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t342",
+    "t333"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Evidence produced on one software version may need re-qualification after a software update.",
+   "quote": "Evidence produced on one software version may need re-qualification after an update",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t70",
+    "t340",
+    "t162"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet lists freezing versions, containerizing and regression-testing upgrades before adopting them as mitigations against fast-changing tools.",
+   "quote": "freezing versions, containerizing, and regression-testing upgrades before adopting them are listed mitigations against fast-changing tools [Chapter 11].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t162",
+    "t340",
+    "t320"
+   ],
+   "importance": 3
+  }
+ ]
+}

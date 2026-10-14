@@ -1,0 +1,115 @@
+{
+ "key": "t155",
+ "hash": "f67a309a58dfcc84",
+ "synopsis": "Recorded-data replay is an established, low-cost way to baseline the warning system and evaluate candidate perception, warning timing and braking triggers, but it cannot validate stopping because the recorded world does not react to a brake command [f94, f332, f10925, f11320, f11321]. Recording should start in October 2026 rather than wait for a prototype; the existing fleet is suitable, and a recording-and-replay pipeline could realistically be running by mid-2027 [f5168, f333, f64]. Evidence covers only the recorded sensors, mounting positions and scenarios, excludes effects upstream of the re-injection point, and ceases to represent the machine's counterfactual future at the first brake command absent from the original run [f95, f96, f108]. Reliable replay requires raw sensor inputs, synchronized timestamps, machine signals, geometry, calibration and independent ground truth; insufficient fidelity, missing metadata or large unexplained discrepancies should trigger stopping or escalation [f11899, f12991, f10928]. Camera and lidar recordings can support reconstruction and near-path novel views, but quality is restrictive—only 50 of 200 MV² sequences passed pose checks—and no validated evidence supports re-simulating an unrecorded sensor type [f3985, f3727, f3729]. Replay therefore belongs within a broader validation programme combining simulation, benches, physical tests and staged field operation, while published sources yielded no off-road OEM statement demonstrating that simulation, replay or HIL shortened validation time [f309, f257].",
+ "relations": [
+  {
+   "a": "f94",
+   "b": "f5165",
+   "type": "same",
+   "note": "Both identify independent-ground-truth raw-log replay as the established off-field warning-system baseline."
+  },
+  {
+   "a": "f94",
+   "b": "f13005",
+   "type": "same",
+   "note": "Both describe the established method for baselining the old warning system."
+  },
+  {
+   "a": "f5165",
+   "b": "f13005",
+   "type": "same",
+   "note": "Both establish raw-log replay against independent ground truth as the baseline method."
+  },
+  {
+   "a": "f95",
+   "b": "f5166",
+   "type": "same",
+   "note": "Replay metrics apply only to recorded sensors, mounting positions and scenarios."
+  },
+  {
+   "a": "f96",
+   "b": "f5167",
+   "type": "same",
+   "note": "Neither replay account retests components or influences upstream of the re-injection point."
+  },
+  {
+   "a": "f83",
+   "b": "f3729",
+   "type": "same",
+   "note": "Both report no validated evidence for re-simulating unrecorded sensor types."
+  },
+  {
+   "a": "f108",
+   "b": "f5183",
+   "type": "same",
+   "note": "Recorded evidence becomes counterfactually invalid at the first previously absent brake command."
+  },
+  {
+   "a": "f108",
+   "b": "f11710",
+   "type": "same",
+   "note": "Both locate the warning-system evidence boundary at braking intervention."
+  },
+  {
+   "a": "f5183",
+   "b": "f11710",
+   "type": "same",
+   "note": "Both explain why recorded history cannot establish post-intervention machine behavior."
+  },
+  {
+   "a": "f257",
+   "b": "f377",
+   "type": "same",
+   "note": "Both report no published off-road OEM claim that these methods shortened validation."
+  },
+  {
+   "a": "f7577",
+   "b": "f7869",
+   "type": "same",
+   "note": "Both identify logged-data replay as common on-road practice."
+  },
+  {
+   "a": "f7869",
+   "b": "f7927",
+   "type": "same",
+   "note": "Both describe replay or re-simulation as common ADAS and ADS industry practice."
+  },
+  {
+   "a": "f7577",
+   "b": "f7927",
+   "type": "same",
+   "note": "Both state that replaying logged data is common on-road practice."
+  },
+  {
+   "a": "f3725",
+   "b": "f3985",
+   "type": "same",
+   "note": "Both support camera/lidar replay and novel views close to the recorded path."
+  },
+  {
+   "a": "f11321",
+   "b": "f336",
+   "type": "supports",
+   "note": "Unchanging recordings explain why open-loop replay cannot show post-braking outcomes."
+  },
+  {
+   "a": "f5168",
+   "b": "f64",
+   "type": "depends",
+   "note": "Starting recording before the prototype supports the proposed mid-2027 pipeline milestone."
+  },
+  {
+   "a": "f11899",
+   "b": "f10928",
+   "type": "supports",
+   "note": "Required data and ground truth explain escalation when fidelity or metadata are insufficient."
+  },
+  {
+   "a": "f3727",
+   "b": "f8657",
+   "type": "supports",
+   "note": "Low pose-check yield illustrates reconstruction and replay dependence on tracking accuracy."
+  }
+ ]
+}

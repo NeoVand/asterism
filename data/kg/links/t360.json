@@ -1,0 +1,115 @@
+{
+ "key": "t360",
+ "hash": "d6ef459335f6670d",
+ "synopsis": "The cheapest early experiments are intended to falsify the collision-mitigation proposal before expensive infrastructure is built; Chapter 13 identifies sixteen experiments, each producing an artifact and a stopping or escalation signal [f10912, f16532, f16533]. Several can begin in October 2026 using existing warning-system data, historical tests, supplier discussions and one representative machine; parallel recording on current machines is identified as the single most valuable pre-hardware action, and winter 2026–2027 reference data should be captured before the season passes [f10914, f5574, f14351, f10953]. The proposed tests include checking supplier data and legal rights, replaying logs to estimate false activations, correlating one machine and scenario with simulation, and carrying one safety requirement through a real test, model, virtual result and residual-risk decision—the “golden thread,” described as the cheapest decisive experiment [f10915, f10925, f10930, f12195]. These tests must establish credible evidence rather than superficial similarity: weather simulation should reproduce measured sensor degradation, correlation should include residual plots and an uncertainty budget, and hand-made object-list tests provide no evidence that perception works [f10937, f16538, f12536]. Funding should be stage-gated around data availability, correlation, transfer to a materially different configuration and reviewer acceptance; unresolved supplier access, inadequate reference data or excessive bespoke tuning are explicit reasons to stop or escalate, while a published off-road shadow-mode protocol remains missing [f10746, f16550, f10918, f10956, f10948, f10929].",
+ "relations": [
+  {
+   "a": "f5574",
+   "b": "f14351",
+   "type": "same",
+   "note": "Both identify parallel reference recording as the most valuable pre-hardware action."
+  },
+  {
+   "a": "f10912",
+   "b": "f16532",
+   "type": "same",
+   "note": "Both define early experiments by falsification before expensive infrastructure."
+  },
+  {
+   "a": "f10914",
+   "b": "f16552",
+   "type": "same",
+   "note": "Both say several experiments can start in October 2026 with existing resources."
+  },
+  {
+   "a": "f10915",
+   "b": "f16534",
+   "type": "same",
+   "note": "Both test access to required supplier data with legal usage rights."
+  },
+  {
+   "a": "f10919",
+   "b": "f16535",
+   "type": "same",
+   "note": "Both trace one requirement from real testing through simulation to a decision."
+  },
+  {
+   "a": "f10746",
+   "b": "f12310",
+   "type": "same",
+   "note": "Both tie early experiments to stage-gated funding."
+  },
+  {
+   "a": "f10925",
+   "b": "f16537",
+   "type": "same",
+   "note": "Both use warning-system log replay to estimate candidate braking false activations."
+  },
+  {
+   "a": "f10937",
+   "b": "f16540",
+   "type": "same",
+   "note": "Both require weather simulation to reproduce sensor degradation, not merely appearance."
+  },
+  {
+   "a": "f10953",
+   "b": "f16545",
+   "type": "same",
+   "note": "Both recommend capturing winter 2026–2027 data before the season passes."
+  },
+  {
+   "a": "f12195",
+   "b": "f16535",
+   "type": "elaborates",
+   "note": "Adds that the golden thread is the program’s cheapest decisive experiment."
+  },
+  {
+   "a": "f16500",
+   "b": "f10915",
+   "type": "elaborates",
+   "note": "Adds first-experiment priority and artifact owners, contractual rights and delivery dates."
+  },
+  {
+   "a": "f10918",
+   "b": "f16534",
+   "type": "depends",
+   "note": "Unavailable, unusable or unapproved supplier data triggers stopping or escalation."
+  },
+  {
+   "a": "f16538",
+   "b": "f10930",
+   "type": "elaborates",
+   "note": "Specifies residual plots and an uncertainty budget for physical-versus-virtual correlation."
+  },
+  {
+   "a": "f10936",
+   "b": "f16540",
+   "type": "supports",
+   "note": "Sensor degradation mismatches provide an explicit falsification signal."
+  },
+  {
+   "a": "f10956",
+   "b": "f16545",
+   "type": "depends",
+   "note": "Missing credible seasonal reference data requires stopping or escalation."
+  },
+  {
+   "a": "f10946",
+   "b": "f16550",
+   "type": "supports",
+   "note": "Portability testing supplies evidence for the second-configuration investment gate."
+  },
+  {
+   "a": "f16551",
+   "b": "f10746",
+   "type": "supports",
+   "note": "Early gate failures are more informative before platform construction, supporting staged funding."
+  },
+  {
+   "a": "f16536",
+   "b": "f10924",
+   "type": "elaborates",
+   "note": "Names the framework for the dry run whose evidence gaps trigger escalation."
+  }
+ ]
+}

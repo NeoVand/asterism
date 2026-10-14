@@ -1,0 +1,115 @@
+{
+ "key": "t42",
+ "hash": "3dea49c9aab83557",
+ "synopsis": "Prototype hardware and software are expected in mid-2027, leaving under four months for validation; the plan depends on that arrival date [f1173, f10375, f11636]. The proposed capability-building period runs from October 2026 through June 2027, and the booklet recommends completing the credibility envelope and preparatory infrastructure before prototype arrival rather than treating arrival as the start of preparation [f1478, f71, f11340, f11341]. Sensor selection remains unconfirmed and is described as the largest schedule risk: the recommendation is to lock it by early 2027, while keeping the architecture sensor-agnostic and freezing supplier-independent interfaces early [f287, f1618, f1616, f485, f5577]. Most infrastructure can be developed without the final sensor or ECU if interfaces are established early, but sensor-model validation requires representative hardware, and a validated sensor digital twin should not be claimed before hardware and mounting are frozen and correlated [f5568, f5115, f508]. Freeze is also a change-control boundary: a later sensor-modality change requires re-deriving affected statistical strata and re-drawing samples, consuming the short validation window, while software, calibration and simulator versions should be frozen or subject to impact analysis [f7491, f7492, f8229].",
+ "relations": [
+  {
+   "a": "f2",
+   "b": "f280",
+   "type": "same",
+   "note": "Both place prototype hardware and software arrival in mid-2027."
+  },
+  {
+   "a": "f280",
+   "b": "f2028",
+   "type": "same",
+   "note": "Both give the same prototype arrival date."
+  },
+  {
+   "a": "f3671",
+   "b": "f4389",
+   "type": "same",
+   "note": "Both give the same prototype arrival date."
+  },
+  {
+   "a": "f5856",
+   "b": "f6618",
+   "type": "same",
+   "note": "Both give the same prototype arrival date."
+  },
+  {
+   "a": "f7505",
+   "b": "f8250",
+   "type": "same",
+   "note": "Both give the same prototype arrival date."
+  },
+  {
+   "a": "f1173",
+   "b": "f5128",
+   "type": "same",
+   "note": "Both specify mid-2027 arrival followed by validation in under four months."
+  },
+  {
+   "a": "f10381",
+   "b": "f11636",
+   "type": "same",
+   "note": "Both specify mid-2027 arrival followed by validation in under four months."
+  },
+  {
+   "a": "f287",
+   "b": "f4396",
+   "type": "same",
+   "note": "Both report that sensor types remain unconfirmed."
+  },
+  {
+   "a": "f71",
+   "b": "f10466",
+   "type": "elaborates",
+   "note": "The skeptic's review specifies a measured, independently reviewed pre-prototype credibility envelope."
+  },
+  {
+   "a": "f7591",
+   "b": "f11340",
+   "type": "supports",
+   "note": "Credibility work must precede arrival for the short validation timeline to work."
+  },
+  {
+   "a": "f2006",
+   "b": "f5568",
+   "type": "contradicts",
+   "note": "Sensor choice gates most preparation, yet most infrastructure can proceed with early interfaces."
+  },
+  {
+   "a": "f5577",
+   "b": "f5568",
+   "type": "supports",
+   "note": "Early supplier-independent interface contracts enable infrastructure development without final hardware."
+  },
+  {
+   "a": "f5115",
+   "b": "f1618",
+   "type": "supports",
+   "note": "Missing representative sensors obstruct early model validation, substantiating the largest schedule risk."
+  },
+  {
+   "a": "f1618",
+   "b": "f1616",
+   "type": "supports",
+   "note": "The largest schedule risk motivates locking sensor choice by early 2027."
+  },
+  {
+   "a": "f7491",
+   "b": "f7490",
+   "type": "elaborates",
+   "note": "Explains how a late modality change invalidates the frozen statistical plan."
+  },
+  {
+   "a": "f7491",
+   "b": "f7492",
+   "type": "depends",
+   "note": "Required strata re-derivation and sample redraw consume the short validation window."
+  },
+  {
+   "a": "f10492",
+   "b": "f10489",
+   "type": "supports",
+   "note": "Assumed hardware creates the inferred risk that the actual prototype invalidates the simulator."
+  },
+  {
+   "a": "f6286",
+   "b": "f2948",
+   "type": "elaborates",
+   "note": "Identifies specific ISO publication statuses to check during pre-freeze standards review."
+  }
+ ]
+}

@@ -1,0 +1,731 @@
+{
+ "chunkId": "k536",
+ "hash": "b7e78b2b41e96db0",
+ "facts": [
+  {
+   "text": "A collision-mitigation toolchain may fail to become credible in time.",
+   "quote": "The toolchain is not credible in time.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t234",
+    "t82"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NASA-STD-7009B and ASME VVUQ require validation against the real application rather than internal consistency.",
+   "quote": "NASA-STD-7009B and ASME VVUQ require validation against the real application, not internal consistency [4, 5].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    4,
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NASA-STD-7009",
+     "kind": "standard"
+    },
+    {
+     "name": "ASME VVUQ",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t242",
+    "t243",
+    "t235",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Early warning signs of an unready collision-mitigation toolchain include no agreed correlation metrics by the first quarter of 2027, scene-by-scene sensor-model tuning, large virtual test counts without simulator-to-real residuals, uncertainty or an approved validity envelope, and divergent simulated and real detection rates on a held-out real set.",
+   "quote": "no agreed correlation metrics by the first quarter of 2027; the sensor model is still tuned per scene; teams report huge virtual test counts but cannot show simulator-to-real residuals, uncertainty or an approved validity envelope; simulated and real detection rates diverge on a held-out real set.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t82",
+    "t249",
+    "t261",
+    "t263",
+    "t250"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Synthetic sensors may reproduce appearance without reproducing physics; the passage identifies NIOSH's 2022 review and controlled on-road weather tests as evidence for this failure family.",
+   "quote": "Synthetic sensors reproduce appearance but not physics.** NIOSH's 2022 review and the controlled on-road weather tests are the evidence [23, 37].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    23,
+    37
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t323",
+    "t128",
+    "t165",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Early warning signs of physically inadequate synthetic sensors include good virtual perception metrics alongside field failures clustered by rain, dust, night, glare, contamination, range or incidence angle; no chamber data; and no snow or cold data captured by March 2027.",
+   "quote": "good virtual perception metrics but field failures clustered by rain, dust, night, glare, contamination, range or incidence angle; no chamber data; no snow or cold data captured by March 2027.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t323",
+    "t249",
+    "t45"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A collision-mitigation prototype may differ from the hardware assumed by the simulation model.",
+   "quote": "The prototype differs from the assumed hardware.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t42",
+    "t125",
+    "t82"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A model is credible only for its validated configuration.",
+   "quote": "A model is credible only for its validated configuration [4].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t262",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Early warning signs of prototype/model mismatch include changes during the second quarter of 2027 to sensor type, mounting, field of view, controller timing, CAN or J1939 interface, brake controller or algorithm interfaces without impact analysis, and a supplier's refusal to release sensor model parameters.",
+   "quote": "sensor type, mounting, field of view, controller timing, CAN or J1939 interface, brake controller or algorithm interfaces still changing in the second quarter of 2027 without impact analysis; the supplier will not release sensor model parameters.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "CAN bus",
+     "kind": "other"
+    },
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t42",
+    "t100",
+    "t120",
+    "t88",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Braking and vehicle-dynamics models may fail to generalize across machine families; the passage identifies ISO 3450 and Barrick as showing the relevant dependencies.",
+   "quote": "Braking and vehicle dynamics do not generalize across machine families.** ISO 3450 and Barrick show the dependencies [14, 22].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    14,
+    22
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 3450",
+     "kind": "standard"
+    },
+    {
+     "name": "Barrick",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t179",
+    "t182",
+    "t229",
+    "t282"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Early warning signs that braking and vehicle-dynamics models do not generalize include repeated retuning after every physical test and errors correlated with machine, load, grade or configuration.",
+   "quote": "repeated model retuning after every physical test; errors that correlate with machine, load, grade or configuration.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t179",
+    "t168",
+    "t173",
+    "t230"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Requirements debate may consume the four months available for collision-mitigation validation.",
+   "quote": "The four months are consumed by requirements debate.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t63",
+    "t82"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The ISO 19014 series changes in October 2026.",
+   "quote": "The ISO 19014 series changes in October 2026 [7, 8, 10, 12].",
+   "kind": "event",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    7,
+    8,
+    10,
+    12
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014 series",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Early warning signs of requirements debate consuming the validation window include hazard analysis, performance-level allocation, pass or fail metrics or the applicable standard edition remaining undecided in 2027.",
+   "quote": "hazard analysis, performance-level allocation, pass or fail metrics or the applicable standard edition still \"to be decided\" in 2027.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t47",
+    "t51",
+    "t62",
+    "t271",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Supplier data for collision-mitigation validation may arrive late or be legally unusable.",
+   "quote": "Supplier data arrives late or cannot legally be used.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t357",
+    "t82"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Barrick required OEM cooperation.",
+   "quote": "Barrick required OEM cooperation;",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    22
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Barrick",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t357"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NIOSH found manufacturer documentation to be proprietary.",
+   "quote": "NIOSH found manufacturer documentation proprietary [22, 23].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    23
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t357"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Early warning signs of late or legally unusable supplier data include interface timing, brake maps, sensor models, fault modes or licensing rights remaining under NDA or contract negotiation close to prototype delivery.",
+   "quote": "interface timing, brake maps, sensor models, fault modes or licensing rights still under NDA or contract negotiation close to prototype delivery.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t357",
+    "t182",
+    "t323",
+    "t56",
+    "t88"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The collision-mitigation false-activation rate may be unacceptable in field pilots.",
+   "quote": "The false-activation rate is unacceptable in field pilots.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t31",
+    "t32",
+    "t350"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Early warning signs of unacceptable field false activations include nuisance activations in shadow mode on current machines, operators requesting an off-switch or repeatedly overriding, work practices changing to avoid triggers, and dealers unable to reproduce complaints.",
+   "quote": "nuisance activations in shadow mode on current machines; operators asking for an off-switch or repeatedly overriding; work practices changed to avoid triggers; dealers unable to reproduce complaints.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t31",
+    "t157",
+    "t34",
+    "t38"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NHTSA opened Engineering Analysis EA25002 into Honda's AEB in January 2025.",
+   "quote": "In NHTSA's Engineering Analysis EA25002 into Honda's AEB (opened January 2025)",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    59
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NHTSA",
+     "kind": "organization"
+    },
+    {
+     "name": "Honda",
+     "kind": "company"
+    },
+    {
+     "name": "Engineering Analysis EA25002",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t314",
+    "t25"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Honda cited about 412 reports in NHTSA's Engineering Analysis EA25002 into Honda's AEB.",
+   "quote": "Honda cited about 412 reports",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    59
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Honda",
+     "kind": "company"
+    },
+    {
+     "name": "NHTSA",
+     "kind": "organization"
+    },
+    {
+     "name": "Engineering Analysis EA25002",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t314",
+    "t31"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In NHTSA's Engineering Analysis EA25002 into Honda's AEB, dealer technicians who could not replicate the fault told customers that the behavior was \"normal AEB operation\".",
+   "quote": "dealer technicians who could not replicate the fault told customers it was \"normal AEB operation\"",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    59
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Honda",
+     "kind": "company"
+    },
+    {
+     "name": "NHTSA",
+     "kind": "organization"
+    },
+    {
+     "name": "Engineering Analysis EA25002",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t314",
+    "t31"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NHTSA reviewed 475 reports in total in Engineering Analysis EA25002 into Honda's AEB.",
+   "quote": "the agency reviewed 475 reports in total.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    59
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NHTSA",
+     "kind": "organization"
+    },
+    {
+     "name": "Honda",
+     "kind": "company"
+    },
+    {
+     "name": "Engineering Analysis EA25002",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t314",
+    "t31"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Recovery and degraded modes can be unsafe even when nominal collision avoidance works; WorkSafe SIR 286 is the documented case cited for this failure family.",
+   "quote": "Recovery and degraded modes are unsafe even when nominal avoidance works.** WorkSafe SIR 286 is the documented case [30].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    30
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "WorkSafe SIR 286",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t55",
+    "t56",
+    "t309",
+    "t40"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An early warning sign of unsafe recovery and degraded modes is a test plan emphasizing normal driving while omitting communications-loss, sensor-blocked, restart, service and recovery cases.",
+   "quote": "test plans that emphasize normal driving but lack communications-loss, sensor-blocked, restart, service and recovery cases.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t143",
+    "t56",
+    "t103",
+    "t55"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Scenario coverage for collision-mitigation validation may become an unmanageable list.",
+   "quote": "Scenario coverage becomes an unmanageable list.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t198",
+    "t82"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NIOSH identifies gaps in design-of-experiments and standard simulation methods.",
+   "quote": "NIOSH names design-of-experiments and standard simulation-method gaps [23].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    23
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    },
+    {
+     "name": "design-of-experiments",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t201",
+    "t126",
+    "t200"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An early warning sign of unmanageable scenario coverage is reporting coverage as the number of scenarios run without a risk taxonomy, parameter boundaries or an argument that the cases represent the operating domain.",
+   "quote": "coverage reported as \"number of scenarios run\" with no risk taxonomy, parameter boundaries or argument for why the cases represent the operating domain.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t140",
+    "t199",
+    "t47"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The risk that a collision-mitigation function is overfitted to its simulator is an inference from verification and validation principles.",
+   "quote": "The function is overfitted to the simulator.** An inference from verification and validation principles;",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t219",
+    "t65",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An off-road case of a collision-mitigation function being overfitted to its simulator was not found.",
+   "quote": "an off-road case was **not found**.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t219",
+    "t70",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An early warning sign of simulator overfitting is continued improvement in virtual metrics while performance on held-out real data stalls or worsens.",
+   "quote": "virtual metrics keep improving while performance on held-out real data stalls or worsens.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t219",
+    "t263",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The regulatory route for the collision-mitigation function may be blocked.",
+   "quote": "The regulatory route is blocked.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t277",
+    "t82"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Early warning signs of a blocked regulatory route include no notified-body pre-consultation by early 2027 and use of an ML perception component without a position on Annex I Part A of the Machinery Regulation.",
+   "quote": "no notified-body pre-consultation by early 2027; the design uses an ML perception component with no position on Annex I Part A of the Machinery Regulation [73, 75].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    73,
+    75
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Machinery Regulation",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t278",
+    "t79",
+    "t298",
+    "t277"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Liability review may reject the collision-mitigation safety case.",
+   "quote": "The liability review rejects the safety case.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t80",
+    "t67",
+    "t361"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Early warning signs that liability review will reject the safety case include counsel being unwilling to sign off and the absence of a data-retention or version-control policy.",
+   "quote": "counsel unwilling to sign off; no data-retention or version-control policy [82, 85].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    82,
+    85
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t80",
+    "t67",
+    "t341",
+    "t162"
+   ],
+   "importance": 3
+  }
+ ]
+}

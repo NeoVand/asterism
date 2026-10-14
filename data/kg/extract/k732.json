@@ -1,0 +1,418 @@
+{
+ "chunkId": "k732",
+ "hash": "09c661ccd6d78a51",
+ "facts": [
+  {
+   "text": "The sim-to-real gap is the difference between a system's behavior in simulation and reality, caused by omissions or errors in the models; in machine learning, it is also called the domain gap.",
+   "quote": "The sim-to-real gap is the difference between what a system does in simulation and what it does in reality, caused by everything the models leave out or get wrong.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t165",
+    "t114"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Simulated quarries differ from real quarries in sensor- and brake-relevant phenomena, including wet-rock laser returns, radar echoes between steel structures, dust plumes and loaded-tire sinkage.",
+   "quote": "the exact way wet rock returns laser light, the radar echoes bouncing between steel structures, the real dust plume, the real sinkage of a loaded tire.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t165",
+    "t92",
+    "t94",
+    "t102",
+    "t180"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A detector trained or tested in simulation can perform well in simulation but fail in the field.",
+   "quote": "A detector trained or tested in simulation can therefore score well there and fail in the field",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t165",
+    "t112",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A stopping distance predicted in simulation can be shorter than the real stopping distance.",
+   "quote": "a stopping distance predicted in simulation can be shorter than the real one.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t165",
+    "t170"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet documents sim-to-real gaps for every sensor type, using almost entirely on-road data.",
+   "quote": "The booklet documents the gap for every sensor type, almost all on road data",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t165",
+    "t84",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Radar simulation narrows but does not close detection gaps between simulation and reality.",
+   "quote": "radar simulation that narrows but does not close detection gaps",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t165",
+    "t94",
+    "t86"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Lidar detection accuracy shifts between simulated and real point clouds.",
+   "quote": "lidar detection accuracy shifting between simulated and real point clouds",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t165",
+    "t92",
+    "t93",
+    "t86"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Camera benchmarks are motivated by the mismatch between simulation and reality under extreme weather.",
+   "quote": "camera benchmarks motivated precisely by the mismatch under extreme weather",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t165",
+    "t89",
+    "t102",
+    "t107"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2025 study was still developing metrics for the sim-to-real gap, indicating that there was no consensus yet on how to quantify the gap.",
+   "quote": "a 2025 study still developing the metrics to measure the gap, \"which means there is no consensus yet on how to quantify it\"",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t249",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ray-traced radar reproduced about 12% of the real point density.",
+   "quote": "Ray-traced radar reproduced about 12% of the real point density.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t118",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A neural scene achieved PSNR image-similarity scores of 22.99 decibels from the recorded lane and 17.05 decibels from the next lane; higher PSNR indicates greater similarity to the real image.",
+   "quote": "A neural scene scored 22.99 on an image-similarity scale (PSNR, in decibels, where higher means closer to the real image) from the recorded lane and 17.05 from the next lane",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "PSNR",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254",
+    "t116",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For a scene built from drone images, the PSNR image-similarity score fell from 29.13 to 10.36 when the scene was viewed from a car.",
+   "quote": "a scene built from drone images fell from 29.13 to 10.36 when viewed from a car",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "PSNR",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An agricultural procedural generator achieved a 9.9% sim-to-real gap on a segmentation task, which the passage describes as a good result.",
+   "quote": "An agricultural procedural generator achieved a 9.9% gap on a segmentation task, which counts as a good result",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t249",
+    "t134"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No accepted method was found for qualifying sensor models in dust, snow or fog on off-road sites.",
+   "quote": "No accepted method was found for qualifying sensor models in dust, snow or fog on off-road sites",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t102",
+    "t84",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No validation of simulated braking distance on gravel, mud, ice or slopes for heavy machines was found.",
+   "quote": "no validation of simulated braking distance on gravel, mud, ice or slopes for heavy machines was found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t174",
+    "t173",
+    "t1",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The sim-to-real gap is managed rather than removed; physical anchor sites and correlation tests measure the gap.",
+   "quote": "The gap is managed, not removed: physical anchor sites and correlation tests measure it",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t165",
+    "t160",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Validity envelopes record where the sim-to-real gap is small enough.",
+   "quote": "validity envelopes record where it is small enough",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Mixing even a few real images with synthetic data improves transfer from simulation to reality.",
+   "quote": "mixing even a few real images with synthetic data improves transfer",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t165"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet uses the Columbia shuttle accident as a warning against trusting a model outside the range in which its sim-to-real gap was measured.",
+   "quote": "the Columbia shuttle accident is the booklet's warning about trusting a model outside the range where its gap was measured",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    10
+   ],
+   "entities": [
+    {
+     "name": "Columbia shuttle accident",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t319",
+    "t261",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Simulation fidelity should be judged against each tested requirement rather than visual attractiveness, because photorealism is nearly irrelevant to radar, ultrasonic and braking physics.",
+   "quote": "A pretty image is not a small gap: fidelity should be judged per tested requirement, since photorealism is nearly irrelevant to radar, ultrasonic and braking physics",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t63",
+    "t94",
+    "t95",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet identifies model-confidence risk as its largest single risk: simulation can produce millions of repeatable but systematically wrong tests.",
+   "quote": "The booklet's largest single risk is \"model-confidence risk\": a simulation can produce millions of repeatable but systematically wrong tests",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t267",
+    "t234",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Without correlation data, simulation results may not be accepted for the safety case or by customers or regulators.",
+   "quote": "without correlation data the results may not be accepted by the safety case, by customers or by regulators",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t250",
+    "t67",
+    "t234",
+    "t70"
+   ],
+   "importance": 3
+  }
+ ]
+}

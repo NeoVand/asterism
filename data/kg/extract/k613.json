@@ -1,0 +1,204 @@
+{
+ "chunkId": "k613",
+ "hash": "eedba20c7ad60dc7",
+ "facts": [
+  {
+   "text": "A safety function is a specific job a machine's control system must perform to keep people safe; the safety-related control system is the chain of sensor, computer and actuator parts that performs that job.",
+   "quote": "A safety function is one specific job that a machine's control system must do to keep people safe, and the safety-related control system is the chain of parts (sensor, computer, actuator) that performs that job.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t48"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 13849 characterizes a machinery safety function as a function whose failure can lead to an immediate increase in risk.",
+   "quote": "In the machinery standards a safety function is a function whose failure can lead to an immediate increase in risk (ISO 13849).",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 13849",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t48",
+    "t287",
+    "t46"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A machinery safety function is written as a precise sentence, such as requiring the machine to stop before contact when an object is detected within distance X while reversing.",
+   "quote": "It is written as a precise sentence, for example: \"When an object is detected within distance X while reversing, the machine shall be brought to a stop before contact.\"",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t48",
+    "t63",
+    "t16"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The safety-related parts of a machinery control system include the entire chain that executes the safety function: input such as radar or camera, logic such as a controller running software, and output such as the valve applying the brake.",
+   "quote": "The safety-related parts of the control system are everything that carries out that sentence, from the input (a radar or camera) through the logic (a controller running software) to the output (the valve that applies the brake).",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t48",
+    "t84",
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The existing collision-warning product only warns the operator rather than commanding braking.",
+   "quote": "The existing product only warns the operator.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t23",
+    "t41"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 19014-2 excludes awareness systems that do not impact machine motion, including cameras and radar detectors.",
+   "quote": "ISO 19014-2 excludes \"awareness systems that do not impact machine motion (e.g. cameras and radar detectors)\".",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    13
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t49",
+    "t48"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Once the collision mitigation system can issue a brake command, the system affects machine motion and falls within the functional-safety standard ISO 19014-2.",
+   "quote": "Once the system can issue a brake command it affects motion and moves inside the functional-safety standard [Chapters 3, 13].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    13
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t22",
+    "t49",
+    "t281",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet identifies two safety functions requiring separate analyses and acceptance thresholds: failure to intervene when required, and intervention when unsafe or unnecessary.",
+   "quote": "The booklet also says there are two safety functions, each needing its own analysis and acceptance thresholds: failure to intervene when required, and intervention when it is unsafe or unnecessary [Chapter 3].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t48",
+    "t62",
+    "t28",
+    "t40",
+    "t31"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The South African mining specification MOSH treats collision prevention products as safety systems subject to integrity, robustness and reliability requirements.",
+   "quote": "The South African mining specification MOSH treats collision prevention products as safety systems with integrity, robustness and reliability requirements [Chapter 3].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "program"
+    },
+    {
+     "name": "South Africa",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t302",
+    "t307",
+    "t49"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Matching the existing warning system is the wrong target for the new braking system because warning and braking fall on opposite sides of the functional-safety boundary; the braking system's target must come from hazard analysis of the new function.",
+   "quote": "The warning system and the braking system sit on opposite sides of this line, so \"match the old warning system\" is the wrong target; the target must come from the hazard analysis of the new function [Chapter 13].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t47",
+    "t62",
+    "t49",
+    "t266",
+    "t22"
+   ],
+   "importance": 3
+  }
+ ]
+}

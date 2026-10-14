@@ -1,0 +1,115 @@
+{
+ "key": "t194",
+ "hash": "4a9309ac04137852",
+ "synopsis": "Residual safe distance is an explicit part of the stopping budget: ISO 21815-3:2023 includes detection, determination, action, machine stopping and final safe clearance; the reviewed 2022 draft defines safe distance as an authorised person's safe offset plus measurement error [f5911, f6198, f2420]. MOSH specifies stop gaps of 1.0–4.0 m at speeds of 10 km/h or less and 15 m ± 5 m above 10 km/h, whereas South Africa Regulation 8.10 and US 30 CFR 75.1732 provide no numeric stopping-margin value; the proposed US 3 ft distance was not adopted [f2610, f2611, f2626]. The booklet calculates remaining margin by subtracting perception, decision, action, predicted stopping distance and safe clearance from predicted path distance; its 40 t example at 15 km/h on a 10% downgrade with 1.0 s delay requires detection at least 9.5 m away for 1 m clearance, before sensor-error allowance [f6208, f13656]. Validation should measure stopping margin and minimum clearance in closed-loop runs, and tuning should impose a hard minimum-margin constraint rather than relying only on detector performance or collision/no-collision verdicts [f4812, f6961, f6982, f7373]. Intervention escalation should depend on remaining margin and its uncertainty rather than range alone, and operator-reaction detection must avoid standing down merely because controls move while the actual stopping margin continues collapsing [f6280, f6343, f13968].",
+ "relations": [
+  {
+   "a": "f12162",
+   "b": "f13907",
+   "type": "same",
+   "note": "Both glossary entries give identical MOSH stop-gap thresholds."
+  },
+  {
+   "a": "f2610",
+   "b": "f12162",
+   "type": "same",
+   "note": "Chapter requirement and glossary state the same complete MOSH stop-gap schedule."
+  },
+  {
+   "a": "f2116",
+   "b": "f2610",
+   "type": "same",
+   "note": "Both specify 1.0–4.0 m gaps at speeds up to 10 km/h."
+  },
+  {
+   "a": "f2117",
+   "b": "f13907",
+   "type": "same",
+   "note": "Both specify 15 m ± 5 m above 10 km/h."
+  },
+  {
+   "a": "f176",
+   "b": "f2610",
+   "type": "elaborates",
+   "note": "Numeric thresholds make the introductory defined-stop-gap requirement concrete."
+  },
+  {
+   "a": "f2420",
+   "b": "f14002",
+   "type": "same",
+   "note": "Safe distance combines an authorised offset and measurement error."
+  },
+  {
+   "a": "f6198",
+   "b": "f13873",
+   "type": "same",
+   "note": "Both require the complete collision-system distance budget, including safe distance."
+  },
+  {
+   "a": "f6680",
+   "b": "f7007",
+   "type": "same",
+   "note": "Both define avoidance distance through timing, stopping distance and safety distance."
+  },
+  {
+   "a": "f6983",
+   "b": "f6680",
+   "type": "same",
+   "note": "Both describe the same ISO collision-avoidance distance components."
+  },
+  {
+   "a": "f5911",
+   "b": "f6198",
+   "type": "same",
+   "note": "Both include residual clearance in the ISO collision-risk distance budget."
+  },
+  {
+   "a": "f6114",
+   "b": "f13891",
+   "type": "same",
+   "note": "Both express trigger distance as detection, action travel, stopping and clearance."
+  },
+  {
+   "a": "f6208",
+   "b": "f13875",
+   "type": "same",
+   "note": "Both subtract the full stopping budget from predicted path distance."
+  },
+  {
+   "a": "f12858",
+   "b": "f6114",
+   "type": "same",
+   "note": "Glossary prose restates the trigger-distance equation's components."
+  },
+  {
+   "a": "f6280",
+   "b": "f13924",
+   "type": "same",
+   "note": "Both base partial-to-full intervention on remaining margin and uncertainty."
+  },
+  {
+   "a": "f6343",
+   "b": "f13969",
+   "type": "same",
+   "note": "Both identify premature stand-down after superficial operator input as a margin-collapse risk."
+  },
+  {
+   "a": "f2449",
+   "b": "f2626",
+   "type": "elaborates",
+   "note": "The regulatory gap adds the date and rejected 3 ft proposal."
+  },
+  {
+   "a": "f13656",
+   "b": "f13987",
+   "type": "supports",
+   "note": "Worked example demonstrates adding clearance before sensor-error allowance to required detection range."
+  },
+  {
+   "a": "f4812",
+   "b": "f6982",
+   "type": "supports",
+   "note": "Matched closed-loop validation provides measures needed to evaluate detector operating points."
+  }
+ ]
+}

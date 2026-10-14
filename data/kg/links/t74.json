@@ -1,0 +1,115 @@
+{
+ "key": "t74",
+ "hash": "97e616ec26a9027b",
+ "synopsis": "Field monitoring is planned collection and review of real-use data after release to check safety-case predictions and catch missed problems; the proposed programme therefore ends in staged, limited-domain release with runtime domain monitoring, a field-data loop and regulatory acceptance [f12336, f701, f616]. The four-month campaign should start a living evidence base: record warnings and interventions with machine, environmental and operator context, map near-misses and false brakes into scenarios, and use results for regression testing, model updates and operating-domain changes [f7447, f2934, f3652, f7446, f12339]. Production-readiness monitoring should extend over periods such as 3 months or 2000 hours, but no published MOSH TRL9 statistics were found; monitoring also addresses evolving site conditions, service errors and dust/glare model gaps [f5797, f5798, f7445, f5829, f8053]. Operator-behavior evidence remains incomplete: mining-specific post-deployment validation of calibrated trust and field data on disabling systems were not found, missing quantitative behavior data should be collected in pilots, and fatal accidents are too rare for post-release tuning [f3428, f5840, f11860, f3651]. On-road precedent shows that field performance can change quickly—Tesla's February and March 2022 updates were followed by unexpected-braking reports falling to 45 in 2024, 19 in 2025 and three by early 2026—but investigations can take years, so every post-release software change should be reassessed against accumulated safety evidence [f1502, f1505, f2017, f1156].",
+ "relations": [
+  {
+   "a": "f616",
+   "b": "f12325",
+   "type": "same",
+   "note": "Identical prerequisites for staged release."
+  },
+  {
+   "a": "f7447",
+   "b": "f11628",
+   "type": "same",
+   "note": "Both treat the four-month campaign as the beginning of living evidence."
+  },
+  {
+   "a": "f5797",
+   "b": "f12343",
+   "type": "same",
+   "note": "Both specify extended production monitoring, exemplified by 3 months or 2000 hours."
+  },
+  {
+   "a": "f7677",
+   "b": "f8105",
+   "type": "same",
+   "note": "Both describe NATM's five pillars, including in-service monitoring."
+  },
+  {
+   "a": "f7677",
+   "b": "f9743",
+   "type": "elaborates",
+   "note": "Adds document identifiers and scenario-catalogue detail to NATM's multi-pillar approach."
+  },
+  {
+   "a": "f8052",
+   "b": "f8234",
+   "type": "same",
+   "note": "Both identify in-service monitoring as a NATM pillar."
+  },
+  {
+   "a": "f8053",
+   "b": "f8235",
+   "type": "same",
+   "note": "Both identify monitoring as the only route to close dust and glare gaps."
+  },
+  {
+   "a": "f1231",
+   "b": "f1502",
+   "type": "elaborates",
+   "note": "Provides annual report counts for the decline following Tesla firmware updates."
+  },
+  {
+   "a": "f1410",
+   "b": "f1685",
+   "type": "elaborates",
+   "note": "Expands the missing Radar field evidence to validation, independent evaluations and AI camera evidence."
+  },
+  {
+   "a": "f3617",
+   "b": "f11860",
+   "type": "elaborates",
+   "note": "Broadens pilot data collection beyond operator behavior to off-road accident and braking safety."
+  },
+  {
+   "a": "f722",
+   "b": "f12341",
+   "type": "elaborates",
+   "note": "Adds recycling new field scenarios to monitoring misses and nuisance brakes."
+  },
+  {
+   "a": "f724",
+   "b": "f12341",
+   "type": "same",
+   "note": "Both send new staged-release field scenarios back to the programme's start."
+  },
+  {
+   "a": "f7445",
+   "b": "f7446",
+   "type": "supports",
+   "note": "Post-release drift motivates scenario mapping and targeted regression testing."
+  },
+  {
+   "a": "f2934",
+   "b": "f7446",
+   "type": "supports",
+   "note": "Retained intervention signals enable field-event classification and targeted regression."
+  },
+  {
+   "a": "f8051",
+   "b": "f12339",
+   "type": "elaborates",
+   "note": "Details model feedback through scenario updates and operating-domain change triggers."
+  },
+  {
+   "a": "f1017",
+   "b": "f12342",
+   "type": "supports",
+   "note": "Laboratory limitations explain reliance on field monitoring for lifetime evidence."
+  },
+  {
+   "a": "f5840",
+   "b": "f11808",
+   "type": "supports",
+   "note": "Missing disabling data underscores the need to measure bypassing in actual operation."
+  },
+  {
+   "a": "f1505",
+   "b": "f1156",
+   "type": "supports",
+   "note": "Rapid software-driven field changes support reassessment of every post-release update."
+  }
+ ]
+}

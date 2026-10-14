@@ -1,0 +1,512 @@
+{
+ "chunkId": "k704",
+ "hash": "24b0b750816f96cf",
+ "facts": [
+  {
+   "text": "OpenUSD, OpenDRIVE, OpenCRG, OpenSCENARIO, OpenLABEL, OpenODD and OpenXOntology are agreed file formats for exchanging descriptions of worlds, roads, road surfaces, event sequences, labels, operating domains or shared vocabularies between simulation tools.",
+   "quote": "These are agreed file formats that let different simulation tools exchange the same description of a world, a road, a road surface, a sequence of events, a set of labels, an operating domain or a shared vocabulary.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t137"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Most of the scene description formats discussed are published by ASAM (Association for Standardization of Automation and Measuring Systems), a German-based industry association, and collectively called the OpenX family.",
+   "quote": "Most of these formats are published by ASAM (Association for Standardization of Automation and Measuring Systems), a German-based industry association, and are collectively called the OpenX family.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t138"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "OpenUSD (Universal Scene Description) is an open format originating in the film industry and now widely used in simulation for complete three-dimensional scenes and assets, including geometry, materials and hierarchy.",
+   "quote": "OpenUSD (Universal Scene Description) is an open format from the film industry, now widely used in simulation, for complete three-dimensional scenes and assets: geometry, materials, hierarchy.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "OpenUSD",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "OpenUSD is domain-neutral and can represent a mine as well as a city.",
+   "quote": "It is domain-neutral, so a mine fits as well as a city.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "OpenUSD",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet considers OpenUSD at least as strategically important as OpenDRIVE for the heavy off-road collision-mitigation validation program.",
+   "quote": "The booklet calls it \"at least as strategically important as OpenDRIVE\" for this program [Chapter 11].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "OpenUSD",
+     "kind": "standard"
+    },
+    {
+     "name": "OpenDRIVE",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "OpenDRIVE version 1.9.0, dated May 2026, describes road networks including lanes, lane geometry, road marks and junctions.",
+   "quote": "OpenDRIVE (version 1.9.0, May 2026) describes road networks: lanes, lane geometry, road marks, junctions.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "OpenDRIVE",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "OpenDRIVE assumes roads and can model haul roads, but dig faces, stockpiles and free terrain require additional representations.",
+   "quote": "It assumes roads. Haul roads can be modeled; dig faces, stockpiles and free terrain cannot without additional representations [Chapter 9].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "OpenDRIVE",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t12",
+    "t13",
+    "t131"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "OpenCRG describes fine road-surface height profiles and is useful for haul-road roughness, but not for open terrain.",
+   "quote": "OpenCRG describes the fine height profile of a road surface, useful for haul-road roughness but not for open terrain [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "OpenCRG",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t131",
+    "t12"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "OpenSCENARIO describes actor movement over time; its XML text format, version 1.4.0 dated 2026, supports precise synchronized maneuvers.",
+   "quote": "OpenSCENARIO describes what happens over time: which actors move where and when. Two forms exist: an XML text format (version 1.4.0, 2026) for precise synchronized maneuvers",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "OpenSCENARIO",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t232",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "OpenSCENARIO's domain-specific language version 2.2.0, dated March 2026, treats abstract scenarios, parameter ranges and performance indicators as first-class concepts.",
+   "quote": "a domain-specific language, DSL (version 2.2.0, March 2026), in which abstract scenarios, parameter ranges and performance indicators are first-class concepts.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "OpenSCENARIO",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t232",
+    "t199",
+    "t224"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Both the XML and DSL forms of OpenSCENARIO carry a road-traffic domain model.",
+   "quote": "Both carry a road-traffic domain model [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "OpenSCENARIO",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t232"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "OpenLABEL defines annotation of recorded data, specifying which object is where in each frame; the booklet considers OpenLABEL useful for dataset labeling but did not verify it.",
+   "quote": "OpenLABEL defines how to annotate recorded data (which object is where in which frame); the booklet notes it as useful for dataset labeling but did not verify it [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "OpenLABEL",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t106"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "OpenODD version 1.0.0, dated 3 April 2025, provides machine-readable operating-domain taxonomies with restrictive and permissive definitions in formats such as YAML and CSV.",
+   "quote": "OpenODD (version 1.0.0, 3 April 2025) is a machine-readable way to write an operating-domain taxonomy, with restrictive and permissive definitions, in formats such as YAML and CSV",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "OpenODD",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t140",
+    "t122"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "OpenODD's default attributes are on-road, so the manufacturer must write and govern an off-road operating-domain taxonomy.",
+   "quote": "its default attributes are on-road, so an off-road taxonomy must be written and governed by the manufacturer [Chapter 9].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "OpenODD",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t140",
+    "t137"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "OpenXOntology supplies a shared dictionary giving other formats consistent meanings for terms such as pedestrian and lane; the booklet did not verify OpenXOntology.",
+   "quote": "OpenXOntology is the shared dictionary that gives the other formats consistent meanings for terms such as \"pedestrian\" or \"lane\"; the booklet did not verify it [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "OpenXOntology",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM describes the OpenX standards as in maintenance mode in 2026.",
+   "quote": "ASAM describes the OpenX standards as in maintenance mode (2026)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    },
+    {
+     "name": "OpenX",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t274"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM's OpenX in Off-Road Applications concept project is active, but the booklet considers an off-road extension unlikely before mid-2027.",
+   "quote": "an \"OpenX in Off-Road Applications\" concept project is active, but no off-road extension is likely before mid-2027",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    },
+    {
+     "name": "OpenX in Off-Road Applications",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM's off-road workshop identified missing OpenX concepts for deformable and particle terrain, vegetation, heavy-machine manipulation and sensor degradation.",
+   "quote": "ASAM's own off-road workshop named missing concepts for deformable and particle terrain, vegetation, heavy-machine manipulation and sensor degradation [Chapter 9].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    },
+    {
+     "name": "OpenX",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t181",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Compatibility with scene description formats proves that data can be exchanged, not that simulation physics is correct.",
+   "quote": "Compatibility with these formats proves that data can be exchanged, not that the physics is right [Chapter 11].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t137",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends a manufacturer-owned, domain-neutral, version-controlled scenario catalog, using options such as the open-source language Scenic or an in-house YAML schema with an OpenODD-style taxonomy.",
+   "quote": "encoding the scenario catalog in a domain-neutral, version-controlled form owned by the manufacturer (for example the open-source language Scenic, or an in-house YAML schema with an OpenODD-style taxonomy)",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Scenic",
+     "kind": "tool"
+    },
+    {
+     "name": "OpenODD",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t142",
+    "t232",
+    "t162",
+    "t140"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends using OpenDRIVE only for structured haul roads, OpenUSD and OpenMATERIAL for scenes, and exporting to OpenSCENARIO where tools require it.",
+   "quote": "using OpenDRIVE only for structured haul roads, OpenUSD and OpenMATERIAL for scenes, and exporting to OpenSCENARIO where tools need it [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "OpenDRIVE",
+     "kind": "standard"
+    },
+    {
+     "name": "OpenUSD",
+     "kind": "standard"
+    },
+    {
+     "name": "OpenMATERIAL",
+     "kind": "standard"
+    },
+    {
+     "name": "OpenSCENARIO",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t136",
+    "t320",
+    "t12"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends requiring open-format export as a defense against vendor lock-in and supplier consolidation.",
+   "quote": "Requiring open-format export is also one of its defenses against vendor lock-in and supplier consolidation [Chapter 11].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t137",
+    "t333",
+    "t357"
+   ],
+   "importance": 3
+  }
+ ]
+}

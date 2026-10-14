@@ -1,0 +1,115 @@
+{
+ "key": "t280",
+ "hash": "fbae946a253354db",
+ "synopsis": "ISO 21815 is the core off-road collision-warning and avoidance family: Part 1:2022 covers detection, warnings, automatic intervention and tests for earth-moving, mobile underground-mining and road-construction machinery; intervention is limited to speed reduction, stopping or motion inhibition, not automatic steering [f2055, f5156, f5909]. Part 2:2021 supplies the J1939 intervention interface, confirmed in December 2024, while Part 3:2023 covers forward/reverse risk areas, builds avoidance distance from detection, decision, action, stopping and safety-distance components, and places intervention at risk level 4 or above [f2057, f5158, f6680, f5912]. As of 1 October 2026, Part 4 was under publication for October and Part 5 was at proof stage for November; Part 4 addresses swing/rotation mainly by preventing motion from starting and expressly excludes avoidance by automatic brake application, so later users should re-check catalogue status [f49, f50, f11423, f7543, f55]. The family supplies physical test procedures, including performance pass/fail and false-positive tests, but the corpus found no rules establishing acceptable simulation evidence or virtual-only validation, and the listed standards do not supply a statistical acceptance target [f7726, f8321, f9459, f324]. Standardized intervention does not establish quantified field effectiveness or second-order hazards, public previews supplied no human reaction model, and safe-operation responsibility remains with the operator [f3443, f3493, f10874]. For planning, ISO 21815 and EMESRT scenarios anchor the validation test space; a program starting in October 2026 could realistically have an operating-domain definition and scenario catalogue working by mid-2027, with interoperability demonstrated through the Part 2 interface and common site products [f6641, f63, f10726].",
+ "relations": [
+  {
+   "a": "f49",
+   "b": "f11422",
+   "type": "same",
+   "note": "Both report Part 4 under publication in October 2026."
+  },
+  {
+   "a": "f49",
+   "b": "f1708",
+   "type": "same",
+   "note": "Catalogue stage and edition details restate Part 4 publication status."
+  },
+  {
+   "a": "f49",
+   "b": "f55",
+   "type": "depends",
+   "note": "Unfinished publication status motivates later catalogue checks."
+  },
+  {
+   "a": "f3379",
+   "b": "f11423",
+   "type": "same",
+   "note": "Both describe rotation prevention primarily through inhibition before motion starts."
+  },
+  {
+   "a": "f7543",
+   "b": "f3379",
+   "type": "elaborates",
+   "note": "Explicit exclusion of automatic braking sharpens the rotation-inhibition scope."
+  },
+  {
+   "a": "f1391",
+   "b": "f1687",
+   "type": "same",
+   "note": "Both describe Bell E-series third-party Level 9 integration through a Part 2 gateway."
+  },
+  {
+   "a": "f5910",
+   "b": "f8319",
+   "type": "elaborates",
+   "note": "The HIL bench can emulate the specified slow, stop and inhibit commands."
+  },
+  {
+   "a": "f5157",
+   "b": "f3767",
+   "type": "same",
+   "note": "Both identify Part 2 as the J1939 braking interface."
+  },
+  {
+   "a": "f5911",
+   "b": "f6680",
+   "type": "same",
+   "note": "Both construct risk distance from processing times, stopping distance and a safety margin."
+  },
+  {
+   "a": "f5158",
+   "b": "f10900",
+   "type": "same",
+   "note": "Both describe Part 3 forward/reverse avoidance through slowing, stopping or motion inhibition."
+  },
+  {
+   "a": "f2058",
+   "b": "f3768",
+   "type": "same",
+   "note": "Both identify Part 3 coverage of forward and reverse risk areas."
+  },
+  {
+   "a": "f10874",
+   "b": "f9779",
+   "type": "same",
+   "note": "Both retain safe-operation responsibility with the operator under Part 3."
+  },
+  {
+   "a": "f4410",
+   "b": "f5061",
+   "type": "same",
+   "note": "Both describe collision avoidance through speed reduction and stopping."
+  },
+  {
+   "a": "f7540",
+   "b": "f7726",
+   "type": "elaborates",
+   "note": "Details the physical test conditions, performance criteria and false-positive test specified by clause 6."
+  },
+  {
+   "a": "f1249",
+   "b": "f9459",
+   "type": "supports",
+   "note": "Absence of virtual-only wording reinforces the unresolved allowance for virtual testing."
+  },
+  {
+   "a": "f3493",
+   "b": "f3494",
+   "type": "supports",
+   "note": "Missing human reaction models underpin limits on predicting fatigued responses to nuisance warnings."
+  },
+  {
+   "a": "f6641",
+   "b": "f63",
+   "type": "supports",
+   "note": "Established scenario anchors support the proposed mid-2027 operating-domain and catalogue milestone."
+  },
+  {
+   "a": "f5911",
+   "b": "f7729",
+   "type": "elaborates",
+   "note": "Example stopping calculations assist distance construction but are not themselves a validation method."
+  }
+ ]
+}

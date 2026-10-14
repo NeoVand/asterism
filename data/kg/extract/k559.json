@@ -1,0 +1,304 @@
+{
+ "chunkId": "k559",
+ "hash": "c6fe66e3ce4c88b2",
+ "facts": [
+  {
+   "text": "Model-in-the-loop and software-in-the-loop run braking logic entirely in a computer.",
+   "quote": "Model-in-the-loop and software-in-the-loop run the braking logic entirely in a computer.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t146",
+    "t147"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hardware-in-the-loop connects the real control unit to a simulated machine.",
+   "quote": "Hardware-in-the-loop connects the real control unit to a simulated machine.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t119"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Vehicle-in-the-loop puts a real machine on a test track and feeds the machine simulated obstacles.",
+   "quote": "Vehicle-in-the-loop puts a real machine on a test track and feeds it simulated obstacles.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Proving-ground tests use real machines and soft targets.",
+   "quote": "Proving-ground tests use real machines and soft targets.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t158",
+    "t159"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Shadow mode runs the system on real sites with the brakes disconnected and counts what the system would have done.",
+   "quote": "Shadow mode runs the system on real sites with the brakes disconnected, counting what it would have done.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Staged release initially switches braking on only for a narrow set of machines and situations.",
+   "quote": "Staged release switches braking on for a narrow set of machines and situations first.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t73"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Each successive rung of the testing ladder from computer testing to job-site deployment replaces one more piece of simulation with reality.",
+   "quote": "Each rung replaces one more piece of simulation with reality.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t145",
+    "t216"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Machines equipped with the existing warning system can record what their sensors saw.",
+   "quote": "Machines with the existing warning system can record what their sensors saw.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t41",
+    "t121"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Replay feeds recorded sensor data into new software to show whether the software would have detected a person; recorded data can test perception but not stopping.",
+   "quote": "Playing those recordings into the new software, called replay, shows whether it would have detected the person.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t85"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Recorded-data replay is open loop because the recording does not change when the software decides to brake.",
+   "quote": "This is open loop: the recording does not change when the software decides to brake.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t154",
+    "t155"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Braking changes the future trajectory—the machine stops earlier and the person is somewhere else—and only closed-loop simulation can follow those changes.",
+   "quote": "Once the system brakes, the future changes (the machine stops earlier, the person is somewhere else), and only a closed-loop simulation can follow that.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t154",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A model checked against measurements at 10 and 20 kilometers per hour on dry gravel is trusted between those speeds on dry gravel.",
+   "quote": "A model that has been checked against measurements at 10 and 20 kilometers per hour on dry gravel is trusted between those points, on that surface.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t262",
+    "t169",
+    "t174"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For a model checked at 10 and 20 kilometers per hour on dry gravel, predictions on ice, at 30 kilometers per hour, or with a different sensor height are guesses outside the validity envelope.",
+   "quote": "Outside that envelope, on ice, at 30 kilometers per hour, with a different sensor height, its answers are guesses.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t267",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Simulation-trust frameworks used in aerospace, medicine, nuclear power and car regulation all demand physical anchors, a stated validity envelope and honesty about uncertainty.",
+   "quote": "All of them demand physical anchors, a stated envelope, and honesty about uncertainty.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t235",
+    "t261",
+    "t259"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The space shuttle Columbia was lost in 2003 partly because a model was used far outside its validity envelope.",
+   "quote": "The space shuttle Columbia was lost in 2003 partly because a model was used far outside its envelope.",
+   "kind": "event",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Space shuttle Columbia",
+     "kind": "machine"
+    }
+   ],
+   "terms": [
+    "t319",
+    "t261",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A loaded heavy machine on a downhill gravel road needs a long distance to stop.",
+   "quote": "A loaded machine on a downhill gravel road needs a long distance to stop",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t168",
+    "t173",
+    "t174",
+    "t1"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Heavy-machine brakes take time to respond after a braking command.",
+   "quote": "the brakes take time to respond after the command.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t171"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Required sensor detection range for a person is the stopping distance plus the distance traveled during delays, with reliable detection required in the worst conditions.",
+   "quote": "the distance needed to stop, plus the distance covered during the delays, is how far the sensor must see a person, reliably, in the worst conditions.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t193",
+    "t170",
+    "t172"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "If dust prevents the sensor from detecting a person at the required stopping range, the machine must drive slower or the system cannot promise to stop.",
+   "quote": "If the sensor cannot see that far in dust, the machine must drive slower or the system cannot promise to stop.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t193",
+    "t102",
+    "t169",
+    "t170"
+   ],
+   "importance": 3
+  }
+ ]
+}

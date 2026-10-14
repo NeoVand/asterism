@@ -1,0 +1,115 @@
+{
+ "key": "e:carla",
+ "hash": "fed8616654f26664",
+ "synopsis": "CARLA is a free, MIT-licensed, Unreal-based driving simulator used for scene, sensor and closed-loop simulation; mining-interaction research has explored CARLA and ROS as a route from simulation to small-scale and physical testing [f15900, f15928, f397, f3488]. It has two release lines: 0.10.0, released on 19 December 2024, moved to Unreal Engine 5.5 and added native ROS 2 support and a mining earth-mover asset, while 0.9.16, released on 16 September 2025, remained on Unreal Engine 4 and added neural reconstruction capabilities [f8463, f8464, f8465, f8466, f8298]. Its off-road suitability remains unqualified: it lacks native deformable terrain or soil physics, was not found validated for off-road collision warning, and a 2026 mining-dust framework tuned to real lidar data did not have a confirmed simulated-versus-real point-cloud comparison [f8476, f5851, f4742, f4743]. The chapter 11 statement that no off-road sensor evidence was found is in tension with chapter 6's mining-lidar framework, although tuning alone does not establish validation [f9083, f4655, f4743]. The UE5 build requires Ubuntu 22.04 or Windows 11, at least an RTX 3000-series GPU with 16 GB VRAM, and 130 GB of disk; a frozen, qualified build is recommended because of release changes and installation, content and version friction [f8469, f15938, f8474]. An open-source chain can minimize license costs but demands substantial internal labor, with Chrono proposed for machine dynamics and terrain; frame rates and physics-based ultrasonic simulation were not found for CARLA, and project maintenance funding and security-patch cadence were not examined [f16128, f16158, f4957, f8547, f9392, f9393].",
+ "relations": [
+  {
+   "a": "f4655",
+   "b": "f4742",
+   "type": "same",
+   "note": "Both describe the 2026 mining framework tuned to real open-pit lidar data."
+  },
+  {
+   "a": "f8547",
+   "b": "f15950",
+   "type": "same",
+   "note": "Both report no physics-based ultrasonic simulation found in the listed open-source options."
+  },
+  {
+   "a": "f8476",
+   "b": "f15902",
+   "type": "same",
+   "note": "Both state CARLA lacks soil physics."
+  },
+  {
+   "a": "f8297",
+   "b": "f15901",
+   "type": "same",
+   "note": "Both identify the mining earth-mover asset in the December 2024 release."
+  },
+  {
+   "a": "f9009",
+   "b": "f16082",
+   "type": "same",
+   "note": "Both limit CARLA's listed off-road offering to a mining earth-mover asset."
+  },
+  {
+   "a": "f8463",
+   "b": "f15900",
+   "type": "same",
+   "note": "Both identify CARLA as open source with MIT-licensed code."
+  },
+  {
+   "a": "f15900",
+   "b": "f15924",
+   "type": "same",
+   "note": "Both specify the MIT license for CARLA code."
+  },
+  {
+   "a": "f8469",
+   "b": "f8850",
+   "type": "same",
+   "note": "Both specify UE5 GPU, VRAM and disk requirements; one also lists operating systems."
+  },
+  {
+   "a": "f8850",
+   "b": "f16195",
+   "type": "same",
+   "note": "Both require an RTX 3000-series GPU or better and at least 16 GB VRAM."
+  },
+  {
+   "a": "f8850",
+   "b": "f16212",
+   "type": "same",
+   "note": "Both report a 130 GB disk requirement."
+  },
+  {
+   "a": "f8474",
+   "b": "f15938",
+   "type": "same",
+   "note": "Both recommend freezing and qualifying a CARLA build."
+  },
+  {
+   "a": "f8352",
+   "b": "f15949",
+   "type": "same",
+   "note": "Both list CARLA sensors alongside RTX sensors and Chrono::Sensor."
+  },
+  {
+   "a": "f4655",
+   "b": "f9083",
+   "type": "contradicts",
+   "note": "Mining-lidar tuning is off-road sensor evidence, despite chapter 11 reporting none found."
+  },
+  {
+   "a": "f4743",
+   "b": "f4742",
+   "type": "elaborates",
+   "note": "Real-data tuning does not establish a confirmed simulated-versus-real point-cloud comparison."
+  },
+  {
+   "a": "f8464",
+   "b": "f15938",
+   "type": "supports",
+   "note": "The engine migration provides a concrete reason to freeze and qualify builds."
+  },
+  {
+   "a": "f8476",
+   "b": "f16158",
+   "type": "supports",
+   "note": "Missing soil physics supports assigning machine dynamics and terrain to Chrono."
+  },
+  {
+   "a": "f8465",
+   "b": "f16240",
+   "type": "supports",
+   "note": "Native ROS 2 support in 0.10.0 substantiates the glossary's integration claim."
+  },
+  {
+   "a": "f7155",
+   "b": "f16017",
+   "type": "elaborates",
+   "note": "General OpenSCENARIO support does not imply mature DSL support; compilation work remains emerging."
+  }
+ ]
+}

@@ -1,0 +1,309 @@
+{
+ "chunkId": "k674",
+ "hash": "2f9032d65b5a07c8",
+ "facts": [
+  {
+   "text": "A detector has four possible outcomes: a true positive reports a real object, a false positive reports an object that is not there, a false negative (or miss) fails to report a real object, and a true negative correctly reports nothing when nothing is there.",
+   "quote": "it finds something real (true positive), it reports something that is not there (false positive), it misses something real (false negative, or miss), or it correctly stays quiet (true negative).",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t108"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For a braking system, a false negative means the machine does not brake for a person.",
+   "quote": "A false negative means the machine does not brake for a person.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t108",
+    "t22",
+    "t14"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For a braking system, a false positive means braking for nothing, which stops production, shakes the operator and can itself cause an accident.",
+   "quote": "A false positive means it brakes for nothing, which stops production, shakes the operator and can itself cause an accident",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t108",
+    "t31",
+    "t40"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Nuisance interventions are the main documented reason deployed systems were rejected or switched off.",
+   "quote": "nuisance interventions are the main documented reason deployed systems were rejected or switched off [Chapters 4, 8].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    4,
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t31",
+    "t34"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3, the international standard for the braking function, acknowledges both false-negative and false-positive errors.",
+   "quote": "ISO 21815-3, the international standard for this function, acknowledges both kinds [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t108"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet distinguishes a false alarm, a warning with no object at all, from a nuisance alarm, a warning for a real object that poses no risk, such as the machine's own tires, a berm or a stockpile.",
+   "quote": "A false alarm is a warning with no object at all. A nuisance alarm is a warning for a real object that poses no risk, such as the machine's own tires, a berm or a stockpile",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t32",
+    "t39",
+    "t108"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "False alarms and nuisance alarms are different engineering problems and should be counted separately.",
+   "quote": "these are different engineering problems and should be counted separately [Chapter 7].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t32",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet's one hard field study recorded 580 alarms over 618 haul-truck reversals: 102 false alarms (18%), 243 nuisance alarms (42%) and 235 alarms requiring action (41%).",
+   "quote": "In the one hard field study, 580 alarms over 618 reversals of a haul truck split into 102 false (18%), 243 nuisance (42%) and 235 (41%) that required action [Chapter 7].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t32",
+    "t3",
+    "t16"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Detection trials should be counted as independent encounters—machine A approaching object B under scenario C—not as sensor frames.",
+   "quote": "For detection it is the independent encounter, \"machine A approached object B under scenario C\", not the sensor frame",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t86",
+    "t141"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A ten-second detection encounter yields hundreds of correlated sensor frames; treating those frames as independent trials makes confidence intervals artificially narrow.",
+   "quote": "a ten-second encounter yields hundreds of correlated frames and treating them as trials makes confidence intervals artificially narrow [Chapter 7].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t86"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Demonstrating at least 95% detection at 95% confidence with no misses requires 59 consecutive successful encounters per condition.",
+   "quote": "Showing at least 95% detection at 95% confidence with no misses needs 59 consecutive successful encounters per condition",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t210",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Demonstrating 99% detection at 95% confidence with no misses requires 299 consecutive successful encounters per condition.",
+   "quote": "Showing at least 95% detection at 95% confidence with no misses needs 59 consecutive successful encounters per condition; 99% needs 299 [Chapter 7].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t210",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "False-positive rates should use exposure in hours or maneuvers as the denominator, not staged targets.",
+   "quote": "For false positives the denominator is exposure, hours or maneuvers, not staged targets",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t213",
+    "t108",
+    "t20"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Demonstrating fewer than 0.1 false alarms per hour requires at least 30 failure-free hours per condition.",
+   "quote": "showing fewer than 0.1 false alarms per hour needs at least 30 failure-free hours per condition",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t213",
+    "t209",
+    "t32"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Event-triggered recording destroys the exposure denominator needed to estimate false-positive rates.",
+   "quote": "event-triggered recording destroys that denominator [Chapter 7].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t213",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The nuisance-intervention rate should be an acceptance metric equal in weight to missed interventions.",
+   "quote": "The nuisance-intervention rate should be an acceptance metric equal in weight to missed interventions [Chapter 8].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t31",
+    "t62",
+    "t224",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The four detector outcomes underpin every detection and false-alarm claim in the safety case; the outcome being counted determines the booklet's sample sizes and exposure hours.",
+   "quote": "The four outcomes are the raw material of every detection and false-alarm claim in the safety case, and the booklet's sample sizes and exposure hours follow directly from which box is being counted [Chapters 7, 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t108",
+    "t67",
+    "t209",
+    "t213"
+   ],
+   "importance": 2
+  }
+ ]
+}

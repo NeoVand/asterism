@@ -1,0 +1,229 @@
+{
+ "chunkId": "k672",
+ "hash": "330aab8d5bbf5326",
+ "facts": [
+  {
+   "text": "Labeling, or annotation, is marking the contents of recorded sensor data so detectors can be trained and their results scored.",
+   "quote": "Labeling, or annotation, is the work of marking what is in recorded sensor data, such as drawing a box around each person and naming it, so that detectors can be trained and their results scored.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Human labeling can handle any class, including workers in protective clothing and partially hidden people, but is slow and costly.",
+   "quote": "Human labeling handles any class, including workers in protective clothing and partially hidden people, but is slow and costly",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t103"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A major on-road study found human labels less consistent than expected.",
+   "quote": "a major on-road study found human labels less consistent than expected.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t105"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Automatic or offboard labeling uses large models that can examine the whole recording, including past and future frames together.",
+   "quote": "Automatic or offboard labeling uses large models that can look at the whole recording, past and future frames together",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t106"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "On-road studies report automatic or offboard labels matching or beating average human labels for lidar boxes on vehicles.",
+   "quote": "on-road studies report such labels matching or beating average human labels for lidar boxes on vehicles",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Automatic or offboard labelers need human-labeled data to begin with and inherit the conditions they were trained on.",
+   "quote": "they need human-labeled data to begin with, inherit the conditions they were trained on",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t113"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "One 2026 general-purpose labeler reached recall of 0.88 to 0.98 but precision of only 0.52 in crowded scenes.",
+   "quote": "one 2026 general-purpose labeler reached recall of 0.88 to 0.98 but precision of only 0.52 in crowded scenes.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t109"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No automatic or offboard labeler described in the passage has been validated for workers and machines near heavy equipment.",
+   "quote": "None has been validated for workers and machines near heavy equipment.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t1",
+    "t14"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A label specification should define the object taxonomy, object reference points, visibility and occlusion state, whether a partially hidden person counts as a detection opportunity, temporal continuity rules, and disagreement resolution.",
+   "quote": "A label specification should define the object taxonomy, the reference point on each object, visibility and occlusion state, whether a partially hidden person counts as a detection opportunity, rules for continuity over time, and how disagreements are settled",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t103",
+    "t105"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Where distance matters, labels should rest on calibrated three-dimensional reference data.",
+   "quote": "where distance matters, labels should rest on calibrated three-dimensional reference data",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t105",
+    "t100"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Labeling cost figures for off-road work were not found; the booklet recommends a small annotation trial to estimate those costs.",
+   "quote": "Labeling cost figures for off-road work were not found; a small annotation trial is the right way to estimate them",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t360"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A labeler missing distant workers inflates the apparent false-alarm rate, while label position errors shift the measured warning distance.",
+   "quote": "a labeler who misses distant workers inflates the apparent false-alarm rate, and position errors shift the measured warning distance",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t32",
+    "t111"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends measuring label precision and recall on an audited subset and reporting them with every result.",
+   "quote": "the booklet wants label precision and recall measured on an audited subset and reported with every result",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t109",
+    "t105"
+   ],
+   "importance": 3
+  }
+ ]
+}

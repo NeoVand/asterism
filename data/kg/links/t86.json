@@ -1,0 +1,115 @@
+{
+ "key": "t86",
+ "hash": "94587d5961aa38c4",
+ "synopsis": "The strategy must establish a virtual performance baseline for the existing detector, but raw sensor-log replay measures only recorded sensors, mounting positions and scenarios; changes to sensor modality, mounting or processing prevent fair direct comparison of raw detections and per-sensor statistics [f25, f95, f107]. Detection is necessary for braking but insufficient for complete safety: vehicle-and-person detection leaves environmental interactions unaddressed, and passing detection or ISO 3450 brake tests does not establish overall human-machine or perception-system performance [f11302, f11575, f3487, f2361]. ISO 16001:2017 requires unambiguous, uninterrupted detection signals and detection within 300 ms, while detection, confirmation, risk computation and intervention initiation consume distance before deceleration builds; nevertheless, reviewed standards supply no detection or false-alarm sample sizes, and South Africa's Regulation 8.10 supplies no numerical detection or false-alarm thresholds [f2403, f2405, f6052, f5160, f2281]. Environmental robustness remains uncertain: 2023–2026 construction and mining studies report lidar degradation in real dust, and on-road evidence includes complete pedestrian-detection loss with high-visibility clothing in tests reported on 16 October 2025; these findings should not be treated as quantified off-road performance [f6688, f7980]. Credible validation therefore needs explicit object-class and exclusion records, real-versus-simulated dust correlation, and real-data results by condition bin with confidence intervals; ideal sensor models and object-list replay can conceal raw-sensor deficiencies or assume perception has already succeeded [f8008, f10562, f10566, f4480, f5259].",
+ "relations": [
+  {
+   "a": "f95",
+   "b": "f5166",
+   "type": "same",
+   "note": "Both restrict raw replay measurements to recorded sensor configurations and scenarios."
+  },
+  {
+   "a": "f107",
+   "b": "f5211",
+   "type": "same",
+   "note": "Both reject direct raw-perception comparisons when modality, mounting or processing changes."
+  },
+  {
+   "a": "f7980",
+   "b": "f11536",
+   "type": "same",
+   "note": "Both report complete detection loss with high-visibility clothing in some 2025 on-road systems."
+  },
+  {
+   "a": "f2405",
+   "b": "f6745",
+   "type": "same",
+   "note": "Both give ISO 16001's maximum detection time as 300 ms."
+  },
+  {
+   "a": "f381",
+   "b": "f6742",
+   "type": "same",
+   "note": "Both describe ISO 21815-1 coverage of detection, warning and automatic intervention."
+  },
+  {
+   "a": "f316",
+   "b": "f381",
+   "type": "elaborates",
+   "note": "Adds ISO 21815-3 and specifies stopping and motion-inhibition interventions."
+  },
+  {
+   "a": "f918",
+   "b": "f95",
+   "type": "elaborates",
+   "note": "Replay's measurement benefits are bounded by the configurations and scenarios actually recorded."
+  },
+  {
+   "a": "f268",
+   "b": "f5211",
+   "type": "elaborates",
+   "note": "Specifies hardware and processing changes that undermine direct baseline comparisons."
+  },
+  {
+   "a": "f3002",
+   "b": "f11575",
+   "type": "elaborates",
+   "note": "Identifies vehicle-to-environment interactions as the missing risk class."
+  },
+  {
+   "a": "f3002",
+   "b": "f3250",
+   "type": "depends",
+   "note": "Incomplete vehicle-and-person coverage motivates additional edge, geofence, speed and stability controls."
+  },
+  {
+   "a": "f2274",
+   "b": "f2281",
+   "type": "elaborates",
+   "note": "The automatic-detection mandate lacks numerical detection, false-alarm and stopping-test criteria."
+  },
+  {
+   "a": "f2405",
+   "b": "f6052",
+   "type": "elaborates",
+   "note": "Detection time is only one upstream delay consuming distance before braking develops."
+  },
+  {
+   "a": "f4318",
+   "b": "f4480",
+   "type": "supports",
+   "note": "Raw-data discrepancies reinforce why ideal sensors cannot establish rain detection performance."
+  },
+  {
+   "a": "f5259",
+   "b": "f4480",
+   "type": "supports",
+   "note": "Hidden perception errors explain why tracking-level realism can coexist with raw-data discrepancies."
+  },
+  {
+   "a": "f6688",
+   "b": "f10562",
+   "type": "supports",
+   "note": "Real-dust detector degradation motivates measured dust correlation against simulated detection outcomes."
+  },
+  {
+   "a": "f10562",
+   "b": "f10566",
+   "type": "elaborates",
+   "note": "Adds condition-binned real-data reporting and confidence intervals to dust validation."
+  },
+  {
+   "a": "f5170",
+   "b": "f10555",
+   "type": "supports",
+   "note": "Only 13 of 99 metrics testing detection reliability reinforces the review's testing gaps."
+  },
+  {
+   "a": "f4631",
+   "b": "f10580",
+   "type": "supports",
+   "note": "Synthetic-weather improvements on real data illustrate augmentation benefits, not replacement of real images."
+  }
+ ]
+}

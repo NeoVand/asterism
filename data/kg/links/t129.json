@@ -1,0 +1,115 @@
+{
+ "key": "t129",
+ "hash": "ebfaf1ff7f6b5275",
+ "synopsis": "A digital twin represents one specific real machine or site and promises agreement checked against measurements; neither the label nor a simulation package establishes credibility, which depends on the model, configuration, intended use and evidence [f13099, f13100, f7755]. The booklet recommends parameterised machine states and layered models per machine family rather than one ultimate twin, while machine geometry, self-occlusion and braking models can support coverage and blind-zone calculations before final hardware arrives [f1981, f6406, f13840, f5600, f5601]. This early modelling must not be presented as a validated sensor twin before hardware and mounting are frozen and correlated, and a team starting in October 2026 should not promise full multisensor, all-weather correlation by mid-2027 [f508, f871, f870]. For sites, exact copies and parameterised digital cousins serve complementary purposes, but no head-to-head perception or collision-avoidance comparison was found, reconstruction does not automatically yield simulation-ready truth, and no job-site twin price or person-day figures were found [f3751, f3752, f5104, f3903]. Evidence includes a physically calibrated AGX wheel-loader twin in 2025 and SynFog’s 2024 fog-chamber twin with matching simulated sensor trends, although SynFog is on-road evidence and existing construction-vehicle twins focused on dynamics and digging rather than perception [f8292, f4563, f468]. The only vendor off-road speed-up claim found was Robotec.ai/Boliden’s 30% faster validation cycles, but it concerns autonomous fleet behaviour rather than collision-intervention perception and lacks independent verification [f481, f482, f483].",
+ "relations": [
+  {
+   "a": "f481",
+   "b": "f827",
+   "type": "same",
+   "note": "Both report Robotec.ai’s 30% fleet-validation speed-up."
+  },
+  {
+   "a": "f1086",
+   "b": "f13104",
+   "type": "same",
+   "note": "Both report the unverified 30% fleet-behaviour speed-up."
+  },
+  {
+   "a": "f482",
+   "b": "f13104",
+   "type": "elaborates",
+   "note": "The glossary repeats the perception limitation and adds lack of independent verification."
+  },
+  {
+   "a": "f8292",
+   "b": "f8572",
+   "type": "same",
+   "note": "Both describe the 2025 physically calibrated AGX wheel-loader twin, including terrain parameters."
+  },
+  {
+   "a": "f508",
+   "b": "f11917",
+   "type": "same",
+   "note": "Both prohibit validated sensor-twin claims before hardware and mounting are frozen and correlated."
+  },
+  {
+   "a": "f871",
+   "b": "f870",
+   "type": "depends",
+   "note": "Sensor selection and calibration prerequisites constrain the mid-2027 promise."
+  },
+  {
+   "a": "f5601",
+   "b": "f13101",
+   "type": "same",
+   "note": "Both describe machine-specific coverage and blind-zone computation before hardware arrives."
+  },
+  {
+   "a": "f15220",
+   "b": "f5601",
+   "type": "elaborates",
+   "note": "Names visibility methods for the proposed pre-hardware coverage calculations."
+  },
+  {
+   "a": "f7755",
+   "b": "f13108",
+   "type": "same",
+   "note": "Credibility attaches to model, configuration, use and evidence, not the digital-twin label."
+  },
+  {
+   "a": "f14520",
+   "b": "f7755",
+   "type": "same",
+   "note": "Neither twins nor simulation packages are intrinsically credible."
+  },
+  {
+   "a": "f6406",
+   "b": "f13110",
+   "type": "same",
+   "note": "Both recommend layered machine-family models instead of one ultimate twin."
+  },
+  {
+   "a": "f13110",
+   "b": "f13608",
+   "type": "same",
+   "note": "Duplicate recommendations for layered models per machine family."
+  },
+  {
+   "a": "f13840",
+   "b": "f6406",
+   "type": "elaborates",
+   "note": "Specifies threshold, stability-challenge and high-fidelity braking-model layers."
+  },
+  {
+   "a": "f3755",
+   "b": "f3836",
+   "type": "same",
+   "note": "Both repeat forestry researchers’ warning against relying solely on digital twins."
+  },
+  {
+   "a": "f4563",
+   "b": "f4753",
+   "type": "same",
+   "note": "Both identify SynFog’s 2024 fog-chamber and virtual-twin camera-simulation example."
+  },
+  {
+   "a": "f8293",
+   "b": "f8668",
+   "type": "elaborates",
+   "note": "Identifies Siemens crane twins within Mevea’s documented crane-automation examples."
+  },
+  {
+   "a": "f8564",
+   "b": "f8668",
+   "type": "same",
+   "note": "Both identify Mevea’s Siemens crane-twin evidence."
+  },
+  {
+   "a": "f8294",
+   "b": "f8565",
+   "type": "same",
+   "note": "Both identify Mevea’s 2026 tractor twin; the latter adds academic use and CAN control."
+  }
+ ]
+}

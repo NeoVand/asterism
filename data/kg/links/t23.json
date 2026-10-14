@@ -1,0 +1,115 @@
+{
+ "key": "t23",
+ "hash": "8218ed5a984a2f31",
+ "synopsis": "The existing warning system alerts the operator, whereas adding automatic braking changes machine motion and moves the function across ISO 19014-2’s boundary from excluded awareness systems to motion-control safety functions [f380, f2075, f10521]. ISO 16001:2017 covers warning rather than braking, while ISO 21815 covers collision avoidance through speed reduction, stopping or motion inhibit; ISO 21815-1:2022 does not permit automatic steering [f161, f5061, f5909]. Common detection and warning-stage metrics remain comparable, but braking measures need new safety requirements, and the warning system’s field history does not transfer to the braking function [f5498, f5445, f7938]. Evidence is weighted toward warning and immature systems: the 2022 NIOSH review covered 97 cases, only 10% involving avoidance, while a seven-day 2004 radar study classified 42% of 580 alarms as nuisance alarms and 18% as false alarms [f5933, f5934, f3011]. The research found neither an off-road standard accepting simulation instead of physical collision-avoidance tests nor a documented full validation in about four months for a new machine family; synthetic-only reliability evidence and warning-data-to-braking certification precedents were also absent [f7539, f1255, f6690, f1253]. The MSHA surface-equipment rule does not mandate collision avoidance, while a multi-year Applied Intuition–Komatsu partnership announced on 9 September 2025 includes Level 9 collision avoidance for staffed operations, indicating development activity rather than closing the validation gaps [f1369, f8399, f8400, f10425].",
+ "relations": [
+  {
+   "a": "f161",
+   "b": "f2070",
+   "type": "same",
+   "note": "Both identify ISO 16001 as warning-only, not braking."
+  },
+  {
+   "a": "f113",
+   "b": "f10520",
+   "type": "same",
+   "note": "Both state ISO 19014-2 excludes awareness systems that do not affect motion."
+  },
+  {
+   "a": "f2075",
+   "b": "f10521",
+   "type": "same",
+   "note": "Both place warning and braking on opposite sides of the ISO 19014-2 scope boundary."
+  },
+  {
+   "a": "f382",
+   "b": "f3905",
+   "type": "elaborates",
+   "note": "Adds covered machinery classes and warning functions to the same standard’s avoidance scope."
+  },
+  {
+   "a": "f5061",
+   "b": "f5909",
+   "type": "elaborates",
+   "note": "Adds the explicit prohibition on automatic steering to permitted avoidance actions."
+  },
+  {
+   "a": "f5171",
+   "b": "f5934",
+   "type": "same",
+   "note": "Both report only 10% avoidance cases in the 2022 NIOSH review."
+  },
+  {
+   "a": "f6772",
+   "b": "f6790",
+   "type": "same",
+   "note": "Both describe the terrain-layer library as intended for intelligent vehicles, not collision avoidance."
+  },
+  {
+   "a": "f8286",
+   "b": "f8399",
+   "type": "same",
+   "note": "Both report the September 2025 partnership covering collision avoidance on staffed sites."
+  },
+  {
+   "a": "f3747",
+   "b": "f4075",
+   "type": "same",
+   "note": "Both reject treating NIST combinatorial evidence as proof of sufficient collision-avoidance coverage."
+  },
+  {
+   "a": "f1369",
+   "b": "f7751",
+   "type": "same",
+   "note": "Both state the MSHA surface-equipment rule does not mandate collision avoidance."
+  },
+  {
+   "a": "f3011",
+   "b": "f3009",
+   "type": "supports",
+   "note": "The measured nuisance-alarm share substantiates the documented mining-warning failure."
+  },
+  {
+   "a": "f380",
+   "b": "f6282",
+   "type": "supports",
+   "note": "Changing machine motion explains the transition from awareness to motion-control safety."
+  },
+  {
+   "a": "f7938",
+   "b": "f5445",
+   "type": "supports",
+   "note": "Nontransferable warning-system history supports evaluating braking against new requirements."
+  },
+  {
+   "a": "f5445",
+   "b": "f10395",
+   "type": "supports",
+   "note": "Noncomparable braking measures explain doubts about matching the old warning system."
+  },
+  {
+   "a": "f5498",
+   "b": "f5445",
+   "type": "elaborates",
+   "note": "Separates comparable shared warning metrics from braking measures needing new requirements."
+  },
+  {
+   "a": "f11296",
+   "b": "f8400",
+   "type": "elaborates",
+   "note": "The partnership targets Level 9, which the glossary identifies as automatic intervention."
+  },
+  {
+   "a": "f393",
+   "b": "f394",
+   "type": "elaborates",
+   "note": "Adds the shortage of operationally evaluated complete systems to the prototype-heavy evidence picture."
+  },
+  {
+   "a": "f229",
+   "b": "f2070",
+   "type": "elaborates",
+   "note": "Adds a 300 ms detection requirement within the warning-only standard."
+  }
+ ]
+}

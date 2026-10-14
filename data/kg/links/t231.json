@@ -1,0 +1,115 @@
+{
+ "key": "t231",
+ "hash": "e022537ce8bf10b2",
+ "synopsis": "Data lineage records data origins and transformations, while the independence rule requires that evidence used to judge a system played no part in building or tuning it; production-detector outputs cannot serve as independent ground truth [f14471, f99]. Across braking-model calibration, simulation credibility and collision-mitigation tuning, the corpus requires separate development, validation and withheld confirmation or audit data, with whole sites, weather episodes, machine identities or scenario families held together rather than randomly splitting adjacent frames [f6170, f7589, f6992, f6990, f6991]. Audit failures must not feed back into tuning: examined cases used to change thresholds are contaminated, and a late safety-relevant threshold change requires new independent statistical confirmation for the affected claim [f6952, f6953, f14375]. For machine-learning validation and estimation, the stated rule requires real or physically independent data, different assets, sites, people and generators, and documented lineage; its cited ISO/PAS 8800:2024 connection is explicitly on-road evidence and expert opinion from a third-party summary, not direct off-road proof [f7100, f7101]. Reproducible evidence also needs immutable run manifests, versioned assets, checksums and controlled archival, alongside a dedicated data-pedigree workstream; privacy obligations remain unquantified, and technical access to supplier data does not necessarily confer simulation, sharing, retention or derivative-model rights [f11069, f10346, f1145, f10813].",
+ "relations": [
+  {
+   "a": "f7589",
+   "b": "f12212",
+   "type": "same",
+   "note": "Both require separate calibration, validation and withheld confirmation data."
+  },
+  {
+   "a": "f135",
+   "b": "f6670",
+   "type": "same",
+   "note": "Both prohibit turning the audit set into another tuning set."
+  },
+  {
+   "a": "f7100",
+   "b": "f12885",
+   "type": "same",
+   "note": "Both require physically independent validation and estimation data with documented differences."
+  },
+  {
+   "a": "f7100",
+   "b": "f14472",
+   "type": "same",
+   "note": "Glossary restates the independence and lineage requirements for the whole program."
+  },
+  {
+   "a": "f12885",
+   "b": "f14472",
+   "type": "same",
+   "note": "Both specify different assets, sites, people and generators, documented through lineage."
+  },
+  {
+   "a": "f6990",
+   "b": "f14327",
+   "type": "same",
+   "note": "Both prescribe grouped partitions by sites, weather, machine identities or scenario families."
+  },
+  {
+   "a": "f7097",
+   "b": "f14473",
+   "type": "same",
+   "note": "Both identify shared training and testing generators or assets as validation contamination."
+  },
+  {
+   "a": "f7104",
+   "b": "f14478",
+   "type": "elaborates",
+   "note": "Glossary lists the contents of the required reproducible-run provenance manifest."
+  },
+  {
+   "a": "f7109",
+   "b": "f13015",
+   "type": "same",
+   "note": "Both require immutable identifiers for result-changing run inputs and versions."
+  },
+  {
+   "a": "f6952",
+   "b": "f14334",
+   "type": "elaborates",
+   "note": "Glossary adds retirement and replacement after audit-driven threshold changes contaminate a case."
+  },
+  {
+   "a": "f99",
+   "b": "f13001",
+   "type": "elaborates",
+   "note": "Glossary identifies detector self-labeling as a logging mistake that destroys later data uses."
+  },
+  {
+   "a": "f6170",
+   "b": "f7589",
+   "type": "supports",
+   "note": "Separating braking-model tuning stops from validation implements the broader simulation independence requirement."
+  },
+  {
+   "a": "f6991",
+   "b": "f14327",
+   "type": "supports",
+   "note": "Adjacent-frame leakage explains why entire groups must remain within one partition."
+  },
+  {
+   "a": "f6953",
+   "b": "f14290",
+   "type": "same",
+   "note": "Both require replacing contaminated audit cases to preserve audit independence."
+  },
+  {
+   "a": "f7756",
+   "b": "f7757",
+   "type": "same",
+   "note": "Both reject software ownership or branding as substitutes for demonstrated simulation credibility."
+  },
+  {
+   "a": "f8037",
+   "b": "f8036",
+   "type": "supports",
+   "note": "NASA credibility factors support including input provenance and uncertainty in assessor packages."
+  },
+  {
+   "a": "f9729",
+   "b": "f10346",
+   "type": "elaborates",
+   "note": "Dedicated pedigree workstream specifies measurement processes and uncertainties behind trustworthy-input records."
+  },
+  {
+   "a": "f11069",
+   "b": "f13015",
+   "type": "elaborates",
+   "note": "Immutable run identifiers complement controlled releases, checksums and archival against evidence drift."
+  }
+ ]
+}

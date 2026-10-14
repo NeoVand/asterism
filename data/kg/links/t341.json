@@ -1,0 +1,115 @@
+{
+ "key": "t341",
+ "hash": "73ae44354e888466",
+ "synopsis": "Every executed virtual test should be reproducible from an immutable provenance manifest identifying requirements and hazards, scenario versions and parameters, machine and sensor configurations, software and model versions, random seeds, raw-data checksums, metrics and verdicts; failed validation cases must also remain in the record [f7104, f7108, f7109, f7590]. Reproducibility extends to captured-site dates, coordinates and revision histories, and to archiving toolchain versions, binaries or containers, drivers and assets; neutral formats and canonical data outside vendor formats help avoid costly supplier dependence [f4376, f9386, f7116, f8876, f8886]. Large synchronized camera, lidar and radar programmes create storage, retention, privacy, access-control and provenance obligations, but the research did not establish recording data rates, storage sizes, logger requirements or jurisdiction-specific governance requirements, so these questions need early resolution [f5799, f5800, f5801, f5803]. Evidence may be disclosed in litigation, and the booklet identifies record-keeping and liability from 9 December 2026 as planning blind spots; early legal review, explicit retention policies and preservation of raw evidence, model versions and sign-offs are recommended [f9804, f10362, f10848, f11061, f10706]. Storage and retention also affect throughput and recurring cost: cost figures were not found, and an end-to-end benchmark should measure cost, wall time, storage and analyst hours to identify whether compute, storage or human triage becomes the bottleneck [f10745, f10791, f10957, f10958].",
+ "relations": [
+  {
+   "a": "f7104",
+   "b": "f13533",
+   "type": "same",
+   "note": "Both require reproducible executed runs with immutable manifests."
+  },
+  {
+   "a": "f7104",
+   "b": "f16251",
+   "type": "same",
+   "note": "Glossary repeats the immutable provenance manifest recommendation."
+  },
+  {
+   "a": "f13533",
+   "b": "f16251",
+   "type": "same",
+   "note": "Duplicate glossary recommendations for reproducible runs."
+  },
+  {
+   "a": "f7108",
+   "b": "f13535",
+   "type": "same",
+   "note": "Glossary restates the minimum run manifest with fewer listed fields."
+  },
+  {
+   "a": "f7108",
+   "b": "f14478",
+   "type": "same",
+   "note": "Both describe the run provenance manifest and its identifying fields."
+  },
+  {
+   "a": "f13535",
+   "b": "f14478",
+   "type": "same",
+   "note": "Overlapping glossary restatements of manifest contents."
+  },
+  {
+   "a": "f4376",
+   "b": "f16013",
+   "type": "same",
+   "note": "Both require capture dates and revision histories to identify site models."
+  },
+  {
+   "a": "f9804",
+   "b": "f12201",
+   "type": "same",
+   "note": "Both warn that simulation evidence may be disclosed under product liability rules."
+  },
+  {
+   "a": "f10684",
+   "b": "f12242",
+   "type": "same",
+   "note": "Both recommend preserving all raw data and model versions."
+  },
+  {
+   "a": "f7122",
+   "b": "f16028",
+   "type": "elaborates",
+   "note": "Glossary adds requirements management and campaign services to the neutral implementation."
+  },
+  {
+   "a": "f7109",
+   "b": "f9386",
+   "type": "elaborates",
+   "note": "Archival scope adds binaries, containers, drivers and GPU to result-affecting version records."
+  },
+  {
+   "a": "f7108",
+   "b": "f16243",
+   "type": "elaborates",
+   "note": "Glossary emphasizes the mandatory software build or commit field."
+  },
+  {
+   "a": "f16250",
+   "b": "f10232",
+   "type": "supports",
+   "note": "Verdicts require exact recreation, motivating independent reproducibility review."
+  },
+  {
+   "a": "f8876",
+   "b": "f8886",
+   "type": "supports",
+   "note": "Proprietary-format migration costs motivate keeping canonical data outside vendor formats."
+  },
+  {
+   "a": "f8914",
+   "b": "f16069",
+   "type": "elaborates",
+   "note": "Security recommendations add encryption, identity controls, region restrictions and contractual reuse bans."
+  },
+  {
+   "a": "f5801",
+   "b": "f5803",
+   "type": "depends",
+   "note": "Unresolved recording capacity and hardware sizing drive early roadmap decisions."
+  },
+  {
+   "a": "f10362",
+   "b": "f10848",
+   "type": "supports",
+   "note": "Liability and record-keeping blind spots reinforce the need for early legal review."
+  },
+  {
+   "a": "f10745",
+   "b": "f10958",
+   "type": "supports",
+   "note": "Missing recurring-cost figures motivate measuring storage, cost and analyst effort in a benchmark."
+  }
+ ]
+}

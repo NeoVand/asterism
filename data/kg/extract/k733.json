@@ -1,0 +1,209 @@
+{
+ "chunkId": "k733",
+ "hash": "d83d45b0400d5901",
+ "facts": [
+  {
+   "text": "Domain randomization deliberately varies simulated-scene appearance and conditions at random, including lighting, colors, textures and object positions, so trained or tested software does not depend on details that differ in reality.",
+   "quote": "Domain randomization deliberately varies the appearance and conditions of simulated scenes at random (lighting, colors, textures, object positions) so that software trained or tested on them does not depend on details that will differ in reality.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Domain randomization",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t166",
+    "t114"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Domain randomization can shrink the sim-to-real gap for machine-learning perception without requiring reality to be modeled exactly.",
+   "quote": "It is a way of shrinking the sim-to-real gap for machine-learning perception without having to model reality exactly.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Domain randomization",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t166",
+    "t165",
+    "t112",
+    "t85"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An unnamed simulator's data-generation tool provides programmable domain randomization of pose, scale, lighting and material appearance, according to a vendor statement.",
+   "quote": "One simulator's data-generation tool provides programmable domain randomization of pose, scale, lighting and material appearance (a vendor statement)",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Domain randomization",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t166",
+    "t114"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2022 construction study estimated excavator poses from synthetic images generated with domain randomization.",
+   "quote": "a 2022 construction study estimated excavator poses from synthetic images generated with domain randomization [Chapter 5].",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Domain randomization",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t166",
+    "t114",
+    "t5"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Mixing synthetic and real training images helps, according to the booklet's finding on synthetic training data.",
+   "quote": "Chapter 9's finding about synthetic training data applies: mixing synthetic and real images helps",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t112"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Training on synthetic data alone leaves a persistent gap, according to the booklet's finding on synthetic training data.",
+   "quote": "training on synthetic data alone leaves a persistent gap",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t165",
+    "t112"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No peer-reviewed demonstration was found that synthetic-only training or validation establishes collision-avoidance reliability for heavy off-road machines.",
+   "quote": "no peer-reviewed demonstration was found that synthetic-only training or validation establishes collision-avoidance reliability for heavy off-road machines [Chapter 9].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t1",
+    "t23",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Domain randomization is not validation: randomized appearance provides no assurance that simulated radar physics or braking distance is correct.",
+   "quote": "Randomization is not validation: random appearance says nothing about whether radar physics or braking distance is right",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Domain randomization",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t166",
+    "t65",
+    "t94",
+    "t170"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Randomized simulation runs must freeze their random seeds to be reproducible.",
+   "quote": "randomized runs must still freeze their random seeds to be reproducible [Chapter 5].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t166",
+    "t162"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Domain randomization is a training-side tool that supports machine-learning detector robustness, not a source of safety evidence about the function.",
+   "quote": "It is a training-side tool for a machine-learning detector, useful for robustness, not a source of safety evidence about the function.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Domain randomization",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t166",
+    "t112",
+    "t70"
+   ],
+   "importance": 3
+  }
+ ]
+}

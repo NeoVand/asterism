@@ -1,0 +1,115 @@
+{
+ "key": "e:iso 3450",
+ "hash": "3578af280bb95215",
+ "synopsis": "ISO 3450:2011, edition 4, confirmed in 2022, specifies minimum service, secondary and parking-brake performance and tests for wheeled earth-moving and rubber-tracked machines with top speeds of at least 20 km/h; purpose-built underground mining machines are outside its scope, although an annex provides modifications [f15190, f2433]. It measures stopping distance from brake-control actuation to standstill, including brake-system response but excluding operator reaction, and tests the most adverse braking configuration, including maximum specified payload for dumpers and certain other machines; controllability also matters, so stopping distance alone is insufficient [f5976, f5967, f5968, f6149]. The proposed four-month validation plan uses ISO 21815-3 CxS calculations for each machine model, supplied with ISO 3450 brake data and declared system delays, but passing ISO 3450 does not validate perception or collision-trigger logic [f2638, f2361]. ISO 3450 brake testing is physical, and the research found no provision allowing simulation to replace prescribed physical performance tests [f10431, f2475]. Its machine-performance tests do not establish statistical model transfer, and no defensible calibration-stop count was found for prediction across 100-plus site types, multiple brake architectures and all stated weather conditions [f6163, f6162]. Edition and source verification remain planning gaps: some chapters did not verify ISO 3450 details or its current edition, vendor-reported stopping formulas require checking against the standard, and the glossary says most core standards, including ISO 3450 in the listed group, are being reissued in late 2026 shortly before design freeze [f7013, f7741, f11197, f2436, f15013].",
+ "relations": [
+  {
+   "a": "f2103",
+   "b": "f2475",
+   "type": "same",
+   "note": "Both report no provision allowing simulation to replace prescribed physical tests."
+  },
+  {
+   "a": "f10431",
+   "b": "f10482",
+   "type": "same",
+   "note": "Both identify ISO 3450 brake testing as physical."
+  },
+  {
+   "a": "f7541",
+   "b": "f7734",
+   "type": "elaborates",
+   "note": "Adds steering tests, operating modes and ISO 10265 to the physical-test description."
+  },
+  {
+   "a": "f5967",
+   "b": "f13623",
+   "type": "elaborates",
+   "note": "Glossary adds maximum dumper payload to the adverse-configuration requirement."
+  },
+  {
+   "a": "f5976",
+   "b": "f6051",
+   "type": "same",
+   "note": "Both define stopping distance including brake response but excluding operator reaction."
+  },
+  {
+   "a": "f5976",
+   "b": "f13674",
+   "type": "same",
+   "note": "Glossary restates the stopping-distance boundary and clarifies dead time and build-up."
+  },
+  {
+   "a": "f6296",
+   "b": "f13761",
+   "type": "same",
+   "note": "Both state that braking controllability is required."
+  },
+  {
+   "a": "f6296",
+   "b": "f6149",
+   "type": "elaborates",
+   "note": "Identifies combined brake-steer systems and explains why stopping distance alone is insufficient."
+  },
+  {
+   "a": "f2360",
+   "b": "f2707",
+   "type": "same",
+   "note": "Both describe service, secondary and parking-brake coverage for wheeled and fast rubber-tracked machines."
+  },
+  {
+   "a": "f2360",
+   "b": "f15190",
+   "type": "elaborates",
+   "note": "Adds edition, confirmation date and the 20 km/h scope threshold."
+  },
+  {
+   "a": "f8946",
+   "b": "f10651",
+   "type": "same",
+   "note": "Both identify the 2011 standard as reconfirmed in 2022 for braking performance and tests."
+  },
+  {
+   "a": "f2138",
+   "b": "f2638",
+   "type": "elaborates",
+   "note": "Turns the sourced four-month approach into a recommendation and adds declared delays."
+  },
+  {
+   "a": "f2638",
+   "b": "f15164",
+   "type": "same",
+   "note": "Both use model-specific CxS calculations with ISO 3450 brake data and declared delays."
+  },
+  {
+   "a": "f6614",
+   "b": "f13640",
+   "type": "same",
+   "note": "Both distinguish the same four incompatible deceleration definitions."
+  },
+  {
+   "a": "f2433",
+   "b": "f2340",
+   "type": "depends",
+   "note": "Applying ISO 3450 brake-plant requirements depends on establishing machine scope."
+  },
+  {
+   "a": "f2435",
+   "b": "f15194",
+   "type": "same",
+   "note": "Glossary repeats the secondary-source dumper stopping-limit formula and supplies units."
+  },
+  {
+   "a": "f2434",
+   "b": "f15193",
+   "type": "elaborates",
+   "note": "Glossary repeats secondary-source test speeds and adds machine-type stopping limits."
+  },
+  {
+   "a": "f6163",
+   "b": "f6162",
+   "type": "supports",
+   "note": "Performance-standard scope explains why no calibration count guarantees broad model transfer."
+  }
+ ]
+}

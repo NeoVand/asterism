@@ -1,0 +1,115 @@
+{
+ "key": "t262",
+ "hash": "eefff08da72dbe47",
+ "synopsis": "Model credibility is specific to validated parameter space and configuration; the roadmap should define an applicability envelope and extrapolation rules, and label every simulation result as interpolated or extrapolated [f5072, f10488, f9733, f8016]. Sensor pose needs an explicit validated range, relocation outside it should trigger bridge testing, and repaired machines need a field diagnostic confirming return to the validated state [f7922, f10810]. Important sensor and scene limits remain: neural reconstruction degrades sharply beyond a 1–4 m viewpoint shift, degraded-visibility sensor models are least validated, and on-road nighttime pedestrian avoidance was 0% in 2019 and 60% in 2025 despite shortcomings not revealed by daytime protocols [f241, f7886, f7585]. Mechanical evidence also has narrow scope: published mining stopping tests cover unloaded machines on gradients of 1% or less, cited terramechanics findings come from single-wheel rigs and sand rather than full machines, and common Chrono handling tire models do not work on deformable terrain [f5182, f6012, f8498]. Machine-family claims should identify invariant parameters and bounds confirmed physically, while the physical anchor campaign should test family membership, conservatism and failure regions [f5784, f6416]. Simulation should replace only defined repetitive tests within specified machine, sensor, configuration and environment envelopes, retaining physical boundary tests; weak-model regions must be established empirically, and the brief does not justify a fixed fraction of physical testing to retain [f10910, f10991].",
+ "relations": [
+  {
+   "a": "f10488",
+   "b": "f10760",
+   "type": "same",
+   "note": "Identical statements restricting credibility to the validated configuration."
+  },
+  {
+   "a": "f5182",
+   "b": "f13492",
+   "type": "same",
+   "note": "Both restrict published mining stopping tests to unloaded machines and gradients no greater than 1%."
+  },
+  {
+   "a": "f8339",
+   "b": "f8498",
+   "type": "same",
+   "note": "Both report Chrono handling tire models fail on deformable terrain; the latter names models."
+  },
+  {
+   "a": "f8498",
+   "b": "f13786",
+   "type": "same",
+   "note": "Glossary restates the handling-tire limitation and supported alternatives without naming the tool."
+  },
+  {
+   "a": "f8339",
+   "b": "f13786",
+   "type": "same",
+   "note": "Both report developers' warning that handling tire models cannot represent deformable terrain."
+  },
+  {
+   "a": "f12725",
+   "b": "f7922",
+   "type": "same",
+   "note": "Both require sensor pose as an input with an explicit validated range."
+  },
+  {
+   "a": "f5182",
+   "b": "f5565",
+   "type": "supports",
+   "note": "Restricted published stopping tests reinforce the lack of loaded and slope coverage."
+  },
+  {
+   "a": "f4861",
+   "b": "f10488",
+   "type": "supports",
+   "note": "Measured-envelope restriction provides a sensor-specific instance of configuration-bound credibility."
+  },
+  {
+   "a": "f9733",
+   "b": "f8016",
+   "type": "depends",
+   "note": "Classifying results as interpolation or extrapolation requires a defined validated envelope."
+  },
+  {
+   "a": "f10225",
+   "b": "f10230",
+   "type": "same",
+   "note": "Both require review of claims extending outside validated conditions."
+  },
+  {
+   "a": "f7585",
+   "b": "f7886",
+   "type": "supports",
+   "note": "Nighttime performance cliffs support concern about poorly validated degraded-visibility conditions."
+  },
+  {
+   "a": "f4769",
+   "b": "f7468",
+   "type": "supports",
+   "note": "Missing condition-specific error data undermines universal fidelity claims and motivates phenomenon-specific credibility."
+  },
+  {
+   "a": "f5784",
+   "b": "f6416",
+   "type": "elaborates",
+   "note": "Physical anchors operationalize family claims by checking membership, conservative bounds and model failures."
+  },
+  {
+   "a": "f8604",
+   "b": "f13809",
+   "type": "elaborates",
+   "note": "Glossary places physical envelope confirmation within a detailed-to-simplified soil-model workflow."
+  },
+  {
+   "a": "f7971",
+   "b": "f7972",
+   "type": "depends",
+   "note": "Non-conservative validation results led to restricting use below HIC 840 rather than 1,000."
+  },
+  {
+   "a": "f7971",
+   "b": "f8014",
+   "type": "supports",
+   "note": "Validated but non-conservative behavior illustrates why discrepancy records must include non-conservative cases."
+  },
+  {
+   "a": "f74",
+   "b": "f10991",
+   "type": "elaborates",
+   "note": "Retained physical testing must target empirically identified weaknesses, not an unsupported fixed fraction."
+  },
+  {
+   "a": "f10910",
+   "b": "f9733",
+   "type": "depends",
+   "note": "Envelope-limited substitution of physical tests requires documented applicability boundaries and extrapolation rules."
+  }
+ ]
+}

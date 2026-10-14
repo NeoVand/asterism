@@ -1,0 +1,283 @@
+{
+ "chunkId": "k680",
+ "hash": "b641a891c1e315eb",
+ "facts": [
+  {
+   "text": "Synthetic training data are sensor data made by a simulator or generative model rather than recorded in the field; the domain gap is the difference between artificial and real data that makes a detector trained on one perform worse on the other.",
+   "quote": "Synthetic training data are sensor data made by a simulator or a generative model rather than recorded in the field, and the domain gap is the difference between that artificial data and real data that makes a detector trained on one do worse on the other.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t165"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Recording a worker in every pose and at every distance in dust, snow and night is slow and sometimes dangerous.",
+   "quote": "Recording a worker in every pose, at every distance, in dust, snow and night is slow and sometimes dangerous.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t14",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A simulator can render ten thousand images of workers in varied poses, distances and conditions overnight, each perfectly labeled.",
+   "quote": "A simulator can render ten thousand such images overnight, each perfectly labeled.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t106",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Data augmentation stretches a small real dataset by altering real images, including flipping, darkening and adding rendered rain.",
+   "quote": "Data augmentation is the milder version: altering real images, flipping, darkening, adding rendered rain, to stretch a small real dataset further.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t114"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Synthetic data can have physically unrealistic features: rendered dust scatters light differently from real dust, rendered steel returns radar differently from real steel, and rendered scenes are too clean.",
+   "quote": "Rendered dust does not scatter light exactly as real dust does; rendered steel does not return radar as real steel does; rendered scenes are too clean.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t165",
+    "t94",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A detector trained on synthetic data can learn artificial-data differences and consequently perform poorly on real data.",
+   "quote": "A detector trained on synthetic data learns those differences and stumbles on reality.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t112",
+    "t165"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Evidence across construction, mining and road studies indicates that mixing synthetic and real data generally beats real-only training in data-poor settings, while synthetic-only training leaves a domain gap.",
+   "quote": "mixing synthetic with real data generally beats real-only training in data-poor settings, while synthetic-only training leaves a gap [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t165",
+    "t112"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Comparison of a simulated off-road lidar dataset with a real dataset showed large domain-shift effects.",
+   "quote": "A simulated off-road lidar dataset compared against a real one showed large domain-shift effects [Chapter 6]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t165",
+    "t92",
+    "t107"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Image-quality scores did not reliably predict system behavior in the evidence discussed in Chapter 9.",
+   "quote": "image-quality scores did not reliably predict system behavior [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t254",
+    "t256"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Training augmentation is the strongest case for generated data because the generated data need only improve generalization.",
+   "quote": "Using generated data for training augmentation is the strongest case, because the data need only improve generalization.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t112"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Generated data are useful now for robustness tests of detector stability as visibility degrades, provided the test claim is explicitly about that transformation.",
+   "quote": "Using it for robustness tests (\"does the detector stay stable as visibility degrades?\") is useful now, if the claim is explicitly about that transformation.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t102",
+    "t86"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Using generated data as physical-equivalence evidence—for example, claiming a synthetic fog frame proves that a real camera meets a requirement at 40 m visibility—is not established and needs separate calibration against the real sensor.",
+   "quote": "Using it as physical-equivalence evidence (\"this synthetic fog frame proves the real camera meets the requirement at 40 m visibility\") is not established and needs separate calibration against the real sensor.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t234",
+    "t89",
+    "t237",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Synthetic-data risks include renderer artifacts, wrong particle physics, missing contamination and vibration, and validation contamination caused by sharing a generator between training and test.",
+   "quote": "Risks include renderer artifacts, wrong particle physics, missing contamination and vibration, and validation contaminated by sharing a generator between training and test [Chapter 9].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t113",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Synthetic data can widen coverage of rare and dangerous cases before the heavy-machine prototype exists.",
+   "quote": "Synthetic data can widen coverage of rare and dangerous cases before the prototype exists",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t144",
+    "t1"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No study shows that synthetic-only training or validation provides field-level collision-avoidance reliability for heavy machines.",
+   "quote": "no study shows that synthetic-only training or validation gives field-level collision-avoidance reliability for heavy machines",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t1",
+    "t23",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For heavy-machine collision-avoidance development and validation, synthetic data should supplement real recordings and never replace them.",
+   "quote": "synthetic data supplement real recordings and never replace them [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t1",
+    "t23",
+    "t216"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,258 @@
+{
+ "chunkId": "k794",
+ "hash": "529b572c30a3853d",
+ "facts": [
+  {
+   "text": "Constrained multi-objective optimization chooses settings that perform well on several goals at once—few misses, few false alarms, few unnecessary brakes and little lost production—without violating hard limits.",
+   "quote": "Constrained multi-objective optimization is the task of choosing settings that do well on several goals at once (few misses, few false alarms, few unnecessary brakes, little lost production) while never violating certain hard limits.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t225"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Braking-system tuning decision variables include detection confidence thresholds, warning and brake zone dimensions per speed, track-confirmation filters requiring N detections in M frames, persistence and debounce times, time-to-collision triggers and filter constants.",
+   "quote": "The settings (decision variables) are detection confidence thresholds, warning and brake zone dimensions per speed, track-confirmation filters that require N detections in M frames, persistence and debounce times, time-to-collision triggers and filter constants.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t225",
+    "t188",
+    "t187",
+    "t186",
+    "t197"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Braking-system tuning outcomes include missed or late interventions, false warnings per hour, unnecessary brake events per hour, intervention timing that is too early or too late, and productivity loss from time stopped.",
+   "quote": "The outcomes are missed or late interventions, false warnings per hour, unnecessary brake events per hour, intervention timing (too early or too late) and productivity loss from time stopped [Chapter 9].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t225",
+    "t224",
+    "t192",
+    "t213",
+    "t28"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet recommends first imposing hard safety constraints on braking-system tuning: a minimum stopping margin, a maximum permitted miss probability (for example, zero misses in critical scenarios), a maximum intervention latency and required coverage of particular hazardous scenarios.",
+   "quote": "First, impose hard safety constraints: a minimum stopping margin, a maximum permitted miss probability (for example zero misses in critical scenarios), a maximum intervention latency and required coverage of particular hazardous scenarios.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t225",
+    "t194",
+    "t88",
+    "t62"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "After satisfying hard safety constraints, braking-system tuning should minimize false warnings, unnecessary brakes, discomfort and productivity loss.",
+   "quote": "Second, within the settings that satisfy those constraints, minimize false warnings, unnecessary brakes, discomfort and productivity loss.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t225",
+    "t192",
+    "t228"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Braking-system tuning should keep the Pareto frontier visible so engineers and safety authorities can see exactly which outcomes are traded off.",
+   "quote": "Third, keep the Pareto frontier visible so that engineers and safety authorities can see exactly what is traded.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t226",
+    "t225"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet warns against starting braking-system tuning by combining all outcomes into one weighted cost because safety objectives have different meanings. Pricing a miss against a nuisance brake is a safety-policy decision that must be documented rather than hidden in weights.",
+   "quote": "a cost-weighted objective needs an explicit price for a miss against a nuisance brake, which is a safety-policy decision to be documented, not hidden in weights",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t225",
+    "t226",
+    "t192"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensitivity analysis on the weights is mandatory when using a cost-weighted objective for braking-system tuning.",
+   "quote": "sensitivity analysis on the weights is mandatory.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t260",
+    "t225"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet considers constraint-based braking-system tuning wording, such as minimizing nuisance subject to a bounded miss rate, easier to defend than a weighted-cost formulation.",
+   "quote": "Constraint-based wording (\"minimize nuisance subject to miss rate at most the bound\") is easier to defend [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t225",
+    "t192"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For mine-site braking-system tuning, robust or worst-case optimization optimizes the worst stratum or a high percentile rather than the average, preventing good average performance from masking weak performance in a dust-at-night stratum.",
+   "quote": "Robust or worst-case optimization optimizes the worst stratum or a high percentile rather than the average, so that a setting does not buy good average performance with a weak dust-at-night stratum.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Robust or worst-case optimization",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t225",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "When braking-system settings perform similarly, the booklet prefers a broad stable region over a knife-edge optimum that fails after small sensor misalignment, a brake-temperature shift or a change in dust.",
+   "quote": "when several settings perform similarly, the booklet prefers the one in a broad stable region over a knife-edge optimum that fails after a small sensor misalignment, a brake-temperature shift or a change in dust [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t225",
+    "t100",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The old braking-system tuning process tuned each machine model by hand over years.",
+   "quote": "The old process tuned each machine model by hand over years.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t197",
+    "t229"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet recommends formulating braking-system tuning once as a constrained optimization problem and solving it with methods that scale across machine models while keeping the safety trade-off visible to accountable people.",
+   "quote": "tuning should be formulated once, as this constrained problem, and solved with methods that scale across machine models and keep the safety trade-off visible to the people accountable for it.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t225",
+    "t229",
+    "t226"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Over-fitting risk in braking-system tuning rises with the number of configurations tried; the final setting must therefore be chosen with pre-declared constraints and confirmed on an independent set.",
+   "quote": "over-fitting risk rises with the number of configurations tried, so the final point must be chosen with pre-declared constraints and confirmed on an independent set [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t219",
+    "t218",
+    "t220",
+    "t225"
+   ],
+   "importance": 3
+  }
+ ]
+}

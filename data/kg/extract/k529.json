@@ -1,0 +1,601 @@
+{
+ "chunkId": "k529",
+ "hash": "485fc748d2674c8a",
+ "facts": [
+  {
+   "text": "The simulation specialist objects that the simulator is an uncalibrated and unvalidated measurement instrument that needs a defined envelope of use.",
+   "quote": "the simulator is a measurement instrument that has not been calibrated or validated, and it needs a defined envelope.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t268",
+    "t234",
+    "t261",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "EU Implementing Regulation 2022/1426, dated 5 August 2022 and consolidated 24 March 2026, requires the credibility assessment to define the envelope in which the virtual tool can be used.",
+   "quote": "EU Implementing Regulation 2022/1426 (5 August 2022, consolidated 24 March 2026) says the credibility assessment \"shall define the envelope in which the virtual tool can be used\"",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    1
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EU Implementing Regulation 2022/1426",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t234",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "EU Implementing Regulation 2022/1426 requires documented validation of each model.",
+   "quote": "requires documented validation of each model",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    1
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EU Implementing Regulation 2022/1426",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t237",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "EU Implementing Regulation 2022/1426 requires evidence of the competence and experience of both the team validating the toolchain and the team using it.",
+   "quote": "evidence of the competence and experience of both the team that validates the toolchain and the team that uses it",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    1
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EU Implementing Regulation 2022/1426",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t359",
+    "t234",
+    "t320"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "EU Implementing Regulation 2022/1426 states that simulation shall not substitute for physical tests in Part 3.",
+   "quote": "states that simulation \"shall not be a substitute for physical tests in Part 3\" [1]",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    1
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EU Implementing Regulation 2022/1426",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t264",
+    "t216"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The draft UN Global Technical Regulation on automated driving systems, discussed at UNECE GRVA workshops in March and June 2025, builds a harmonised credibility framework covering toolchain management, requirements, verification and validation.",
+   "quote": "The draft UN Global Technical Regulation on automated driving systems (UNECE GRVA workshops, March and June 2025) builds a harmonised credibility framework covering toolchain management, requirements, verification and validation [2, 3].",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    2,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "UN Global Technical Regulation on automated driving systems",
+     "kind": "regulation"
+    },
+    {
+     "name": "UNECE GRVA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t234",
+    "t320",
+    "t65",
+    "t295"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NASA-STD-7009B, dated 5 March 2024, establishes modeling and simulation practice around credibility, verification, validation, sensitivity and uncertainty.",
+   "quote": "NASA-STD-7009B (5 March 2024) establishes modeling and simulation practice around credibility, verification, validation, sensitivity and uncertainty",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NASA-STD-7009B",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t242",
+    "t235",
+    "t260"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NASA-STD-7009B states that acceptance criteria are to be defined by the program and approved by technical authority.",
+   "quote": "states that acceptance criteria are to be defined by the program and approved by technical authority [4]",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NASA-STD-7009B",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t242",
+    "t62"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASME's VVUQ guidance distinguishes verification, which checks whether the implementation matches the mathematics, from validation, which checks whether the model represents the real application, and from uncertainty quantification.",
+   "quote": "ASME's VVUQ guidance distinguishes verification (does the implementation match the mathematics), validation (does it represent the real application) and uncertainty quantification [5].",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASME",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t235",
+    "t236",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "To address simulator credibility objections, the simulation specialist recommends voluntarily adopting one of the cited credibility frameworks and running a credibility pilot before committing to the plan.",
+   "quote": "adopt one of these frameworks voluntarily and run a credibility pilot before committing to the plan.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t350",
+    "t268"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In an SAE paper dated 27 September 2016, Salaani and colleagues built hardware-in-the-loop AEB simulation around an instrumented Volvo tractor-trailer with a Bendix radar and AEB system.",
+   "quote": "In an SAE paper of 27 September 2016, Salaani and colleagues built hardware-in-the-loop AEB simulation around an instrumented Volvo tractor-trailer with a Bendix radar and AEB system",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    6
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "SAE",
+     "kind": "organization"
+    },
+    {
+     "name": "Salaani",
+     "kind": "person"
+    },
+    {
+     "name": "Volvo",
+     "kind": "company"
+    },
+    {
+     "name": "Bendix",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t148",
+    "t25",
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Salaani and colleagues first ran a battery of physical track tests to benchmark AEB performance, then compared equivalent simulated scenarios against those results in their 27 September 2016 SAE paper.",
+   "quote": "but first ran a battery of physical track tests to benchmark performance and then compared equivalent simulated scenarios against those results.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    6
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Salaani",
+     "kind": "person"
+    },
+    {
+     "name": "SAE",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t160",
+    "t158",
+    "t148",
+    "t25"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The documented heavy-vehicle AEB virtualization example retained physical referents and made later testing more efficient only after a credible comparison existed.",
+   "quote": "Virtualization did not eliminate physical referents; it made later testing more efficient after a credible comparison existed.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t216",
+    "t234",
+    "t25"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A large virtual campaign can produce consistent but misleading results if the virtual sensor, collision logic and test oracle share the system under test's simplifying assumptions.",
+   "quote": "If the virtual sensor, the collision logic and the test oracle embed the same simplifying assumptions as the system under test, a large virtual campaign can produce very consistent but misleading results.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t267",
+    "t59",
+    "t268"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No documented off-road collision-system case of common-mode error producing misleading virtual results was found; the risk is an inference from standard verification and validation practice.",
+   "quote": "A documented off-road collision-system case of this failure was **not found**; it is an inference from standard verification and validation practice",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t267",
+    "t59",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Standard verification and validation practice requires comparison against real-world referents rather than internal consistency alone.",
+   "quote": "standard verification and validation practice, which requires comparison against real-world referents rather than internal consistency alone.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t65",
+    "t237",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A validated simulator is not automatically valid across all machine dimensions, sensor positions, brake systems, loads, terrains and operating modes; credibility is tied to an intended-use envelope.",
+   "quote": "One validated simulator is not automatically valid across all machine dimensions, sensor positions, brake systems, loads, terrains and operating modes; credibility is stated against an intended-use envelope [1, 4].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    1,
+    4
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t265",
+    "t230",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The program must prove that machine variants can be handled by validated parameters rather than becoming separate simulation-development projects.",
+   "quote": "The program must prove that machine variants can be handled by validated parameters rather than quietly becoming separate simulation-development projects.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t230",
+    "t265",
+    "t262"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No published validation of off-road terramechanics models adequate for braking-distance prediction across 100+ site types was found. Project Chrono validation literature was not reviewed.",
+   "quote": "No published validation of off-road terramechanics models adequate for braking-distance prediction across 100+ site types was found (**not found**; Project Chrono validation literature was not reviewed).",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Project Chrono",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t170",
+    "t44",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "To address terramechanics and machine-ground interaction uncertainties, bound vehicle-dynamics models using physical stopping tests for each machine family and surface class.",
+   "quote": "bound vehicle-dynamics models with physical stopping tests per machine family and surface class",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t184",
+    "t179",
+    "t174",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Physical brake testing should be retained when addressing terramechanics and machine-ground interaction uncertainties.",
+   "quote": "and keep physical brake testing.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t184",
+    "t264",
+    "t181"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Combining 100+ site types, 10+ scenarios, weather and light bins, and many machine models creates a combinatorial test space.",
+   "quote": "100+ site types, 10+ scenarios, weather and light bins and many machine models form a combinatorial space.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t198",
+    "t44",
+    "t143",
+    "t45"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Published compute costs and return on investment for virtual validation of off-road safety functions were not found in independent sources.",
+   "quote": "Published compute costs and return on investment for virtual validation of off-road safety functions: **not found** in independent sources.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t127",
+    "t358"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The response to compute and scenario-explosion objections should include a formal credibility plan with named validation referents.",
+   "quote": "a formal credibility plan with named validation referents",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t269"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The virtual-validation plan should report separate verification, validation and uncertainty results for sensor, machine dynamics, brake actuation, environment and system timing.",
+   "quote": "separate verification, validation and uncertainty results for sensor, machine dynamics, brake actuation, environment and system timing",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t235",
+    "t84",
+    "t179",
+    "t182",
+    "t172"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The virtual-validation plan should use configuration-controlled models.",
+   "quote": "configuration-controlled models",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t162",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The virtual-validation plan should provide reproducible runs.",
+   "quote": "reproducible runs",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t162",
+    "t234"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The virtual-validation plan should provide quantified residuals.",
+   "quote": "quantified residuals",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t249",
+    "t234"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The virtual-validation plan should document the domain of applicability.",
+   "quote": "a documented domain of applicability",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The virtual-validation plan should prioritise scenarios using accident data and provide coverage metrics for the remaining scenarios.",
+   "quote": "scenario prioritisation from accident data with coverage metrics for the rest",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t200",
+    "t142",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The virtual-validation plan should clearly state which claims cannot be supported virtually.",
+   "quote": "clear rules stating which claims cannot be supported virtually.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t264",
+    "t234",
+    "t67"
+   ],
+   "importance": 3
+  }
+ ]
+}

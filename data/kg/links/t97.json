@@ -1,0 +1,115 @@
+{
+ "key": "t97",
+ "hash": "60a64a5f0c8ec5cf",
+ "synopsis": "Tag-based systems are common in mining collision avoidance and can narrow what perception must prove, but their protection depends on people and machines being equipped; Epiroc Titan CAS and CAS Interface explicitly require everyone and every machine to be tagged [f4593, f12692, f1670]. Untagged people and objects fall outside cooperative sensing, so mixed fleets containing non-equipped objects need validation arguments for both tag-based and perception-based detection [f503, f2005]. Tag removal is a documented operational weakness: MSHA’s January 2017 notice recorded mechanics removing wearable tags to diagnose leaks in the red zone, while broader reports describe bypass requests and a false sense of security [f3297, f3034]. Position and message paths are comparatively easy to emulate and fault-inject, but validation still requires physical evidence for coverage, radio propagation, synchronisation and tag failure; the corpus found neither simulation-fidelity studies for these proximity technologies nor validated simulation of propagation around large metal machines [f500, f502, f4598, f4599]. Testing must distinguish physical radio/interface stimulation from downstream measurement injection, and deployment planning must address interoperability: mines may mix systems, while the glossary reports that devices from different suppliers did not interoperate [f5323, f7484, f12690].",
+ "relations": [
+  {
+   "a": "f4599",
+   "b": "f12689",
+   "type": "same",
+   "note": "Both identify missing simulation validation of radio propagation around large metal machines."
+  },
+  {
+   "a": "f3643",
+   "b": "f11533",
+   "type": "same",
+   "note": "Both state that untagged contractors are invisible to tag-based detection."
+  },
+  {
+   "a": "f3643",
+   "b": "f12687",
+   "type": "same",
+   "note": "Both identify untagged contractors and visitors as undetectable."
+  },
+  {
+   "a": "f503",
+   "b": "f11665",
+   "type": "same",
+   "note": "Both describe the inability of cooperative detection to cover untagged people."
+  },
+  {
+   "a": "f503",
+   "b": "f1048",
+   "type": "same",
+   "note": "Both place untagged objects outside cooperative sensing."
+  },
+  {
+   "a": "f1349",
+   "b": "f1670",
+   "type": "same",
+   "note": "Both require universal person and machine equipment for Epiroc CAS Interface."
+  },
+  {
+   "a": "f1670",
+   "b": "f11450",
+   "type": "same",
+   "note": "The glossary restates the universal tagging dependency illustrated by Epiroc systems."
+  },
+  {
+   "a": "f1750",
+   "b": "f2004",
+   "type": "same",
+   "note": "Both distinguish tag-based Level 9 validation from camera, radar and lidar validation."
+  },
+  {
+   "a": "f441",
+   "b": "f677",
+   "type": "same",
+   "note": "Both identify wearable components in MSHA proximity rules."
+  },
+  {
+   "a": "f501",
+   "b": "f4593",
+   "type": "same",
+   "note": "Both describe these cooperative technologies as prevalent in mining collision avoidance."
+  },
+  {
+   "a": "f1046",
+   "b": "f12692",
+   "type": "same",
+   "note": "Both explain how tags reduce the scope of perception proof for tagged people."
+  },
+  {
+   "a": "f3534",
+   "b": "f3642",
+   "type": "same",
+   "note": "Both identify removal of wearable protective tags as possible."
+  },
+  {
+   "a": "f3297",
+   "b": "f11532",
+   "type": "supports",
+   "note": "Documented mechanic behavior substantiates the glossary’s tag-removal design problem."
+  },
+  {
+   "a": "f503",
+   "b": "f2005",
+   "type": "depends",
+   "note": "The untagged-object limitation drives the need for mixed detection validation arguments."
+  },
+  {
+   "a": "f502",
+   "b": "f4599",
+   "type": "elaborates",
+   "note": "The simulation gap specifies why propagation still needs physical validation evidence."
+  },
+  {
+   "a": "f500",
+   "b": "f5323",
+   "type": "elaborates",
+   "note": "Testing guidance distinguishes downstream emulation from stimulation of physical sensing interfaces."
+  },
+  {
+   "a": "f12690",
+   "b": "f7484",
+   "type": "supports",
+   "note": "Reported supplier incompatibility substantiates the mixed-system interoperability concern."
+  },
+  {
+   "a": "f5362",
+   "b": "f5367",
+   "type": "elaborates",
+   "note": "Target-equipped ground truth requires an alternative for unequipped people, animals and objects."
+  }
+ ]
+}

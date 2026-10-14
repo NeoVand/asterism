@@ -1,0 +1,278 @@
+{
+ "chunkId": "k740",
+ "hash": "8afe3441c05253ca",
+ "facts": [
+  {
+   "text": "The end-to-end latency budget lists every delay between an object appearing and the machine standing still, with a time allowance for each delay.",
+   "quote": "The end-to-end latency budget is the list of every delay between an object appearing and the machine standing still, with a time allowance for each.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t172"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The end-to-end latency chain proceeds through sensing, detection and confirmation (usually over several consecutive frames), risk determination and action selection, network transmission of the brake command, brake dead time, brake-force build-up, and deceleration to a stop.",
+   "quote": "the software decides it is real, usually after seeing it in several consecutive frames (detection and confirmation)",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t172",
+    "t171",
+    "t185",
+    "t86",
+    "t120"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-3 describes the collision-system distance chain as detection, determination, action, machine stopping and a safe distance.",
+   "quote": "ISO 21815-3 describes the same chain as the parts of its \"collision-system distance\", detection, determination, action, machine stopping and a safe distance",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    8
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t172",
+    "t194"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-3 requires the system manufacturer to communicate the typical delays in the collision system.",
+   "quote": "requires the system manufacturer to communicate the typical delays in the system [Chapters 3, 8]",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    8
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t172"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The object-detection standard ISO 16001 allows at most 300 ms for detection.",
+   "quote": "The object-detection standard ISO 16001 allows at most 300 ms for detection [Chapter 3].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t283",
+    "t88",
+    "t86"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A road study reported about 170 ms of sensing plus 50 ms of detection error for an automated brake, compared with about 700 ms for a human driver.",
+   "quote": "A road study reported about 170 ms of sensing plus 50 ms of detection error for an automated brake, against about 700 ms for a human driver [Chapter 8].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t172",
+    "t35",
+    "t25"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet's brake response reference figures range from under 0.3 s to 2.5 s depending on the machine; its latency diagram labels published brake dead-time values as 0.3 s to 2.5 s by machine.",
+   "quote": "Brake response figures run from under 0.3 s to 2.5 s depending on the machine [Chapter 8].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t171",
+    "t172"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A realistic end-to-end latency chain spends roughly one second before full deceleration.",
+   "quote": "A realistic chain therefore spends roughly one second before full deceleration",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t172",
+    "t169"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "At 15 km/h, each second of delay corresponds to 4.2 m of travel.",
+   "quote": "at 15 km/h each second is 4.2 m of travel.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t172",
+    "t169",
+    "t170"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "One road round robin reported 0.4 s for brake-force build-up to full force.",
+   "quote": "Build-up to full force (0.4 s in one road round robin)",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t171"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The latency-chain diagram calculates physical stopping distance as speed squared divided by twice deceleration, corrected for grade and surface, and ends with the machine stopped and residual safe distance remaining.",
+   "quote": "Physical stopping: v squared over 2a, corrected for grade and surface",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t173",
+    "t174",
+    "t194"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The real values for the object-to-standstill latency chain must be measured on each machine rather than assumed from the booklet's quoted figures.",
+   "quote": "the time figures are those the booklet quotes, and the real values must be measured on each machine [Chapter 8].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t172",
+    "t184"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The end-to-end latency budget connects the sensor, software and brake teams: each team owns one segment, and the sum of the segments sets the required detection range.",
+   "quote": "The budget connects the sensor team, the software team and the brake team: each owns one segment, and the sum sets the required detection range.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t172",
+    "t193",
+    "t359"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The program needs a physical end-to-end latency test that injects a known object event and time-stamps every stage from detection to measurable deceleration.",
+   "quote": "an end-to-end latency test, injecting a known object event and time-stamping every stage from detection to measurable deceleration, among the physical tests the program needs",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t172",
+    "t184",
+    "t101"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "If perception delays consume the end-to-end latency budget, no brake model can recover the lost margin.",
+   "quote": "if perception delays eat the budget, no brake model can recover the lost margin [Chapter 8].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t172",
+    "t85",
+    "t182"
+   ],
+   "importance": 3
+  }
+ ]
+}

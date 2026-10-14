@@ -1,0 +1,241 @@
+{
+ "chunkId": "k789",
+ "hash": "459322bd8044525e",
+ "facts": [
+  {
+   "text": "A hold-out set is test data reserved and never used for tuning; a tuning split divides data into tuning, confirmation and audit parts; cross-validation rotates the held-out part so every part is used for checking once.",
+   "quote": "A hold-out set is a portion of the test data kept back and never used for tuning, a tuning split is the division of data into parts for tuning, confirming and auditing, and cross-validation is the practice of rotating which part is held out so that every part is used for checking once.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t220"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet uses a three-way tuning split, with the tuning set used to adjust thresholds, zones and filters.",
+   "quote": "Tuning set: adjust thresholds, zones and filters",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t188",
+    "t187"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The validation or confirmation set checks chosen settings on data not seen during tuning and may be consulted many times.",
+   "quote": "The validation or confirmation set checks the chosen settings on data the tuning did not see and may be looked at many times.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t113"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The audit set, also called the frozen test set, remains untouched until the release candidate, is queried rarely, and is the only basis for the release claim.",
+   "quote": "The audit set, also called the frozen test set, is untouched until the release candidate, queried rarely, and is the only basis for the release claim.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t72"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The audit set in the booklet's three-way split is pre-registered.",
+   "quote": "Audit set: frozen, pre-registered, queried only at release candidates",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t218"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The tuning, confirmation and audit partitions must be grouped rather than random: whole sites, weather episodes, machine identities or scenario families belong to one partition or another.",
+   "quote": "The parts must be grouped, not random: whole sites, weather episodes, machine identities or scenario families go into one part or another [Chapter 9].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t231"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the booklet's five-group cross-validation example, the system is tuned on four groups and checked on the fifth, repeated five times, and the checks are averaged.",
+   "quote": "Cross-validation rotates the role: with five groups, the system is tuned on four and checked on the fifth, five times over, and the checks are averaged.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t220"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet uses leave-one-site-type-out cross-validation for job sites.",
+   "quote": "\"Leave-one-site-type-out\" is the booklet's version for job sites.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Leave-one-site-type-out cross-validation",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t220",
+    "t44"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Nested cross-validation validates the choice of method inside the loop and is the recognized way to remove optimistic bias from repeated model selection in machine learning.",
+   "quote": "Nested cross-validation, where the choice of method is itself validated inside the loop, is the recognized way to remove the optimistic bias of repeated model selection in machine learning",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Nested cross-validation",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t220",
+    "t219"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet calls its three-way tuning split the engineering equivalent of nested cross-validation.",
+   "quote": "the booklet calls the three-way split its engineering equivalent [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Nested cross-validation",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t220",
+    "t219"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In the three-way split, candidate settings move from tuning to confirmation and only then to the frozen audit set; the audit set never feeds back into tuning.",
+   "quote": "settings move from tuning to confirmation and only then to the frozen audit set, which never feeds back into tuning.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t231"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The reusable holdout principle cited by the booklet allows the tuning team to see only aggregate pass or fail results from the audit set.",
+   "quote": "The \"reusable holdout\" principle the booklet cites means the tuning team sees only aggregate pass or fail from the audit set.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Reusable holdout",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t220",
+    "t219"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "When a failing audit case is examined and a threshold is changed in response, that audit case is contaminated and should be retired and replaced.",
+   "quote": "Whenever a failing audit case is examined and a threshold changed in response, that case is contaminated and should be retired and replaced [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t231",
+    "t188"
+   ],
+   "importance": 3
+  }
+ ]
+}

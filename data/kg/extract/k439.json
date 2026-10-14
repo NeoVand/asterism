@@ -1,0 +1,677 @@
+{
+ "chunkId": "k439",
+ "hash": "05bbfda68feb6f23",
+ "facts": [
+  {
+   "text": "ISO/TS 21815-2:2021 defines the J1939 command path for stop, slow down and motion inhibit, which a HIL bench can emulate.",
+   "quote": "ISO/TS 21815-2:2021 defines the J1939 command path (stop, slow down, motion inhibit) that a HIL bench can emulate",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    27,
+    28,
+    29
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    },
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t120",
+    "t148"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The introduction to ISO/TS 21815-2:2021 states that collision-avoidance algorithms are not yet mature and well understood.",
+   "quote": "its introduction states that collision-avoidance algorithms \"are not yet mature and well understood\"",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    27,
+    28,
+    29
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t185"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No public text was found in ISO 21815, ISO 17757 or ISO 19014 specifying when simulation evidence is acceptable.",
+   "quote": "No public text in ISO 21815, ISO 17757 or ISO 19014 was found that says when simulation evidence is acceptable.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    27,
+    28,
+    29
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 17757",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 19014",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t70",
+    "t127",
+    "t280",
+    "t281",
+    "t284"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 19014-1 Edition 2 is under publication in October 2026.",
+   "quote": "ISO 19014-1 Edition 2 is under publication in October 2026.",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    27,
+    28,
+    29
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The main simulation credibility references are the SET Level Credible Simulation Process, IAMTS four-step correlation process, UNECE NATM credibility assessment, ASAM OpenMATERIAL 3D 1.0.0, ASAM QSQ project and ASAM OSI high-fidelity sensor project; these frameworks are on-road and pre-standard.",
+   "quote": "**Simulation credibility frameworks exist but are on-road and pre-standard.**",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    30,
+    31,
+    32
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "SET Level Credible Simulation Process",
+     "kind": "method"
+    },
+    {
+     "name": "IAMTS four-step correlation process",
+     "kind": "method"
+    },
+    {
+     "name": "UNECE NATM credibility assessment",
+     "kind": "method"
+    },
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    },
+    {
+     "name": "ASAM QSQ",
+     "kind": "program"
+    },
+    {
+     "name": "ASAM OSI high-fidelity sensor project",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t234",
+    "t241",
+    "t250",
+    "t136",
+    "t138"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The cited ASAM OpenMATERIAL 3D reference is version 1.0.0, dated 3 April 2025.",
+   "quote": "ASAM OpenMATERIAL 3D 1.0.0 (3 April 2025)",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    30,
+    31,
+    32
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t136"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The cited ASAM QSQ project is dated 2025.",
+   "quote": "the ASAM QSQ project (2025)",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    30,
+    31,
+    32
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "ASAM QSQ",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t241"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The ASAM OSI high-fidelity sensor project runs from April 2025 to March 2027.",
+   "quote": "the ASAM OSI high-fidelity sensor project (April 2025 to March 2027)",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    30,
+    31,
+    32
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "ASAM OSI high-fidelity sensor project",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t138",
+    "t323"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM states that no standardized metrics exist to assess simulation quality, particularly for sensor simulation.",
+   "quote": "ASAM itself states that no standardized metrics exist to assess simulation quality, particularly for sensor simulation.",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": true,
+   "cites": [
+    33,
+    34
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t241",
+    "t234",
+    "t323",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Supplier consolidation is reshaping supplier risk in the simulation tool market.",
+   "quote": "**Consolidation is reshaping supplier risk.**",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    35,
+    36,
+    37,
+    38,
+    39
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t333",
+    "t347"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Synopsys closed its roughly USD 35 billion acquisition of Ansys on 17 July 2025.",
+   "quote": "Synopsys closed its roughly USD 35 billion acquisition of Ansys on 17 July 2025",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    35,
+    36
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Synopsys",
+     "kind": "company"
+    },
+    {
+     "name": "Ansys",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t320",
+    "t347"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Cadence completed its purchase of Hexagon's Design & Engineering business, which includes Virtual Test Drive, on 23 February 2026 for total consideration of about USD 3.1 billion.",
+   "quote": "Cadence completed its purchase of Hexagon's Design & Engineering business, which includes Virtual Test Drive, on 23 February 2026 for total consideration of about USD 3.1 billion",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    35,
+    36
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Cadence",
+     "kind": "company"
+    },
+    {
+     "name": "Hexagon",
+     "kind": "company"
+    },
+    {
+     "name": "Hexagon Design & Engineering",
+     "kind": "other"
+    },
+    {
+     "name": "Virtual Test Drive",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t320",
+    "t347"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Hexagon spun off Octave in May 2026.",
+   "quote": "Hexagon spun off Octave in May 2026",
+   "kind": "event",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    37,
+    38,
+    39
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Hexagon",
+     "kind": "company"
+    },
+    {
+     "name": "Octave",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t320",
+    "t347"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Applied Intuition is both a tool vendor and an autonomy-stack supplier to Komatsu.",
+   "quote": "Applied Intuition is both a tool vendor and an autonomy-stack supplier to Komatsu.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    37,
+    38,
+    39
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Applied Intuition",
+     "kind": "company"
+    },
+    {
+     "name": "Komatsu",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t320",
+    "t333"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Open standards reduce integration work for simulation tool chains but do not eliminate that work.",
+   "quote": "**Open standards reduce but do not remove integration work, and no benchmark of integration effort exists.**",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    41
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t271"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No benchmark of simulation tool-chain integration effort exists.",
+   "quote": "no benchmark of integration effort exists.",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    41
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t339",
+    "t342"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "FMI, ASAM OSI, OpenSCENARIO, OpenDRIVE, OpenUSD and ROS 2 serve as the integration glue for simulation tool chains.",
+   "quote": "FMI (about 250 supporting tools by mid-2025), ASAM OSI, OpenSCENARIO, OpenDRIVE, OpenUSD and ROS 2 are the glue",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    41
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "FMI",
+     "kind": "standard"
+    },
+    {
+     "name": "ASAM OSI",
+     "kind": "standard"
+    },
+    {
+     "name": "OpenSCENARIO",
+     "kind": "standard"
+    },
+    {
+     "name": "OpenDRIVE",
+     "kind": "standard"
+    },
+    {
+     "name": "OpenUSD",
+     "kind": "standard"
+    },
+    {
+     "name": "ROS 2",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t320",
+    "t139",
+    "t138",
+    "t137",
+    "t122"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "FMI had about 250 supporting tools by mid-2025.",
+   "quote": "FMI (about 250 supporting tools by mid-2025)",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    40
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "FMI",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t139",
+    "t320"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "OpenDRIVE assumes roads, so job sites without lane geometry fit OpenDRIVE poorly.",
+   "quote": "OpenDRIVE assumes roads, so job sites without lane geometry fit poorly",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    41
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "OpenDRIVE",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t130",
+    "t11"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Difficult simulation integration tasks include sharing time steps between deformable terrain and a sensor renderer, maintaining consistent material properties, and providing a machine model for each variant with correct sensor mounting and vibration.",
+   "quote": "the hard parts are shared time steps between deformable terrain and a sensor renderer, consistent material properties, and a machine model per variant with correct sensor mounting and vibration.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    41
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t139",
+    "t181",
+    "t136",
+    "t230",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Chrono's developers report that common handling tire models silently do not work on deformable terrain.",
+   "quote": "Chrono's own developers report that common handling tire models silently do not work on deformable terrain.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    41
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Chrono",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t180",
+    "t181",
+    "t262",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The decisive risk in choosing a simulation approach is credibility rather than tool choice.",
+   "quote": "**The decisive risk is credibility, not tool choice.**",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    42,
+    43
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t320"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Without correlation data from physical measurements on the chosen sensors and machines, simulation results may not be accepted by the manufacturer's own safety case, customers or regulators.",
+   "quote": "Without correlation data from physical measurements on the chosen sensors and machines, simulation results may not be accepted by the manufacturer's own safety case or by customers and regulators.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    42,
+    43
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t250",
+    "t263",
+    "t67",
+    "t234",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For an organization starting from zero nine months before hardware, the most defensible option is a hybrid approach: own the scenario catalog, operating-domain definition and correlation data in-house, license or co-develop machine physics, and use a partner for the first correlated sensor model.",
+   "quote": "owning the scenario catalog, operating-domain definition and correlation data in-house while licensing or co-developing machine physics and using a partner for the first correlated sensor model",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    42,
+    43
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t333",
+    "t142",
+    "t140",
+    "t250",
+    "t323"
+   ],
+   "importance": 3
+  }
+ ]
+}

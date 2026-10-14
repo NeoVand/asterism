@@ -1,0 +1,115 @@
+{
+ "key": "t85",
+ "hash": "863aabca9632a078",
+ "synopsis": "Perception is the hardest technical gap in virtual validation, especially for camera, radar and lidar under dust, rain, mud and occlusion; simulation alone cannot certify it, and no published method was found for transferring evidence across sensor mounting positions [f10338, f326, f260, f370]. Evidence shows substantial simulation-to-real mismatch: a 2023 MAVS/RELLIS-3D comparison found large domain shifts, while a November 2025 on-road study reported average DCD of 0.63 and segmentation mIoU of 21%; whether such similarity metrics predict safety-relevant perception errors remains uncertain [f4741, f4816, f5067]. Recorded raw sensor logs can test perception and trigger timing but not stopping, while object-list replay cannot prove perception; validation should compare real and simulated sensor outputs and downstream perception distributions for each sensor technology and mounting family using withheld real data [f109, f11320, f5258, f10558, f11105]. The safety claim extends beyond detection accuracy to decision logic, machine control, braking and final separation, so perception-error distributions should feed separate braking simulations and detector operating points require closed-loop assessment of stopping margins and unnecessary interventions [f383, f6410, f6982]. On-road precedents leave major off-road gaps: Euro NCAP virtual testing permits perfect perception, Michigan acceleration studies do not establish equivalent acceleration for off-road perception failures, and combinatorial-testing evidence has not established transfer to physical perception [f2111, f1452, f6826, f7238]. Planning remains uncertain: no off-road OEM case validating a new perception-based braking function in under four months was found, machine-learning assessment lead time could alone exceed that window, and the regulatory classification of fixed non-learning networks remains unresolved; systems detecting only people and vehicles also cover an incomplete portion of fatal risks [f376, f364, f2369, f11592].",
+ "relations": [
+  {
+   "a": "f260",
+   "b": "f370",
+   "type": "same",
+   "note": "Both report no published method for transferring perception evidence across mounting positions."
+  },
+  {
+   "a": "f3752",
+   "b": "f4086",
+   "type": "same",
+   "note": "Both report missing head-to-head comparisons of exact copies and parameterised representative sites."
+  },
+  {
+   "a": "f109",
+   "b": "f5185",
+   "type": "same",
+   "note": "Both describe open-loop recorded-log testing of perception and trigger timing."
+  },
+  {
+   "a": "f11511",
+   "b": "f11592",
+   "type": "same",
+   "note": "People-and-vehicle detection covers only part of the fatal-risk picture."
+  },
+  {
+   "a": "f1301",
+   "b": "f1452",
+   "type": "supports",
+   "note": "Unaddressed off-road failure mechanisms limit transfer of Michigan's accelerated evaluation results."
+  },
+  {
+   "a": "f4741",
+   "b": "f10338",
+   "type": "supports",
+   "note": "Observed off-road domain shifts support identifying sensor modelling as a major technical gap."
+  },
+  {
+   "a": "f2111",
+   "b": "f326",
+   "type": "supports",
+   "note": "Perfect-perception assumptions illustrate why simulation alone cannot certify perception."
+  },
+  {
+   "a": "f4869",
+   "b": "f5258",
+   "type": "supports",
+   "note": "Object lists bypass raw sensor interfaces used by perception and cannot validate that processing."
+  },
+  {
+   "a": "f11320",
+   "b": "f109",
+   "type": "elaborates",
+   "note": "Replay explains recorded-log testing and explicitly excludes stopping validation."
+  },
+  {
+   "a": "f10558",
+   "b": "f11105",
+   "type": "elaborates",
+   "note": "Adds withheld data, mounting families and distribution-based reporting to dual-level comparisons."
+  },
+  {
+   "a": "f7802",
+   "b": "f10558",
+   "type": "supports",
+   "note": "Trial variability explains why validation must compare distributions rather than individual traces."
+  },
+  {
+   "a": "f7930",
+   "b": "f10558",
+   "type": "supports",
+   "note": "Ground-truthed warning logs can supply real validation data when sensors, mounts and conditions match."
+  },
+  {
+   "a": "f6583",
+   "b": "f6410",
+   "type": "supports",
+   "note": "Potential perception dominance motivates propagating detection errors and delays into braking simulation."
+  },
+  {
+   "a": "f4118",
+   "b": "f383",
+   "type": "supports",
+   "note": "Perception-valid simulation can still fail the end-to-end collision outcome claim."
+  },
+  {
+   "a": "f1536",
+   "b": "f6982",
+   "type": "supports",
+   "note": "Hazardous false braking motivates closed-loop evaluation of unnecessary interventions."
+  },
+  {
+   "a": "f6826",
+   "b": "f7238",
+   "type": "supports",
+   "note": "Software-derived interaction evidence explains why covering-array transfer to perception remains unproven."
+  },
+  {
+   "a": "f364",
+   "b": "f376",
+   "type": "supports",
+   "note": "Potential assessment delays reinforce doubts about a four-month off-road validation schedule."
+  },
+  {
+   "a": "f11578",
+   "b": "f11592",
+   "type": "supports",
+   "note": "Non-collision accidents explain why object detection cannot cover the entire fatal-risk picture."
+  }
+ ]
+}

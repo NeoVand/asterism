@@ -1,0 +1,115 @@
+{
+ "key": "t151",
+ "hash": "cd50f2ae02c7da64",
+ "synopsis": "VIL drives a complete real machine in a safe test area with virtual hazards, allowing real braking dynamics, controller and actuator delays, latency and operator-interface behaviour to be tested without endangering people or targets [f13388, f5333]. It does not establish perception of injected objects unless sensors are stimulated over the air, and fidelity remains constrained by stimulation, testbench dynamics and simulated versus real ground interaction [f5335, f940]. The 2024 on-road survey reports costly, variably accurate systems and no full-scale platform ready for comprehensive industrial testing; no complete heavy-off-road automatic-braking VIL case was found, although vendor material describes real-tractor VIL [f341, f5340, f342, f8652]. The recommended hierarchy uses SIL for volume, HIL for timing, interfaces and faults, VIL only where added physical fidelity justifies investment, and real machines for stopping, terrain and environmental evidence [f13313]. Accordingly, a team starting from zero in October 2026 should not promise a complete multi-sensor heavy-off-road VIL facility by mid-2027, and the programme's economic justification remains uncertain [f866, f1119].",
+ "relations": [
+  {
+   "a": "f340",
+   "b": "f13318",
+   "type": "same",
+   "note": "Both restrict documented sensor-stimulated VIL evidence to road vehicles."
+  },
+  {
+   "a": "f341",
+   "b": "f13319",
+   "type": "same",
+   "note": "Both report the 2024 survey's cost and accuracy concerns."
+  },
+  {
+   "a": "f342",
+   "b": "f13320",
+   "type": "same",
+   "note": "Both report no end-to-end heavy-off-road automatic-braking VIL case."
+  },
+  {
+   "a": "f5333",
+   "b": "f13393",
+   "type": "same",
+   "note": "Both describe safe testing of real braking, delays, latency and operator interfaces."
+  },
+  {
+   "a": "f5335",
+   "b": "f13394",
+   "type": "same",
+   "note": "Both require over-the-air stimulation to establish perception of injected objects."
+  },
+  {
+   "a": "f550",
+   "b": "f13400",
+   "type": "same",
+   "note": "Both recommend VIL only when added physical fidelity justifies investment."
+  },
+  {
+   "a": "f5339",
+   "b": "f13397",
+   "type": "same",
+   "note": "Both summarize survey limitations in testbench, radar, camera and lidar fidelity."
+  },
+  {
+   "a": "f5340",
+   "b": "f13398",
+   "type": "same",
+   "note": "Both report no comprehensive industrial-ready full-scale platform in the 2024 survey."
+  },
+  {
+   "a": "f5342",
+   "b": "f13399",
+   "type": "same",
+   "note": "Both report absent production-scale VIL evidence for major heavy-machine classes."
+  },
+  {
+   "a": "f8682",
+   "b": "f8990",
+   "type": "same",
+   "note": "Both cite Linde lidar and tractor VIL as named vendor applications."
+  },
+  {
+   "a": "f8438",
+   "b": "f8652",
+   "type": "same",
+   "note": "Both identify IPG off-highway VIL with real tractors."
+  },
+  {
+   "a": "f5186",
+   "b": "f13436",
+   "type": "elaborates",
+   "note": "Glossary places closed-loop braking evaluation within a broader validation-metrics split."
+  },
+  {
+   "a": "f338",
+   "b": "f13401",
+   "type": "elaborates",
+   "note": "Glossary adds that emerging, capital-intensive VIL is not a proven heavy-machine shortcut."
+  },
+  {
+   "a": "f546",
+   "b": "f8652",
+   "type": "contradicts",
+   "note": "Research-only off-road finding is in tension with commercial real-tractor VIL capability claims."
+  },
+  {
+   "a": "f5336",
+   "b": "f13313",
+   "type": "supports",
+   "note": "Uncertain terrain and environmental fidelity supports retaining real-machine tests."
+  },
+  {
+   "a": "f5318",
+   "b": "f866",
+   "type": "supports",
+   "note": "Remaining physical lidar generation gaps caution against a rapid complete multi-sensor facility."
+  },
+  {
+   "a": "f5558",
+   "b": "f5553",
+   "type": "depends",
+   "note": "Credible post-intervention evidence requires brake-model validation using VIL or proving-ground stops."
+  },
+  {
+   "a": "f5545",
+   "b": "f940",
+   "type": "supports",
+   "note": "Survey accuracy determinants substantiate stimulation and testbench fidelity limits."
+  }
+ ]
+}

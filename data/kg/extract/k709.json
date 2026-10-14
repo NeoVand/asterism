@@ -1,0 +1,234 @@
+{
+ "chunkId": "k709",
+ "hash": "0da408ddc8a7d3c3",
+ "facts": [
+  {
+   "text": "A scenario catalog is the complete, traceable list of situations a system must be tested against; a scenario family is one logical scenario with its parameter ranges and probability distribution; a scenario parameter is one variable in that family.",
+   "quote": "A scenario catalog is the complete, traceable list of situations a system must be tested against, a scenario family is one logical scenario with its parameter ranges and probability distribution, and a scenario parameter is one of the variables in that family.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t199",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Each scenario catalog entry names the hazardous interaction, its originating requirement or hazard, applicable operating-domain tags, expected behavior and scenario family.",
+   "quote": "Each entry names the hazardous interaction, the requirement or hazard it comes from, the operating-domain tags that apply, the expected behavior and the family it belongs to.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t140",
+    "t64"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 34504:2024 formalizes scenario catalog tagging.",
+   "quote": "ISO 34504:2024 formalizes such tagging",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ISO 34504",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t290",
+    "t142"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 34505:2025 defines the attributes carried by a resulting test case.",
+   "quote": "ISO 34505:2025 defines the attributes that a resulting test case carries [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ISO 34505",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t290",
+    "t143"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A scenario catalog can replace 10,000 copies of “reverse toward worker” with one family: a machine reverses toward an initially visible or occluded human-shaped object while the operator does not brake.",
+   "quote": "Instead of storing 10,000 copies of \"reverse toward worker\", the catalog stores one family: \"Machine reverses toward an initially visible or occluded human-shaped object while the operator does not brake.\"",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t16",
+    "t14",
+    "t103"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Parameters for the machine-reversing-toward-human-shaped-object scenario family include speed, initial distance, lateral offset, the person's path, machine articulation, slope, load, sensor installation, illumination, visibility, system latency, braking friction and a random seed.",
+   "quote": "Its parameters include speed, initial distance, lateral offset, the person's path, machine articulation, slope, load, sensor installation, illumination, visibility, system latency, braking friction and a random seed.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t199",
+    "t142"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Each scenario family carries a probability distribution over its parameters, derived from field data or expert estimates; this distribution enables later statements about how often the system would succeed in the field.",
+   "quote": "Each family carries a probability distribution over those parameters, taken from field data or expert estimates; that distribution is what later allows a statement about how often the system would succeed in the field [Chapter 9].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t199",
+    "t203",
+    "t214"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Scenario families should encode constraints because many parameter combinations are impossible, such as direct sun glare underground.",
+   "quote": "Encode constraints, because many combinations are impossible (there is no direct sun glare underground).",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t199",
+    "t142",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scenario families should separate the common physical layer—object geometry, material, motion and visibility—from sensor-specific nuisance variables because camera, lidar, radar and ultrasonic sensors fail differently.",
+   "quote": "Separate the common physical layer (object geometry, material, motion, visibility) from sensor-specific nuisance variables, because camera, lidar, radar and ultrasonic sensors fail differently.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t84",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scenario families should express ISO 21815 risk areas as geometric parameters so that families scale from one machine model to another.",
+   "quote": "Express the ISO 21815 risk areas as geometric parameters, so that families scale from one machine model to another [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t199",
+    "t142",
+    "t230"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Dust correlates with dry, windy, high-traffic conditions; a scenario parameter distribution that ignores these dependencies misweights the results.",
+   "quote": "Parameter dependencies are easy to get wrong: dust correlates with dry, windy, high-traffic conditions, and a distribution that ignores this misweights the results [Chapter 9].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t199",
+    "t102",
+    "t214"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet proposes three layers—domain taxonomy, catalog and families—to address the combinatorial explosion of 100 or more site types multiplied by 10 or more scenarios, weather and machine models.",
+   "quote": "The three layers (domain taxonomy, catalog, families) are the booklet's answer to the combinatorial explosion of 100 or more site types times 10 or more scenarios times weather times machine models [Chapter 9].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t198",
+    "t140",
+    "t142",
+    "t44"
+   ],
+   "importance": 3
+  }
+ ]
+}

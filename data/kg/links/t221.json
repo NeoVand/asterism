@@ -1,0 +1,115 @@
+{
+ "key": "t221",
+ "hash": "65c547f1e38268b0",
+ "synopsis": "The strategy requires measuring the existing warning system in virtual environments, comparing the new system in the same environments, and using simulation to improve it against that baseline [f25, f26, f27]. The established off-field method is replaying raw sensor logs against independent ground truth; baseline quality depends on recording coverage, and using the production detector's own outputs as truth makes missed objects disappear from the assessment [f94, f271, f5359]. Measurement should be encounter-based and stratified by object class, distance and condition, with warning rates, timing and operational availability reported rather than hidden in fleet averages; glossary sample-size guidance specifies 59 consecutive successful encounters per stratum for a 95% detection claim and 299 for a 99% claim [f14339, f14340, f14342, f14347]. Recording should start in October 2026, with the old-system baseline and supporting validation infrastructure ideally ready by mid-2027, before prototype-dependent work becomes the bottleneck [f5168, f5615, f5616]. A central tension is that matching or beating the warning system is not an adequate braking acceptance target: common stages can be compared, but braking must be assessed in closed loop against new hazard-derived requirements [f27, f111, f5500, f12188].",
+ "relations": [
+  {
+   "a": "f94",
+   "b": "f5165",
+   "type": "same",
+   "note": "Both identify raw-log replay against independent ground truth as the off-field baselining method."
+  },
+  {
+   "a": "f94",
+   "b": "f13005",
+   "type": "same",
+   "note": "Both prescribe raw-log replay against independent ground truth."
+  },
+  {
+   "a": "f94",
+   "b": "f14343",
+   "type": "same",
+   "note": "Both describe baselining without driving through raw-log replay against independent ground truth."
+  },
+  {
+   "a": "f5359",
+   "b": "f12778",
+   "type": "same",
+   "note": "Both warn detector-derived ground truth hides missed objects and inflates apparent baseline performance."
+  },
+  {
+   "a": "f5168",
+   "b": "f14345",
+   "type": "same",
+   "note": "Both recommend starting recording in October 2026 rather than awaiting the prototype."
+  },
+  {
+   "a": "f5425",
+   "b": "f14336",
+   "type": "same",
+   "note": "Both specify encounters, not frames, as the performance unit."
+  },
+  {
+   "a": "f4448",
+   "b": "f4896",
+   "type": "same",
+   "note": "Both report synthetic-fog pre-training gains of at most 0.0117 mAP over real-only training."
+  },
+  {
+   "a": "f3030",
+   "b": "f3620",
+   "type": "same",
+   "note": "Both report two operators recovering baseline productivity; the latter adds conflicting manufacturer testimony."
+  },
+  {
+   "a": "f5433",
+   "b": "f14340",
+   "type": "same",
+   "note": "Both prescribe hourly warning rates separated into false, nuisance and correct warnings."
+  },
+  {
+   "a": "f5441",
+   "b": "f14342",
+   "type": "elaborates",
+   "note": "The glossary adds operational-state reporting to expose availability hidden by conditional detection rates."
+  },
+  {
+   "a": "f5429",
+   "b": "f12844",
+   "type": "elaborates",
+   "note": "The glossary adds distance, conditions and reporting bins to encounter-based, class-stratified recall."
+  },
+  {
+   "a": "f5431",
+   "b": "f14339",
+   "type": "elaborates",
+   "note": "The glossary extends timing and missed-encounter measures with stratification and non-averaged reporting."
+  },
+  {
+   "a": "f12997",
+   "b": "f5433",
+   "type": "depends",
+   "note": "Valid hourly warning rates require recording that preserves the exposure denominator."
+  },
+  {
+   "a": "f27",
+   "b": "f111",
+   "type": "contradicts",
+   "note": "Meeting or beating the old system conflicts with rejecting old-system matching as the braking target."
+  },
+  {
+   "a": "f5500",
+   "b": "f12188",
+   "type": "supports",
+   "note": "Separate closed-loop braking assessment supports deriving braking requirements independently from hazard analysis."
+  },
+  {
+   "a": "f14346",
+   "b": "f5500",
+   "type": "supports",
+   "note": "Unavailable old-system braking measures justify comparing common stages and assessing braking separately."
+  },
+  {
+   "a": "f105",
+   "b": "f5572",
+   "type": "supports",
+   "note": "Parallel candidate-sensor recording provides a practical basis for same-machine comparison."
+  },
+  {
+   "a": "f10167",
+   "b": "f10261",
+   "type": "elaborates",
+   "note": "The independent-comparator recommendation specifies the comparator needed in the pilot learning plan."
+  }
+ ]
+}

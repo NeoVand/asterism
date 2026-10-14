@@ -1,0 +1,115 @@
+{
+ "key": "t1",
+ "hash": "2c74763f7633a8ba",
+ "synopsis": "The manufacturer is developing automatic braking when an operator fails to react to a proximity warning; the principal documented fatal accident pattern is a large machine moving forward over an unseen person or light vehicle [f1, f2977]. Powered haulage accounted for 13 of 33 US mining deaths (39%) and 426 of 4,792 nonfatal mining injuries (9%) in calendar 2025 [f2979, f2980]. Validation must span different machine sizes and sensor positions, potentially 100 or more sites and applications, while stopping depends heavily on terrain; machine types, brake systems and other essential manufacturer inputs remain unknown [f8256, f11376, f11374, f5863, f8]. The research found neither a complete numeric off-road automatic-braking type-approval test nor a standard accepting simulation instead of physical testing, although ISO 21815-1:2022 covers relevant machinery classes, ISO 3450:2011 specifies earth-moving brake performance tests, and South Africa’s Regulation 8.10 was the strongest explicit off-road automatic-braking mandate found [f2147, f7539, f2149, f10651, f2277]. Major evidence gaps include simulated stopping-distance validation on difficult terrain and public demonstrations combining heavy machines, varied geometries, more than 100 site types, severe weather, soiling and closed-loop braking; highway-to-quarry transfer remains uncertain, and road-vehicle mileage requirements do not transfer numerically [f3743, f4409, f45, f6664]. The roadmap faces a hard deadline and a first-time capability build: past physical testing and tuning took three to four years per model, no quantified off-road reduction in physical testing was found, and expert advice calls for representative sensors and machines before the final validation window [f9400, f9401, f7507, f7563, f4460].",
+ "relations": [
+  {
+   "a": "f3743",
+   "b": "f3970",
+   "type": "same",
+   "note": "Both report absent validation of simulated heavy-machine stopping distances on difficult terrain."
+  },
+  {
+   "a": "f2149",
+   "b": "f6741",
+   "type": "same",
+   "note": "Both identify ISO 21815-1:2022 coverage of the same machinery classes."
+  },
+  {
+   "a": "f2979",
+   "b": "f2978",
+   "type": "supports",
+   "note": "The 2025 fatality share substantiates powered haulage as a leading mining death cause."
+  },
+  {
+   "a": "f11374",
+   "b": "f3970",
+   "type": "supports",
+   "note": "Terrain-dependent stopping explains why missing braking-distance validation matters."
+  },
+  {
+   "a": "f1322",
+   "b": "f11306",
+   "type": "elaborates",
+   "note": "Everyday metal objects provide a specific mechanism for false alarms causing brake slams."
+  },
+  {
+   "a": "f314",
+   "b": "f6664",
+   "type": "elaborates",
+   "note": "Exposure scarcity motivates separating transferable safety logic from nontransferable road mileage requirements."
+  },
+  {
+   "a": "f10402",
+   "b": "f45",
+   "type": "supports",
+   "note": "Required on-road evidence labeling reflects uncertainty about highway-to-quarry transfer."
+  },
+  {
+   "a": "f1452",
+   "b": "f45",
+   "type": "supports",
+   "note": "Michigan evidence fails to establish equivalent acceleration for off-road perception evaluation."
+  },
+  {
+   "a": "f346",
+   "b": "f2147",
+   "type": "supports",
+   "note": "Absent Euro NCAP equivalent reinforces the gap in complete numeric off-road approval tests."
+  },
+  {
+   "a": "f2277",
+   "b": "f2147",
+   "type": "elaborates",
+   "note": "An explicit braking mandate exists despite absent complete numeric type-approval tests."
+  },
+  {
+   "a": "f10651",
+   "b": "f2147",
+   "type": "elaborates",
+   "note": "Brake-system performance testing exists, distinct from complete automatic-braking type approval."
+  },
+  {
+   "a": "f6690",
+   "b": "f7539",
+   "type": "supports",
+   "note": "Missing synthetic-only reliability evidence reinforces limits on substituting simulation for physical tests."
+  },
+  {
+   "a": "f344",
+   "b": "f21",
+   "type": "supports",
+   "note": "Immature off-road test infrastructure supports the industrial-versus-automotive capability gap."
+  },
+  {
+   "a": "f8",
+   "b": "f5863",
+   "type": "elaborates",
+   "note": "Unconfirmed brake systems add detail to unavailable manufacturer machine information."
+  },
+  {
+   "a": "f4460",
+   "b": "f8",
+   "type": "depends",
+   "note": "Preparing sensor models requires representative hardware despite presently unavailable manufacturer inputs."
+  },
+  {
+   "a": "f11376",
+   "b": "f4409",
+   "type": "supports",
+   "note": "Hundreds of possible applications explain the breadth demanded of integrated validation evidence."
+  },
+  {
+   "a": "f8256",
+   "b": "f4014",
+   "type": "elaborates",
+   "note": "Elevated viewpoints introduce a specific perception concern when varying machine size and sensor positions."
+  },
+  {
+   "a": "f7507",
+   "b": "f9400",
+   "type": "supports",
+   "note": "Historical three-to-four-year model testing motivates a capability roadmap under the hard deadline."
+  }
+ ]
+}

@@ -1,0 +1,260 @@
+{
+ "chunkId": "k835",
+ "hash": "9c55ed26ac718333",
+ "facts": [
+  {
+   "text": "Extending a validated model to another machine model or sensor position means identifying changes, assessing whether they affect validated phenomena, and closing gaps with targeted bridging tests; validation is never inherited automatically.",
+   "quote": "A model validated on one machine is extended to another by showing what changed, whether the change can affect a validated phenomenon, and what targeted bridging tests close the gap; it is never inherited automatically.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t261",
+    "t160"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Rail, aviation, nuclear and medical practice formalize model transfer as validation-domain extension through similarity and bridging evidence, rather than automatically transferring validation from Model A to Model B.",
+   "quote": "validation-domain extension by similarity plus bridging evidence, not \"Model A was validated, therefore Model B is validated\". Rail, aviation, nuclear and medical practice all formalize this",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t261",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No published off-road example of variant transfer was found.",
+   "quote": "no published off-road example of variant transfer was found [Chapter 10]",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t1",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends a parameterized family model rather than 20 unrelated models, with parameters including geometry and articulation, mass and payload, brake dynamics, sensor type, mounting height and angle, vibration and latency.",
+   "quote": "a parameterized family model rather than 20 unrelated models, with parameters such as geometry and articulation, mass and payload, brake dynamics, sensor type, mounting height and angle, vibration and latency",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t230",
+    "t125",
+    "t100",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends validating a parameterized machine-family model at envelope corners: the smallest and largest machine, lowest and highest sensor mount, and lowest and highest mass.",
+   "quote": "validated at the corners of the envelope (smallest and largest machine, lowest and highest mount, lowest and highest mass)",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t262",
+    "t168",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For each new machine variant, the recommended safety case identifies what changed using a configuration-controlled delta.",
+   "quote": "For each new variant the safety case answers three questions: what changed (a configuration-controlled delta)",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t67",
+    "t230"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For each new machine variant, the recommended safety case uses sensitivity analysis and uncertainty propagation to assess whether changes can affect a validated phenomenon or safety output.",
+   "quote": "can that change affect a validated phenomenon or safety output (sensitivity analysis and uncertainty propagation)",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "sensitivity analysis",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t265",
+    "t260",
+    "t259",
+    "t67"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For each new machine variant, the recommended bridging evidence is none for irrelevant differences, targeted component tests for influential differences, and new full-system anchors where new physics appear.",
+   "quote": "what bridging evidence closes the gap (none for irrelevant differences, targeted component tests for influential ones, new full-system anchors where new physics appear)",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t70",
+    "t264",
+    "t67"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A machine variant inside the validated hull receives a reduced delta test set consisting of brake calibration plus a sensor field-of-view and detection check at the new mount.",
+   "quote": "A variant inside the validated hull gets a reduced delta set: brake calibration plus a sensor field-of-view and detection check at the new mount.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t261",
+    "t87",
+    "t100",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A machine variant outside the validated hull, or introducing a new phenomenon such as articulated steering, is re-validated.",
+   "quote": "A variant outside the hull, or one introducing a new phenomenon such as articulated steering, is re-validated [Chapter 10].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t261",
+    "t176"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor relocation requires special caution because moving unchanged sensor hardware changes occlusion, angle of incidence, ground returns, vibration and contamination patterns; sensor pose is therefore a model input with its own validated range.",
+   "quote": "even with unchanged hardware, moving a sensor changes occlusion, angle of incidence, ground returns, vibration and contamination patterns, so sensor pose is a model input with its own validated range [Chapter 10].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t100",
+    "t103",
+    "t102",
+    "t262"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Machine-model portability is an experiment rather than an established fact: the machine-variant portability test checks whether a second, substantially different model requires parameterization or redevelopment.",
+   "quote": "Portability is a key experiment, not a fact: the \"machine-variant portability test\" checks whether a second, substantially different model is parameterization or redevelopment.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10,
+    13
+   ],
+   "entities": [
+    {
+     "name": "machine-variant portability test",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t265",
+    "t230",
+    "t350"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The claim that chosen machine extremes bound all intermediate machines must be demonstrated because geometry and occlusion can create non-monotonic effects.",
+   "quote": "The claim that chosen extremes bound all intermediate machines must itself be demonstrated, because geometry and occlusion can create non-monotonic effects [Chapters 10, 13].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t262",
+    "t103",
+    "t260"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,250 @@
+{
+ "chunkId": "k528",
+ "hash": "78cb28fc721f9f92",
+ "facts": [
+  {
+   "text": "Synthetic images do not replace real images for construction-site detection; the cited evidence supports augmentation rather than replacement.",
+   "quote": "This supports augmentation, not replacement.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    38,
+    39,
+    40
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t165",
+    "t86"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2025 Winter Simulation Conference paper found that synthetic-only training exhibited a performance gap attributed to domain discrepancies.",
+   "quote": "A 2025 Winter Simulation Conference paper found that synthetic-only training \"exhibited a performance gap\" attributed to domain discrepancies [38].",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    38
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Winter Simulation Conference",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t114",
+    "t165",
+    "t112"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2025 review notes a significant reality gap in rendered excavator images.",
+   "quote": "A 2025 review notes a \"significant reality gap\" in rendered excavator images",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    39
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t165",
+    "t114",
+    "t5"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2025 review cites a study in which synthetic data reduced real-image needs by 50 percent.",
+   "quote": "cites one study in which synthetic data cut real-image needs by 50 percent [39].",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    39
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t114"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2026 study found that Unity-rendered construction scenes diverge from real photometric distributions despite extensive domain randomization.",
+   "quote": "A 2026 study found Unity-rendered construction scenes diverge from real photometric distributions \"despite extensive domain randomization\" [40].",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    40
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Unity",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t165",
+    "t166",
+    "t135",
+    "t114"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The cited 2025 review of synthetic images and 2026 study of Unity-rendered construction scenes are preprints.",
+   "quote": "**Independent** (the latter two are preprints).",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    39,
+    40
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Unity",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t70",
+    "t114"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Synthetic data should augment training and probe weaknesses in construction-site detection, while validation sets should remain real.",
+   "quote": "synthetic data used to augment training and probe weaknesses, with validation sets kept real.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t113",
+    "t86"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The perception engineer objects to treating sensor calibration as a graphics parameter.",
+   "quote": "**Objection: calibration is treated as a graphics parameter.**",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t267"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The NIOSH 2022 review identifies sensor mounting requirements and configuration and calibration testing as validation parameters.",
+   "quote": "The NIOSH 2022 review identifies sensor mounting requirements and configuration and calibration testing as validation parameters [23].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    23
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t100",
+    "t65",
+    "t84"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For a fleet of 100+ models, sensor height, angle, structural vibration, occlusion and post-service alignment cannot be treated as rendering settings unless their effects on the real sensor chain have been quantified.",
+   "quote": "In a fleet of 100+ models, sensor height, angle, structural vibration, occlusion and post-service alignment cannot be treated as rendering settings unless their effect on the real sensor chain has been quantified.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t102",
+    "t103",
+    "t230",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Addressing sensor-calibration concerns requires explicit error envelopes by range, angle, target class, weather and light, and contamination state.",
+   "quote": "explicit error envelopes by range, angle, target class, weather and light, and contamination state",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t258",
+    "t102",
+    "t87"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Calibration-tolerance testing is recommended to address concerns about treating sensor calibration as a graphics parameter.",
+   "quote": "calibration-tolerance testing",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t258"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Synchronization and ground-truth uncertainty budgets are recommended to address sensor-calibration concerns.",
+   "quote": "synchronization and ground-truth uncertainty budgets.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t101",
+    "t105",
+    "t259"
+   ],
+   "importance": 2
+  }
+ ]
+}

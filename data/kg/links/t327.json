@@ -1,0 +1,115 @@
+{
+ "key": "t327",
+ "hash": "7406f792fa0a16c2",
+ "synopsis": "Scenario generation tools describe and vary test situations, while test management tools select, execute and record runs and report coverage; scenario count alone is not coverage [f16014, f16015, f16016, f16030]. The market is modular: road-vehicle chains offer strong sensor and scenario tooling but weak soil physics, while heavy-machine tools offer strong terrain and hydraulics but thin sensor and scenario tooling, so a specialist physics engine is not a substitute for validation management [f15860, f8345]. Foretellix Foretify combines constrained-random, coverage-driven generation with large-scale validation management and external-simulator integration; its off-road relevance is documented by a March 2021 Volvo Autonomous Solutions partnership targeting mines and quarries, but it is not a machine or soil physics engine [f8621, f8622, f8625, f8627]. Evidence listed for VTD ScenarioEngine and dSPACE SIMPHERA is on-road only, off-road deployments of AVL SCENIUS and Scenic were not found, and esmini was not assessed—these are evidence gaps rather than proof that tools lack capabilities [f9199, f9204, f9189, f9209, f8836]. Before prototype arrival, the program should build a simulator-independent scenario library, campaign generator and automated verdict functions, backed by traceability, version control, continuous integration and result storage; the middle-cost stack does not supply large-scale coverage-driven scenario management [f7372, f16028, f9300].",
+ "relations": [
+  {
+   "a": "f195",
+   "b": "f15860",
+   "type": "same",
+   "note": "Both describe complementary strengths and gaps in road and heavy-machine tool chains."
+  },
+  {
+   "a": "f8283",
+   "b": "f15860",
+   "type": "same",
+   "note": "Both identify strong heavy-machine physics but thin sensor and scenario tooling."
+  },
+  {
+   "a": "f7372",
+   "b": "f14502",
+   "type": "same",
+   "note": "Identical pre-prototype recommendation for scenario libraries, campaign generation and automated verdicts."
+  },
+  {
+   "a": "f8632",
+   "b": "f9189",
+   "type": "same",
+   "note": "Both report missing off-road deployment evidence for AVL SCENIUS."
+  },
+  {
+   "a": "f8637",
+   "b": "f9209",
+   "type": "same",
+   "note": "Both report missing mining, construction or off-road deployment evidence for Scenic."
+  },
+  {
+   "a": "f8836",
+   "b": "f16026",
+   "type": "same",
+   "note": "Both say esmini was not assessed."
+  },
+  {
+   "a": "f8625",
+   "b": "f16020",
+   "type": "same",
+   "note": "Both identify the 2021 Volvo partnership adapting Foretellix for mines and quarries."
+  },
+  {
+   "a": "f9184",
+   "b": "f8625",
+   "type": "same",
+   "note": "Both cite the Volvo partnership as independent evidence of Foretellix's mining relevance."
+  },
+  {
+   "a": "f8626",
+   "b": "f16021",
+   "type": "same",
+   "note": "Both state that Foretellix sells a mining suite."
+  },
+  {
+   "a": "f8621",
+   "b": "f16019",
+   "type": "same",
+   "note": "Both state Foretify offers constrained-random, coverage-driven scenario generation."
+  },
+  {
+   "a": "f8622",
+   "b": "f16019",
+   "type": "elaborates",
+   "note": "Adds OpenSCENARIO DSL and external-simulator integrations to large-scale validation management."
+  },
+  {
+   "a": "f9300",
+   "b": "f16164",
+   "type": "same",
+   "note": "Both identify missing large-scale coverage-driven scenario management in the middle-cost stack."
+  },
+  {
+   "a": "f6693",
+   "b": "f16024",
+   "type": "elaborates",
+   "note": "Native 3D geometry adds detail to Scenic's probabilistic, lane-independent scenario language."
+  },
+  {
+   "a": "f6836",
+   "b": "f16025",
+   "type": "elaborates",
+   "note": "Glossary adds Scenic integration and explains the failure-seeking purpose of these tools."
+  },
+  {
+   "a": "f6822",
+   "b": "f7237",
+   "type": "same",
+   "note": "Both identify ACTS, PICT and commercial tools as covering-array generators."
+  },
+  {
+   "a": "f16018",
+   "b": "f16017",
+   "type": "elaborates",
+   "note": "Qualifies OpenDRIVE's road representation with its poor fit for lane-free job sites."
+  },
+  {
+   "a": "f8345",
+   "b": "f8594",
+   "type": "supports",
+   "note": "Physics-engine limitations explain why Demify needs added sensor simulation and test management."
+  },
+  {
+   "a": "f16028",
+   "b": "f7372",
+   "type": "elaborates",
+   "note": "Specifies infrastructure needed to implement the recommended simulator-independent campaign and verdict tooling."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t250",
+ "hash": "4a6396f8484e6926",
+ "synopsis": "Correlation is a prerequisite for credible simulation, not a substitute for physical testing: credibility applies only to dimensions with adequate paired simulation-to-real agreement, and Euro NCAP’s 2026 protocol, version 1.00 dated March 2025, requires correlation before predictions plus random physical verification [f7375, f1215, f1719]. Agreement must be assessed with multiple metrics and bounded by operating regimes, configuration and pre-agreed tolerances; a camera model may agree in daylight but fail under glare [f188, f7552, f9934, f7469]. Physical evidence shows both achievable agreement and important limits: underground stop-zone repeats agreed within about ±13 cm, while an on-road 2026 round robin still showed tool disagreements of 0.033 s and 0.314 m in a prescribed brake-only test [f5930, f6351]. The proposed programme should own correlation data in-house, use real sensors and machines for correlation, and gate progress on evidence rather than calendar dates; the four-month window cannot accommodate all correlation and other validation needs, and missing agreed metrics by the first quarter of 2027 is an early warning [f201, f10894, f9509, f378, f10756]. Remaining evidence gaps include unconfirmed simulated-to-real point-cloud comparison for the 2026 CARLA mining-dust framework and missing independent correlation results for Cognata and heavy-machine evidence for BeamNG.tech; large simulation counts cannot compensate for an uncorrelated model [f4743, f8415, f8509, f12203].",
+ "relations": [
+  {
+   "a": "f188",
+   "b": "f7552",
+   "type": "same",
+   "note": "Both require multiple simultaneous agreement metrics rather than one number."
+  },
+  {
+   "a": "f1215",
+   "b": "f1262",
+   "type": "same",
+   "note": "Both require physical correlation before Euro NCAP virtual predictions."
+  },
+  {
+   "a": "f4345",
+   "b": "f4102",
+   "type": "same",
+   "note": "Both report low agreement between simulation platforms in on-road evidence."
+  },
+  {
+   "a": "f201",
+   "b": "f8342",
+   "type": "same",
+   "note": "Both recommend hybrid ownership, licensed physics and a partner's first correlated sensor model."
+  },
+  {
+   "a": "f4413",
+   "b": "f4732",
+   "type": "same",
+   "note": "Both report good lidar simulation-to-measurement agreement at lower rain rates."
+  },
+  {
+   "a": "f12203",
+   "b": "f10885",
+   "type": "same",
+   "note": "Both reject execution volume as a substitute for well-correlated tests."
+  },
+  {
+   "a": "f12227",
+   "b": "f10894",
+   "type": "same",
+   "note": "Both state that correlation requires the real sensor and machine."
+  },
+  {
+   "a": "f1564",
+   "b": "f1719",
+   "type": "same",
+   "note": "Both require Euro NCAP correlation and random physical verification; one adds dossier and KPIs."
+  },
+  {
+   "a": "f10756",
+   "b": "f12454",
+   "type": "same",
+   "note": "Both flag missing first-quarter 2027 metrics and large test counts without residuals."
+  },
+  {
+   "a": "f2496",
+   "b": "f1262",
+   "type": "elaborates",
+   "note": "Specifies in-house qualification and Euro NCAP scripts for ISO scores and KPIs."
+  },
+  {
+   "a": "f7759",
+   "b": "f188",
+   "type": "elaborates",
+   "note": "Identifies scalar, time-history, uncertainty-aware and distributional agreement."
+  },
+  {
+   "a": "f7469",
+   "b": "f7375",
+   "type": "supports",
+   "note": "Daylight-versus-glare performance illustrates why credibility is limited to demonstrated dimensions."
+  },
+  {
+   "a": "f9919",
+   "b": "f10756",
+   "type": "depends",
+   "note": "Pre-registering pilot metrics addresses the warning about absent agreed correlation metrics."
+  },
+  {
+   "a": "f378",
+   "b": "f9509",
+   "type": "supports",
+   "note": "Insufficient calendar time motivates evidence-based rather than calendar-based gates."
+  },
+  {
+   "a": "f508",
+   "b": "f12227",
+   "type": "depends",
+   "note": "A validated sensor twin requires frozen hardware and mounting plus real-hardware correlation."
+  },
+  {
+   "a": "f7099",
+   "b": "f5219",
+   "type": "elaborates",
+   "note": "Adds adverse-environment coverage requiring experimental correlation."
+  },
+  {
+   "a": "f6115",
+   "b": "f6364",
+   "type": "elaborates",
+   "note": "Details correlated stopping-model inputs for the ISO-aligned risk-zone approach."
+  },
+  {
+   "a": "f9934",
+   "b": "f7375",
+   "type": "elaborates",
+   "note": "Turns dimension-limited credibility into bounded pilot claims with explicit failures."
+  }
+ ]
+}

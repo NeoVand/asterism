@@ -1,0 +1,362 @@
+{
+ "chunkId": "k660",
+ "hash": "c30df9f7bd891ca8",
+ "facts": [
+  {
+   "text": "Radar sends radio waves and measures object distance from their echoes and approach or recession speed from a shift in the returned frequency.",
+   "quote": "A radar sends out radio waves and listens for their echoes, measuring both the distance to objects and, from a shift in the returned frequency, how fast they approach or recede.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Vehicle radars operate in the 77 GHz band, with radio wavelengths of about 4 millimeters.",
+   "quote": "Vehicle radars work in the 77 gigahertz (GHz) band, radio waves about 4 millimeters long.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Radar measures closing speed directly through the Doppler effect, without waiting for several frames.",
+   "quote": "so closing speed is measured directly, without waiting for several frames.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Doppler effect",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Radar cross-section (RCS) measures how large an object appears to radar in square meters; a metal plate has a huge RCS and a person a small RCS, so a dummy with correct camera appearance may have incorrect RCS.",
+   "quote": "Radar cross-section (RCS) is how big an object looks to the radar, in square meters; a metal plate has a huge RCS and a person a small one, so a dummy with the right camera appearance may have the wrong RCS [Chapter 3].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "Radar cross-section (RCS)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t159"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Radar multipath creates ghost objects at incorrect positions when a wave bounces off two or more surfaces before returning.",
+   "quote": "Multipath is a wave bouncing off two or more surfaces before returning, which creates ghost objects at wrong positions.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t104"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Radar clutter consists of unwanted echoes from ground, rain, the machine's own body and nearby structures.",
+   "quote": "Clutter is the mass of unwanted echoes from ground, rain, the machine's own body and nearby structures.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t104"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Radar MIMO (multiple input, multiple output) uses several transmitting and receiving antennas together to measure angle more finely.",
+   "quote": "MIMO (multiple input, multiple output) means several transmitting and receiving antennas working together to measure angle more finely.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MIMO",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Radar CFAR (constant false alarm rate) sets detection thresholds relative to local clutter so noise produces false detections at a fixed, low rate.",
+   "quote": "CFAR (constant false alarm rate) is the detection rule that sets the threshold relative to the local clutter so that noise produces false detections at a fixed, low rate.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "CFAR",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t188",
+    "t108"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Radar is largely unaffected by airborne dust, mildly affected by fog and unaffected by darkness.",
+   "quote": "Radar is largely unaffected by airborne dust, only mildly by fog, and not at all by darkness [Chapter 6].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Radar perceives shapes coarsely and is confused by metal and water.",
+   "quote": "But it sees shapes coarsely and is confused by metal and water.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t85",
+    "t104"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In the booklet's most relevant heavy-machine radar experiment, a radar mounted on a wheel loader in a hall encountered highly reflective thin metal pillars.",
+   "quote": "The most relevant heavy-machine experiment put a radar on a wheel loader in a hall: thin metal pillars were highly reflective",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t2",
+    "t104"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The wheel-loader hall radar simulation matched measurements only after hand-built geometry and material tuning, and still omitted some real double reflections.",
+   "quote": "the simulation matched only after hand-built geometry and tuned materials, some real double reflections were still missing",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t165",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the wheel-loader hall experiment, a detector trained on real radar data failed on most simulated images.",
+   "quote": "a detector trained on real radar data failed on most simulated images [Chapter 6].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t112",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Material properties at 77 GHz often must be estimated from measurements.",
+   "quote": "Material properties at 77 GHz often have to be estimated from measurements",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t136"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Heavy rain produces radar clutter detections at very short range, where slow braking occurs.",
+   "quote": "heavy rain produces clutter detections at very short range, exactly where slow braking happens [Chapter 6].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t102",
+    "t104"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2006 study of radar on a 260-ton haul truck recorded 580 alarms over 618 reversals: 102 false alarms (18%), 243 nuisance alarms (42%) and 235 alarms requiring action (41%).",
+   "quote": "In a 2006 study of a radar system on a 260-ton haul truck, 580 alarms over 618 reversals split into 102 false (18%), 243 nuisance (42%) and 235 (41%) requiring action",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    4,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t3",
+    "t32",
+    "t16"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The haul truck's rear tires and protruding structures triggered false radar alarms in the 2006 study.",
+   "quote": "the truck's own rear tires and protruding structures triggered false alarms [Chapters 4, 7].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    4,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t3",
+    "t32"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A single rear radar missed people near the rear tires; two antennas about 1.8 meters apart with inward-crossed beams improved detection.",
+   "quote": "A single rear radar missed people near the rear tires; two antennas about 1.8 m apart with beams crossed inward improved detection [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t14",
+    "t100",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Radar is the most mature sensor case for bench testing using a target emulator that returns artificial echoes to the real sensor.",
+   "quote": "Radar is also the most mature case for bench testing with a target emulator that returns artificial echoes to the real sensor [Chapter 6].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t150"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Radar is the sensor most likely to keep working in dust and at night, but the booklet considers radar simulation of off-road clutter such as spoil piles, tires and rock faces low credibility until validated against the company's own measurements.",
+   "quote": "Radar is the sensor most likely to keep working in dust and at night, but the booklet treats radar simulation of off-road clutter (spoil piles, tires, rock faces) as low credibility until validated against the company's own measurements [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t234",
+    "t104",
+    "t263",
+    "t102"
+   ],
+   "importance": 3
+  }
+ ]
+}

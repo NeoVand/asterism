@@ -1,0 +1,300 @@
+{
+ "chunkId": "k707",
+ "hash": "c6e3cc702466d007",
+ "facts": [
+  {
+   "text": "The operational design domain (ODD) is the written description of the conditions under which a system is designed to work; an operating-domain taxonomy is the organized list of attributes used to write that description.",
+   "quote": "The operational design domain is the written description of the conditions under which a system is designed to work, and an operating-domain taxonomy is the organized list of attributes used to write it.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t140"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An ODD specifies the environmental and operating conditions under which a safety claim is intended to hold, with explicit in-domain and out-of-domain boundaries.",
+   "quote": "It answers \"under what environmental and operating conditions is the safety claim intended to hold?\", with explicit in-domain and out-of-domain boundaries [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t140",
+    "t67"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An example ODD for the braking system limits operation to reverse motion at 3 to 15 km/h in surface mines and quarries, with daylight or site lighting and no snow.",
+   "quote": "For the braking system, the ODD might say: reverse motion only, 3 to 15 km/h, surface mines and quarries, daylight and site lighting, no snow.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t140",
+    "t22",
+    "t16",
+    "t169",
+    "t45"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The braking system's safety claim does not cover conditions outside its ODD, and the system should recognize when it has left that domain.",
+   "quote": "Anything outside is not claimed, and the system should know when it has left the domain.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t140",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 34503:2023 and ASAM OpenODD 1.0.0 formalize ODDs for automated road vehicles; both are scoped to automated road vehicles and have lanes and junctions as default attributes.",
+   "quote": "Both are scoped to automated road vehicles, and their default attributes are lanes and junctions.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ISO 34503",
+     "kind": "standard"
+    },
+    {
+     "name": "ASAM OpenODD",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t140",
+    "t290",
+    "t137"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM OpenODD 1.0.0, dated 3 April 2025, provides a machine-readable, technology-independent data model with restrictive definitions specifying what is allowed and permissive definitions specifying what is excluded.",
+   "quote": "ASAM OpenODD 1.0.0 (3 April 2025), which gives a machine-readable, technology-independent data model with restrictive definitions (what is allowed) and permissive ones (what is excluded) [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ASAM OpenODD",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t140",
+    "t137"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Off-road operating-domain taxonomies exist only as academic proposals, including a 2022 adaptation to underground mining and a 2024 adaptation to unstructured environments.",
+   "quote": "Off-road taxonomies exist only as academic proposals: one adapts the concepts to underground mining (2022), another to unstructured environments (2024)",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t140"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2025 agricultural operating-domain framework identifies the mining industry's EMESRT (Earth Moving Equipment Safety Round Table) performance requirement PR-5A as a replicable model.",
+   "quote": "an agricultural framework (2025) names the mining industry's EMESRT (Earth Moving Equipment Safety Round Table) performance requirement PR-5A as a replicable model [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Earth Moving Equipment Safety Round Table",
+     "kind": "organization"
+    },
+    {
+     "name": "EMESRT PR-5A",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t140",
+    "t304"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The off-road standard ISO 17757:2019 uses the notion of a \"defined functional environment,\" which is related to an ODD.",
+   "quote": "The off-road standard ISO 17757:2019 uses the related notion of a \"defined functional environment\" [Chapter 1].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "ISO 17757",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t140",
+    "t284"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For a job-site operating-domain taxonomy, the booklet proposes branches covering site and scenery (pit, quarry face, stockpile, haul route, workshop; berms, drop-offs, ruts); machine operating state (forward, reverse, articulating, swinging, loaded or unloaded); machine geometry (footprint, sensor height and pitch, occluding structures); objects (worker posture and clothing, light vehicle, machine, rock, low or buried object); relative interaction (crossing, emerging from occlusion, backing toward an object); weather and air, including dust; illumination; surface and braking (grade, gravel, mud, ice); sensor state; and human and system state.",
+   "quote": "The booklet proposes branches for a job-site program: site and scenery (pit, quarry face, stockpile, haul route, workshop; berms, drop-offs, ruts); machine operating state (forward, reverse, articulating, swinging, loaded or unloaded);",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t140",
+    "t11",
+    "t142",
+    "t102",
+    "t174"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends treating operating-domain categories as attributes rather than as 100 or more unrelated site names, so tests cover equivalence classes and attribute interactions instead of repeating sites.",
+   "quote": "The decisive design choice is to treat these as attributes rather than as 100 or more unrelated site names.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t140",
+    "t44",
+    "t143"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Two differently named quarries can share the same safety-relevant attributes: rough terrain, dust, bright sun, metal clutter, an 8% grade and frequent crossings.",
+   "quote": "Two quarries with different names may share the same safety-relevant attributes (rough terrain, dust, bright sun, metal clutter, an 8% grade, frequent crossings)",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t140",
+    "t173",
+    "t102",
+    "t104",
+    "t17"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The ODD defines test coverage and must be written first, in October 2026, before scenarios, sites or sample sizes can be planned.",
+   "quote": "The ODD defines what \"coverage\" means, so it must be written first, in October 2026, before scenarios, sites or sample sizes can be planned [Chapters 1, 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t140",
+    "t143",
+    "t209",
+    "t342"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The ODD defines the narrow first release of the off-road braking system and the gates by which its operating domain widens.",
+   "quote": "It also defines the narrow first release and the gates by which it widens",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t140",
+    "t73",
+    "t72",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Every fielded off-road braking product launched with a narrow operating domain, such as reverse-only operation at 3 to 15 km/h.",
+   "quote": "every fielded off-road braking product launched with a narrow domain, such as reverse only at 3 to 15 km/h [Chapter 1].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t140",
+    "t73",
+    "t22",
+    "t16",
+    "t169"
+   ],
+   "importance": 3
+  }
+ ]
+}

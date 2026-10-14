@@ -1,0 +1,115 @@
+{
+ "key": "t103",
+ "hash": "9235be54bb4de4d1",
+ "synopsis": "Occlusion and sensor obstruction are central validation risks: perception in dust, rain, mud and occlusion is identified as the hardest technical gap, and brakes cannot recover safety margin when reliable detection range falls below required stopping distance [f10338, f6585]. Virtual testing is useful for camera and lidar geometry and occlusion, but simplified sensor models require explicit encoding of partial occlusion, while lens and cover soiling and its accumulation, drying and cleaning remain poorly reproduced [f1736, f1740, f4479, f4772]. Acceptance requirements address both hidden targets and blocked sensors: MOSH Rev 1 requires detection without line-of-sight, while on-road FMVSS 127 requires detection and communication of obstruction-related degradation; the program still needs explicit blockage, maintenance and calibration requirements [f2458, f2000, f2929, f7463]. Variant validation may need several physical representatives because worst stopping distance and worst occlusion need not coincide, and mounting changes and non-monotonic geometry effects undermine unproven transfer across a fleet of 100+ models [f626, f7919, f7921, f10589]. Physical correlation and trustworthy reference labels remain essential: high-value occlusion phenomena need physical reference tests, ground truth needs an unavailable-or-ambiguous state, and published reference-stack validation across the full mining-condition set was not found [f7374, f5394, f5399].",
+ "relations": [
+  {
+   "a": "f626",
+   "b": "f12371",
+   "type": "same",
+   "note": "Both say stopping-distance and occlusion extremes may require different representative machines."
+  },
+  {
+   "a": "f10338",
+   "b": "f12531",
+   "type": "same",
+   "note": "Both identify adverse-condition perception as the hardest validation gap."
+  },
+  {
+   "a": "f5394",
+   "b": "f12756",
+   "type": "same",
+   "note": "Both require ambiguous or unavailable truth states to avoid incorrect labels."
+  },
+  {
+   "a": "f10778",
+   "b": "f11034",
+   "type": "same",
+   "note": "Both flag omitted blocked-sensor and recovery tests as unsafe-mode warning signs."
+  },
+  {
+   "a": "f663",
+   "b": "f1016",
+   "type": "same",
+   "note": "Laboratory component qualification alone cannot establish whole-system perception under contamination."
+  },
+  {
+   "a": "f3081",
+   "b": "f3225",
+   "type": "same",
+   "note": "Both describe cab-pillar obstruction in the 2005–2021 US incident examples."
+  },
+  {
+   "a": "f1516",
+   "b": "f2000",
+   "type": "elaborates",
+   "note": "Communication supplements the shared requirement to detect obstruction-related degradation."
+  },
+  {
+   "a": "f8179",
+   "b": "f7919",
+   "type": "supports",
+   "note": "Possible non-monotonic effects justify demonstrating that selected extremes bound intermediate machines."
+  },
+  {
+   "a": "f4665",
+   "b": "f12503",
+   "type": "elaborates",
+   "note": "Separates poorly evidenced radome contamination from airborne dust's limited measured effect."
+  },
+  {
+   "a": "f3811",
+   "b": "f3812",
+   "type": "depends",
+   "note": "Unobserved route-log surfaces become exposed when future sensors are taller."
+  },
+  {
+   "a": "f3811",
+   "b": "f4046",
+   "type": "depends",
+   "note": "Missing observed geometry motivates caution against treating synthesized surfaces as geometric truth."
+  },
+  {
+   "a": "f4772",
+   "b": "f5099",
+   "type": "supports",
+   "note": "Poor soiling simulation aligns with missing quantitative validation of contamination and cleaning."
+  },
+  {
+   "a": "f3949",
+   "b": "f7463",
+   "type": "supports",
+   "note": "Independent contamination states justify explicit requirements for progressive blockage and degradation."
+  },
+  {
+   "a": "f7921",
+   "b": "f8006",
+   "type": "depends",
+   "note": "Mounting-dependent sensor effects require recording installation tolerances and occlusion assumptions."
+  },
+  {
+   "a": "f7919",
+   "b": "f626",
+   "type": "supports",
+   "note": "Non-monotonic geometry and braking effects undermine reliance on one representative machine."
+  },
+  {
+   "a": "f1741",
+   "b": "f7374",
+   "type": "supports",
+   "note": "Lidar's physical-correlation needs support paired simulation-to-real reference tests."
+  },
+  {
+   "a": "f5399",
+   "b": "f5394",
+   "type": "supports",
+   "note": "Missing full-condition reference validation reinforces uncertainty budgets and ambiguous-truth handling."
+  },
+  {
+   "a": "f944",
+   "b": "f749",
+   "type": "supports",
+   "note": "Repeatable proving-ground measurements support whole-machine testing of mounting, occlusion and obstruction."
+  }
+ ]
+}

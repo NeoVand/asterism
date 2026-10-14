@@ -1,0 +1,241 @@
+{
+ "chunkId": "k620",
+ "hash": "b06560aaa4ddba23",
+ "facts": [
+  {
+   "text": "A fail-safe system moves itself to a safe state when something goes wrong; for a moving machine, that state is usually reached by a controlled stop or, when time is short, an emergency stop.",
+   "quote": "A fail-safe system moves itself to a safe state when something goes wrong, and for a moving machine that safe state is usually reached by a controlled stop or, when time is short, an emergency stop.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t55"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO/TS 21815-2 defines collision-avoidance device messages to the machine: SLOW_DOWN, CONTROLLED-STOP, EMERGENCY-STOP and motion inhibit. EMERGENCY-STOP requests stopping machine motion as rapidly as possible when a collision is imminent.",
+   "quote": "It defines the messages a collision-avoidance device sends to the machine: SLOW_DOWN, CONTROLLED-STOP, EMERGENCY-STOP (to \"stop the machine motion as rapidly as possible\" when a collision is imminent) and motion inhibit [Chapters 3, 4].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    4
+   ],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t55",
+    "t280"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "South Africa's mining regulation requires the system to fail to safe without human intervention.",
+   "quote": "South Africa's mining regulation requires that the system \"fail to safe without human intervention\"",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    7
+   ],
+   "entities": [
+    {
+     "name": "South Africa",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t55",
+    "t302"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The MOSH industry specification requires fail-to-safe within 500 milliseconds of detecting a critical failure.",
+   "quote": "the industry specification MOSH requires fail-to-safe within 500 milliseconds of detecting a critical failure",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    7
+   ],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t55",
+    "t307",
+    "t56"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The MOSH industry specification requires a lost connection to be detected within 500 milliseconds.",
+   "quote": "with a lost connection detected within 500 milliseconds",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    7
+   ],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t55",
+    "t307",
+    "t56"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The MOSH industry specification requires a machine reply within 50 milliseconds.",
+   "quote": "a lost connection detected within 500 milliseconds and a machine reply within 50 [Chapters 3, 7].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    7
+   ],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t307",
+    "t88"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Stopping a heavy machine is not always safe: a stop on a slope, under a suspended load, while loading a trailer or ahead of a following machine can cause harm.",
+   "quote": "A stop on a slope, under a suspended load, while loading a trailer or ahead of a following machine can cause harm.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t195",
+    "t55",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet found no source addressing how a machine can fail safe without causing a stop on a slope.",
+   "quote": "how a machine fails safe without causing a stop on a slope is not addressed in the sources it found [Chapter 4]",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    4
+   ],
+   "entities": [],
+   "terms": [
+    "t55",
+    "t173",
+    "t195"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Treating sensing degraded by dust or snow as a fault trades directly against machine availability.",
+   "quote": "treating degraded sensing in dust or snow as a fault trades directly against availability [Chapter 3]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t56",
+    "t55"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Post-braking behavior needs its own hazard analysis, including whether the brake stays latched and whether the machine can roll when the brake is released.",
+   "quote": "What happens after the brake (whether it stays latched, whether the machine can roll when released) needs its own hazard analysis [Chapters 4, 8].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    4,
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t47",
+    "t195",
+    "t55"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The “unsafe or unnecessary intervention” safety function exists because braking is the fail-safe action but can itself be a hazard.",
+   "quote": "The \"unsafe or unnecessary intervention\" safety function exists because the brake is the fail-safe action and may itself be the hazard [Chapter 3]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t48",
+    "t55",
+    "t40"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Defining the appropriate safe state for each situation is design work that testing cannot replace.",
+   "quote": "defining the right safe state for each situation is design work that testing cannot replace.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t55",
+    "t65"
+   ],
+   "importance": 3
+  }
+ ]
+}

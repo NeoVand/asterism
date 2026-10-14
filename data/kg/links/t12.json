@@ -1,0 +1,115 @@
+{
+ "key": "t12",
+ "hash": "5df000f388152001",
+ "synopsis": "Terrain-edge hazards dominate the cited US surface-mining fatality analysis: of 54 haul-truck deaths from January 2005 to June 2021, 21 involved berms and 12 dump points, versus 13 involving people or vehicles; 10 of the 12 dump-point cases involved an absent or inadequate berm [f2989, f2998, f3000]. This exposes a mismatch with research focused on vehicle-to-vehicle collisions: object detection alone covers an incomplete risk picture, and berm or dump-edge prevention may also require road-edge, geofence, speed and stability controls [f6577, f11511, f3250]. Berm handling must be context-aware rather than brake for every berm or learn away repeated dump-edge alarms; the glossary's claim that using berms as bump stops is safe is qualified by two fatal cases where repeated bumping pushed the berm toward the edge [f11512, f3353, f3354, f11864, f3351]. Virtual validation needs accurately located edges because errors of tens of centimetres can corrupt stopping-distance tests, while terrain editing in Gaussian scenes and realistic terrain reproduction by the discussed over-the-air devices remain gaps [f3910, f3880, f5327]. Representation should distinguish structured haul roads from unstructured terrain: OpenDRIVE is recommended for structured road elements, but lane-free haul-road suitability remains a gap and dig faces, stockpiles and free terrain require additional representations [f3982, f7158, f7202, f13216].",
+ "relations": [
+  {
+   "a": "f2989",
+   "b": "f11404",
+   "type": "same",
+   "note": "Same 54-death breakdown and reporting period."
+  },
+  {
+   "a": "f2989",
+   "b": "f3072",
+   "type": "same",
+   "note": "Same fatality analysis and category counts."
+  },
+  {
+   "a": "f3072",
+   "b": "f3175",
+   "type": "same",
+   "note": "Restates the NIOSH fatality breakdown."
+  },
+  {
+   "a": "f2998",
+   "b": "f3246",
+   "type": "elaborates",
+   "note": "Adds that the 33 berm and dump-point deaths were not object collisions."
+  },
+  {
+   "a": "f3246",
+   "b": "f11583",
+   "type": "same",
+   "note": "Same largest fatality group, count and distinction from object collisions."
+  },
+  {
+   "a": "f3000",
+   "b": "f3352",
+   "type": "same",
+   "note": "Identical count of fatal dump-point cases involving inadequate or absent berms."
+  },
+  {
+   "a": "f3000",
+   "b": "f11507",
+   "type": "same",
+   "note": "Glossary repeats the dump-point total and inadequate-berm count."
+  },
+  {
+   "a": "f3273",
+   "b": "f11509",
+   "type": "same",
+   "note": "Dump-point berm detections excluded from nuisance alarms because overtravel is deadly."
+  },
+  {
+   "a": "f3354",
+   "b": "f11522",
+   "type": "same",
+   "note": "Repeated dangerous berm alarms must not be learned away."
+  },
+  {
+   "a": "f3910",
+   "b": "f13130",
+   "type": "same",
+   "note": "Same stopping-distance corruption risk from misplaced berm edges."
+  },
+  {
+   "a": "f3910",
+   "b": "f11513",
+   "type": "supports",
+   "note": "Edge-placement error motivates accurate berm positioning in virtual sites."
+  },
+  {
+   "a": "f6577",
+   "b": "f11570",
+   "type": "same",
+   "note": "Same mismatch between collision research and vehicle-environment accident records."
+  },
+  {
+   "a": "f7158",
+   "b": "f13202",
+   "type": "same",
+   "note": "Same OpenDRIVE coverage and need for additional non-road representations."
+  },
+  {
+   "a": "f2998",
+   "b": "f123",
+   "type": "supports",
+   "note": "33 of 54 deaths substantiate the synthesis's berm and dump-point predominance."
+  },
+  {
+   "a": "f3246",
+   "b": "f11511",
+   "type": "supports",
+   "note": "Dominant non-object fatal events demonstrate limits of detecting only people and vehicles."
+  },
+  {
+   "a": "f3351",
+   "b": "f11864",
+   "type": "contradicts",
+   "note": "Fatal berm displacement qualifies the blanket claim that bump-stop use is safe."
+  },
+  {
+   "a": "f3982",
+   "b": "f7158",
+   "type": "contradicts",
+   "note": "Broad haul-road capability is qualified by unresolved suitability for roads without lanes."
+  },
+  {
+   "a": "f7158",
+   "b": "f13216",
+   "type": "supports",
+   "note": "Limited terrain coverage supports restricting OpenDRIVE to structured haul roads."
+  }
+ ]
+}

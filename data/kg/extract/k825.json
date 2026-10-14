@@ -1,0 +1,233 @@
+{
+ "chunkId": "k825",
+ "hash": "65440179a91bf4ff",
+ "facts": [
+  {
+   "text": "MAE, MAPE and RMSE are standard metrics that summarize individual simulation-versus-measurement differences as one average error figure.",
+   "quote": "MAE, MAPE and RMSE are three standard ways to turn many individual simulation-versus-measurement differences into one average error figure.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t255",
+    "t250"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet quotes a mean absolute error (MAE) of 1.3 cm for a lidar survey method, meaning the model is typically about 1.3 cm off.",
+   "quote": "An MAE of 1.3 cm means the model is typically about 1.3 cm off; the booklet quotes that figure for a lidar survey method [Chapter 5].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Mean absolute error (MAE)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t255",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet reports a mean absolute percentage error (MAPE) of 1.7% on lidar signal amplitude for a clear-weather lidar model.",
+   "quote": "a 1.7% MAPE on lidar signal amplitude can sit beside an 8.5% MAPE on point count, the booklet's figures for a clear-weather lidar model [Chapters 6, 10].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    10
+   ],
+   "entities": [
+    {
+     "name": "Mean absolute percentage error (MAPE)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t255",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet reports a mean absolute percentage error (MAPE) of 8.5% on point count for a clear-weather lidar model.",
+   "quote": "an 8.5% MAPE on point count, the booklet's figures for a clear-weather lidar model [Chapters 6, 10].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    10
+   ],
+   "entities": [
+    {
+     "name": "Mean absolute percentage error (MAPE)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t255",
+    "t92",
+    "t93"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Mean absolute percentage error (MAPE) misbehaves when measured values are near zero.",
+   "quote": "MAPE misbehaves when measured values are near zero.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Mean absolute percentage error (MAPE)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t255"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Large errors in a few simulation-versus-measurement comparisons are often what matters for a braking model.",
+   "quote": "whenever a few comparisons are badly wrong, which for a braking model is often what matters.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t255",
+    "t182"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MAE, MAPE and RMSE all hide the shape of simulation-versus-measurement errors.",
+   "quote": "All three hide the shape of the errors",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Mean absolute error (MAE)",
+     "kind": "metric"
+    },
+    {
+     "name": "Mean absolute percentage error (MAPE)",
+     "kind": "metric"
+    },
+    {
+     "name": "Root mean square error (RMSE)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t255",
+    "t253"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A radar validation paper noted that mean and RMSE errors cannot accommodate the random and knowledge-based uncertainty of stochastic detections.",
+   "quote": "a radar validation paper noted that mean and RMSE errors cannot accommodate the random and knowledge-based uncertainty of stochastic detections [Chapter 6].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Root mean square error (RMSE)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t255",
+    "t259",
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MAPE is used in published sensor-signal model evaluations as a reported metric rather than as a thresholded acceptance criterion.",
+   "quote": "MAPE is in published use for sensor-signal models, reported rather than thresholded",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "Mean absolute percentage error (MAPE)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t255",
+    "t62"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Low average simulation error can coexist with dangerous optimism near the collision boundary.",
+   "quote": "low average error can coexist with dangerous optimism near the collision boundary.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t255",
+    "t267",
+    "t18"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An average simulation error is only a starting point and is never sufficient for complete validation.",
+   "quote": "An average error is a start, never the whole validation [Chapter 10].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t255",
+    "t234",
+    "t237"
+   ],
+   "importance": 3
+  }
+ ]
+}

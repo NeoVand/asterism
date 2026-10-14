@@ -1,0 +1,225 @@
+{
+ "chunkId": "k769",
+ "hash": "f8c2f62906e67c55",
+ "facts": [
+  {
+   "text": "A test selection method is a rule for choosing which possible tests to run, and each rule can legitimately answer only certain kinds of question.",
+   "quote": "A test selection method is a rule for choosing which of the countless possible tests to actually run, and each rule can honestly answer only certain kinds of question.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t200"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Test selection for a braking system should follow the question the tests are intended to answer.",
+   "quote": "Test selection for a braking system works the same way: the method follows the question.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t200"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Chapter 9 distinguishes four incompatible meanings of test coverage: discrete configurations, continuous parameter space, failure discovery, and field-rate estimation. No single test selection method delivers all four.",
+   "quote": "Chapter 9 explains that \"coverage\" has four incompatible meanings, and that no single method delivers all four:",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t200",
+    "t198",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Combinatorial designs guarantee coverage of discrete test configurations, such as combinations of site type and weather type.",
+   "quote": "Combinatorial designs guarantee discrete coverage.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Combinatorial designs",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t202",
+    "t200"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Space-filling designs cover continuous test parameters and train surrogate models.",
+   "quote": "Space-filling designs cover continuous parameters and train surrogate models.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Space-filling designs",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t204",
+    "t200",
+    "t199"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Falsification and adaptive search are test selection methods for finding failures.",
+   "quote": "Falsification and adaptive search find failures.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Falsification",
+     "kind": "method"
+    },
+    {
+     "name": "Adaptive search",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t205",
+    "t207",
+    "t200"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Importance sampling estimates small probabilities only when the real-world distribution is known.",
+   "quote": "Importance sampling estimates small probabilities, but only when the real-world distribution is known.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Importance sampling",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t206",
+    "t200"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A frozen stratified random sample is the only basis for a release rate claim.",
+   "quote": "A frozen stratified random sample is the only basis for a release rate claim.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Stratified random sampling",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t203",
+    "t213",
+    "t217",
+    "t200"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A test search that hunts for failures cannot report a failure rate.",
+   "quote": "a search that hunts for failures cannot report a failure rate",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t217",
+    "t205",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A test design that spreads points evenly does not establish how often each point occurs in a real quarry.",
+   "quote": "a design that spreads points evenly says nothing about how often each point happens in a real quarry",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t204",
+    "t213",
+    "t200"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The braking-system validation program should not make one test design perform all three jobs of understanding, failure discovery, and statistical claims. The program should use coverage designs for understanding, search for discovery, and a separate frozen sample for the statistical claim.",
+   "quote": "The program should use a portfolio: coverage designs for understanding, search for discovery, and a separate frozen sample for the statistical claim [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t200",
+    "t217",
+    "t233",
+    "t203"
+   ],
+   "importance": 3
+  }
+ ]
+}

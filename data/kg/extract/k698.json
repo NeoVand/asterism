@@ -1,0 +1,178 @@
+{
+ "chunkId": "k698",
+ "hash": "682aeb6e2c6d6527",
+ "facts": [
+  {
+   "text": "A terrain model describes ground shape; a digital elevation model (DEM) is its simplest form, a mesh is a surface of small triangles rendered by a computer, and a collision proxy is an invisible simplified shape used to detect contact.",
+   "quote": "A terrain model describes the shape of the ground, a digital elevation model (DEM) is its simplest form, a mesh is the surface of small triangles that a computer draws, and a collision proxy is the invisible simplified shape used to detect contact.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t131"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A digital elevation model is a grid of ground heights, and a mesh converts that grid or a scanned object into connected triangles that a graphics card can render.",
+   "quote": "A mesh turns that grid, or any scanned object, into a surface of connected triangles that a graphics card can render",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t131"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "One quarry pit model in the booklet was optimized to 50,000 polygons, meaning 50,000 triangles.",
+   "quote": "one quarry pit model in the booklet was \"optimized to 50,000 polygons\", that is, 50,000 triangles [Chapter 5]",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t131",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet also uses DEM to mean the discrete element method, a soil-physics technique unrelated to digital elevation grids; context distinguishes the two meanings.",
+   "quote": "the booklet also uses DEM for the discrete element method, a soil-physics technique that has nothing to do with elevation grids; context tells them apart.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "discrete element method",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t131"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Detailed meshes are slow to test for contact, so simulators use simpler invisible collision proxies, such as boxes or smoothed surfaces, for physics-engine contact detection with berms or workers.",
+   "quote": "Detailed meshes are slow to test for contact, so simulators attach a collision proxy: a simpler invisible shape (a box, a smoothed surface) that the physics engine uses to decide whether the machine touched the berm or the worker.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t131",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scenes reconstructed from photographs by neural methods have no native collision surface.",
+   "quote": "Scenes built from photographs by neural methods have no native collision surface",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t131"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "One pipeline cited in the booklet required invisible collision substrates beneath Gaussian Splatting.",
+   "quote": "one cited pipeline needed \"invisible collision substrates beneath the Gaussian Splatting\" [Chapter 5]",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Gaussian Splatting",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t131"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A mesh that misplaces a berm edge by tens of centimeters can corrupt a stopping-distance test.",
+   "quote": "A mesh that places a berm edge tens of centimeters from its true position can corrupt a stopping-distance test [Chapter 5].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t131",
+    "t170",
+    "t12"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For braking, ground friction, sinkage, cohesion and moisture affect how a machine stops and pitches; pitching changes sensor position. These mechanical terrain effects fall under terramechanics.",
+   "quote": "Friction, sinkage, cohesion and moisture change how the machine stops and how it pitches, which moves the sensors. That is the terrain model in the physics sense, covered under terramechanics.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t174",
+    "t170",
+    "t84"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet found no validation of simulated braking distance on gravel, mud, ice or slopes for heavy machines, leaving the ground layer of every virtual site a known gap rather than a solved problem.",
+   "quote": "The booklet found no validation of simulated braking distance on gravel, mud, ice or slopes for heavy machines, so the ground layer of every virtual site is a known gap, not a solved problem [Chapter 5].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t174",
+    "t173",
+    "t131",
+    "t127"
+   ],
+   "importance": 3
+  }
+ ]
+}

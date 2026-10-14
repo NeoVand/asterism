@@ -1,0 +1,318 @@
+{
+ "chunkId": "k929",
+ "hash": "6b6366917dbfa04e",
+ "facts": [
+  {
+   "text": "A request for proposal (RFP) asks vendors for a solution and price; a non-disclosure agreement (NDA) enables confidential information sharing; a statement of work specifies supplier deliverables; and supplier information provides technical data needed to simulate a sensor or tool vendor's product.",
+   "quote": "A request for proposal (RFP) asks vendors to propose a solution and a price, a non-disclosure agreement (NDA) lets two companies share secrets safely, a statement of work spells out exactly what a supplier will deliver",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t357"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For this program, simulation-tool RFPs should price peak concurrent workers, continuous-integration and cloud rights, subcontractor access, hardware-in-the-loop (HIL) nodes and disaster-recovery environments, rather than only desktop seats.",
+   "quote": "the RFP should price peak concurrent workers, continuous-integration and cloud rights, subcontractor access, hardware-in-the-loop (HIL) nodes and disaster-recovery environments, not only desktop seats",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t357",
+    "t334",
+    "t148",
+    "t161",
+    "t330"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Simulation-tool RFPs should require export in open formats: ASAM Open Simulation Interface (OSI), OpenSCENARIO, Functional Mock-up Interface (FMI) and OpenUSD.",
+   "quote": "should require export in open formats (the ASAM Open Simulation Interface or OSI, OpenSCENARIO, the Functional Mock-up Interface or FMI, and OpenUSD)",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "ASAM Open Simulation Interface",
+     "kind": "standard"
+    },
+    {
+     "name": "OpenSCENARIO",
+     "kind": "standard"
+    },
+    {
+     "name": "Functional Mock-up Interface",
+     "kind": "standard"
+    },
+    {
+     "name": "OpenUSD",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t357",
+    "t138",
+    "t137",
+    "t139"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simulation-tool RFPs should include exit clauses for vendor ownership changes.",
+   "quote": "plus exit clauses for ownership changes",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t357",
+    "t334"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Two large simulation vendors changed ownership during 2025 and 2026.",
+   "quote": "two large simulation vendors changed hands during 2025 and 2026",
+   "kind": "event",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t357"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An engineering partner's statement of work should require editable machine models, scene and source assets, parameter provenance, correlation datasets, test definitions, continuous-integration scripts, version manifests, known-limitation registers and interface specifications, rather than only test reports.",
+   "quote": "editable machine models, scene and source assets, parameter provenance, correlation datasets, test definitions, continuous-integration (CI) scripts, version manifests, known-limitation registers and interface specifications, not only test reports",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t357",
+    "t162",
+    "t234",
+    "t262",
+    "t161"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A credible lidar simulation model needs supplier information on scan pattern, beam divergence, wavelength, transmit power, detector model, detection thresholds and the signal-processing chain.",
+   "quote": "For lidar: scan pattern, beam divergence, wavelength, transmit power, detector model, detection thresholds and the signal-processing chain.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t357",
+    "t125",
+    "t234"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A credible radar simulation model needs supplier information on carrier band, waveform, antenna patterns, receiver noise, detection and tracking logic, and radome properties.",
+   "quote": "For radar: carrier band, waveform, antenna patterns, receiver noise, detection and tracking logic, radome properties.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t357",
+    "t125",
+    "t234"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A credible camera simulation model needs supplier information on lens distortion, spectral response, shutter timing, noise, exposure control and the image-processing pipeline.",
+   "quote": "For cameras: lens distortion, spectral response, shutter timing, noise, exposure control and the image-processing pipeline.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t357",
+    "t125",
+    "t234"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Credible models of all sensors need exact mounting pose and tolerances, the machine's vibration transfer function, firmware version and degradation modes.",
+   "quote": "For all sensors: exact mounting pose and tolerances, the machine's vibration transfer function, firmware version and degradation modes.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t357",
+    "t100",
+    "t102",
+    "t125",
+    "t234"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "If a sensor supplier refuses to share internals, five options remain: request a black-box model packaged to OSI as a Functional Mock-up Unit (FMU), characterize the sensor in controlled tests, estimate parameters inversely from measurements, put the real sensor in the loop, or add model-delivery and validation-data requirements to the sourcing contract while sensor choice remains open.",
+   "quote": "ask for a black-box model packaged to OSI as a Functional Mock-up Unit (FMU), characterize the sensor yourself in controlled tests, estimate parameters inversely from measurements, put the real sensor in the loop",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "ASAM Open Simulation Interface",
+     "kind": "standard"
+    },
+    {
+     "name": "Functional Mock-up Unit",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t357",
+    "t139",
+    "t138",
+    "t150",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Supplier data and usage rights can block the validation program's schedule before any test runs.",
+   "quote": "Supplier data and usage rights can block the schedule before any test runs",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t357",
+    "t344",
+    "t347"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A mining company needed cooperation from multiple machine makers for automatic stopping.",
+   "quote": "a mining company needed cooperation from multiple machine makers for automatic stopping",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t357",
+    "t28"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A government review found manufacturer validation documentation to be proprietary.",
+   "quote": "a government review found manufacturer validation documentation proprietary",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t357",
+    "t70",
+    "t65"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Usage rights still under NDA or contract negotiation close to prototype delivery are an early warning sign for the validation program.",
+   "quote": "\"rights still under NDA or contract negotiation close to prototype delivery\" is an early warning sign",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t357",
+    "t82",
+    "t42",
+    "t344"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Chapter 13 recommends a supplier data-room drill as the first cheap experiment: map every required artifact to an owner, a contractual right and a delivery date.",
+   "quote": "Chapter 13's first cheap experiment is a supplier data-room drill mapping every required artifact to an owner, a contractual right and a delivery date [Chapter 13].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t357",
+    "t360",
+    "t342"
+   ],
+   "importance": 3
+  }
+ ]
+}

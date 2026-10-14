@@ -1,0 +1,115 @@
+{
+ "key": "t112",
+ "hash": "3ae93cc1f39e26f3",
+ "synopsis": "Across construction, mining and on-road studies, synthetic data is supported as training augmentation rather than a replacement for real data: studies from 2023–2026 report benefits from mixing, but persistent gaps with synthetic-only training and benefits that depend on detector family [f6685, f6686, f6689, f7047, f7057]. Reported examples include 50% fewer real images and a 16% detector improvement in a 2023 construction study, cited through a 2025 secondary summary, and a 2025 study whose best result used 1,500 real plus 1,500 synthetic images [f7049, f7050, f7051]. Visual realism does not establish detector validity: real-trained radar detectors failed on most simulated vehicles despite improved image similarity, while mining evidence shows degradation in dust in a dataset of 30,000 lidar frames, over 80% dusty [f4423, f4826, f12610]. The recommended training loop anchors simulation in real off-road logs, tests on untouched real data and collects targeted real data for residual gaps; shared training/testing generators or assets can contaminate validation, and new mounting heights require retraining or adaptation rather than threshold changes alone [f7102, f7097, f7037]. Formal or static verification cannot prove recognition of arbitrary real scenes, the cited FDA guidance does not cover a neural-network detector, and manufacturers must address machine-learning vision gaps in test standards with evidence [f668, f7645, f2911]. Retraining can invalidate prior validation, and whether a trained-then-frozen detector is “self-evolving” under EU Machinery Regulation 2023/1230 remains disputed; the booklet notes deterministic safety channels as a way to avoid placing the entire proof burden on learned perception [f2940, f6700, f12877].",
+ "relations": [
+  {
+   "a": "f668",
+   "b": "f12183",
+   "type": "same",
+   "note": "Both state formal and static verification cannot prove learned recognition of real scenes."
+  },
+  {
+   "a": "f4423",
+   "b": "f12643",
+   "type": "same",
+   "note": "Glossary restates the wheel-loader experiment's failed real-to-sim radar detector transfer."
+  },
+  {
+   "a": "f4747",
+   "b": "f12870",
+   "type": "same",
+   "note": "Both report real-trained radar detection failing on most simulated vehicles."
+  },
+  {
+   "a": "f4747",
+   "b": "f4826",
+   "type": "elaborates",
+   "note": "Improved similarity and odometry did not prevent the reported RadaRays detector-transfer failure."
+  },
+  {
+   "a": "f7037",
+   "b": "f12872",
+   "type": "same",
+   "note": "Both recommend retraining or adaptation after sensor mounting-height changes."
+  },
+  {
+   "a": "f7049",
+   "b": "f12873",
+   "type": "same",
+   "note": "Both report a 50% reduction in required real images."
+  },
+  {
+   "a": "f7050",
+   "b": "f12873",
+   "type": "same",
+   "note": "Both report a 16% construction detector improvement."
+  },
+  {
+   "a": "f7051",
+   "b": "f12874",
+   "type": "same",
+   "note": "Both identify 1,500 real plus 1,500 synthetic images as the best mixture."
+  },
+  {
+   "a": "f7052",
+   "b": "f12874",
+   "type": "same",
+   "note": "Both report a performance gap for synthetic-only models in that study."
+  },
+  {
+   "a": "f7052",
+   "b": "f10581",
+   "type": "same",
+   "note": "Both report the 2025 Winter Simulation Conference synthetic-only performance gap."
+  },
+  {
+   "a": "f6686",
+   "b": "f13590",
+   "type": "same",
+   "note": "Glossary restates the persistent synthetic-only training gap."
+  },
+  {
+   "a": "f6686",
+   "b": "f7413",
+   "type": "same",
+   "note": "Both report synthetic-only gaps across 2023–2026 studies; one specifies construction settings."
+  },
+  {
+   "a": "f7067",
+   "b": "f12610",
+   "type": "elaborates",
+   "note": "Glossary quantifies the dusty mining dataset underlying detector degradation."
+  },
+  {
+   "a": "f6689",
+   "b": "f12900",
+   "type": "same",
+   "note": "Both summarize mixed-data gains and synthetic-only gaps across road, construction and mining evidence."
+  },
+  {
+   "a": "f7102",
+   "b": "f12881",
+   "type": "elaborates",
+   "note": "Training loop operationalizes untouched real testing and targeted collection for residual domain gaps."
+  },
+  {
+   "a": "f12880",
+   "b": "f12881",
+   "type": "depends",
+   "note": "Silent out-of-distribution failures motivate untouched real tests and monitoring stalled real performance."
+  },
+  {
+   "a": "f668",
+   "b": "f12877",
+   "type": "elaborates",
+   "note": "Deterministic safety channels reduce reliance on an unprovable learned perception component."
+  },
+  {
+   "a": "f10581",
+   "b": "f7047",
+   "type": "supports",
+   "note": "Synthetic-only domain discrepancies support augmentation rather than substitution."
+  }
+ ]
+}

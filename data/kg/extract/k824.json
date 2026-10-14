@@ -1,0 +1,281 @@
+{
+ "chunkId": "k824",
+ "hash": "237f909ba1076c22",
+ "facts": [
+  {
+   "text": "Image and field similarity metrics score how closely a simulated image, radar map or other field of values resembles a real one; they are useful for rendering quality but can disagree with whether a detector behaves the same on real and simulated inputs.",
+   "quote": "These metrics score how much a simulated image, radar map or other field of values resembles a real one; they are useful for rendering quality but can disagree with whether a detector behaves the same on both.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t254",
+    "t256"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Peak signal-to-noise ratio (PSNR) measures pixel-by-pixel image difference in decibels; higher values indicate closer agreement, with values above about 30 dB looking near identical and 15–20 dB visibly wrong.",
+   "quote": "Peak signal-to-noise ratio (PSNR) measures pixel-by-pixel difference between two images in decibels (dB); higher is closer, with values above about 30 dB looking near identical and 15 to 20 dB visibly wrong.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Peak signal-to-noise ratio (PSNR)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Structural similarity index (SSIM) compares local patterns of brightness, contrast and structure on a scale from 0 to 1.",
+   "quote": "Structural similarity index (SSIM) compares local patterns of brightness, contrast and structure, from 0 to 1.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Structural similarity index (SSIM)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Learned perceptual image patch similarity (LPIPS) uses a neural network to judge how different two images look; lower scores are better.",
+   "quote": "Learned perceptual image patch similarity (LPIPS) uses a neural network to judge how different two images look; lower is better.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Learned perceptual image patch similarity (LPIPS)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Frechet inception distance (FID) compares statistics of whole image collections rather than matched pairs; lower scores are better.",
+   "quote": "Frechet inception distance (FID) compares the statistics of whole collections of images rather than matched pairs; lower is better.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Frechet inception distance (FID)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254",
+    "t253"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Mutual information measures how much knowing one image tells you about another and is useful for radar maps.",
+   "quote": "Mutual information measures how much knowing one image tells you about the other, useful for radar maps.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Mutual information",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254",
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "PSNR, SSIM and LPIPS require pixel-matched image pairs, whereas FID works at the distribution level.",
+   "quote": "PSNR, SSIM and LPIPS need pixel-matched pairs; FID works at the distribution level [Chapter 6].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Peak signal-to-noise ratio (PSNR)",
+     "kind": "metric"
+    },
+    {
+     "name": "Structural similarity index (SSIM)",
+     "kind": "metric"
+    },
+    {
+     "name": "Learned perceptual image patch similarity (LPIPS)",
+     "kind": "metric"
+    },
+    {
+     "name": "Frechet inception distance (FID)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254",
+    "t253"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For neural rendering of driving scenes, the booklet reports PSNR of about 30.9 dB on the recorded path, falling to 19.2 dB when the viewpoint moves 4 m sideways.",
+   "quote": "The booklet reports PSNR for neural rendering of driving scenes: about 30.9 dB on the recorded path, falling to 19.2 dB when the viewpoint moves 4 m sideways",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Peak signal-to-noise ratio (PSNR)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254",
+    "t116",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet reports PSNR of 13.2–20.8 dB for generative world models and interprets these results as “not yet metric-faithful.”",
+   "quote": "13.2 to 20.8 dB for generative world models, which it reads as \"not yet metric-faithful\" [Chapter 5].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Peak signal-to-noise ratio (PSNR)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254",
+    "t115",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A physics-based radar simulator dramatically improved mutual-information and structural-similarity scores, yet a detector trained on real data still failed on the simulated images.",
+   "quote": "For radar, a physics-based simulator improved mutual-information and structural-similarity scores dramatically, yet a detector trained on real data still failed on the simulated images [Chapter 6].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Mutual information",
+     "kind": "metric"
+    },
+    {
+     "name": "Structural similarity index (SSIM)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t256",
+    "t254",
+    "t94",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Image and field similarity metrics measure appearance and structure, not safety; FID targets no particular perception algorithm, and similarity scores can improve while a safety-relevant quantity such as detection range in dust remains wrong.",
+   "quote": "These metrics measure appearance and structure, not safety. FID targets no particular perception algorithm, and all of them can improve while the quantity that matters, such as detection range in dust, stays wrong [Chapter 6].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Frechet inception distance (FID)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t256",
+    "t254",
+    "t267",
+    "t193",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends accompanying image similarity with task-level and closed-loop validation because different realism metrics answer different questions. A photorealistic dusty pit does not demonstrate that a simulated camera degrades like a real camera.",
+   "quote": "image similarity must be accompanied by task-level and closed-loop validation, because \"different realism metrics answer different questions\" [Chapter 6]. A photorealistic dusty pit is not evidence that the simulated camera degrades like the real one.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t256",
+    "t257",
+    "t254",
+    "t102",
+    "t89"
+   ],
+   "importance": 3
+  }
+ ]
+}

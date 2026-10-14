@@ -1,0 +1,115 @@
+{
+ "key": "t153",
+ "hash": "89b6a62d46f523bf",
+ "synopsis": "HIL tests production-controller timing, communications, interfaces and fault responses against a simulated plant; SIL cannot show whether the production processor misses deadlines [f5283, f529]. HIL requires deterministic hard real time because the real ECU cannot wait: missing even an expected 50-millisecond sensor-message deadline can produce a false test result, so throughput alone is insufficient [f13418, f16179, f13420]. Reported performance varies substantially: ISPRS 2024 terrain examples achieved 60 FPS for a single building and 17 FPS for a 23-million-Gaussian scene, while higher-fidelity Chrono CRM terrain reportedly runs 50–200 times slower than real time [f3893, f3894, f8499]. Sensor acceleration is promising but configuration-specific: 2020 vendor radar figures report about 12 ms per frame against a 30 FPS target, and a 2021 publication with vendor authors reports above 160 FPS for one single-channel radar [f4932, f4933]. Planning should therefore benchmark actual geometry, sensors, latency and jitter early, retaining separate offline high-fidelity and real-time models where necessary rather than assuming a generic real-time factor [f13425, f8924].",
+ "relations": [
+  {
+   "a": "f8923",
+   "b": "f13358",
+   "type": "same",
+   "note": "Both warn that offline rendering accuracy does not guarantee deterministic HIL timing."
+  },
+  {
+   "a": "f8848",
+   "b": "f13420",
+   "type": "same",
+   "note": "Both prioritize deterministic real time over throughput for HIL."
+  },
+  {
+   "a": "f8499",
+   "b": "f13057",
+   "type": "same",
+   "note": "Both report ground simulation running 50–200 times slower than real time."
+  },
+  {
+   "a": "f4454",
+   "b": "f4932",
+   "type": "same",
+   "note": "The latter attributes the 12 ms radar result and supplies its target frame rate."
+  },
+  {
+   "a": "f931",
+   "b": "f12968",
+   "type": "same",
+   "note": "Both describe HIL verification of real ECU timing, communications and fault behavior."
+  },
+  {
+   "a": "f5283",
+   "b": "f12968",
+   "type": "same",
+   "note": "Both describe HIL proving timing, communications, diagnostics and fail-to-safe behavior."
+  },
+  {
+   "a": "f4348",
+   "b": "f3894",
+   "type": "same",
+   "note": "Both report 17 FPS for a large neural terrain scene."
+  },
+  {
+   "a": "f8924",
+   "b": "f13423",
+   "type": "same",
+   "note": "Both recommend separate offline high-fidelity and real-time models where needed."
+  },
+  {
+   "a": "f13418",
+   "b": "f5280",
+   "type": "supports",
+   "note": "An independently running ECU explains the requirement for deterministic simulator timing."
+  },
+  {
+   "a": "f16179",
+   "b": "f13418",
+   "type": "supports",
+   "note": "The 50-millisecond message example illustrates why HIL requires hard real time."
+  },
+  {
+   "a": "f12971",
+   "b": "f529",
+   "type": "supports",
+   "note": "Scheduling failures explain why software-only testing cannot establish production-processor deadline compliance."
+  },
+  {
+   "a": "f4954",
+   "b": "f5300",
+   "type": "elaborates",
+   "note": "OTA stimulation adds synchronized scene delivery and calibrated physical setup requirements."
+  },
+  {
+   "a": "f8923",
+   "b": "f13428",
+   "type": "supports",
+   "note": "Offline-accurate renderers missing deadlines illustrate the HIL sensor-fidelity ceiling."
+  },
+  {
+   "a": "f8499",
+   "b": "f8924",
+   "type": "supports",
+   "note": "Very slow high-fidelity terrain motivates separate real-time and offline models."
+  },
+  {
+   "a": "f4933",
+   "b": "f13425",
+   "type": "supports",
+   "note": "Radar throughput changes with channel and sensor count, supporting configuration-specific benchmarking."
+  },
+  {
+   "a": "f13424",
+   "b": "f8309",
+   "type": "elaborates",
+   "note": "Defines real-time factor and quantifies its effect on cost per simulated hour."
+  },
+  {
+   "a": "f13426",
+   "b": "f739",
+   "type": "supports",
+   "note": "Timing changes stopping position, making HIL detection of timing faults consequential."
+  },
+  {
+   "a": "f8923",
+   "b": "f8924",
+   "type": "depends",
+   "note": "Potential deterministic timing failure drives early latency benchmarking and model separation."
+  }
+ ]
+}

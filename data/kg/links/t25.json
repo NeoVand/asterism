@@ -1,0 +1,115 @@
+{
+ "key": "t25",
+ "hash": "8d4555dbcdc2a21e",
+ "synopsis": "The next-generation CMS retains proximity warnings but adds automatic braking when the operator does not act; this is a different safety function, so matching the old warning system is not an adequate validation target [f12, f10417]. Automatic braking invalidates recorded replay at the first new brake command, making interactive closed-loop agreement important; a useful virtual environment therefore needs physically connected sensor, ground and object models, not merely a 3D scene [f108, f4813, f3904]. Major evidence gaps remain: no end-to-end heavy off-road vehicle-in-the-loop case, validated simulated braking distances on gravel, mud, ice or slopes, or off-road standard accepting simulation instead of physical braking tests was found [f342, f3970, f7539]. ISO 16001:2017 covers warnings rather than braking, and ISO 21815-4, listed for October 2026, excludes automatic brake application; South Africa was the only jurisdiction found to legally require automatic slowing and braking, while 2025 amendments to UN R152 permit virtual substitution for some car and van AEBS tests [f2070, f7543, f2077, f5162, f7546]. Prototype hardware and software are expected in mid-2027, but the organization has never developed this virtual-testing capability, and the research found no precedent for taking a new automatic-braking function from first representative hardware to accepted validation in about four months; every documented virtualization retained physical referents [f8250, f9401, f58, f10415]. Validation must address long stopping distances and legitimate work that resembles a collision, because false positives become machine-motion commands; available wheel-loader examples are limited to reverse operation, with Volvo CE's January 2023 system operating at 3–15 km/h for 2–3 seconds, and transferring road-vehicle evidence to quarry operations remains uncertain [f11381, f11384, f3024, f356, f11391, f11385].",
+ "relations": [
+  {
+   "a": "f12",
+   "b": "f2955",
+   "type": "same",
+   "note": "Both describe a warning-system successor adding braking when the operator does not act."
+  },
+  {
+   "a": "f2955",
+   "b": "f1172",
+   "type": "same",
+   "note": "Both describe the manufacturer's developing automatic-braking function."
+  },
+  {
+   "a": "f1172",
+   "b": "f4388",
+   "type": "same",
+   "note": "Both state that braking follows operator non-response."
+  },
+  {
+   "a": "f4388",
+   "b": "f5127",
+   "type": "same",
+   "note": "Restates development of automatic braking following operator non-response."
+  },
+  {
+   "a": "f5127",
+   "b": "f5855",
+   "type": "same",
+   "note": "Identical description of the manufacturer's developing braking system."
+  },
+  {
+   "a": "f5855",
+   "b": "f6617",
+   "type": "same",
+   "note": "Both describe automatic braking if the operator does not react."
+  },
+  {
+   "a": "f6617",
+   "b": "f7504",
+   "type": "same",
+   "note": "Same function; the latter explicitly identifies the preceding proximity warning."
+  },
+  {
+   "a": "f7504",
+   "b": "f8249",
+   "type": "same",
+   "note": "Both restate development of braking following operator non-response."
+  },
+  {
+   "a": "f8249",
+   "b": "f10380",
+   "type": "same",
+   "note": "Identical development claim repeated in the skeptic's review."
+  },
+  {
+   "a": "f58",
+   "b": "f1201",
+   "type": "same",
+   "note": "Both report no four-month precedent from representative hardware to accepted braking validation."
+  },
+  {
+   "a": "f2060",
+   "b": "f7543",
+   "type": "same",
+   "note": "Both state ISO 21815 Part 4 excludes automatic braking."
+  },
+  {
+   "a": "f5140",
+   "b": "f108",
+   "type": "same",
+   "note": "Both explain that braking makes the recorded future unsuitable for replay."
+  },
+  {
+   "a": "f7144",
+   "b": "f1218",
+   "type": "same",
+   "note": "Both report the January 2024 critique of R152 virtual-testing credibility."
+  },
+  {
+   "a": "f5162",
+   "b": "f2079",
+   "type": "same",
+   "note": "Both describe South Africa's mandatory slowing and automatic braking after operator non-response."
+  },
+  {
+   "a": "f10416",
+   "b": "f10415",
+   "type": "supports",
+   "note": "Truck HIL benchmarking against track tests illustrates retained physical referents."
+  },
+  {
+   "a": "f11384",
+   "b": "f3024",
+   "type": "supports",
+   "note": "Collision-like legitimate tasks explain the danger of false-positive brake commands."
+  },
+  {
+   "a": "f8250",
+   "b": "f9400",
+   "type": "depends",
+   "note": "Prototype availability constrains the roadmap for building virtual-braking validation capability."
+  },
+  {
+   "a": "f3970",
+   "b": "f11381",
+   "type": "supports",
+   "note": "Missing terrain-specific braking-distance validation reinforces stopping-distance concerns."
+  }
+ ]
+}

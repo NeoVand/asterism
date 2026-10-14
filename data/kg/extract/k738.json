@@ -1,0 +1,396 @@
+{
+ "chunkId": "k738",
+ "hash": "aa97de8ce28f093c",
+ "facts": [
+  {
+   "text": "Stopping distance is the distance a machine travels from the moment a stop becomes necessary until the machine stands still.",
+   "quote": "Stopping distance is how far a machine travels from the moment a stop becomes necessary until it stands still.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t170"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The slowing portion of stopping distance is calculated as d = v²/(2a), where d is braking distance in meters, v is speed in meters per second, and a is deceleration in m/s².",
+   "quote": "`d = v^2 / (2a)`. Here d is the braking distance in meters, v the speed in meters per second and a the deceleration in m/s².",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t169"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Doubling machine speed quadruples braking distance, while halving deceleration doubles braking distance.",
+   "quote": "Speed is squared, so doubling the speed quadruples the braking distance; halving the deceleration doubles it.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t169"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 3450, the US mining rule MSHA Table M-1, and New South Wales guidance express stopping performance using d = v²/(2a).",
+   "quote": "ISO 3450, the US mining rule (MSHA Table M-1) and the New South Wales guidance all write stopping performance with this formula",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "ISO 3450",
+     "kind": "standard"
+    },
+    {
+     "name": "MSHA Table M-1",
+     "kind": "regulation"
+    },
+    {
+     "name": "New South Wales",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t282",
+    "t300",
+    "t301",
+    "t170"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 3450 calculates mean deceleration from measured stopping distance using a = v²/(2d).",
+   "quote": "ISO 3450 uses it backwards, `a = v^2 / (2d)`, to turn a measured stopping distance into a \"mean deceleration\" [Chapter 8].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "ISO 3450",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t282",
+    "t170",
+    "t169"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Before slowing begins, a machine's full-speed travel during delay is d_delay = v × t; human-driver delay is reaction time, whereas automatic-brake delay includes sensing, deciding, sending the command, and brake-system dead time.",
+   "quote": "`d_delay = v x t`. For a human driver t is reaction time; for an automatic brake it is sensing, deciding, sending the command and the brake system's own dead time.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t172",
+    "t171",
+    "t35"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Total stopping-distance allowance including residual clearance is d_total = v × t_delay + v²/(2a) + d_safe, where d_safe is the clearance remaining when the machine stops.",
+   "quote": "The full picture is `d_total = v x t_delay + v^2 / (2a) + d_safe`, where d_safe is the clearance left when the machine stops.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t172",
+    "t194"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The stopping-distance worked example assumes a loaded 40 t machine travelling at 15 km/h on a 10 percent downgrade, equivalent to a 1 m drop per 10 m forward; the speed conversion is 15/3.6 = 4.2 m/s.",
+   "quote": "a loaded 40 t machine at 15 km/h on a 10 percent downgrade (the road drops 1 m for every 10 m forward).\n\nConvert the speed: 15 / 3.6 = 4.2 m/s.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t168",
+    "t173",
+    "t169"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The US mining rule assumes a deceleration of 2.94 m/s², close to the 3.0 m/s² level-ground deceleration assumed in the stopping-distance worked example.",
+   "quote": "Suppose 3.0 m/s², close to the 2.94 m/s² the US rule assumes.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MSHA Table M-1",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t300",
+    "t169",
+    "t170"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For the loaded 40 t machine in the stopping-distance example, achieving 3.0 m/s² level-ground deceleration requires 40,000 kg × 3.0 m/s² = 120 kN of braking force.",
+   "quote": "That takes 40,000 kg x 3.0 m/s² = 120 kN of braking force.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t168",
+    "t169",
+    "t182"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Downhill gravitational acceleration is g × sin θ, where θ is slope angle; for job-site grades, sin θ is almost the grade fraction. In the 10 percent downgrade example, 9.81 × 0.1 gives roughly 1.0 m/s² downhill acceleration.",
+   "quote": "Gravity pulls the machine downhill with an acceleration of about g x 0.1 = 9.81 x 0.1, roughly 1.0 m/s². (Strictly it is g x sin θ, with θ the slope angle; for job-site grades this is almost the grade fraction.)",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t173",
+    "t169"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For the 40 t machine on a 10 percent downgrade, gravity reduces the assumed 3.0 m/s² deceleration to 2.0 m/s²; 39 kN of the available 120 kN braking force is spent opposing gravity.",
+   "quote": "Net deceleration: 3.0 - 1.0 = 2.0 m/s². In force terms, 39 kN of the 120 kN is spent holding the machine against gravity.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t173",
+    "t169",
+    "t168"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For the 40 t machine travelling at 15 km/h, braking distance is about 4.3 m on the 10 percent downgrade versus 2.9 m on level ground, so the slope adds about half again.",
+   "quote": "Braking distance: 4.2² / (2 x 2.0) = 17.4 / 4 = about 4.3 m. On level ground it would be 17.4 / 6 = 2.9 m. The slope adds about half again.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t173"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In the 40 t machine example at 15 km/h on a 10 percent downgrade, an assumed 1.0 s delay from object appearance to brakes biting adds 4.2 m of full-speed travel.",
+   "quote": "Suppose the chain from object appearing to brakes biting takes 1.0 s. Distance at full speed: 4.2 x 1.0 = 4.2 m.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t172",
+    "t170"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In the 40 t machine example at 15 km/h on a 10 percent downgrade with 1.0 s delay, total distance before stopping is about 8.5 m; requiring 1 m clearance means detection must occur at least 9.5 m away before adding any sensor-error allowance.",
+   "quote": "Total: 4.2 + 4.3 = about 8.5 m before the machine stands still. With 1 m of clearance wanted, the object must be detected at least 9.5 m away, before any sensor error is added.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t193",
+    "t194",
+    "t172"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the stopping-distance example at 15 km/h, the 1.0 s delay contribution of 4.2 m is approximately as large as the 4.3 m braking contribution.",
+   "quote": "The delay term (4.2 m) is as large as the braking term (4.3 m).",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t172"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The US mining rule assumes 2.0 s total delay for very heavy equipment; at the worked-example speed of 15 km/h, this delay alone contributes 8.3 m of travel.",
+   "quote": "With 2.0 s of total delay, which the US rule assumes for very heavy equipment, the delay term alone would be 8.3 m.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MSHA Table M-1",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t172",
+    "t170",
+    "t300"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet finds that at machine speeds of 5 to 15 km/h, latency can account for half or more of stopping distance.",
+   "quote": "at 5 to 15 km/h \"the latency term can be half or more of the stopping distance\" [Chapter 8].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t172",
+    "t170",
+    "t169"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Machine mass does not appear explicitly in the stopping-distance formula, but mass determines whether the brakes can deliver the assumed deceleration, such as 3.0 m/s² in the worked example.",
+   "quote": "Mass does not appear in the formula, but it decides whether the brakes can deliver the 3.0 m/s² assumed in step 2.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t168",
+    "t170",
+    "t182"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A booklet regulatory example uses a 25 t articulated dump truck travelling at 50 km/h that needs 3.13 m/s² deceleration to stop in 30.82 m on level ground; the distance is the pure v²/(2a) value.",
+   "quote": "a 25 t articulated dump truck at 50 km/h needing 3.13 m/s² to stop in 30.82 m on level ground, which is the pure v²/(2a) value [Chapter 8].",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t4",
+    "t170",
+    "t169",
+    "t168"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Stopping distance determines the collision mitigation system's timing and range needs: the sensor must see at least that far, the warning must come earlier, and the brake must be commanded no later.",
+   "quote": "Stopping distance is the quantity the whole system is built around: the sensor must see at least that far, the warning must come earlier, and the brake must be commanded no later.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t193",
+    "t185",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends a calibrated point-mass model as the core stopping-distance model, using the stopping-distance formula with measured delays, brake build-up lag, and worst-case deceleration dependent on grade, payload, and surface; higher fidelity is needed only in specific places.",
+   "quote": "a calibrated point-mass model, this formula with measured delays, a brake build-up lag and a worst-case deceleration that depends on grade, payload and surface, is the right core model for stopping distance, and that higher fidelity is needed only in specific places [Chapter 8].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t170",
+    "t171",
+    "t172",
+    "t237"
+   ],
+   "importance": 3
+  }
+ ]
+}

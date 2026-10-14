@@ -1,0 +1,177 @@
+{
+ "chunkId": "k750",
+ "hash": "2fd4d62fcaaa75d4",
+ "facts": [
+  {
+   "text": "A brake model predicts the amount and timing of braking force after a command; a powertrain model predicts how the engine, transmission and drive contribute to or oppose braking.",
+   "quote": "A brake model predicts how much braking force arrives, and how quickly, after a command; a powertrain model predicts how the engine, transmission and drive add to or fight that braking.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t182"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A minimal brake model represents dead time, a build-up ramp and a maximum force.",
+   "quote": "At its simplest it is a dead time, a build-up ramp and a maximum force.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t182",
+    "t171"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A fuller lumped hydraulic brake model represents the valve, accumulator, lines and cylinder volume and computes pressure over time.",
+   "quote": "A fuller \"lumped hydraulic\" model represents the valve, the accumulator (pressure reservoir), the lines and the cylinder volume, and computes pressure over time.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t182",
+    "t183"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2026 digital model of a tracked vehicle's hydraulic brakes matched brake pressure to more than 96 percent and response time to more than 95 percent on one machine; temperature and wear effects were not shown.",
+   "quote": "a 2026 digital model of a tracked vehicle's hydraulic brakes that matched brake pressure to more than 96 percent and response time to more than 95 percent, on one machine, with temperature and wear effects not shown [Chapter 8]",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t182",
+    "t250",
+    "t262",
+    "t175"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Repeated downhill stops heat brake discs and reduce braking force through fade; constant-braking calculations cannot capture this temperature-dependent effect.",
+   "quote": "Brake torque also depends on temperature: repeated downhill stops heat the discs and reduce the force, called fade, which constant-braking calculations cannot capture [Chapter 8].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t182",
+    "t173",
+    "t262"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The powertrain can slow a machine through a retarder, hydrostatic dynamic braking or engine braking, but can also keep pushing through a transmission still in gear or downhill acceleration after throttle release.",
+   "quote": "the drive can slow the machine (retarder, hydrostatic dynamic braking, engine braking) or keep pushing it (a transmission still in gear, or a downhill machine that accelerates after the throttle is released).",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t182",
+    "t177",
+    "t173"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A hydrostatic machine's powertrain model needs pump and motor displacement, pressure limits, engine and pump speed, and controller transitions rather than a single pedal-to-torque gain.",
+   "quote": "For a hydrostatic machine the booklet says the model needs pump and motor displacement, pressure limits, engine and pump speed and controller transitions, not a single pedal-to-torque gain [Chapter 8].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t182",
+    "t177",
+    "t183"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Brake-actuation hydraulics determine latency and its spread, and are one of four areas where extra model fidelity pays off.",
+   "quote": "The brake-actuation hydraulics set the latency and its spread, which is one of the four places where the booklet says extra model fidelity pays off",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t182",
+    "t171",
+    "t183",
+    "t88"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Brake-actuation models should be built from component tests using bench pressure traces and checked on the full machine specifically for the automated brake path.",
+   "quote": "the models should be built from component tests (bench pressure traces) and checked on the full machine, for the automated brake path specifically [Chapter 8].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t182",
+    "t184",
+    "t237",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The automatic braking system should not assume nominal brake performance after heat, wear or a detected degradation.",
+   "quote": "The booklet also warns that the automatic system should not assume nominal brake performance after heat, wear or a detected degradation [Chapter 8].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t182",
+    "t22",
+    "t56"
+   ],
+   "importance": 3
+  }
+ ]
+}

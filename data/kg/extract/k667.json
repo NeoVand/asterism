@@ -1,0 +1,195 @@
+{
+ "chunkId": "k667",
+ "hash": "91876825ed4ce266",
+ "facts": [
+  {
+   "text": "A time stamp is the exact time recorded alongside each measurement; time synchronization ensures every sensor and computer on a machine records times from the same clock.",
+   "quote": "A time stamp is the exact time written next to each measurement, and time synchronization is making sure every sensor and computer on the machine writes those times from the same clock.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t101"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "If a lidar clock is 200 milliseconds ahead of a camera clock, software can infer that a person has moved from the lidar-measured position and estimate a speed that does not exist.",
+   "quote": "If the lidar's clock is 200 milliseconds ahead of the camera's, software will think the person in the camera image has already moved from where the lidar put them, and will estimate a speed that does not exist.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t101",
+    "t92",
+    "t89",
+    "t86"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A shared clock distributed over the network using a protocol such as PTP (Precision Time Protocol) keeps time stamps consistent to well under one millisecond.",
+   "quote": "A shared clock, distributed over the network by a protocol such as PTP (Precision Time Protocol), keeps all stamps consistent to well under a millisecond.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "PTP (Precision Time Protocol)",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t101"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An apparent algorithm latency of 100 to 300 ms can consist entirely of a timestamp offset rather than actual algorithm latency.",
+   "quote": "An apparent \"algorithm latency\" of 100 to 300 ms can be nothing but a timestamp offset",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t101",
+    "t88"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Timing errors smaller than the cited 100 to 300 ms timestamp offsets can reorder fast approach events and corrupt warning-timing metrics.",
+   "quote": "and smaller errors reorder fast approach events and corrupt warning-timing metrics [Chapter 7].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t101",
+    "t224"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "One time stamp per spinning-lidar frame is insufficient if the machine moves during the scan, because completing a scan takes time.",
+   "quote": "A spinning lidar takes time to complete a scan, so if the machine moves during the scan, one time stamp per frame is not enough [Chapter 5].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t101",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In radar test equipment, every 6.67 nanoseconds of delay adds one meter of apparent range, corresponding to the radio-wave travel time for a meter and back.",
+   "quote": "in radar test equipment every 6.67 nanoseconds of delay adds one meter of apparent range, because that is how long radio waves take to travel a meter and back [Chapter 7].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t101"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Machine-data recording guidance calls for hardware time stamps on a common clock, logged clock offsets, sequence counters, dropped-frame counters, and records of every resynchronization.",
+   "quote": "Recording guidance therefore asks for hardware time stamps on a common clock, logged clock offsets, sequence counters, dropped-frame counters and records of every resynchronization [Chapter 7].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t101"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A simulated braking function can fail despite realistic sensor values if time stamping, scanning acquisition, network delays, or controller scheduling are wrong.",
+   "quote": "a braking function can fail even when every sensor value looks realistic if time stamping, scanning acquisition, network delays or controller scheduling are wrong [Chapter 6].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t126",
+    "t101",
+    "t88",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "At 15 km/h, a 100 ms timing error shifts a measured object's position by 42 centimeters, enough to make a safe stop appear late in the record.",
+   "quote": "At 15 km/h a 100 ms timing error moves a measured object by 42 centimeters, enough to turn a safe stop into a late one in the record",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t101",
+    "t169",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Unsynchronized clocks are identified as a recording failure that destroys a specific use of machine data.",
+   "quote": "the booklet calls unsynchronized clocks one of the recording failures that destroys a specific use of the data [Chapter 7].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t101",
+    "t121"
+   ],
+   "importance": 3
+  }
+ ]
+}

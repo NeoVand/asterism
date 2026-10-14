@@ -1,0 +1,115 @@
+{
+ "key": "t200",
+ "hash": "d85324b5c9dfd28d",
+ "synopsis": "Test selection is a safety decision, not simply a way to shrink a giant matrix: the booklet recommends predefined coverage models, hazard-driven scenario classes, equivalence classes, boundary analysis and uncertainty sampling rather than an exhaustive Cartesian product [f14074, f5470, f11042, f13297]. No single method provides discrete-configuration coverage, continuous-parameter coverage, failure discovery and field-rate estimation; coverage designs, failure-seeking searches and a separate frozen statistical sample must serve different purposes [f6798, f14098]. Reported success across 20,000 scenarios is not statistically meaningful without a defined population and selection mechanism, and failure-hunting searches cannot report a failure rate [f6933, f14096]. Prioritization should use accident data, especially fatality patterns, while frequency and damage estimates are weaker evidence; safety-critical interactions still require hazard analysis, field failures and engineering knowledge [f10622, f11605, f4076]. Reported efficiencies include NIST test-set reductions of 20–700 times and on-road dense-reinforcement-learning acceleration of 10^3–10^5 times, but the latter is not proven off-road and requires a large naturalistic dataset for legitimate evaluation claims [f6820, f7078, f7079, f7277]. An initial statistical plan and coverage metrics are considered realistic by mid-2027 for a team starting in October 2026, but no universal off-road coverage prescription was found; within a four-month window, the recommended hybrid approach uses simulation for screening and informative physical-test selection rather than proof by itself [f846, f5475, f13496, f9697, f14059].",
+ "relations": [
+  {
+   "a": "f6423",
+   "b": "f14059",
+   "type": "same",
+   "note": "Both position simulation as test selection and uncertainty propagation, not standalone proof."
+  },
+  {
+   "a": "f10508",
+   "b": "f10780",
+   "type": "same",
+   "note": "Both identify NIOSH's design-of-experiments and standard simulation-method gaps."
+  },
+  {
+   "a": "f6798",
+   "b": "f14090",
+   "type": "same",
+   "note": "Both distinguish four coverage meanings that no single selection method delivers."
+  },
+  {
+   "a": "f6868",
+   "b": "f14098",
+   "type": "same",
+   "note": "Both require separate designs for coverage, failure discovery and statistical claims."
+  },
+  {
+   "a": "f6933",
+   "b": "f14216",
+   "type": "same",
+   "note": "Both reject scenario success percentages without a specified population and selection mechanism."
+  },
+  {
+   "a": "f7078",
+   "b": "f7276",
+   "type": "same",
+   "note": "Both report Nature 2023 on-road acceleration of 10^3–10^5 times."
+  },
+  {
+   "a": "f6640",
+   "b": "f6787",
+   "type": "same",
+   "note": "Both use parameterised scenario families for sampling or experimental design, search and estimation."
+  },
+  {
+   "a": "f6798",
+   "b": "f6797",
+   "type": "supports",
+   "note": "Incompatible coverage objectives justify a portfolio of selection methods."
+  },
+  {
+   "a": "f14070",
+   "b": "f5470",
+   "type": "elaborates",
+   "note": "Three coverage layers specify an alternative to exhaustive Cartesian testing."
+  },
+  {
+   "a": "f4076",
+   "b": "f11042",
+   "type": "supports",
+   "note": "Hazard analysis and field knowledge identify interactions needed for hazard-driven coverage."
+  },
+  {
+   "a": "f11605",
+   "b": "f10622",
+   "type": "elaborates",
+   "note": "Fatality patterns receive priority because frequency and damage estimates have weaker evidence."
+  },
+  {
+   "a": "f16219",
+   "b": "f4351",
+   "type": "elaborates",
+   "note": "Adds four-month throughput priorities and reserves expensive models for necessary cases."
+  },
+  {
+   "a": "f5780",
+   "b": "f9328",
+   "type": "elaborates",
+   "note": "Failure mechanisms determine suitable fidelity; correlation supports allocation across levels."
+  },
+  {
+   "a": "f10987",
+   "b": "f9697",
+   "type": "supports",
+   "note": "Hybrid evidence supports screening with simulation while retaining physical acceptance verification."
+  },
+  {
+   "a": "f14096",
+   "b": "f14098",
+   "type": "supports",
+   "note": "Failure-seeking search cannot supply the rate claim, motivating a separate frozen sample."
+  },
+  {
+   "a": "f7079",
+   "b": "f7276",
+   "type": "elaborates",
+   "note": "Reported acceleration has not been proven for off-road testing."
+  },
+  {
+   "a": "f7277",
+   "b": "f7276",
+   "type": "depends",
+   "note": "Legitimate accelerated evaluation claims require a large naturalistic dataset."
+  },
+  {
+   "a": "f13496",
+   "b": "f10987",
+   "type": "elaborates",
+   "note": "Four-month physical-test selection targets model correlation and worst-case confirmation."
+  }
+ ]
+}

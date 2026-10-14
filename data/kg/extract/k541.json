@@ -1,0 +1,384 @@
+{
+ "chunkId": "k541",
+ "hash": "cb8138c8f2d8d20c",
+ "facts": [
+  {
+   "text": "Synthetic weather is useful for virtual testing, but the sensor model must be anchored to measured weather-affected sensor behavior.",
+   "quote": "Synthetic weather is useful, but the sensor model must be anchored to measured weather-affected sensor behavior",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    36,
+    37,
+    22,
+    23
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t102",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "On-road controlled studies show that different sensor modalities react differently to weather.",
+   "quote": "the on-road controlled studies show different modalities react differently",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    36,
+    37,
+    22,
+    23
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t84"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Off-road experience documents winter effects and nuisance effects on sensors.",
+   "quote": "off-road experience documents winter and nuisance effects [36, 37, 22, 23]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    36,
+    37,
+    22,
+    23
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t31"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Whether prototype sensors are equal to current warning sensors is unknown.",
+   "quote": "**\"Prototype sensors equal current warning sensors.\"** Unknown.",
+   "kind": "uncertain",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t42",
+    "t266"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "If prototype sensors differ from current warning sensors, existing field data cannot be reused directly.",
+   "quote": "If they differ, existing field data cannot be reused directly. **Expert opinion**.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t75",
+    "t42"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Before the hardware exists, a virtual toolchain can only be built generically.",
+   "quote": "The toolchain can only be built generically",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t42"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Correlation of the virtual toolchain needs the real sensor and machine.",
+   "quote": "correlation needs the real sensor and machine (**Expert opinion**)",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t250",
+    "t160",
+    "t320"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Integrated product validation begins at prototype arrival, but the validation program cannot wait until prototype arrival to begin.",
+   "quote": "Integrated product validation begins at prototype arrival; the validation program cannot.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    4,
+    7
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t65",
+    "t342"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For a four-month validation window to have any chance, standards selection, hazards, scenario taxonomy, simulation credibility, supplier contracts, real-world reference collection, seasonal data, test infrastructure and reviewer agreement must precede prototype arrival. This is an inference from the verification and validation lifecycle and the standards transition.",
+   "quote": "Standards selection, hazards, scenario taxonomy, simulation credibility, supplier contracts, real-world reference collection, seasonal data, test infrastructure and reviewer agreement must precede the prototype if four months is to have any chance.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    4,
+    7
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t342",
+    "t234",
+    "t45",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The Volvo, Komatsu and Caterpillar precedents all launched with narrower scope than coverage of 100+ site types.",
+   "quote": "**\"100+ site types must all be covered at launch.\"** The precedents (Volvo, Komatsu, Caterpillar) all launched narrower [42, 47, 51].",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    42,
+    47,
+    51
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Volvo",
+     "kind": "company"
+    },
+    {
+     "name": "Komatsu",
+     "kind": "company"
+    },
+    {
+     "name": "Caterpillar",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t44",
+    "t73"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A claim of being validated across 100+ site types is not meaningful until the organization defines whether site types mean individually validated sites, parameterized environment classes or customer configurations inside a validated envelope.",
+   "quote": "\"Validated across 100+ site types\" is not meaningful until the organization defines whether these are individually validated sites, parameterized environment classes or customer configurations inside a validated envelope.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t44",
+    "t261",
+    "t140"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Treating all collision motions as one function is questionable for machines that swing or rotate.",
+   "quote": "**\"All collision motions can be treated as one function.\"** Questionable for machines that swing or rotate.",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t22",
+    "t196"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3:2023 covers collision avoidance through speed reduction, stopping or motion inhibition for forward and reverse motion.",
+   "quote": "ISO 21815-3:2023 covers avoidance through speed reduction, stopping or motion inhibition for forward and reverse motion [17].",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    17
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t196",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The first edition of ISO 21815-4 was under publication in October 2026.",
+   "quote": "ISO 21815-4 (first edition, under publication October 2026)",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    18
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-4 covers swing and rotation but expressly does not cover avoidance through automatic braking during rotation.",
+   "quote": "covers swing and rotation but expressly does not cover avoidance through automatic braking during rotation",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    18
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t196",
+    "t25"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-4 addresses motion inhibition before rotational motion in defined cases.",
+   "quote": "it addresses motion inhibition before rotational motion in defined cases [18].",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    18
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t196",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO/PRF 21815-5, covering other forms of motion, has been at proof stage 50.20 since 9 September 2026.",
+   "quote": "ISO/PRF 21815-5 (other forms of motion) is at proof stage (50.20 since 9 September 2026)",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    19
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-5",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t274",
+    "t196"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Publication of ISO/PRF 21815-5 was expected in November 2026.",
+   "quote": "with publication expected in November 2026 [19].",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    19
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-5",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The collision-mitigation product's motion scope must be defined machine by machine.",
+   "quote": "The product's motion scope must be defined machine by machine.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t22",
+    "t196",
+    "t230"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t335",
+ "hash": "dc425a55fbc3032a",
+ "synopsis": "The three chains are expert assessments: an open-source core with in-house integration, a model-based engineering stack with heavy-machine physics, and an integrated commercial chain with a partner; “lowest”, “middle” and “highest” indicate relative cost and integration posture, not dollar budgets, because almost every commercial vendor is quote-only [f16155, f16156, f16157]. The lowest-cost chain supports camera/lidar testing, deformable-terrain machine dynamics and scripted scenarios, but validated radar, physics-based ultrasonic, correlated weather effects and qualification evidence require major work; scarce skills and manufacturer-owned integration mean low license cost need not mean low total cost [f16160, f16161, f9281, f9284]. The middle-cost chain couples machine physics to controls through FMI and supports MIL, SIL and HIL, but lacks broad validated multi-sensor weather physics and large-scale coverage-driven scenario management, with module prices unpublished [f13239, f13328, f16164, f16165]. The highest-cost chain offers physics-based simulation of all four sensor types, large-scale regression and partner capacity for a four-month window, yet cannot guarantee off-road realism or eliminate manufacturer correlation tests, and no public evidence establishes end-to-end off-road automatic-braking validation [f16169, f16170, f16171]. At every cost level, the recommended “fourth architecture” allocates tests across fast functional testing, medium-fidelity dynamics, selective high-fidelity simulation, HIL and targeted physical correlation, with allocation determined by sensitivity and correlation work rather than assumption [f16172, f16173].",
+ "relations": [
+  {
+   "a": "f9262",
+   "b": "f16155",
+   "type": "same",
+   "note": "Both define cost labels as relative cost and integration posture, not dollar figures."
+  },
+  {
+   "a": "f9261",
+   "b": "f16156",
+   "type": "supports",
+   "note": "Quote-only commercial pricing explains why cost levels remain relative."
+  },
+  {
+   "a": "f9275",
+   "b": "f16161",
+   "type": "elaborates",
+   "note": "Glossary consolidates radar limitations with other capability gaps and staffing risks."
+  },
+  {
+   "a": "f9276",
+   "b": "f16161",
+   "type": "supports",
+   "note": "Ray-cast ultrasonic explains the lack of physics-based ultrasonic capability."
+  },
+  {
+   "a": "f9277",
+   "b": "f16161",
+   "type": "same",
+   "note": "Both identify correlated sensor weather effects as requiring major work."
+  },
+  {
+   "a": "f9279",
+   "b": "f16161",
+   "type": "same",
+   "note": "Both identify tool-qualification evidence as requiring major work."
+  },
+  {
+   "a": "f9283",
+   "b": "f16161",
+   "type": "same",
+   "note": "Both flag dependence on hiring scarce skills."
+  },
+  {
+   "a": "f9281",
+   "b": "f9284",
+   "type": "supports",
+   "note": "Manufacturer-owned integration and assurance work explain why low licenses do not ensure low total cost."
+  },
+  {
+   "a": "f16162",
+   "b": "f13239",
+   "type": "elaborates",
+   "note": "Names the controls and machine-physics tools coupled through FMI."
+  },
+  {
+   "a": "f9296",
+   "b": "f16164",
+   "type": "same",
+   "note": "Both identify missing broad validated multi-sensor weather physics."
+  },
+  {
+   "a": "f9300",
+   "b": "f16164",
+   "type": "same",
+   "note": "Both identify missing large-scale coverage-driven scenario management."
+  },
+  {
+   "a": "f9301",
+   "b": "f16165",
+   "type": "same",
+   "note": "Middle-chain module prices are not public."
+  },
+  {
+   "a": "f9313",
+   "b": "f16169",
+   "type": "same",
+   "note": "Both identify partner capacity for the four-month window."
+  },
+  {
+   "a": "f9316",
+   "b": "f16170",
+   "type": "elaborates",
+   "note": "On-road heritage explains the inability to guarantee off-road sensor realism."
+  },
+  {
+   "a": "f9317",
+   "b": "f16170",
+   "type": "elaborates",
+   "note": "Adds overlapping licenses and proprietary data models to multi-vendor dependence."
+  },
+  {
+   "a": "f9318",
+   "b": "f16170",
+   "type": "same",
+   "note": "Both retain the manufacturer's obligation to perform physical correlation tests."
+  },
+  {
+   "a": "f9319",
+   "b": "f16171",
+   "type": "same",
+   "note": "Neither finds public end-to-end validation evidence for the highest-cost off-road braking chain."
+  },
+  {
+   "a": "f9321",
+   "b": "f16172",
+   "type": "elaborates",
+   "note": "Glossary specifies the testing tiers implementing the recommended multi-fidelity hierarchy."
+  }
+ ]
+}

@@ -1,0 +1,203 @@
+{
+ "chunkId": "k685",
+ "hash": "bf99267ebba1a615",
+ "facts": [
+  {
+   "text": "An electronic control unit (ECU) is a small, rugged computer built into a machine to run a particular job, such as controlling the engine, brakes or collision system.",
+   "quote": "An electronic control unit is one of the small, rugged computers built into a machine, each running one job such as controlling the engine, the brakes or, here, the collision system.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t119"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A collision system uses its own ECU or shares an ECU that receives sensor data, runs perception and decision software, and sends a brake request to the brake controller.",
+   "quote": "The collision system has its own ECU, or shares one, which receives sensor data, runs the perception and decision software, and sends a brake request to the brake controller.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t119",
+    "t22",
+    "t85",
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ECUs run fixed software, called firmware, on a strict schedule and must respond within guaranteed times.",
+   "quote": "ECUs run fixed software (firmware) on a strict schedule and must respond within guaranteed times.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t119",
+    "t153"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hardware-in-the-loop (HIL) benches test a real ECU with its real inputs, outputs and production software against a real-time simulator to prove timing, communications, diagnostics and fail-to-safe behavior.",
+   "quote": "Hardware-in-the-loop (HIL) benches put the real ECU with its real inputs, outputs and production software in front of a real-time simulator; they prove its timing, communications, diagnostics and fail-to-safe behavior",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t119",
+    "t153",
+    "t55"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Under one mining regime, ECU HIL testing checks that a disconnection is detected within 500 ms and the machine replies within 50 ms.",
+   "quote": "for example that a disconnection is detected within 500 ms and the machine replies within 50 ms under one mining regime [Chapter 7]",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t119",
+    "t56",
+    "t88"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ECU HIL benches cannot prove the sensor front end because test data are injected downstream of the lens or antenna.",
+   "quote": "What they cannot prove is the sensor front end, because data are injected downstream of the lens or antenna [Chapter 7].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t149",
+    "t84",
+    "t119"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ECU scheduling can make a braking function fail even when every sensor value looks realistic.",
+   "quote": "ECU scheduling is one of the timing effects that can make a braking function fail even when every sensor value looks realistic [Chapter 6]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t119",
+    "t153",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A renderer that is accurate offline may not meet ECU timing deterministically.",
+   "quote": "a renderer accurate offline may not meet the ECU's timing deterministically [Chapter 11].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t119",
+    "t153",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Every log should include ECU and sensor firmware versions.",
+   "quote": "ECU and sensor firmware versions belong in every log",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t119",
+    "t162"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Controller timing and interfaces still changing in 2027 without impact analysis are an early warning sign for the collision mitigation program.",
+   "quote": "controller timing and interfaces still changing in 2027 without impact analysis is an early warning sign [Chapters 7, 13].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t82",
+    "t119",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The brake request from the collision ECU to the machine turns a perception decision into a safety action, so its timing and fault behavior need evidence separate from sensor realism.",
+   "quote": "The brake request from the collision ECU to the machine is where a perception decision becomes a safety action, so its timing and fault behavior need their own evidence, separate from sensor realism [Chapter 7].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t119",
+    "t70",
+    "t48",
+    "t56",
+    "t88"
+   ],
+   "importance": 3
+  }
+ ]
+}

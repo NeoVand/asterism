@@ -1,0 +1,243 @@
+{
+ "chunkId": "k662",
+ "hash": "04ed43d3563d251c",
+ "facts": [
+  {
+   "text": "A thermal camera makes an image from heat emitted by objects and can show a warm person against cold ground in complete darkness.",
+   "quote": "A thermal camera makes an image from the heat that objects give off, so it can show a warm person against cold ground in complete darkness.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t96"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Thermal cameras use lenses and detectors built for the long-wave infrared (LWIR) band, roughly 8 to 14 micrometers in wavelength.",
+   "quote": "long-wave infrared (LWIR), roughly 8 to 14 micrometers in wavelength, far beyond what eyes or ordinary cameras see. A thermal camera's lens and detector are built for that band.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t96"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Bare metal has low emissivity and can reflect heat from its surroundings rather than show its own temperature in thermal imaging.",
+   "quote": "bare metal has low emissivity and acts like a mirror, showing the heat of its surroundings rather than its own temperature [Chapter 6].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t104"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Poor noise equivalent temperature difference (NETD) can cause a thermal camera to fail to distinguish a person from ground of nearly the same temperature on a hot afternoon.",
+   "quote": "with poor NETD a person blends into ground of nearly the same temperature on a hot afternoon.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Noise equivalent temperature difference (NETD)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t96",
+    "t86"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simulating a thermal camera requires predicting scene heat radiation using emissivity, temperatures, sunlight loading, wind cooling and often the recent history of the day.",
+   "quote": "predicting the scene's heat radiation, which needs emissivity, temperatures, sunlight loading, wind cooling and often the recent history of the day",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simulating a thermal camera also requires predicting the camera response using spectral band, optics, NETD and processing.",
+   "quote": "predicting the camera's response, which needs spectral band, optics, NETD and processing [Chapter 6].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Noise equivalent temperature difference (NETD)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t96",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "One 2026 thermal-camera model could be compared with a real camera only qualitatively because the camera's spectral response was unknown.",
+   "quote": "One 2026 model could be compared with a real camera only qualitatively because the camera's spectral response was unknown",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t237",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The only quantitative validation of the cited 2026 thermal-camera model was indoors.",
+   "quote": "the only quantitative validation was indoors",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t237",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No validation evidence was found for the cited 2026 thermal-camera model in rain, snow, fog, dust, mud or reflective machinery conditions.",
+   "quote": "nothing was found for rain, snow, fog, dust, mud or reflective machinery",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t102",
+    "t104",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No job-site emissivity dataset exists for thermal-camera simulation, according to the booklet.",
+   "quote": "no job-site emissivity dataset exists [Chapters 5, 6].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t107",
+    "t130"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet treats the missing thermal-camera validation evidence as an evidence gap, not proof that thermal-camera physics cannot be modeled.",
+   "quote": "The booklet calls this an evidence gap, not proof that the physics cannot be modeled [Chapter 6].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t70",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Thermal cameras are attractive for finding people at night, but adding thermal cameras creates a new simulation and validation problem.",
+   "quote": "Thermal cameras are attractive for finding people at night, but they add a whole new simulation and validation problem",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    2,
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t14",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Each added sensor type needs its own credibility argument for the collision-mitigation validation program.",
+   "quote": "each added sensor type needs its own credibility argument [Chapters 2, 6].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    2,
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t84",
+    "t234",
+    "t67"
+   ],
+   "importance": 3
+  }
+ ]
+}

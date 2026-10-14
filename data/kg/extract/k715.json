@@ -1,0 +1,307 @@
+{
+ "chunkId": "k715",
+ "hash": "bd29c2f101e5438d",
+ "facts": [
+  {
+   "text": "Hardware-in-the-loop (HIL) testing connects a real electronic control unit, with real wiring and network messages, to a real-time simulator that supplies data a real machine would produce.",
+   "quote": "Hardware-in-the-loop testing connects the real electronic control unit, with its real wiring and network messages, to a simulator that runs in real time and feeds it the data a real machine would produce.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t119",
+    "t153"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "HIL data injection feeds simulated sensor data electrically behind the sensor optics or antenna, using raw camera data behind the imager, radar detections at detection level, or recorded CAN and SAE J1939 machine-network traffic.",
+   "quote": "raw camera data behind the imager, radar detections at the detection level, or recorded machine-network traffic (CAN, the controller area network bus, and the SAE J1939 message set used on heavy vehicles)",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    },
+    {
+     "name": "CAN",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t149",
+    "t148",
+    "t120"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "HIL requires a real-time simulator with deterministic timing, a machine-dynamics model, electrical input-output and sensor-interface emulation, restbus models of the remaining machine network, and the ISO/TS 21815-2 brake-request interface.",
+   "quote": "a real-time simulator with deterministic timing, a machine-dynamics model, electrical input-output and sensor-interface emulation, \"restbus\" models that imitate the rest of the machine network, and the ISO/TS 21815-2 brake-request interface",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t148",
+    "t153",
+    "t179",
+    "t120",
+    "t280"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "HIL proves production ECU and software real-time behavior, communication and interface timing, diagnostics and fault behavior, fail-to-safe behavior, and decision logic under repeatable scenarios.",
+   "quote": "HIL proves the real-time behavior of the production ECU and its software, communication and interface timing, diagnostics and fault behavior, fail-to-safe behavior, and decision logic under repeatable scenarios.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t119",
+    "t56",
+    "t55",
+    "t185"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "South Africa's MOSH regime requires detection of a disconnection between the detection device and the machine within 500 ms; this limit is tested on a bench.",
+   "quote": "requires that a disconnection between the detection device and the machine be detected within 500 ms and that the machine reply within 50 ms; such limits are tested on a bench",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "Mining Industry Occupational Safety and Health learning hub (MOSH)",
+     "kind": "organization"
+    },
+    {
+     "name": "South Africa",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t307",
+    "t148",
+    "t56"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "South Africa's MOSH regime requires the machine to reply within 50 ms; this limit is tested on a bench.",
+   "quote": "requires that a disconnection between the detection device and the machine be detected within 500 ms and that the machine reply within 50 ms; such limits are tested on a bench",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "Mining Industry Occupational Safety and Health learning hub (MOSH)",
+     "kind": "organization"
+    },
+    {
+     "name": "South Africa",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t307",
+    "t148",
+    "t88"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "HIL with data injection cannot prove sensor front-end behavior because injection bypasses the lens, imager or antenna.",
+   "quote": "HIL cannot prove sensor front-end behavior, because injection bypasses the lens, imager or antenna",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t149",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "HIL cannot prove true machine and brake behavior when machine and brake behavior are only modeled.",
+   "quote": "nor true machine and brake behavior when these are only modeled",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t182",
+    "t179",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Injecting faults such as stale messages, dropped frames, corrupted data and sensor disagreement in HIL is far faster and safer than waiting for faults in the field.",
+   "quote": "Fault injection (stale messages, dropped frames, corrupted data, disagreement between sensors) is far faster and safer here than waiting for faults in the field",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t148"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An HIL rig can be commissioned before the final processor exists by using a virtual or development ECU; only that surrogate is replaced when production controllers arrive.",
+   "quote": "The rig can be commissioned before the final processor exists, using a virtual or development ECU, and only that surrogate is swapped when production controllers arrive",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t119",
+    "t343"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet ranks raw-signal sensor HIL as the highest-effort integration type.",
+   "quote": "the booklet ranks raw-signal sensor HIL as the highest-effort integration type",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t149",
+    "t320"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A renderer that is accurate offline may fail to meet ECU timing deterministically in HIL.",
+   "quote": "warns that a renderer accurate offline may not meet ECU timing deterministically",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t153",
+    "t148",
+    "t119"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "HIL is the natural test setting for the SAE J1939 intervention interface of ISO/TS 21815-2 and the laboratory stage of the South African verification regime.",
+   "quote": "HIL is the natural home for the J1939 intervention interface of ISO/TS 21815-2 and for the laboratory stage of the South African verification regime",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    7
+   ],
+   "entities": [
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    },
+    {
+     "name": "South Africa",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t148",
+    "t120",
+    "t280",
+    "t302"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "HIL finds timing, bus and integration faults without occupying a machine, preserving machine availability during the program's four-month validation window.",
+   "quote": "it finds timing, bus and integration faults without occupying a machine, which the four-month window cannot spare",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t43",
+    "t56",
+    "t120"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,326 @@
+{
+ "chunkId": "k908",
+ "hash": "c2e4805dbb5c4596",
+ "facts": [
+  {
+   "text": "Simulation computing hardware includes CPUs for general work, GPUs for massively parallel work, FPGAs for exact timing, VRAM for holding scenes, and real-time computers that answer on a fixed schedule.",
+   "quote": "the central processor for general work, the graphics processor for massively parallel work, the programmable chip for exact timing, the graphics memory that holds the scene, and computers built to answer on a fixed schedule.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "GPUs are suited to rendering camera images, tracing light or radar rays through scenes, and simulating millions of soil grains.",
+   "quote": "they are good at rendering camera images, tracing light rays or radar rays through a scene, and simulating millions of soil grains.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t336",
+    "t118",
+    "t181"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "VRAM is the GPU's own memory, and the whole simulated job site, its textures and its material properties must fit in VRAM.",
+   "quote": "VRAM is the GPU's own memory. A whole job site, its textures and its material properties must fit in it",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t336",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet reports that CARLA on Unreal Engine 5 needs at least 16 GB of VRAM, while cloud GPUs have 48 GB and workstation cards have 96 GB.",
+   "quote": "CARLA on Unreal Engine 5 needing at least 16 GB, cloud GPUs with 48 GB, and workstation cards with 96 GB [Chapter 11]",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    },
+    {
+     "name": "Unreal Engine 5",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t336",
+    "t135"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "FPGAs are used where timing must be exact to the microsecond, such as generating bus signals toward a real control unit.",
+   "quote": "It is used where timing must be exact to the microsecond, for example to generate bus signals toward a real control unit.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t336",
+    "t119",
+    "t120"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In hardware-in-the-loop testing where a real control unit expects a sensor message every 50 milliseconds, missing a message deadline would produce a false test result.",
+   "quote": "For hardware-in-the-loop (HIL) testing, where a real control unit expects a sensor message every 50 milliseconds, missing a deadline would be a false test result.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t153",
+    "t336"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet identifies OPAL-RT's CPU and FPGA systems and dSPACE, Speedgoat and NI real-time products as real-time computing hardware.",
+   "quote": "The booklet names OPAL-RT's CPU and FPGA systems and the dSPACE, Speedgoat and NI real-time products as this class [Chapter 11].",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "OPAL-RT",
+     "kind": "company"
+    },
+    {
+     "name": "dSPACE",
+     "kind": "company"
+    },
+    {
+     "name": "Speedgoat",
+     "kind": "company"
+    },
+    {
+     "name": "NI",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t336",
+    "t328"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Braking-logic tests on object lists are highly parallel CPU workloads suited to commodity servers.",
+   "quote": "Braking-logic tests on object lists are CPU work, very parallel, suited to commodity servers.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t336",
+    "t185",
+    "t156"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Rigid vehicle dynamics is a CPU workload that often runs faster than real time.",
+   "quote": "Rigid vehicle dynamics is CPU work, often faster than real time.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t179",
+    "t336",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Photorealistic camera simulation and lidar simulation are GPU workloads for which VRAM and ray tracing matter.",
+   "quote": "Camera photorealism and lidar are GPU work, where VRAM and ray tracing matter.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t336",
+    "t89",
+    "t92",
+    "t118"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Physics-based radar simulation can be very GPU-intensive.",
+   "quote": "Physics-based radar can be very GPU-intensive.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t336",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Discrete-element soil simulation is highly compute-intensive and suits dedicated GPU or high-performance computing workers.",
+   "quote": "Discrete-element soil is highly compute-intensive and suits dedicated GPU or high-performance computing workers",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t338",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Chrono's continuum terrain simulation runs 50 to 200 times slower than real time.",
+   "quote": "Chrono's continuum terrain runs 50 to 200 times slower than real time.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Chrono",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Hardware-in-the-loop testing needs deterministic real-time CPU, FPGA and input-output hardware; timing matters more than throughput.",
+   "quote": "HIL needs deterministic real-time CPU, FPGA and input-output hardware, where timing matters more than throughput.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t153",
+    "t336"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Test campaign orchestration and results handling are CPU-, database- and storage-heavy workloads.",
+   "quote": "Campaign orchestration and results are CPU, database and storage heavy [Chapter 11].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t233",
+    "t341",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A simulation program has no single hardware requirement because its workloads differ by orders of magnitude and need different hardware in different places.",
+   "quote": "There is no single hardware requirement because the workloads differ by orders of magnitude",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t336",
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The real-time factor achieved by each simulation tool on the actual machine geometry and sensor set determines what the compute budget buys and must be benchmarked rather than assumed.",
+   "quote": "the real-time factor each tool reaches on the actual machine geometry and sensor set decides what the compute budget buys, and it must be benchmarked rather than assumed [Chapter 11].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t336"
+   ],
+   "importance": 3
+  }
+ ]
+}

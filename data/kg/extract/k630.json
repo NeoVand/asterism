@@ -1,0 +1,311 @@
+{
+ "chunkId": "k630",
+ "hash": "69930f4efcd12436",
+ "facts": [
+  {
+   "text": "Verification asks whether a system was built correctly according to its specification; validation asks whether the right system was built to work in the real world for its intended use. V&V is the pair.",
+   "quote": "Verification asks \"did we build the thing correctly, according to its specification?\", validation asks \"did we build the right thing, one that works in the real world for its intended use?\", and V&V is the pair.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t65"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simulation-model verification checks whether equations are implemented and solved correctly, including whether software matches the mathematics and numerical error is small.",
+   "quote": "Verification asks whether the equations are implemented and solved correctly: does the software match the mathematics, and is the numerical error small?",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10,
+    12
+   ],
+   "entities": [],
+   "terms": [
+    "t236",
+    "t65"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simulation-model validation compares predictions with physical measurements to judge whether a model represents the real machine, sensor or environment closely enough for its purpose.",
+   "quote": "Validation asks whether the model represents the real machine, sensor or environment closely enough for its purpose, judged by comparing predictions with physical measurements [Chapters 10, 12].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10,
+    12
+   ],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t238",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Adding uncertainty quantification to verification and validation gives the trio VVUQ.",
+   "quote": "Adding uncertainty quantification gives the trio VVUQ.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t235"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The under-four-month validation window refers to product validation, whereas validating a brake model refers to simulation-model validation.",
+   "quote": "The under-four-month validation window refers to the product. Validating a brake model refers to the simulation.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t65",
+    "t237",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Virtual validation uses simulation to help validate the product and is possible only once the simulation models have themselves been validated.",
+   "quote": "\"Virtual validation\" means using simulation to help validate the product, which is only possible once the models have themselves been validated.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t127",
+    "t237",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Calibration is not model validation: tuning a model to match a test and then showing agreement with that same test proves nothing.",
+   "quote": "Calibration is not validation: tuning a model to match a test and then showing it matches that test proves nothing [Chapter 10].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t263"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Agreement with another model cannot validate a simulation model.",
+   "quote": "A model cannot be validated by agreement with another model [Chapter 10].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Model calibration data, validation data and withheld confirmation data must remain separate.",
+   "quote": "Calibration data, validation data and withheld confirmation data stay separate",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t263",
+    "t237",
+    "t231"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Failed model-validation cases must remain in the record.",
+   "quote": "failed validation cases stay in the record [Chapter 10].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t341"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Among heavy-machinery standards, ISO 13849-2 lists simulation among validation methods.",
+   "quote": "Among heavy-machinery standards, ISO 13849-2 lists simulation among validation methods",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12
+   ],
+   "entities": [
+    {
+     "name": "ISO 13849-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t287",
+    "t65",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Among heavy-machinery standards, ISO 18497-4 lists simulation among verification methods.",
+   "quote": "ISO 18497-4 among verification methods",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12
+   ],
+   "entities": [
+    {
+     "name": "ISO 18497-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t288",
+    "t65",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No heavy-machinery standard sets rules for virtual-only validation.",
+   "quote": "but none sets rules for virtual-only validation [Chapter 12].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12
+   ],
+   "entities": [],
+   "terms": [
+    "t271",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Systems-engineering V&V planning is identified as the strongest backbone for the collision-mitigation validation program.",
+   "quote": "Systems-engineering V&V planning is named the strongest backbone for the program [Chapter 12].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12
+   ],
+   "entities": [],
+   "terms": [
+    "t65",
+    "t351"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A model never compared with the production-intent sensor, mounting, dynamics and environment is a hypothesis, not evidence.",
+   "quote": "a model never compared with the production-intent sensor, mounting, dynamics and environment \"is a hypothesis, not evidence\" [Chapter 1].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t237",
+    "t70",
+    "t100",
+    "t179"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Physical tests anchor product validation, while simulation multiplies coverage inside the validated model range.",
+   "quote": "physical tests anchor, simulation multiplies coverage inside the validated range",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t216",
+    "t261",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The fraction of physical testing that can be replaced by simulation must be an output of simulation-credibility work, not an input assumption.",
+   "quote": "the fraction of physical testing that can be replaced is an output of the credibility work, not an input assumption [Chapters 1, 13].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t264",
+    "t234",
+    "t216"
+   ],
+   "importance": 3
+  }
+ ]
+}

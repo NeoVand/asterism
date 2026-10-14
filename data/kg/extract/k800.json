@@ -1,0 +1,214 @@
+{
+ "chunkId": "k800",
+ "hash": "3188d85c4f57f9dd",
+ "facts": [
+  {
+   "text": "Data lineage is the recorded history of where every piece of data came from and what was done to it; the independence rule requires that data used to judge a system had no part in building or tuning that system.",
+   "quote": "Data lineage is the recorded history of where every piece of data came from and what was done to it, and the independence rule says that the data used to judge a system must have had no part in building or tuning it.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t231",
+    "t113",
+    "t220"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For the whole validation program, validation and estimation data must be real or physically independent of whatever generated the training data, using different 3D assets, sites, people and generator, with all differences documented in a data-lineage record.",
+   "quote": "validation and estimation data must be real or physically independent of whatever generated the training data, with different 3D assets, sites, people and generator, all documented in a data-lineage record.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t231",
+    "t113",
+    "t114",
+    "t130"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Using the same simulator assets or generative model for training and testing contaminates validation because the detector may have learned the generator's quirks rather than the world.",
+   "quote": "Validation is contaminated when the same simulator assets or generative model are used for training and testing, because the detector may have learned the generator's quirks rather than the world.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t231",
+    "t219",
+    "t114",
+    "t115",
+    "t112"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet identifies its data-independence rule as consistent with the data-centric lifecycle in ISO/PAS 8800:2024, a road-vehicle publication on safety and artificial intelligence.",
+   "quote": "The booklet notes that this is consistent with the data-centric lifecycle in ISO/PAS 8800:2024, a road-vehicle publication on safety and artificial intelligence [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ISO/PAS 8800",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t231",
+    "t289",
+    "t79"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The data-independence rule also governs tuning without machine learning.",
+   "quote": "The same rule governs tuning without machine learning.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t231",
+    "t220",
+    "t197"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Grouped data splits keep whole sites and weather episodes on one side of the tuning-versus-evaluation boundary.",
+   "quote": "Grouped splits keep whole sites and weather episodes on one side of the line",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t231",
+    "t45"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The audit set is drawn before tuning using a fixed seed and content hash.",
+   "quote": "the audit set is drawn before tuning with a fixed seed and content hash",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t231",
+    "t218"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Every executed run carries a provenance manifest listing, among other things, the requirement, hazard, scenario-family version, parameter vector, machine and sensor configuration, software build, simulator version, random seed, raw-data checksums and verdict.",
+   "quote": "every executed run carries a provenance manifest listing, among other things, the requirement, hazard, scenario-family version, parameter vector, machine and sensor configuration, software build, simulator version, random seed, raw-data checksums and verdict.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t231",
+    "t162",
+    "t64",
+    "t341",
+    "t199"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A run's provenance manifest lets an assessor check months later that no estimation case ever entered the tuning loop.",
+   "quote": "That manifest lets an assessor check, months later, that no estimation case ever touched the tuning loop [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t231",
+    "t220",
+    "t269"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet recommends a detector-development loop anchored in real data: real off-road logs feed the distributions, targeted gaps are synthesized, the detector is trained, and testing uses untouched real data.",
+   "quote": "The booklet's recommended loop is anchored in real data: real off-road logs feed the distributions, targeted gaps are synthesized, the detector is trained, and it is tested on untouched real data.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t113",
+    "t114",
+    "t112",
+    "t220",
+    "t231"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Without data lineage, the program cannot prove that real test data remained untouched by training or tuning.",
+   "quote": "Without lineage, \"untouched\" cannot be proven [Chapter 9].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t231",
+    "t113",
+    "t220"
+   ],
+   "importance": 3
+  }
+ ]
+}

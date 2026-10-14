@@ -1,0 +1,269 @@
+{
+ "chunkId": "k703",
+ "hash": "e8fe630dc0cce68e",
+ "facts": [
+  {
+   "text": "In simulation, a material describes how a surface responds to light, radio waves or sound; ASAM OpenMATERIAL 3D is a standard format for storing those properties for camera, lidar and radar.",
+   "quote": "In simulation, a material is the description of how a surface responds to light, radio waves or sound, and ASAM OpenMATERIAL 3D is a standard format for storing those properties for camera, lidar and radar.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t136"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simulator materials must specify sensor-specific properties: lidar reflectance at the laser wavelength and each angle; radar permittivity, conductivity and roughness; camera color, roughness and shininess; and ultrasonic sound absorption and scattering.",
+   "quote": "for lidar, its reflectance at the laser's wavelength and at each angle; for radar, its electrical properties (permittivity and conductivity) and roughness; for a camera, its color, roughness and shininess; for ultrasonic sensors, how it absorbs and scatters sound",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t136",
+    "t92",
+    "t94",
+    "t89",
+    "t95"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet finds that a material's non-visual response cannot be derived from a visual texture.",
+   "quote": "The booklet's key finding is that non-visual response cannot be derived from a visual texture.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t136",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The standards association ASAM released ASAM OpenMATERIAL 3D version 1.0.0 on 3 April 2025.",
+   "quote": "ASAM OpenMATERIAL 3D version 1.0.0, released 3 April 2025 by the standards association ASAM",
+   "kind": "event",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    },
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t136",
+    "t272"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenMATERIAL 3D version 1.0.0 stores wavelength-dependent lookup tables for lidar, radar and camera properties, with license information per material.",
+   "quote": "stores wavelength-dependent lookup tables for lidar, radar and camera properties, with license information per material",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t136",
+    "t92",
+    "t94",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Weather, lighting and dirt on the sensor housing are outside the scope of ASAM OpenMATERIAL 3D version 1.0.0.",
+   "quote": "weather, lighting and dirt on the sensor housing are outside its scope",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t136",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenMATERIAL 3D version 1.1.0 was planned for October 2026.",
+   "quote": "a version 1.1.0 was planned for October 2026",
+   "kind": "event",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    11
+   ],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t136"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Different lidar wavelengths need separate material definitions.",
+   "quote": "Different lidar wavelengths need separate definitions.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t136",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A ray-traced radar simulation using standard material values produced about 12% of the real point density: 251 versus 2,057 points per frame. The passage attributes the discrepancy to real radar's diffuse scattering and multiple bounces.",
+   "quote": "a ray-traced radar simulation using standard material values produced about 12% of the real point density (251 against 2,057 points per frame), because real radar includes diffuse scattering and multiple bounces",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t136",
+    "t118",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No published material datasets were found for job-site materials—rock, wet clay, gravel, steel buckets and high-visibility clothing—at lidar wavelengths or radar bands.",
+   "quote": "No published material datasets for job-site materials (rock, wet clay, gravel, steel buckets, high-visibility clothing) at lidar wavelengths or radar bands were found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t136",
+    "t92",
+    "t94",
+    "t107"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No published ultrasonic or thermal material datasets were found.",
+   "quote": "and no ultrasonic or thermal datasets either",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t136",
+    "t95",
+    "t96",
+    "t107"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The material layer required by both standards and vendors does not exist for mines and quarries, so the collision mitigation validation program would have to measure the material properties itself.",
+   "quote": "The material layer that both the standards and the vendors require does not exist for mines and quarries, so the program would have to measure it itself",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t136",
+    "t127",
+    "t184"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor simulation of dust, wet rock and metal clutter remains unvalidated until the collision mitigation validation program measures the missing mine and quarry material properties.",
+   "quote": "until then, sensor simulation of dust, wet rock and metal clutter remains unvalidated",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t136",
+    "t102",
+    "t104",
+    "t234"
+   ],
+   "importance": 3
+  }
+ ]
+}

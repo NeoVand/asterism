@@ -1,0 +1,339 @@
+{
+ "chunkId": "k900",
+ "hash": "2bfbfffba3d7df3c",
+ "facts": [
+  {
+   "text": "Data replay feeds recorded real sensor data back into braking software; hardware-in-the-loop (HIL) hardware consists of real-time computing and signal equipment that lets a real control unit run against a simulated machine.",
+   "quote": "Data replay feeds recorded real sensor data back into the braking software, and hardware-in-the-loop (HIL) hardware is the real-time computer and signal equipment that lets the real control unit run against a simulated machine.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t328",
+    "t155",
+    "t148"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Data injection can feed simulated or recorded signals into the sensor path, including raw camera data behind the imager or radar detections, together with recorded J1939 or CAN bus traffic and restbus models of the remaining network.",
+   "quote": "Data injection means pushing simulated or recorded signals into the sensor path, for example raw camera data behind the imager or radar detections, together with recorded J1939 or CAN (controller area network) bus traffic and \"restbus\" models of the rest of the network [Chapter 7].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    },
+    {
+     "name": "CAN",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t149",
+    "t120",
+    "t328"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet names dSPACE SCALEXIO for real-time HIL systems, VEOS for PC-based virtual ECU simulation, and AURELION.",
+   "quote": "dSPACE SCALEXIO (real-time HIL systems), VEOS (PC-based virtual ECU simulation) and AURELION",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    11
+   ],
+   "entities": [
+    {
+     "name": "dSPACE SCALEXIO",
+     "kind": "tool"
+    },
+    {
+     "name": "VEOS",
+     "kind": "tool"
+    },
+    {
+     "name": "AURELION",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t328"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet names NI VeriStand with PXI and CompactRIO; a PXIe-8842 controller is listed at about USD 5,200, which covers only the controller, not a HIL bench.",
+   "quote": "NI VeriStand with PXI and CompactRIO (a PXIe-8842 controller is listed at about USD 5,200, but that is only a controller, not a bench)",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    11
+   ],
+   "entities": [
+    {
+     "name": "NI VeriStand",
+     "kind": "tool"
+    },
+    {
+     "name": "PXI",
+     "kind": "tool"
+    },
+    {
+     "name": "CompactRIO",
+     "kind": "tool"
+    },
+    {
+     "name": "PXIe-8842",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t328",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet names Speedgoat with Simulink Real-Time as HIL hardware and software.",
+   "quote": "Speedgoat with Simulink Real-Time",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Speedgoat",
+     "kind": "company"
+    },
+    {
+     "name": "Simulink Real-Time",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t328"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet names OPAL-RT 4DV-SIM and OP5707XG2; OP5707XG2 combines a CPU with an FPGA, and the booklet names off-highway and defense users.",
+   "quote": "OPAL-RT 4DV-SIM and the OP5707XG2, which combines a CPU with a field-programmable gate array (FPGA), with named off-highway and defense users",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    11
+   ],
+   "entities": [
+    {
+     "name": "OPAL-RT 4DV-SIM",
+     "kind": "tool"
+    },
+    {
+     "name": "OP5707XG2",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t328",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet names IPG's model-, software-, hardware-, and vehicle-in-the-loop offerings, along with Mevea, Vortex, and Applied Intuition HIL.",
+   "quote": "IPG's model-, software- and hardware-in-the-loop (MIL, SIL, HIL) and vehicle-in-the-loop; Mevea, Vortex and Applied Intuition HIL",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    11
+   ],
+   "entities": [
+    {
+     "name": "IPG",
+     "kind": "company"
+    },
+    {
+     "name": "Mevea",
+     "kind": "tool"
+    },
+    {
+     "name": "Vortex",
+     "kind": "tool"
+    },
+    {
+     "name": "Applied Intuition HIL",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t328",
+    "t145",
+    "t151"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet names RoadRunner with the Automated Driving Toolbox for reconstructing and replaying recorded scenarios.",
+   "quote": "RoadRunner with the Automated Driving Toolbox for reconstructing and replaying recorded scenarios.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    11
+   ],
+   "entities": [
+    {
+     "name": "RoadRunner",
+     "kind": "tool"
+    },
+    {
+     "name": "Automated Driving Toolbox",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t155",
+    "t328"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO/TS 21815-2:2021 defines the J1939 command interface for stop, slow down, and motion inhibit, which a bench can emulate between a collision-avoidance device and the machine.",
+   "quote": "ISO/TS 21815-2:2021 defines the J1939 command interface (stop, slow down, motion inhibit) that a bench can emulate between the collision-avoidance device and the machine [Chapters 7, 11].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    11
+   ],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    },
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t120",
+    "t328"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Vector tools are not discussed in the booklet.",
+   "quote": "Vector tools are not discussed in the booklet.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Vector",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t328"
+   ],
+   "importance": 1
+  },
+  {
+   "text": "HIL is identified as the only way to test ECU timing and interfaces before the machine exists.",
+   "quote": "HIL is the only way to test ECU timing and interfaces before the machine exists",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t119",
+    "t153"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor injection is sensor- and ECU-specific, and raw-signal benches require the highest integration effort.",
+   "quote": "sensor injection is sensor- and ECU-specific and raw-signal benches are the highest integration effort.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t149",
+    "t328",
+    "t119"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends a HIL bench using the ISO/TS 21815-2 interface as a mid-2027 target, but advises keeping the bench off the critical path unless interfaces stabilize early.",
+   "quote": "The booklet suggests a HIL bench on the ISO/TS 21815-2 interface as a mid-2027 target that should not be on the critical path unless interfaces stabilize early [Chapters 1, 11].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    11
+   ],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t328",
+    "t344",
+    "t280"
+   ],
+   "importance": 3
+  }
+ ]
+}

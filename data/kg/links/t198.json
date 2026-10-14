@@ -1,0 +1,115 @@
+{
+ "key": "t198",
+ "hash": "0ac6e5b577136242",
+ "synopsis": "Across 100-plus site types, 10-plus scenarios, weather/light conditions and machine variants, the booklet estimates more than 7,000 validation strata; adding finer parameters produces millions of combinations, making exhaustive field coverage infeasible [f131, f11331, f132]. It recommends structuring testing through an operating-domain taxonomy, a scenario catalog and parameterized scenario families, with site dimensions represented as attributes and impossible combinations explicitly excluded [f119, f6727, f6762]. Scenario counts alone do not establish coverage: nearly identical sites can contribute little diversity, expert catalogs miss unanticipated scenarios, and no source quantifies how environmental diversity relates to failures found [f4064, f6775, f4379]. A four-month simulation window forces tiered fidelity, while simulation can cover the otherwise infeasible interior only after physical boundary testing and independent validation establish predictive credibility [f13548, f8061]. Combinatorial testing can shrink test suites but does not establish that low-order interactions suffice for collision avoidance; the booklet also recommends separating coverage, failure discovery and statistical estimation streams [f4332, f11334].",
+ "relations": [
+  {
+   "a": "f131",
+   "b": "f5206",
+   "type": "same",
+   "note": "Both estimate more than 7,000 validation cells across sites, scenarios, conditions and machines."
+  },
+  {
+   "a": "f131",
+   "b": "f5468",
+   "type": "same",
+   "note": "Both give the same greater-than-7,000-cell estimate."
+  },
+  {
+   "a": "f5206",
+   "b": "f5468",
+   "type": "same",
+   "note": "Repeated estimate includes approximately seven weather and light conditions."
+  },
+  {
+   "a": "f132",
+   "b": "f5207",
+   "type": "same",
+   "note": "Both conclude exhaustive field coverage is infeasible and sampling plus simulation unavoidable."
+  },
+  {
+   "a": "f119",
+   "b": "f6637",
+   "type": "same",
+   "note": "Both recommend three test-space layers instead of one Cartesian matrix."
+  },
+  {
+   "a": "f6637",
+   "b": "f6703",
+   "type": "same",
+   "note": "Both prescribe taxonomy, catalog and parameterized families together."
+  },
+  {
+   "a": "f119",
+   "b": "f13289",
+   "type": "same",
+   "note": "Glossary restates the three-layer response to combinatorial explosion."
+  },
+  {
+   "a": "f3747",
+   "b": "f4332",
+   "type": "same",
+   "note": "Both warn that smaller combinatorial suites do not prove low-order collision-avoidance coverage sufficient."
+  },
+  {
+   "a": "f10779",
+   "b": "f11040",
+   "type": "same",
+   "note": "Both identify unmanageable scenario lists as a validation risk."
+  },
+  {
+   "a": "f6755",
+   "b": "f6775",
+   "type": "same",
+   "note": "Both limit catalog coverage to scenarios experts anticipated."
+  },
+  {
+   "a": "f8871",
+   "b": "f13548",
+   "type": "same",
+   "note": "Both link the four-month window to limited full-fidelity coverage and tiered testing."
+  },
+  {
+   "a": "f10506",
+   "b": "f218",
+   "type": "same",
+   "note": "Both identify mistaking scenario count for coverage as a central objection."
+  },
+  {
+   "a": "f4064",
+   "b": "f10506",
+   "type": "supports",
+   "note": "Many nearly identical sites illustrate why scenario counts do not establish coverage."
+  },
+  {
+   "a": "f5469",
+   "b": "f132",
+   "type": "supports",
+   "note": "Requiring 59–299 physical trials per cell explains exhaustive field testing's impracticality."
+  },
+  {
+   "a": "f4084",
+   "b": "f6727",
+   "type": "elaborates",
+   "note": "Lists concrete dimensions suitable for attribute-based operating-domain representation."
+  },
+  {
+   "a": "f8061",
+   "b": "f7889",
+   "type": "depends",
+   "note": "Credible simulation sweeps require physical boundary testing and independent predictive validation."
+  },
+  {
+   "a": "f9322",
+   "b": "f9321",
+   "type": "elaborates",
+   "note": "Deterministic object-list testing supplies the low-fidelity tier for millions of braking combinations."
+  },
+  {
+   "a": "f11042",
+   "b": "f11040",
+   "type": "depends",
+   "note": "High-severity coverage risk motivates hazard classes, boundaries, equivalence classes and uncertainty sampling."
+  }
+ ]
+}

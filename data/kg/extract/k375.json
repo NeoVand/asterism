@@ -1,0 +1,1063 @@
+{
+ "chunkId": "k375",
+ "hash": "064324deb17b5d39",
+ "facts": [
+  {
+   "text": "No single off-road scenario language covers the collision-mitigation scenario-description problem.",
+   "quote": "There is no single off-road scenario language that covers this problem.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t232",
+    "t1",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815 is the most directly relevant safety and test standard family for this off-road collision-mitigation problem, but ISO 21815 is not a scenario-description language.",
+   "quote": "ISO 21815 is the most directly relevant safety and test standard family, but it is not a scenario-description language [1, 2, 4, 5].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    4,
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t232",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM OpenSCENARIO XML version 1.4.0 is dated 2026; a secondary listing reports June 2026.",
+   "quote": "1.4.0 (2026; reported June 2026 in a secondary listing) [70, 72]",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    70,
+    72
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenSCENARIO XML",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t232",
+    "t137"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenSCENARIO XML has poor-to-moderate fit for off-road work without roads or lanes: precise, synchronised manoeuvres for road vehicles, pedestrians and traffic participants are tied to road networks.",
+   "quote": "Poor to moderate: precise, synchronised manoeuvres for road vehicles, pedestrians and traffic participants, tied to road networks",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenSCENARIO XML",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t232",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenSCENARIO XML permits entities to be placed in world coordinates, but terrain and slopes must come from external assets.",
+   "quote": "entities can be placed in world coordinates, but terrain and slopes come from external assets.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenSCENARIO XML",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t232",
+    "t131",
+    "t173"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenSCENARIO DSL version 2.2.0 is dated 19 March 2026.",
+   "quote": "2.2.0, 19 March 2026 [69]",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    69
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenSCENARIO DSL",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t232",
+    "t137"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenSCENARIO DSL has moderate fit for off-road work: abstract and logical scenarios, parameter variation and KPIs are first-class concepts that suit scenario families.",
+   "quote": "Moderate: abstract and logical scenarios, parameter variation and KPIs are first-class concepts and suit scenario families",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenSCENARIO DSL",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t232",
+    "t142",
+    "t199",
+    "t224"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The ASAM OpenSCENARIO DSL domain model is on-road.",
+   "quote": "the domain model is on-road",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenSCENARIO DSL",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t232"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Tool support for ASAM OpenSCENARIO DSL is limited; a 2026 preprint addresses compiling OpenSCENARIO 2.1 for CARLA.",
+   "quote": "tool support for the DSL is limited (2026 preprint on compiling OpenSCENARIO 2.1 for CARLA) [73].",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    73
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenSCENARIO DSL",
+     "kind": "standard"
+    },
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t232",
+    "t322"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenDRIVE version 1.9.0 is dated May 2026.",
+   "quote": "1.9.0, May 2026 [71, 72]",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    71,
+    72
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenDRIVE",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenDRIVE has poor fit for off-road work without roads or lanes because ASAM OpenDRIVE describes road networks, lane geometry, road marks and road objects.",
+   "quote": "Poor: describes road networks, lane geometry, road marks and road objects",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenDRIVE",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenDRIVE can model haul roads and structured site roads, but dig faces, stockpiles and free terrain require additional representations.",
+   "quote": "haul roads and structured site roads can be modelled, dig faces, stockpiles and free terrain cannot without additional representations.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenDRIVE",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t12",
+    "t13",
+    "t131"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenCRG represents road-surface elevation grids; ASAM OpenCRG's status was not verified.",
+   "quote": "Road-surface elevation grids (status not verified)",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenCRG",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t131"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenCRG has moderate fit for haul-road surfaces, but not for open terrain.",
+   "quote": "Moderate for haul-road surfaces; not for open terrain",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenCRG",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t12",
+    "t131"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenODD version 1.0.0 is dated 3 April 2025.",
+   "quote": "1.0.0, 3 April 2025 [10]",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    10
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenODD",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t140"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenODD has moderate fit for off-road work and provides a technology-independent model, custom taxonomies, and restrictive and permissive definitions.",
+   "quote": "Moderate: technology-independent model, custom taxonomies, restrictive and permissive definitions",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenODD",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t140",
+    "t137"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenODD's default attributes are on-road, so the manufacturer or industry must author and govern an off-road taxonomy.",
+   "quote": "default attributes on-road, so an off-road taxonomy must be authored and governed by the manufacturer or the industry.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenODD",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t140",
+    "t137"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2025 preprint formalises operational design domains in the Pkl language.",
+   "quote": "A 2025 preprint formalises ODDs in the Pkl language [74].",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    74
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Pkl",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t140"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The research did not verify the status of ASAM OpenLABEL, OpenXOntology, OSI or FMI/SSP.",
+   "quote": "ASAM OpenLABEL, OpenXOntology, OSI, FMI/SSP | Not verified in the research",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenLABEL",
+     "kind": "standard"
+    },
+    {
+     "name": "ASAM OpenXOntology",
+     "kind": "standard"
+    },
+    {
+     "name": "ASAM Open Simulation Interface",
+     "kind": "standard"
+    },
+    {
+     "name": "Functional Mock-up Interface",
+     "kind": "standard"
+    },
+    {
+     "name": "System Structure and Parameterization",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t138",
+    "t139"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "OSI provides sensor and ground-truth interfaces; OSI is domain-neutral and transfers well to off-road work.",
+   "quote": "OSI (sensor and ground-truth interfaces) and FMI/SSP (model co-simulation) are domain-neutral and transfer well",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM Open Simulation Interface",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t138",
+    "t105",
+    "t84"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "FMI/SSP supports model co-simulation and is domain-neutral, transferring well to off-road work.",
+   "quote": "FMI/SSP (model co-simulation) are domain-neutral and transfer well",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Functional Mock-up Interface",
+     "kind": "standard"
+    },
+    {
+     "name": "System Structure and Parameterization",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t139"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenLABEL is useful for dataset annotation.",
+   "quote": "OpenLABEL is useful for dataset annotation.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenLABEL",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t106"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM's 2025 high-fidelity OSI project is extending sensor interfaces.",
+   "quote": "ASAM's 2025 high-fidelity OSI project is extending sensor interfaces [62]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    62
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    },
+    {
+     "name": "ASAM Open Simulation Interface",
+     "kind": "standard"
+    },
+    {
+     "name": "ASAM high-fidelity OSI project",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t138",
+    "t84"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM's website describes the OpenX standards as \"currently in maintenance mode\" in 2026.",
+   "quote": "ASAM's website describes the OpenX standards as \"currently in maintenance mode\" (2026) [69]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    69
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    },
+    {
+     "name": "ASAM OpenX",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The \"ASAM OpenX in Off-Road Applications\" concept project was listed as active when accessed in October 2026.",
+   "quote": "an \"ASAM OpenX in Off-Road Applications\" concept project is listed as active (accessed October 2026) [78]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    78
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenX in Off-Road Applications",
+     "kind": "program"
+    },
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t137"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The assessment of ASAM OpenX overall anticipates slower evolution of core formats and considers off-road extensions unlikely before mid-2027.",
+   "quote": "Slower evolution of the core formats; off-road extensions unlikely before mid-2027",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenX",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t232"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Scenic 3 has peer-reviewed coverage at CAV 2023 and open-source documentation.",
+   "quote": "Peer-reviewed, CAV 2023 [75]; open-source documentation [77]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    75,
+    77
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Scenic 3",
+     "kind": "tool"
+    },
+    {
+     "name": "CAV 2023",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t232"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scenic 3 has good fit for off-road work: Scenic 3 supports 3D geometry, occlusion-aware visibility and probabilistic placement without lanes, and is simulator-agnostic.",
+   "quote": "Good: 3D geometry, occlusion-aware visibility, probabilistic placement without lanes, simulator-agnostic",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Scenic 3",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t232",
+    "t103",
+    "t130",
+    "t203"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Scenic 3 integrates with VerifAI for falsification.",
+   "quote": "integrates with VerifAI for falsification [29, 76]",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    29,
+    76
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Scenic 3",
+     "kind": "tool"
+    },
+    {
+     "name": "VerifAI",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t232",
+    "t205"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scenic 3 has been demonstrated beyond road vehicles, including robotics and a Mars-rover-over-rocks example; the passage labels this evidence as independent and vendor project documentation.",
+   "quote": "demonstrated beyond road vehicles (robotics, a Mars-rover-over-rocks example).",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Scenic 3",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t232",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scenic 3 is not an ISO or ASAM standard; adopters must provide mappings to requirements, rigs and exchange formats.",
+   "quote": "Not an ISO or ASAM standard; mappings to requirements, rigs and exchange formats fall on the adopter.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Scenic 3",
+     "kind": "tool"
+    },
+    {
+     "name": "ISO",
+     "kind": "organization"
+    },
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t232",
+    "t63",
+    "t64"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "GeoScenario and CommonRoad were not verified in the research.",
+   "quote": "GeoScenario, CommonRoad | Not verified in the research",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "GeoScenario",
+     "kind": "tool"
+    },
+    {
+     "name": "CommonRoad",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t232"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "GeoScenario and CommonRoad have poor fit for off-road work because both are built around road lanelets and traffic.",
+   "quote": "Poor: built around road lanelets and traffic",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "GeoScenario",
+     "kind": "tool"
+    },
+    {
+     "name": "CommonRoad",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t232"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The listed editions of the ISO 34501–34505 family include ISO 34502:2022, ISO 34503:2023 and ISO 34504:2024.",
+   "quote": "34502:2022; 34503:2023; 34504:2024",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    9,
+    11,
+    12,
+    13
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 34502",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 34503",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 34504",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t290"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 34505 was published in June 2025.",
+   "quote": "34505 published June 2025 [9, 11, 12, 13]",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    9,
+    11,
+    12,
+    13
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 34505",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t290"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The process in ISO 34501–34505 applies to off-road work, but the standards' content addresses Level 3 and higher road automated-driving systems.",
+   "quote": "Process applies; content is for Level 3 and higher road automated-driving systems.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 34501",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 34502",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 34503",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 34504",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 34505",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t290",
+    "t141"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "EMESRT PR-5A and storyboards are listed at Revision 3.0, September 2024.",
+   "quote": "Rev 3.0, September 2024 [6, 7, 8]",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    6,
+    7,
+    8
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMESRT PR-5A",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t304"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "EMESRT PR-5A and storyboards provide good off-road scenario content covering mining hazards, but are not machine-readable.",
+   "quote": "Good for content (mining hazards); not machine-readable. **Expert opinion**",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMESRT PR-5A",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t304",
+    "t232",
+    "t46"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ODD-UM is dated 2022, the unstructured-environment ODD is dated 2024, and the agricultural ODD framework is a November 2025 preprint.",
+   "quote": "ODD-UM; unstructured-environment ODD; agricultural ODD framework | 2022; 2024; November 2025 preprint [14, 16, 17]",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    14,
+    16,
+    17
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ODD-UM",
+     "kind": "method"
+    },
+    {
+     "name": "unstructured-environment ODD",
+     "kind": "method"
+    },
+    {
+     "name": "agricultural ODD framework",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t140"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ODD-UM, the unstructured-environment ODD and the agricultural ODD framework offer good concepts for off-road work, but are not standards.",
+   "quote": "Good concepts; not standards. **Independent**",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ODD-UM",
+     "kind": "method"
+    },
+    {
+     "name": "unstructured-environment ODD",
+     "kind": "method"
+    },
+    {
+     "name": "agricultural ODD framework",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t140",
+    "t271"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 18497 Parts 1–4, 2024 editions, were published in July 2024.",
+   "quote": "ISO 18497-1 to -4:2024 | Published July 2024 [79, 80]",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    79,
+    80
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 18497-1",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 18497-2",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 18497-3",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 18497-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t288"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 18497-2 covers obstacle protection systems for agricultural applications.",
+   "quote": "Agricultural: Part 2 covers obstacle protection systems",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 18497-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t288",
+    "t22"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 18497-4 covers verification methods and validation principles for agricultural applications.",
+   "quote": "Part 4 covers verification methods and validation principles.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 18497-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t288",
+    "t65"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The agricultural ISO 18497-1–4 family is a close cousin of the heavy off-road collision-mitigation function under study.",
+   "quote": "A close cousin of the function under study. **Independent**",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 18497-1",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 18497-2",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 18497-3",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 18497-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t288",
+    "t22",
+    "t1"
+   ],
+   "importance": 2
+  }
+ ]
+}

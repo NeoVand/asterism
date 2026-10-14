@@ -1,0 +1,115 @@
+{
+ "key": "t209",
+ "hash": "21a9baf82ab8ff49",
+ "synopsis": "Statistics are the binding constraint on demonstrating collision-mitigation performance: the reviewed off-road standards specify what to test but supply neither statistical acceptance targets nor detection and false-alarm sample sizes [f125, f324, f5154, f5160]. Sample size follows the claim: with zero misses, 95% one-sided confidence requires 299 independent trials for a miss rate of at most 1%, 2,995 for 0.1%, and 29,956 for 0.01% per claimed population; at 99% confidence these rise to 459, 4,603 and 46,050 [f5201, f6650, f6651, f6652, f6653]. Trials must be independent encounters rather than correlated sensor frames, and release-rate claims require a frozen stratified random sample; checking hundreds of cells separately at 95% confidence also creates chance outcomes, so primary claims should be named beforehand [f130, f12833, f6648, f12172]. Rare-event field proof is difficult: RAND's 2016 road-vehicle analysis required hundreds of millions, sometimes hundreds of billions, of miles, while the synthesis calls for 300 representative hours without unnecessary braking to show fewer than one unnecessary brake per 100 hours [f313, f129, f1993]. Virtual testing can address exposure volume, but large simulated samples do not remove model-form uncertainty, and the real exposure needed for rare false negatives or unintended braking, as well as statistical weather/site generalisation off-road, remains uncertain [f9755, f8182, f8181, f2879]. Real-data detection and false-positive rates with confidence intervals are expected for each environmental condition bin, while no study was found establishing that generatively edited data predict real detection rates at the confidence needed for a braking safety argument [f11102, f4909].",
+ "relations": [
+  {
+   "a": "f313",
+   "b": "f11612",
+   "type": "same",
+   "note": "Both report RAND's enormous driving-mile requirements for demonstrating road-vehicle safety."
+  },
+  {
+   "a": "f313",
+   "b": "f630",
+   "type": "same",
+   "note": "Same 2016 RAND mileage finding; the latter specifies injury and fatality reliability."
+  },
+  {
+   "a": "f126",
+   "b": "f6650",
+   "type": "same",
+   "note": "Both require 299 independent zero-miss trials for the 1% claim at 95% confidence."
+  },
+  {
+   "a": "f126",
+   "b": "f220",
+   "type": "same",
+   "note": "Duplicate 299-trial requirement in the synthesis."
+  },
+  {
+   "a": "f6650",
+   "b": "f5203",
+   "type": "same",
+   "note": "A 1% maximum miss rate is equivalent to at least 99% detection."
+  },
+  {
+   "a": "f127",
+   "b": "f6651",
+   "type": "same",
+   "note": "Both require 2,995 zero-miss trials for a 0.1% miss-rate claim."
+  },
+  {
+   "a": "f128",
+   "b": "f6652",
+   "type": "same",
+   "note": "Both require 29,956 zero-miss trials for a 0.01% miss-rate claim."
+  },
+  {
+   "a": "f5202",
+   "b": "f12834",
+   "type": "same",
+   "note": "Both require 59 successful encounters for 95% detection at 95% confidence."
+  },
+  {
+   "a": "f130",
+   "b": "f5205",
+   "type": "same",
+   "note": "Both define independent encounters, not frames, as the statistical unit."
+  },
+  {
+   "a": "f130",
+   "b": "f12832",
+   "type": "same",
+   "note": "Both require counting independent encounters rather than sensor frames."
+  },
+  {
+   "a": "f9521",
+   "b": "f10015",
+   "type": "same",
+   "note": "Both identify small samples and correlational design as limitations of GAO evidence."
+  },
+  {
+   "a": "f5154",
+   "b": "f5160",
+   "type": "elaborates",
+   "note": "The general testing-volume gap specifically includes detection and false-alarm sample sizes."
+  },
+  {
+   "a": "f12833",
+   "b": "f5205",
+   "type": "supports",
+   "note": "Correlated frames artificially narrow intervals, explaining why encounters must be the statistical unit."
+  },
+  {
+   "a": "f6650",
+   "b": "f6654",
+   "type": "elaborates",
+   "note": "Applying 299 trials across 20 strata produces approximately 6,000 zero-miss trials."
+  },
+  {
+   "a": "f351",
+   "b": "f350",
+   "type": "supports",
+   "note": "Unbiased accelerated road-validation methods substantiate the evidence for compressing statistical proof."
+  },
+  {
+   "a": "f8218",
+   "b": "f8182",
+   "type": "supports",
+   "note": "Precisely estimating model variability cannot reveal omitted phenomena or eliminate model-form uncertainty."
+  },
+  {
+   "a": "f2889",
+   "b": "f2890",
+   "type": "elaborates",
+   "note": "The documented on-road acceptance dispute is anticipated to recur off-road."
+  },
+  {
+   "a": "f10566",
+   "b": "f11102",
+   "type": "elaborates",
+   "note": "The broader requirement adds false positives and enumerates environmental condition bins."
+  }
+ ]
+}

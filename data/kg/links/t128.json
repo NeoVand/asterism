@@ -1,0 +1,115 @@
+{
+ "key": "t128",
+ "hash": "fbc5042552231d57",
+ "synopsis": "Physics-based and data-driven sensor models form a continuum rather than mutually exclusive alternatives: physics models compute causal responses, while learned models reproduce recorded distributions, and neither has an unconditional advantage [f13087, f4463, f4328, f13096]. Physics-based models can respond to changed machines, materials and sensor positions, making them attractive for a program covering different sensor heights, but transfer of validity across mounting positions was not demonstrated; measured job-site material data are also missing, and heavy precipitation or simplified physics can undermine accuracy [f4466, f13097, f5118, f13098, f4470, f4473]. The recommended division of labor is physics-based testing of important sensor effects and selected corner cases, with learned models supporting training, replay editing, scenario variation and robustness testing; hybrids should anchor important physical dimensions in physics and real measurements, but their maturity for safety credit remains unresolved [f4474, f4491, f4919, f5078]. Reduced-order motion and braking surrogates fitted to high-fidelity simulation and tests are common and very fast, suitable for millions of threshold and uncertainty evaluations, but unsafe extrapolation is a risk and no earth-moving transfer benchmark was found [f6105, f6481, f6482, f6479]. ASME V&V 40-2018 and the November 2023 FDA guidance are rated the most transferable credibility framework, but their stated scope is physics-based models, leaving machine-learned perception needing separate assurance [f8077, f8220]. Practical maturity remains uneven: calibrated construction-vehicle twins existed in 2025 but focused on dynamics and digging rather than perception, physics-based lidar is the most mature sensor family, and physics-based ultrasonic simulation was not found in Isaac Sim, Chrono::Sensor or CARLA [f468, f4501, f8547].",
+ "relations": [
+  {
+   "a": "f4466",
+   "b": "f13089",
+   "type": "same",
+   "note": "Both describe causal response enabling extrapolation to new machines and sensor positions."
+  },
+  {
+   "a": "f4466",
+   "b": "f12957",
+   "type": "elaborates",
+   "note": "Glossary identifies ray tracing and adds a comparison with learned models."
+  },
+  {
+   "a": "f5118",
+   "b": "f13097",
+   "type": "contradicts",
+   "note": "Claimed applicability across sensor heights contrasts with unshown transfer of validity."
+  },
+  {
+   "a": "f4328",
+   "b": "f13096",
+   "type": "same",
+   "note": "Both conclude neither physics-based nor learned models have an unconditional advantage."
+  },
+  {
+   "a": "f7644",
+   "b": "f14636",
+   "type": "same",
+   "note": "Both restrict FDA guidance to physics-based or mechanistic models."
+  },
+  {
+   "a": "f8077",
+   "b": "f14626",
+   "type": "same",
+   "note": "Both identify V&V 40 as most transferable while limiting applicability to physics-based models."
+  },
+  {
+   "a": "f7644",
+   "b": "f8220",
+   "type": "depends",
+   "note": "Exclusion of data-driven models creates a separate assurance requirement for learned perception."
+  },
+  {
+   "a": "f6105",
+   "b": "f6477",
+   "type": "same",
+   "note": "Both state fitted reduced-order or surrogate models are very fast."
+  },
+  {
+   "a": "f6105",
+   "b": "f6478",
+   "type": "same",
+   "note": "Both state fitting surrogates to simulation and tests is common practice."
+  },
+  {
+   "a": "f6477",
+   "b": "f6481",
+   "type": "supports",
+   "note": "High speed enables millions of threshold and uncertainty evaluations."
+  },
+  {
+   "a": "f4489",
+   "b": "f13094",
+   "type": "elaborates",
+   "note": "Glossary adds recording fidelity, model examples and training-data dependence to viewpoint weakness."
+  },
+  {
+   "a": "f4487",
+   "b": "f13094",
+   "type": "elaborates",
+   "note": "Chapter explains training dependence as correlation interpolation without preserved physics."
+  },
+  {
+   "a": "f4465",
+   "b": "f13088",
+   "type": "same",
+   "note": "Both describe signal-level physics simulation of material interactions, attenuation and sensor electronics."
+  },
+  {
+   "a": "f8547",
+   "b": "f9276",
+   "type": "elaborates",
+   "note": "Lowest-cost tool-chain assessment adds that Isaac Sim ultrasonic is ray-cast range modeling."
+  },
+  {
+   "a": "f4501",
+   "b": "f12955",
+   "type": "elaborates",
+   "note": "Glossary identifies real-scan-pattern, signal-chain ray-traced lidar as best validated."
+  },
+  {
+   "a": "f4327",
+   "b": "f13098",
+   "type": "contradicts",
+   "note": "Physics-first demand for measured material parameters meets an identified absence of needed measurements."
+  },
+  {
+   "a": "f4919",
+   "b": "f5078",
+   "type": "elaborates",
+   "note": "Hybrid recommendation is qualified by unresolved maturity for safety credit."
+  },
+  {
+   "a": "f12914",
+   "b": "f4919",
+   "type": "supports",
+   "note": "Physics-informed weather generation supports anchoring generative tests in physical dimensions."
+  }
+ ]
+}

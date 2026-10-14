@@ -1,0 +1,115 @@
+{
+ "key": "e:iso/ts 21815-2",
+ "hash": "d32e245d81985b3e",
+ "synopsis": "ISO/TS 21815-2:2021 was published in July 2021 and confirmed in December 2024; it defines the on-board SAE J1939 interface through which a collision-avoidance device requests slowing, stopping or prevention of machine motion [f10725, f2057, f2158]. Its commands distinguish controlled stops from emergency stops, include motion inhibit and prevention of movement from standstill, and exclude automatic steering; the interface also includes capability discovery and a keep-alive signal [f3638, f6237, f3639, f12979]. The interface is explicitly not plug-and-play: manufacturers must agree integration details, machines may report that actions can be overridden, and validation must include end-to-end integration latency [f2159, f6238, f8198]. Vendor precedents include Epiroc's 2021 implementation using a draft interface and Bell's August 2023 statement that Pin 3 E-series ADTs support third-party PDS or CAS integration up to Level 9 through a gateway [f1348, f1839, f1391]. Across chapters, the interface anchors brake requests, evidence reuse and HIL testing; a production-relevant HIL bench could target mid-2027, but should stay off the critical path unless ECU, bus and actuator interfaces stabilise early [f5579, f367, f538, f857]. Planning should include interoperability demonstrations and interface tests, while acknowledging that the review found no simulation provisions, did not review interface-conformance testing content, and reports the specification's warning that collision-avoidance algorithms are not yet mature and well understood [f10726, f11078, f9780, f2661, f8934].",
+ "relations": [
+  {
+   "a": "f367",
+   "b": "f620",
+   "type": "same",
+   "note": "Both identify the standardized interface as a precedent for cross-model evidence reuse."
+  },
+  {
+   "a": "f1391",
+   "b": "f1687",
+   "type": "same",
+   "note": "Both report Bell E-series readiness for third-party systems up to Level 9."
+  },
+  {
+   "a": "f2057",
+   "b": "f10725",
+   "type": "elaborates",
+   "note": "Together specify July 2021 publication and December 2024 confirmation."
+  },
+  {
+   "a": "f5910",
+   "b": "f6237",
+   "type": "same",
+   "note": "Both describe slow, stop and motion-prevention commands; the latter specifies standstill."
+  },
+  {
+   "a": "f2159",
+   "b": "f6239",
+   "type": "same",
+   "note": "Both require additional integration details and explicitly reject plug-and-play implementation."
+  },
+  {
+   "a": "f2159",
+   "b": "f12980",
+   "type": "same",
+   "note": "The glossary repeats the specification's non-plug-and-play limitation."
+  },
+  {
+   "a": "f8320",
+   "b": "f8934",
+   "type": "same",
+   "note": "Both quote the introduction's warning about immature, poorly understood algorithms."
+  },
+  {
+   "a": "f5579",
+   "b": "f13229",
+   "type": "same",
+   "note": "Both anchor the booklet's brake request in the J1939 interface."
+  },
+  {
+   "a": "f538",
+   "b": "f13359",
+   "type": "same",
+   "note": "Both identify HIL as the natural test setting for this intervention interface."
+  },
+  {
+   "a": "f3638",
+   "b": "f12979",
+   "type": "elaborates",
+   "note": "The glossary adds capability discovery and keep-alive signaling to the command description."
+  },
+  {
+   "a": "f2161",
+   "b": "f3402",
+   "type": "elaborates",
+   "note": "Emergency-stop semantics explain one side of the emergency-versus-controlled-stop distinction."
+  },
+  {
+   "a": "f8661",
+   "b": "f538",
+   "type": "supports",
+   "note": "Interface emulation capability supports choosing HIL as the natural test setting."
+  },
+  {
+   "a": "f5280",
+   "b": "f857",
+   "type": "depends",
+   "note": "A production-relevant HIL target depends on the required simulator, models and interfaces."
+  },
+  {
+   "a": "f2159",
+   "b": "f8198",
+   "type": "supports",
+   "note": "Machine-specific integration requirements justify validating end-to-end interface latency."
+  },
+  {
+   "a": "f10513",
+   "b": "f10726",
+   "type": "supports",
+   "note": "Existing site-system compatibility risks motivate demonstrations of interoperability."
+  },
+  {
+   "a": "f5591",
+   "b": "f13359",
+   "type": "supports",
+   "note": "MOSH's laboratory interface bench test supports HIL's role in South African verification."
+  },
+  {
+   "a": "f1348",
+   "b": "f1839",
+   "type": "elaborates",
+   "note": "The Epiroc case adds tagging of all people and machines to the draft-interface implementation."
+  },
+  {
+   "a": "f2661",
+   "b": "f9780",
+   "type": "elaborates",
+   "note": "Unreviewed conformance testing limits interpretation of the review's missing simulation provisions."
+  }
+ ]
+}

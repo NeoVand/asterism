@@ -1,0 +1,115 @@
+{
+ "key": "t307",
+ "hash": "a49f87d9ead55f22",
+ "synopsis": "MOSH supplies industry functional and technical performance requirements and a verification regime used alongside Regulation 8.10; mines check evidence against these requirements, including independent verification at two readiness gates [f1366, f1614, f12289]. Its TRL gates support staged release into an operating domain that widens over time, and a surface CPS TRL7 Stage Gate specification is dated 20 January 2026 [f423, f557]. Surface requirements include 200 m detection, range accuracy of 1.5 m or 10%, warning 2.5–3.0 seconds before intervention, and stop gaps of 1–4 m at speeds up to 10 km/h or 15 m ±5 m above that speed [f2113, f2114, f2115, f2116, f2117]. Critical-failure fail-to-safe and disconnection detection have 500 ms limits, while machine reply has a distinct 50 ms limit; the HIL comparison's description of both as fail-to-safe limits therefore needs clarification [f2359, f5284, f5285, f5698]. University of Pretoria testing reported pass rates of 62% for detection devices, 42% for machine-side systems and 83% for third-party interfaces across 189 tests, with 79% verification tests and 21% development tests; throughput was 1.6 tests per week with an 18-week lead time as of October 2025 [f5178, f5179, f5180]. Planning must account for independent verification across machinery variants with differing braking characteristics and the TRL4 requirement for no false interventions or false warnings, because MOSH warns that nuisance slowing and stopping can disrupt production enough to prompt systems being switched off [f5613, f2119, f3300].",
+ "relations": [
+  {
+   "a": "f174",
+   "b": "f230",
+   "type": "same",
+   "note": "Both state the 200 m surface detection requirement."
+  },
+  {
+   "a": "f174",
+   "b": "f2113",
+   "type": "same",
+   "note": "Synthesis and acceptance chapter repeat the minimum detection range."
+  },
+  {
+   "a": "f2113",
+   "b": "f13995",
+   "type": "elaborates",
+   "note": "Glossary specifies machine-to-machine detection on surface mines."
+  },
+  {
+   "a": "f175",
+   "b": "f231",
+   "type": "same",
+   "note": "Both give warning 2.5–3.0 seconds before intervention."
+  },
+  {
+   "a": "f175",
+   "b": "f2115",
+   "type": "same",
+   "note": "Acceptance chapter repeats the warning interval."
+  },
+  {
+   "a": "f177",
+   "b": "f232",
+   "type": "same",
+   "note": "Both state the 500 ms fail-to-safe requirement."
+  },
+  {
+   "a": "f177",
+   "b": "f2118",
+   "type": "same",
+   "note": "Acceptance chapter repeats the fail-to-safe limit."
+  },
+  {
+   "a": "f2359",
+   "b": "f12075",
+   "type": "same",
+   "note": "Both measure fail-to-safe time from detection of a critical failure."
+  },
+  {
+   "a": "f5284",
+   "b": "f12076",
+   "type": "same",
+   "note": "Both require lost-connection detection within 500 ms."
+  },
+  {
+   "a": "f5284",
+   "b": "f13351",
+   "type": "elaborates",
+   "note": "Glossary adds that the disconnection limit is bench-tested."
+  },
+  {
+   "a": "f5285",
+   "b": "f12077",
+   "type": "same",
+   "note": "Both require machine reply within 50 ms."
+  },
+  {
+   "a": "f5285",
+   "b": "f13352",
+   "type": "elaborates",
+   "note": "Glossary adds bench testing of the machine-reply limit."
+  },
+  {
+   "a": "f178",
+   "b": "f2119",
+   "type": "elaborates",
+   "note": "Acceptance chapter additionally prohibits false warnings at TRL4."
+  },
+  {
+   "a": "f181",
+   "b": "f5178",
+   "type": "elaborates",
+   "note": "Testing chapter adds other component pass rates and the 189-test total."
+  },
+  {
+   "a": "f183",
+   "b": "f5180",
+   "type": "elaborates",
+   "note": "Testing chapter dates throughput and adds the 18-week lead time."
+  },
+  {
+   "a": "f1614",
+   "b": "f12289",
+   "type": "elaborates",
+   "note": "Glossary adds independent verification at two readiness gates."
+  },
+  {
+   "a": "f3300",
+   "b": "f2119",
+   "type": "supports",
+   "note": "Production disruption from nuisance interventions explains the stringent TRL4 acceptance requirement."
+  },
+  {
+   "a": "f5285",
+   "b": "f5698",
+   "type": "contradicts",
+   "note": "Machine-reply timing is labeled a fail-to-safe limit in the HIL comparison."
+  }
+ ]
+}

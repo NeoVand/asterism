@@ -1,0 +1,509 @@
+{
+ "chunkId": "k627",
+ "hash": "1b0a5f7c90497460",
+ "facts": [
+  {
+   "text": "Acceptance criteria are measurable conditions agreed before testing starts that determine whether a result is good enough; pass or fail criteria apply the same idea to an individual test.",
+   "quote": "Acceptance criteria are the measurable conditions, agreed before testing starts, that decide whether a result is good enough, and pass or fail criteria are the same idea applied to one test.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t62"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A good acceptance criterion specifies a quantity, a threshold and the conditions under which the threshold applies.",
+   "quote": "A good acceptance criterion names a quantity, a threshold and the conditions",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t62"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An example acceptance criterion requires a machine reversing at 10 km/h or less on dry gravel to stop with at least 1.0 meter remaining in all 20 runs.",
+   "quote": "\"in reverse at 10 km/h or less on dry gravel, the machine stops with at least 1.0 meter remaining, in all 20 runs\"",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t62",
+    "t16",
+    "t194",
+    "t174"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scenario-level acceptance criteria judge a single maneuver using quantities such as stop gap, impact speed and warning lead time.",
+   "quote": "Scenario-level criteria judge one maneuver (stop gap, impact speed, warning lead time).",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t62",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Statistical acceptance criteria judge rates over time, such as false interventions per 1,000 operating hours.",
+   "quote": "Statistical criteria judge rates over time (false interventions per 1,000 operating hours).",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t62",
+    "t213",
+    "t31"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Model-credibility acceptance criteria judge the simulation itself, for example by requiring predicted stopping distance to be within a stated margin of the measured value on every anchor run.",
+   "quote": "Model-credibility criteria judge the simulation itself (predicted stopping distance within a stated margin of the measured value on every anchor run)",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t62",
+    "t234",
+    "t170",
+    "t258"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 16001 requires detection within 300 milliseconds.",
+   "quote": "ISO 16001 requires detection within 300 milliseconds.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t283",
+    "t88",
+    "t86"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The South African mining specification MOSH requires a detection range of 200 meters.",
+   "quote": "The South African mining specification MOSH requires a 200 meter detection range",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    },
+    {
+     "name": "South Africa",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t302",
+    "t193"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The South African mining specification MOSH requires a warning 2.5 to 3.0 seconds before intervention.",
+   "quote": "a 2.5 to 3.0 second warning before intervention",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    },
+    {
+     "name": "South Africa",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t302",
+    "t29",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The South African mining specification MOSH requires stop gaps of 1.0 to 4.0 meters at speeds of 10 km/h or less, and 15 meters plus or minus 5 meters at speeds above 10 km/h.",
+   "quote": "stop gaps of 1.0 to 4.0 meters at 10 km/h or less and 15 meters plus or minus 5 meters above that",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    },
+    {
+     "name": "South Africa",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t302",
+    "t194",
+    "t169"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The South African mining specification MOSH requires fail-to-safe within 500 milliseconds.",
+   "quote": "fail-to-safe within 500 milliseconds",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    },
+    {
+     "name": "South Africa",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t302",
+    "t55"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The South African mining specification MOSH requires “no false interventions and false warnings” at its laboratory gate.",
+   "quote": "\"no false interventions and false warnings\" at its laboratory gate",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    },
+    {
+     "name": "South Africa",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t302",
+    "t32",
+    "t31",
+    "t72"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No off-road standard or regulation specifies a value for false alarms or unnecessary brake events per operating hour.",
+   "quote": "But no off-road standard or regulation gives a value for false alarms or unnecessary brake events per operating hour.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t62",
+    "t32",
+    "t31",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "False-alarm and unnecessary-braking rate limits must be set as program-level criteria with separate tolerances for advisory warnings, urgent warnings, speed reduction and full braking, because an unnecessary advisory differs from an unnecessary emergency stop of a loaded machine.",
+   "quote": "These must be set as program-level criteria, with separate tolerances for advisory warnings, urgent warnings, speed reduction and full braking, because an unnecessary advisory is not the same as an unnecessary emergency stop of a loaded machine",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t62",
+    "t32",
+    "t31",
+    "t29",
+    "t40"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet's metric list includes true-positive detection, dangerous misses, stopping margin, brake-command latency, availability and time in degraded mode.",
+   "quote": "The booklet's metric list runs from true-positive detection and dangerous misses to stopping margin, brake-command latency, availability and time in degraded mode",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t224",
+    "t108",
+    "t194",
+    "t88"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Acceptance criteria should be set before results are seen.",
+   "quote": "Criteria are set before results are seen",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10,
+    12
+   ],
+   "entities": [],
+   "terms": [
+    "t62",
+    "t218"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NASA's simulation standard requires program-defined acceptance criteria approved by technical authority.",
+   "quote": "NASA's simulation standard requires program-defined acceptance criteria approved by technical authority",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10,
+    12
+   ],
+   "entities": [
+    {
+     "name": "NASA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t242",
+    "t62"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Acceptance criteria are to be derived from safety requirements and agreed before the main test campaign.",
+   "quote": "They are derived from the safety requirements and agreed before the main campaign",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t62",
+    "t63",
+    "t233"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Safety and productivity acceptance criteria should be set jointly: a “no false brakes” target pushes toward late or missed braking, whereas a detection-only target produces a machine that keeps stopping production.",
+   "quote": "Safety and productivity criteria are set jointly, because a \"no false brakes\" target pushes toward late or missed braking while a detection-only target produces a machine that keeps stopping production",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t62",
+    "t225",
+    "t31",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "When hundreds of machine, weather and scenario cells are each checked at 95 percent confidence, some pass or fail by chance; primary claims should therefore be named in advance.",
+   "quote": "When hundreds of machine, weather and scenario cells are each checked at 95 percent confidence, some pass or fail by chance, so the primary claims are named in advance",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t218",
+    "t62",
+    "t143"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A test pass by a margin no larger than the model's uncertainty is not robust, so results should carry their tolerance.",
+   "quote": "A pass by a margin no larger than the model's uncertainty is not robust, so results carry their tolerance",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t62",
+    "t258",
+    "t259",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Skeptical reviewers ask which acceptance criteria were chosen before results were seen.",
+   "quote": "Skeptical reviewers ask directly: \"What acceptance criteria were chosen before seeing results?\"",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12
+   ],
+   "entities": [],
+   "terms": [
+    "t62",
+    "t270",
+    "t218"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The program's four-month validation window fails if pass or fail metrics remain “to be decided” in 2027.",
+   "quote": "The four-month window fails if pass or fail metrics are still \"to be decided\" in 2027",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t62",
+    "t82"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No off-road authority has committed to accept virtual evidence.",
+   "quote": "no off-road authority has committed to accept virtual evidence",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t127",
+    "t70",
+    "t277"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Acceptance criteria must specify how simulation results may be used, because no off-road authority has committed to accept virtual evidence.",
+   "quote": "since no off-road authority has committed to accept virtual evidence, the criteria must also say how simulation results may be used",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t62",
+    "t127",
+    "t238",
+    "t70"
+   ],
+   "importance": 3
+  }
+ ]
+}

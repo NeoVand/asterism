@@ -1,0 +1,115 @@
+{
+ "key": "t219",
+ "hash": "7878acb3925a9e1d",
+ "synopsis": "Over-fitting means settings fit the tuning tests well but perform worse on new tests; for braking-system release claims, the booklet requires a frozen, stratified random sample from the declared operating-domain distribution, drawn before tuning and never used for tuning [f14306, f14131]. The main controls are grouped holdouts of whole sites, weather episodes, machines or scenario families, separate tuning/validation/untouched audit datasets, and limited frozen-set use at release candidates rather than continuous optimisation against failures [f137, f6990, f6992, f12889, f7135]. Simulator over-fitting is identified as a critical risk, with improving virtual metrics alongside stalled or worsening held-out real performance as its warning sign, but the skeptic’s review found no off-road case and explicitly treats the risk as an inference [f11030, f10784]. Independent withheld physical datasets and blind correlation tests are recommended safeguards; failed tests and discrepancy dispositions should remain visible rather than mismatches being tuned away or scenarios removed from reporting [f11032, f8047, f8024]. Separately, Chapter 5 reports severe over-fitting and poor novel-path generalisation in single-traversal 3DGS, a problem addressed by VEGS in July 2024; this evidence is labelled on-road, not an established off-road braking-function case [f4010, f4011, f10783].",
+ "relations": [
+  {
+   "a": "f135",
+   "b": "f6670",
+   "type": "same",
+   "note": "Both prohibit turning the audit set into a tuning set."
+  },
+  {
+   "a": "f137",
+   "b": "f6990",
+   "type": "same",
+   "note": "Both prescribe grouped holdouts rather than random frame splits."
+  },
+  {
+   "a": "f6675",
+   "b": "f6990",
+   "type": "same",
+   "note": "Repeated recommendation to hold out whole groups."
+  },
+  {
+   "a": "f6676",
+   "b": "f6992",
+   "type": "same",
+   "note": "Both require separate tuning, validation and untouched audit splits."
+  },
+  {
+   "a": "f6992",
+   "b": "f14310",
+   "type": "same",
+   "note": "Glossary restates the three-way dataset separation."
+  },
+  {
+   "a": "f8225",
+   "b": "f12888",
+   "type": "same",
+   "note": "Using every physical case for tuning leaves no independent validation evidence."
+  },
+  {
+   "a": "f10784",
+   "b": "f11031",
+   "type": "same",
+   "note": "Identical warning: virtual improvement with stalled or worsening held-out real performance."
+  },
+  {
+   "a": "f11031",
+   "b": "f14314",
+   "type": "same",
+   "note": "Glossary repeats the simulator-overfitting warning pattern."
+  },
+  {
+   "a": "f12889",
+   "b": "f13527",
+   "type": "same",
+   "note": "Reserve frozen estimation runs for release candidates, never optimisation."
+  },
+  {
+   "a": "f7135",
+   "b": "f13527",
+   "type": "elaborates",
+   "note": "Glossary adds release-candidate scheduling to the prohibition on repeated optimisation."
+  },
+  {
+   "a": "f11032",
+   "b": "f12893",
+   "type": "same",
+   "note": "Both recommend independent physical holdouts and prohibit final-validation tuning."
+  },
+  {
+   "a": "f11032",
+   "b": "f14315",
+   "type": "same",
+   "note": "Both prescribe independent physical holdouts and blind correlation tests."
+  },
+  {
+   "a": "f6999",
+   "b": "f14313",
+   "type": "elaborates",
+   "note": "Glossary adds side-by-side reporting to the performance-gap warning."
+  },
+  {
+   "a": "f6952",
+   "b": "f14288",
+   "type": "elaborates",
+   "note": "Glossary explains why audit-driven threshold changes invalidate field-performance estimates."
+  },
+  {
+   "a": "f8024",
+   "b": "f8047",
+   "type": "supports",
+   "note": "Removing tuned scenarios loses weakness evidence, supporting retention of failures and discrepancy dispositions."
+  },
+  {
+   "a": "f10783",
+   "b": "f11030",
+   "type": "elaborates",
+   "note": "The combined statement pairs the absent off-road case with the inferred critical risk."
+  },
+  {
+   "a": "f4010",
+   "b": "f4011",
+   "type": "elaborates",
+   "note": "VEGS addresses the reported single-traversal 3DGS generalisation problem."
+  },
+  {
+   "a": "f6991",
+   "b": "f14309",
+   "type": "supports",
+   "note": "Adjacent-frame leakage explains the glossary’s recommendation for grouped partitions."
+  }
+ ]
+}

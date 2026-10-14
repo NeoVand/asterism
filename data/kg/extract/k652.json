@@ -1,0 +1,158 @@
+{
+ "chunkId": "k652",
+ "hash": "7801bd6633ff955c",
+ "facts": [
+  {
+   "text": "Detection identifies that an object is present, classification identifies its type, and tracking follows the object over time to determine where it is going; the results form an object list.",
+   "quote": "Detection says \"something is there\", classification says \"it is a person\" or \"it is a truck\", and tracking follows the object over time so the system knows where it is going; the result is written down as an object list.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t86",
+    "t85"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An object list contains one row per object with position relative to the machine, speed, class and confidence.",
+   "quote": "The object list is a table with one row per object: position relative to the machine, speed, class, confidence.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t86"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Braking logic reads the object list rather than the raw image.",
+   "quote": "The braking logic reads this list, not the raw image.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t86"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hand-made object lists provide a test interface for decision logic and are the cheapest way to sweep many scenarios, but these tests provide no evidence that perception works.",
+   "quote": "It is a test interface: decision logic can be tested with hand-made object lists, the cheapest way to sweep many scenarios, but this says nothing about whether perception works [Chapter 7].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t156",
+    "t185",
+    "t85",
+    "t360"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Recording only object lists on the current fleet is a common mistake: without the raw data, new perception algorithms cannot be tested on those recordings.",
+   "quote": "Recording only object lists on the current fleet is a common mistake, because the raw data are gone and no new perception algorithm can ever be tested on them [Chapter 7].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t156",
+    "t85"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Object categories should be risk-based because braking depends on object vulnerability and whether the object is in the swept path, rather than whether a network labels the object as a person, vehicle or object.",
+   "quote": "the object categories should be risk-based: braking depends on how vulnerable the object is and whether it is in the swept path, not on whether a network says \"person\", \"vehicle\" or \"object\" [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t86",
+    "t185",
+    "t46"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "One mining specification requires tracking six or more machines simultaneously.",
+   "quote": "One mining specification asks that six or more machines be tracked at once [Chapter 3].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t86"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The existing warning system's baseline is measured as detections per encounter, broken down by object class, distance and condition, with track persistence included as one measure.",
+   "quote": "The baseline for the existing warning system is measured as detections per encounter by object class, distance and condition, with track persistence as one measure [Chapter 7]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t221",
+    "t266",
+    "t86",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Checking a simulator only at the tracking output can conceal large errors in raw data.",
+   "quote": "a simulator checked only at the tracking output can hide large raw-data errors [Chapter 6].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t86",
+    "t249"
+   ],
+   "importance": 3
+  }
+ ]
+}

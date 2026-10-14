@@ -1,0 +1,327 @@
+{
+ "chunkId": "k790",
+ "hash": "ae4e108a13288a03",
+ "facts": [
+  {
+   "text": "A performance baseline is a careful measurement of the existing warning-only system's performance, made before judging the new braking system so that improvement has a reference.",
+   "quote": "A performance baseline is a careful measurement of how well the existing warning-only system performs, made before the new braking system is judged",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t221",
+    "t222"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Chapter 7 defines the warning-system baseline's unit of analysis as an encounter, not a frame: machine A approaches object B under scenario C while the object occupies or approaches a defined risk region.",
+   "quote": "The unit of analysis is the encounter, not the frame: \"machine A approached object B under scenario C while the object occupied or approached a defined risk region\".",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t221",
+    "t141",
+    "t187"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Each baseline encounter carries factors for machine model and configuration, sensor mounting, object class, direction, speed, grade, surface, load, weather, light, dust and site type.",
+   "quote": "Each encounter carries its factors: machine model and configuration, sensor mounting, object class, direction, speed, grade, surface, load, weather, light, dust and site type.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t221",
+    "t199",
+    "t100",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The baseline encounter's risk region should follow ISO 21815-3, the International Organization for Standardization standard on collision warning risk areas for earth-moving machinery, rather than an arbitrary sensor range.",
+   "quote": "The risk region should follow ISO 21815-3 (a standard from the International Organization for Standardization on collision warning risk areas for earth-moving machinery), not an arbitrary sensor range",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    },
+    {
+     "name": "International Organization for Standardization",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t221",
+    "t280",
+    "t187"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Baseline detection measures should include detection probability per encounter by object class (standing, crouching or lying worker, light vehicle, or another machine), distance band, bearing and condition, plus first-detection distance and time and missed encounters. Reporting should use curves or bins rather than a fleet-wide average that hides weak conditions.",
+   "quote": "plus first-detection distance and time and missed encounters, reported as curves or bins rather than one fleet-wide average that hides weak conditions.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t221",
+    "t109",
+    "t108",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Baseline warning rates should be measured per operating hour and split into false warnings (no object), nuisance warnings (a real object without risk, such as the machine's own tires or a berm), and correct warnings, because these represent different engineering problems.",
+   "quote": "False and nuisance warnings: per operating hour, split into false (no object), nuisance (a real object but no risk, such as the machine's own tires or a berm) and correct, because these are different engineering problems.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t221",
+    "t32",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Recommended baseline warning-timing measures are time to collision or distance at first warning, detection latency, warning duration and repeated warnings.",
+   "quote": "Warning timing: time to collision or distance at first warning, detection latency, warning duration and repeated warnings.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t221",
+    "t111",
+    "t88"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Baseline availability measures should include time in normal, degraded, inhibited and fault states; detection rates measured only while the system is available can hide unavailability.",
+   "quote": "Availability: time in normal, degraded, inhibited and fault states, since an impressive detection rate measured only while \"available\" can hide unavailability",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t221",
+    "t224",
+    "t56"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The established method for measuring the warning-system baseline without driving the machine is replaying recorded raw sensor logs against independent ground truth.",
+   "quote": "The established way to measure all this without driving the machine is to replay recorded raw sensor logs against an independent ground truth.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t221",
+    "t155",
+    "t105",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Baseline quality depends on what was recorded; treating the detector's own output as ground truth is circular because missed objects disappear from both predictions and the supposed truth.",
+   "quote": "The baseline is only as good as what was recorded, and using the detector's own output as truth is circular: objects it missed vanish from both the prediction and the \"truth\".",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t221",
+    "t105",
+    "t108",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends starting raw sensor recording in October 2026 rather than waiting for the prototype to arrive.",
+   "quote": "That is why the booklet says recording must start now, in October 2026, not when the prototype arrives.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t221",
+    "t360"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Brake-request time, achieved deceleration, stopping distance and false interventions cannot be measured on the old warning-only system; braking-function measures must instead be judged against new requirements.",
+   "quote": "Measures of the braking function itself (brake-request time, achieved deceleration, stopping distance, false interventions) cannot be measured on the old system and are judged against new requirements instead",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t221",
+    "t63",
+    "t169",
+    "t170",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The baseline sample-size guidance calls for 59 consecutive successful encounters per stratum for a 95 percent detection claim and 299 for a 99 percent detection claim.",
+   "quote": "59 consecutive successful encounters per stratum for 95 percent detection, 299 for 99 percent",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t210",
+    "t221",
+    "t109"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The baseline sample-size guidance calls for 30 failure-free hours per condition to show fewer than 0.1 false alarms per hour.",
+   "quote": "30 failure-free hours per condition to show fewer than 0.1 false alarms per hour.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t32",
+    "t213",
+    "t221"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No standard sets the baseline sample-size figures of 59 or 299 successful encounters per stratum or 30 failure-free hours per condition.",
+   "quote": "No standard sets these numbers",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t271",
+    "t221"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The warning-system baseline supplies the field distribution used to weight every rate claim and is the program's only source of real exposure and false-alarm data.",
+   "quote": "The baseline is also the source of the field distribution that every rate claim must be weighted by, and the only real exposure and false-alarm data the program will have.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t221",
+    "t214",
+    "t20",
+    "t32"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Chapter 7 calls parallel recording on current machines the single most valuable pre-hardware action for the program.",
+   "quote": "Chapter 7 calls parallel recording on current machines \"the single most valuable pre-hardware action\"",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t360",
+    "t221"
+   ],
+   "importance": 3
+  }
+ ]
+}

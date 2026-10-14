@@ -1,0 +1,281 @@
+{
+ "chunkId": "k684",
+ "hash": "3af2ab278834b649",
+ "facts": [
+  {
+   "text": "Ray tracing simulates a sensor by following imaginary light, radio or sound rays into a virtual scene, bouncing them off surfaces and recording returns; shooting-and-bouncing rays (SBR) is the radar version that launches many rays and sums their reflections.",
+   "quote": "Ray tracing simulates a sensor by following imaginary rays of light, radio or sound from the sensor into the virtual scene, bouncing them off surfaces and recording what comes back; shooting-and-bouncing rays is the radar version that launches very many rays and adds up their reflections.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "shooting-and-bouncing rays",
+     "kind": "method"
+    },
+    {
+     "name": "Ray tracing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t118"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Radar shooting-and-bouncing rays (SBR) follows multiple bounces between the machine body, ground and nearby structures and sums the results, allowing multipath ghosts and Doppler shifts to appear naturally.",
+   "quote": "lets each bounce several times between the machine body, the ground and nearby structures, and sums the results, so multipath ghosts and Doppler shifts appear naturally.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "shooting-and-bouncing rays",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t118",
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Full-wave solvers compute electromagnetic physics exactly but are far too slow to simulate a whole quarry.",
+   "quote": "Full-wave solvers compute the electromagnetic physics exactly but are far too slow for a whole quarry [Chapter 6].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t118",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Ray tracing is the core of the physics-based sensor-model family, and ray-traced lidar using the real scan pattern and signal chain is the best-validated sensor model type.",
+   "quote": "Ray tracing is the core of the physics-based sensor-model family, and ray-traced lidar with the real scan pattern and signal chain is the best-validated model type [Chapter 6].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Ray tracing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t118",
+    "t92",
+    "t128",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A one-hit radar model that treats each ray strike as a detection misses multipath and material behavior; a ray-traced material model produced far closer real and synthetic images.",
+   "quote": "For radar, a one-hit model that treats each ray strike as a detection misses multipath and material behavior, whereas a ray-traced material model produced far closer real and synthetic images [Chapter 6].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Ray tracing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t118",
+    "t94",
+    "t249",
+    "t136"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ray tracing responds causally to changes in geometry, materials, weather and sensor position, allowing extrapolation to new machines and mounting positions that learned models cannot perform well.",
+   "quote": "Ray tracing responds causally to changed geometry, materials, weather and sensor position, so it can extrapolate to new machines and mounting positions, which learned models cannot do well",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Ray tracing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t118",
+    "t265",
+    "t128"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ray tracing needs supplier internals and material data.",
+   "quote": "but it needs supplier internals and material data",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Ray tracing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t118",
+    "t136"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ray-tracing errors grow in heavy precipitation.",
+   "quote": "its errors grow in heavy precipitation [Chapter 6].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Ray tracing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t118",
+    "t102",
+    "t262"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A CPU radar solver took 14 hours to simulate a 12-second scenario, illustrating ray-tracing costs that span orders of magnitude.",
+   "quote": "Cost spans orders of magnitude: a CPU radar solver took 14 hours for a 12-second scenario",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t118",
+    "t94",
+    "t339",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A vendor figure puts a GPU real-time radar solver at about 12 ms per frame.",
+   "quote": "a GPU real-time version takes about 12 ms per frame (a vendor figure)",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t118",
+    "t94",
+    "t339",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An independent radar ray tracer measured 7.8 to 18.8 ms per image on a consumer graphics card.",
+   "quote": "an independent radar ray tracer measured 7.8 to 18.8 ms per image on a consumer graphics card [Chapter 6].",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t118",
+    "t94",
+    "t339",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The reported CPU radar solver, GPU real-time radar solver and independent radar ray-tracer runtimes are examples, not planning constants.",
+   "quote": "These are examples, not planning constants [Chapter 6].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t118",
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ray tracing is the method most likely to provide a trusted sensor model for a machine or mounting position never physically tested, addressing the program's core transfer problem, but only if the materials and sensor signal chain are known.",
+   "quote": "Ray tracing is the method most likely to give a sensor model that can be trusted on a machine or mounting position never physically tested, which is the core of the program's transfer problem, but only if the materials and the sensor's signal chain are known [Chapter 6].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Ray tracing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t118",
+    "t265",
+    "t234",
+    "t100",
+    "t136"
+   ],
+   "importance": 3
+  }
+ ]
+}

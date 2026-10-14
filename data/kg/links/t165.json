@@ -1,0 +1,115 @@
+{
+ "key": "t165",
+ "hash": "da6132a6914b4e57",
+ "synopsis": "Simulation shortens validation, but cannot certify perception alone: the cited on-road evidence documents gaps across sensor types, including radar at CVPR 2024, lidar studies from 2023–2025, and camera studies from 2023 and December 2025 [f326, f471, f327, f328, f329]. Transferring road-based braking validation to quarry terrain and articulated machines is a larger change than transferring passenger-car tests to heavy trucks; no standards-body or industry-group study of that transfer was found, and sim-to-field transfer of machine motion and tuned thresholds remains unproven [f1236, f1248, f6421, f6558]. Sensor and environment fidelity is judged the hardest uncertainty, with dust the biggest off-road gap; idealized sensors can look realistic at tracking level while having the highest raw-data gap, and lidar mismatch increases at high rain rates [f10424, f11949, f4480, f4610]. Recorded-scene reconstruction is also constrained: on-road neural re-simulation degrades at viewpoint offsets of 1–4 m, while quantitative off-road validation of generative re-weathering was not found [f5213, f3825]. Construction and mining evidence from 2023–2026 supports synthetic data as augmentation rather than replacement for real data, including synthetic-only detection gaps and photometric divergence despite extensive domain randomization [f6686, f10580, f10581, f10584]. Planning should retain critical physical camera correlation and ongoing in-service feedback: the booklet calls monitoring the only route to close dust and glare model gaps over time, and warns that good virtual metrics can conceal field failures clustered by rain, dust, night or glare [f1737, f8053, f12455].",
+ "relations": [
+  {
+   "a": "f1236",
+   "b": "f1733",
+   "type": "same",
+   "note": "Both judge road-to-quarry transfer larger than light-to-heavy road-vehicle transfer."
+  },
+  {
+   "a": "f8053",
+   "b": "f12346",
+   "type": "same",
+   "note": "Both identify in-service monitoring as the only route to closing dust and glare gaps."
+  },
+  {
+   "a": "f5213",
+   "b": "f5515",
+   "type": "same",
+   "note": "Both report neural reconstruction gaps at viewpoint offsets of 1–4 m."
+  },
+  {
+   "a": "f7052",
+   "b": "f10581",
+   "type": "same",
+   "note": "Both report the 2025 Winter Simulation Conference synthetic-only performance gap."
+  },
+  {
+   "a": "f4288",
+   "b": "f4289",
+   "type": "same",
+   "note": "Same viewpoint-degradation finding; the latter identifies studies and limits evidence to road or urban settings."
+  },
+  {
+   "a": "f11949",
+   "b": "f12498",
+   "type": "elaborates",
+   "note": "Four observed lidar dust behaviors add specificity to the biggest off-road simulation gap."
+  },
+  {
+   "a": "f4610",
+   "b": "f4470",
+   "type": "supports",
+   "note": "Rain-rate and drop-size sensitivity substantiate increasing sensor-model error in heavy precipitation."
+  },
+  {
+   "a": "f4480",
+   "b": "f12455",
+   "type": "supports",
+   "note": "Tracking realism with raw-data mismatch demonstrates how convincing appearance can conceal incorrect sensor physics."
+  },
+  {
+   "a": "f10757",
+   "b": "f12455",
+   "type": "elaborates",
+   "note": "Adds cited evidence for the appearance-without-physics failure mode."
+  },
+  {
+   "a": "f1731",
+   "b": "f1236",
+   "type": "supports",
+   "note": "Lists physical-model differences explaining why quarry transfer is a larger validation change."
+  },
+  {
+   "a": "f8462",
+   "b": "f9316",
+   "type": "supports",
+   "note": "Road-centric scene semantics and materials explain limits of expensive commercial toolchains."
+  },
+  {
+   "a": "f3756",
+   "b": "f326",
+   "type": "supports",
+   "note": "Missing real sensor noise explains why simulation alone cannot certify perception."
+  },
+  {
+   "a": "f488",
+   "b": "f1737",
+   "type": "depends",
+   "note": "Camera correlation risks drive the requirement for critical physical correlation."
+  },
+  {
+   "a": "f3987",
+   "b": "f5213",
+   "type": "elaborates",
+   "note": "The 1–4 m finding quantifies reconstruction sensitivity to departure from recorded trajectories."
+  },
+  {
+   "a": "f10581",
+   "b": "f6686",
+   "type": "supports",
+   "note": "A specific 2025 study substantiates the broader persistent synthetic-only training gap."
+  },
+  {
+   "a": "f6689",
+   "b": "f10580",
+   "type": "supports",
+   "note": "Independent on-road findings reinforce augmentation rather than replacement of real images."
+  },
+  {
+   "a": "f4741",
+   "b": "f10424",
+   "type": "supports",
+   "note": "Large off-road segmentation domain shifts substantiate concerns about sensor and environment fidelity."
+  },
+  {
+   "a": "f4717",
+   "b": "f5315",
+   "type": "supports",
+   "note": "Missing real radar reflections reinforce the distinction between capability claims and verified off-road fidelity."
+  }
+ ]
+}

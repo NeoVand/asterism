@@ -1,0 +1,229 @@
+{
+ "chunkId": "k721",
+ "hash": "2a80a5d0d2cfe99a",
+ "facts": [
+  {
+   "text": "In an open-loop test, the system's output does not change what happens next; in a closed-loop test, the system's actions feed back and alter the situation the system subsequently sees.",
+   "quote": "In an open-loop test the system's output does not change what happens next, while in a closed-loop test the system's actions feed back and alter the situation it then sees.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t154"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Open-loop testing is cheap and uses real data, but closed-loop testing is the only way to see the consequences of system actions.",
+   "quote": "Open loop is cheap and uses real data; closed loop is the only way to see consequences.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t154",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Before a new system commands braking during recorded-data replay, the recorded machine pose, object poses and sensor measurements are valid historical evidence.",
+   "quote": "Before the new system commands braking, the recorded machine pose, object poses and sensor measurements are valid historical evidence.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t154",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The first-divergence point is the first brake command that did not occur in the original recorded run, when the counterfactual machine begins to differ from the recorded machine.",
+   "quote": "At the first brake command that did not occur in the original run, the counterfactual machine begins to differ from the recorded one.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t154",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "After the first-divergence point, feeding the original sensor record while pretending that the machine has slowed is physically inconsistent.",
+   "quote": "After that instant, feeding the original sensor record while pretending the machine has slowed is physically inconsistent [Chapter 7].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t154",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Recorded data can establish whether a new system would have detected an object and requested intervention before a specified time, but cannot establish whether the machine would actually have stopped safely, what subsequent measurements would have been, or whether a worker would have reacted.",
+   "quote": "Recorded data can therefore answer \"would the new system have detected the object and requested intervention before time t?\"; they cannot answer \"would the machine actually have stopped safely, what would the next measurements have been, or would the worker have reacted?\"",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t154",
+    "t28",
+    "t170"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "On-road research in 2024 showed that open-loop planning scores could be matched using the vehicle's own state alone, giving a misleading impression.",
+   "quote": "On-road research (2024) showed that open-loop planning scores could be matched using the vehicle's own state alone, giving \"a misleading impression\" [Chapter 7].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t154",
+    "t224",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Teams separate validation metrics by evaluating perception and trigger timing open loop on logs, braking consequences in closed-loop simulation, hardware-in-the-loop (HIL) and vehicle-in-the-loop (VIL), and selected stopping outcomes on a proving ground.",
+   "quote": "Teams therefore split the metrics: perception and trigger timing open loop on logs; braking consequences in closed-loop simulation, hardware-in-the-loop (HIL) and vehicle-in-the-loop (VIL); selected stopping outcomes on a proving ground.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t154",
+    "t148",
+    "t151",
+    "t158",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A log-to-simulation switch branches from the recorded prefix into simulation at the intervention point, with a machine model consuming the brake command and a sensor model regenerating observations.",
+   "quote": "A \"log-to-simulation switch\" branches from the recorded prefix into simulation at the intervention point, with a machine model consuming the brake command and a sensor model regenerating the observations [Chapter 7].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "log-to-simulation switch",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t155",
+    "t154",
+    "t125",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "After a log-to-simulation branch, evidence quality depends on the machine, terrain, actor and sensor models; this limitation is more serious off-road because soil, grade, payload and dust are more variable than paved-road dynamics.",
+   "quote": "After the branch, the evidence is only as good as the machine, terrain, actor and sensor models, a warning the booklet calls more serious off-road, where soil, grade, payload and dust are more variable than paved-road dynamics [Chapter 7].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t125",
+    "t154",
+    "t165",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Shadow mode and replay are open loop; software-in-the-loop (SIL), hardware-in-the-loop (HIL) and vehicle-in-the-loop (VIL) are normally closed loop; semantic replay can be either open or closed loop.",
+   "quote": "Shadow mode and replay are open loop; software-in-the-loop (SIL), HIL and VIL are normally closed loop; semantic replay can be either [Chapters 1, 7].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t154",
+    "t157",
+    "t147",
+    "t148",
+    "t156"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The existing warning fleet can supply enormous open-loop evidence immediately, but because the new function changes machine motion, validation must keep three evidence classes separate: the measured recorded prefix, model-dependent post-intervention simulation, and selected measured real stops covering few cases.",
+   "quote": "three evidence classes must be kept apart: the recorded prefix (measured), post-intervention simulation (model-dependent), and selected real stops (measured, few cases) [Chapter 7].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t41",
+    "t154",
+    "t70",
+    "t216",
+    "t155"
+   ],
+   "importance": 3
+  }
+ ]
+}

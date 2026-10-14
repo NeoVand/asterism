@@ -1,0 +1,233 @@
+{
+ "chunkId": "k730",
+ "hash": "60ff68948df38d84",
+ "facts": [
+  {
+   "text": "Cloud execution means renting computers by the hour from a data-center provider to run many simulations in parallel; the compute budget is the money and machine-hours allocated to that work.",
+   "quote": "Cloud execution means renting computers by the hour from a data-center provider to run many simulations in parallel, and the compute budget is the money and machine-hours set aside for that.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t163"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A simulation campaign with thousands of runs per night needs far more computers than an office owns, motivating rental from cloud providers.",
+   "quote": "A campaign of thousands of runs per night needs far more computers than an office owns. Cloud providers rent them.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t163",
+    "t233"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The cloud prices found by the booklet were about USD 1.73–1.86 per hour on demand for a machine with one GPU suitable for sensor rendering; a one-year commitment lowers the price.",
+   "quote": "a machine with one graphics processing unit (GPU) suitable for sensor rendering cost about USD 1.73 to 1.86 per hour on demand; a one-year commitment lowers that",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t163",
+    "t336",
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Cloud spot capacity offers discounts of up to 90% and suits interruptible, restartable work such as statistical regression, but not deterministic hardware-in-the-loop (HIL) tests or long irreplaceable jobs.",
+   "quote": "\"spot\" capacity sold at discounts of up to 90% suits work that can be interrupted and restarted, such as statistical regression, but not deterministic hardware-in-the-loop (HIL) tests or long irreplaceable jobs",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t163",
+    "t148",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Ten cloud GPU machines suitable for sensor rendering running 24 hours a day for 122 days cost about USD 54,490 and deliver at most about 29,000 GPU-hours.",
+   "quote": "Ten such GPU machines running 24 hours a day for 122 days cost about USD 54,490 and deliver at most about 29,000 GPU-hours.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t163",
+    "t339",
+    "t336"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor-realistic simulation runs typically operate at about real time per GPU.",
+   "quote": "Sensor-realistic runs typically go at about real time per GPU",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t336",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A four-month simulation window limits full-sensor-fidelity coverage of 100-plus sites multiplied by 10-plus scenarios, weather conditions and machine variants, forcing a tiered testing strategy.",
+   "quote": "a four-month window caps how many of the 100-plus sites times 10-plus scenarios times weather times machine variants can run at full sensor fidelity, which forces a tiered strategy",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t163",
+    "t198",
+    "t43",
+    "t167",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Cost per simulated hour equals the cloud price per wall-clock hour divided by the real-time factor; no generic real-time factor should be assumed.",
+   "quote": "Cost per simulated hour equals the cloud price per wall-clock hour divided by the real-time factor; no generic factor should be assumed",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t163"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Compute is cheap relative to engineering labor: the booklet estimates a labor floor of roughly USD 150,000–260,000 per specialist per year.",
+   "quote": "Compute is cheap relative to engineering labor: the booklet's labor floor is roughly USD 150,000 to 260,000 per specialist per year",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t358",
+    "t359",
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Even with free software, a simulation program can cost seven figures annually because of engineering labor costs.",
+   "quote": "the booklet's labor floor is roughly USD 150,000 to 260,000 per specialist per year, which is why \"free\" software can still mean a seven-figure annual program",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t358",
+    "t334",
+    "t359"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "High-resolution site scans and machine data are commercially sensitive.",
+   "quote": "High-resolution site scans and machine data are commercially sensitive",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t163",
+    "t341",
+    "t132"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet did not review cloud terms.",
+   "quote": "cloud terms were not reviewed",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t163",
+    "t347"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The GPU-hour ceiling makes using multiple simulators rather than making one simulator carry every test a necessity, not a preference.",
+   "quote": "The GPU-hour ceiling is what makes \"do not make one simulator carry every test\" a necessity rather than a preference",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t167",
+    "t163",
+    "t339"
+   ],
+   "importance": 3
+  }
+ ]
+}

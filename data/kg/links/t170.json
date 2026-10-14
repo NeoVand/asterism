@@ -1,0 +1,115 @@
+{
+ "key": "t170",
+ "hash": "d8252622bbda01d1",
+ "synopsis": "Latency is a first-order stopping-distance contributor: at 5–15 km/h it can account for half or more of the distance, motivating a calibrated point-mass model with measured latency, brake build-up lag and worst-case deceleration dependent on grade, payload and surface [f144, f146]. ISO 21815-3:2023 frames collision-avoidance distance around detection, decision and action time, machine stopping distance and a safety distance; inadequate detection range in dust requires slower driving or prevents a promise to stop [f6680, f11330]. Real-machine and proving-ground tests are recommended as anchors for actual stopping behaviour, while validation should cover the full causal timing chain rather than minimum stopping distance alone [f551, f5345, f7786]. Published validation of simulated heavy-machine braking on gravel, mud, ice or slopes was not found, nor was an off-road automatic-braking stopping-distance tolerance; the broader terramechanics review also found no adequate validation across 100+ site types, but did not review Project Chrono validation literature [f253, f7808, f10611]. Coverage and acceptance remain limited: the reported mining stopping tests covered only unloaded machines on gradients of 1% or less, South Africa's Regulation 8.10 specifies no fixed stopping-distance test, and ISO's example stopping calculations are not a validation method [f5182, f2281, f7729].",
+ "relations": [
+  {
+   "a": "f1233",
+   "b": "f1732",
+   "type": "same",
+   "note": "Heavy-road AEB required adaptations to light-vehicle stopping-distance procedures and equipment."
+  },
+  {
+   "a": "f1233",
+   "b": "f1324",
+   "type": "same",
+   "note": "Both describe NHTSA adapting light-vehicle procedures for heavy vehicles and towing equipment."
+  },
+  {
+   "a": "f1732",
+   "b": "f1324",
+   "type": "same",
+   "note": "Both report heavy-vehicle stopping-distance and equipment adaptations."
+  },
+  {
+   "a": "f6680",
+   "b": "f6983",
+   "type": "same",
+   "note": "Both define avoidance distance through timing, stopping distance and safety distance."
+  },
+  {
+   "a": "f6680",
+   "b": "f7007",
+   "type": "same",
+   "note": "Both state the component structure of ISO 21815-3:2023 avoidance distance."
+  },
+  {
+   "a": "f6983",
+   "b": "f7007",
+   "type": "same",
+   "note": "Both describe the same collision-avoidance distance components."
+  },
+  {
+   "a": "f253",
+   "b": "f3743",
+   "type": "same",
+   "note": "Both report missing published validation of heavy-machine braking on adverse surfaces or slopes."
+  },
+  {
+   "a": "f253",
+   "b": "f3970",
+   "type": "same",
+   "note": "Same braking-validation gap; Chapter 5 emphasizes its automatic-braking relevance."
+  },
+  {
+   "a": "f3743",
+   "b": "f3970",
+   "type": "same",
+   "note": "Both report no simulated braking-distance validation for gravel, mud, ice or slopes."
+  },
+  {
+   "a": "f10433",
+   "b": "f10484",
+   "type": "same",
+   "note": "Both report missing terramechanics validation adequate for off-road braking prediction."
+  },
+  {
+   "a": "f10433",
+   "b": "f10611",
+   "type": "same",
+   "note": "Same 100-plus-site validation gap; latter discloses unreviewed Project Chrono literature."
+  },
+  {
+   "a": "f10484",
+   "b": "f10611",
+   "type": "same",
+   "note": "Same terramechanics validation gap, with additional scope and review limitation."
+  },
+  {
+   "a": "f2081",
+   "b": "f2281",
+   "type": "same",
+   "note": "Both report absent quantitative detection, false-alarm and stopping-test criteria in South African regulation."
+  },
+  {
+   "a": "f144",
+   "b": "f5898",
+   "type": "same",
+   "note": "Both state latency can constitute half or more of stopping distance at 5–15 km/h."
+  },
+  {
+   "a": "f144",
+   "b": "f5892",
+   "type": "same",
+   "note": "Both identify latency as a first-order stopping-distance contributor at work-site speeds."
+  },
+  {
+   "a": "f3313",
+   "b": "f3220",
+   "type": "elaborates",
+   "note": "Clarifies that the two-second engineering allowance is not measured or percentile operator reaction time."
+  },
+  {
+   "a": "f11330",
+   "b": "f11329",
+   "type": "depends",
+   "note": "Slowing or withdrawing stopping assurances follows from inadequate reliable detection at required range."
+  },
+  {
+   "a": "f5345",
+   "b": "f9919",
+   "type": "supports",
+   "note": "Physical end-to-end stopping tests provide a reality anchor for pilot stopping-distance error comparisons."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t342",
+ "hash": "b5f0b1708fa76129",
+ "synopsis": "The manufacturer needs a strategy and roadmap for predominantly virtual collision-mitigation validation, planned as an eleven-month first-of-a-kind programme under a hard deadline, with about seven months from October 2026 to April 2027 to prepare the capability [f6, f9396, f9400, f9402]. The four-month validation window cannot be compressed: integrated product validation starts at prototype arrival, but earlier work must establish a proven method so that the window becomes a confirmation and calibration campaign [f62, f10895, f11929]. Before mid-2027, the proposed preparation scope includes site geometry, material libraries, scenarios, machine kinematics, reference measurements, metrics, HIL interfaces and generic effect models; each work package should produce safety evidence, with traceable claim-to-requirement-to-scenario-to-test mapping as the first deliverable [f4973, f9398, f12193]. Schedule confidence remains limited: no published case proves the four-month schedule, reliable heavy-off-road setup durations and build-versus-buy staffing, timeline and cost figures are unavailable, and the October 2026 plan is an assessment rather than a documented case [f6398, f811, f8314, f892]. Modeling effort varies substantially—from hours for an energy or constant-deceleration model to months for detailed multibody modeling—while the on-road PEGASUS precedent lasted 42 months and produced a method, not an approval [f6427, f6457, f1543, f1546]. Planning should therefore include standards re-baselining before design freeze, owned supplier dependencies before architecture freeze, budgeted simulation-tool qualification, early independent-test booking with at least one re-test, and a restricted-scope alternative with stage gates [f2948, f10802, f10547, f5790, f11075].",
+ "relations": [
+  {
+   "a": "f62",
+   "b": "f11642",
+   "type": "same",
+   "note": "Both say the four-month window cannot shrink, but work can move earlier."
+  },
+  {
+   "a": "f1286",
+   "b": "f1543",
+   "type": "same",
+   "note": "Both report PEGASUS's identical dates and 42-month duration."
+  },
+  {
+   "a": "f10895",
+   "b": "f12228",
+   "type": "same",
+   "note": "Both distinguish prototype-triggered integrated validation from the earlier programme start."
+  },
+  {
+   "a": "f199",
+   "b": "f8314",
+   "type": "same",
+   "note": "Both report missing public off-highway build-versus-buy staffing, timeline and cost evidence."
+  },
+  {
+   "a": "f8334",
+   "b": "f8726",
+   "type": "same",
+   "note": "Both report absent integration-effort benchmarks; engineer-weeks per connection remain unavailable."
+  },
+  {
+   "a": "f202",
+   "b": "f9420",
+   "type": "same",
+   "note": "Both state that no planning method has consistent outcome evidence."
+  },
+  {
+   "a": "f811",
+   "b": "f906",
+   "type": "same",
+   "note": "Both report missing documented heavy-off-road setup durations rather than supplying completion estimates."
+  },
+  {
+   "a": "f3761",
+   "b": "f256",
+   "type": "same",
+   "note": "Both report missing published effort and cost figures for job-site environment construction."
+  },
+  {
+   "a": "f6",
+   "b": "f9400",
+   "type": "elaborates",
+   "note": "The roadmap requirement adds new-capability scope and a hard deadline."
+  },
+  {
+   "a": "f9396",
+   "b": "f9402",
+   "type": "elaborates",
+   "note": "The eleven-month programme includes about seven months of capability preparation."
+  },
+  {
+   "a": "f62",
+   "b": "f11929",
+   "type": "elaborates",
+   "note": "Moving work earlier makes the prototype window a confirmation and calibration campaign."
+  },
+  {
+   "a": "f10895",
+   "b": "f10896",
+   "type": "elaborates",
+   "note": "Lists the prerequisites that must precede prototype arrival."
+  },
+  {
+   "a": "f9398",
+   "b": "f12193",
+   "type": "elaborates",
+   "note": "Specifies traceability mapping as the first safety-evidence deliverable."
+  },
+  {
+   "a": "f10547",
+   "b": "f9398",
+   "type": "elaborates",
+   "note": "Tool qualification is budgeted work supporting simulation-based safety evidence."
+  },
+  {
+   "a": "f2948",
+   "b": "f11914",
+   "type": "elaborates",
+   "note": "Re-baselining must use ISO editions actually published."
+  },
+  {
+   "a": "f4385",
+   "b": "f4973",
+   "type": "depends",
+   "note": "Preparing material libraries requires creating the missing job-site material layer."
+  },
+  {
+   "a": "f6398",
+   "b": "f11075",
+   "type": "supports",
+   "note": "An unproven four-month schedule motivates restricted scope and stage gates."
+  },
+  {
+   "a": "f206",
+   "b": "f11075",
+   "type": "supports",
+   "note": "Pre-committed stop and descope criteria support gated fallback planning."
+  }
+ ]
+}

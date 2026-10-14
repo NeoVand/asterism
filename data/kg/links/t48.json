@@ -1,0 +1,115 @@
+{
+ "key": "t48",
+ "hash": "d4d66e3c242d0296",
+ "synopsis": "Adding automatic braking changes an awareness-only system into a motion-controlling safety function within ISO 19014-2; matching the old warning system is therefore the wrong acceptance target, and braking targets must come from hazard analysis [f2075, f11986, f11989]. The safety case should separately analyze failure to intervene when required and intervention when unsafe or unnecessary, with separate acceptance thresholds [f2141, f11987]. Validation needs evidence for control hardware, software and environmental qualification beyond perception testing, and even perfect sensor simulation cannot compensate for incorrect braking or machine-dynamics models [f1098, f7735, f5089]. Cybersecurity, configuration and updates become safety-relevant when software commands brakes, while ISO 19014-4 excludes cybersecurity and therefore requires separate coverage [f3664, f7488]. Field exposure alone cannot prove a rare-event safety function, and the corpus found no published quantified reductions in physical testing for off-road safety functions [f312, f7563, f7865]. Planning remains qualified by standards described as draft, under revision or under publication in October 2026, unresolved machine-specific applicability, and disagreement over excluding machine learning versus assuring it within the safety function [f6547, f10419, f9786, f1125].",
+ "relations": [
+  {
+   "a": "f112",
+   "b": "f11986",
+   "type": "same",
+   "note": "A brake command brings the system within ISO 19014-2."
+  },
+  {
+   "a": "f113",
+   "b": "f10520",
+   "type": "same",
+   "note": "ISO 19014-2 excludes awareness-only systems."
+  },
+  {
+   "a": "f11985",
+   "b": "f10520",
+   "type": "same",
+   "note": "Both explicitly exclude awareness-only cameras and radar detectors."
+  },
+  {
+   "a": "f2311",
+   "b": "f6283",
+   "type": "same",
+   "note": "Both describe motion-control and hazard-mitigation scope and awareness-only exclusions."
+  },
+  {
+   "a": "f2075",
+   "b": "f112",
+   "type": "elaborates",
+   "note": "Explains the awareness-only exclusion underlying the brake-command scope boundary."
+  },
+  {
+   "a": "f5807",
+   "b": "f6580",
+   "type": "elaborates",
+   "note": "Adds named functional-safety standards and perception-limit treatment to the automatic-brake definition."
+  },
+  {
+   "a": "f10417",
+   "b": "f10476",
+   "type": "same",
+   "note": "Braking is a new safety function, making warning-system equivalence the wrong target."
+  },
+  {
+   "a": "f10417",
+   "b": "f11989",
+   "type": "elaborates",
+   "note": "Adds hazard analysis as the source of the braking acceptance target."
+  },
+  {
+   "a": "f10515",
+   "b": "f12005",
+   "type": "same",
+   "note": "Both report the objection to treating a new safety function as incremental."
+  },
+  {
+   "a": "f118",
+   "b": "f2341",
+   "type": "same",
+   "note": "Both require separate analysis of missed intervention and unsafe or unnecessary intervention."
+  },
+  {
+   "a": "f2141",
+   "b": "f2341",
+   "type": "same",
+   "note": "Both recommend analyzing the two intervention failure categories separately."
+  },
+  {
+   "a": "f118",
+   "b": "f11987",
+   "type": "elaborates",
+   "note": "Adds separate acceptance thresholds to the two required analyses."
+  },
+  {
+   "a": "f7563",
+   "b": "f7865",
+   "type": "same",
+   "note": "No published quantified physical-test substitution results were found for off-road safety functions."
+  },
+  {
+   "a": "f5645",
+   "b": "f1098",
+   "type": "supports",
+   "note": "Component environmental testing supports evidence requirements beyond perception testing."
+  },
+  {
+   "a": "f5089",
+   "b": "f1098",
+   "type": "supports",
+   "note": "Incorrect brake and dynamics models show why perception evidence alone is insufficient."
+  },
+  {
+   "a": "f7487",
+   "b": "f7488",
+   "type": "depends",
+   "note": "Required cybersecurity coverage cannot be supplied by ISO 19014-4 alone."
+  },
+  {
+   "a": "f9464",
+   "b": "f9789",
+   "type": "contradicts",
+   "note": "The same software classification is qualified as secondary-source-only versus stated as independent."
+  },
+  {
+   "a": "f362",
+   "b": "f800",
+   "type": "supports",
+   "note": "Listed self-evolving safety components motivate avoiding such machine learning to reduce approval constraints."
+  }
+ ]
+}

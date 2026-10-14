@@ -1,0 +1,115 @@
+{
+ "key": "t162",
+ "hash": "dac4b90a112fc592",
+ "synopsis": "The corpus treats traceability as essential to usable safety evidence: each run must connect hazard, safety and performance requirements, scenario, test case, result and safety-case evidence, with the exact software and models identifiable [f7105, f12202]. Run manifests should retain immutable identifiers, configuration and calibration versions, seeds, assets, metrics, verdicts and data checksums; configuration control extends to physical machine variants and the current site, not just software [f7108, f7109, f1141, f3831, f11072]. Credible models alone are insufficient: the toolchain must be qualified, controlled and reproducible, and changes must trigger impact analysis or revalidation rather than silently inherit obsolete evidence [f8227, f8048, f8229, f10232]. The G1 gate at the end of January 2027 requires one reproducible end-to-end scenario under configuration control and an unresolved-assumption report, while the plan must define sustainment and revalidation responsibilities after September 2027 [f10197, f10179]. Implementation remains a planning risk: ASAM TestSpecification was still developing infrastructure in October 2026, tool qualification and configuration management can become late blockers, and version drift is rated High risk despite no off-road case being found [f7119, f10351, f11066, f11067].",
+ "relations": [
+  {
+   "a": "f5796",
+   "b": "f16577",
+   "type": "same",
+   "note": "Identical requirements for models replacing physical evidence, despite different attribution labels."
+  },
+  {
+   "a": "f7109",
+   "b": "f13015",
+   "type": "same",
+   "note": "Both require immutable run identifiers for all result-changing ingredients."
+  },
+  {
+   "a": "f10197",
+   "b": "f12305",
+   "type": "same",
+   "note": "Both specify January 2027 G1 and reproducible configuration-controlled execution; chapter adds gate conditions."
+  },
+  {
+   "a": "f4377",
+   "b": "f13167",
+   "type": "same",
+   "note": "Both prescribe freezing procedural-generation ingredients for reproducibility."
+  },
+  {
+   "a": "f4378",
+   "b": "f13167",
+   "type": "same",
+   "note": "Both warn that unfrozen procedural-generation ingredients prevent replay months later."
+  },
+  {
+   "a": "f7108",
+   "b": "f7105",
+   "type": "elaborates",
+   "note": "Run manifest fields operationalize the hazard-to-evidence traceability chain."
+  },
+  {
+   "a": "f5664",
+   "b": "f12202",
+   "type": "supports",
+   "note": "Missing provenance prevents identifying the exact product state behind evidence."
+  },
+  {
+   "a": "f12995",
+   "b": "f5646",
+   "type": "elaborates",
+   "note": "Recording guidance adds data-loss counters to exact software and hardware provenance."
+  },
+  {
+   "a": "f1141",
+   "b": "f8015",
+   "type": "elaborates",
+   "note": "Physical machine configuration details identify changes that may invalidate evidence."
+  },
+  {
+   "a": "f3831",
+   "b": "f11072",
+   "type": "supports",
+   "note": "Intended versus current physical site differences justify safety-relevant site change control."
+  },
+  {
+   "a": "f5105",
+   "b": "f8229",
+   "type": "supports",
+   "note": "Unseen firmware and processing changes justify freezing versions or conducting impact analysis."
+  },
+  {
+   "a": "f11066",
+   "b": "f11067",
+   "type": "contradicts",
+   "note": "High risk assessment lacks a found off-road case; evidential tension, not direct disproof."
+  },
+  {
+   "a": "f11069",
+   "b": "f11066",
+   "type": "depends",
+   "note": "Manifest, release and archival controls address the identified irreproducibility risk."
+  },
+  {
+   "a": "f10232",
+   "b": "f8227",
+   "type": "elaborates",
+   "note": "Credibility review tests required control, qualification and independent reproducibility from retained artifacts."
+  },
+  {
+   "a": "f8889",
+   "b": "f10179",
+   "type": "supports",
+   "note": "Software-update requalification risk justifies explicit sustainment and revalidation policy."
+  },
+  {
+   "a": "f8895",
+   "b": "f8474",
+   "type": "elaborates",
+   "note": "CARLA-specific frozen qualified build applies the general release-level toolchain freeze."
+  },
+  {
+   "a": "f1581",
+   "b": "f8501",
+   "type": "supports",
+   "note": "Required test-management engineering capabilities explain why a simulation engine is not turnkey management."
+  },
+  {
+   "a": "f5107",
+   "b": "f10351",
+   "type": "supports",
+   "note": "Omitted toolchain qualification and configuration questions expose potential late programme blockers."
+  }
+ ]
+}

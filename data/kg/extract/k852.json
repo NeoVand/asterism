@@ -1,0 +1,549 @@
+{
+ "chunkId": "k852",
+ "hash": "4a233c9e6709ca66",
+ "facts": [
+  {
+   "text": "ISO 19014 is the family of standards for designing, building, testing and programming earth-moving machine electronic safety-related control systems so that faults do not cause harm, including systems behind automatic braking.",
+   "quote": "ISO 19014 is the family of standards that tells a maker of earth-moving machines",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t49",
+    "t48"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO provides ISO 13849 as a generic machinery functional-safety method, while road vehicles have ISO 26262; the booklet identifies ISO 19014, not ISO 26262, as the appropriate framework for earth-moving machines.",
+   "quote": "For earth-moving machines the sector framework is ISO 19014, and the booklet is clear that this, not ISO 26262, is the right one [Chapter 3].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "International Organization for Standardization",
+     "kind": "organization"
+    },
+    {
+     "name": "ISO 13849",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 26262",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 19014",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t287",
+    "t289",
+    "t49"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 19014 uses Machine Performance Level (MPL): hazard and risk analysis assigns each safety function a required level, MPLr, and design evaluation must show an achieved level, MPLa, at least as high. Machine Control System Safety Analysis (MCSSA) is the method for assigning MPLr.",
+   "quote": "A hazard and risk analysis assigns a required level, MPLr, to each safety function; the design is then evaluated to show an achieved level, MPLa, at least as high. The method for MPLr is the Machine Control System Safety Analysis (MCSSA) [Chapter 3].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014",
+     "kind": "standard"
+    },
+    {
+     "name": "Machine Control System Safety Analysis (MCSSA)",
+     "kind": "method"
+    },
+    {
+     "name": "Machine Performance Level (MPL)",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t52",
+    "t47",
+    "t281"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 19014-1 provides the MCSSA method and MPLr.",
+   "quote": "Part 1 gives the MCSSA method and MPLr",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014-1",
+     "kind": "standard"
+    },
+    {
+     "name": "Machine Control System Safety Analysis (MCSSA)",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t52"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 19014-2 covers hardware, architecture and achieved Machine Performance Level (MPLa).",
+   "quote": "Part 2 covers hardware, architecture and MPLa",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t52"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 19014-3 sets vibration, temperature and electrical-robustness environmental tests for safety-related electronics.",
+   "quote": "Part 3 sets environmental tests (vibration, temperature, electrical robustness) for the safety-related electronics",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t49"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 19014-4 covers software and data transmission.",
+   "quote": "Part 4 covers software and data transmission",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 19014-5 provides MPLr tables for common functions that manufacturers can use without a full MCSSA for each new model, provided the tables' assumptions hold.",
+   "quote": "Part 5 gives tables of MPLr for common functions so a manufacturer can apply them \"without performing a full MCSSA for each new model\" when the tables' assumptions hold [Chapter 3].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014-5",
+     "kind": "standard"
+    },
+    {
+     "name": "Machine Control System Safety Analysis (MCSSA)",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t52",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 19014-2 covers systems controlling machine motion or mitigating a hazard and excludes awareness systems that do not affect motion, such as cameras and radar detectors. A warning-only system is outside its scope, whereas a system able to command brakes is inside.",
+   "quote": "ISO 19014-2 covers systems that control machine motion or mitigate a hazard and excludes \"awareness systems that do not impact machine motion (e.g. cameras and radar detectors)\". A warning-only system is outside; a system that can command the brakes is inside",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t48",
+    "t22",
+    "t23"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends separately analyzing failure to intervene when needed and intervention when unsafe or unnecessary as two safety functions.",
+   "quote": "The booklet asks for two safety functions to be analyzed separately: failure to intervene when needed, and intervention when it is unsafe or unnecessary",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t48",
+    "t47",
+    "t28",
+    "t40"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An unexpected full brake application on a loaded truck on a slope is itself a hazard.",
+   "quote": "an unexpected full brake on a loaded truck on a slope is itself a hazard [Chapter 3].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t195",
+    "t173",
+    "t168"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Edition 2 of ISO 19014 Parts 1–4 and the first full-standard edition of Part 5, replacing ISO/TS 19014-5:2021, reached “under publication” in August 2026 and were scheduled for October 2026.",
+   "quote": "edition 2 of Parts 1 to 4 and the first full-standard edition of Part 5 (replacing ISO/TS 19014-5:2021) reached \"under publication\" in August 2026, scheduled for October 2026",
+   "kind": "event",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014-1",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 19014-2",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 19014-3",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 19014-4",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 19014-5",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO/TS 19014-5",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "European adoption of ISO 19014-1 was in approval at CEN alongside the 2026 ISO 19014 series changes.",
+   "quote": "with a European adoption of Part 1 in approval at the European standards body CEN [Chapter 3].",
+   "kind": "event",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014-1",
+     "kind": "standard"
+    },
+    {
+     "name": "CEN",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t274",
+    "t272"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 19014 replaced ISO 15998, which was withdrawn in June 2022.",
+   "quote": "ISO 19014 replaced ISO 15998, withdrawn in June 2022.",
+   "kind": "event",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 15998",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t286"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Whether ISO 19014-5 tables contain a collision-avoidance entry was not reviewed, and no published MPLr for collision avoidance was found.",
+   "quote": "Whether the Part 5 tables contain an entry for collision avoidance was not reviewed; no published MPLr for this function was found [Chapter 3].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014-5",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t52",
+    "t281",
+    "t23"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No simulation wording was found in the ISO 19014 review reported in Chapter 12.",
+   "quote": "No simulation wording was found [Chapter 12]",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet treats simulation as admissible functional-safety design evidence because functional safety inherently rests on analytical evidence, even where no standard accepts simulation as a replacement for physical testing.",
+   "quote": "functional safety does rest on analytical evidence by nature, which is why the booklet treats simulation as admissible design evidence even where no standard accepts it as a replacement for a physical test [Chapter 3].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t49",
+    "t127",
+    "t70",
+    "t264"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 19014-4 excludes cybersecurity.",
+   "quote": "Part 4 excludes cybersecurity",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    12,
+    13
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Whether ISO 19014-4 requires tool qualification was not found.",
+   "quote": "whether it requires tool qualification was not found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    12,
+    13
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t320"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 19014-3 environmental tests do not establish camera, lidar or radar perception-chain performance across visibility and weather combinations.",
+   "quote": "Part 3's environmental tests are \"not the same as proving a camera, lidar or radar perception chain across visibility and weather combinations\" [Chapters 3, 12, 13].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    12,
+    13
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t85",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Adding a brake command brings the product into ISO 19014 scope, so the program plan needs MPLr assignment, architecture and fault evidence, environmental qualification and software-process evidence against editions expected in October 2026.",
+   "quote": "the plan needs an MPLr assignment, architecture and fault evidence, environmental qualification and software process evidence, all against editions that appear in October 2026 [Chapter 3].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t52",
+    "t56",
+    "t342"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet identifies ISO 19014-5 tables as the only sourced route to reducing per-model analysis burden when many machine models must be covered in four months.",
+   "quote": "The Part 5 tables are the only sourced route to reducing the per-model analysis burden when many machine models must be covered in four months [Chapter 3].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014-5",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t230",
+    "t43"
+   ],
+   "importance": 3
+  }
+ ]
+}

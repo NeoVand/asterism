@@ -1,0 +1,301 @@
+{
+ "chunkId": "k734",
+ "hash": "34634f5db1f561a2",
+ "facts": [
+  {
+   "text": "Multi-simulator architecture spreads a test program across several simulation fidelity levels and tools, each used for the questions it answers well, rather than running every case in one maximum-fidelity simulator.",
+   "quote": "spread the test program across several levels of simulation fidelity and several tools, each used for the questions it answers well, instead of running every case in one maximum-fidelity simulator",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t167",
+    "t125",
+    "t126"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends a multi-simulator alternative called the \"fourth architecture\", which is valid at any cost level.",
+   "quote": "The booklet calls the alternative a \"fourth architecture\", valid at any cost level [Chapter 11]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t167",
+    "t335"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The fourth architecture uses deterministic functional and object-list tests for millions of braking-logic combinations.",
+   "quote": "Deterministic functional and object-list tests for millions of braking-logic combinations.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t167",
+    "t185",
+    "t156",
+    "t198"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The fourth architecture uses medium-fidelity closed-loop dynamics with ideal or noisy sensors for broad regression testing.",
+   "quote": "Medium-fidelity closed-loop dynamics with ideal or noisy sensors for broad regression.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t167",
+    "t154",
+    "t179",
+    "t161"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The fourth architecture reserves high-fidelity rendering, radar and lidar simulation for perception-sensitive subsets of tests.",
+   "quote": "High-fidelity rendering, radar and lidar for perception-sensitive subsets.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t167",
+    "t85",
+    "t94",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The fourth architecture reserves high-fidelity soil simulation for braking- and traction-sensitive subsets of tests.",
+   "quote": "High-fidelity soil simulation for braking- and traction-sensitive subsets.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t167",
+    "t181",
+    "t174",
+    "t182"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The fourth architecture uses hardware-in-the-loop testing for timing, controller and interface behavior.",
+   "quote": "Hardware-in-the-loop for timing, controller and interface behavior.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t167",
+    "t148"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The fourth architecture uses targeted physical tests for correlation and final evidence.",
+   "quote": "Targeted physical tests for correlation and final evidence.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t167",
+    "t160",
+    "t216",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Allocation of test cases to each simulation fidelity level must be based on sensitivity and correlation work, not assumption.",
+   "quote": "The allocation of cases to each level must come from sensitivity and correlation work, not from assumption",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t167",
+    "t260",
+    "t250",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The simulation-tool market is modular: road-vehicle tools are strong in sensors and scenarios, while heavy-machine tools are strong in terrain and hydraulics; the booklet states that nobody has both.",
+   "quote": "The market itself is modular, with road-vehicle tools strong in sensors and scenarios and heavy-machine tools strong in terrain and hydraulics, and nobody has both [Chapter 11].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t167",
+    "t320",
+    "t321"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "High-fidelity soil simulation runs 50 to 200 times slower than real time and cannot be used for every regression case.",
+   "quote": "High-fidelity soil runs 50 to 200 times slower than real time and cannot be used for every regression case [Chapter 11].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t339",
+    "t161",
+    "t167"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The GPU-hour ceiling within a four-month validation window limits the number of full-fidelity simulation runs.",
+   "quote": "The GPU-hour ceiling of a four-month window caps full-fidelity runs [Chapter 11].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t163",
+    "t339",
+    "t43",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Simulation fidelity should be decomposed according to the requirement being tested rather than ranked by how convincing simulator screenshots look.",
+   "quote": "fidelity should be decomposed by the tested requirement rather than ranked by how convincing the screenshots look [Chapter 5].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t63",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends layered models for each machine family rather than one \"ultimate\" digital twin.",
+   "quote": "layered models per machine family rather than one \"ultimate\" digital twin [Chapter 8].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t179",
+    "t125",
+    "t129",
+    "t167"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Multi-simulator architecture requires integration work; open standards reduce that work but do not remove it.",
+   "quote": "The price is integration work, which open standards reduce but do not remove [Chapter 11].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t167",
+    "t320",
+    "t271"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Multi-simulator architecture enables a program starting from zero to cover the combinatorial test space within the available window while reserving scarce high-fidelity simulation and physical-test resources for cases where correlation shows they are needed.",
+   "quote": "This architecture is how a program starting from zero can cover the combinatorial space inside the window while spending its scarce high-fidelity and physical resources only where correlation shows they are needed [Chapter 11].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t167",
+    "t198",
+    "t43",
+    "t250",
+    "t216"
+   ],
+   "importance": 3
+  }
+ ]
+}

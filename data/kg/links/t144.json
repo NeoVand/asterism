@@ -1,0 +1,115 @@
+{
+ "key": "t144",
+ "hash": "30b5f06e993980cd",
+ "synopsis": "Field exposure alone cannot demonstrate rare-event safety, including for off-road machines; the proposed alternative combines stratified testing, simulation and safety analysis, while the required field exposure for rare misses or unintended braking remains uncertain [f312, f6924, f5467, f8181]. The sampling burden is substantial: zero observed misses requires 299 independent trials to demonstrate a miss rate of at most 1%, or 29,956 for at most 0.01%, and RAND’s on-road estimate reaches hundreds of millions of miles [f13303, f13304, f13305]. In 2016, Michigan researchers reported importance-sampling acceleration factors of roughly 300–100,000 for car-following crashes and 2,000–20,000 for lane-change conflicts, but credible rare-event estimates require valid input distributions and tail models, and the glossary identifies no known exposure distribution for 100 or more site types [f1220, f1221, f8183, f11614]. Simulation can deliberately generate rare events and corner cases, but only for conceived and parameterised hazards; procedural scenes can miss real correlations and rare structures, while design-of-experiments methods cannot establish global corner-case coverage or exclude narrow nonlinear failures [f13307, f3793, f7215, f7222]. Selected difficult cases therefore warrant qualification-quality sensor models and higher-fidelity machine models where simpler models fail, followed by controlled whole-machine confirmation of worst cases [f4474, f6409, f719]. The recommended pilot is a difficult end-to-end slice with physical or bench comparators and predeclared decision criteria, using 3–5 scenario classes including at least one edge case; a four-month window cannot cover all seasons, rare events or operator adaptation [f9914, f9916, f12348].",
+ "relations": [
+  {
+   "a": "f312",
+   "b": "f6661",
+   "type": "same",
+   "note": "Both reject field exposure alone as proof of rare-event performance."
+  },
+  {
+   "a": "f312",
+   "b": "f629",
+   "type": "same",
+   "note": "Both identify the inadequacy of field exposure for proving rare-event safety."
+  },
+  {
+   "a": "f6661",
+   "b": "f6924",
+   "type": "same",
+   "note": "The latter explicitly applies the exposure limitation to off-road machines."
+  },
+  {
+   "a": "f353",
+   "b": "f635",
+   "type": "same",
+   "note": "Both describe the 2024 curse of rarity and difficulty validating the distribution tail."
+  },
+  {
+   "a": "f1450",
+   "b": "f1295",
+   "type": "same",
+   "note": "Both describe increasing rare-event frequency in simulation and statistically reweighting results."
+  },
+  {
+   "a": "f789",
+   "b": "f13307",
+   "type": "same",
+   "note": "Both limit rare-event simulation to hazards someone has conceived and parameterised."
+  },
+  {
+   "a": "f5755",
+   "b": "f5467",
+   "type": "supports",
+   "note": "RAND’s exposure infeasibility supports the combined off-road testing and safety-analysis recommendation."
+  },
+  {
+   "a": "f13305",
+   "b": "f5755",
+   "type": "supports",
+   "note": "Hundreds of millions of required miles substantiate exposure-based demonstration’s infeasibility."
+  },
+  {
+   "a": "f1220",
+   "b": "f1945",
+   "type": "supports",
+   "note": "Reported car-following acceleration factors substantiate orders-of-magnitude exposure reductions."
+  },
+  {
+   "a": "f1221",
+   "b": "f1945",
+   "type": "supports",
+   "note": "Reported lane-change acceleration factors substantiate orders-of-magnitude exposure reductions."
+  },
+  {
+   "a": "f11614",
+   "b": "f8183",
+   "type": "elaborates",
+   "note": "The missing off-road exposure distribution identifies a concrete obstacle to credible estimates."
+  },
+  {
+   "a": "f6834",
+   "b": "f10336",
+   "type": "supports",
+   "note": "Pure Monte Carlo inefficiency motivates importance sampling or accelerated evaluation."
+  },
+  {
+   "a": "f4326",
+   "b": "f3737",
+   "type": "elaborates",
+   "note": "Missing correlations and unknown clutter explain procedural generation’s long-tail weakness."
+  },
+  {
+   "a": "f13265",
+   "b": "f789",
+   "type": "supports",
+   "note": "Expert-conceived storyboard coverage reinforces the limitation to imagined and parameterised hazards."
+  },
+  {
+   "a": "f4481",
+   "b": "f4474",
+   "type": "supports",
+   "note": "Simplified models’ edge-case weakness motivates selected physics-based sensor testing."
+  },
+  {
+   "a": "f6472",
+   "b": "f6409",
+   "type": "elaborates",
+   "note": "Berms, deep aggregate and severe track-soil interaction specify high-fidelity limit cases."
+  },
+  {
+   "a": "f6809",
+   "b": "f7215",
+   "type": "elaborates",
+   "note": "Fog, glare and contamination illustrate nonlinear failures screening DOE cannot exclude."
+  },
+  {
+   "a": "f9916",
+   "b": "f9914",
+   "type": "elaborates",
+   "note": "Adds a concrete scenario-class count and mandatory edge case to the difficult pilot."
+  }
+ ]
+}

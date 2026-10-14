@@ -1,0 +1,805 @@
+{
+ "chunkId": "k547",
+ "hash": "ffa9822a725bdab3",
+ "facts": [
+  {
+   "text": "A simulation toolchain that never becomes credible enough to support release claims is a critical project risk.",
+   "quote": "Simulation toolchain never becomes credible enough to support release claims",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    4,
+    5
+   ],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t82",
+    "t67"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NASA and ASME require simulation validation against the real application.",
+   "quote": "NASA and ASME require validation against the real application [4, 5]",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    4,
+    5
+   ],
+   "chapters": [
+    13
+   ],
+   "entities": [
+    {
+     "name": "NASA",
+     "kind": "organization"
+    },
+    {
+     "name": "ASME",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t234",
+    "t237",
+    "t242",
+    "t243"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Early warnings of an insufficiently credible simulation toolchain include huge virtual test counts without simulator-to-real residuals, uncertainty or an approved validity envelope; no correlation metrics by the first quarter of 2027; and per-scene tuning.",
+   "quote": "Huge virtual test counts without simulator-to-real residuals, uncertainty or an approved validity envelope; no correlation metrics by the first quarter of 2027; per-scene tuning",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t249",
+    "t259",
+    "t261",
+    "t250"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "To reduce simulation-credibility risk, use a credibility plan in the style of EU 2022/1426 Annex III, define named referent tests and acceptance criteria now, obtain independent review, and gate expansion on measured agreement.",
+   "quote": "Credibility plan in the style of EU 2022/1426 Annex III [1]; named referent tests and acceptance criteria defined now; independent review; expansion gated on measured agreement",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    1
+   ],
+   "chapters": [
+    13
+   ],
+   "entities": [
+    {
+     "name": "EU 2022/1426 Annex III",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t234",
+    "t62",
+    "t270",
+    "t250",
+    "t72"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Synthetic sensors reproducing appearance but not sensor physics in dust, fog, snow, rain, glare and darkness constitute a critical validation risk.",
+   "quote": "Synthetic sensors reproduce appearance but not sensor physics in dust, fog, snow, rain, glare and darkness [23, 32, 36, 37]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    23,
+    32,
+    36,
+    37
+   ],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t323",
+    "t102",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Early warnings that synthetic sensors reproduce appearance rather than sensor physics are good virtual metrics accompanied by field failures clustered by condition, range or incidence angle, and a lack of chamber data.",
+   "quote": "Good virtual metrics but field failures clustered by condition, range or incidence angle; no chamber data",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t323",
+    "t102",
+    "t249"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Before using simulated sensors for safety claims, validate raw and low-level simulated sensor outputs against real data using chamber and field correlation and condition-binned metrics.",
+   "quote": "Validate raw and low-level simulated sensor outputs against real data before using them for safety claims; chamber plus field correlation; condition-binned metrics",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t323",
+    "t250",
+    "t263",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "False braking on grades, with loads, at trailers and stockpiles, including new hazards created by the intervention itself, is a critical collision-mitigation risk.",
+   "quote": "False braking on grades, with loads, at trailers and stockpiles; new hazards from the intervention itself [50]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    50
+   ],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t31",
+    "t40",
+    "t173",
+    "t168",
+    "t13"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Shadow-mode nuisance events, operator complaints and off-switch requests are early warnings of false-braking and intervention hazards.",
+   "quote": "Shadow-mode nuisance events; operator complaints and off-switch requests",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t31",
+    "t34",
+    "t40"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Reduce false-braking and intervention risks through intervention hazard analysis that rates false-activation hazards separately, site modes and a restricted operating envelope.",
+   "quote": "Intervention hazard analysis with false-activation hazards rated separately; site modes; restricted envelope",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t47",
+    "t40",
+    "t31",
+    "t140"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Missed detection in real conditions is a critical validation risk.",
+   "quote": "Missed detection in real conditions",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t108",
+    "t85"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Real-set recall below target in specific condition bins is an early warning of missed detection in real conditions.",
+   "quote": "Real-set recall below target in specific condition bins",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t109",
+    "t108",
+    "t263"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Reduce missed-detection risk through real validation sets and operating-envelope exclusions for unproven conditions.",
+   "quote": "Real validation sets; envelope exclusions for unproven conditions",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t263",
+    "t140",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Braking and vehicle dynamics failing to generalize across machine families is a critical validation risk.",
+   "quote": "Braking and vehicle dynamics do not generalize across machine families [14, 22]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    14,
+    22
+   ],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t179",
+    "t182",
+    "t265",
+    "t76"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Repeated model retuning after every physical test, and errors correlated with machine, load, grade or configuration, are early warnings that braking and vehicle-dynamics models do not generalize across machine families.",
+   "quote": "Repeated model retuning after every physical test; errors correlate with machine, load, grade or configuration",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t179",
+    "t168",
+    "t173",
+    "t265"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Reduce cross-machine braking and dynamics generalization risk by using parameterized machine families with physical anchor points for each materially different dynamics architecture and retaining physical brake testing.",
+   "quote": "Parameterized machine families with physical anchor points for each materially different dynamics architecture; keep physical brake testing",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t184",
+    "t265",
+    "t179"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Requirements debate consuming the four-month validation window is a critical project risk.",
+   "quote": "The four-month window is consumed by requirements debate",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    7,
+    8,
+    10,
+    12
+   ],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t63",
+    "t82"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 19014 changes in October 2026.",
+   "quote": "ISO 19014 changes in October 2026 [7, 8, 10, 12]",
+   "kind": "event",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    7,
+    8,
+    10,
+    12
+   ],
+   "chapters": [
+    13
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Hazard analysis, performance-level allocation, pass or fail metrics, or the standard edition remaining undecided in 2027 are early warnings that requirements debate will consume the validation window.",
+   "quote": "Hazard analysis, performance-level allocation, pass or fail metrics or standard edition still undecided in 2027",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t47",
+    "t51",
+    "t62",
+    "t43",
+    "t63"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Freeze the safety and conformity evidence plan before prototype arrival, with controlled requirement change, to protect the validation window from requirements debate.",
+   "quote": "Freeze the safety and conformity evidence plan before prototype arrival, with controlled requirement change",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t63",
+    "t70",
+    "t277",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Supplier data arriving late or being legally unusable is a critical project risk.",
+   "quote": "Supplier data arrives late or cannot legally be used [22, 23]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    22,
+    23
+   ],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t357",
+    "t347",
+    "t320"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Early warnings of supplier-data and usage-rights problems include interface timing, brake maps, sensor models, fault modes or licensing rights still under negotiation near prototype delivery, and a supplier refusing to release sensor model parameters.",
+   "quote": "Interface timing, brake maps, sensor models, fault modes or licensing rights still under negotiation near prototype delivery; supplier will not release sensor model parameters",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t357",
+    "t182",
+    "t323",
+    "t56",
+    "t334"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Audit supplier data and rights now, and make missing artifacts contractual milestones, to reduce supplier-data and legal-use risks.",
+   "quote": "Supplier data and rights audit now; missing artifacts made contractual milestones",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t357",
+    "t343"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Prototype changes invalidating a pre-built simulator are a critical risk inferred from verification and validation practice.",
+   "quote": "Prototype changes invalidate the pre-built simulator (inference from V&V practice) [4]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t65",
+    "t42",
+    "t125",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Changes in 2027 to sensor type, mounting, controller timing, CAN or J1939 interface, brake controller or algorithm interfaces without impact analysis are early warnings that prototype changes may invalidate the pre-built simulator.",
+   "quote": "Sensor type, mounting, controller timing, CAN or J1939 interface, brake controller or algorithm interfaces change in 2027 without impact analysis",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [
+    {
+     "name": "CAN bus",
+     "kind": "other"
+    },
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t42",
+    "t100",
+    "t120",
+    "t230",
+    "t88"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Reduce simulator invalidation from prototype changes by freezing sensors early, maintaining configuration traceability, automating model-impact and regression analysis, and reserving physical re-correlation tests after changes.",
+   "quote": "Freeze sensors early; configuration traceability; automated model-impact and regression analysis; reserved physical re-correlation tests after changes",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t42",
+    "t64",
+    "t161",
+    "t160",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Overfitting the collision-mitigation function to the simulator is identified as a critical risk by inference, but an off-road case was not found.",
+   "quote": "The function is overfitted to the simulator (inference; off-road case **not found**)",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t219",
+    "t267",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Improving virtual metrics while held-out real performance stalls or worsens is an early warning that the collision-mitigation function is overfitted to the simulator.",
+   "quote": "Virtual metrics improve while held-out real performance stalls or worsens",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t219",
+    "t263",
+    "t249"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Reduce simulator-overfitting risk through independent withheld physical datasets, blind correlation tests and a prohibition on tuning on final validation sets.",
+   "quote": "Independent withheld physical datasets; blind correlation tests; no tuning on final validation sets",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t219",
+    "t263",
+    "t220",
+    "t160",
+    "t113"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Unsafe recovery and degraded modes, even when nominal avoidance works, are a critical collision-mitigation risk.",
+   "quote": "Recovery and degraded modes are unsafe even when nominal avoidance works [30]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    30
+   ],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t55",
+    "t56",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Test plans lacking communications-loss, sensor-blocked, restart, service and recovery cases are early warnings of unsafe recovery and degraded modes.",
+   "quote": "Test plans lack communications-loss, sensor-blocked, restart, service and recovery cases",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t103",
+    "t143",
+    "t55"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Explicitly validate degraded modes, annunciation, recovery procedures and human understanding to reduce recovery and degraded-mode risks.",
+   "quote": "Validate degraded modes, annunciation, recovery procedures and human understanding explicitly",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t55",
+    "t36",
+    "t37",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Late rejection of virtual evidence by safety, legal, customer or conformity reviewers is a critical project risk.",
+   "quote": "Virtual evidence is rejected late by safety, legal, customers or conformity reviewers",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t70",
+    "t127",
+    "t277",
+    "t361"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No universal legal acceptance rule for virtual evidence was found.",
+   "quote": "no universal legal acceptance rule found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t127",
+    "t70",
+    "t275",
+    "t277"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Reviewers first seeing the simulation credibility argument near launch and requesting physical evidence that the schedule cannot provide is an early warning of late rejection of virtual evidence.",
+   "quote": "Reviewers first see the credibility argument near launch and ask for physical evidence the schedule cannot provide",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t269",
+    "t70",
+    "t344"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Have safety, legal and conformity reviewers approve the evidence taxonomy and substitution rules before the main campaign to reduce late rejection of virtual evidence.",
+   "quote": "Have safety, legal and conformity reviewers approve the evidence taxonomy and substitution rules before the main campaign",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t70",
+    "t264",
+    "t270",
+    "t233",
+    "t277"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Scenario coverage becoming an unmanageable combinatorial list is a high-severity validation risk.",
+   "quote": "Scenario coverage becomes an unmanageable combinatorial list [23]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    23
+   ],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t198",
+    "t142",
+    "t82"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Reporting coverage as “scenarios run” without a risk taxonomy or parameter boundaries is an early warning that scenario coverage is becoming unmanageable.",
+   "quote": "Coverage reported as \"scenarios run\" with no risk taxonomy or parameter boundaries",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t198",
+    "t142",
+    "t199",
+    "t47"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Reduce combinatorial scenario-coverage risk through hazard-driven scenario classes, equivalence classes, boundary analysis and uncertainty sampling, using accident data for prioritization.",
+   "quote": "Hazard-driven scenario classes, equivalence classes, boundary analysis and uncertainty sampling; accident data for prioritization",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t200",
+    "t142",
+    "t47",
+    "t198",
+    "t259"
+   ],
+   "importance": 3
+  }
+ ]
+}

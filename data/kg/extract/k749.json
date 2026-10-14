@@ -1,0 +1,507 @@
+{
+ "chunkId": "k749",
+ "hash": "4edb9f3cc5c70030",
+ "facts": [
+  {
+   "text": "Terramechanics is the science of wheel and track interaction with soil; SCM, DEM, SPH, CRM and FEM compute that interaction with approaches ranging from fast approximate formulas to very slow grain-by-grain simulation.",
+   "quote": "Terramechanics is the science of how wheels and tracks interact with soil, and SCM, DEM, SPH, CRM and FEM are five ways of computing that interaction",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t181"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The classic Bekker-Wong terramechanics approach, developed in the middle of the twentieth century, uses measured soil parameters to relate pressure to sinkage and shear stress to slip, enabling estimates of wheel sinkage, rolling resistance and transmitted braking or pulling force.",
+   "quote": "developed by Bekker and Wong in the middle of the twentieth century, uses a few measured soil parameters to relate pressure to sinkage and shear stress to slip.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Bekker",
+     "kind": "person"
+    },
+    {
+     "name": "Wong",
+     "kind": "person"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t174"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Tractive and braking force depend on soil type, contact area, load and slip.",
+   "quote": "tractive and braking force depend on soil type, contact area, load and slip",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t174",
+    "t168"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Tracks retain more shear force than tires in soft soil.",
+   "quote": "tracks keep more shear force than tires in soft soil [Chapter 8]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t175"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "DEM in the terramechanics entry means discrete element method, not the unrelated digital elevation model meaning used elsewhere in the glossary.",
+   "quote": "DEM here means discrete element method; elsewhere in the glossary DEM also means digital elevation model, a map of ground heights, which is unrelated.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Discrete element method",
+     "kind": "method"
+    },
+    {
+     "name": "Digital elevation model",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t131"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Soil Contact Model (SCM) applies Bekker-Wong rules over a deformable surface and runs fast, close to real time; the booklet identifies SCM as the practical soft-ground option.",
+   "quote": "Applies Bekker-Wong rules over a deformable surface | Fast, close to real time | The practical soft-ground option",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "Soil Contact Model (SCM)",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t153"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Soil Contact Model authors claim fidelity comparable to DEM.",
+   "quote": "its authors claim fidelity \"comparable\" to DEM",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "Soil Contact Model (SCM)",
+     "kind": "method"
+    },
+    {
+     "name": "Discrete element method",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Some single-wheel studies report Soil Contact Model force error below 10 percent; SCM tuning varies with slip angle.",
+   "quote": "under 10 percent force error in some single-wheel studies, tuning varies with slip angle [Chapter 8]",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "Soil Contact Model (SCM)",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Discrete element method simulates soil as millions of colliding grains and is very slow, requiring high-performance computing.",
+   "quote": "Simulates soil as millions of grains that collide | Very slow; high-performance computing",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "Discrete element method",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t338"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet reserves discrete element method for selected limit cases such as berms, deep aggregate and severe track-soil interaction, and calls DEM unusable for scenario sweeps.",
+   "quote": "Selected limit cases such as berms, deep aggregate and severe track-soil interaction; \"unusable for scenario sweeps\" [Chapter 8]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "Discrete element method",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t143"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Smoothed particle hydrodynamics treats soil as a fluid-like particle cloud and is very slow; the booklet places SPH in the same class as DEM for this program.",
+   "quote": "Treats soil as a fluid-like cloud of particles | Very slow | Same class as DEM for this program [Chapter 8]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "Smoothed particle hydrodynamics",
+     "kind": "method"
+    },
+    {
+     "name": "Discrete element method",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Continuum model (CRM) represents soil as a continuous deformable material solved with SPH-type numerics.",
+   "quote": "Soil as a continuous deformable material, solved with SPH-type numerics",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Continuum model (CRM)",
+     "kind": "method"
+    },
+    {
+     "name": "Smoothed particle hydrodynamics",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Continuum model runs 50 to 200 times slower than real time in one unnamed open-source tool, which requires a graphics processor from one specific unnamed vendor.",
+   "quote": "50 to 200 times slower than real time in one open-source tool, which also needs a graphics processor from one specific vendor",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Continuum model (CRM)",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t339",
+    "t336"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends using continuum model selectively to derive and calibrate simpler terrain models.",
+   "quote": "Best used selectively to derive and calibrate simpler terrain models [Chapter 11]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Continuum model (CRM)",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Finite element method (FEM, or FEA for the analysis) divides soil or tires into small-element meshes and solves stress and strain; the booklet characterizes FEM as slow, parameter-heavy research-level terrain and flexible-tire modeling.",
+   "quote": "Divides soil or a tire into a mesh of small elements and solves stress and strain | Slow, parameter-heavy | Research-level terrain and flexible-tire modeling [Chapters 8, 11]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Finite element method",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t180"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet found no evidence that DEM, SPH or FEM terrain modeling is required to predict automatic-braking thresholds across production machines.",
+   "quote": "Evidence that DEM, SPH or FEM terrain is required to predict automatic-braking thresholds across production machines was not found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "Discrete element method",
+     "kind": "method"
+    },
+    {
+     "name": "Smoothed particle hydrodynamics",
+     "kind": "method"
+    },
+    {
+     "name": "Finite element method",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t188",
+    "t25"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "DEM, SPH and FEM terrain methods are far too costly for exhaustive scenario sweeps, and uncertain soil inputs can overwhelm their fidelity.",
+   "quote": "these methods are \"far too costly for exhaustive scenario sweeps, and uncertain soil inputs can overwhelm the fidelity\" [Chapter 8]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "Discrete element method",
+     "kind": "method"
+    },
+    {
+     "name": "Smoothed particle hydrodynamics",
+     "kind": "method"
+    },
+    {
+     "name": "Finite element method",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t198",
+    "t259"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "All published terramechanics accuracy figures discussed in the passage come from single-wheel rigs and sand.",
+   "quote": "All published accuracy figures come from single-wheel rigs and sand",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Soil parameters vary between sites, within a site and over time with water and traffic.",
+   "quote": "soil parameters vary across and within a site and over time with water and traffic [Chapter 8]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t174",
+    "t259"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The recommended multi-fidelity approach uses detailed soil simulation to study stopping-distance responses to soil, slope, payload and tire or track interaction, fits simpler parameterized models for large scenario runs, and confirms parameter envelopes with targeted physical tests.",
+   "quote": "use detailed soil simulation to learn how stopping distance responds to soil, slope, payload and tire or track interaction, fit simpler parameterized models for the large scenario runs, and confirm the parameter envelopes with targeted physical tests [Chapter 11]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t170",
+    "t184",
+    "t262",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Soft or deformable ground is one of four situations where the booklet says simple stopping models are insufficient.",
+   "quote": "Soft or deformable ground is one of the four places where the booklet says simple stopping models are not enough.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t170",
+    "t183"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Site-wide soil modeling is unnecessary if crawler and soft-ground tests establish a conservative available-deceleration-versus-state envelope; detailed terramechanics is needed only where those envelopes fail to transfer.",
+   "quote": "site-wide soil modeling is unnecessary if crawler and soft-ground tests identify a conservative \"available deceleration versus state\" envelope; detailed terramechanics is needed only where such envelopes fail to transfer [Chapter 8]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t169",
+    "t262",
+    "t184"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Within a four-month validation window, the terramechanics budget should fund a few deliberately chosen limit cases rather than modeling 100 sites.",
+   "quote": "In a four-month window the terramechanics budget should go to a few deliberately chosen limit cases, not to modeling 100 sites [Chapters 8, 11].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t43",
+    "t200",
+    "t44"
+   ],
+   "importance": 3
+  }
+ ]
+}

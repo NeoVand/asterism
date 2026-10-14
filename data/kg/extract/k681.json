@@ -1,0 +1,244 @@
+{
+ "chunkId": "k681",
+ "hash": "ab6c3aeb57e927bb",
+ "facts": [
+  {
+   "text": "Generative models are machine-learning systems that create new, realistic-looking images or sensor data; \"generated weather\" uses these systems to add rain, fog, snow, dust or night to clear-weather recordings.",
+   "quote": "Generative models are machine-learning systems that create new, realistic-looking images or sensor data, and \"generated weather\" means using them to add rain, fog, snow, dust or night to a recording made in clear weather.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t114"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Generative weather editing can turn thousands of hours of clear-weather recordings into bad-weather data without waiting for winter.",
+   "quote": "thousands of hours of clear-weather recordings could become \"bad weather\" data without waiting for winter.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t114",
+    "t45"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Generated weather edits are valid for some testing, but are not yet a substitute for physically traceable sensor simulation.",
+   "quote": "yes for some testing, not yet as a substitute for physically traceable sensor simulation [Chapter 6]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t70",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2026 benchmark found that a panel of vision-language models accepted the best generative editor's weather and lighting edits as realistic 94.8% of the time, compared with 26.3% for the best rule-based library.",
+   "quote": "a 2026 benchmark found the best generative editor's weather and lighting edits accepted as realistic 94.8% of the time by a panel of vision-language models, against 26.3% for the best rule-based library",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t114"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Physics-informed generators that incorporate range, material reflectance and scattering are stronger than aesthetic filters for generating weather edits.",
+   "quote": "physics-informed generators that build in range, material reflectance and scattering are stronger than aesthetic filters.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t117",
+    "t128"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The 2026 generative weather-editing benchmark used 40 images and machine judges.",
+   "quote": "that benchmark used 40 images and machine judges",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The 2026 generative weather-editing benchmark found that night edits were accepted as realistic only 12.5% to 17.6% of the time.",
+   "quote": "found night edits accepted only 12.5% to 17.6% of the time",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Detectors pre-trained on synthetic fog gained at most 0.0117 mAP over a real-only baseline.",
+   "quote": "detectors pre-trained on synthetic fog gained at most 0.0117 mAP over a real-only baseline",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "mAP",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t114",
+    "t112",
+    "t221"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A survey of 91 studies characterizes the generative weather field as early-stage.",
+   "quote": "a survey of 91 studies calls the field early-stage",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No standard or regulator treats generated weather as physically equivalent to real sensor measurements.",
+   "quote": "no standard or regulator treats generated weather as physically equivalent to real sensor measurements.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t271",
+    "t275",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A photorealistic generated image can be wrong in absolute brightness, depth, glare energy, raindrop paths and consistency between the camera and the lidar or radar observing the same scene.",
+   "quote": "A photorealistic image can be wrong in exactly the quantities that matter: absolute brightness, depth, glare energy, raindrop paths, and consistency between the camera and the lidar or radar looking at the same scene [Chapter 6].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t165",
+    "t89",
+    "t92",
+    "t94"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Generated rain, fog or dust should carry a physical label such as \"20 mm/h rain\" or \"50 m visibility\" only when the label has been calibrated against real sensor data; otherwise, the generated weather is a domain perturbation whose exact physical meaning is unknown.",
+   "quote": "generated rain, fog or dust should carry a physical label such as \"20 mm/h rain\" or \"50 m visibility\" only when that label has been calibrated against real sensor data; otherwise it is a domain perturbation, a deliberate disturbance whose exact physical meaning is unknown [Chapter 6].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t237",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Generated weather is credible for training, finding failures and widening coverage, but not yet as stand-alone pass or fail evidence, especially for lidar and radar, at night and in dust.",
+   "quote": "Generated weather is credible for training, for finding failures and for widening coverage, but not yet as stand-alone pass or fail evidence, especially for lidar and radar, at night and in dust",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t62",
+    "t70",
+    "t92",
+    "t94"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The recommended hybrid approach uses generated weather to propose tests while anchoring the physics with models and real measurements.",
+   "quote": "the recommended hybrid uses it to propose tests while anchoring the physics with models and real measurements [Chapter 6].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t216",
+    "t234"
+   ],
+   "importance": 3
+  }
+ ]
+}

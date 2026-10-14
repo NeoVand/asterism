@@ -1,0 +1,115 @@
+{
+ "key": "t179",
+ "hash": "2153b291715949ab",
+ "synopsis": "A program starting in October 2026 can realistically have a parameterized machine-and-brake model working by mid-2027; an executable SIL regression framework on that schedule is conditional on defining software interfaces [f67, f840]. Off-road braking follows the same underlying physics as road braking, but machine dynamics, ground interaction and brake response do not transfer automatically from road vehicles or between machine families [f5886, f1731, f10430]. Models must account for payload, articulation, terrain interaction, brake capability and latency, while ground-induced changes in machine attitude also change sensor pose; even perfect sensor simulation cannot compensate for incorrect braking dynamics [f3971, f3959, f5089]. SIL and modeled-machine HIL cannot establish true machine behavior, while VIL can demonstrate real braking and delays but may omit soft soil, grades and other important conditions; physical stopping tests should therefore bound models for each machine family and surface class [f926, f5287, f5333, f5336, f10612]. The recommended approach layers fast threshold, stability and selective high-fidelity models, with separate validation and uncertainty reporting: greater complexity is not automatically greater credibility, as a 2026 on-road round robin reported spreads of 0.033 s and 0.314 m for more complex models, and NIOSH's 2018 stopping model still required validation [f13060, f10617, f5907, f5949].",
+ "relations": [
+  {
+   "a": "f3382",
+   "b": "f11706",
+   "type": "same",
+   "note": "Both identify false interventions as human-factors and vehicle-dynamics hazards."
+  },
+  {
+   "a": "f786",
+   "b": "f12218",
+   "type": "same",
+   "note": "Uncompared models remain hypotheses rather than evidence."
+  },
+  {
+   "a": "f10430",
+   "b": "f10481",
+   "type": "same",
+   "note": "Both reject automatic transfer of dynamics, brakes and sensing between machine families."
+  },
+  {
+   "a": "f3972",
+   "b": "f5089",
+   "type": "same",
+   "note": "Sensor simulation cannot establish safety when machine braking dynamics are wrong."
+  },
+  {
+   "a": "f840",
+   "b": "f67",
+   "type": "elaborates",
+   "note": "Adds executable regression scope and an interface-definition condition to the mid-2027 forecast."
+  },
+  {
+   "a": "f1731",
+   "b": "f2562",
+   "type": "supports",
+   "note": "Nontransferable physical content motivates separate qualification of dynamics and brake models."
+  },
+  {
+   "a": "f1979",
+   "b": "f7907",
+   "type": "supports",
+   "note": "Elevated payload changes dynamics, supporting explicit mass, inertia and payload transfer parameters."
+  },
+  {
+   "a": "f3959",
+   "b": "f7871",
+   "type": "elaborates",
+   "note": "Ground-induced attitude changes provide a specific mechanism linking dynamics to sensor data."
+  },
+  {
+   "a": "f926",
+   "b": "f5287",
+   "type": "supports",
+   "note": "SIL's inability to establish true dynamics also applies when HIL retains modeled machinery."
+  },
+  {
+   "a": "f5336",
+   "b": "f5333",
+   "type": "elaborates",
+   "note": "Qualifies VIL's braking evidence with conditions its bench may not reproduce."
+  },
+  {
+   "a": "f5336",
+   "b": "f10612",
+   "type": "supports",
+   "note": "Potential VIL terrain omissions motivate physical stopping tests by family and surface."
+  },
+  {
+   "a": "f5539",
+   "b": "f5528",
+   "type": "elaborates",
+   "note": "Details speed and pose updates and regenerated controller feedback after the replay branch."
+  },
+  {
+   "a": "f5634",
+   "b": "f5539",
+   "type": "depends",
+   "note": "Intervention replay requires adequately recorded machine state and brake commands."
+  },
+  {
+   "a": "f5903",
+   "b": "f10612",
+   "type": "supports",
+   "note": "Simulated downhill non-stopping cases reinforce the need for physical bounds on model predictions."
+  },
+  {
+   "a": "f5949",
+   "b": "f786",
+   "type": "supports",
+   "note": "Extensive stopping-model parameter sweeps still required validation, illustrating simulation's evidentiary limits."
+  },
+  {
+   "a": "f5907",
+   "b": "f13060",
+   "type": "supports",
+   "note": "Complex-model variability supports reserving high-fidelity models for selected challenges to simpler models."
+  },
+  {
+   "a": "f985",
+   "b": "f12369",
+   "type": "elaborates",
+   "note": "Equivalence must show extreme variants bound intermediates despite non-monotonic geometry and braking effects."
+  },
+  {
+   "a": "f3504",
+   "b": "f10617",
+   "type": "elaborates",
+   "note": "Extends uncertainty separation into explicit verification and validation reporting for physical and timing components."
+  }
+ ]
+}

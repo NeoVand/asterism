@@ -1,0 +1,115 @@
+{
+ "key": "t205",
+ "hash": "14017339402577d7",
+ "synopsis": "Falsification optimizes scenario parameters to worsen measures such as time-to-collision, stopping margin or detection confidence, seeking reproducible failures and weak boundaries within the simulated space [f6835, f14146, f6841]. The recommended discovery campaign targets stopping boundaries, partial visibility, high closing speed, field-of-view edges and sensor degradation; weather tests should reproduce measured degradation rather than merely realistic appearance [f14155, f10937]. Discovery must remain separate from frozen estimation samples and regression testing: its failure fraction is biased by design, cannot represent an operational failure rate, and found failures should become logical scenarios or permanent regression tests [f133, f6842, f14157, f6949]. Failure-free searches do not prove failures absent, objectives can miss different failure types, and searches can exploit simulator artefacts [f6843, f6845, f6844]. Evidence includes on-road and aerospace work, but no off-road demonstration was found; VerifAI with Scenic reported up to a fivefold speed-up from parallel multi-objective falsification in 2021 [f14158, f6839]. The planning recommendation is to run inexpensive early falsification experiments before building major infrastructure [f10912].",
+ "relations": [
+  {
+   "a": "f6646",
+   "b": "f14093",
+   "type": "same",
+   "note": "Both classify falsification and adaptive search as failure-finding test-selection methods."
+  },
+  {
+   "a": "f6841",
+   "b": "f14150",
+   "type": "same",
+   "note": "Both limit demonstrated claims to counterexamples, boundaries and worst cases within simulation."
+  },
+  {
+   "a": "f6841",
+   "b": "f7249",
+   "type": "same",
+   "note": "Both identify reproducible counterexamples and simulated worst cases as valid search outcomes."
+  },
+  {
+   "a": "f6842",
+   "b": "f14151",
+   "type": "same",
+   "note": "Both reject rate estimation because failure-seeking counts are biased by design."
+  },
+  {
+   "a": "f6842",
+   "b": "f14096",
+   "type": "same",
+   "note": "Both state failure-hunting searches cannot establish failure rates."
+  },
+  {
+   "a": "f6843",
+   "b": "f14152",
+   "type": "same",
+   "note": "Failure-free searches do not prove failures absent."
+  },
+  {
+   "a": "f6844",
+   "b": "f14153",
+   "type": "same",
+   "note": "Both warn that search may exploit simulator flaws."
+  },
+  {
+   "a": "f6949",
+   "b": "f14156",
+   "type": "same",
+   "note": "Found failures become logical scenarios or permanent regression tests."
+  },
+  {
+   "a": "f7401",
+   "b": "f14294",
+   "type": "same",
+   "note": "Both describe the prohibition on search-based rate estimates as well established."
+  },
+  {
+   "a": "f10937",
+   "b": "f16540",
+   "type": "same",
+   "note": "Weather falsification checks measured sensor degradation rather than appearance."
+  },
+  {
+   "a": "f134",
+   "b": "f14157",
+   "type": "same",
+   "note": "Both prohibit reporting discovery failure fractions as operational or field failure rates."
+  },
+  {
+   "a": "f6835",
+   "b": "f14146",
+   "type": "elaborates",
+   "note": "Glossary adds tunable scenario parameters to robustness-driven optimization."
+  },
+  {
+   "a": "f6836",
+   "b": "f14148",
+   "type": "elaborates",
+   "note": "Glossary repeats the tools and adds related failure-seeking search families."
+  },
+  {
+   "a": "f6934",
+   "b": "f133",
+   "type": "supports",
+   "note": "Established on-road practice supports campaign separation by purpose, data and governance."
+  },
+  {
+   "a": "f6842",
+   "b": "f13310",
+   "type": "supports",
+   "note": "Biased discovery counts justify separating failure searches from frozen estimation samples."
+  },
+  {
+   "a": "f6840",
+   "b": "f14158",
+   "type": "elaborates",
+   "note": "Glossary adds the missing off-road demonstration to the on-road and aerospace evidence scope."
+  },
+  {
+   "a": "f14155",
+   "b": "f12763",
+   "type": "elaborates",
+   "note": "Discovery targeting adds stopping boundaries, closing speed and field-of-view edges."
+  },
+  {
+   "a": "f14147",
+   "b": "f6949",
+   "type": "supports",
+   "note": "Replayable failures enable conversion into permanent regression tests."
+  }
+ ]
+}

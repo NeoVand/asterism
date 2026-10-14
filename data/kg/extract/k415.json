@@ -1,0 +1,337 @@
+{
+ "chunkId": "k415",
+ "hash": "049e30b894755343",
+ "facts": [
+  {
+   "text": "A parameterized family model is recommended for a machine family instead of 20 unrelated models.",
+   "quote": "The practical analogue is a **parameterized family model** rather than 20 unrelated models.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t230",
+    "t265"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The transfer-relevant parameter set for a machine-family model should include at least machine geometry and articulation; gross mass, inertia and payload; wheel or track and braking dynamics; grade capability; sensor type and firmware; mounting height, angle and occlusion; body-induced vibration; sensor-to-brake latency; and environmental variables affecting perception.",
+   "quote": "machine geometry and articulation, gross mass, inertia and payload, wheel or track and braking dynamics, grade capability, sensor type and firmware, mounting height, angle and occlusion, body-induced vibration, sensor-to-brake latency and the environmental variables that affect perception.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t265",
+    "t100",
+    "t179",
+    "t172"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For every transfer from machine A to machine B, the safety case should identify what changed using a configuration-controlled delta covering geometry, dynamics, sensor installation, software, calibration and environment.",
+   "quote": "A configuration-controlled delta between geometry, dynamics, sensor installation, software, calibration and environment.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t67",
+    "t230",
+    "t64"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For every transfer from machine A to machine B, the safety case should assess whether changes affect a validated phenomenon or safety output using sensitivity analysis, engineering analysis and uncertainty propagation.",
+   "quote": "| Can that change affect a validated phenomenon or safety output? | Sensitivity analysis, engineering analysis and uncertainty propagation. |",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t260",
+    "t67",
+    "t259"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For a transfer between machine variants, no bridging evidence is expected for demonstrably irrelevant differences; targeted component or system tests are expected for influential differences; and new full-system anchors are expected where new physics or boundary conditions appear.",
+   "quote": "None for demonstrably irrelevant differences; targeted component or system tests for influential differences; new full-system anchors where new physics or boundary conditions appear.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t264",
+    "t261",
+    "t67"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A new machine variant or sensor pose outside the validated parameter hull should receive new physical anchors at the new corner, with re-validation of the affected submodels.",
+   "quote": "B -- No --> C[New physical anchors at the new corner; re-validate the affected submodels]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t261",
+    "t263",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For a new machine variant or sensor pose inside the validated parameter hull, a delta that does not touch a PIRT-ranked phenomenon should be documented and evaluated using simulation only.",
+   "quote": "D{Does the delta touch a PIRT-ranked phenomenon?}\n    D -- No --> E[Document the delta; simulation only]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "PIRT",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t265",
+    "t245",
+    "t261",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For a new machine variant or sensor pose inside the validated parameter hull, a delta touching a PIRT-ranked phenomenon should trigger a delta physical test set consisting of brake calibration and sensor field-of-view and detection checks at the new mount.",
+   "quote": "D -- Yes --> F[Delta physical set: brake calibration, sensor field-of-view and detection check at the new mount]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "PIRT",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t265",
+    "t245",
+    "t184",
+    "t87",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The validity envelope and credibility record should be updated after evaluating a new variant or sensor pose, whether the evaluation uses simulation only, delta physical tests, or new physical anchors with submodel re-validation.",
+   "quote": "F --> G[Update the validity envelope and the credibility record]\n    E --> G\n    C --> G",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t261",
+    "t269"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Machine-family model transfer should begin by parameterizing machine geometry, mass, brake model and sensor pose.",
+   "quote": "The concrete steps are: parameterize machine geometry, mass, brake model and sensor pose;",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    5,
+    4
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t265",
+    "t182",
+    "t100"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A machine-family model should be validated at envelope corners: smallest and largest machine, lowest and highest sensor mount, widest yaw offset, shortest and longest wheelbase or articulation geometry, lowest and highest mass, least and most favorable brake response, and any other parameter that sensitivity analysis identifies as governing the safety output.",
+   "quote": "smallest and largest machine, lowest and highest mount, widest yaw offset, shortest and longest wheelbase or articulation geometry, lowest and highest mass, least and most favorable brake response, and any other parameter that sensitivity analysis shows governs the safety output",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    5,
+    4
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t261",
+    "t260",
+    "t184",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For each new machine variant, the recommended concrete procedure is to demonstrate that the variant lies inside the validated parameter hull and then run a reduced delta physical set comprising brake calibration and a sensor field-of-view and detection check at the new mount.",
+   "quote": "for each new variant, show it lies inside the validated parameter hull and then run a reduced \"delta\" physical set of brake calibration plus a sensor field-of-view and detection check at the new mount",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    5,
+    4
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t261",
+    "t184",
+    "t87",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Full re-validation of a machine-family model is recommended only when a variant falls outside the validated parameter hull or introduces a new PIRT phenomenon, such as a new sensor type or articulated steering.",
+   "quote": "re-validate fully only if a variant falls outside the hull or introduces a new phenomenon in the PIRT, for example a new sensor type or articulated steering.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    5,
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "PIRT",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t265",
+    "t261",
+    "t245",
+    "t176",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The claim that selected machine-family extremes bound all intermediate machines must itself be demonstrated; geometry, articulation, sensor occlusion and brake dynamics can create non-monotonic effects.",
+   "quote": "The claim that the selected extremes truly bound all intermediate machines must itself be demonstrated, because geometry, articulation, sensor occlusion and brake dynamics can create non-monotonic effects.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    5,
+    4
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t261",
+    "t260",
+    "t103",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The recommended machine-family transfer procedure is expert opinion consistent with nuclear scaling and FAA similarity principles.",
+   "quote": "**Expert opinion**, consistent with the nuclear scaling and FAA similarity principles [5, 4].",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    5,
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FAA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t265",
+    "t245",
+    "t246"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor relocation warrants particular caution because mounting position changes occlusion, angle of incidence, ground returns, vibration, range geometry, rain, snow and dust contamination patterns, and apparent object motion during articulation, even when hardware and perception software remain unchanged.",
+   "quote": "mounting position changes occlusion, angle of incidence, ground returns, vibration, range geometry, rain, snow and dust contamination patterns, and the apparent motion of objects during articulation.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t265",
+    "t103",
+    "t102",
+    "t176"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor pose should be treated as a model input with an explicit validated range, and relocating a sensor outside that range should trigger bridge testing.",
+   "quote": "Sensor pose should therefore be treated as a model input with an explicit validated range, and a move outside that range should trigger bridge testing.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t265",
+    "t262",
+    "t264"
+   ],
+   "importance": 3
+  }
+ ]
+}

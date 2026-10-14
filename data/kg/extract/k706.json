@@ -1,0 +1,245 @@
+{
+ "chunkId": "k706",
+ "hash": "9b57c9b6ac081758",
+ "facts": [
+  {
+   "text": "Co-simulation runs separate simulation programs together in step; Functional Mock-up Interface (FMI) standardizes their connection, a Functional Mock-up Unit (FMU) packages one model to FMI, and System Structure and Parameterization (SSP) describes how FMUs are wired together.",
+   "quote": "Co-simulation runs several separate simulation programs together in step, FMI is the standard that lets them plug into each other, an FMU is one model packaged to that standard, and SSP describes how a set of FMUs is wired together.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Functional Mock-up Interface (FMI)",
+     "kind": "standard"
+    },
+    {
+     "name": "Functional Mock-up Unit (FMU)",
+     "kind": "other"
+    },
+    {
+     "name": "System Structure and Parameterization (SSP)",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t139"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No single simulation tool is best at everything, motivating the use of separate tools in co-simulation.",
+   "quote": "No one tool is best at everything.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t167",
+    "t139"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "FMI is an open standard; an exported FMU is a single file containing a model's equations or compiled code and a description of its inputs and outputs.",
+   "quote": "FMI (Functional Mock-up Interface) is the open standard that defines the plug. A model exported to it becomes an FMU (Functional Mock-up Unit), a single file containing the model's equations or compiled code plus a description of its inputs and outputs.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Functional Mock-up Interface (FMI)",
+     "kind": "standard"
+    },
+    {
+     "name": "Functional Mock-up Unit (FMU)",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t139"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Around 250 tools supported FMI by mid-2025.",
+   "quote": "By mid-2025 around 250 tools supported FMI [Chapter 11].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Functional Mock-up Interface (FMI)",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t139"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "SSP is a companion standard that records FMU connections and parameters so the complete arrangement can be shared and reproduced.",
+   "quote": "SSP (System Structure and Parameterization) is the companion standard that records which FMUs are connected to which, with what parameters, so the whole arrangement can be shared and reproduced.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "System Structure and Parameterization (SSP)",
+     "kind": "standard"
+    },
+    {
+     "name": "Functional Mock-up Unit (FMU)",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t139"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor models are delivered as FMUs that use the Open Simulation Interface (OSI) message standard.",
+   "quote": "sensor models are delivered as FMUs that speak the OSI (Open Simulation Interface) message standard",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Functional Mock-up Unit (FMU)",
+     "kind": "other"
+    },
+    {
+     "name": "Open Simulation Interface (OSI)",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t139",
+    "t138",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A heavy-machine physics tool couples to a controls environment over FMI.",
+   "quote": "a heavy-machine physics tool couples to a controls environment over FMI [Chapters 6, 11].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Functional Mock-up Interface (FMI)",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t139",
+    "t324"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The difficult parts of integrating simulation tools are aligning coordinate systems and clocks, supplying the sensor renderer with machine pose at exactly the same time step, matching materials across renderers, and proving that a tool upgrade did not change results; the connection standard is the easy part.",
+   "quote": "The hard parts are aligning coordinate systems and clocks, feeding the sensor renderer the machine's pose at exactly the same time step, matching materials across renderers, and proving that an upgrade of one tool did not change the result.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t139",
+    "t101",
+    "t136",
+    "t161",
+    "t320"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Developers of an unnamed open physics engine report that common tire models silently do not work on deformable terrain, illustrating how coupling tools can break the physics.",
+   "quote": "The developers of one open physics engine report that common tire models silently do not work on deformable terrain, an example of \"plugging together\" breaking the physics [Chapter 11].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t180",
+    "t181",
+    "t139"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet's middle-cost example tool chain depends on coupling a machine-physics tool to a controls stack over FMI.",
+   "quote": "The booklet's middle-cost example tool chain depends on coupling a machine-physics tool to a controls stack over FMI",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Functional Mock-up Interface (FMI)",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t335",
+    "t139",
+    "t320"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet ranks a chain of separate renderer, dynamics, soil and hardware-in-the-loop (HIL) tools as requiring high integration effort.",
+   "quote": "it ranks a chain of separate renderer, dynamics, soil and hardware-in-the-loop (HIL) tools as high integration effort [Chapter 11].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t167",
+    "t148",
+    "t325",
+    "t324"
+   ],
+   "importance": 3
+  }
+ ]
+}

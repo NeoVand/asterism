@@ -1,0 +1,115 @@
+{
+ "key": "t88",
+ "hash": "fb7f99ce0b3ef6a3",
+ "synopsis": "Latency is a system-level braking concern: sensing, networking, fusion, decisions and actuation all affect the stopping point, so settings should scale with measured latency and machine physics rather than copied constants [f4346, f138, f3437]. The corpus repeatedly reports ISO 16001:2017's maximum detection time as 300 ms, but Chapter 9 says this was not verified against the purchased standard and must be confirmed before safety-case use; separately, MOSH requires a machine reply within 50 ms, and ISO 21815-3 requires manufacturers to declare delays [f2064, f7494, f7495, f5285, f2666]. SIL cannot establish unexpected CAN/J1939 timing behavior; HIL is recommended for timing and interface tests, VIL can establish real braking and controller delays, and physical anchor tests should measure latency to 10% g [f530, f712, f5333, f6415]. Independent validation of perception and brakes does not establish closed-loop safety, while object-list replay can hide sensor latency; neutral real-sensor OTA/HIL latency benchmarks were not found [f8196, f5259, f4956]. On-road evidence shows that avoidance depends jointly on trigger timing and latency, and secondary accounts of the Uber crash report emergency recognition 1.2 seconds before impact but braking only 0.2 seconds before impact; the program therefore recommends explicit intervention-latency constraints and early latency/jitter benchmarking [f6189, f10698, f6961, f8924].",
+ "relations": [
+  {
+   "a": "f2064",
+   "b": "f6745",
+   "type": "same",
+   "note": "Both state ISO 16001's 300 ms maximum detection time."
+  },
+  {
+   "a": "f6745",
+   "b": "f2405",
+   "type": "same",
+   "note": "Both specify the same ODS detection-time ceiling."
+  },
+  {
+   "a": "f2405",
+   "b": "f2604",
+   "type": "same",
+   "note": "Same limit; the latter identifies clause 4.5."
+  },
+  {
+   "a": "f2604",
+   "b": "f7493",
+   "type": "same",
+   "note": "Both attribute the 300 ms ODS limit to clause 4.5."
+  },
+  {
+   "a": "f7493",
+   "b": "f7011",
+   "type": "same",
+   "note": "Both use the 300 ms detection ceiling in physics parameterisation."
+  },
+  {
+   "a": "f2064",
+   "b": "f160",
+   "type": "same",
+   "note": "The synthesis repeats the standard's 300 ms detection-time requirement."
+  },
+  {
+   "a": "f160",
+   "b": "f229",
+   "type": "same",
+   "note": "Both synthesis facts report the same ISO detection-time limit."
+  },
+  {
+   "a": "f229",
+   "b": "f12159",
+   "type": "same",
+   "note": "The glossary restates the 300 ms detection requirement."
+  },
+  {
+   "a": "f12159",
+   "b": "f12526",
+   "type": "same",
+   "note": "Duplicate glossary statements of the maximum detection time."
+  },
+  {
+   "a": "f12526",
+   "b": "f12396",
+   "type": "same",
+   "note": "Same detection-time requirement; the latter also mentions continuous self-checking."
+  },
+  {
+   "a": "f12077",
+   "b": "f5285",
+   "type": "same",
+   "note": "Both state MOSH's 50 ms machine-reply requirement."
+  },
+  {
+   "a": "f5188",
+   "b": "f5305",
+   "type": "same",
+   "note": "Duplicate radar-simulator latency-to-minimum-range relationship."
+  },
+  {
+   "a": "f2425",
+   "b": "f2666",
+   "type": "same",
+   "note": "Both require manufacturer disclosure of delays; the former identifies the reviewed draft."
+  },
+  {
+   "a": "f7494",
+   "b": "f2064",
+   "type": "contradicts",
+   "note": "Unverified full-standard status qualifies the otherwise categorical requirement claim."
+  },
+  {
+   "a": "f530",
+   "b": "f712",
+   "type": "supports",
+   "note": "SIL's interface-timing limitation supports using HIL for timing and interface validation."
+  },
+  {
+   "a": "f5259",
+   "b": "f8196",
+   "type": "supports",
+   "note": "Replay's hidden perception delays illustrate why separate component validation cannot establish closed-loop safety."
+  },
+  {
+   "a": "f10698",
+   "b": "f10697",
+   "type": "elaborates",
+   "note": "Recognition and braking timestamps quantify the reported one-second action suppression."
+  },
+  {
+   "a": "f6189",
+   "b": "f6961",
+   "type": "supports",
+   "note": "Latency-dependent crash avoidance supports constraining intervention latency during tuning."
+  }
+ ]
+}

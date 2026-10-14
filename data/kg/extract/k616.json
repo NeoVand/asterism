@@ -1,0 +1,241 @@
+{
+ "chunkId": "k616",
+ "hash": "48353bcaccf5dc57",
+ "facts": [
+  {
+   "text": "A Performance Level (PL) is a five-step grade, written a to e, specifying how reliably a machine safety function must work; the Category describes the circuit architecture used to reach that grade.",
+   "quote": "A Performance Level is a five-step grade, written a to e, that says how reliably a safety function on a machine must work, and the Category describes the circuit architecture used to reach that grade.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t51",
+    "t48"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Under ISO 13849-1, PL a is the lowest Performance Level and PL e is the highest.",
+   "quote": "The Performance Level of ISO 13849-1 does the same for safety functions on machines: PL a is the lowest, PL e the highest.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 13849-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t51",
+    "t287"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The required Performance Level (PLr) comes from the risk assessment.",
+   "quote": "The required level (PLr) comes from the risk assessment.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t51",
+    "t47"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The achieved Performance Level depends on Category, mean time to dangerous failure of the parts (MTTFd), diagnostic coverage (DC), and protection against common-cause failure.",
+   "quote": "The achieved level comes from four things.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t51",
+    "t60",
+    "t59"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Performance Level Categories B, 1, 2, 3 and 4 describe architectures ranging from a single well-built channel to two mutually monitoring channels so that one fault cannot remove the safety function.",
+   "quote": "The Category (B, 1, 2, 3 or 4) is the architecture, from a single well-built channel to two channels that monitor each other so one fault cannot remove the function.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t51",
+    "t56",
+    "t59"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Performance Levels correspond to bands of average probability of dangerous failure per hour; PL a allows between one dangerous failure per 10,000 hours and one per 100,000 hours.",
+   "quote": "Each PL is a band of average probability of a dangerous failure per hour: PL a allows between one in 10,000 hours and one in 100,000",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t51"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The passage describes PL e as demanding fewer than one dangerous failure per 10 million hours and gives its probability band as between 10^-8 and 10^-7 per hour.",
+   "quote": "PL e demands fewer than one in 10 million hours (between 10^-8 and 10^-7 per hour).",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t51"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 13849-1:2023 is the generic machinery method, including software, but does not itself assign the level required for the collision function; ISO 19014 is the sector framework for earth-moving machines.",
+   "quote": "ISO 13849-1:2023 is the generic machinery method, including software, but does not itself assign the level this collision function needs; for earth-moving machines the sector framework is ISO 19014 [Chapter 3]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 13849-1",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 19014",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t51",
+    "t281",
+    "t287",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 13849-2:2012 lists simulation among its validation methods, including software simulation of faults.",
+   "quote": "The validation part, ISO 13849-2:2012, lists simulation among its validation methods, including software simulation of faults [Chapter 12].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12
+   ],
+   "entities": [
+    {
+     "name": "ISO 13849-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t65",
+    "t56",
+    "t127",
+    "t287"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends ISO 13849 or IEC 62061 for the intervention chain in a safety-case skeleton.",
+   "quote": "The booklet suggests ISO 13849 or IEC 62061 for the intervention chain in a safety-case skeleton [Chapter 1]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "ISO 13849",
+     "kind": "standard"
+    },
+    {
+     "name": "IEC 62061",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t67",
+    "t28",
+    "t287"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet expects the internal safety board to work under ISO 19014 and ISO 13849.",
+   "quote": "expects the internal safety board to work under ISO 19014 and ISO 13849 [Chapter 2].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    2
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 13849",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t71",
+    "t281",
+    "t287"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The required Performance Level drives architecture and validation effort as much as threshold tuning does; a higher level means more redundancy, more diagnostics and more evidence.",
+   "quote": "The required level drives architecture and validation effort as much as threshold tuning does [Chapter 8]; a higher level means more redundancy, more diagnostics and more evidence.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t51",
+    "t65",
+    "t70",
+    "t188"
+   ],
+   "importance": 3
+  }
+ ]
+}

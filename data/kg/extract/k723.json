@@ -1,0 +1,208 @@
+{
+ "chunkId": "k723",
+ "hash": "ef0537c127871bd6",
+ "facts": [
+  {
+   "text": "Semantic or object-list replay supplies decision software with recorded or ground-truth object lists containing type, position and speed instead of raw sensor data, testing only warning and braking logic.",
+   "quote": "Semantic replay feeds the decision software not with raw sensor data but with a list of objects (type, position, speed), either recorded or taken from ground truth, so that only the warning and braking logic is tested.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t156",
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Semantic replay bypasses perception and supplies object lists directly in common coordinates together with machine state.",
+   "quote": "Semantic replay skips perception and supplies that list directly, in common coordinates together with machine state.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t156",
+    "t85"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Semantic replay exercises decision logic, warning stages and brake-request rules independently of sensor type.",
+   "quote": "The decision logic, warning stages and brake-request rules are then exercised independent of any sensor type.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t156",
+    "t185",
+    "t189"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Semantic replay can run open loop using lists as recorded or closed loop using lists regenerated as the virtual machine slows.",
+   "quote": "It can run open loop (lists as recorded) or closed loop (lists regenerated as the virtual machine slows)",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t156",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Semantic replay is described as the cheapest way to sweep very large scenario sets because no rendering or ray tracing is involved.",
+   "quote": "It is the cheapest way to sweep very large scenario sets, because no rendering or ray tracing is involved",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t156",
+    "t339",
+    "t143"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet's compute table rates logic and object-list braking tests as processor-dominant, with very high parallelism and suitability for commodity servers.",
+   "quote": "the booklet's compute table rates \"logic and object-list braking tests\" as processor-dominant with very high parallelism, suited to commodity servers",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t156",
+    "t336",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Semantic replay proves thresholds, warning logic, threat assessment and brake-request logic.",
+   "quote": "It proves thresholds, warning logic, threat assessment and brake-request logic.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t156",
+    "t185",
+    "t188"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Semantic replay cannot prove perception and can hide sensor latency, occlusion, false detections and range or classification errors because semantic replay assumes perception has already succeeded.",
+   "quote": "It cannot prove perception, and it can hide sensor latency, occlusion, false detections and range or classification errors, because it assumes perception has already succeeded",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t156",
+    "t85",
+    "t88",
+    "t103",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM OSI (Open Simulation Interface) provides standard interfaces between environment, sensor, fusion and function models, including ground-truth interfaces, for semantic replay tests.",
+   "quote": "ASAM OSI (Open Simulation Interface) provides standard interfaces between environment, sensor, fusion and function models, including ground-truth interfaces, for exactly this kind of test",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "ASAM OSI",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t138",
+    "t156",
+    "t105"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The first level of the booklet's multi-fidelity architecture consists of deterministic functional and object-list tests for millions of braking-logic combinations.",
+   "quote": "The first level of the booklet's multi-fidelity architecture is \"deterministic functional and object-list tests for millions of braking-logic combinations\"",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t156",
+    "t185",
+    "t233"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends starting software-in-the-loop (SIL) testing with semantic inputs before adding realistic sensor error models.",
+   "quote": "semantic inputs are where the booklet says software-in-the-loop (SIL) testing should start, before realistic sensor error models are added",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t156",
+    "t125"
+   ],
+   "importance": 3
+  }
+ ]
+}

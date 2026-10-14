@@ -1,0 +1,115 @@
+{
+ "key": "t120",
+ "hash": "985200ee75e37848",
+ "synopsis": "ISO/TS 21815-2:2021, edition 1, was published on 14 July 2021 and confirmed in December 2024; it defines the on-board J1939 collision-avoidance interface, including slow-down, controlled-stop, emergency-stop and motion-inhibit commands, capability discovery and keep-alive messaging [f2156, f2057, f3638, f12979]. The interface anchors the booklet’s brake-request contract and offers a precedent for reusing evidence across machine models, but is explicitly not plug-and-play: machine and collision-system manufacturers must agree integration details and demonstrate interoperability [f13229, f367, f2159, f10726]. SIL cannot establish unexpected CAN/J1939 timing behaviour, whereas HIL can test real controller, bus and I/O timing; validation through a third-party J1939 interface must include end-to-end integration latency [f530, f931, f8198]. A production-relevant HIL bench could target mid-2027, but should not become critical-path work unless ECU, bus and actuator interfaces stabilise early; unanalysed interface or controller changes in 2027 may invalidate the pre-built simulator [f857, f11028]. Record machine-network state, brake requests and measured responses with adequate rate and precision, preserving DBC/message-schema versions and exact hardware/software provenance so behaviour can be reconstructed [f5634, f12982, f5646, f12992]. Spoofed or stale messages, bus faults and incompatible implementations must not cause unsafe brake commands, and explicit fault testing is required; nevertheless, J1939 cybersecurity was omitted from the machine-motion questions and needs separate treatment because ISO 19014-4 excludes it [f2936, f8200, f6607, f5832].",
+ "relations": [
+  {
+   "a": "f2156",
+   "b": "f10725",
+   "type": "elaborates",
+   "note": "Provides the exact publication date and edition for the July 2021 standard."
+  },
+  {
+   "a": "f2057",
+   "b": "f8933",
+   "type": "elaborates",
+   "note": "Dates confirmation of the published J1939 interface specification to December 2024."
+  },
+  {
+   "a": "f5910",
+   "b": "f6237",
+   "type": "same",
+   "note": "Both define slow, stop and motion-prevention commands; the latter specifies standstill."
+  },
+  {
+   "a": "f3767",
+   "b": "f5157",
+   "type": "same",
+   "note": "Both identify ISO/TS 21815-2:2021 as the J1939 braking interface framework."
+  },
+  {
+   "a": "f5579",
+   "b": "f13229",
+   "type": "same",
+   "note": "Both anchor the brake request in the ISO/TS 21815-2 J1939 interface."
+  },
+  {
+   "a": "f2159",
+   "b": "f6239",
+   "type": "same",
+   "note": "Both reject plug-and-play implementation and require additional integration agreements."
+  },
+  {
+   "a": "f6239",
+   "b": "f12980",
+   "type": "same",
+   "note": "Both explicitly state that the device-to-machine interface is not plug-and-play."
+  },
+  {
+   "a": "f2160",
+   "b": "f2659",
+   "type": "same",
+   "note": "Repeat the three stop/slow commands, capability discovery and keep-alive messaging."
+  },
+  {
+   "a": "f8198",
+   "b": "f12984",
+   "type": "same",
+   "note": "Both require end-to-end integration-latency validation when intervention uses J1939."
+  },
+  {
+   "a": "f2936",
+   "b": "f12981",
+   "type": "same",
+   "note": "Both prohibit unsafe brake commands from spoofing, stale messages, faults or incompatible implementations."
+  },
+  {
+   "a": "f8319",
+   "b": "f8661",
+   "type": "same",
+   "note": "Both state that HIL can emulate the standardized J1939 intervention interface."
+  },
+  {
+   "a": "f10761",
+   "b": "f11028",
+   "type": "same",
+   "note": "Both flag unanalysed 2027 prototype-interface changes as simulator-validity risks."
+  },
+  {
+   "a": "f530",
+   "b": "f538",
+   "type": "supports",
+   "note": "SIL timing limitations motivate using the real J1939 intervention interface in HIL."
+  },
+  {
+   "a": "f931",
+   "b": "f8198",
+   "type": "supports",
+   "note": "HIL measures real bus and controller timing needed for integration-latency validation."
+  },
+  {
+   "a": "f12982",
+   "b": "f5634",
+   "type": "elaborates",
+   "note": "Adds DBC and message-schema version recording to the machine-state logging requirements."
+  },
+  {
+   "a": "f5646",
+   "b": "f12982",
+   "type": "elaborates",
+   "note": "Extends interface-version provenance to binaries, firmware, configurations, checksums and logging software."
+  },
+  {
+   "a": "f5832",
+   "b": "f12981",
+   "type": "supports",
+   "note": "Cybersecurity's exclusion from ISO 19014-4 motivates separate brake-network security treatment."
+  },
+  {
+   "a": "f857",
+   "b": "f11028",
+   "type": "supports",
+   "note": "Dependence on stable interfaces explains why unanalysed changes threaten a pre-built simulator."
+  }
+ ]
+}

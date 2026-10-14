@@ -1,0 +1,297 @@
+{
+ "chunkId": "k788",
+ "hash": "292f1faed59d712c",
+ "facts": [
+  {
+   "text": "Over-fitting occurs when a system's settings are adjusted so closely to its tuning tests that the system performs well on those tests but worse on new tests.",
+   "quote": "Over-fitting is what happens when a system's settings are adjusted so closely to the particular tests it was tuned on that it performs well on those tests and worse on anything new.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t219"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The braking system's tuned quantities are detection thresholds, zone sizes, confirmation filters and timing constants.",
+   "quote": "For the braking system, the tuned quantities are detection thresholds, zone sizes, confirmation filters and timing constants.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t197",
+    "t188",
+    "t187"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Adjusting braking-system settings until every tuning scenario passes makes those scenarios a measure of fit to the settings rather than an independent performance measure.",
+   "quote": "If engineers adjust them until every tuning scenario passes, the tuning scenarios no longer measure anything; they measure how well the settings fit themselves.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t219",
+    "t197",
+    "t220"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Braking-system tuning should use grouped partitions rather than random frame splits, holding out entire sites, weather episodes, machine identities or scenario families; adjacent frames from one run in both tuning and validation sets create severe leakage.",
+   "quote": "Use grouped partitions, not random frame splits: hold out entire sites, weather episodes, machine identities or scenario families, because adjacent frames from the same run appearing in both tuning and validation sets create severe leakage.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t113",
+    "t219"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Braking-system tuning should maintain three separate datasets: a development or tuning set, a validation or confirmation set, and an untouched audit set.",
+   "quote": "Keep a three-way split: a development or tuning set, a validation or confirmation set, and an untouched audit set.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t113"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Braking-system tuning should use leave-one-site-type-out validation to test generalization to unseen sites.",
+   "quote": "Use leave-one-site-type-out validation to test generalization to unseen sites.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "leave-one-site-type-out validation",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t220",
+    "t219",
+    "t44"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The frozen test set for braking-system tuning should have limited query frequency, be frozen at a version, and be refreshed only for a new release.",
+   "quote": "Limit how often the frozen set is queried, freezing it at a version and refreshing it only for a new release.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t219"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Braking-system tuning should report tuned-set and frozen-set performance side by side; a large performance gap signals over-fitting.",
+   "quote": "Report tuned-set and frozen-set performance side by side; a large gap signals over-fitting [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t219",
+    "t220"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Over-fitting to the simulator is a project failure mode in which virtual metrics keep improving while performance on held-out real data stalls or worsens.",
+   "quote": "Chapter 13 describes \"the function is overfitted to the simulator\" as a project failure mode: virtual metrics keep improving while performance on held-out real data stalls or worsens.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t219",
+    "t267",
+    "t82",
+    "t263"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The recommended remedy for over-fitting to the simulator is independent withheld physical datasets and blind correlation tests.",
+   "quote": "The remedy is independent withheld physical datasets and blind correlation tests [Chapter 13].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t263",
+    "t160",
+    "t219"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Physics-based parameterization has low over-fitting risk when its inputs are measured independently.",
+   "quote": "low for physics-based parameterization whose inputs are measured independently",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "physics-based parameterization",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t229",
+    "t219"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Evolutionary and cost-weighted optimization have higher over-fitting risk because many configurations are tried.",
+   "quote": "higher for evolutionary and cost-weighted optimization because many configurations are tried",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "evolutionary optimization",
+     "kind": "method"
+    },
+    {
+     "name": "cost-weighted optimization",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t219",
+    "t227"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Direct per-model manual tuning is susceptible to engineer and test-set over-fit and recreates the historical multi-year problem.",
+   "quote": "direct per-model manual tuning is described as susceptible to engineer and test-set over-fit and as recreating \"the historical multi-year problem\" [Chapter 9].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t219",
+    "t229"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Over-fitting is the central danger of braking-system tuning under time pressure because a system that passes every known test looks finished.",
+   "quote": "Over-fitting is the central danger of tuning under time pressure, because a system that passes every known test looks finished.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t219",
+    "t197",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Protection against braking-system over-fitting should include a frozen, pre-registered audit set that the tuning team cannot inspect case by case.",
+   "quote": "a frozen, pre-registered audit set that the tuning team cannot see case by case",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t218",
+    "t220",
+    "t219"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Protection against braking-system over-fitting should use physics-based parameters that are measured rather than fitted.",
+   "quote": "physics-based parameters that are measured rather than fitted [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t219"
+   ],
+   "importance": 3
+  }
+ ]
+}

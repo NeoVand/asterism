@@ -1,0 +1,115 @@
+{
+ "key": "t222",
+ "hash": "b93dbfc6e0debe27",
+ "synopsis": "The strategy requires testing the new collision-mitigation system in the same virtual environments as the baseline, but fair comparison rests on common system outputs in world or risk coordinates—not raw sensor statistics when sensors, mounting or processing differ [f26, f105, f107, f5211]. The strongest experiment records both sensor suites simultaneously on one machine against an independent reference trajectory; separate deployments confound site, operator and weather, and mounting interference must itself be tested [f5509, f5482, f5511, f14364]. Common measures include warnings and interventions per hazard, missed hazards, false and nuisance alarms per hour under equal exposure, and warning timing against common ground truth and a shared hazard zone; calibrated ground truth is essential because verdict errors can dominate system differences [f106, f5478, f7474]. The old fleet supplies the warning-performance baseline, including false and nuisance alarm rates to beat, but this is not the assurance target for automatic braking: only common warning stages are directly comparable, while braking must meet new hazard-derived requirements and be assessed in closed loop [f11783, f11906, f10529, f14363]. Replay supports comparison only with genuinely equivalent inputs, and the corpus reports unresolved evidence gaps, including missing exposure denominators for accident comparisons and no apples-to-apples stopping-distance accuracy benchmark across tools on the same production machines [f5238, f5512, f3658, f6397].",
+ "relations": [
+  {
+   "a": "f105",
+   "b": "f5209",
+   "type": "same",
+   "note": "Both prescribe system-output comparison in world or risk coordinates, ideally with parallel recording."
+  },
+  {
+   "a": "f106",
+   "b": "f5210",
+   "type": "same",
+   "note": "Restate common metrics, ground truth and hazard-zone requirements."
+  },
+  {
+   "a": "f107",
+   "b": "f5211",
+   "type": "same",
+   "note": "Sensor or processing changes invalidate raw detection and per-sensor comparisons."
+  },
+  {
+   "a": "f111",
+   "b": "f10861",
+   "type": "same",
+   "note": "Both reject warning-only equivalence as the braking target, with different certainty."
+  },
+  {
+   "a": "f5476",
+   "b": "f14353",
+   "type": "same",
+   "note": "Both recommend the highest common comparison layer that answers the safety question."
+  },
+  {
+   "a": "f5477",
+   "b": "f14353",
+   "type": "same",
+   "note": "Different sensors or mounting call for externally measured encounters, not raw sensor data."
+  },
+  {
+   "a": "f5482",
+   "b": "f14236",
+   "type": "same",
+   "note": "Separate deployments confound site, operator and weather."
+  },
+  {
+   "a": "f5480",
+   "b": "f14233",
+   "type": "same",
+   "note": "Parallel same-machine recording exposes both systems to identical hazards and produces paired results."
+  },
+  {
+   "a": "f5500",
+   "b": "f14363",
+   "type": "same",
+   "note": "Compare common warning stages with baseline; assess braking against requirements in closed loop."
+  },
+  {
+   "a": "f5501",
+   "b": "f14358",
+   "type": "same",
+   "note": "Normalize warning range to swept-envelope separation or standardized risk-region entry."
+  },
+  {
+   "a": "f5509",
+   "b": "f14364",
+   "type": "same",
+   "note": "Strongest experiment uses both suites on one machine and one independent reference trajectory."
+  },
+  {
+   "a": "f5508",
+   "b": "f14364",
+   "type": "same",
+   "note": "Both identify simultaneous collection from both sensor suites as the strongest comparison experiment."
+  },
+  {
+   "a": "f5238",
+   "b": "f13445",
+   "type": "same",
+   "note": "Replay enables fair comparison when both systems accept equivalent inputs."
+  },
+  {
+   "a": "f5512",
+   "b": "f14360",
+   "type": "same",
+   "note": "Old-log replay is not valid after sensor-type or mounting-position changes."
+  },
+  {
+   "a": "f11783",
+   "b": "f10529",
+   "type": "contradicts",
+   "note": "Baseline improvement is demanded, but cannot define the braking function's assurance target."
+  },
+  {
+   "a": "f5499",
+   "b": "f10529",
+   "type": "supports",
+   "note": "Absent old-system braking functionality supports deriving assurance targets from new hazards."
+  },
+  {
+   "a": "f7474",
+   "b": "f11784",
+   "type": "supports",
+   "note": "Potentially dominant verdict errors justify independent ground truth for alarm-rate comparison."
+  },
+  {
+   "a": "f14232",
+   "b": "f14236",
+   "type": "depends",
+   "note": "Valid McNemar comparison requires both warning systems to face the same events."
+  }
+ ]
+}

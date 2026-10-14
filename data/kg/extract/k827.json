@@ -1,0 +1,162 @@
+{
+ "chunkId": "k827",
+ "hash": "a0d7bc20fd92ae11",
+ "facts": [
+  {
+   "text": "Closed-loop agreement checks whether an acting simulated braking system and responding simulated machine match the real machine under the same conditions in brake firing time, stopping location, and inappropriate braking.",
+   "quote": "Closed-loop agreement checks that, when the simulated braking system is allowed to act and the simulated machine responds, the outcome (when the brake fired, where the machine stopped, and whether it braked when it should not have) matches the real machine doing the same.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t257"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Closed-loop agreement is the top validation layer, comparing brake trigger timing, stopping trajectory, minimum object clearance, and counts of false and missed interventions under matched real and simulated runs.",
+   "quote": "Closed-loop agreement is the top validation layer: brake trigger timing, stopping trajectory, minimum clearance to the object, and the counts of false interventions (braking with nothing there) and missed interventions, under matched real and simulated runs.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t257",
+    "t160",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2023 study matched real and simulated brake values as a behavior-similarity measure.",
+   "quote": "A 2023 study matched real and simulated brake values as a behavior-similarity measure [Chapter 6].",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t257",
+    "t250"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Closed-loop evidence is hard to obtain because a replayed recording is valid only up to the first brake command that did not occur in the original run, known as the first-divergence point.",
+   "quote": "Closed-loop evidence is hard to obtain because of the first-divergence point. A replayed recording is valid up to the first brake command that did not occur in the original run;",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t257",
+    "t155",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "After the first brake command absent from the original recorded run, simulation must take over using machine, environment and sensor models; subsequent evidence is only as trustworthy as those models.",
+   "quote": "after that instant the simulation must take over with its machine, environment and sensor models, and the evidence is only as trustworthy as they are.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t257",
+    "t125",
+    "t234",
+    "t155"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet separates closed-loop evidence into three classes: the measured recorded prefix up to the first intervention, model-dependent evidence after the branch, and measured real stopping outcomes from a few selected proving-ground cases.",
+   "quote": "The booklet keeps three evidence classes apart: the recorded prefix up to the first intervention (measured), everything after the branch (model-dependent), and selected real stopping outcomes on a proving ground (measured, few cases) [Chapter 7].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t257",
+    "t70",
+    "t158",
+    "t216"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Validating the perception subsystem and brake plant separately does not prove that their combination is safe.",
+   "quote": "Validating the perception subsystem and the brake plant separately does not prove their combination is safe;",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t257",
+    "t85",
+    "t182",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Latency, message delays, actuator saturation and operator behavior can create emergent failures in the combined perception and braking system, so full-system tests remain important.",
+   "quote": "latency, message delays, actuator saturation and operator behavior can create emergent failures, so full-system tests remain important.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t257",
+    "t88",
+    "t36",
+    "t56"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends keeping closed-loop stopping tests at the collision or no-collision boundary physical.",
+   "quote": "Closed-loop stops at the collision or no-collision boundary are on the list of tests to keep physical [Chapter 10].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t264",
+    "t257",
+    "t18",
+    "t158"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t29",
+ "hash": "ddf8eb33047e76dc",
+ "synopsis": "The CMS retains existing proximity warnings and automatically brakes if the operator does not act; the intervention ladder spans warning, advice, slowing, stopping and motion inhibition from standstill [f12, f150, f5923]. South African mining regulations require slowing diesel-powered trackless mobile machines to a safe speed before automatic braking when no action is taken, while MOSH specifies warning 2.5–3.0 seconds before intervention and slowing below 10 km/h [f1361, f2441, f2608, f5562]. Mine leaders preferred slowing to a crawl before setting the brake rather than abrupt stops, but warnings only buy response time if operators believe them and the interface enables a response [f3393, f11795, f11843]. Validation should set separate tolerances, thresholds, tests and evidence for each intervention stage, with human simulation examining operator responses to warning, waiting and braking [f2634, f11733, f571]. No universal off-road maximum deceleration, tuning data for standardized automatic slowing interfaces, or evidence for off-road partial service braking was found; escalation should therefore consider remaining stopping margin and uncertainty, including conditions that affect risk, rather than distance alone [f11719, f6508, f6514, f11725]. On-road precedents include a minimum 0.8-second warning and brief haptic brake cues above 4 m/s², but the reviewed off-road legal texts did not establish a 2.0-second warning requirement [f2519, f6498, f2472].",
+ "relations": [
+  {
+   "a": "f1361",
+   "b": "f5162",
+   "type": "same",
+   "note": "Both cite the same regulations requiring safe-speed retardation followed by automatic braking."
+  },
+  {
+   "a": "f1361",
+   "b": "f2275",
+   "type": "same",
+   "note": "Both state the same statutory slowing-then-braking requirement when no action is taken."
+  },
+  {
+   "a": "f1361",
+   "b": "f11455",
+   "type": "same",
+   "note": "Glossary restates the statutory sequence and operator-inaction condition."
+  },
+  {
+   "a": "f2079",
+   "b": "f11704",
+   "type": "same",
+   "note": "Both describe detection, warning, slowing and automatic braking after operator inaction."
+  },
+  {
+   "a": "f2441",
+   "b": "f10723",
+   "type": "same",
+   "note": "Both include automatic slowing, braking and fail-to-safe behaviour."
+  },
+  {
+   "a": "f175",
+   "b": "f231",
+   "type": "same",
+   "note": "Duplicate MOSH warning timing in the synthesis."
+  },
+  {
+   "a": "f2115",
+   "b": "f2608",
+   "type": "same",
+   "note": "Both specify MOSH warning 2.5–3.0 seconds before intervention."
+  },
+  {
+   "a": "f2608",
+   "b": "f12161",
+   "type": "same",
+   "note": "Glossary repeats MOSH warning timing."
+  },
+  {
+   "a": "f150",
+   "b": "f5923",
+   "type": "same",
+   "note": "Identical intervention ladders across synthesis and machine-motion chapter."
+  },
+  {
+   "a": "f6240",
+   "b": "f6499",
+   "type": "same",
+   "note": "Duplicate ISO requirement for distinguishable warning levels."
+  },
+  {
+   "a": "f6499",
+   "b": "f11723",
+   "type": "same",
+   "note": "Glossary repeats the distinguishable-warning-level requirement."
+  },
+  {
+   "a": "f2474",
+   "b": "f2519",
+   "type": "same",
+   "note": "Both identify UN R131's 0.8-second warning timing."
+  },
+  {
+   "a": "f3393",
+   "b": "f3028",
+   "type": "elaborates",
+   "note": "Adds abrupt-stop experience and variable-frequency-drive integration to leaders' crawl-before-braking preference."
+  },
+  {
+   "a": "f11721",
+   "b": "f5923",
+   "type": "elaborates",
+   "note": "Explains standstill inhibition and the start-up hazard missed by time to collision."
+  },
+  {
+   "a": "f11795",
+   "b": "f9378",
+   "type": "depends",
+   "note": "Effective operator reaction depends on continued belief in warnings."
+  },
+  {
+   "a": "f2124",
+   "b": "f11733",
+   "type": "elaborates",
+   "note": "Stage-specific acceptance rates complement separate thresholds, tests and evidence."
+  },
+  {
+   "a": "f11729",
+   "b": "f11725",
+   "type": "supports",
+   "note": "Maximum-braking hazards support condition-sensitive escalation rather than distance-only decisions."
+  },
+  {
+   "a": "f6246",
+   "b": "f10979",
+   "type": "supports",
+   "note": "On-road haptic-brake staging provides precedent for a brief brake-pulse fallback alert."
+  }
+ ]
+}

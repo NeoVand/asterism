@@ -1,0 +1,218 @@
+{
+ "chunkId": "k668",
+ "hash": "da9d0889c86c5c0b",
+ "facts": [
+  {
+   "text": "Sensor degradation is the loss of sensor performance when environmental interference blocks the sensor's view, dirties its window, floods it with light or shakes it.",
+   "quote": "Sensor degradation is the loss of a sensor's performance when the environment interferes with it, by blocking its view, dirtying its window, flooding it with light or shaking it.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Lidar degradation in rain and fog is the best-validated sensor-degradation simulation case; simulation is good at low rain rates and worsens as rain increases.",
+   "quote": "Lidar in rain and fog is the best-validated case, good at low rain rates and worse as rain increases.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t92",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Radar is largely unaffected by airborne dust and only mildly affected by fog, but heavy rain produces radar clutter at very short range.",
+   "quote": "Radar is largely unaffected by airborne dust and only mildly by fog, while heavy rain produces radar clutter at very short range.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t102",
+    "t104"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Dust is the biggest off-road sensor-degradation modeling gap: lidar shows four distinct behaviors in dust that simple models miss.",
+   "quote": "Dust is the biggest off-road gap: lidar shows four distinct behaviors in dust that simple models miss.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t92",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Soiling, vibration, glare and artificial lighting are simulated with rough overlays or not at all, and these simulations are rarely checked against measurements.",
+   "quote": "Soiling, vibration, glare and artificial lighting are simulated with rough overlays or not at all and rarely checked against measurements",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Thermal and ultrasonic sensor degradation have the weakest evidence among the sensor-degradation cases reviewed.",
+   "quote": "thermal and ultrasonic degradation have the weakest evidence",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t96",
+    "t95",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Night is the hardest condition for generated images in sensor-degradation simulation.",
+   "quote": "night is the hardest condition for generated images.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t115"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Combined sensor-degradation conditions, such as dense dust plus a muddy cover, are reproduced poorly in simulation.",
+   "quote": "Combinations such as dense dust plus a muddy cover are reproduced poorly.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Machine-generated dust, spray and vibration depend on machine speed, the ground and the wind; treating dust as a static fog volume may miss these dependencies.",
+   "quote": "dust, spray and vibration are tied to its speed, the ground and the wind, so treating dust as a static fog volume may miss these links",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t125",
+    "t169"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For modeling sensor soiling, how mud accumulates and is cleaned matters more than a fixed \"20% obscured\" state.",
+   "quote": "how mud accumulates and is cleaned matters more than a fixed \"20% obscured\" state",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t103",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor degradation must be detected, and time in degraded, inhibited and fault states should be measured because a detection rate measured only while the system is \"available\" can hide unavailability.",
+   "quote": "Degradation must also be detected: the booklet asks that time in degraded, inhibited and fault states be measured, since a detection rate measured only while \"available\" can hide unavailability",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t224",
+    "t60"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The collision mitigation function must work in many weather and light conditions, but dust, soiling, vibration, metal clutter and heavy rain are not convincingly modeled and still require physical tests within the four-month validation window.",
+   "quote": "not convincingly modeled and still needing physical tests in the four-month window: dust, soiling, vibration, metal clutter and heavy rain",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t104",
+    "t43",
+    "t264",
+    "t22"
+   ],
+   "importance": 3
+  }
+ ]
+}

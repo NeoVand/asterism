@@ -1,0 +1,115 @@
+{
+ "key": "t87",
+ "hash": "2a80a6afd940917d",
+ "synopsis": "Sensor requirements vary by acceptance regime: MOSH specifies a minimum 200 m surface machine-to-machine detection range and range accuracy of 1.5 m or 10%, while the cited US construction rules prescribe neither a numeric range nor automatic braking [f2605, f2114, f2765]. The booklet derives required detection range backwards from stopping distance and treats sensing cadence as part of braking delay: at 15 km/h and 10 FPS, each extra confirmation frame adds about 0.4 m of travel before braking [f12545, f13921]. Coverage depends on mounting geometry and self-occlusion, so moving a sensor can invalidate correlation; variants inside the validated parameter hull should receive reduced physical checks covering brake calibration, field of view and detection at the new mount [f5601, f1997, f7917]. Weather-dependent range needs physical evidence: 2023 on-road measurements found aluminium and steel targets unobserved at 20–30 m in specified rain and fog conditions, while fog chambers limited to, for example, 30 m require extrapolation of long-range behaviour [f6382, f4652]. Simulation and stimulation have important limitations: hardware-in-the-loop constrains distance and field of view, reported radar minimum ranges differ between a 2021 review's 20–30 m and vendor claims of 0.6 m partly because architectures differ, and actual sensor workloads require benchmarking rather than an assumed real-time factor [f4437, f5777, f8874]. Comparisons should use a common stopping-distance or risk-based evaluation zone rather than native sensor fields of view, because coverage outside their overlap is not directly comparable; KomVision's numerical travel speeds and detection ranges remain unreported in the supplied findings [f5479, f5484, f1643].",
+ "relations": [
+  {
+   "a": "f2605",
+   "b": "f2739",
+   "type": "same",
+   "note": "Both report the MOSH surface specification's 200 m range."
+  },
+  {
+   "a": "f2605",
+   "b": "f12554",
+   "type": "same",
+   "note": "Glossary restates the minimum 200 m surface machine-to-machine detection requirement."
+  },
+  {
+   "a": "f2917",
+   "b": "f12549",
+   "type": "same",
+   "note": "Both require matching virtual and physical sensor position, field of view and range."
+  },
+  {
+   "a": "f2499",
+   "b": "f2917",
+   "type": "elaborates",
+   "note": "Adds vehicle, logic, target and environment matching requirements to sensor matching."
+  },
+  {
+   "a": "f7917",
+   "b": "f12368",
+   "type": "same",
+   "note": "Both describe hull verification followed by reduced brake and sensor checks."
+  },
+  {
+   "a": "f7917",
+   "b": "f7913",
+   "type": "elaborates",
+   "note": "Adds a PIRT-ranked phenomenon trigger for delta physical testing."
+  },
+  {
+   "a": "f1997",
+   "b": "f12550",
+   "type": "same",
+   "note": "Both warn that sensor relocation can invalidate previous validation."
+  },
+  {
+   "a": "f8489",
+   "b": "f8875",
+   "type": "same",
+   "note": "Both report severe Isaac Sim frame-rate losses in multi-sensor scenes."
+  },
+  {
+   "a": "f7383",
+   "b": "f14155",
+   "type": "same",
+   "note": "Both target falsification around stopping boundaries, visibility, closure speed and sensor degradation."
+  },
+  {
+   "a": "f4437",
+   "b": "f4496",
+   "type": "same",
+   "note": "Both identify target, distance and field-of-view limits in hardware-in-the-loop stimulation."
+  },
+  {
+   "a": "f5707",
+   "b": "f5708",
+   "type": "contradicts",
+   "note": "Reported radar minimum ranges differ: 20–30 m versus 0.6 m."
+  },
+  {
+   "a": "f5777",
+   "b": "f5707",
+   "type": "elaborates",
+   "note": "Explains the range disagreement partly through digital versus analog or hybrid architectures."
+  },
+  {
+   "a": "f5310",
+   "b": "f5708",
+   "type": "same",
+   "note": "Both cite a vendor radar simulation minimum range of 0.6 m."
+  },
+  {
+   "a": "f1997",
+   "b": "f7917",
+   "type": "supports",
+   "note": "Mounting-related invalidation risk motivates hull verification and new-mount physical checks."
+  },
+  {
+   "a": "f6483",
+   "b": "f6410",
+   "type": "supports",
+   "note": "Weather-aware sensor models supply range, dropout and delay distributions for braking simulation."
+  },
+  {
+   "a": "f5484",
+   "b": "f5479",
+   "type": "supports",
+   "note": "Noncomparable coverage outside overlap motivates a common evaluation zone."
+  },
+  {
+   "a": "f4348",
+   "b": "f8874",
+   "type": "supports",
+   "note": "Large neural scenes reaching only 17 FPS reinforce workload-specific benchmarking."
+  },
+  {
+   "a": "f3778",
+   "b": "f7383",
+   "type": "supports",
+   "note": "Hand-built partial-visibility and field-edge cases provide concrete targets for failure search."
+  }
+ ]
+}

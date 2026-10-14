@@ -1,0 +1,315 @@
+{
+ "chunkId": "k796",
+ "hash": "7bc2c48d76d6e492",
+ "facts": [
+  {
+   "text": "Genetic algorithms, NSGA-II, Bayesian optimization and gradient-free search are search procedures for finding good settings when settings can only be judged by running slow simulations.",
+   "quote": "These are the search procedures the booklet names for finding good settings when the only way to judge a setting is to run it through a slow simulation and see what happens.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NSGA-II",
+     "kind": "method"
+    },
+    {
+     "name": "Bayesian optimization",
+     "kind": "method"
+    },
+    {
+     "name": "Genetic algorithms",
+     "kind": "method"
+    },
+    {
+     "name": "Gradient-free search",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t227"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The optimization methods listed in the glossary entry are gradient-free, which suits closed-loop braking tests because outcomes jump from stopping in time to collision at a threshold.",
+   "quote": "All the methods below are gradient-free, which suits closed-loop braking tests, where the result jumps from \"stopped in time\" to \"collision\" at a threshold.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Gradient-free search",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t227",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Genetic algorithms, also called evolutionary methods, score a population of candidate settings by simulation, retain better candidates, and create new candidates by mixing and slightly altering the survivors.",
+   "quote": "Genetic algorithms, also called evolutionary methods, keep a population of candidate settings, score each by simulation, keep the better ones, and breed new candidates by mixing and slightly altering the survivors.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Genetic algorithms",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t227"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NSGA-II (Non-dominated Sorting Genetic Algorithm II), attributed to Deb and colleagues in 2002, handles several objectives at once by evolving the whole Pareto front.",
+   "quote": "NSGA-II (Non-dominated Sorting Genetic Algorithm II, Deb and colleagues, 2002) is the version for several objectives at once; it evolves the whole Pareto front.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NSGA-II",
+     "kind": "method"
+    },
+    {
+     "name": "Deb",
+     "kind": "person"
+    }
+   ],
+   "terms": [
+    "t227",
+    "t226",
+    "t225"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet rates genetic algorithms and NSGA-II as robust and easy to run in parallel, but hungry for evaluations.",
+   "quote": "The booklet rates these methods robust and easy to run in parallel, but hungry for evaluations [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Genetic algorithms",
+     "kind": "method"
+    },
+    {
+     "name": "NSGA-II",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t227",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Bayesian optimization fits a surrogate model to previous results and uses model uncertainty to select the most informative next setting, evaluates that setting, and repeats.",
+   "quote": "It fits a surrogate model to the results so far, uses the model's uncertainty to pick the most informative next setting, runs it, and repeats.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Bayesian optimization",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t227",
+    "t207"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Multi-objective Bayesian optimization variants seek the frontier, while safe variants restrict exploration to settings believed safe.",
+   "quote": "Multi-objective variants seek the frontier, and \"safe\" variants keep exploration inside settings believed safe.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Bayesian optimization",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t227",
+    "t226",
+    "t225"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Bayesian optimization weaknesses include surrogate error, poor scaling beyond roughly 20 parameters, difficulty around discontinuities, adaptive bias, and the risk that an apparently safe extrapolation is wrong.",
+   "quote": "Its weaknesses are surrogate error, poor scaling beyond roughly 20 parameters, trouble around discontinuities, adaptive bias, and the danger that an apparently safe extrapolation is wrong [Chapter 9].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Bayesian optimization",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t227",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet matches response-surface methods to a handful of smooth parameters or a few continuous constants.",
+   "quote": "The booklet also names response-surface methods for a handful of smooth parameters",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Response-surface methods",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t227"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ROC (receiver operating characteristic) operating-point selection is used for the detector threshold alone and must be followed by closed-loop evaluation because ROC selection ignores braking timing.",
+   "quote": "ROC (receiver operating characteristic) operating-point selection for the detector threshold alone, which must be followed by closed-loop evaluation because it ignores braking timing [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ROC operating-point selection",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t110",
+    "t188",
+    "t154"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet matches evolutionary methods to simulation tuning of the trade-off between misses, nuisance braking and margin.",
+   "quote": "evolutionary methods for the misses-against-nuisance-against-margin trade-off in simulation",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Genetic algorithms",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t227",
+    "t226",
+    "t192",
+    "t108"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet matches Bayesian optimization to expensive evaluations, such as hardware-in-the-loop rigs or physical runs.",
+   "quote": "Bayesian optimization is for expensive evaluations, such as hardware-in-the-loop or physical runs.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Bayesian optimization",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t227",
+    "t148"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet reports no published off-road braking application for the tuning methods it matches to jobs: response surfaces, evolutionary methods and Bayesian optimization.",
+   "quote": "None has a published off-road braking application [Chapter 9].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Response-surface methods",
+     "kind": "method"
+    },
+    {
+     "name": "Genetic algorithms",
+     "kind": "method"
+    },
+    {
+     "name": "Bayesian optimization",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t227",
+    "t197",
+    "t1"
+   ],
+   "importance": 3
+  }
+ ]
+}

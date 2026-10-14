@@ -1,0 +1,228 @@
+{
+ "chunkId": "k748",
+ "hash": "1153e80c731c5b08",
+ "facts": [
+  {
+   "text": "A tire model is a formula or table giving the forward, braking and sideways force a tire produces for a given load, slip and surface; tire-soil interaction covers the case where ground deforms under the tire.",
+   "quote": "A tire model is a formula or table that gives the forward, braking and sideways force a tire produces for a given load, slip and surface; tire-soil interaction is the harder case where the ground deforms under the tire.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t180"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The tire-model families named in the booklet include Fiala, a simple physical model; Magic Formula, also called Pacejka, an empirical curve fitted to test data and widely used for road vehicles; and TMeasy.",
+   "quote": "Fiala, a simple physical model; the Magic Formula, also called Pacejka, an empirical curve fitted to test data and widely used for road vehicles; and TMeasy [Chapters 8, 11].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Fiala",
+     "kind": "method"
+    },
+    {
+     "name": "Magic Formula (Pacejka)",
+     "kind": "method"
+    },
+    {
+     "name": "TMeasy",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t180"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The articulated-loader studies cited in the booklet used Fiala tire models.",
+   "quote": "The articulated-loader studies the booklet cites used Fiala tires [Chapter 8].",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "Fiala",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t180",
+    "t2",
+    "t176"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Fiala, Magic Formula (Pacejka) and TMeasy tire models assume a firm surface.",
+   "quote": "These models assume a firm surface.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Fiala",
+     "kind": "method"
+    },
+    {
+     "name": "Magic Formula (Pacejka)",
+     "kind": "method"
+    },
+    {
+     "name": "TMeasy",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t180",
+    "t174",
+    "t262"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2023 soil-wheel model covering all slip and skid states predicted forces well in sand.",
+   "quote": "A 2023 soil-wheel model covering all slip and skid states predicted forces well in sand",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t180",
+    "t181"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Some tuning parameters of the 2023 soil-wheel model covering all slip and skid states changed with slip angle.",
+   "quote": "A 2023 soil-wheel model covering all slip and skid states predicted forces well in sand, but some of its tuning parameters changed with slip angle",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t180",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2026 soil-wheel model shows soil building up in front of the wheel during braking.",
+   "quote": "a 2026 model shows soil building up in front of the wheel during braking [Chapter 8].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t180",
+    "t181"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Developers of at least one unnamed open-source tool report that its handling tire models do not work with deformable terrain; only rigid or finite-element tires and tracked vehicles do.",
+   "quote": "In at least one open-source tool, the developers report that the handling tire models do not work with deformable terrain at all; only rigid or finite-element tires and tracked vehicles do [Chapter 11].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t180",
+    "t181",
+    "t322",
+    "t175",
+    "t262"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Tire parameters for unpaved ground must be fitted from tests on the real machine rather than copied from road-car values.",
+   "quote": "Tire parameters on unpaved ground must be fitted from tests on the real machine; they cannot be copied from road-car values [Chapter 8].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t180",
+    "t184",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet identifies the tire-ground interface as one of the places where simple models fail.",
+   "quote": "The booklet counts the tire-ground interface among the places where simple models fail",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t180",
+    "t125",
+    "t262"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends a low-speed friction matrix covering hard, loose and wet conditions for each machine family rather than a site-by-site soil survey.",
+   "quote": "recommends a low-speed friction matrix (hard, loose, wet) per machine family rather than a site-by-site soil survey [Chapter 8].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t180",
+    "t174",
+    "t184",
+    "t230"
+   ],
+   "importance": 3
+  }
+ ]
+}

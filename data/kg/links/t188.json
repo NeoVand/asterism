@@ -1,0 +1,115 @@
+{
+ "key": "t188",
+ "hash": "7be8d04d31ef4ba0",
+ "synopsis": "Virtual validation must support tuning automatic-braking thresholds before field tests; SIL can exercise decision logic at scale, and object-list replay can test thresholds and brake requests independently of sensor modality [f29, f925, f528, f5256]. Simulation-tuned thresholds have been checked against field results on-road, but no published quantitative off-road comparison was found, leaving transfer to off-road operation unknown [f153, f6374, f6558]. A fixed time-to-collision threshold is considered a weak primary trigger at work-site speeds: the booklet favors distance and risk zones, while ISO 21815-3:2023 leaves machine-specific numbers to manufacturers and integrators, and neither generally tuned off-road TTC/deceleration values nor a reliable cross-product terrain-friction table was found [f13894, f6203, f5916, f6017]. Threshold selection must balance misses against nuisance interventions and task constraints; existing fleet false-alarm history is identified as the best available calibration evidence, but how warning-system tuning should carry over to automatic braking was not examined [f11305, f6569, f11519, f1168, f1170]. Tuning variables include confidence, speed-dependent zones, N-of-M track confirmation, persistence, debounce and filter constants; DOE with response surfaces suits a handful of continuous settings, whereas ROC/DET/precision-recall selection addresses only the detector threshold, not closed-loop timing and braking [f6957, f7297, f12851]. Validation must cover configurable parameters and integrator changes: modifying a threshold after inspecting audit failures contaminates the audit set, safety-relevant late threshold changes require fresh independent statistical confirmation, and ISO 16001 allows at most 300 ms detection time with an uninterrupted signal sequence [f2927, f6952, f7389, f13914].",
+ "relations": [
+  {
+   "a": "f925",
+   "b": "f528",
+   "type": "same",
+   "note": "Both describe SIL coverage of thresholds, software logic, state transitions and regression at scale."
+  },
+  {
+   "a": "f5256",
+   "b": "f5684",
+   "type": "same",
+   "note": "Both describe modality-independent threshold and brake-request testing through semantic or object-list replay."
+  },
+  {
+   "a": "f1168",
+   "b": "f11896",
+   "type": "same",
+   "note": "Both identify recorded warning-fleet false alarms as the best available intervention-threshold data."
+  },
+  {
+   "a": "f3621",
+   "b": "f11875",
+   "type": "same",
+   "note": "Both reject universal close-object alarming and aggressive suppression across production tasks."
+  },
+  {
+   "a": "f251",
+   "b": "f6374",
+   "type": "same",
+   "note": "Both report no published off-road comparison of simulation-tuned thresholds with field results."
+  },
+  {
+   "a": "f6017",
+   "b": "f13721",
+   "type": "same",
+   "note": "Both report the missing reliable terrain-friction table for setting braking thresholds."
+  },
+  {
+   "a": "f6102",
+   "b": "f6470",
+   "type": "same",
+   "note": "Both report no evidence requiring detailed terrain models coupled with multibody machines."
+  },
+  {
+   "a": "f6102",
+   "b": "f13805",
+   "type": "same",
+   "note": "Glossary restates the absence of evidence requiring DEM, SPH or FEM threshold prediction."
+  },
+  {
+   "a": "f6470",
+   "b": "f13805",
+   "type": "same",
+   "note": "Both report no evidence that detailed terrain modeling is required for threshold prediction."
+  },
+  {
+   "a": "f6581",
+   "b": "f12033",
+   "type": "same",
+   "note": "Both say required performance level drives architecture and validation as much as threshold tuning."
+  },
+  {
+   "a": "f6965",
+   "b": "f7297",
+   "type": "same",
+   "note": "Both recommend DOE and response surfaces for a small set of continuous tuning parameters."
+  },
+  {
+   "a": "f6980",
+   "b": "f7302",
+   "type": "same",
+   "note": "Both limit ROC, DET and precision-recall operating-point tuning to the detector threshold."
+  },
+  {
+   "a": "f148",
+   "b": "f13894",
+   "type": "elaborates",
+   "note": "Glossary adds distance-and-zone alternatives and retained TTC uses to the weak-trigger finding."
+  },
+  {
+   "a": "f3505",
+   "b": "f148",
+   "type": "supports",
+   "note": "Hidden sensor, operator and machine uncertainties explain the weakness of a fixed TTC trigger."
+  },
+  {
+   "a": "f7302",
+   "b": "f12851",
+   "type": "elaborates",
+   "note": "Glossary explains that detector-only tuning omits closed-loop timing, braking and multiple objectives."
+  },
+  {
+   "a": "f6374",
+   "b": "f6558",
+   "type": "supports",
+   "note": "Missing quantitative off-road field comparisons underpin uncertainty about simulation-to-field threshold transfer."
+  },
+  {
+   "a": "f6952",
+   "b": "f7389",
+   "type": "supports",
+   "note": "Audit-set leakage explains why changed safety thresholds need new independent confirmation."
+  },
+  {
+   "a": "f1991",
+   "b": "f1168",
+   "type": "supports",
+   "note": "Obstacle-only testing biases intervention aggressively, reinforcing the need for false-alarm evidence."
+  }
+ ]
+}

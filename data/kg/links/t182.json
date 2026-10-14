@@ -1,0 +1,115 @@
+{
+ "key": "t182",
+ "hash": "7c419071e560b1ea",
+ "synopsis": "A program starting in October 2026 can realistically have a parameterized machine-and-brake model and executable SIL regression framework by mid-2027, provided software interfaces can be defined; the under-four-month product-validation window is distinct from brake-model validation [f67, f840, f12208]. Off-road braking follows the same underlying physics as road braking but differs in magnitude and dominant influences, including payload, grades, deformable ground, thermal limits and drivetrain braking; published brake-response latencies span 0.3–2.5 seconds [f5886, f5888, f239]. Machine types and brake systems remain unconfirmed, and models do not transfer automatically across machine families; articulated steering, moving payloads and deformable surfaces require more than a simple braking model [f5863, f10430, f5885]. SIL and data-injection HIL cannot establish actual brake-chain behavior when that chain is modeled, so safety evidence requires real-machine anchoring, with VIL or proving-ground stops for each machine braking class and measurement of both brake requests and physical responses [f531, f5287, f770, f5558, f5640]. Brake-plant capability remains subject to ISO 3450 where applicable, but no published off-road automatic-braking stopping-distance model tolerance was found; small simulated clearance margins are not robust when comparable to geometry, friction, timing and brake-model uncertainties [f2340, f7808, f4343].",
+ "relations": [
+  {
+   "a": "f10430",
+   "b": "f10481",
+   "type": "same",
+   "note": "Both state that machine dynamics, brakes and sensing do not transfer across machine families."
+  },
+  {
+   "a": "f140",
+   "b": "f5886",
+   "type": "same",
+   "note": "Both distinguish off-road braking magnitude and dominant influences from road braking."
+  },
+  {
+   "a": "f3760",
+   "b": "f4245",
+   "type": "same",
+   "note": "Both report absent qualification of generative world models for soil and braking physics."
+  },
+  {
+   "a": "f2340",
+   "b": "f2855",
+   "type": "same",
+   "note": "Both retain ISO 3450 obligations for the brake plant."
+  },
+  {
+   "a": "f67",
+   "b": "f840",
+   "type": "elaborates",
+   "note": "Adds executable regression, fault injection and software-interface conditions to the mid-2027 model milestone."
+  },
+  {
+   "a": "f531",
+   "b": "f5287",
+   "type": "elaborates",
+   "note": "Extends SIL's physical-brake limitation to data-injection HIL with modeled machinery."
+  },
+  {
+   "a": "f770",
+   "b": "f5558",
+   "type": "elaborates",
+   "note": "Specifies VIL or proving-ground stops per braking class as real-machine anchors."
+  },
+  {
+   "a": "f5557",
+   "b": "f5558",
+   "type": "depends",
+   "note": "Closed-loop SIL and HIL require brake-model validation through physical machine stops."
+  },
+  {
+   "a": "f5640",
+   "b": "f770",
+   "type": "supports",
+   "note": "Recording commands and measured brake response supplies evidence for real-machine anchoring."
+  },
+  {
+   "a": "f5888",
+   "b": "f9365",
+   "type": "supports",
+   "note": "Physical stopping influences justify machine-specific model content, including soil, payload and brake delays."
+  },
+  {
+   "a": "f5885",
+   "b": "f11419",
+   "type": "elaborates",
+   "note": "The glossary identifies an articulated hauler's hinge as a specific simple-model limitation."
+  },
+  {
+   "a": "f3437",
+   "b": "f3641",
+   "type": "supports",
+   "note": "Configuration-dependent braking outcomes justify treating each brake and control integration separately."
+  },
+  {
+   "a": "f1997",
+   "b": "f7919",
+   "type": "supports",
+   "note": "Correlation invalidation after configuration changes reinforces the need to demonstrate family-extreme bounding."
+  },
+  {
+   "a": "f4343",
+   "b": "f7019",
+   "type": "supports",
+   "note": "Uncertain near-clearance stops justify explicit machine-specific brake and calibration uncertainty margins."
+  },
+  {
+   "a": "f7010",
+   "b": "f10652",
+   "type": "supports",
+   "note": "Barrick's stopping-zone factors corroborate speed, reaction, braking and machine-envelope components."
+  },
+  {
+   "a": "f5885",
+   "b": "f9325",
+   "type": "supports",
+   "note": "Deformable-surface limitations justify high-fidelity soil modeling for braking-sensitive cases."
+  },
+  {
+   "a": "f3635",
+   "b": "f3634",
+   "type": "supports",
+   "note": "Research linking degraded brakes to runaway risk supports degraded-braking safety-case coverage."
+  },
+  {
+   "a": "f5089",
+   "b": "f2562",
+   "type": "supports",
+   "note": "Perfect sensing cannot compensate for incorrect dynamics, supporting separate brake-model qualification."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t159",
+ "hash": "b0a4025f93657af6",
+ "synopsis": "Robotic soft-target platforms are established in road AEB testing but are built for passenger-car speeds; Euro NCAP 2026–2028 uses ISO 19206 pedestrian and bicyclist targets, while UN R131 specifies an ISO 19206-2 child target crossing at 5 km/h [f345, f2546, f2547, f2522]. For heavy off-road validation, the recommendation is to transfer ISO 19206’s standardized-surrogate design principle rather than reuse road targets: surrogates must cover PPE-clad people, light vehicles beneath a haul truck’s nose, machines and fixed obstacles, with responses matched to each sensing modality [f2554, f2555, f2556]. Proving-ground tests provide strong complete-chain confirmation and accurate, repeatable geometry and timing references, but staged targets cannot establish statistical rates or broad coverage of weather, site objects and natural behaviour [f552, f5386, f5388, f953]. The booklet found neither an off-road ISO 19206-equivalent target standard nor publicly documented high-throughput robotic-target validation for heavy machines, and did not identify a site, chamber or target supplier handling 50–400 t machines at representative speeds; automation is therefore a candidate investment, not a proven shortcut [f15329, f566, f1166, f568]. Sensor selection should not be delayed because target realism depends on the selected sensors, and a visually convincing dummy can still have incorrect radar, lidar, ultrasonic or thermal characteristics [f570, f2912, f2913, f2914, f5389]. For a team starting from zero in October 2026, physical-test procedures, a procured or adapted soft-target kit, ground-truth specifications and independent-test-body engagement are considered realistic by mid-2027, using an ACARP Tier 1 and Tier 2 style protocol [f851].",
+ "relations": [
+  {
+   "a": "f1233",
+   "b": "f1324",
+   "type": "same",
+   "note": "Both describe adapting light-vehicle procedures for heavy-vehicle stopping distances and target towing equipment."
+  },
+  {
+   "a": "f566",
+   "b": "f13504",
+   "type": "same",
+   "note": "Both report no publicly documented high-throughput robotic-target system for heavy off-road machines."
+  },
+  {
+   "a": "f568",
+   "b": "f13505",
+   "type": "same",
+   "note": "Both frame robotic automation as a candidate investment, not a proven shortcut."
+  },
+  {
+   "a": "f570",
+   "b": "f13509",
+   "type": "same",
+   "note": "Both urge timely sensor selection because target realism depends on chosen sensors."
+  },
+  {
+   "a": "f2555",
+   "b": "f15325",
+   "type": "same",
+   "note": "Both specify the same off-road surrogate classes; the glossary adds the transferable design principle."
+  },
+  {
+   "a": "f2556",
+   "b": "f15326",
+   "type": "same",
+   "note": "Both require matching camera, radar, lidar and ultrasonic characteristics to each sensor."
+  },
+  {
+   "a": "f2912",
+   "b": "f12634",
+   "type": "same",
+   "note": "Both warn that correct camera appearance does not ensure correct radar cross-section."
+  },
+  {
+   "a": "f345",
+   "b": "f957",
+   "type": "elaborates",
+   "note": "Passenger-car-speed platform design accompanies a Low heavy-off-road maturity rating."
+  },
+  {
+   "a": "f2554",
+   "b": "f15325",
+   "type": "elaborates",
+   "note": "The glossary specifies off-road objects implementing the transferable standardized-surrogate principle."
+  },
+  {
+   "a": "f2556",
+   "b": "f13506",
+   "type": "elaborates",
+   "note": "The glossary combines modality matching with required off-road surrogate classes."
+  },
+  {
+   "a": "f13500",
+   "b": "f2546",
+   "type": "elaborates",
+   "note": "Pedestrian protocol details specify ISO 19206-2:2018 for 2026–2028."
+  },
+  {
+   "a": "f13500",
+   "b": "f2547",
+   "type": "elaborates",
+   "note": "Bicyclist protocol details specify ISO 19206-4:2020 for 2026–2028."
+  },
+  {
+   "a": "f5389",
+   "b": "f569",
+   "type": "supports",
+   "note": "Potential dummy signature mismatches justify requiring sensor-realistic targets."
+  },
+  {
+   "a": "f11911",
+   "b": "f570",
+   "type": "supports",
+   "note": "Post-freeze sensor-specific target selection reinforces the need for an early sensor decision."
+  },
+  {
+   "a": "f5386",
+   "b": "f552",
+   "type": "supports",
+   "note": "Accurate, controlled, repeatable targets underpin proving-ground validation of the complete chain."
+  },
+  {
+   "a": "f5388",
+   "b": "f953",
+   "type": "supports",
+   "note": "Staged scenarios and low diversity explain why track tests alone cannot establish broad coverage."
+  },
+  {
+   "a": "f566",
+   "b": "f13505",
+   "type": "supports",
+   "note": "Missing documented high-throughput systems justify treating automation as an unproven investment."
+  },
+  {
+   "a": "f5344",
+   "b": "f5727",
+   "type": "same",
+   "note": "Both require a proving area, surveyed targets and an operator or robotic driver."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t126",
+ "hash": "b1b64c8bd4184b75",
+ "synopsis": "Exhaustive field coverage of more than 7,000 testing strata is infeasible; a 1% miss-rate claim in each of 20 critical strata at 95% one-sided confidence requires about 6,000 zero-miss trials, making simulation or hardware-in-the-loop essential for volume, alongside a credibility argument [f132, f6654, f6925]. Simulation can establish logic, timing and braking-envelope correctness across large parameter sweeps, but behavioural, sensor and closed-loop simulation must not be treated as interchangeable, and semantic object injection assumes perception has succeeded [f909, f462, f5779]. For a team starting from zero in October 2026, abstract closed-loop machine-and-site simulation is considered realistic by mid-2027; documented reductions in physical testing relied on years of prior investment or narrow operating envelopes, and no published manufacturer statement confirming shortened off-road validation time was found [f844, f1256, f257]. Credibility remains limited by poorly validated glare and reflective-clothing effects, missing evidence for mud or dirt on radar, and uncertainty about predicting combined environmental and machine effects; calibration in fog and rain chambers and field validation are recommended [f4406, f4678, f9343, f10574]. Vehicle-and-environment simulation does not represent operator adaptation and related behavioural changes, so human delay should be explored through uncertain parameters or distributions, while behaviour change requires months of field time [f8206, f3478, f11858]. ISO 18497-4:2024 explicitly includes simulation as a verification method for agricultural machinery, but simulator errors can mask defects when results become safety evidence; recommended safeguards include upgrade regression testing and, as a fallback, using simulation for screening while retaining physical verification for acceptance [f5275, f10543, f8897, f9697].",
+ "relations": [
+  {
+   "a": "f257",
+   "b": "f826",
+   "type": "same",
+   "note": "Both report no manufacturer statement confirming simulation, replay or HIL shortened validation."
+  },
+  {
+   "a": "f6654",
+   "b": "f6888",
+   "type": "same",
+   "note": "Both place approximately 6,000 zero-miss trials beyond practical physical testing."
+  },
+  {
+   "a": "f11832",
+   "b": "f8206",
+   "type": "elaborates",
+   "note": "Chapter 10 adds nuisance-brake response to the glossary's omitted operator behaviours."
+  },
+  {
+   "a": "f6654",
+   "b": "f132",
+   "type": "supports",
+   "note": "Required statistical trial volume reinforces the need for simulation rather than exhaustive field testing."
+  },
+  {
+   "a": "f6925",
+   "b": "f6654",
+   "type": "elaborates",
+   "note": "Simulation volume must be accompanied by a credibility argument for off-road claims."
+  },
+  {
+   "a": "f1257",
+   "b": "f1256",
+   "type": "supports",
+   "note": "Named programs illustrate years of investment behind reduced physical testing."
+  },
+  {
+   "a": "f1256",
+   "b": "f844",
+   "type": "supports",
+   "note": "Long prerequisite investment supports caution about capabilities achievable by a team starting from zero."
+  },
+  {
+   "a": "f5779",
+   "b": "f462",
+   "type": "elaborates",
+   "note": "Contrasting sensor simulation and object injection explains why simulation categories cannot be conflated."
+  },
+  {
+   "a": "f8916",
+   "b": "f11308",
+   "type": "contradicts",
+   "note": "Millions of virtual situations offer scale but may be systematically wrong."
+  },
+  {
+   "a": "f8916",
+   "b": "f10543",
+   "type": "supports",
+   "note": "Systematically wrong simulations explain how simulator errors can mask safety defects."
+  },
+  {
+   "a": "f8897",
+   "b": "f10543",
+   "type": "depends",
+   "note": "The risk of masked defects motivates regression testing simulator upgrades."
+  },
+  {
+   "a": "f4406",
+   "b": "f10555",
+   "type": "supports",
+   "note": "Weakly validated glare effects corroborate the review's environmental-testing gaps."
+  },
+  {
+   "a": "f10574",
+   "b": "f9343",
+   "type": "depends",
+   "note": "Uncertain environmental prediction motivates chamber calibration and field validation."
+  },
+  {
+   "a": "f7964",
+   "b": "f9343",
+   "type": "supports",
+   "note": "Dust-dependent conservatism illustrates uncertainty across combined operating conditions."
+  },
+  {
+   "a": "f11858",
+   "b": "f8206",
+   "type": "elaborates",
+   "note": "Behavioural omissions require months of field observation, not a four-month simulator program."
+  },
+  {
+   "a": "f3478",
+   "b": "f3464",
+   "type": "elaborates",
+   "note": "Human-delay distributions specify one defensible approach to representing operators."
+  },
+  {
+   "a": "f5276",
+   "b": "f5275",
+   "type": "elaborates",
+   "note": "Annex C supplies simulation test objects within the standard recognizing simulation verification."
+  },
+  {
+   "a": "f9697",
+   "b": "f10543",
+   "type": "depends",
+   "note": "Risk from simulator errors motivates retaining physical verification as the acceptance basis."
+  }
+ ]
+}

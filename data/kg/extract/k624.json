@@ -1,0 +1,218 @@
+{
+ "chunkId": "k624",
+ "hash": "2803b4eac9bbc620",
+ "facts": [
+  {
+   "text": "A common-cause failure is one event that disables two or more parts intended to back each other up; redundancy counts only when the channels are truly independent.",
+   "quote": "A common-cause failure is one event that knocks out two or more parts that were supposed to back each other up, so redundancy only counts when the channels are truly independent.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t59"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A redundant design using two sensors, two processors or two brake circuits earns safety credit only when a single cause cannot fail both channels.",
+   "quote": "A redundant design (two sensors, two processors, two brake circuits) earns credit only when a single cause cannot fail both channels.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t59"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Common causes of channel failure include a shared power supply, the same software bug, the same environmental stress such as dust on both lenses, the same wrong design assumption or the same calibration error.",
+   "quote": "Common causes include a shared power supply, the same software bug in both channels, the same environmental stress (dust on both lenses), the same wrong design assumption or the same calibration error.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t59",
+    "t102",
+    "t100"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 13849 uses a checklist to score common-cause failure defenses, including separation, diverse technologies and environmental protection.",
+   "quote": "ISO 13849 scores the defenses (separation, diverse technologies, environmental protection) with a checklist.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 13849",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t59",
+    "t287"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Diversity is the strongest common-cause failure defense identified in the passage: radar and camera channels use different physics and fail in different conditions.",
+   "quote": "Diversity is the strongest: a radar and a camera use different physics and fail in different conditions.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t59",
+    "t94",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The sensor-fusion safety argument must include common-cause degradation and disagreement between sensing technologies because one storm can degrade several sensors.",
+   "quote": "For sensor fusion, the safety argument must include common-cause degradation and disagreement between sensing technologies, since one storm can degrade several sensors [Chapter 1].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t59",
+    "t99",
+    "t67",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "If the virtual sensor, collision logic and test oracle—the rule deciding pass or fail—embed the same simplifying assumption, a large virtual test campaign can produce very consistent but very misleading results.",
+   "quote": "if the virtual sensor, the collision logic and the test oracle (the rule deciding pass or fail) embed the same simplifying assumption, a large virtual campaign produces very consistent and very misleading results",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t59",
+    "t267",
+    "t127",
+    "t62",
+    "t185"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "If the product and test environment share the same map, target model or physics simplification, a virtual test reproduces the same error twice.",
+   "quote": "if product and test environment share the same map, target model or physics simplification, a virtual test reproduces the same error twice.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t59",
+    "t267",
+    "t127",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Independent real-world referents are the defense against shared-assumption errors in virtual testing.",
+   "quote": "Independent real-world referents are the defense [Chapters 12, 13].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t59",
+    "t263",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The aviation rule that a model cannot be validated by comparison with another validated model reflects the principle of independence against common-cause errors.",
+   "quote": "The aviation rule that a model cannot be validated by comparison with another validated model is the same principle [Chapter 10].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t59",
+    "t237",
+    "t246"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A deterministic radar channel can bound what a machine-learning channel must prove, but only if the two channels fail differently.",
+   "quote": "A deterministic radar channel can bound what a machine-learning channel must prove, but only if the two fail differently [Chapter 1]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t59",
+    "t94",
+    "t79"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Validation evidence for a simulator must come from a source that does not share the simulator's assumptions.",
+   "quote": "validation evidence for the simulator must come from a source that does not share its assumptions.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t59",
+    "t234",
+    "t237",
+    "t70"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t220",
+ "hash": "a0e14d6668cec992",
+ "synopsis": "Across the synthesis, simulation-credibility chapter and glossary, the central rule is to separate tuning, validation or confirmation, and untouched audit data; data used to judge the system must not have helped build or tune it [f135, f7589, f6992, f14471]. Splits should hold out whole sites, weather episodes, machine identities or scenario families rather than random frames, because adjacent frames shared between tuning and validation create severe leakage [f137, f6990, f6991, f14327]. The release-rate claim must rest on a frozen, stratified random sample from the declared operating-domain distribution, drawn before tuning; fixed seeds and content hashes protect its identity, and full-set evaluation is reserved for release candidates [f14131, f14298, f7134]. Audit governance limits the tuning team to aggregate pass/fail results, prohibits optimizing against audit failures, and requires contaminated cases to be retired and replaced; tuned-versus-frozen performance should be reported because a large gap signals over-fitting [f6954, f7135, f6953, f14313]. Physical-model credibility requires frozen calibration challenged on independent boundary conditions, while using every physical case for tuning leaves no untouched predictive evidence; the cited 2017 expert-weighting cross-validation study likewise found strong in-sample performance with an out-of-sample penalty [f6167, f8225, f9946].",
+ "relations": [
+  {
+   "a": "f135",
+   "b": "f6670",
+   "type": "same",
+   "note": "Both prohibit turning the audit set into another tuning set."
+  },
+  {
+   "a": "f11032",
+   "b": "f12893",
+   "type": "same",
+   "note": "Both prescribe withheld physical datasets and no final-validation tuning to counter simulator over-fitting."
+  },
+  {
+   "a": "f6675",
+   "b": "f6990",
+   "type": "same",
+   "note": "Both require whole-group holdouts rather than random frame splits."
+  },
+  {
+   "a": "f6990",
+   "b": "f14309",
+   "type": "elaborates",
+   "note": "Glossary adds the severe leakage caused by adjacent frames crossing partitions."
+  },
+  {
+   "a": "f6991",
+   "b": "f137",
+   "type": "supports",
+   "note": "Adjacent-frame leakage explains why grouped holdouts are needed."
+  },
+  {
+   "a": "f6676",
+   "b": "f6992",
+   "type": "same",
+   "note": "Both prescribe separate tuning, validation and untouched audit splits."
+  },
+  {
+   "a": "f6992",
+   "b": "f14310",
+   "type": "same",
+   "note": "Glossary restates the three-way development, confirmation and audit split."
+  },
+  {
+   "a": "f7589",
+   "b": "f8025",
+   "type": "elaborates",
+   "note": "Reporting guidance operationalizes separation and adds the FAA calibration-validation distinction."
+  },
+  {
+   "a": "f6939",
+   "b": "f14131",
+   "type": "elaborates",
+   "note": "Glossary makes the pre-tuning frozen sample the exclusive basis for the release-rate claim."
+  },
+  {
+   "a": "f14298",
+   "b": "f14477",
+   "type": "same",
+   "note": "Both specify drawing the audit sample before tuning with fixed seed and content hash."
+  },
+  {
+   "a": "f6952",
+   "b": "f14288",
+   "type": "elaborates",
+   "note": "Glossary explains that audit leakage understates failures and measures fit rather than field performance."
+  },
+  {
+   "a": "f6953",
+   "b": "f14290",
+   "type": "same",
+   "note": "Both protect audit independence by retiring and replacing contaminated cases."
+  },
+  {
+   "a": "f6954",
+   "b": "f14333",
+   "type": "same",
+   "note": "Both restrict tuning-team audit access to aggregate pass/fail results."
+  },
+  {
+   "a": "f12889",
+   "b": "f13527",
+   "type": "same",
+   "note": "Both reserve frozen estimation testing for release candidates and prohibit optimization against it."
+  },
+  {
+   "a": "f13527",
+   "b": "f14374",
+   "type": "same",
+   "note": "Both prohibit continuous reruns and optimization while reserving testing for release candidates."
+  },
+  {
+   "a": "f7134",
+   "b": "f12889",
+   "type": "elaborates",
+   "note": "Glossary adds the prohibition on optimizing against the release-candidate estimation set."
+  },
+  {
+   "a": "f6999",
+   "b": "f14313",
+   "type": "elaborates",
+   "note": "Glossary turns the over-fitting signal into a side-by-side reporting recommendation."
+  },
+  {
+   "a": "f8225",
+   "b": "f11032",
+   "type": "supports",
+   "note": "Loss of untouched predictive evidence motivates independent physical datasets and blind correlation tests."
+  }
+ ]
+}

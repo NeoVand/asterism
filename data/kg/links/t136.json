@@ -1,0 +1,115 @@
+{
+ "key": "t136",
+ "hash": "23858e773d4c0f8c",
+ "synopsis": "A useful virtual job site needs coordinated geometry, collision surfaces, ground mechanics and sensor-specific materials, not just convincing visuals; non-visual responses cannot be inferred from RGB textures, and camera, lidar and radar require wavelength-specific material data [f13113, f3713, f3715]. ASAM OpenMATERIAL 3D standardises assets and material properties for sensor-perception simulation: version 1.0.0 was released on 3 April 2025, while version 1.1.0 was planned for October 2026 but was not listed on the main page accessed that month [f7083, f3714, f3923, f3925]. Its coverage does not remove the need for separate environmental and contamination models, because weather and lighting are outside its stated scope and sensor soiling is explicitly excluded [f3919, f9372]. Radar credibility depends on material properties and the signal chain, with 77 GHz properties often requiring measurement; a 2025 wheel-loader study needed manual material tuning and reported detector failures partly attributable to guessed materials [f4418, f4420, f4421, f4423]. The booklet found no published job-site ultrasonic datasets, also reported missing thermal datasets, and recommends that the program measure or estimate material properties itself—a larger schedule item than computing power [f3943, f3717, f12951]. Site geometry and material libraries are proposed as work that can be completed before mid-2027, but acquiring and maintaining physically meaningful assets may consume more engineering effort than rendering them, and adapting road-centric material libraries to mines and quarries is non-trivial [f4973, f4966, f8462].",
+ "relations": [
+  {
+   "a": "f12944",
+   "b": "f3713",
+   "type": "same",
+   "note": "Both reject inferring non-visual material response from visual appearance."
+  },
+  {
+   "a": "f3713",
+   "b": "f13185",
+   "type": "same",
+   "note": "Both say visual textures cannot supply non-visual material response."
+  },
+  {
+   "a": "f3714",
+   "b": "f8324",
+   "type": "same",
+   "note": "Both identify version 1.0.0 and its 3 April 2025 date."
+  },
+  {
+   "a": "f3714",
+   "b": "f9182",
+   "type": "same",
+   "note": "Both give the same release version and date."
+  },
+  {
+   "a": "f7083",
+   "b": "f8324",
+   "type": "elaborates",
+   "note": "The tools chapter supplies the exact April release date."
+  },
+  {
+   "a": "f3923",
+   "b": "f3925",
+   "type": "contradicts",
+   "note": "Planned October release contrasts with the main page still listing only 1.0.0."
+  },
+  {
+   "a": "f8615",
+   "b": "f9179",
+   "type": "same",
+   "note": "Both state that OpenMATERIAL excludes sensor soiling."
+  },
+  {
+   "a": "f9179",
+   "b": "f9372",
+   "type": "elaborates",
+   "note": "Lists excluded contamination on cameras, radar covers, lidar windows and optics."
+  },
+  {
+   "a": "f3717",
+   "b": "f3943",
+   "type": "elaborates",
+   "note": "Specifies the ultrasonic dataset gap and affected job-site materials."
+  },
+  {
+   "a": "f12949",
+   "b": "f4966",
+   "type": "same",
+   "note": "Both warn meaningful asset acquisition may exceed rendering effort."
+  },
+  {
+   "a": "f4457",
+   "b": "f4966",
+   "type": "supports",
+   "note": "Heavy-machine study provides evidence for the projected asset-engineering burden."
+  },
+  {
+   "a": "f12958",
+   "b": "f4469",
+   "type": "same",
+   "note": "Both require supplier internals and material data for physics-based sensor modeling."
+  },
+  {
+   "a": "f4423",
+   "b": "f4855",
+   "type": "same",
+   "note": "Both attribute radar detector failure partly to guessed target materials."
+  },
+  {
+   "a": "f88",
+   "b": "f4530",
+   "type": "supports",
+   "note": "The 77 GHz measurement study substantiates the need to measure material parameters."
+  },
+  {
+   "a": "f3715",
+   "b": "f86",
+   "type": "elaborates",
+   "note": "Adds wavelength-specific requirements for camera, lidar and radar material layers."
+  },
+  {
+   "a": "f3943",
+   "b": "f12951",
+   "type": "supports",
+   "note": "Missing published ultrasonic datasets supports acquiring job-site material properties directly."
+  },
+  {
+   "a": "f3726",
+   "b": "f13151",
+   "type": "elaborates",
+   "note": "Provides reconstruction steps for adding geometry, collision proxies, materials and controllable actors."
+  },
+  {
+   "a": "f4418",
+   "b": "f12964",
+   "type": "depends",
+   "note": "Trusted transfer through ray tracing requires known materials and the sensor signal chain."
+  }
+ ]
+}

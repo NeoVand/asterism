@@ -1,0 +1,115 @@
+{
+ "key": "t213",
+ "hash": "805eab0109c3a935",
+ "synopsis": "False alarms and unnecessary interventions should be measured against representative operational exposure, such as operating hours, loading cycles or close approaches, rather than staged tests or discovery-campaign failure fractions [f11336, f3342, f134]. No published authoritative off-road acceptance rates were found, so programs must set their own criteria separately for advisory warnings, urgent warnings, speed reduction and full braking, with nuisance-stop thresholds agreed with site operations [f2121, f2880, f2124, f10716]. Under a homogeneous Poisson model, zero events in T hours gives a one-sided 95% upper rate bound of approximately 3/T: 300 representative event-free hours supports fewer than one unnecessary brake per 100 hours, and 3,000 supports fewer than one per 1,000 hours; clustered alarms require different statistical models [f5456, f6658, f6659, f6660]. Shadow-mode logging and replay can estimate unnecessary braking per operating hour by site type and weather, while field testing should use continuous, untriggered recording in representative site classes [f1601, f5472]. Accident counts cannot establish comparable collision rates without exposure denominators and compatible categories, and even ten million operating hours with few recorded incidents says little about detector performance without encounter counts and recording completeness [f11610, f3047, f7939].",
+ "relations": [
+  {
+   "a": "f179",
+   "b": "f2121",
+   "type": "same",
+   "note": "Both report no published off-road acceptance values for false alarms or unnecessary braking."
+  },
+  {
+   "a": "f249",
+   "b": "f2121",
+   "type": "same",
+   "note": "Both report unsuccessful searches for published off-road hourly acceptance rates."
+  },
+  {
+   "a": "f180",
+   "b": "f2124",
+   "type": "same",
+   "note": "Both require program-level acceptance criteria; Chapter 3 distinguishes intervention levels."
+  },
+  {
+   "a": "f134",
+   "b": "f6669",
+   "type": "same",
+   "note": "Discovery-campaign failure fractions must not be presented as field failure rates."
+  },
+  {
+   "a": "f6656",
+   "b": "f11336",
+   "type": "same",
+   "note": "False-alarm validation requires operating exposure, not staged tests."
+  },
+  {
+   "a": "f3342",
+   "b": "f11608",
+   "type": "same",
+   "note": "Both recommend task-stratified operational denominators for operator acceptance."
+  },
+  {
+   "a": "f3047",
+   "b": "f11589",
+   "type": "same",
+   "note": "Incompatible agency categories prevent combining countries into one collision rate."
+  },
+  {
+   "a": "f129",
+   "b": "f6658",
+   "type": "same",
+   "note": "Both give 300 event-free hours for fewer than one unnecessary brake per 100 hours."
+  },
+  {
+   "a": "f223",
+   "b": "f6657",
+   "type": "same",
+   "note": "Both state the approximate 95% zero-event upper rate bound of 3/T."
+  },
+  {
+   "a": "f5456",
+   "b": "f6657",
+   "type": "same",
+   "note": "Both give the zero-event Poisson rate bound, including its exact form."
+  },
+  {
+   "a": "f5204",
+   "b": "f5457",
+   "type": "same",
+   "note": "Both require 30 failure-free hours per condition for a rate below 0.1 per hour."
+  },
+  {
+   "a": "f5459",
+   "b": "f6660",
+   "type": "elaborates",
+   "note": "Chapter 9 specifies alternative models when alarm clustering violates the Poisson assumption."
+  },
+  {
+   "a": "f6657",
+   "b": "f6659",
+   "type": "supports",
+   "note": "The zero-event rate formula justifies 3,000 hours for fewer than one event per 1,000 hours."
+  },
+  {
+   "a": "f589",
+   "b": "f1601",
+   "type": "elaborates",
+   "note": "Logging and replay specify how shadow mode estimates hypothetical nuisance-braking rates."
+  },
+  {
+   "a": "f2121",
+   "b": "f2124",
+   "type": "supports",
+   "note": "Missing published acceptance values motivate program-specific criteria."
+  },
+  {
+   "a": "f11610",
+   "b": "f3238",
+   "type": "supports",
+   "note": "Missing exposure denominators explain why comparable machine-type collision rates could not be established."
+  },
+  {
+   "a": "f648",
+   "b": "f7939",
+   "type": "supports",
+   "note": "Defined denominators and event labelling explain why operating hours alone cannot establish detector performance."
+  },
+  {
+   "a": "f11138",
+   "b": "f10716",
+   "type": "elaborates",
+   "note": "The pilot nuisance-stop requirement becomes scenario-specific measurement against a site-agreed threshold."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t37",
+ "hash": "cbd30e20f4e855d9",
+ "synopsis": "HMI is a safety-critical part of collision mitigation: warnings can fail if operators do not notice, understand or trust them, and the interface determines whether staged intervention leaves real time to respond [f11824, f11843]. The University of Queensland’s ACARP C24028 project ran in 2017 with follow-on work to 2019; its modified haul-truck simulator provided the strongest haul-truck-specific human-interface evidence found, with a richer proximity display reducing collision risk, braking force and travel time, but the project addressed advisory interfaces rather than automatic braking [f3314, f3315, f3468, f3466, f573]. ISO 16001:2017 requires audible warnings at least 3 dB above ambient under specified operating conditions, visual warnings within a forward 120° arc, a flashing red light for the most severe warning, and no haptic-only warnings; ISO 21815-3 requires distinguishable warning levels [f2406, f2408, f2410, f6240]. Nuisance and ambiguous indications remain material risks: continuous haul-truck audible warnings were annoying enough to be switched off, an 18% false-alarm result does not establish an acceptable lower rate, and WorkSafe SIR 286 links recovery problems to mode misunderstanding and desensitization [f11840, f3331, f10719, f10839]. Operator studies should precede expensive prototype safety tests, VIL can exercise the real interface alongside braking dynamics without exposing people or targets, and recordings must capture operator inputs and warning states to assess usefulness [f13415, f13393, f5636, f5637]. Haptic effectiveness remains an explicit research gap, despite on-road provisions allowing very brief brake-jerk cues above 4 m/s²; degraded modes, annunciation, recovery procedures and human understanding therefore need explicit validation [f5837, f6498, f11035].",
+ "relations": [
+  {
+   "a": "f6240",
+   "b": "f11836",
+   "type": "same",
+   "note": "Both state ISO 21815-3 requires distinguishable warning levels."
+  },
+  {
+   "a": "f2679",
+   "b": "f2406",
+   "type": "same",
+   "note": "Same audible threshold; the latter specifies operating conditions."
+  },
+  {
+   "a": "f6247",
+   "b": "f6498",
+   "type": "same",
+   "note": "Both describe very brief on-road haptic deceleration cues above 4 m/s²."
+  },
+  {
+   "a": "f5637",
+   "b": "f5662",
+   "type": "same",
+   "note": "Missing operator and HMI recordings prevents assessing warning usefulness."
+  },
+  {
+   "a": "f5333",
+   "b": "f13393",
+   "type": "same",
+   "note": "Both describe VIL proving real braking, delays, latency and HMI safely."
+  },
+  {
+   "a": "f5715",
+   "b": "f13393",
+   "type": "same",
+   "note": "Both describe safe VIL testing of real braking and operator interfaces."
+  },
+  {
+   "a": "f3466",
+   "b": "f11826",
+   "type": "same",
+   "note": "Both report richer simulator proximity displays reducing collision risk and braking force."
+  },
+  {
+   "a": "f742",
+   "b": "f13415",
+   "type": "same",
+   "note": "Both place operator studies before prototype testing to catch basic interface problems."
+  },
+  {
+   "a": "f11845",
+   "b": "f13415",
+   "type": "same",
+   "note": "Both recommend resolving interface problems before expensive prototype tests."
+  },
+  {
+   "a": "f2768",
+   "b": "f2234",
+   "type": "same",
+   "note": "Both state internal audible and visual, plus external audible, warning requirements."
+  },
+  {
+   "a": "f6258",
+   "b": "f6497",
+   "type": "same",
+   "note": "Both describe urgent warnings using distinct audible, visual or haptic cues."
+  },
+  {
+   "a": "f577",
+   "b": "f960",
+   "type": "same",
+   "note": "Both describe simulator assessment of timing, nuisance tolerance, overrides and operator responses."
+  },
+  {
+   "a": "f2408",
+   "b": "f2066",
+   "type": "elaborates",
+   "note": "Adds the required visual-warning placement to the flashing-red requirement."
+  },
+  {
+   "a": "f11840",
+   "b": "f3280",
+   "type": "elaborates",
+   "note": "Adds warning switch-off as a consequence of annoying continuous alarms."
+  },
+  {
+   "a": "f10719",
+   "b": "f11035",
+   "type": "supports",
+   "note": "Incident factors justify validating mode understanding, annunciation and recovery procedures."
+  },
+  {
+   "a": "f5636",
+   "b": "f11842",
+   "type": "supports",
+   "note": "Required warning-state recordings enable reconstruction of whether warnings were given and acknowledged."
+  },
+  {
+   "a": "f3466",
+   "b": "f572",
+   "type": "elaborates",
+   "note": "Reports outcomes of the simulator interface evaluation."
+  },
+  {
+   "a": "f5837",
+   "b": "f6498",
+   "type": "contradicts",
+   "note": "Permitted haptic brake cues coexist with unresolved evidence about haptic effectiveness."
+  }
+ ]
+}

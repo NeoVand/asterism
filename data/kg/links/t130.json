@@ -1,0 +1,115 @@
+{
+ "key": "t130",
+ "hash": "3d33b460e367f9e7",
+ "synopsis": "The corpus concludes that no single method can deliver valid camera, radar, lidar and ultrasonic environments across 100+ site types in the available time; it recommends parameterized representative sites, procedural rules and asset libraries anchored to surveyed real sites [f75, f76, f3705]. A proposed starting point is 15–30 site archetypes anchored by 3–5 surveyed sites, explicitly planning assumptions rather than evidence; no published method or standard setting the required number was found [f11937, f255]. For a team starting from zero in October 2026, abstract closed-loop machine and site simulation is considered realistic by mid-2027, with sensor-independent geometry, scenario and evaluation foundations recommended now [f844, f1592]. Photorealism alone does not establish sensor validity: separate sensor and physical layers need material data, cross-sensor geometry and timing must remain consistent, and sensor/environment fidelity remains the hardest uncertainty [f85, f86, f5101, f10424]. Road-oriented formats fit lane-free sites poorly; custom off-road representations are often needed, while OpenMATERIAL 3D version 1.0.0, dated April 2025, standardizes assets and material properties for sensor-perception simulation [f7157, f8724, f7083]. Building meaningful site/material assets took more effort than rendering in the one heavy-machine study found, and published environment-building effort, cost, team-size or timeline figures were not found [f4457, f256].",
+ "relations": [
+  {
+   "a": "f75",
+   "b": "f3699",
+   "type": "same",
+   "note": "Both reject one creation method for four sensor types across 100+ sites."
+  },
+  {
+   "a": "f75",
+   "b": "f11500",
+   "type": "same",
+   "note": "Glossary restates the synthesis's single-method limitation."
+  },
+  {
+   "a": "f3699",
+   "b": "f11500",
+   "type": "same",
+   "note": "Both state that one method cannot cover all sites within available time."
+  },
+  {
+   "a": "f76",
+   "b": "f3705",
+   "type": "same",
+   "note": "Both recommend parameterized representative sites anchored to surveyed sites."
+  },
+  {
+   "a": "f3705",
+   "b": "f11501",
+   "type": "same",
+   "note": "Glossary restates the practical parameterized-library recommendation."
+  },
+  {
+   "a": "f3700",
+   "b": "f76",
+   "type": "same",
+   "note": "Both recommend a hybrid environment factory; synthesis spells out its components."
+  },
+  {
+   "a": "f8337",
+   "b": "f7157",
+   "type": "same",
+   "note": "Both identify OpenDRIVE's poor fit for sites without lanes."
+  },
+  {
+   "a": "f8337",
+   "b": "f8617",
+   "type": "same",
+   "note": "Duplicate OpenDRIVE limitation within the tools chapter."
+  },
+  {
+   "a": "f7157",
+   "b": "f8617",
+   "type": "same",
+   "note": "Road-network assumptions make OpenDRIVE unsuitable for lane-free off-road sites."
+  },
+  {
+   "a": "f5330",
+   "b": "f5714",
+   "type": "same",
+   "note": "Both specify VIL's real-machine facility, virtual environment and target injection or stimulation."
+  },
+  {
+   "a": "f11937",
+   "b": "f76",
+   "type": "elaborates",
+   "note": "Adds explicitly assumption-based counts for archetypes and surveyed anchors."
+  },
+  {
+   "a": "f3701",
+   "b": "f76",
+   "type": "supports",
+   "note": "Reality capture's geometric strengths justify surveyed anchors in the hybrid factory."
+  },
+  {
+   "a": "f3702",
+   "b": "f76",
+   "type": "supports",
+   "note": "Procedural editability and systematic variation justify parameterized representative sites."
+  },
+  {
+   "a": "f86",
+   "b": "f85",
+   "type": "supports",
+   "note": "Distinct physical and sensor layers explain why photorealism cannot establish validity."
+  },
+  {
+   "a": "f5101",
+   "b": "f10424",
+   "type": "supports",
+   "note": "Unaddressed cross-sensor consistency reinforces the environment-fidelity uncertainty."
+  },
+  {
+   "a": "f4457",
+   "b": "f4966",
+   "type": "supports",
+   "note": "The observed asset-building burden supports the cautious program-level effort forecast."
+  },
+  {
+   "a": "f7083",
+   "b": "f7201",
+   "type": "supports",
+   "note": "Standardized sensor-relevant assets and materials justify using OpenMATERIAL where suitable."
+  },
+  {
+   "a": "f11257",
+   "b": "f10670",
+   "type": "supports",
+   "note": "Changing site layouts and rules justify explicitly representing site geometry and traffic rules."
+  }
+ ]
+}

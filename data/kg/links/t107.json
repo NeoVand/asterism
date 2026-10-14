@@ -1,0 +1,115 @@
+{
+ "key": "t107",
+ "hash": "28cb85560e9c3cea",
+ "synopsis": "The corpus identifies substantial research datasets, including SODA with 19,846 construction images, MOCS with 41,668 images reported in a September 2026 preprint, and LiDARDustX with 30,000 mining-truck lidar frames, more than 80% dusty [f10825, f10826, f7065, f7066]. Their availability does not establish collision-warning validity: the discussed construction datasets are image-only with fixed or aerial viewpoints, and no off-road collision-warning validation was found for RELLIS-3D, RUGD, GOOSE or TartanDrive [f5845, f5851]. Simulation benchmarks also require real-data checks: simulated versus real RELLIS-3D data showed large domain shifts, while S2R-Bench highlights failures to predict real weather robustness [f4741, f776]. Major gaps include job-site ultrasonic and thermal material data and large off-road naturalistic interaction datasets; these limit sensor modeling and the defensibility of rare-event evaluation claims [f3717, f6859, f7277]. The adverse-weather gap is stated more categorically in the glossary than in Chapter 6, which acknowledges MINE4DRAD and real-dust lidar exceptions; planning should therefore assess the manufacturer's existing fleet recordings and their machine, site and weather coverage before deciding what additional data can be collected [f12822, f5102, f12823, f272].",
+ "relations": [
+  {
+   "a": "f4741",
+   "b": "f12817",
+   "type": "same",
+   "note": "Both report large domain shifts in simulated versus real RELLIS-3D data."
+  },
+  {
+   "a": "f4741",
+   "b": "f12901",
+   "type": "same",
+   "note": "Glossary restates the simulated-to-real off-road dataset domain-shift finding."
+  },
+  {
+   "a": "f12817",
+   "b": "f12901",
+   "type": "same",
+   "note": "Both glossary statements describe the same domain-shift result."
+  },
+  {
+   "a": "f12610",
+   "b": "f12818",
+   "type": "same",
+   "note": "Same dusty mining dataset size, dusty proportion and detector degradation."
+  },
+  {
+   "a": "f3732",
+   "b": "f3840",
+   "type": "same",
+   "note": "Both give Boreal3D's 1,000 plots and four scanning-platform categories."
+  },
+  {
+   "a": "f3946",
+   "b": "f12673",
+   "type": "same",
+   "note": "Both report the missing job-site emissivity dataset."
+  },
+  {
+   "a": "f3943",
+   "b": "f12950",
+   "type": "same",
+   "note": "Glossary restates the missing material datasets with the same example materials."
+  },
+  {
+   "a": "f5851",
+   "b": "f12816",
+   "type": "same",
+   "note": "Same absence of collision-warning validation for the four named off-road datasets."
+  },
+  {
+   "a": "f12792",
+   "b": "f12822",
+   "type": "elaborates",
+   "note": "Adds manufacturer collection requirement, while strengthening 'not found' to 'exists'."
+  },
+  {
+   "a": "f5102",
+   "b": "f12822",
+   "type": "contradicts",
+   "note": "Chapter acknowledges radar and dust exceptions; glossary categorically says no suitable dataset exists."
+  },
+  {
+   "a": "f3717",
+   "b": "f3943",
+   "type": "elaborates",
+   "note": "Specifies the ultrasonic gap and lists relevant job-site materials."
+  },
+  {
+   "a": "f10427",
+   "b": "f10565",
+   "type": "supports",
+   "note": "Single-dataset evidence supports caution about transfer across datasets, sites and sensors."
+  },
+  {
+   "a": "f10563",
+   "b": "f10565",
+   "type": "supports",
+   "note": "High F1 on the authors' own dataset does not establish broader transfer."
+  },
+  {
+   "a": "f6859",
+   "b": "f7277",
+   "type": "depends",
+   "note": "Missing large off-road naturalistic data limits legitimate naturalistic-adversarial evaluation claims."
+  },
+  {
+   "a": "f3887",
+   "b": "f3888",
+   "type": "supports",
+   "note": "Masking moving objects explains under-testing of dynamic actors under viewpoint changes."
+  },
+  {
+   "a": "f5515",
+   "b": "f5785",
+   "type": "supports",
+   "note": "XLD's measured viewpoint gaps substantiate the disagreement over neural re-simulation."
+  },
+  {
+   "a": "f5360",
+   "b": "f5621",
+   "type": "supports",
+   "note": "Waymo supplies a concrete example of synchronized, calibrated, pose-preserving reference data."
+  },
+  {
+   "a": "f12823",
+   "b": "f272",
+   "type": "depends",
+   "note": "Fleet recording coverage determines whether additional winter collection remains necessary and feasible."
+  }
+ ]
+}

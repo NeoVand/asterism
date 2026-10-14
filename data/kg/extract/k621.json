@@ -1,0 +1,238 @@
+{
+ "chunkId": "k621",
+ "hash": "c40e497b3f3783bc",
+ "facts": [
+  {
+   "text": "A fault is a defect inside a system; a failure is the moment the system stops doing its job because of a fault; a failure mode is the particular way the system fails; and fault injection deliberately introduces faults to test the system's response.",
+   "quote": "A fault is a defect inside a system, a failure is the moment the system stops doing its job because of a fault, a failure mode is the particular way it fails, and fault injection is deliberately introducing faults to see how the system responds.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t56"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Fault injection tests both random hardware faults and systematic faults, on a bench or in simulation.",
+   "quote": "Fault injection is the test method for both. On a bench or in simulation",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Fault-injection testing cuts sensor feeds, delays or freezes messages, corrupts data, disconnects the brake valve or supplies contradictory sensor information, then checks that the system detects the fault and reaches its safe state within the time limit.",
+   "quote": "the tester cuts a sensor feed, delays or freezes messages, corrupts data, disconnects the brake valve or feeds two sensors contradictory information, and checks that the system notices and reaches its safe state within the time limit.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t55",
+    "t84",
+    "t88"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Fault injection and robustness testing exercise sensor dropouts, stale messages, bus faults, sensor disagreement, bad calibration, actuator faults and degraded modes faster and more safely than waiting for natural faults.",
+   "quote": "it exercises sensor dropouts, stale messages, bus faults, disagreement between sensors, bad calibration, actuator faults and degraded modes \"far faster and more safely than waiting for natural faults\"",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t100",
+    "t49"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Functional-safety standards make behavior under injected faults and degraded modes central to testing.",
+   "quote": "and the functional-safety standards make these behaviors central.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t49",
+    "t56",
+    "t271"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Fault injection cannot show how well a healthy sensor perceives.",
+   "quote": "Its limits: it cannot show how well a healthy sensor perceives",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t85",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A fault model used for fault injection may omit real failures.",
+   "quote": "the fault model may omit real failures [Chapter 1]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Hardware-in-the-loop benches are established for fault injection.",
+   "quote": "Hardware-in-the-loop benches are established for it",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t56"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The MOSH 500 millisecond limit is a natural target for fault-injection testing.",
+   "quote": "the MOSH 500 millisecond limit is a natural target [Chapters 1, 7]",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    7
+   ],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t56",
+    "t307",
+    "t55"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "High-fidelity simulation of normal operation provides no evidence about corrupted messages or timing faults; these require explicit fault testing.",
+   "quote": "A high-fidelity simulation of normal operation says nothing about corrupted messages or timing faults; those need explicit fault testing [Chapter 10].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t125",
+    "t126",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Fault-injection results form part of the evidence expected by the functional safety engineer.",
+   "quote": "Fault-injection results are part of the evidence the functional safety engineer expects [Chapter 13].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t49",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The braking chain must handle sensor, computation, communication and actuator faults.",
+   "quote": "The braking chain must handle sensor, computation, communication and actuator faults",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t22",
+    "t49"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Fault injection can start in software before the prototype exists, making it one of the few safety activities that need not wait for mid-2027.",
+   "quote": "fault injection can start in software before the prototype exists, so it is one of the few safety activities that does not wait for mid-2027 [Chapter 1].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t42",
+    "t43"
+   ],
+   "importance": 3
+  }
+ ]
+}

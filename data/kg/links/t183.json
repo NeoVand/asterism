@@ -1,0 +1,115 @@
+{
+ "key": "t183",
+ "hash": "97d4317fca284aab",
+ "synopsis": "The booklet recommends layered braking models per machine family: a calibrated point-mass core with measured latency, brake build-up lag and conservative deceleration by grade, payload and surface, supplemented by stability challenges and selected high-fidelity edge cases rather than one ultimate digital twin [f146, f13840]. Higher fidelity is justified for brake hydraulics and latency spread, articulated or high-center-of-gravity stability, state-dependent hydrostatic braking, and soft or deformable ground [f5906]. The runtime trigger should remain small, identifiable and conservative, while richer offline models challenge its safety assumptions; the selection rule is the lowest fidelity that predicts every safety-relevant output within a validated uncertainty envelope [f6074, f6075, f13837]. Complexity is not an accuracy guarantee: in a 2026 on-road round robin, point-mass implementations reproduced the prescribed profile exactly, while more complex models produced spreads of 0.033 s and 0.314 m [f5907, f5908]. No universal off-road prediction error is supplied for any fidelity level, and evidence of heavy-machine braking-distance fidelity on loose and wet surfaces was not found, so each level must be checked against the program’s own physical tests [f13842, f4307, f13843]. Detailed terrain simulations are too costly for exhaustive sweeps and can be dominated by uncertain soil inputs; the proposed alternative is to learn soil effects with richer models, fit simpler models for regression testing, confirm their envelope physically, and avoid surrogate extrapolation outside the trained domain [f6103, f6104, f15994, f6106].",
+ "relations": [
+  {
+   "a": "f146",
+   "b": "f5905",
+   "type": "same",
+   "note": "Synthesis and motion chapter recommend the same calibrated point-mass core."
+  },
+  {
+   "a": "f5905",
+   "b": "f13663",
+   "type": "same",
+   "note": "Glossary restates the core model, measured delays, lag and conservative deceleration."
+  },
+  {
+   "a": "f147",
+   "b": "f5906",
+   "type": "same",
+   "note": "Both restrict higher-fidelity benefits to four specific physical domains."
+  },
+  {
+   "a": "f5906",
+   "b": "f13839",
+   "type": "same",
+   "note": "Glossary repeats the four domains where additional fidelity pays off."
+  },
+  {
+   "a": "f5907",
+   "b": "f13838",
+   "type": "same",
+   "note": "Same 2026 round-robin result and numerical spreads."
+  },
+  {
+   "a": "f13060",
+   "b": "f13840",
+   "type": "same",
+   "note": "Both recommend threshold, stability and selected high-fidelity layers per machine family."
+  },
+  {
+   "a": "f6077",
+   "b": "f13741",
+   "type": "same",
+   "note": "Both require multibody fidelity for articulated or high-center-of-gravity braking stability."
+  },
+  {
+   "a": "f6106",
+   "b": "f13836",
+   "type": "same",
+   "note": "Both warn against using surrogate braking models outside their training domain."
+  },
+  {
+   "a": "f6072",
+   "b": "f6426",
+   "type": "same",
+   "note": "Both report no universal off-road error for kinematic stopping equations."
+  },
+  {
+   "a": "f6430",
+   "b": "f13827",
+   "type": "elaborates",
+   "note": "Adds payload-distribution omissions and the no-skid assumption to constant-deceleration limitations."
+  },
+  {
+   "a": "f6069",
+   "b": "f146",
+   "type": "supports",
+   "note": "Capturing most stopping-distance variance supports choosing a calibrated point-mass core."
+  },
+  {
+   "a": "f5907",
+   "b": "f5908",
+   "type": "supports",
+   "note": "Round-robin spreads demonstrate that added complexity need not improve accuracy."
+  },
+  {
+   "a": "f6075",
+   "b": "f13840",
+   "type": "elaborates",
+   "note": "Specifies the physical effects richer offline challenge models should examine."
+  },
+  {
+   "a": "f6103",
+   "b": "f15994",
+   "type": "supports",
+   "note": "Exhaustive terrain-simulation cost motivates fitting simpler models for large regression campaigns."
+  },
+  {
+   "a": "f13842",
+   "b": "f13843",
+   "type": "supports",
+   "note": "Absent universal error benchmarks motivates program-specific physical calibration and validation."
+  },
+  {
+   "a": "f13826",
+   "b": "f6429",
+   "type": "elaborates",
+   "note": "Regulatory use does not establish statistical validation for automatic braking."
+  },
+  {
+   "a": "f13832",
+   "b": "f13840",
+   "type": "elaborates",
+   "note": "Defines stability-layer outputs, 3–8 degrees of freedom and weeks of effort."
+  },
+  {
+   "a": "f13819",
+   "b": "f5906",
+   "type": "elaborates",
+   "note": "Specifies hydrostatic plant variables needed beyond a single pedal-to-torque gain."
+  }
+ ]
+}

@@ -1,0 +1,196 @@
+{
+ "chunkId": "k832",
+ "hash": "347202ca938a86ea",
+ "facts": [
+  {
+   "text": "Validated parameter ranges are the specific values of each input, such as speed, mass, mount height and visibility, between which a model has been checked against physical data; known model limits are documented places where the model is known to be wrong, approximate or silent.",
+   "quote": "Validated parameter ranges are the specific values of each input (speed, mass, mount height, visibility) between which a model has been checked against physical data, and known model limits are the documented places where it is known to be wrong, approximate or silent.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t262",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An example set of validated brake-model ranges covers gross mass of 15 to 60 t, grade of 0 to 12%, speed of 5 to 40 km/h, and dry compacted and wet gravel surfaces.",
+   "quote": "Brake model validated for 15 to 60 t gross mass, 0 to 12% grade, 5 to 40 km/h, dry compacted and wet gravel",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t262",
+    "t182",
+    "t168",
+    "t173",
+    "t174"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An example known brake-model limit is that the model does not represent brake fade above 150 degrees C.",
+   "quote": "Does not represent brake fade above 150 degrees C",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t262",
+    "t182"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An example known dust-model limit is validation only above 70% optical transmittance.",
+   "quote": "dust model validated only above 70% optical transmittance",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t262",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The Chapter 1 phase plan treats validated parameter ranges and known model limits as an evidence deliverable from the sensor-correlation phase.",
+   "quote": "In Chapter 1's phase plan, the evidence leaving the sensor-correlation phase is literally \"validated parameter ranges, known model limits\" [Chapter 1].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t262",
+    "t160",
+    "t342"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A sensor model's credibility file should record sensor and firmware version; machine and mounting configuration; calibration conditions and conditions held out for validation; reference instrumentation and uncertainty; weather, lighting and material parameters; metric and threshold; error and confidence intervals; known invalid regions; and tuning performed with validation data.",
+   "quote": "sensor and firmware version; machine and mounting configuration; which conditions were used for calibration and which held out for validation; reference instrumentation and its uncertainty; weather, lighting and material parameters; metric and threshold; error and confidence intervals;",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t269",
+    "t262",
+    "t263",
+    "t237",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Model credibility records should include known discrepancies, including biases, unexplained residuals and non-conservative cases.",
+   "quote": "Chapter 10 adds known discrepancies (biases, unexplained residuals, non-conservative cases)",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t269",
+    "t262"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Model credibility records should include change triggers: product, software or environment changes that invalidate the evidence.",
+   "quote": "change triggers, the product, software or environment changes that invalidate the evidence [Chapter 10].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t269",
+    "t262",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Known model limits are safety information, and records of ranges and limits prevent a model from being silently extrapolated to a different machine or sensor position.",
+   "quote": "Known limits are safety information. The failure these records prevent is a model \"silently extrapolated to a different machine or sensor position\" [Chapter 6].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t262",
+    "t265",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Failed validation cases should remain in model records because deleting them destroys information about model-form weakness.",
+   "quote": "Failed validation cases belong in the record; deleting them destroys information about model-form weakness [Chapter 10].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t262",
+    "t237",
+    "t269"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "With 100 or more machine models and many sensor positions, the organization will repeatedly need to determine whether an existing model covers a new case; only written parameter ranges and model limits can answer that question.",
+   "quote": "With 100 or more machine models and many sensor positions, the organization will constantly ask whether an existing model covers a new case. Only written ranges and limits can answer [Chapter 10].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t262",
+    "t265",
+    "t230"
+   ],
+   "importance": 3
+  }
+ ]
+}

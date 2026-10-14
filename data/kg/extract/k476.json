@@ -1,0 +1,140 @@
+{
+ "chunkId": "k476",
+ "hash": "97c8bdba85cb6f89",
+ "facts": [
+  {
+   "text": "Vendors market simulation as compressing development timelines to months, whereas the ISO 21815 committee text calls the algorithms immature. The timeline claim is labeled Vendor evidence, and the committee assessment is labeled Independent evidence.",
+   "quote": "Vendors claim simulation \"compresses\" timelines to months (marketing), while the ISO 21815 committee text calls the algorithms immature.",
+   "kind": "disagreement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    3,
+    27
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815 series",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t127",
+    "t280",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The credibility communities SET Level, IAMTS, ASAM QSQ and UNECE NATM agree that validation is required, but have not agreed on the metrics to use.",
+   "quote": "Credibility communities (SET Level, IAMTS, ASAM QSQ, UNECE NATM) agree that validation is required but have not agreed on metrics.",
+   "kind": "disagreement",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    33,
+    153
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "SET Level",
+     "kind": "program"
+    },
+    {
+     "name": "IAMTS",
+     "kind": "organization"
+    },
+    {
+     "name": "ASAM QSQ",
+     "kind": "standard"
+    },
+    {
+     "name": "UNECE NATM",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t234",
+    "t224",
+    "t241",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Traditional physics-based simulation tools emphasize explicit geometry, materials and sensor physics, whereas data-driven or generative approaches—including Cosmos and NuRec workflows in CARLA and Isaac Sim and published road-vehicle world-model work in 2026—emphasize learned reconstruction and generation. Neither approach has removed the need for application-specific credibility evidence; this assessment is labeled on-road evidence.",
+   "quote": "traditional tools emphasize explicit geometry, materials and sensor physics; newer approaches (Cosmos and NuRec workflows in CARLA and Isaac Sim, and published road-vehicle world-model work in 2026) emphasize learned reconstruction and generation.",
+   "kind": "disagreement",
+   "evidence": "Expert opinion",
+   "onRoad": true,
+   "cites": [
+    13,
+    85
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Cosmos",
+     "kind": "tool"
+    },
+    {
+     "name": "NuRec",
+     "kind": "tool"
+    },
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    },
+    {
+     "name": "Isaac Sim",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t128",
+    "t115",
+    "t234",
+    "t323",
+    "t116"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Integrated simulation suites reduce interfaces and support burden, whereas modular best-of-breed architectures make swapping sensor or dynamics providers easier and may better match unusual off-road physics. No independent evidence supports a universal winner between integrated suites and modular architectures.",
+   "quote": "suites reduce interfaces and support burden; modular architectures make it easier to swap sensor or dynamics providers and may match unusual off-road physics better. No independent evidence supports a universal winner.",
+   "kind": "disagreement",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t321",
+    "t167",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the simulation fidelity-versus-throughput trade-off, maximum fidelity is inappropriate for every test, whereas overly abstract testing misses perception and traction failures. A multi-fidelity pyramid is a strong pattern, but allocation of tests to fidelity levels must come from sensitivity work.",
+   "quote": "maximum fidelity is wrong for every test, and overly abstract testing misses perception and traction failures; the multi-fidelity pyramid is a strong pattern, but the allocation must come from sensitivity work.",
+   "kind": "disagreement",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t260",
+    "t85",
+    "t174",
+    "t339"
+   ],
+   "importance": 3
+  }
+ ]
+}

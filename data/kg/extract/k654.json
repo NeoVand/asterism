@@ -1,0 +1,363 @@
+{
+ "chunkId": "k654",
+ "hash": "aaa3fc573d103356",
+ "facts": [
+  {
+   "text": "Latency is the delay between an event in front of a machine and the machine's reaction; in a braking system, latency spans sensing, the brake command and actual deceleration.",
+   "quote": "Latency is the delay between the moment something happens in front of the machine and the moment the machine reacts, measured in a braking system from sensing to the brake command and on to actual deceleration.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t88",
+    "t172"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "End-to-end machine latency is the sum of sensor frame capture, detection and tracking, logic confirmation over several frames, network command transmission, brake-valve filling and brake-force build-up.",
+   "quote": "the sensor captures a frame, the computer detects and tracks, the logic waits a few frames to confirm the risk, the command crosses the network, the brake valves fill and the brake force builds. Only then does the machine slow. End-to-end latency is the sum.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t172",
+    "t88",
+    "t171"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A machine continues moving during latency, losing distance according to d = v * t, where v is speed in meters per second and t is delay in seconds.",
+   "quote": "The machine keeps moving while it waits. The lost distance is speed times delay, `d = v * t`, with `v` in meters per second and `t` in seconds.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t88",
+    "t170",
+    "t169"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "At 15 km/h, approximately 4.2 m/s, a one-second latency adds 4.2 meters of travel before braking begins.",
+   "quote": "At 15 km/h (about 4.2 m/s) a one-second latency costs 4.2 meters before braking begins.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t88",
+    "t170",
+    "t169"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "At work-site speeds of 5 to 15 km/h, the booklet finds that latency can account for half or more of the whole stopping distance and is a first-order term.",
+   "quote": "The booklet finds that at 5 to 15 km/h the latency term can be half or more of the whole stopping distance, a first-order term at work-site speeds [Chapter 8].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t88",
+    "t170",
+    "t169"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A published brake-response figure for a tracked vehicle is under 0.3 seconds.",
+   "quote": "Published brake-response figures range from under 0.3 s for a tracked vehicle",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t171",
+    "t175"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A published brake-response figure for a mining electric vehicle's brake-by-wire system is 0.41 seconds.",
+   "quote": "0.41 s for a mining electric vehicle's brake-by-wire",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t171"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A published brake-response figure for road air brakes is about 0.5 seconds.",
+   "quote": "about 0.5 s for road air brakes",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t171"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A United States mining regulation specifies brake-response figures of 0.5 to 2.5 seconds by weight class.",
+   "quote": "0.5 to 2.5 s by weight class in a United States mining regulation",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "United States",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t171",
+    "t168",
+    "t300"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Historic haul-truck retarders had a lag of 1 to 2 seconds.",
+   "quote": "historic haul-truck retarders lagged 1 to 2 s.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t171",
+    "t177",
+    "t3"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Modern brake-response figures for production loaders, haulers and haul trucks were not found and must be measured.",
+   "quote": "Modern figures for production loaders, haulers and haul trucks were not found and must be measured [Chapter 8].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t171",
+    "t184",
+    "t2",
+    "t3",
+    "t4"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 16001, the international standard for object detection on earth-moving machines, caps detection time at 300 milliseconds.",
+   "quote": "ISO 16001, the international standard for object detection on earth-moving machines, caps detection time at 300 ms [Chapter 3].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t283",
+    "t88",
+    "t86"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3 treats detection, determination, action and machine stopping as separate portions of collision-system distance.",
+   "quote": "ISO 21815-3 treats detection, determination, action and machine stopping as separate portions of the collision-system distance [Chapters 8, 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8,
+    9
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t172",
+    "t170"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "One South African regime requires detection of a lost connection within 500 milliseconds.",
+   "quote": "One South African regime requires a lost connection to be detected within 500 ms",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "South Africa",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t302",
+    "t88"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "One South African regime requires the machine to reply within 50 milliseconds.",
+   "quote": "One South African regime requires a lost connection to be detected within 500 ms and the machine to reply within 50 ms [Chapter 7].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "South Africa",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t302",
+    "t88"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet calculates required detection distance as speed multiplied by the sum of detection, decision and actuation times, plus physical stopping distance and a margin.",
+   "quote": "The booklet's formula writes the required detection distance as speed times the sum of detection, decision and actuation times, plus the physical stopping distance and a margin [Chapter 9].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t193",
+    "t172",
+    "t170",
+    "t169"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Disagreement between two recorders' clocks can create an apparent algorithm latency of 100 to 300 milliseconds that is entirely a timestamp offset.",
+   "quote": "if two recorders' clocks disagree, an apparent \"algorithm latency\" of 100 to 300 ms can be nothing but a timestamp offset [Chapter 7].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t101",
+    "t88",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends end-to-end latency tests that inject a known object event and timestamp every stage from detection to measurable deceleration.",
+   "quote": "The booklet asks for end-to-end tests that inject a known object event and timestamp every stage from detection to measurable deceleration [Chapter 8].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t172",
+    "t101",
+    "t88"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The first prototype tests should measure end-to-end latency, detection range and brake timing before any large scenario sweep, because incorrect values can make millions of virtual runs produce false confidence.",
+   "quote": "The first tests on the prototype should measure end-to-end latency, detection range and brake timing before any large scenario sweep, because if these numbers are wrong, millions of virtual runs produce false confidence [Chapter 1].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t172",
+    "t193",
+    "t171",
+    "t267",
+    "t360"
+   ],
+   "importance": 3
+  }
+ ]
+}

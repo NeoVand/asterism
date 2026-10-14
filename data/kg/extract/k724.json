@@ -1,0 +1,273 @@
+{
+ "chunkId": "k724",
+ "hash": "f5b99b278c3077b1",
+ "facts": [
+  {
+   "text": "In shadow mode (silent testing), new braking software runs live on working machines using their sensor inputs and decides when it would brake, but brake commands are disconnected and only the hypothetical actions are recorded.",
+   "quote": "In shadow mode the new braking software runs live on working machines, sees everything the sensors see and decides when it would brake, but its brake commands are disconnected, so it only records what it would have done.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t25",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Shadow-mode hypothetical braking moments are logged with sensor data and later compared with what actually happened, including whether a person was present, whether the operator braked anyway, or whether the apparent threat was a gravel pile.",
+   "quote": "Every such moment is logged together with the sensor data, and later compared with what really happened: was there a person, did the operator brake anyway, was it a pile of gravel?",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t121",
+    "t32"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Automotive literature calls shadow mode silent testing and classifies it as open loop because candidate software setpoints are not executed by the actuator system.",
+   "quote": "Automotive literature calls this silent testing and treats it as open loop, because the candidate software produces setpoints \"which are not executed by the actuator system\" [Chapter 1].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Shadow mode provides evidence at a scale unavailable through other methods about false hypothetical intervention rates over real operating hours, missed threats, detection range in real dust, light and weather, mounting differences, previously unknown scenario classes, and situation frequency by site type.",
+   "quote": "the rate of false hypothetical interventions, that is, the nuisance-brake rate measured over real operating hours; missed threats; detection range in real dust, light and weather; the effect of mounting differences; previously unknown scenario classes; and how often each situation occurs on each site type",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t31",
+    "t213",
+    "t102",
+    "t142"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Shadow mode cannot establish automatic-stop stability on a wet decline with a full load, following-truck collision risk from a false stop, load shifting, operator resistance to braking, or actuator integration faults.",
+   "quote": "It cannot establish whether a real automatic stop stays stable on a wet decline with a full load, whether a false stop causes the following truck to collide, whether the load shifts, whether the operator fights the brake, or whether the actuator has an integration fault",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t195",
+    "t178",
+    "t56",
+    "t36"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Operator behavior changes when automatic braking becomes real rather than hypothetical in shadow mode.",
+   "quote": "operator behavior changes once braking becomes real [Chapter 1].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t38"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Evaluating many software candidates simultaneously in shadow mode becomes inefficient.",
+   "quote": "Evaluating many software candidates at once becomes inefficient [Chapter 1].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t157"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Road programs describe daily shadow-mode deployment before rollout.",
+   "quote": "Road programs describe daily shadow-mode deployment before roll-out",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t73"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The nearest off-road analogue to road shadow-mode programs is a supplier statement that its system can run on site without immediately enforcing level-9 intervention.",
+   "quote": "the nearest off-road analogue is a supplier's statement that its system can run on site \"without immediately enforcing level-9 intervention\"",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t30"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A publicly documented heavy-off-road shadow-mode program was not found; mining precedents for shadow mode are thin.",
+   "quote": "a publicly documented heavy-off-road shadow-mode program was not found [Chapter 1].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t1",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Recording the old and new systems in parallel on the same machine is the fairest basis for comparing their performance.",
+   "quote": "Recording the old and the new system in parallel on the same machine is the fairest basis for comparing them [Chapter 7].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t157",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet's third ordering rule recommends running shadow mode before enabling braking so that nuisance-brake rates are measured while braking is still disabled.",
+   "quote": "The booklet's third ordering rule is that shadow mode should run before braking is enabled, so that the nuisance-brake rate is measured while braking is still disabled",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t31",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "False-alarm evaluation requires exposure hours rather than staged targets.",
+   "quote": "false alarms need exposure hours, not staged targets",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t32",
+    "t20",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Observing 300 hours with no unnecessary braking supports a claim of fewer than one unnecessary brake per 100 hours.",
+   "quote": "300 hours with no unnecessary brake supports a claim of fewer than one per 100 hours [Chapters 1, 9].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t31",
+    "t210",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The nuisance-brake rate determines whether operators accept the braking system or switch it off.",
+   "quote": "The nuisance rate is also the number that decides whether operators accept the system or switch it off [Chapter 4].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    4
+   ],
+   "entities": [],
+   "terms": [
+    "t31",
+    "t34",
+    "t36"
+   ],
+   "importance": 3
+  }
+ ]
+}

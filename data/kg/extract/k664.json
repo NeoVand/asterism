@@ -1,0 +1,221 @@
+{
+ "chunkId": "k664",
+ "hash": "7b71fefbcb3ae694",
+ "facts": [
+  {
+   "text": "Satellite positioning provides a machine's position on Earth, while inertial sensing provides its moment-to-moment motion and turning; together they provide the position and motion reference for other measurements.",
+   "quote": "Satellite positioning tells a machine where it is on the earth, inertial sensing tells it how it is moving and turning from moment to moment, and together they give the position and motion to which every other measurement is referred.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t98"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "GNSS means global navigation satellite system and is the general name for satellite positioning; GPS (Global Positioning System) is the American system, with European, Russian and Chinese equivalents.",
+   "quote": "GNSS (global navigation satellite system) is the general name for satellite positioning; GPS (Global Positioning System) is the American system, and there are European, Russian and Chinese equivalents.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "GPS",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t98"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A satellite positioning receiver determines position from differences in signal arrival time from several satellites, with accuracy to a few meters.",
+   "quote": "A receiver listens to several satellites and finds its position from tiny differences in arrival time, to a few meters.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t98"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "RTK (real-time kinematic) positioning uses corrections broadcast by a nearby base station at a known position to give machine position accuracy to a few centimeters, making satellite positioning a measuring instrument.",
+   "quote": "RTK (real-time kinematic) positioning adds a nearby base station at a known position that broadcasts corrections; the machine then knows its position to a few centimeters, which turns satellite positioning into a measuring instrument.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t98"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An IMU (inertial measurement unit) contains accelerometers and gyroscopes that measure acceleration and turning rate hundreds of times per second without an outside signal.",
+   "quote": "An IMU (inertial measurement unit) is a small package of accelerometers and gyroscopes that measures acceleration and turning rate hundreds of times per second without any outside signal.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t98"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An INS (inertial navigation system) accumulates inertial measurements to estimate position and orientation, but drifts within minutes when used alone; combining INS with GNSS allows the two systems to cover each other's gaps.",
+   "quote": "An INS (inertial navigation system) adds those measurements up to estimate position and orientation. Alone it drifts within minutes; combined with GNSS, the two cover each other's gaps.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t98",
+    "t99"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet recommends recording IMU yaw rate as part of machine state.",
+   "quote": "Yaw rate from the IMU is part of the machine state the booklet asks to record [Chapter 7].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t98",
+    "t121"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet uses satellite positioning and inertial sensing mostly as measuring tools rather than collision sensors.",
+   "quote": "The booklet uses these mostly as measuring tools, not collision sensors.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t98",
+    "t105"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet recommends a reference lidar plus RTK-GNSS and INS on the machine as a continuous source of ground truth for distance and timing.",
+   "quote": "A reference lidar plus RTK-GNSS and INS on the machine is its recommended continuous source of ground truth for distance and timing [Chapter 7].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t98",
+    "t92"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Accurate machine poses are needed to turn recordings into virtual sites.",
+   "quote": "Accurate poses are needed to turn recordings into virtual sites",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t98",
+    "t130",
+    "t132"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "One study found RTK and INS trajectories alone insufficient to align camera frames without lidar mapping.",
+   "quote": "one study found RTK and INS trajectories alone insufficient to align camera frames without lidar mapping [Chapter 5].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t98",
+    "t92",
+    "t89",
+    "t132"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Underground mines have no satellite signal, so the booklet recommends retaining state-estimation inputs instead.",
+   "quote": "Underground mines have no satellite signal, so the booklet asks that the state-estimation inputs be kept instead [Chapters 1, 5].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t98",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Nearly every program metric, from warning distance to stopping distance, is measured against machine position and speed; positioning-reference accuracy therefore sets the floor on the accuracy of other measurements.",
+   "quote": "Nearly every metric in the program, from warning distance to stopping distance, is measured against machine position and speed, so the accuracy of the positioning reference sets the floor on how well anything else can be measured [Chapters 1, 7].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t98",
+    "t224",
+    "t170",
+    "t105"
+   ],
+   "importance": 3
+  }
+ ]
+}

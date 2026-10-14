@@ -1,0 +1,115 @@
+{
+ "key": "t263",
+ "hash": "dcf606641df32033",
+ "synopsis": "The corpus treats independent physical measurements as essential to simulation credibility: calibration, validation and withheld confirmation data must remain separate, and synthetic data can augment training but cannot replace real validation data [f7589, f12212, f139]. The preferred safety argument uses physical tests to establish anchors and boundaries, independent validation to demonstrate prediction with known uncertainty, simulation to cover the interior, and targeted physical confirmation at high-risk boundaries and after influential changes [f12238]. In practice, braking models should be fitted on designated calibration data, frozen and challenged on unused boundary conditions; sensor validation should use withheld raw measurements to assess sensor-output distributions and downstream perception, not merely visual resemblance [f6167, f10558]. Blind prediction is a central safeguard: Sandia challenge predictions often diverged from experiment, while improving virtual metrics alongside stalled or worsening held-out real performance signals simulator overfitting [f9752, f9753, f10784]. Planning should secure seasonal reference data during winter 2026–2027 and agree correlation metrics by the first quarter of 2027; evidence generated only during the four-month period after the mid-2027 prototype arrives warrants particular skepticism if that period also includes parameter discovery and tuning [f10953, f10756, f8055]. Important gaps remain: weather-simulator reference data is thin, and off-road radar-clutter simulation is considered low credibility until validated against company measurements; conditions without credible referent data should trigger escalation or exclusion from the operating envelope [f10480, f12650, f10956, f11016].",
+ "relations": [
+  {
+   "a": "f7589",
+   "b": "f12212",
+   "type": "same",
+   "note": "Both require separation of calibration, validation and withheld confirmation data."
+  },
+  {
+   "a": "f10784",
+   "b": "f12460",
+   "type": "same",
+   "note": "Both identify improving virtual metrics with stalled held-out performance as an overfitting warning."
+  },
+  {
+   "a": "f6170",
+   "b": "f12210",
+   "type": "same",
+   "note": "Reusing a tuning test cannot establish model validation."
+  },
+  {
+   "a": "f8025",
+   "b": "f7589",
+   "type": "elaborates",
+   "note": "Adds reporting requirements and FAA support for the three-way data separation."
+  },
+  {
+   "a": "f12414",
+   "b": "f139",
+   "type": "supports",
+   "note": "Independent validation-data requirements explain why synthetic training data cannot replace real validation."
+  },
+  {
+   "a": "f6167",
+   "b": "f7589",
+   "type": "elaborates",
+   "note": "Operationalizes data separation through frozen braking parameters and unused boundary-condition tests."
+  },
+  {
+   "a": "f10558",
+   "b": "f4840",
+   "type": "elaborates",
+   "note": "Specifies withheld raw data and behavioral validation for sensor credibility reports."
+  },
+  {
+   "a": "f9752",
+   "b": "f9918",
+   "type": "supports",
+   "note": "Blind predictions diverging from experiments motivate predicting before pilot physical results are seen."
+  },
+  {
+   "a": "f9753",
+   "b": "f9907",
+   "type": "elaborates",
+   "note": "Applies the blind-prediction credibility argument to a pilot or proof of concept."
+  },
+  {
+   "a": "f11032",
+   "b": "f10784",
+   "type": "depends",
+   "note": "Withheld datasets and prohibited final-set tuning address the identified simulator-overfitting risk."
+  },
+  {
+   "a": "f7911",
+   "b": "f12238",
+   "type": "elaborates",
+   "note": "Defines new physical anchors and revalidation when variants exceed validated parameter boundaries."
+  },
+  {
+   "a": "f6889",
+   "b": "f12238",
+   "type": "elaborates",
+   "note": "Allocates physical validation and smaller independent confirmation to each simulated detection stratum."
+  },
+  {
+   "a": "f10480",
+   "b": "f10953",
+   "type": "supports",
+   "note": "Thin weather reference data motivates checking seasonal data availability before winter passes."
+  },
+  {
+   "a": "f10956",
+   "b": "f11016",
+   "type": "elaborates",
+   "note": "Specifies environmental referent gaps requiring escalation alongside exclusions for unproven operating conditions."
+  },
+  {
+   "a": "f8341",
+   "b": "f4866",
+   "type": "supports",
+   "note": "Acceptance risk without physical correlation motivates contractual validation-data requirements."
+  },
+  {
+   "a": "f8055",
+   "b": "f12210",
+   "type": "supports",
+   "note": "Compressed prototype tuning and validation schedules risk confusing calibration agreement with independent validation."
+  },
+  {
+   "a": "f8041",
+   "b": "f12120",
+   "type": "supports",
+   "note": "Rejecting model-only comparison reinforces the need for independent real-world referents."
+  },
+  {
+   "a": "f1989",
+   "b": "f12291",
+   "type": "supports",
+   "note": "Euro NCAP precedent supports advance criteria and independent physical verification in safety evidence."
+  }
+ ]
+}

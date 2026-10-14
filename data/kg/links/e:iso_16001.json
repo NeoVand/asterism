@@ -1,0 +1,115 @@
+{
+ "key": "e:iso 16001",
+ "hash": "65570d852bacc8be",
+ "synopsis": "ISO 16001:2017 sets performance and test requirements for object-detection systems and visibility aids; the booklet dates it to November 2017, reports confirmation in 2023, and emphasizes that it covers warning and visibility, not braking [f6744, f2181]. It is the only off-road standard found with hard detection and warning numbers: detection within 300 ms, audible warnings at least 3 dB above ambient, and a flashing red light for the most severe warning, alongside continuous self-checking and no single-action disablement [f160, f2064, f2065, f2066, f2067, f2068]. Its framework defines a test body, detection zone and detection time, with physical-test procedures and technology annexes that lack a dedicated lidar annex [f5354, f11232, f2069]. For virtual validation, the corpus uses its detection limit in physics parameterisation and its visibility-type methods for geometric blind-zone analysis, but reports no simulation-credibility acceptance rules and no evidence establishing acceptance of simulation evidence [f7493, f11549, f5110, f11237]. Planners should confirm the 300 ms limit against the purchased standard before safety-case use: it was sourced from a public preview rather than verified against the full standard, while other chapters also flag unverified editions, dates and simulation clauses [f7493, f7494, f7495, f4335, f5111].",
+ "relations": [
+  {
+   "a": "f160",
+   "b": "f2063",
+   "type": "same",
+   "note": "Both identify the only off-road standard found with hard detection and warning numbers."
+  },
+  {
+   "a": "f161",
+   "b": "f2070",
+   "type": "same",
+   "note": "Both explicitly distinguish warning coverage from braking."
+  },
+  {
+   "a": "f2070",
+   "b": "f2181",
+   "type": "same",
+   "note": "Restates warning-not-braking scope, adding visibility."
+  },
+  {
+   "a": "f2064",
+   "b": "f6745",
+   "type": "same",
+   "note": "Both require detection within 300 ms."
+  },
+  {
+   "a": "f12159",
+   "b": "f12526",
+   "type": "same",
+   "note": "Duplicate glossary statements of the 300 ms detection limit."
+  },
+  {
+   "a": "f12566",
+   "b": "f13690",
+   "type": "same",
+   "note": "Both identify the object-detection standard and its 300 ms limit."
+  },
+  {
+   "a": "f2067",
+   "b": "f7466",
+   "type": "same",
+   "note": "Both require continuous self-checking."
+  },
+  {
+   "a": "f7466",
+   "b": "f12130",
+   "type": "same",
+   "note": "Glossary repeats the continuous self-checking requirement."
+  },
+  {
+   "a": "f2068",
+   "b": "f12131",
+   "type": "same",
+   "note": "Both prohibit single-action system disablement."
+  },
+  {
+   "a": "f11804",
+   "b": "f12131",
+   "type": "same",
+   "note": "Duplicate glossary prohibition on single-action disablement."
+  },
+  {
+   "a": "f5354",
+   "b": "f5741",
+   "type": "same",
+   "note": "Identical definitions of test body, detection zone and detection time."
+  },
+  {
+   "a": "f5155",
+   "b": "f5354",
+   "type": "same",
+   "note": "Both describe the framework's test body, detection zone and detection time."
+  },
+  {
+   "a": "f2069",
+   "b": "f12614",
+   "type": "same",
+   "note": "Both report the absence of a dedicated lidar annex."
+  },
+  {
+   "a": "f11192",
+   "b": "f11237",
+   "type": "same",
+   "note": "Both report missing evidence that ISO 16001 accepts simulation evidence."
+  },
+  {
+   "a": "f5602",
+   "b": "f11549",
+   "type": "elaborates",
+   "note": "Glossary explains model-specific geometry analysis before hardware arrives."
+  },
+  {
+   "a": "f7494",
+   "b": "f7495",
+   "type": "depends",
+   "note": "Missing full-standard verification drives confirmation before safety-case use."
+  },
+  {
+   "a": "f7493",
+   "b": "f7011",
+   "type": "elaborates",
+   "note": "Identifies public-preview clause supporting the model's detection-time cap."
+  },
+  {
+   "a": "f6744",
+   "b": "f5111",
+   "type": "contradicts",
+   "note": "Reported edition and confirmation dates contrast with the stated lack of version/date verification."
+  }
+ ]
+}

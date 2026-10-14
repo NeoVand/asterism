@@ -1,0 +1,240 @@
+{
+ "chunkId": "k640",
+ "hash": "700c0b9d078be747",
+ "facts": [
+  {
+   "text": "“Proven in use” is a formal functional-safety route for trusting a component based on long reliable operation under the same conditions; reuse of evidence is the broader practice of carrying test results and analyses between machine models or products instead of repeating them.",
+   "quote": "\"Proven in use\" is a formal route in the functional-safety standards for trusting a component because it has already worked reliably for a long time in the same conditions",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t75",
+    "t49"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Under ISO 26262-8 clause 14 and IEC 61508, proven-in-use acceptance requires an identical or highly similar component, the same conditions of use, and a sufficiently long service period with sufficiently few failures to support a statistical claim.",
+   "quote": "Under ISO 26262-8 clause 14 and IEC 61508, a component may be accepted as proven in use if it is identical, or highly similar, to the one already in the field, if its conditions of use are the same, and if the service period is long enough with few enough failures to support a statistical claim.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "ISO 26262-8",
+     "kind": "standard"
+    },
+    {
+     "name": "IEC 61508",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t75",
+    "t209",
+    "t49"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 26262 bases its proven-in-use calculation on a 70 percent confidence level.",
+   "quote": "ISO 26262 bases the calculation on a 70 percent confidence level",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "ISO 26262",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t75",
+    "t209"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "IEC 61508 practice uses a higher confidence level for proven-in-use calculations than the 70 percent used by ISO 26262.",
+   "quote": "ISO 26262 bases the calculation on a 70 percent confidence level; IEC 61508 practice uses higher",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "IEC 61508",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 26262",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t75",
+    "t209"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Changing a component or its use voids its proven-in-use claim.",
+   "quote": "Change the component or its use and the claim is void.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t75"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The existing warning system’s field history can anchor object-encounter frequency, real detections and misses where reliably captured, weather and site distributions, nuisance-warning patterns, operator response times, and approach speeds.",
+   "quote": "The history can anchor how often objects are encountered, real detections and misses where reliably captured, weather and site distributions, nuisance-warning patterns, operator response times and approach speeds",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t75",
+    "t20",
+    "t35",
+    "t32"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The existing warning system’s field history can support the claim that the scenario catalog is representative.",
+   "quote": "it supports the claim that the scenario catalog is representative [Chapter 10].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t142",
+    "t75"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The existing warning system’s field history does not validate the new braking function or the simulator because relevant-encounter exposure is usually unknown, warning-induced operator braking censors counterfactual outcomes, and the detection-to-brake-command-to-stopping chain has never been exercised in the field.",
+   "quote": "It does not validate the braking function or the simulator, for three reasons:",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t75",
+    "t65",
+    "t20",
+    "t25"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Evidence reusable across machine models can include unchanged safety software, common controller hardware, interfaces, sensor qualification, diagnostic logic, and scenario definitions.",
+   "quote": "Reusable evidence can include unchanged safety software, common controller hardware, interfaces, sensor qualification, diagnostic logic and scenario definitions",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t75",
+    "t76",
+    "t230"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The defensible model for reusing evidence across machine variants is common-core evidence plus explicit delta evidence for each variant, rather than blanket family qualification.",
+   "quote": "the defensible model is common-core evidence plus explicit delta evidence for each variant, not blanket family qualification [Chapter 1].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t75",
+    "t76",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Evidence reuse may be “the single most important lever” for a product family, but only if designed in from the start.",
+   "quote": "Reuse may be \"the single most important lever\" for a product family, but only if designed in from the start",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t75",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No case was found in which evidence inheritance reduced validation of a large heavy-machine family from years to months.",
+   "quote": "no case was found in which such inheritance cut the validation of a large heavy-machine family from years to months [Chapter 1].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t75",
+    "t1",
+    "t43",
+    "t76"
+   ],
+   "importance": 3
+  }
+ ]
+}

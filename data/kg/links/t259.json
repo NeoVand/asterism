@@ -1,0 +1,115 @@
+{
+ "key": "t259",
+ "hash": "3c96dc3e59e1812d",
+ "synopsis": "The corpus explicitly identifies both aleatory and epistemic uncertainty in stochastic radar detections, for which mean and RMSE errors alone are inadequate; it recommends distribution-level validation when individual sensor returns cannot meaningfully be matched one-to-one [f4821, f4801]. Across the safety case, sensor, operator-response and machine-response uncertainties should remain separate, and the illustrative two-second operator/mechanical delay must not be treated as a validated population distribution or percentile [f3504, f11830, f3475]. Stopping predictions and braking escalation should use uncertainty-bounded stopping margins, while ground-truth measurements need independent uncertainty budgets and an explicit unavailable or ambiguous state [f6210, f6280, f5394, f7473]. Credibility requires physical anchors, a stated validity envelope and explicit uncertainty, rather than simulation run count; the proposed programme claim is therefore bounded by machine configuration, operating envelope, safety-function scope and residual uncertainty [f11325, f10884, f9724]. Important gaps remain: few sensor-realism studies report uncertainty bands, unknown exposure distributions can destabilize rare-event reweighting, and active-learning uncertainty estimates can themselves be wrong [f4838, f6852, f6862]. Planning should communicate numeric ranges rather than blanket contingency or verbal hedges, while treating absent correlation metrics by the first quarter of 2027 as an early credibility warning; uncertainty graphics are not guaranteed to improve trust [f9641, f9863, f9474, f11006, f9892].",
+ "relations": [
+  {
+   "a": "f3478",
+   "b": "f11485",
+   "type": "same",
+   "note": "Both recommend uncertain operator response and sensitivity analysis."
+  },
+  {
+   "a": "f3478",
+   "b": "f11822",
+   "type": "same",
+   "note": "Glossary restates the recommendation against treating average reaction time as validated."
+  },
+  {
+   "a": "f11485",
+   "b": "f11822",
+   "type": "same",
+   "note": "Both glossary entries recommend operator-response uncertainty and sensitivity testing."
+  },
+  {
+   "a": "f3504",
+   "b": "f11830",
+   "type": "same",
+   "note": "Glossary repeats separation of sensor, operator-response and machine-response uncertainties."
+  },
+  {
+   "a": "f5198",
+   "b": "f5394",
+   "type": "same",
+   "note": "Both require reference-system uncertainty budgets and a truth-unavailable state."
+  },
+  {
+   "a": "f6280",
+   "b": "f11725",
+   "type": "same",
+   "note": "Both base braking escalation on uncertain stopping margin rather than distance alone."
+  },
+  {
+   "a": "f3475",
+   "b": "f3478",
+   "type": "supports",
+   "note": "The illustrative delay cannot justify treating one reaction time as validated."
+  },
+  {
+   "a": "f4821",
+   "b": "f7759",
+   "type": "supports",
+   "note": "Radar metric limitations motivate uncertainty-aware and distributional agreement measures."
+  },
+  {
+   "a": "f4801",
+   "b": "f7759",
+   "type": "supports",
+   "note": "Stochastic returns explain why distributional agreement must be assessed separately."
+  },
+  {
+   "a": "f7473",
+   "b": "f5394",
+   "type": "elaborates",
+   "note": "Specifies reference quantities, calibration chains and uncertainty relative to acceptance margins."
+  },
+  {
+   "a": "f7474",
+   "b": "f5198",
+   "type": "supports",
+   "note": "Dominant verdict errors motivate independent ground-truth uncertainty budgets."
+  },
+  {
+   "a": "f4343",
+   "b": "f6210",
+   "type": "supports",
+   "note": "Small clearance margins are unreliable without uncertainty-bounded stopping predictions."
+  },
+  {
+   "a": "f645",
+   "b": "f7337",
+   "type": "elaborates",
+   "note": "Adds physical grouping and whole-model holdouts to uncertainty-preserving pooling."
+  },
+  {
+   "a": "f4783",
+   "b": "f9377",
+   "type": "elaborates",
+   "note": "Turns scoped model validation into a managed credibility workstream."
+  },
+  {
+   "a": "f9724",
+   "b": "f9731",
+   "type": "depends",
+   "note": "Bounded-residual-uncertainty claims require documented uncertainty sources and sensitivity analysis."
+  },
+  {
+   "a": "f9474",
+   "b": "f9863",
+   "type": "supports",
+   "note": "Experimental trust findings support communicating explicit numeric planning ranges."
+  },
+  {
+   "a": "f7587",
+   "b": "f10907",
+   "type": "elaborates",
+   "note": "Reviewer maps operationalize credibility assessment, remaining uncertainty and acceptance authority."
+  },
+  {
+   "a": "f10884",
+   "b": "f11006",
+   "type": "supports",
+   "note": "Credibility over run count explains warnings about huge unanchored virtual test totals."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t189",
+ "hash": "dfa4582136ab5200",
+ "synopsis": "The booklet proposes staged intervention rather than an immediate full stop: information and warning progress to slowing, partial braking and maximum safe braking, with motion inhibit for a stationary machine whose projected path is obstructed [f13925, f6255]. Escalation gives the operator a chance to respond: sufficient operator deceleration stops the escalation, while shrinking stopping margin drives further intervention; transition to maximum braking should use remaining stopping margin and its uncertainty, not range alone [f13926, f13880, f11713, f6280]. Maximum safe braking is reserved for otherwise unavoidable collisions and remains constrained by stability and control limits; automatic slowing can be inadequate downhill, drivetrain response varies, and partial braking can conflict with following machines [f6268, f6262, f6263, f6267]. ISO 21815-3:2023 places intervention at collision-risk level 4 or above and permits prior warning, while South African law specifies detect, warn, retard to safe speed, then brake; ISO 21815-1 excludes automatic steering [f6201, f13939, f13936]. Mine leaders preferred slowing to a crawl before setting the brake, but accident data alone cannot establish whether full braking, staging, speed reduction or propulsion inhibit is appropriate for a particular machine and conditions [f3028, f3406]. Much of the relatively simple warn-then-brake logic can be designed and checked at model-in-the-loop level in late 2026 before sensor selection, with stage-specific acceptance tolerances and virtual tuning informed by measured brake delays and deceleration maps [f13332, f13942, f14054].",
+ "relations": [
+  {
+   "a": "f150",
+   "b": "f5923",
+   "type": "same",
+   "note": "Introduction and motion chapter state the same intervention ladder."
+  },
+  {
+   "a": "f3028",
+   "b": "f11708",
+   "type": "same",
+   "note": "Both report mine leaders preferring crawl speed before brake application."
+  },
+  {
+   "a": "f11708",
+   "b": "f13765",
+   "type": "same",
+   "note": "Glossary repeats the crawl-before-braking preference."
+  },
+  {
+   "a": "f3028",
+   "b": "f13941",
+   "type": "elaborates",
+   "note": "Glossary connects the reported preference to acceptance around machines."
+  },
+  {
+   "a": "f11725",
+   "b": "f13924",
+   "type": "same",
+   "note": "Both recommend stopping margin and uncertainty rather than distance alone."
+  },
+  {
+   "a": "f6280",
+   "b": "f13924",
+   "type": "same",
+   "note": "Glossary restates the chapter's partial-to-full intervention calibration recommendation."
+  },
+  {
+   "a": "f13874",
+   "b": "f6201",
+   "type": "same",
+   "note": "Both specify risk level four or above and allow prior warning."
+  },
+  {
+   "a": "f6201",
+   "b": "f6242",
+   "type": "same",
+   "note": "Both place ISO collision-system action at risk level four or above."
+  },
+  {
+   "a": "f5927",
+   "b": "f6246",
+   "type": "same",
+   "note": "Duplicate on-road sequence includes warning, haptic jerk, partial and full braking."
+  },
+  {
+   "a": "f6268",
+   "b": "f13931",
+   "type": "same",
+   "note": "Both reserve maximum safe braking for unavoidable collisions within control limits."
+  },
+  {
+   "a": "f6248",
+   "b": "f13927",
+   "type": "same",
+   "note": "Healthy stopping margin and object presence call for information rather than braking."
+  },
+  {
+   "a": "f6249",
+   "b": "f13928",
+   "type": "same",
+   "note": "Rising risk with operator response margin triggers urgent warning."
+  },
+  {
+   "a": "f6249",
+   "b": "f13879",
+   "type": "same",
+   "note": "Decision flow restates urgent warning while the operator still has time."
+  },
+  {
+   "a": "f6251",
+   "b": "f6264",
+   "type": "elaborates",
+   "note": "Partial braking near minimum margin uses deceleration below stability and traction limits."
+  },
+  {
+   "a": "f6255",
+   "b": "f6275",
+   "type": "supports",
+   "note": "An already-obstructed launch path explains motion inhibit beyond time-to-collision logic."
+  },
+  {
+   "a": "f3406",
+   "b": "f13941",
+   "type": "contradicts",
+   "note": "Reported acceptance benefits do not establish staging suitability across machines and conditions."
+  },
+  {
+   "a": "f13331",
+   "b": "f13332",
+   "type": "supports",
+   "note": "Simpler decision logic supports early model-in-the-loop checking before sensor selection."
+  },
+  {
+   "a": "f13458",
+   "b": "f13332",
+   "type": "supports",
+   "note": "Sensor-independent semantic replay supports checking staged decision logic before sensor selection."
+  }
+ ]
+}

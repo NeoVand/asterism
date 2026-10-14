@@ -1,0 +1,115 @@
+{
+ "key": "t49",
+ "hash": "7c899ca8bccc2d76",
+ "synopsis": "For brake-commanding functions on earth-moving machines, the corpus identifies ISO 19014, using MPLr, rather than ISO 26262 as the functional-safety framework; awareness-only systems are excluded from ISO 19014-2, but issuing brake commands crosses that scope boundary [f2071, f2196, f11985, f11986]. Adding automatic braking therefore changes the safety-engineering scope: targets should come from hazard analysis rather than matching the warning system, and validation must address faults, degraded modes, missed braking and unintended braking beyond perception performance [f5221, f11989, f5223, f5810, f11089]. Required evidence spans control hardware, software and environmental qualification, including documented safety-function performance under expected environmental conditions [f1098, f7735]. Planning should confirm standards applicability early with a qualified functional-safety specialist and map the minimum evidence package to the October 2026 editions; all five ISO 19014 parts were due for reissue that month, shortly before design verification freezes, while several cited sources remain marked draft or under revision [f9787, f11099, f12000, f6548, f1098]. Cybersecurity, configuration control and software updates become safety-relevant when software commands brakes, but ISO 19014-4 excludes cybersecurity, and no incident statistics quantify these risks, so separate safety and cybersecurity processes are needed rather than unsupported accident frequencies [f3664, f10820, f3665, f3666]. The corpus also flags a planning gap: the eight machine-motion and brake-timing questions omitted functional safety and integrity level, while the skeptic's review objects to treating the new safety-control function as an incremental feature [f6579, f10515].",
+ "relations": [
+  {
+   "a": "f162",
+   "b": "f2071",
+   "type": "same",
+   "note": "Both identify ISO 19014 rather than ISO 26262; Chapter 3 specifies MPLr."
+  },
+  {
+   "a": "f162",
+   "b": "f11993",
+   "type": "same",
+   "note": "Both identify ISO 19014, not ISO 26262, for brake-commanding functions."
+  },
+  {
+   "a": "f2071",
+   "b": "f11993",
+   "type": "same",
+   "note": "Glossary restates the framework choice; Chapter 3 adds MPLr."
+  },
+  {
+   "a": "f11985",
+   "b": "f5222",
+   "type": "same",
+   "note": "Both exclude awareness systems that do not affect machine motion."
+  },
+  {
+   "a": "f11985",
+   "b": "f5808",
+   "type": "same",
+   "note": "Both state the awareness-only camera and radar exclusion."
+  },
+  {
+   "a": "f5222",
+   "b": "f5808",
+   "type": "same",
+   "note": "Repeated awareness-system exclusion within Chapter 7."
+  },
+  {
+   "a": "f11986",
+   "b": "f2312",
+   "type": "same",
+   "note": "Brake commands move the function beyond awareness into ISO 19014 scope."
+  },
+  {
+   "a": "f5809",
+   "b": "f10519",
+   "type": "elaborates",
+   "note": "Chapter 13 specifies architecture, hardware principles and hazard mitigation within the motion-control scope."
+  },
+  {
+   "a": "f662",
+   "b": "f781",
+   "type": "same",
+   "note": "Both require environmental qualification of safety-related electrical/electronic components under Part 3."
+  },
+  {
+   "a": "f7736",
+   "b": "f662",
+   "type": "elaborates",
+   "note": "Chapter 1 specifies minimum environmental tests and notes evidence under revision."
+  },
+  {
+   "a": "f10820",
+   "b": "f11267",
+   "type": "same",
+   "note": "Both state that ISO 19014-4 excludes cybersecurity."
+  },
+  {
+   "a": "f5221",
+   "b": "f11989",
+   "type": "elaborates",
+   "note": "Changed safety scope requires hazard-derived targets, not warning-system equivalence."
+  },
+  {
+   "a": "f384",
+   "b": "f5810",
+   "type": "elaborates",
+   "note": "Chapter 7 details fault-oriented validation beyond perception statistics."
+  },
+  {
+   "a": "f2343",
+   "b": "f11089",
+   "type": "supports",
+   "note": "Brake demands are not intrinsically safe, supporting validation of unintended as well as missed braking."
+  },
+  {
+   "a": "f3665",
+   "b": "f3666",
+   "type": "supports",
+   "note": "Missing incident statistics support process-based treatment rather than assigning unsupported accident frequencies."
+  },
+  {
+   "a": "f10820",
+   "b": "f3666",
+   "type": "supports",
+   "note": "Cybersecurity's exclusion from Part 4 supports covering it through dedicated cybersecurity processes."
+  },
+  {
+   "a": "f12000",
+   "b": "f11099",
+   "type": "depends",
+   "note": "October 2026 reissues drive the requirement to map evidence to those editions."
+  },
+  {
+   "a": "f5221",
+   "b": "f10515",
+   "type": "supports",
+   "note": "Changed safety-engineering scope supports the objection to treating braking as an incremental feature."
+  }
+ ]
+}

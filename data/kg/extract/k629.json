@@ -1,0 +1,258 @@
+{
+ "chunkId": "k629",
+ "hash": "10a4e334c6d946d3",
+ "facts": [
+  {
+   "text": "Traceability is an unbroken written chain linking each safety claim to its supporting requirement, the scenarios and tests checking that requirement, and recorded evidence, allowing the chain to be followed in either direction.",
+   "quote": "Traceability is an unbroken written chain of links from each safety claim to the requirement it rests on, to the scenarios and tests that check that requirement, to the recorded evidence, so that anyone can follow the chain in either direction.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t64"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The safety traceability chain runs from hazard through safety claim, requirement, scenario, test case, test run, result, verdict, and closure of the claim. Each test run includes the exact software build, model version, scenario identifier, and random seed.",
+   "quote": "The chain runs: hazard, safety claim, requirement, scenario, test case, test run (with the exact software build, model version, scenario identifier and random seed), result, verdict, and closure of the claim.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t64",
+    "t162"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Working tools for safety traceability are requirement identifiers, a verification cross-reference matrix, and an evidence ledger with columns for claim, evidence required, method, acceptance criterion, owner, due date, status, and limitation.",
+   "quote": "The working tools are requirement identifiers, a verification cross-reference matrix, and an evidence ledger with columns for claim, evidence required, method, acceptance criterion, owner, due date, status and limitation [Chapter 12].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12
+   ],
+   "entities": [],
+   "terms": [
+    "t64",
+    "t269"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The collision mitigation validation program's first deliverable is traceability: evidence leaving the pre-prototype phase must include a traceable claim-to-requirement-to-scenario-to-test mapping.",
+   "quote": "The booklet makes traceability the first deliverable: the evidence leaving the pre-prototype phase is \"a traceable claim to requirement to scenario to test mapping\" [Chapter 1].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t64",
+    "t342"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Safety traceability must run both ways; an item that cannot be connected should be challenged because it represents either unnecessary work or a claim lacking evidence.",
+   "quote": "Traceability must run both ways, and anything that cannot be connected deserves challenge: either it is unnecessary work or a claim lacks evidence [Chapter 12].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12
+   ],
+   "entities": [],
+   "terms": [
+    "t64",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The cheapest decisive experiment for the validation program is the \"golden thread\": carry one safety requirement from a real test through the model to a virtual result and a residual-risk decision.",
+   "quote": "The cheapest decisive experiment is the \"golden thread\": carry one safety requirement from a real test, through the model, to a virtual result and a residual-risk decision;",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [
+    {
+     "name": "golden thread",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t360",
+    "t64",
+    "t216",
+    "t61"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A program-level early warning is failure, by the first half of 2027, to demonstrate the chain from a real test through the model to a virtual result and a residual-risk decision for even one safety requirement.",
+   "quote": "the program-level early warning is that by the first half of 2027 the team still cannot show that chain for a single requirement [Chapter 13].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t82",
+    "t64",
+    "t343"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Every virtual test needs versioned machine parameters, coordinate definitions, initial conditions, time step, solver assumptions, and trigger definitions.",
+   "quote": "Every virtual test needs versioned machine parameters, coordinate definitions, initial conditions, time step, solver assumptions and trigger definitions;",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t162",
+    "t127",
+    "t64"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2026 round-robin exercise produced divergent outcomes from one shared scenario specification.",
+   "quote": "a 2026 round-robin exercise produced divergent outcomes from one shared scenario specification [Chapter 8].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t141"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Tool versions, simulator binaries or containers, drivers, graphics hardware, assets, sensor parameters, scenario identifiers, and random seeds must be archived for the safety case.",
+   "quote": "Tool versions, simulator binaries or containers, drivers, graphics hardware, assets, sensor parameters, scenario identifiers and random seeds must be archived for the safety case [Chapter 11].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t341",
+    "t162",
+    "t67",
+    "t64"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Assessors expect every claimed simulation output to trace to its supporting requirement or hazard and to the final pass-or-fail argument.",
+   "quote": "Assessors expect every claimed simulation output to trace to the requirement or hazard it supports and to the final pass or fail argument [Chapter 10].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t64",
+    "t71",
+    "t62"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Under the new EU product liability rules, simulation traceability and archived safety-case records may be disclosed in court.",
+   "quote": "Under the new EU product liability rules these records may be disclosed in court [Chapters 12, 13].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    12,
+    13
+   ],
+   "entities": [
+    {
+     "name": "EU",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t80",
+    "t341",
+    "t64"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Thousands of virtual runs are worthless as evidence if the requirement checked by each run and the exact software and model producing each run cannot be identified.",
+   "quote": "Thousands of virtual runs are worthless as evidence if nobody can say which requirement each run checks and which exact software and model produced it.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t64",
+    "t70",
+    "t162"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ten million executions of the wrong model are not stronger evidence than a small number of well-correlated tests.",
+   "quote": "ten million executions of the wrong model are not stronger evidence than a small number of well-correlated tests [Chapter 13].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t267",
+    "t250",
+    "t70"
+   ],
+   "importance": 3
+  }
+ ]
+}

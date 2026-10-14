@@ -1,0 +1,259 @@
+{
+ "chunkId": "k756",
+ "hash": "ca24032564a4d69f",
+ "facts": [
+  {
+   "text": "Thresholds are the numbers at which a system changes its behavior; filters are rules that prevent the system from reacting to a single noisy measurement.",
+   "quote": "Thresholds are the numbers at which the system changes its behavior, and filters are the rules that stop it from reacting to a single noisy measurement.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t188"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Collision systems use a detection confidence threshold to set how sure perception software must be before an object counts.",
+   "quote": "Detection confidence threshold: how sure the perception software must be before an object counts.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t188",
+    "t85"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Collision systems can use N-of-M frame confirmation, accepting an object only when it appears in a specified number of recent sensor frames; the passage gives 3 of the last 4 frames as an example.",
+   "quote": "Confirmation, or N-of-M frames: the object must appear in, say, 3 of the last 4 sensor frames before it is accepted.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t188",
+    "t86"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 16001 requires detection to be unambiguous with an uninterrupted sequence of the signal and allows at most 300 ms of detection time.",
+   "quote": "ISO 16001 asks for detection \"unambiguously with an uninterrupted sequence of the signal\" and allows at most 300 ms of detection time [Chapter 3].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t283",
+    "t86",
+    "t88"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Collision-system persistence and debounce settings determine how long a condition must hold before the system acts and how long before the system stands down.",
+   "quote": "Persistence and debounce times: how long a condition must hold before the system acts, and how long before it stands down.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t188",
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Collision-system risk determination combines the confirmed object, its position and movement, and the machine's own motion into a collision-risk level.",
+   "quote": "Risk determination: the step that combines the confirmed object, its position and movement, and the machine's own motion into a collision-risk level.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t196",
+    "t46"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-3 places collision-system intervention at risk level 4 or above.",
+   "quote": "ISO 21815-3 places intervention at level 4 or above [Chapter 8].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t28",
+    "t185"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Collision-system hysteresis uses different values for switching on and switching off, with the off value safer, to prevent flickering between states.",
+   "quote": "Hysteresis: the system switches on at one value and off at a different, safer value, so it does not flicker between states.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t188"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet recommends hysteresis and an explicit brake-release condition after an automatic stop; on slopes, the brake must never be released merely because an object disappears for one sensor frame.",
+   "quote": "The booklet applies this after an automatic stop: use hysteresis and an explicit release condition, and on slopes never release the brake because the object disappeared for one sensor frame [Chapter 8].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t188",
+    "t173",
+    "t195"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Collision-system filters trade speed for reliability: more confirmation frames reduce false alarms but delay braking.",
+   "quote": "Every filter trades speed for reliability. More confirmation frames mean fewer false alarms but a later brake",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t188",
+    "t32",
+    "t88"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "At 15 km/h and 10 sensor frames per second, each extra confirmation frame costs about 0.4 m of travel before braking.",
+   "quote": "at 15 km/h and 10 frames per second, each extra frame costs about 0.4 m.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t188",
+    "t169",
+    "t87",
+    "t170"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet identifies confidence thresholds, zone dimensions per speed, N-of-M filters, persistence and debounce times, time-to-collision triggers, and filter constants as decision variables for collision-system tuning.",
+   "quote": "The booklet lists them as the decision variables of the tuning problem (confidence thresholds, zone dimensions per speed, N-of-M filters, persistence and debounce times, time-to-collision triggers, filter constants)",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t188",
+    "t197",
+    "t187",
+    "t186",
+    "t225"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Collision-system tuning trades off missed or late interventions, false warnings per hour, unnecessary brake events per hour, intervention timing, and time stopped.",
+   "quote": "the outcomes they trade against each other: missed or late interventions, false warnings per hour, unnecessary brake events per hour, intervention timing and time stopped [Chapter 9].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t225",
+    "t224",
+    "t31",
+    "t108",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The transition from partial to full braking should depend on the remaining stopping margin and its uncertainty, rather than range alone.",
+   "quote": "The transition from partial to full braking should depend on the remaining stopping margin and its uncertainty, not on range alone [Chapter 8].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t189",
+    "t194",
+    "t259",
+    "t185"
+   ],
+   "importance": 3
+  }
+ ]
+}

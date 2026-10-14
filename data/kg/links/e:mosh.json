@@ -1,0 +1,115 @@
+{
+ "key": "e:mosh",
+ "hash": "38db0bb55e2767cb",
+ "synopsis": "MOSH supplies an engineering compliance route for South African mining collision prevention, combining industry performance requirements with supplier and independent physical verification at TRL gates, rather than treating regulatory wording as a complete specification [f1855, f2478, f2593]. Its surface requirements include 200 m detection, warning 2.5–3.0 seconds before intervention, fail-to-safe within 500 ms of detecting a critical failure, disconnection detection within 500 ms, and machine replies within 50 ms [f174, f175, f2359, f5284, f5285]. Emergency-stop deceleration is specified as 1.9 m/s² for machines with top speeds above 20 km/h and 1.0 m/s² otherwise; stopping performance also depends on gradient, side slope and braking response [f5560, f3401]. University of Pretoria testing reported pass rates of 62% for detection devices, 42% for machine-side systems and 83% for third-party interfaces across 189 tests, with throughput of 1.6 tests per week and an 18-week lead time as of October 2025 [f5178, f5180]. Verification must separately cover machines with different braking characteristics, yet published stopping tests cover only unloaded machines on gradients of 1% or less, limiting the demonstrated operating envelope [f5181, f5182]. MOSH requires no false interventions at TRL4, while its 2022 guidance warns that nuisance interventions and fixed stop gaps can disrupt production or loading enough to prompt switching systems off; the glossary also leaves a timing ambiguity by describing both failure detection and reaching a safe state within 500 ms, versus the specification's interval after critical-failure detection [f178, f3300, f3344, f12132, f2359].",
+ "relations": [
+  {
+   "a": "f174",
+   "b": "f230",
+   "type": "same",
+   "note": "Both specify a 200 m surface detection range."
+  },
+  {
+   "a": "f174",
+   "b": "f12160",
+   "type": "same",
+   "note": "Glossary repeats the 200 m detection requirement."
+  },
+  {
+   "a": "f230",
+   "b": "f12160",
+   "type": "same",
+   "note": "Both specify detection at 200 m."
+  },
+  {
+   "a": "f175",
+   "b": "f231",
+   "type": "same",
+   "note": "Both require warning 2.5–3.0 seconds before intervention."
+  },
+  {
+   "a": "f175",
+   "b": "f12161",
+   "type": "same",
+   "note": "Glossary repeats the warning-before-intervention interval."
+  },
+  {
+   "a": "f231",
+   "b": "f12161",
+   "type": "same",
+   "note": "Both give the same warning interval."
+  },
+  {
+   "a": "f177",
+   "b": "f2359",
+   "type": "same",
+   "note": "Detailed requirement anchors the 500 ms fail-to-safe interval to critical-failure detection."
+  },
+  {
+   "a": "f2359",
+   "b": "f12075",
+   "type": "same",
+   "note": "Both require fail-to-safe within 500 ms after detecting a critical failure."
+  },
+  {
+   "a": "f177",
+   "b": "f12163",
+   "type": "same",
+   "note": "Both state the 500 ms fail-to-safe requirement."
+  },
+  {
+   "a": "f423",
+   "b": "f983",
+   "type": "same",
+   "note": "Both describe TRL gates as staged, limited-domain release precedents."
+  },
+  {
+   "a": "f183",
+   "b": "f5180",
+   "type": "same",
+   "note": "Both report throughput of 1.6 tests per week."
+  },
+  {
+   "a": "f184",
+   "b": "f5180",
+   "type": "same",
+   "note": "Both report an 18-week testing lead time."
+  },
+  {
+   "a": "f12076",
+   "b": "f5284",
+   "type": "same",
+   "note": "Both require lost-connection detection within 500 ms."
+  },
+  {
+   "a": "f12077",
+   "b": "f5285",
+   "type": "same",
+   "note": "Both require a machine reply within 50 ms."
+  },
+  {
+   "a": "f2359",
+   "b": "f12132",
+   "type": "contradicts",
+   "note": "Timing starts after detection versus including detection and transition to safety."
+  },
+  {
+   "a": "f3300",
+   "b": "f178",
+   "type": "supports",
+   "note": "Production disruption from nuisance interventions motivates the zero-false-intervention gate."
+  },
+  {
+   "a": "f3401",
+   "b": "f5182",
+   "type": "contradicts",
+   "note": "Slope-dependent braking contrasts with published tests restricted to near-level, unloaded conditions."
+  },
+  {
+   "a": "f2359",
+   "b": "f12092",
+   "type": "depends",
+   "note": "The fail-to-safe deadline sets a fault-injection testing target."
+  }
+ ]
+}

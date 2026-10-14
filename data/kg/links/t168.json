@@ -1,0 +1,115 @@
+{
+ "key": "t168",
+ "hash": "cffa257bb6ae172c",
+ "synopsis": "Mass and payload are central to off-road braking validation: grade and payload can change available deceleration by an amount comparable to the deceleration itself, while real machines face finite brake torque, thermal limits, load-induced balance changes and deformable ground—even though mass cancels in a friction-limited point-mass model [f145, f5900, f5887, f5888]. The recommended control policy limits commanded deceleration by stability, brake capacity and payload, with a jerk limit; validation must cover laden and unladen stopping, grade stability and behavior after stopping [f152, f11890]. Existing published MOSH closed-loop tests require unloaded machines on gradients of 1% or less, leaving loaded and slope cases uncovered, whereas Queensland stopping assumptions require fully laden vehicles and the worst relevant road, grade, tyre and brake-delay combination [f5564, f5565, f3403]. Physical validation should therefore test maximum payload and slopes, but the research identified no suitable facility or supplier for representative-speed testing of 50–400 t machines, and facility availability may independently constrain scheduling [f1610, f1166, f1167]. Transfer across machine families should use model-specific stopping curves by grade, load and surface, with validity records documenting mass and payload coverage; US FMVSS No. 127, limited to vehicles up to 4,536 kg GVWR, is an on-road reference rather than an applicable off-road requirement [f7017, f8005, f2831].",
+ "relations": [
+  {
+   "a": "f145",
+   "b": "f5900",
+   "type": "same",
+   "note": "Both state grade and payload effects are comparable to available deceleration."
+  },
+  {
+   "a": "f819",
+   "b": "f1346",
+   "type": "same",
+   "note": "Both report Wabtec's planned payload-, speed-, braking-distance- and grade-adjusted detection zones."
+  },
+  {
+   "a": "f10763",
+   "b": "f11018",
+   "type": "same",
+   "note": "Both identify repeated retuning and load-correlated errors as generalization warnings."
+  },
+  {
+   "a": "f5182",
+   "b": "f5564",
+   "type": "same",
+   "note": "Both describe unloaded testing restricted to gradients of 1% or less."
+  },
+  {
+   "a": "f2532",
+   "b": "f2831",
+   "type": "elaborates",
+   "note": "Adds covered functions and explicitly excludes off-road applicability."
+  },
+  {
+   "a": "f3399",
+   "b": "f3403",
+   "type": "elaborates",
+   "note": "Specifies the worst-case conditions behind fully laden stopping judgments."
+  },
+  {
+   "a": "f5564",
+   "b": "f5565",
+   "type": "supports",
+   "note": "Unloaded, low-gradient testing explains the missing loaded and slope coverage."
+  },
+  {
+   "a": "f5565",
+   "b": "f1610",
+   "type": "supports",
+   "note": "Missing loaded and slope cases motivate maximum-payload and slope physical tests."
+  },
+  {
+   "a": "f5888",
+   "b": "f5887",
+   "type": "elaborates",
+   "note": "Identifies real-machine effects beyond the simplified model where mass cancels."
+  },
+  {
+   "a": "f11408",
+   "b": "f5888",
+   "type": "elaborates",
+   "note": "Limited retarder power adds a specific speed- and mass-dependent braking constraint."
+  },
+  {
+   "a": "f5900",
+   "b": "f152",
+   "type": "supports",
+   "note": "Large payload and grade effects justify limiting commanded deceleration to safe capacity."
+  },
+  {
+   "a": "f595",
+   "b": "f11890",
+   "type": "supports",
+   "note": "Shadow mode cannot establish the loaded grade stability that validation must test."
+  },
+  {
+   "a": "f1166",
+   "b": "f1167",
+   "type": "supports",
+   "note": "No identified suitable facility supports concern about availability constraining schedules."
+  },
+  {
+   "a": "f5896",
+   "b": "f239",
+   "type": "elaborates",
+   "note": "Specifies the weight-class regulatory component of the broader brake-response latency range."
+  },
+  {
+   "a": "f7452",
+   "b": "f7017",
+   "type": "supports",
+   "note": "Dominant load, grade and friction effects justify condition-specific stopping curves."
+  },
+  {
+   "a": "f7875",
+   "b": "f1610",
+   "type": "elaborates",
+   "note": "Explains how extreme mass and grade physical tests can anchor brake-dynamics validation."
+  },
+  {
+   "a": "f11011",
+   "b": "f1976",
+   "type": "supports",
+   "note": "False-braking hazards motivate assessment of payload, slope, rollover and following-vehicle consequences."
+  },
+  {
+   "a": "f3437",
+   "b": "f8005",
+   "type": "supports",
+   "note": "Machine-dependent braking outcomes justify documenting variants, payload ranges and braking configurations."
+  }
+ ]
+}

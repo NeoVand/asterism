@@ -1,0 +1,207 @@
+{
+ "chunkId": "k781",
+ "hash": "f564c30100cc4ab6",
+ "facts": [
+  {
+   "text": "A hypothesis test assesses whether an observed difference is too large to be coincidence by initially assuming no real difference (the null hypothesis) and computing how surprising the data would be under that assumption.",
+   "quote": "A hypothesis test asks whether an observed difference is too large to be a coincidence, by assuming at first that there is no real difference (the null hypothesis) and computing how surprising the data would then be.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t212"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Chapter 7 uses hypothesis testing to size a test that must distinguish an acceptable miss probability from an unacceptable miss probability.",
+   "quote": "Chapter 7 uses these ideas to size a test that must separate an acceptable miss probability from an unacceptable one.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t212",
+    "t209",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Checking hundreds of machine, weather and scenario cells individually at 95 percent confidence can cause some cells to pass or fail by chance alone.",
+   "quote": "if hundreds of machine, weather and scenario cells are each checked at 95 percent confidence, some will pass or fail by chance alone",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t212",
+    "t209",
+    "t143"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For multiple testing, the booklet recommends predefining primary claims and applying multiplicity methods where many claims must hold together.",
+   "quote": "so primary claims should be predefined and multiplicity methods applied where many claims must hold together [Chapter 7, Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t212",
+    "t218"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet uses McNemar's test to compare the old warning system with the new system.",
+   "quote": "McNemar's test is the booklet's tool for comparing the old warning system with the new one.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "McNemar's test",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t212",
+    "t222",
+    "t23"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The paired comparison for McNemar's test records both warning systems in parallel on the same machine, exposing both to the same hazards and recording an old-system hit or miss and a new-system hit or miss for each hazard.",
+   "quote": "Both systems see the same hazards, recorded in parallel on the same machine, and each hazard yields a pair: hit or miss for the old, hit or miss for the new.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "McNemar's test",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t212",
+    "t222",
+    "t108",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "McNemar's test uses only discordant hit-or-miss pairs; hazards that both systems hit or both systems miss do not inform the comparison.",
+   "quote": "Pairs where both hit or both miss say nothing. The test looks only at the discordant pairs",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "McNemar's test",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t212",
+    "t108",
+    "t222"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet illustrates McNemar's test with 12 hazards caught only by the new system versus 3 caught only by the old system, testing whether that imbalance exceeds what chance would produce.",
+   "quote": "for example 12 hazards the new system caught and the old missed against 3 the old caught and the new missed, and asks whether 12 against 3 is more lopsided than chance would produce.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "McNemar's test",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t212",
+    "t108",
+    "t222"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "McNemar's test is valid for the warning-system comparison only when both systems face the same events; separate deployments confound site, operator and weather.",
+   "quote": "It is valid only when both systems faced the same events; separate deployments confound site, operator and weather [Chapter 7].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "McNemar's test",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t212",
+    "t222"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends making the hypothesis that the new warning system is better than the old system testable through paired recording, rather than comparing averages from different sites and seasons.",
+   "quote": "\"The new system is better than the old one\" is a hypothesis, and the booklet's advice is to make it testable through paired recording rather than averages from different sites and seasons [Chapter 7].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t212",
+    "t222",
+    "t121"
+   ],
+   "importance": 3
+  }
+ ]
+}

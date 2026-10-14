@@ -1,0 +1,257 @@
+{
+ "chunkId": "k820",
+ "hash": "308dd1f7c9392319",
+ "facts": [
+  {
+   "text": "In simulation test engineering, correlation means demonstrated agreement between a simulation and a physical test of the same situation, measured using metrics agreed beforehand.",
+   "quote": "correlation means the demonstrated agreement between a simulation and a physical test of the same situation, measured with agreed metrics",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t250",
+    "t160"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A correlation campaign can physically test a loader approaching a target at 10 km/h on wet gravel, recording brake command time, brake pressure, deceleration and stopping distance, then reproduce the test in simulation with the same machine parameters, speed, surface and target.",
+   "quote": "a loader approaching a target at 10 km/h on wet gravel, with brake command time, brake pressure, deceleration and stopping distance recorded. Reproduce exactly that test in the simulator with the same machine parameters, speed, surface and target.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t160",
+    "t2",
+    "t170",
+    "t174",
+    "t250"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simulation–physical-test correlation should compare quantities across relevant conditions using several metrics at once, never one number: scalar outputs such as stopping distance, time histories such as deceleration, distributions over repeated runs, and outcomes such as stopping before the target.",
+   "quote": "single numbers such as stopping distance, whole time curves such as deceleration against time, distributions over repeated runs, and outcomes such as whether the machine stopped before the target.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t250",
+    "t251",
+    "t252",
+    "t253",
+    "t257"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2016 heavy-truck program first conducted physical track tests of a tractor-trailer's automatic braking and then benchmarked hardware-in-the-loop simulations against those tests.",
+   "quote": "A 2016 heavy-truck program ran physical track tests of a tractor-trailer's automatic braking first, then benchmarked hardware-in-the-loop simulations against them.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t250",
+    "t148",
+    "t25",
+    "t158"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Euro NCAP's 2026 virtual-testing protocol requires the manufacturer's model to correlate with physical tests using ISO-based scores before virtual results count.",
+   "quote": "Euro NCAP's 2026 virtual-testing protocol requires the manufacturer's model to correlate with physical tests using ISO-based scores before virtual results count",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Euro NCAP",
+     "kind": "organization"
+    },
+    {
+     "name": "ISO",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t297",
+    "t250",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Euro NCAP's 2026 virtual-testing protocol physically spot-checks randomly chosen grid cells after model correlation.",
+   "quote": "Euro NCAP's 2026 virtual-testing protocol requires the manufacturer's model to correlate with physical tests using ISO-based scores before virtual results count, then physically spot-checks randomly chosen grid cells.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Euro NCAP",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t297",
+    "t143",
+    "t160"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A test house and tool vendor demonstrated an automatic-braking controller correlated against proving-ground tests using ISO 18571 metrics.",
+   "quote": "A test house and tool vendor demonstrated an automatic-braking controller correlated against proving-ground tests using ISO 18571 metrics [Chapters 2, 13].",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    2,
+    13
+   ],
+   "entities": [
+    {
+     "name": "ISO 18571",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t250",
+    "t291",
+    "t25",
+    "t158"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For the heavy off-road collision-mitigation program, correlation tests should occur first when the prototype arrives, before the scenario matrix, measuring end-to-end latency, detection range, brake-command timing, stopping dynamics, repeatability and model error on each representative variant.",
+   "quote": "correlation tests should come first when the prototype arrives, before the scenario matrix: measured end-to-end latency, detection range, brake-command timing, stopping dynamics, repeatability and model error on each representative variant [Chapter 1].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t160",
+    "t172",
+    "t193",
+    "t230",
+    "t250"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The simulation correlation deliverable should be residual plots and an uncertainty budget, rather than a subjective judgment that results look close.",
+   "quote": "The deliverable is residual plots and an uncertainty budget, not a \"looks close\" judgment",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t250",
+    "t259",
+    "t269"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Simulation correlation should trigger a stop when errors are systematic, sensitive to hidden tuning, or larger than the margin needed for the safety conclusion.",
+   "quote": "the stop signal is errors that are systematic, sensitive to hidden tuning, or larger than the margin the safety conclusion needs [Chapter 13].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t250",
+    "t258",
+    "t72",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The organization undertaking the heavy off-road collision-mitigation program has never correlated a simulator against its own machines.",
+   "quote": "The organization has never correlated a simulator against its own machines.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t250",
+    "t160",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Having no agreed correlation metrics by the first quarter of 2027 is an early warning sign of failure for the heavy off-road collision-mitigation program.",
+   "quote": "\"No agreed correlation metrics by the first quarter of 2027\" is an early warning sign of failure",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t250",
+    "t82",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Physical-versus-virtual correlation for one machine and one scenario is among the cheapest experiments to run before building a large simulation platform for the heavy off-road collision-mitigation program.",
+   "quote": "\"one machine, one scenario, physical versus virtual correlation\" is among the cheapest experiments to run before building a large platform [Chapter 13].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t360",
+    "t250",
+    "t160",
+    "t350"
+   ],
+   "importance": 3
+  }
+ ]
+}

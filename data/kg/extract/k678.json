@@ -1,0 +1,256 @@
+{
+ "chunkId": "k678",
+ "hash": "ae20d8d1ab065ab5",
+ "facts": [
+  {
+   "text": "A machine learning detector is software trained on many labeled examples to find people and objects in sensor data, rather than programmed with hand-written rules.",
+   "quote": "A machine learning detector is software that has learned to find people and objects in sensor data by being shown many labeled examples, instead of being programmed with hand-written rules.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t112",
+    "t106"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Most vehicle detectors, including the detectors in the booklet's studies, are convolutional neural networks (CNNs) or their newer relatives.",
+   "quote": "Most vehicle detectors, including those in the booklet's studies, are of this kind or its newer relatives.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t112"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A detector trained on real radar images failed to detect most vehicles in simulated radar images.",
+   "quote": "a detector trained on real radar images failed to detect most vehicles in simulated ones [Chapter 6]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t112",
+    "t94",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Machine learning detectors degrade in real mine dust.",
+   "quote": "detectors degrade in real mine dust [Chapter 9]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t112",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Viewpoint changes on mine benches degrade detection, so new sensor mounting heights require detector retraining or adaptation, not merely new thresholds.",
+   "quote": "viewpoint changes on mine benches degrade detection, so new mounting heights need retraining or adaptation, not only new thresholds [Chapter 9]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t112",
+    "t100",
+    "t265"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In one construction study, synthetic images reduced the need for real images by 50% while improving the detector by 16%.",
+   "quote": "in one construction study synthetic images cut the need for real images by 50% while improving the detector by 16%",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t112"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In another study, the best detector result came from 1,500 real images plus 1,500 synthetic images; synthetic-only models showed a performance gap.",
+   "quote": "in another the best result came from 1,500 real plus 1,500 synthetic images with synthetic-only models showing a gap",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t112",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The value of synthetic training data depended on the detector family.",
+   "quote": "the value depended on the detector family [Chapter 9]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t112"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A machine learning network can learn renderer artifacts, unrealistically clean geometry, or correlations that do not exist in the field.",
+   "quote": "a network can learn the wrong thing: renderer artifacts, unrealistically clean geometry, correlations that do not exist in the field [Chapter 9]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t112",
+    "t114",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A learned detector cannot be proven like a hand-written rule; the booklet notes architectures pairing a deterministic safety channel with a machine-learning channel so the learned component does not carry the whole proof.",
+   "quote": "The booklet notes architectures that pair a deterministic safety channel with a machine-learning channel so the learned part does not carry the whole proof [Chapter 1]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t79",
+    "t112",
+    "t67"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet refers to the data-centric lifecycle of ISO/PAS 8800, a publicly available specification for machine learning in road vehicles.",
+   "quote": "it refers to the data-centric lifecycle of ISO/PAS 8800, a publicly available specification for machine learning in road vehicles [Chapter 9]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ISO/PAS 8800",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t289",
+    "t79",
+    "t113"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet recommends risk-based object categories because braking depends on vulnerability and swept path rather than whether a network labels an object as \"person\" or \"object\".",
+   "quote": "it argues that object categories should be risk-based, since braking depends on vulnerability and swept path rather than on whether the network says \"person\" or \"object\" [Chapter 9]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t86",
+    "t185",
+    "t46"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Learned detectors are probably the only way to recognize people across the variety of real job sites, but they can fail silently outside their training distribution.",
+   "quote": "Learned detectors are probably the only way to recognize people across the variety of real job sites, but they fail silently outside their training distribution",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t112",
+    "t14",
+    "t113"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Because learned detectors fail silently outside their training distribution, the booklet insists on untouched real test data and treats improving virtual metrics alongside stalled real performance as a warning sign.",
+   "quote": "they fail silently outside their training distribution, which is why the booklet insists on untouched real test data and watches for the warning sign that virtual metrics keep improving while real performance stalls [Chapters 9, 13]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t263",
+    "t113",
+    "t267",
+    "t82"
+   ],
+   "importance": 3
+  }
+ ]
+}

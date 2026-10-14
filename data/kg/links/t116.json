@@ -1,0 +1,115 @@
+{
+ "key": "t116",
+ "hash": "a4e116bd8b6ab4fd",
+ "synopsis": "NeRF and 3D Gaussian splatting are strongest near recorded viewpoints: accurately posed camera and lidar logs support replay and near-path novel views, but neural reconstruction degrades at offsets of 1–4 m [f3703, f80, f5213]. On-road benchmarks quantify substantial losses: Para-Lane (2025) reports 22.99 to 17.05 dB PSNR between recorded and adjacent lanes, while MV² (August 2026) reports 29.13 dB at drone height versus 10.36 dB from a car, reinforcing the risk of transferring scenes between machine sensor heights [f3707, f3709, f82]. NeuroNCAP (2024) found nearly identical real and rendered performance in open loop across 14 on-road sequences, but this does not settle off-trajectory credibility; re-rendering for new sensor mounts is recommended as a development aid rather than validation evidence [f4566, f4567, f5785, f5517]. Off-road maturity remains very low, with 2026 preprints reporting terrain, calibration-drift and moving-vegetation degradation; harsh-weather limitations and the need for underlying collision geometry mean neural rendering should be one toolchain layer, not the simulator itself [f5725, f3710, f4517, f12933, f12938]. NuRec is integrated into Isaac Sim and CARLA 0.9.16, which added neural reconstruction in September 2025, but its admissibility as test evidence remains uncertain, and reported compute evidence is insufficient for program-level hardware sizing [f8609, f8298, f9355, f4948]. Collect reconstruction-quality logs now using synchronized, calibrated sensors, multiple passes and clear weather, while keeping visually inferred surfaces separate from geometric truth; only 50 of 200 MV² sequences passed pose-quality checks [f12937, f12936, f12757, f3727].",
+ "relations": [
+  {
+   "a": "f81",
+   "b": "f5213",
+   "type": "same",
+   "note": "Both report sharp degradation at viewpoint offsets of 1–4 m."
+  },
+  {
+   "a": "f81",
+   "b": "f241",
+   "type": "same",
+   "note": "Synthesis repeats the 1–4 m viewpoint degradation threshold."
+  },
+  {
+   "a": "f5213",
+   "b": "f12931",
+   "type": "same",
+   "note": "Glossary restates the on-road 1–4 m degradation finding."
+  },
+  {
+   "a": "f80",
+   "b": "f3725",
+   "type": "same",
+   "note": "Both specify accurate-pose camera and lidar logs for replay and near-path views."
+  },
+  {
+   "a": "f8609",
+   "b": "f9164",
+   "type": "same",
+   "note": "Both identify Isaac Sim and CARLA 0.9.16 as NuRec integrations."
+  },
+  {
+   "a": "f82",
+   "b": "f3706",
+   "type": "same",
+   "note": "Both identify height shifts as worse than sideways shifts."
+  },
+  {
+   "a": "f12930",
+   "b": "f5213",
+   "type": "supports",
+   "note": "Measured PSNR losses quantify degradation at 1, 2 and 4 m offsets."
+  },
+  {
+   "a": "f3709",
+   "b": "f12932",
+   "type": "supports",
+   "note": "Drone-to-car quality loss illustrates the importance of sensor-height changes."
+  },
+  {
+   "a": "f5723",
+   "b": "f5517",
+   "type": "depends",
+   "note": "New-mount viewpoint limitations motivate restricting re-rendered data to development use."
+  },
+  {
+   "a": "f4518",
+   "b": "f4519",
+   "type": "elaborates",
+   "note": "Extrapolation difficulty becomes a transfer risk when machine sensor positions change."
+  },
+  {
+   "a": "f4567",
+   "b": "f4566",
+   "type": "supports",
+   "note": "Near-identical NDS scores substantiate the reported minimal open-loop real-to-sim gap."
+  },
+  {
+   "a": "f4566",
+   "b": "f5785",
+   "type": "elaborates",
+   "note": "Near-path open-loop success contextualizes disagreement over off-trajectory neural simulation."
+  },
+  {
+   "a": "f4517",
+   "b": "f12934",
+   "type": "supports",
+   "note": "LiHi-GS supplies method-specific on-road evidence for the glossary's broader weather limitation."
+  },
+  {
+   "a": "f3710",
+   "b": "f5725",
+   "type": "elaborates",
+   "note": "Off-road preprints identify degradation mechanisms despite predominantly on-road evidence and low maturity."
+  },
+  {
+   "a": "f12933",
+   "b": "f12938",
+   "type": "supports",
+   "note": "Missing native collision surfaces support treating neural rendering as only one simulator layer."
+  },
+  {
+   "a": "f3727",
+   "b": "f12936",
+   "type": "supports",
+   "note": "Low pose-quality acceptance supports rigorous reconstruction recording requirements."
+  },
+  {
+   "a": "f12936",
+   "b": "f12937",
+   "type": "elaborates",
+   "note": "Specifies acquisition conditions for the recommended reconstruction-quality logs."
+  },
+  {
+   "a": "f9358",
+   "b": "f9355",
+   "type": "supports",
+   "note": "Unresolved application-specific credibility requirements underpin uncertainty about using neural reconstruction as test evidence."
+  }
+ ]
+}

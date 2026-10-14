@@ -1,0 +1,115 @@
+{
+ "key": "t160",
+ "hash": "11124e5c9d1afe35",
+ "synopsis": "Physical correlation is the prerequisite for trusting virtual collision-mitigation results: models need stated validity domains, representative real-versus-simulated comparisons, correlation bounds and an approved virtual-test envelope before the full scenario matrix is rerun [f4339, f746, f747, f757]. On-road precedents exist, but the corpus reports no published quantitative off-road comparison of simulation-tuned braking thresholds with field results and no independent evidence that virtual or hardware-in-the-loop testing alone covers 100+ off-road site types and all relevant machines and environmental conditions [f153, f154, f5760]. Euro NCAP’s 2026 protocol, version 1.00 dated March 2025, requires physical correlation before prediction submission and random physical verification; at least 75% of verification tests per cluster must meet qualification criteria, although these are on-road requirements [f1215, f1454, f2627]. Planning recommendations distinguish early measurement campaigns on existing machines in 2026–2027 from prototype correlation after arrival in mid-2027, when tests should measure latency, detection range, brake timing, stopping dynamics, repeatability and model error for representative variants [f9375, f744]. Environmental correlation should cover adverse sensor conditions, including measured dust events and dynamic approaches at representative speeds; hardware and mounting must be frozen and correlated before claiming a validated sensor digital twin, and a 2027 sensor change invalidates substantial existing evidence [f5219, f10562, f10658, f11917, f11912]. Expensive integrated tools do not eliminate manufacturer-owned physical correlation, and the programme initially bears both simulation and physical-validation costs; its evidence should explicitly link virtual claims to paired physical tests and pre-declared acceptance bounds [f9318, f10511, f7472, f10207].",
+ "relations": [
+  {
+   "a": "f169",
+   "b": "f2108",
+   "type": "same",
+   "note": "Both state Euro NCAP requires in-house qualification against physical tests."
+  },
+  {
+   "a": "f1215",
+   "b": "f2108",
+   "type": "same",
+   "note": "Both identify mandatory virtual-versus-physical qualification under protocol version 1.00."
+  },
+  {
+   "a": "f4761",
+   "b": "f4575",
+   "type": "same",
+   "note": "Both describe Schmoll’s 2024 CarMaker validation against a real Continental ultrasonic sensor."
+  },
+  {
+   "a": "f10416",
+   "b": "f10604",
+   "type": "same",
+   "note": "Same track-test-first AEB precedent; the latter supplies authors and publication date."
+  },
+  {
+   "a": "f11342",
+   "b": "f11924",
+   "type": "same",
+   "note": "Both prescribe correlation, virtual reruns, worst-case physical confirmation and shadow mode."
+  },
+  {
+   "a": "f1454",
+   "b": "f1215",
+   "type": "elaborates",
+   "note": "Adds compulsory randomly selected physical verification to the correlation requirement."
+  },
+  {
+   "a": "f2627",
+   "b": "f2108",
+   "type": "elaborates",
+   "note": "Specifies the 75% per-cluster qualification threshold."
+  },
+  {
+   "a": "f2499",
+   "b": "f4339",
+   "type": "supports",
+   "note": "On-road matching requirements support representative physical conditions and explicitly bounded model validity."
+  },
+  {
+   "a": "f744",
+   "b": "f717",
+   "type": "elaborates",
+   "note": "Adds prototype timing, representative variants, repeatability and end-to-end measurements."
+  },
+  {
+   "a": "f747",
+   "b": "f11924",
+   "type": "elaborates",
+   "note": "Details regression, variant sweeps and faults in the post-correlation virtual rerun stage."
+  },
+  {
+   "a": "f10562",
+   "b": "f5219",
+   "type": "elaborates",
+   "note": "Specifies dust instrumentation and real-versus-simulated point-cloud and detection comparisons."
+  },
+  {
+   "a": "f10658",
+   "b": "f7374",
+   "type": "elaborates",
+   "note": "Adds representative approach speeds to the paired physical reference set."
+  },
+  {
+   "a": "f7384",
+   "b": "f9376",
+   "type": "supports",
+   "note": "Reproducing failures and boundaries implements the proposed redesign of physical testing."
+  },
+  {
+   "a": "f11912",
+   "b": "f11917",
+   "type": "supports",
+   "note": "Sensor-change invalidation explains why validated-twin claims require frozen, correlated hardware."
+  },
+  {
+   "a": "f10207",
+   "b": "f7472",
+   "type": "elaborates",
+   "note": "Provides a concrete claim-evidence row with an envelope and pre-declared acceptance bound."
+  },
+  {
+   "a": "f10511",
+   "b": "f9318",
+   "type": "elaborates",
+   "note": "Explains the dual-cost consequence of retaining physical correlation alongside simulation tools."
+  },
+  {
+   "a": "f9375",
+   "b": "f744",
+   "type": "supports",
+   "note": "Existing-machine campaigns prepare models before subsequent prototype-specific correlation."
+  },
+  {
+   "a": "f5760",
+   "b": "f2485",
+   "type": "supports",
+   "note": "The off-road evidence gap supports retaining correlated physical tests as simulation credibility evidence."
+  }
+ ]
+}

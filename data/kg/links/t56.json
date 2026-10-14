@@ -1,0 +1,115 @@
+{
+ "key": "t56",
+ "hash": "d3a4a247053e091b",
+ "synopsis": "Fault evidence is required alongside intended-function validation: the braking architecture must address sensor, computation, communication and actuator faults, while fault injection alone cannot establish perception performance when hardware works normally [f384, f10528, f659]. MOSH requires supplier FMECA identification of critical faults, fail-to-safe within 500 ms of critical-failure detection, and lost-connection detection within 500 ms [f2358, f2359, f12076]. The recommended allocation is SIL for test volume and HIL for timing, interfaces and faults; ISO 13849-2:2012 includes software simulation of faults, but SIL cannot prove final-ECU timing, processor or I/O faults [f12057, f9767, f5269]. Nominal simulation fidelity does not demonstrate fault tolerance: corrupted messages, dropouts, timing faults, bus congestion, frozen values and actuator faults need explicit testing, and replay cannot establish performance for failures absent from its logs [f8199, f8200, f5241]. Degraded braking, thermal limits and brake-system state belong in the safety case; sensor unavailability differs from confidently incorrect sensing, and recovery or degraded modes can remain unsafe despite successful nominal collision avoidance [f3634, f7464, f10777]. Unnecessary braking dominates the cited on-road failure evidence, although complaints do not always indicate defects; the booklet also identifies omitted brake-degradation questions and warns that postponing fault-response decisions until prototype delivery can consume the four-month validation window [f1223, f1229, f6593, f10540].",
+ "relations": [
+  {
+   "a": "f2359",
+   "b": "f2619",
+   "type": "same",
+   "note": "Both specify fail-to-safe within 500 ms of critical-failure detection."
+  },
+  {
+   "a": "f2359",
+   "b": "f12075",
+   "type": "same",
+   "note": "Glossary restates the MOSH critical-failure response deadline."
+  },
+  {
+   "a": "f2619",
+   "b": "f12075",
+   "type": "same",
+   "note": "Both give the same MOSH fail-to-safe deadline."
+  },
+  {
+   "a": "f9767",
+   "b": "f12030",
+   "type": "same",
+   "note": "Both identify software fault simulation as an ISO 13849-2:2012 validation method."
+  },
+  {
+   "a": "f3537",
+   "b": "f3084",
+   "type": "same",
+   "note": "Same contributor counts; the latter adds study period, total deaths and berm inadequacy."
+  },
+  {
+   "a": "f549",
+   "b": "f12057",
+   "type": "same",
+   "note": "Both allocate timing, interface and fault testing to HIL; glossary also specifies SIL."
+  },
+  {
+   "a": "f533",
+   "b": "f5283",
+   "type": "elaborates",
+   "note": "HIL validation capabilities expand the description of its ECU and real-time simulation setup."
+  },
+  {
+   "a": "f5269",
+   "b": "f549",
+   "type": "supports",
+   "note": "SIL's final-ECU limitations justify allocating timing, interfaces and faults to HIL."
+  },
+  {
+   "a": "f8199",
+   "b": "f8200",
+   "type": "supports",
+   "note": "Nominal fidelity's evidential gap motivates explicit testing of the listed faults."
+  },
+  {
+   "a": "f8200",
+   "b": "f10528",
+   "type": "elaborates",
+   "note": "Specific fault tests make the architecture's broad fault-handling obligation concrete."
+  },
+  {
+   "a": "f2936",
+   "b": "f8200",
+   "type": "elaborates",
+   "note": "J1939 brake-command safety adds interface-specific acceptance criteria for message and bus faults."
+  },
+  {
+   "a": "f6595",
+   "b": "f3634",
+   "type": "supports",
+   "note": "Fatal failures to stop support including degraded and partial braking in the safety case."
+  },
+  {
+   "a": "f6597",
+   "b": "f3634",
+   "type": "elaborates",
+   "note": "Adds a specific prohibition on assuming nominal braking after detected degradation."
+  },
+  {
+   "a": "f6593",
+   "b": "f3634",
+   "type": "contradicts",
+   "note": "Omitted brake degradation and state questions conflict with recommended safety-case coverage."
+  },
+  {
+   "a": "f7463",
+   "b": "f12080",
+   "type": "elaborates",
+   "note": "Explicit degradation requirements must account for the fault-classification tradeoff with availability."
+  },
+  {
+   "a": "f10777",
+   "b": "f10221",
+   "type": "supports",
+   "note": "Unsafe recovery despite nominal success supports explicit safety-argument failure-mode boundaries."
+  },
+  {
+   "a": "f7455",
+   "b": "f10540",
+   "type": "depends",
+   "note": "Required integrity allocation and fault testing must be settled before the short validation window."
+  },
+  {
+   "a": "f502",
+   "b": "f1745",
+   "type": "elaborates",
+   "note": "Adds infrastructure failures, non-equipped objects and maintenance assumptions to physical correlation needs."
+  }
+ ]
+}

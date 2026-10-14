@@ -1,0 +1,115 @@
+{
+ "key": "t343",
+ "hash": "3b310ca3d888f6d7",
+ "synopsis": "The proposed first-of-a-kind programme has an eleven-month hard deadline, starting preparation in October 2026 ahead of prototype arrival in mid-2027; the indicative plan represents arrival as a July 1, 2027 milestone [f9396, f706, f2, f903]. Preparation is described as about seven months through April 2027 in the planning chapter, but about eight months before mid-2027 in the trust chapter, so these preparation endpoints need reconciliation [f9402, f8237]. The post-arrival campaign is an approximately 16-week iterative funnel, credible within four months only if the requirements-and-design work and most preparation are already complete; environment construction and pipeline correlation should therefore begin before the prototype exists [f7379, f7351, f12229, f3771, f709]. Schedule dependencies include software availability for early software-in-the-loop work and prior agreement on the assessor and review criteria; the proposed end-November 2026 G0 gate records agreed claims, evidence plans, orders, criteria and a named decision-maker [f270, f8245, f12304]. Confidence remains limited: documented capability-building precedents took years, the finance executive calls the schedule optimistic, independent review and retesting can become critical-path activities, and tool implementation and provider delivery timelines were not found [f1203, f10742, f683, f9352, f8838]. The plan should expose dependencies and gaps, report P50/P80 dates and deadline probabilities, and monitor toolchain milestone slips and failure to demonstrate an end-to-end evidence chain for one safety requirement by the first half of 2027 [f9476, f205, f11074, f12196].",
+ "relations": [
+  {
+   "a": "f2",
+   "b": "f11337",
+   "type": "same",
+   "note": "Both place prototype arrival in mid-2027."
+  },
+  {
+   "a": "f1203",
+   "b": "f1456",
+   "type": "same",
+   "note": "Both report capability-building durations measured in years."
+  },
+  {
+   "a": "f8245",
+   "b": "f12295",
+   "type": "same",
+   "note": "Both make assessor identity and agreed criteria prerequisites for the schedule."
+  },
+  {
+   "a": "f11074",
+   "b": "f10793",
+   "type": "elaborates",
+   "note": "Adds unbudgeted cloud and labeling invoices to milestone-slip and scope-creep warnings."
+  },
+  {
+   "a": "f2",
+   "b": "f903",
+   "type": "elaborates",
+   "note": "The indicative plan assigns July 1 to the mid-2027 arrival milestone."
+  },
+  {
+   "a": "f9402",
+   "b": "f8237",
+   "type": "contradicts",
+   "note": "Preparation allowances differ: seven months through April versus eight months before mid-2027."
+  },
+  {
+   "a": "f7379",
+   "b": "f9403",
+   "type": "elaborates",
+   "note": "Defines the approximately four-month delivery window as a 16-week iterative funnel."
+  },
+  {
+   "a": "f7351",
+   "b": "f12229",
+   "type": "elaborates",
+   "note": "Specifies which V-model work must precede the short post-arrival campaign."
+  },
+  {
+   "a": "f3771",
+   "b": "f13121",
+   "type": "supports",
+   "note": "Sensor-independent job-site construction enables the recommended early environment build."
+  },
+  {
+   "a": "f709",
+   "b": "f7351",
+   "type": "depends",
+   "note": "The short campaign requires pipeline construction and correlation before prototype arrival."
+  },
+  {
+   "a": "f270",
+   "b": "f709",
+   "type": "depends",
+   "note": "Early software-in-the-loop work within pipeline preparation depends on executable software availability."
+  },
+  {
+   "a": "f12304",
+   "b": "f8245",
+   "type": "elaborates",
+   "note": "G0 provides a dated gate for signed criteria and a named decision-maker."
+  },
+  {
+   "a": "f683",
+   "b": "f10962",
+   "type": "supports",
+   "note": "Review and retesting risks justify escalation when required physical confirmation lacks schedule reservations."
+  },
+  {
+   "a": "f1203",
+   "b": "f10742",
+   "type": "supports",
+   "note": "Years-long precedents support skepticism about the compressed proposed schedule."
+  },
+  {
+   "a": "f9352",
+   "b": "f8727",
+   "type": "supports",
+   "note": "Missing implementation durations prevent treating relative integration effort rankings as a schedule."
+  },
+  {
+   "a": "f9476",
+   "b": "f9477",
+   "type": "elaborates",
+   "note": "A layered roadmap with gate diamonds implements dependency-aware plan visualization."
+  },
+  {
+   "a": "f10742",
+   "b": "f11288",
+   "type": "supports",
+   "note": "The missing reference class motivates reconstructing internal history to check schedule plausibility."
+  },
+  {
+   "a": "f8275",
+   "b": "f8838",
+   "type": "depends",
+   "note": "Absent provider delivery timelines must be reported as not found rather than guessed."
+  }
+ ]
+}

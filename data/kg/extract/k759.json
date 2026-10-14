@@ -1,0 +1,249 @@
+{
+ "chunkId": "k759",
+ "hash": "d8f261fbc7ca9db9",
+ "facts": [
+  {
+   "text": "Operator-already-reacting detection is decision logic that detects when the operator is already braking or steering away so that the machine does not add automatic braking while the operator is handling the situation.",
+   "quote": "This is the part of the logic that notices the operator is already braking or steering away, so the machine does not brake on top of a person who is handling the situation.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Automatic braking while an operator is already stopping can be unwelcome and dangerous: on a loaded machine, the extra jolt shifts the load.",
+   "quote": "An automatic brake that fires while the operator is already stopping is just as unwelcome, and it can be dangerous: on a loaded machine the extra jolt shifts the load.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t178",
+    "t195"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "UN Regulations R131 and R152 allow a conscious driver action, such as an accelerator kick-down or a swerve, to interrupt automatic braking.",
+   "quote": "UN Regulations R131 and R152 let a conscious action such as an accelerator kick-down or a swerve interrupt the automatic braking",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "UN R131",
+     "kind": "regulation"
+    },
+    {
+     "name": "UN R152",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t191",
+    "t295"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Road-vehicle test protocols monitor pedal force to confirm whether the driver braked.",
+   "quote": "test protocols watch pedal force to confirm whether the driver braked [Chapter 8].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t279"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-3 requires that an off-road collision intervention system not override operator braking that is stronger than the system's own braking demand.",
+   "quote": "Off-road, ISO 21815-3 says the system must not override operator braking that is stronger than the system's own demand",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t191",
+    "t280"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3 may allow intentional operator control to override an intervention where appropriate.",
+   "quote": "ISO 21815-3 says the system must not override operator braking that is stronger than the system's own demand, and may allow intentional operator control to override an intervention where appropriate.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t191",
+    "t280",
+    "t28"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A mining-truck patent checks brake-pedal stroke after the second alarm to decide whether operator avoidance has begun.",
+   "quote": "A mining-truck patent checks brake-pedal stroke after the second alarm to decide that avoidance has begun [Chapter 8].",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t3",
+    "t29"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A production operator-already-reacting detection system should combine brake pedal or lever demand and brake pressure; hydrostatic or propel lever movement toward neutral; retarder request; steering or articulation command and rate; accelerator release; direction-change request; measured deceleration; and predicted path movement away from the object.",
+   "quote": "brake pedal or lever demand and brake pressure; the hydrostatic or propel lever returning toward neutral; retarder request; steering or articulation command and rate; accelerator released; a direction-change request; measured deceleration; and the predicted path moving away from the object.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t177",
+    "t176",
+    "t169",
+    "t196"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Operator-already-reacting detection should credit deceleration actually achieved rather than control movement, suppressing intervention when measured deceleration exceeds the deceleration required to stop short plus a margin.",
+   "quote": "The core rule is to credit the operator for the deceleration actually achieved, not for a control that moved: suppress the intervention when measured deceleration already exceeds what is required to stop short, plus a margin [Chapter 8].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t169",
+    "t194",
+    "t185"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Operator-already-reacting detection can cause the stopping margin to collapse if a startled operator briefly releases the accelerator or touches the brake and the system consequently stands down.",
+   "quote": "The failure the booklet warns about is a startled operator who briefly releases the accelerator or touches the brake, the system standing down, and the margin collapsing",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t194",
+    "t36"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A downhill machine can accelerate after the operator releases the throttle, so throttle release alone does not establish achieved deceleration.",
+   "quote": "a downhill machine can even accelerate after the throttle is released [Chapter 8].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t173",
+    "t169"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No off-road validation of operator-already-reacting detection logic was found.",
+   "quote": "No off-road validation of such logic was found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t65",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The program must define operator-already-reacting detection in its operator-reaction state machine before hardware arrives and test the logic in operator-in-the-loop and physical trials.",
+   "quote": "it belongs in the operator-reaction state machine the program must define before the hardware arrives and test in operator-in-the-loop and physical trials [Chapter 8].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t185",
+    "t152",
+    "t158"
+   ],
+   "importance": 3
+  }
+ ]
+}

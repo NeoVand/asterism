@@ -1,0 +1,212 @@
+{
+ "chunkId": "k821",
+ "hash": "93be040d5fb698c8",
+ "facts": [
+  {
+   "text": "Scalar-output agreement compares a single simulation result with the same physical-test result, such as stopping distance or braking-trigger time, usually as a percentage error with an agreed error band.",
+   "quote": "Scalar-output agreement compares one number from the simulation with the same number from the physical test, for example stopping distance or the time at which braking was triggered, usually as a percentage error with an agreed error band.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t251",
+    "t258"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The simplest scalar-output agreement check calculates relative error as the absolute difference between simulated and measured values divided by the measured value.",
+   "quote": "`error = |simulated minus measured| / measured`",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t251"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet's aircraft-seat certification example compares a measured load peak of 1,315 lb with a simulated peak of 1,360 lb, giving a relative error of 3.42%.",
+   "quote": "A measured load peak of 1,315 lb and a simulated peak of 1,360 lb give (1360 minus 1315) divided by 1315, that is 3.42%.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t251",
+    "t246"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The aviation guidance in the booklet's aircraft-seat certification example uses 10% criteria for several quantities, agreed in advance.",
+   "quote": "The aviation guidance uses 10% criteria for several quantities, agreed in advance [Chapter 10].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t258",
+    "t251",
+    "t246"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An illustrative braking comparison of a measured stopping distance of 38.0 m and a simulated stopping distance of 39.5 m gives an error of 3.9%.",
+   "quote": "For braking the equivalent might be: measured stopping distance 38.0 m, simulated 39.5 m, error 3.9%.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t251",
+    "t170"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scalar-output agreement error bands must account for uncertainty because uncertainty consumes part of the margin to a limit.",
+   "quote": "An error band must respect uncertainty.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t258",
+    "t259",
+    "t251"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the aircraft-seat certification example, the regulatory maximum load is 1,500 lb and physical-test scatter is about 42 lb standard deviation.",
+   "quote": "the regulatory maximum is 1,500 lb and the test scatter about 42 lb standard deviation",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t259",
+    "t246"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In the aircraft-seat certification example, achieving 95% confidence that the true load remains below the 1,500 lb limit requires a prediction below about 1,431 lb, calculated as 1,500 minus 1.645 times the 42 lb standard deviation.",
+   "quote": "for 95% confidence that the true value stays below the limit, the prediction must stay below about 1,431 lb (1500 minus 1.645 times 42).",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t259",
+    "t258"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A predicted load of 1,490 lb is insufficient in the aircraft-seat certification example despite being below the 1,500 lb regulatory maximum, because uncertainty consumes part of the margin.",
+   "quote": "Predicting 1,490 lb is not enough just because it is below 1,500: uncertainty consumes part of the margin [Chapter 10].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t259",
+    "t258"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scalar-output agreement is necessary but insufficient for automatic-braking validation: two systems can reach the same peak deceleration at different times, changing whether a collision occurs.",
+   "quote": "Scalars are necessary but not sufficient. Two systems can reach the same peak deceleration at very different times, and for automatic braking that changes whether the collision happens [Chapter 10].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t251",
+    "t252",
+    "t22",
+    "t18"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends stopping-distance error, intervention-time error, residual impact-speed error, range error and relative-speed error as scalar quantities for the heavy off-road automatic-braking validation program.",
+   "quote": "The booklet recommends scalar quantities for this program, including stopping-distance error, intervention-time error, residual impact-speed error and range and relative-speed errors",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t251",
+    "t170",
+    "t28",
+    "t169",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet warns against copying the aviation 10% agreement criterion as a generic tolerance for off-road braking.",
+   "quote": "warns that the aviation 10% figure must not be copied as a generic tolerance for off-road braking [Chapter 10].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t258",
+    "t251",
+    "t1"
+   ],
+   "importance": 3
+  }
+ ]
+}

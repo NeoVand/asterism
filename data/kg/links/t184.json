@@ -1,0 +1,115 @@
+{
+ "key": "t184",
+ "hash": "45650fa602c25935",
+ "synopsis": "Virtual stopping models need real-machine anchors before carrying safety evidence: SIL and operator simulators cannot prove actual brake hardware, and ISO 3450 requires physical brake-performance testing [f770, f5270, f13412, f10431]. Testing should cover machine-specific dynamics, adverse braking configurations, maximum payload where required, slopes and surface extremes, with physical anchors for materially different dynamics architectures [f5559, f5967, f5968, f1610, f7881, f11019]. The booklet recommends measuring braking and sensor behavior on existing machines in 2026–2027 before prototype arrival, then using prototype tests for correlation, parameter identification and independent falsification rather than repeating every virtual scenario; a proposed pilot pre-specifies 10–30 physical test points [f9375, f774, f6137, f9917]. Brake identification must exercise the automated rather than merely pedal-operated path, characterize response dynamics, and measure the end-to-end latency chain; the recommended early latency sweep includes at least 10 repetitions across oil temperatures per machine family [f6142, f13679, f13697, f13699, f13685]. Published modern brake-response figures and full-machine stopping distances on wet clay or loose gravel were not found, while cited terrain findings came from single-wheel rigs and sand, leaving machine-ground behavior to be bounded through physical testing [f12565, f6018, f6012, f10612]. Simulation can narrow physical cases, but family models still need envelope-corner validation, and new variants require a reduced physical check after demonstrating that they lie inside the validated parameter hull [f772, f7916, f7917].",
+ "relations": [
+  {
+   "a": "f10431",
+   "b": "f10482",
+   "type": "same",
+   "note": "Both identify ISO 3450 brake testing as physical testing."
+  },
+  {
+   "a": "f6018",
+   "b": "f13722",
+   "type": "same",
+   "note": "Both report missing published full-machine stopping distances on wet clay or loose gravel."
+  },
+  {
+   "a": "f6142",
+   "b": "f13678",
+   "type": "same",
+   "note": "Both require testing the automated brake path rather than only the pedal path."
+  },
+  {
+   "a": "f6067",
+   "b": "f13684",
+   "type": "same",
+   "note": "Both require measured production-machine brake delay distributions."
+  },
+  {
+   "a": "f5559",
+   "b": "f10655",
+   "type": "same",
+   "note": "Both identify stopping performance as dependent on machine-specific physical characteristics."
+  },
+  {
+   "a": "f10612",
+   "b": "f10613",
+   "type": "elaborates",
+   "note": "Specifies family- and surface-class stopping tests to address machine-ground uncertainties."
+  },
+  {
+   "a": "f7913",
+   "b": "f7917",
+   "type": "elaborates",
+   "note": "Adds an explicit validated-hull demonstration before the reduced variant test set."
+  },
+  {
+   "a": "f5270",
+   "b": "f770",
+   "type": "supports",
+   "note": "SIL's inability to prove hardware explains the need for a real-machine anchor."
+  },
+  {
+   "a": "f5968",
+   "b": "f1610",
+   "type": "supports",
+   "note": "Mandatory maximum-payload testing supports the recommended payload-focused campaign."
+  },
+  {
+   "a": "f5974",
+   "b": "f1610",
+   "type": "supports",
+   "note": "Mass-dependent deceleration requirements reinforce testing at maximum payload."
+  },
+  {
+   "a": "f7012",
+   "b": "f7370",
+   "type": "elaborates",
+   "note": "Identifies physical braking tests as the source of avoidance-distance deceleration inputs."
+  },
+  {
+   "a": "f7371",
+   "b": "f9375",
+   "type": "supports",
+   "note": "Machine measurements need not wait for the final perception prototype."
+  },
+  {
+   "a": "f12565",
+   "b": "f6067",
+   "type": "supports",
+   "note": "Missing modern response figures justify measuring response times and delay distributions."
+  },
+  {
+   "a": "f6012",
+   "b": "f10612",
+   "type": "supports",
+   "note": "Limited rig-based terrain evidence motivates full-machine physical bounds."
+  },
+  {
+   "a": "f879",
+   "b": "f13699",
+   "type": "elaborates",
+   "note": "Specifies event injection and stage timestamps for the proposed end-to-end latency measurement."
+  },
+  {
+   "a": "f13679",
+   "b": "f6143",
+   "type": "elaborates",
+   "note": "Adds the South African latency-to-10%-g measurement criterion to brake characterization."
+  },
+  {
+   "a": "f772",
+   "b": "f6137",
+   "type": "elaborates",
+   "note": "Explains reduced physical testing as identification and independent falsification, not exhaustive scenario replication."
+  },
+  {
+   "a": "f7916",
+   "b": "f10667",
+   "type": "elaborates",
+   "note": "Details parameter-envelope corners for physical anchor tests covering family extremes."
+  }
+ ]
+}

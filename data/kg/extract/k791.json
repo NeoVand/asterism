@@ -1,0 +1,248 @@
+{
+ "chunkId": "k791",
+ "hash": "284bb8226e05861f",
+ "facts": [
+  {
+   "text": "A fair comparison judges the old warning system and the new braking system on the same hazards, under the same conditions and using the same yardstick, so differences reflect the systems rather than the circumstances.",
+   "quote": "A fair comparison judges the old warning system and the new braking system on the same hazards, in the same conditions, using the same yardstick",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t221"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends comparing old and new systems at the highest common layer that still answers the safety question; when sensors or mounting positions differ, that layer is the externally measured encounter rather than raw sensor data.",
+   "quote": "compare \"at the highest common layer that still answers the safety question\", which, when sensors or mounting positions differ, is the externally measured encounter rather than the raw sensor data",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t100",
+    "t105"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Directly comparable old and new system outputs use the same ground truth: warnings and interventions per hazard, missed hazards, false and nuisance alarms per hour, and warning timing.",
+   "quote": "system-level outputs against the same ground truth (warnings and interventions per hazard, missed hazards, false and nuisance alarms per hour, warning timing)",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t105",
+    "t224",
+    "t32",
+    "t31"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Fair comparison of old and new systems restricts results to a common zone, such as the ISO 21815-3 risk area, rather than each sensor's field of view.",
+   "quote": "results restricted to a common zone such as the ISO 21815-3 risk area rather than each sensor's field of view",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t222",
+    "t280",
+    "t87"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Paired results from parallel recording on the same machine are directly comparable; the booklet identifies this as the only setting in which paired tests such as McNemar's test are valid.",
+   "quote": "paired results from parallel recording on the same machine, the only setting in which paired tests such as McNemar's test are valid.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "McNemar's test",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t222",
+    "t212"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Old and new systems cannot be fairly compared using raw detection internals such as radar detections against camera boxes, coverage outside their overlapping fields of view, or conditions in which only one system was recorded.",
+   "quote": "Not comparable: raw detection internals such as radar detections against camera boxes, coverage outside the overlap of the two fields of view, and conditions that only one system was recorded in",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t86",
+    "t87"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Warning range must be normalized to hazard geometry, using separation from the machine's swept envelope or entry into a standard risk region.",
+   "quote": "Range must be normalized to hazard geometry, as separation from the machine's swept envelope or entry into a standard risk region",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t186",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A sensor mounted 3 meters farther forward can appear to have a longer warning range even though the safety margin is identical, unless range is normalized to hazard geometry.",
+   "quote": "otherwise a sensor mounted 3 meters farther forward appears to have a longer warning range while the safety margin is identical.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t100",
+    "t186"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Old logs cannot simply be replayed into a system with new sensor types or mounting positions.",
+   "quote": "old logs cannot simply be replayed into a system with new sensor types or positions",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t222",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Neural re-rendering of recorded scenes degrades when the viewpoint moves 1 to 4 meters from the recorded path.",
+   "quote": "neural re-rendering of recorded scenes degrades once the viewpoint moves 1 to 4 meters from the recorded path",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Re-rendered recorded-scene data is a development aid, not validation evidence.",
+   "quote": "re-rendered data is a development aid, not validation evidence",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t70",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Only the new system's common warning stage can be compared with the old-system baseline because the new system adds braking that the old system lacks; the braking stage is assessed against requirements in closed loop.",
+   "quote": "The new system adds braking, which the old one lacks, so only the common warning stage can be compared with the baseline; the braking stage is assessed against requirements in closed loop.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t221",
+    "t154",
+    "t63"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The strongest experiment for comparing the old warning system and new braking system is simultaneous collection with both sensor suites on one machine, judged against one independent reference trajectory.",
+   "quote": "The strongest experiment is simultaneous collection: both sensor suites on one machine, judged against one independent reference trajectory",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t105",
+    "t263"
+   ],
+   "importance": 3
+  }
+ ]
+}

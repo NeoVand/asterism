@@ -1,0 +1,115 @@
+{
+ "key": "t28",
+ "hash": "97690fd8d3f7a319",
+ "synopsis": "The studied Collision Mitigation System automatically brakes when the operator fails to respond to a proximity warning; the mining control model distinguishes warning at Level 8 from automatic intervention at Level 9 [f1, f11295, f11296]. ISO 21815-1 and -3 cover intervention through speed reduction, stopping or motion inhibition, not automatic steering; Part 3 places intervention at collision-risk level 4 or above and forbids overriding stronger operator braking, while the MOSH surface specification requires warning 2.5–3.0 seconds before intervention [f316, f5909, f9778, f5912, f5913, f2115]. Nuisance interventions are the main documented reason deployed mining proximity systems were disabled: workers at seven underground coal mines reported unnecessary shutdowns from once daily to 15 times per cut, and nearly 70% expressed concern about when and how systems take control [f116, f3013, f3287]. Validation therefore needs to address both failure to intervene and unsafe or unnecessary intervention, using matched real and simulated closed-loop runs; tuning should treat missed or late interventions as hard constraints while optimizing unnecessary braking, false warnings and productivity loss, because replay cannot establish what happens after braking changes the scene [f2141, f4812, f6671, f336]. Documented off-road intervention launches were deliberately narrow: Volvo CE's January 2023 system brakes for 2–3 seconds, Komatsu's 2019–2020 stop function operates only at slow travel or motion initiation, and Caterpillar's cited loader system inhibits reverse engagement from standstill; Hexagon announced TRL4 verification on 25 March 2026 before integrated site testing, rather than completion of that testing [f10434, f10436, f10439, f10440, f1350].",
+ "relations": [
+  {
+   "a": "f1",
+   "b": "f279",
+   "type": "same",
+   "note": "Both describe automatic braking when the operator fails to react."
+  },
+  {
+   "a": "f1",
+   "b": "f2027",
+   "type": "same",
+   "note": "Both describe the manufacturer's automatic braking intervention."
+  },
+  {
+   "a": "f1",
+   "b": "f3670",
+   "type": "same",
+   "note": "Both describe automatic braking after operator nonresponse."
+  },
+  {
+   "a": "f1",
+   "b": "f7504",
+   "type": "same",
+   "note": "Both specify automatic braking after an unanswered proximity warning."
+  },
+  {
+   "a": "f1",
+   "b": "f8249",
+   "type": "same",
+   "note": "Both describe automatic braking when the operator does not react."
+  },
+  {
+   "a": "f231",
+   "b": "f2115",
+   "type": "same",
+   "note": "Both give the MOSH warning-to-intervention interval as 2.5–3.0 seconds."
+  },
+  {
+   "a": "f3013",
+   "b": "f3285",
+   "type": "same",
+   "note": "Same seven-mine interviews and unnecessary-shutdown frequency range."
+  },
+  {
+   "a": "f1381",
+   "b": "f10436",
+   "type": "same",
+   "note": "Same January 2023 Volvo system and 2–3-second braking duration."
+  },
+  {
+   "a": "f136",
+   "b": "f6671",
+   "type": "same",
+   "note": "Same constrained tuning approach; synthesis additionally specifies keeping the Pareto front visible."
+  },
+  {
+   "a": "f6664",
+   "b": "f6926",
+   "type": "same",
+   "note": "RAND's logic transfers, but mileage figures do not fit off-road per-encounter claims."
+  },
+  {
+   "a": "f5156",
+   "b": "f2150",
+   "type": "same",
+   "note": "Both identify Part 1's detection, warning, intervention and testing scope."
+  },
+  {
+   "a": "f3905",
+   "b": "f4303",
+   "type": "same",
+   "note": "Both describe Part 3's forward/reverse warning and avoidance framework."
+  },
+  {
+   "a": "f5909",
+   "b": "f5088",
+   "type": "same",
+   "note": "Both allow slowing, stopping and motion inhibition, but exclude steering avoidance."
+  },
+  {
+   "a": "f5909",
+   "b": "f9778",
+   "type": "same",
+   "note": "Both describe the same permitted intervention modes and steering exclusion under different parts."
+  },
+  {
+   "a": "f3285",
+   "b": "f116",
+   "type": "supports",
+   "note": "Frequent unnecessary shutdowns substantiate the operational burden of nuisance interventions."
+  },
+  {
+   "a": "f2141",
+   "b": "f6671",
+   "type": "supports",
+   "note": "Two-sided safety analysis motivates constraining missed interventions while optimizing nuisance interventions."
+  },
+  {
+   "a": "f336",
+   "b": "f4812",
+   "type": "supports",
+   "note": "Replay's inability to capture braking consequences motivates closed-loop behavioral validation."
+  },
+  {
+   "a": "f10439",
+   "b": "f10434",
+   "type": "supports",
+   "note": "Komatsu's low-speed and motion-start restrictions exemplify deliberately narrow launch scope."
+  }
+ ]
+}

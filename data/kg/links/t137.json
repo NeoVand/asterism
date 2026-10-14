@@ -1,0 +1,115 @@
+{
+ "key": "t137",
+ "hash": "a21ae1dffe86b03b",
+ "synopsis": "These formats enable simulation tools to exchange scene, road, surface, scenario, label and operating-domain descriptions; alongside OSI and FMI, they serve as integration glue, but compatibility does not establish physical fidelity [f13196, f8335, f13214]. OpenUSD is domain-neutral and can represent mines and construction sites, whereas OpenDRIVE assumes road networks and fits sites without lanes poorly; stockpiles, berms, ruts and other off-road features often need additional representations [f8610, f3982, f8724]. The cited releases include OpenODD 1.0.0 on 3 April 2025, OpenSCENARIO DSL 2.2.0 on 19 March 2026, OpenDRIVE 1.9.0 in May 2026, and OpenSCENARIO XML 1.4.0 in 2026, with June reported by a secondary listing [f6707, f7152, f7156, f7149]. OpenODD and related ISO structures are useful architectural templates, but their road-oriented scope and attributes require a manufacturer- or industry-governed off-road taxonomy [f6642, f6709, f7163]. Off-road scenario standardisation remains incomplete, with missing concepts including deformable terrain, particles, vegetation, heavy-machine manipulation and sensor degradation; the booklet anticipates extensions being unlikely before mid-2027, rather than treating OpenX as unusable [f7432, f7195, f7172, f7196]. The recommended approach is a manufacturer-owned, domain-neutral, version-controlled scenario catalogue, OpenDRIVE for structured haul roads, OpenUSD and OpenMATERIAL for scenes, and OpenSCENARIO exports where required, with open-format exports and exit clauses protecting against supplier dependence [f13215, f13216, f8887].",
+ "relations": [
+  {
+   "a": "f3982",
+   "b": "f8337",
+   "type": "same",
+   "note": "Both identify poor OpenDRIVE fit for haul roads or sites without lanes."
+  },
+  {
+   "a": "f8337",
+   "b": "f8617",
+   "type": "same",
+   "note": "Duplicate statements about OpenDRIVE's road assumptions and poor fit without lane geometry."
+  },
+  {
+   "a": "f8617",
+   "b": "f16018",
+   "type": "same",
+   "note": "Glossary repeats the poor fit of OpenDRIVE for sites without lane geometry."
+  },
+  {
+   "a": "f7157",
+   "b": "f8337",
+   "type": "same",
+   "note": "Both attribute poor off-road fit to OpenDRIVE's road-network assumptions."
+  },
+  {
+   "a": "f6692",
+   "b": "f13213",
+   "type": "same",
+   "note": "Both list the same missing off-road OpenX concepts."
+  },
+  {
+   "a": "f7195",
+   "b": "f13213",
+   "type": "same",
+   "note": "Workshop and concept-project accounts repeat the missing off-road concepts."
+  },
+  {
+   "a": "f7196",
+   "b": "f7434",
+   "type": "same",
+   "note": "Both say gaps require extensions or manufacturer models, not abandonment of OpenX."
+  },
+  {
+   "a": "f7163",
+   "b": "f13209",
+   "type": "same",
+   "note": "Both require an authored and governed off-road taxonomy beyond OpenODD defaults."
+  },
+  {
+   "a": "f6709",
+   "b": "f13245",
+   "type": "same",
+   "note": "Both identify road-vehicle scope and lane- and junction-dominated default attributes."
+  },
+  {
+   "a": "f7172",
+   "b": "f13212",
+   "type": "same",
+   "note": "Both assess off-road extensions as unlikely before mid-2027."
+  },
+  {
+   "a": "f8921",
+   "b": "f13214",
+   "type": "same",
+   "note": "Format compatibility demonstrates exchange, not physically correct simulation."
+  },
+  {
+   "a": "f8724",
+   "b": "f16012",
+   "type": "same",
+   "note": "Both say road-oriented formats leave off-road terrain features needing custom representations."
+  },
+  {
+   "a": "f8610",
+   "b": "f13199",
+   "type": "same",
+   "note": "Both describe OpenUSD as domain-neutral and capable of representing mines."
+  },
+  {
+   "a": "f7156",
+   "b": "f13201",
+   "type": "same",
+   "note": "Both date OpenDRIVE 1.9.0 to May 2026."
+  },
+  {
+   "a": "f8887",
+   "b": "f13217",
+   "type": "same",
+   "note": "Both recommend open-format exports to reduce vendor and ownership-change dependence."
+  },
+  {
+   "a": "f7195",
+   "b": "f7196",
+   "type": "supports",
+   "note": "Missing off-road concepts explain why extensions or manufacturer-owned models are necessary."
+  },
+  {
+   "a": "f13202",
+   "b": "f13216",
+   "type": "supports",
+   "note": "Road-network limitations justify structured-haul-road use and additional scene representations."
+  },
+  {
+   "a": "f6708",
+   "b": "f6783",
+   "type": "elaborates",
+   "note": "Specifies OpenODD's YAML and CSV formats and restrictive versus permissive definitions."
+  }
+ ]
+}

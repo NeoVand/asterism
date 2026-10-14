@@ -1,0 +1,225 @@
+{
+ "chunkId": "k641",
+ "hash": "eb3fb83d0a270c31",
+ "facts": [
+  {
+   "text": "An equivalence argument, also called a similarity argument, is a reasoned and evidenced claim that evidence gathered on one machine variant holds for another because their differences do not affect safety-relevant behavior.",
+   "quote": "An equivalence argument, also called a similarity argument, is the reasoned and evidenced claim that evidence gathered on one machine variant also holds for another, because the differences between them do not affect the safety-relevant behavior.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t76"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends a parameterized machine-family model rather than twenty unrelated models, covering geometry and articulation, mass and payload, braking dynamics, grade capability, sensor type and firmware, mounting height and angle, occlusion, vibration, sensor-to-brake latency, and environment.",
+   "quote": "with parameters for geometry and articulation, mass and payload, braking dynamics, grade capability, sensor type and firmware, mounting height, angle and occlusion, vibration, sensor-to-brake latency and the environment [Chapter 10]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t76",
+    "t229",
+    "t230",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For every transition between machine variants, the safety case should record what changed as a configuration-controlled delta.",
+   "quote": "For every transition from machine A to machine B the safety case answers three questions. What changed, recorded as a configuration-controlled delta?",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t76",
+    "t230",
+    "t67"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For every transition between machine variants, the safety case should use sensitivity analysis to show whether the change can affect a validated phenomenon or safety output.",
+   "quote": "Can that change affect a validated phenomenon or safety output, shown by sensitivity analysis?",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "sensitivity analysis",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t76",
+    "t260",
+    "t67"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Bridging evidence for machine-variant transfer should comprise no additional evidence for irrelevant differences, targeted tests for influential differences, and new full-system anchors where new physics appears.",
+   "quote": "What bridging evidence closes the gap: none for irrelevant differences, targeted tests for influential ones, new full-system anchors where new physics appears?",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t76",
+    "t265",
+    "t216"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A machine-family model is validated at envelope corners: the smallest and largest machine, lowest and highest sensor mount, lightest and heaviest mass, and least and most favorable brake response.",
+   "quote": "The model is validated at the corners of the envelope (smallest and largest machine, lowest and highest mount, lightest and heaviest mass, least and most favorable brake response)",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t76",
+    "t261",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A new machine variant is shown to lie inside the validated machine-family hull and then receives a reduced physical \"delta\" test set, typically brake calibration plus sensor field-of-view and detection checks at the new mount.",
+   "quote": "a new variant is shown to lie inside that hull and then gets a reduced \"delta\" physical set, typically a brake calibration plus a sensor field-of-view and detection check at the new mount.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t76",
+    "t265",
+    "t264",
+    "t87"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Because geometry, articulation and brake dynamics can act non-monotonically, a machine-variant equivalence argument must demonstrate that the extreme variants bound intermediate variants.",
+   "quote": "Because geometry, articulation and brake dynamics can act non-monotonically, the claim that the extremes bound the middle must itself be demonstrated [Chapter 10].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t76",
+    "t261",
+    "t179"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Moving a sensor can invalidate the validated simulation envelope even when the software is unchanged.",
+   "quote": "moving a sensor can invalidate the validated simulation envelope even with the software unchanged [Chapter 3]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t100",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The machine with the worst stopping distance is not necessarily the machine with the worst sensor occlusion, so variant-transfer validation may need several representative machines.",
+   "quote": "the machine with the worst stopping distance is not necessarily the one with the worst sensor occlusion, so several representatives may be needed [Chapter 1]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t76",
+    "t170",
+    "t103"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet found no published off-road example of machine-variant transfer.",
+   "quote": "no published off-road example of variant transfer was found [Chapter 10].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t76",
+    "t265",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Whether the product range can collapse into a few validated parameterized machine families is a key experiment, not an established fact; both the program schedule and business case depend on the answer.",
+   "quote": "Whether the product range collapses into a few validated parameterized families is \"a key experiment, not a fact\", and both the schedule and the business case depend on the answer [Chapter 13].",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t76",
+    "t229",
+    "t342"
+   ],
+   "importance": 3
+  }
+ ]
+}

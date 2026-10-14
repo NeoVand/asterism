@@ -1,0 +1,115 @@
+{
+ "key": "t197",
+ "hash": "a0dfb27f7b6568d0",
+ "synopsis": "The strategy requires virtual testing to improve the new collision-mitigation system to meet or beat the current system and to tune thresholds and calibration before field testing; previous physical testing and tuning took three to four years per machine model [f27, f29, f8252]. On-road precedents demonstrate threshold evaluation, including a 2019 sweep of time-to-collision triggers and latencies, but no published quantitative off-road comparison with field results was found, leaving transferability unknown and constituting the programme’s main technical risk [f6346, f6558, f155]. Tuning should pursue multiple objectives under hard safety constraints rather than start with one weighted cost, and should prefer broad stable operating regions over fragile optima; detector operating-point tuning alone misses closed-loop timing and braking [f6959, f6963, f6989, f7304]. Settings include confidence thresholds, speed-dependent zones, confirmation filters and timing constants, while intervention staging should use remaining stopping margin and uncertainty rather than range alone [f6957, f6280]. Virtual tuning can explore trigger structure, grade and payload dependence and initial zone sizes, but production brake characteristics, real-site friction, adverse-condition sensor behaviour and nuisance rates require measurements and shadow-mode logs; a 2026 on-road round robin also found simulator disagreements of 0.033 seconds and 0.314 metres [f14054, f14055, f14048]. The proposed sequence is to freeze the decision architecture and sweep scenarios before hardware arrives, reserve the first six weeks after delivery for physical anchoring, then rerun calibrated sweeps and measure nuisance rates in shadow mode before enabling braking; requirements definition and field tuning may remain the real bottleneck [f14056, f14057, f14058, f10859].",
+ "relations": [
+  {
+   "a": "f153",
+   "b": "f5947",
+   "type": "same",
+   "note": "Both report on-road field checks of simulation-tuned intervention thresholds."
+  },
+  {
+   "a": "f154",
+   "b": "f5952",
+   "type": "same",
+   "note": "Both report no published quantitative off-road threshold-to-field comparison."
+  },
+  {
+   "a": "f155",
+   "b": "f5952",
+   "type": "same",
+   "note": "Both identify the off-road comparison evidence gap as the programme’s main risk."
+  },
+  {
+   "a": "f251",
+   "b": "f6374",
+   "type": "same",
+   "note": "Both report searching without finding a published off-road comparison."
+  },
+  {
+   "a": "f6374",
+   "b": "f14053",
+   "type": "same",
+   "note": "Glossary restates the missing published quantitative off-road comparison."
+  },
+  {
+   "a": "f7304",
+   "b": "f12851",
+   "type": "same",
+   "note": "Detector operating-point tuning misses closed-loop braking and serves only one objective."
+  },
+  {
+   "a": "f6957",
+   "b": "f13922",
+   "type": "same",
+   "note": "Glossary repeats the chapter’s list of tuning decision variables."
+  },
+  {
+   "a": "f6348",
+   "b": "f14047",
+   "type": "same",
+   "note": "Both describe level-ground success but collisions at 11% and 17% grades."
+  },
+  {
+   "a": "f6965",
+   "b": "f7297",
+   "type": "same",
+   "note": "Both recommend DOE and response surfaces for a few continuous tuning settings."
+  },
+  {
+   "a": "f5948",
+   "b": "f6346",
+   "type": "elaborates",
+   "note": "Adds peer-review status, publication venue and fatality-risk evaluation to the 2019 trigger sweep."
+  },
+  {
+   "a": "f6189",
+   "b": "f7304",
+   "type": "supports",
+   "note": "Trigger–latency dependence demonstrates why detector-only tuning is insufficient."
+  },
+  {
+   "a": "f6959",
+   "b": "f12856",
+   "type": "supports",
+   "note": "Distinct safety objectives motivate multi-objective tuning under hard constraints."
+  },
+  {
+   "a": "f11770",
+   "b": "f7307",
+   "type": "depends",
+   "note": "Aggregate-objective tuning requires explicitly documented acceptance of safety and business trade-offs."
+  },
+  {
+   "a": "f6591",
+   "b": "f29",
+   "type": "depends",
+   "note": "Braking-policy object-class requirements must precede threshold tuning."
+  },
+  {
+   "a": "f6348",
+   "b": "f14054",
+   "type": "supports",
+   "note": "Grade-related collisions support exploring grade dependence during virtual tuning."
+  },
+  {
+   "a": "f14055",
+   "b": "f14054",
+   "type": "depends",
+   "note": "Virtual tuning needs measured brake inputs and cannot establish key field properties itself."
+  },
+  {
+   "a": "f14057",
+   "b": "f14058",
+   "type": "depends",
+   "note": "Physical anchoring precedes calibrated scenario reruns and shadow-mode nuisance measurement."
+  },
+  {
+   "a": "f14048",
+   "b": "f6573",
+   "type": "supports",
+   "note": "Round-robin discrepancies support questioning whether highest fidelity yields the best threshold model."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t108",
+ "hash": "8f8cdae4d7aa76be",
+ "synopsis": "The corpus treats missed hazards and false positives as a coupled calibration problem: reducing misses increases false alarms, and achieving an acceptable balance in the manufacturer's proximity-awareness system took years [f11305, f10]. Automatic braking makes false positives machine-motion hazards, with potential loss of control or conflict with following plant, while mining reports associate nuisance interventions with production losses, wear and resistance to adoption [f3024, f6303, f5567]. Acceptance planning should measure scenario-conditioned detection and intervention, dangerous misses, false warnings and unnecessary interventions per operating hour, and collision avoidance; however, no acceptance value for detection probability or miss rate was found, nor a source-attributable consensus on the acceptable miss–nuisance trade-off [f2632, f2620, f2884]. With zero misses, demonstrating miss rates of at most 1%, 0.1% and 0.01% at 95% one-sided confidence requires respectively 299, 2,995 and 29,956 independent trials per claimed population; at 99% confidence, the corresponding counts are 459, 4,603 and 46,050 [f6650, f6651, f6652, f6653]. Validation must avoid circular detector-derived ground truth and replay that assumes perception succeeded, and should retain physical ISO 21815-1 clause 6 performance and false-positive tests [f5359, f5259, f7884]. Evidence remains incomplete: NIOSH's 2022 review identified false-positive testing and other validation gaps, and published complete off-road automatic-braking false-positive and false-negative rates under adverse environmental conditions were not found [f10425, f6385].",
+ "relations": [
+  {
+   "a": "f126",
+   "b": "f6650",
+   "type": "same",
+   "note": "Both require 299 zero-miss trials for a 1% bound at 95% confidence."
+  },
+  {
+   "a": "f220",
+   "b": "f126",
+   "type": "same",
+   "note": "Both state the 299-trial, zero-miss requirement."
+  },
+  {
+   "a": "f220",
+   "b": "f6650",
+   "type": "same",
+   "note": "Chapter 9 specifies independent trials per population for the same 299-trial claim."
+  },
+  {
+   "a": "f127",
+   "b": "f6651",
+   "type": "same",
+   "note": "Both require 2,995 zero-miss trials for a 0.1% bound at 95% confidence."
+  },
+  {
+   "a": "f128",
+   "b": "f6652",
+   "type": "same",
+   "note": "Both require 29,956 zero-miss trials for a 0.01% bound at 95% confidence."
+  },
+  {
+   "a": "f7559",
+   "b": "f7826",
+   "type": "same",
+   "note": "Same fog-chamber result; the latter supplies publication details."
+  },
+  {
+   "a": "f5225",
+   "b": "f5567",
+   "type": "same",
+   "note": "Same Pretoria finding on production losses, wear and adoption resistance."
+  },
+  {
+   "a": "f3024",
+   "b": "f3382",
+   "type": "same",
+   "note": "Both describe false positives becoming machine-motion commands through intervention."
+  },
+  {
+   "a": "f6385",
+   "b": "f6560",
+   "type": "same",
+   "note": "Both report missing published off-road error rates under adverse weather."
+  },
+  {
+   "a": "f11533",
+   "b": "f11665",
+   "type": "same",
+   "note": "Both identify untagged people as undetectable by tag-dependent systems."
+  },
+  {
+   "a": "f690",
+   "b": "f10425",
+   "type": "elaborates",
+   "note": "The skeptic's review adds simulation, environmental effects and real-world validation gaps."
+  },
+  {
+   "a": "f11305",
+   "b": "f2884",
+   "type": "elaborates",
+   "note": "Acceptance discussion adds intervention timing, stopping hazards and lack of consensus to the trade-off."
+  },
+  {
+   "a": "f1313",
+   "b": "f1322",
+   "type": "supports",
+   "note": "Reproduced steel-plate braking supports concern about analogous everyday off-road objects."
+  },
+  {
+   "a": "f6303",
+   "b": "f10551",
+   "type": "supports",
+   "note": "False-braking motion hazards justify separately rating false activation and missed detection."
+  },
+  {
+   "a": "f3341",
+   "b": "f2632",
+   "type": "supports",
+   "note": "Limitations of per-detection false-positive metrics support reporting warnings and interventions per operating hour."
+  },
+  {
+   "a": "f5567",
+   "b": "f5931",
+   "type": "supports",
+   "note": "Operational costs and adoption resistance support giving nuisance interventions equal acceptance weight."
+  },
+  {
+   "a": "f7726",
+   "b": "f7884",
+   "type": "depends",
+   "note": "Retaining scenario-class physical tests follows the cited ISO performance and false-positive testing requirements."
+  },
+  {
+   "a": "f967",
+   "b": "f722",
+   "type": "supports",
+   "note": "Silent-mode measurement capabilities support release-phase monitoring of misses and nuisance brakes."
+  }
+ ]
+}

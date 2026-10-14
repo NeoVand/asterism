@@ -1,0 +1,304 @@
+{
+ "chunkId": "k831",
+ "hash": "9046f4614ad32527",
+ "facts": [
+  {
+   "text": "The validity envelope is the documented range of machines, sensors, conditions and scenarios within which a simulation has been validated against physical data; extrapolation means using the simulation outside that range, where credibility fails fastest.",
+   "quote": "The validity envelope is the documented range of machines, sensors, conditions and scenarios within which a simulation has been validated against physical data; extrapolation is using the simulation outside that range, and it is where credibility fails fastest.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t234",
+    "t263"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The program's simulation validity record documents machine models, mass and payload ranges, articulation and braking configuration; sensor hardware, firmware, installation coordinates and mounting tolerances; software versions; and validated and excluded object classes.",
+   "quote": "machine models, mass and payload range, articulation and braking configuration; sensor hardware, firmware, installation coordinates and mounting tolerances; software versions; validated and excluded object classes;",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t262",
+    "t100",
+    "t168",
+    "t230"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The program's simulation validity record documents surface types, grades, rain, snow, fog and dust ranges, illuminance, glare and temperature; speed ranges, brake delay and friction domain; and covered and uncovered maneuvers.",
+   "quote": "surface types, grades, rain, snow, fog and dust ranges, illuminance, glare and temperature; speed ranges, brake delay and friction domain; maneuvers covered and not covered;",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t102",
+    "t174",
+    "t171",
+    "t169"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The program's simulation validity record documents physical validation points versus interpolated or extrapolated results, the uncertainty budget, known discrepancies, and change triggers that invalidate the evidence.",
+   "quote": "where physical validation points exist versus where results are interpolated or extrapolated; the uncertainty budget; known discrepancies; and the change triggers that invalidate the evidence [Chapter 10].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t259",
+    "t262",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The frameworks accept simulation interpolation between physical anchor points inside the validity envelope when uncertainty is quantified.",
+   "quote": "Inside the envelope, between physical anchor points, the simulation interpolates, which the frameworks accept with quantified uncertainty.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t259",
+    "t263"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet requires every simulation result to be marked as interpolated or extrapolated and every extrapolated result to include an extra uncertainty margin.",
+   "quote": "mark every result as interpolated or extrapolated; never present an extrapolated result without an extra uncertainty margin;",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t259"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends showing the safety board a map of validated, conditionally supported and unsupported simulation regions rather than a score.",
+   "quote": "show the board a map of validated, conditionally supported and unsupported regions rather than a score [Chapter 10].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t269",
+    "t71"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The European automated-vehicle regulation requires the credibility assessment to define the envelope in which the virtual tool can be used.",
+   "quote": "The European automated-vehicle regulation requires the credibility assessment to \"define the envelope in which the virtual tool can be used\"",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t234",
+    "t275"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Aviation guidance limits simulation extrapolation to conditions similar to the validation conditions.",
+   "quote": "aviation guidance limits extrapolation to conditions similar to the validation [Chapter 10].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t246"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The Columbia foam-strike model was conservative for small impacts, but the assumed conservative bias did not persist for an impact hundreds of times larger.",
+   "quote": "The Columbia foam-strike model had been conservative for small impacts; that bias was assumed to persist for an impact hundreds of times larger, and it did not.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "Columbia",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t261",
+    "t319",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Conservatism has a validity domain: a perception model conservative in light dust cannot be assumed conservative in dense dust, and a brake model conservative on dry soil cannot be assumed conservative on an icy grade.",
+   "quote": "a perception model conservative in light dust cannot be assumed conservative in dense dust; a brake model conservative on dry soil cannot be assumed conservative on an icy grade.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t102",
+    "t182",
+    "t174",
+    "t85"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A heavy-truck braking system worked at 40 to 85 km/h but failed below 40 km/h, demonstrating that testing a few speeds and interpolating is unsafe unless monotonic behavior has been demonstrated.",
+   "quote": "A heavy-truck braking system that worked at 40 to 85 km/h but failed below 40 km/h shows why testing a few speeds and interpolating is unsafe unless monotonic behavior has been demonstrated [Chapter 2].",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    2
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t169",
+    "t25"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For simulation cases beyond the physically validated range, the program should add a physical anchor at the new edge or mark the result unsupported and add an extra margin; results should be recorded in the validity envelope with their evidence.",
+   "quote": "Add a physical anchor at the new edge, or mark the result unsupported and add an extra margin",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t263",
+    "t70",
+    "t259"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The program's validity envelope is likely to exclude conditions the collision mitigation system most needs to handle because natural fog, snow, dense dust and low sun may not occur during the four-month validation window.",
+   "quote": "The envelope is likely to exclude exactly the conditions the system most needs to handle. Natural fog, snow, dense dust and low sun may not occur during a four-month window",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t43",
+    "t45",
+    "t102",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Physical validation anchors for natural fog, snow, dense dust and low sun require chambers, artificial dust and night sessions booked before mid-2027; otherwise those conditions will remain outside the program's validity envelope.",
+   "quote": "physical anchors in those classes need chambers, artificial dust and night sessions booked before mid-2027, or the envelope will not contain them [Chapter 10].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t263",
+    "t261",
+    "t102",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The responsible release fallback is to enable automatic braking only inside the validity envelope where the safety case is closed and retain warning-only behavior outside that envelope.",
+   "quote": "The responsible fallback is to release automatic braking only inside the envelope where the safety case is closed, and keep warning-only behavior outside it [Chapter 13].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t73",
+    "t261",
+    "t67",
+    "t83",
+    "t25"
+   ],
+   "importance": 3
+  }
+ ]
+}

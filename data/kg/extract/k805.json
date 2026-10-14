@@ -1,0 +1,226 @@
+{
+ "chunkId": "k805",
+ "hash": "ac927175d4b1733f",
+ "facts": [
+  {
+   "text": "Verification, validation and uncertainty quantification (VVUQ) is the three-part discipline of checking that a simulation program is built correctly, matches the real world, and quantifying how much its answers could still be wrong.",
+   "quote": "VVUQ is the three-part discipline of checking that a simulation program is built correctly (verification), that it matches the real world (validation), and how much its answers could still be wrong (uncertainty quantification).",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t235"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Simulation verification confirms that software solves its equations correctly, without programming bugs and with numerical errors that are small and known.",
+   "quote": "verification confirms that the software solves its equations correctly, with no programming bugs and with numerical errors that are small and known.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t236",
+    "t235"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simulation validation compares simulation outputs with measurements from physical tests of the real system under the conditions in which the simulation will be used.",
+   "quote": "Validation compares the simulation's outputs with measurements from physical tests of the real system, under the conditions the simulation will be used for.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t238",
+    "t235"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Uncertainty quantification assigns numerical values to input spread such as payload or tire grip, measurement error in test data, numerical error, random variation between runs, and model-form uncertainty caused by model simplification.",
+   "quote": "the spread of inputs such as payload or tire grip, measurement error in the test data, numerical error, random variation between runs, and model-form uncertainty, the part of the disagreement caused by the model being a simplification.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t235",
+    "t259"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASME distinguishes verification as checking implementation against mathematics, validation as checking whether a model represents the real application, and uncertainty quantification as sizing the remaining doubt.",
+   "quote": "ASME: verification asks whether the implementation matches the mathematics, validation asks whether the model represents the real application, and UQ sizes the remaining doubt [Chapter 13].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [
+    {
+     "name": "ASME",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t235"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Verification, validation and uncertainty quantification do not substitute for one another; a verified simulation model can still be wrong about reality.",
+   "quote": "The three do not substitute for one another. A verified model can be wrong about reality.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t235",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A validated simulation model can be used outside the conditions in which the model was validated.",
+   "quote": "A validated model can be used outside the conditions it was validated in.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t235"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A simulation model can agree with physical tests on average while its uncertainty band is wider than the safety margin.",
+   "quote": "A model can agree with tests on average while its uncertainty band is wider than the safety margin.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t235",
+    "t258",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Calibrating a model to a test is not validation, according to the booklet, aviation guidance, ASME, NASA and the nuclear regulator.",
+   "quote": "calibrating a model to a test is not validation, a point made outright in aviation guidance and equally by ASME, NASA and the nuclear regulator [Chapter 10].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [
+    {
+     "name": "ASME",
+     "kind": "organization"
+    },
+    {
+     "name": "NASA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t237",
+    "t235"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The VVUQ loop compares instrumented physical machine tests with a verified simulation run using the same inputs, using agreed metrics and tolerances, then quantifies measurement, input, numerical and model-form uncertainty.",
+   "quote": "A[\"Real world: instrumented physical tests on the machine\"] --> C[\"Compare: agreed metrics, agreed tolerances\"]\n    B[\"Model: the verified simulation, run with the same inputs\"] --> C\n    C --> D[\"Quantify: measurement, input, numerical and model-form uncertainty\"]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t235",
+    "t250",
+    "t258"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The VVUQ decision checks whether remaining uncertainty is smaller than the safety margin for the particular decision within the declared validity envelope. If not, the model should be improved, the envelope narrowed, or physical tests added; if so, the model can be used inside the declared envelope with caveats.",
+   "quote": "E{\"Decide: is the remaining uncertainty smaller than the safety margin, for this decision, inside this envelope?\"}\n    E -->|No| F[\"Improve the model, narrow the envelope, or add physical tests\"]\n    F --> B\n    E -->|Yes| G[\"Use the model inside the declared envelope, with caveats\"]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t235",
+    "t261",
+    "t264"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Every framework compared in the booklet uses the VVUQ loop, with the effort scaled to the risk of a wrong decision.",
+   "quote": "Every framework the booklet compared is built on this loop, with the effort scaled to the risk of a wrong decision [Chapter 10].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t235",
+    "t239"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For the heavy off-road collision-mitigation program, the booklet recommends separate verification, validation and uncertainty results for sensor models, machine dynamics, brake actuation, environment and system timing, rather than one global “validated” label.",
+   "quote": "the booklet asks for separate verification, validation and uncertainty results for the sensor models, machine dynamics, brake actuation, environment and system timing, rather than one global \"validated\" label [Chapter 13].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t235",
+    "t234",
+    "t22"
+   ],
+   "importance": 3
+  }
+ ]
+}

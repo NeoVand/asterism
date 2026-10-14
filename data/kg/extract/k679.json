@@ -1,0 +1,211 @@
+{
+ "chunkId": "k679",
+ "hash": "3d7df4b5086bc1a0",
+ "facts": [
+  {
+   "text": "Machine-learning data are divided into training data to teach the detector, validation data to choose settings, and test data to score performance; the independence rule requires that scoring data never be used in training.",
+   "quote": "Machine-learning data are split into three parts, one to teach the detector, one to choose its settings and one to score it honestly, and the independence rule says the scoring data must never have touched the teaching.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t113",
+    "t231"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Leakage of any test example into training, even indirectly, makes the detector's test score flattering and meaningless.",
+   "quote": "If any test example leaks into training, even indirectly, the test score becomes flattering and meaningless.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t113",
+    "t219"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the booklet, validation usually means proving that a system or model is fit for purpose; a machine-learning validation set is a narrower use of the word.",
+   "quote": "in this booklet \"validation\" usually means proving that a system or model is fit for purpose; the machine-learning \"validation set\" is a narrower use of the same word.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t65",
+    "t113"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For the collision-mitigation program, validation and estimation data must be real or physically independent of the training-data generator, with different assets, sites, people and generator, and independence must be documented in a data-lineage record.",
+   "quote": "validation and estimation data must be real or physically independent of the training-data generator, with different assets, sites, people and generator, documented in a data-lineage record [Chapter 9].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t231",
+    "t113",
+    "t114",
+    "t263"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Data lineage records where each piece of data came from and what it has been used for, allowing independence to be demonstrated rather than assumed.",
+   "quote": "Data lineage is the recorded history of where each piece of data came from and what it has been used for, so independence can be shown rather than assumed.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t231"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Physical calibration, validation and final confirmation datasets should be preallocated before prototype testing begins.",
+   "quote": "calibration, validation and final confirmation datasets should be preallocated before prototype testing begins",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t263",
+    "t237",
+    "t218"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Using every physical test case to tune parameters leaves no untouched evidence for validation or final confirmation.",
+   "quote": "if every physical case is used to tune parameters, no untouched evidence remains [Chapter 10].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    10
+   ],
+   "entities": [],
+   "terms": [
+    "t263",
+    "t237",
+    "t219"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The frozen estimation set should be run only at release candidates and must never be optimized against.",
+   "quote": "The frozen estimation set should be run only at release candidates and never optimized against [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t219",
+    "t113"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The recommended detector-development loop uses real logs for statistics, synthesizes targeted gaps, trains the detector, tests the detector on untouched real data, and collects targeted real data for the gaps found.",
+   "quote": "real logs feed the statistics, targeted gaps are synthesized, the detector is trained, it is tested on untouched real data, and targeted real data are collected for the gaps found [Chapter 9].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t113",
+    "t263",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The skeptic's review identifies overfitting the collision-mitigation function to the simulator as a critical failure mode.",
+   "quote": "The skeptic's review names \"the function is overfitted to the simulator\" as a critical failure mode",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t219",
+    "t267",
+    "t82"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An early sign of simulator overfitting is improving virtual metrics while held-out real performance stalls.",
+   "quote": "whose early sign is virtual metrics improving while held-out real performance stalls",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t219",
+    "t82",
+    "t263"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The skeptic's review recommends independent withheld physical datasets and no tuning on final validation sets as the remedy for simulator overfitting.",
+   "quote": "whose remedy is independent withheld physical datasets and no tuning on final validation sets [Chapter 13].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t219",
+    "t263",
+    "t220"
+   ],
+   "importance": 3
+  }
+ ]
+}

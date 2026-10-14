@@ -1,0 +1,303 @@
+{
+ "chunkId": "k761",
+ "hash": "ad3ac7aed196a48f",
+ "facts": [
+  {
+   "text": "Required detection range is the distance sensors must reliably see, calculated backwards from the machine's stopping distance plus a safety margin.",
+   "quote": "The required detection range is how far the sensors must reliably see, worked out backwards from how far the machine needs to stop plus a safety margin.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t193",
+    "t170"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Required detection range is calculated from the allowed machine speed and full stopping distance including every delay, plus desired remaining clearance and sensor measurement error; detection must meet this range in every approved operating condition.",
+   "quote": "work out the full stopping distance including every delay, add the clearance you want left, add the sensor's own measurement error, and that is how far the sensor must detect objects in every condition the system is approved for.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t193",
+    "t172",
+    "t194",
+    "t140"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3 requires detection distance to be large enough to allow a machine to stop.",
+   "quote": "ISO 21815-3 puts it as a requirement: the detection distance \"shall be large enough to allow a machine to stop\" [Chapter 8].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t193",
+    "t280"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For the example 40 t machine traveling at 15 km/h (4.2 m/s) on a 10 percent downgrade, a 1.0 s delay contributes 4.2 m, net braking deceleration of 2.0 m/s² contributes 4.3 m, residual safe distance is 1.0 m, and assumed sensor measurement error is 0.5 m. The required detection range is 4.2 + 4.3 + 1.0 + 0.5 = 10 m.",
+   "quote": "the delay chain is 1.0 s, so 4.2 m at full speed; braking at a net 2.0 m/s² takes 4.3 m; the residual safe distance is 1.0 m; and suppose the sensor places objects within 0.5 m. The required detection range is 4.2 + 4.3 + 1.0 + 0.5 = 10 m.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t193",
+    "t170",
+    "t172",
+    "t173",
+    "t168"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Changing only the example machine's speed to 30 km/h (8.3 m/s) doubles delay distance to 8.3 m and quadruples braking distance to 17.4 m, requiring about 27 m detection range.",
+   "quote": "At 30 km/h (8.3 m/s) the delay distance doubles to 8.3 m and the braking distance quadruples to 17.4 m, so about 27 m is needed.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t193",
+    "t169",
+    "t170",
+    "t172"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Changing only the example machine's brake-system delay to 2.0 s at 15 km/h requires a detection range of 8.3 + 4.3 + 1.5, or about 14 m.",
+   "quote": "A slower brake system with 2.0 s of delay at 15 km/h needs 8.3 + 4.3 + 1.5 = about 14 m.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t193",
+    "t172",
+    "t170"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Changing the example machine's surface to mud with only 1.0 m/s² net deceleration at 15 km/h requires a detection range of 4.2 + 8.7 + 1.5, or about 14 m.",
+   "quote": "A machine on mud with only 1.0 m/s² of net deceleration needs 4.2 + 8.7 + 1.5 = about 14 m at 15 km/h.",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t193",
+    "t174",
+    "t169",
+    "t170"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Required detection range varies over speed, grade, load, surface and delay rather than being one fixed number; the system must either detect that far or limit machine speed.",
+   "quote": "The required range is therefore not one number but a surface over speed, grade, load, surface and delay, and the system must either see that far or limit the speed.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t193",
+    "t169",
+    "t173",
+    "t174",
+    "t172"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An early haul-truck study derived detection ranges of 15 m to the sides for people, 50 m to the rear and 100 m to the front from a 0.5 s reaction time plus braking.",
+   "quote": "an early haul-truck study derived 15 m to the sides for people, 50 m to the rear and 100 m to the front from a 0.5 s reaction time plus braking",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t193",
+    "t3",
+    "t35"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The South African MOSH specification requires 200 m machine-to-machine detection on surface mines.",
+   "quote": "the South African MOSH specification requires 200 m machine-to-machine detection on surface mines",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    8
+   ],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    },
+    {
+     "name": "South Africa",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t193",
+    "t302",
+    "t307"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The US rule for rear sensing on surface coal equipment specifies only that the sensed area must give an endangered person adequate time to leave.",
+   "quote": "the US rule for rear sensing on surface coal equipment says only that the area must give an endangered person adequate time to leave [Chapters 3, 8].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    8
+   ],
+   "entities": [
+    {
+     "name": "United States",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t193",
+    "t300",
+    "t14"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Required detection range must be reliable range rather than best-case range; on-road field measurements in heavy rain and fog with visibility under 50 m found metal targets unobserved at 20 to 30 m.",
+   "quote": "Range must be reliable range, not best-case range: on-road field measurements in heavy rain and in fog with visibility under 50 m showed metal targets not observed at 20 to 30 m [Chapter 8].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t193",
+    "t102",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Detection zones must cover the collision-risk area in shape as well as reach; ISO 21815-3 requires any smaller-zone limitation to be stated in the operator's manual.",
+   "quote": "the detection zone has to cover the collision-risk area in shape as well as reach; if it is smaller, ISO 21815-3 requires the limitation to be stated in the operator's manual [Chapter 3].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t187",
+    "t193",
+    "t280"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO's distance budget starts at detection, so no brake model can recover lost margin when dust, fog, darkness, glare, mud on a sensor, self-occlusion, vibration or poor mounting reduce reliable detection range below required stopping distance.",
+   "quote": "If dust, fog, darkness, glare, mud on a sensor, self-occlusion, vibration or poor mounting cut reliable detection range below the required stopping distance, no brake model can recover the lost margin",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "ISO",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t193",
+    "t102",
+    "t103",
+    "t100",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Required detection range links perception validation and braking validation: sensor simulation must supply detection delay, range and error distributions to braking simulation.",
+   "quote": "The required range is also the link between perception validation and braking validation: sensor simulation must deliver detection delay, range and error distributions into the braking simulation [Chapter 8].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t193",
+    "t85",
+    "t182",
+    "t127",
+    "t172"
+   ],
+   "importance": 3
+  }
+ ]
+}

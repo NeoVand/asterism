@@ -1,0 +1,370 @@
+{
+ "chunkId": "k897",
+ "hash": "89acf3a4627537b0",
+ "facts": [
+  {
+   "text": "Terrain and soil tools calculate ground deformation under a machine, bucket digging into a pile, and loose-material flow; soft ground changes how a machine stops.",
+   "quote": "Terrain and soil tools calculate how the ground deforms under a machine, how a bucket digs into a pile and how loose material flows, because soft ground changes how a machine stops.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t325",
+    "t181",
+    "t170"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The Soil Contact Model (SCM) is a fast, semi-empirical method from Bekker and Wong that models deformable ground using pressure-sinkage rules.",
+   "quote": "The Soil Contact Model (SCM) is a fast, semi-empirical method from Bekker and Wong that treats the ground as a deformable mat with pressure-sinkage rules.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Soil Contact Model (SCM)",
+     "kind": "method"
+    },
+    {
+     "name": "Bekker",
+     "kind": "person"
+    },
+    {
+     "name": "Wong",
+     "kind": "person"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t325"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The Discrete Element Method (DEM) simulates thousands or millions of individual grains and their collisions; DEM is realistic for piles and digging but very slow.",
+   "quote": "The Discrete Element Method (DEM) simulates thousands or millions of individual grains and their collisions, which is realistic for piles and digging but very slow.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Discrete Element Method (DEM)",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t325",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Smoothed Particle Hydrodynamics (SPH) and related continuum methods represent flowing soil with particles; Chrono calls its version CRM.",
+   "quote": "Smoothed Particle Hydrodynamics (SPH) and related continuum methods treat the soil as a flowing material represented by particles; Chrono calls its version CRM",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Smoothed Particle Hydrodynamics (SPH)",
+     "kind": "method"
+    },
+    {
+     "name": "Project Chrono",
+     "kind": "tool"
+    },
+    {
+     "name": "CRM",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t325"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "EDEM is a DEM program for bulk material such as soil, ore and coal, and couples with multibody tools.",
+   "quote": "EDEM, a DEM program for bulk material such as soil, ore and coal that couples with multibody tools",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    8,
+    11
+   ],
+   "entities": [
+    {
+     "name": "EDEM",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t325",
+    "t181",
+    "t324"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Chapter 11 lists EDEM as Simcenter EDEM, while Chapter 8 cites an Altair MotionSolve tutorial coupling a tracked vehicle to EDEM.",
+   "quote": "Chapter 11 lists it as Simcenter EDEM; Chapter 8 cites an Altair MotionSolve tutorial that couples a tracked vehicle to EDEM",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Simcenter EDEM",
+     "kind": "tool"
+    },
+    {
+     "name": "Altair MotionSolve",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t325",
+    "t324",
+    "t175"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Fraunhofer ITWM Demify is a research and service product for DEM-oriented soil-tool interaction in heavy machinery.",
+   "quote": "Fraunhofer ITWM Demify, DEM-oriented soil-tool interaction for heavy machinery, a research and service product",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    8,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Fraunhofer ITWM Demify",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t325",
+    "t181",
+    "t1"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Project Chrono provides SCM, CRM and DEM terrain models.",
+   "quote": "Project Chrono's terrain models (SCM, CRM and DEM)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    8,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Project Chrono",
+     "kind": "tool"
+    },
+    {
+     "name": "Soil Contact Model (SCM)",
+     "kind": "method"
+    },
+    {
+     "name": "CRM",
+     "kind": "method"
+    },
+    {
+     "name": "Discrete Element Method (DEM)",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t325",
+    "t181"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Project Chrono developers report that CRM runs 50 to 200 times slower than real time and requires a GPU from one specific maker, which the passage does not name.",
+   "quote": "where the developers report CRM running 50 to 200 times slower than real time and needing a graphics processing unit (GPU) from one specific maker",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    8,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Project Chrono",
+     "kind": "tool"
+    },
+    {
+     "name": "CRM",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t339",
+    "t336",
+    "t181"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The terrain and soil tools identified in the booklet include AGX Terrain, AGX Granular and Mevea's soil simulation.",
+   "quote": "AGX Terrain and AGX Granular; Mevea's soil simulation",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    8,
+    11
+   ],
+   "entities": [
+    {
+     "name": "AGX Terrain",
+     "kind": "tool"
+    },
+    {
+     "name": "AGX Granular",
+     "kind": "tool"
+    },
+    {
+     "name": "Mevea",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t325"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MAVS includes a tire-soil model for sand and clay.",
+   "quote": "MAVS, with a tire-soil model for sand and clay",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    8,
+    11
+   ],
+   "entities": [
+    {
+     "name": "MAVS",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t325",
+    "t180"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet finds high-detail soil simulation far too slow for scenario sweeps.",
+   "quote": "The booklet finds high-detail soil simulation far too slow for scenario sweeps",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t325",
+    "t339",
+    "t143"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Uncertain soil inputs can overwhelm the fidelity of soil simulation.",
+   "quote": "notes that uncertain soil inputs can overwhelm fidelity.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t325",
+    "t125",
+    "t259"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet recommends a multi-fidelity soil-modeling approach: use DEM or deformable terrain to learn how stopping distance depends on soil, slope and payload, fit simpler parameterized models for large regression testing, and confirm the parameter envelope with targeted physical tests.",
+   "quote": "use DEM or deformable terrain to learn how stopping distance depends on soil, slope and payload, fit simpler parameterized models for the large regression, and confirm the parameter envelope with targeted physical tests",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8,
+    11
+   ],
+   "entities": [
+    {
+     "name": "Discrete Element Method (DEM)",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t183",
+    "t170",
+    "t181",
+    "t184",
+    "t161"
+   ],
+   "importance": 3
+  }
+ ]
+}

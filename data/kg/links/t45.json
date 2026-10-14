@@ -1,0 +1,115 @@
+{
+ "key": "t45",
+ "hash": "4d1238d773aad8fd",
+ "synopsis": "The braking system must work across rain, snow, fog, dust, dusk, darkness and glare, but coverage cannot be assumed to transfer between different sites, machines and weather combinations [f285, f3599, f614]. The planned mid-2027-plus-four-month validation window falls in northern summer and autumn, excluding natural snow, freezing fog and low winter sun; winter 2026–2027 is the last cold-season collection opportunity before that window [f11943, f10461]. Start existing warning-fleet sensor recording in October 2026 and continue through winter, capturing raw sensors, machine buses and environmental metadata; preferentially selecting good-weather, daytime recordings would bias coverage [f97, f728, f5661]. Weather chambers, generated dust, fog and rain, southern-hemisphere sites and winter fleet recordings can partly mitigate the seasonal shortfall, but proving grounds cannot control weather or establish natural exposure, dust remains the biggest off-road sensor-simulation gap, and no accepted simulated-weather realism score exists [f777, f5729, f11949, f11950]. The proposed coverage strata already exceed 7,000 cells, statistical demonstration of off-road weather generalisation remains unresolved, and expert judgment rejects a newcomer delivering a fully credible all-weather toolchain by mid-2027 [f5468, f2879, f1590].",
+ "relations": [
+  {
+   "a": "f285",
+   "b": "f1177",
+   "type": "same",
+   "note": "Both require operation across the same seven weather and light conditions."
+  },
+  {
+   "a": "f285",
+   "b": "f2033",
+   "type": "same",
+   "note": "Acceptance chapter repeats the seven-condition operational requirement."
+  },
+  {
+   "a": "f285",
+   "b": "f3676",
+   "type": "same",
+   "note": "Virtual-site chapter repeats the same weather and light requirement."
+  },
+  {
+   "a": "f285",
+   "b": "f5131",
+   "type": "same",
+   "note": "Comparison chapter repeats the same seven-condition operational requirement."
+  },
+  {
+   "a": "f285",
+   "b": "f6623",
+   "type": "same",
+   "note": "Coverage chapter repeats the same weather and light requirement."
+  },
+  {
+   "a": "f285",
+   "b": "f7510",
+   "type": "same",
+   "note": "Simulation-trust chapter repeats the same weather and light requirement."
+  },
+  {
+   "a": "f285",
+   "b": "f8255",
+   "type": "same",
+   "note": "Tools chapter repeats the same weather and light requirement."
+  },
+  {
+   "a": "f98",
+   "b": "f10460",
+   "type": "same",
+   "note": "Both identify the absence of a northern cold season in the validation window."
+  },
+  {
+   "a": "f10461",
+   "b": "f10493",
+   "type": "same",
+   "note": "Both identify winter 2026–2027 as the final pre-validation cold-season opportunity."
+  },
+  {
+   "a": "f10461",
+   "b": "f11944",
+   "type": "same",
+   "note": "Glossary repeats the last opportunity to collect winter data before validation."
+  },
+  {
+   "a": "f10429",
+   "b": "f10462",
+   "type": "same",
+   "note": "Both report that Barrick's collision-system testing had not covered snow."
+  },
+  {
+   "a": "f98",
+   "b": "f11943",
+   "type": "elaborates",
+   "note": "Specifies summer and autumn timing and the missing natural winter conditions."
+  },
+  {
+   "a": "f97",
+   "b": "f10461",
+   "type": "depends",
+   "note": "October recording must capture the final winter opportunity before validation."
+  },
+  {
+   "a": "f334",
+   "b": "f97",
+   "type": "supports",
+   "note": "Existing warning systems can provide the immediately recommended winter recordings."
+  },
+  {
+   "a": "f777",
+   "b": "f11943",
+   "type": "depends",
+   "note": "Partial mitigation methods address the validation window's missing seasonal conditions."
+  },
+  {
+   "a": "f5468",
+   "b": "f10614",
+   "type": "elaborates",
+   "note": "Quantifies the combinatorial coverage problem as exceeding 7,000 cells."
+  },
+  {
+   "a": "f5661",
+   "b": "f5573",
+   "type": "contradicts",
+   "note": "Preferential good-weather sampling threatens the claimed capture of the environmental distribution."
+  },
+  {
+   "a": "f614",
+   "b": "f3599",
+   "type": "supports",
+   "note": "Concrete transfer failures explain why universal site, machine and weather coverage cannot be assumed."
+  }
+ ]
+}

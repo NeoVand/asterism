@@ -1,0 +1,115 @@
+{
+ "key": "t339",
+ "hash": "8e77700ce497147a",
+ "synopsis": "The booklet concludes that compute is cheap relative to engineering labor, but its value depends on simulated time delivered per wall-clock hour; real-time factors must be benchmarked on the actual machine geometry and sensor set [f198, f8309, f13424, f13425]. Recorded-data replay, semantic/object-list replay and SIL are economical routes to large test volumes, whereas coupled high-fidelity terrain models are unsuitable for exhaustive sweeps and excessive fidelity threatens the four-month validation window [f332, f5257, f527, f6103, f13063]. Sensor and weather compute costs span more than three orders of magnitude: examples include 14 hours for a 12-second CPU radar scenario, approximately 12 ms per GPU radar frame, and 20 seconds per diffusion-weather image, but these are examples rather than planning constants [f4451, f4453, f4454, f4456, f12963]. Listed GPU rates are about USD 1.734–1.861 per hour; the booklet estimates ten continuously running GPUs over four months at roughly USD 54,000 and at most about 29,000 GPU-hours, limiting full-sensor-fidelity scenario coverage [f8310, f8311, f8312, f8313]. The assumed thousands of nightly runs and throughput for about 6,000 zero-miss trials across 20 strata plus hundreds of exposure hours remain unquantified, with a recommendation to fix the run and physical-correlation budget before mid-2027 [f7450, f7449, f7451]. Actual program compute, capacity and triage costs are absent from the brief, independent published off-road safety-validation compute costs and ROI were not found, and the proposed compute/triage bottleneck lacks program-specific evidence [f10739, f10615, f10789, f10790].",
+ "relations": [
+  {
+   "a": "f198",
+   "b": "f8309",
+   "type": "same",
+   "note": "Both conclude compute is cheap relative to engineering labor."
+  },
+  {
+   "a": "f3762",
+   "b": "f13150",
+   "type": "same",
+   "note": "Both report over 800 compute hours and over 300 manual-selection hours."
+  },
+  {
+   "a": "f3762",
+   "b": "f4349",
+   "type": "same",
+   "note": "Same EUVS effort figures, qualified as indirect on-road evidence."
+  },
+  {
+   "a": "f13150",
+   "b": "f4349",
+   "type": "same",
+   "note": "Same scene-reconstruction compute and manual-selection benchmark."
+  },
+  {
+   "a": "f3763",
+   "b": "f4227",
+   "type": "same",
+   "note": "Both report training taking up to four hours per scene."
+  },
+  {
+   "a": "f6103",
+   "b": "f6474",
+   "type": "same",
+   "note": "Both reject coupled DEM, SPH or FEM terrain for scenario sweeps."
+  },
+  {
+   "a": "f6469",
+   "b": "f6103",
+   "type": "supports",
+   "note": "High computational expense explains unsuitability for exhaustive sweeps."
+  },
+  {
+   "a": "f10509",
+   "b": "f10615",
+   "type": "same",
+   "note": "Both report missing published off-road virtual-validation compute costs and ROI."
+  },
+  {
+   "a": "f6972",
+   "b": "f7319",
+   "type": "elaborates",
+   "note": "Adds the unresolved policy choice among Pareto trade-offs."
+  },
+  {
+   "a": "f332",
+   "b": "f5257",
+   "type": "elaborates",
+   "note": "Identifies semantic/object-list replay as the cheapest scenario-sweep replay form."
+  },
+  {
+   "a": "f13424",
+   "b": "f8309",
+   "type": "supports",
+   "note": "Quantifies why real-time factor determines what compute expenditure buys."
+  },
+  {
+   "a": "f4453",
+   "b": "f12963",
+   "type": "elaborates",
+   "note": "Supplies the CPU radar runtime example cautioned against treating as a planning constant."
+  },
+  {
+   "a": "f8312",
+   "b": "f8313",
+   "type": "elaborates",
+   "note": "Adds GPU-hour capacity and fidelity limits to the four-month cost estimate."
+  },
+  {
+   "a": "f7449",
+   "b": "f7450",
+   "type": "contradicts",
+   "note": "Assumed nightly throughput lacks quantified support for required validation volumes."
+  },
+  {
+   "a": "f7451",
+   "b": "f7449",
+   "type": "depends",
+   "note": "Budget planning requires resolving unquantified compute and HIL throughput."
+  },
+  {
+   "a": "f4350",
+   "b": "f13063",
+   "type": "supports",
+   "note": "Wall-clock test throughput matters because excessive fidelity can consume the validation window."
+  },
+  {
+   "a": "f10507",
+   "b": "f10739",
+   "type": "elaborates",
+   "note": "Details missing capacity, licensing, annotation and triage costs behind the budget gap."
+  },
+  {
+   "a": "f10789",
+   "b": "f10790",
+   "type": "contradicts",
+   "note": "Proposed bottleneck is not backed by program-specific evidence."
+  }
+ ]
+}

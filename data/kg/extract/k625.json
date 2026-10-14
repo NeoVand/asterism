@@ -1,0 +1,260 @@
+{
+ "chunkId": "k625",
+ "hash": "d757d8e5134f1c1b",
+ "facts": [
+  {
+   "text": "Diagnostic coverage is the share of dangerous faults that a system can detect itself; dead time is a period when the safety function provides no protection because a fault is undetected or the function is degraded or switched off.",
+   "quote": "Diagnostic coverage is the share of dangerous faults that the system can detect by itself, and dead time is any period during which the safety function is not actually protecting anyone",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t60",
+    "t56"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Diagnostic coverage is calculated as the rate of detected dangerous failures divided by the rate of all dangerous failures, expressed as a percentage.",
+   "quote": "the rate of detected dangerous failures divided by the rate of all dangerous failures, as a percentage.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t60"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 13849 uses four diagnostic-coverage bands: none below 60 percent, low from 60 to 90 percent, medium from 90 to 99 percent, and high at 99 percent and above.",
+   "quote": "ISO 13849 uses four bands: none (below 60 percent), low (60 to 90), medium (90 to 99) and high (99 and above).",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 13849",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t60",
+    "t287"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Self-tests supporting diagnostic coverage include timely heartbeat messages, sensor-value plausibility checks, comparison of two sensors, and confirmation that brake pressure rose after a brake command.",
+   "quote": "The self-tests that earn the figure include a heartbeat message that must arrive on time, plausibility checks on sensor values, comparison of two sensors, and confirming that brake pressure rose after a brake command.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t60",
+    "t84",
+    "t182"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Safety-function dead time includes the interval from fault occurrence to reaching a safe state, start-up before self-tests complete, sensor blindness from dust or snow, and periods in degraded mode.",
+   "quote": "the interval between a fault occurring and the safe state being reached, start-up before self-tests complete, periods when a sensor is blinded by dust or snow, and time in a degraded mode.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t60",
+    "t55",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet recommends availability, time in degraded mode, and fault-detection coverage as metrics for the safety function.",
+   "quote": "The booklet's recommended metrics include availability, time in degraded mode and fault-detection coverage [Chapter 3].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t60",
+    "t224"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet reports that ISO 16001 requires continuous self-checking.",
+   "quote": "ISO 16001 requires continuous self-checking and forbids disabling the system with a single action [Chapter 3]",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t60",
+    "t283"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet reports that ISO 16001 forbids disabling the system with a single action.",
+   "quote": "ISO 16001 requires continuous self-checking and forbids disabling the system with a single action [Chapter 3]",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t34",
+    "t283"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "MOSH requires detection of a critical failure and failure to a safe state within 500 milliseconds.",
+   "quote": "MOSH requires a critical failure to be detected and the system to fail to safe within 500 milliseconds [Chapters 3, 7].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    7
+   ],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t60",
+    "t55",
+    "t307"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet found no published off-road value for availability or diagnostic coverage.",
+   "quote": "No published off-road value for availability or diagnostic coverage was found [Chapter 3].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t60",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Treating degraded sensing as a fault causes the machine to stop more often.",
+   "quote": "treating degraded sensing as a fault stops the machine more often",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t60",
+    "t31",
+    "t56"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Operators switch off systems that stop or alarm too often.",
+   "quote": "systems that stop or alarm too often get switched off by operators [Chapters 3, 13].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t34",
+    "t31",
+    "t33"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A safety function in dead time for a tenth of every shift provides no protection during that time, and the operator may not know that protection is absent.",
+   "quote": "A function in dead time for a tenth of every shift protects nobody during that time, and the operator may not know",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t60",
+    "t10"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Diagnostic and degraded-state requirements are part of the functional safety engineer's required evidence for the program.",
+   "quote": "diagnostic and degraded-state requirements are on the functional safety engineer's list of required evidence [Chapter 13].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t60",
+    "t49",
+    "t70"
+   ],
+   "importance": 3
+  }
+ ]
+}

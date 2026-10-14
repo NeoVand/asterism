@@ -1,0 +1,276 @@
+{
+ "chunkId": "k688",
+ "hash": "7cafc1fdb27c5a45",
+ "facts": [
+  {
+   "text": "A data format is the agreed layout of a file that allows software to read it; versioning gives every file, setting and program a unique identifier so results can be traced to exactly what produced them.",
+   "quote": "A data format is the agreed way a file is laid out so that software can read it, and versioning is the practice of giving every file, setting and program a unique identifier so that any result can be traced back to exactly what produced it.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t122",
+    "t64"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "JSON (JavaScript Object Notation), YAML and XML (extensible markup language) suit structured settings, configuration files, scenario descriptions and small tables, but not gigabytes of sensor data.",
+   "quote": "These suit settings and small tables, not gigabytes of sensor data.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "JSON",
+     "kind": "other"
+    },
+    {
+     "name": "YAML",
+     "kind": "other"
+    },
+    {
+     "name": "XML",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t122"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The ASAM OpenSCENARIO standard has an XML form.",
+   "quote": "the ASAM OpenSCENARIO standard has an XML form [Chapter 11]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "ASAM OpenSCENARIO",
+     "kind": "standard"
+    },
+    {
+     "name": "XML",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t122",
+    "t232"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM MDF (measurement data format), version 4.3.0 of September 2025, is a standardized binary format for measured signals, bus traffic and sensor data with metadata and synchronization.",
+   "quote": "ASAM MDF (measurement data format), version 4.3.0 of September 2025, is a standardized binary format for measured signals, bus traffic and sensor data with metadata and synchronization",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ASAM MDF",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t122",
+    "t101",
+    "t121"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet identifies ASAM MDF as a neutral data-format option provided provenance and long-term readability are controlled.",
+   "quote": "which the booklet names as one neutral option provided provenance and long-term readability are controlled [Chapter 9]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ASAM MDF",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t122",
+    "t231",
+    "t341"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Software built on ROS (Robot Operating System) stores recordings as bags, which hold every message with its time stamp.",
+   "quote": "In software built on ROS (Robot Operating System), recordings are stored as \"bags\", files holding every message with its time stamp",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Robot Operating System",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t122",
+    "t101",
+    "t121"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ROS 2 is common for robotics software, and several simulators connect to ROS 2.",
+   "quote": "ROS 2 is common for robotics software and several simulators connect to it [Chapter 11]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "ROS 2",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t122",
+    "t320"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Everything that can change a test result should have an immutable identifier recorded with each run, including the software build, calibration set, model weights, simulator and sensor-model version, terrain assets, scenario file and random seed; content hashes are recommended for this purpose.",
+   "quote": "Everything that can change a result should receive an immutable identifier recorded with each run: software build, calibration set, model weights, simulator and sensor-model version, terrain assets, scenario file, random seed, using content hashes",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t122",
+    "t162",
+    "t231"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Machine recording guidance asks for interface, DBC and message-schema versions and checksums.",
+   "quote": "On the machine, the recording guidance asks for interface, DBC and message-schema versions and checksums [Chapter 7].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t122",
+    "t120"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Lossy compression is a common logging error because it changes detector outputs.",
+   "quote": "Two format mistakes appear among the common logging errors: lossy compression, which changes what a detector outputs",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t122",
+    "t85"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Discovering too late that the recorded data format cannot be injected at the test interface is a common logging error.",
+   "quote": "discovering too late that the recorded format cannot be injected at the test interface [Chapter 7]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t122",
+    "t149"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A result that cannot be tied to an exact product state is worthless as safety evidence; configuration control is more than a convenience once braking affects machine motion.",
+   "quote": "A result that cannot be tied to an exact product state is worthless as safety evidence, and configuration control is more than a convenience once braking affects motion",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t70",
+    "t122",
+    "t64",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Interface versioning is a project risk while sensor-interface standards are still being extended.",
+   "quote": "interface versioning is also a project risk while the sensor-interface standards are still being extended [Chapters 7, 11]",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t122",
+    "t347",
+    "t271"
+   ],
+   "importance": 3
+  }
+ ]
+}

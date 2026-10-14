@@ -1,0 +1,115 @@
+{
+ "key": "t141",
+ "hash": "d6f0521eaa4fc635",
+ "synopsis": "Across the chapters, the braking system is required to work across more than 10 operating scenarios per machine; Chapter 7 also specifies more than 100 job-site types [f284, f1176, f2032, f3675, f4393, f5130, f5860, f6622, f7509, f8254, f10384]. Scenario-based testing is the validation backbone, with parameterised families at functional, logical and concrete levels and probability distributions feeding sampling, search and estimation [f315, f6640]. Coverage must distinguish forward, reverse, start-from-rest, turning and swing: four of 13 fatal US haul-truck collisions in January 2005–June 2021 began as trucks started moving with victims within 50 ft (15 m), while parking, workshops and maintenance also need separate scenarios [f2991, f2996, f3369]. Off-road collision kinematics differ from road tests, and realistic scenarios need multiple actors, machine-specific blind areas and explicit sensor-degradation conditions rather than generic proximity or weather representations [f2567, f4358, f11551, f9371]. Simulation volume alone does not establish safety: encounters rather than frames are the analysis unit, success percentages require a defined scenario population and selection mechanism, and even a validated simulator can miss important hazards; the roadmap therefore calls for hazard-to-scenario traceability and a coverage rationale [f130, f5425, f6933, f8211, f9730]. Scenario definitions are among the deliverables considered achievable before mid-2027, but field sample sizes remain claim-dependent, and acceptance thresholds should be measured by scenario [f4973, f5782, f10967].",
+ "relations": [
+  {
+   "a": "f284",
+   "b": "f1176",
+   "type": "same",
+   "note": "Both require more than ten operating scenarios per machine."
+  },
+  {
+   "a": "f1176",
+   "b": "f2032",
+   "type": "same",
+   "note": "Both repeat the per-machine operating-scenario requirement."
+  },
+  {
+   "a": "f2032",
+   "b": "f3675",
+   "type": "same",
+   "note": "Both require more than ten operating scenarios per machine."
+  },
+  {
+   "a": "f3675",
+   "b": "f4393",
+   "type": "same",
+   "note": "Both repeat the same operating-scenario requirement."
+  },
+  {
+   "a": "f4393",
+   "b": "f5130",
+   "type": "same",
+   "note": "Same per-machine requirement; Chapter 7 additionally specifies job-site coverage."
+  },
+  {
+   "a": "f5130",
+   "b": "f5860",
+   "type": "same",
+   "note": "Both require more than ten scenarios per machine; Chapter 7 adds job-site scope."
+  },
+  {
+   "a": "f5860",
+   "b": "f6622",
+   "type": "same",
+   "note": "Both repeat the per-machine operating-scenario requirement."
+  },
+  {
+   "a": "f6622",
+   "b": "f7509",
+   "type": "same",
+   "note": "Both require more than ten operating scenarios per machine."
+  },
+  {
+   "a": "f7509",
+   "b": "f8254",
+   "type": "same",
+   "note": "Both repeat the same operating-scenario requirement."
+  },
+  {
+   "a": "f8254",
+   "b": "f10384",
+   "type": "same",
+   "note": "Both require more than ten operating scenarios per machine."
+  },
+  {
+   "a": "f130",
+   "b": "f5425",
+   "type": "same",
+   "note": "Both identify encounters, not frames, as the analysis unit."
+  },
+  {
+   "a": "f2996",
+   "b": "f11565",
+   "type": "same",
+   "note": "Both require separate forward, reverse, start-from-rest, turning and swing scenarios."
+  },
+  {
+   "a": "f2583",
+   "b": "f7746",
+   "type": "same",
+   "note": "Both describe EMESRT PR-5A surface interaction scenarios as storyboards."
+  },
+  {
+   "a": "f2991",
+   "b": "f11565",
+   "type": "supports",
+   "note": "Fatal start-from-rest collisions demonstrate why reversing-only validation is insufficient."
+  },
+  {
+   "a": "f2567",
+   "b": "f2996",
+   "type": "supports",
+   "note": "Distinct off-road collision kinematics justify separate operating-mode scenarios."
+  },
+  {
+   "a": "f8211",
+   "b": "f9730",
+   "type": "supports",
+   "note": "Hazard omissions justify hazard-to-scenario traceability and an explicit coverage rationale."
+  },
+  {
+   "a": "f6640",
+   "b": "f6933",
+   "type": "supports",
+   "note": "Parameter distributions and sampling provide the population definition needed for meaningful success estimates."
+  },
+  {
+   "a": "f9730",
+   "b": "f10208",
+   "type": "elaborates",
+   "note": "The example ledger operationalises traceability with analysis, review and no unexplained gaps."
+  }
+ ]
+}

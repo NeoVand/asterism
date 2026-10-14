@@ -1,0 +1,115 @@
+{
+ "key": "t114",
+ "hash": "ca7caac54ce75876",
+ "synopsis": "Across construction, mining and road studies, synthetic data supports training augmentation rather than substitution: mixed real-and-synthetic training generally performs better in data-poor settings, while synthetic-only training leaves a domain gap [f7047, f12900]. A 2023 construction-worker study, reported through a secondary summary, reduced real-image needs by 50% and improved detector performance by 16%; a 2025 construction-object study achieved its best result with 1,500 real plus 1,500 synthetic images [f7049, f7050, f7051]. Benefits are context-dependent: on-road synthetic-fog pre-training followed by real-fog fine-tuning added at most 0.0117 mAP, and broader synthetic coverage can inflate mAP despite domain differences [f4896, f4818]. Generative models can create new views, rare scenarios and weather variations, but whether weather editing preserves sensor physics remains uncertain, and hybrid models’ maturity for safety credit is unresolved [f3819, f3824, f4308, f5078]. Reported reality gaps include rendered excavators and Unity construction scenes, although the cited 2025 review and 2026 Unity study are preprints; no peer-reviewed demonstration was found that synthetic-only training or validation establishes heavy off-road collision-avoidance reliability [f10582, f10584, f10585, f6690]. Planning should therefore use generated data to target training gaps, test detectors on untouched real data, and document validation-data independence; validation and estimation data must be real or physically independent of the training-data generator [f12890, f12885].",
+ "relations": [
+  {
+   "a": "f139",
+   "b": "f6684",
+   "type": "same",
+   "note": "Both distinguish training augmentation from replacement of real validation data."
+  },
+  {
+   "a": "f5212",
+   "b": "f5513",
+   "type": "same",
+   "note": "Changed sensor types or positions prevent direct replay without synthesis."
+  },
+  {
+   "a": "f4448",
+   "b": "f4896",
+   "type": "same",
+   "note": "Both report the maximum 0.0117 mAP synthetic-fog pre-training gain."
+  },
+  {
+   "a": "f4818",
+   "b": "f12842",
+   "type": "same",
+   "note": "Broader synthetic coverage can increase mAP despite domain differences."
+  },
+  {
+   "a": "f12817",
+   "b": "f12901",
+   "type": "same",
+   "note": "Both describe large domain shifts between simulated and real off-road data."
+  },
+  {
+   "a": "f7049",
+   "b": "f10583",
+   "type": "same",
+   "note": "Both report a reviewed study's 50% reduction in real-image needs."
+  },
+  {
+   "a": "f7049",
+   "b": "f12873",
+   "type": "elaborates",
+   "note": "The glossary adds the detector improvement to the real-image reduction."
+  },
+  {
+   "a": "f7050",
+   "b": "f12873",
+   "type": "elaborates",
+   "note": "The glossary combines the 16% improvement with the 50% real-image reduction."
+  },
+  {
+   "a": "f7051",
+   "b": "f12874",
+   "type": "elaborates",
+   "note": "The glossary adds synthetic-only performance gaps to the best mixed-training result."
+  },
+  {
+   "a": "f10580",
+   "b": "f12415",
+   "type": "same",
+   "note": "Both say synthetic images augment rather than replace real images."
+  },
+  {
+   "a": "f4296",
+   "b": "f4100",
+   "type": "supports",
+   "note": "CropCraft provides a specific example of improved transfer from adding real images."
+  },
+  {
+   "a": "f6689",
+   "b": "f12900",
+   "type": "same",
+   "note": "Both summarize mixed-training benefits and persistent synthetic-only domain gaps across sectors."
+  },
+  {
+   "a": "f10581",
+   "b": "f6686",
+   "type": "supports",
+   "note": "The 2025 study supplies evidence for persistent synthetic-only performance gaps."
+  },
+  {
+   "a": "f4895",
+   "b": "f6689",
+   "type": "supports",
+   "note": "Clear2Fog supports the on-road synthetic-only domain-gap conclusion."
+  },
+  {
+   "a": "f4900",
+   "b": "f4308",
+   "type": "supports",
+   "note": "Survey emphasis on augmentation rather than physical equivalence supports caution about weather editing."
+  },
+  {
+   "a": "f4912",
+   "b": "f10586",
+   "type": "supports",
+   "note": "Training requires improved generalization, not physical identity, supporting augmentation rather than validation replacement."
+  },
+  {
+   "a": "f10585",
+   "b": "f10584",
+   "type": "elaborates",
+   "note": "Identifies the Unity photometric-divergence study as a preprint."
+  },
+  {
+   "a": "f12885",
+   "b": "f12890",
+   "type": "depends",
+   "note": "The development loop's held-out testing must satisfy documented validation-data independence."
+  }
+ ]
+}

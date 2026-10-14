@@ -1,0 +1,115 @@
+{
+ "key": "t41",
+ "hash": "306b0758680d260d",
+ "synopsis": "The existing warning-system fleet is identified as the best available early asset for off-road braking validation, providing recorded-data replay, shadow-mode evaluation and the only identified route to field-representative false-positive evidence before prototype arrival [f1252, f333, f1604]. Logging should begin immediately in October 2026 and capture winter 2026–2027, which is the last chance to obtain fleet snow and cold data before validation; the indicative plan instead specifies a November 1, 2026 start lasting 300 days, while a functioning recording and replay pipeline by mid-2027 is considered realistic but conditional [f1600, f11944, f897, f64, f834]. Fleet history can anchor exposure distributions, environmental conditions, nuisance warnings and operator responses, and its false-alarm history is the best available basis for setting braking intervention thresholds [f7931, f11897, f1168]. However, useful raw sensor data, machine signals, synchronized timestamps and labels are not established, replay requires an independent record of what was actually present, and validation use depends on ground truth, consent and data rights that the research did not fully examine [f519, f11899, f8246, f8247]. Warning-fleet history can validate simulation inputs and components but not the new closed-loop braking chain; no public off-road shadow-mode precedent or earth-moving authority accepting this history as the principal simulation-validation basis was found [f11901, f1602, f7949]. Operator responses censor the logs, learned disregard of frequent warnings creates transition risk, and how existing warning-system tuning should carry over to automatic braking remains unexamined [f11903, f1169, f1170].",
+ "relations": [
+  {
+   "a": "f64",
+   "b": "f834",
+   "type": "same",
+   "note": "Both place a realistic fleet-data pipeline by mid-2027; the latter explicitly qualifies feasibility."
+  },
+  {
+   "a": "f1254",
+   "b": "f1603",
+   "type": "same",
+   "note": "Both cite the same manufacturers' warning-event and location logging as an existing data path."
+  },
+  {
+   "a": "f1600",
+   "b": "f7365",
+   "type": "same",
+   "note": "Both recommend immediate shadow-mode work during October 2026 to mid-2027."
+  },
+  {
+   "a": "f519",
+   "b": "f11898",
+   "type": "same",
+   "note": "Both distinguish an established warning system from unestablished retention of replay-quality data."
+  },
+  {
+   "a": "f836",
+   "b": "f519",
+   "type": "same",
+   "note": "Both identify uncertainty about access to raw data needed for replay."
+  },
+  {
+   "a": "f1168",
+   "b": "f11896",
+   "type": "same",
+   "note": "Both identify recorded false alarms as the best available intervention-threshold evidence."
+  },
+  {
+   "a": "f1169",
+   "b": "f11794",
+   "type": "same",
+   "note": "Both flag learned warning disregard as a risk when automatic stops begin."
+  },
+  {
+   "a": "f5122",
+   "b": "f12823",
+   "type": "same",
+   "note": "Both identify the fleet as the manufacturer's existing large-scale off-road sensor-recording source."
+  },
+  {
+   "a": "f7424",
+   "b": "f11897",
+   "type": "same",
+   "note": "Both recommend beginning fleet-based exposure-distribution estimation now."
+  },
+  {
+   "a": "f779",
+   "b": "f11956",
+   "type": "same",
+   "note": "Both recommend immediate logging through winter 2026–2027 for weather validation."
+  },
+  {
+   "a": "f779",
+   "b": "f11894",
+   "type": "same",
+   "note": "Both call for early recording to capture winter data before the later validation window."
+  },
+  {
+   "a": "f334",
+   "b": "f11894",
+   "type": "same",
+   "note": "Both state that existing warning systems can record now and through winter."
+  },
+  {
+   "a": "f1252",
+   "b": "f11893",
+   "type": "same",
+   "note": "Both characterize the existing fleet as the strongest early validation asset."
+  },
+  {
+   "a": "f11944",
+   "b": "f11905",
+   "type": "supports",
+   "note": "The final pre-validation winter opportunity explains why immediate recording is an unconditional recommendation."
+  },
+  {
+   "a": "f11899",
+   "b": "f518",
+   "type": "depends",
+   "note": "Replay's projected leverage depends on obtaining records meeting these data and ground-truth requirements."
+  },
+  {
+   "a": "f8247",
+   "b": "f8246",
+   "type": "elaborates",
+   "note": "Customer-site recording rights remain unexamined despite being a condition of validation use."
+  },
+  {
+   "a": "f11901",
+   "b": "f11709",
+   "type": "depends",
+   "note": "The new intervention element requires evidence beyond warning-only history to validate closed-loop braking."
+  },
+  {
+   "a": "f11903",
+   "b": "f7931",
+   "type": "elaborates",
+   "note": "Operator-response censorship limits what fleet history reveals about encounter outcomes."
+  }
+ ]
+}

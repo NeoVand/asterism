@@ -1,0 +1,1063 @@
+{
+ "chunkId": "k445",
+ "hash": "21aba0816f744414",
+ "facts": [
+  {
+   "text": "Project Chrono and Chrono::Vehicle are open-source tools licensed under BSD-3.",
+   "quote": "Project Chrono and Chrono::Vehicle (open source, BSD-3).",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    5,
+    92
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Project Chrono",
+     "kind": "tool"
+    },
+    {
+     "name": "Chrono::Vehicle",
+     "kind": "tool"
+    },
+    {
+     "name": "BSD-3",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t324",
+    "t334"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Project Chrono and Chrono::Vehicle provide multibody and multiphysics dynamics for wheeled, tracked and articulated vehicles.",
+   "quote": "Multibody and multiphysics dynamics; wheeled, tracked and articulated vehicles",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    5,
+    92,
+    93
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Project Chrono",
+     "kind": "tool"
+    },
+    {
+     "name": "Chrono::Vehicle",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t179",
+    "t175",
+    "t176",
+    "t324"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Project Chrono and Chrono::Vehicle support rigid and deformable terrain, including SCM Bekker-Wong, CRM continuum SPH and DEM.",
+   "quote": "rigid and deformable terrain (SCM Bekker-Wong, CRM continuum SPH, DEM)",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    5,
+    92,
+    93
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Project Chrono",
+     "kind": "tool"
+    },
+    {
+     "name": "Chrono::Vehicle",
+     "kind": "tool"
+    },
+    {
+     "name": "SCM Bekker-Wong",
+     "kind": "method"
+    },
+    {
+     "name": "CRM continuum SPH",
+     "kind": "method"
+    },
+    {
+     "name": "DEM",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t325"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Chrono::Sensor uses OptiX ray tracing to simulate camera, lidar, SPAD, GPS and IMU, with lens distortion, noise and lag.",
+   "quote": "Chrono::Sensor with OptiX ray tracing for camera, lidar, SPAD, GPS and IMU with lens distortion, noise and lag.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    5,
+    92,
+    93
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Chrono::Sensor",
+     "kind": "tool"
+    },
+    {
+     "name": "OptiX",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t323",
+    "t118",
+    "t89",
+    "t92",
+    "t98"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Project Chrono release 10.0.0 was released on 27 March 2026.",
+   "quote": "Release 10.0.0 on 27 March 2026.",
+   "kind": "event",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Project Chrono",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t324"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The Project Chrono project lists US Army ground-vehicle organizations, NREL and JPL as users.",
+   "quote": "Users listed by the project include US Army ground-vehicle organizations, NREL and JPL.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    5
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Project Chrono",
+     "kind": "tool"
+    },
+    {
+     "name": "US Army",
+     "kind": "organization"
+    },
+    {
+     "name": "NREL",
+     "kind": "organization"
+    },
+    {
+     "name": "JPL",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t324"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Project Chrono developers report that the Pacejka, TMeasy and Fiala handling tire models do not work with deformable terrain; only rigid or FEA tires and tracked vehicles do.",
+   "quote": "Pacejka, TMeasy and Fiala handling tire models do not work with deformable terrain (only rigid or FEA tires and tracked vehicles do)",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    41
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Project Chrono",
+     "kind": "tool"
+    },
+    {
+     "name": "Pacejka",
+     "kind": "method"
+    },
+    {
+     "name": "TMeasy",
+     "kind": "method"
+    },
+    {
+     "name": "Fiala",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t180",
+    "t181",
+    "t262"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Project Chrono developers report that higher-fidelity CRM terrain runs anywhere from 50 to 200 times slower than real time.",
+   "quote": "the higher-fidelity CRM terrain runs \"anywhere from 50 to 200\" times slower than real time",
+   "kind": "number",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    41
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Project Chrono",
+     "kind": "tool"
+    },
+    {
+     "name": "CRM",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t339",
+    "t153"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Project Chrono's higher-fidelity CRM terrain needs an NVIDIA GPU, a vendor-specific dependency raised by the community itself.",
+   "quote": "needs an NVIDIA GPU, a vendor-specific dependency the community itself has raised.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    41
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Project Chrono",
+     "kind": "tool"
+    },
+    {
+     "name": "CRM",
+     "kind": "method"
+    },
+    {
+     "name": "NVIDIA",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t336"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Project Chrono and Chrono::Vehicle are not a turnkey test-management product.",
+   "quote": "It is not a turnkey test-management product.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Project Chrono",
+     "kind": "tool"
+    },
+    {
+     "name": "Chrono::Vehicle",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t162",
+    "t320"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "BeamNG.tech has a commercial B2B license.",
+   "quote": "BeamNG.tech (commercial B2B license).",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    94
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "BeamNG.tech",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t334"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "BeamNG.tech provides real-time soft-body vehicle physics.",
+   "quote": "Real-time soft-body vehicle physics",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    94
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "BeamNG.tech",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t179",
+    "t153",
+    "t324"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "BeamNG.tech provides programmable camera, lidar, radar, ultrasonic and IMU sensors and a Python API.",
+   "quote": "with programmable camera, lidar, radar, ultrasonic and IMU sensors and a Python API",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    94
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "BeamNG.tech",
+     "kind": "tool"
+    },
+    {
+     "name": "Python",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t323",
+    "t89",
+    "t92",
+    "t94",
+    "t95"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "BeamNG.tech version 0.39 was released on 20 August 2026.",
+   "quote": "version 0.39 on 20 August 2026",
+   "kind": "event",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    94
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "BeamNG.tech",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t321"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2026 community integration of BeamNG.tech with Autoware and ROS 2 exists.",
+   "quote": "a 2026 community integration with Autoware and ROS 2 exists.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    94
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "BeamNG.tech",
+     "kind": "tool"
+    },
+    {
+     "name": "Autoware",
+     "kind": "tool"
+    },
+    {
+     "name": "ROS 2",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t320"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Off-road driving is feasible in BeamNG.tech, but its vehicle model is automotive-scale rather than a purpose-built excavator, dozer or haul truck with deformable soil.",
+   "quote": "Off-road driving is feasible, but the vehicle model is automotive-scale, not a purpose-built excavator, dozer or haul truck with deformable soil",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    94
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "BeamNG.tech",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t179",
+    "t181",
+    "t5",
+    "t6",
+    "t3"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A public B2B price for BeamNG.tech was not found.",
+   "quote": "public B2B price and independent heavy-machine correlation were not found.",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    94
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "BeamNG.tech",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t334"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Independent heavy-machine correlation evidence for BeamNG.tech was not found.",
+   "quote": "independent heavy-machine correlation were not found.",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    94
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "BeamNG.tech",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t250",
+    "t234",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "MORAI is a commercial digital-twin driving simulator with scenario libraries and cloud execution.",
+   "quote": "MORAI (commercial).** Digital-twin driving simulation with scenario libraries and cloud execution",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    95
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "MORAI",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t129",
+    "t142",
+    "t163",
+    "t334"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MORAI supports camera, lidar, radar, GPS and IMU simulation.",
+   "quote": "camera, lidar, radar, GPS and IMU",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    95
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "MORAI",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t323",
+    "t89",
+    "t92",
+    "t94",
+    "t98"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MORAI supports OpenSCENARIO 1.x.",
+   "quote": "OpenSCENARIO 1.x.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    95
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "MORAI",
+     "kind": "tool"
+    },
+    {
+     "name": "OpenSCENARIO",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t232"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MORAI's current projects span automotive, trucking, Seoul digital twins, and unmanned ground and defense work.",
+   "quote": "Current projects span automotive, trucking, Seoul digital twins and unmanned ground and defense work",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    95
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "MORAI",
+     "kind": "tool"
+    },
+    {
+     "name": "Seoul",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t129",
+    "t321"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Mining or construction use of MORAI was not found.",
+   "quote": "mining or construction use, deformable terrain, a numbered release and a price were not found",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    95
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "MORAI",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t331",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Deformable terrain support for MORAI was not found.",
+   "quote": "deformable terrain, a numbered release and a price were not found",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    95
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "MORAI",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t181"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A numbered release of MORAI was not found.",
+   "quote": "a numbered release and a price were not found",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    95
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "MORAI",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t321"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A price for MORAI was not found; a third-party listing says to contact for price.",
+   "quote": "a price were not found (a third-party listing says contact for price).",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    95
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "MORAI",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t334"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "rFpro is a commercial high-fidelity driving simulator with a particularly detailed camera pipeline.",
+   "quote": "rFpro (commercial).** High-fidelity driving simulation with a particularly detailed camera pipeline",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    96
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "rFpro",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t321",
+    "t89",
+    "t334"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "rFpro material dated 29 April 2026 describes full CMOS and ISP modeling and physical validation work.",
+   "quote": "2026 material (29 April 2026) describes full CMOS and ISP modeling and physical validation work.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    96
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "rFpro",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t89",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "rFpro focuses on automotive and motorsport applications.",
+   "quote": "Automotive and motorsport focus",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    96
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "rFpro",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t321"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Off-road heavy-machine evidence for rFpro was not found.",
+   "quote": "off-road heavy-machine evidence, ultrasonic support, a numbered release and a price were not found.",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    96
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "rFpro",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t1",
+    "t70",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ultrasonic support for rFpro was not found.",
+   "quote": "ultrasonic support, a numbered release and a price were not found.",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    96
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "rFpro",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t95",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A numbered release of rFpro was not found.",
+   "quote": "a numbered release and a price were not found.",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    96
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "rFpro",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t321"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A price for rFpro was not found.",
+   "quote": "a price were not found.",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    96
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "rFpro",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t334"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Gazebo is an open-source robotics simulator licensed under Apache 2.0.",
+   "quote": "Gazebo (open source, Apache 2.0).** Robotics simulator",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    16,
+    97
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Gazebo",
+     "kind": "tool"
+    },
+    {
+     "name": "Apache 2.0",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t322",
+    "t334"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Gazebo provides physics, rendering, camera, lidar, IMU and plugin-defined sensors, together with ROS 2 integration.",
+   "quote": "with physics, rendering, camera, lidar, IMU and plugin-defined sensors and ROS 2 integration.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    16,
+    97
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Gazebo",
+     "kind": "tool"
+    },
+    {
+     "name": "ROS 2",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t322",
+    "t323",
+    "t89",
+    "t92",
+    "t98"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Gazebo Jetty LTS was released in September 2025 and is supported to 2031.",
+   "quote": "Gazebo Jetty LTS was released in September 2025 and is supported to 2031",
+   "kind": "event",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    16,
+    97
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Gazebo Jetty LTS",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t322"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Gazebo Sim 10.5.0 was released on 29 July 2026.",
+   "quote": "Gazebo Sim 10.5.0 followed on 29 July 2026.",
+   "kind": "event",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    16,
+    97
+   ],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Gazebo Sim",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t322"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Gazebo is an integration framework; automotive-grade radar, weather and material modeling and enterprise validation management require extensions.",
+   "quote": "It is an integration framework; automotive-grade radar, weather and material modeling and enterprise validation management need extensions",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Gazebo",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t320",
+    "t94",
+    "t102",
+    "t136",
+    "t162"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Heavy-machine automatic-braking proof using Gazebo was not found.",
+   "quote": "heavy-machine automatic-braking proof was not found.",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "Gazebo",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t1",
+    "t25",
+    "t70",
+    "t127"
+   ],
+   "importance": 3
+  }
+ ]
+}

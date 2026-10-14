@@ -1,0 +1,337 @@
+{
+ "chunkId": "k774",
+ "hash": "41de22e875e93c24",
+ "facts": [
+  {
+   "text": "Falsification is a test method that treats finding a case where the system fails as a search problem and uses optimization to steer the simulator toward the most dangerous combinations of conditions.",
+   "quote": "Falsification is a test method that treats \"find a case where the system fails\" as a search problem and uses optimization to steer the simulator toward the most dangerous combinations of conditions.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Falsification",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t205"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Falsification defines a measure of proximity to failure, such as time to collision at detection, stopping margin when the machine halts, or detector confidence, and optimizes scenario parameters to worsen that measure. Parameters can include speed, distance, dust, glare and the person's path.",
+   "quote": "An optimizer then adjusts the scenario parameters (speed, distance, dust, glare, the person's path) to make that measure as bad as possible.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Falsification",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t205",
+    "t199",
+    "t111",
+    "t194"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In the described falsification method, a failure is found when the margin reaches zero, and the failure can be replayed.",
+   "quote": "When the margin reaches zero, a failure has been found and can be replayed.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Falsification",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t205",
+    "t194"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet names S-TaLiRo, Breach and VerifAI as falsification tools and groups evolutionary search, Bayesian optimization, fuzzing, surrogate-guided search, reinforcement-learning adversaries and Adaptive Stress Testing in the same family.",
+   "quote": "The booklet names the tools S-TaLiRo, Breach and VerifAI, and puts evolutionary search, Bayesian optimization, fuzzing, surrogate-guided search, reinforcement-learning adversaries and Adaptive Stress Testing in the same family.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "S-TaLiRo",
+     "kind": "tool"
+    },
+    {
+     "name": "Breach",
+     "kind": "tool"
+    },
+    {
+     "name": "VerifAI",
+     "kind": "tool"
+    },
+    {
+     "name": "Bayesian optimization",
+     "kind": "method"
+    },
+    {
+     "name": "Adaptive Stress Testing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t205",
+    "t227"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "On-road work from 2021 reported up to a 5 times speed-up for VerifAI used with the Scenic language by running several objectives in parallel.",
+   "quote": "VerifAI used with the Scenic language reported up to a 5 times speed-up from running several objectives in parallel, in on-road work from 2021 [Chapter 9].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "VerifAI",
+     "kind": "tool"
+    },
+    {
+     "name": "Scenic",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t205",
+    "t232",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Falsification can establish the existence and reproducibility of a counterexample and locate failure boundaries and worst cases within the simulated space.",
+   "quote": "Falsification can claim that a counterexample exists, that it is reproducible, and where the failure boundaries and worst cases lie inside the simulated space.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Falsification",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t205",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Falsification cannot establish a failure rate because failure-seeking search makes the proportion of failing runs biased by design.",
+   "quote": "It cannot claim a failure rate, because the search concentrates on failures, so the proportion of failing runs is biased by design.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Falsification",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t205",
+    "t217",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Not finding a failure through falsification does not prove that failures are absent.",
+   "quote": "Not finding a failure is not proof of absence.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Falsification",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t205",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Falsification search can exploit flaws in the simulator rather than flaws in the system under test.",
+   "quote": "The search can also exploit flaws in the simulator rather than in the system",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Falsification",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t205",
+    "t234",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A falsification objective designed for one kind of failure may miss a qualitatively different kind of failure.",
+   "quote": "an objective written for one kind of failure may miss a qualitatively different one [Chapter 9].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Falsification",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t205"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet's discovery stream centers on falsification targeting stopping boundaries, partial visibility, high closing speed, the edge of the field of view and sensor degradation.",
+   "quote": "Falsification is the heart of the booklet's discovery stream, aimed at stopping boundaries, partial visibility, high closing speed, the edge of the field of view and sensor degradation.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Falsification",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t205",
+    "t103",
+    "t87",
+    "t102",
+    "t169"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet's falsification rule is that a found failure becomes a new logical scenario or a permanent regression test.",
+   "quote": "a found failure becomes a new logical scenario or a permanent regression test",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Falsification",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t205",
+    "t141",
+    "t161"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet requires the frequency of a failure found through falsification to be estimated separately and says the failure fraction of a search campaign must never be reported as an operational failure rate.",
+   "quote": "its frequency is estimated separately, and the failure fraction of a search campaign \"must never be reported as an operational failure rate\".",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Falsification",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t217",
+    "t205",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet's falsification evidence comes from on-road and aerospace work; no off-road demonstration was found.",
+   "quote": "The evidence is on-road and aerospace; no off-road demonstration was found [Chapter 9].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Falsification",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t205",
+    "t70",
+    "t1"
+   ],
+   "importance": 3
+  }
+ ]
+}

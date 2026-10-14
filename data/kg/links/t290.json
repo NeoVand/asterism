@@ -1,0 +1,115 @@
+{
+ "key": "t290",
+ "hash": "e93fd114cc5999e2",
+ "synopsis": "ISO 34501–34505 provide road-vehicle scenario vocabulary, ODD specification, categorisation and test-case methods; their structure can inform off-road validation, but their road-specific content is not off-road compliance evidence and acceptance for earth-moving collision avoidance remains uncertain [f7692, f6642, f449, f4315]. No heavy-machinery equivalent of ISO 34502 was found, so the programme must define its own scenario or hazard taxonomy; the booklet adopts functional, logical and concrete scenarios, using ISO 21815 and EMESRT storyboards for off-road content [f9881, f9882, f15323]. ISO 34505:2025, dated June 2025, specifies test-case identifiers, objectives, inputs, steps, platform and expected results, while ISO 34503 provides a hierarchical ODD structure whose road-oriented attributes require adaptation [f6732, f6706, f6709]. These standards primarily address coverage rather than model credibility, establish no physical-to-virtual testing ratio, and do not address risk scaling; ISO/PAS 34506 concerns virtual-environment qualification but remained a draft in October 2026 [f7693, f7694, f8119, f4072]. TÜV SÜD nevertheless summarizes ISO 34502 and European automated-driving regulation as requiring the virtual platform itself to be demonstrated fit for purpose, so scenario coverage alone should not be confused with platform qualification [f1283, f7693]. No off-road equivalent of ISO 19206 standardized targets exists in the corpus: its transferable value is target-design principles, with surrogates representing off-road people, vehicles, machines and obstacles and matching each sensor’s relevant response [f15329, f15325, f15326].",
+ "relations": [
+  {
+   "a": "f448",
+   "b": "f4066",
+   "type": "same",
+   "note": "Both scope ISO 34502 scenario evaluation to road automated driving and limited-access highways."
+  },
+  {
+   "a": "f448",
+   "b": "f5852",
+   "type": "same",
+   "note": "Both identify the highway scope rather than off-road applicability."
+  },
+  {
+   "a": "f1283",
+   "b": "f1717",
+   "type": "same",
+   "note": "Duplicate TÜV SÜD requirement to demonstrate virtual-platform fitness for purpose."
+  },
+  {
+   "a": "f4072",
+   "b": "f15318",
+   "type": "same",
+   "note": "Both identify ISO/PAS 34506 as draft in October 2026."
+  },
+  {
+   "a": "f7695",
+   "b": "f15318",
+   "type": "same",
+   "note": "Both warn against treating the October 2026 draft as a finished standard."
+  },
+  {
+   "a": "f4334",
+   "b": "f7695",
+   "type": "same",
+   "note": "Both describe virtual-environment qualification and the unfinished status of ISO/PAS 34506."
+  },
+  {
+   "a": "f9881",
+   "b": "f10334",
+   "type": "same",
+   "note": "Both report no heavy-machinery equivalent of the road-specific ISO 34502 framework."
+  },
+  {
+   "a": "f7694",
+   "b": "f8122",
+   "type": "same",
+   "note": "Both report that the standards prescribe no physical-to-virtual evidence ratio."
+  },
+  {
+   "a": "f7694",
+   "b": "f15321",
+   "type": "same",
+   "note": "Glossary repeats the absence of a physical-to-virtual testing ratio with broader standard coverage."
+  },
+  {
+   "a": "f6709",
+   "b": "f13245",
+   "type": "same",
+   "note": "Both identify road-vehicle scope and lane-and-junction defaults in ODD frameworks."
+  },
+  {
+   "a": "f4068",
+   "b": "f6731",
+   "type": "elaborates",
+   "note": "Chapter 9 specifies tags as the categorisation mechanism."
+  },
+  {
+   "a": "f6732",
+   "b": "f6948",
+   "type": "same",
+   "note": "Both require structured test-case fields; the fuller list also includes steps."
+  },
+  {
+   "a": "f6735",
+   "b": "f13258",
+   "type": "same",
+   "note": "Both trace functional, logical and concrete scenario layering to PEGASUS and ISO adoption."
+  },
+  {
+   "a": "f9881",
+   "b": "f9882",
+   "type": "depends",
+   "note": "The missing heavy-machinery framework drives the programme-specific taxonomy requirement."
+  },
+  {
+   "a": "f6735",
+   "b": "f15323",
+   "type": "elaborates",
+   "note": "Glossary identifies ISO 21815 and EMESRT as sources for off-road scenario content."
+  },
+  {
+   "a": "f7693",
+   "b": "f8120",
+   "type": "elaborates",
+   "note": "The physical-data validation gap explains the distinction between coverage and credibility."
+  },
+  {
+   "a": "f15329",
+   "b": "f15325",
+   "type": "supports",
+   "note": "Absent standardized off-road targets motivates transferring design principles rather than road target objects."
+  },
+  {
+   "a": "f15325",
+   "b": "f15326",
+   "type": "elaborates",
+   "note": "Sensor-specific appearance and response requirements refine off-road surrogate representativeness."
+  }
+ ]
+}

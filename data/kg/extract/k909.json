@@ -1,0 +1,437 @@
+{
+ "chunkId": "k909",
+ "hash": "cae2d6bacbeebf5d",
+ "facts": [
+  {
+   "text": "A graphics card is a circuit board carrying a graphics processing unit (GPU) and its memory; the speed of sensor simulation depends heavily on the card used.",
+   "quote": "A graphics card is a circuit board carrying a graphics processing unit (GPU) and its memory, and the booklet names specific models because the speed of sensor simulation depends heavily on which one is used.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t337",
+    "t336",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Most graphics cards named in the booklet are NVIDIA models because the reviewed simulators depend on NVIDIA's ray-tracing libraries.",
+   "quote": "The cards named are mostly from one maker, NVIDIA, because the simulators the booklet reviews depend on that maker's ray-tracing libraries.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NVIDIA",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t337",
+    "t118",
+    "t320"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The NVIDIA-specific requirement of Chrono's high-performance modules is flagged as a dependency risk, not a recommendation; the Chrono community itself has raised the requirement.",
+   "quote": "The booklet flags this as a dependency risk rather than a recommendation: the Chrono community itself has raised the NVIDIA-specific requirement of its high-performance modules [Chapter 11].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "NVIDIA",
+     "kind": "company"
+    },
+    {
+     "name": "Chrono",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t337",
+    "t320"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NVIDIA RTX is a line of consumer and workstation graphics cards with dedicated ray-tracing cores.",
+   "quote": "RTX is the maker's line of cards with dedicated ray-tracing cores, from consumer to workstation models.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NVIDIA",
+     "kind": "company"
+    },
+    {
+     "name": "NVIDIA RTX",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t337",
+    "t118"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "CARLA on Unreal Engine 5 requires at least an RTX 3000-series graphics card with 16 GB of VRAM.",
+   "quote": "CARLA on Unreal Engine 5 requires at least an RTX 3000-series card with 16 GB of VRAM.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    },
+    {
+     "name": "Unreal Engine 5",
+     "kind": "tool"
+    },
+    {
+     "name": "NVIDIA RTX 3000 series",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t337",
+    "t336",
+    "t135"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "RadaRays produced one radar image in 7.8–18.8 milliseconds on an RTX 2070 Super, compared with 25.8–78.5 milliseconds on a desktop CPU.",
+   "quote": "The RadaRays radar simulator produced one radar image in 7.8 to 18.8 milliseconds on an RTX 2070 Super, against 25.8 to 78.5 milliseconds on a desktop CPU.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "RadaRays",
+     "kind": "tool"
+    },
+    {
+     "name": "NVIDIA RTX 2070 Super",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t337",
+    "t339",
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The RTX PRO 6000 Blackwell workstation graphics card has 96 GB of memory.",
+   "quote": "A workstation card with 96 GB of memory exists (RTX PRO 6000 Blackwell)",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    11
+   ],
+   "entities": [
+    {
+     "name": "NVIDIA RTX PRO 6000 Blackwell",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t337",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Server prices for the RTX PRO 6000 Blackwell were not found.",
+   "quote": "A workstation card with 96 GB of memory exists (RTX PRO 6000 Blackwell), but server prices were not found [Chapters 6, 11].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    11
+   ],
+   "entities": [
+    {
+     "name": "NVIDIA RTX PRO 6000 Blackwell",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t337",
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NVIDIA A100 and A40 are data-center graphics cards.",
+   "quote": "A100 and A40 are data-center cards",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "NVIDIA A100",
+     "kind": "product"
+    },
+    {
+     "name": "NVIDIA A40",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t337"
+   ],
+   "importance": 1
+  },
+  {
+   "text": "SplatAD trains a scene in about one hour on one NVIDIA A100.",
+   "quote": "SplatAD trains a scene in about one hour on one A100",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "SplatAD",
+     "kind": "tool"
+    },
+    {
+     "name": "NVIDIA A100",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t337",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A diffusion weather-editing network took 20.52 seconds per image on one NVIDIA A40.",
+   "quote": "a diffusion weather-editing network took 20.52 seconds per image on one A40 [Chapter 6].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "NVIDIA A40",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t115",
+    "t337",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NVIDIA L40S, with 48 GB of memory, and NVIDIA L4 are the data-center cards in AWS G6e and Google Cloud G2 instances, respectively; the booklet quotes hourly prices for these instances.",
+   "quote": "L40S (48 GB) and L4 are the data-center cards in the Amazon Web Services (AWS) G6e and Google Cloud G2 instances whose hourly prices the booklet quotes [Chapter 11].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [
+    {
+     "name": "NVIDIA L40S",
+     "kind": "product"
+    },
+    {
+     "name": "NVIDIA L4",
+     "kind": "product"
+    },
+    {
+     "name": "Amazon Web Services G6e",
+     "kind": "product"
+    },
+    {
+     "name": "Google Cloud G2",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t337",
+    "t330",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The booklet includes one non-NVIDIA performance figure: an aircraft radar signature calculation on a supercomputer using AMD MI250X cards.",
+   "quote": "One non-NVIDIA figure appears: a radar signature calculation on a supercomputer with AMD MI250X cards, for an aircraft [Chapter 6].",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "AMD MI250X",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t337",
+    "t338",
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "“AGX” in the booklet means Algoryx AGX Dynamics, a physics engine, rather than a graphics card; embedded computing boards carrying the AGX name are not discussed.",
+   "quote": "\"AGX\" in the booklet refers to Algoryx AGX Dynamics, a physics engine, not to a graphics card; embedded computing boards carrying that name are not discussed.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Algoryx AGX Dynamics",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t337",
+    "t324"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Ray-tracing cores accelerate the light and radio ray calculations used in camera, lidar and radar simulation.",
+   "quote": "ray-tracing cores speed up the light and radio ray calculations that camera, lidar and radar simulation depend on",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t118",
+    "t337",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Graphics-card VRAM determines how large a simulation scene can fit in memory.",
+   "quote": "VRAM sets how large a scene fits",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t336",
+    "t130",
+    "t337"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Users of one simulator reported severe frame-rate loss in multi-sensor scenes, making performance a qualification item rather than a given.",
+   "quote": "users of one simulator reported severe frame-rate loss in multi-sensor scenes, so performance is a qualification item, not a given [Chapter 11].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t323",
+    "t337"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No neutral cross-vendor benchmark holding scene, sensor and settings constant was found; published graphics-card performance figures are examples rather than planning constants.",
+   "quote": "No neutral cross-vendor benchmark that holds scene, sensor and settings constant was found, so published figures are examples, not planning constants",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t337",
+    "t339",
+    "t333"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Every candidate simulation tool must be timed using the collision-mitigation validation program's own machine geometry and sensors.",
+   "quote": "every candidate tool must be timed on this program's own machine geometry and sensors [Chapters 6, 11].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6,
+    11
+   ],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t320",
+    "t337"
+   ],
+   "importance": 3
+  }
+ ]
+}
