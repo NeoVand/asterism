@@ -1,0 +1,115 @@
+{
+ "key": "t156",
+ "hash": "1a50291ba5f25f83",
+ "synopsis": "Semantic replay bypasses perception and feeds real decision, warning and braking logic with recorded or ground-truth object lists in common coordinates plus machine state; it can operate open loop or closed loop, with lists regenerated as the virtual machine slows [f5253, f5254, f13457, f13459]. It tests thresholds, threat assessment, warning stages and brake-request rules independently of sensor modality, but cannot prove perception and can hide latency, occlusion, false detections and range or classification errors; reported off-road maturity is medium for logic and absent for perception [f5256, f13463, f5686]. It is described as the cheapest way to sweep large scenario sets, supporting millions of braking-logic combinations through highly parallel CPU workloads on commodity servers without rendering or ray tracing [f13460, f9322, f16181]. Recording only object lists limits future replay to downstream software and prevents testing new perception algorithms, sensor models or mounting positions; where suppliers expose only object lists, validating a phenomenological model at that interface is considered more defensible than inventing a raw-signal model [f5628, f12990, f4868]. The recommended progression starts SIL with semantic inputs before adding realistic sensor errors, and pairs semantic replay with end-to-end replay when warning logic changes but perception remains unchanged: semantic coverage and expensive raw-sensor testing are complementary, rather than one approach dominating [f13466, f5497, f5779].",
+ "relations": [
+  {
+   "a": "f5256",
+   "b": "f13462",
+   "type": "same",
+   "note": "Both identify thresholds, warnings, threat assessment and brake requests as tested functions."
+  },
+  {
+   "a": "f5256",
+   "b": "f5684",
+   "type": "same",
+   "note": "Both describe testing decision and braking logic independently of sensor modality."
+  },
+  {
+   "a": "f5259",
+   "b": "f13463",
+   "type": "same",
+   "note": "Both identify hidden sensor errors caused by assuming perception has succeeded."
+  },
+  {
+   "a": "f5685",
+   "b": "f13463",
+   "type": "same",
+   "note": "Both deny perception proof and warn of hidden latency, occlusion and false detections."
+  },
+  {
+   "a": "f12528",
+   "b": "f12536",
+   "type": "same",
+   "note": "Hand-made lists cheaply test decision logic but provide no perception evidence."
+  },
+  {
+   "a": "f12537",
+   "b": "f5652",
+   "type": "same",
+   "note": "Object-list-only recordings lack raw data needed to test new perception algorithms."
+  },
+  {
+   "a": "f5628",
+   "b": "f12989",
+   "type": "same",
+   "note": "Processed recordings support only software downstream of their recording interface."
+  },
+  {
+   "a": "f5253",
+   "b": "f5682",
+   "type": "same",
+   "note": "Both specify use of real decision, warning and braking logic."
+  },
+  {
+   "a": "f5254",
+   "b": "f13457",
+   "type": "same",
+   "note": "Both require object lists in common coordinates together with machine state."
+  },
+  {
+   "a": "f5255",
+   "b": "f13439",
+   "type": "same",
+   "note": "Both allow semantic replay to operate open loop or closed loop."
+  },
+  {
+   "a": "f5257",
+   "b": "f13460",
+   "type": "same",
+   "note": "Both describe semantic replay as the cheapest large-scenario sweep."
+  },
+  {
+   "a": "f9322",
+   "b": "f13465",
+   "type": "same",
+   "note": "Both place millions of deterministic object-list combinations in the multi-fidelity architecture."
+  },
+  {
+   "a": "f13465",
+   "b": "f13597",
+   "type": "same",
+   "note": "Both describe deterministic functional and object-list testing of millions of braking-logic combinations."
+  },
+  {
+   "a": "f13461",
+   "b": "f16181",
+   "type": "same",
+   "note": "Both characterize object-list braking tests as highly parallel CPU workloads for commodity servers."
+  },
+  {
+   "a": "f13459",
+   "b": "f5255",
+   "type": "elaborates",
+   "note": "Explains recorded-list open loops and regenerated-list closed loops."
+  },
+  {
+   "a": "f12990",
+   "b": "f5628",
+   "type": "elaborates",
+   "note": "Extends retrospective perception limitations to new sensor models and mounting positions."
+  },
+  {
+   "a": "f4476",
+   "b": "f4868",
+   "type": "supports",
+   "note": "Object-list detection-probability models offer a feasible model class at supplier-exposed interfaces."
+  },
+  {
+   "a": "f5779",
+   "b": "f5497",
+   "type": "supports",
+   "note": "Complementary coverage and perception testing justify pairing semantic replay with end-to-end replay."
+  }
+ ]
+}

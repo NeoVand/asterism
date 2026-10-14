@@ -1,0 +1,115 @@
+{
+ "key": "t26",
+ "hash": "19d107cfaa001263",
+ "synopsis": "FCW warns car and truck drivers of an imminent crash ahead but leaves braking to them; the booklet uses this on-road research as a counterpart to the manufacturer's existing proximity warning, not as direct evidence about off-road operators [f11678, f11679, f11686]. Regulatory precedents are likewise on-road: FMVSS No. 127 requires FCW alongside AEB for light vehicles up to 4,536 kg GVWR and does not apply to off-road machines, while NHTSA's heavy-vehicle research and 2023 proposal concern road trucks and buses [f2831, f2535, f1816]. On-road FCW plus AEB reduced rear-end striking crashes by 50% in Cicchino's 2017 study, but insurance evidence also showed a 20% increase in being struck from behind, making automatic stopping a potential trade-off rather than an unqualified benefit [f3459, f3409, f14017]. False-alarm evidence is mixed: an 18% rate was associated with drivers ignoring warnings (12%) or abandoning FCW (11%), whereas simulator warnings with 20–33% false alarms still shortened brake reactions, and a 2025 study found no cry-wolf effect at 33% despite unnecessary braking [f11680, f11681, f11682]. Real-driving false alerts varied from 12% when turning to 2% during lane-keeping, drivers reduced sensitivity over time, and alarms with visible causes harmed trust less; no accepted off-road false-alarm rate was found [f11683, f11684, f11685, f11687]. Validation therefore needs to distinguish measured warning performance from modeled benefit: open-loop replay can establish detection, false-alarm rates and warning timing only for recorded configurations and situations, while a virtual cyclist-overtaking FCW assessment estimated 53–96% fatality reductions depending predominantly on its driver-response model [f5234, f3497].",
+ "relations": [
+  {
+   "a": "f1327",
+   "b": "f1522",
+   "type": "same",
+   "note": "Both report warnings from NHTSA's steel-plate false-positive scenario."
+  },
+  {
+   "a": "f3459",
+   "b": "f11672",
+   "type": "same",
+   "note": "Both report a 50% reduction in rear-end striking crashes with FCW plus AEB."
+  },
+  {
+   "a": "f3032",
+   "b": "f3409",
+   "type": "same",
+   "note": "Both report a 20% increase in being struck from behind."
+  },
+  {
+   "a": "f3032",
+   "b": "f14017",
+   "type": "same",
+   "note": "Glossary repeats the 20% increase and frames it as an automatic-stopping caution."
+  },
+  {
+   "a": "f3409",
+   "b": "f14017",
+   "type": "same",
+   "note": "Both cite the insurance-data finding of increased crashes from behind."
+  },
+  {
+   "a": "f3338",
+   "b": "f11683",
+   "type": "same",
+   "note": "Both give false-alert rates of 12% turning versus 2% lane-keeping."
+  },
+  {
+   "a": "f3339",
+   "b": "f11684",
+   "type": "same",
+   "note": "Both report drivers reducing FCW sensitivity over time."
+  },
+  {
+   "a": "f3332",
+   "b": "f11680",
+   "type": "elaborates",
+   "note": "Glossary quantifies ignoring and abandonment associated with the 18% false-alarm rate."
+  },
+  {
+   "a": "f3333",
+   "b": "f11680",
+   "type": "elaborates",
+   "note": "Glossary adds the associated 18% false-alarm rate to identical driver-underuse percentages."
+  },
+  {
+   "a": "f3020",
+   "b": "f11681",
+   "type": "elaborates",
+   "note": "Glossary isolates the simulator evidence underlying the mixed-response conclusion."
+  },
+  {
+   "a": "f2535",
+   "b": "f15420",
+   "type": "elaborates",
+   "note": "Glossary adds avoidance speeds and pedestrian-AEB conditions to the FCW requirement."
+  },
+  {
+   "a": "f2535",
+   "b": "f2831",
+   "type": "elaborates",
+   "note": "Defines the requirement's light-vehicle scope and excludes off-road machines."
+  },
+  {
+   "a": "f11680",
+   "b": "f11681",
+   "type": "contradicts",
+   "note": "Truck underuse contrasts with improved simulator reactions despite higher false-alarm rates."
+  },
+  {
+   "a": "f3623",
+   "b": "f11682",
+   "type": "supports",
+   "note": "The 2025 no-cry-wolf result supports variability across warning-response studies."
+  },
+  {
+   "a": "f11686",
+   "b": "f11687",
+   "type": "supports",
+   "note": "Highway-only evidence helps explain the unresolved off-road false-alarm acceptance gap."
+  },
+  {
+   "a": "f11679",
+   "b": "f11686",
+   "type": "elaborates",
+   "note": "Clarifies both the value and population limitation of using FCW as a warning analogue."
+  },
+  {
+   "a": "f3497",
+   "b": "f11678",
+   "type": "supports",
+   "note": "Driver-model dominance reflects FCW's reliance on the driver to brake."
+  },
+  {
+   "a": "f5234",
+   "b": "f11687",
+   "type": "elaborates",
+   "note": "Replay can measure false-alarm rates but does not supply an accepted off-road threshold."
+  }
+ ]
+}

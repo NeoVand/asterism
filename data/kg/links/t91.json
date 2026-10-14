@@ -1,0 +1,85 @@
+{
+ "key": "t91",
+ "hash": "7a053db52fd32009",
+ "synopsis": "Stereo cameras estimate distance using two cameras with a known separation, while RGB-D cameras provide color and per-pixel distance; a wider stereo baseline improves long-range accuracy [f12595, f12596]. Fielded examples include Toyota SEnS+ (August 2021), which distinguishes people from objects using a rear stereo camera and slows a forklift by cutting power rather than braking, and John Deere SmartDetect Assist, which combines cameras, stereo and radar [f15785, f12598, f1654]. Simulation tools offer depth-camera capabilities through CARLA and NVIDIA Isaac Sim, but simulating flash or indirect time-of-flight cameras requires multipath and sensor-specific depth-noise models [f8468, f8478, f4603]. Camera depth is described as cheap, but stereo matching struggles on textureless surfaces, active depth-camera types have short range, and both retain general camera weaknesses [f12601, f12597]. No validation of camera-depth sensors for heavy-machine braking in dust or darkness was found, and Chapter 6 separately reports no public heavy-construction or mining automatic-braking validation evidence for flash or indirect time-of-flight depth cameras [f12602, f4604].",
+ "relations": [
+  {
+   "a": "f1405",
+   "b": "f1677",
+   "type": "same",
+   "note": "Both describe Toyota SEnS+ stereo-based discrimination of people from objects."
+  },
+  {
+   "a": "f1405",
+   "b": "f12598",
+   "type": "elaborates",
+   "note": "Glossary adds that the forklift slows through power cutting rather than braking."
+  },
+  {
+   "a": "f1405",
+   "b": "f15785",
+   "type": "elaborates",
+   "note": "Adds the August 2021 date and power-cutting slowdown."
+  },
+  {
+   "a": "f12598",
+   "b": "f15785",
+   "type": "same",
+   "note": "Same fielded forklift example; the named entry adds Toyota and its date."
+  },
+  {
+   "a": "f1654",
+   "b": "f12599",
+   "type": "same",
+   "note": "Both describe the utility-loader combination of cameras, stereo camera and radar."
+  },
+  {
+   "a": "f4603",
+   "b": "f12600",
+   "type": "same",
+   "note": "Both require multipath and sensor-specific depth-noise models for time-of-flight simulation."
+  },
+  {
+   "a": "f8478",
+   "b": "f9016",
+   "type": "same",
+   "note": "Both list Isaac Sim camera, RGB-D, PhysX ultrasonic and IMU capabilities."
+  },
+  {
+   "a": "f12595",
+   "b": "f12596",
+   "type": "elaborates",
+   "note": "Explains how stereo-camera separation affects long-range accuracy."
+  },
+  {
+   "a": "f12595",
+   "b": "f4602",
+   "type": "elaborates",
+   "note": "Identifies active ranging as the mechanism for specific depth-camera types."
+  },
+  {
+   "a": "f4602",
+   "b": "f4603",
+   "type": "elaborates",
+   "note": "Adds simulation requirements for the described active-ranging depth cameras."
+  },
+  {
+   "a": "f12595",
+   "b": "f12597",
+   "type": "elaborates",
+   "note": "Adds stereo texture limitations and active depth-camera range limitations."
+  },
+  {
+   "a": "f4604",
+   "b": "f12602",
+   "type": "elaborates",
+   "note": "Glossary identifies a related validation gap specifically in dust or darkness."
+  },
+  {
+   "a": "f12595",
+   "b": "f12619",
+   "type": "elaborates",
+   "note": "Adds point-cloud processing into objects and tracks for some depth cameras."
+  }
+ ]
+}

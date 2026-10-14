@@ -1,0 +1,115 @@
+{
+ "key": "t167",
+ "hash": "f368bd56c2bf0f8d",
+ "synopsis": "The booklet recommends a multi-fidelity, multi-tool architecture at every cost level rather than one universal simulator, because the market survey found no single tool with public evidence covering earth-moving automatic braking across many sites and all-weather sensing [f4968, f9321, f13071]. A four-month window, GPU-hour limits and coverage spanning 100-plus sites, 10-plus scenarios, weather and machine variants constrain full-fidelity testing; high-fidelity soil simulation runs 50–200 times slower than real time [f13548, f13606, f13605]. The proposed ladder combines millions of fast functional tests, medium-fidelity closed-loop regression, selected high-fidelity perception and soil cases, HIL for timing and interfaces, and targeted physical tests for correlation and final evidence [f9322, f9323, f9324, f9325, f9326, f9327]. Perception simulation should remain separate from braking simulation while supplying detection-delay, range and error distributions; machine-family braking models should likewise range from fast threshold models to selected high-fidelity edge cases [f6410, f13840]. Fidelity allocation must follow sensitivity and correlation work, with learned models used where held-out real-data evidence exists [f9328, f4971]. Modular tool chains require substantial integration work, which open standards reduce but do not eliminate; integrated suites reduce interfaces and support burden, and no independent evidence establishes a universal winner between integrated and modular architectures [f13240, f13609, f9359].",
+ "relations": [
+  {
+   "a": "f9322",
+   "b": "f13597",
+   "type": "same",
+   "note": "Both prescribe deterministic functional and object-list tests for millions of braking-logic combinations."
+  },
+  {
+   "a": "f9323",
+   "b": "f13598",
+   "type": "same",
+   "note": "Both prescribe medium-fidelity closed-loop dynamics for broad regression."
+  },
+  {
+   "a": "f9324",
+   "b": "f13599",
+   "type": "same",
+   "note": "Both reserve high-fidelity sensor simulation for perception-sensitive subsets."
+  },
+  {
+   "a": "f9325",
+   "b": "f13600",
+   "type": "same",
+   "note": "Both reserve high-fidelity soil simulation for braking- and traction-sensitive subsets."
+  },
+  {
+   "a": "f9326",
+   "b": "f13601",
+   "type": "same",
+   "note": "Both use HIL for timing, controller and interface behavior."
+  },
+  {
+   "a": "f9327",
+   "b": "f13602",
+   "type": "same",
+   "note": "Both require targeted physical tests for correlation and final evidence."
+  },
+  {
+   "a": "f9328",
+   "b": "f13603",
+   "type": "same",
+   "note": "Both require sensitivity and correlation to determine fidelity allocation."
+  },
+  {
+   "a": "f9328",
+   "b": "f16173",
+   "type": "same",
+   "note": "Both reject assumption-based allocation across fidelity levels."
+  },
+  {
+   "a": "f13603",
+   "b": "f16173",
+   "type": "same",
+   "note": "Duplicate recommendations to allocate tests using sensitivity and correlation."
+  },
+  {
+   "a": "f13608",
+   "b": "f13840",
+   "type": "elaborates",
+   "note": "Specifies three braking-model layers for each machine family."
+  },
+  {
+   "a": "f9321",
+   "b": "f13596",
+   "type": "same",
+   "note": "Both recommend the multi-fidelity alternative at every cost level."
+  },
+  {
+   "a": "f16172",
+   "b": "f13596",
+   "type": "elaborates",
+   "note": "Details the fourth architecture's test tiers and purposes."
+  },
+  {
+   "a": "f13548",
+   "b": "f4968",
+   "type": "supports",
+   "note": "Limited time and combinatorial coverage motivate a fidelity ladder."
+  },
+  {
+   "a": "f13605",
+   "b": "f9325",
+   "type": "supports",
+   "note": "Slow soil simulation justifies restricting high fidelity to sensitive subsets."
+  },
+  {
+   "a": "f6410",
+   "b": "f13595",
+   "type": "elaborates",
+   "note": "Defines the information exchange between separate perception and braking simulations."
+  },
+  {
+   "a": "f13071",
+   "b": "f4968",
+   "type": "supports",
+   "note": "Missing comprehensive tool evidence motivates avoiding one universal simulator."
+  },
+  {
+   "a": "f13240",
+   "b": "f13609",
+   "type": "same",
+   "note": "Both identify integration work as a cost of separate simulation tools."
+  },
+  {
+   "a": "f9359",
+   "b": "f13609",
+   "type": "elaborates",
+   "note": "Explains modular flexibility and integrated support advantages alongside integration costs."
+  }
+ ]
+}

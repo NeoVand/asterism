@@ -1,0 +1,115 @@
+{
+ "key": "e:asam openmaterial 3d",
+ "hash": "a1eeafff92818e46",
+ "synopsis": "ASAM OpenMATERIAL 3D is described as a free, open material standard for environment creation and sensor simulation; version 1.0.0 was released on 3 April 2025 [f9178, f9181, f8360, f3714]. It addresses the insufficiency of geometry alone by letting one asset carry camera-, lidar- and radar-relevant material properties, including refractive index, roughness, permeability, wavelength-dependent lookup tables and per-material licence metadata [f4965, f12945, f3918, f13187]. Its usefulness for off-road objects remains tentative, and weather, lighting and sensor contamination are explicitly outside its scope, while volumetric properties remain under development [f7084, f13188, f9372, f3922]. Version 1.1.0 was planned for October 2026, with improved conductivity modelling and conversion of measured reflectance into BRDF, but the main page accessed that month still listed only 1.0.0 and the latest release found elsewhere was also 1.0.0 [f3923, f3924, f3925, f9182]. A vendor co-simulation demonstration combines OpenMATERIAL 3D with OpenSCENARIO, OSI and a physical lidar model, providing an implementation example rather than resolving the off-road applicability and scope gaps [f3981, f7084, f13188].",
+ "relations": [
+  {
+   "a": "f3714",
+   "b": "f3917",
+   "type": "same",
+   "note": "Duplicate release date within Chapter 5."
+  },
+  {
+   "a": "f3714",
+   "b": "f13186",
+   "type": "same",
+   "note": "Both report version 1.0.0 released on 3 April 2025."
+  },
+  {
+   "a": "f3714",
+   "b": "f8324",
+   "type": "same",
+   "note": "Same version and release date across chapters."
+  },
+  {
+   "a": "f3918",
+   "b": "f4557",
+   "type": "same",
+   "note": "Both describe standardized sensor material properties, including refractive index, roughness and permeability."
+  },
+  {
+   "a": "f8614",
+   "b": "f16009",
+   "type": "same",
+   "note": "Both identify version 1.0.0 as standardizing sensor-relevant material properties."
+  },
+  {
+   "a": "f3919",
+   "b": "f12946",
+   "type": "same",
+   "note": "Both exclude weather and lighting from the current scope."
+  },
+  {
+   "a": "f8615",
+   "b": "f16010",
+   "type": "same",
+   "note": "Both exclude dirt or contamination on the sensor itself."
+  },
+  {
+   "a": "f9179",
+   "b": "f8615",
+   "type": "same",
+   "note": "Both state that sensor soiling is excluded."
+  },
+  {
+   "a": "f3923",
+   "b": "f13189",
+   "type": "same",
+   "note": "Both report version 1.1.0 planned for October 2026."
+  },
+  {
+   "a": "f4374",
+   "b": "f3921",
+   "type": "same",
+   "note": "Duplicate claim that the format carries per-material licence metadata."
+  },
+  {
+   "a": "f3715",
+   "b": "f4298",
+   "type": "same",
+   "note": "Both require wavelength-specific material properties for lidar and radar."
+  },
+  {
+   "a": "f3925",
+   "b": "f9182",
+   "type": "supports",
+   "note": "October main-page listing supports 1.0.0 being the latest release found."
+  },
+  {
+   "a": "f3924",
+   "b": "f13189",
+   "type": "elaborates",
+   "note": "Adds planned conductivity and reflectance-to-BRDF improvements to the 1.1.0 release plan."
+  },
+  {
+   "a": "f9372",
+   "b": "f13188",
+   "type": "elaborates",
+   "note": "Specifies excluded contamination examples across camera, radar and lidar."
+  },
+  {
+   "a": "f13187",
+   "b": "f4374",
+   "type": "same",
+   "note": "Both state that licence information is stored per material."
+  },
+  {
+   "a": "f13187",
+   "b": "f12945",
+   "type": "elaborates",
+   "note": "Explains wavelength-dependent lookup tables and licence metadata within multisensor assets."
+  },
+  {
+   "a": "f4965",
+   "b": "f12945",
+   "type": "supports",
+   "note": "Geometry's insufficiency explains why assets need sensor-relevant material properties."
+  },
+  {
+   "a": "f3925",
+   "b": "f13189",
+   "type": "elaborates",
+   "note": "Adds that the planned October release was not reflected on the main page."
+  }
+ ]
+}

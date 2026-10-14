@@ -1,0 +1,97 @@
+{
+ "key": "e:response-surface methodology",
+ "hash": "cb6dd1df2c806306",
+ "synopsis": "The booklet recommends response-surface methodology for fine tuning a handful of smooth, continuous parameters, including warning-distance offsets, persistence times, confidence thresholds and filter constants [f6673, f14425, f6965]. After influential factors have been identified, response-surface designs model curvature in a smaller subspace and provide interpretable main effects, interactions and local optimum regions under model assumptions [f6802, f6966, f7221]. The glossary reinforces its use for tuning thresholds and zones, while Chapter 9 also recommends response-surface and D-optimal DOE for constrained physical design spaces [f14104, f7220]. These methods are poor for discontinuous behaviour and cannot establish global corner-case coverage or operational probabilities [f7223, f7222]. Although response surfaces are mature, non-automotive-specific statistical techniques with an independent evidence base, the booklet reports no off-road evidence or published off-road braking application; applicability remains conditional on the stated assumptions being respected [f7398, f7226, f14429, f7399].",
+ "relations": [
+  {
+   "a": "f6673",
+   "b": "f14425",
+   "type": "same",
+   "note": "Both match response surfaces to a few smooth parameters."
+  },
+  {
+   "a": "f6802",
+   "b": "f14104",
+   "type": "same",
+   "note": "Both describe curvature mapping in a smaller influential-factor space."
+  },
+  {
+   "a": "f7220",
+   "b": "f14104",
+   "type": "same",
+   "note": "Both recommend response surfaces for fine tuning thresholds and zones."
+  },
+  {
+   "a": "f7226",
+   "b": "f14429",
+   "type": "same",
+   "note": "Both report an off-road evidence gap for response-surface methods."
+  },
+  {
+   "a": "f6965",
+   "b": "f14425",
+   "type": "elaborates",
+   "note": "Names continuous settings and specifies DOE before response-surface tuning."
+  },
+  {
+   "a": "f6967",
+   "b": "f14104",
+   "type": "elaborates",
+   "note": "Adds NIST provenance and prior identification of influential factors."
+  },
+  {
+   "a": "f7221",
+   "b": "f14104",
+   "type": "elaborates",
+   "note": "Adds local response models, optimum regions and model-assumption limits."
+  },
+  {
+   "a": "f6966",
+   "b": "f14104",
+   "type": "elaborates",
+   "note": "Adds interpretable main effects and interactions to curvature modelling."
+  },
+  {
+   "a": "f7223",
+   "b": "f14425",
+   "type": "supports",
+   "note": "Poor performance on discontinuities supports restricting recommendations to smooth parameters."
+  },
+  {
+   "a": "f7222",
+   "b": "f14104",
+   "type": "elaborates",
+   "note": "Limits fine-tuning claims: no global corner-case coverage or operational probabilities."
+  },
+  {
+   "a": "f6802",
+   "b": "f6967",
+   "type": "same",
+   "note": "Both place response-surface modelling after influential-factor identification."
+  },
+  {
+   "a": "f6966",
+   "b": "f6965",
+   "type": "supports",
+   "note": "Interpretable effects, interactions and curvature explain the recommended tuning workflow."
+  },
+  {
+   "a": "f7221",
+   "b": "f7220",
+   "type": "supports",
+   "note": "Local modelling and optimum-region estimation support fine tuning."
+  },
+  {
+   "a": "f7399",
+   "b": "f6965",
+   "type": "depends",
+   "note": "Direct applicability of the recommended methods requires respecting stated assumptions."
+  },
+  {
+   "a": "f7398",
+   "b": "f14429",
+   "type": "elaborates",
+   "note": "General statistical maturity coexists with absent published off-road braking applications."
+  }
+ ]
+}

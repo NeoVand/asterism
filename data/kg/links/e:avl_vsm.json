@@ -1,0 +1,19 @@
+{
+ "key": "e:avl vsm",
+ "hash": "80bcae5fdca2b29b",
+ "synopsis": "AVL claims correlation of up to 97% for its VSM vehicle models; both the tools chapter and glossary repeat this vendor claim [f8801, f16098]. In April 2023, AVL coupled CARLA with VSM vehicle dynamics and a soft-soil tire model to test an autonomous tractor, but the corpus cites this only as an integration precedent [f8475]. The tools chapter explicitly supports CARLA with AVL VSM and a soft-soil tire model through Model.CONNECT [f8702]. The supplied facts do not establish that the claimed correlation applies to that tractor integration or to the target collision-mitigation system [f8801, f8475, f8702].",
+ "relations": [
+  {
+   "a": "f8801",
+   "b": "f16098",
+   "type": "same",
+   "note": "The glossary repeats the tools chapter’s vendor correlation claim."
+  },
+  {
+   "a": "f8475",
+   "b": "f8702",
+   "type": "supports",
+   "note": "The tractor integration provides precedent for the supported combination, without establishing target-system validation."
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "key": "e:mil-std-3022",
+ "hash": "6abd1436cf39a6b2",
+ "synopsis": "The booklet lists MIL-STD-3022 among standards and guides spanning multiple domains in its discussion of when simulation can be trusted [f8154]. The glossary describes it as a US Department of Defense standard and template for documenting verification, validation and accreditation (VV&A) of models and simulations [f14663, f14653]. However, Chapter 10 explicitly says MIL-STD-3022 was not verified, and the glossary repeats that gap alongside DO-178C and DO-330 [f7719, f14664]. Planners should therefore distinguish the booklet’s description of the standard’s role from verification of the standard itself [f14663, f7719, f14664].",
+ "relations": [
+  {
+   "a": "f7719",
+   "b": "f14664",
+   "type": "same",
+   "note": "Both explicitly report that MIL-STD-3022 was not verified."
+  },
+  {
+   "a": "f14653",
+   "b": "f14663",
+   "type": "same",
+   "note": "Both identify its US defense role in documenting model VV&A."
+  },
+  {
+   "a": "f8154",
+   "b": "f14663",
+   "type": "elaborates",
+   "note": "The glossary specifies the purpose of a standard listed in Chapter 10."
+  },
+  {
+   "a": "f8154",
+   "b": "f7719",
+   "type": "elaborates",
+   "note": "The verification gap qualifies the standard’s inclusion in the cross-domain list."
+  },
+  {
+   "a": "f14663",
+   "b": "f14664",
+   "type": "elaborates",
+   "note": "The glossary qualifies its definition by disclosing that the standard was not verified."
+  }
+ ]
+}

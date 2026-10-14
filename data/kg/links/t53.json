@@ -1,0 +1,103 @@
+{
+ "key": "t53",
+ "hash": "1201a05d5128605f",
+ "synopsis": "Safety Integrity Level denotes the IEC 61508 safety-function grades SIL 1–4, not software-in-the-loop; context distinguishes reliability requirements from test methods, where the booklet recommends software-in-the-loop for volume and hardware-in-the-loop for timing, interfaces and faults [f12048, f12050, f12058, f12057, f13341]. For frequently acting functions, SIL specifies dangerous-failure probability bands: SIL 1 spans one failure in 100,000 to one million hours, each higher grade is ten times stricter, and SIL 3 spans 10^-8–10^-7 per hour and is roughly as demanding as PL e [f12051, f12052]. The grade also governs hardware-analysis and software-development rigor, while FMEDA supplies failure classifications for diagnostic coverage and PL, MPL and SIL probability calculations [f12053, f12098]. Chapter 9 requires the collision-mitigation intervention path to receive a performance-level or integrity assignment plus fault testing, consistent with the glossary requirement and mining customers’ safety-integrity specifications [f7455, f15273, f12059]. Standards selection remains unresolved: IEC 61508, IEC 62061 and ISO 25119 are listed as alternatives whose fit was not verified, Chapter 9’s editions were not verified, and IEC 62061:2021 is listed as current but not reviewed [f12054, f7455, f15267].",
+ "relations": [
+  {
+   "a": "f7455",
+   "b": "f15273",
+   "type": "same",
+   "note": "Both require intervention-path integrity or performance-level assignment and fault testing."
+  },
+  {
+   "a": "f12048",
+   "b": "f13341",
+   "type": "same",
+   "note": "Both distinguish safety-integrity grades from software-in-the-loop testing."
+  },
+  {
+   "a": "f12048",
+   "b": "f12050",
+   "type": "elaborates",
+   "note": "Identifies SIL 1 as lowest and SIL 4 as highest."
+  },
+  {
+   "a": "f12048",
+   "b": "f12051",
+   "type": "elaborates",
+   "note": "Quantifies SIL 1 dangerous-failure probability for frequently acting functions."
+  },
+  {
+   "a": "f12051",
+   "b": "f12052",
+   "type": "elaborates",
+   "note": "Adds tenfold tightening between grades and the SIL 3 band."
+  },
+  {
+   "a": "f12048",
+   "b": "f12053",
+   "type": "elaborates",
+   "note": "Safety grades govern development and analysis rigor as well as risk reduction."
+  },
+  {
+   "a": "f13341",
+   "b": "f12058",
+   "type": "elaborates",
+   "note": "Provides a practical context rule for disambiguating the acronym."
+  },
+  {
+   "a": "f12058",
+   "b": "f12057",
+   "type": "elaborates",
+   "note": "Test allocation illustrates SIL meaning software-in-the-loop rather than a safety grade."
+  },
+  {
+   "a": "f12059",
+   "b": "f7455",
+   "type": "supports",
+   "note": "Customer safety-integrity specifications reinforce the need for intervention-path integrity assignment."
+  },
+  {
+   "a": "f7455",
+   "b": "f15267",
+   "type": "elaborates",
+   "note": "Identifies IEC 62061:2021 and its SIL scale, while retaining a review gap."
+  },
+  {
+   "a": "f7455",
+   "b": "f12054",
+   "type": "elaborates",
+   "note": "Adds alternative standards and an unverified-fit caveat to the standards requirement."
+  },
+  {
+   "a": "f12049",
+   "b": "f15267",
+   "type": "elaborates",
+   "note": "Names the machinery standard’s edition, SIL scale and unreviewed status."
+  },
+  {
+   "a": "f12054",
+   "b": "f15267",
+   "type": "elaborates",
+   "note": "IEC 62061’s current listing does not resolve its unverified applicability."
+  },
+  {
+   "a": "f12098",
+   "b": "f12051",
+   "type": "supports",
+   "note": "FMEDA failure classifications feed the probability calculations used for SIL bands."
+  },
+  {
+   "a": "f12049",
+   "b": "f12055",
+   "type": "elaborates",
+   "note": "Adds IEC 61508-3 tool classes used to qualify safety-evidence-producing tools."
+  },
+  {
+   "a": "f12049",
+   "b": "f12056",
+   "type": "elaborates",
+   "note": "Adds IEC 61508’s higher proven-in-use confidence requirement relative to ISO 26262."
+  }
+ ]
+}

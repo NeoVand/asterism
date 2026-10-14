@@ -1,0 +1,61 @@
+{
+ "key": "e:cross-entropy methods",
+ "hash": "20695112267b32da",
+ "synopsis": "The glossary places cross-entropy methods in the booklet’s rare-event methods family; Chapter 9 describes these methods as deliberately oversampling dangerous conditions while estimating naturalistic rates through distribution-ratio reweighting [f14161, f6846]. Chapter 9 recommends cross-entropy, importance sampling and accelerated evaluation for small-probability estimation, with unbiased rates conditional on a known likelihood ratio and proposal coverage of the failure region [f7261, f7262]. Trustworthy rate estimation is not established when the naturalistic distribution is poorly known, and these methods carry high model dependence and potentially huge weight variance [f7264, f7265, f7266]. They cannot establish high-dimensional robustness or account for unmodelled physics; moreover, the independent evidence is marked as on-road, leaving an applicability gap for this heavy off-road program [f7263, f7268]. Typical tooling is in-house or academic [f7267].",
+ "relations": [
+  {
+   "a": "f6846",
+   "b": "f14161",
+   "type": "elaborates",
+   "note": "Explains how the glossary’s rare-event methods family oversamples hazards and estimates naturalistic rates."
+  },
+  {
+   "a": "f7261",
+   "b": "f14161",
+   "type": "elaborates",
+   "note": "Specifies the recommended program use for three members of the glossary’s method family."
+  },
+  {
+   "a": "f7262",
+   "b": "f6846",
+   "type": "elaborates",
+   "note": "Adds failure-region coverage and explicitly conditions unbiased estimation on a known likelihood ratio."
+  },
+  {
+   "a": "f7261",
+   "b": "f7262",
+   "type": "depends",
+   "note": "Recommended small-probability estimation requires known likelihood ratios and failure-region coverage for unbiased rates."
+  },
+  {
+   "a": "f7264",
+   "b": "f7262",
+   "type": "elaborates",
+   "note": "Identifies poor knowledge of the naturalistic distribution as a barrier to trustworthy rates."
+  },
+  {
+   "a": "f7264",
+   "b": "f7265",
+   "type": "supports",
+   "note": "Sensitivity to naturalistic-distribution knowledge illustrates high model dependence."
+  },
+  {
+   "a": "f7263",
+   "b": "f7261",
+   "type": "elaborates",
+   "note": "Limits the recommendation to rate estimation rather than robustness or unmodelled-physics assurance."
+  },
+  {
+   "a": "f7266",
+   "b": "f7262",
+   "type": "elaborates",
+   "note": "Potentially huge weight variance remains a risk even when unbiased estimation conditions hold."
+  },
+  {
+   "a": "f7268",
+   "b": "f7261",
+   "type": "elaborates",
+   "note": "Qualifies the program recommendation by identifying its independent evidence as on-road."
+  }
+ ]
+}

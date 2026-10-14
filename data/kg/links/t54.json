@@ -1,0 +1,115 @@
+{
+ "key": "t54",
+ "hash": "1c399f0bad3dcd66",
+ "synopsis": "ASIL is ISO 26262’s road-vehicle safety-requirement grading scale, ranging from A (lowest) to D (highest); it does not apply by scope to the heavy off-road collision mitigation system considered here [f12060, f12065]. Its hazard assessment combines severity S0–S3, exposure E0–E4 and controllability C0–C3 to yield ASIL A–D or QM, meaning ordinary quality management with no safety requirement [f12062, f12063]. Chapter 3 and the glossary consistently distinguish ISO 19014’s Machine Performance Level (MPL) scale from ASIL, so the program plan must translate ASIL terminology to MPL rather than adopt ASIL targets or passenger-car braking values and scenarios for a loaded haul truck on gravel [f2356, f12066, f15294, f12044, f12071]. Automotive terminology remains common among suppliers and engineers, while ISO 26262 Parts 2 and 8 and ISO/PAS 8800 are retained only as reference material explicitly marked as on-road evidence [f12070, f12067, f12068, f12069]. The facts establish the scope boundary and translation requirement but provide no specific ASIL-to-MPL mapping [f12060, f2356, f12071].",
+ "relations": [
+  {
+   "a": "f2356",
+   "b": "f12066",
+   "type": "same",
+   "note": "Chapter 3 and glossary both distinguish MPL from ASIL."
+  },
+  {
+   "a": "f2356",
+   "b": "f15294",
+   "type": "same",
+   "note": "Both state ISO 19014's MPL scale is not ASIL."
+  },
+  {
+   "a": "f2356",
+   "b": "f12044",
+   "type": "same",
+   "note": "Both distinguish MPL from the road-vehicle ASIL scale."
+  },
+  {
+   "a": "f12066",
+   "b": "f15294",
+   "type": "same",
+   "note": "Duplicate statements distinguishing ISO 19014 MPL from ASIL."
+  },
+  {
+   "a": "f12066",
+   "b": "f12044",
+   "type": "same",
+   "note": "Both state MPL and ASIL are different scales."
+  },
+  {
+   "a": "f15294",
+   "b": "f12044",
+   "type": "same",
+   "note": "Both state MPL and ASIL are different scales."
+  },
+  {
+   "a": "f12061",
+   "b": "f15291",
+   "type": "same",
+   "note": "Both identify ISO 26262 as the road-vehicle functional-safety standard."
+  },
+  {
+   "a": "f2356",
+   "b": "f12071",
+   "type": "supports",
+   "note": "The distinction between scales supports translating terminology rather than adopting ASIL targets."
+  },
+  {
+   "a": "f12060",
+   "b": "f12065",
+   "type": "elaborates",
+   "note": "System-specific exclusion also covers ISO 21448."
+  },
+  {
+   "a": "f12065",
+   "b": "f12071",
+   "type": "supports",
+   "note": "Off-road scope exclusion supports rejecting direct application of automotive targets and scenarios."
+  },
+  {
+   "a": "f12070",
+   "b": "f12071",
+   "type": "supports",
+   "note": "Automotive backgrounds explain the need to translate ASIL terminology."
+  },
+  {
+   "a": "f12062",
+   "b": "f12063",
+   "type": "depends",
+   "note": "ASIL or QM classification results from combining severity, exposure and controllability ratings."
+  },
+  {
+   "a": "f12060",
+   "b": "f12063",
+   "type": "elaborates",
+   "note": "Adds QM as an alternative outcome to ASIL A–D."
+  },
+  {
+   "a": "f12060",
+   "b": "f12062",
+   "type": "elaborates",
+   "note": "Specifies the hazard-rating dimensions underlying ASIL grading."
+  },
+  {
+   "a": "f12064",
+   "b": "f12060",
+   "type": "elaborates",
+   "note": "Provides a highway hard-braking example of high road-vehicle hazard grading."
+  },
+  {
+   "a": "f12067",
+   "b": "f12065",
+   "type": "elaborates",
+   "note": "Part 8 remains on-road reference evidence despite exclusion from system scope."
+  },
+  {
+   "a": "f12068",
+   "b": "f12065",
+   "type": "elaborates",
+   "note": "Part 2 safety-case requirements are reference evidence, not off-road applicability."
+  },
+  {
+   "a": "f12069",
+   "b": "f12065",
+   "type": "elaborates",
+   "note": "AI tailoring is retained as explicitly on-road reference material."
+  }
+ ]
+}

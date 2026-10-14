@@ -1,0 +1,25 @@
+{
+ "key": "e:nvidia rtx 2070 super",
+ "hash": "ec83d1b920ba0cc1",
+ "synopsis": "RadaRays measured 7.8–18.8 milliseconds per polar radar image on an NVIDIA RTX 2070 Super as initial rays increased from 80,000 to 400,000 [f4936]. The glossary repeats this GPU timing range and compares it with 25.8–78.5 milliseconds on a desktop CPU [f16196]. At 160,000 initial rays, the GPU took 10.2 milliseconds versus 39.3 milliseconds on a Ryzen 7 3800X CPU [f4938]. These measurements apply only to the tested radar, model and scene, limiting their use as general performance predictions [f4936, f4938].",
+ "relations": [
+  {
+   "a": "f4936",
+   "b": "f16196",
+   "type": "same",
+   "note": "Both report the same RTX 2070 Super timing range; glossary adds CPU comparison."
+  },
+  {
+   "a": "f4938",
+   "b": "f16196",
+   "type": "elaborates",
+   "note": "Provides a specific ray-count benchmark and identifies the comparison CPU."
+  },
+  {
+   "a": "f4938",
+   "b": "f4936",
+   "type": "elaborates",
+   "note": "Adds the 160,000-ray timing within the reported GPU performance range."
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "key": "e:open simulation interface osi",
+ "hash": "c469d9dc3bd9c387",
+ "synopsis": "OSI is the message standard used by sensor models delivered as FMUs, and it is among the open standards that make heterogeneous tool chains practical for road ADAS engineering [f13235, f9331]. Chapter 11 identifies Persival as offering credible sensor-model development and validation, including OSI FMUs and weather benches; its middle-cost example stack includes one externally validated sensor model, potentially an OSI FMU from a specialist [f8812, f9287]. However, ASAM’s 2025 high-fidelity OSI project states that existing abstractions insufficiently represent some physical phenomena, notably camera spectral irradiance and radar raw waveform data [f7081]. That project explicitly considers camera, radar and lidar, with ultrasound only a possibility, so the corpus pairs practical OSI-based integration options with unresolved fidelity limitations [f7082, f7081, f8812, f9287].",
+ "relations": [
+  {
+   "a": "f8812",
+   "b": "f13235",
+   "type": "elaborates",
+   "note": "Names a supplier offering OSI FMUs and associated validation capabilities."
+  },
+  {
+   "a": "f9287",
+   "b": "f13235",
+   "type": "elaborates",
+   "note": "Places an OSI FMU in a concrete middle-cost stack with external validation."
+  },
+  {
+   "a": "f8812",
+   "b": "f9287",
+   "type": "supports",
+   "note": "Supplier capabilities support the example stack’s specialist sensor-model option."
+  },
+  {
+   "a": "f13235",
+   "b": "f9331",
+   "type": "supports",
+   "note": "Standardized sensor-model messaging provides a concrete mechanism for heterogeneous tool-chain integration."
+  },
+  {
+   "a": "f7082",
+   "b": "f7081",
+   "type": "elaborates",
+   "note": "Defines the sensor scope of the project identifying OSI fidelity gaps."
+  },
+  {
+   "a": "f7081",
+   "b": "f13235",
+   "type": "elaborates",
+   "note": "Qualifies OSI-based sensor-model delivery with limits on representing specific physical phenomena."
+  }
+ ]
+}

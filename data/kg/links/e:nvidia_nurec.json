@@ -1,0 +1,67 @@
+{
+ "key": "e:nvidia nurec",
+ "hash": "ca1a9535fd10eb95",
+ "synopsis": "NVIDIA NuRec reconstructs scenes from recordings using Gaussian splatting and is described as supporting domain-neutral reconstruction from logs [f15954, f9163]. It is integrated with Isaac Sim and CARLA 0.9.16; Isaac Sim provides NuRec-based neural rendering, while CARLA 0.9.16 added NuRec support [f8609, f8479, f8467]. The tooling inventory lists an open-core license, free internal use, and a latest release found dated 2025 to 2026 [f9162, f9165, f9166]. The glossary cautions that NuRec and related methods reconstruct appearance from logs but struggle with changes in sensor viewpoint [f16004]. Whether such reconstructions can serve as test evidence rather than training data remains uncertain, and the chapter's on-road assessment says learned reconstruction has not eliminated the need for application-specific credibility evidence [f9355, f9358].",
+ "relations": [
+  {
+   "a": "f8609",
+   "b": "f9164",
+   "type": "same",
+   "note": "Both identify Isaac Sim and CARLA 0.9.16 as NuRec integration interfaces."
+  },
+  {
+   "a": "f15954",
+   "b": "f9163",
+   "type": "elaborates",
+   "note": "Domain-neutral scope adds detail to reconstruction from recordings."
+  },
+  {
+   "a": "f15954",
+   "b": "f16004",
+   "type": "elaborates",
+   "note": "Adds appearance reconstruction and limitations under sensor viewpoint changes."
+  },
+  {
+   "a": "f16004",
+   "b": "f9355",
+   "type": "supports",
+   "note": "Viewpoint limitations support uncertainty about reconstruction's suitability as test evidence."
+  },
+  {
+   "a": "f9358",
+   "b": "f9355",
+   "type": "supports",
+   "note": "Continuing credibility requirements support uncertainty about using reconstructions as test evidence."
+  },
+  {
+   "a": "f8467",
+   "b": "f8609",
+   "type": "supports",
+   "note": "CARLA release additions substantiate the CARLA portion of the integration claim."
+  },
+  {
+   "a": "f8479",
+   "b": "f8609",
+   "type": "supports",
+   "note": "Isaac Sim neural rendering substantiates the Isaac Sim portion of the integration claim."
+  },
+  {
+   "a": "f8479",
+   "b": "f15954",
+   "type": "elaborates",
+   "note": "Identifies Isaac Sim neural rendering as a use of NuRec Gaussian splatting."
+  },
+  {
+   "a": "f8359",
+   "b": "f15954",
+   "type": "elaborates",
+   "note": "The glossary explains the reconstruction method behind the listed environment-creation offering."
+  },
+  {
+   "a": "f9162",
+   "b": "f9165",
+   "type": "elaborates",
+   "note": "Free internal use adds a usage-cost detail to the open-core licensing description."
+  }
+ ]
+}

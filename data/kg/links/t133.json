@@ -1,0 +1,115 @@
+{
+ "key": "t133",
+ "hash": "ab81b365ddc50d05",
+ "synopsis": "Structure from motion recovers camera positions and 3D points from photographs; COLMAP implements this method, while scene reconstruction extends it into a usable virtual site through registration, cleanup, classification, collision proxies, sensor materials and qualification against held-out measurements [f13144, f13145, f13151]. The booklet calls existing machine recordings the cheapest route to real site geometry, but reconstruction requires synchronized, calibrated logs and accurate poses; in one dataset, only 50 of 200 sequences passed the pose check [f13153, f4216, f4290, f13152]. Camera-only reconstruction depends on texture, similar illumination, overlap, at least three observations per object and genuinely different viewpoints; textureless terrain, glare, reflective surfaces and insufficient parallax can cause failure [f3799, f4034, f4035, f4040]. One benchmark required more than 800 hours of COLMAP compute and more than 300 hours of manual selection, but the compute figure is on-road evidence, not a direct job-site digital-twin cost estimate [f13150, f3898]. The conclusion is that reconstruction can make recordings replay-ready or near-path simulation-ready, but not braking-validation-ready or radar/ultrasonic-ready: reconstructed mesh artifacts actually occluded simulated radar and produced empty frames, so sensor-mounting comparisons require validated reconstruction and position-specific sensor models [f13154, f5103, f5492].",
+ "relations": [
+  {
+   "a": "f3799",
+   "b": "f13147",
+   "type": "same",
+   "note": "Both list the same official COLMAP reconstruction preconditions."
+  },
+  {
+   "a": "f4025",
+   "b": "f13147",
+   "type": "same",
+   "note": "Both repeat COLMAP's texture, illumination, overlap, observation and viewpoint requirements."
+  },
+  {
+   "a": "f3799",
+   "b": "f4025",
+   "type": "same",
+   "note": "Duplicate lists of COLMAP reconstruction requirements within Chapter 5."
+  },
+  {
+   "a": "f3800",
+   "b": "f13148",
+   "type": "same",
+   "note": "Both warn against textureless, high-dynamic-range and reflective or specular scenes."
+  },
+  {
+   "a": "f4040",
+   "b": "f13148",
+   "type": "same",
+   "note": "Both identify high dynamic range and reflective surfaces as reconstruction hazards."
+  },
+  {
+   "a": "f3800",
+   "b": "f4040",
+   "type": "same",
+   "note": "Both repeat COLMAP warnings about high dynamic range and specularities."
+  },
+  {
+   "a": "f4027",
+   "b": "f13149",
+   "type": "same",
+   "note": "Both say near-identical video frames cannot substitute for different viewpoints."
+  },
+  {
+   "a": "f3898",
+   "b": "f13150",
+   "type": "elaborates",
+   "note": "Identifies EUVS and limits the compute benchmark's applicability to job-site cost estimates."
+  },
+  {
+   "a": "f13145",
+   "b": "f13144",
+   "type": "elaborates",
+   "note": "Explains point matching and joint estimation underlying the structure-from-motion definition."
+  },
+  {
+   "a": "f3794",
+   "b": "f13144",
+   "type": "elaborates",
+   "note": "Extends sparse reconstruction through multi-view stereo into dense points, meshes and surfaces."
+  },
+  {
+   "a": "f4216",
+   "b": "f13151",
+   "type": "elaborates",
+   "note": "Specifies synchronized camera, lidar, IMU and GNSS inputs for the reconstruction pipeline."
+  },
+  {
+   "a": "f4290",
+   "b": "f13152",
+   "type": "supports",
+   "note": "Accurate poses being prerequisite explains why pose-check failures block reconstruction."
+  },
+  {
+   "a": "f3980",
+   "b": "f13151",
+   "type": "elaborates",
+   "note": "Provides SAM segmentation and manual checks as a concrete pipeline implementation."
+  },
+  {
+   "a": "f5103",
+   "b": "f13154",
+   "type": "supports",
+   "note": "Radar occlusion and empty frames substantiate the radar-readiness limitation."
+  },
+  {
+   "a": "f13151",
+   "b": "f5492",
+   "type": "depends",
+   "note": "Validated reconstruction for mounting comparisons requires pipeline qualification against held-out measurements."
+  },
+  {
+   "a": "f4290",
+   "b": "f8657",
+   "type": "supports",
+   "note": "Calibration and pose prerequisites explain reconstruction and replay accuracy limits."
+  },
+  {
+   "a": "f4035",
+   "b": "f13148",
+   "type": "elaborates",
+   "note": "Names off-road terrain examples where weak visual correspondence impairs reconstruction."
+  },
+  {
+   "a": "f3795",
+   "b": "f16003",
+   "type": "elaborates",
+   "note": "Specifies a 2022 non-RTK UAV quarry-bench example."
+  }
+ ]
+}

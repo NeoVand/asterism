@@ -1,0 +1,115 @@
+{
+ "key": "t211",
+ "hash": "b5a566c3a85ab3c8",
+ "synopsis": "Bayesian analysis can formally combine simulation-derived prior evidence with physical tests, potentially reducing physical testing, but the corpus gives no fixed virtual-to-physical exchange rate: this depends on assessor acceptance of prior strength and documented simulation/toolchain credibility [f6898, f14218, f14227, f14275]. Prior sensitivity is substantial: the cited independent, on-road ISSRE 2019 analysis reduced RAND’s 275 million fatality-free miles to 69 million with a strong prior carrying 90% prior confidence, but increased it to 476 million with a weak prior; proponents and critics therefore disagree about simulation-derived priors’ benefits [f6900, f6901, f6902, f7437]. The recommendations are to use conservative Bayesian methods because assessors will challenge priors, and to learn machine-response distributions from existing machines before 2027, even where brake hardware differs [f6899, f14222, f6405]. Bayesian or hierarchical pooling can share evidence across genuinely similar machine families while retaining variant uncertainty, but requires a justified similarity model to avoid hiding a bad variant [f645, f646]. Sequential testing permits early stopping when evidence is clearly good or bad, provided acceptance thresholds, statistical tests and stopping rules are fixed in advance—not chosen when results look favorable [f643, f644, f6903, f6905, f14225]. Its use in the four-month validation window is attractive, although the chapter labels that application expert opinion while the glossary presents trial savings and program attractiveness as a finding [f6904, f14224].",
+ "relations": [
+  {
+   "a": "f6901",
+   "b": "f14220",
+   "type": "same",
+   "note": "Both report 90% prior confidence reducing 275 million miles to 69 million."
+  },
+  {
+   "a": "f6902",
+   "b": "f14221",
+   "type": "same",
+   "note": "Both report a weak prior increasing required miles from 275 million to 476 million."
+  },
+  {
+   "a": "f6899",
+   "b": "f14222",
+   "type": "same",
+   "note": "Both recommend conservative Bayesian methods because priors will face assessor challenges."
+  },
+  {
+   "a": "f7437",
+   "b": "f14226",
+   "type": "same",
+   "note": "Both describe disagreement over simulation priors; the chapter adds the numerical range."
+  },
+  {
+   "a": "f6905",
+   "b": "f14225",
+   "type": "same",
+   "note": "Both require predetermined stopping rules; the glossary explains invalid opportunistic stopping."
+  },
+  {
+   "a": "f6903",
+   "b": "f14223",
+   "type": "same",
+   "note": "Both describe SPRT early stopping; the glossary specifies checks after each trial or batch."
+  },
+  {
+   "a": "f643",
+   "b": "f6903",
+   "type": "elaborates",
+   "note": "SPRT supplies a specific sequential method for threshold-based early stopping."
+  },
+  {
+   "a": "f644",
+   "b": "f6905",
+   "type": "elaborates",
+   "note": "General sequential requirements specify acceptance thresholds and statistical tests alongside predetermined stopping rules."
+  },
+  {
+   "a": "f6898",
+   "b": "f14218",
+   "type": "elaborates",
+   "note": "The glossary illustrates simulation priors updated by hundreds of physical trials."
+  },
+  {
+   "a": "f14218",
+   "b": "f14227",
+   "type": "depends",
+   "note": "Using simulation as prior evidence requires documented simulation credibility."
+  },
+  {
+   "a": "f6927",
+   "b": "f14275",
+   "type": "elaborates",
+   "note": "Established updating methods do not establish an assessor-independent virtual-to-physical exchange rate."
+  },
+  {
+   "a": "f6900",
+   "b": "f14219",
+   "type": "supports",
+   "note": "The road-testing study provides evidence for the glossary’s warning about prior sensitivity."
+  },
+  {
+   "a": "f6901",
+   "b": "f7437",
+   "type": "supports",
+   "note": "The strong-prior result supplies the lower end of the disputed mileage range."
+  },
+  {
+   "a": "f6902",
+   "b": "f7437",
+   "type": "supports",
+   "note": "The weak-prior result supplies the upper end and illustrates sensitivity."
+  },
+  {
+   "a": "f645",
+   "b": "f646",
+   "type": "depends",
+   "note": "Sharing information across variants requires justified similarity to avoid masking a bad variant."
+  },
+  {
+   "a": "f6405",
+   "b": "f6898",
+   "type": "elaborates",
+   "note": "Existing-machine measurements offer a concrete source of prior evidence for Bayesian updating."
+  },
+  {
+   "a": "f6903",
+   "b": "f6904",
+   "type": "supports",
+   "note": "Early stopping motivates the proposed use within the four-month validation window."
+  },
+  {
+   "a": "f6904",
+   "b": "f14224",
+   "type": "same",
+   "note": "Both describe four-month-window attractiveness, but label its evidential status differently."
+  }
+ ]
+}

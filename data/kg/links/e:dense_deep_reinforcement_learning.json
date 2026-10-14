@@ -1,0 +1,103 @@
+{
+ "key": "e:dense deep reinforcement learning",
+ "hash": "7048088f54a08556",
+ "synopsis": "Dense deep reinforcement learning (D2RL), reported by Feng et al. in Nature on 22 March 2023, achieved unbiased automated-road-vehicle evaluation reported as 10^3–10^5 times faster on highway and urban test tracks using an augmented-reality environment [f6848, f14163]. The method trains background agents and is presented among statistical approaches to shortening validation, with academic open-source code identified as typical tooling [f633, f425, f7279]. Chapter 9 recommends D2RL and naturalistic-adversarial environments for accelerated unbiased evaluation in the collision-mitigation test program, but the demonstrated evidence is only on-road, not off-road [f7275, f7079]. Legitimate evaluation claims require a large naturalistic dataset and a learned naturalistic behaviour model; Chapter 1 additionally identifies a known exposure distribution as necessary and unavailable for the 100+ job-site types [f7277, f7278, f352]. A 2026 Nature Communications paper in the same research line applies dense learning to overcome safety-performance stagnation, but the supplied fact does not establish off-road validation [f6849].",
+ "relations": [
+  {
+   "a": "f6848",
+   "b": "f14163",
+   "type": "same",
+   "note": "Both report the 2023 Nature result: unbiased evaluation accelerated 10^3–10^5 times."
+  },
+  {
+   "a": "f6848",
+   "b": "f7078",
+   "type": "same",
+   "note": "Both report the same 10^3–10^5 testing acceleration."
+  },
+  {
+   "a": "f6848",
+   "b": "f7276",
+   "type": "same",
+   "note": "Both attribute 10^3–10^5 evaluation acceleration to on-road Nature 2023 evidence."
+  },
+  {
+   "a": "f14163",
+   "b": "f7078",
+   "type": "same",
+   "note": "Both restate the 10^3–10^5 acceleration result."
+  },
+  {
+   "a": "f14163",
+   "b": "f7276",
+   "type": "same",
+   "note": "Both report the same on-road acceleration result from Nature 2023."
+  },
+  {
+   "a": "f7078",
+   "b": "f7276",
+   "type": "same",
+   "note": "Both restate the Nature 2023 acceleration range."
+  },
+  {
+   "a": "f351",
+   "b": "f633",
+   "type": "same",
+   "note": "Both describe Feng's accelerated unbiased road-vehicle validation; f633 specifies background-agent training."
+  },
+  {
+   "a": "f6848",
+   "b": "f633",
+   "type": "elaborates",
+   "note": "Adds acceleration magnitude, publication date, and test-track environment to the method description."
+  },
+  {
+   "a": "f633",
+   "b": "f425",
+   "type": "elaborates",
+   "note": "Details the dense reinforcement learning approach listed among statistical validation methods."
+  },
+  {
+   "a": "f6848",
+   "b": "f7275",
+   "type": "supports",
+   "note": "Demonstrated unbiased acceleration supports recommending D2RL for the test program."
+  },
+  {
+   "a": "f7079",
+   "b": "f7275",
+   "type": "contradicts",
+   "note": "Off-road evidence gap qualifies the recommendation for the collision-mitigation test program."
+  },
+  {
+   "a": "f352",
+   "b": "f7275",
+   "type": "contradicts",
+   "note": "Missing job-site exposure distributions constrain the proposed application."
+  },
+  {
+   "a": "f7275",
+   "b": "f7277",
+   "type": "depends",
+   "note": "Legitimate use for evaluation requires a large naturalistic dataset."
+  },
+  {
+   "a": "f7275",
+   "b": "f7278",
+   "type": "depends",
+   "note": "Recommended evaluation use requires a learned naturalistic behaviour model."
+  },
+  {
+   "a": "f352",
+   "b": "f7277",
+   "type": "elaborates",
+   "note": "Adds the specific off-road exposure-distribution gap to naturalistic-data prerequisites."
+  },
+  {
+   "a": "f7079",
+   "b": "f633",
+   "type": "elaborates",
+   "note": "Explicitly states that the on-road evidence does not prove off-road testing applicability."
+  }
+ ]
+}

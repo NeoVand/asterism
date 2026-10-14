@@ -1,0 +1,61 @@
+{
+ "key": "e:d-optimal designs",
+ "hash": "559d42e9c906daa2",
+ "synopsis": "D-optimal designs are useful when constraints make regular factorial test grids impossible, although they sacrifice orthogonality and can produce correlated estimates [f14105, f6803, f7224]. Under model assumptions, response-surface and D-optimal DOE establish local response models, curvature and optimum regions; the booklet recommends them for fine tuning thresholds and zones and exploring constrained physical design spaces [f7221, f7220]. After prototype arrival, modest DOE or D-optimal tests should estimate sensor, latency and braking residuals and initialise common parameters; the glossary places DOE in both the coverage and calibration streams [f7381, f14109]. This coverage role is limited: these methods cannot establish global corner-case coverage or operational probabilities and are poor for discontinuous behaviour [f7222, f7223]. An independent evidence base exists, but no off-road evidence is reported; statistics packages are typical tooling [f7226, f7225].",
+ "relations": [
+  {
+   "a": "f14105",
+   "b": "f6803",
+   "type": "same",
+   "note": "Both identify constrained grids as a reason to use D-optimal designs."
+  },
+  {
+   "a": "f7381",
+   "b": "f14109",
+   "type": "same",
+   "note": "Both recommend post-arrival DOE calibration of sensor, latency and braking residuals."
+  },
+  {
+   "a": "f6803",
+   "b": "f7220",
+   "type": "supports",
+   "note": "Suitability for constrained grids supports use in constrained physical design spaces."
+  },
+  {
+   "a": "f7221",
+   "b": "f7220",
+   "type": "supports",
+   "note": "Local response modelling and optimum estimation support threshold and zone fine tuning."
+  },
+  {
+   "a": "f7224",
+   "b": "f6803",
+   "type": "elaborates",
+   "note": "Correlated estimates add a specific limitation alongside sacrificed orthogonality."
+  },
+  {
+   "a": "f7222",
+   "b": "f14109",
+   "type": "elaborates",
+   "note": "Limits the glossary's coverage role: DOE cannot establish global coverage or operational probabilities."
+  },
+  {
+   "a": "f7221",
+   "b": "f7222",
+   "type": "elaborates",
+   "note": "Distinguishes local model capabilities from unavailable global coverage guarantees."
+  },
+  {
+   "a": "f7223",
+   "b": "f7220",
+   "type": "elaborates",
+   "note": "Discontinuous behaviour limits suitability for the recommended fine-tuning applications."
+  },
+  {
+   "a": "f7226",
+   "b": "f7220",
+   "type": "elaborates",
+   "note": "No reported off-road evidence qualifies the program's recommended use."
+  }
+ ]
+}

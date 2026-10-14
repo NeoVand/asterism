@@ -1,0 +1,115 @@
+{
+ "key": "e:siemens simcenter prescan",
+ "hash": "d4efe0557691eea8",
+ "synopsis": "Siemens Simcenter Prescan is a commercial ADAS/AV environment, traffic, scenario and sensor simulation tool, listed among complete or near-complete platforms [f8456, f8348]. Its models cover camera, radar, lidar and ultrasonic sensors, with reflective material properties, lighting, weather and radar phenomena [f8457, f15899]. It supports OpenSCENARIO and OpenDRIVE, plus Python and MATLAB APIs [f8616, f16237]. Evidence in the corpus is on-road only: public off-road heavy-machine validation was not found, and translating its road-centric scene semantics and material libraries to quarries and mines is considered non-trivial [f9003, f8461, f15951, f8462]. The latest release found was Prescan 2606, dated 2026, but its exact release date and public price were not found; sensor-model pricing is quote-only [f8459, f8460, f8541, f9006].",
+ "relations": [
+  {
+   "a": "f15951",
+   "b": "f8542",
+   "type": "same",
+   "note": "Both report no public off-road validation for Prescan sensor models."
+  },
+  {
+   "a": "f8461",
+   "b": "f9065",
+   "type": "same",
+   "note": "Both report missing off-road evidence for Prescan."
+  },
+  {
+   "a": "f8542",
+   "b": "f9065",
+   "type": "same",
+   "note": "Both identify the off-road validation evidence gap."
+  },
+  {
+   "a": "f15898",
+   "b": "f9003",
+   "type": "elaborates",
+   "note": "The chapter isolates the glossary's on-road-only evidence qualification."
+  },
+  {
+   "a": "f15898",
+   "b": "f9002",
+   "type": "elaborates",
+   "note": "The glossary adds evidence and pricing limitations to commercial status."
+  },
+  {
+   "a": "f15899",
+   "b": "f8540",
+   "type": "same",
+   "note": "Both list camera, lidar, radar and ultrasonic models."
+  },
+  {
+   "a": "f8540",
+   "b": "f9004",
+   "type": "same",
+   "note": "Identical sensor coverage."
+  },
+  {
+   "a": "f8540",
+   "b": "f9066",
+   "type": "same",
+   "note": "Identical sensor-model coverage."
+  },
+  {
+   "a": "f8457",
+   "b": "f15899",
+   "type": "elaborates",
+   "note": "Adds materials, environmental effects and radar phenomena to sensor coverage."
+  },
+  {
+   "a": "f16017",
+   "b": "f8616",
+   "type": "same",
+   "note": "Both identify Prescan support for OpenSCENARIO and OpenDRIVE."
+  },
+  {
+   "a": "f8458",
+   "b": "f16237",
+   "type": "elaborates",
+   "note": "Adds OpenSCENARIO support to the glossary's Python and MATLAB API listing."
+  },
+  {
+   "a": "f8458",
+   "b": "f9005",
+   "type": "same",
+   "note": "Identical OpenSCENARIO, Python and MATLAB interface listings."
+  },
+  {
+   "a": "f9005",
+   "b": "f9067",
+   "type": "same",
+   "note": "Identical interfaces and standards for platform and sensor models."
+  },
+  {
+   "a": "f8459",
+   "b": "f9007",
+   "type": "same",
+   "note": "Both identify release 2606, dated 2026, as latest found."
+  },
+  {
+   "a": "f9007",
+   "b": "f9069",
+   "type": "same",
+   "note": "Both identify 2606 as the latest release found."
+  },
+  {
+   "a": "f9006",
+   "b": "f9068",
+   "type": "same",
+   "note": "Neither platform nor sensor models had a public price found."
+  },
+  {
+   "a": "f8541",
+   "b": "f9006",
+   "type": "elaborates",
+   "note": "Quote-only pricing clarifies why no public price was found."
+  },
+  {
+   "a": "f8462",
+   "b": "f8461",
+   "type": "elaborates",
+   "note": "Identifies a transfer risk alongside the missing heavy-machine evidence."
+  }
+ ]
+}

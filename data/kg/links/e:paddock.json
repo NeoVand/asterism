@@ -1,0 +1,55 @@
+{
+ "key": "e:paddock",
+ "hash": "ffc3d7025fe08621",
+ "synopsis": "Paddock co-authored RAND’s Driving to Safety with Kalra; the corpus dates it to April 2016, with Chapter 7 specifying 12 April 2016 [f5464, f6920]. Its analysis required 275 million failure-free miles to show, at 95% confidence, a fatality rate no worse than 1.09 per 100 million miles, and about 11 billion miles to demonstrate a 20% improvement with 80% power [f6662, f6663]. The glossary summarizes the broader requirements as hundreds of millions and sometimes hundreds of billions of road miles, taking existing fleets tens and sometimes hundreds of years [f15812, f14264]. Chapter 12 uses these on-road findings as the statistical rationale for virtual testing, concluding that driving tests alone cannot demonstrate safety at low failure rates; the supplied facts do not establish equivalent mileage requirements for heavy off-road machines [f9755, f6662, f6663].",
+ "relations": [
+  {
+   "a": "f5464",
+   "b": "f6920",
+   "type": "same",
+   "note": "Both date the same RAND report to April 2016; Chapter 7 specifies the day."
+  },
+  {
+   "a": "f6662",
+   "b": "f15812",
+   "type": "elaborates",
+   "note": "Provides a specific hundreds-of-millions mileage requirement and its confidence threshold."
+  },
+  {
+   "a": "f6663",
+   "b": "f15812",
+   "type": "elaborates",
+   "note": "Specifies mileage, improvement target, and statistical power for one safety comparison."
+  },
+  {
+   "a": "f6662",
+   "b": "f9755",
+   "type": "supports",
+   "note": "The large failure-free mileage requirement supports the rationale for virtual testing."
+  },
+  {
+   "a": "f6663",
+   "b": "f9755",
+   "type": "supports",
+   "note": "Billions of miles for demonstrating improvement support the limitations of driving tests alone."
+  },
+  {
+   "a": "f14264",
+   "b": "f9755",
+   "type": "supports",
+   "note": "Decades-to-centuries testing times support pursuing virtual testing."
+  },
+  {
+   "a": "f15812",
+   "b": "f9755",
+   "type": "supports",
+   "note": "Enormous road-mile requirements explain why driving tests alone are insufficient."
+  },
+  {
+   "a": "f14264",
+   "b": "f15812",
+   "type": "elaborates",
+   "note": "Expresses required road distances as testing times for existing fleets."
+  }
+ ]
+}

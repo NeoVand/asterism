@@ -1,0 +1,115 @@
+{
+ "key": "e:openusd",
+ "hash": "a6e88b158a986f27",
+ "synopsis": "OpenUSD is an open, domain-neutral format for complete 3D scenes and assets, including geometry, materials and hierarchy; for this heavy off-road program, it is considered at least as strategically important as OpenDRIVE [f13198, f13199, f9363, f13200]. The recommended division of labor is OpenDRIVE for structured haul roads, OpenUSD and OpenMATERIAL for scenes, and OpenSCENARIO exports where required, within a broader standards-based integration architecture [f13216, f15862]. OpenUSD and Omniverse can represent mines and construction sites, but combine an open standard with NVIDIA components and do not constitute a validation method; sensor-material semantics and simulator portability therefore need governance [f8610, f9167, f9168, f8611]. Procurement should require OpenUSD and other open-format exports, alongside ownership-change exit clauses, to mitigate supplier dependence [f8887, f16487]. CARLA and Isaac Sim offer OpenUSD-related capabilities, while manufacturers starting without virtual-testing capability must build OpenUSD and 3D-asset skills alongside the wider simulation and validation disciplines [f8467, f9011, f8479, f8773, f16522]. The standard is free, but the listed release status is only “ongoing,” rather than a dated release milestone [f9170, f9171].",
+ "relations": [
+  {
+   "a": "f8335",
+   "b": "f15862",
+   "type": "same",
+   "note": "Both identify the same open standards as simulation-tool integration glue."
+  },
+  {
+   "a": "f13200",
+   "b": "f9363",
+   "type": "same",
+   "note": "Both rank OpenUSD at least as strategically important as OpenDRIVE for this program."
+  },
+  {
+   "a": "f8773",
+   "b": "f16522",
+   "type": "same",
+   "note": "Glossary restates the tool-side skill portfolio, including OpenUSD and 3D assets."
+  },
+  {
+   "a": "f8887",
+   "b": "f16487",
+   "type": "elaborates",
+   "note": "Adds supplier-dependence rationale and ownership-change exit clauses to open-export requirements."
+  },
+  {
+   "a": "f8610",
+   "b": "f16001",
+   "type": "same",
+   "note": "Both describe OpenUSD and Omniverse tooling as domain-neutral scene representation."
+  },
+  {
+   "a": "f9167",
+   "b": "f16001",
+   "type": "same",
+   "note": "Both describe the combination of an open standard and vendor components."
+  },
+  {
+   "a": "f13198",
+   "b": "f8716",
+   "type": "elaborates",
+   "note": "Specifies scene and asset contents and the format's origins."
+  },
+  {
+   "a": "f13199",
+   "b": "f8610",
+   "type": "elaborates",
+   "note": "Extends domain-neutral representation to construction sites, materials, and assets."
+  },
+  {
+   "a": "f15862",
+   "b": "f13216",
+   "type": "elaborates",
+   "note": "Turns standards' general roles into program-specific road, scene, and scenario recommendations."
+  },
+  {
+   "a": "f13198",
+   "b": "f13216",
+   "type": "supports",
+   "note": "Complete scene and asset representation supports selecting OpenUSD for scenes."
+  },
+  {
+   "a": "f8610",
+   "b": "f9363",
+   "type": "supports",
+   "note": "Mine and construction-site representation supports strategic importance for job-site operating domains."
+  },
+  {
+   "a": "f9168",
+   "b": "f8610",
+   "type": "elaborates",
+   "note": "Qualifies site representation capability: it does not itself provide a validation method."
+  },
+  {
+   "a": "f8611",
+   "b": "f16487",
+   "type": "elaborates",
+   "note": "Open exports also require governance of sensor-material semantics and simulator portability."
+  },
+  {
+   "a": "f8467",
+   "b": "f9011",
+   "type": "elaborates",
+   "note": "Adds version-specific SimReady OpenUSD converters and reconstruction capabilities to CARLA's interface listing."
+  },
+  {
+   "a": "f8479",
+   "b": "f9018",
+   "type": "elaborates",
+   "note": "Adds sensor schemas, annotators, and neural rendering to Isaac Sim's listed interfaces."
+  },
+  {
+   "a": "f9073",
+   "b": "f9018",
+   "type": "elaborates",
+   "note": "Identifies RTX sensors specifically as using Isaac Sim's OpenUSD and ROS 2 interfaces."
+  },
+  {
+   "a": "f8359",
+   "b": "f13198",
+   "type": "supports",
+   "note": "Environment reconstruction offerings illustrate OpenUSD's use for simulation scenes and assets."
+  },
+  {
+   "a": "f8773",
+   "b": "f13216",
+   "type": "depends",
+   "note": "Implementing the recommended scene pipeline requires OpenUSD and 3D-asset engineering skills."
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "key": "e:cerema",
+ "hash": "da080a1436654280",
+ "synopsis": "CEREMA is one of four named weather-test facilities providing the main ground truth for weather models and, together with proving grounds, sensor-model validation [f5056, f5119]. The glossary specifically identifies fog chambers at CEREMA, CARISSMA, NIED and JARI as sources of ground truth for sensor models [f15594]. Fog is the best-reproduced condition for lidar, with chambers at CEREMA, CARISSMA and JARI providing on-road evidence [f4640]. However, the research did not examine booking lead times, capacity or suitability for heavy off-road machines of the size in scope; these unresolved access questions directly affect model validation before mid-2027 [f5120].",
+ "relations": [
+  {
+   "a": "f15594",
+   "b": "f5119",
+   "type": "elaborates",
+   "note": "Identifies fog chambers as a specific source of sensor-model ground truth."
+  },
+  {
+   "a": "f4640",
+   "b": "f15594",
+   "type": "elaborates",
+   "note": "Adds lidar-specific performance and on-road evidence for three named fog-chamber facilities."
+  },
+  {
+   "a": "f5056",
+   "b": "f5119",
+   "type": "elaborates",
+   "note": "Extends the facilities’ ground-truth role to sensor validation and includes proving grounds."
+  },
+  {
+   "a": "f4640",
+   "b": "f5119",
+   "type": "supports",
+   "note": "On-road fog evidence supports chambers’ role in sensor-model validation."
+  },
+  {
+   "a": "f5119",
+   "b": "f5120",
+   "type": "depends",
+   "note": "Using ground-truth facilities for timely validation depends on unresolved access and machine-suitability questions."
+  }
+ ]
+}

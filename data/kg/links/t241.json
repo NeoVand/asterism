@@ -1,0 +1,115 @@
+{
+ "key": "t241",
+ "hash": "594c8c65e37f387a",
+ "synopsis": "Simulation credibility is a documented development process, not a tool feature: SET Level's Credible Simulation Process, published in August 2021, embeds evidence planning, assumptions, verification, validation and credibility documentation throughout product development, with credibility tied to task criticality [f5214, f14592, f14594, f15703]. Related references include M&S SPICE (2023) and prostep ivip's Simulation Credibility technical paper, version 8.1 (2024), but the process frameworks do not specify what physical evidence remains necessary and are not proven for off-road automatic braking [f14595, f14593, f8128, f8130]. ASAM QSQ project P_2025_04 seeks machine-readable simulation-quality metrics with use-case-specific weighting; its proposal workshop took place on 11 September 2025, and it remained under way in 2026 [f14597, f14599]. ASAM reports that standardized simulation-quality metrics, particularly for sensors, do not yet exist, while credibility communities agree validation is required without agreeing on metrics [f14598, f9357]. The planning implication is to use documented credibility discipline for software-in-the-loop development now, while agreeing correlation metrics with the assessor rather than waiting for a standard [f5582, f14602].",
+ "relations": [
+  {
+   "a": "f5217",
+   "b": "f5272",
+   "type": "same",
+   "note": "Both report no standardized sensor-simulation quality metrics."
+  },
+  {
+   "a": "f8327",
+   "b": "f14598",
+   "type": "same",
+   "note": "Both report missing standardized simulation-quality metrics, particularly for sensors."
+  },
+  {
+   "a": "f8952",
+   "b": "f8327",
+   "type": "same",
+   "note": "Both attribute the simulation-quality metrics gap to ASAM."
+  },
+  {
+   "a": "f8919",
+   "b": "f15024",
+   "type": "same",
+   "note": "Both report ASAM's statement that standardized simulation-quality metrics do not exist."
+  },
+  {
+   "a": "f4833",
+   "b": "f14597",
+   "type": "same",
+   "note": "Both describe machine-readable QSQ metrics with use-case-specific weighting."
+  },
+  {
+   "a": "f5274",
+   "b": "f14599",
+   "type": "same",
+   "note": "Both date the QSQ proposal workshop to 11 September 2025."
+  },
+  {
+   "a": "f5218",
+   "b": "f5273",
+   "type": "same",
+   "note": "Both describe QSQ as proposal-stage; one specifies September 2025."
+  },
+  {
+   "a": "f4835",
+   "b": "f4445",
+   "type": "same",
+   "note": "Both describe ongoing simulation-quality and high-fidelity sensor projects."
+  },
+  {
+   "a": "f9357",
+   "b": "f14601",
+   "type": "same",
+   "note": "Validation consensus contrasts with lack of agreed credibility metrics."
+  },
+  {
+   "a": "f7697",
+   "b": "f14592",
+   "type": "same",
+   "note": "Both identify publication of the Credible Simulation Process in August 2021."
+  },
+  {
+   "a": "f14592",
+   "b": "f15702",
+   "type": "same",
+   "note": "Duplicate publication date; the latter also identifies SET Level's relationship to VVM."
+  },
+  {
+   "a": "f8129",
+   "b": "f15704",
+   "type": "same",
+   "note": "Both treat the process as a template, not proven off-road."
+  },
+  {
+   "a": "f14594",
+   "b": "f5214",
+   "type": "elaborates",
+   "note": "Lifecycle credibility activities explain why credibility is a process rather than a tool feature."
+  },
+  {
+   "a": "f15703",
+   "b": "f8125",
+   "type": "same",
+   "note": "Both tie required simulation credibility to task criticality."
+  },
+  {
+   "a": "f8128",
+   "b": "f8126",
+   "type": "elaborates",
+   "note": "Process-level physical-data validation does not specify the remaining physical evidence."
+  },
+  {
+   "a": "f8130",
+   "b": "f14600",
+   "type": "supports",
+   "note": "Lack of off-road proof supports classification as borrowed road-research process templates."
+  },
+  {
+   "a": "f8327",
+   "b": "f14602",
+   "type": "supports",
+   "note": "Missing standardized metrics justify agreeing correlation metrics directly with the assessor."
+  },
+  {
+   "a": "f5214",
+   "b": "f5582",
+   "type": "supports",
+   "note": "Credibility's process character supports documenting it during software-in-the-loop development."
+  }
+ ]
+}

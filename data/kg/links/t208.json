@@ -1,0 +1,115 @@
+{
+ "key": "t208",
+ "hash": "5bba78af4108a6b8",
+ "synopsis": "Monte Carlo estimates miss rates by repeatedly drawing scenario parameters from probability distributions and counting outcomes; the booklet recommends it as the honest default for rate estimation and uses a frozen sample for its estimation campaign [f14181, f14182, f14188, f14183]. For large simulation sweeps, it selects the point-mass transient braking model and recommends preparing the Monte Carlo engine, parameter database, metrics and traceability before prototype testing [f6435, f6404]. However, pure Monte Carlo is extremely inefficient for rare dangerous events: a true miss rate of one in 10,000 yields about one miss per 10,000 runs, requiring tens of thousands of runs for a precise estimate, and naive Monte Carlo cannot reach low failure rates within four months [f6834, f14185, f10337]. Precedents include ACAS X validation representing billions of flight hours and a 2005 Griffith University study combining Monte Carlo with a Doppler-radar field demonstration that reported light-vehicle detection at 75 m [f1908, f6368]. For planning, Monte Carlo samples task durations and should communicate milestone uncertainty through P50/P80 S-curves or fan charts; reference class forecasting outperformed Monte Carlo and earned-value forecasting in a 2016 test only when reference-class similarity was high [f16335, f9889, f9606].",
+ "relations": [
+  {
+   "a": "f1908",
+   "b": "f14184",
+   "type": "same",
+   "note": "Both describe ACAS X encounter-model Monte Carlo equivalent to billions of flight hours."
+  },
+  {
+   "a": "f6435",
+   "b": "f13829",
+   "type": "same",
+   "note": "Both select the point-mass transient model for runtime prediction and large Monte Carlo sweeps."
+  },
+  {
+   "a": "f6834",
+   "b": "f14186",
+   "type": "same",
+   "note": "Both conclude pure Monte Carlo is extremely inefficient for rare dangerous events."
+  },
+  {
+   "a": "f10337",
+   "b": "f14187",
+   "type": "same",
+   "note": "Both state naive Monte Carlo cannot reach low failure rates in four months."
+  },
+  {
+   "a": "f9437",
+   "b": "f9606",
+   "type": "same",
+   "note": "The empirical study details the same similarity-dependent forecasting advantage."
+  },
+  {
+   "a": "f9437",
+   "b": "f16315",
+   "type": "same",
+   "note": "Both state reference-class superiority requires genuinely similar reference classes."
+  },
+  {
+   "a": "f9606",
+   "b": "f16315",
+   "type": "same",
+   "note": "Both report similarity-dependent accuracy superiority; the glossary adds a 2025 review."
+  },
+  {
+   "a": "f9889",
+   "b": "f16479",
+   "type": "same",
+   "note": "Both recommend P50/P80 Monte Carlo S-curves or fan charts."
+  },
+  {
+   "a": "f14180",
+   "b": "f14181",
+   "type": "elaborates",
+   "note": "Scenario sampling specifies the random inputs used in repeated experiments."
+  },
+  {
+   "a": "f14181",
+   "b": "f14182",
+   "type": "elaborates",
+   "note": "Recorded outcomes become a miss-rate estimate through their observed fraction."
+  },
+  {
+   "a": "f14185",
+   "b": "f6834",
+   "type": "supports",
+   "note": "The one-in-10,000 example quantifies rare-event sampling inefficiency."
+  },
+  {
+   "a": "f14185",
+   "b": "f10337",
+   "type": "supports",
+   "note": "Large required run counts explain the stated four-month limitation."
+  },
+  {
+   "a": "f14189",
+   "b": "f14185",
+   "type": "supports",
+   "note": "The numerical run requirement motivates sample-size tables and rare-event methods."
+  },
+  {
+   "a": "f14188",
+   "b": "f6834",
+   "type": "contradicts",
+   "note": "Default rate-estimation recommendation is qualified by severe rare-event inefficiency."
+  },
+  {
+   "a": "f6404",
+   "b": "f6435",
+   "type": "elaborates",
+   "note": "Preparation requirements place the selected sweep model within a broader pre-prototype framework."
+  },
+  {
+   "a": "f16335",
+   "b": "f9889",
+   "type": "elaborates",
+   "note": "Task-duration sampling explains the simulation underlying probabilistic schedule displays."
+  },
+  {
+   "a": "f16436",
+   "b": "f16335",
+   "type": "elaborates",
+   "note": "AACE specifies risk drivers and a critical-path model for cost and schedule simulation."
+  },
+  {
+   "a": "f14183",
+   "b": "f14188",
+   "type": "elaborates",
+   "note": "The frozen-sample campaign specifies how the default estimation method is deployed."
+  }
+ ]
+}

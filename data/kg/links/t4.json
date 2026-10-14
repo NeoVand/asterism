@@ -1,0 +1,115 @@
+{
+ "key": "t4",
+ "hash": "4563f23e28c16d3e",
+ "synopsis": "Articulated haulers steer through a hinge between their front and rear halves; although a straight, level stop can resemble simple-mass braking, a simple braking model cannot represent hinge dynamics, and braking during turns, on side slopes or at large articulation angles can cause rolling or swinging [f11411, f11412, f11419, f11413]. Bell's Pin 3 E-series integration capability dates to late 2020 and supports third-party PDS/CAS up to Level 9 through an ISO 21815-2 gateway, with laptop-based virtual integration testing; coverage depends on the supplier, and the research found no Bell-validated braking performance [f1390, f1687, f1690, f1688, f1689, f1691]. Scale and operating conditions matter: the Volvo A60 is about 44 t empty and 99 t gross, while regulatory worked examples give 30.82 m at 50 km/h for a 25 t ADT on level ground and 42.25 m at 32 km/h for a 60 t ADT tested at 50 t for a 13% site grade [f5961, f5985, f5986]. These examples are not automatic-braking validation: direct quantitative ADT automatic-braking data, modern production brake-delay distributions and published automatic-braking jackknife or roll data were not found, so response times and delay distributions must be measured [f6292, f5899, f11418, f6067, f6429]. Accident evidence also has a scope gap: a mining study analysed 54 fatality reports involving rigid or articulated haul trucks from January 2005 to June 2021, but construction-site ADTs have only aggregate struck-by evidence despite being within the required product coverage [f3070, f3660, f3661].",
+ "relations": [
+  {
+   "a": "f1390",
+   "b": "f1686",
+   "type": "same",
+   "note": "Both date Bell Pin 3 integration capability to late 2020."
+  },
+  {
+   "a": "f1391",
+   "b": "f1687",
+   "type": "same",
+   "note": "Both report Level 9 integration readiness through an ISO 21815-2 gateway."
+  },
+  {
+   "a": "f1392",
+   "b": "f1690",
+   "type": "same",
+   "note": "Both describe laptop-based virtual testing before Bell ADT integration."
+  },
+  {
+   "a": "f5961",
+   "b": "f11371",
+   "type": "same",
+   "note": "Both give Volvo A60 masses of approximately 44 t empty and 99 t loaded."
+  },
+  {
+   "a": "f5961",
+   "b": "f11414",
+   "type": "same",
+   "note": "The glossary repeats the chapter's Volvo A60 empty and loaded masses."
+  },
+  {
+   "a": "f5961",
+   "b": "f13616",
+   "type": "same",
+   "note": "Both give approximately 44 t empty and 99 t gross."
+  },
+  {
+   "a": "f11371",
+   "b": "f11414",
+   "type": "same",
+   "note": "Duplicate glossary statements of Volvo A60 empty and loaded masses."
+  },
+  {
+   "a": "f5985",
+   "b": "f11415",
+   "type": "same",
+   "note": "The glossary rounds the same 25 t ADT stopping example to about 31 m."
+  },
+  {
+   "a": "f5985",
+   "b": "f13661",
+   "type": "same",
+   "note": "Both report the same level-ground example; the glossary identifies its pure braking-distance calculation."
+  },
+  {
+   "a": "f11415",
+   "b": "f13661",
+   "type": "same",
+   "note": "Both state the same 25 t, 50 km/h, 3.13 m/s² braking example."
+  },
+  {
+   "a": "f2435",
+   "b": "f15194",
+   "type": "same",
+   "note": "Both reproduce the same ISO 3450 stopping-limit formula for dumpers under 32 t."
+  },
+  {
+   "a": "f252",
+   "b": "f5899",
+   "type": "same",
+   "note": "Both report missing modern production brake-delay distributions for loaders, articulated haulers and haul trucks."
+  },
+  {
+   "a": "f5899",
+   "b": "f13683",
+   "type": "same",
+   "note": "The glossary restates the missing distributions and specifies brake architectures."
+  },
+  {
+   "a": "f3660",
+   "b": "f11417",
+   "type": "same",
+   "note": "Both identify aggregate-only accident evidence for construction-site ADTs."
+  },
+  {
+   "a": "f11413",
+   "b": "f2342",
+   "type": "supports",
+   "note": "Articulation-related rolling and swinging explain why unintended braking can itself be hazardous."
+  },
+  {
+   "a": "f11419",
+   "b": "f6764",
+   "type": "supports",
+   "note": "Hinge dynamics justify machine-specific kinematic variables in scenario parameterisation."
+  },
+  {
+   "a": "f6065",
+   "b": "f13684",
+   "type": "supports",
+   "note": "Missing peer-reviewed response measurements reinforce the need to measure production brake delays."
+  },
+  {
+   "a": "f1691",
+   "b": "f1687",
+   "type": "elaborates",
+   "note": "Integration readiness does not establish validated braking performance."
+  }
+ ]
+}

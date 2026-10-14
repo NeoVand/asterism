@@ -1,0 +1,115 @@
+{
+ "key": "e:nasa-std-7009b",
+ "hash": "48ea077adbbe12b7",
+ "synopsis": "NASA-STD-7009B was approved on 5 March 2024 and establishes modeling and simulation practice around credibility, verification, validation, sensitivity and uncertainty [f9737, f10599]. It assesses credibility across development and use, ties credibility effort to the consequences of a wrong decision, and, alongside ASME V&V 40, retains physical testing where decision risk is high or validation evidence is weakest [f9739, f9738, f7834, f7835]. Programs must define acceptance criteria, obtain technical-authority approval, and disclose dissenting technical opinions with results [f9539, f10600, f9741]. The planning chapter recommends credibility frameworks such as NASA-STD-7009B instead of TRLs for the collision-mitigation validation toolchain; blind-prediction gaps support this choice, although the frameworks are described as largely declarative [f9536, f10031, f10028, f10029]. An assessor-quality package requires more than simulator results, with recommended plan sections of 2–6 pages for evidence, V&V and test strategy, 1–1.5 pages for credibility and tool qualification, and 1–2 pages for results and review protocol [f8026, f10162, f10164, f10178].",
+ "relations": [
+  {
+   "a": "f9539",
+   "b": "f10600",
+   "type": "same",
+   "note": "Both require program-defined acceptance criteria approved by technical authority."
+  },
+  {
+   "a": "f9740",
+   "b": "f9539",
+   "type": "same",
+   "note": "Restates program-defined acceptance criteria; f9539 also specifies approval."
+  },
+  {
+   "a": "f9740",
+   "b": "f10600",
+   "type": "same",
+   "note": "Same acceptance-criteria requirement, with technical-authority approval explicit in f10600."
+  },
+  {
+   "a": "f9737",
+   "b": "f10599",
+   "type": "same",
+   "note": "Both identify 5 March 2024 as the standard's date."
+  },
+  {
+   "a": "f9536",
+   "b": "f10031",
+   "type": "same",
+   "note": "Both recommend simulation credibility frameworks rather than TRLs for toolchain assessment."
+  },
+  {
+   "a": "f9739",
+   "b": "f10599",
+   "type": "elaborates",
+   "note": "Details credibility dimensions beyond the general description of modeling and simulation practice."
+  },
+  {
+   "a": "f9738",
+   "b": "f7834",
+   "type": "supports",
+   "note": "Consequence-scaled credibility effort supports retaining physical tests for high-risk decisions."
+  },
+  {
+   "a": "f7835",
+   "b": "f8026",
+   "type": "supports",
+   "note": "Weak validation requires physical evidence, supporting a package beyond simulator results."
+  },
+  {
+   "a": "f7834",
+   "b": "f8026",
+   "type": "supports",
+   "note": "High-risk decisions require physical tests, not simulator results alone."
+  },
+  {
+   "a": "f10600",
+   "b": "f8026",
+   "type": "elaborates",
+   "note": "Approved acceptance criteria add governance requirements beyond simulator outputs."
+  },
+  {
+   "a": "f9741",
+   "b": "f8026",
+   "type": "elaborates",
+   "note": "Disclosure of dissent is another requirement beyond simulator results."
+  },
+  {
+   "a": "f10028",
+   "b": "f10031",
+   "type": "supports",
+   "note": "Blind-prediction gaps motivate replacing TRLs with simulation credibility frameworks."
+  },
+  {
+   "a": "f10027",
+   "b": "f9536",
+   "type": "supports",
+   "note": "Fit under uncertainty and fixed deadlines supports the recommended credibility-scale approach."
+  },
+  {
+   "a": "f10026",
+   "b": "f9536",
+   "type": "supports",
+   "note": "Simulation maturity is the relevant assessment target for the virtual-testing toolchain."
+  },
+  {
+   "a": "f10029",
+   "b": "f10031",
+   "type": "contradicts",
+   "note": "Declarative limitations qualify the recommendation to replace TRLs."
+  },
+  {
+   "a": "f10164",
+   "b": "f9536",
+   "type": "elaborates",
+   "note": "Allocates 1–1.5 pages to credibility and tool qualification using 7009B."
+  },
+  {
+   "a": "f10162",
+   "b": "f8026",
+   "type": "elaborates",
+   "note": "Turns broader evidence needs into a 2–6-page evidence, V&V and test-strategy section."
+  },
+  {
+   "a": "f10178",
+   "b": "f9741",
+   "type": "depends",
+   "note": "The reporting-based review section must accommodate disclosure of dissenting technical opinions."
+  }
+ ]
+}

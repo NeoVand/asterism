@@ -1,0 +1,97 @@
+{
+ "key": "e:ansys",
+ "hash": "7f5fa9a161842735",
+ "synopsis": "Synopsys acquired Ansys on 17 July 2025 for roughly USD 35 billion; China’s approval included customer-contract stipulations, and the first combined capabilities were planned for the first half of 2026, without confirmation here of delivery [f8329, f8879, f8535]. The corpus identifies the former Ansys sensor offering as Synopsys AVxcelerate Sensors, a commercial sensor-simulation tool rather than a complete platform, covering camera, lidar, radar and thermal simulation for SIL/HIL testing, with documented CarMaker and CARLA co-simulation [f15917, f8531, f15946]. Camera simulation requires physical sky, lights and surface optical properties, while the 2025 R1 release exposes lidar material, BRDF and atmospheric parameters; these input capabilities do not independently establish simulation accuracy [f3940, f3927]. Historical Ansys/NVIDIA GTC 2020 vendor figures report 14 hours on a workstation for a CPU SBR solver to process a 12-second scenario, versus about 12 ms per frame for a GPU real-time radar SBR version against a 30 fps target; these are vendor-reported figures for different versions, not an independently established current performance guarantee [f4931, f4932].",
+ "relations": [
+  {
+   "a": "f8329",
+   "b": "f8878",
+   "type": "same",
+   "note": "Same acquisition closing date and approximate deal value."
+  },
+  {
+   "a": "f8329",
+   "b": "f8534",
+   "type": "same",
+   "note": "Same ownership transfer, date and approximate value."
+  },
+  {
+   "a": "f8878",
+   "b": "f8534",
+   "type": "same",
+   "note": "Duplicate accounts of the acquisition closing."
+  },
+  {
+   "a": "f15917",
+   "b": "f9058",
+   "type": "same",
+   "note": "Both identify the former Ansys offering as Synopsys sensor-simulation software."
+  },
+  {
+   "a": "f8531",
+   "b": "f9058",
+   "type": "elaborates",
+   "note": "Adds physics-oriented sensor modalities and SIL/HIL testing scope."
+  },
+  {
+   "a": "f15946",
+   "b": "f15917",
+   "type": "elaborates",
+   "note": "Adds four sensor modalities and documented CarMaker/CARLA co-simulation."
+  },
+  {
+   "a": "f15946",
+   "b": "f8531",
+   "type": "elaborates",
+   "note": "Adds documented co-simulation integrations to the shared four-modality description."
+  },
+  {
+   "a": "f8351",
+   "b": "f15917",
+   "type": "supports",
+   "note": "Placement among sensor offerings reinforces classification as a sensor tool."
+  },
+  {
+   "a": "f3940",
+   "b": "f8531",
+   "type": "elaborates",
+   "note": "Specifies camera-simulation inputs and cautions that inputs do not prove accuracy."
+  },
+  {
+   "a": "f3927",
+   "b": "f8531",
+   "type": "elaborates",
+   "note": "Details lidar parameter controls available in release 2025 R1."
+  },
+  {
+   "a": "f4931",
+   "b": "f8531",
+   "type": "elaborates",
+   "note": "Adds historical vendor-reported CPU SBR computational cost."
+  },
+  {
+   "a": "f4932",
+   "b": "f8531",
+   "type": "elaborates",
+   "note": "Adds historical vendor-reported GPU radar SBR timing and frame-rate target."
+  },
+  {
+   "a": "f8535",
+   "b": "f8329",
+   "type": "depends",
+   "note": "Planned combined capabilities follow the completed acquisition."
+  },
+  {
+   "a": "f8879",
+   "b": "f8329",
+   "type": "elaborates",
+   "note": "Adds conditional Chinese approval and customer-contract stipulations to the acquisition account."
+  },
+  {
+   "a": "f8329",
+   "b": "f15917",
+   "type": "supports",
+   "note": "Ownership transfer explains the Synopsys identification of the former Ansys offering."
+  }
+ ]
+}

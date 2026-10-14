@@ -1,0 +1,37 @@
+{
+ "key": "e:avxcelerate",
+ "hash": "f4c52ae875c8d56b",
+ "synopsis": "AVxcelerate is listed among modular on-road ADAS tool chains with strong sensor and scenario tooling, and appears as a specialist sensor-simulation option in the highest-cost example chain [f8282, f9305]. The glossary expands that chain to include heavy-machine dynamics, dSPACE or NI benches, and cloud execution [f16167]. Chapter 6 reports vendor claims of HiL-ready camera image injection and radar frame rates greater than 30 frames per second, but the radar claim does not specify the hardware [f4569, f4935]. The corpus names the tool as Ansys AVxcelerate in Chapter 6 and Synopsys AVxcelerate in Chapter 11, without explaining the naming difference [f4569, f4935, f8282].",
+ "relations": [
+  {
+   "a": "f9305",
+   "b": "f16167",
+   "type": "same",
+   "note": "Both place AURELION or AVxcelerate specialist sensor simulation in the highest-cost chain."
+  },
+  {
+   "a": "f16167",
+   "b": "f9305",
+   "type": "elaborates",
+   "note": "Glossary adds dynamics tools, benches, and cloud execution to the example chain."
+  },
+  {
+   "a": "f4569",
+   "b": "f8282",
+   "type": "supports",
+   "note": "HiL-ready camera image injection substantiates the described sensor-tooling strength."
+  },
+  {
+   "a": "f4935",
+   "b": "f8282",
+   "type": "elaborates",
+   "note": "Adds a vendor radar-performance claim, with hardware unspecified."
+  },
+  {
+   "a": "f4569",
+   "b": "f8282",
+   "type": "contradicts",
+   "note": "Vendor attribution differs: Ansys in Chapter 6 versus Synopsys in Chapter 11."
+  }
+ ]
+}

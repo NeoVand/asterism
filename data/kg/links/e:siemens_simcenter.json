@@ -1,0 +1,13 @@
+{
+ "key": "e:siemens simcenter",
+ "hash": "477f5abf7af20c3b",
+ "synopsis": "Siemens Simcenter appears in two distinct validation roles: vendor sensor-model validation using XenomatiX lidar BSDF, and full multibody machine modelling [f4342, f6454]. The cited sensor-model validations cover on-road targets, leaving their applicability to off-road targets unestablished by these facts [f4342]. Full multibody models with contact and a detailed plant support machine dynamics, actuator and failure analysis, and real-time co-simulation; Simcenter is among the commercial options listed [f6454]. However, no public benchmark was found comparing stopping-distance accuracy for Simcenter and the other named modelling options on the same production earth-moving machines, so the corpus does not establish comparative braking accuracy [f6561].",
+ "relations": [
+  {
+   "a": "f6561",
+   "b": "f6454",
+   "type": "elaborates",
+   "note": "Adds a comparative stopping-distance evidence gap to the listed machine-dynamics modelling options."
+  }
+ ]
+}

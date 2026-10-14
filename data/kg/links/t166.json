@@ -1,0 +1,79 @@
+{
+ "key": "t166",
+ "hash": "d2d91672e42e8258",
+ "synopsis": "Domain randomization varies simulated appearance and scene conditions to reduce dependence on details that differ in reality; the booklet presents it as a way to improve machine-learning perception robustness, not as functional safety evidence [f13585, f13586, f13594]. A vendor-labelled 2026 overview describes Isaac Sim Replicator randomizing pose, scale, lighting and materials, while a 2022 construction study provides an excavator-pose estimation example [f3791, f4135, f13588]. Its benefits have limits: a 2026 study found that Unity-rendered construction scenes still diverged from real photometric distributions despite extensive randomization, and the glossary reports a persistent synthetic-only training gap while noting that mixing real and synthetic images helps [f10584, f13590, f13589]. Randomized appearance does not establish correct radar physics or braking distance, and no peer-reviewed demonstration was found that synthetic-only training or validation establishes collision-avoidance reliability for heavy off-road machines [f13592, f13591]. Randomized simulation runs must freeze their random seeds for reproducibility [f13593].",
+ "relations": [
+  {
+   "a": "f3791",
+   "b": "f13587",
+   "type": "same",
+   "note": "Both report vendor-described randomization of pose, scale, lighting and materials; Chapter 5 names Isaac Sim."
+  },
+  {
+   "a": "f4135",
+   "b": "f13588",
+   "type": "same",
+   "note": "Both describe the 2022 excavator-pose study; Chapter 5 supplies the journal reference."
+  },
+  {
+   "a": "f3791",
+   "b": "f13585",
+   "type": "elaborates",
+   "note": "Provides a named implementation and programmable randomization parameters."
+  },
+  {
+   "a": "f4135",
+   "b": "f13594",
+   "type": "elaborates",
+   "note": "Provides a construction-perception application, rather than collision-avoidance safety evidence."
+  },
+  {
+   "a": "f10584",
+   "b": "f13590",
+   "type": "supports",
+   "note": "Persistent photometric divergence illustrates the remaining synthetic-to-real gap."
+  },
+  {
+   "a": "f10584",
+   "b": "f13586",
+   "type": "elaborates",
+   "note": "Qualifies gap reduction: extensive randomization need not match real photometric distributions."
+  },
+  {
+   "a": "f10584",
+   "b": "f13594",
+   "type": "supports",
+   "note": "Residual scene divergence reinforces caution against treating randomization as safety evidence."
+  },
+  {
+   "a": "f13592",
+   "b": "f13594",
+   "type": "supports",
+   "note": "Unassured radar physics and braking distance explain why appearance randomization is not safety evidence."
+  },
+  {
+   "a": "f13591",
+   "b": "f13594",
+   "type": "supports",
+   "note": "Missing peer-reviewed reliability demonstrations reinforce the distinction between training tools and safety evidence."
+  },
+  {
+   "a": "f13589",
+   "b": "f13590",
+   "type": "elaborates",
+   "note": "Mixing real images offers a helpful response to the persistent synthetic-only training gap."
+  },
+  {
+   "a": "f13586",
+   "b": "f13594",
+   "type": "supports",
+   "note": "Perception gap reduction explains the tool's training-side robustness role."
+  },
+  {
+   "a": "f13593",
+   "b": "f13585",
+   "type": "elaborates",
+   "note": "Adds the reproducibility requirement for randomized scene generation."
+  }
+ ]
+}

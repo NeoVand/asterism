@@ -1,0 +1,31 @@
+{
+ "key": "e:mocs",
+ "hash": "0ae56dde4e135577",
+ "synopsis": "MOCS is a construction dataset identified as dating to 2021, containing 41,668 images from 174 construction sites and covering 13 object classes [f5846, f12811]. Chapter 13 repeats the 41,668-image count, citing a September 2026 preprint; this is a reporting date rather than an explicitly different dataset date [f10826]. The glossary describes MOCS, alongside SODA, as image-only data captured from fixed or aerial viewpoints rather than a machine-mounted multi-sensor rig, a scope limitation planners should retain when considering its use [f12813].",
+ "relations": [
+  {
+   "a": "f5846",
+   "b": "f12811",
+   "type": "same",
+   "note": "Identical dataset year, image count, site count, and class count."
+  },
+  {
+   "a": "f10826",
+   "b": "f5846",
+   "type": "same",
+   "note": "Repeats the 41,668-image count, with a different reporting reference."
+  },
+  {
+   "a": "f10826",
+   "b": "f12811",
+   "type": "same",
+   "note": "Restates the glossary's image count; glossary additionally specifies year, sites, and classes."
+  },
+  {
+   "a": "f12813",
+   "b": "f5846",
+   "type": "elaborates",
+   "note": "Adds image-only modality and capture viewpoints to the dataset description."
+  }
+ ]
+}

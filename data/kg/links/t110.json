@@ -1,0 +1,109 @@
+{
+ "key": "t110",
+ "hash": "0fdc6b98a82cdc62",
+ "synopsis": "ROC and DET curves show the trade-off between detector misses and false alarms as sensitivity changes; Chapter 9 and the glossary describe operating-point selection as a simple, transparent, standard detector-tuning method [f12849, f7303, f12850]. Its appropriate scope is the perception-layer detector threshold alone: it ignores closed-loop timing and braking and serves a single objective, rather than validating the automatic brake as a whole [f6980, f7302, f7304, f12851]. The recommended procedure is to select the operating point on a validation split and then perform closed-loop evaluation, with Chapter 9 identifying moderate over-fitting risk [f7305, f12852, f14426]. For automatic braking, misses and false alarms have very different costs, the appropriate operating point depends on speed, zone and task, and constant alarms can cause operator rejection; false alarms should therefore be measured per hour or per maneuver [f12855, f12854, f12853]. The booklet consequently treats detector curves as one input to multi-objective tuning under hard safety constraints, while noting that the evidence for operating-point tuning is generic machine learning evidence, with no specific off-road evidence identified [f12856, f7306].",
+ "relations": [
+  {
+   "a": "f7303",
+   "b": "f12850",
+   "type": "same",
+   "note": "Both describe operating-point selection as simple, transparent and standard for detectors."
+  },
+  {
+   "a": "f6980",
+   "b": "f7302",
+   "type": "same",
+   "note": "Both restrict appropriate use to detector-threshold tuning."
+  },
+  {
+   "a": "f7304",
+   "b": "f12851",
+   "type": "same",
+   "note": "Both identify ignored closed-loop timing and braking, and a single objective."
+  },
+  {
+   "a": "f6981",
+   "b": "f7304",
+   "type": "same",
+   "note": "Both state that operating-point tuning ignores braking logic and timing."
+  },
+  {
+   "a": "f6981",
+   "b": "f12851",
+   "type": "same",
+   "note": "Both identify omission of closed-loop braking and timing."
+  },
+  {
+   "a": "f7305",
+   "b": "f12852",
+   "type": "same",
+   "note": "Both recommend validation-split selection followed by closed-loop evaluation."
+  },
+  {
+   "a": "f7302",
+   "b": "f14426",
+   "type": "same",
+   "note": "Both restrict operating-point selection to the detector threshold."
+  },
+  {
+   "a": "f6980",
+   "b": "f14426",
+   "type": "same",
+   "note": "Both assign operating-point selection to detector-threshold tuning alone."
+  },
+  {
+   "a": "f12852",
+   "b": "f14426",
+   "type": "same",
+   "note": "Both require closed-loop evaluation after detector operating-point selection."
+  },
+  {
+   "a": "f7305",
+   "b": "f14426",
+   "type": "same",
+   "note": "Both require closed-loop evaluation following operating-point selection."
+  },
+  {
+   "a": "f7304",
+   "b": "f14426",
+   "type": "supports",
+   "note": "Ignoring braking timing explains why subsequent closed-loop evaluation is required."
+  },
+  {
+   "a": "f7305",
+   "b": "f12852",
+   "type": "elaborates",
+   "note": "Chapter 9 adds moderate over-fitting risk to the shared validation procedure."
+  },
+  {
+   "a": "f12855",
+   "b": "f7302",
+   "type": "supports",
+   "note": "Context-dependent braking costs support limiting detector curves to threshold tuning."
+  },
+  {
+   "a": "f12856",
+   "b": "f7304",
+   "type": "elaborates",
+   "note": "Multi-objective constrained tuning addresses the detector method's single-objective limitation."
+  },
+  {
+   "a": "f12849",
+   "b": "f12853",
+   "type": "supports",
+   "note": "The miss–false-alarm trade-off motivates exposure-based false-alarm measurement."
+  },
+  {
+   "a": "f12854",
+   "b": "f12856",
+   "type": "supports",
+   "note": "Operator rejection from constant alarms argues against optimizing misses alone."
+  },
+  {
+   "a": "f7306",
+   "b": "f12850",
+   "type": "elaborates",
+   "note": "Standard detector practice does not establish specific off-road evidence."
+  }
+ ]
+}

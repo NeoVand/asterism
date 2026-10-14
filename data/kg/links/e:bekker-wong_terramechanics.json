@@ -1,0 +1,43 @@
+{
+ "key": "e:bekker-wong terramechanics",
+ "hash": "67cfcb7626a38716",
+ "synopsis": "Bekker-Wong is presented as a semi-empirical terramechanics approach for predicting braking force and sinkage on soft soil [f6096, f6461]. The underlying terramechanics findings say tractive and braking forces depend on soil type, contact area, load and slip, and that tracks retain more shear force than tires in soft soil [f6006, f6007]. Across the virtual-job-site and brake-timing chapters, Project Chrono provides an implementation route: its terrain options include a Soil Contact Model using Bekker-Wong pressure-sinkage and shear parameters, alongside rigid terrain and more expensive granular or deformable approaches [f3739, f6014]. The supplied facts identify modeling options and physical dependencies, but provide no numerical braking results or validation accuracy for these models [f6006, f6014, f6461].",
+ "relations": [
+  {
+   "a": "f6014",
+   "b": "f3739",
+   "type": "elaborates",
+   "note": "Details Chrono’s terrain options and how Bekker-Wong parameters enter its Soil Contact Model."
+  },
+  {
+   "a": "f6007",
+   "b": "f6006",
+   "type": "elaborates",
+   "note": "Adds a track-versus-tire distinction to soil-dependent force behavior."
+  },
+  {
+   "a": "f6006",
+   "b": "f6461",
+   "type": "supports",
+   "note": "Identifies physical dependencies relevant to predicting braking force on soft soil."
+  },
+  {
+   "a": "f6461",
+   "b": "f6096",
+   "type": "elaborates",
+   "note": "Adds prediction targets and another implementation option to the model classification."
+  },
+  {
+   "a": "f6014",
+   "b": "f6461",
+   "type": "elaborates",
+   "note": "Explains the Bekker-Wong parameters used in the listed Chrono modeling option."
+  },
+  {
+   "a": "f3739",
+   "b": "f6461",
+   "type": "supports",
+   "note": "Confirms Chrono offers off-road soil modeling as an implementation route."
+  }
+ ]
+}

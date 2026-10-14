@@ -1,0 +1,79 @@
+{
+ "key": "e:dspace veos",
+ "hash": "630daa717adf0760",
+ "synopsis": "The glossary identifies VEOS as dSPACE’s PC-based virtual ECU simulation tool, alongside SCALEXIO for real-time HIL; Chapter 11 describes the combined SCALEXIO, VEOS and AURELION offering as a strong route from software-in-the-loop to hardware-in-the-loop testing with virtual sensors [f16034, f8639, f8640]. Vendor findings explicitly support a chain combining ASM, AURELION, VEOS and ModelDesk, and integration of AURELION and SIMPHERA with the broader dSPACE HIL ecosystem [f8704, f8448]. Sensor injection remains sensor- and ECU-specific, with camera video, radar targets, Ethernet streams and raw stimulation posing materially different engineering problems; the listed evidence is on-road only, leaving off-road applicability unestablished by that evidence [f8641, f9220]. J1939 emulation is reported possible per ISO/TS 21815-2 [f9221]. These commercial tools appear in the highest-cost example validation chain, but neither a public price nor a full-system price was found, limiting budget certainty [f9219, f9303, f16166, f9222, f8642].",
+ "relations": [
+  {
+   "a": "f16166",
+   "b": "f9303",
+   "type": "same",
+   "note": "Both place the dSPACE combination among highest-cost commercial validation chain examples."
+  },
+  {
+   "a": "f16034",
+   "b": "f8363",
+   "type": "elaborates",
+   "note": "Glossary distinguishes VEOS virtual ECU simulation from SCALEXIO real-time HIL within the listed offering."
+  },
+  {
+   "a": "f8639",
+   "b": "f8640",
+   "type": "supports",
+   "note": "Virtual-sensor ECU and HIL execution supports the claimed SIL-to-HIL route."
+  },
+  {
+   "a": "f8641",
+   "b": "f8639",
+   "type": "elaborates",
+   "note": "Sensor injection requires modality- and ECU-specific engineering despite execution support."
+  },
+  {
+   "a": "f9220",
+   "b": "f8640",
+   "type": "elaborates",
+   "note": "Listed evidence for the claimed testing route is limited to on-road applications."
+  },
+  {
+   "a": "f8704",
+   "b": "f8448",
+   "type": "supports",
+   "note": "Explicit support for the named tool chain reinforces broader ecosystem integration."
+  },
+  {
+   "a": "f8999",
+   "b": "f8448",
+   "type": "elaborates",
+   "note": "Interface listing adds OSI compatibility and SIL/HIL to the ecosystem integration description."
+  },
+  {
+   "a": "f8639",
+   "b": "f8363",
+   "type": "supports",
+   "note": "Reported HIL execution supports inclusion among data replay and HIL offerings."
+  },
+  {
+   "a": "f9221",
+   "b": "f8999",
+   "type": "elaborates",
+   "note": "J1939 emulation adds a specific protocol capability to the interface picture."
+  },
+  {
+   "a": "f9222",
+   "b": "f8642",
+   "type": "elaborates",
+   "note": "Pricing gaps cover both public prices and a full-system price."
+  },
+  {
+   "a": "f9219",
+   "b": "f16166",
+   "type": "supports",
+   "note": "Commercial status supports classification as a commercial validation platform example."
+  },
+  {
+   "a": "f8642",
+   "b": "f9303",
+   "type": "elaborates",
+   "note": "Highest-cost categorization lacks a reported full-system price."
+  }
+ ]
+}

@@ -1,0 +1,109 @@
+{
+ "key": "e:emdap",
+ "hash": "5da480ae12da9363",
+ "synopsis": "EMDAP is the US nuclear regulator’s 20-step safety-analysis modeling process, documented in NRC RG 1.203 dated December 2005; its four elements cover requirements, an assessment base, model development and adequacy judgment [f14640, f8088, f14643, f14644, f14645]. PIRT ranks physical phenomena by importance and understanding, directing test evidence toward highly ranked phenomena and reducing emphasis on low-ranked ones [f14643, f7836, f14646]. Its assessment base combines separate-effects and integral-effects experiments, while Step 19 uses scaling, similarity and applicability analysis to justify applying test-facility evidence to the full-size plant or beyond the test matrix [f14644, f8090, f7901, f8091]. The booklet rates EMDAP the best model for phenomena ranking, uncertainty and validation-matrix discipline for off-road automatic braking, but explicitly says it is not proven in that application [f8093, f8094]. Accordingly, the booklet retains integral full-system tests after submodel validation and treats an assessor-quality package as substantially broader than simulator results alone [f8197, f8026].",
+ "relations": [
+  {
+   "a": "f7836",
+   "b": "f14646",
+   "type": "same",
+   "note": "Both prioritize test evidence for highly ranked phenomena and reduce emphasis on low-ranked phenomena."
+  },
+  {
+   "a": "f8092",
+   "b": "f14646",
+   "type": "same",
+   "note": "Both require test evidence for highly ranked phenomena."
+  },
+  {
+   "a": "f8090",
+   "b": "f14644",
+   "type": "elaborates",
+   "note": "Glossary explains the experiment types and adds scaling to the assessment base."
+  },
+  {
+   "a": "f7929",
+   "b": "f14644",
+   "type": "elaborates",
+   "note": "Glossary specifies how relevant physical data form the assessment base."
+  },
+  {
+   "a": "f8091",
+   "b": "f7901",
+   "type": "elaborates",
+   "note": "Step 19 details similarity and scalability checks for full-size plant applicability."
+  },
+  {
+   "a": "f7901",
+   "b": "f14644",
+   "type": "elaborates",
+   "note": "Identifies Step 19 and additional criteria for the glossary's scaling requirement."
+  },
+  {
+   "a": "f8089",
+   "b": "f14643",
+   "type": "elaborates",
+   "note": "Glossary explains PIRT ranking criteria underlying the graded approach."
+  },
+  {
+   "a": "f14643",
+   "b": "f8033",
+   "type": "supports",
+   "note": "Explicit identification and ranking requirements underpin the claimed strength in phenomena identification."
+  },
+  {
+   "a": "f7836",
+   "b": "f8092",
+   "type": "elaborates",
+   "note": "Specifies required experiment types and reduced emphasis for low-ranked phenomena."
+  },
+  {
+   "a": "f8090",
+   "b": "f7836",
+   "type": "elaborates",
+   "note": "Adds PIRT-based prioritization to the use of both experiment types."
+  },
+  {
+   "a": "f14644",
+   "b": "f8197",
+   "type": "supports",
+   "note": "Coupled-system experiments support retaining full-system tests after submodel validation."
+  },
+  {
+   "a": "f8090",
+   "b": "f8197",
+   "type": "supports",
+   "note": "Both experiment types provide the precedent for retaining integral full-system tests."
+  },
+  {
+   "a": "f8093",
+   "b": "f8094",
+   "type": "contradicts",
+   "note": "Best-model rating for braking is tempered by lack of proven applicability."
+  },
+  {
+   "a": "f14643",
+   "b": "f8093",
+   "type": "supports",
+   "note": "Structured phenomena ranking supports the favorable assessment of EMDAP's ranking discipline."
+  },
+  {
+   "a": "f14640",
+   "b": "f14645",
+   "type": "elaborates",
+   "note": "Names the model-development and adequacy-judgment elements of the 20-step process."
+  },
+  {
+   "a": "f14640",
+   "b": "f8088",
+   "type": "elaborates",
+   "note": "Identifies the regulatory guide and its December 2005 date."
+  },
+  {
+   "a": "f14644",
+   "b": "f8026",
+   "type": "supports",
+   "note": "Physical experiments and scaling show why simulator results alone are insufficient."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t251",
+ "hash": "35605ed11e0a2bf8",
+ "synopsis": "Scalar-output agreement compares a simulation result with its physical-test counterpart using absolute difference divided by the measured value, usually against a pre-agreed percentage band; an illustrative stopping-distance comparison of 38.0 m measured versus 39.5 m simulated gives 3.9% error [f14727, f14728, f14731]. For heavy off-road automatic braking, the booklet recommends stopping-distance, intervention-time, residual impact-speed, range and relative-speed errors, but requires scalar checks to be combined with timing, waveform, distribution and outcome evidence [f14737, f8042]. Scalar agreement alone can be misleading: one aviation comparison had only 0.3% peak error but 60.4% time-history error, and equal peak decelerations can still produce different collision outcomes if their timing differs [f7555, f14736]. Aviation guidance uses application-specific 10% criteria, and one example achieved 3.42% peak error and 7.2% time-history error; the booklet explicitly warns against adopting 10% as a generic off-road braking tolerance [f7777, f7782, f7779]. Acceptance bands must also account for uncertainty: in the aircraft-seat example, a 1,500 lb limit and approximately 42 lb standard deviation require a prediction below about 1,431 lb for 95% confidence, so a nominal prediction of 1,490 lb is insufficient [f14732, f14733, f14734, f14735].",
+ "relations": [
+  {
+   "a": "f14728",
+   "b": "f7776",
+   "type": "same",
+   "note": "Both define relative error using absolute difference divided by the experimental value."
+  },
+  {
+   "a": "f14729",
+   "b": "f7780",
+   "type": "same",
+   "note": "Both report 1,315 lb measured, 1,360 lb simulated and 3.42% error."
+  },
+  {
+   "a": "f14738",
+   "b": "f7779",
+   "type": "same",
+   "note": "Both reject transferring aviation's 10% criterion directly to off-road braking."
+  },
+  {
+   "a": "f14742",
+   "b": "f7782",
+   "type": "same",
+   "note": "Both report 3.42% peak and 7.2% time-history errors within the 10% guideline."
+  },
+  {
+   "a": "f14730",
+   "b": "f7777",
+   "type": "same",
+   "note": "Both describe aviation guidance's 10% agreement criteria for several quantities."
+  },
+  {
+   "a": "f7555",
+   "b": "f14741",
+   "type": "same",
+   "note": "Both contrast excellent peak agreement with substantial time-history disagreement."
+  },
+  {
+   "a": "f14940",
+   "b": "f7969",
+   "type": "same",
+   "note": "Both report the aviation comparison's 0.3% peak and 60.4% time-history errors."
+  },
+  {
+   "a": "f15335",
+   "b": "f7785",
+   "type": "same",
+   "note": "Both describe 0.3% peak error despite 60.4% time-history error."
+  },
+  {
+   "a": "f14741",
+   "b": "f7970",
+   "type": "same",
+   "note": "Both explain how peak-only validation would incorrectly suggest excellent agreement."
+  },
+  {
+   "a": "f7555",
+   "b": "f7969",
+   "type": "same",
+   "note": "Both cite the same numerical contrast from an FAA worked comparison."
+  },
+  {
+   "a": "f14741",
+   "b": "f14940",
+   "type": "same",
+   "note": "Duplicate glossary accounts of misleading peak-only agreement."
+  },
+  {
+   "a": "f14940",
+   "b": "f15335",
+   "type": "same",
+   "note": "Both repeat the peak-only validation warning and identical error percentages."
+  },
+  {
+   "a": "f7784",
+   "b": "f14741",
+   "type": "elaborates",
+   "note": "The glossary adds the time-history error to the excellent-looking peak comparison."
+  },
+  {
+   "a": "f14736",
+   "b": "f8042",
+   "type": "supports",
+   "note": "Collision-sensitive timing differences justify multi-metric evidence tied to the safety mechanism."
+  },
+  {
+   "a": "f7555",
+   "b": "f14716",
+   "type": "supports",
+   "note": "Divergent peak and waveform errors demonstrate why correlation needs several metrics."
+  },
+  {
+   "a": "f14737",
+   "b": "f7760",
+   "type": "elaborates",
+   "note": "The glossary specifies scalar quantities recommended for the off-road braking program."
+  },
+  {
+   "a": "f14734",
+   "b": "f14732",
+   "type": "supports",
+   "note": "The uncertainty-adjusted load threshold demonstrates how uncertainty consumes acceptance margin."
+  },
+  {
+   "a": "f14735",
+   "b": "f14734",
+   "type": "depends",
+   "note": "Rejecting 1,490 lb follows from the approximately 1,431 lb confidence-adjusted threshold."
+  }
+ ]
+}

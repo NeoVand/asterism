@@ -1,0 +1,1141 @@
+{
+ "summary": {
+  "tag": "v2-links",
+  "model": "gpt-6.1-sol",
+  "effort": "low",
+  "n": 20,
+  "score": 3.65,
+  "answerRecall": 0.5716666666666665,
+  "retrievalRecall": 0.8683333333333334,
+  "citePrecision": 0.9701046314974429,
+  "seconds": 35.05235,
+  "tools": 12.35
+ },
+ "results": [
+  {
+   "id": "niosh-alarms",
+   "ms": 32941,
+   "tools": 9,
+   "toolNames": [
+    "read_file",
+    "search_graph",
+    "search_graph",
+    "explore",
+    "search_graph",
+    "read_facts",
+    "search_graph",
+    "read_section",
+    "read_facts"
+   ],
+   "steps": [
+    "read_file {\"file_path\":\"/skills/graph-research/SKILL.md\",\"limit\":1000}",
+    "search_graph {\"query\":\"haul truck nuisance alarms\",\"limit\":10}",
+    "search_graph {\"query\":\"Morenci radar false alarms\",\"limit\":10}",
+    "explore {\"id\":\"t32\",\"limit\":60}",
+    "search_graph {\"query\":\"Morenci\",\"types\":[\"fact\"],\"limit\":20}",
+    "read_facts {\"ids\":[\"f101\",\"f3010\",\"f3011\",\"f3012\",\"f5173\",\"f5174\",\"f5175\",\"f5176\",\"f6794\",\"f7001\",\"f7002\",\"f3019\",\"f2121\"]}",
+    "search_graph {\"query\":\"alarm 2006 berm 793B\",\"chapters\":[4],\"limit\":8}",
+    "read_section {\"id\":\"f3269\"}",
+    "read_facts {\"ids\":[\"f3271\",\"f3272\",\"f3273\",\"f3278\",\"f3280\",\"f3283\",\"f3269\"]}"
+   ],
+   "usage": {
+    "input": 97558,
+    "output": 1171
+   },
+   "cited": 21,
+   "answerRecall": 1,
+   "retrievalRecall": 1,
+   "citePrecision": 1,
+   "regexHits": 1,
+   "score": 5,
+   "missed": [],
+   "notRetrieved": [],
+   "unsupported": [
+    "“As of the booklet’s October 2026 review”"
+   ],
+   "badCites": [],
+   "notes": "All gold claims are explicitly covered and grounded, with clear denominators, false-versus-nuisance distinctions, and useful qualifications about operator disablement and generalizability. The exact October 2026 review date is not supported by the supplied facts; otherwise the substantive account and citations are well supported.",
+   "error": "",
+   "answer": "**Real field data exist, but the independent haul-truck evidence is old and sparse.** The booklet’s strongest quantitative example remains a NIOSH radar study published in **2006**, using **2004 field data**: **18% of alarms were false and 42% were nuisance alarms**—distinct problems, not interchangeable labels. [f101, f3010, f5173, f5174, f5175]\n\n### 1. The main measured field study: NIOSH / Caterpillar 793B\n\nRuff’s *Evaluation of a radar-based proximity warning system for off-highway dump trucks* studied a Caterpillar 793B at a US copper mine during **seven days of normal operation**, including loading, hauling, dumping, parking and maintenance manoeuvres. This is **independent, real off-road evidence**, not a vendor demonstration. [s266, f3269, f3010]\n\nAcross **618 reverse movements**, the system alarmed on approximately **94%** of them. Its **580 alarms** comprised: [f3010, f5174]\n\n| Alarm category | Count | Share of all alarms |\n|---|---:|---:|\n| False: no significant object detected | 102 | 18% |\n| Nuisance: a real object, but no urgent danger in the task context | 243 | 42% |\n| Required immediate action or extra caution | 235 | Approximately 41% |\n\nThe counts come from the detailed results. The booklet elsewhere summarizes the action-worthy share as **40%**, rather than 41%; **235/580** is the clearer figure to retain. [f5174, f5175, f5176, f3011]\n\n**The classification matters:**\n- A nuisance alarm could arise when the truck deliberately backed toward a rock pile for loading: the object was real and the approach was required. [f3271, f3272]\n- A dump-point berm warning was **not** classified as nuisance merely because the operator knew the berm was there—overtravel could still take the truck over an embankment. [f3273]\n- The study reported **no missed detections**, but that finding belongs to this limited field trial. [f3278, f3269]\n\n**Observed operator response:** drivers found the continuous audible warnings annoying because most did not signify danger, and researchers found the audible function switched off after shifts. The booklet explicitly cautions that the disabling observation was partly anecdotal, not a controlled behavioural endpoint. [f3280, f3012, f3283]\n\n### 2. Another NIOSH field account: Phelps Dodge Morenci\n\nA **Preco Preview radar trial on a Caterpillar 793B** at Morenci provides qualitative evidence rather than a numerical alarm-rate breakdown. Ruff reported that “occasional false alarms did occur, but not frequently enough to cause the system to be ignored.” Nuisance alarms from objects already known to the driver also occurred. [f7001, f7002]\n\nNIOSH additionally documented **the truck’s own tyres triggering radar false alarms** at Morenci. This account is important because it shows that operator rejection was **not universal** across field trials. [f6794, f7001]\n\n### What these data do—and do not—establish\n\n- They establish that **technically correct detections can still produce a large nuisance burden**: in the quantified trial, nuisance alarms substantially outnumbered false detections. Better sensor accuracy alone would not address that task-context problem. [f5174, f5175, f3271]\n- The **18% and 42% are percentages of alarms**, not false alarms per operating hour or fleet-wide rates. Their denominator is 580 alarms over 618 reversals. [f5174, f5175]\n- As of the booklet’s October 2026 review, independent off-road alarm data remained sparse, and it found **no published off-road acceptance values for false alarms per operating hour or unnecessary braking events per hour**. An Australian coal-industry project likewise listed the acceptable false-alarm rate as an open research question. [f101, f2121, f3019]"
+  },
+  {
+   "id": "volvo-cat-precedents",
+   "ms": 40000,
+   "tools": 12,
+   "toolNames": [
+    "read_file",
+    "search_graph",
+    "read_section",
+    "search_graph",
+    "search_graph",
+    "read_file",
+    "read_file",
+    "explore",
+    "search_graph",
+    "search_graph",
+    "read_facts",
+    "read_facts"
+   ],
+   "steps": [
+    "read_file {\"file_path\":\"/skills/graph-research/SKILL.md\",\"limit\":1000}",
+    "search_graph {\"query\":\"automatic braking manufacturers\",\"chapters\":[2],\"limit\":30}",
+    "read_section {\"id\":\"x71\"}",
+    "search_graph {\"query\":\"Volvo Caterpillar Liebherr reverse\",\"types\":[\"entity\",\"fact\"],\"chapters\":[2],\"limit\":20}",
+    "search_graph {\"query\":\"off-road braking operating envelope\",\"types\":[\"fact\"],\"limit\":15}",
+    "read_file {\"file_path\":\"/skills/ui-blocks/SKILL.md\",\"limit\":1000}",
+    "read_file {\"file_path\":\"/skills/prior-work/SKILL.md\",\"limit\":1000}",
+    "explore {\"id\":\"f1620\",\"limit\":60}",
+    "search_graph {\"query\":\"\\\"\",\"types\":[\"fact\"],\"near\":[\"x71\"],\"limit\":40}",
+    "search_graph {\"query\":\"Komatsu Liebherr Deere Epiroc Sandvik Toyota Bell\",\"chapters\":[2],\"types\":[\"fact\"],\"limit\":40}",
+    "read_facts {\"ids\":[\"f1621\",\"f1622\",\"f1623\",\"f1626\",\"f1627\",\"f1387\",\"f1647\",\"f1648\",\"f1651\",\"f1670\",\"f1671\",\"f1672\",\"f1674\",\"f1693\",\"f1692\",\"f1681\",\"f1407\",\"f1687\",\"f1691\",",
+    "read_facts {\"ids\":[\"f1624\",\"f1625\",\"f1628\",\"f1630\",\"f1631\",\"f1632\",\"f1633\",\"f1634\",\"f1635\",\"f1637\",\"f1638\",\"f1639\",\"f1640\",\"f1641\",\"f1642\",\"f1643\",\"f1644\",\"f1645\",\"f1649\","
+   ],
+   "usage": {
+    "input": 107251,
+    "output": 1808
+   },
+   "cited": 48,
+   "answerRecall": 0.2,
+   "retrievalRecall": 0.4,
+   "citePrecision": 1,
+   "regexHits": 0.8,
+   "score": 3,
+   "missed": [
+    "Cat Detect automatic braking on medium wheel loaders (May 2025) works in reverse only.",
+    "Wabtec Collision Awareness System Level 9 on Komatsu haul trucks; multiple years of field testing.",
+    "Epiroc/Mernok: more than ten years of development; evaluation mode without enforcing intervention.",
+    "None of them publishes how long validation took / no case of validating in under four months."
+   ],
+   "notRetrieved": [
+    "Cat Detect automatic braking on medium wheel loaders (May 2025) works in reverse only.",
+    "Wabtec Collision Awareness System Level 9 on Komatsu haul trucks; multiple years of field testing.",
+    "Epiroc/Mernok: more than ten years of development; evaluation mode without enforcing intervention."
+   ],
+   "unsupported": [
+    "The booklet’s October 2026 review"
+   ],
+   "badCites": [],
+   "notes": "Detailed, largely well-grounded coverage of operating envelopes, including the full Volvo claim. Cat's reverse-only medium-loader operation is covered, but the required May 2025 date is absent from both answer and retrieval. The answer omits Wabtec Level 9 on Komatsu haul trucks, Epiroc/Mernok development duration and non-enforcing evaluation mode, and the validation-duration/four-month qualification. Retrieval supports Wabtec Level 9 on Komatsu but not multiple years of field testing; it does not support the Epiroc/Mernok development/evaluation claim. Retrieved facts explicitly support the absence of a roughly four-month validation precedent, which the answer should have included. The precise October 2026 review date is not established by the supplied facts; an unrelated standard's October 2026 status does not establish it.",
+   "error": "",
+   "answer": "**Yes—off-road automatic braking or stopping is already commercially offered, but in narrow envelopes:** chiefly reversing, low-speed movement, start-of-motion intervention, or tagged underground operations. The booklet’s October 2026 review found only **vendor claims**, with no independent performance test of the listed products. [f1620, f1622]\n\nThe comparison below distinguishes conventional automatic braking from other automatic slow/stop mechanisms.\n\n| Manufacturer / product | Machines and availability | Published operating envelope | Important limits or unknowns |\n|---|---|---|---|\n| **Volvo CE — Collision Mitigation System** | Wheel loaders: L110H–L260H, L200H High Lift and newer L150/L180/L200 High Lift/L220/L260; launched January 2023, updated April 2025. [f1623, f1624] | **Reverse only, 3–15 km/h** for the 2023 system. Radar detects obstacles; service brakes apply for **2–3 seconds**, then the operator takes over. Radar Detect System required. [f1625, f1626, f1628] | The 2025 system **alerts from 0.5 km/h**—that is not a confirmed new braking threshold; whether the braking band changed was not stated. Weather limits, minimum object size and false-positive rate were not found. [f1627, f1387, f1631] |\n| **Caterpillar — Cat Detect Collision Mitigation / wheel-loader AEB** | Medium wheel loaders, including 982-related machines. Asphalt-compactor version announced in 2026 with availability described as “by midyear.” [f1633, f1634] | Loaders: **reverse**. Compactors: **forward and reverse**. AEB plus motion inhibit after being stationary for at least **2 seconds**; cameras for people and radar for objects. [f1635, f1636, f1637] | Numerical speeds not found. Cameras may miss crouching or lying people, or be impaired by low light, snow, rain and fog. Adverse-weather qualification and nuisance-brake rates were not found. [f1638, f1639] |\n| **Komatsu — KomVision human detection and collision mitigation** | Hydraulic excavators; PC200-11 launched in Japan in December 2019, PC200i-12 in December 2024. [f1640, f1641] | **Low-speed travel**; emergency stop through the lock lever at travel or swing start, **not during an ongoing swing**. Camera-based person detection; the -12 adds radar for people and objects. [f1642, f1643, f1644] | Must be **OFF during trailer loading**, because rapid stopping can destabilize the machine. Weather and surroundings affect false/missed detections; numerical speeds and ranges were not found. [f1643, f1645, f1646] |\n| **Liebherr — brake assistant with active personnel detection** | L526–L586 XPower wheel loaders; launched January 2021. [f1647] | **Reverse/rear operating area**; hydrostatic slowing to standstill. Detects people, walls, columns and vehicles, with an earlier warning zone for people. [f1648, f1649] | Speed range, weather/light envelope, detection probability and false-intervention rate were not found. [f1650] |\n| **John Deere — SmartDetect Assist** | Select utility loaders; explicitly described as “available today” on **18 February 2026**, after a March 2023 preview. [f1651] | **Mainly reverse**; progressively slows and stops, with momentary operator override. Cameras, stereo camera and radar detect people, structures and machines. [f1652, f1653, f1654] | Operating speeds and environmental limits were not found. [f1653, f1656] |\n| **Epiroc — Titan CAS / CAS Interface** | Underground loaders and trucks; launched 2021. [f1667] | **EMESRT Level 9 slow and stop** for tagged people and machines. Everyone and every machine must be tagged. [f1668, f1669, f1670] | Speed, direction and operating-condition limits were not found. [f1671] |\n| **Sandvik — Newtrax CAS** | Underground machines; launch date not found. [f1672, f1674] | Automatic **slow to stop**, targeting people, light vehicles and equipment. [f1674] | Speed, direction, environmental limits and exclusions were not found. [f1674] |\n\n### Adjacent products—not equivalent evidence of emergency braking\n\n- **Linde Reverse Assist Radar:** forklift system that slows in reverse and can stop the truck. [f1681]\n- **Toyota SEnS+:** reverse assistance through **power cut-off slowing, not brake application or an automatic braking-to-stop function**. It should not be counted as AEB. [f1407]\n- **Bell E-series ADTs:** ready for third-party proximity/collision systems through an ISO 21815-2 gateway, but **integration readiness is not a published Bell-validated braking envelope**. [f1687, f1691]\n- **Hitachi:** automatic speed reduction on ZW-7 loaders was reported only in trade press; no source document was located. The mining-truck example was warning-only, so this is weaker evidence than the products above. [f1657, f1658]\n\n**The main qualification:** missing published weather limits do not establish an all-weather envelope. Public documentation rarely gives complete visibility, surface, object-class or false-positive limits. The booklet also found no currently sold agricultural or forestry OEM system with both documented object-triggered emergency braking and a public operating envelope. [f1621, f1693]"
+  },
+  {
+   "id": "zero-miss-trials",
+   "ms": 50927,
+   "tools": 17,
+   "toolNames": [
+    "read_file",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "explore",
+    "explore",
+    "search_graph",
+    "search_graph",
+    "explore",
+    "explore",
+    "search_graph",
+    "read_facts",
+    "read_facts",
+    "explore",
+    "read_facts"
+   ],
+   "steps": [
+    "read_file {\"file_path\":\"/skills/graph-research/SKILL.md\",\"limit\":1000,\"offset\":0}",
+    "search_graph {\"query\":\"zero failures rule three miss rate\",\"limit\":8}",
+    "search_graph {\"query\":\"statistical confidence trials 2995\",\"limit\":8}",
+    "search_graph {\"query\":\"miss rate statistical trials\",\"limit\":12}",
+    "search_graph {\"query\":\"independence representativeness stratification\",\"limit\":15}",
+    "search_graph {\"query\":\"validation critique\",\"chapters\":[13],\"limit\":15}",
+    "explore {\"id\":\"c13\",\"limit\":35}",
+    "explore {\"id\":\"t231\",\"limit\":25}",
+    "search_graph {\"query\":\"binomial trial independence campaign\",\"limit\":18}",
+    "search_graph {\"query\":\"simulation statistical confidence representative\",\"limit\":15}",
+    "explore {\"id\":\"t210\",\"limit\":35}",
+    "explore {\"id\":\"t216\",\"limit\":25}",
+    "search_graph {\"query\":\"statistical acceptance sample\",\"chapters\":[13],\"limit\":12}",
+    "read_facts {\"ids\":[\"f14193\",\"f14199\",\"f14209\",\"f6829\",\"f7355\",\"f7356\",\"f7357\",\"f6990\",\"f6952\",\"f6953\",\"f7589\",\"f648\",\"f7402\",\"f10409\",\"f10414\",\"f10425\",\"f10433\",\"f10465\",\"",
+    "read_facts {\"ids\":[\"f5205\",\"f6861\",\"f6885\",\"f6889\",\"f6931\",\"f7351\",\"f6657\",\"f10730\",\"f11280\",\"f10410\",\"f10424\",\"f14375\",\"f8916\"]}",
+    "explore {\"id\":\"t210\",\"limit\":35}",
+    "read_facts {\"ids\":[\"f14191\",\"f14193\",\"f14194\",\"f14209\",\"f6885\",\"f14199\",\"f5205\",\"f7355\",\"f7356\",\"f7357\",\"f6889\",\"f6931\",\"f6657\",\"f5154\",\"f6829\",\"f14375\"]}"
+   ],
+   "usage": {
+    "input": 94441,
+    "output": 2280
+   },
+   "cited": 38,
+   "answerRecall": 0.75,
+   "retrievalRecall": 1,
+   "citePrecision": 1,
+   "regexHits": 1,
+   "score": 4,
+   "missed": [
+    "Strata across site types, scenarios, conditions and models exceed 7,000 cells, so exhaustive field coverage is infeasible; stratified sampling plus simulation is needed."
+   ],
+   "notRetrieved": [],
+   "unsupported": [],
+   "badCites": [],
+   "notes": "Correct trial counts, confidence assumptions, encounter-level independence and well-grounded campaign implications. However, it omits the explicit more-than-7,000-cell scale and resulting infeasibility of exhaustive field coverage, despite retrieval of f5207. The 20-stratum example does not substitute for that gold claim. The answer is also unnecessarily duplicated and includes substantial peripheral detail.",
+   "error": "",
+   "answer": "- Low miss-rate claims sharply increase trial volume: at 95% one-sided confidence, zero misses require 299 independent trials for ≤1%, 2,995 for ≤0.1%, and 29,956 for ≤0.01%; allowing one or two misses raises the ≤1% requirement to about 474 or 630 trials [f14193, f14209]\n- Counts apply to each claimed population, not automatically to an entire product family; 20 separate critical-stratum claims at ≤1% require about 6,000 zero-miss trials, which the booklet judges feasible only through simulation or HIL [f6885, f14199]\n- The statistical unit is an independent encounter, not a sensor frame: hundreds of frames from one encounter do not constitute hundreds of independent trials [f5205]\n- Defensible confidence bounds require a defined denominator, event labels, representative sampling and a statistical plan written before testing; probability estimates require probability sampling or mathematically correct weighting [f648, f7402]\n- Stratification should ensure adequate representation of important machine, site and weather conditions, with strata weighted back to operational prevalence when estimating aggregate operational performance [f6829]\n- Campaign architecture separates coverage, failure discovery and performance estimation without shared data; estimation uses a frozen, pre-registered stratified random sample, while tuning uses coverage/discovery data and a separate tuning split [f7355, f7356, f7357]\n- Adaptive failure-seeking tests cannot support naive binomial confidence intervals because their selection is intentionally biased toward interesting cases [f6861]\n- Independence requires grouped holdouts of whole sites, weather episodes, machines or scenario families—not random frame splits—and separate simulator calibration, validation and withheld confirmation data [f6990, f7589]\n- Audit failures used to change thresholds contaminate the audit set; untouched reserves or replacement cases are needed, and late safety-relevant threshold changes require new independent statistical confirmation [f6952, f6953, f14375]\n- Simulation/HIL can supply large stratified trial counts, but physical tests should validate simulation within each stratum and provide independent smaller-sample confirmation; virtual volume alone can consist of millions of systematically wrong tests [f6889, f8916]\n- Chapter 13 identifies credibility, not test volume, as the central weakness; sensor/environment fidelity is especially uncertain in risky conditions, and published terramechanics validation adequate for braking prediction across 100+ site types was not found [f10409, f10424, f10433]\n- A sub-four-month campaign is judged credible only if most work precedes hardware arrival; Chapter 13 found no reference class demonstrating a first-time virtual-validation program within that window [f7351, f10465]\n- Collision-mitigation acceptance must cover nuisance and incorrect interventions as well as misses; nuisance-rate evidence uses representative operating exposure, with zero events over T hours giving a 95% Poisson upper bound of approximately 3/T [f10730, f6657]\n\nTensions:\n- The booklet calls simulation/HIL necessary for large stratified counts, but found no off-road regulatory acceptance of simulation-based rate claims or established machinery-conformity acceptance of virtual evidence [f14199, f6931, f11188]\n- The cited EU prohibition on substituting simulation for physical tests is on-road evidence, not an off-road acceptance rule; whether ISO 16001 and ISO 21815-1/-3 test procedures accept simulation was not established [f10410, f11192]\n- Chapter 13 reports missing credibility foundations in the organization reviewed, while NIOSH identifies unresolved false-positive methods, simulation procedures, environmental effects and real-world-validation gaps [f10414, f10425]\n- No published anchor was found for the off-road automatic-braking acceptance threshold needed by site operations and safety reviewers [f11280]\n\nAlso relevant: t210, t216, t231, t233, t209, x323, c13For a **miss rate ≤1% at 95% one-sided confidence**, you need **299 independent encounters with zero misses**—per claimed population. Tightening the target to **≤0.1% requires 2,995**, and **≤0.01% requires 29,956**; those counts can become the binding constraint on the campaign. [f14193, f6655]\n\n## How many trials?\n\nAll counts below assume **zero observed misses** and independent detection opportunities. [f14191]\n\n| Claimed maximum miss rate | 95% confidence | 99% confidence |\n|---|---:|---:|\n| 5% | 59 | 90 |\n| 1% | 299 | 459 |\n| 0.1% | 2,995 | 4,603 |\n| 0.01% | 29,956 | 46,050 |\n\nThese are one-sided statistical bounds, not guarantees of zero future misses. [f14191, f14193, f14194]\n\nThe exact zero-miss condition is \\((1-q)^n \\leq \\alpha\\), where \\(q\\) is the claimed maximum miss probability and \\(1-\\alpha\\) is the confidence level. The familiar **“rule of three”** approximates the 95% upper bound as \\(3/n\\). [f14191, f14202]\n\nIf misses occur, the required count rises: for a **≤1% claim at 95% confidence**, allowing one miss requires about **474 trials**, or two misses about **630**. [f14209]\n\n## What this means for the campaign\n\n- **Define the claim before setting the test budget.** The reviewed off-road standards specify what to test, but not how much testing is enough. A sample supporting one aggregate population claim does not automatically establish performance across an entire product family. [f5154, f6885]\n- **Budget by critical population or condition.** Separate claims need their own evidence: a ≤1% claim in each of **20 critical strata** needs about **6,000 zero-miss encounters**. For aggregate operational performance, the booklet recommends sampling important machine, site and weather strata, then weighting them back to operational prevalence. [f14199, f6829]\n- **Count encounters—not frames.** Hundreds of correlated sensor frames from one encounter are not hundreds of independent trials. [f5205]\n- **Protect the statistical test set from tuning.** Keep coverage, failure discovery and performance estimation separate. Estimate performance using a frozen, pre-registered stratified random sample; tune on separate data. A late safety-relevant threshold change requires new independent confirmation of the affected claim. [f7355, f7356, f7357, f14375]\n- **Use virtual testing for scale, but establish its credibility.** The booklet judges the roughly 6,000-trial example feasible only through simulation or hardware-in-the-loop. Its expert recommendation is to validate the simulation within each stratum and obtain independent, smaller-sample physical confirmation. **No off-road regulator acceptance of simulation-based rate claims was found.** [f14199, f6889, f6931]\n- **Budget nuisance-intervention evidence separately.** Miss-rate encounters do not replace representative operating exposure: with zero nuisance events in \\(T\\) hours, the 95% Poisson upper rate bound is approximately \\(3/T\\). [f6657]"
+  },
+  {
+   "id": "eu-ml-dates",
+   "ms": 52335,
+   "tools": 15,
+   "toolNames": [
+    "read_file",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "explore",
+    "explore",
+    "explore",
+    "search_graph",
+    "read_facts",
+    "explore",
+    "explore",
+    "search_graph",
+    "read_facts"
+   ],
+   "steps": [
+    "read_file {\"file_path\":\"/skills/graph-research/SKILL.md\",\"limit\":1000}",
+    "search_graph {\"query\":\"Machinery Regulation 2027 machine learning Annex I\",\"limit\":10}",
+    "search_graph {\"query\":\"AI Act dates high risk 2026 2027\",\"limit\":10}",
+    "search_graph {\"query\":\"AI Act\",\"limit\":30}",
+    "search_graph {\"query\":\"automatic braking approval\",\"limit\":15}",
+    "search_graph {\"query\":\"AI Act dates standards\",\"limit\":15}",
+    "explore {\"id\":\"e346\",\"limit\":30}",
+    "explore {\"id\":\"e10\",\"limit\":60}",
+    "explore {\"id\":\"t289\",\"limit\":30}",
+    "search_graph {\"query\":\"harmonised AI standards 2027\",\"limit\":15}",
+    "read_facts {\"ids\":[\"f9796\",\"f9797\",\"f9798\",\"f2095\",\"f2096\",\"f15475\",\"f15477\",\"f9801\",\"f10310\",\"f11223\",\"f11224\",\"f7431\",\"f11134\",\"f55\",\"f2099\",\"f2100\",\"f2102\",\"f15301\",\"f1",
+    "explore {\"id\":\"t298\",\"limit\":50}",
+    "explore {\"id\":\"t79\",\"limit\":40}",
+    "search_graph {\"query\":\"Product Liability Directive December 2026 Data Act September\",\"limit\":8}",
+    "read_facts {\"ids\":[\"f2009\",\"f2089\",\"f2090\",\"f2091\",\"f2092\",\"f2093\",\"f2094\",\"f2095\",\"f2096\",\"f2098\",\"f9801\",\"f11223\",\"f11224\",\"f7436\",\"f10786\",\"f364\",\"f365\",\"f2147\",\"f10307"
+   ],
+   "usage": {
+    "input": 91241,
+    "output": 2303
+   },
+   "cited": 40,
+   "answerRecall": 1,
+   "retrievalRecall": 1,
+   "citePrecision": 1,
+   "regexHits": 1,
+   "score": 5,
+   "missed": [],
+   "notRetrieved": [],
+   "unsupported": [],
+   "badCites": [],
+   "notes": "All five gold claims are covered and present in the retrieved facts. The answer correctly distinguishes the January 2027 machinery conformity constraint from the reported August 2028 AI timeline, explicitly identifies the missing notified-body lead-time figure, and translates uncertainty into early assessor engagement and evidence-planning actions. Citations support the substantive statements. The response is unnecessarily repetitive and lengthy, but its qualifications about conflicting AI-law accounts preserve rather than undermine the core planning guidance.",
+   "error": "",
+   "answer": "- The booklet reports AI Omnibus Regulation (EU) 2026/1744 adoption on 8 July 2026, Official Journal publication on 24 July, and entry into force on 27 July; treat these as corpus-reported dates requiring verification [f9796, f55]\n- Its principal timeline places Annex I product-embedded high-risk AI obligations, including machinery safety components, at 2 August 2028; Annex III obligations are separately dated 2 December 2027 [f9798, f9797]\n- Chapter 3 says machinery is removed from direct AI Act high-risk classification, with machinery AI requirements instead arriving through Machinery Regulation delegated acts [f2095, f2096]\n- The glossary expects machinery AI health-and-safety requirements through delegated acts by 2 August 2028, but says those acts had not been adopted by 1 October 2026 [f15475, f15477]\n- Applicability is unresolved: Chapter 13 calls the 2028 change a deferral, not an exemption, and expects AI Act conformity for subsequently sold products if their embedded component qualifies [f11223, f11224]\n- Obtain a notified-body or legal opinion on AI Act applicability rather than assuming the timing change clears the CMS for launch [f11134, f10851]\n- Interim reliance on harmonised AI Act standards for Machinery Regulation presumption of conformity is only an uncertain suggestion from August 2026 Eurogip commentary, not verified on EUR-Lex [f7431]\n- The booklet characterises ML safety standards as mostly draft; ISO/IEC TR 5469:2024 is guidance, while ISO/PAS 8800:2024 applies only to road vehicles—not an off-road approval route [f2099, f2100, f2102]\n- ISO/IEC 42001, 23894 and 24029 were not verified; no off-road/mining standards with ML clauses were found, and ISO 19014 supplies no separate ML-perception acceptance process [f15301, f15303, f15304]\n- A safety-case skeleton mapped to ISO 21815/19014 is considered realistic by mid-2027 for an October 2026 start; this finding concerns claim structure, not completed approval [f829]\n- No complete numeric regulatory type-approval test for off-road automatic braking was found; published criteria for accepting virtual-only heavy-machinery evidence were also absent [f2147, f10307]\n- Despite the reported 2028 AI deadline, ML-perception notified-body lead time could itself exceed the four-month validation window; the booklet recommends rechecking regulatory dates and standard statuses after October 2026 [f11928, f55]\n\nTensions:\n- Machinery carve-out versus “deferral, not exemption” is an explicit cross-chapter contradiction; Chapter 12 says the carve-out/delegated-act account rests on law-firm and vendor summaries rather than reviewed Official Journal provisions [f2095, f11223, f11224, f9801]\n- One secondary summary assigns Annex I obligations to 2 December 2027 instead of 2 August 2028; even the main timing facts list expert/vendor sources despite their “Independent” fact labels [f10310, f9796, f9797, f9798]\n- Harmonisation, detailed delegated requirements, off-road ML acceptance and virtual-evidence acceptance remain unverified or missing; road-vehicle AI guidance cannot establish off-road approval [f7431, f15477, f15303, f15304, f10307, f2102]\n\nAlso relevant: [f11134, f55, f7431, f9801, f10310, f11928]**The immediate approval constraint is the EU Machinery Regulation from 20 January 2027—not the booklet’s later, reported AI deadline.** ML-based safety perception may require a notified body, whose lead time could itself exceed the booklet’s four-month validation window. [f2089, f2090, f364]\n\n### Dates and rules\n\n| Date | Constraint and implication |\n|---|---|\n| **After 9 December 2026** | The new Product Liability Directive applies to products placed on the market after this date and treats **software as a product**. Courts may order evidence disclosure; failure to disclose, or excessive technical complexity, can trigger presumptions of defectiveness. This makes the validation record important beyond conformity assessment. [f9461, f9462, f10679, f10680] |\n| **20 January 2027** | Machinery Regulation **(EU) 2023/1230** applies. Annex I Part A covers safety components with “fully or partially self-evolving behaviour using machine learning approaches ensuring safety functions,” and machinery embedding them; both require notified-body involvement. The Regulation also requires protection against corruption under Annex III §1.1.9. [f2089, f2090, f5833] |\n| **2 August 2028 — reported, but requires verification** | The booklet reports this as the deferred date for Annex I product-embedded high-risk AI obligations following its reported Digital Omnibus amendment. However, it contains conflicting accounts of whether machinery moves out of direct AI Act classification into Machinery Regulation delegated acts, or remains subject to deferred AI Act conformity. Do **not** treat this date as an established exemption or launch clearance. [f2094, f2095, f2096, f11223, f11224] |\n\nThe booklet separately reports **2 December 2027** for AI Act **Annex III** high-risk obligations; that is distinct from its Annex I product-safety-component timeline. [f9797]\n\n### The key ML classification question\n\n**A trained-then-frozen detector is not automatically outside the notified-body route.** Whether such a model counts as “self-evolving” is disputed among commentators and, according to the booklet, was not settled by the Commission. Its recommendation is to obtain a notified-body opinion early. [f2091, f7436]\n\nThe AI-law account is less secure: Chapter 12 acknowledges that the machinery carve-out and delegated-act mechanism rested on **law-firm and vendor summaries**, rather than reviewed Official Journal provisions. Machinery-specific delegated requirements had not been adopted by **1 October 2026**. The booklet is dated October 2026 and expressly recommends rechecking regulatory dates before reliance. [f9801, f2098, f55]\n\n### What this means for approval timing\n\n- **Settle the conformity route before committing to a release date.** The booklet identifies no notified-body pre-consultation by early 2027—and ML perception without an Annex I Part A position—as warning signs of a blocked regulatory route. [f10786]\n- **Do not equate a four-month validation campaign with approval.** Notified-body lead time could exceed that window, and the booklet found **no published lead-time figure** for ML-perception approval. [f364, f365]\n- **Agree the evidence strategy with the assessor early.** The booklet found no complete numeric regulatory type-approval test for off-road automatic braking, and no published criteria establishing acceptance of **virtual-only evidence** for heavy machinery. Simulation completion therefore does not establish approval readiness. [f2147, f10307]\n- **Do not assume an off-the-shelf harmonised-standard route closes the issue.** The new Machinery Regulation’s harmonised-standards list was still being prepared in 2026. [f2092]\n\n**Bottom line:** plan around the **January 2027 machinery conformity requirements**, resolve frozen-model classification and assessor expectations early, and verify the booklet’s disputed AI-law timeline against authoritative legal text before using **2028** in an approval commitment. [f2089, f7436, f10307, f9801, f55]"
+  },
+  {
+   "id": "deceleration-values",
+   "ms": 52538,
+   "tools": 14,
+   "toolNames": [
+    "read_file",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "explore",
+    "explore",
+    "search_graph",
+    "search_graph",
+    "read_facts",
+    "read_facts",
+    "explore",
+    "search_graph",
+    "read_facts"
+   ],
+   "steps": [
+    "read_file {\"file_path\":\"/skills/graph-research/SKILL.md\",\"limit\":1000,\"offset\":0}",
+    "search_graph {\"query\":\"braking deceleration cars\",\"limit\":8}",
+    "search_graph {\"query\":\"latency 5 15 km/h\",\"limit\":20}",
+    "search_graph {\"query\":\"latency stopping distance\",\"limit\":20}",
+    "search_graph {\"query\":\"delay worksite speed\",\"limit\":20}",
+    "explore {\"id\":\"t172\",\"limit\":50}",
+    "explore {\"id\":\"t88\",\"limit\":50}",
+    "search_graph {\"query\":\"40 t 1.0 s downgrade\",\"types\":[\"fact\"],\"limit\":10}",
+    "search_graph {\"query\":\"latency jitter worst case\",\"types\":[\"fact\"],\"limit\":15}",
+    "read_facts {\"ids\":[\"f5898\",\"f12558\",\"f13682\",\"f13921\",\"f13656\",\"f13655\",\"f13654\",\"f13989\",\"f13658\",\"f7010\",\"f6147\",\"f6159\",\"f146\",\"f7494\",\"f7495\",\"f5285\",\"f7493\",\"f5654\",\"",
+    "read_facts {\"ids\":[\"f5989\",\"f6058\",\"f6540\",\"f5698\"]}",
+    "explore {\"id\":\"t190\",\"limit\":40}",
+    "search_graph {\"query\":\"loaded haul truck deceleration 1.5\",\"limit\":6}",
+    "read_facts {\"ids\":[\"f13636\",\"f13640\",\"f13946\",\"f5989\",\"f5560\",\"f5891\",\"f5898\",\"f7010\",\"f13654\",\"f13655\",\"f13656\",\"f13682\",\"f13921\",\"f11888\",\"f146\",\"f7018\",\"f12558\"]}"
+   ],
+   "usage": {
+    "input": 106416,
+    "output": 2052
+   },
+   "cited": 32,
+   "answerRecall": 0.8,
+   "retrievalRecall": 1,
+   "citePrecision": 1,
+   "regexHits": 1,
+   "score": 4,
+   "missed": [
+    "Published brake-response latencies range 0.3 to 2.5 s."
+   ],
+   "notRetrieved": [],
+   "unsupported": [
+    "this quantitative warning is vendor/on-road evidence"
+   ],
+   "badCites": [],
+   "notes": "States four of five gold claims accurately and provides grounded calculations, a useful worked example, and appropriate cautions about comparing regulatory deceleration figures. Omits the published 0.3–2.5 s brake-response latency range despite retrieving it; the 0.5–2.5 s MSHA range is not equivalent. The answer is unnecessarily duplicated and cluttered with research tensions and a dangling 'Also relevant' citation list. The provenance characterization of the clock-offset warning is not established by the supplied facts.",
+   "error": "",
+   "answer": "- At 5–15 km/h, the booklet says latency can account for half or more of stopping distance; this is a conditional claim, not a universal percentage [f5898].\n- Delay distance is \\(v\\,t\\): a 1 s delay adds approximately 1.39 m at 5 km/h, 2.78 m at 10 km/h, and 4.17 m at 15 km/h (first two calculated using the booklet’s model) [f7010, f12558].\n- At 15 km/h, a 0.5 s error in assumed brake dead time creates approximately 2 m stopping-distance error [f13682].\n- At 15 km/h and 10 sensor frames/s, each extra confirmation frame adds approximately 0.4 m before braking [f13921].\n- Worked example: a 40 t machine at 15 km/h on a 10% downgrade, with assumed 1 s latency, travels 4.2 m during delay and 4.3 m during braking—approximately 8.5 m total, nearly half attributable to latency [f13655, f13654, f13656].\n- In that example, 1 m residual clearance requires detection at least 9.5 m away; adding an assumed 0.5 m sensor error raises required range to approximately 10 m [f13656, f13989].\n- The example’s braking distance rises from 2.9 m on level ground to 4.3 m on the downgrade; latency significance must therefore be assessed alongside grade-dependent braking, payload and surface [f13654, f146].\n- Required detection distance combines sensing/decision/actuation delays, physical braking distance, machine-envelope offset and margin; the supplied equation is an engineering model, not a verbatim ISO equation [f7010].\n- Measure the complete event-to-deceleration chain, and distinguish distance from brake command from distance after brake-force onset; otherwise latency is hidden [f6159, f6147].\n- Use model-specific sensing, control and actuation latency distributions rather than copied constants [f7018].\n\nTensions:\n- ISO 16001’s quoted 300 ms limit concerns ODS detection, not total braking latency; it came from a public preview and requires confirmation against the purchased standard before safety-case use [f7493, f7494, f7495].\n- Glossary claim that US rules assume 2 s total delay for very heavy equipment conflicts with Chapter 8’s 0.5–2.5 s system response **plus 1 s operator time**; the 8.3 m travel calculation is valid for 2 s, but its regulatory attribution is unreliable [f13658, f6058, f5989].\n- Chapter 8 also broadly says operator reaction is excluded while listing MSHA Table M-1, contradicting its explicit inclusion of 1 s operator time elsewhere [f6540, f6058].\n- Apparent 100–300 ms algorithm latency can instead be clock offset, but this quantitative warning is vendor/on-road evidence; neutral real-sensor OTA/HIL latency benchmarks were not found [f5654, f4956].\n\nAlso relevant: [t88, t172, f5285, f5698]**Heavy machines can brake much less sharply than cars—and at work-site speeds, delay can consume as much stopping distance as braking itself.** A loaded haul truck may decelerate at less than one-third of a car’s rate; at **5–15 km/h**, latency can account for **half or more** of stopping distance, depending on the machine and conditions. [f13636, f5898]\n\n### How hard can they brake?\n\nThe booklet gives these reference points—not directly comparable measurements of maximum capability:\n\n| Reference | Deceleration | What it means |\n|---|---:|---|\n| Car automatic emergency braking, UN R152 | **≥5.0 m/s²** | Required braking demand; **on-road evidence**. [f5891] |\n| US MSHA mine-machine brake-test calculation | **2.94 m/s²** | Assumed constant deceleration, with system and operator response times added separately. [f5989] |\n| MOSH surface-machine emergency-stop requirements | **1.9 or 1.0 m/s²** | 1.9 for machines whose **top speed** exceeds 20 km/h; 1.0 for other machines. [f5560] |\n| NSW proposed in-service service-brake guidance | **0.60 m/s²** | Minimum net deceleration, with grade/mass corrections—not an adopted rule or a maximum capability. [f13946] |\n\n**Don’t interpret those figures as an apples-to-apples ranking:** the sources use commanded demand, mean stopping deceleration, constant-deceleration assumptions, or net deceleration on a slope. [f13640] Safe automatic braking must also respect traction, stability, articulation, payload and attachment limits—not merely what the brakes can produce. [f11888]\n\n### How much does latency cost?\n\nA useful engineering approximation is:\n\n**Stopping distance ≈ speed × total delay + speed² ÷ (2 × available deceleration).**\n\nHere, total delay includes detection, decision and actuation; required detection range additionally needs machine-envelope and safety margins. This is an engineering model, not a verbatim ISO equation. [f7010]\n\nUsing its **speed × delay** term gives the following extra travel **before braking begins**: [f7010]\n\n| Speed | 0.5 s delay | 1.0 s delay |\n|---|---:|---:|\n| 5 km/h | 0.7 m | 1.4 m |\n| 10 km/h | 1.4 m | 2.8 m |\n| 15 km/h | 2.1 m | 4.2 m |\n\nEven seemingly small filtering delays matter: at **15 km/h**, with a sensor running at **10 frames/s**, each additional confirmation frame costs about **0.4 m**. [f13921]\n\n### A concrete work-site example\n\nThe booklet’s illustrative **40-tonne machine at 15 km/h on a 10% downgrade**, with an assumed **1-second delay**, travels:\n\n- **4.2 m during the delay**; [f13655]\n- **4.3 m while braking**, versus 2.9 m on level ground; [f13654]\n- **8.5 m total**—so detection must occur at least **9.5 m away** to leave 1 m clearance, before allowing for sensor error. [f13656]\n\n**The practical implication:** measure the full sensing-to-braking delay and brake build-up, and use deceleration calibrated for the machine’s grade, payload and surface. Low travel speed alone does not make latency negligible. [f146, f5898]"
+  },
+  {
+   "id": "mosh-spec",
+   "ms": 29152,
+   "tools": 12,
+   "toolNames": [
+    "read_file",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "explore",
+    "read_section",
+    "read_facts",
+    "search_graph",
+    "explore",
+    "read_facts",
+    "search_graph",
+    "read_facts"
+   ],
+   "steps": [
+    "read_file {\"file_path\":\"/skills/graph-research/SKILL.md\",\"limit\":1000}",
+    "search_graph {\"query\":\"numeric acceptance collision intervention\",\"limit\":15}",
+    "search_graph {\"query\":\"MOSH numeric 200 100 latency\",\"limit\":15}",
+    "search_graph {\"query\":\"ISO 16001 300 detection percentage\",\"limit\":12}",
+    "explore {\"id\":\"t62\",\"limit\":45}",
+    "read_section {\"id\":\"x101\"}",
+    "read_facts {\"ids\":[\"f2112\",\"f2113\",\"f2114\",\"f2115\",\"f2116\",\"f2117\",\"f2118\",\"f2119\",\"f2120\",\"f2081\",\"f2065\",\"f2066\",\"f2063\",\"f324\",\"f3605\"]}",
+    "search_graph {\"query\":\"fleet statistical KPIs acceptance availability 500\",\"chapters\":[3],\"limit\":10}",
+    "explore {\"id\":\"t307\",\"limit\":12}",
+    "read_facts {\"ids\":[\"f2603\",\"f2604\",\"f2605\",\"f2606\",\"f2619\",\"f2624\",\"f2064\",\"f2181\",\"f5284\",\"f5285\",\"f2613\",\"f2614\",\"f2086\"]}",
+    "search_graph {\"query\":\"1.5 whichever greater\",\"limit\":3}",
+    "read_facts {\"ids\":[\"f2607\"]}"
+   ],
+   "usage": {
+    "input": 101516,
+    "output": 1149
+   },
+   "cited": 20,
+   "answerRecall": 0.8,
+   "retrievalRecall": 1,
+   "citePrecision": 1,
+   "regexHits": 0.8,
+   "score": 4,
+   "missed": [
+    "Pretoria/MOSH verification first-pass rates 62% detection devices, 42% machine-side systems (18-week lead time)."
+   ],
+   "notRetrieved": [],
+   "unsupported": [],
+   "badCites": [],
+   "notes": "Accurate, clearly organized and well grounded. Covers four of five gold claims and adds supported acceptance values with useful scope distinctions. Omits the retrieved Pretoria/MOSH first-pass rates of 62% for detection devices and 42% for machine-side systems, and the 18-week lead time—important evidence for planning verification and retesting.",
+   "error": "",
+   "answer": "**Concrete values exist, chiefly in South Africa’s MOSH mining-industry specifications—not in law.** They define scenario-level performance, but the booklet found no off-road standard or regulation prescribing fleet-wide detection rates, false alarms per hour or unnecessary braking events per hour. [f2112, f2603]\n\n## Mining-specific acceptance values\n\nThe MOSH **surface collision-prevention Functional & Technical Performance Requirements, Rev 1** give these values. They are industry-specification requirements, not universal statutory limits. [f2605, f2607, f2619, f2112]\n\n| Measure | Published acceptance value |\n|---|---|\n| Machine-to-machine detection range, surface | **≥200 m**. [f2605] |\n| Simultaneous tracking | **≥6 machines**. [f2606] |\n| Position accuracy | **1.5 m or 10%, whichever is greater**. [f2607] |\n| Warning lead time before intervention | **2.5–3.0 s**. [f2115] |\n| Stop gap at speeds **≤10 km/h** | **1.0–4.0 m**. [f2116] |\n| Stop gap at speeds **>10 km/h** | **15 m ±5 m**. [f2117] |\n| Fail-to-safe response | **Within 500 ms of critical-failure detection**. [f2619] |\n| False interventions and false warnings at the TRL4 gate | **None**. This is a stage-gate requirement, not a published fleet-exposure rate. [f2613, f2603] |\n\nAdditional MOSH interface timing requirements are **disconnection detection within 500 ms** and **machine reply within 50 ms**. The latter is a reply deadline—not a 50 ms fail-to-safe requirement. [f5284, f5285]\n\nAt TRL9, MOSH requires **“no significant production loss”**, but that is qualitative rather than a numeric nuisance-intervention limit. [f2614]\n\n## Relevant detection and warning standard\n\n**ISO 16001:2017** supplies two further numeric requirements:\n\n- Object-detection time: **≤300 ms**, clause 4.5. [f2604]\n- Audible warning: **at least 3 dB above ambient**. [f2065]\n\nIts scope is **warning and visibility, not braking**; these values therefore do not constitute acceptance criteria for the complete intervention function. [f2181]\n\n## What remains unspecified\n\n- **South Africa’s automatic slow-down and braking regulation:** no detection percentage, detection distance, false-alarm limit or stopping-distance test. [f2081]\n- **Fleet-statistical acceptance:** no prescribed field detection rate, false warnings per operating hour or unnecessary brake events per hour found in off-road standards or regulations. [f2603]\n- **Availability and diagnostic coverage:** no numeric acceptance values found. [f2624]\n- **Statistical acceptance targets:** none supplied by the reviewed ISO 21815-1/-3, EMESRT PR-5A, ISO 18497-4, ISO 19014 or draft ISO 21815-5 material. [f324]\n\nOne regulatory trap: the proposed US underground-coal **3 ft stopping distance and 5 ft warning distance were dropped** from the final 2015 rule; they are not adopted acceptance limits. [f2086]"
+  },
+  {
+   "id": "open-loop-limit",
+   "ms": 20678,
+   "tools": 7,
+   "toolNames": [
+    "read_file",
+    "search_graph",
+    "search_graph",
+    "explore",
+    "explore",
+    "search_graph",
+    "read_facts"
+   ],
+   "steps": [
+    "read_file {\"file_path\":\"/skills/graph-research/SKILL.md\",\"limit\":1000}",
+    "search_graph {\"query\":\"replay warning braking counterfactual\",\"limit\":8}",
+    "search_graph {\"query\":\"warning field history three traps\",\"limit\":6}",
+    "explore {\"id\":\"t155\",\"limit\":45}",
+    "explore {\"id\":\"t266\",\"limit\":24}",
+    "search_graph {\"query\":\"closed-loop braking physical brake tests latency slope payload\",\"chapters\":[7,8],\"limit\":5}",
+    "read_facts {\"ids\":[\"f108\",\"f95\",\"f96\",\"f10925\",\"f7578\",\"f10892\",\"f5557\",\"f309\",\"f10417\",\"f7947\",\"f5569\"]}"
+   ],
+   "usage": {
+    "input": 64948,
+    "output": 625
+   },
+   "cited": 9,
+   "answerRecall": 0.25,
+   "retrievalRecall": 0.75,
+   "citePrecision": 0.8888888888888888,
+   "regexHits": 0.5,
+   "score": 3,
+   "missed": [
+    "Braking consequences must be tested in closed-loop simulation, HIL and on a proving ground.",
+    "Recording must start now (October 2026) including through winter because the window has no northern cold season.",
+    "Ground truth must be independent of the system under test."
+   ],
+   "notRetrieved": [
+    "Recording must start now (October 2026) including through winter because the window has no northern cold season."
+   ],
+   "unsupported": [
+    "the booklet identifies that restriction as expert opinion"
+   ],
+   "badCites": [
+    "f10892"
+   ],
+   "notes": "The answer correctly explains the first-brake-command boundary and gives a well-grounded account of replay's uses and limitations. It recommends closed-loop SIL/HIL and physical tests, but does not explicitly require proving-ground testing, so gold claim 1 is incomplete under strict grading. It omits immediate October 2026 recording through winter and independent ground truth. Retrieved facts support immediate recording and winter collection, but do not state the full seasonal-window rationale in gold claim 2. The sensor-reuse restriction is supported; its attribution to expert opinion is not.",
+   "error": "",
+   "answer": "**No—not by replay alone.** Existing warning-system logs are useful for testing detection and candidate brake-trigger logic, but they cannot validate the new system’s stopping behaviour. The evidence breaks at the **first brake command that was absent from the recorded run**: after that, the recording no longer represents what the braking machine would actually experience. [f95, f10925, f108]\n\n### What replay can establish\n- Detection, false alarms and warning timing—for the **sensors, mounting positions and situations actually recorded**. [f95]\n- How often candidate braking logic would have triggered, in what context, and an initial estimate of false activations. That is evidence about *brake requests*, not successful stopping. [f10925, f108]\n\n### Why the old logs are insufficient\n- **No feedback from braking:** the recorded scene continues unchanged when the new software commands a brake, so replay cannot establish the subsequent stopping outcome. [f108]\n- **Biased history:** operators may already have reacted to warnings, and the logs are biased toward normal operation; they are not an uncensored record of hazardous outcomes. [f7578]\n- **Limited hardware coverage:** replay does not retest components or influences upstream of the data-injection point, such as the lens, antenna, contamination, vibration or glare. If the new sensors differ, direct reuse is also questionable—the booklet identifies that restriction as expert opinion. [f96, f10892]\n\n### What must supplement it\nUse replay as the baseline, then test braking consequences in **closed-loop software- and hardware-in-the-loop tests**, using a validated machine/brake model that includes load, slope and articulation. Supplement those with physical tests and staged field operation—the combination found across the documented validation programmes. [f5557, f309]\n\nThe acceptance target must be the **new braking safety function**, not merely matching the existing warning system. [f10417]"
+  },
+  {
+   "id": "sensor-sim-dust",
+   "ms": 27131,
+   "tools": 8,
+   "toolNames": [
+    "read_file",
+    "search_graph",
+    "explore",
+    "search_graph",
+    "explore",
+    "search_graph",
+    "search_graph",
+    "read_facts"
+   ],
+   "steps": [
+    "read_file {\"file_path\":\"/skills/graph-research/SKILL.md\",\"limit\":1000,\"offset\":0}",
+    "search_graph {\"query\":\"sensor simulation dust snow fog\",\"limit\":12}",
+    "explore {\"id\":\"t102\",\"limit\":60}",
+    "search_graph {\"query\":\"snow sensor simulation validation\",\"chapters\":[6],\"limit\":12}",
+    "explore {\"id\":\"c6\",\"limit\":30}",
+    "search_graph {\"query\":\"dust fog simulation\",\"chapters\":[13,0],\"kinds\":[\"gap\",\"recommendation\",\"risk\"],\"limit\":12}",
+    "search_graph {\"query\":\"snow\",\"chapters\":[6],\"types\":[\"fact\"],\"limit\":30}",
+    "read_facts {\"ids\":[\"f4407\",\"f4408\",\"f331\",\"f5050\",\"f4630\",\"f4634\",\"f4424\",\"f4425\",\"f4426\",\"f254\",\"f5051\",\"f5070\",\"f5097\",\"f10562\",\"f10574\",\"f5057\",\"f5068\",\"f4435\",\"f7557\","
+   ],
+   "usage": {
+    "input": 68295,
+    "output": 1081
+   },
+   "cited": 22,
+   "answerRecall": 0.25,
+   "retrievalRecall": 1,
+   "citePrecision": 1,
+   "regexHits": 1,
+   "score": 3,
+   "missed": [
+    "Lidar in rain and fog is the best-validated case.",
+    "Radar realism depends on material properties at 77 GHz that usually must be measured.",
+    "There is no accepted realism score; peer-reviewed sim-to-real studies show a measurable domain gap especially in adverse weather."
+   ],
+   "notRetrieved": [],
+   "unsupported": [
+    "The booklet’s October 2026 assessment"
+   ],
+   "badCites": [],
+   "notes": "Clear, practically useful and largely well grounded, but incomplete against the gold claims. It identifies fog/lidar as strongest without stating that lidar in both rain and fog is the best-validated case. It fully covers the dust gap, but omits the dependence of radar realism on measured material properties at 77 GHz. No accepted off-road qualification method is mentioned, but that is not the same as explicitly stating there is no accepted realism score; the peer-reviewed sim-to-real domain-gap finding is also omitted. All these missing points were available in retrieval. The October 2026 assessment date is unsupported.",
+   "error": "",
+   "answer": "**Useful for development, but not credible as stand-alone proof of off-road safety.** The booklet’s October 2026 assessment is that **fog simulation—especially lidar—has the strongest evidence; snow is less validated; dust is the biggest off-road gap**. Published validation mostly concerns individual sensors and effects on roads or in laboratories, not complete heavy-machine braking systems. [f5050, f4630, f4424, f4408]\n\n### Credibility by condition\n\n- **Fog: strongest, but conditional.** Multiple independent studies show that physics-based lidar models can closely match real measurements when the full sensor signal chain is represented. This is **on-road evidence**, and mismatch increases as visibility falls. In one fog-chamber experiment, at **10 m visibility**, all but one tested lidar failed to detect a target at **10.5 m**—a physical sensor limitation the simulation must reproduce, not smooth away. [f5050, f7558, f7559]\n\n- **Snow: models exist, qualification is weaker.** Lidar models such as LISA and those by Teufel and colleagues simulate snow, but their validation is weaker than for fog and comes from on-road applications. Radar snow attenuation also has less direct public validation than rain or fog. Having a “snow” setting is therefore not equivalent to demonstrating realistic sensor performance. [f4630, f4634, f331]\n\n- **Dust: weakest where off-road machines most need confidence.** A **2026 open-pit-mine lidar framework** was tuned to real mining data, but validation remains limited. Field research identifies **four distinct lidar behaviours in dust** that simple attenuation models miss. The booklet found **no published validated camera or radar dust model with a reported error metric**. [f4425, f4426, f254]\n\n### The sensor and machine matter\n\n**Radar is physically less affected by airborne dust and fog than cameras or lidar**, but that robustness does not establish the accuracy of a radar simulator. For thermal and ultrasonic simulation, the booklet found no adverse-weather or off-road validation. [f5051, f254, f4435]\n\nTransfer from road vehicles remains uncertain because off-road machines have different sensor heights, ranges, backgrounds, vibration, attachments and articulation. Their own dust depends on **speed, ground material and wind**; modelling it as a static fog cloud can miss those dependencies. Combined conditions—such as dense dust plus a muddy sensor cover—remain uncertain too. [f5068, f5097, f5070]\n\n### What would make a simulation credible?\n\nThe booklet recommends requiring:\n\n1. **Measured correlation:** record real dust events with transmittance instrumentation, then compare real and simulated point clouds **and detection outcomes**. [f10562]\n2. **Separate calibration and validation:** use fog/rain chambers to calibrate models, then field data to validate them. [f10574]\n3. **Task-level agreement, not visual realism:** compare signal distributions and downstream perception performance; convincing-looking weather alone is insufficient. [f5057, f11008]\n4. **Calibrated weather severity:** the booklet’s expert recommendation is to use labels such as “50 m visibility” only when grounded in actual sensor measurements; otherwise treat generated weather as a perturbation, not a quantified test condition. [f4920]\n\n**Bottom line:** use simulation to extend measured evidence, not replace it. The booklet concludes it can replace **part, not most**, of physical sensor testing, and found **no accepted method for qualifying sensor models in dust, snow or fog on off-road sites**. [f4407, f331]"
+  },
+  {
+   "id": "south-africa",
+   "ms": 14490,
+   "tools": 8,
+   "toolNames": [
+    "read_file",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "explore",
+    "explore",
+    "read_facts",
+    "read_facts"
+   ],
+   "steps": [
+    "read_file {\"file_path\":\"/skills/graph-research/SKILL.md\",\"limit\":1000,\"offset\":0}",
+    "search_graph {\"query\":\"mining automatic braking mandatory South Africa\",\"limit\":8}",
+    "search_graph {\"query\":\"MSHA proximity detection automatic stop regulation\",\"limit\":8}",
+    "search_graph {\"query\":\"automatic braking legal requirement\",\"kinds\":[\"gap\",\"requirement\",\"uncertain\"],\"limit\":8}",
+    "explore {\"id\":\"e458\",\"limit\":25}",
+    "explore {\"id\":\"t300\",\"limit\":30}",
+    "read_facts {\"ids\":[\"f164\",\"f2079\",\"f2080\",\"f2856\",\"f11457\"]}",
+    "read_facts {\"ids\":[\"f2085\",\"f1369\",\"f7752\",\"f2440\",\"f2441\"]}"
+   ],
+   "usage": {
+    "input": 40426,
+    "output": 589
+   },
+   "cited": 7,
+   "answerRecall": 0.3333333333333333,
+   "retrievalRecall": 0.6666666666666666,
+   "citePrecision": 0.8571428571428571,
+   "regexHits": 0.6666666666666666,
+   "score": 3,
+   "missed": [
+    "South Africa's regulation sets no detection percentage, false-alarm limit or stopping test.",
+    "The United States requires warnings and risk programs, not automatic braking."
+   ],
+   "notRetrieved": [
+    "South Africa's regulation sets no detection percentage, false-alarm limit or stopping test."
+   ],
+   "unsupported": [
+    "The booklet’s October 2026 review"
+   ],
+   "badCites": [
+    "f11457"
+   ],
+   "notes": "Correctly identifies South Africa’s mandate and commencement date, with a well-grounded explanation of its intervention sequence. It omits the gold claim about detection percentage, false-alarm limits and stopping tests; the retrieved facts discuss missing numerical requirements but do not explicitly state that full claim. It also does not state the gold US warning-and-risk-program conclusion, instead emphasizing a retrieved, supported continuous-miner automatic-stop exception and the surface-equipment program requirement. That distinction is useful but leaves the intended off-road warning-only scope incompletely explained. The final citation supports the review’s jurisdictional finding, but not its asserted October 2026 date.",
+   "error": "",
+   "answer": "**Yes—South Africa explicitly requires automatic slowing and braking on diesel-powered trackless mobile machines at mines, effective since 21 December 2022.** There is also a narrower US requirement for automatic stopping on continuous mining machines. [f2856, f2085]\n\n### South Africa: explicit automatic-braking mandate\nUnder the Mine Health and Safety Regulations, **Regulation 8.10**, the required sequence is:\n- Detect a collision risk and warn.\n- If the operator does not act, slow the machine to a safe speed.\n- Apply the brakes automatically. The system must also **“fail to safe without human intervention.”** [f2441, f2080]\n\nThe reviewed regulation passages do not prescribe a universal detection distance or speed threshold. [f2440]\n\n### United States: a narrower automatic-stop requirement\n**30 CFR 75.1732 (2015)** requires proximity detection on continuous mining machines in underground coal mines that stops the machine before contact. This is a machine-specific automatic-stop requirement, rather than a general automatic-braking mandate for mining fleets. [f2085]\n\nFor **surface mobile equipment**, MSHA requires a written safety programme that considers technologies such as collision warning and avoidance, but does **not** mandate adopting those technologies. [f1369]\n\n**Scope caveat:** The booklet’s October 2026 review found no other legal automatic-braking mandate for heavy mining machines beyond South Africa’s TMM mandate; that is a finding of the review, not proof that no other local rule exists. [f11457]"
+  },
+  {
+   "id": "functional-safety",
+   "ms": 15917,
+   "tools": 8,
+   "toolNames": [
+    "read_file",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "explore",
+    "explore",
+    "explore",
+    "read_facts"
+   ],
+   "steps": [
+    "read_file {\"file_path\":\"/skills/graph-research/SKILL.md\",\"limit\":1000}",
+    "search_graph {\"query\":\"brake commanding ISO 19014\",\"limit\":8}",
+    "search_graph {\"query\":\"matching legacy system\",\"limit\":8}",
+    "search_graph {\"query\":\"ISO 13849 earth moving functional safety\",\"limit\":8}",
+    "explore {\"id\":\"t281\",\"limit\":30}",
+    "explore {\"id\":\"t48\",\"limit\":20}",
+    "explore {\"id\":\"t266\",\"limit\":15}",
+    "read_facts {\"ids\":[\"f2071\",\"f2075\",\"f2076\",\"f5223\",\"f11989\",\"f2141\",\"f7575\",\"f7578\",\"f15264\",\"f6286\",\"f12357\"]}"
+   ],
+   "usage": {
+    "input": 45580,
+    "output": 661
+   },
+   "cited": 9,
+   "answerRecall": 0.5,
+   "retrievalRecall": 0.75,
+   "citePrecision": 1,
+   "regexHits": 0.75,
+   "score": 3,
+   "missed": [
+    "ISO 19014 (not ISO 26262) applies; the series was reissued in October 2026.",
+    "Unnecessary braking is the dominant documented failure mode on the road (NHTSA investigations)."
+   ],
+   "notRetrieved": [
+    "Unnecessary braking is the dominant documented failure mode on the road (NHTSA investigations)."
+   ],
+   "unsupported": [],
+   "badCites": [],
+   "notes": "Correctly identifies ISO 19014 rather than ISO 26262, explains the motion-control scope boundary, and distinguishes both safety functions. The explanation of why warning-system history cannot validate braking is clear and grounded. However, claim 0 is incomplete: the answer does not state that the series was reissued in October 2026, despite explicit retrieved support, instead giving a revision-status caveat. It also omits the dominant documented road failure mode and NHTSA investigations; that gold claim is absent from the retrieved facts.",
+   "error": "",
+   "answer": "**ISO 19014 is the functional-safety framework for a brake-commanding function on earth-moving machinery—not the road-vehicle standard ISO 26262.** Matching an existing warning system is insufficient because automatic braking is a new, motion-controlling safety function, with its own hazards and acceptance targets. [f2071, f11989]\n\n### Which standard—and what changes?\n- **ISO 19014-2** explicitly excludes awareness-only systems that do not affect machine motion. Adding a brake command crosses that boundary and brings the function into scope. Validation must then cover brake-command integrity, faults, degraded modes and unintended activation—not just detection or warning performance. [f2075, f5223]\n- The series uses the **required Machine Performance Level (MPLr)**. ISO 13849 remains relevant to generically developed subsystems or machinery outside the earth-moving scope, but does not itself assign the required level for this collision function. [f2071, f15264]\n\n### Why “matching the old system” is the wrong target\n1. **Different hazards:** the new function’s targets must come from its own hazard analysis, rather than the old warning system’s performance. The booklet recommends separately analyzing failure to brake when needed and braking when unsafe or unnecessary. [f11989, f2141]\n2. **Different evidence burden:** warning-system history never exercised the complete detection → brake command → stopping chain. Operator reactions also censor what would otherwise have happened, and relevant-encounter exposure is usually unknown. [f12357]\n3. **Useful baseline, not proof:** legacy field data can support validation of inputs and submodels, but cannot validate the new closed-loop braking chain. [f7575]\n\n**Edition caveat:** the October 2026 booklet flags revisions in progress and recommends checking the final publication status of ISO 19014-2 and ISO 19014-5 before design freeze. [f6286]"
+  },
+  {
+   "id": "neural-reconstruction",
+   "ms": 51768,
+   "tools": 16,
+   "toolNames": [
+    "read_file",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "explore",
+    "explore",
+    "explore",
+    "search_graph",
+    "search_graph",
+    "read_facts",
+    "explore",
+    "explore",
+    "read_facts",
+    "read_facts"
+   ],
+   "steps": [
+    "read_file {\"file_path\":\"/skills/graph-research/SKILL.md\",\"limit\":1000,\"offset\":0}",
+    "search_graph {\"query\":\"recordings reconstruction virtual sites\",\"limit\":12}",
+    "search_graph {\"query\":\"NeRF Gaussian splatting\",\"limit\":15}",
+    "search_graph {\"query\":\"lidar camera reconstruction\",\"limit\":12}",
+    "search_graph {\"query\":\"reconstruction NeRF Gaussian\",\"limit\":30}",
+    "search_graph {\"query\":\"closed loop sensor realism\",\"chapters\":[13],\"limit\":30}",
+    "explore {\"id\":\"c13\",\"limit\":45}",
+    "explore {\"id\":\"t116\",\"limit\":60}",
+    "explore {\"id\":\"t133\",\"limit\":40}",
+    "search_graph {\"query\":\"neural reconstruction\",\"chapters\":[13],\"limit\":25}",
+    "search_graph {\"query\":\"closed loop reconstruction\",\"limit\":25}",
+    "read_facts {\"ids\":[\"f13154\",\"f12936\",\"f12935\",\"f12757\",\"f13151\",\"f3727\",\"f3706\",\"f3707\",\"f3709\",\"f3710\",\"f12933\",\"f4517\",\"f4516\",\"f5722\",\"f5725\",\"f4566\",\"f4567\",\"f5103\",\"f",
+    "explore {\"id\":\"t133\",\"limit\":40}",
+    "explore {\"id\":\"t116\",\"limit\":40}",
+    "read_facts {\"ids\":[\"f13151\",\"f13154\",\"f12936\",\"f12935\",\"f3707\",\"f3709\",\"f12933\",\"f5539\",\"f10558\",\"f10433\",\"f11188\",\"f12938\",\"f4516\",\"f3710\",\"f13153\"]}",
+    "read_facts {\"ids\":[\"f80\",\"f81\",\"f12757\",\"f3727\",\"f4517\",\"f5517\",\"f4566\",\"f4567\",\"f3799\",\"f3806\",\"f4226\"]}"
+   ],
+   "usage": {
+    "input": 93475,
+    "output": 2329
+   },
+   "cited": 36,
+   "answerRecall": 0.75,
+   "retrievalRecall": 0.75,
+   "citePrecision": 1,
+   "regexHits": 1,
+   "score": 4,
+   "missed": [
+    "Radar and ultrasonic cannot be recovered from camera logs; re-simulating an unrecorded sensor type has no validated evidence."
+   ],
+   "notRetrieved": [
+    "Radar and ultrasonic cannot be recovered from camera logs; re-simulating an unrecorded sensor type has no validated evidence."
+   ],
+   "unsupported": [],
+   "badCites": [],
+   "notes": "Strong, well-grounded explanation of reconstruction prerequisites, pose failures, quantified viewpoint degradation, and the distinction between appearance and braking validation. Gold claim 2 is only partially covered: the answer says recordings are not radar/ultrasonic-ready and cannot establish valid new-sensor responses, but does not explicitly state that these modalities cannot be recovered from camera logs or that unrecorded-sensor re-simulation has no validated evidence. The retrieved facts likewise provide narrower readiness and capability limitations rather than that complete claim. The duplicated preliminary bullet answer and polished answer reduce clarity and concision.",
+   "error": "",
+   "answer": "- Existing camera/lidar recordings can become replay-ready or near-path simulation-ready—not automatically braking-validation-ready, nor radar/ultrasonic-ready [f13154].\n- Reconstruction needs synchronized, calibrated sensors, multiple passes and clear weather; moving workers and booms must be separated from static background [f12936, f12935].\n- Conversion requires site registration, cleanup, explicit repairs of unseen areas, collision proxies, sensor materials, controllable agents and qualification against held-out measurements; visually filled gaps must not silently become geometric truth [f13151, f12757].\n- Pose quality is a practical bottleneck: only 50 of 200 MV² sequences passed pose checks; this is an on-road dataset, not a machine-fleet success-rate estimate [f3727].\n- NeRF/3DGS fidelity deteriorates away from recorded viewpoints, especially with height changes: on-road Para-Lane PSNR fell 22.99→17.05 dB across lanes; MV² drone-trained rendering fell 29.13→10.36 dB from drone to car height [f3706, f3707, f3709].\n- Off-road 2026 preprints report additional degradation from fine terrain detail, vibration-induced calibration drift and moving vegetation; these are preliminary findings [f3710].\n- Neural appearance has no native collision surface: braking simulation needs underlying geometry; reconstructed mesh artifacts have also occluded virtual radar, producing empty frames in a reported case [f12933, f5103].\n- SplatAD models rolling shutter, lidar intensity and ray dropout in real time, but its cited evidence is on-road; comparable LiHi-GS explicitly does not support deformable objects or harsh weather [f4516, f4517].\n- Log-based neural re-simulation is only “closed-ish” near the recorded trajectory; the chapter-7 comparison rates off-road maturity “very low: on-road only,” and new-mount re-renderings are development aids, not validation evidence [f5722, f5725, f5517].\n- Genuine feedback after intervention needs machine dynamics updating speed/pose, regenerated observations and reactive agents; branched SIL/HIL evidence remains model-dependent [f5539, f5530].\n- Chapter 13 requires sensor validation per technology and mounting family against withheld real raw data, matching output distributions and downstream perception—not merely visual appearance [f10558].\n- Chapter 13 identifies sensor/environment fidelity as the hardest uncertainty: lidar responds to dust-cloud leading edges rather than random noise, while weather degradation evidence comes mostly from simulation and climate chambers [f10424, f10426, f10428].\n- No published terramechanics validation adequate for braking-distance prediction across 100+ site types was found; reconstructing site appearance does not establish braking-ground fidelity [f10433].\n\nTensions:\n- NeuroNCAP’s minimal gap—UniAD NDS 0.490 real versus 0.489 rendered across 14 sequences—is open-loop, on-road evidence; it does not resolve extrapolation or harsh-weather limitations [f4566, f4567, f5076].\n- Whether NuRec/neural reconstruction qualifies as test evidence rather than training data remains uncertain; evidence of regulator/notified-body acceptance of simulation for machinery conformity was not found—not proof of rejection [f9355, f11188].\n- Reported neural-rendering compute evidence is mostly on-road preprints and insufficient for program-level hardware sizing [f4948].\n\nAlso relevant: [f13151, f10558, f5539, f5076, f3710, f10433, f11188]**Yes—but recordings become replay-ready or near-path simulation-ready, not automatically braking-validation-ready.** Camera and lidar logs with accurate sensor poses can support reconstructed sites and nearby new viewpoints; they do not, by themselves, establish valid braking physics or radar/ultrasonic responses. [f80, f13154]\n\n## What you can build\n\nThere are two complementary routes:\n- **Explicit geometry:** reconstruct point clouds and meshes from camera, lidar, IMU and GNSS recordings using photogrammetry, lidar-inertial mapping and point-cloud fusion. The cited machine-log pipeline evidence is predominantly on-road. [f3806]\n- **Neural appearance:** NeRF or 3D Gaussian splatting reconstructs how the site looks from nearby viewpoints. Some methods also render lidar: SplatAD models intensity and ray dropout in real time, but its cited evidence is **on-road**, not heavy off-road validation. [f4226, f4516]\n\nTurning either into a usable test site requires more than importing a recording: synchronize and calibrate the logs, reconstruct and register static geometry, remove transient objects, repair unseen areas explicitly, add collision geometry and sensor materials, replace recorded people with controllable agents, and qualify the result against held-out measurements. [f13151]\n\n## Where it breaks down\n\n**1. The recordings may not be reconstruction-quality.**  \nAccurate poses, synchronized and calibrated sensors, multiple passes and clear-weather capture matter. In the on-road MV² dataset, only **50 of 200 sequences** passed pose checks—an illustration of the bottleneck, not a predicted success rate for your fleet. Camera reconstruction also needs texture, overlap and genuinely different viewpoints. [f12936, f3727, f3799]\n\n**2. A different viewpoint can expose a different—and missing—world.**  \nNeural reconstruction degrades at offsets of roughly **1–4 m** from the recorded path, with height changes especially problematic. In on-road benchmarks, image fidelity fell from **22.99 to 17.05 dB PSNR** between recorded and adjacent lanes, and from **29.13 to 10.36 dB** when drone-trained scenes were viewed from car height. These are image-fidelity measurements, not safety-performance thresholds. New-mount renderings should be treated as development aids, not validation evidence. [f81, f3707, f3709, f5517]\n\n**3. Hidden surfaces and moving machinery cannot simply be “filled in.”**  \nWorkers and moving booms must be separated from the static background. Surfaces the sensors never observed remain unknown; visually plausible neural infilling must not silently become geometric truth. Preliminary off-road research also reports degradation from fine terrain detail, vibration-induced calibration drift and moving vegetation. [f12935, f12757, f3710]\n\n**4. A convincing picture is not a complete sensor simulation.**  \nNeural rendering alone does not establish valid responses for new sensor technologies, mounting positions or added weather. LiHi-GS explicitly excludes deformable objects and harsh weather; that evidence is on-road. Qualification needs withheld real raw data and checks of both sensor-output distributions and downstream perception—not visual similarity alone. [f12938, f4517, f10558]\n\n**5. Braking changes the future, so replay stops being enough.**  \nAfter intervention, a dynamics model must update speed and pose, regenerate observations and feed them back to the controller, with reactive agents. Neural scenes also lack native collision surfaces, requiring underlying geometry. And reconstructing terrain appearance does not validate its braking properties: the booklet found no published terramechanics validation adequate for braking-distance prediction across **100+ site types**. [f5539, f12933, f10433]\n\n## Practical conclusion\n\nUse recordings as **one layer of a hybrid test environment**: reconstructed appearance and geometry, supplemented by explicit collision surfaces, sensor models, machine dynamics and controllable agents. Accept each reconstructed site only within the viewpoints, sensor configurations and conditions checked against held-out real measurements—not simply because it looks realistic. [f13151, f12938, f10558]"
+  },
+  {
+   "id": "skeptic-top3",
+   "ms": 47285,
+   "tools": 24,
+   "toolNames": [
+    "read_file",
+    "read_file",
+    "explore",
+    "search_graph",
+    "search_graph",
+    "read_file",
+    "read_section",
+    "read_section",
+    "read_section",
+    "explore",
+    "explore",
+    "search_graph",
+    "read_section",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "explore",
+    "explore",
+    "read_facts",
+    "explore",
+    "explore",
+    "read_facts",
+    "search_graph",
+    "read_facts"
+   ],
+   "steps": [
+    "read_file {\"file_path\":\"/skills/skeptic-review/SKILL.md\",\"limit\":1000}",
+    "read_file {\"file_path\":\"/skills/graph-research/SKILL.md\",\"limit\":1000}",
+    "explore {\"id\":\"c13\",\"limit\":60}",
+    "search_graph {\"query\":\"reviewer checklist\",\"chapters\":[12],\"limit\":8}",
+    "search_graph {\"query\":\"credibility criteria\",\"chapters\":[10],\"limit\":8}",
+    "read_file {\"file_path\":\"/skills/ui-blocks/SKILL.md\",\"limit\":1000}",
+    "read_section {\"id\":\"x445\"}",
+    "read_section {\"id\":\"x462\"}",
+    "read_section {\"id\":\"x461\"}",
+    "explore {\"id\":\"c10\",\"limit\":60}",
+    "explore {\"id\":\"c12\",\"limit\":60}",
+    "search_graph {\"query\":\"independence uncertainty acceptance resources\",\"chapters\":[10,12],\"limit\":30}",
+    "read_section {\"id\":\"x434\"}",
+    "search_graph {\"query\":\"independent review\",\"types\":[\"term\",\"entity\"],\"limit\":10}",
+    "search_graph {\"query\":\"resources bottleneck staffing\",\"chapters\":[12],\"types\":[\"fact\"],\"limit\":15}",
+    "search_graph {\"query\":\"holdout validation acceptance threshold\",\"chapters\":[10,12],\"types\":[\"fact\"],\"limit\":15}",
+    "explore {\"id\":\"t263\",\"limit\":15}",
+    "explore {\"id\":\"t270\",\"limit\":12}",
+    "read_facts {\"ids\":[\"f10356\",\"f8159\",\"f8160\",\"f8038\",\"f7789\",\"f7791\",\"f7795\",\"f8219\",\"f8195\",\"f8196\",\"f8198\",\"f9449\",\"f10332\",\"f10333\",\"f10327\",\"f10328\",\"f10329\",\"f10331\",\"",
+    "explore {\"id\":\"x445\",\"limit\":30}",
+    "explore {\"id\":\"x462\",\"limit\":25}",
+    "read_facts {\"ids\":[\"f10473\",\"f10474\",\"f10476\",\"f10479\",\"f10480\",\"f10481\",\"f10482\",\"f10484\",\"f10485\",\"f10488\",\"f10489\",\"f10490\",\"f10491\",\"f10493\",\"f10495\",\"f10496\",\"f10500\"",
+    "search_graph {\"query\":\"business case substitution savings compute triage\",\"chapters\":[13],\"limit\":5}",
+    "read_facts {\"ids\":[\"f10510\",\"f10740\",\"f11085\",\"f11089\",\"f11098\",\"f11102\",\"f11105\",\"f11108\",\"f11109\",\"f11114\",\"f11117\",\"f11124\",\"f11129\",\"f11131\",\"f11134\",\"f11137\",\"f10356\""
+   ],
+   "usage": {
+    "input": 136978,
+    "output": 1797
+   },
+   "cited": 32,
+   "answerRecall": 0.5,
+   "retrievalRecall": 1,
+   "citePrecision": 0.8947368421052632,
+   "regexHits": 0.5,
+   "score": 3,
+   "missed": [
+    "Sensor models are least credible exactly where the risk is.",
+    "Other objections: missing winter in the calendar, nuisance stops, regulatory route/liability, scenario count mistaken for coverage."
+   ],
+   "notRetrieved": [],
+   "unsupported": [
+    "physical-site booking guidance draws on on-road evidence",
+    "The booklet ranks these objections by how directly they threaten the substitution claim, the strength of the evidence, and how difficult late recovery would be."
+   ],
+   "badCites": [
+    "f10331",
+    "t263",
+    "t270",
+    "x434"
+   ],
+   "notes": "Mostly well-grounded practical objections, but incomplete against the booklet's strongest plan-specific challenges. It omits risk-critical sensor-model credibility, the missed winter, nuisance stops, liability, and scenario count versus coverage. Regulatory acceptance is addressed, but not the full regulatory-route/liability objection. The new braking-function objection is stated only briefly at the end, without explicitly naming the old-system matching target. The response reads as two unfinished answers joined together: a ten-item list followed by an introduction and an empty ten-challenge heading. f10331 supports booking sites and machines, but not the later claim about on-road provenance; its overall citation rating is therefore false.",
+   "error": "",
+   "answer": "- **Self-approval:** design independence into the programme; model developers must not be the sole judges of acceptable discrepancies, and independent review must examine metrics, data splits and confirmation tests before the campaign [f10356, f14991]\n- **Calibration presented as validation:** fitting physical tests does not establish prediction; close with independent physical data inside the claimed operating envelope, separated from calibration and withheld confirmation data [f8159, f8160, f7589]\n- **Acceptance criteria moved after failure:** issue a prospective validation plan with pre-declared metrics and thresholds justified by the safety decision—not merely goodness of fit [f8038, f7789]\n- **Nominal pass without uncertainty margin:** characterize physical-test uncertainty, distinguish aleatory from model-form uncertainty, and demonstrate that uncertainty does not consume the safety margin [f7791, f8219, f7795]\n- **Component credibility mistaken for system safety:** validate at the safety claim’s system boundary; separately validated perception and brakes miss emergent timing failures, including end-to-end J1939 integration latency [f8195, f8196, f8198]\n- **Predetermined positive conclusion:** retain “virtual evidence inadequate for this claim” as a legitimate outcome; otherwise success incentives encourage reinterpretation of discrepancies and gates [f10332, f10333]\n- **Gates without decision authority:** pre-commit sponsor-signed criteria and a named decider for go, restricted go, pivot and stop—not merely milestone completion [f9449]\n- **Unaccepted substitution claim:** engage the assessor before G1, resolve standards applicability, and distinguish virtual exploration/optimization from validation or replacement of physical evidence [f10327, f10328, f10329]\n- **Unfunded or oversubscribed delivery plan:** match scope to money, technology, time and people before commitment; identify overloaded resources and explicitly account for integration/test effort, supplier lead times and key-staff availability [f9519, f10247, f9644]\n- **Single-date schedule confidence:** decompose first-of-a-kind work into historically grounded tasks and present P50/P80 dates plus deadline probability; secure physical sites and machines rather than assuming availability [f9439, f10331]\n\nTensions:\n- No off-road standard accepting simulation instead of collision-avoidance/braking physical tests was found; inaccessible paid texts mean this is not proof of prohibition [f7539, f7544]\n- The often-quoted 30% physical-test minimum is disputed on-road precedent; adopted WP.29 wording leaves confirmation counts to manufacturer–authority agreement [f8188]\n- Experimental scatter can make an area validation metric look better; agreement metrics require scrutiny rather than automatic acceptance [f8191]\n- Gates and independent review are safeguards, not demonstrated cures: controlled outcome evidence for these planning methods in safety-critical virtual validation was not found; physical-site booking guidance draws on on-road evidence [f10298, f10331]\n\nAlso relevant: t263, t270, x434, f8245, f9549, f9962.The strongest objection is **“You have not yet shown that the simulator is trustworthy enough to replace physical evidence.”** The next is **“Automatic braking creates a new safety function—and new hazards—not merely a better warning system.”** [f10473, f10474, f10476]\n\nI haven’t seen your actual plan, so these are review challenges to test it against, not findings that your team has failed them.\n\n## The ten strongest challenges\n\nThe booklet ranks these objections by how directly they threaten the substitution claim, the strength of the evidence, and how difficult late recovery would be.\n\n"
+  },
+  {
+   "id": "pegasus",
+   "ms": 28784,
+   "tools": 10,
+   "toolNames": [
+    "read_file",
+    "read_file",
+    "search_graph",
+    "search_graph",
+    "find_sources",
+    "search_graph",
+    "explore",
+    "read_section",
+    "search_graph",
+    "read_facts"
+   ],
+   "steps": [
+    "read_file {\"file_path\":\"/skills/prior-work/SKILL.md\",\"limit\":1000}",
+    "read_file {\"file_path\":\"/skills/graph-research/SKILL.md\",\"limit\":1000}",
+    "search_graph {\"query\":\"validation capability years PEGASUS\",\"limit\":10}",
+    "search_graph {\"query\":\"timeline build capability\",\"limit\":10}",
+    "find_sources {\"query\":\"scenario validation project duration PEGASUS\",\"limit\":5}",
+    "search_graph {\"query\":\"years months precedents\",\"chapters\":[2],\"limit\":15}",
+    "explore {\"id\":\"t310\",\"limit\":50}",
+    "read_section {\"id\":\"x70\"}",
+    "search_graph {\"query\":\"typical duration staffing baseline maturity\",\"chapters\":[2],\"limit\":8}",
+    "read_facts {\"ids\":[\"f1203\",\"f1204\",\"f1205\",\"f1206\",\"f1928\",\"f1207\",\"f1250\",\"f1251\",\"f15696\",\"f1541\",\"f1559\",\"f1212\",\"f1388\",\"f1389\",\"f11204\",\"f15704\",\"f15714\",\"f256\"]}"
+   ],
+   "usage": {
+    "input": 72763,
+    "output": 1073
+   },
+   "cited": 16,
+   "answerRecall": 0.3333333333333333,
+   "retrievalRecall": 1,
+   "citePrecision": 1,
+   "regexHits": 0.6666666666666666,
+   "score": 3,
+   "missed": [
+    "No case of a new automatic braking function going from first hardware to accepted validation in about four months.",
+    "Deere 'three plus years' of data collection / Epiroc 'more than ten years' / years in every documented case."
+   ],
+   "notRetrieved": [],
+   "unsupported": [
+    "The Foretellix case is described as “on-road evidence,” but the supplied facts do not explicitly establish its operating domain."
+   ],
+   "badCites": [],
+   "notes": "The answer accurately presents PEGASUS and useful multi-year reference programmes, distinguishes pre-studies from accepted capabilities, and gives appropriate schedule caveats. However, it omits the explicit retrieved finding that no new automatic braking function reached accepted validation from first representative hardware in about four months. It also omits Deere/Epiroc durations and does not explicitly state the alternative gold finding that capability building took years in every documented case. That latter finding is retrieved, although the specific Deere and Epiroc durations are not. The four-month scheduling recommendation is not equivalent to the missing no-case finding.",
+   "error": "",
+   "answer": "**Years, not months:** the clearest published programmes ran for **33–48 months**, and PEGASUS took **42 months** just to develop a validation method for one highway function—not a certified product. These are mainly **on-road research benchmarks**, not a proven build-time estimate for a single off-road manufacturer. [f1204, f1205, f1928, f15696, f256]\n\n### The most useful benchmarks\n\n| Programme | Time taken | What that time actually bought |\n|---|---|---|\n| **PEGASUS, Germany** | **42 months**, January 2016–June 2019 | A scenario-based validation method for one highway function, combining a field-recording scenario database, simulation, proving-ground and field tests. **17 partners**, approximately **1,791 person-months** and **€34.5 million**. Independent, on-road evidence—not product certification. [f1204, f15696] |\n| **VVM, PEGASUS follow-on** | **4 years**, July 2019–June 2023 | A further validation-methods programme with **€47 million** project volume. It was a second multi-year cycle, not evidence that the original capability could simply be transferred immediately. Independent, on-road evidence. [f1205] |\n| **EVIDENT, Sweden** | **About 33 months**, April 2022–December 2024 | Work on **simulation credibility methods**—showing that establishing trust in the simulation was itself a multi-year undertaking. Independent, on-road evidence. [f1206, f1928] |\n| **VaViM, Volvo Autonomous Solutions / Blekinge Institute of Technology** | **6 months**, February–August 2022 | A **pre-study**, not an accepted validation capability. This is the booklet’s nearest precedent for transferring the methods to autonomous vehicles in fenced areas; it concluded that validated models and real tests must work side by side. [f1207, f1250, f1251] |\n\n### What about six-month success stories?\n\nForetellix reports a six-month process change at an anonymous Level 4 developer, with claimed scenario coverage increasing from **12% to 87%**. But this is **vendor-authored, on-road evidence**, with staffing undisclosed—not proof of a credible capability built from zero in six months. Public case studies commonly omit starting maturity, integration effort and reused infrastructure. [f1212, f1559, f1541]\n\n### What this means for an off-road schedule\n\n- **There is no defensible published “typical” off-road build time.** The booklet found no public effort, cost, team-size or timeline figures for building an off-highway virtual-validation capability. Volvo CE’s validation duration was unpublished; comparable figures for Caterpillar, Komatsu, Liebherr and John Deere were not found either. [f256, f1388, f1389]\n- **Separate capability construction from running the final validation campaign.** The booklet’s conclusion is that a **four-month window should be a validation window, not a capability-construction window**. [f15714]\n- **Treat these as reference points, not a guaranteed estimate.** The booklet itself has a qualification inconsistency: Chapter 2 reports detailed PEGASUS/VVM records, while Chapter 13 still flags them as unverified leads. Their records should therefore be checked before using them as a committed schedule baseline. [f1204, f1205, f11204]"
+  },
+  {
+   "id": "accidents-forward",
+   "ms": 21758,
+   "tools": 7,
+   "toolNames": [
+    "read_file",
+    "search_graph",
+    "explore",
+    "search_graph",
+    "search_graph",
+    "explore",
+    "read_facts"
+   ],
+   "steps": [
+    "read_file {\"file_path\":\"/skills/graph-research/SKILL.md\",\"limit\":1000,\"offset\":0}",
+    "search_graph {\"query\":\"haul truck loader fatalities accident\",\"limit\":12}",
+    "explore {\"id\":\"c4\",\"limit\":50}",
+    "search_graph {\"query\":\"loader reversing fatality quarry\",\"limit\":20}",
+    "search_graph {\"query\":\"accident records underreporting fatalities exposure\",\"chapters\":[4],\"limit\":15}",
+    "explore {\"id\":\"t3\",\"limit\":35}",
+    "read_facts {\"ids\":[\"f2983\",\"f2984\",\"f2985\",\"f2986\",\"f2989\",\"f2990\",\"f2991\",\"f2992\",\"f2995\",\"f2998\",\"f2999\",\"f3000\",\"f3001\",\"f3092\",\"f3631\",\"f3589\",\"f3046\",\"f3606\",\"f3609\","
+   ],
+   "usage": {
+    "input": 45390,
+    "output": 1005
+   },
+   "cited": 21,
+   "answerRecall": 1,
+   "retrievalRecall": 1,
+   "citePrecision": 1,
+   "regexHits": 1,
+   "score": 5,
+   "missed": [],
+   "notRetrieved": [],
+   "unsupported": [
+    "The central 54-death analysis is independent"
+   ],
+   "badCites": [],
+   "notes": "Covers all four gold claims with matching numbers and clearly distinguishes reversing-related blind-area deaths from large-haul-truck forward collisions and berm/dump-point fatalities. Citations support the substantive findings. Retrieved fact f3070 supports the NIOSH/MSHA provenance, though the characterization as independent is not explicitly established. More detailed than necessary, but useful and well grounded overall.",
+   "error": "",
+   "answer": "Accident records show two distinct collision patterns: **smaller trucks and loaders back over people; very large haul trucks run forward over people or light vehicles they cannot see.** But collisions are only part of the story: many haul-truck deaths involve berms, dump edges and ground failure. [f2995, f2983, f2998]\n\n### Large haul trucks: forward movement and starting off\nAn analysis of **54 US surface-mining haul-truck deaths, January 2005–June 2021**, identified 13 collisions with people or vehicles. Of those: [f2989]\n- **12 of 13 involved forward movement**, not reversing. [f2990]\n- **Four began as the truck started moving**, with victims within 50 ft—about 15 m. [f2991]\n- **Two involved stopped trucks rolling forward**, showing that danger is not limited to deliberate driving. [f3631]\n\nVisibility is central: the booklet reports a front-right blind area extending **18 m or more on a 50-tonne haul truck**. The characteristic fatal interaction is a much larger machine running over a person or light vehicle outside the operator’s view. [f3589, f2983]\n\n### Loaders and smaller trucks: reversing over people\nIn **22 US surface-mine blind-area deaths from 2000 to mid-2006**, dump trucks were involved in **38%** and front-end loaders in **33%**; **67% of victims were behind reversing equipment**. These percentages describe that mixed-equipment blind-area sample—not all loader or haul-truck fatalities. [f2984, f2985, f2986]\n\nSo “reversing is the main danger” is population-specific: it fits smaller trucks and loaders at quarries, but not the large-haul-truck collision sample above. An earlier study covering loader and haul-truck fatalities in **1995–2002** also identified **rollovers and pedestrian collisions** as the most common accident types. [f2995, f3092]\n\n### Trucks also kill their own operators at edges and dump points\nThe 54-death haul-truck analysis classified the deaths as **21 berm-related, 12 at dump points, 13 collisions with people or vehicles, and eight other causes**. Berm and dump-point events therefore accounted for **33 of 54 deaths**. [f2989, f2998]\n\nAmong the **12 dump-point deaths**:\n- **Six were reverse-overs and six involved ground failure.** [f2999]\n- **Ten involved absent or inadequate berms.** [f3000]\n- **Seven drivers were unbelted.** [f3001]\n\nThat means detecting people and vehicles addresses an important—but incomplete—part of haul-truck fatal risk. [f3002]\n\n### What the records cannot tell us\nFatalities are recorded much better than near misses, property-only collisions or incidents operators prevented. The booklet found no exposure-adjusted collision rates by machine type/model, no worldwide breakdown by reversing/turning/swing, and no usable collision-speed data. These records reveal fatal mechanisms, not a reliable global ranking of everyday collision frequency or machine risk per operating hour. [f3046, f3609, f3610, f3606]\n\nThe central 54-death analysis is independent NIOSH work based on MSHA reports, but its **2022 conference paper was not peer reviewed**. [f2989, f3071]"
+  },
+  {
+   "id": "tools-hybrid",
+   "ms": 22359,
+   "tools": 9,
+   "toolNames": [
+    "read_file",
+    "search_graph",
+    "explore",
+    "explore",
+    "search_graph",
+    "search_graph",
+    "explore",
+    "read_section",
+    "read_facts"
+   ],
+   "steps": [
+    "read_file {\"file_path\":\"/skills/graph-research/SKILL.md\",\"limit\":1000}",
+    "search_graph {\"query\":\"commercial open source toolchain\",\"limit\":10}",
+    "explore {\"id\":\"t322\",\"limit\":45}",
+    "explore {\"id\":\"c11\",\"limit\":45}",
+    "search_graph {\"query\":\"buy build hybrid lock-in\",\"limit\":12}",
+    "search_graph {\"query\":\"commercial cost license person years\",\"limit\":12}",
+    "explore {\"id\":\"t333\",\"limit\":40}",
+    "read_section {\"id\":\"x392\"}",
+    "read_facts {\"ids\":[\"f8793\",\"f201\",\"f8742\",\"f8748\",\"f8753\",\"f8303\",\"f8318\",\"f8308\",\"f8314\",\"f9359\",\"f8281\",\"f8772\",\"f16125\",\"f13217\",\"f7758\"]}"
+   ],
+   "usage": {
+    "input": 73118,
+    "output": 809
+   },
+   "cited": 15,
+   "answerRecall": 0.5,
+   "retrievalRecall": 1,
+   "citePrecision": 1,
+   "regexHits": 1,
+   "score": 4,
+   "missed": [
+    "Open source is viable for a low-license-cost core but is not the lowest total cost.",
+    "Public prices are almost entirely absent; compute is cheap relative to engineering labour."
+   ],
+   "notRetrieved": [],
+   "unsupported": [],
+   "badCites": [],
+   "notes": "Clear, well-grounded hybrid recommendation with useful procurement guidance. Gold claim 1 is only partially conveyed: the answer discusses free software and substantial labor but does not state that open source is viable as a low-license-cost core and is not the lowest-total-cost option. Gold claim 2 is missing: requiring quotations is not equivalent to stating that public prices are almost entirely absent, and the answer never compares compute cost with engineering labor. Both omitted claims are explicitly available in the retrieved facts.",
+   "error": "",
+   "answer": "**Prefer a hybrid—not an all-commercial purchase or an all-open-source build.** For an organization starting from zero, the booklet recommends owning the validation evidence internally, licensing or co-developing machine physics, and using a partner to accelerate the first correlated sensor model. This is **expert judgment**, especially applicable when capability is absent and hardware is only nine months away—not a proven cost winner. [f201, f8793]\n\n### How the options compare\n\n- **Buy commercial to reduce integration burden.** It does not remove substantial machine-specific modeling and correlation work. You still face off-road capability gaps, supplier dependence, license and parallel-seat costs, and vendor-roadmap risk. [f8748, f8753]\n- **Build on open source for control—not simply to save money.** Your team must build and maintain the connections between tools, assets, scenario database and validation evidence. Quick prototypes are possible; safety-credible capability is a much larger undertaking. Specialist labor can turn “free” software into a **seven-figure annual program**. [f8303, f8742, f8318]\n- **Neither architecture wins universally.** Integrated suites reduce interfaces and support burden; modular tools make providers easier to replace and may fit unusual off-road physics better. The booklet found no independent evidence establishing a universal winner. [f9359]\n\n### What to own, and what to buy\n\nThe booklet’s recommended division is:\n\n- **Keep in-house:** operating-domain definition, scenario catalog, acceptance criteria and correlation data. These preserve ownership of the validation evidence. [f16125]\n- **License or co-develop:** heavy-machine physics; engage specialist help for the first sensor model correlated against physical measurements. [f201]\n- **Protect portability:** require clear interface, asset and data ownership clauses, plus open-format export—not just access to a supplier’s platform. [f8772, f13217]\n\n### What should decide the purchase\n\n**Credibility should outweigh the feature list.** No single commercial or open-source tool was found with public evidence covering heavy-machine automatic braking across many site types and all-weather sensing. Open-source availability alone also does not establish suitability for a safety case. [f8281, f7758]\n\nBudget from **actual vendor quotations and internal engineering effort**, not license price alone. The booklet found no public 2024–2026 off-highway benchmark establishing comparative team size, deployment time or total cost, so a claim that either approach is definitively cheaper or faster would overstate the evidence. [f8308, f8314]"
+  },
+  {
+   "id": "timeline-presentation",
+   "ms": 52322,
+   "tools": 24,
+   "toolNames": [
+    "read_file",
+    "search_graph",
+    "search_graph",
+    "read_file",
+    "explore",
+    "explore",
+    "explore",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "explore",
+    "read_section",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "explore",
+    "read_facts",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "read_facts",
+    "read_facts",
+    "read_facts"
+   ],
+   "steps": [
+    "read_file {\"file_path\":\"/skills/graph-research/SKILL.md\",\"limit\":1000}",
+    "search_graph {\"query\":\"schedule estimate programme executives\",\"limit\":10}",
+    "search_graph {\"query\":\"schedule uncertainty P50 P80\",\"limit\":10}",
+    "read_file {\"file_path\":\"/skills/ui-blocks/SKILL.md\",\"limit\":1000}",
+    "explore {\"id\":\"t345\",\"limit\":55}",
+    "explore {\"id\":\"t346\",\"limit\":55}",
+    "explore {\"id\":\"c12\",\"limit\":35}",
+    "search_graph {\"query\":\"schedule\",\"chapters\":[0,12,13],\"limit\":30}",
+    "search_graph {\"query\":\"deadline gates fallback\",\"chapters\":[0,12,13],\"limit\":30}",
+    "search_graph {\"query\":\"executive presentation\",\"chapters\":[0,12,13],\"limit\":20}",
+    "explore {\"id\":\"c0\",\"limit\":35}",
+    "read_section {\"id\":\"x460\"}",
+    "search_graph {\"query\":\"roadmap swimlane Gantt\",\"chapters\":[12,13,0],\"limit\":25}",
+    "search_graph {\"query\":\"fixed deadline\",\"chapters\":[12,13,0],\"limit\":25}",
+    "search_graph {\"query\":\"schedule\",\"types\":[\"term\",\"entity\"],\"limit\":10}",
+    "explore {\"id\":\"t346\",\"limit\":15}",
+    "read_facts {\"ids\":[\"f9477\",\"f9481\",\"f10151\",\"f9638\",\"f9640\",\"f10169\",\"f10198\",\"f10204\",\"f9649\",\"f10742\",\"f11288\",\"f58\",\"f59\",\"f3\",\"f7\",\"f10141\",\"f9577\",\"f9507\",\"f10971\",\"f",
+    "search_graph {\"query\":\"G0 G1 G3 gate\",\"chapters\":[12],\"limit\":15}",
+    "search_graph {\"query\":\"four-month business objective fallback\",\"chapters\":[13],\"limit\":10}",
+    "search_graph {\"query\":\"G4 release\",\"chapters\":[12],\"limit\":5}",
+    "search_graph {\"query\":\"restricted envelope delay full scope physical weak\",\"chapters\":[13],\"limit\":10}",
+    "read_facts {\"ids\":[\"f10196\",\"f10197\",\"f10200\",\"f10999\",\"f10464\",\"f9437\",\"f11155\",\"f11156\",\"f10376\",\"f10377\",\"f9854\"]}",
+    "read_facts {\"ids\":[\"f10201\",\"f10997\",\"f10469\",\"f10470\",\"f10747\",\"f10467\"]}",
+    "read_facts {\"ids\":[\"f9439\",\"f9633\",\"f16324\",\"f16326\",\"f10171\",\"f9640\",\"f9854\",\"f10151\",\"f10169\",\"f9649\",\"f10464\",\"f10465\",\"f11288\",\"f10377\",\"f11155\",\"f10198\",\"f10204\",\"f10"
+   ],
+   "usage": {
+    "input": 117804,
+    "output": 2178
+   },
+   "cited": 41,
+   "answerRecall": 0.25,
+   "retrievalRecall": 0.75,
+   "citePrecision": 1,
+   "regexHits": 0.75,
+   "score": 3,
+   "missed": [
+    "Pre-committed stop and descope criteria (escalation of commitment).",
+    "Immature technology at commitment is the most consistently documented cause of schedule failure.",
+    "A trust-earning pilot: a deliberately difficult thin vertical slice predicted blind against pre-registered criteria."
+   ],
+   "notRetrieved": [
+    "A trust-earning pilot: a deliberately difficult thin vertical slice predicted blind against pre-registered criteria."
+   ],
+   "unsupported": [],
+   "badCites": [],
+   "notes": "Strong, well-grounded practical guidance on probabilistic scheduling, reference classes, risk simulation, executive presentation and proposed evidence gates. However, only gold claim 0 is fully stated. Stop conditions and descoping options are mentioned without explicitly pre-committing their criteria. The answer omits immature technology at commitment as the most consistently documented schedule-failure cause despite retrieval of that exact finding. Its blind pilot with preset metrics only partially covers gold claim 3: it does not specify a deliberately difficult thin vertical slice predicted blind to earn trust. Retrieval likewise lacks that complete pilot claim. The answer is also repetitive, combining a lengthy bullet synthesis with a second recommendation section.",
+   "error": "",
+   "answer": "- Executive format: a two-page decision brief covering requested decision, deadline deliverables and exclusions, P50/P80 and deadline probability, top risks, stop conditions, fallback, resources and leadership actions [f9854, f10151]\n- Schedule presentation: layered roadmap with gate diamonds and fallback branches, alongside a probabilistic schedule—not a single promised date [f9477, f9481, f10169, f9638]\n- Auditable deadline claims require dependency logic, milestone ranges, reference classes, S-curve, critical path, buffers and long-lead items; confidence figures must come from the programme’s own model [f9638, f10171, f9640]\n- Recommended G0–G4 sequence begins with scope/evidence agreement and long-lead orders by end-November 2026, then a reproducible end-to-end scenario and unresolved-assumption report by end-January 2027 [f10196, f10197]\n- G2, March–April 2027: blind pilot meets preset metrics within its envelope, assessor feedback received, P80 inside deadline, and independent readiness/restriction/fallback review [f10198]\n- G3, end-June 2027: planned coverage without open credibility defeaters on high-integrity claims; G4, August–September: evidence release stating envelope, limitations and residual uncertainty, with release/restrict/withhold outcomes [f10200, f10201]\n- Gate cards record milestone probability, go/restricted-go/pivot/stop options, fallback, reviewer dissent, decision owner and independent review authority [f10204]\n- Scope fallback: show descoping steps that keep P80 inside the deadline and fund a costed restricted-scope launch in parallel; retain physical tests where models are weak and delay unsupported full scope [f9649, f10747, f10470, f10997]\n- Fixed deadline is a requirement—under four months after mid-2027 prototype arrival—but the skeptic calls it a target, not a forecast, and a business objective rather than a safety pass criterion [f3, f10464, f10999]\n- Synthesis found no accepted-validation precedent for a new automatic-braking function within about four months; documented physical-test reductions depended on years of prior investment, narrow envelopes, or both [f58, f59]\n- Skeptical finance review asks for pessimistic-correlation cost/schedule impacts and a costed fallback; reconstructing the internal three-to-four-year history is identified as the cheapest schedule check [f10742, f11155, f11156, f11288]\n\nTensions:\n- Recommended executive and roadmap formats are not proven delivery interventions: no approval/success evidence for six-pagers, BLUF or Pyramid Principle, no roadmap comprehension/delivery causal evidence, and no Stage-Gate causal evidence in this programme class [f10141, f9577, f9507]\n- Reference-class forecasting requires genuinely similar history, while the skeptical reviewer says the company has no reference class; research used no internal data and cannot supply programme confidence dates [f9437, f10742, f7, f9640]\n- Prototype-delivery slippage was not modeled as a planned branch; the booklet explicitly identifies this omission and recommends an assumption, signpost and hedge [f10376, f10377]\n- Restricted-scope launch precedents are vendor evidence, not independent proof that this programme can meet its deadline [f10469]\n\nAlso relevant: t346, t343, t344, t345, t353, t356, f10195, f9875, f10365Present the schedule as a **probability-backed forecast with evidence gates**, not a single promised completion date. Show **P50, P80 and the probability of meeting the fixed deadline**, separately for preparation and delivery; those figures must come from this programme’s own schedule model, not from the booklet. [f16323, f9640]\n\n### How to estimate it\n\n1. **Start with actual history, not the desired deadline.** Reconstruct where the organisation’s previous three-to-four-year effort spent its time. For first-of-a-kind work, break the programme into components with usable historical comparisons; disclose any uplifts where comparisons are weak. Component-level reference classes are a recommended approach—not a validated forecasting method for this programme class. [f11288, f9439, f10300]\n\n2. **Build an integrated dependency schedule.** Make the basis of estimate auditable: reference classes, duration ranges, critical path, buffers and long-lead items. Model the whole network rather than adding single-point estimates: parallel paths converging on a milestone make deterministic dates optimistic. [f10171, f9633]\n\n3. **Run schedule-risk analysis.** Give tasks low, likely and high duration estimates, add named risk events, and use Monte Carlo simulation to estimate completion-date probabilities. Explicitly include prototype-delivery slippage, its warning sign and the hedge; test cost and schedule consequences of pessimistic model-correlation results. [f16326, f16324, f10377, f11155]\n\n4. **Tie commitment to demonstrated readiness.** The booklet’s proposed March–April 2027 readiness gate requires a blind pilot meeting preset metrics within its envelope, assessor feedback, a P80 date inside the deadline and independent review supporting readiness, restricted scope or fallback. This is a proposed gate—not evidence that those dates are achievable. [f10198, f9640]\n\n### What executives should see\n\nUse a **two-page decision brief**, supported by a layered roadmap and a detailed basis-of-estimate appendix—not a dense Gantt chart alone. The brief should distinguish what will and will not exist by the deadline, and expose the decision required from leadership. [f9854, f10151, f10169, f10171]"
+  },
+  {
+   "id": "brake-trigger",
+   "ms": 25022,
+   "tools": 8,
+   "toolNames": [
+    "read_file",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "explore",
+    "explore",
+    "read_section",
+    "read_facts"
+   ],
+   "steps": [
+    "read_file {\"file_path\":\"/skills/graph-research/SKILL.md\",\"limit\":1000,\"offset\":0}",
+    "search_graph {\"query\":\"time to collision threshold braking\",\"limit\":10}",
+    "search_graph {\"query\":\"brake trigger stopping distance uncertainty\",\"limit\":7}",
+    "search_graph {\"query\":\"automatic braking trigger false positives filters\",\"limit\":5}",
+    "explore {\"id\":\"t186\",\"limit\":45}",
+    "explore {\"id\":\"t185\",\"limit\":25}",
+    "read_section {\"id\":\"f5917\"}",
+    "read_facts {\"ids\":[\"f148\",\"f149\",\"f5918\",\"f5919\",\"f5921\",\"f6218\",\"f6224\",\"f13891\",\"f13901\",\"f5912\",\"f5916\",\"f5818\",\"f152\",\"f6982\"]}"
+   ],
+   "usage": {
+    "input": 80386,
+    "output": 852
+   },
+   "cited": 14,
+   "answerRecall": 0.5,
+   "retrievalRecall": 0.75,
+   "citePrecision": 0.9285714285714286,
+   "regexHits": 0.75,
+   "score": 3,
+   "missed": [
+    "Intervention ladder: warn, advise, slow, stop, inhibit motion from standstill.",
+    "No off-road case compares simulation-tuned thresholds with field results — the main technical risk."
+   ],
+   "notRetrieved": [
+    "No off-road case compares simulation-tuned thresholds with field results — the main technical risk."
+   ],
+   "unsupported": [
+    "This is an expert-opinion finding in the booklet."
+   ],
+   "badCites": [
+    "f6218"
+   ],
+   "notes": "Clearly explains TTC's limitations and the preferred stopping-distance/risk-zone trigger, with substantial grounded implementation detail. However, it omits the full warn–advise–slow–stop–inhibit intervention ladder and the principal simulation-to-field threshold-validation gap. The absence of a head-to-head comparison of trigger architectures is not the same as the absence of field validation of simulation-tuned thresholds. The latter gold claim is also absent from the retrieved facts. f6218 supports the motion-geometry limitation but not its classification as expert opinion.",
+   "error": "",
+   "answer": "**No—a fixed time-to-collision (TTC) threshold is not good enough as the primary automatic-braking trigger for heavy off-road machines.** The booklet recommends **stopping-distance and collision-risk-zone logic**, with TTC as one input rather than the deciding rule. [f148, f149]\n\n### Why TTC alone fails\n- **Very low speed:** TTC becomes huge or numerically unstable near zero closing speed—even with a person centimetres away. At standstill, it cannot decide whether starting to move is unsafe. [f5918, f5921]\n- **Different stopping capability:** The same TTC can require radically different intervention distances on a slope or in mud. [f5919]\n- **Non-straight-line motion:** Articulation, swing and track counter-rotation can cause contact without longitudinal closing speed. This is an expert-opinion finding in the booklet. [f6218]\n\n### How to decide the braking moment\n**Base the intervention boundary on the distance needed to detect, act and stop while retaining clearance.** The booklet expresses it as: [f13891]\n\n\\[\nD_{\\text{trigger}}\n= D_{\\text{detect/confirm}}\n+ v\\,T_{\\text{action}}\n+ D_{\\text{stop}}\n+ D_{\\text{safety}}\n\\]\n\nThese terms cover detection and confirmation, travel while the command takes effect, physical stopping distance and residual safety clearance. The braking zone must reach at least this distance; the warning zone must extend farther to allow operator reaction. [f13891, f13901]\n\nThat boundary must reflect **current machine and ground conditions**, not speed alone: grade, gravel/mud/ice, tyre or track condition, payload, attachments, brake temperature, hydraulic pressure, articulation, turning and centre-of-gravity changes all alter the safe intervention point. ISO 21815-3:2023 places intervention at collision-risk level **4 or above**. [f5818, f5912]\n\nThe brake demand must also respect what the machine can safely deliver: the published position is to command the minimum of the deceleration needed to avoid collision and that allowed by stability, brake capacity and payload, with a limit on how abruptly deceleration changes. [f152]\n\n### What establishes that the trigger is good enough?\nValidate the complete closed-loop result: **did the machine detect, decide, intervene and stop with adequate margin—and how many unnecessary interventions did the chosen settings produce?** A detection or TTC result alone does not establish that. [f6982]\n\nThere is **no universal off-road TTC setting** supplied by the standards or peer-reviewed studies reviewed in the booklet. It also found **no head-to-head off-road study** proving distance-and-zone logic superior to TTC alone: the recommendation rests on the physical limitations of TTC and the standards’ architecture, not a completed comparative trial. [f5916, f6224, f149]"
+  },
+  {
+   "id": "not-found-list",
+   "ms": 31125,
+   "tools": 10,
+   "toolNames": [
+    "read_file",
+    "search_graph",
+    "explore",
+    "explore",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "explore",
+    "read_facts"
+   ],
+   "steps": [
+    "read_file {\"file_path\":\"/skills/graph-research/SKILL.md\",\"limit\":1000,\"offset\":0}",
+    "search_graph {\"query\":\"not found\",\"kinds\":[\"gap\"],\"limit\":40}",
+    "explore {\"id\":\"c0\",\"limit\":35}",
+    "explore {\"id\":\"c13\",\"limit\":30}",
+    "search_graph {\"query\":\"gap\",\"chapters\":[0],\"kinds\":[\"gap\",\"uncertain\"],\"limit\":40}",
+    "search_graph {\"query\":\"not found\",\"chapters\":[8,9],\"kinds\":[\"gap\"],\"limit\":30}",
+    "search_graph {\"query\":\"not found\",\"chapters\":[4,6,7],\"kinds\":[\"gap\"],\"limit\":30}",
+    "search_graph {\"query\":\"credibility envelope\",\"types\":[\"term\"],\"limit\":5}",
+    "explore {\"id\":\"t261\",\"limit\":12}",
+    "read_facts {\"ids\":[\"f7\",\"f8\",\"f11188\",\"f11187\",\"f11191\",\"f11192\",\"f5220\",\"f7561\",\"f4431\",\"f4435\",\"f5899\",\"f3743\",\"f6270\",\"f7429\",\"f370\",\"f7422\",\"f3016\",\"f3042\",\"f5840\",\"f3"
+   ],
+   "usage": {
+    "input": 77110,
+    "output": 1294
+   },
+   "cited": 25,
+   "answerRecall": 0.8,
+   "retrievalRecall": 0.8,
+   "citePrecision": 1,
+   "regexHits": 0.6,
+   "score": 4,
+   "missed": [
+    "Any method or standard setting the number of virtual environments needed."
+   ],
+   "notRetrieved": [
+    "Any method or standard setting the number of virtual environments needed."
+   ],
+   "unsupported": [],
+   "badCites": [],
+   "notes": "Accurately covers four of the five gold gaps, with well-grounded additional planning gaps and actionable implications. Omits the lack of a method or standard setting the required number of virtual environments; that specific gap is also absent from the retrieved facts. The answer is clear but substantially broader and longer than needed.",
+   "error": "",
+   "answer": "The biggest missing pieces are **proof that the simulation predicts your machines, evidence that transfers across variants, and agreement on what an assessor will accept**. The research also had no internal recordings, sensor specifications or machine/software details—so these are gaps to resolve, not capabilities it proved you lack. [f72, f7429, f11188, f7, f8]\n\n## Important things we must establish ourselves\n\n1. **What virtual evidence will actually be accepted.**  \n   The research found no established regulator or notified-body acceptance of simulation for machinery conformity. It also could not establish whether ISO 16001 or ISO 21815-1/-3 test procedures accept simulation, or whether ISO 19014-4 requires tool qualification. **We need an agreed evidence route**, not an assumption that simulation results will count. For frozen ML perception, the notified-body position on the Machinery Regulation’s Annex I Part A route was also not found. [f11188, f11191, f11192, f11187]\n\n2. **How accurately our sensor simulation reproduces difficult conditions.**  \n   No off-road sensor-model fidelity thresholds were found; no validated camera or radar dust model with a reported error metric was found either. Vibration-to-sensor-output models and adverse-weather/off-road validation of thermal and ultrasonic simulation were also missing. **We must measure real-versus-simulated performance, set acceptance tolerances, and retain physical testing outside the proven range.** [f5220, f7561, f4431, f4435, f72]\n\n3. **Actual brake timing, stopping performance and safe intervention strength.**  \n   Modern braking-delay distributions for production wheel loaders, articulated haulers and haul trucks were not found. Neither was validation of simulated heavy-machine braking distance on gravel, mud, ice or slopes, nor a universal safe collision-mitigation deceleration. **Our own machines and surfaces must supply those measurements and limits.** [f5899, f3743, f6270]\n\n4. **When evidence can transfer between machine models and sensor installations.**  \n   There was no universal rule for pooling validation evidence across machine families, and no published approach found for transferring perception evidence across sensor mounting positions. **We need explicit similarity arguments and confirmation evidence for each proposed transfer**, rather than treating representative-machine testing as automatic family approval. [f7429, f370]\n\n5. **Which operating conditions matter—and how often they occur.**  \n   Public field-exposure distributions across off-road operating categories were not found. **We need fleet/site data to establish the mix of conditions behind any fleet-level performance or risk claim**; a scenario catalogue alone does not provide those frequencies. [f7422]\n\n6. **Human response and acceptable nuisance behaviour.**  \n   The research found neither representative operator reaction-time distributions nor acceptable false-alarm rates for heavy off-road machines. It also lacked validated breakdowns by fatigue, experience, warning modality and alarm history. **We must establish defensible warning-to-braking timing and nuisance limits with our operators and tasks.** Matching the old warning system is not sufficient: automatic braking is a different safety function. [f3016, f3042, f10417]\n\n7. **What happens in sustained operational use.**  \n   Field data on users disabling collision mitigation were not found, nor was a defensible percentage productivity penalty for surface automatic braking. **We need operational evidence on disablement and work-cycle disruption**, rather than assuming laboratory detection performance establishes practical acceptability. [f5840, f3415]\n\n8. **A credible schedule, budget and claimed saving in physical tests.**  \n   No case was found of a new automatic-braking function going from first representative hardware to accepted validation in about **four months**, and no published quantified reduction in physical testing was found for off-road safety functions. Compute, labelling, licensing, chamber and notified-body costs were also unresolved. **Our schedule and savings therefore need a measured internal basis, not a borrowed industry benchmark.** [f58, f7563, f11190]\n\n**The governing boundary:** virtual tests should replace physical evidence only within the range where we have established their credibility—not wherever we can generate scenarios. [f72]"
+  },
+  {
+   "id": "comparison-baseline",
+   "ms": 24119,
+   "tools": 8,
+   "toolNames": [
+    "read_file",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "explore",
+    "read_section",
+    "search_graph",
+    "read_facts"
+   ],
+   "steps": [
+    "read_file {\"file_path\":\"/skills/graph-research/SKILL.md\",\"limit\":1000}",
+    "search_graph {\"query\":\"baseline warning braking comparison mounting\",\"limit\":10}",
+    "search_graph {\"query\":\"fair comparison sensors counterfactual\",\"limit\":10}",
+    "search_graph {\"query\":\"paired scenarios common perception\",\"limit\":8}",
+    "explore {\"id\":\"t222\",\"limit\":60}",
+    "read_section {\"id\":\"f5477\"}",
+    "search_graph {\"query\":\"mounting comparison normalize swept envelope\",\"chapters\":[7],\"limit\":25}",
+    "read_facts {\"ids\":[\"f105\",\"f106\",\"f5211\",\"f5501\",\"f5509\",\"f5511\",\"f14355\",\"f14236\",\"f14363\",\"f10529\",\"f5517\",\"f5238\",\"f5504\",\"f7474\",\"f5478\"]}"
+   ],
+   "usage": {
+    "input": 61751,
+    "output": 870
+   },
+   "cited": 14,
+   "answerRecall": 0.6666666666666666,
+   "retrievalRecall": 1,
+   "citePrecision": 0.8571428571428571,
+   "regexHits": 1,
+   "score": 4,
+   "missed": [
+    "Metrics: warnings/interventions per hazard, missed hazards, false and nuisance alarms per hour, warning TTC vs common ground truth and hazard zone (e.g. ISO 21815-3 risk area)."
+   ],
+   "notRetrieved": [],
+   "unsupported": [
+    "This is an expert-opinion recommendation",
+    "That recommendation has independent on-road support, not established off-road proof"
+   ],
+   "badCites": [
+    "f5509",
+    "f5504"
+   ],
+   "notes": "The answer gives a clear, practically useful comparison design and correctly separates common warning performance from braking assurance. Gold claim 1 is nearly covered, but the metric list omits interventions per hazard, so it is not fully stated under a strict reading. The simultaneous-recording recommendation is supported, but its specific expert-opinion classification is not established by the supplied facts. Likewise, f5504 supports a common semantic interface, not the claimed independent on-road evidence or absence of off-road proof.",
+   "error": "",
+   "answer": "**Compare the systems on the same real-world hazards—not on their raw sensor outputs.** Separate the comparison of their common detection/warning functions from the assessment of the new braking function, which must meet its own safety requirements. [f105, f14363, f10529]\n\n### 1. Use a common physical reference\nJudge both systems against independently measured object trajectories and machine geometry. Express distance relative to the machine’s **swept envelope**—the space its body and movement occupy—not metres from each sensor. Otherwise, changing the mounting position can appear to change warning range without changing the actual safety margin. [f5501]\n\nUse a shared evaluation zone, such as the **ISO 21815-3 risk area**, rather than each sensor’s own field of view. Ground truth must be sufficiently accurate and calibrated; otherwise measurement errors can dominate the differences between systems. [f14355, f7474]\n\n### 2. Prefer simultaneous, paired recording\nThe booklet’s strongest recommended experiment is to mount both sensor suites on the **same machine**, preserving their intended mounting geometry as far as practical, and record both against the same independent reference trajectory. This is an **expert-opinion recommendation**; any mutual obstruction or electromagnetic/optical interference must itself be tested. [f5509, f5511]\n\nRecord an old-system and new-system hit/miss for each shared hazard. Paired statistical tests such as **McNemar’s test** are valid only when both face the same events; separate deployments confound site, operator and weather. [f14236]\n\n### 3. Score common outcomes, not incompatible internals\nFor the shared warning function, compare:\n- **Missed hazards** and warnings per hazard.\n- **False and nuisance alarms per hour**, under equal exposure.\n- **Warning timing** relative to hazard-zone entry, time to collision or distance. [f5478]\n\nDo **not** directly compare raw radar detections with camera boxes, confidence scores or per-sensor range statistics when modality, mounting or processing has changed. [f5211]\n\n### 4. Use replay only where inputs remain equivalent\nOld-versus-new replay is valid when both systems accept genuinely equivalent inputs. Old recordings should not be treated as if they came from a different sensor position; the booklet treats re-rendered data for new mounting positions as a **development aid, not validation evidence**. [f5238, f5517]\n\nTo isolate decision-logic changes, feed both logics the same semantic object information through a common interface. That recommendation has **independent on-road support**, not established off-road proof. [f5504]\n\n### 5. Keep the braking verdict separate\nOnly the common warning stage has an old-system baseline. Assess braking and stopping outcomes **in closed loop against hazard-derived requirements**—not merely against “better than the old warning system.” [f14363, f10529]"
+  },
+  {
+   "id": "simulation-trust",
+   "ms": 60396,
+   "tools": 21,
+   "toolNames": [
+    "read_file",
+    "search_graph",
+    "search_graph",
+    "explore",
+    "search_graph",
+    "search_graph",
+    "search_graph",
+    "explore",
+    "explore",
+    "explore",
+    "explore",
+    "read_section",
+    "search_graph",
+    "search_graph",
+    "read_facts",
+    "read_facts",
+    "explore",
+    "explore",
+    "explore",
+    "explore",
+    "read_facts"
+   ],
+   "steps": [
+    "read_file {\"file_path\":\"/skills/graph-research/SKILL.md\",\"limit\":1000,\"offset\":0}",
+    "search_graph {\"query\":\"simulation credibility safety evidence acceptance\",\"limit\":10}",
+    "search_graph {\"query\":\"validation uncertainty correlation acceptance criteria\",\"limit\":10}",
+    "explore {\"id\":\"c0\",\"limit\":25}",
+    "search_graph {\"query\":\"physical testing simulation minimum\",\"limit\":30}",
+    "search_graph {\"query\":\"mandatory tests collision mitigation\",\"limit\":30}",
+    "search_graph {\"query\":\"simulation reduction testing bounds\",\"limit\":30}",
+    "explore {\"id\":\"t264\",\"limit\":60}",
+    "explore {\"id\":\"t184\",\"limit\":50}",
+    "explore {\"id\":\"t279\",\"limit\":50}",
+    "explore {\"id\":\"t216\",\"limit\":50}",
+    "read_section {\"id\":\"x352\"}",
+    "search_graph {\"query\":\"10% repeats 61 configurations physical\",\"chapters\":[10],\"limit\":20}",
+    "search_graph {\"query\":\"off-road numerical minimum anchors\",\"limit\":10}",
+    "read_facts {\"ids\":[\"f7534\",\"f7536\",\"f7539\",\"f7544\",\"f7547\",\"f7549\",\"f7563\",\"f7726\",\"f10431\",\"f5967\",\"f5968\",\"f7881\",\"f7888\",\"f7917\",\"f9917\",\"f13685\",\"f14214\",\"f6889\",\"f497",
+    "read_facts {\"ids\":[\"f7879\",\"f7860\",\"f7863\",\"f7684\",\"f13678\",\"f13697\"]}",
+    "explore {\"id\":\"t269\",\"limit\":35}",
+    "explore {\"id\":\"t234\",\"limit\":25}",
+    "explore {\"id\":\"c13\",\"limit\":12}",
+    "explore {\"id\":\"t258\",\"limit\":15}",
+    "read_facts {\"ids\":[\"f7525\",\"f12291\",\"f193\",\"f4840\",\"f7534\",\"f7536\",\"f2486\",\"f7726\",\"f10431\",\"f7881\",\"f7888\",\"f4972\",\"f7917\",\"f7547\",\"f7549\",\"f7539\",\"f7544\",\"f6169\",\"f7473\""
+   ],
+   "usage": {
+    "input": 162175,
+    "output": 2687
+   },
+   "cited": 41,
+   "answerRecall": 0.25,
+   "retrievalRecall": 0.75,
+   "citePrecision": 0.975609756097561,
+   "regexHits": 1,
+   "score": 3,
+   "missed": [
+    "Credibility frameworks agree: defined context of use, effort scaled to risk, verification, validation against physical data, quantified uncertainty, independent review, documented validity envelope.",
+    "No off-road document accepts simulation as compliance evidence; Euro NCAP 2026 virtual testing requires qualification against physical tests and spot checks.",
+    "Columbia debris model as a lesson about extrapolation outside the validated domain."
+   ],
+   "notRetrieved": [
+    "Columbia debris model as a lesson about extrapolation outside the validated domain."
+   ],
+   "unsupported": [],
+   "badCites": [
+    "f7534"
+   ],
+   "notes": "Useful and largely grounded planning guidance, but incomplete against the gold claims. Claim 0 is mostly covered, yet risk-scaled credibility effort is never stated. Claim 2 is substantively covered except that Euro NCAP's 2026 regime is not identified by year. The Columbia debris-model lesson is entirely absent and was not retrieved. Claim 1 is fully stated; retrieved fact f187 supports the tolerance point, but the answer's citation f7534 supports only the percentage point, not its later assertion about universal tolerances. The answer also includes a lengthy preliminary list followed by a second full answer, making it unnecessarily repetitive.",
+   "error": "",
+   "answer": "- No universal physical-test percentage is prescribed by the credibility frameworks checked; no numerical minimum for off-road physical anchors or published quantified off-road safety-test reduction was found [f7534, f7879, f7563]\n- Conservative compliance interpretation: prescribed physical tests remain physical unless the applicable document expressly permits substitution; this is expert guidance grounded in ISO 19014 and the EU Machinery Regulation, not a universal statutory prohibition [f2486]\n- ISO 21815-1:2022 clause 6 specifies physical test environments, surfaces, machine conditions and objects, plus pass/fail performance and false-positive tests [f7726]\n- ISO 3450 requires physical brake-performance testing in the most adverse braking configuration; dumpers, specified scraper configurations and towed trailers must include maximum specified payload [f10431, f5967, f5968]\n- Credibility requires baseline physical validation, simulation within the validated domain, and physical confirmation at boundaries and after influential changes [f7536]\n- Recommended retained CMS tests include brake performance/stopping distance for each machine class across load, slope and surface extremes, and integral closed-loop tests at the collision/no-collision boundary [f7881, f7888]\n- Retain HIL/physical evidence for electronics, timing and weakly modelled residual effects—dust, soiling, vibration, metal clutter and heavy rain [f4972]\n- A new variant inside the validated parameter hull still warrants a reduced physical set: brake calibration plus sensor field-of-view/detection checks at the new mounting position [f7917]\n- Quantitative planning examples—not regulatory minimums—include 10–30 physical pilot points and at least 10 latency repetitions across oil temperatures per machine family; measure the automated brake path and machine-specific end-to-end latency [f9917, f13685, f13678, f13697]\n- When simulation/HIL supplies large detection trial counts, physical validation should cover each stratum with independent smaller-sample confirmation; 59 trials per stratum is an illustrative ≥95% detection-bound example, not a universal quota [f6889, f14214]\n- MOSH surface closed-loop tests specify unloaded machines and gradients ≤1%, no wheel lock, and veer ≤0.5 machine widths; these conditions do not replace the broader load/slope-extreme campaign [f5563, f5564, f7881]\n- The often-cited 30% physical minimum—implying 70% substitution—is from a UTAC CERAM AEBS working document; the August 2025 WP.29 UN R152 text instead requires physical confirmation with the count agreed by manufacturer and authority, and concerns on-road vehicles [f7547, f7549, f7684]\n- Other reduction figures are non-transferable precedents: UTAC proposed removing 10% of ten repeated road-AEBS runs per scenario within a validity domain; a small-scale car study avoided 40/61 configurations (66%), not heavy-machine tests [f7860, f7863]\n- Euro NCAP virtual testing retains physical qualification tests and assessor-selected physical verification tests; it is an on-road precedent, not off-road substitution authorization [f1274]\n\nTensions:\n- No off-road standard accepting simulation instead of collision-avoidance/braking physical tests was found, but full paid texts were unavailable: “not found” must not be equated with “prohibited” [f7539, f7544]\n- The 30%/70% claim conflicts with the authority-agreed confirmation count in WP.29 text; neither establishes an off-road reduction bound [f7547, f7549]\n- Numerical pilot, repetition and statistical examples are recommendations/method examples, whereas prescribed standards tests are compliance requirements [f9917, f13685, f14214, f10431, f7726]\n\nAlso relevant: t264, t184, t216, t279, f7916, f8149, f5410, f5754, f7437Simulation can be acceptable safety evidence **only for a defined use within a physically validated credibility envelope**—not simply because the simulator looks realistic or produces many successful runs. There is **no universal minimum percentage of physical testing**: physical tests must establish that envelope, confirm its boundaries and cover prescribed tests and effects the models cannot credibly reproduce. [f7525, f7534, f7536]\n\n## What makes simulation evidence acceptable?\n\nThe booklet’s checked credibility frameworks converge on six requirements:\n\n1. **A precise safety claim and context of use.** Define the decision the simulation supports, the applicable machines and operating conditions, and requirements-to-test traceability. Agree the accepting authority and evidence approach early; internal engineering confidence does not itself establish external acceptance. [f7525, f12291, f1987]\n\n2. **Verified software and models validated against reality.** Check both implementation correctness and agreement with physical measurements. Keep **calibration, validation and withheld confirmation data separate**, so tuning a model is not mistaken for proving its predictive ability. [f7525, f193]\n\n3. **Acceptance criteria declared before results are seen.** Specify safety-relevant metrics and tolerances, with independent physical reference measurements whose uncertainty is substantially smaller than the acceptance margins. There is no universal simulation-to-test tolerance supplied by the frameworks checked. [f12291, f7473, f7534]\n\n4. **Quantified uncertainty relative to the safety margin.** Report predictions with uncertainty, not just nominal results. A simulated stop narrowly short of an obstacle is not a robust pass if uncertainty in geometry, friction, sensor timing and braking is comparable to the clearance. [f7587, f4343]\n\n5. **An explicit validity envelope and configuration record.** Document sensor/firmware versions, machine and mounting configurations, environmental conditions, error bounds and known invalid regions. Physical evidence anchors the envelope; simulation fills its validated interior, rather than silently extrapolating beyond it. [f4840, f7536]\n\n6. **Independent review and an auditable safety argument.** Include traceability, confirmatory tests partly chosen by the assessor, failed tests and their disposition, limitations and residual risk. Failed validation cases must remain in the record. [f12291, f7590]\n\nLarge trial counts do not repair missing hazard classes, an incorrect exposure model or an unvalidated simulator. [f650]\n\n## How much physical testing must remain?\n\n**Enough to bound the safety-relevant prediction error at every declared operating boundary—not an arbitrary share of the total campaign.** That is the booklet’s recommended sufficiency criterion, rather than “we have completed N tests.” [f6169]\n\nThe retained physical campaign should cover:\n\n- **Prescribed standards tests.** ISO 3450 requires physical brake-performance testing. ISO 21815-1:2022 clause 6 specifies physical performance and false-positive tests, including test environments, surfaces, machine conditions and objects. The booklet’s conservative interpretation is to retain prescribed physical tests unless the applicable document explicitly permits substitution; that interpretation is expert guidance, not a blanket legal prohibition. [f10431, f7726, f2486]\n- **Model-validation anchors and boundaries.** Baseline measurements, confirmation near operating limits and retesting after influential changes remain necessary. [f7536]\n- **Whole-machine braking and closed-loop confirmation.** The recommended retained tests include stopping distance for each machine class across load, slope and surface extremes, plus integral closed-loop tests around the collision/no-collision boundary. These are project recommendations, not universal numerical quotas. [f7881, f7888]\n- **Weakly modelled sensing and timing effects.** Retain HIL and physical evidence for electronics, timing, dust, soiling, vibration, metal clutter and heavy rain where simulation is not convincingly validated. [f4972]\n- **Machine-variant checks.** Even a variant inside the validated parameter envelope should receive a reduced physical set: brake calibration and sensor field-of-view/detection checks at the new mounting position. [f7917]\n\n## Can you assume “70% virtual, 30% physical”?\n\n**No.** A **30% physical minimum** appears in a UTAC CERAM AEBS working document, but the WP.29 text dated **28 August 2025** instead leaves the physical-confirmation count to agreement between manufacturer and authority. Both are **on-road precedents**, not an off-road substitution entitlement. [f7547, f7549]\n\nThe October 2026 booklet found **no off-road standard explicitly accepting simulation in place of physical collision-avoidance or automatic-braking tests**, and no established machinery-conformity acceptance precedent from a regulator or notified body. However, the full paid standards texts were not all available: **“not found” does not mean “prohibited.”** The defensible position is therefore to seek agreement on a claim-by-claim evidence split, while retaining the physical campaign above—not promise a reduction percentage in advance. [f7539, f11188, f7544, f1987, f12291]"
+  }
+ ]
+}

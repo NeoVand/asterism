@@ -1,0 +1,115 @@
+{
+ "key": "e:sae j1939",
+ "hash": "135a8806abeb9121",
+ "synopsis": "SAE J1939 is the heavy-machine network language used by ISO/TS 21815-2:2021 for collision-device intervention; the technical specification was published in July 2021 and confirmed in December 2024 [f12976, f15025, f15146]. Its interface supports slow-down, controlled-stop, emergency-stop and motion-inhibit requests, plus capability discovery and keep-alive, but is explicitly not plug-and-play [f5910, f12979, f12980]. Across chapters, this standardized interface is presented as an off-road anchor for brake requests, a precedent for reusing evidence across machine models, and a natural HIL test interface that a bench can emulate [f5579, f367, f538, f8661]. Validation must cover end-to-end integration latency, adequate machine-state recording with message-schema versions, and protection against spoofing, stale messages, bus faults and incompatible implementations; SIL cannot demonstrate unexpected CAN/J1939 timing behavior [f8198, f12982, f2936, f530]. The booklet nevertheless identifies an omission of J1939 cybersecurity and integrity from its eight brake-timing questions, and warns that interface or controller changes in 2027 without impact analysis may invalidate the pre-built simulator [f6607, f11028].",
+ "relations": [
+  {
+   "a": "f367",
+   "b": "f620",
+   "type": "same",
+   "note": "Both identify the standardized intervention interface as a precedent for cross-model evidence reuse."
+  },
+  {
+   "a": "f2057",
+   "b": "f15146",
+   "type": "elaborates",
+   "note": "Glossary adds July 2021 publication timing to the December 2024 confirmation."
+  },
+  {
+   "a": "f10725",
+   "b": "f15146",
+   "type": "same",
+   "note": "Both report publication in July 2021 and confirmation in 2024."
+  },
+  {
+   "a": "f2659",
+   "b": "f12979",
+   "type": "same",
+   "note": "Both list stop commands, capability discovery and keep-alive."
+  },
+  {
+   "a": "f2660",
+   "b": "f12980",
+   "type": "same",
+   "note": "Both explicitly state that the interface is not plug-and-play."
+  },
+  {
+   "a": "f5910",
+   "b": "f6237",
+   "type": "same",
+   "note": "Both define slow, stop and motion-prevention commands; the latter specifies standstill."
+  },
+  {
+   "a": "f5579",
+   "b": "f13229",
+   "type": "same",
+   "note": "Both anchor the brake request in the ISO/TS 21815-2 J1939 interface."
+  },
+  {
+   "a": "f8198",
+   "b": "f12984",
+   "type": "same",
+   "note": "Both require end-to-end integration-latency validation when intervention uses J1939."
+  },
+  {
+   "a": "f8319",
+   "b": "f16040",
+   "type": "same",
+   "note": "Both describe bench emulation of stop, slow-down and motion-inhibit commands."
+  },
+  {
+   "a": "f538",
+   "b": "f13359",
+   "type": "same",
+   "note": "Both recommend HIL as the natural setting for testing the intervention interface."
+  },
+  {
+   "a": "f5281",
+   "b": "f13348",
+   "type": "same",
+   "note": "Both describe HIL injection using camera data, radar detections and recorded CAN/J1939 traffic."
+  },
+  {
+   "a": "f9267",
+   "b": "f16159",
+   "type": "same",
+   "note": "Both include ISO/TS 21815-2 J1939 emulation in the lowest-cost tool chain."
+  },
+  {
+   "a": "f2261",
+   "b": "f2724",
+   "type": "same",
+   "note": "Both identify SA TS ISO 21815.2:2023 as covering the J1939 interface."
+  },
+  {
+   "a": "f5634",
+   "b": "f12982",
+   "type": "elaborates",
+   "note": "Glossary adds DBC and message-schema version recording to machine-state logging."
+  },
+  {
+   "a": "f2935",
+   "b": "f2936",
+   "type": "elaborates",
+   "note": "Specific unsafe-command threats detail the interface's safety and security significance."
+  },
+  {
+   "a": "f2936",
+   "b": "f6607",
+   "type": "contradicts",
+   "note": "Required interface security coverage is omitted from the brake-timing questions."
+  },
+  {
+   "a": "f530",
+   "b": "f538",
+   "type": "supports",
+   "note": "SIL's inability to expose bus timing behavior supports using HIL."
+  },
+  {
+   "a": "f10761",
+   "b": "f11028",
+   "type": "elaborates",
+   "note": "Adds second-quarter timing, field-of-view changes and supplier model-parameter refusal to mismatch warnings."
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "key": "e:google cloud g2",
+ "hash": "40f322afa244fb4b",
+ "synopsis": "Google Cloud G2 is presented as a generic GPU cloud execution option using NVIDIA L4 data-center GPUs, consistent with the glossary’s hardware mapping [f8370, f16202]. Chapter 11 describes it as pay-per-use and lists a 2026 public price of USD 1.734 per hour for g2-standard-32 [f9259, f9260]. The table marks its off-road relevance as not applicable, so its inclusion as a compute option does not establish off-road-specific suitability [f8370, f9259].",
+ "relations": [
+  {
+   "a": "f8370",
+   "b": "f16202",
+   "type": "same",
+   "note": "Both map AWS G6e to L40S GPUs and Google Cloud G2 to L4 GPUs."
+  },
+  {
+   "a": "f9260",
+   "b": "f16202",
+   "type": "elaborates",
+   "note": "Supplies the specific G2 instance, hourly price, and price year referenced by the glossary."
+  },
+  {
+   "a": "f9259",
+   "b": "f8370",
+   "type": "elaborates",
+   "note": "Adds the pay-per-use model and table’s not-applicable off-road relevance designation."
+  },
+  {
+   "a": "f9260",
+   "b": "f9259",
+   "type": "elaborates",
+   "note": "Quantifies the pay-per-use option with a listed hourly rate for g2-standard-32."
+  }
+ ]
+}

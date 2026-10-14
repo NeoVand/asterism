@@ -1,0 +1,115 @@
+{
+ "key": "t27",
+ "hash": "36c925bcf42adafa",
+ "synopsis": "PAEB detects people on foot and brakes for them; the corpus identifies pedestrians as the main people heavy off-road CMS must protect, while describing pedestrian detection as especially condition-dependent [f11688, f11696, f11698]. FMVSS 127 requires pedestrian AEB at 10–73 km/h in daylight and darkness, but applies to light on-road vehicles up to 4,536 kg GVWR, not off-road machines; Chapter 3 states UN R152 pedestrian tests use 20–60 km/h while also flagging that range as unverified against primary text [f11691, f2831, f2824, f2528]. A peer-reviewed 2019 retrospective on-road simulation evaluated time-to-collision triggers and latencies against US pedestrian crash data, showing that avoidance depends on both parameters [f6346, f6189]. Independent nighttime tests improved from no avoidance by four vehicles at 25 mph in 2019 to 60% avoidance in the study published 16 October 2025, which tested four recent cars at 40 km/h and still left roughly 40% failures under ideal conditions [f7975, f7976, f7977]. High-visibility clothing caused complete detection loss in some tested systems, and nighttime and clothing conditions were under-represented in consumer protocols, demonstrating that protocol-based evidence can give false confidence outside its tested envelope [f7980, f7981, f7982]. Because job-site pedestrians wear high-visibility clothing and much work occurs at night, the corpus recommends retaining physical night and weather tests where simulation is weakest; Caterpillar also warns of detection limitations for crouching or lying people, low light and inclement weather [f11697, f11699, f11695].",
+ "relations": [
+  {
+   "a": "f1514",
+   "b": "f11691",
+   "type": "same",
+   "note": "Both give FMVSS 127's 10–73 km/h pedestrian AEB operating range."
+  },
+  {
+   "a": "f2534",
+   "b": "f11691",
+   "type": "same",
+   "note": "Both require pedestrian AEB in daylight and darkness."
+  },
+  {
+   "a": "f2534",
+   "b": "f15420",
+   "type": "same",
+   "note": "Both state FMVSS 127's daylight and darkness pedestrian AEB requirement."
+  },
+  {
+   "a": "f2528",
+   "b": "f2824",
+   "type": "contradicts",
+   "note": "The same test-speed range is presented as unverified versus an unconditional requirement."
+  },
+  {
+   "a": "f5948",
+   "b": "f14046",
+   "type": "same",
+   "note": "Both describe the 2019 crash-data sweep of trigger thresholds and latencies."
+  },
+  {
+   "a": "f6346",
+   "b": "f14046",
+   "type": "elaborates",
+   "note": "Adds theoretical braking systems, fatality-risk estimates, publication venue and peer review."
+  },
+  {
+   "a": "f6346",
+   "b": "f6189",
+   "type": "supports",
+   "note": "The parameter-grid simulation supplies evidence for the trigger–latency tuning trade-off."
+  },
+  {
+   "a": "f7585",
+   "b": "f7977",
+   "type": "same",
+   "note": "Both report nighttime avoidance improving from 0% in 2019 to 60% in 2025."
+  },
+  {
+   "a": "f7977",
+   "b": "f11692",
+   "type": "same",
+   "note": "Both report the 2019–2025 improvement to 60% nighttime avoidance."
+  },
+  {
+   "a": "f7977",
+   "b": "f11693",
+   "type": "same",
+   "note": "Both report roughly 40% nighttime avoidance failures remaining in 2025."
+  },
+  {
+   "a": "f7977",
+   "b": "f14943",
+   "type": "same",
+   "note": "Both report 60% nighttime pedestrian avoidance by 2025."
+  },
+  {
+   "a": "f7975",
+   "b": "f14942",
+   "type": "same",
+   "note": "Both report no nighttime avoidance by four vehicles at 25 mph in 2019."
+  },
+  {
+   "a": "f7974",
+   "b": "f14944",
+   "type": "same",
+   "note": "Both say daytime protocols missed sharp nighttime performance declines."
+  },
+  {
+   "a": "f7585",
+   "b": "f7974",
+   "type": "same",
+   "note": "Both identify nighttime performance cliffs missed by daytime protocols."
+  },
+  {
+   "a": "f7980",
+   "b": "f11694",
+   "type": "same",
+   "note": "Both report complete pedestrian detection loss with high-visibility clothing in some systems."
+  },
+  {
+   "a": "f7976",
+   "b": "f11692",
+   "type": "elaborates",
+   "note": "Identifies the four tested models, test organizations and publication date."
+  },
+  {
+   "a": "f7981",
+   "b": "f7982",
+   "type": "supports",
+   "note": "Under-represented night and clothing conditions explain false confidence outside protocol coverage."
+  },
+  {
+   "a": "f7980",
+   "b": "f11699",
+   "type": "supports",
+   "note": "Clothing-dependent detection failures support retaining physical tests beyond simulation's strongest coverage."
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "key": "e:3d gaussian splatting",
+ "hash": "84c75784715fe281",
+ "synopsis": "3D Gaussian Splatting is presented as a neural reconstruction method that learns a scene from posed multi-view images, optionally with lidar, to reproduce view-dependent appearance better than textured meshes; the cited evidence is on-road [f3813]. Its fidelity degrades sharply away from the recorded path, especially with height changes: Para-Lane (2025) reports PSNR falling from 22.99 dB in the recorded lane to 17.05 dB in the adjacent lane, while MV² (August 2026) reports 29.13 dB at drone height versus 10.36 dB from a car [f3706, f3707, f3709]. Across sensor simulation and system testing, it appears both among data-learned sensor-model approaches and in Cao et al.'s CoRL 2025 pseudo-simulation, which uses pre-generated views to approximate closed-loop evaluation [f4483, f5537]. NVIDIA Isaac Sim also offers neural rendering using NuRec and 3D Gaussian splatting, alongside sensor schemas, synthetic-data annotators and ROS 2 integration [f8479]. These uses establish practical relevance, but the reported viewpoint sensitivity limits confidence in extrapolating reconstructed scenes to novel viewpoints, and the supplied independent evidence does not establish performance for heavy off-road machines [f3706, f3707, f3709, f3813, f5537].",
+ "relations": [
+  {
+   "a": "f3707",
+   "b": "f3706",
+   "type": "supports",
+   "note": "Adjacent-lane PSNR loss quantifies degradation away from the recorded path."
+  },
+  {
+   "a": "f3709",
+   "b": "f3706",
+   "type": "supports",
+   "note": "Drone-to-car PSNR loss supports the warning about height changes."
+  },
+  {
+   "a": "f3706",
+   "b": "f3813",
+   "type": "elaborates",
+   "note": "Adds a viewpoint-dependent limitation to the reconstruction method's appearance advantage."
+  },
+  {
+   "a": "f3813",
+   "b": "f4483",
+   "type": "elaborates",
+   "note": "Explains how one neural-rendering approach listed for learned sensor models constructs scenes."
+  },
+  {
+   "a": "f5537",
+   "b": "f3813",
+   "type": "elaborates",
+   "note": "Adds a testing application using pre-generated reconstructed views."
+  },
+  {
+   "a": "f3706",
+   "b": "f5537",
+   "type": "depends",
+   "note": "Approximate closed-loop evaluation's visual fidelity depends on viewpoint coverage."
+  },
+  {
+   "a": "f8479",
+   "b": "f4483",
+   "type": "elaborates",
+   "note": "Identifies a vendor platform offering the listed neural-rendering technology."
+  }
+ ]
+}

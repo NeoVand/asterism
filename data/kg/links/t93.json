@@ -1,0 +1,115 @@
+{
+ "key": "t93",
+ "hash": "0a7cb3d36f8c6d97",
+ "synopsis": "Point clouds represent measured 3D geometry, often with intensity; machine lidar produces tens of thousands of points ten or more times per second, and perception groups these raw points into objects and tracks [f12617, f12618, f12619]. Synthetic point clouds and replay offer broad lidar-validation coverage, particularly for geometry, occlusion and object placement, but recordings should preserve the rawest useful data and validation must address the interface perception actually consumes rather than only final object lists [f494, f1740, f4029, f5231, f4869]. Realism remains a major limitation: a May 2025 on-road study found measurable real–synthetic gaps, while Sim2Radar produced only about 12% of real radar point density—251 versus 2,057 points per frame—in five indoor scenes [f7073, f3932]. No single accepted point-cloud realism score exists: metrics disagree, and although density-aware Chamfer distance correlated best with perception in a November 2025 study, scans averaged DCD 0.63 with only 21% segmentation mIoU; whether these metrics predict safety-relevant errors remains uncertain [f12630, f4440, f4441, f4442, f5067]. Weather validation includes an August 2023 published lidar rain-and-fog model validated against on-road time-domain and point-cloud evidence, but the booklet recommends a dedicated real-dust correlation campaign and could not confirm direct real–simulated point-cloud comparisons in the 2026 CARLA mining-dust framework [f7819, f10562, f4743]. Site reconstruction also requires caution: lidar surveys provide direct metric samples and derived meshes are easier to edit, but AutoDRIVE's reported twin accuracy appears to reflect self-consistency against its own point cloud rather than independent ground truth [f3801, f4211, f3861].",
+ "relations": [
+  {
+   "a": "f3877",
+   "b": "f4211",
+   "type": "same",
+   "note": "Both distinguish inconvenient point-cloud editing from editable derived meshes."
+  },
+  {
+   "a": "f3932",
+   "b": "f4305",
+   "type": "same",
+   "note": "Both report Sim2Radar's roughly 12% real point density in indoor scenes."
+  },
+  {
+   "a": "f3932",
+   "b": "f12624",
+   "type": "same",
+   "note": "Glossary repeats the point counts, density shortfall and scattering explanation."
+  },
+  {
+   "a": "f4305",
+   "b": "f12624",
+   "type": "same",
+   "note": "Same radar density shortfall, with counts and explanation added in the glossary."
+  },
+  {
+   "a": "f4441",
+   "b": "f12622",
+   "type": "same",
+   "note": "Both identify DCD as best correlated with perception in November 2025."
+  },
+  {
+   "a": "f4442",
+   "b": "f12623",
+   "type": "same",
+   "note": "Same DCD and segmentation figures; glossary calls mIoU segmentation agreement."
+  },
+  {
+   "a": "f4442",
+   "b": "f14794",
+   "type": "same",
+   "note": "Repeats DCD 0.63 and 21% segmentation, with less precise terminology."
+  },
+  {
+   "a": "f4440",
+   "b": "f14764",
+   "type": "same",
+   "note": "Both report disagreement among point-cloud metrics."
+  },
+  {
+   "a": "f4029",
+   "b": "f12628",
+   "type": "same",
+   "note": "Both recommend raw useful recordings rather than thinned visualization clouds."
+  },
+  {
+   "a": "f12627",
+   "b": "f12716",
+   "type": "same",
+   "note": "Same construction dust-case performance figures; latter specifies fusion and distance."
+  },
+  {
+   "a": "f14759",
+   "b": "f4441",
+   "type": "same",
+   "note": "Both report DCD's strongest correlation with perception results."
+  },
+  {
+   "a": "f14759",
+   "b": "f4442",
+   "type": "same",
+   "note": "Both report average real–simulated DCD of 0.63."
+  },
+  {
+   "a": "f1740",
+   "b": "f494",
+   "type": "supports",
+   "note": "Geometry and placement strengths explain broad synthetic lidar-validation coverage."
+  },
+  {
+   "a": "f12628",
+   "b": "f5231",
+   "type": "supports",
+   "note": "Preserving raw point clouds supplies the streams needed for open-loop replay."
+  },
+  {
+   "a": "f4540",
+   "b": "f4869",
+   "type": "supports",
+   "note": "Realistic tracking hid raw-cloud error, supporting validation at the consumed sensor interface."
+  },
+  {
+   "a": "f4440",
+   "b": "f12630",
+   "type": "supports",
+   "note": "Metric disagreement supports the absence of a single accepted realism score."
+  },
+  {
+   "a": "f4743",
+   "b": "f10562",
+   "type": "supports",
+   "note": "Unconfirmed dust point-cloud comparisons reinforce the need for a real-dust correlation campaign."
+  },
+  {
+   "a": "f7822",
+   "b": "f7819",
+   "type": "elaborates",
+   "note": "Specifies 154 measurements, target reflectivity and distance for the published model's point-cloud validation."
+  }
+ ]
+}

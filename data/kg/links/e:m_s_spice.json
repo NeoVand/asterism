@@ -1,0 +1,67 @@
+{
+ "key": "e:m s spice",
+ "hash": "b2733f9cbaa58ea1",
+ "synopsis": "M&S SPICE is a 2023 research-and-industry framework for automotive research, published in peer-reviewed proceedings of the INCOSE International Symposium [f8124, f7699]. It derives the credibility required for a simulation task from that task’s criticality and assesses whether the simulation process can deliver that credibility [f14595, f7699, f7700, f8125]. Alongside SET Level Credible Simulation Process, it addresses validation against physical data at the process level and addresses validity and transfer through credibility documentation [f8126, f8127]. For off-road automatic braking, however, these frameworks offer only a process template: they are not proven for that application and do not specify what physical evidence remains necessary [f8129, f8130, f8128].",
+ "relations": [
+  {
+   "a": "f7699",
+   "b": "f14595",
+   "type": "same",
+   "note": "Both describe deriving required simulation credibility from task criticality."
+  },
+  {
+   "a": "f7700",
+   "b": "f14595",
+   "type": "same",
+   "note": "Both describe assessing the simulation process’s capability to deliver credibility."
+  },
+  {
+   "a": "f8125",
+   "b": "f14595",
+   "type": "same",
+   "note": "Both tie M&S SPICE credibility requirements to simulation task criticality."
+  },
+  {
+   "a": "f7699",
+   "b": "f8125",
+   "type": "same",
+   "note": "Restates criticality-based credibility scaling for M&S SPICE."
+  },
+  {
+   "a": "f7699",
+   "b": "f8124",
+   "type": "elaborates",
+   "note": "Adds the peer-reviewed publication venue to the framework’s 2023 date."
+  },
+  {
+   "a": "f8126",
+   "b": "f14595",
+   "type": "elaborates",
+   "note": "Specifies physical-data validation as a process-level concern."
+  },
+  {
+   "a": "f8127",
+   "b": "f14595",
+   "type": "elaborates",
+   "note": "Adds credibility documentation as the mechanism addressing validity and transfer."
+  },
+  {
+   "a": "f8128",
+   "b": "f8126",
+   "type": "elaborates",
+   "note": "Qualifies process-level validation: remaining physical evidence is not specified."
+  },
+  {
+   "a": "f8130",
+   "b": "f8129",
+   "type": "supports",
+   "note": "Lack of off-road proof supports treating the frameworks only as process templates."
+  },
+  {
+   "a": "f8128",
+   "b": "f8129",
+   "type": "supports",
+   "note": "Unspecified physical evidence reinforces the limits of a process-only template."
+  }
+ ]
+}

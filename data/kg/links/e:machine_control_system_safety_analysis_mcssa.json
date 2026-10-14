@@ -1,0 +1,79 @@
+{
+ "key": "e:machine control system safety analysis mcssa",
+ "hash": "16b0222086d6d464",
+ "synopsis": "ISO 19014-1 provides Machine Control System Safety Analysis (MCSSA) to identify safety-related parts of the control system and determine their required Machine Performance Level, MPLr; the glossary explicitly places this method in earth-moving machinery [f2314, f12036, f11973, f15170]. MPLr is assigned through hazard and risk analysis, and design evaluation must demonstrate an achieved level, MPLa, at least as high as MPLr [f15169]. ISO 19014-5 offers MPLr tables for common machine functions, allowing manufacturers to avoid a full MCSSA for each new model when the tables' use cases and assumptions hold, thereby reducing the per-model assessment burden [f2332, f12040, f15174]. The supplied facts consistently describe this conditional shortcut but do not specify the table assumptions or particular MPLr values [f2332, f12040, f15174].",
+ "relations": [
+  {
+   "a": "f2314",
+   "b": "f12036",
+   "type": "same",
+   "note": "Both identify ISO 19014-1 as the method for identifying safety-related parts and assigning MPLr."
+  },
+  {
+   "a": "f2332",
+   "b": "f12040",
+   "type": "same",
+   "note": "Both permit tabulated MPLr instead of per-model MCSSA when table assumptions hold."
+  },
+  {
+   "a": "f2332",
+   "b": "f15174",
+   "type": "same",
+   "note": "Both describe the conditional ISO 19014-5 shortcut reducing per-model assessment."
+  },
+  {
+   "a": "f12040",
+   "b": "f15174",
+   "type": "same",
+   "note": "Duplicate glossary descriptions of conditional use of MPLr tables for common functions."
+  },
+  {
+   "a": "f2314",
+   "b": "f15170",
+   "type": "same",
+   "note": "Both attribute the MCSSA method and required performance level to ISO 19014-1."
+  },
+  {
+   "a": "f12036",
+   "b": "f15170",
+   "type": "same",
+   "note": "Both state that ISO 19014-1 provides MCSSA and the required performance level."
+  },
+  {
+   "a": "f11973",
+   "b": "f2314",
+   "type": "elaborates",
+   "note": "Specifies earth-moving machinery as the application scope of the MCSSA method."
+  },
+  {
+   "a": "f11973",
+   "b": "f12036",
+   "type": "elaborates",
+   "note": "Adds earth-moving machinery scope to the glossary's MCSSA definition."
+  },
+  {
+   "a": "f11973",
+   "b": "f15170",
+   "type": "elaborates",
+   "note": "Adds earth-moving machinery scope to ISO 19014-1's MCSSA and MPLr statement."
+  },
+  {
+   "a": "f15169",
+   "b": "f2314",
+   "type": "elaborates",
+   "note": "Adds hazard analysis and the requirement that achieved MPLa meet or exceed assigned MPLr."
+  },
+  {
+   "a": "f15169",
+   "b": "f12036",
+   "type": "elaborates",
+   "note": "Explains how assigned MPLr becomes the threshold for design evaluation."
+  },
+  {
+   "a": "f2332",
+   "b": "f2314",
+   "type": "elaborates",
+   "note": "Describes a conditional tabulated alternative to conducting the full MPLr-assignment method."
+  }
+ ]
+}

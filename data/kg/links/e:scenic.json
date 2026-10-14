@@ -1,0 +1,115 @@
+{
+ "key": "e:scenic",
+ "hash": "d32eb1abb8ba1a6c",
+ "synopsis": "Scenic is an open-source, free probabilistic scenario language with native 3D geometry, lane-independent object placement, and interfaces to Python and multiple simulators [f6693, f16024, f9211, f9212]. The booklet considers its programmable semantics adaptable to job sites and better suited to pits, stockpiles and loading areas than road-oriented languages, but Scenic is not a standard and no mining or construction deployment or off-road evidence was found [f8636, f6694, f8637, f9209]. It recommends Scenic or an in-house YAML schema with an OpenODD-style taxonomy for a manufacturer-owned, domain-neutral, version-controlled scenario catalog, with OpenSCENARIO export where required [f14491, f7198]. Scenic integrates with VerifAI for falsification; on-road work in 2021 reported up to a fivefold speed-up from parallel multi-objective falsification, without establishing off-road performance [f16025, f6839, f9209]. Scenic appears in the lowest-cost example tool chain, but its enterprise test governance is thinner than commercial tools', a trustworthy 2026 release date was not found, and funding, maintenance and security-patch cadence were not examined [f9266, f8638, f9213, f9392, f9393].",
+ "relations": [
+  {
+   "a": "f13215",
+   "b": "f7198",
+   "type": "same",
+   "note": "Both recommend a domain-neutral, version-controlled catalog using Scenic or YAML with OpenODD-style taxonomy."
+  },
+  {
+   "a": "f14491",
+   "b": "f13215",
+   "type": "elaborates",
+   "note": "Adds OpenSCENARIO export for tools requiring it."
+  },
+  {
+   "a": "f14149",
+   "b": "f6839",
+   "type": "same",
+   "note": "Both report up to fivefold speed-up in 2021 on-road VerifAI–Scenic work."
+  },
+  {
+   "a": "f16024",
+   "b": "f8635",
+   "type": "elaborates",
+   "note": "Adds lane-independent object placement to the shared probabilistic language and simulator-connectivity description."
+  },
+  {
+   "a": "f6693",
+   "b": "f8635",
+   "type": "elaborates",
+   "note": "Adds native 3D geometry to the shared open-source probabilistic language definition."
+  },
+  {
+   "a": "f9208",
+   "b": "f8635",
+   "type": "same",
+   "note": "Both explicitly identify Scenic as open source."
+  },
+  {
+   "a": "f9210",
+   "b": "f8636",
+   "type": "supports",
+   "note": "Programmable semantics underpin the claimed technical adaptability to job sites."
+  },
+  {
+   "a": "f9211",
+   "b": "f8635",
+   "type": "elaborates",
+   "note": "Adds Python interfacing to the shared multiple-simulator connectivity claim."
+  },
+  {
+   "a": "f16238",
+   "b": "f9211",
+   "type": "same",
+   "note": "Both identify Python as an interface for Scenic."
+  },
+  {
+   "a": "f16159",
+   "b": "f9266",
+   "type": "elaborates",
+   "note": "Adds J1939 emulation and compute options to the lowest-cost Scenic-or-scripts chain."
+  },
+  {
+   "a": "f8637",
+   "b": "f9209",
+   "type": "elaborates",
+   "note": "Specifies mining and construction deployments within the broader missing off-road evidence."
+  },
+  {
+   "a": "f6694",
+   "b": "f7198",
+   "type": "supports",
+   "note": "Suitability for off-road layouts supports Scenic as a recommended catalog option."
+  },
+  {
+   "a": "f6693",
+   "b": "f6694",
+   "type": "supports",
+   "note": "Native 3D geometry supports suitability for pits, stockpiles and loading areas."
+  },
+  {
+   "a": "f16024",
+   "b": "f8636",
+   "type": "supports",
+   "note": "Lane-independent placement supports technical adaptability to job sites."
+  },
+  {
+   "a": "f6839",
+   "b": "f16025",
+   "type": "elaborates",
+   "note": "Quantifies a reported on-road benefit of the Scenic–VerifAI falsification workflow."
+  },
+  {
+   "a": "f9212",
+   "b": "f9266",
+   "type": "supports",
+   "note": "Scenic being free supports its inclusion in the lowest-cost example chain."
+  },
+  {
+   "a": "f15932",
+   "b": "f8362",
+   "type": "same",
+   "note": "Both name Scenic among the booklet's open-source scenario tools."
+  },
+  {
+   "a": "f14491",
+   "b": "f7198",
+   "type": "elaborates",
+   "note": "Adds manufacturer ownership and OpenSCENARIO export to the catalog recommendation."
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "key": "e:automation in construction",
+ "hash": "38337d18ecc0c3c8",
+ "synopsis": "Automation in Construction supplies examples spanning excavator pose estimation with domain randomisation in volume 134 (2022), procedural construction datasets in 2023, and RGB–lidar fusion for construction point-cloud de-dusting in 2024 [f4135, f3789, f5397]. The 2023 work scripted Blender scenes using real lighting captured on two dates; incorporating date-specific lighting improved realism, but the study reported mixed per-class results [f3789, f4133, f7059, f7060]. The excavation de-dusting model by Parsons, Hanafi Sheikhha, Seo and Lee appeared in volume 168 in December 2024 and scored 65.58 percent in one “far dense dust” case, compared with 94.85–96.73 percent in other cases of the same scenario [f10564]. These findings offer examples of synthetic-scene creation and perception testing, while the mixed class results and dense-dust performance drop caution against assuming uniform performance across conditions [f7059, f7060, f10564].",
+ "relations": [
+  {
+   "a": "f3789",
+   "b": "f4133",
+   "type": "same",
+   "note": "Both describe the 2023 procedural Blender datasets using real lighting from two dates."
+  },
+  {
+   "a": "f7059",
+   "b": "f3789",
+   "type": "elaborates",
+   "note": "Reports the realism benefit of the date-specific lighting used in the Blender scenes."
+  },
+  {
+   "a": "f7059",
+   "b": "f4133",
+   "type": "elaborates",
+   "note": "Adds the reported realism improvement to the dataset creation example."
+  },
+  {
+   "a": "f7060",
+   "b": "f3789",
+   "type": "elaborates",
+   "note": "Adds mixed per-class results from the same procedural dataset study."
+  },
+  {
+   "a": "f7060",
+   "b": "f7059",
+   "type": "elaborates",
+   "note": "Qualifies improved realism with mixed per-class results in the same study."
+  },
+  {
+   "a": "f10564",
+   "b": "f5397",
+   "type": "elaborates",
+   "note": "Adds authors, publication details, and condition-specific scores for the 2024 fusion de-dusting work."
+  }
+ ]
+}

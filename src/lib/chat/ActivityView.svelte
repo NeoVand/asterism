@@ -145,7 +145,7 @@
 						{/if}
 					</div>
 				{/each}
-				{#each msg.tasks as t (t.id)}
+				{#each msg.tasks as t, ti (t.id + ti)}
 					{@const sub = msg.steps.filter((s) => s.agent === t.id)}
 					<div class="py-[3px]" in:slide={{ duration: 160 }}>
 						<div class="flex items-start gap-2 text-[11.5px] leading-snug">

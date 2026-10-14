@@ -1,0 +1,49 @@
+{
+ "key": "e:scenic 3",
+ "hash": "cdc2424bdb98dcf9",
+ "synopsis": "Scenic 3 is an open-source probabilistic language with peer-reviewed coverage at CAV 2023 [f14489, f7173]. The booklet rates its off-road fit as good, citing native 3D geometry, occlusion-aware visibility, probabilistic placement without lanes and simulator independence [f7174, f14490]. It integrates with VerifAI for falsification, and demonstrations beyond road vehicles include robotics and a Mars-rover-over-rocks example; the latter evidence is labelled independent and vendor project documentation [f7175, f7176]. However, Scenic 3 is not an ISO or ASAM standard, so adopters must provide mappings to requirements, rigs and exchange formats [f7177, f14490].",
+ "relations": [
+  {
+   "a": "f7174",
+   "b": "f14489",
+   "type": "same",
+   "note": "Both describe 3D geometry, occlusion-aware visibility and probabilistic placement without lanes."
+  },
+  {
+   "a": "f7174",
+   "b": "f14490",
+   "type": "same",
+   "note": "Both rate Scenic 3's off-road fit as good."
+  },
+  {
+   "a": "f7177",
+   "b": "f14490",
+   "type": "same",
+   "note": "Both state Scenic 3 is not an ISO or ASAM standard."
+  },
+  {
+   "a": "f7173",
+   "b": "f14489",
+   "type": "elaborates",
+   "note": "Identifies CAV 2023 as the peer-reviewed venue and notes open-source documentation."
+  },
+  {
+   "a": "f7177",
+   "b": "f14490",
+   "type": "elaborates",
+   "note": "Adds adopters' responsibility to map requirements, rigs and exchange formats."
+  },
+  {
+   "a": "f14489",
+   "b": "f14490",
+   "type": "supports",
+   "note": "Lane-free placement, 3D geometry and occlusion awareness underpin the good off-road fit rating."
+  },
+  {
+   "a": "f7176",
+   "b": "f14490",
+   "type": "supports",
+   "note": "Robotics and Mars-rover demonstrations provide examples relevant to off-road suitability."
+  }
+ ]
+}

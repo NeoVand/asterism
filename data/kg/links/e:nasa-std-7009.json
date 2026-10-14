@@ -1,0 +1,115 @@
+{
+ "key": "e:nasa-std-7009",
+ "hash": "c7fce220acd01d9d",
+ "synopsis": "NASA-STD-7009B is presented as the current models-and-simulations standard, approved on 5 March 2024, with its companion handbook finalized on 3 February 2026 [f14606, f7604, f7613]. The booklet recommends its credibility scale for the collision-mitigation toolchain and treats it as an internal-board governance template, not an off-road regulation or certification rule [f9433, f8070, f14612]. Credibility is decision-specific: criticality determines the required effort, factors are rated separately from 0 to 4 with thresholds declared in advance, and overall credibility must not be reduced to one scalar [f7606, f14588, f14609, f8068]. Validation must address the real application rather than internal consistency; validation Level 4 requires all outputs to compare favorably with real-system data across the full operating range in the real environment, but the framework does not prescribe a numerical quantity of physical evidence [f10755, f7608, f8069]. Decision-maker reports must include the best estimate, uncertainty, factor-by-factor credibility, caveats on use beyond model limits, and the risk of accepting the result; the final plan should include a model credibility plan and assessment in Appendix D [f14610, f10185]. Applicability remains qualified: a 2026 proposal adapts the framework for on-road automated-driving simulation, but it is not proven for off-road automatic braking, and Chapter 5's statement that the standard was unverified is in tension with later dated descriptions and recommendations [f4832, f8071, f4336, f7604, f9433].",
+ "relations": [
+  {
+   "a": "f7526",
+   "b": "f9434",
+   "type": "same",
+   "note": "Both identify approval of NASA-STD-7009B on 5 March 2024."
+  },
+  {
+   "a": "f7604",
+   "b": "f14606",
+   "type": "same",
+   "note": "Both identify version B and its approval date."
+  },
+  {
+   "a": "f9433",
+   "b": "f14614",
+   "type": "same",
+   "note": "Both recommend the NASA credibility scale for the program toolchain."
+  },
+  {
+   "a": "f14614",
+   "b": "f14694",
+   "type": "same",
+   "note": "Duplicate glossary recommendations for the toolchain credibility scale."
+  },
+  {
+   "a": "f7606",
+   "b": "f14608",
+   "type": "same",
+   "note": "Criticality determines credibility effort proportional to wrong-decision risk."
+  },
+  {
+   "a": "f7607",
+   "b": "f14581",
+   "type": "same",
+   "note": "Both specify a zero-to-four scale for individual credibility factors."
+  },
+  {
+   "a": "f7608",
+   "b": "f14584",
+   "type": "same",
+   "note": "Level 4 requires favorable real-world comparison throughout the full operating range."
+  },
+  {
+   "a": "f7609",
+   "b": "f14582",
+   "type": "same",
+   "note": "Both list the current simulation credibility factors."
+  },
+  {
+   "a": "f7610",
+   "b": "f14586",
+   "type": "same",
+   "note": "Overall credibility cannot be reduced to a single scalar."
+  },
+  {
+   "a": "f7587",
+   "b": "f14610",
+   "type": "same",
+   "note": "Both specify estimates, uncertainty, credibility, caveats and acceptance risk in decision reports."
+  },
+  {
+   "a": "f7616",
+   "b": "f14610",
+   "type": "same",
+   "note": "The earlier edition's reporting requirements restate the glossary reporting set."
+  },
+  {
+   "a": "f7617",
+   "b": "f14612",
+   "type": "same",
+   "note": "Both distinguish governance guidance from aviation certification and off-road regulation."
+  },
+  {
+   "a": "f7617",
+   "b": "f8070",
+   "type": "same",
+   "note": "Both characterize the framework as governance rather than off-road certification."
+  },
+  {
+   "a": "f10755",
+   "b": "f14615",
+   "type": "same",
+   "note": "Both require real-application validation rather than merely internal consistency."
+  },
+  {
+   "a": "f7962",
+   "b": "f14605",
+   "type": "same",
+   "note": "Both link creation of the standard to the Columbia loss."
+  },
+  {
+   "a": "f4336",
+   "b": "f7604",
+   "type": "contradicts",
+   "note": "Chapter 5 leaves editions and dates unverified; Chapter 10 supplies a specific approved edition."
+  },
+  {
+   "a": "f14588",
+   "b": "f10185",
+   "type": "depends",
+   "note": "The planned factor assessment requires decision-criticality-based thresholds declared beforehand."
+  },
+  {
+   "a": "f8071",
+   "b": "f9433",
+   "type": "contradicts",
+   "note": "Recommended toolchain use remains qualified by unproven applicability to off-road automatic braking."
+  }
+ ]
+}

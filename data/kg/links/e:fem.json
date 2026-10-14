@@ -1,0 +1,55 @@
+{
+ "key": "e:fem",
+ "hash": "ec2951f9a6ad018d",
+ "synopsis": "The corpus treats FEM alongside DEM and SPH terrain models coupled with a multibody machine: these methods predict granular flow, rutting and localized soil failure with high fidelity, but are very slow [f6468, f6469]. They require very high effort and high-performance computing, are described as unusable for scenario sweeps, and have research-only off-road validation status [f6471, f6474, f6473]. Both Chapter 8 and the glossary recommend restricting their braking-validation use to selected limit cases, with Chapter 8 specifying berms, deep aggregate and severe track-soil interaction [f6472, f13835]. This narrow role reflects two limitations: uncertain soil inputs can overwhelm model fidelity, and evidence that these methods are required for threshold prediction was not found [f6475, f6470].",
+ "relations": [
+  {
+   "a": "f6472",
+   "b": "f13835",
+   "type": "same",
+   "note": "Both recommend selected braking limit cases; Chapter 8 specifies terrain examples."
+  },
+  {
+   "a": "f6474",
+   "b": "f13835",
+   "type": "supports",
+   "note": "Unsuitability for scenario sweeps supports restricting use to selected limit cases."
+  },
+  {
+   "a": "f6475",
+   "b": "f13835",
+   "type": "supports",
+   "note": "Soil-input uncertainty supports limiting deployment of high-fidelity terrain models."
+  },
+  {
+   "a": "f6470",
+   "b": "f13835",
+   "type": "supports",
+   "note": "No evidence of necessity for threshold prediction supports selective rather than routine use."
+  },
+  {
+   "a": "f6471",
+   "b": "f13835",
+   "type": "supports",
+   "note": "Very high effort and computing requirements support reserving models for selected cases."
+  },
+  {
+   "a": "f6469",
+   "b": "f6474",
+   "type": "supports",
+   "note": "Very slow execution explains why these models are unusable for scenario sweeps."
+  },
+  {
+   "a": "f6468",
+   "b": "f6472",
+   "type": "supports",
+   "note": "Localized soil-failure and granular-flow capabilities fit the recommended difficult terrain cases."
+  },
+  {
+   "a": "f6475",
+   "b": "f6469",
+   "type": "elaborates",
+   "note": "Nominal high fidelity is qualified by uncertainty in soil inputs."
+  }
+ ]
+}

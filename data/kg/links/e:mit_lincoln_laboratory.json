@@ -1,0 +1,37 @@
+{
+ "key": "e:mit lincoln laboratory",
+ "hash": "16f1df6f33f4437b",
+ "synopsis": "ACAS X encounter models draw on long-standing work, including a MIT Lincoln Laboratory aircraft encounter model built from nine months of radar recordings [f1433, f15750]. March 2022 RTCA SC-147 minutes recorded that European encounter-model results suggested ACAS Xa induced more near mid-air collisions than TCAS, while MIT Lincoln Laboratory did not see the same disparity [f1436]. This disagreement raised questions about encounter or scenario model representativeness, and sensor noise had not been assessed [f1968]. The corpus treats the divergence as a warning against relying on a single simulation toolchain [f1969].",
+ "relations": [
+  {
+   "a": "f1433",
+   "b": "f15750",
+   "type": "same",
+   "note": "Both identify nine months of radar recordings as the MIT encounter model's data basis."
+  },
+  {
+   "a": "f1436",
+   "b": "f1968",
+   "type": "same",
+   "note": "Both report European–MIT disagreement over ACAS Xa versus TCAS near mid-air collision results."
+  },
+  {
+   "a": "f1968",
+   "b": "f1436",
+   "type": "elaborates",
+   "note": "Adds representativeness concerns and the unassessed sensor-noise gap to the recorded disagreement."
+  },
+  {
+   "a": "f1436",
+   "b": "f1969",
+   "type": "supports",
+   "note": "Divergent simulation results support the warning against relying on one toolchain."
+  },
+  {
+   "a": "f1968",
+   "b": "f1969",
+   "type": "supports",
+   "note": "Representativeness concerns and unassessed sensor noise reinforce the single-toolchain warning."
+  }
+ ]
+}

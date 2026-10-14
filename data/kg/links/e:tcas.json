@@ -1,0 +1,55 @@
+{
+ "key": "e:tcas",
+ "hash": "76d6151f3dfcd9cc",
+ "synopsis": "TCAS warns airline pilots of possible mid-air collisions and advises climbing or descending; it has flown on airliners for decades [f15744, f15745]. ACAS X is its replacement or successor, validated largely through simulation using statistical encounter models of near-collisions [f1428, f15744]. Both systems leave the pilot responsible for flying the maneuver, so their relevance to heavy-machine collision mitigation is as precedents for warning logic rather than automatic braking [f15748]. March 2022 RTCA SC-147 minutes recorded European results suggesting ACAS Xa induced more near mid-air collisions than TCAS, while MIT Lincoln Laboratory did not see the same disparity [f1436, f15754]. This disagreement raises questions about encounter or scenario model representativeness, with sensor noise still unassessed, and warns against relying on a single simulation toolchain [f1968, f1969].",
+ "relations": [
+  {
+   "a": "f1436",
+   "b": "f15754",
+   "type": "same",
+   "note": "Both report the March 2022 disagreement over ACAS Xa versus TCAS."
+  },
+  {
+   "a": "f1436",
+   "b": "f1968",
+   "type": "same",
+   "note": "Both report European and MIT Lincoln Laboratory results differing on relative collision outcomes."
+  },
+  {
+   "a": "f1968",
+   "b": "f15754",
+   "type": "same",
+   "note": "Both describe the same European–US disagreement about ACAS Xa relative to TCAS."
+  },
+  {
+   "a": "f1428",
+   "b": "f15744",
+   "type": "same",
+   "note": "Both identify ACAS X as TCAS's successor or replacement."
+  },
+  {
+   "a": "f15748",
+   "b": "f15744",
+   "type": "elaborates",
+   "note": "Clarifies pilot responsibility and limits applicability to warning logic rather than automatic braking."
+  },
+  {
+   "a": "f1968",
+   "b": "f1436",
+   "type": "elaborates",
+   "note": "Adds model-representativeness concerns and the unassessed sensor-noise gap."
+  },
+  {
+   "a": "f15754",
+   "b": "f1969",
+   "type": "supports",
+   "note": "Divergent laboratory results support caution against relying on one simulation toolchain."
+  },
+  {
+   "a": "f1968",
+   "b": "f1969",
+   "type": "supports",
+   "note": "Model-representativeness uncertainty and unassessed noise reinforce the single-toolchain warning."
+  }
+ ]
+}

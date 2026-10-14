@@ -1,0 +1,103 @@
+{
+ "key": "e:simulink",
+ "hash": "ef0220ecdec73d0b",
+ "synopsis": "The corpus presents MATLAB/Simulink with the Offroad Autonomy Library and RoadRunner as a complete or near-complete commercial simulation platform; an on-road precedent dated 29 July 2025 used Simulink algorithms with virtual vehicles, sensors and metric-driven tests [f8346, f8373, f1335]. Off-road evidence includes shipped R2026b examples of an autonomous excavator, backhoe truck-loading and open-pit haul truck, alongside an undated Volvo Construction Equipment user story describing a real-time human-in-the-loop excavator simulator built with Simulink and Simscape [f15878, f8391]. The stack provides closed-loop articulated-steering dynamics and controller models in R2026b, explicitly supported coupling to Mevea through FMI or TCP/IP and to Unreal through the Offroad Autonomy Library, plus tightly coupled real-time targets through Speedgoat and Simulink Real-Time [f8599, f8699, f8700, f8645]. A proposed middle-cost chain combines these tools with Mevea or AGX Dynamics for terrain, hydraulics and machine variants, but RoadRunner itself does not require MATLAB or Simulink [f16162, f8385]. Licensing is annual or perpetual per product and public pricing is quote-only; the unofficial January 2024 Simulink figures of 1,480 annually and 5,920 perpetually are presumed US dollars and indicative only, not a firm budget basis [f15877, f15880, f16143].",
+ "relations": [
+  {
+   "a": "f8388",
+   "b": "f16143",
+   "type": "same",
+   "note": "Identical unofficial Simulink prices, date, currency caveat and indicative status."
+  },
+  {
+   "a": "f16050",
+   "b": "f8391",
+   "type": "same",
+   "note": "Same Volvo real-time human-in-the-loop excavator simulator using Simulink and Simscape."
+  },
+  {
+   "a": "f15879",
+   "b": "f16050",
+   "type": "elaborates",
+   "note": "Specifies real-time operation and the Simulink and Simscape components."
+  },
+  {
+   "a": "f15879",
+   "b": "f8391",
+   "type": "elaborates",
+   "note": "Adds specific tools, real-time operation and undated user-story provenance."
+  },
+  {
+   "a": "f8373",
+   "b": "f15877",
+   "type": "elaborates",
+   "note": "Adds annual or perpetual per-product licensing to commercial status."
+  },
+  {
+   "a": "f15880",
+   "b": "f8388",
+   "type": "elaborates",
+   "note": "Provides indicative Simulink figures from the unofficial price list."
+  },
+  {
+   "a": "f8383",
+   "b": "f8961",
+   "type": "same",
+   "note": "Restates the platform interface list, omitting FBX and glTF."
+  },
+  {
+   "a": "f8562",
+   "b": "f8699",
+   "type": "same",
+   "note": "Both establish supported Simulink–Mevea coupling through TCP/IP or FMI."
+  },
+  {
+   "a": "f8645",
+   "b": "f9231",
+   "type": "elaborates",
+   "note": "Adds turnkey real-time targets and tight coupling to the listed Simulink interface."
+  },
+  {
+   "a": "f8699",
+   "b": "f16162",
+   "type": "supports",
+   "note": "Explicit Mevea interoperability supports the proposed middle-cost tool chain."
+  },
+  {
+   "a": "f8700",
+   "b": "f16162",
+   "type": "supports",
+   "note": "Supported Unreal coupling substantiates Unreal's inclusion in the proposed chain."
+  },
+  {
+   "a": "f15878",
+   "b": "f8346",
+   "type": "supports",
+   "note": "Shipped off-road examples support the platform's complete or near-complete classification."
+  },
+  {
+   "a": "f16239",
+   "b": "f15878",
+   "type": "elaborates",
+   "note": "Clarifies that the examples' R2026b designation means the second 2026 release."
+  },
+  {
+   "a": "f16239",
+   "b": "f8599",
+   "type": "elaborates",
+   "note": "Places R2026b controller and dynamics capabilities within the twice-yearly release cycle."
+  },
+  {
+   "a": "f8383",
+   "b": "f16162",
+   "type": "supports",
+   "note": "Partner-mediated FMI interfaces support the proposed external dynamics coupling."
+  },
+  {
+   "a": "f8562",
+   "b": "f9103",
+   "type": "elaborates",
+   "note": "Specifies how listed Mevea interfaces enable Simulink co-simulation."
+  }
+ ]
+}

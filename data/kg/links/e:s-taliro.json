@@ -1,0 +1,37 @@
+{
+ "key": "e:s-taliro",
+ "hash": "fb44bbb8ea322563",
+ "synopsis": "Chapter 9 names S-TaLiRo alongside Breach and VerifAI as tools for failure-seeking search and includes them among the program’s falsification methods [f6836, f7247]. The glossary explains their purpose as searching for parameter combinations where a function fails [f16025]. Across Chapter 9 and the glossary, this family also includes Bayesian optimization, surrogate-guided search and evolutionary search; the glossary additionally lists fuzzing, reinforcement-learning adversaries and Adaptive Stress Testing [f7247, f14148]. The glossary explicitly identifies a Scenic–VerifAI integration, but the supplied facts do not establish an integration with S-TaLiRo or report S-TaLiRo-specific performance or validation results [f16025, f6836, f7247, f14148].",
+ "relations": [
+  {
+   "a": "f6836",
+   "b": "f7247",
+   "type": "same",
+   "note": "Both name S-TaLiRo, Breach and VerifAI as failure-seeking or falsification tools."
+  },
+  {
+   "a": "f6836",
+   "b": "f14148",
+   "type": "same",
+   "note": "The glossary restates Chapter 9’s identification of the three falsification tools."
+  },
+  {
+   "a": "f16025",
+   "b": "f6836",
+   "type": "elaborates",
+   "note": "Explains failure-seeking as searching parameter combinations where a function fails."
+  },
+  {
+   "a": "f14148",
+   "b": "f7247",
+   "type": "elaborates",
+   "note": "Expands the shared method family with fuzzing, reinforcement-learning adversaries and Adaptive Stress Testing."
+  },
+  {
+   "a": "f16025",
+   "b": "f7247",
+   "type": "elaborates",
+   "note": "Adds Scenic, its VerifAI integration, and the operational purpose of falsification tools."
+  }
+ ]
+}

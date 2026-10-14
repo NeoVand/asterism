@@ -1,0 +1,43 @@
+{
+ "key": "e:asam openscenario xml",
+ "hash": "474d51788a51f8e9",
+ "synopsis": "ASAM OpenSCENARIO XML 1.4.0 is dated 2026, with a secondary listing reporting June 2026 [f7149]. It describes precise, synchronized maneuvers tied to road networks and shares a road-traffic domain model with OpenSCENARIO DSL and OpenDRIVE [f14485, f7150, f6691]. The booklet rates its fit for off-road work without roads or lanes as poor to moderate; world-coordinate placement is possible, but terrain and slopes must come from external assets [f7150, f7151]. XML and OpenDRIVE nevertheless have broad tool support, including VTD, dSPACE, CARLA, RoadRunner, Prescan and MORAI; that interoperability does not resolve the stated off-road modeling limitations [f8616, f7150, f7151].",
+ "relations": [
+  {
+   "a": "f14485",
+   "b": "f7150",
+   "type": "same",
+   "note": "Both describe road-network-bound maneuvers and poor-to-moderate off-road fit."
+  },
+  {
+   "a": "f7149",
+   "b": "f14485",
+   "type": "elaborates",
+   "note": "Adds a secondary June listing to the glossary's 2026 version date."
+  },
+  {
+   "a": "f6691",
+   "b": "f14485",
+   "type": "supports",
+   "note": "The road-traffic domain model explains road-network dependence and limited off-road fit."
+  },
+  {
+   "a": "f7151",
+   "b": "f14485",
+   "type": "elaborates",
+   "note": "Clarifies world-coordinate capability and the need for external terrain and slope assets."
+  },
+  {
+   "a": "f6691",
+   "b": "f7150",
+   "type": "supports",
+   "note": "Road-centric modeling explains limitations for off-road work without roads or lanes."
+  },
+  {
+   "a": "f7151",
+   "b": "f7150",
+   "type": "elaborates",
+   "note": "World-coordinate placement is possible, but terrain and slopes remain external."
+  }
+ ]
+}

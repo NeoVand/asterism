@@ -1,0 +1,31 @@
+{
+ "key": "e:asme v v 20",
+ "hash": "4b8f3c674d7af266",
+ "synopsis": "Chapter 10 lists ASME V&V 20 among standards and guides spanning various domains [f8154]. The glossary identifies it as an American Society of Mechanical Engineers verification and validation standard for fluid-flow and heat-transfer models, emphasizing computation of validation uncertainty [f14616, f14619]. However, both Chapter 10 and the glossary explicitly say the research did not verify ASME V&V 20, so its inclusion should not be treated as a verified basis for the booklet’s simulation-trust recommendations [f7632, f14623].",
+ "relations": [
+  {
+   "a": "f7632",
+   "b": "f14623",
+   "type": "same",
+   "note": "Both explicitly report that ASME V&V 10 and 20 were not verified."
+  },
+  {
+   "a": "f14616",
+   "b": "f8154",
+   "type": "elaborates",
+   "note": "Identifies the issuing organization and model domains of the listed ASME standards."
+  },
+  {
+   "a": "f14619",
+   "b": "f14616",
+   "type": "elaborates",
+   "note": "Adds V&V 20’s emphasis on computing validation uncertainty."
+  },
+  {
+   "a": "f14619",
+   "b": "f8154",
+   "type": "elaborates",
+   "note": "Specifies the domain and uncertainty emphasis of a standard listed in Chapter 10."
+  }
+ ]
+}

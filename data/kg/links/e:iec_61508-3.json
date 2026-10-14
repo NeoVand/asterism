@@ -1,0 +1,25 @@
+{
+ "key": "e:iec 61508-3",
+ "hash": "262e249b253494d0",
+ "synopsis": "Chapter 12 identifies IEC 61508-3 tool classes T1 to T3 as a reference regime for tool qualification [f9759]. The glossary identifies the edition as IEC 61508-3:2010 and explains that these classes guide how much qualification a simulator or other tool needs when its output is relied on [f15269]. This use specifically includes tools whose outputs become safety evidence; the supplied facts do not specify individual class criteria or assign a simulator to a class [f12055, f15269].",
+ "relations": [
+  {
+   "a": "f9759",
+   "b": "f12055",
+   "type": "same",
+   "note": "Both identify T1–T3 as the booklet’s reference regime for tool qualification."
+  },
+  {
+   "a": "f15269",
+   "b": "f9759",
+   "type": "elaborates",
+   "note": "Identifies the 2010 edition and explains qualification according to reliance on tool output."
+  },
+  {
+   "a": "f12055",
+   "b": "f15269",
+   "type": "same",
+   "note": "Both describe using T1–T3 to qualify simulators or other tools whose outputs are relied on."
+  }
+ ]
+}

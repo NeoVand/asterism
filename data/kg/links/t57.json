@@ -1,0 +1,91 @@
+{
+ "key": "t57",
+ "hash": "4ae789c5fd7d2f5b",
+ "synopsis": "FMEA, FMECA and FMEDA examine component failures, effects and severity; FMEDA additionally assesses detection and classifies failures as safe or dangerous and detected or undetected, feeding diagnostic coverage and PL, MPL and SIL probability calculations [f12097, f12098]. MOSH requires a supplier FMECA to define critical faults for collision prevention products, treats degraded sensing as a fault, and requires fail-to-safe within 500 milliseconds of detecting a critical fault [f2358, f2905, f12102, f15643]. FMEA or FMEDA are inputs to fault injection and robustness testing, alongside injectable interfaces, SIL/HIL benches and diagnostic requirements; FMEDA tells testers which faults to inject and which diagnostics must catch, and can be completed before a prototype arrives [f1010, f12103, f12104, f12105]. The illustrative radar power-connector open circuit is dangerous because it prevents detections and braking commands; heartbeat loss detects it within 500 milliseconds, followed by fail-to-safe, but the example does not separately quantify the post-detection transition time [f12099, f12100, f12102]. In the illustrative automatic-braking safety case, FMEDA combines with fault-injection results and software verification to support the required Machine Performance Level claim, rather than establishing that claim alone [f12244].",
+ "relations": [
+  {
+   "a": "f2358",
+   "b": "f12101",
+   "type": "same",
+   "note": "Both require supplier FMECA to define critical faults."
+  },
+  {
+   "a": "f2358",
+   "b": "f15643",
+   "type": "same",
+   "note": "Both state MOSH's supplier FMECA requirement."
+  },
+  {
+   "a": "f12101",
+   "b": "f15643",
+   "type": "same",
+   "note": "Restatements of the supplier FMECA requirement."
+  },
+  {
+   "a": "f1010",
+   "b": "f12103",
+   "type": "same",
+   "note": "Both identify FMEA or FMEDA as fault-injection inputs."
+  },
+  {
+   "a": "f2905",
+   "b": "f12102",
+   "type": "elaborates",
+   "note": "Adds degraded sensing and FMECA-defined faults to the 500-millisecond fail-to-safe requirement."
+  },
+  {
+   "a": "f2905",
+   "b": "f2358",
+   "type": "depends",
+   "note": "Fail-to-safe obligations use critical faults defined by the required supplier FMECA."
+  },
+  {
+   "a": "f12104",
+   "b": "f1010",
+   "type": "elaborates",
+   "note": "Explains how FMEDA supplies fault-injection targets and diagnostic expectations."
+  },
+  {
+   "a": "f12104",
+   "b": "f12103",
+   "type": "elaborates",
+   "note": "Specifies the practical test-team use of FMEDA inputs."
+  },
+  {
+   "a": "f12098",
+   "b": "f12097",
+   "type": "elaborates",
+   "note": "Details FMEDA classifications and their quantitative safety-assurance use."
+  },
+  {
+   "a": "f12099",
+   "b": "f12098",
+   "type": "elaborates",
+   "note": "Provides a concrete dangerous-failure classification."
+  },
+  {
+   "a": "f12100",
+   "b": "f12099",
+   "type": "elaborates",
+   "note": "Adds heartbeat detection and fail-to-safe response to the connector failure example."
+  },
+  {
+   "a": "f12100",
+   "b": "f2905",
+   "type": "elaborates",
+   "note": "Illustrates detection and safe response for a sensing-disabling fault."
+  },
+  {
+   "a": "f12098",
+   "b": "f12244",
+   "type": "supports",
+   "note": "FMEDA's contribution to MPL calculations explains its role in the illustrative safety case."
+  },
+  {
+   "a": "f12104",
+   "b": "f12244",
+   "type": "supports",
+   "note": "FMEDA-directed fault injection links analysis to test evidence used in the safety case."
+  }
+ ]
+}

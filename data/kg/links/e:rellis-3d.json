@@ -1,0 +1,31 @@
+{
+ "key": "e:rellis-3d",
+ "hash": "e232b54d8c33fb16",
+ "synopsis": "RELLIS-3D and ORAD-3D (2025) were used with Ground4D for off-road reconstruction [f4167]. A 2023 comparison of MAVS-simulated and real RELLIS-3D data for segmentation showed large domain-shift effects, highlighting a limitation in transferring simulated results to real off-road data [f4741, f12817]. RELLIS-3D is identified as a machine-mounted off-road dataset, but the research did not verify it or the other listed datasets [f5849, f12815]. No validation for off-road collision warning was found for these datasets or the listed open-source simulators; reconstruction use and segmentation comparisons therefore do not establish collision-warning validation [f4167, f4741, f5851, f12816].",
+ "relations": [
+  {
+   "a": "f4741",
+   "b": "f12817",
+   "type": "same",
+   "note": "Both report large domain shifts between simulated data and RELLIS-3D."
+  },
+  {
+   "a": "f5849",
+   "b": "f12815",
+   "type": "same",
+   "note": "Both identify the listed machine-mounted datasets as unverified in this research."
+  },
+  {
+   "a": "f5851",
+   "b": "f12816",
+   "type": "elaborates",
+   "note": "Extends the absence of collision-warning validation from datasets to named open-source simulators."
+  },
+  {
+   "a": "f12816",
+   "b": "f5849",
+   "type": "elaborates",
+   "note": "Specifies off-road collision-warning validation as a missing form of verification."
+  }
+ ]
+}

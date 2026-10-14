@@ -1,0 +1,37 @@
+{
+ "key": "e:iso score",
+ "hash": "7f31405bcb3bc6ec",
+ "synopsis": "ISO 18571 combines corridor, phase, magnitude and slope sub-scores into a single number often called the “ISO score” [f15332]. Euro NCAP’s on-road virtual-testing protocol requires manufacturers to qualify simulation in-house against physical tests using the ISO score and defined KPIs calculated with Euro NCAP scripts [f15333, f2496]. This qualification sits within a broader submission process covering model dossiers and color-coded predictions for the whole scenario grid [f15447]. Several ISO-score and KPI tolerances remain bracketed and require confirmation, so they should not be adopted as final thresholds in an off-road acceptance specification [f2502, f2503].",
+ "relations": [
+  {
+   "a": "f15333",
+   "b": "f2496",
+   "type": "same",
+   "note": "Both require simulation qualification against physical tests using the ISO score and defined KPIs."
+  },
+  {
+   "a": "f15447",
+   "b": "f2496",
+   "type": "elaborates",
+   "note": "Places the same in-house qualification procedure within the broader dossier and scenario-prediction submission process."
+  },
+  {
+   "a": "f15447",
+   "b": "f15333",
+   "type": "elaborates",
+   "note": "Adds in-house execution, Euro NCAP scripts, model dossiers and scenario-grid predictions."
+  },
+  {
+   "a": "f15332",
+   "b": "f2496",
+   "type": "elaborates",
+   "note": "Explains the component sub-scores behind the ISO score used in qualification."
+  },
+  {
+   "a": "f2502",
+   "b": "f2503",
+   "type": "supports",
+   "note": "Unconfirmed tolerances justify not adopting them as final off-road acceptance thresholds."
+  }
+ ]
+}

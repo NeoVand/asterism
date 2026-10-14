@@ -1,0 +1,204 @@
+[
+	{
+		"id": "eu-ml-dates",
+		"q": "Which EU dates and rules constrain an automatic braking function whose perception uses machine learning, and what do they imply for approval timing?",
+		"must": [
+			{ "claim": "The EU Machinery Regulation 2023/1230 applies from 20 January 2027.", "re": "20 Jan(uary)? 2027" },
+			{ "claim": "Annex I Part A lists safety components with fully or partially self-evolving behaviour using machine learning; these need a notified-body conformity route.", "re": "notified.body" },
+			{ "claim": "The lead time of a notified body for an ML safety component was searched for but not found.", "re": "lead time" },
+			{ "claim": "High-risk AI obligations for machinery apply from 2 August 2028 (moved by the Digital Omnibus).", "re": "2 Aug(ust)? 2028" },
+			{ "claim": "The EU Product Liability Directive date of 9 December 2026.", "re": "9 Dec(ember)? 2026" }
+		]
+	},
+	{
+		"id": "zero-miss-trials",
+		"q": "How many test trials do we need to claim a low miss rate, and what does that mean for the validation campaign?",
+		"must": [
+			{ "claim": "Zero misses in 299 independent trials shows a miss rate of at most 1% at 95% confidence.", "re": "299" },
+			{ "claim": "0.1% needs 2,995 trials and 0.01% needs 29,956.", "re": "2,?995|29,?956" },
+			{ "claim": "Frames are not trials; the unit of analysis is the independent encounter.", "re": "frame|encounter|independent" },
+			{ "claim": "Strata across site types, scenarios, conditions and models exceed 7,000 cells, so exhaustive field coverage is infeasible; stratified sampling plus simulation is needed.", "re": "7,?000|strat" }
+		]
+	},
+	{
+		"id": "niosh-alarms",
+		"q": "What real field data exist on false and nuisance alarms of proximity warning systems on haul trucks?",
+		"must": [
+			{ "claim": "A 2006 NIOSH study (2004 data) on a haul truck found 18% of radar alarms false and 42% nuisance.", "re": "18 ?%|42 ?%" },
+			{ "claim": "The study covered 580 alarms over 618 reversals (Caterpillar 793B).", "re": "580|618|793" },
+			{ "claim": "The audible alarm was found switched off after shifts / systems are disabled due to nuisance alarms.", "re": "switch|disabl|turned off|bypass" },
+			{ "claim": "No published off-road value exists for accepted false alarms per operating hour.", "re": "per (operating )?hour|not found|no published" }
+		]
+	},
+	{
+		"id": "volvo-cat-precedents",
+		"q": "Which off-road manufacturers already ship automatic braking and what are their operating envelopes?",
+		"must": [
+			{ "claim": "Volvo CE Collision Mitigation System (January 2023) on wheel loaders works in reverse at 3 to 15 km/h.", "re": "3 ?(to|–|-) ?15 ?km" },
+			{ "claim": "Cat Detect automatic braking on medium wheel loaders (May 2025) works in reverse only.", "re": "Cat Detect|Caterpillar" },
+			{ "claim": "Wabtec Collision Awareness System Level 9 on Komatsu haul trucks; multiple years of field testing.", "re": "Wabtec|Komatsu" },
+			{ "claim": "Epiroc/Mernok: more than ten years of development; evaluation mode without enforcing intervention.", "re": "Epiroc|Mernok" },
+			{ "claim": "None of them publishes how long validation took / no case of validating in under four months.", "re": "not publish|no case|four months|did not publish" }
+		]
+	},
+	{
+		"id": "deceleration-values",
+		"q": "How hard can heavy machines brake compared with cars, and how much does latency matter at work-site speeds?",
+		"must": [
+			{ "claim": "NSW in-service minimum deceleration 0.60 m/s².", "re": "0\\.6" },
+			{ "claim": "US MSHA table about 2.94 m/s².", "re": "2\\.94" },
+			{ "claim": "Car AEB braking demand at least 5.0 m/s² under UN R152.", "re": "5(\\.0)? ?m/s" },
+			{ "claim": "At 5 to 15 km/h the delay term can be half or more of the stopping distance.", "re": "half|latenc" },
+			{ "claim": "Published brake-response latencies range 0.3 to 2.5 s.", "re": "0\\.3|2\\.5 ?s" }
+		]
+	},
+	{
+		"id": "mosh-spec",
+		"q": "What concrete numeric acceptance values exist for mining collision intervention systems?",
+		"must": [
+			{ "claim": "MOSH surface specification: 200 m minimum detection range.", "re": "200 ?m" },
+			{ "claim": "2.5 to 3.0 s warning before intervention.", "re": "2\\.5 ?(to|–|-) ?3(\\.0)? ?s" },
+			{ "claim": "Fail-to-safe within 500 ms.", "re": "500 ?ms" },
+			{ "claim": "Pretoria/MOSH verification first-pass rates 62% detection devices, 42% machine-side systems (18-week lead time).", "re": "62 ?%|18.week" },
+			{ "claim": "ISO 16001:2017 sets a 300 ms maximum detection time (warning systems, not braking).", "re": "300 ?ms" }
+		]
+	},
+	{
+		"id": "neural-reconstruction",
+		"q": "Can we turn our machines' camera and lidar recordings into virtual test sites, and where does that break down?",
+		"must": [
+			{ "claim": "Recordings with accurate poses support replay and near-path novel-view simulation.", "re": "replay|near.path" },
+			{ "claim": "Neural reconstruction degrades sharply once the viewpoint moves 1 to 4 m from the recorded path; height changes worse.", "re": "1 ?(to|–|-) ?4 ?m" },
+			{ "claim": "Radar and ultrasonic cannot be recovered from camera logs; re-simulating an unrecorded sensor type has no validated evidence.", "re": "radar|ultrasonic" },
+			{ "claim": "Pose quality is a usual point of failure / reconstruction is not braking-validation-ready.", "re": "pose|not .*ready|validation.ready" }
+		]
+	},
+	{
+		"id": "sensor-sim-dust",
+		"q": "How credible is sensor simulation in dust, snow and fog for off-road machines?",
+		"must": [
+			{ "claim": "Lidar in rain and fog is the best-validated case.", "re": "lidar" },
+			{ "claim": "Dust is the biggest off-road gap; no validated radar or camera dust model with an error metric was found.", "re": "dust" },
+			{ "claim": "Radar realism depends on material properties at 77 GHz that usually must be measured.", "re": "77 ?GHz|material" },
+			{ "claim": "There is no accepted realism score; peer-reviewed sim-to-real studies show a measurable domain gap especially in adverse weather.", "re": "gap|realism score|no accepted" }
+		]
+	},
+	{
+		"id": "skeptic-top3",
+		"q": "What are the strongest objections a skeptical reviewer would raise against our virtual validation plan?",
+		"must": [
+			{ "claim": "The simulator has not earned the right to replace physical evidence.", "re": "earned|replace physical" },
+			{ "claim": "The acceptance target ('match the old system') is wrong because braking is a new safety-control function.", "re": "new safety|acceptance target|match the old" },
+			{ "claim": "Sensor models are least credible exactly where the risk is.", "re": "least credible|sensor model" },
+			{ "claim": "Other objections: missing winter in the calendar, nuisance stops, regulatory route/liability, scenario count mistaken for coverage.", "re": "winter|nuisance|liabil|coverage" }
+		]
+	},
+	{
+		"id": "open-loop-limit",
+		"q": "Can we validate the new braking system just by replaying logs recorded with the existing warning system?",
+		"must": [
+			{ "claim": "Open-loop replay breaks at the first brake command the old run did not contain; the recorded future no longer applies.", "re": "brake command|closed.loop|open.loop" },
+			{ "claim": "Braking consequences must be tested in closed-loop simulation, HIL and on a proving ground.", "re": "closed.loop|HIL|proving" },
+			{ "claim": "Recording must start now (October 2026) including through winter because the window has no northern cold season.", "re": "winter" },
+			{ "claim": "Ground truth must be independent of the system under test.", "re": "ground truth" }
+		]
+	},
+	{
+		"id": "south-africa",
+		"q": "Is automatic braking legally required anywhere for mining machines?",
+		"must": [
+			{ "claim": "South Africa legally requires automatic slow-down and braking (Level 9) since 21 December 2022.", "re": "21 Dec(ember)? 2022" },
+			{ "claim": "South Africa's regulation sets no detection percentage, false-alarm limit or stopping test.", "re": "no detection|false.alarm|stopping test" },
+			{ "claim": "The United States requires warnings and risk programs, not automatic braking.", "re": "United States|US|MSHA" }
+		]
+	},
+	{
+		"id": "functional-safety",
+		"q": "Which functional safety standard applies to a brake-commanding function on earth-moving machinery, and why isn't 'matching the old system' enough?",
+		"must": [
+			{ "claim": "ISO 19014 (not ISO 26262) applies; the series was reissued in October 2026.", "re": "19014" },
+			{ "claim": "Adding a brake command moves the system into ISO 19014-2 scope, which excludes awareness systems that do not affect motion.", "re": "19014-2|awareness" },
+			{ "claim": "Two safety functions: failure to intervene, and unsafe or unnecessary intervention.", "re": "unnecessary|failure to intervene" },
+			{ "claim": "Unnecessary braking is the dominant documented failure mode on the road (NHTSA investigations).", "re": "NHTSA|unnecessary brak|phantom" }
+		]
+	},
+	{
+		"id": "timeline-presentation",
+		"q": "How should we estimate and present the schedule for this programme to executives?",
+		"must": [
+			{ "claim": "Present timelines as P50 and P80 dates with the probability of meeting the deadline, not single dates.", "re": "P50|P80" },
+			{ "claim": "Pre-committed stop and descope criteria (escalation of commitment).", "re": "stop|descope|escalation" },
+			{ "claim": "Immature technology at commitment is the most consistently documented cause of schedule failure.", "re": "immature" },
+			{ "claim": "A trust-earning pilot: a deliberately difficult thin vertical slice predicted blind against pre-registered criteria.", "re": "thin|vertical slice|pilot|blind" }
+		]
+	},
+	{
+		"id": "pegasus",
+		"q": "How long did it take others to build a credible scenario-based virtual validation capability?",
+		"must": [
+			{ "claim": "PEGASUS took 42 months and 17 partners for one highway function.", "re": "42 months|17 partners" },
+			{ "claim": "No case of a new automatic braking function going from first hardware to accepted validation in about four months.", "re": "four months|no case" },
+			{ "claim": "Deere 'three plus years' of data collection / Epiroc 'more than ten years' / years in every documented case.", "re": "year" }
+		]
+	},
+	{
+		"id": "accidents-forward",
+		"q": "What do accident records say about how haul trucks and loaders kill people?",
+		"must": [
+			{ "claim": "In 12 of 13 US haul-truck collision deaths (2005–2021) the truck was moving forward.", "re": "12 of 13" },
+			{ "claim": "Large haul trucks kill mostly while moving forward, often just after starting off; smaller trucks and loaders back over people.", "re": "start|back(ing)? over|reverse" },
+			{ "claim": "Most haul-truck deaths are berm and dump-point events, not object collisions.", "re": "berm|dump" },
+			{ "claim": "Front-end loaders were involved in 33% of 22 blind-area deaths (US surface mines 2000–mid-2006).", "re": "33 ?%|blind" }
+		]
+	},
+	{
+		"id": "simulation-trust",
+		"q": "What would make simulation results acceptable as safety evidence, and how much physical testing must remain?",
+		"must": [
+			{ "claim": "Credibility frameworks agree: defined context of use, effort scaled to risk, verification, validation against physical data, quantified uncertainty, independent review, documented validity envelope.", "re": "context of use|envelope|uncertainty" },
+			{ "claim": "None prescribes a universal physical-test percentage or tolerance.", "re": "percentage|universal" },
+			{ "claim": "No off-road document accepts simulation as compliance evidence; Euro NCAP 2026 virtual testing requires qualification against physical tests and spot checks.", "re": "Euro NCAP|no off.road" },
+			{ "claim": "Columbia debris model as a lesson about extrapolation outside the validated domain.", "re": "Columbia|extrapolat" }
+		]
+	},
+	{
+		"id": "tools-hybrid",
+		"q": "Should we buy a commercial simulation tool chain or build on open source?",
+		"must": [
+			{ "claim": "No single tool has public evidence of validating automatic braking for earth-moving machines across many sites and all-weather sensing.", "re": "no single|no tool" },
+			{ "claim": "Open source is viable for a low-license-cost core but is not the lowest total cost.", "re": "open.source" },
+			{ "claim": "Public prices are almost entirely absent; compute is cheap relative to engineering labour.", "re": "price|labou?r|compute" },
+			{ "claim": "Most defensible: hybrid — own scenario catalog, ODD and correlation data; license physics; partner for first correlated sensor model.", "re": "hybrid|partner" }
+		]
+	},
+	{
+		"id": "brake-trigger",
+		"q": "How should the moment of automatic braking be decided — is a time-to-collision threshold good enough?",
+		"must": [
+			{ "claim": "A fixed time-to-collision threshold is a weak primary trigger at work-site speeds.", "re": "time.to.collision|TTC" },
+			{ "claim": "Prefer a stopping-distance and risk-zone formulation (ISO 21815-3 structure) with TTC as one input.", "re": "stopping.distance|risk.zone|21815-3" },
+			{ "claim": "Intervention ladder: warn, advise, slow, stop, inhibit motion from standstill.", "re": "inhibit|ladder|slow" },
+			{ "claim": "No off-road case compares simulation-tuned thresholds with field results — the main technical risk.", "re": "no .*off.road|field results|main technical risk" }
+		]
+	},
+	{
+		"id": "not-found-list",
+		"q": "What important things could the research not find that we will have to establish ourselves?",
+		"must": [
+			{ "claim": "Operator reaction times to proximity warnings and the false-alarm rate they accept.", "re": "reaction" },
+			{ "claim": "A validated radar or camera dust model with a reported error metric.", "re": "dust" },
+			{ "claim": "Any off-road regulator or notified body committing to accept virtual evidence.", "re": "regulator|notified" },
+			{ "claim": "Modern brake-delay distributions for production wheel loaders, haulers and haul trucks.", "re": "brake.delay|brake delay" },
+			{ "claim": "Any method or standard setting the number of virtual environments needed.", "re": "number of (virtual )?environments|how many environments|virtual environments" }
+		]
+	},
+	{
+		"id": "comparison-baseline",
+		"q": "How can we compare the old warning system and the new braking system fairly when sensors and mounting differ?",
+		"must": [
+			{ "claim": "Compare only at system-output level in world or risk coordinates, ideally recorded in parallel on the same machine.", "re": "system.output|parallel|world" },
+			{ "claim": "Metrics: warnings/interventions per hazard, missed hazards, false and nuisance alarms per hour, warning TTC vs common ground truth and hazard zone (e.g. ISO 21815-3 risk area).", "re": "per hour|ground truth|21815-3" },
+			{ "claim": "Raw detections and per-sensor statistics are not comparable when modality, mounting or processing changes.", "re": "per.sensor|raw detection|not comparable" }
+		]
+	}
+]

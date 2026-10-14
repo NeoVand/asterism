@@ -1,0 +1,103 @@
+{
+ "key": "e:opendrive",
+ "hash": "4af130f8f60026c9",
+ "synopsis": "OpenDRIVE is part of the booklet’s proposed simulation integration stack, alongside OpenSCENARIO, OSI, FMI, OpenUSD and ROS 2; it also appears among the critical inputs for scene, dynamics and sensor simulation [f913, f8335, f15862]. OpenDRIVE version 1.9.0, dated May 2026, describes road networks, including lanes, lane geometry, road marks and junctions [f13201]. Its road assumptions suit structured haul roads but fit lane-free job sites poorly: dig faces, stockpiles and free terrain need additional representations, and the program needs its own job-site operating-domain taxonomy [f8337, f13202, f9361]. Accordingly, the booklet recommends OpenDRIVE only for structured haul roads, OpenUSD and OpenMATERIAL for scenes, and OpenSCENARIO exports where required; OpenUSD and general 3D asset pipelines are at least as strategically important as OpenDRIVE [f13216, f9363]. Listed implementations include MathWorks, Cadence VTD/VTDx and CARLA, but OpenDRIVE or OpenSCENARIO compatibility demonstrates data exchange rather than physical fidelity [f8383, f8986, f9011, f8921].",
+ "relations": [
+  {
+   "a": "f8335",
+   "b": "f15862",
+   "type": "same",
+   "note": "Both identify the same open standards as simulation tool-chain connectors."
+  },
+  {
+   "a": "f9363",
+   "b": "f13200",
+   "type": "same",
+   "note": "Both rank OpenUSD at least as strategically important as OpenDRIVE."
+  },
+  {
+   "a": "f8337",
+   "b": "f13202",
+   "type": "elaborates",
+   "note": "Glossary specifies suitable haul roads and terrain requiring other representations."
+  },
+  {
+   "a": "f9361",
+   "b": "f13202",
+   "type": "elaborates",
+   "note": "Chapter enumerates job-site features missing from a road-centered representation."
+  },
+  {
+   "a": "f13201",
+   "b": "f8337",
+   "type": "supports",
+   "note": "Lane- and junction-centered scope explains poor fit for sites without lane geometry."
+  },
+  {
+   "a": "f13202",
+   "b": "f13216",
+   "type": "supports",
+   "note": "Road-versus-terrain limitations justify restricting OpenDRIVE to structured haul roads."
+  },
+  {
+   "a": "f9361",
+   "b": "f13216",
+   "type": "supports",
+   "note": "Uncovered job-site features motivate complementary scene representations."
+  },
+  {
+   "a": "f13202",
+   "b": "f9363",
+   "type": "supports",
+   "note": "Non-road terrain requirements explain the strategic importance of general 3D asset pipelines."
+  },
+  {
+   "a": "f13216",
+   "b": "f9363",
+   "type": "elaborates",
+   "note": "Recommendation assigns concrete roles to OpenDRIVE, OpenUSD, OpenMATERIAL and OpenSCENARIO."
+  },
+  {
+   "a": "f8383",
+   "b": "f8961",
+   "type": "same",
+   "note": "Both list MathWorks interfaces, including OpenDRIVE and FMI through partners."
+  },
+  {
+   "a": "f8606",
+   "b": "f9154",
+   "type": "same",
+   "note": "Both list RoadRunner-family support for OpenDRIVE, OpenSCENARIO, USD, FBX and glTF."
+  },
+  {
+   "a": "f8383",
+   "b": "f15862",
+   "type": "supports",
+   "note": "MathWorks interface listings provide a concrete implementation of the open-standard integration approach."
+  },
+  {
+   "a": "f9011",
+   "b": "f15862",
+   "type": "supports",
+   "note": "CARLA's ROS 2, OpenDRIVE and OpenUSD interfaces exemplify the integration standards."
+  },
+  {
+   "a": "f8714",
+   "b": "f8335",
+   "type": "supports",
+   "note": "Independent finding corroborates the environment, scenario and interface subset of integration glue."
+  },
+  {
+   "a": "f9331",
+   "b": "f8335",
+   "type": "supports",
+   "note": "Road-ADAS evidence supports heterogeneous integration, but only within its stated on-road scope."
+  },
+  {
+   "a": "f15862",
+   "b": "f913",
+   "type": "elaborates",
+   "note": "Glossary clarifies the connecting roles of standards named among critical simulation inputs."
+  }
+ ]
+}

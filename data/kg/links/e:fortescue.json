@@ -1,0 +1,79 @@
+{
+ "key": "e:fortescue",
+ "hash": "e87dcba8c403ad9c",
+ "synopsis": "Chapter 2 reports that an autonomous truck reversed into a stationary truck at Fortescue’s Christmas Creek mine in Western Australia on 11 February 2019, placing the incident within a full-autonomy mining precedent [f1372, f1826]. Press reports suggested a possible Wi-Fi coverage dropout, and a broader summary attributed the Fortescue and BHP incidents to communications and traction failures; Fortescue’s chief executive nevertheless denied that the Christmas Creek collision resulted from failure of the autonomous system [f1373, f1532, f1374]. WA DMIRS, now DEMIRS, followed up the Fortescue and BHP collisions, including interim controls [f1378, f1533, f15546]. Despite these accounts, Chapter 13 classifies the Fortescue, Rio Tinto and BHP incidents as unverified research leads to check before the real review, creating a verification gap across chapters [f11205, f11273]. Published requirement documents from Fortescue and seven other named miners were not found, leaving a separate gap in miner-specific acceptance requirements [f2599].",
+ "relations": [
+  {
+   "a": "f11205",
+   "b": "f11273",
+   "type": "same",
+   "note": "Both classify the same miners’ incidents as unverified research leads."
+  },
+  {
+   "a": "f1378",
+   "b": "f1533",
+   "type": "same",
+   "note": "Both report regulator follow-up; f1378 specifies interim controls and locations."
+  },
+  {
+   "a": "f1533",
+   "b": "f15546",
+   "type": "same",
+   "note": "Both report regulator follow-up of Fortescue and BHP collisions in 2019."
+  },
+  {
+   "a": "f1378",
+   "b": "f15546",
+   "type": "same",
+   "note": "Glossary restates follow-up; Chapter 2 specifies incidents and interim controls."
+  },
+  {
+   "a": "f1372",
+   "b": "f11205",
+   "type": "contradicts",
+   "note": "Chapter 2 presents an incident account; Chapter 13 says the lead was unverified."
+  },
+  {
+   "a": "f1532",
+   "b": "f11273",
+   "type": "contradicts",
+   "note": "Asserted failure attribution contrasts with the skeptic’s unverified-lead classification."
+  },
+  {
+   "a": "f1373",
+   "b": "f1372",
+   "type": "elaborates",
+   "note": "Adds a tentative press-reported explanation for the collision."
+  },
+  {
+   "a": "f1373",
+   "b": "f1532",
+   "type": "supports",
+   "note": "Possible Wi-Fi dropout supports communications involvement, but remains uncertain."
+  },
+  {
+   "a": "f1532",
+   "b": "f1374",
+   "type": "contradicts",
+   "note": "Failure attribution tensions with the executive’s denial of autonomous-system failure."
+  },
+  {
+   "a": "f1373",
+   "b": "f1374",
+   "type": "contradicts",
+   "note": "Possible Wi-Fi causation tensions with denial, though system boundaries are unspecified."
+  },
+  {
+   "a": "f1372",
+   "b": "f1378",
+   "type": "depends",
+   "note": "The collision prompted regulatory follow-up on interim controls."
+  },
+  {
+   "a": "f1372",
+   "b": "f1826",
+   "type": "elaborates",
+   "note": "Provides the concrete Fortescue incident included in the full-autonomy mining example."
+  }
+ ]
+}

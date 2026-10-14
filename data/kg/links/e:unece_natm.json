@@ -1,0 +1,49 @@
+{
+ "key": "e:unece natm",
+ "hash": "63d0d0d203ad4582",
+ "synopsis": "UNECE NATM is an automated-driving guideline dated 2022, with a master document dated March 2023 [f8101]. It treats simulation as one pillar alongside track and real-world testing; its five-pillar structure also includes in-service monitoring [f2106, f8105]. Simulation credibility must be demonstrated for the intended scope, with risk scaling and toolchain scrutiny covering assumptions, verification, validation, and data quality [f8102, f8103, f8104]. The corpus identifies this multi-pillar structure as a useful template for off-road automatic braking validation, while emphasizing that NATM itself is on-road only [f8106]. An expert-opinion finding reports agreement among UNECE NATM and other credibility communities that validation is required, but no agreement on the metrics to use [f9357].",
+ "relations": [
+  {
+   "a": "f8105",
+   "b": "f2106",
+   "type": "elaborates",
+   "note": "Adds the five-pillar count and in-service monitoring to the multi-method testing framework."
+  },
+  {
+   "a": "f2106",
+   "b": "f8106",
+   "type": "supports",
+   "note": "Combining simulation with physical testing supports its value as an off-road validation template."
+  },
+  {
+   "a": "f8105",
+   "b": "f8106",
+   "type": "supports",
+   "note": "The five-pillar testing structure underpins the proposed off-road template."
+  },
+  {
+   "a": "f8103",
+   "b": "f8104",
+   "type": "elaborates",
+   "note": "Identifies the toolchain credibility dimensions relevant to demonstrating credibility for the intended scope."
+  },
+  {
+   "a": "f8102",
+   "b": "f8104",
+   "type": "elaborates",
+   "note": "Adds risk scaling to the requirement for scope-specific simulation credibility."
+  },
+  {
+   "a": "f9357",
+   "b": "f8103",
+   "type": "elaborates",
+   "note": "Qualifies the validation framework: communities agree validation is needed, but metrics remain unsettled."
+  },
+  {
+   "a": "f8104",
+   "b": "f8106",
+   "type": "depends",
+   "note": "Off-road use as a template requires credibility demonstrated for that intended scope."
+  }
+ ]
+}

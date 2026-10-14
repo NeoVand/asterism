@@ -1,0 +1,31 @@
+{
+ "key": "e:ni",
+ "hash": "4b6f6d144ac7836f",
+ "synopsis": "NI is identified as a supplier of real-time computing hardware alongside dSPACE and Speedgoat [f16180]. The middle-cost example chain offers Speedgoat or NI for later hardware-in-the-loop testing, combined with an externally validated sensor model packaged as an OSI-compatible FMU and cloud GPUs for batch runs [f9288, f16163]. The highest-cost example chain includes dSPACE or NI HIL benches alongside heavy-machine dynamics, specialist sensor simulation and cloud execution [f9306, f16167]. NI's HIL deployment cases report large productivity gains, but these vendor case studies are not controlled cross-vendor measurements and therefore do not establish comparative superiority [f8736].",
+ "relations": [
+  {
+   "a": "f9288",
+   "b": "f16163",
+   "type": "same",
+   "note": "Both identify Speedgoat or NI for later HIL testing in the middle-cost chain."
+  },
+  {
+   "a": "f9306",
+   "b": "f16167",
+   "type": "same",
+   "note": "Both identify dSPACE or NI HIL benches in the highest-cost chain."
+  },
+  {
+   "a": "f16180",
+   "b": "f9288",
+   "type": "supports",
+   "note": "NI's real-time hardware classification supports its proposed role in later HIL testing."
+  },
+  {
+   "a": "f16180",
+   "b": "f9306",
+   "type": "supports",
+   "note": "Real-time hardware classification supports dSPACE and NI's proposed HIL bench role."
+  }
+ ]
+}

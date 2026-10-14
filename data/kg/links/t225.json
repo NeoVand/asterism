@@ -1,0 +1,115 @@
+{
+ "key": "t225",
+ "hash": "8af1caf9ff9c8ba9",
+ "synopsis": "The introduction, Chapter 9 and glossary consistently frame collision-mitigation tuning as constrained multi-objective optimization: impose hard safety limits first, then optimize nuisance warnings, unnecessary braking and productivity while keeping the Pareto frontier visible [f136, f6671, f14395]. Hard limits cover stopping margin, miss probability, intervention latency and hazardous-scenario coverage; zero misses in critical scenarios is an example, not a universal numerical requirement [f6961, f6962, f14393]. Safety and productivity criteria must be set jointly: detection-only optimization can repeatedly stop production, while a “no false brakes” target pushes toward late or missed braking; pricing these competing outcomes is a documented safety-policy decision, with weight sensitivity analysis required if weighted costs are used [f12171, f7461, f6985, f14846]. Robust optimization should protect the worst stratum or a high percentile, and final settings should favor stable regions and be confirmed independently to limit over-fitting [f6988, f14400, f14403]. Evolutionary and Bayesian multi-objective methods suit expensive evaluations but weaken beyond about 20 parameters or with discontinuous responses; a 2021 on-road example reported up to fivefold speed-up, while no off-road evidence was identified for constraint-based tuning or desirability aggregation [f6674, f6839, f7316, f7311].",
+ "relations": [
+  {
+   "a": "f136",
+   "b": "f6671",
+   "type": "same",
+   "note": "Both make missed or late interventions constraints and optimize nuisance and productivity outcomes."
+  },
+  {
+   "a": "f6672",
+   "b": "f14412",
+   "type": "same",
+   "note": "Both preserve the Pareto front instead of hiding trade-offs in weighted scores."
+  },
+  {
+   "a": "f6985",
+   "b": "f11770",
+   "type": "same",
+   "note": "Pricing misses against nuisance braking is a documented safety-policy decision."
+  },
+  {
+   "a": "f6957",
+   "b": "f13922",
+   "type": "same",
+   "note": "Both list thresholds, zones, confirmation filters, timing parameters and filter constants as decision variables."
+  },
+  {
+   "a": "f6957",
+   "b": "f14391",
+   "type": "same",
+   "note": "Glossary restates the Chapter 9 tuning decision variables."
+  },
+  {
+   "a": "f6958",
+   "b": "f13923",
+   "type": "same",
+   "note": "Both enumerate misses, nuisance rates, intervention timing and time stopped as outcomes."
+  },
+  {
+   "a": "f6958",
+   "b": "f14392",
+   "type": "same",
+   "note": "Glossary restates Chapter 9 outcome measures, including productivity loss as time stopped."
+  },
+  {
+   "a": "f6961",
+   "b": "f14393",
+   "type": "same",
+   "note": "Both specify stopping margin, miss probability, latency and hazardous-scenario coverage constraints."
+  },
+  {
+   "a": "f6963",
+   "b": "f14394",
+   "type": "same",
+   "note": "Both optimize nuisance, comfort and productivity only after satisfying hard safety constraints."
+  },
+  {
+   "a": "f6964",
+   "b": "f14395",
+   "type": "same",
+   "note": "Both require a visible Pareto frontier for engineering and safety authorities."
+  },
+  {
+   "a": "f6986",
+   "b": "f14397",
+   "type": "same",
+   "note": "Both require sensitivity analysis when using weighted objectives."
+  },
+  {
+   "a": "f6987",
+   "b": "f14398",
+   "type": "same",
+   "note": "Both find bounded-miss constraint formulations easier to defend than weighted costs."
+  },
+  {
+   "a": "f6988",
+   "b": "f14399",
+   "type": "same",
+   "note": "Both protect weak strata through worst-case or high-percentile optimization rather than averages."
+  },
+  {
+   "a": "f7462",
+   "b": "f14386",
+   "type": "same",
+   "note": "Both recommend joint safety and productivity acceptance criteria."
+  },
+  {
+   "a": "f7314",
+   "b": "f14398",
+   "type": "depends",
+   "note": "Defensible bounded-miss tuning requires a reliable miss estimate inside the tuning loop."
+  },
+  {
+   "a": "f7461",
+   "b": "f12171",
+   "type": "supports",
+   "note": "Repeated production stops explain why detection-only targets require joint acceptance criteria."
+  },
+  {
+   "a": "f6969",
+   "b": "f14846",
+   "type": "supports",
+   "note": "Subjective weights change the apparent optimum, motivating mandatory weight sensitivity analysis."
+  },
+  {
+   "a": "f7316",
+   "b": "f14398",
+   "type": "contradicts",
+   "note": "The recommended defensibility framing lacks identified off-road evidence, limiting its empirical backing."
+  }
+ ]
+}

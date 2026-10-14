@@ -1,0 +1,97 @@
+{
+ "key": "e:matlab",
+ "hash": "856186421dde5a60",
+ "synopsis": "The corpus positions MATLAB/Simulink with the Offroad Autonomy Library and RoadRunner as a complete or near-complete commercial simulation platform, licensed annually or perpetually per product [f8346, f8373, f15877]. Shipped R2026b examples cover an autonomous excavator, a backhoe loading a truck and an open-pit haul truck; Volvo CE also built a human-in-the-loop excavator simulator on the MathWorks platform [f15878, f15879]. An expert-proposed middle-cost chain combines MATLAB/Simulink, RoadRunner, Unreal and sensor toolboxes with Mevea or AGX Dynamics through FMI for terrain, hydraulics and machine variants [f16162]. Integration evidence includes MAVS in February 2024 and MATLAB APIs for Prescan; RoadRunner Scenario and replay workflows also list MATLAB interfaces, although RoadRunner itself does not require MATLAB or Simulink [f4163, f8458, f9195, f9252, f8385]. Public platform pricing is quote-only: an unofficial January 2024 list gives MATLAB prices of 980 annually or 3,920 perpetually, presumed US dollars and indicative only, rather than a confirmed platform budget [f15880, f8387, f16142].",
+ "relations": [
+  {
+   "a": "f8373",
+   "b": "f15877",
+   "type": "elaborates",
+   "note": "Glossary adds annual or perpetual per-product licensing to commercial status."
+  },
+  {
+   "a": "f8387",
+   "b": "f16142",
+   "type": "same",
+   "note": "Both report identical unofficial January 2024 MATLAB prices and caveats."
+  },
+  {
+   "a": "f8458",
+   "b": "f9005",
+   "type": "same",
+   "note": "Both list Prescan's OpenSCENARIO, Python and MATLAB interfaces."
+  },
+  {
+   "a": "f9005",
+   "b": "f9067",
+   "type": "elaborates",
+   "note": "Sensor-model listing specifies the scope of the same Prescan interfaces."
+  },
+  {
+   "a": "f8458",
+   "b": "f16237",
+   "type": "same",
+   "note": "Both identify Prescan's Python and MATLAB APIs."
+  },
+  {
+   "a": "f9005",
+   "b": "f16237",
+   "type": "same",
+   "note": "Both identify Prescan's Python and MATLAB APIs."
+  },
+  {
+   "a": "f8346",
+   "b": "f15878",
+   "type": "supports",
+   "note": "Shipped off-road machine examples substantiate the platform's simulation capabilities."
+  },
+  {
+   "a": "f8346",
+   "b": "f15879",
+   "type": "supports",
+   "note": "Volvo CE's excavator simulator provides a concrete platform application."
+  },
+  {
+   "a": "f8346",
+   "b": "f16162",
+   "type": "elaborates",
+   "note": "Middle-cost chain details components and external physics coupling."
+  },
+  {
+   "a": "f15878",
+   "b": "f16239",
+   "type": "elaborates",
+   "note": "Release cadence identifies R2026b as the second 2026 release."
+  },
+  {
+   "a": "f15880",
+   "b": "f8387",
+   "type": "elaborates",
+   "note": "Indicative historical prices supplement, but do not replace, quote-only public pricing."
+  },
+  {
+   "a": "f15880",
+   "b": "f16142",
+   "type": "elaborates",
+   "note": "Provides figures and caveats for the unofficial price list."
+  },
+  {
+   "a": "f8385",
+   "b": "f9252",
+   "type": "elaborates",
+   "note": "A listed MATLAB interface does not imply MATLAB is required."
+  },
+  {
+   "a": "f8385",
+   "b": "f9195",
+   "type": "elaborates",
+   "note": "RoadRunner Scenario's MATLAB interface complements RoadRunner's standalone availability."
+  },
+  {
+   "a": "f16237",
+   "b": "f9195",
+   "type": "elaborates",
+   "note": "Scenario-specific listing adds OpenSCENARIO and MATLAB alongside gRPC."
+  }
+ ]
+}

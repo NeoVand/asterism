@@ -1,0 +1,55 @@
+{
+ "key": "e:roadrunner scenario",
+ "hash": "501f617d1e2a9007",
+ "synopsis": "RoadRunner Scenario is identified as a commercial scenario-generation and test-management tool, described as adaptable for off-road use; the latest release found was R2026b [f8361, f9193, f9194, f9197, f16023]. The RoadRunner family, including Scenario, builds and edits 3D environments, imports GIS, HD maps and point clouds, reconstructs recorded scenes, and parameterizes scenarios [f8605]. The family supports exports to CARLA, dSPACE ASM and IPG CarMaker using formats including OpenDRIVE and OpenSCENARIO, while RoadRunner Scenario specifically supports OpenSCENARIO, MATLAB and gRPC interfaces [f8606, f9195]. Both the tools chapter and glossary place it in a middle-cost MATLAB/Simulink stack with off-road, Unreal and sensor components; the glossary adds Mevea or AGX Dynamics coupled through FMI for terrain, hydraulics and machine variants [f9285, f16162]. Pricing is available by quote, whereas an unofficial January 2024 price-list copy gives indicative annual/perpetual figures of 3,400/13,600 in presumed US dollars, rather than a confirmed current price [f9196, f8390, f16145].",
+ "relations": [
+  {
+   "a": "f8390",
+   "b": "f16145",
+   "type": "same",
+   "note": "Both repeat the same unofficial January 2024 prices and caveats."
+  },
+  {
+   "a": "f16162",
+   "b": "f9285",
+   "type": "elaborates",
+   "note": "Glossary extends the shared middle-cost stack with FMI-coupled terrain, hydraulics and machine simulation."
+  },
+  {
+   "a": "f16023",
+   "b": "f8361",
+   "type": "same",
+   "note": "Both identify RoadRunner Scenario as a scenario tool, alongside different examples."
+  },
+  {
+   "a": "f8605",
+   "b": "f9194",
+   "type": "supports",
+   "note": "GIS, point-cloud and recorded-scene workflows support the stated off-road adaptability."
+  },
+  {
+   "a": "f9195",
+   "b": "f8606",
+   "type": "elaborates",
+   "note": "Adds Scenario-specific MATLAB and gRPC interfaces to the family's export capabilities."
+  },
+  {
+   "a": "f9196",
+   "b": "f16145",
+   "type": "elaborates",
+   "note": "Quote-based pricing qualifies how planners should use the historical indicative figures."
+  },
+  {
+   "a": "f8605",
+   "b": "f8361",
+   "type": "elaborates",
+   "note": "Details scene construction and parameterization behind the scenario-generation listing."
+  },
+  {
+   "a": "f9195",
+   "b": "f16162",
+   "type": "supports",
+   "note": "MATLAB interface supports RoadRunner Scenario's inclusion in the MATLAB-based middle-cost chain."
+  }
+ ]
+}

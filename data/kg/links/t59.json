@@ -1,0 +1,115 @@
+{
+ "key": "t59",
+ "hash": "13af374c254a9884",
+ "synopsis": "Redundancy earns safety credit only when a single cause cannot disable both channels; shared power, software bugs, environmental stresses, assumptions or calibration errors can defeat apparent independence [f12112, f12113, f12114]. Achieved Performance Level depends partly on common-cause protection, and ISO 13849 scores defenses including separation, diverse technologies and environmental protection; the glossary identifies diversity as the strongest defense discussed [f12025, f12115, f12116]. Sensor fusion therefore requires evidence addressing correlated degradation and disagreement between modalities, including physical evidence for environmental contrast, contamination and calibration [f505, f506, f12117]. Across planning and skeptical review, the booklet warns that shared assumptions in the product, virtual sensors, collision logic and test oracle can yield consistent but misleading results; independent real-world referents and validation sources that do not share simulator assumptions are the proposed defenses [f10344, f10606, f11245, f11247, f12123]. This virtual-testing risk is an inference from standard verification and validation practice: no documented off-road collision-system case producing misleading virtual results, or off-road accident attributed to a product–test-environment common-mode error, was found [f10607, f11246].",
+ "relations": [
+  {
+   "a": "f505",
+   "b": "f12117",
+   "type": "same",
+   "note": "Both require fusion safety arguments to address common-cause degradation and modality disagreement."
+  },
+  {
+   "a": "f505",
+   "b": "f12712",
+   "type": "same",
+   "note": "Both frame added sensing as a fusion-validation problem requiring common-cause coverage."
+  },
+  {
+   "a": "f12117",
+   "b": "f12712",
+   "type": "same",
+   "note": "Restate fusion requirements with different environmental examples."
+  },
+  {
+   "a": "f10606",
+   "b": "f12118",
+   "type": "same",
+   "note": "Shared simplifying assumptions can make large virtual campaigns consistently misleading."
+  },
+  {
+   "a": "f10606",
+   "b": "f14953",
+   "type": "same",
+   "note": "Repeat the common-mode risk across virtual sensing, collision logic and oracle."
+  },
+  {
+   "a": "f12118",
+   "b": "f14953",
+   "type": "same",
+   "note": "Duplicate warnings about shared assumptions producing misleading virtual results."
+  },
+  {
+   "a": "f11245",
+   "b": "f12119",
+   "type": "same",
+   "note": "Shared product and test-environment models reproduce the same error twice."
+  },
+  {
+   "a": "f11247",
+   "b": "f12120",
+   "type": "same",
+   "note": "Both recommend independent real referents against shared-assumption errors."
+  },
+  {
+   "a": "f10344",
+   "b": "f10606",
+   "type": "elaborates",
+   "note": "Identifies the oracle's shared assumption as a hidden single point of failure."
+  },
+  {
+   "a": "f10607",
+   "b": "f10606",
+   "type": "elaborates",
+   "note": "Qualifies the warning as inference rather than a documented off-road collision-system case."
+  },
+  {
+   "a": "f11246",
+   "b": "f10607",
+   "type": "elaborates",
+   "note": "Adds that no attributed off-road accident was found either."
+  },
+  {
+   "a": "f11245",
+   "b": "f11247",
+   "type": "supports",
+   "note": "Duplicated modeling errors explain the need for independent real referents."
+  },
+  {
+   "a": "f12123",
+   "b": "f11247",
+   "type": "elaborates",
+   "note": "Specifies that simulator validation sources must not share simulator assumptions."
+  },
+  {
+   "a": "f506",
+   "b": "f505",
+   "type": "elaborates",
+   "note": "Specifies physical evidence needed to validate correlated sensor degradation."
+  },
+  {
+   "a": "f12114",
+   "b": "f506",
+   "type": "elaborates",
+   "note": "Names environmental stress and calibration errors as concrete shared failure causes."
+  },
+  {
+   "a": "f12116",
+   "b": "f12122",
+   "type": "supports",
+   "note": "Different sensing physics explains why radar can constrain machine-learning claims only with distinct failures."
+  },
+  {
+   "a": "f12111",
+   "b": "f12110",
+   "type": "elaborates",
+   "note": "Fault trees can expose shared components that invalidate assumed channel independence."
+  },
+  {
+   "a": "f12115",
+   "b": "f12025",
+   "type": "elaborates",
+   "note": "Provides the checklist approach for assessing common-cause defenses relevant to achieved Performance Level."
+  }
+ ]
+}

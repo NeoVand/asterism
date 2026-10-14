@@ -1,0 +1,67 @@
+{
+ "key": "e:mcnemars test",
+ "hash": "8a164f1ee95d08f3",
+ "synopsis": "The booklet uses McNemar's test to compare the old and new warning systems using paired hazard-level hit-or-miss results [f14232, f5481]. Chapter 7 and the glossary require parallel recording on the same machine so both systems encounter the same hazards; separate deployments confound site, operator and weather [f5481, f14233, f14236, f14356]. Only discordant pairs inform the test: hazards caught by both systems or missed by both do not contribute to the comparison [f14234]. The illustrative comparison has 12 hazards caught only by the new system versus 3 caught only by the old, testing whether this imbalance exceeds chance; the supplied facts do not report a test result or significance conclusion [f14235].",
+ "relations": [
+  {
+   "a": "f5481",
+   "b": "f14356",
+   "type": "same",
+   "note": "Both identify same-machine parallel recording as the valid setting for paired testing."
+  },
+  {
+   "a": "f5481",
+   "b": "f14236",
+   "type": "same",
+   "note": "Both require exposure to the same hazards for a valid paired comparison."
+  },
+  {
+   "a": "f14236",
+   "b": "f14356",
+   "type": "same",
+   "note": "Both restrict valid paired testing to shared-event exposure."
+  },
+  {
+   "a": "f14233",
+   "b": "f5481",
+   "type": "elaborates",
+   "note": "Specifies how parallel recording produces hazard-level old-system and new-system hit-or-miss pairs."
+  },
+  {
+   "a": "f14236",
+   "b": "f5481",
+   "type": "supports",
+   "note": "Confounding in separate deployments explains the shared-event validity requirement."
+  },
+  {
+   "a": "f5481",
+   "b": "f14232",
+   "type": "depends",
+   "note": "Valid use of the comparison requires both systems to record the same hazards simultaneously."
+  },
+  {
+   "a": "f14234",
+   "b": "f5481",
+   "type": "elaborates",
+   "note": "Clarifies that only discordant hazard-level pairs inform McNemar's test."
+  },
+  {
+   "a": "f14235",
+   "b": "f5481",
+   "type": "elaborates",
+   "note": "Provides a numerical example of the paired warning-system comparison."
+  },
+  {
+   "a": "f14235",
+   "b": "f14234",
+   "type": "elaborates",
+   "note": "Illustrates discordant pairs with 12 new-only catches and 3 old-only catches."
+  },
+  {
+   "a": "f14234",
+   "b": "f14233",
+   "type": "elaborates",
+   "note": "Distinguishes the recorded pairs that inform the test from concordant pairs."
+  }
+ ]
+}

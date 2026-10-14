@@ -1,0 +1,67 @@
+{
+ "key": "e:sandia predictive capability maturity model",
+ "hash": "745b82a7ac49daf7",
+ "synopsis": "Chapter 10 identifies Sandia’s Predictive Capability Maturity Model (PCMM; Oberkampf et al., 2007) as a literature-cited decision model for verification, validation and uncertainty quantification maturity, but says it was not separately verified [f7721, f7722]. Chapter 12 compares PCMM with NASA 7009B, ASME V&V 40 and UNECE NATM, dating their origins to 2007, 2024, 2018 and 2022–2024 respectively [f10025]. For the collision-mitigation virtual-testing toolchain, the planning recommendation is to replace TRLs with a credibility maturity scale, specifically NASA-STD-7009B or Sandia PCMM (SAND2007-5948) [f9536, f10031]. The stated rationale is that these frameworks assess simulation maturity, fit high uncertainty with a fixed deadline, and respond to blind-prediction gaps [f10026, f10027, f10028]. The assessment favors documented practice, while acknowledging that the frameworks are “largely declarative”; this and PCMM’s lack of separate verification qualify the recommendation [f10030, f10029, f7722].",
+ "relations": [
+  {
+   "a": "f7721",
+   "b": "f9536",
+   "type": "supports",
+   "note": "PCMM’s VVUQ maturity role supports its proposed use as a credibility scale."
+  },
+  {
+   "a": "f7722",
+   "b": "f9536",
+   "type": "contradicts",
+   "note": "Recommended adoption is qualified by the absence of separate verification."
+  },
+  {
+   "a": "f7721",
+   "b": "f10026",
+   "type": "elaborates",
+   "note": "PCMM specifies VVUQ maturity within the broader simulation-maturity remit."
+  },
+  {
+   "a": "f10025",
+   "b": "f7721",
+   "type": "elaborates",
+   "note": "The comparison places the 2007 Sandia model alongside three other credibility frameworks."
+  },
+  {
+   "a": "f9536",
+   "b": "f10031",
+   "type": "elaborates",
+   "note": "Names NASA-STD-7009B and Sandia PCMM as alternatives to TRLs."
+  },
+  {
+   "a": "f10026",
+   "b": "f10031",
+   "type": "supports",
+   "note": "Assessing simulation maturity supports replacing TRLs for the validation toolchain."
+  },
+  {
+   "a": "f10027",
+   "b": "f10031",
+   "type": "supports",
+   "note": "Fit under high uncertainty and fixed deadlines supports the framework recommendation."
+  },
+  {
+   "a": "f10028",
+   "b": "f10031",
+   "type": "supports",
+   "note": "Blind-prediction gaps provide a reason to adopt credibility frameworks."
+  },
+  {
+   "a": "f10029",
+   "b": "f10031",
+   "type": "contradicts",
+   "note": "The largely declarative limitation qualifies the recommendation to replace TRLs."
+  },
+  {
+   "a": "f10030",
+   "b": "f10031",
+   "type": "elaborates",
+   "note": "The verdict frames recommended framework use as documented practice."
+  }
+ ]
+}

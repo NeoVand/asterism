@@ -1,0 +1,115 @@
+{
+ "key": "t214",
+ "hash": "94ae9d891793978e",
+ "synopsis": "The overall field rate is calculated as Σ w_i p_i: each stratum’s measured detection or false-alarm rate is multiplied by its share of real exposure, and uncertainty in those shares must accompany the result [f6916, f14253, f14254]. The booklet prefers stratified sampling that adequately covers critical conditions and then restores operational weights; DOE and uniform parameter-space coverage do not establish field probabilities without those weights [f6829, f14127, f6807, f6815]. Importance sampling likewise requires a sufficiently known field distribution, including dependencies such as dust occurring with dry, windy, high-traffic conditions [f642, f7264, f6771]. Off-road exposure distributions were not found publicly, so the booklet recommends starting fleet logging and classifying years of existing warning-system records now; it identifies telematics, warning logs and site studies as acquisition routes, although another glossary statement calls the warning baseline the program’s only exposure source [f6918, f14133, f7366, f6919, f14350]. Weighting does not remove the need to substantiate individual population claims: the example requires 299 zero-miss trials for one defined population, or about 6,000 for separate 1 percent miss-rate claims across 20 critical strata unless justified pooling is used [f14212, f14213].",
+ "relations": [
+  {
+   "a": "f6916",
+   "b": "f14253",
+   "type": "same",
+   "note": "Both define the overall field rate as the exposure-weighted sum of stratum rates."
+  },
+  {
+   "a": "f6917",
+   "b": "f14254",
+   "type": "same",
+   "note": "Both require reporting uncertainty in exposure weights alongside the overall rate."
+  },
+  {
+   "a": "f6829",
+   "b": "f14127",
+   "type": "same",
+   "note": "Both prefer adequate stratum sampling followed by weighting to operational prevalence."
+  },
+  {
+   "a": "f6807",
+   "b": "f14107",
+   "type": "same",
+   "note": "DOE points lack operational-frequency weights and therefore cannot establish field failure probability."
+  },
+  {
+   "a": "f6815",
+   "b": "f14140",
+   "type": "same",
+   "note": "Uniform parameter coverage is not representative of actual quarry operations."
+  },
+  {
+   "a": "f6771",
+   "b": "f13288",
+   "type": "same",
+   "note": "Ignoring dust dependencies misweights operational results."
+  },
+  {
+   "a": "f6771",
+   "b": "f14084",
+   "type": "same",
+   "note": "Both warn that ignoring correlated dust conditions misweights strata."
+  },
+  {
+   "a": "f6918",
+   "b": "f14255",
+   "type": "same",
+   "note": "Both report that public off-road exposure data were not found."
+  },
+  {
+   "a": "f7422",
+   "b": "f14132",
+   "type": "same",
+   "note": "The operational distribution needed for release weighting is unavailable publicly."
+  },
+  {
+   "a": "f6919",
+   "b": "f14256",
+   "type": "same",
+   "note": "Both identify telematics, warning logs and site studies as exposure-data acquisition routes."
+  },
+  {
+   "a": "f7423",
+   "b": "f14258",
+   "type": "same",
+   "note": "Missing exposure weights leave aggregate real-world detection claims uncertain."
+  },
+  {
+   "a": "f7424",
+   "b": "f11897",
+   "type": "same",
+   "note": "Both urge starting exposure-distribution estimation from the warning fleet now."
+  },
+  {
+   "a": "f7366",
+   "b": "f14257",
+   "type": "same",
+   "note": "Both recommend classifying years of warning logs to obtain exposure weights."
+  },
+  {
+   "a": "f7241",
+   "b": "f14128",
+   "type": "same",
+   "note": "Sampling-based rates require an operational distribution that matches reality."
+  },
+  {
+   "a": "f13284",
+   "b": "f14083",
+   "type": "same",
+   "note": "Scenario parameter distributions enable subsequent field-rate estimation."
+  },
+  {
+   "a": "f6919",
+   "b": "f14350",
+   "type": "contradicts",
+   "note": "Three identified exposure-data routes contrast with calling the warning baseline the program’s only source."
+  },
+  {
+   "a": "f14133",
+   "b": "f7422",
+   "type": "depends",
+   "note": "Missing public distributions motivate immediate shadow-mode logging on the warning fleet."
+  },
+  {
+   "a": "f7367",
+   "b": "f11615",
+   "type": "supports",
+   "note": "Controller-independent warning logs provide the weighting basis for an early exposure model."
+  }
+ ]
+}

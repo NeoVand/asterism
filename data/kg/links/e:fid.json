@@ -1,0 +1,25 @@
+{
+ "key": "e:fid",
+ "hash": "61b8389793021419",
+ "synopsis": "Chapter 6 presents FID, alongside KID, as a distribution-level image- or field-similarity metric for sensor-model validation [f4803]. The 2024 Instance Performance Difference paper warns that FID does not target any specific perception algorithm, a limitation also recorded in the glossary [f4819, f14796]. Whether FID, Chamfer distance or DCD predict safety-relevant perception errors remains uncertain, so the corpus does not establish FID similarity as evidence of safety-relevant perception performance [f5067].",
+ "relations": [
+  {
+   "a": "f14796",
+   "b": "f4819",
+   "type": "same",
+   "note": "Both report the 2024 paper’s warning that FID targets no specific perception algorithm."
+  },
+  {
+   "a": "f14796",
+   "b": "f5067",
+   "type": "supports",
+   "note": "Algorithm-independent scope supports uncertainty about predicting safety-relevant perception errors."
+  },
+  {
+   "a": "f14796",
+   "b": "f4803",
+   "type": "elaborates",
+   "note": "Adds an algorithm-specificity limitation to FID’s distribution-level validation role."
+  }
+ ]
+}

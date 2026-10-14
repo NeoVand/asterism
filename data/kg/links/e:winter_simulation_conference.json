@@ -1,0 +1,19 @@
+{
+ "key": "e:winter simulation conference",
+ "hash": "d03079e2a94396aa",
+ "synopsis": "Chapter 9 reports that a 2025 Winter Simulation Conference study used DALL-E 3 synthetic images to train YOLOv8 for construction-object detection, achieving its best result with 1,500 real images plus 1,500 synthetic images [f7051]. Both Chapter 9 and the skeptic’s review report a performance gap for synthetic-only training; the review attributes it to domain discrepancies [f7052, f10581]. Together, these findings favor mixed real-and-synthetic training over synthetic-only training in the reported study, but the supplied facts do not quantify the performance gap or establish transfer to collision-mitigation validation for heavy off-road machines [f7051, f7052, f10581].",
+ "relations": [
+  {
+   "a": "f7052",
+   "b": "f10581",
+   "type": "same",
+   "note": "Both report a synthetic-only performance gap; Chapter 13 adds its attribution to domain discrepancies."
+  },
+  {
+   "a": "f7051",
+   "b": "f10581",
+   "type": "supports",
+   "note": "Best performance with mixed training reinforces the reported limitation of synthetic-only training."
+  }
+ ]
+}

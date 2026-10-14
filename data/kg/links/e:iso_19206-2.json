@@ -1,0 +1,49 @@
+{
+ "key": "e:iso 19206-2",
+ "hash": "3b6e1cc49b30fc5e",
+ "synopsis": "ISO 19206-2:2018 specifies the pedestrian dummy used in UN R131 and Euro NCAP testing, while ISO 19206-4:2020 specifies the bicyclist target [f15324]. Chapter 3 states that Euro NCAP’s 2026–2028 pedestrian targets follow ISO 19206-2:2018, consistent with the glossary’s broader reference to Parts 2 and 4 [f2546, f13500]. UN R131 requires a child pedestrian target conforming to ISO 19206-2 and crossing at 5 km/h; the glossary identifies heavy trucks as the application and separately attributes the target requirement to the 02 series [f2522, f15120, f15397]. These facts establish on-road target requirements, but do not establish their applicability to heavy off-road machines [f2522, f2546, f15120, f15397].",
+ "relations": [
+  {
+   "a": "f2522",
+   "b": "f15120",
+   "type": "same",
+   "note": "Both require an ISO 19206-2 child pedestrian target crossing at 5 km/h."
+  },
+  {
+   "a": "f15397",
+   "b": "f2522",
+   "type": "elaborates",
+   "note": "Identifies the 02 series as requiring the conforming child target."
+  },
+  {
+   "a": "f15120",
+   "b": "f15397",
+   "type": "elaborates",
+   "note": "Adds heavy-truck scope and the 5 km/h crossing speed."
+  },
+  {
+   "a": "f2546",
+   "b": "f13500",
+   "type": "elaborates",
+   "note": "Specifies the pedestrian-target edition and 2026–2028 protocol period."
+  },
+  {
+   "a": "f15324",
+   "b": "f13500",
+   "type": "elaborates",
+   "note": "Identifies target types and editions for the two referenced ISO parts."
+  },
+  {
+   "a": "f15324",
+   "b": "f2546",
+   "type": "supports",
+   "note": "Confirms Part 2:2018 defines the pedestrian dummy used by Euro NCAP."
+  },
+  {
+   "a": "f2522",
+   "b": "f15324",
+   "type": "elaborates",
+   "note": "Details UN R131’s child-target requirement and crossing speed."
+  }
+ ]
+}

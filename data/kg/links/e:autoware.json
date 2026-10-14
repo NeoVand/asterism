@@ -1,0 +1,31 @@
+{
+ "key": "e:autoware",
+ "hash": "e206d9074c0030fe",
+ "synopsis": "Autoware documentation provides an open-source implementation of world, vehicle and per-sensor coordinate frames, and requires accurate sensor-to-vehicle installation relationships to correlate sensors [f5412, f5413]. ROS and Autoware also provide open-source examples of bag replay and simulation [f5607]. These references are generic robotics or on-road implementation evidence, not an off-road standard [f5414, f5607]. Chapter 11 reports a 2026 community integration of BeamNG.tech with Autoware and ROS 2 and identifies BeamNG, Autoware and ROS 2 as an explicitly supported tool combination; this establishes tooling availability without resolving the off-road applicability limitation [f8506, f8709, f5414].",
+ "relations": [
+  {
+   "a": "f5413",
+   "b": "f5412",
+   "type": "elaborates",
+   "note": "Adds the sensor-installation accuracy requirement to the coordinate-frame implementation."
+  },
+  {
+   "a": "f5414",
+   "b": "f5412",
+   "type": "elaborates",
+   "note": "Limits the implementation's evidentiary scope to robotics and on-road use, not off-road standards."
+  },
+  {
+   "a": "f8506",
+   "b": "f8709",
+   "type": "supports",
+   "note": "The existing 2026 community integration supports the reported tool combination."
+  },
+  {
+   "a": "f8506",
+   "b": "f5607",
+   "type": "elaborates",
+   "note": "Adds a specific 2026 BeamNG.tech integration to the ROS/Autoware simulation examples."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "e:minesim",
+ "hash": "d82a5d58a7c7bf1f",
+ "synopsis": "MineSim is an open-source, peer-reviewed scenario-based simulation test system and benchmark for autonomous trucks in open-pit mines, published in Accident Analysis & Prevention in April 2025; the cited precedent is academic simulation work only [f464, f15805, f1728]. It incorporates scenarios from two real mines and represents unstructured roads, irregular intersections and heavy-truck response lag, addressing a coverage gap identified in urban simulators [f465, f466, f3983]. Across chapters, the booklet treats MineSim as evidence that mine-specific closed-loop scenario infrastructure is feasible now and useful for scenario and planning validation [f330, f845, f1100, f15810]. This does not establish validated sensor physics: sensor models in dust, snow and fog remain unsolved, and the broader scene, dynamics and sensor simulation category is rated Low to Medium in heavy-off-road maturity [f15808, f15810, f916]. MineSim also demonstrates structured scenario methodology alongside ISO 34502, although the latter is road-specific [f833].",
+ "relations": [
+  {
+   "a": "f3983",
+   "b": "f15807",
+   "type": "same",
+   "note": "Both identify urban simulators' inadequate coverage of unstructured open-pit roads."
+  },
+  {
+   "a": "f845",
+   "b": "f15808",
+   "type": "same",
+   "note": "Both distinguish feasible mining closed-loop simulation from validated sensor physics."
+  },
+  {
+   "a": "f845",
+   "b": "f16092",
+   "type": "same",
+   "note": "Both state scenario feasibility does not establish validated sensor physics."
+  },
+  {
+   "a": "f15808",
+   "b": "f16092",
+   "type": "same",
+   "note": "Duplicate conclusions about closed-loop feasibility and lack of validated sensor physics."
+  },
+  {
+   "a": "f330",
+   "b": "f733",
+   "type": "same",
+   "note": "Both conclude mine-specific scenario simulation is feasible."
+  },
+  {
+   "a": "f464",
+   "b": "f15805",
+   "type": "same",
+   "note": "Restates publication date, journal, open-source status and autonomous mining-truck simulation purpose."
+  },
+  {
+   "a": "f15805",
+   "b": "f16083",
+   "type": "same",
+   "note": "Restates April 2025 publication and peer-reviewed open-source simulation benchmark identity."
+  },
+  {
+   "a": "f4119",
+   "b": "f15933",
+   "type": "same",
+   "note": "Both describe a mining-truck simulation system built from two real mines."
+  },
+  {
+   "a": "f13072",
+   "b": "f16084",
+   "type": "same",
+   "note": "Both specify two real mines, unstructured roads and heavy-truck response lag."
+  },
+  {
+   "a": "f15806",
+   "b": "f16084",
+   "type": "same",
+   "note": "Restates two-mine provenance and mining-specific road features, adding response lag."
+  },
+  {
+   "a": "f465",
+   "b": "f15806",
+   "type": "elaborates",
+   "note": "Adds mining-specific features to the two-real-mine scenario provenance."
+  },
+  {
+   "a": "f466",
+   "b": "f16084",
+   "type": "elaborates",
+   "note": "Adds irregular intersections to shared unstructured-road and truck-response features."
+  },
+  {
+   "a": "f1728",
+   "b": "f15805",
+   "type": "elaborates",
+   "note": "Supplies exact publication month, journal, peer review and open-source status."
+  },
+  {
+   "a": "f466",
+   "b": "f3983",
+   "type": "supports",
+   "note": "MineSim's unstructured-road representation addresses the identified urban-simulator coverage gap."
+  },
+  {
+   "a": "f4119",
+   "b": "f1100",
+   "type": "supports",
+   "note": "Real-mine scenarios and planning benchmark underpin usefulness for mining-specific planning validation."
+  },
+  {
+   "a": "f13072",
+   "b": "f330",
+   "type": "supports",
+   "note": "Implemented mining-specific features and real-mine scenarios substantiate scenario simulation feasibility."
+  },
+  {
+   "a": "f15810",
+   "b": "f845",
+   "type": "elaborates",
+   "note": "Specifies dust, snow and fog as unresolved sensor-model conditions."
+  },
+  {
+   "a": "f1728",
+   "b": "f916",
+   "type": "supports",
+   "note": "Academic-only precedent helps contextualize the Low to Medium heavy-off-road simulation maturity rating."
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+{
+ "key": "e:clopper-pearson interval",
+ "hash": "11ba25710192a713",
+ "synopsis": "For detection trials with misses, the booklet recommends Clopper-Pearson exact binomial intervals or another pre-declared binomial interval, rather than continuing testing until a desirable percentage appears [f5452, f6891, f14196]. Clopper-Pearson is described as exact and conservative, making it the safe default for regulators; Wilson is a less conservative alternative that behaves better at moderate sample sizes [f6892, f6893, f14211]. The detection sample-size table allows one or two failures using what the text calls a Poisson or Clopper-Pearson approximation, leaving a terminology tension with the description of Clopper-Pearson as exact [f6884, f6892]. These are mature, non-automotive-specific statistical techniques, but their direct applicability requires respecting independence, representative sampling and homogeneous-rate assumptions [f7398, f7399].",
+ "relations": [
+  {
+   "a": "f6891",
+   "b": "f14196",
+   "type": "same",
+   "note": "Glossary repeats pre-declared interval guidance and rejection of testing until a pleasing percentage."
+  },
+  {
+   "a": "f5452",
+   "b": "f6891",
+   "type": "elaborates",
+   "note": "Adds alternative pre-declared intervals and warns against outcome-driven stopping."
+  },
+  {
+   "a": "f5452",
+   "b": "f14196",
+   "type": "elaborates",
+   "note": "Glossary adds pre-declaration and stopping guidance to the misses-based method."
+  },
+  {
+   "a": "f6892",
+   "b": "f14211",
+   "type": "elaborates",
+   "note": "Glossary adds Wilson as an alternative to the conservative default."
+  },
+  {
+   "a": "f6893",
+   "b": "f14211",
+   "type": "supports",
+   "note": "Wilson's moderate-sample behavior supports its identification as a less conservative alternative."
+  },
+  {
+   "a": "f6892",
+   "b": "f6891",
+   "type": "supports",
+   "note": "Exactness and conservatism justify recommending Clopper-Pearson when misses occur."
+  },
+  {
+   "a": "f6884",
+   "b": "f5452",
+   "type": "elaborates",
+   "note": "Identifies sample-size table rows allowing one or two failures as a concrete application."
+  },
+  {
+   "a": "f6884",
+   "b": "f6892",
+   "type": "contradicts",
+   "note": "Approximation wording is in tension with the description of Clopper-Pearson as exact."
+  },
+  {
+   "a": "f7398",
+   "b": "f7399",
+   "type": "elaborates",
+   "note": "Adds assumptions governing direct application of the mature statistical techniques."
+  },
+  {
+   "a": "f5452",
+   "b": "f7399",
+   "type": "depends",
+   "note": "Application of the interval requires respecting the stated statistical assumptions."
+  }
+ ]
+}

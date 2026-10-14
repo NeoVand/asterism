@@ -1,0 +1,115 @@
+{
+ "key": "t260",
+ "hash": "86f115fc866dcece",
+ "synopsis": "Sensitivity analysis identifies which inputs most affect safety outputs, directing careful measurement and physical validation toward influential inputs while allowing weakly influential inputs to remain nominal; preliminary studies can start before prototype arrival [f14840, f14841, f8239, f14849]. NIOSH’s 2018 stopping tool varied six inputs at five values each, producing 30 simulation rows, and its transient modeling found strong sensitivity to brake force, grade, initial speed, lag and rolling resistance [f6179, f6081]. Operator response should be treated as uncertain rather than represented by one supposedly validated average, and cost-weighted tuning should test weight sensitivity, impose safety constraints before aggregation and favor stable operating regions over knife-edge optima; these are booklet recommendations, not a universal standards requirement [f3478, f7310, f6989, f6986]. Sensitivity analysis should guide machine-variant transfers and validation-envelope corners, but whether a small set of extremes bounds all intermediate machines remains uncertain because geometry, articulation, occlusion and braking can behave non-monotonically [f7909, f7916, f7919, f8178, f8179]. Credibility packages should combine sensitivity and uncertainty analysis with a documented validity envelope, while test allocation across fidelity levels should follow sensitivity and correlation evidence rather than assumptions or sheer simulation counts [f8043, f9328, f8953]. The corpus cites sensitivity analysis within UNECE’s on-road NATM credibility requirements under UN R152 and NASA-STD-7009B, dated 5 March 2024, while recommending tornado charts for presenting the validation plan and identifying schedule-sensitive tasks [f4830, f10599, f9483, f16328].",
+ "relations": [
+  {
+   "a": "f3478",
+   "b": "f11822",
+   "type": "same",
+   "note": "Both reject one validated average reaction time in favor of uncertainty and sensitivity analysis."
+  },
+  {
+   "a": "f3478",
+   "b": "f11485",
+   "type": "same",
+   "note": "Both recommend treating operator response as uncertain and testing its influence."
+  },
+  {
+   "a": "f6432",
+   "b": "f6081",
+   "type": "same",
+   "note": "Both report strong stopping-model sensitivity to the same five inputs."
+  },
+  {
+   "a": "f6179",
+   "b": "f14842",
+   "type": "same",
+   "note": "Glossary repeats the 2018 tool's six inputs, five values and 30 rows."
+  },
+  {
+   "a": "f7909",
+   "b": "f12365",
+   "type": "same",
+   "note": "Both require assessing variant changes against validated phenomena and safety outputs."
+  },
+  {
+   "a": "f7909",
+   "b": "f14910",
+   "type": "same",
+   "note": "Both recommend sensitivity analysis and uncertainty propagation for machine-variant transfers."
+  },
+  {
+   "a": "f7909",
+   "b": "f14845",
+   "type": "same",
+   "note": "Both use sensitivity analysis to assess whether transfers affect validated phenomena or safety outputs."
+  },
+  {
+   "a": "f7916",
+   "b": "f14844",
+   "type": "same",
+   "note": "Sensitivity-identified governing parameters define additional validation-envelope corners."
+  },
+  {
+   "a": "f7919",
+   "b": "f14916",
+   "type": "same",
+   "note": "Both demand demonstrating that selected extremes bound intermediates despite non-monotonic effects."
+  },
+  {
+   "a": "f7919",
+   "b": "f8179",
+   "type": "same",
+   "note": "Both identify geometry, articulation, occlusion and brake dynamics as potential non-monotonic influences."
+  },
+  {
+   "a": "f8043",
+   "b": "f14973",
+   "type": "same",
+   "note": "Both specify uncertainty, sensitivity analysis and a documented validity envelope in credibility packages."
+  },
+  {
+   "a": "f8043",
+   "b": "f14848",
+   "type": "same",
+   "note": "Both link sensitivity and uncertainty evidence to dominant variables and remaining safety margin."
+  },
+  {
+   "a": "f9328",
+   "b": "f13603",
+   "type": "same",
+   "note": "Both base fidelity-level test allocation on sensitivity and correlation, not assumptions."
+  },
+  {
+   "a": "f9328",
+   "b": "f16173",
+   "type": "same",
+   "note": "Both prescribe evidence-based allocation across simulation levels or architectures."
+  },
+  {
+   "a": "f6986",
+   "b": "f14397",
+   "type": "same",
+   "note": "Both call weight sensitivity mandatory for cost-weighted tuning objectives."
+  },
+  {
+   "a": "f6986",
+   "b": "f14846",
+   "type": "same",
+   "note": "Glossary restates mandatory weight sensitivity for nuisance-braking versus missed-detection trade-offs."
+  },
+  {
+   "a": "f10943",
+   "b": "f14847",
+   "type": "same",
+   "note": "Both describe perturbing mounting or calibration to test perception and brake-trigger sensitivity."
+  },
+  {
+   "a": "f8239",
+   "b": "f14849",
+   "type": "same",
+   "note": "Both state that sensitivity studies can begin before prototype arrival."
+  }
+ ]
+}

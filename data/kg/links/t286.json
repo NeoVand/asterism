@@ -1,0 +1,115 @@
+{
+ "key": "t286",
+ "hash": "9ac3bee0825d7657",
+ "synopsis": "ISO 15998 formerly covered functional safety of electronic machine-control systems on earth-moving machinery; ISO 15998:2008 and ISO/TS 15998-2:2012 were withdrawn on 14 June 2022 and replaced by ISO 19014 [f15250, f2344, f15251]. A legacy-reference tension remains: ISO 16001:2017 still cites ISO 15998 for environmental conditions, while allowing ISO 19014-3 as an alternative; readers encountering supplier references to ISO 15998 should request the ISO 19014 equivalent [f2345, f15252, f15253, f15257]. ISO 16001 requires electromagnetic compatibility to ISO 13766, meaning electronics must neither disrupt other equipment through radio interference nor be disrupted by external interference [f2414, f15254, f15255]. EMC matters for automatic braking because brake requests travel over an electronic network and radar shares radio space; MOSH includes EMC testing in its TRL4 laboratory phase, and an on-road example identifies radio-frequency coexistence as one reason a factory emergency brake was disabled [f15258, f15256, f15259].",
+ "relations": [
+  {
+   "a": "f2072",
+   "b": "f15056",
+   "type": "same",
+   "note": "Both give the exact ISO 15998 withdrawal date."
+  },
+  {
+   "a": "f2072",
+   "b": "f11994",
+   "type": "same",
+   "note": "Both report withdrawal in 2022, with different date precision."
+  },
+  {
+   "a": "f2072",
+   "b": "f2704",
+   "type": "same",
+   "note": "Same withdrawal date; the latter specifies the 2008 edition."
+  },
+  {
+   "a": "f2344",
+   "b": "f15251",
+   "type": "same",
+   "note": "Both identify withdrawn editions, exact date, and ISO 19014 replacement."
+  },
+  {
+   "a": "f2705",
+   "b": "f15250",
+   "type": "elaborates",
+   "note": "Glossary specifies electronic components and earth-moving scope of former functional-safety coverage."
+  },
+  {
+   "a": "f2705",
+   "b": "f2854",
+   "type": "same",
+   "note": "Both state that ISO 19014 replaced ISO 15998."
+  },
+  {
+   "a": "f2854",
+   "b": "f15180",
+   "type": "same",
+   "note": "Glossary repeats replacement and adds the withdrawal month."
+  },
+  {
+   "a": "f2345",
+   "b": "f15252",
+   "type": "same",
+   "note": "Both describe the legacy environmental reference and permitted ISO 19014-3 alternative."
+  },
+  {
+   "a": "f2414",
+   "b": "f13023",
+   "type": "same",
+   "note": "Both state ISO 16001 requires EMC to ISO 13766."
+  },
+  {
+   "a": "f2414",
+   "b": "f15255",
+   "type": "same",
+   "note": "Both state the object-detection EMC requirement."
+  },
+  {
+   "a": "f2414",
+   "b": "f15215",
+   "type": "same",
+   "note": "Both state ISO 16001 requires ISO 13766 compliance."
+  },
+  {
+   "a": "f13023",
+   "b": "f15255",
+   "type": "same",
+   "note": "Duplicate glossary statements of the object-detection EMC requirement."
+  },
+  {
+   "a": "f13023",
+   "b": "f15215",
+   "type": "same",
+   "note": "Duplicate glossary statements of the ISO 13766 requirement."
+  },
+  {
+   "a": "f15255",
+   "b": "f15215",
+   "type": "same",
+   "note": "Duplicate glossary requirements, with differing object-detection detail."
+  },
+  {
+   "a": "f2414",
+   "b": "f15254",
+   "type": "elaborates",
+   "note": "Explains interference emission and immunity obligations underlying the EMC requirement."
+  },
+  {
+   "a": "f2344",
+   "b": "f15253",
+   "type": "depends",
+   "note": "Withdrawal and replacement drive requests for current supplier-standard equivalents."
+  },
+  {
+   "a": "f15257",
+   "b": "f15253",
+   "type": "supports",
+   "note": "Risk of outdated data sheets motivates checking supplier references."
+  },
+  {
+   "a": "f15259",
+   "b": "f15258",
+   "type": "supports",
+   "note": "On-road disabling example illustrates the braking relevance of radio coexistence."
+  }
+ ]
+}

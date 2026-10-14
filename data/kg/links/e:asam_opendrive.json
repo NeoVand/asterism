@@ -1,0 +1,85 @@
+{
+ "key": "e:asam opendrive",
+ "hash": "6122615cd384e964",
+ "synopsis": "ASAM OpenDRIVE describes roads and is built around a road-traffic domain model; version 1.9.0 is dated May 2026 [f16017, f6691, f7156]. Across chapters and the glossary, its road-network and lane-geometry assumptions are identified as a poor fit for unstructured off-road sites, with suitability for lane-less haul roads remaining a known gap [f3982, f7157, f8617, f16018]. This is not a blanket rejection: OpenDRIVE can model haul roads and structured site roads, and the recommendation is to use it for structured haul-road elements where useful, while providing additional representations for dig faces, stockpiles and free terrain [f7158, f7202]. OpenDRIVE and OpenSCENARIO have support across VTD, the dSPACE chain, CARLA, RoadRunner, Prescan and MORAI, although that tool support does not resolve the stated off-road representation gap [f8616, f16017, f7157]. OpenDRIVE is listed as an open, free standard with ongoing release status [f9214, f9217, f9218].",
+ "relations": [
+  {
+   "a": "f8617",
+   "b": "f16018",
+   "type": "same",
+   "note": "Both identify poor fit for job sites without lane geometry."
+  },
+  {
+   "a": "f7157",
+   "b": "f8617",
+   "type": "same",
+   "note": "Both attribute poor off-road fit to road and lane assumptions."
+  },
+  {
+   "a": "f7157",
+   "b": "f16018",
+   "type": "same",
+   "note": "Glossary restates the road-network limitation with less detail."
+  },
+  {
+   "a": "f3982",
+   "b": "f7157",
+   "type": "elaborates",
+   "note": "Identifies lane-less haul roads as a specific unresolved suitability gap."
+  },
+  {
+   "a": "f6691",
+   "b": "f8617",
+   "type": "supports",
+   "note": "Road-traffic domain foundations explain poor fit for sites without lane geometry."
+  },
+  {
+   "a": "f9215",
+   "b": "f6691",
+   "type": "supports",
+   "note": "Road heritage is consistent with the identified road-traffic domain model."
+  },
+  {
+   "a": "f7156",
+   "b": "f6691",
+   "type": "elaborates",
+   "note": "Specifies May as the release month for OpenDRIVE 1.9.0."
+  },
+  {
+   "a": "f7158",
+   "b": "f8617",
+   "type": "elaborates",
+   "note": "Distinguishes usable structured roads from terrain requiring additional representations."
+  },
+  {
+   "a": "f7158",
+   "b": "f3982",
+   "type": "elaborates",
+   "note": "Haul-road capability is qualified by the unresolved lane-less haul-road gap."
+  },
+  {
+   "a": "f7158",
+   "b": "f7202",
+   "type": "supports",
+   "note": "Structured-road capability supports selective use for structured haul-road elements."
+  },
+  {
+   "a": "f8617",
+   "b": "f7202",
+   "type": "supports",
+   "note": "Poor unstructured-site fit motivates limiting use to suitable structured road elements."
+  },
+  {
+   "a": "f8616",
+   "b": "f16017",
+   "type": "same",
+   "note": "Both list support across the same six named simulation tool chains."
+  },
+  {
+   "a": "f7157",
+   "b": "f16017",
+   "type": "elaborates",
+   "note": "Details road-network content and its consequences for off-road suitability."
+  }
+ ]
+}

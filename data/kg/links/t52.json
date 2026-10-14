@@ -1,0 +1,115 @@
+{
+ "key": "t52",
+ "hash": "8b109da247fde808",
+ "synopsis": "For brake-commanding heavy off-road functions, the corpus uses ISO 19014 Machine Performance Levels rather than ISO 26262/ASIL; MPL uses levels a–e and is tailored to earth-moving machinery [f2071, f12035, f12066]. Hazard analysis through the Part 1 Machine Control System Safety Analysis (MCSSA) assigns MPLr, and design evaluation must demonstrate MPLa at least as high, with Part 2 addressing architecture, reliability and fault behavior [f15169, f2337]. Part 5 tables can replace a full MCSSA for each new model when their use-case assumptions hold, but the booklet neither reviewed a collision-avoidance/automatic-braking table entry nor found a published MPLr for that function [f2332, f2334, f2335]. The standards baseline needs confirmation: Chapter 8 marks its Part 5 evidence as draft, while other passages describe normative tables and report second editions of Parts 1–4 and the first full edition of Part 5 under publication for October 2026 [f6284, f10523, f12041]. The planning recommendation is an approved MCSSA before prototype arrival, covering failure to intervene and incorrect intervention, allocated performance levels and requirements-to-test traceability; postponing these decisions risks consuming the four-month validation window in debate rather than evidence gathering [f10530, f10540]. MPLr determines the redundancy, diagnostics and evidence needed for the braking chain, and the functional safety engineer expects both required and achieved levels to be allocated [f12046, f11088].",
+ "relations": [
+  {
+   "a": "f10530",
+   "b": "f12006",
+   "type": "same",
+   "note": "Both call for approved pre-prototype MCSSA, intervention hazards, allocated levels and test traceability."
+  },
+  {
+   "a": "f2314",
+   "b": "f12036",
+   "type": "same",
+   "note": "Part 1 MCSSA identifies safety-related controls and determines MPLr."
+  },
+  {
+   "a": "f9775",
+   "b": "f2689",
+   "type": "same",
+   "note": "Both identify Part 1 as the MCSSA and required-performance-level methodology."
+  },
+  {
+   "a": "f2332",
+   "b": "f15174",
+   "type": "same",
+   "note": "Tabulated MPLr avoids per-model full MCSSA only when table assumptions hold."
+  },
+  {
+   "a": "f2703",
+   "b": "f12040",
+   "type": "same",
+   "note": "Both describe conditional use of Part 5 tables instead of full per-model MCSSA."
+  },
+  {
+   "a": "f2327",
+   "b": "f10523",
+   "type": "same",
+   "note": "Part 5 supplies required performance-level tables for common machine functions."
+  },
+  {
+   "a": "f2327",
+   "b": "f2702",
+   "type": "same",
+   "note": "Duplicate descriptions of Part 5 MPLr tables."
+  },
+  {
+   "a": "f2334",
+   "b": "f12043",
+   "type": "same",
+   "note": "Neither reports reviewing whether Part 5 includes collision avoidance or automatic braking."
+  },
+  {
+   "a": "f2335",
+   "b": "f12042",
+   "type": "same",
+   "note": "Both report no published MPLr found for collision avoidance or automatic braking."
+  },
+  {
+   "a": "f2625",
+   "b": "f15181",
+   "type": "same",
+   "note": "Both combine the missing published MPLr with unreviewed table content."
+  },
+  {
+   "a": "f2356",
+   "b": "f12066",
+   "type": "same",
+   "note": "MPL and ASIL are distinct scales."
+  },
+  {
+   "a": "f2692",
+   "b": "f2318",
+   "type": "same",
+   "note": "Duplicate Part 2 scope: hardware, architecture, MPLa, excluding awareness-only systems."
+  },
+  {
+   "a": "f2337",
+   "b": "f11996",
+   "type": "same",
+   "note": "Part 2 architecture and fault behavior establish achieved MPL."
+  },
+  {
+   "a": "f10516",
+   "b": "f15169",
+   "type": "elaborates",
+   "note": "Adds the requirement that achieved MPLa meet or exceed required MPLr."
+  },
+  {
+   "a": "f6284",
+   "b": "f10523",
+   "type": "contradicts",
+   "note": "Draft source status contrasts with normative-table characterization; edition status needs reconciliation."
+  },
+  {
+   "a": "f2334",
+   "b": "f2640",
+   "type": "depends",
+   "note": "Planning around Part 5 tables requires checking whether an applicable entry exists."
+  },
+  {
+   "a": "f10540",
+   "b": "f12006",
+   "type": "supports",
+   "note": "Risk of losing the validation window supports approving MCSSA before prototype arrival."
+  },
+  {
+   "a": "f2333",
+   "b": "f15174",
+   "type": "supports",
+   "note": "Tables retain Part 1 derivation and assumptions, supporting their conditional substitution for full MCSSA."
+  }
+ ]
+}

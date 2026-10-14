@@ -1,0 +1,43 @@
+{
+ "key": "e:splatad",
+ "hash": "1a0cc9bc62da2941",
+ "synopsis": "SplatAD, presented at CVPR 2025, reconstructs scenes from recordings using Gaussian splatting and renders both cameras and lidar; the cited research evidence is on-road [f3814, f15954]. Its lidar simulation models rolling shutter, intensity and ray dropout in real time [f4516]. Reported performance includes about one hour of training per scene on one NVIDIA A100 and rendering about an order of magnitude faster than NeRF methods [f4944, f16200, f4945]. Viewpoint changes remain a limitation: the glossary says SplatAD struggles when sensors move, while the March 2026 LiDAR-EVS preprint claims 48.6% and 47.2% lower lidar Chamfer distances than SplatAD at a 3 m lateral shift, without extracted absolute values [f16004, f4009]. A comparable method, LiHi-GS, explicitly excludes deformable objects and harsh weather, but the supplied facts do not establish those same exclusions for SplatAD or demonstrate its suitability for off-road conditions [f4517, f3814, f4516].",
+ "relations": [
+  {
+   "a": "f4944",
+   "b": "f16200",
+   "type": "same",
+   "note": "Both report approximately one hour of scene training on one A100."
+  },
+  {
+   "a": "f4516",
+   "b": "f3814",
+   "type": "elaborates",
+   "note": "Adds real-time lidar effects to the camera-and-lidar reconstruction description."
+  },
+  {
+   "a": "f15954",
+   "b": "f3814",
+   "type": "elaborates",
+   "note": "Identifies Gaussian splatting and recordings as the reconstruction method and input."
+  },
+  {
+   "a": "f16004",
+   "b": "f15954",
+   "type": "elaborates",
+   "note": "Adds viewpoint-change limitations to the shared reconstruction approach."
+  },
+  {
+   "a": "f4009",
+   "b": "f16004",
+   "type": "elaborates",
+   "note": "Quantifies a competitor's relative advantage over SplatAD under a shifted lidar viewpoint."
+  },
+  {
+   "a": "f4945",
+   "b": "f4516",
+   "type": "elaborates",
+   "note": "Adds a rendering-speed comparison against NeRF methods to the real-time simulation description."
+  }
+ ]
+}

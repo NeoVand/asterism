@@ -1,0 +1,19 @@
+{
+ "key": "e:active learning",
+ "hash": "40a650abf896d42e",
+ "synopsis": "Active-learning or Bayesian test selection can efficiently learn decision boundaries, conditional on an assumed surrogate model and acquisition model [f6860]. The glossary distinguishes the methods by objective: active learning aims to learn a boundary, whereas Bayesian optimization aims to find the best or worst setting [f14175]. Both use adaptive selection guided by a surrogate model and an acquisition rule [f14175]. A key limitation is that the surrogate’s uncertainty estimate can itself be wrong, qualifying the claimed efficiency of this approach [f6862, f6860].",
+ "relations": [
+  {
+   "a": "f14175",
+   "b": "f6860",
+   "type": "elaborates",
+   "note": "Defines the selection mechanism and distinguishes boundary learning from best-or-worst-setting optimization."
+  },
+  {
+   "a": "f6862",
+   "b": "f6860",
+   "type": "elaborates",
+   "note": "Identifies unreliable surrogate uncertainty as a limitation of model-dependent efficient selection."
+  }
+ ]
+}

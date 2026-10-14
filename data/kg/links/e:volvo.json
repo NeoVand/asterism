@@ -1,0 +1,79 @@
+{
+ "key": "e:volvo",
+ "hash": "8b5d8fe63336ad68",
+ "synopsis": "Volvo is a precedent for a restricted first release: its published low-speed range is 3–15 km/h, and the cited vendor precedents emphasize constrained rear/reverse interactions rather than coverage of more than 100 site configurations [f1598, f1695, f10469, f10897]. Expert judgment recommends reverse-only, low-speed operation with a brief brake pulse and exclusions for stockpiles, trailer loading and slopes, but this is not a published schedule; Volvo’s 2–3-second braking explicitly alerts the operator to intervene [f1597, f10980]. Volvo’s loader remembers the last slope to avoid braking when reversing down a stockpile, illustrating both a task-specific fix and the false-stop problems created by ordinary work practices [f11520, f11872, f10728]. Its separately fitted Radar Detect system creates a commissioning dependency, and a product liability lawyer expects comparison against Volvo and other competitors as part of a state-of-the-art assessment [f10807, f11133]. An SAE paper dated 27 September 2016 provides an on-road simulation precedent using an instrumented Volvo tractor-trailer with Bendix radar and AEB [f10603]. In the 2018 Uber ATG case, Volvo’s factory collision warning and AEB were disabled; a secondary summary from 2019 attributes this partly to shared radar frequencies, raising analogous but unresolved coexistence questions for multi-OEM sites [f1528, f11255, f11256].",
+ "relations": [
+  {
+   "a": "f11520",
+   "b": "f11872",
+   "type": "same",
+   "note": "Both describe slope memory preventing braking during stockpile descent in reverse."
+  },
+  {
+   "a": "f10469",
+   "b": "f10897",
+   "type": "elaborates",
+   "note": "Specifies that restricted launches fell short of coverage across 100-plus site types."
+  },
+  {
+   "a": "f1695",
+   "b": "f10469",
+   "type": "supports",
+   "note": "Constrained rear/reverse product descriptions substantiate the restricted-scope precedent."
+  },
+  {
+   "a": "f1695",
+   "b": "f10897",
+   "type": "supports",
+   "note": "Product descriptions reinforce the contrast with broad site-configuration coverage."
+  },
+  {
+   "a": "f1598",
+   "b": "f1597",
+   "type": "supports",
+   "note": "Volvo’s published speed range grounds the recommended low-speed release envelope."
+  },
+  {
+   "a": "f1695",
+   "b": "f1597",
+   "type": "supports",
+   "note": "Constrained reverse interactions support narrowing the initial release."
+  },
+  {
+   "a": "f10980",
+   "b": "f1597",
+   "type": "supports",
+   "note": "Operator-directed braking supports the recommendation for a brief pulse returning control."
+  },
+  {
+   "a": "f11872",
+   "b": "f10728",
+   "type": "supports",
+   "note": "The stockpile-specific fix demonstrates false-stop risks during ordinary work."
+  },
+  {
+   "a": "f11520",
+   "b": "f10728",
+   "type": "supports",
+   "note": "Slope memory is a concrete example underlying the false-stop assessment."
+  },
+  {
+   "a": "f10728",
+   "b": "f1597",
+   "type": "supports",
+   "note": "Work-practice false-stop risks justify stockpile, trailer-loading and slope exclusions."
+  },
+  {
+   "a": "f1528",
+   "b": "f11255",
+   "type": "elaborates",
+   "note": "Adds shared radar frequencies as one reason factory AEB was disabled."
+  },
+  {
+   "a": "f11255",
+   "b": "f11256",
+   "type": "supports",
+   "note": "Reported radar interference motivates analogous multi-OEM coexistence questions."
+  }
+ ]
+}

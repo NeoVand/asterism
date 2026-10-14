@@ -1,0 +1,37 @@
+{
+ "key": "e:sim2radar",
+ "hash": "2f20c4fa8591a124",
+ "synopsis": "The glossary identifies Sim2Radar, alongside RadSimReal, as a research tool addressing the radar simulation-to-reality gap [f15953]. In February 2026, Sim2Radar mapped materials to ITU-R P.2040-4 values at 77 GHz using a Fresnel ray tracer in Mitsuba 3 across five indoor scenes [f3931]. Simulated radar produced about 12% of real point density—251 versus 2,057 points per frame on average—with the passage attributing the gap to real radar’s diffuse scattering and higher-order multipath [f3932, f4305]. Chapter 5 also cites Sim2Radar as independent evidence for requiring wavelength- and band-specific lidar and radar material properties; the reported evaluation scope is five indoor scenes [f4298, f3931].",
+ "relations": [
+  {
+   "a": "f3932",
+   "b": "f4305",
+   "type": "same",
+   "note": "Both report simulated radar reaching about 12% of real indoor point density."
+  },
+  {
+   "a": "f3932",
+   "b": "f15953",
+   "type": "supports",
+   "note": "Measured point-density shortfall demonstrates the simulation-to-reality radar gap described in the glossary."
+  },
+  {
+   "a": "f3931",
+   "b": "f15953",
+   "type": "elaborates",
+   "note": "Specifies Sim2Radar’s date, material mapping, frequency, ray tracer, and evaluation scenes."
+  },
+  {
+   "a": "f3931",
+   "b": "f4298",
+   "type": "supports",
+   "note": "Mapping materials to 77 GHz values exemplifies band-specific radar material properties."
+  },
+  {
+   "a": "f3931",
+   "b": "f3932",
+   "type": "elaborates",
+   "note": "Describes the simulation method and five-scene scope underlying the point-density comparison."
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "key": "e:iec ts 62998-1",
+ "hash": "83d109b45e557cf3",
+ "synopsis": "IEC TS 62998-1 is described as a newer specification for safety-related sensors that protect people but fall outside classic ESPE categories, including sensors used on mobile machines and outdoors [f12391]. Chapter 1 identifies Inxpect as using it for safety radar in mobile outdoor applications, specifically to analyse its second-generation radar [f439, f674]. Both Chapter 1 and the glossary explicitly label this use as a vendor claim, rather than independently established validation [f1045, f15279, f12394]. The glossary repeats the radar-use claim without naming the sensor maker; the supplied facts provide no quantitative results or independent confirmation of the claimed analysis [f12394, f674, f1045].",
+ "relations": [
+  {
+   "a": "f1045",
+   "b": "f15279",
+   "type": "same",
+   "note": "Both label mobile outdoor radar use of the specification as a vendor claim."
+  },
+  {
+   "a": "f15279",
+   "b": "f12394",
+   "type": "same",
+   "note": "Both report vendor-claimed use for mobile outdoor radar."
+  },
+  {
+   "a": "f439",
+   "b": "f674",
+   "type": "elaborates",
+   "note": "Specifies analysis of Inxpect's second-generation safety radar."
+  },
+  {
+   "a": "f439",
+   "b": "f12394",
+   "type": "same",
+   "note": "Repeats mobile outdoor radar use, but leaves the maker unnamed and flags vendor attribution."
+  },
+  {
+   "a": "f674",
+   "b": "f12394",
+   "type": "same",
+   "note": "Both describe claimed radar analysis for mobile outdoor use; glossary omits maker and generation."
+  },
+  {
+   "a": "f439",
+   "b": "f1045",
+   "type": "elaborates",
+   "note": "Qualifies the reported Inxpect use as a vendor claim."
+  },
+  {
+   "a": "f12391",
+   "b": "f674",
+   "type": "supports",
+   "note": "The stated scope includes mobile outdoor sensors, supporting relevance to the claimed radar analysis."
+  }
+ ]
+}

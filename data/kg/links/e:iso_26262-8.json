@@ -1,0 +1,103 @@
+{
+ "key": "e:iso 26262-8",
+ "hash": "d4d31d498d976652",
+ "synopsis": "The booklet uses ISO 26262-8 as on-road reference material for software-tool confidence and qualification under clause 11 and proven in use under clause 14; simulation-tool confidence is also linked to ISO 19014-4 software verification and validation [f12067, f15296, f8035]. Its evidential footing is limited: the 2018 clauses were confirmed only through tables of contents and secondary sources, and the skeptic’s review says ISO 26262-8 was not verified in the research [f7703, f7704, f11196]. Proven in use is a route for claiming compliance for a reused element, not for validating a simulator, and requires identical or highly similar components and use conditions plus sufficient service history with few enough failures to support a statistical claim [f7933, f7579, f12351]. The glossary reports a 70 percent confidence level and explicitly rejects carrying the warning system’s history over to automatic braking because braking changes the item [f15297, f14926]. Planning guidance recommends a 1–1.5-page credibility and tool-qualification section using ISO 26262-8 alongside 7009B and V&V 40, while vendor descriptions of ISO/PAS 8800:2024 tailoring Part 8 for AI remain restricted to road vehicles [f10164, f2388].",
+ "relations": [
+  {
+   "a": "f10544",
+   "b": "f11196",
+   "type": "same",
+   "note": "Both identify relevant tool-confidence leads that the research did not verify."
+  },
+  {
+   "a": "f7933",
+   "b": "f14925",
+   "type": "same",
+   "note": "Both define proven in use as a route for reusing an element."
+  },
+  {
+   "a": "f7579",
+   "b": "f14926",
+   "type": "same",
+   "note": "Both explicitly exclude simulator validation from the proven-in-use route."
+  },
+  {
+   "a": "f7934",
+   "b": "f12351",
+   "type": "elaborates",
+   "note": "Glossary adds failure-history and statistical-claim requirements to matching-use and service-period conditions."
+  },
+  {
+   "a": "f7933",
+   "b": "f7579",
+   "type": "elaborates",
+   "note": "Clarifies that reused-element compliance does not establish simulator validity."
+  },
+  {
+   "a": "f7934",
+   "b": "f14926",
+   "type": "supports",
+   "note": "Matching-element requirements explain why adding braking undermines reliance on the fielded warning system."
+  },
+  {
+   "a": "f14926",
+   "b": "f15297",
+   "type": "supports",
+   "note": "Changed item explains why warning-system history cannot transfer to the braking function."
+  },
+  {
+   "a": "f12351",
+   "b": "f15297",
+   "type": "elaborates",
+   "note": "Adds the reported 70 percent confidence level to statistical acceptance requirements."
+  },
+  {
+   "a": "f8943",
+   "b": "f9758",
+   "type": "same",
+   "note": "Both present Part 8 as an on-road tool-qualification regime."
+  },
+  {
+   "a": "f12067",
+   "b": "f15296",
+   "type": "elaborates",
+   "note": "Identifies clause 11 for tools and clause 14 for proven in use."
+  },
+  {
+   "a": "f8943",
+   "b": "f15296",
+   "type": "elaborates",
+   "note": "Specifies clause 11 as the tool-qualification reference."
+  },
+  {
+   "a": "f8035",
+   "b": "f8943",
+   "type": "elaborates",
+   "note": "Names clause 11 and adds ISO 19014-4 as another simulation-confidence reference."
+  },
+  {
+   "a": "f7703",
+   "b": "f10544",
+   "type": "supports",
+   "note": "Limited clause-11 sourcing supports the skeptic’s warning that tool qualification was not verified."
+  },
+  {
+   "a": "f7704",
+   "b": "f11196",
+   "type": "supports",
+   "note": "Limited clause-14 sourcing supports the broader warning about unverified ISO 26262-8 leads."
+  },
+  {
+   "a": "f9758",
+   "b": "f10164",
+   "type": "supports",
+   "note": "Its reference-regime role motivates using Part 8 in the proposed qualification section."
+  },
+  {
+   "a": "f9758",
+   "b": "f12067",
+   "type": "same",
+   "note": "Both mark the tool-confidence reference as based on on-road evidence."
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "key": "e:verifai",
+ "hash": "d6a504ef95e76d94",
+ "synopsis": "Chapter 9 and the glossary identify VerifAI, alongside S-TaLiRo and Breach, as a falsification tool for seeking failures through parameter combinations [f6836, f16025, f7247]. The booklet places these tools within a broader family that includes Bayesian optimization, evolutionary search, fuzzing, surrogate-guided search, reinforcement-learning adversaries and Adaptive Stress Testing [f14148]. Chapter 9 specifically states that Scenic 3 integrates with VerifAI, while the glossary describes the Scenic–VerifAI integration without specifying a version [f7175, f16025]. On-road work from 2021 reported up to a fivefold speed-up for VerifAI with Scenic using parallel multi-objective falsification; the supplied facts do not establish that this gain transfers to heavy off-road validation [f6839, f14149].",
+ "relations": [
+  {
+   "a": "f6836",
+   "b": "f14148",
+   "type": "elaborates",
+   "note": "Glossary repeats the named tools and expands the surrounding falsification-method family."
+  },
+  {
+   "a": "f6836",
+   "b": "f16025",
+   "type": "elaborates",
+   "note": "Glossary explains failure seeking as searching parameter combinations where a function fails."
+  },
+  {
+   "a": "f6839",
+   "b": "f14149",
+   "type": "same",
+   "note": "Both report the 2021 fivefold maximum speed-up from parallel objectives with Scenic."
+  },
+  {
+   "a": "f7175",
+   "b": "f16025",
+   "type": "elaborates",
+   "note": "Chapter specifies Scenic version 3 for the integration described in the glossary."
+  },
+  {
+   "a": "f7247",
+   "b": "f14148",
+   "type": "elaborates",
+   "note": "Glossary extends the listed methods with fuzzing, reinforcement-learning adversaries and Adaptive Stress Testing."
+  },
+  {
+   "a": "f6836",
+   "b": "f7247",
+   "type": "elaborates",
+   "note": "Program list adds Bayesian optimisation, surrogate-guided search and evolutionary search to the named tools."
+  },
+  {
+   "a": "f16025",
+   "b": "f6839",
+   "type": "supports",
+   "note": "Reported joint-tool performance provides an example of the Scenic–VerifAI integration."
+  }
+ ]
+}

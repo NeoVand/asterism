@@ -1,0 +1,55 @@
+{
+ "key": "e:iso 13766",
+ "hash": "21423b8187ade98b",
+ "synopsis": "ISO 13766 is the electromagnetic compatibility (EMC) standard for earth-moving machinery [f15250]. Chapter 3 specifies that ISO 16001:2017 requires EMC compliance with ISO 13766, a requirement repeated in the glossary for object detection systems on earth-moving machines [f2414, f13023, f15255, f15215]. The glossary explains this as a two-way requirement: electronics must neither emit radio interference that disturbs other equipment nor be disturbed by external interference [f15254]. The supplied facts agree on this requirement but do not identify an ISO 13766 edition or provide detailed test methods or acceptance thresholds [f2414, f13023, f15255, f15215, f15250, f15254].",
+ "relations": [
+  {
+   "a": "f2414",
+   "b": "f13023",
+   "type": "same",
+   "note": "Both state ISO 16001 requires EMC to ISO 13766."
+  },
+  {
+   "a": "f2414",
+   "b": "f15255",
+   "type": "same",
+   "note": "Same EMC requirement; Chapter 3 identifies the ISO 16001:2017 edition."
+  },
+  {
+   "a": "f2414",
+   "b": "f15215",
+   "type": "same",
+   "note": "Both state ISO 16001 requires EMC to ISO 13766."
+  },
+  {
+   "a": "f13023",
+   "b": "f15255",
+   "type": "same",
+   "note": "Both apply ISO 13766 EMC requirements to ISO 16001 object detection systems."
+  },
+  {
+   "a": "f13023",
+   "b": "f15215",
+   "type": "same",
+   "note": "Glossary restatements of the same ISO 16001 EMC requirement."
+  },
+  {
+   "a": "f15255",
+   "b": "f15215",
+   "type": "same",
+   "note": "Same requirement, with object detection system scope explicit in f15255."
+  },
+  {
+   "a": "f15254",
+   "b": "f2414",
+   "type": "elaborates",
+   "note": "Explains the emissions and immunity obligations behind Chapter 3's EMC requirement."
+  },
+  {
+   "a": "f15254",
+   "b": "f15250",
+   "type": "elaborates",
+   "note": "Details what electromagnetic compatibility means for earth-moving machinery electronics."
+  }
+ ]
+}

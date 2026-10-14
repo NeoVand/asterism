@@ -1,0 +1,49 @@
+{
+ "key": "e:mean absolute percentage error mape",
+ "hash": "beb6eebedb4eee50",
+ "synopsis": "MAPE is used to compare signal amplitude, range and point-cloud quantities in lidar sensor models [f7765]. The booklet reports clear-weather lidar-model errors of 1.7% for signal amplitude and 8.5% for point count [f14781, f14782]. Chapter 10 and the glossary agree that these applications report MAPE rather than use it as a thresholded acceptance criterion, so the reported values do not establish an acceptance threshold [f7766, f14787]. Interpretation also requires caution: MAPE misbehaves near zero measured values and, like MAE and RMSE, hides the shape of simulation-versus-measurement errors [f14783, f14785].",
+ "relations": [
+  {
+   "a": "f7766",
+   "b": "f14787",
+   "type": "same",
+   "note": "Both describe MAPE as reported, not a thresholded acceptance criterion."
+  },
+  {
+   "a": "f14781",
+   "b": "f7765",
+   "type": "elaborates",
+   "note": "Quantifies signal-amplitude comparison for a clear-weather lidar model."
+  },
+  {
+   "a": "f14782",
+   "b": "f7765",
+   "type": "elaborates",
+   "note": "Quantifies point-count comparison for a clear-weather lidar model."
+  },
+  {
+   "a": "f14781",
+   "b": "f7766",
+   "type": "supports",
+   "note": "Provides a reported MAPE value, consistent with reporting rather than thresholding."
+  },
+  {
+   "a": "f14782",
+   "b": "f7766",
+   "type": "supports",
+   "note": "Provides another reported MAPE value, consistent with reporting rather than thresholding."
+  },
+  {
+   "a": "f14783",
+   "b": "f7765",
+   "type": "elaborates",
+   "note": "Adds a near-zero measurement limitation to MAPE-based comparisons."
+  },
+  {
+   "a": "f14785",
+   "b": "f7765",
+   "type": "elaborates",
+   "note": "Clarifies that MAPE comparisons do not reveal the shape of errors."
+  }
+ ]
+}

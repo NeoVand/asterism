@@ -1,0 +1,115 @@
+{
+ "key": "e:roadrunner",
+ "hash": "c777310ade1d14d2",
+ "synopsis": "RoadRunner, Scene Builder and Scenario create and reconstruct 3D environments from GIS, maps, point clouds and recorded data, and export to CARLA, dSPACE ASM and IPG CarMaker; however, the base editor remains road-oriented and work-site semantics require custom assets and data structures [f8605, f8606, f8607]. Cross-chapter precedents include on-road UAV orthomosaic imports demonstrated in 2021 and academic South African mining collision-avoidance simulations investigating steering-rate-based collision prediction, not operational validation [f3798, f1729]. The MathWorks stack has shipped off-road examples in R2026b, including an autonomous excavator, backhoe truck loading and an open-pit haul truck, but component integration still requires calibration of material, actor, dynamics and timing semantics [f15878, f8729]. RoadRunner with Automated Driving Toolbox reconstructs and replays camera, lidar, GPS and IMU logs, with fidelity bounded by tracking and map-reconstruction accuracy [f8656, f8657]. Licensing is commercial, annual or perpetual per product, and current pricing requires a quote; an unofficial January 2024 list gives RoadRunner prices of 4,680 annually and 9,360 perpetually, presumed USD and indicative only, while academic licenses do not allow concurrent use [f8958, f9155, f16144, f8905]. RoadRunner itself does not require MATLAB or Simulink, although the proposed middle-cost engineering stack combines them with RoadRunner and other simulation tools [f8385, f9285].",
+ "relations": [
+  {
+   "a": "f15877",
+   "b": "f8958",
+   "type": "same",
+   "note": "Both specify commercial, per-product annual or perpetual licensing."
+  },
+  {
+   "a": "f16144",
+   "b": "f8389",
+   "type": "same",
+   "note": "Identical indicative January 2024 prices, currency assumption and licensing periods."
+  },
+  {
+   "a": "f15880",
+   "b": "f9155",
+   "type": "same",
+   "note": "Both report quote-only pricing and an unofficial price list."
+  },
+  {
+   "a": "f16039",
+   "b": "f8366",
+   "type": "same",
+   "note": "Both identify RoadRunner with Automated Driving Toolbox for scenario reconstruction and replay."
+  },
+  {
+   "a": "f16017",
+   "b": "f8616",
+   "type": "same",
+   "note": "Both list RoadRunner among tools supporting OpenSCENARIO and OpenDRIVE."
+  },
+  {
+   "a": "f8607",
+   "b": "f8393",
+   "type": "same",
+   "note": "Both characterize the RoadRunner editor as road-oriented."
+  },
+  {
+   "a": "f8393",
+   "b": "f9153",
+   "type": "same",
+   "note": "Both retain the road-oriented limitation despite potential off-road adaptation."
+  },
+  {
+   "a": "f8701",
+   "b": "f8606",
+   "type": "same",
+   "note": "Both explicitly identify exports to CARLA, dSPACE ASM and IPG CarMaker."
+  },
+  {
+   "a": "f15999",
+   "b": "f8605",
+   "type": "elaborates",
+   "note": "Chapter details GIS imports, recorded-data reconstruction and scenario parameterization beyond the glossary summary."
+  },
+  {
+   "a": "f8607",
+   "b": "f15999",
+   "type": "elaborates",
+   "note": "Explains that road-oriented editing requires custom work-site assets and data structures."
+  },
+  {
+   "a": "f8656",
+   "b": "f16039",
+   "type": "elaborates",
+   "note": "Specifies camera, lidar, GPS and IMU logs as reconstruction inputs."
+  },
+  {
+   "a": "f8657",
+   "b": "f8656",
+   "type": "depends",
+   "note": "Reconstruction and replay quality depend on tracking and map accuracy."
+  },
+  {
+   "a": "f16237",
+   "b": "f8383",
+   "type": "elaborates",
+   "note": "Explains the gRPC interface as a protocol for calls between programs."
+  },
+  {
+   "a": "f16162",
+   "b": "f9285",
+   "type": "elaborates",
+   "note": "Adds Mevea or AGX Dynamics through FMI for terrain, hydraulics and machine variants."
+  },
+  {
+   "a": "f3798",
+   "b": "f8605",
+   "type": "supports",
+   "note": "The 2021 on-road demonstration supplies precedent for map-based environment creation."
+  },
+  {
+   "a": "f1729",
+   "b": "f9153",
+   "type": "supports",
+   "note": "Academic mining simulation demonstrates off-road adaptation, without establishing operational validation."
+  },
+  {
+   "a": "f16144",
+   "b": "f15880",
+   "type": "elaborates",
+   "note": "Supplies the unofficial list's RoadRunner figures and uncertainty."
+  },
+  {
+   "a": "f8385",
+   "b": "f9285",
+   "type": "elaborates",
+   "note": "Clarifies that MATLAB/Simulink inclusion is a stack choice, not a RoadRunner prerequisite."
+  }
+ ]
+}

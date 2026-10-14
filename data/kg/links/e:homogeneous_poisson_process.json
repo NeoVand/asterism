@@ -1,0 +1,109 @@
+{
+ "key": "e:homogeneous poisson process",
+ "hash": "9fcefd19b6b7320d",
+ "synopsis": "Chapters 7 and 9 and the glossary agree that, assuming a homogeneous Poisson process, zero false alarms over T hours gives a one-sided upper event-rate bound of −ln(alpha)/T, approximately 3/T at 95% confidence [f5456, f6907, f14243, f6908]. Under that assumption, zero unnecessary automatic brakes in about 300 representative operating hours supports a rate below 1 per 100 hours at 95% confidence; about 3,000 hours supports below 1 per 1,000 hours [f6909, f6910]. If two events occur instead, Chapter 9 gives a 95% upper rate bound of about 6.3/T [f6911]. These assurances are conditional: false alarms can cluster by site, weather, machine, obstacle geometry, contamination, bucket passes or dust clouds, and can be non-stationary, so the homogeneous-Poisson assumption must be checked before relying on the bound [f5459, f6913, f6915].",
+ "relations": [
+  {
+   "a": "f5456",
+   "b": "f6907",
+   "type": "same",
+   "note": "Both give the exact zero-event upper rate bound under the homogeneous-Poisson assumption."
+  },
+  {
+   "a": "f5456",
+   "b": "f14243",
+   "type": "same",
+   "note": "Glossary restates the zero-false-alarm 95% bound in plain language."
+  },
+  {
+   "a": "f5456",
+   "b": "f6908",
+   "type": "same",
+   "note": "Both state the approximate 95% zero-event bound of 3/T."
+  },
+  {
+   "a": "f6907",
+   "b": "f14243",
+   "type": "same",
+   "note": "Exact general bound and glossary approximation express the same zero-event result."
+  },
+  {
+   "a": "f6907",
+   "b": "f6908",
+   "type": "same",
+   "note": "The 95% approximation specializes the general zero-event bound."
+  },
+  {
+   "a": "f6908",
+   "b": "f14243",
+   "type": "same",
+   "note": "Both give the approximate 95% upper bound of 3/T."
+  },
+  {
+   "a": "f5459",
+   "b": "f6915",
+   "type": "same",
+   "note": "Both recommend checking the homogeneous-Poisson assumption before using its bounds."
+  },
+  {
+   "a": "f5459",
+   "b": "f6913",
+   "type": "same",
+   "note": "Both identify clustering as a threat to the homogeneous-Poisson assumption."
+  },
+  {
+   "a": "f6913",
+   "b": "f6915",
+   "type": "supports",
+   "note": "Clustering and non-stationarity justify checking the assumption before relying on 3/T."
+  },
+  {
+   "a": "f5456",
+   "b": "f6909",
+   "type": "elaborates",
+   "note": "Applies the zero-event bound to 300 hours and a one-per-100-hours target."
+  },
+  {
+   "a": "f5456",
+   "b": "f6910",
+   "type": "elaborates",
+   "note": "Applies the zero-event bound to 3,000 hours and a one-per-1,000-hours target."
+  },
+  {
+   "a": "f6908",
+   "b": "f6909",
+   "type": "supports",
+   "note": "The 3/T calculation yields the stated 300-hour exposure requirement."
+  },
+  {
+   "a": "f6908",
+   "b": "f6910",
+   "type": "supports",
+   "note": "The 3/T calculation yields the stated 3,000-hour exposure requirement."
+  },
+  {
+   "a": "f5456",
+   "b": "f6911",
+   "type": "elaborates",
+   "note": "Extends rate-bound guidance from zero observed events to two events."
+  },
+  {
+   "a": "f6909",
+   "b": "f5459",
+   "type": "depends",
+   "note": "The 300-hour assurance requires the homogeneous-Poisson assumption to hold."
+  },
+  {
+   "a": "f6910",
+   "b": "f5459",
+   "type": "depends",
+   "note": "The 3,000-hour assurance requires the homogeneous-Poisson assumption to hold."
+  },
+  {
+   "a": "f14243",
+   "b": "f6915",
+   "type": "depends",
+   "note": "Reliance on the glossary's 3/T bound requires checking the process assumption."
+  }
+ ]
+}

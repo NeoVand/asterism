@@ -1,0 +1,115 @@
+{
+ "key": "t252",
+ "hash": "5461c09d095bf2a1",
+ "synopsis": "Time-history agreement compares complete simulated and measured curves to expose timing and shape differences that peak-only checks miss; for automatic braking, identical peak deceleration can still produce different collision outcomes [f14739, f7783]. The booklet’s FAA example shows 0.3% peak error but 60.4% time-history error, whereas another example has 3.42% peak error and 7.2% time-history error, both within that example’s 10% guideline; these are aviation examples, not stated heavy-machine acceptance thresholds [f7785, f7782, f7764]. The proposed heavy-machine program should validate the entire chain from detection through brake-pressure build-up to deceleration, speed and position, including distance-to-object and relative-speed histories near the collision boundary, using multiple agreement metrics rather than one score [f7786, f7787, f8042]. Available methods include Sprague-Geers magnitude-and-phase comparison and ISO 18571’s corridor, phase, magnitude and slope rating; the glossary identifies ISO 18571 use in a 2026 automatic-braking/proving-ground demonstration [f7763, f15332, f14745]. Cross-chapter sensor evidence also includes Haider et al.’s time-domain and point-cloud validation, dated October 2022 in Chapter 6 and associated with an August 2023 publication in Chapter 10, but both accounts identify the evidence as on-road [f4505, f7819].",
+ "relations": [
+  {
+   "a": "f7555",
+   "b": "f14741",
+   "type": "same",
+   "note": "Both report 0.3% peak error versus 60.4% time-history error and peak-only misclassification."
+  },
+  {
+   "a": "f14741",
+   "b": "f14940",
+   "type": "same",
+   "note": "Duplicate aviation comparison and warning about peak-only validation."
+  },
+  {
+   "a": "f14940",
+   "b": "f15335",
+   "type": "same",
+   "note": "Same numerical example showing misleading peak agreement."
+  },
+  {
+   "a": "f15335",
+   "b": "f7969",
+   "type": "same",
+   "note": "Same 0.3% peak and 60.4% time-history errors."
+  },
+  {
+   "a": "f7969",
+   "b": "f7785",
+   "type": "same",
+   "note": "Same FAA comparison; one identifies it as the second worked example."
+  },
+  {
+   "a": "f7970",
+   "b": "f14741",
+   "type": "same",
+   "note": "Same numerical comparison and erroneous excellent rating from peak-only assessment."
+  },
+  {
+   "a": "f7783",
+   "b": "f14736",
+   "type": "same",
+   "note": "Equal peak deceleration can conceal timing differences that alter collision outcomes."
+  },
+  {
+   "a": "f14744",
+   "b": "f15332",
+   "type": "same",
+   "note": "Both describe ISO 18571 combining corridor, phase, magnitude and slope scores."
+  },
+  {
+   "a": "f7782",
+   "b": "f14742",
+   "type": "same",
+   "note": "Both report 3.42% peak and 7.2% time-history errors within a 10% guideline."
+  },
+  {
+   "a": "f7763",
+   "b": "f14743",
+   "type": "same",
+   "note": "Both describe Sprague-Geers comparison using magnitude and phase."
+  },
+  {
+   "a": "f14748",
+   "b": "f7786",
+   "type": "elaborates",
+   "note": "Adds distance-to-object and relative-speed histories to the recommended causal timing chain."
+  },
+  {
+   "a": "f14748",
+   "b": "f7787",
+   "type": "elaborates",
+   "note": "Places boundary-focused distance and relative-speed comparisons within full causal-chain validation."
+  },
+  {
+   "a": "f7781",
+   "b": "f14742",
+   "type": "elaborates",
+   "note": "Supplies measured and simulated load peaks behind the reported percentage errors."
+  },
+  {
+   "a": "f7555",
+   "b": "f14716",
+   "type": "supports",
+   "note": "Large temporal error despite excellent peak agreement demonstrates why multiple metrics are needed."
+  },
+  {
+   "a": "f7783",
+   "b": "f7786",
+   "type": "supports",
+   "note": "Collision sensitivity to timing motivates validating the whole braking timing chain."
+  },
+  {
+   "a": "f15332",
+   "b": "f14745",
+   "type": "elaborates",
+   "note": "Explains the component scores of the metric used in the 2026 demonstration."
+  },
+  {
+   "a": "f14716",
+   "b": "f8042",
+   "type": "same",
+   "note": "Both call for multi-metric correlation covering scalar, temporal, distributional and outcome agreement."
+  },
+  {
+   "a": "f7819",
+   "b": "f4505",
+   "type": "elaborates",
+   "note": "Adds publication details and rain/fog scope to on-road time-domain and point-cloud validation evidence."
+  }
+ ]
+}

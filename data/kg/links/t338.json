@@ -1,0 +1,115 @@
+{
+ "key": "t338",
+ "hash": "bf693006dfdc1cc2",
+ "synopsis": "A workstation serves an engineer running one simulation at a time, whereas a managed cluster is recommended for thousands of scenarios within four months; HPC is the largest cluster class, intended for scientific calculation [f16210, f16211, f16213]. Samak et al.'s August 2024 GVSETS work used HPC clusters for 128 simulated off-road braking cases because sequential sweeps could not explore the variability space within time constraints, but the booklet treats this as evidence for scaling methodology rather than a prescribed scenario count [f467, f4104, f4105]. The recommended architecture separates commodity-server logic tests, GPU sensor tests, dedicated GPU or HPC soil tests, and local real-time HIL, while accounting for orchestration, database and storage loads [f16220, f16221]. Within the four-month window, throughput matters more than real-time rendering: inexpensive models should screen broadly, reserving expensive models for selected cases, especially compute-intensive terrain simulation [f16219, f6471, f8846]. Illustrative workloads include an aircraft radar calculation taking about 616 ms per angular position on eight nodes with four AMD MI250X GPUs each, and a European virtual-testing study requiring over 800 compute hours plus over 300 hours of manual case selection; these are not compute estimates for the proposed braking system [f4940, f16217, f16218, f10739]. Actual compute expense, cloud or cluster capacity, licensing and labor costs remain unavailable, and on-premises GPU server prices were not found, leaving the architecture recommendation without a substantiated budget [f10739, f8853].",
+ "relations": [
+  {
+   "a": "f467",
+   "b": "f13073",
+   "type": "same",
+   "note": "Both report 128 simulated off-road automatic-braking cases on a cluster."
+  },
+  {
+   "a": "f467",
+   "b": "f16215",
+   "type": "same",
+   "note": "Both report the study's 128 off-road braking cases using HPC clusters."
+  },
+  {
+   "a": "f13073",
+   "b": "f16215",
+   "type": "same",
+   "note": "Glossary restatements of the same 128-case cluster study."
+  },
+  {
+   "a": "f4104",
+   "b": "f16214",
+   "type": "same",
+   "note": "Both explain HPC use through time-constrained variability exploration."
+  },
+  {
+   "a": "f4104",
+   "b": "f4352",
+   "type": "same",
+   "note": "Both identify impractical serial sweeps as the reason for off-road HPC research."
+  },
+  {
+   "a": "f4352",
+   "b": "f16214",
+   "type": "same",
+   "note": "Both describe serial sweeps becoming impractical for off-road validation."
+  },
+  {
+   "a": "f8846",
+   "b": "f16185",
+   "type": "same",
+   "note": "Both recommend dedicated GPU or HPC workers for compute-intensive discrete-element soil simulation."
+  },
+  {
+   "a": "f4104",
+   "b": "f16213",
+   "type": "supports",
+   "note": "Published scaling rationale supports clusters for a time-limited, large scenario campaign."
+  },
+  {
+   "a": "f4105",
+   "b": "f16215",
+   "type": "elaborates",
+   "note": "Clarifies that the reported case count is not a prescribed validation target."
+  },
+  {
+   "a": "f4940",
+   "b": "f16216",
+   "type": "elaborates",
+   "note": "Adds runtime, GPU model, publication year and aircraft context to the node count."
+  },
+  {
+   "a": "f4940",
+   "b": "f16203",
+   "type": "elaborates",
+   "note": "Provides the specific non-NVIDIA radar-computation performance figure."
+  },
+  {
+   "a": "f13798",
+   "b": "f6471",
+   "type": "supports",
+   "note": "Millions of colliding soil grains explain DEM's substantial computing demand."
+  },
+  {
+   "a": "f8846",
+   "b": "f16220",
+   "type": "supports",
+   "note": "Soil computation demands justify the architecture's dedicated GPU or HPC allocation."
+  },
+  {
+   "a": "f8849",
+   "b": "f16067",
+   "type": "elaborates",
+   "note": "Adds CPU, database and storage demands to the orchestration mechanism."
+  },
+  {
+   "a": "f8849",
+   "b": "f16221",
+   "type": "same",
+   "note": "Both identify orchestration and storage as additional CPU and database loads."
+  },
+  {
+   "a": "f6471",
+   "b": "f16219",
+   "type": "supports",
+   "note": "Expensive coupled terrain models support reserving high fidelity for selected cases."
+  },
+  {
+   "a": "f8853",
+   "b": "f10739",
+   "type": "supports",
+   "note": "Missing GPU server prices reinforce the broader compute-budget evidence gap."
+  },
+  {
+   "a": "f16218",
+   "b": "f10739",
+   "type": "supports",
+   "note": "Substantial manual selection effort underscores the importance of unresolved analyst labor costs."
+  }
+ ]
+}

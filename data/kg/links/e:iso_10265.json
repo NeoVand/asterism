@@ -1,0 +1,115 @@
+{
+ "key": "e:iso 10265",
+ "hash": "39fa3335420c13fe",
+ "synopsis": "ISO 10265:2008 is identified as the brake-performance and testing standard for crawler machines at 20 km/h or less, distinct from ISO 3450 for wheeled and fast rubber-tracked machines; it was confirmed in 2025 [f5979, f13728, f15189, f5980]. Stopping performance is measured from brake-control actuation to standstill, including system response but excluding operator reaction, with prescribed payload and adverse test configurations [f6540]. ISO 17757 uses physical braking and steering tests in manual and autonomous modes under ISO 3450 and ISO 10265, and the booklet found no simulation wording in those brake standards [f7734, f15197]. These are machine-performance standards rather than statistical model-transfer standards, and they provide no defensible calibration-stop count guaranteeing braking predictions across 100-plus site types, brake architectures and weather conditions [f6163, f6162, f15198]. There is an unresolved evidence tension: later chapters and the glossary make specific scope and testing claims, while Chapters 3 and 13 say ISO 10265 was not verified in the research [f2197, f11197, f5979, f7734, f15192].",
+ "relations": [
+  {
+   "a": "f2197",
+   "b": "f11197",
+   "type": "same",
+   "note": "Both report that ISO 10265 was not verified."
+  },
+  {
+   "a": "f5979",
+   "b": "f6021",
+   "type": "same",
+   "note": "Both place crawlers at 20 km/h or less under ISO 10265."
+  },
+  {
+   "a": "f5979",
+   "b": "f15192",
+   "type": "same",
+   "note": "Same edition and crawler speed scope; glossary also gives confirmation date."
+  },
+  {
+   "a": "f5980",
+   "b": "f15192",
+   "type": "same",
+   "note": "Both state that ISO 10265:2008 was confirmed in 2025."
+  },
+  {
+   "a": "f8947",
+   "b": "f11439",
+   "type": "same",
+   "note": "Both identify ISO 10265 as the slow-crawler brake standard."
+  },
+  {
+   "a": "f8947",
+   "b": "f15189",
+   "type": "same",
+   "note": "Both identify ISO 10265 coverage of slow-crawler braking performance and testing."
+  },
+  {
+   "a": "f13728",
+   "b": "f15189",
+   "type": "same",
+   "note": "Both distinguish ISO 3450 machine categories from ISO 10265 crawlers."
+  },
+  {
+   "a": "f7734",
+   "b": "f15228",
+   "type": "same",
+   "note": "Both describe physical tests in manual and autonomous modes under both brake standards."
+  },
+  {
+   "a": "f6162",
+   "b": "f15198",
+   "type": "same",
+   "note": "Both reject a standards-based calibration-stop count establishing trust across 100-plus site types."
+  },
+  {
+   "a": "f5979",
+   "b": "f8947",
+   "type": "elaborates",
+   "note": "The explicit 20 km/h threshold clarifies what counts as a slow crawler."
+  },
+  {
+   "a": "f13728",
+   "b": "f9366",
+   "type": "elaborates",
+   "note": "Machine-category boundaries clarify which relevant braking standard applies."
+  },
+  {
+   "a": "f6540",
+   "b": "f15189",
+   "type": "elaborates",
+   "note": "Adds stopping-time boundaries, operator-reaction exclusion, and prescribed test configurations."
+  },
+  {
+   "a": "f15228",
+   "b": "f15197",
+   "type": "supports",
+   "note": "Physical testing under ISO 17757 reinforces the physical-test characterization."
+  },
+  {
+   "a": "f6163",
+   "b": "f15198",
+   "type": "supports",
+   "note": "Performance-standard scope explains the absence of statistical model-transfer calibration counts."
+  },
+  {
+   "a": "f2197",
+   "b": "f5979",
+   "type": "contradicts",
+   "note": "Unverified evidence status contrasts with a definite edition and scope requirement."
+  },
+  {
+   "a": "f11197",
+   "b": "f7734",
+   "type": "contradicts",
+   "note": "Unverified research status contrasts with specific claims about required physical testing."
+  },
+  {
+   "a": "f11197",
+   "b": "f15192",
+   "type": "contradicts",
+   "note": "Unverified status contrasts with precise scope and confirmation-date claims."
+  },
+  {
+   "a": "f6162",
+   "b": "f15197",
+   "type": "elaborates",
+   "note": "Adds a calibration-transfer evidence gap beyond the absence of simulation wording."
+  }
+ ]
+}

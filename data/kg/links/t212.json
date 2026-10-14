@@ -1,0 +1,115 @@
+{
+ "key": "t212",
+ "hash": "242f451969f1ee48",
+ "synopsis": "The booklet defines hypothesis testing as assessing an observed difference against a null hypothesis of no real difference; validation sample sizes must match the claim, with binomial detection tests sized by significance, power and the separation between acceptable and unacceptable probabilities [f14228, f5448, f5453]. For old-versus-new warning systems, it recommends paired recording on the same machine and hazards: McNemar's test uses only discordant outcomes, illustrated by 12 hazards caught only by the new system versus 3 caught only by the old, while separate deployments confound site, operator and weather [f14237, f14233, f14234, f14235, f14236]. Sequential tests can stop early on clearly good or bad evidence, but acceptance thresholds and statistical tests must be fixed in advance [f6903, f644]. Checking hundreds of scenario cells individually at 95% confidence risks chance-driven passes or failures, so primary claims should be predefined and multiplicity or simultaneous-confidence methods used where claims must hold together [f7485, f7486]. As an on-road scale illustration, RAND's April 2016 analysis estimated about 11 billion miles to demonstrate a 20% fatality-rate improvement with 95% confidence and 80% power; that estimate concerns autonomous road vehicles, not a supplied off-road validation sample size [f6663, f6923, f14263].",
+ "relations": [
+  {
+   "a": "f6663",
+   "b": "f6923",
+   "type": "same",
+   "note": "Same RAND mileage estimate; the latter also specifies 95% confidence."
+  },
+  {
+   "a": "f6663",
+   "b": "f14263",
+   "type": "same",
+   "note": "Glossary restates RAND's 11-billion-mile illustration with confidence detail."
+  },
+  {
+   "a": "f6923",
+   "b": "f14263",
+   "type": "same",
+   "note": "Same improvement, mileage, confidence and power estimate."
+  },
+  {
+   "a": "f7485",
+   "b": "f14230",
+   "type": "same",
+   "note": "Both identify chance-driven outcomes from testing hundreds of cells individually."
+  },
+  {
+   "a": "f7486",
+   "b": "f14231",
+   "type": "same",
+   "note": "Glossary restates predefinition and multiplicity recommendations."
+  },
+  {
+   "a": "f5481",
+   "b": "f14356",
+   "type": "same",
+   "note": "Both restrict valid paired testing to parallel recording on the same machine."
+  },
+  {
+   "a": "f5481",
+   "b": "f14236",
+   "type": "same",
+   "note": "Both require shared hazard events for valid McNemar comparisons."
+  },
+  {
+   "a": "f14356",
+   "b": "f14236",
+   "type": "same",
+   "note": "Same shared-event validity condition; separate deployments introduce confounding."
+  },
+  {
+   "a": "f5453",
+   "b": "f14229",
+   "type": "elaborates",
+   "note": "Specifies binomial sizing inputs for distinguishing acceptable from unacceptable miss probabilities."
+  },
+  {
+   "a": "f5449",
+   "b": "f5453",
+   "type": "elaborates",
+   "note": "Detection-test formulas instantiate performance-difference-based sample sizing."
+  },
+  {
+   "a": "f5448",
+   "b": "f5453",
+   "type": "elaborates",
+   "note": "Details the binomial detection component of claim-specific sample sizing."
+  },
+  {
+   "a": "f644",
+   "b": "f6903",
+   "type": "depends",
+   "note": "Early sequential stopping requires a predefined statistical test and acceptance threshold."
+  },
+  {
+   "a": "f7485",
+   "b": "f14231",
+   "type": "supports",
+   "note": "Chance-driven cell outcomes motivate predefined claims and multiplicity controls."
+  },
+  {
+   "a": "f14233",
+   "b": "f5481",
+   "type": "elaborates",
+   "note": "Explains how parallel recording supplies hazard-level hit-or-miss pairs."
+  },
+  {
+   "a": "f14236",
+   "b": "f14237",
+   "type": "supports",
+   "note": "Confounding in separate deployments motivates paired recording rather than cross-site averages."
+  },
+  {
+   "a": "f14234",
+   "b": "f14232",
+   "type": "elaborates",
+   "note": "Specifies which paired outcomes inform the old-versus-new McNemar comparison."
+  },
+  {
+   "a": "f14235",
+   "b": "f14234",
+   "type": "elaborates",
+   "note": "The 12-versus-3 example illustrates discordant pairs used by McNemar's test."
+  },
+  {
+   "a": "f14228",
+   "b": "f14235",
+   "type": "elaborates",
+   "note": "The warning-system example applies the general chance-versus-difference testing principle."
+  }
+ ]
+}

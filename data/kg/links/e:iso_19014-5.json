@@ -1,0 +1,115 @@
+{
+ "key": "e:iso 19014-5",
+ "hash": "72f788472096ac91",
+ "synopsis": "As of 1 October 2026, ISO 19014-5 edition 1 was under publication for October 2026, replacing ISO/TS 19014-5:2021; its final text was received on 5 February and stage 60.00 began on 22 August, but the catalogue still listed the Technical Specification as the published edition [f2329, f2328]. Part 5 provides normative tables of required Machine Performance Levels (MPLr) for common functions, derived from the Part 1 method with derivation logic and assumptions [f10523, f2327, f2333]. Manufacturers can use these tabulated values instead of a full MCSSA for every new model only when the relevant use cases and assumptions hold [f2332, f12040]. The booklet recommends building the four-month validation plan around Part 5 tables and identifies them as the only sourced route to reducing per-model analysis burden, but it did not review whether collision avoidance or automatic braking has a table entry and found no published MPLr for that function [f2640, f15188, f2334, f2335]. Final contents remained uncertain because the texts were unavailable for review, and publication status should be rechecked before design freeze [f2862, f6286].",
+ "relations": [
+  {
+   "a": "f48",
+   "b": "f1158",
+   "type": "same",
+   "note": "Both report the same editions under publication for October 2026."
+  },
+  {
+   "a": "f48",
+   "b": "f12041",
+   "type": "same",
+   "note": "Glossary restates the synthesis publication status."
+  },
+  {
+   "a": "f2073",
+   "b": "f15178",
+   "type": "same",
+   "note": "Both report August under-publication status and scheduled October publication."
+  },
+  {
+   "a": "f2074",
+   "b": "f10522",
+   "type": "same",
+   "note": "Both identify the first full edition as replacing the 2021 Technical Specification."
+  },
+  {
+   "a": "f2327",
+   "b": "f2702",
+   "type": "same",
+   "note": "Duplicate definitions of Part 5 MPLr tables for common functions."
+  },
+  {
+   "a": "f2327",
+   "b": "f10523",
+   "type": "elaborates",
+   "note": "The skeptic's review specifies that the tables are normative."
+  },
+  {
+   "a": "f12040",
+   "b": "f15174",
+   "type": "same",
+   "note": "Duplicate glossary explanations of conditional per-model MCSSA relief."
+  },
+  {
+   "a": "f2332",
+   "b": "f12040",
+   "type": "same",
+   "note": "Both condition tabulated MPLr use on matching assumptions."
+  },
+  {
+   "a": "f2332",
+   "b": "f2703",
+   "type": "same",
+   "note": "Both allow tables instead of full per-model MCSSA when use-case assumptions hold."
+  },
+  {
+   "a": "f2334",
+   "b": "f12043",
+   "type": "same",
+   "note": "Both state collision-avoidance and automatic-braking table coverage was not reviewed."
+  },
+  {
+   "a": "f2625",
+   "b": "f15181",
+   "type": "same",
+   "note": "Both report unreviewed table coverage and no published collision-avoidance MPLr found."
+  },
+  {
+   "a": "f2336",
+   "b": "f11995",
+   "type": "elaborates",
+   "note": "Chapter specifies erroneous or missing braking hazards within the glossary lifecycle."
+  },
+  {
+   "a": "f2329",
+   "b": "f15051",
+   "type": "elaborates",
+   "note": "Chapter supplies exact milestones for promotion to a full standard."
+  },
+  {
+   "a": "f2333",
+   "b": "f2332",
+   "type": "supports",
+   "note": "Documented derivation and assumptions underpin conditional use of tabulated MPLr."
+  },
+  {
+   "a": "f2332",
+   "b": "f15188",
+   "type": "supports",
+   "note": "Avoiding repeated MCSSA explains the claimed reduction in per-model analysis burden."
+  },
+  {
+   "a": "f15181",
+   "b": "f2640",
+   "type": "contradicts",
+   "note": "Unverified collision-avoidance coverage limits confidence in the table-based planning recommendation."
+  },
+  {
+   "a": "f2862",
+   "b": "f6286",
+   "type": "supports",
+   "note": "Unavailable final texts reinforce the need to recheck status before design freeze."
+  },
+  {
+   "a": "f2942",
+   "b": "f15188",
+   "type": "elaborates",
+   "note": "Variant arguments also require machine-specific calculations and sampled physical verification."
+  }
+ ]
+}

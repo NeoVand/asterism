@@ -1,0 +1,115 @@
+{
+ "key": "e:asam osi",
+ "hash": "7915117d3546c5d0",
+ "synopsis": "ASAM OSI is an open, free messaging standard connecting environment, sensor, fusion and function models; its messages include timestamped ground truth, sensor views, sensor data and detected objects [f9214, f9217, f5260, f13219]. Across the booklet, OSI supports tool-chain integration, semantic replay and branching into closed-loop simulation, while providing a pattern for defining detected objects, warnings and brake requests before hardware selection [f8714, f13464, f5540, f13228]. OSI-compatible sensor models can transfer between simulators and be supplied as sealed intellectual-property-protecting packages; the booklet recommends OSI/OSMP FMUs using FMI 2.0 when suppliers withhold internals [f13220, f13221, f4857]. Although the glossary rates OSI and FMI as domain-neutral and transferable to off-road work, the cited OSI evidence has road-vehicle origins, so quarry deployment remains an engineering adaptation rather than off-road proof [f13224, f5507, f5262]. High-fidelity sensor extensions run from April 2025 to March 2027, leaving interface-versioning risk while the validation program integrates its first tool chain; export capabilities and ownership-change exit clauses are recommended to limit supplier dependence [f8618, f13227, f8619, f8733, f8887].",
+ "relations": [
+  {
+   "a": "f8618",
+   "b": "f13227",
+   "type": "same",
+   "note": "Both give the April 2025–March 2027 high-fidelity sensor extension schedule."
+  },
+  {
+   "a": "f8618",
+   "b": "f8732",
+   "type": "same",
+   "note": "Both identify March 2027 as the extension project's endpoint."
+  },
+  {
+   "a": "f8618",
+   "b": "f9216",
+   "type": "same",
+   "note": "Both identify March 2027 as the extension project's endpoint."
+  },
+  {
+   "a": "f13227",
+   "b": "f8732",
+   "type": "same",
+   "note": "The glossary schedule and chapter endpoint describe the same project."
+  },
+  {
+   "a": "f13227",
+   "b": "f9216",
+   "type": "same",
+   "note": "Both date the high-fidelity extension's completion to March 2027."
+  },
+  {
+   "a": "f8732",
+   "b": "f9216",
+   "type": "same",
+   "note": "Duplicate March 2027 project endpoint within Chapter 11."
+  },
+  {
+   "a": "f5260",
+   "b": "f5506",
+   "type": "same",
+   "note": "Both describe exchange interfaces connecting environment, sensor, fusion and function models."
+  },
+  {
+   "a": "f5262",
+   "b": "f5507",
+   "type": "elaborates",
+   "note": "Road-origin evidence motivates the explicit warning that quarry adaptation is not off-road proof."
+  },
+  {
+   "a": "f5507",
+   "b": "f13224",
+   "type": "contradicts",
+   "note": "Transferability optimism contrasts with the warning that off-road suitability remains unproven."
+  },
+  {
+   "a": "f5260",
+   "b": "f13464",
+   "type": "elaborates",
+   "note": "Adds ground-truth interfaces and their application to semantic replay tests."
+  },
+  {
+   "a": "f5261",
+   "b": "f13219",
+   "type": "elaborates",
+   "note": "Specifies ground-truth message content alongside other timestamped message categories."
+  },
+  {
+   "a": "f13220",
+   "b": "f8887",
+   "type": "supports",
+   "note": "Model portability supports requiring export capabilities to reduce supplier dependence."
+  },
+  {
+   "a": "f13221",
+   "b": "f4857",
+   "type": "supports",
+   "note": "Sealed-package capability underpins requesting protected OSI/OSMP FMUs from reluctant suppliers."
+  },
+  {
+   "a": "f4504",
+   "b": "f4857",
+   "type": "supports",
+   "note": "The implemented OSI/FMI lidar model demonstrates the recommended packaging approach."
+  },
+  {
+   "a": "f8552",
+   "b": "f8706",
+   "type": "elaborates",
+   "note": "Adds claimed co-simulation-host support to Persival's OSI FMU packaging."
+  },
+  {
+   "a": "f8618",
+   "b": "f8619",
+   "type": "depends",
+   "note": "Continuing standardization creates the stated interface-versioning risk."
+  },
+  {
+   "a": "f8618",
+   "b": "f8733",
+   "type": "elaborates",
+   "note": "Places the standardization schedule alongside first-tool-chain integration."
+  },
+  {
+   "a": "f13219",
+   "b": "f13228",
+   "type": "supports",
+   "note": "Standardized message semantics provide a pattern for defining supplier-independent contracts early."
+  }
+ ]
+}

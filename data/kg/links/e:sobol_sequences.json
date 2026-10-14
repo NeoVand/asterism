@@ -1,0 +1,61 @@
+{
+ "key": "e:sobol sequences",
+ "hash": "688c5fc695fd029c",
+ "synopsis": "Sobol sequences are space-filling, quasi-random designs that spread simulation runs evenly through a chosen parameter region; the glossary compares their spread with Latin hypercube designs while noting that they work differently [f14137, f14843, f7228]. Chapter 9 says these schemes cover continuous parameters more evenly than naive random draws and recommends them for continuous-space coverage, surrogate training and broad exploration [f6813, f6814, f7227]. This geometric coverage does not establish unweighted rates, worst cases or operational frequency, and unrealistic regions receive equal treatment unless constraints and distributions are added [f7229, f7230]. Typical implementation uses open-source libraries and in-house tools, but the stated evidence base is generic expert opinion from statistical synthesis rather than program-specific validation evidence [f7231, f7232].",
+ "relations": [
+  {
+   "a": "f14137",
+   "b": "f7228",
+   "type": "same",
+   "note": "Both describe an even geometric spread of test points."
+  },
+  {
+   "a": "f14843",
+   "b": "f7228",
+   "type": "elaborates",
+   "note": "Chapter 9 specifies that the spread is even within the chosen parameter region."
+  },
+  {
+   "a": "f14843",
+   "b": "f6813",
+   "type": "elaborates",
+   "note": "Chapter 9 adds continuous parameters and comparison with naive random draws."
+  },
+  {
+   "a": "f14137",
+   "b": "f6813",
+   "type": "elaborates",
+   "note": "Chapter 9 adds the advantage over naive random sampling."
+  },
+  {
+   "a": "f6814",
+   "b": "f7227",
+   "type": "supports",
+   "note": "Usefulness for modelling and exploration supports the recommended program uses."
+  },
+  {
+   "a": "f6813",
+   "b": "f7227",
+   "type": "supports",
+   "note": "More even continuous-parameter coverage supports the coverage recommendation."
+  },
+  {
+   "a": "f7228",
+   "b": "f7229",
+   "type": "elaborates",
+   "note": "Even geometric coverage does not establish rates, worst cases or operational frequency."
+  },
+  {
+   "a": "f14843",
+   "b": "f7230",
+   "type": "elaborates",
+   "note": "Space-filling coverage needs constraints and distributions to avoid equal treatment of unrealistic regions."
+  },
+  {
+   "a": "f7232",
+   "b": "f7227",
+   "type": "elaborates",
+   "note": "The recommendation rests on generic expert opinion from statistical synthesis."
+  }
+ ]
+}

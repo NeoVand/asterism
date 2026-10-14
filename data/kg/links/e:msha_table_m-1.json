@@ -1,0 +1,61 @@
+{
+ "key": "e:msha table m-1",
+ "hash": "9a7c6120f2d2d833",
+ "synopsis": "Chapter 8 and the glossary describe MSHA Table M-1 as a kinematic stopping-performance rule based on constant deceleration of 9.66 ft/s², approximately 2.94 m/s² or 0.3 g [f5890, f13634, f6425]. Its stopping-distance formulation uses d = v²/(2a), and the assumed deceleration is close to the worked example’s 3.0 m/s² level-ground value [f13645, f13650]. Chapter 8 gives system-response allowances of 0.5–2.5 seconds by weight class, plus one second of operator time; the glossary gives a two-second total delay for very heavy equipment, contributing 8.3 metres at 15 km/h, without explaining how that total maps to the weight-class allowances [f6058, f13658]. The corpus also describes prescribed stopping tests as running from brake-control actuation to standstill, including system response but excluding operator reaction, so planners should distinguish that test boundary from the operator-inclusive delay allowance [f6540, f6058].",
+ "relations": [
+  {
+   "a": "f5890",
+   "b": "f13634",
+   "type": "same",
+   "note": "Both specify constant deceleration of 9.66 ft/s², approximately 2.94 m/s²."
+  },
+  {
+   "a": "f5890",
+   "b": "f13650",
+   "type": "same",
+   "note": "Both give MSHA's assumed deceleration as 2.94 m/s²."
+  },
+  {
+   "a": "f13634",
+   "b": "f13650",
+   "type": "same",
+   "note": "Both state the same MSHA deceleration; each adds different context."
+  },
+  {
+   "a": "f6070",
+   "b": "f13645",
+   "type": "elaborates",
+   "note": "The glossary supplies the specific kinematic stopping-distance equation."
+  },
+  {
+   "a": "f6070",
+   "b": "f6425",
+   "type": "elaborates",
+   "note": "Identifies the energy or constant-deceleration equation underlying the kinematic formulas."
+  },
+  {
+   "a": "f6425",
+   "b": "f13645",
+   "type": "same",
+   "note": "Equivalent stopping-distance and mean-deceleration equations describe the same mathematical basis."
+  },
+  {
+   "a": "f6058",
+   "b": "f13658",
+   "type": "elaborates",
+   "note": "Adds a heavy-equipment delay example and travel distance; weight-class mapping remains unspecified."
+  },
+  {
+   "a": "f6540",
+   "b": "f6058",
+   "type": "contradicts",
+   "note": "Operator reaction is excluded from stated test boundaries but included in MSHA delay allowances."
+  },
+  {
+   "a": "f6540",
+   "b": "f13658",
+   "type": "elaborates",
+   "note": "The test boundary clarifies why the example's total-delay components need separate identification."
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "key": "e:asam openodd",
+ "hash": "42e5444f527fc9d5",
+ "synopsis": "ASAM OpenODD 1.0.0, released on 3 April 2025, provides a technology-independent operating-domain data model in machine-readable YAML and CSV, with restrictive definitions specifying what is allowed and permissive definitions specifying what is excluded [f6707, f6708, f13246]. Its normative scope is automated road vehicles, with default attributes dominated by lanes and junctions; its structure is transferable to off-road validation, but its content is not directly transferable [f6709, f6642, f13245]. Operating-domain definitions establish testing boundaries and therefore the meaning of coverage, making an appropriate taxonomy foundational to validation [f6782]. OpenODD is assessed as having moderate off-road fit, and the manufacturer or industry must author and govern an off-road taxonomy; the proposed adaptation combines on-road and off-road patterns, but its arrangement remains expert opinion [f7162, f7163, f6714]. The booklet recommends a manufacturer-owned, domain-neutral, version-controlled scenario catalog using Scenic or an in-house YAML schema with an OpenODD-style taxonomy, exporting to OpenSCENARIO where tools require it [f14491, f7198].",
+ "relations": [
+  {
+   "a": "f13245",
+   "b": "f6709",
+   "type": "same",
+   "note": "Both identify road-vehicle scope and lane-and-junction defaults."
+  },
+  {
+   "a": "f6707",
+   "b": "f7161",
+   "type": "same",
+   "note": "Both date version 1.0.0 to 3 April 2025."
+  },
+  {
+   "a": "f6707",
+   "b": "f13246",
+   "type": "same",
+   "note": "Both give 3 April 2025 as the version date."
+  },
+  {
+   "a": "f7161",
+   "b": "f13246",
+   "type": "same",
+   "note": "Both give the same version and date."
+  },
+  {
+   "a": "f6708",
+   "b": "f13246",
+   "type": "same",
+   "note": "Both describe a machine-readable, technology-independent model with restrictive and permissive definitions."
+  },
+  {
+   "a": "f7198",
+   "b": "f14491",
+   "type": "same",
+   "note": "Both recommend domain-neutral, version-controlled Scenic or YAML catalogs with OpenODD-style taxonomy."
+  },
+  {
+   "a": "f14491",
+   "b": "f7198",
+   "type": "elaborates",
+   "note": "Adds manufacturer ownership and OpenSCENARIO export for tool compatibility."
+  },
+  {
+   "a": "f6709",
+   "b": "f6642",
+   "type": "supports",
+   "note": "Road-specific defaults explain why architecture transfers but content does not."
+  },
+  {
+   "a": "f13245",
+   "b": "f7163",
+   "type": "supports",
+   "note": "Road-vehicle scope and defaults justify authoring and governing an off-road taxonomy."
+  },
+  {
+   "a": "f6714",
+   "b": "f7163",
+   "type": "elaborates",
+   "note": "Proposes a taxonomy adaptation, while identifying its arrangement as expert opinion."
+  },
+  {
+   "a": "f6708",
+   "b": "f6783",
+   "type": "supports",
+   "note": "OpenODD's YAML and CSV formats substantiate machine-readable operating-domain representation."
+  },
+  {
+   "a": "f13246",
+   "b": "f7162",
+   "type": "supports",
+   "note": "Confirms technology independence and restrictive and permissive definitions cited in the fit assessment."
+  },
+  {
+   "a": "f6714",
+   "b": "f14491",
+   "type": "elaborates",
+   "note": "Identifies source patterns for the recommended OpenODD-style off-road taxonomy."
+  },
+  {
+   "a": "f6782",
+   "b": "f7163",
+   "type": "supports",
+   "note": "Taxonomy determines testing boundaries and coverage, reinforcing the need for off-road governance."
+  }
+ ]
+}

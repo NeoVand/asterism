@@ -1,0 +1,61 @@
+{
+ "key": "e:google g2-standard-32",
+ "hash": "ef17b2353fbdc564",
+ "synopsis": "Google’s g2-standard-32 is listed with one NVIDIA L4 GPU, 32 vCPUs and 128 GiB of memory at about USD 1.734 per hour; Chapter 11 identifies this as a 2026 public price, and the glossary repeats the GPU and rate [f8861, f9260, f16064]. Using USD 1.7344 per wall-clock GPU-hour, the illustrative calculation estimates about USD 1,734 for 1,000 GPU-hours, USD 17,344 for 10,000 GPU-hours and USD 173,438 for 100,000 GPU-hours [f8866]. The quoted hourly rates differ slightly in precision, rather than indicating a substantive pricing disagreement [f8311, f8866, f9260]. These figures are arithmetic estimates from published rates, not all-in project costs: software licenses, storage, network egress, orchestration and support are excluded [f8868].",
+ "relations": [
+  {
+   "a": "f8311",
+   "b": "f16064",
+   "type": "same",
+   "note": "Chapter and glossary repeat the one-L4 configuration and approximate hourly rate."
+  },
+  {
+   "a": "f8311",
+   "b": "f9260",
+   "type": "same",
+   "note": "Both quote USD 1.734 hourly; the latter explicitly identifies the 2026 public price."
+  },
+  {
+   "a": "f8311",
+   "b": "f8861",
+   "type": "same",
+   "note": "Same configuration and rate, with additional CPU and memory specifications."
+  },
+  {
+   "a": "f16064",
+   "b": "f9260",
+   "type": "same",
+   "note": "Glossary and chapter give the same instance, L4 hardware and approximate hourly price."
+  },
+  {
+   "a": "f16064",
+   "b": "f8861",
+   "type": "same",
+   "note": "Same instance, L4 and price; chapter additionally specifies vCPUs and memory."
+  },
+  {
+   "a": "f9260",
+   "b": "f8861",
+   "type": "same",
+   "note": "Same instance and hourly rate; facts add date and hardware specifications respectively."
+  },
+  {
+   "a": "f8866",
+   "b": "f16064",
+   "type": "elaborates",
+   "note": "Scales the glossary hourly price into three illustrative GPU-hour budgets."
+  },
+  {
+   "a": "f8866",
+   "b": "f8861",
+   "type": "elaborates",
+   "note": "Uses a more precise hourly rate to calculate larger usage costs."
+  },
+  {
+   "a": "f8868",
+   "b": "f8866",
+   "type": "elaborates",
+   "note": "Clarifies that budget calculations exclude ancillary costs and derive from published rates."
+  }
+ ]
+}

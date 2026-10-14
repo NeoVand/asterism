@@ -1,0 +1,37 @@
+{
+ "key": "e:30 cfr 56.14101",
+ "hash": "06fdb4c493a1c611",
+ "synopsis": "For US surface metal and nonmetal mines, 30 CFR 56.14101 Table M-1 computes maximum stopping distances using constant deceleration of 9.66 ft/s² (about 2.94 m/s²), weight-dependent brake-system response time, and one second of operator response time [f5989, f13947]. Brake-system response allowances rise from 0.5 seconds for equipment up to 36,000 lb to 2.5 seconds above 400,000 lb (about 181 t), with intermediate weight-class steps [f5990]. Equipment up to 36,000 lb must stop within 34 ft (10.4 m) from 10 mph (16 km/h), or 89 ft (27.1 m) from 20 mph (32 km/h) [f5991]. Chapter 8 and the glossary also require brakes to stop and hold loaded equipment on its steepest traveled grade, although Chapter 8 specifies a typical load while the glossary says a loaded machine without that qualification [f5992, f13948].",
+ "relations": [
+  {
+   "a": "f5989",
+   "b": "f13947",
+   "type": "same",
+   "note": "Both state Table M-1 deceleration and response-time assumptions; glossary adds the system-time range."
+  },
+  {
+   "a": "f5992",
+   "b": "f13948",
+   "type": "same",
+   "note": "Both require stopping and holding loaded equipment on its steepest traveled grade."
+  },
+  {
+   "a": "f5990",
+   "b": "f13947",
+   "type": "elaborates",
+   "note": "Lists weight thresholds and intermediate response times underlying the glossary's 0.5–2.5-second range."
+  },
+  {
+   "a": "f5990",
+   "b": "f5989",
+   "type": "elaborates",
+   "note": "Specifies the weight-dependent brake-system response times used in stopping-distance calculations."
+  },
+  {
+   "a": "f5991",
+   "b": "f13947",
+   "type": "elaborates",
+   "note": "Provides concrete stopping-distance limits for the lightest weight class at two speeds."
+  }
+ ]
+}

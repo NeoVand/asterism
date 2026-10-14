@@ -1,0 +1,61 @@
+{
+ "key": "e:dspace scalexio",
+ "hash": "36ea47075615808a",
+ "synopsis": "The glossary identifies SCALEXIO as a real-time HIL system and VEOS as PC-based virtual ECU simulation; Chapter 11 groups SCALEXIO, VEOS and AURELION as commercial replay and HIL tools supporting ECU execution with virtual sensors [f16034, f8363, f9219, f8639]. AURELION and SIMPHERA integrate with the dSPACE ecosystem, and the booklet describes the combined tools as a strong route from software-in-the-loop to hardware-in-the-loop testing [f8448, f8999, f8640]. That route requires sensor- and ECU-specific engineering: camera video, radar targets, Ethernet streams and raw stimulation are materially different injection problems [f8641]. J1939 emulation is reported possible per ISO/TS 21815-2, but the listed evidence for these tools is on-road only, leaving off-road applicability unsubstantiated by that evidence [f9221, f9220]. Both the glossary and Chapter 11 place the dSPACE combination among highest-cost example chains, yet neither a public price nor a full-system price was found [f16166, f9303, f9222, f8642].",
+ "relations": [
+  {
+   "a": "f16166",
+   "b": "f9303",
+   "type": "same",
+   "note": "Both list the dSPACE combination among highest-cost commercial platform chains."
+  },
+  {
+   "a": "f16034",
+   "b": "f8363",
+   "type": "elaborates",
+   "note": "The glossary distinguishes SCALEXIO's real-time HIL role from VEOS's PC-based simulation role."
+  },
+  {
+   "a": "f8639",
+   "b": "f8640",
+   "type": "supports",
+   "note": "ECU and HIL execution with virtual sensors supports the proposed SIL-to-HIL route."
+  },
+  {
+   "a": "f8448",
+   "b": "f8640",
+   "type": "supports",
+   "note": "Integration across the dSPACE ecosystem supports the SIL-to-HIL route."
+  },
+  {
+   "a": "f8999",
+   "b": "f8448",
+   "type": "elaborates",
+   "note": "The interface listing adds an OSI-compatible chain and explicit SIL/HIL interfaces."
+  },
+  {
+   "a": "f8640",
+   "b": "f8641",
+   "type": "depends",
+   "note": "Implementing the SIL-to-HIL route requires sensor- and ECU-specific injection engineering."
+  },
+  {
+   "a": "f8641",
+   "b": "f8639",
+   "type": "elaborates",
+   "note": "Virtual-sensor execution involves materially different injection methods for different sensor types."
+  },
+  {
+   "a": "f8642",
+   "b": "f9222",
+   "type": "elaborates",
+   "note": "The full-system price gap specifies a missing cost scope within the public-price gap."
+  },
+  {
+   "a": "f9303",
+   "b": "f9219",
+   "type": "elaborates",
+   "note": "The example locates these commercial tools within a highest-cost validation and orchestration chain."
+  }
+ ]
+}

@@ -1,0 +1,79 @@
+{
+ "key": "e:university of michigan",
+ "hash": "137faff9380fb6c5",
+ "synopsis": "University of Michigan researchers learned naturalistic driving distributions, generated more critical interactions in simulation, and used importance sampling to recover unbiased estimates for the modelled event class [f631, f1295]. The corpus reports orders-of-magnitude acceleration in on-road lane-change and car-following evaluations during 2016–2017, with 2016 factors of roughly 300–100,000 for car-following crashes and 2,000–20,000 for lane-change conflicts [f632, f1220, f1221]. These are proofs of principle for on-road automated-driving behavior, not evidence about sensor performance in adverse conditions or off-road perception failures such as quarry-wall radar multipath, occlusion and sensor-position variation [f1298, f1222, f1301]. For planning, the accelerated evaluations do not eliminate model validation or sensor and vehicle tests, and no regulator accepted a production AEB on their basis [f1299, f1300].",
+ "relations": [
+  {
+   "a": "f631",
+   "b": "f1295",
+   "type": "same",
+   "note": "Both describe increasing rare-event frequency and statistically reweighting outcomes using importance sampling."
+  },
+  {
+   "a": "f1220",
+   "b": "f1296",
+   "type": "same",
+   "note": "Same car-following acceleration range; f1220 specifies 2016."
+  },
+  {
+   "a": "f1221",
+   "b": "f1297",
+   "type": "same",
+   "note": "Same lane-change acceleration range; f1221 specifies 2016."
+  },
+  {
+   "a": "f1220",
+   "b": "f632",
+   "type": "elaborates",
+   "note": "Quantifies the car-following acceleration reported in the broader 2016–2017 finding."
+  },
+  {
+   "a": "f1221",
+   "b": "f632",
+   "type": "elaborates",
+   "note": "Quantifies the lane-change acceleration reported in the broader 2016–2017 finding."
+  },
+  {
+   "a": "f631",
+   "b": "f632",
+   "type": "supports",
+   "note": "Targeted sampling and unbiased reweighting explain the reported evaluation acceleration."
+  },
+  {
+   "a": "f1222",
+   "b": "f632",
+   "type": "elaborates",
+   "note": "Clarifies that on-road acceleration concerns kinematics, not adverse-condition sensor performance."
+  },
+  {
+   "a": "f1301",
+   "b": "f1222",
+   "type": "elaborates",
+   "note": "Adds specific off-road perception failures outside the studies' scope."
+  },
+  {
+   "a": "f1298",
+   "b": "f632",
+   "type": "elaborates",
+   "note": "Characterizes the accelerated on-road results as proofs of principle."
+  },
+  {
+   "a": "f1301",
+   "b": "f1299",
+   "type": "supports",
+   "note": "Unaddressed perception failures explain why sensor and vehicle tests remain necessary."
+  },
+  {
+   "a": "f1222",
+   "b": "f1299",
+   "type": "supports",
+   "note": "Kinematics-only scope supports retaining sensor testing and model validation."
+  },
+  {
+   "a": "f1300",
+   "b": "f1298",
+   "type": "supports",
+   "note": "Absence of production AEB acceptance reinforces the proof-of-principle characterization."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t117",
+ "hash": "bb778627815a0c22",
+ "synopsis": "Physically based rendering uses light and material physics to compute sensor observations, but non-visual material behaviour cannot be inferred from RGB appearance and must be specified by wavelength or sensor band [f12939, f3713, f3926, f4298]. Lidar needs wavelength-specific reflectance and BRDF, radar needs permittivity, conductivity, roughness and multipath, thermal sensing needs emissivity, and cameras need physically based materials and spectral response; modelling darkness additionally requires calibrated noise, exposure and image processing [f12940, f12941, f12942, f12943, f4691]. Material-aware radar interaction and multipath improve sim-to-real behaviour over simple one-hit ray casting, while wet-ground lidar effects and difficult wet or dirty BRDFs show why surface realism matters [f5054, f4719, f4723]. ASAM OpenMATERIAL 3D version 1.0.0, dated April 2025, lets assets carry camera-, lidar- and radar-relevant properties, but excludes weather and lighting; planned version 1.1.0 adds better conductivity modelling and measured-reflectance-to-BRDF conversion [f12945, f12946, f3924]. No job-site measurement campaign in an OpenMATERIAL-type format was found for the listed materials, so the validation programme must measure or estimate properties itself—a larger schedule item than computing power, despite some camera and basic lidar simulations running in real time or faster [f4383, f12951, f4926]. The corpus retains a methodological tension between measured physics-first realism and learned models that reproduce observed output distributions, while warning that erroneous simulated reflectance and radar cross-section can compromise machine-learning training data [f4327, f7092].",
+ "relations": [
+  {
+   "a": "f3713",
+   "b": "f12944",
+   "type": "same",
+   "note": "Both reject inferring non-visual material behaviour from visual appearance."
+  },
+  {
+   "a": "f3926",
+   "b": "f3713",
+   "type": "elaborates",
+   "note": "Nonlinear wavelength dependence explains why visual materials cannot supply non-visual responses."
+  },
+  {
+   "a": "f3916",
+   "b": "f12940",
+   "type": "elaborates",
+   "note": "Adds incidence, scattering, retroreflection, beam, receiver, timing and atmospheric requirements."
+  },
+  {
+   "a": "f3938",
+   "b": "f12943",
+   "type": "elaborates",
+   "note": "Adds optical response, surface effects, glare, shadows and atmospheric scattering."
+  },
+  {
+   "a": "f4554",
+   "b": "f3938",
+   "type": "elaborates",
+   "note": "Extends camera material realism with calibrated optics, acquisition, noise and image processing."
+  },
+  {
+   "a": "f4557",
+   "b": "f12945",
+   "type": "same",
+   "note": "Both describe OpenMATERIAL version 1.0 enabling sensor-relevant properties within one asset."
+  },
+  {
+   "a": "f4383",
+   "b": "f12950",
+   "type": "supports",
+   "note": "Absent job-site measurement campaigns support the glossary's material-dataset gap."
+  },
+  {
+   "a": "f12950",
+   "b": "f12951",
+   "type": "depends",
+   "note": "Missing published datasets necessitate programme-specific material measurement or estimation."
+  },
+  {
+   "a": "f12949",
+   "b": "f12951",
+   "type": "supports",
+   "note": "Potential asset-acquisition effort supports treating material characterization as a major schedule item."
+  },
+  {
+   "a": "f4530",
+   "b": "f12951",
+   "type": "supports",
+   "note": "On-road measurements illustrate the need to estimate unavailable electromagnetic material parameters."
+  },
+  {
+   "a": "f4419",
+   "b": "f5054",
+   "type": "supports",
+   "note": "Reproducing multipath and material reflections explains improvements over one-hit radar casting."
+  },
+  {
+   "a": "f4526",
+   "b": "f12941",
+   "type": "elaborates",
+   "note": "Advanced radar methods include transmission, broad beams and Doppler alongside material-dependent multipath."
+  },
+  {
+   "a": "f4719",
+   "b": "f3916",
+   "type": "supports",
+   "note": "Wet-ground return losses and mirror points justify modelling directional lidar surface response."
+  },
+  {
+   "a": "f4691",
+   "b": "f12943",
+   "type": "elaborates",
+   "note": "Darkness requires calibrated sensor processing beyond physically based camera materials and sky."
+  },
+  {
+   "a": "f4887",
+   "b": "f12914",
+   "type": "supports",
+   "note": "PICWGAN supplies concrete range, reflectance, scattering and attenuation terms for physics-informed weather generation."
+  },
+  {
+   "a": "f12948",
+   "b": "f7092",
+   "type": "supports",
+   "note": "Detector failure involving guessed materials illustrates risks from inaccurate simulated material properties."
+  },
+  {
+   "a": "f12947",
+   "b": "f5054",
+   "type": "supports",
+   "note": "Matching a reflective hall required material tuning, reinforcing radar material-interaction importance."
+  },
+  {
+   "a": "f3924",
+   "b": "f4557",
+   "type": "elaborates",
+   "note": "Planned version 1.1.0 extends version 1.0 with conductivity and measured-reflectance conversion support."
+  }
+ ]
+}

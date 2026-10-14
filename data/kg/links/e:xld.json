@@ -1,0 +1,49 @@
+{
+ "key": "e:xld",
+ "hash": "417f7941761e33a2",
+ "synopsis": "XLD is an on-road benchmark introduced in a June 2024 preprint, with a 2025 v3 using synthetic CARLA data; Chapter 7 cites it as evidence of a significant neural-reconstruction gap at cross-lane viewpoint offsets of 1–4 m [f4001, f5515]. Reported 3DGS PSNR fell from 30.87 dB at zero lateral shift to 23.26, 22.01 and 19.17 dB at shifts of 1, 2 and 4 m, respectively [f4001]. At 4 m, EmerNeRF achieved the best PSNR, 24.80 dB, and EmerNeRF and UC-NeRF held up better than the 3DGS variant PVG, creating tension with industry preference for 3DGS editability [f4002, f4329]. Three cameras substantially reduced the reported drop compared with one camera, indicating that camera configuration affects the benchmark outcome [f4024]. Across chapters, XLD supports caution about off-trajectory neural re-simulation despite proponents’ enthusiasm; its findings align with other benchmarks on viewpoint-change degradation, but the cited evidence remains on-road or urban rather than off-road [f5785, f4289].",
+ "relations": [
+  {
+   "a": "f4001",
+   "b": "f5515",
+   "type": "supports",
+   "note": "Measured PSNR degradation substantiates the cross-lane reconstruction gap."
+  },
+  {
+   "a": "f4001",
+   "b": "f4289",
+   "type": "supports",
+   "note": "XLD lateral-shift measurements support the broader cross-benchmark degradation finding."
+  },
+  {
+   "a": "f5515",
+   "b": "f5785",
+   "type": "supports",
+   "note": "The significant cross-lane gap grounds XLD authors’ caution about off-trajectory re-simulation."
+  },
+  {
+   "a": "f4289",
+   "b": "f5785",
+   "type": "supports",
+   "note": "Consistent independent benchmark findings reinforce the stated disagreement over neural re-simulation."
+  },
+  {
+   "a": "f4002",
+   "b": "f4329",
+   "type": "supports",
+   "note": "EmerNeRF’s best 4 m PSNR supports the reported NeRF advantage over PVG."
+  },
+  {
+   "a": "f4024",
+   "b": "f5515",
+   "type": "elaborates",
+   "note": "Three-camera results qualify the gap by showing camera configuration can reduce degradation."
+  },
+  {
+   "a": "f4024",
+   "b": "f4001",
+   "type": "elaborates",
+   "note": "Adds camera-count sensitivity to the reported lateral-view degradation."
+  }
+ ]
+}

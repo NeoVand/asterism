@@ -1,0 +1,115 @@
+{
+ "key": "t193",
+ "hash": "f4929a1abe1e47fd",
+ "synopsis": "Required detection range is reliable sensing distance calculated backwards from stopping distance, all detection/decision/actuation delays, clearance and sensor error; it varies with speed, grade, load, surface and delay and must be achieved in every approved operating condition [f13987, f13993]. ISO 21815-3:2023 structures avoidance distance around detection, determination and action, stopping and a safety distance, while the booklet's engineering equation adds a machine-envelope offset and is explicitly not a verbatim ISO equation [f7007, f7010]. MOSH specifies a minimum 200 m surface-machine detection range, whereas US surface-coal rules require enough sensing range for an endangered person to escape without specifying metres; a separate 40 t example at 15 km/h on a 10% downgrade requires at least 9.5 m before sensor-error allowance, not a replacement for those regulatory requirements [f13995, f2622, f13656]. If degraded sensing falls below the required stopping range, braking models cannot restore the lost margin, so speed may need limiting; weather-aware sensor models should therefore feed detection delay, range and error into braking simulation [f6585, f11330, f6487]. Prototype correlation tests should precede the scenario matrix when the prototype arrives in mid-2027, and a sensor change in 2027 would invalidate detection-range evidence and sensor correlation; the claimed coverage of “100+ job-site types” remains unsupported without a taxonomy connecting sites to sensing and stopping variables [f744, f11912, f8214].",
+ "relations": [
+  {
+   "a": "f174",
+   "b": "f2113",
+   "type": "same",
+   "note": "Both specify MOSH's minimum 200 m surface detection range."
+  },
+  {
+   "a": "f2113",
+   "b": "f230",
+   "type": "same",
+   "note": "Restates the MOSH 200 m detection requirement."
+  },
+  {
+   "a": "f2113",
+   "b": "f12160",
+   "type": "same",
+   "note": "Glossary repeats the MOSH 200 m requirement."
+  },
+  {
+   "a": "f2113",
+   "b": "f15131",
+   "type": "same",
+   "note": "Glossary repeats the minimum 200 m MOSH requirement."
+  },
+  {
+   "a": "f12554",
+   "b": "f13995",
+   "type": "same",
+   "note": "Both identify 200 m detection between surface machines."
+  },
+  {
+   "a": "f6199",
+   "b": "f13988",
+   "type": "same",
+   "note": "Both require detection distance sufficient for stopping under ISO 21815-3."
+  },
+  {
+   "a": "f6198",
+   "b": "f7007",
+   "type": "same",
+   "note": "Both describe ISO's detection-through-stopping distance budget and final safety distance."
+  },
+  {
+   "a": "f2444",
+   "b": "f2622",
+   "type": "same",
+   "note": "Same US escape-time requirement; latter specifies jurisdiction and absence of metre threshold."
+  },
+  {
+   "a": "f6585",
+   "b": "f12530",
+   "type": "same",
+   "note": "Glossary repeats that degraded sensing margin cannot be recovered by brake modeling."
+  },
+  {
+   "a": "f6585",
+   "b": "f13999",
+   "type": "same",
+   "note": "Repeats sensing degradation risk, adding ISO's detection-start boundary."
+  },
+  {
+   "a": "f6487",
+   "b": "f14000",
+   "type": "same",
+   "note": "Both recommend passing sensor delay, range and error into braking simulation."
+  },
+  {
+   "a": "f7010",
+   "b": "f14445",
+   "type": "same",
+   "note": "Glossary restates the engineering detection-distance equation and explains its terms."
+  },
+  {
+   "a": "f7011",
+   "b": "f14446",
+   "type": "same",
+   "note": "Both state ISO 16001's 300 ms detection-time cap."
+  },
+  {
+   "a": "f744",
+   "b": "f14721",
+   "type": "same",
+   "note": "Both prioritize prototype correlation before scenario matrices and specify identical measurements."
+  },
+  {
+   "a": "f717",
+   "b": "f12573",
+   "type": "same",
+   "note": "Both prioritize initial prototype measurements before extensive simulation, establishing trustworthy model inputs."
+  },
+  {
+   "a": "f7012",
+   "b": "f15200",
+   "type": "supports",
+   "note": "Brake-test deceleration supplies the machine-specific stopping data needed for collision-distance calculations."
+  },
+  {
+   "a": "f6585",
+   "b": "f11330",
+   "type": "depends",
+   "note": "Insufficient reliable sensing range requires slower operation or withdrawal of the stopping promise."
+  },
+  {
+   "a": "f7010",
+   "b": "f13656",
+   "type": "elaborates",
+   "note": "Worked machine example quantifies delay, stopping and clearance contributions to required detection range."
+  }
+ ]
+}

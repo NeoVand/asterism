@@ -1,0 +1,115 @@
+{
+ "key": "e:waymo",
+ "hash": "e402e1934381ebcd",
+ "synopsis": "The booklet treats Waymo as an on-road vendor precedent: its safety methods layer simulation, replay, closed-course and public-road tests, and shadow mode, using virtual methods as filters rather than substitutes for physical testing [f15718, f15729]. Waymo published collision-avoidance testing methods and documented city-by-city release in 2022, widening operating areas as evidence accumulates, but disclosed validation durations and physical-test shares do not establish verified sign-off [f604, f15720, f15728]. Its material distinguishes open-loop replay from closed-loop simulation; its dataset also illustrates the synchronized sensor data, calibration, poses and tracked labels needed for reproducible references, while its labeling study cautions that human labels can be inconsistent [f15721, f15722, f15723]. Waymo's world model announcement of 6 February 2026 remains an on-road vendor claim without off-road qualification; separate generative novel-view research reported 13.19–20.82 dB PSNR on Waymo data, which the booklet judges low fidelity for safety testing [f3759, f15724, f3821, f3822]. Waymo data also supported evaluation of December 2023 CARLA rain-lidar intensity prediction and the August 2026 Clear2Fog study using 270,000 images [f4739, f4897].",
+ "relations": [
+  {
+   "a": "f3758",
+   "b": "f3821",
+   "type": "same",
+   "note": "Same 2026 novel-view PSNR range on Waymo data."
+  },
+  {
+   "a": "f3758",
+   "b": "f4243",
+   "type": "same",
+   "note": "Same PSNR result, framed around new sensor positions and heights."
+  },
+  {
+   "a": "f3821",
+   "b": "f4243",
+   "type": "same",
+   "note": "Restates the same quantitative novel-view fidelity result."
+  },
+  {
+   "a": "f3759",
+   "b": "f3823",
+   "type": "same",
+   "note": "Same February 2026 world-model announcement and on-road vendor status."
+  },
+  {
+   "a": "f3759",
+   "b": "f15724",
+   "type": "elaborates",
+   "note": "Glossary explicitly identifies absent off-road qualification."
+  },
+  {
+   "a": "f3821",
+   "b": "f3822",
+   "type": "elaborates",
+   "note": "Interprets the reported PSNR range as low fidelity for safety testing."
+  },
+  {
+   "a": "f5372",
+   "b": "f15723",
+   "type": "same",
+   "note": "Same finding about inconsistent human labels; glossary adds ground-truth caution."
+  },
+  {
+   "a": "f419",
+   "b": "f15720",
+   "type": "same",
+   "note": "Same staged city-by-city release, with evidence-driven expansion clarified."
+  },
+  {
+   "a": "f419",
+   "b": "f604",
+   "type": "same",
+   "note": "Both document Waymo's city-by-city release in 2022."
+  },
+  {
+   "a": "f604",
+   "b": "f15719",
+   "type": "same",
+   "note": "Both date publication of collision-avoidance testing methodology to 2022."
+  },
+  {
+   "a": "f694",
+   "b": "f15719",
+   "type": "elaborates",
+   "note": "Glossary dates the Waymo methodology cited as an automotive precedent."
+  },
+  {
+   "a": "f516",
+   "b": "f15721",
+   "type": "same",
+   "note": "Both distinguish open-loop replay from closed-loop simulation."
+  },
+  {
+   "a": "f402",
+   "b": "f15721",
+   "type": "elaborates",
+   "note": "Glossary identifies recorded-data replay as open-loop and contrasts closed-loop simulation."
+  },
+  {
+   "a": "f15718",
+   "b": "f15729",
+   "type": "elaborates",
+   "note": "Explains virtual methods' filtering role within layered physical and virtual testing."
+  },
+  {
+   "a": "f15728",
+   "b": "f15729",
+   "type": "elaborates",
+   "note": "Qualifies the testing precedent with missing verified sign-off durations and physical-test shares."
+  },
+  {
+   "a": "f15720",
+   "b": "f15730",
+   "type": "supports",
+   "note": "Evidence-driven expansion exemplifies staged release within a limited operating domain."
+  },
+  {
+   "a": "f419",
+   "b": "f15730",
+   "type": "supports",
+   "note": "The 2022 release example supports the booklet's staged-release conclusion."
+  },
+  {
+   "a": "f15723",
+   "b": "f15722",
+   "type": "elaborates",
+   "note": "Label inconsistency cautions against assuming reference dataset labels provide dependable ground truth."
+  }
+ ]
+}

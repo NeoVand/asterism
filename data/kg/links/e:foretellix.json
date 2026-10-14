@@ -1,0 +1,115 @@
+{
+ "key": "e:foretellix",
+ "hash": "8196a48e996d40d1",
+ "synopsis": "Foretellix spans on-road validation and off-road offerings: the vendor sells a Level-4 Mining V-Suite, and its March 2021 Volvo Autonomous Solutions partnership aimed to adapt verification for confined areas such as mines and quarries [f8626, f8625, f8692]. Its data platforms ingest logs, derive scenarios and manage regression testing, but compatibility with the eventual sensors’ raw data must be checked [f8658, f8659]. In an anonymous on-road Level 4 developer case, Foretellix reports six months of process change, scenario coverage rising from 12% to 87%, and projected development falling from about 4.5 years to under two years [f1302, f1303]. These are vendor-authored, independently unverified claims with undisclosed staffing, validation duration after capability became available, and remaining physical testing; acceptance was internal or customer-level rather than external safety acceptance [f1304, f1559, f1789, f1309, f1790]. Foretellix appears in the highest-cost example commercial tool chain for coverage-driven scenario management, and its Series C closed at USD 85 million in December 2023 [f9303, f8623].",
+ "relations": [
+  {
+   "a": "f16021",
+   "b": "f8626",
+   "type": "same",
+   "note": "Both identify a mining suite; Chapter 11 supplies its name and vendor attribution."
+  },
+  {
+   "a": "f16077",
+   "b": "f8625",
+   "type": "same",
+   "note": "Same 2021 mining partnership; Chapter 11 names Volvo and specifies March."
+  },
+  {
+   "a": "f8625",
+   "b": "f8693",
+   "type": "same",
+   "note": "Both cite the Volvo partnership as independent evidence of mining and quarry relevance."
+  },
+  {
+   "a": "f8625",
+   "b": "f8692",
+   "type": "supports",
+   "note": "Partnership documents the intended adaptation for confined-area mines and quarries."
+  },
+  {
+   "a": "f8626",
+   "b": "f16075",
+   "type": "supports",
+   "note": "Named mining suite substantiates inclusion among platforms with explicit off-road packages."
+  },
+  {
+   "a": "f9303",
+   "b": "f16166",
+   "type": "same",
+   "note": "Both place Foretellix among commercial platforms in the highest-cost example chain."
+  },
+  {
+   "a": "f8658",
+   "b": "f8367",
+   "type": "elaborates",
+   "note": "Specifies log ingestion, scenario derivation and regression functions of the categorized data platforms."
+  },
+  {
+   "a": "f8659",
+   "b": "f8658",
+   "type": "depends",
+   "note": "Using log-ingestion capabilities requires checking compatibility with eventual sensor raw data."
+  },
+  {
+   "a": "f1302",
+   "b": "f1558",
+   "type": "same",
+   "note": "Both report six months and coverage increasing from 12% to 87%."
+  },
+  {
+   "a": "f1302",
+   "b": "f1787",
+   "type": "same",
+   "note": "Repeat the same anonymous developer’s coverage increase."
+  },
+  {
+   "a": "f1558",
+   "b": "f1787",
+   "type": "same",
+   "note": "Repeat the 12% to 87% coverage claim."
+  },
+  {
+   "a": "f1302",
+   "b": "f1788",
+   "type": "same",
+   "note": "Repeat the six-month capability-building timeline."
+  },
+  {
+   "a": "f1558",
+   "b": "f1788",
+   "type": "same",
+   "note": "Repeat the six-month shift-left implementation timeline."
+  },
+  {
+   "a": "f1303",
+   "b": "f1302",
+   "type": "elaborates",
+   "note": "Adds projected development reduction to the same six-month process-change case."
+  },
+  {
+   "a": "f1304",
+   "b": "f1303",
+   "type": "elaborates",
+   "note": "Clarifies that projected development figures lack independent verification."
+  },
+  {
+   "a": "f1789",
+   "b": "f1788",
+   "type": "elaborates",
+   "note": "Distinguishes capability-building time from undisclosed validation duration and remaining physical testing."
+  },
+  {
+   "a": "f1559",
+   "b": "f1788",
+   "type": "elaborates",
+   "note": "Qualifies the six-month timeline with vendor authorship and undisclosed staffing."
+  },
+  {
+   "a": "f1309",
+   "b": "f1790",
+   "type": "same",
+   "note": "Both limit Foretellix case acceptance to internal or customer acceptance, not external safety acceptance."
+  }
+ ]
+}

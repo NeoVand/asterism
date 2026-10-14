@@ -1,0 +1,109 @@
+{
+ "key": "e:beamng.tech",
+ "hash": "9a82d93cd9bf1891",
+ "synopsis": "BeamNG.tech is described as a complete or near-complete commercial B2B simulation platform with real-time soft-body vehicle physics; public pricing was not found [f8350, f8502, f8503, f8508, f15909]. It provides programmable camera, lidar, radar, ultrasonic and IMU sensors, a Python API, and community-based ROS 2 integration, including a 2026 integration with Autoware [f8504, f8506, f9031]. Off-road driving is feasible, but its automotive-scale vehicle model is not a purpose-built excavator, dozer or haul truck with deformable soil [f8507, f15910]. Heavy-machine use is assessed as feasible rather than demonstrated, and independent heavy-machine correlation evidence was not found [f9029, f8509]. The latest release found was version 0.39, released on 20 August 2026 [f8505, f9033].",
+ "relations": [
+  {
+   "a": "f8507",
+   "b": "f15910",
+   "type": "same",
+   "note": "Both describe off-road feasibility but automotive-scale rather than heavy-machine models."
+  },
+  {
+   "a": "f8508",
+   "b": "f15909",
+   "type": "same",
+   "note": "Both report that public commercial pricing was not found."
+  },
+  {
+   "a": "f9032",
+   "b": "f15909",
+   "type": "same",
+   "note": "Both report unavailable public pricing."
+  },
+  {
+   "a": "f8508",
+   "b": "f9032",
+   "type": "same",
+   "note": "Duplicate public-pricing gaps."
+  },
+  {
+   "a": "f8502",
+   "b": "f15909",
+   "type": "same",
+   "note": "Both identify commercial business licensing."
+  },
+  {
+   "a": "f9028",
+   "b": "f15909",
+   "type": "same",
+   "note": "Both identify BeamNG.tech as commercially licensed for business use."
+  },
+  {
+   "a": "f8502",
+   "b": "f9028",
+   "type": "same",
+   "note": "Both identify commercial B2B status."
+  },
+  {
+   "a": "f8504",
+   "b": "f9030",
+   "type": "same",
+   "note": "Both list camera, lidar, radar, ultrasonic and IMU sensors."
+  },
+  {
+   "a": "f8504",
+   "b": "f9031",
+   "type": "same",
+   "note": "Both identify a Python API."
+  },
+  {
+   "a": "f8505",
+   "b": "f9033",
+   "type": "same",
+   "note": "Both give version 0.39 and its 20 August 2026 release date."
+  },
+  {
+   "a": "f8506",
+   "b": "f9031",
+   "type": "same",
+   "note": "Both identify community-based ROS 2 integration."
+  },
+  {
+   "a": "f8506",
+   "b": "f16240",
+   "type": "elaborates",
+   "note": "Specifies community integration with Autoware and ROS 2 in 2026."
+  },
+  {
+   "a": "f9031",
+   "b": "f16240",
+   "type": "elaborates",
+   "note": "Identifies the community route for BeamNG ROS 2 integration."
+  },
+  {
+   "a": "f8506",
+   "b": "f8709",
+   "type": "supports",
+   "note": "Existing community integration supports the listed Autoware and ROS 2 tool combination."
+  },
+  {
+   "a": "f8507",
+   "b": "f9029",
+   "type": "supports",
+   "note": "Off-road capability and model limitations explain qualified heavy-machine feasibility."
+  },
+  {
+   "a": "f15910",
+   "b": "f9029",
+   "type": "supports",
+   "note": "Car-scale models qualify the assessment of heavy-machine feasibility."
+  },
+  {
+   "a": "f8509",
+   "b": "f9029",
+   "type": "supports",
+   "note": "Missing independent correlation evidence reinforces the lack of heavy-machine demonstration."
+  }
+ ]
+}

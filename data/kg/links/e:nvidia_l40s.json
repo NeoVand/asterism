@@ -1,0 +1,103 @@
+{
+ "key": "e:nvidia l40s",
+ "hash": "3ea6b88df53aeeae",
+ "synopsis": "The booklet identifies AWS G6e with NVIDIA L40S GPUs as a generic pay-per-use cloud execution option, rather than an off-road-specific offering; the glossary specifies 48 GB of memory per L40S [f8370, f9257, f16202]. AWS G6e configurations scale to eight L40S GPUs, with maximum resources of 192 vCPUs, 1.536 TB RAM and 400 Gbps networking [f8854]. Third-party trackers give 2026 us-east-1 Linux on-demand prices of USD 1.861/hour for one GPU, USD 10.493/hour for four and USD 30.131/hour for eight [f8855, f8857, f8858]. The glossary also reports about USD 1.17/hour for a single L40S under a one-year commitment, while interruptible spot prices fluctuate widely [f16063]. A four-month campaign using ten GPUs of the cited AWS or Google types is estimated at roughly USD 54,000, but this is an expert estimate rather than an L40S-only configuration quote [f8312].",
+ "relations": [
+  {
+   "a": "f8310",
+   "b": "f16062",
+   "type": "same",
+   "note": "Both quote USD 1.861/hour for a single-L40S AWS g6e.xlarge."
+  },
+  {
+   "a": "f8310",
+   "b": "f8855",
+   "type": "same",
+   "note": "Same instance and price; the latter adds resources, Linux and 2026."
+  },
+  {
+   "a": "f16062",
+   "b": "f8855",
+   "type": "same",
+   "note": "Their single-GPU instance prices agree."
+  },
+  {
+   "a": "f16062",
+   "b": "f9258",
+   "type": "same",
+   "note": "Both give the USD 1.861–30.131/hour on-demand price range."
+  },
+  {
+   "a": "f16062",
+   "b": "f8858",
+   "type": "same",
+   "note": "Both quote USD 30.131/hour for eight L40S GPUs."
+  },
+  {
+   "a": "f8370",
+   "b": "f16202",
+   "type": "same",
+   "note": "Both pair AWS G6e with L40S and Google Cloud G2 with L4."
+  },
+  {
+   "a": "f8854",
+   "b": "f16202",
+   "type": "same",
+   "note": "Both specify 48 GB memory per L40S in AWS G6e."
+  },
+  {
+   "a": "f8854",
+   "b": "f8370",
+   "type": "elaborates",
+   "note": "Adds G6e GPU capacity, memory, CPU, RAM and networking limits."
+  },
+  {
+   "a": "f16063",
+   "b": "f8310",
+   "type": "elaborates",
+   "note": "Adds commitment pricing and spot variability to the on-demand baseline."
+  },
+  {
+   "a": "f16063",
+   "b": "f9257",
+   "type": "elaborates",
+   "note": "Details alternative purchasing arrangements for the cloud offering."
+  },
+  {
+   "a": "f8857",
+   "b": "f9258",
+   "type": "elaborates",
+   "note": "Supplies a four-GPU configuration price within the stated range."
+  },
+  {
+   "a": "f8858",
+   "b": "f9258",
+   "type": "elaborates",
+   "note": "Identifies the eight-GPU configuration behind the range's upper endpoint."
+  },
+  {
+   "a": "f8855",
+   "b": "f9258",
+   "type": "elaborates",
+   "note": "Identifies the single-GPU configuration behind the range's lower endpoint."
+  },
+  {
+   "a": "f8857",
+   "b": "f16062",
+   "type": "elaborates",
+   "note": "Adds an intermediate four-GPU price to the glossary's endpoint prices."
+  },
+  {
+   "a": "f9257",
+   "b": "f8370",
+   "type": "elaborates",
+   "note": "Clarifies pay-per-use status and absence of off-road-specific relevance."
+  },
+  {
+   "a": "f8310",
+   "b": "f8312",
+   "type": "supports",
+   "note": "The hourly price supports the approximate ten-GPU, four-month campaign cost."
+  }
+ ]
+}

@@ -78,6 +78,16 @@ function processTerm(term: string): string | null {
 	return stem(term);
 }
 
+/** Summary sections carry the booklet's conclusions; surface them a little earlier. */
+const ROLE_BOOST: Record<string, number> = {
+	synthesis: 1.3,
+	'key-findings': 1.22,
+	established: 1.08,
+	uncertain: 1.08,
+	disagree: 1.1,
+	'blind-spots': 1.05
+};
+
 export class GraphStore {
 	readonly root: string;
 	graph!: KGraph;
@@ -91,6 +101,8 @@ export class GraphStore {
 	private sectionById = new Map<string, ParsedSection>();
 	private raw: Record<string, string[]> = {};
 	private wireCache: GraphWire | null = null;
+	/** Booklet facts per chapter, in document order. */
+	chapterFacts = new Map<number, KGNode[]>();
 	loadedAt = 0;
 	private mtime = 0;
 
@@ -133,6 +145,12 @@ export class GraphStore {
 			this.adj.get(e.t)?.push({ id: e.s, r: e.r, out: false, note: e.note });
 		}
 		this.sectionById = new Map(this.corpus.sections.map((s) => [s.id, s]));
+		this.chapterFacts.clear();
+		for (const n of this.nodes) {
+			if (n.type !== 'fact' || n.doc !== 'booklet' || n.chapter == null) continue;
+			if (!this.chapterFacts.has(n.chapter)) this.chapterFacts.set(n.chapter, []);
+			this.chapterFacts.get(n.chapter)!.push(n);
+		}
 		this.raw = {
 			booklet: readFileSync(resolve(this.root, 'references/CMS-Research-Booklet.md'), 'utf8').split('\n'),
 			glossary: readFileSync(resolve(this.root, 'references/CMS-Glossary-and-Prerequisites.md'), 'utf8').split('\n')
@@ -225,7 +243,11 @@ export class GraphStore {
 		const hits = raw.map((r) => {
 			const node = this.byId.get(r.id as string)!;
 			let score = r.score;
-			if (node.type === 'fact') score *= 0.85 + 0.15 * (node.importance ?? 2);
+			if (node.type === 'fact') {
+				score *= 0.85 + 0.15 * (node.importance ?? 2);
+				const role = node.sectionId ? this.sectionById.get(node.sectionId)?.role : undefined;
+				if (role) score *= ROLE_BOOST[role] ?? 1;
+			}
 			if (node.type === 'section' || node.type === 'chapter') score *= 0.6;
 			return { id: node.id, score, node };
 		});
@@ -311,6 +333,10 @@ export class GraphStore {
 
 	section(id: string) {
 		return this.sectionById.get(id);
+	}
+
+	roleOf(n: KGNode) {
+		return n.sectionId ? this.sectionById.get(n.sectionId)?.role : undefined;
 	}
 
 	/** Raw markdown of a section (with its subsections), paginated by characters. */

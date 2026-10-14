@@ -1,0 +1,55 @@
+{
+ "key": "e:mining3",
+ "hash": "26b2627687f1c1ab",
+ "synopsis": "Mining3 identifies a verification gap in mining collision avoidance: end users cannot easily verify suppliers’ reliability and functionality claims [f396, f687]. Mining3 and EMESRT emphasize field verification and site-specific baselines, in tension with automotive simulation advocates who argue that simulation can carry most of the statistical burden [f1122]. Mining3 delivered ACARP project C26028 in January 2021; the proximity-detection testing framework is a shared physical test protocol, not a simulator [f15627, f16088, f16119]. Access to ACARP and Mining3 methods, alongside MOSH specifications, test sites, a qualified independent body, and traceability, is identified as critical to shared frameworks and independent review [f1057].",
+ "relations": [
+  {
+   "a": "f396",
+   "b": "f687",
+   "type": "same",
+   "note": "Both report Mining3’s concern about unverifiable supplier claims."
+  },
+  {
+   "a": "f16088",
+   "b": "f15627",
+   "type": "elaborates",
+   "note": "Identifies the delivered framework as a shared physical protocol, not a simulator."
+  },
+  {
+   "a": "f15627",
+   "b": "f16119",
+   "type": "elaborates",
+   "note": "Specifies Mining3’s delivery role, project identifier, and January 2021 date."
+  },
+  {
+   "a": "f16088",
+   "b": "f16119",
+   "type": "elaborates",
+   "note": "Adds project identity, date, and physical-testing scope to the association."
+  },
+  {
+   "a": "f16088",
+   "b": "f1122",
+   "type": "supports",
+   "note": "Mining3’s physical testing protocol aligns with its emphasis on field verification."
+  },
+  {
+   "a": "f396",
+   "b": "f1057",
+   "type": "supports",
+   "note": "Difficulty verifying supplier claims motivates accessible methods and independent review."
+  },
+  {
+   "a": "f1057",
+   "b": "f1122",
+   "type": "elaborates",
+   "note": "Names practical inputs for independent verification, including methods, test sites, and traceability."
+  },
+  {
+   "a": "f16088",
+   "b": "f1057",
+   "type": "elaborates",
+   "note": "Identifies a concrete ACARP–Mining3 protocol relevant to the required methods access."
+  }
+ ]
+}

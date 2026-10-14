@@ -1,0 +1,115 @@
+{
+ "key": "t111",
+ "hash": "fffb275f612cbc05",
+ "synopsis": "TTC estimates the seconds until machine and object meet if neither changes speed, while trigger distance marks the decision to warn or brake; both depend on perceived range and relative speed [f12857, f12859]. Trigger distance includes travel during detection and decision, brake response, physical stopping, and a residual safe distance; a one-meter range error or speed estimate lag of a few tenths of a second changes TTC and the trigger point [f12858, f12860]. TTC alone is weak at work-site speeds, so the referenced standard and consensus favor stopping-distance and risk-zone logic with TTC as one input; an unnamed mining specification requests warning 2.5–3.0 seconds before intervention, limiting traceability of that requirement [f12864, f12865, f12863]. Sensor-model validation should compare matched real and simulated TTC and trigger distance, with calibrated 3D reference labels when distance or TTC matters [f12867, f5402]. Across system comparison and campaign evaluation, the corpus recommends common ground truth and hazard zones, warning TTC, and verdicts extending beyond collisions to detection, intervention, stopping margin, nuisance effects and operator-warning sequence; scenario search can deliberately worsen TTC or other robustness measures to expose failures [f106, f7373, f6835].",
+ "relations": [
+  {
+   "a": "f106",
+   "b": "f5210",
+   "type": "same",
+   "note": "Both prescribe identical comparison metrics, common ground truth and a common hazard zone."
+  },
+  {
+   "a": "f5210",
+   "b": "f5478",
+   "type": "same",
+   "note": "Restates comparable system outputs, adding exposure matching and alternative warning-timing measures."
+  },
+  {
+   "a": "f7373",
+   "b": "f14379",
+   "type": "same",
+   "note": "Both require multidimensional verdicts rather than collision outcomes alone."
+  },
+  {
+   "a": "f4809",
+   "b": "f12861",
+   "type": "same",
+   "note": "Both place TTC and trigger distance in task-level sensor-model validation."
+  },
+  {
+   "a": "f12857",
+   "b": "f12859",
+   "type": "same",
+   "note": "Both identify perceived range and relative speed as inputs to these quantities."
+  },
+  {
+   "a": "f6835",
+   "b": "f14146",
+   "type": "elaborates",
+   "note": "Glossary specifies falsification measures and scenario parameters optimized toward failure."
+  },
+  {
+   "a": "f12867",
+   "b": "f4809",
+   "type": "elaborates",
+   "note": "Specifies matched real and simulated runs for validating TTC and trigger distance."
+  },
+  {
+   "a": "f12866",
+   "b": "f12861",
+   "type": "supports",
+   "note": "Biased perception corrupts brake timing, motivating validation of braking-relevant outputs."
+  },
+  {
+   "a": "f12860",
+   "b": "f12866",
+   "type": "elaborates",
+   "note": "Gives concrete range-error and speed-lag examples of perception errors shifting braking."
+  },
+  {
+   "a": "f5402",
+   "b": "f12808",
+   "type": "supports",
+   "note": "Calibrated 3D references address label-position errors that distort measured warning distance."
+  },
+  {
+   "a": "f3978",
+   "b": "f7373",
+   "type": "supports",
+   "note": "Scene truth provides TTC, braking state and trajectories needed for richer campaign verdicts."
+  },
+  {
+   "a": "f10927",
+   "b": "f12867",
+   "type": "supports",
+   "note": "Real-versus-replayed timing and TTC discrepancies supply evidence for matched-run validation."
+  },
+  {
+   "a": "f12864",
+   "b": "f12865",
+   "type": "supports",
+   "note": "Low-speed and stationary-machine limitations explain why TTC should not be the sole trigger."
+  },
+  {
+   "a": "f12858",
+   "b": "f12865",
+   "type": "elaborates",
+   "note": "Decomposes the distance budget underlying stopping-distance-based trigger logic."
+  },
+  {
+   "a": "f12862",
+   "b": "f14341",
+   "type": "elaborates",
+   "note": "Expands baseline warning TTC with distance, latency, duration and repeated warnings."
+  },
+  {
+   "a": "f106",
+   "b": "f12862",
+   "type": "elaborates",
+   "note": "Places baseline warning TTC within a fair system-comparison framework."
+  },
+  {
+   "a": "f14792",
+   "b": "f4809",
+   "type": "elaborates",
+   "note": "Adds detection rate, false alarms and correct braking timing to task-level metrics."
+  },
+  {
+   "a": "f6835",
+   "b": "f7373",
+   "type": "supports",
+   "note": "TTC and stopping-margin verdicts provide robustness measures that optimization-based testing can worsen."
+  }
+ ]
+}

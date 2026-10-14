@@ -1,0 +1,25 @@
+{
+ "key": "e:reusable holdout",
+ "hash": "9fca3000dd818fe8",
+ "synopsis": "The booklet implements the reusable holdout principle by limiting the tuning team's access to aggregate pass/fail results from the audit set [f6955, f14333]. The glossary specifies that this restriction applies at release gates [f14291]. Chapter 9 and the glossary attribute the principle to adaptive data analysis work by Dwork and colleagues published in Science in 2015 [f6955, f14291]. The supplied facts agree on the access restriction but do not describe how aggregation is performed or what safeguards accompany repeated use [f6955, f14333, f14291].",
+ "relations": [
+  {
+   "a": "f6955",
+   "b": "f14333",
+   "type": "same",
+   "note": "Both define implementation through restricting tuning-team access to aggregate pass/fail results."
+  },
+  {
+   "a": "f6955",
+   "b": "f14291",
+   "type": "same",
+   "note": "Both describe aggregate-only access and cite Dwork's 2015 Science work."
+  },
+  {
+   "a": "f14333",
+   "b": "f14291",
+   "type": "same",
+   "note": "Both state the access restriction; the latter specifies release gates and attribution."
+  }
+ ]
+}

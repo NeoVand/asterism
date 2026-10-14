@@ -1,0 +1,55 @@
+{
+ "key": "e:opal-rt",
+ "hash": "446a28a710b98943",
+ "synopsis": "The booklet identifies OPAL-RT as a provider of real-time hardware-in-the-loop (HIL) benches, with 4DV-SIM and OP5707XG2 included among data-replay and HIL offerings [f16101, f8364]. Chapter 11 positions 4DV-SIM and OPAL-RT's real-time HIL offerings for off-highway and autonomous vehicles, and cites named off-highway and defense users as off-road evidence [f8648, f8808, f8809]. OP5707XG2 is identified as a CPU/FPGA real-time system, consistent with the glossary's classification of OPAL-RT CPU and FPGA systems as real-time computing hardware [f8650, f16180]. Pricing for 4DV-SIM and OP5707XG2 is quote only, leaving planners without a stated purchase price in these facts [f8651].",
+ "relations": [
+  {
+   "a": "f8648",
+   "b": "f8808",
+   "type": "same",
+   "note": "Both identify 4DV-SIM for off-highway and autonomous vehicles."
+  },
+  {
+   "a": "f8808",
+   "b": "f16101",
+   "type": "elaborates",
+   "note": "Adds off-highway and autonomous application scope to OPAL-RT's HIL provision."
+  },
+  {
+   "a": "f8364",
+   "b": "f16101",
+   "type": "elaborates",
+   "note": "Names OPAL-RT products within data-replay and HIL offerings."
+  },
+  {
+   "a": "f8650",
+   "b": "f16180",
+   "type": "elaborates",
+   "note": "Identifies OP5707XG2 as a specific OPAL-RT CPU/FPGA real-time system."
+  },
+  {
+   "a": "f8648",
+   "b": "f8364",
+   "type": "elaborates",
+   "note": "Specifies autonomous and off-highway applications for the listed 4DV-SIM offering."
+  },
+  {
+   "a": "f8650",
+   "b": "f8364",
+   "type": "elaborates",
+   "note": "Specifies CPU/FPGA architecture for the listed OP5707XG2 offering."
+  },
+  {
+   "a": "f8651",
+   "b": "f8364",
+   "type": "elaborates",
+   "note": "Adds quote-only pricing status for both listed OPAL-RT products."
+  },
+  {
+   "a": "f8809",
+   "b": "f8808",
+   "type": "supports",
+   "note": "Named off-highway and defense users support the stated off-highway application scope."
+  }
+ ]
+}

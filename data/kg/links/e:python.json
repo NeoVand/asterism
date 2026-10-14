@@ -1,0 +1,109 @@
+{
+ "key": "e:python",
+ "hash": "898500b256dfb86c",
+ "synopsis": "Python is a recurring interface across the simulation tools: Prescan supports Python and MATLAB APIs alongside OpenSCENARIO, while CARLA exposes a Python API alongside other interfaces [f8458, f9005, f9011, f16237]. Sensor tooling also uses Python: CARLA lists cameras, lidar, radar, GNSS and IMU, while BeamNG.tech lists programmable cameras, lidar, radar, ultrasonic and IMU sensors with a Python API [f8468, f9085, f8504]. Beyond these platforms, Project Chrono lists Python, C# and Unity interfaces, and the glossary identifies Scenic, CropCraft and Demify as Python-driven generators [f9025, f9125, f16238]. The job-site chapter identifies CropCraft as an open-source Blender and Python tool dated November 2025 for generating agricultural fields; the tool listings further connect Scenic to multiple simulators and list Python and CPU/GPU for Demify [f3787, f9211, f9143].",
+ "relations": [
+  {
+   "a": "f8458",
+   "b": "f9005",
+   "type": "same",
+   "note": "Both list Prescan's OpenSCENARIO, Python and MATLAB interfaces."
+  },
+  {
+   "a": "f8458",
+   "b": "f9067",
+   "type": "same",
+   "note": "Prescan's interface list is repeated for its sensor models."
+  },
+  {
+   "a": "f9005",
+   "b": "f9067",
+   "type": "same",
+   "note": "The same Prescan interfaces appear in platform and sensor listings."
+  },
+  {
+   "a": "f8458",
+   "b": "f16237",
+   "type": "same",
+   "note": "The glossary restates Prescan's Python and MATLAB API support."
+  },
+  {
+   "a": "f9005",
+   "b": "f16237",
+   "type": "same",
+   "note": "Both identify Python and MATLAB APIs for Prescan."
+  },
+  {
+   "a": "f9067",
+   "b": "f16237",
+   "type": "elaborates",
+   "note": "The sensor listing adds OpenSCENARIO and sensor-model scope to Prescan's glossary interfaces."
+  },
+  {
+   "a": "f8468",
+   "b": "f9011",
+   "type": "same",
+   "note": "Both identify CARLA's Python API, with different additional details."
+  },
+  {
+   "a": "f8468",
+   "b": "f9085",
+   "type": "same",
+   "note": "Both identify Python access for CARLA's sensor tooling."
+  },
+  {
+   "a": "f9011",
+   "b": "f9085",
+   "type": "same",
+   "note": "CARLA's Python and ROS 2 interfaces recur in the sensor listing."
+  },
+  {
+   "a": "f8468",
+   "b": "f16237",
+   "type": "elaborates",
+   "note": "The vendor finding adds CARLA's sensor suite to the glossary's Python API statement."
+  },
+  {
+   "a": "f9011",
+   "b": "f16237",
+   "type": "elaborates",
+   "note": "The interface listing adds ROS 2, OpenDRIVE and OpenUSD export to CARLA's Python API."
+  },
+  {
+   "a": "f9085",
+   "b": "f16237",
+   "type": "elaborates",
+   "note": "The sensor listing adds ROS 2 and sensor scope to CARLA's glossary interface statement."
+  },
+  {
+   "a": "f9025",
+   "b": "f9125",
+   "type": "same",
+   "note": "Both list Project Chrono's Python, C# and Unity interfaces."
+  },
+  {
+   "a": "f8504",
+   "b": "f9031",
+   "type": "same",
+   "note": "Both identify BeamNG.tech's Python API, with different additional capabilities."
+  },
+  {
+   "a": "f3787",
+   "b": "f16238",
+   "type": "elaborates",
+   "note": "CropCraft's field-generation purpose, Blender dependency, open-source status and date expand the glossary entry."
+  },
+  {
+   "a": "f9143",
+   "b": "f16238",
+   "type": "supports",
+   "note": "Demify's Python interface corroborates its inclusion among Python-driven generators."
+  },
+  {
+   "a": "f9211",
+   "b": "f16238",
+   "type": "elaborates",
+   "note": "Scenic's multiple-simulator interfaces add scope to the glossary's Python-driven description."
+  }
+ ]
+}

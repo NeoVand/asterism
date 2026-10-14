@@ -1,0 +1,31 @@
+{
+ "key": "e:chrono vehicle",
+ "hash": "d4f6e56ac96a4e9f",
+ "synopsis": "Project Chrono and Chrono::Vehicle provide multibody and multiphysics dynamics for wheeled, tracked and articulated vehicles [f8493]. Across the job-site and tools chapters, Chrono::Vehicle supports rigid and deformable terrain, including semi-empirical SCM Bekker-Wong, granular discrete-element models and continuum models; the tools chapter identifies the continuum option as CRM continuum SPH [f3961, f8494]. Its documentation says deformable terrain relies on collision and contact, rather than a friction value painted onto a visual surface [f3962]. Project Chrono and Chrono::Vehicle are open-source tools licensed under BSD-3, but are not a turnkey test-management product [f8492, f8501].",
+ "relations": [
+  {
+   "a": "f3961",
+   "b": "f8494",
+   "type": "same",
+   "note": "Both describe rigid and deformable terrain with SCM, discrete-element and continuum models."
+  },
+  {
+   "a": "f3962",
+   "b": "f8494",
+   "type": "elaborates",
+   "note": "Explains the collision-and-contact basis of the listed deformable terrain capabilities."
+  },
+  {
+   "a": "f3962",
+   "b": "f3961",
+   "type": "elaborates",
+   "note": "Clarifies that deformable terrain is physical contact modeling, not painted surface friction."
+  },
+  {
+   "a": "f3961",
+   "b": "f8493",
+   "type": "elaborates",
+   "note": "Adds terrain-model capabilities to the broader vehicle dynamics scope."
+  }
+ ]
+}

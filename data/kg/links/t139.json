@@ -1,0 +1,115 @@
+{
+ "key": "t139",
+ "hash": "7d764ef81e3fef73",
+ "synopsis": "Co-simulation combines separate simulation programs in step: FMI standardizes their connections, FMUs package individual models, and SSP records connections and parameters so arrangements can be shared and reproduced [f13230, f13234]. The booklet treats FMI/SSP as domain-neutral and suitable for off-road work, with about 250 FMI-supporting tools reported by mid-2025, although Chapter 9 says the research did not verify FMI/SSP's status [f7167, f8336, f7165]. Practical applications include connecting reduced-order machine models to high-fidelity components and coupling Mevea with Simulink through FMI or TCP/IP [f6395, f8562, f8699]. When sensor internals are unavailable, the recommendation is to request a black-box OSI/OSMP FMU using FMI 2.0; secure black-box exchange approaches existed in 2024, but cited independent lidar-model examples are on-road evidence [f4857, f4858, f4504, f6381]. Standards do not eliminate integration risk: coordinate systems, clocks, synchronized machine pose and material semantics still need alignment, specialist integration requires co-simulation expertise, and the lowest-cost Chrono-to-Isaac heavy-machine chain is not turnkey or qualification-ready without major work [f13237, f8729, f8758, f9280].",
+ "relations": [
+  {
+   "a": "f8336",
+   "b": "f13233",
+   "type": "same",
+   "note": "Both report around 250 FMI-supporting tools by mid-2025."
+  },
+  {
+   "a": "f8336",
+   "b": "f15863",
+   "type": "same",
+   "note": "Both report about 250 FMI-supporting tools by mid-2025."
+  },
+  {
+   "a": "f8336",
+   "b": "f8713",
+   "type": "same",
+   "note": "Same tool count and date; latter names the Modelica Association."
+  },
+  {
+   "a": "f13233",
+   "b": "f15863",
+   "type": "same",
+   "note": "Duplicate glossary statements of FMI adoption count and date."
+  },
+  {
+   "a": "f13233",
+   "b": "f8713",
+   "type": "same",
+   "note": "Same adoption count; Chapter 11 adds source and co-simulation support."
+  },
+  {
+   "a": "f15863",
+   "b": "f8713",
+   "type": "same",
+   "note": "Same mid-2025 adoption count, with additional attribution in Chapter 11."
+  },
+  {
+   "a": "f8532",
+   "b": "f8705",
+   "type": "same",
+   "note": "Both document AVxcelerate co-simulation with CarMaker and CARLA."
+  },
+  {
+   "a": "f8532",
+   "b": "f15946",
+   "type": "same",
+   "note": "Glossary repeats documented CarMaker and CARLA co-simulation, adding product context."
+  },
+  {
+   "a": "f8705",
+   "b": "f15946",
+   "type": "same",
+   "note": "Both identify supported AVxcelerate co-simulation partners."
+  },
+  {
+   "a": "f8562",
+   "b": "f8699",
+   "type": "same",
+   "note": "Both identify supported Mevea–Simulink coupling through FMI or TCP/IP."
+  },
+  {
+   "a": "f8552",
+   "b": "f15948",
+   "type": "same",
+   "note": "Same Persival OSI/FMUs packaging claim; glossary adds real-sensor correlation."
+  },
+  {
+   "a": "f8335",
+   "b": "f15862",
+   "type": "same",
+   "note": "Both identify the same standards as simulation-tool integration glue."
+  },
+  {
+   "a": "f7167",
+   "b": "f13224",
+   "type": "same",
+   "note": "Both rate FMI as domain-neutral and transferable to off-road applications."
+  },
+  {
+   "a": "f4857",
+   "b": "f16495",
+   "type": "elaborates",
+   "note": "Glossary expands the black-box FMU recommendation into five supplier-access alternatives."
+  },
+  {
+   "a": "f4858",
+   "b": "f4857",
+   "type": "supports",
+   "note": "Existing secure black-box exchange approaches support requesting proprietary sensor FMUs."
+  },
+  {
+   "a": "f7165",
+   "b": "f7167",
+   "type": "contradicts",
+   "note": "Unverified FMI/SSP status tempers the chapter's affirmative suitability finding."
+  },
+  {
+   "a": "f8718",
+   "b": "f13237",
+   "type": "elaborates",
+   "note": "Glossary extends timing and coordinate risks to materials and upgrade reproducibility."
+  },
+  {
+   "a": "f8759",
+   "b": "f8758",
+   "type": "supports",
+   "note": "Interface and version complexity explains the need for specialist co-simulation staffing."
+  }
+ ]
+}

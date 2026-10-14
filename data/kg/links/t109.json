@@ -1,0 +1,115 @@
+{
+ "key": "t109",
+ "hash": "acefad96b6276858",
+ "synopsis": "Recall (true positive rate) measures the share of real objects found, precision measures the share of reports that are real, and F1 combines them using their harmonic mean; both precision and recall matter, as a 2026 labeler achieved recall of 0.88–0.98 but precision of only 0.52 in crowded indoor scenes [f12841, f5382]. The recommended baseline measures detection per independent encounter by object class, distance, bearing and condition, reports curves or bins rather than a fleet average, and includes real-data confidence intervals and audited-label precision and recall [f14339, f11102, f5422]. Demonstrating at least 95% or 99% detection with 95% confidence requires respectively 59 or 299 consecutive successful encounters per stratum, but no acceptance value for detection probability or miss rate was found [f5202, f5203, f2620]. Replay establishes detection, false-alarm rates and warning timing only for recorded configurations and situations; probability-based sampling supports unbiased estimates for the assumed scenario distribution, while poor field telemetry leaves aggregate real-world weighting uncertain [f13444, f6830, f7423]. Detector-threshold tuning using ROC, DET or precision-recall operating points is recommended, but specific off-road evidence was not identified, and detection-only validation can overlook nuisance braking that prompts operators to disable the system [f6980, f7306, f1986]. The 2022 off-road lidar de-dusting result of F1 = 97.55% measures filter performance on its own dataset, not sensor-model fidelity, while synthetic coverage can make mAP misleading despite real–simulation differences [f10563, f7832, f12842].",
+ "relations": [
+  {
+   "a": "f5382",
+   "b": "f12803",
+   "type": "same",
+   "note": "Both report the 2026 labeler's high recall but 0.52 precision in crowded scenes."
+  },
+  {
+   "a": "f5382",
+   "b": "f12845",
+   "type": "same",
+   "note": "Same labeler recall and precision figures; glossary emphasizes reporting both."
+  },
+  {
+   "a": "f12803",
+   "b": "f12845",
+   "type": "same",
+   "note": "Duplicate labeler performance figures."
+  },
+  {
+   "a": "f5422",
+   "b": "f12809",
+   "type": "same",
+   "note": "Both recommend audited-label precision and recall alongside every result."
+  },
+  {
+   "a": "f5422",
+   "b": "f12789",
+   "type": "same",
+   "note": "Both require audited-subset label precision and recall alongside every metric."
+  },
+  {
+   "a": "f12809",
+   "b": "f12789",
+   "type": "same",
+   "note": "Duplicate audited-label reporting recommendations."
+  },
+  {
+   "a": "f7830",
+   "b": "f10563",
+   "type": "same",
+   "note": "Same 2022 Sensors dust-filter F1 result; skeptic clarifies percent and dataset."
+  },
+  {
+   "a": "f6980",
+   "b": "f7302",
+   "type": "same",
+   "note": "Both restrict operating-point tuning to the detector threshold."
+  },
+  {
+   "a": "f7303",
+   "b": "f12850",
+   "type": "same",
+   "note": "Both describe operating-point tuning as simple, transparent and standard."
+  },
+  {
+   "a": "f5234",
+   "b": "f13444",
+   "type": "same",
+   "note": "Replay establishes metrics only for recorded sensor configurations and situations."
+  },
+  {
+   "a": "f6830",
+   "b": "f14126",
+   "type": "same",
+   "note": "Probability-based scenario sampling yields unbiased rate estimates with classical confidence intervals."
+  },
+  {
+   "a": "f12843",
+   "b": "f14705",
+   "type": "same",
+   "note": "Same 0.0117 mAP improvement over a real-only fog baseline."
+  },
+  {
+   "a": "f5483",
+   "b": "f12846",
+   "type": "same",
+   "note": "Per-frame precision and recall are not comparable across incompatible sensor representations."
+  },
+  {
+   "a": "f5429",
+   "b": "f12844",
+   "type": "elaborates",
+   "note": "Specifies independent encounters and object classes for the recommended recall baseline."
+  },
+  {
+   "a": "f5430",
+   "b": "f14339",
+   "type": "elaborates",
+   "note": "Specifies ISO risk-area distance bands and named environmental conditions for stratification."
+  },
+  {
+   "a": "f5202",
+   "b": "f14347",
+   "type": "elaborates",
+   "note": "Adds 95% confidence to the 59-success, 95% detection sample-size guidance."
+  },
+  {
+   "a": "f5203",
+   "b": "f14347",
+   "type": "elaborates",
+   "note": "Adds 95% confidence to the 299-success, 99% detection sample-size guidance."
+  },
+  {
+   "a": "f12848",
+   "b": "f1986",
+   "type": "supports",
+   "note": "Constant alarming illustrates why detection-only validation misses operator-disablement risk."
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "key": "e:u.s. army",
+ "hash": "60e2ff399d99f8db",
+ "synopsis": "The booklet identifies U.S. Army interest in military-vehicle collision mitigation through a solicitation for ruggedized sensors supporting forward and reverse collision warning and automatic brake assist, but reports finding no publicly documented operational military ground-vehicle AEB safety case with quantified simulation substitution [f1425, f1426, f1922]. An Army report summarizing Bekker and Wong terramechanics links tractive and braking force to soil, contact area, load and slip, and states that tracks retain more shear force than tires in soft soil [f6006, f6007]. Project Chrono lists Army organizations among its users and is presented as having off-road evidence, including deformable terrain; these user references do not fill the separately identified AEB validation-case gap [f8497, f9023, f9122, f1426]. The Army also appears as a source of planning methods: RAND developed assumption-based planning for its Force XXI work, documented in 1993 and a 2002 book, while the glossary turns this into an assumption log with vulnerable assumptions, failure signposts and hedges [f9557, f16345]. The U.S. Army Red Team Handbook is cited as documenting red-teaming practice alongside the UK Ministry of Defence handbook, whose third edition dates to 2021 [f9955, f12438, f16359].",
+ "relations": [
+  {
+   "a": "f1425",
+   "b": "f1922",
+   "type": "same",
+   "note": "Both characterize the Army precedent as a sensor solicitation, not a validation case."
+  },
+  {
+   "a": "f1922",
+   "b": "f1426",
+   "type": "supports",
+   "note": "Requirement-only evidence supports the stated gap in documented operational AEB validation."
+  },
+  {
+   "a": "f6007",
+   "b": "f6006",
+   "type": "elaborates",
+   "note": "Track-versus-tire soft-soil behavior details terrain-dependent force generation."
+  },
+  {
+   "a": "f8497",
+   "b": "f8676",
+   "type": "same",
+   "note": "Both list Army, NREL and JPL users; evidence labeling differs."
+  },
+  {
+   "a": "f8497",
+   "b": "f9023",
+   "type": "elaborates",
+   "note": "The off-road entry adds deformable terrain to the same user list."
+  },
+  {
+   "a": "f8676",
+   "b": "f9023",
+   "type": "elaborates",
+   "note": "The vendor off-road entry adds deformable terrain to the shared user claim."
+  },
+  {
+   "a": "f9122",
+   "b": "f9023",
+   "type": "same",
+   "note": "Both report Project Chrono off-road evidence involving Army users, with differing detail."
+  },
+  {
+   "a": "f9557",
+   "b": "f16345",
+   "type": "elaborates",
+   "note": "The glossary operationalizes the RAND-developed planning method as an assumption log."
+  },
+  {
+   "a": "f9955",
+   "b": "f16359",
+   "type": "same",
+   "note": "Both identify the Army handbook as documented red-teaming practice."
+  },
+  {
+   "a": "f12438",
+   "b": "f16359",
+   "type": "same",
+   "note": "Both cite UK and Army red-teaming handbooks; one specifies the UK edition."
+  },
+  {
+   "a": "f12438",
+   "b": "f9955",
+   "type": "elaborates",
+   "note": "The glossary adds the UK handbook and its 2021 third edition."
+  }
+ ]
+}

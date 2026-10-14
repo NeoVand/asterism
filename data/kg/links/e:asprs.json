@@ -1,0 +1,43 @@
+{
+ "key": "e:asprs",
+ "hash": "4a01616fb00dbf7c",
+ "synopsis": "ASPRS supplies a formal framework for evaluating geometric acceptance when virtual-scene tests require metric truth [f3912]. The glossary identifies the cited laser-scanning reference as the American Society for Photogrammetry and Remote Sensing positional accuracy standards from 2024 [f13137]. Chapter 5 describes lidar as the most geometrically accurate of the compared site-creation methods, with directly assessable accuracy, citing ASPRS 2024 and USGS 2025 [f4208]. Photogrammetry can achieve measurable centimetre-level accuracy with control, referencing ASPRS 2024, but performs poorly on occluded surfaces [f4198]. Both photogrammetry and lidar are described as having mature accuracy frameworks; the supplied facts do not specify numerical acceptance thresholds for virtual scenes [f4294, f3912].",
+ "relations": [
+  {
+   "a": "f13137",
+   "b": "f3912",
+   "type": "elaborates",
+   "note": "Identifies the standards' full organizational name, year, and laser-scanning application."
+  },
+  {
+   "a": "f13137",
+   "b": "f4208",
+   "type": "elaborates",
+   "note": "Names the ASPRS positional accuracy standards cited for laser-scanning accuracy."
+  },
+  {
+   "a": "f4198",
+   "b": "f3912",
+   "type": "elaborates",
+   "note": "Adds photogrammetry accuracy achievable with control and its occlusion limitation."
+  },
+  {
+   "a": "f4208",
+   "b": "f3912",
+   "type": "elaborates",
+   "note": "Adds lidar's comparative accuracy advantage and directly assessable geometry."
+  },
+  {
+   "a": "f4198",
+   "b": "f4294",
+   "type": "supports",
+   "note": "Provides a concrete photogrammetry accuracy claim referencing the mature ASPRS framework."
+  },
+  {
+   "a": "f4208",
+   "b": "f4294",
+   "type": "supports",
+   "note": "Directly assessable lidar accuracy supports the claim of mature accuracy frameworks."
+  }
+ ]
+}

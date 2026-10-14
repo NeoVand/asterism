@@ -1,0 +1,31 @@
+{
+ "key": "e:fiala tire model",
+ "hash": "693af53eedbe595e",
+ "synopsis": "The glossary describes Fiala as a simple physical tire model and groups it with Magic Formula/Pacejka and TMeasy as models that assume a firm surface [f13780, f13782]. Chapter 8 describes rigid full-vehicle multibody models with 3–8 degrees of freedom using Fiala or Magic Formula tires to predict braking-related roll, yaw, jackknife and pitch stability, plus load transfer [f6447]. Its cited articulated-loader studies specifically use 7- and 8-degree-of-freedom models, Fiala tires and active braking, treating roll instability as critical; the references include two Li et al. papers from 2016 and a related lateral-stability paper from 2013 [f6032, f13781]. For tool selection, Project Chrono developers report that Fiala, Pacejka and TMeasy handling tire models do not work with deformable terrain, identifying rigid or FEA tires and tracked vehicles as the supported alternatives [f8498]. Thus, the reported use of Fiala for loader stability does not establish suitability for deformable-terrain validation [f6032, f13782, f8498].",
+ "relations": [
+  {
+   "a": "f6032",
+   "b": "f13781",
+   "type": "same",
+   "note": "Both identify Fiala tires in the cited articulated-loader studies."
+  },
+  {
+   "a": "f6032",
+   "b": "f6447",
+   "type": "elaborates",
+   "note": "Loader studies specify model dimensions, active braking, critical instability and reference dates."
+  },
+  {
+   "a": "f13782",
+   "b": "f8498",
+   "type": "supports",
+   "note": "Firm-surface assumptions support the reported Chrono limitation on deformable terrain."
+  },
+  {
+   "a": "f8498",
+   "b": "f13782",
+   "type": "elaborates",
+   "note": "Adds a tool-specific incompatibility and identifies supported alternatives."
+  }
+ ]
+}

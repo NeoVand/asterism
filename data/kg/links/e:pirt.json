@@ -1,0 +1,73 @@
+{
+ "key": "e:pirt",
+ "hash": "83013d5d645a92c6",
+ "synopsis": "PIRT ranks the physical phenomena that matter most and provides the graded basis for allocating validation evidence in NRC EMDAP: highly ranked phenomena require test data, while lower-ranked phenomena receive reduced emphasis [f14640, f8089, f7836, f14646]. The assessment base uses separate-effects tests, integral-effects tests and scaling analysis to isolate phenomena, exercise coupled behavior and establish applicability of test-rig data [f14644]. For collision-mitigation validation, the assessor package should rank brake fade, dust attenuation, glare and mount vibration, trace scenarios to hazards and EMESRT/ISO 21815, and use the ranking to determine which physical tests to retain [f8030, f14651]. Within the validated parameter hull, changes not touching ranked phenomena can be documented and evaluated through simulation alone, whereas changes touching them should trigger brake calibration and sensor field-of-view and detection checks at the new mount [f7912, f7913]. Full machine-family re-validation is recommended only for variants outside that hull or introducing a new PIRT phenomenon, such as a new sensor type or articulated steering; this is identified as expert opinion [f7918]. The method's subjectivity remains an explicit concern: a peer-reviewed criticism calls for treating it explicitly, and experts disagree about accepting subjective rankings without that treatment [f14652, f8194].",
+ "relations": [
+  {
+   "a": "f7836",
+   "b": "f14646",
+   "type": "same",
+   "note": "Both require evidence for highly ranked phenomena and reduced emphasis for low-ranked phenomena."
+  },
+  {
+   "a": "f14640",
+   "b": "f7836",
+   "type": "elaborates",
+   "note": "Adds test-evidence requirements to the definition of PIRT ranking."
+  },
+  {
+   "a": "f8089",
+   "b": "f7836",
+   "type": "elaborates",
+   "note": "Explains how PIRT's graded approach allocates test evidence."
+  },
+  {
+   "a": "f14644",
+   "b": "f7836",
+   "type": "elaborates",
+   "note": "Explains assessment-base test types and scaling alongside ranked evidence requirements."
+  },
+  {
+   "a": "f8030",
+   "b": "f14651",
+   "type": "elaborates",
+   "note": "The assessor ranking also determines which physical tests are retained."
+  },
+  {
+   "a": "f14651",
+   "b": "f7913",
+   "type": "elaborates",
+   "note": "Specifies physical checks triggered when a variant touches a ranked phenomenon."
+  },
+  {
+   "a": "f7912",
+   "b": "f7913",
+   "type": "elaborates",
+   "note": "Complementary within-hull change rules distinguish simulation-only evaluation from physical delta testing."
+  },
+  {
+   "a": "f7913",
+   "b": "f7918",
+   "type": "elaborates",
+   "note": "Distinguishes delta tests for existing phenomena from full re-validation for new phenomena."
+  },
+  {
+   "a": "f7912",
+   "b": "f7918",
+   "type": "elaborates",
+   "note": "Defines escalation beyond simulation-only evaluation when hull limits or phenomena change."
+  },
+  {
+   "a": "f7836",
+   "b": "f14651",
+   "type": "supports",
+   "note": "Rank-based evidence allocation supports using rankings to retain physical tests."
+  },
+  {
+   "a": "f14652",
+   "b": "f8194",
+   "type": "elaborates",
+   "note": "Reports expert disagreement around the criticism's demand for explicit treatment of subjectivity."
+  }
+ ]
+}

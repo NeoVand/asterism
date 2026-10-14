@@ -1,0 +1,55 @@
+{
+ "key": "e:asam openscenario",
+ "hash": "eb4458ac8ec6d4ed",
+ "synopsis": "ASAM OpenSCENARIO describes scenarios, while OpenDRIVE describes roads; OpenSCENARIO has an XML form [f16017, f13010]. The booklet recommends keeping the scenario catalog in a manufacturer-owned, domain-neutral, version-controlled Scenic or in-house YAML representation, then exporting to OpenSCENARIO for tools that require it [f14491, f7204]. Tool support spans VTD, the dSPACE chain, CARLA, RoadRunner, Prescan and MORAI, with native support specifically reported for VTD ScenarioEngine [f16017, f9200]. An open co-simulation demo combines OpenSCENARIO and OSI with OpenMATERIAL 3D and a physical lidar model, illustrating use beyond catalog exchange [f3981]. OpenSCENARIO, OpenDRIVE and OSI are described as open, free and ongoing, but their road heritage is a scope caveat for heavy off-road applications; the supplied facts give no version numbers or release dates [f9214, f9217, f9218, f9215].",
+ "relations": [
+  {
+   "a": "f7204",
+   "b": "f14491",
+   "type": "same",
+   "note": "Both recommend exporting the scenario catalog to OpenSCENARIO when required by tools."
+  },
+  {
+   "a": "f14491",
+   "b": "f7204",
+   "type": "elaborates",
+   "note": "Adds ownership, version control, source formats and taxonomy to the export recommendation."
+  },
+  {
+   "a": "f13010",
+   "b": "f16017",
+   "type": "elaborates",
+   "note": "Specifies an XML form for the scenario-description standard."
+  },
+  {
+   "a": "f9195",
+   "b": "f16017",
+   "type": "elaborates",
+   "note": "Details RoadRunner Scenario support and its additional MATLAB and gRPC interfaces."
+  },
+  {
+   "a": "f9200",
+   "b": "f16017",
+   "type": "elaborates",
+   "note": "Identifies native OpenSCENARIO support in VTD ScenarioEngine."
+  },
+  {
+   "a": "f16017",
+   "b": "f7204",
+   "type": "supports",
+   "note": "Broad tool support provides a practical reason for OpenSCENARIO export."
+  },
+  {
+   "a": "f3981",
+   "b": "f9214",
+   "type": "elaborates",
+   "note": "Shows OpenSCENARIO and OSI used together in an open co-simulation demo."
+  },
+  {
+   "a": "f16017",
+   "b": "f8361",
+   "type": "elaborates",
+   "note": "Explains the scenario and road roles of standards listed among tool offerings."
+  }
+ ]
+}

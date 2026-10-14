@@ -1,0 +1,103 @@
+{
+ "key": "t311",
+ "hash": "cca548be2fe33847",
+ "synopsis": "The booklet treats Waymo and Motional as on-road vendor precedents for layered validation: simulation, replay and shadow mode filter candidates before scarce physical testing, rather than replace it [f15718, f15729]. Waymo published its collision avoidance testing methodology in 2022 and documented city-by-city expansion as evidence accumulates; the booklet cites these programs as evidence for staged release within a limited operating domain [f604, f15720, f15730]. Motional’s 2026 material describes progression from simulation and recorded-data re-simulation through closed-course and public-road testing to deployment, including daily shadow-mode evaluation before broader roll-out [f15725, f15726]. The booklet recommends shadow mode on the existing warning-only fleet as the most valuable lever for collecting false-positive evidence before the prototype arrives; Motional’s example runs new software without executing its actuator decisions [f15731, f15727]. Waymo’s material also distinguishes replay from closed-loop simulation and highlights reproducible dataset requirements and inconsistent human labeling, but neither developer discloses validation durations or physical-test shares sufficient for verified sign-off, and Waymo’s 2026 scene-generation world model has no off-road qualification [f15721, f15722, f15723, f15728, f15724].",
+ "relations": [
+  {
+   "a": "f586",
+   "b": "f15726",
+   "type": "same",
+   "note": "Both describe daily shadow-mode feature testing before broader roll-out in Motional’s 2026 material."
+  },
+  {
+   "a": "f604",
+   "b": "f15719",
+   "type": "same",
+   "note": "Both date Waymo’s published collision avoidance testing methodology to 2022."
+  },
+  {
+   "a": "f15720",
+   "b": "f604",
+   "type": "elaborates",
+   "note": "Explains that city-by-city release widens operating areas only as evidence accumulates."
+  },
+  {
+   "a": "f695",
+   "b": "f15725",
+   "type": "same",
+   "note": "Both describe Motional’s simulation-to-physical-testing-to-deployment progression."
+  },
+  {
+   "a": "f695",
+   "b": "f15726",
+   "type": "same",
+   "note": "Both describe shadow features being evaluated before broader roll-out."
+  },
+  {
+   "a": "f15727",
+   "b": "f586",
+   "type": "elaborates",
+   "note": "Explains how shadow deployment measures software decisions without executing actuator commands."
+  },
+  {
+   "a": "f695",
+   "b": "f15718",
+   "type": "supports",
+   "note": "Motional’s documented progression exemplifies the layered on-road validation methods."
+  },
+  {
+   "a": "f695",
+   "b": "f15729",
+   "type": "supports",
+   "note": "Simulation followed by physical testing supports using virtual methods as filters, not substitutes."
+  },
+  {
+   "a": "f15721",
+   "b": "f15718",
+   "type": "elaborates",
+   "note": "Distinguishes recorded-data replay from closed-loop simulation within the validation layers."
+  },
+  {
+   "a": "f15720",
+   "b": "f15730",
+   "type": "supports",
+   "note": "Evidence-gated operating-area expansion exemplifies staged release within a limited domain."
+  },
+  {
+   "a": "f586",
+   "b": "f15731",
+   "type": "supports",
+   "note": "Motional’s pre-roll-out shadow testing provides an on-road precedent for the fleet recommendation."
+  },
+  {
+   "a": "f15727",
+   "b": "f15731",
+   "type": "supports",
+   "note": "Non-actuating software evaluation explains shadow mode’s value before prototype availability."
+  },
+  {
+   "a": "f15728",
+   "b": "f15718",
+   "type": "elaborates",
+   "note": "Limits the vendor precedents: verified sign-off durations and physical-test shares are undisclosed."
+  },
+  {
+   "a": "f15724",
+   "b": "f15718",
+   "type": "elaborates",
+   "note": "Adds a specific boundary: Waymo’s 2026 scene-generation claim lacks off-road qualification."
+  },
+  {
+   "a": "f15723",
+   "b": "f15722",
+   "type": "elaborates",
+   "note": "Adds a label-consistency caution to the requirements for a reproducible reference dataset."
+  },
+  {
+   "a": "f604",
+   "b": "f694",
+   "type": "supports",
+   "note": "The documented 2022 methodology substantiates Waymo’s inclusion among automotive validation precedents."
+  }
+ ]
+}

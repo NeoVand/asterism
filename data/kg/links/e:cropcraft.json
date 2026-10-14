@@ -1,0 +1,49 @@
+{
+ "key": "e:cropcraft",
+ "hash": "e74785540555efb0",
+ "synopsis": "CropCraft is an open-source Blender and Python tool for procedurally generating agricultural fields, identified in Chapter 5 as dated November 2025 [f3787, f16006, f16238]. Its reported average simulation-to-real mIoU gap was 9.9%, with gaps of 10.6% on Real Montoldre and 9.2% on Real Steininger [f3731, f4141]. CropCraft also found in 2025 that adding even a few real images to synthetic data improves generalization [f4100]. The corpus includes CropCraft among examples supporting procedural generation’s strong off-road record, but explicitly warns that these agricultural examples do not prove applicability to heavy construction-machine braking [f4194, f4148].",
+ "relations": [
+  {
+   "a": "f3731",
+   "b": "f4141",
+   "type": "same",
+   "note": "Both report the same 9.9% average simulation-to-real mIoU gap."
+  },
+  {
+   "a": "f16006",
+   "b": "f3787",
+   "type": "same",
+   "note": "Both identify CropCraft as an open-source agricultural-field generator."
+  },
+  {
+   "a": "f3787",
+   "b": "f16238",
+   "type": "supports",
+   "note": "Its Python tooling supports the glossary’s classification as Python-driven."
+  },
+  {
+   "a": "f3787",
+   "b": "f16086",
+   "type": "supports",
+   "note": "Agricultural-field generation substantiates CropCraft’s role in the glossary’s scene-generator grouping."
+  },
+  {
+   "a": "f3731",
+   "b": "f4194",
+   "type": "supports",
+   "note": "Reported agricultural procedural-generation results contribute evidence to the claimed off-road record."
+  },
+  {
+   "a": "f4148",
+   "b": "f4194",
+   "type": "elaborates",
+   "note": "Limits the strong off-road record: agricultural examples do not establish construction-machine braking applicability."
+  },
+  {
+   "a": "f4100",
+   "b": "f4141",
+   "type": "elaborates",
+   "note": "Adds a generalization-improvement finding alongside the measured simulation-to-real gaps."
+  }
+ ]
+}

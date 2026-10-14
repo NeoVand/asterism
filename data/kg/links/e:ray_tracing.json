@@ -1,0 +1,91 @@
+{
+ "key": "e:ray tracing",
+ "hash": "69688b412c478c2d",
+ "synopsis": "Ray tracing follows light, radio or sound rays through virtual scenes and is central to physics-based sensor modelling; ray-traced lidar using the actual scan pattern and signal chain is identified as the best-validated sensor-model type [f12952, f12955, f4502]. For radar, RadaRays, published in 2025, found that one-hit models missed multipath and material behaviour, while ray-traced material models achieved much closer agreement with real images; an on-road study also concluded that the complete signal-processing toolchain and sensor-specific impairments must be included [f4531, f4529]. Full-wave simulation of an entire quarry or mine is impractical, so engineering simulators combine approximations, ray tracing and statistical electronics models [f4536]. The glossary identifies ray tracing as the most promising route to trusted models for untested machines or mounting positions because it responds causally to scene and sensor changes, but this transfer capability depends on known materials and sensor internals [f12957, f12964, f12958]. Important limitations remain: a 77 GHz on-road study had to estimate material parameters because reliable values were lacking, and ray-tracing errors grow in heavy precipitation [f4530, f12959].",
+ "relations": [
+  {
+   "a": "f4531",
+   "b": "f12956",
+   "type": "same",
+   "note": "Both report one-hit radar shortcomings and improved agreement from ray-traced material models."
+  },
+  {
+   "a": "f4502",
+   "b": "f12955",
+   "type": "elaborates",
+   "note": "Specifies scan pattern, beam divergence, timing and detection modelling for physics-based lidar."
+  },
+  {
+   "a": "f4464",
+   "b": "f12955",
+   "type": "elaborates",
+   "note": "Details the physics-based modelling methods used across sensor modalities."
+  },
+  {
+   "a": "f12952",
+   "b": "f4528",
+   "type": "elaborates",
+   "note": "Explains ray tracing and the shooting-and-bouncing-rays method listed among radar simulation approaches."
+  },
+  {
+   "a": "f4531",
+   "b": "f12958",
+   "type": "supports",
+   "note": "Improved radar agreement demonstrates why material information matters."
+  },
+  {
+   "a": "f4529",
+   "b": "f12964",
+   "type": "supports",
+   "note": "Radar study reinforces the requirement to know and model the sensor signal chain."
+  },
+  {
+   "a": "f4530",
+   "b": "f12958",
+   "type": "supports",
+   "note": "Missing reliable 77 GHz material parameters illustrates the material-data requirement."
+  },
+  {
+   "a": "f4530",
+   "b": "f12964",
+   "type": "depends",
+   "note": "Trusted transfer requires material parameters that the measurement study found unavailable."
+  },
+  {
+   "a": "f12964",
+   "b": "f12958",
+   "type": "depends",
+   "note": "Trusted modelling of untested configurations requires supplier internals and material data."
+  },
+  {
+   "a": "f12957",
+   "b": "f12964",
+   "type": "supports",
+   "note": "Causal response to geometry and sensor changes explains potential transfer to untested configurations."
+  },
+  {
+   "a": "f12959",
+   "b": "f12957",
+   "type": "elaborates",
+   "note": "Adds a heavy-precipitation accuracy limitation to causal weather responsiveness."
+  },
+  {
+   "a": "f4536",
+   "b": "f4528",
+   "type": "elaborates",
+   "note": "Explains full-wave scale limitations and the resulting use of hybrid engineering simulators."
+  },
+  {
+   "a": "f4529",
+   "b": "f12956",
+   "type": "elaborates",
+   "note": "Adds signal-processing and sensor-impairment requirements beyond modelling multipath and materials."
+  },
+  {
+   "a": "f4502",
+   "b": "f12964",
+   "type": "elaborates",
+   "note": "Identifies lidar scan and detection details relevant to the known-signal-chain condition."
+  }
+ ]
+}

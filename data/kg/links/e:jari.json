@@ -1,0 +1,43 @@
+{
+ "key": "e:jari",
+ "hash": "c71622d530960ccf",
+ "synopsis": "JARI in Japan is named alongside CEREMA, CARISSMA and NIED as a main source of ground truth for weather models; weather chambers at these institutions, together with proving grounds, underpin sensor-model validation [f5056, f16122, f5119]. Fog is the best-reproduced condition for lidar, with JARI, CEREMA and CARISSMA fog chambers providing on-road evidence [f4640]. However, the booklet did not examine facility booking lead times, capacity or suitability for heavy off-road machines of the size in scope, leaving practical access and applicability unresolved [f16124, f5120]. These access questions directly affect model validation before mid-2027 [f5120].",
+ "relations": [
+  {
+   "a": "f5056",
+   "b": "f16122",
+   "type": "same",
+   "note": "Restates the main weather-model ground-truth facilities, adding their countries."
+  },
+  {
+   "a": "f5120",
+   "b": "f16124",
+   "type": "same",
+   "note": "Both identify unexamined booking, capacity and machine-size suitability."
+  },
+  {
+   "a": "f5119",
+   "b": "f5056",
+   "type": "elaborates",
+   "note": "Extends ground-truth role to sensor-model validation and includes proving grounds."
+  },
+  {
+   "a": "f4640",
+   "b": "f16122",
+   "type": "supports",
+   "note": "Fog-chamber on-road evidence substantiates the named facilities' ground-truth role."
+  },
+  {
+   "a": "f4640",
+   "b": "f5119",
+   "type": "elaborates",
+   "note": "Specifies lidar fog performance and the on-road scope of chamber evidence."
+  },
+  {
+   "a": "f5120",
+   "b": "f5119",
+   "type": "depends",
+   "note": "Timely validation using these facilities depends on unresolved access and machine-size suitability."
+  }
+ ]
+}

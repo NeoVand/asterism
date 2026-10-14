@@ -1,0 +1,115 @@
+{
+ "key": "t254",
+ "hash": "a953c67a01811122",
+ "synopsis": "The corpus treats image and field similarity as measures of appearance and structure, not proof of perception or safety equivalence: PSNR, SSIM and LPIPS require pixel-matched pairs, whereas FID compares image collections [f14791, f14773, f14771]. Chapter 5 documents substantial viewpoint sensitivity: Para-Lane (2025) falls from 22.99 dB PSNR in the recorded lane to 17.05 dB in the adjacent lane, while MV² (August 2026) falls from 29.13 dB at drone height to 10.36 dB from a car; these results are on-road evidence [f3707, f3709]. Generative novel-view methods achieved 13.19–20.82 dB PSNR on Waymo in a 2026 preprint, which the booklet interprets as low fidelity for safety testing rather than metric-faithful validation [f3821, f3822, f4330]. Across Chapters 6 and 9, improved visual or radar-map similarity does not reliably imply equivalent system behavior: RadaRays improved mutual-information and structural-similarity scores, yet a detector trained on real radar images still failed on simulated images [f4824, f14776, f7071]. Whether FID and certain geometric distances predict safety-relevant perception errors remains uncertain, and FID does not target a specific perception algorithm [f5067, f4819]. Planning should therefore pair image similarity with task-level and closed-loop validation, checking higher assessment layers rather than inferring them from lower-layer agreement [f4827, f14778, f14797].",
+ "relations": [
+  {
+   "a": "f3707",
+   "b": "f13573",
+   "type": "same",
+   "note": "Both report Para-Lane's recorded-to-adjacent-lane PSNR decline."
+  },
+  {
+   "a": "f3709",
+   "b": "f13574",
+   "type": "same",
+   "note": "Both report the drone-to-car PSNR decline from 29.13 to 10.36."
+  },
+  {
+   "a": "f3709",
+   "b": "f4008",
+   "type": "same",
+   "note": "Duplicate MV² drone-to-car viewpoint results."
+  },
+  {
+   "a": "f4233",
+   "b": "f13574",
+   "type": "same",
+   "note": "Chapter summary and glossary repeat the drone-to-car decline."
+  },
+  {
+   "a": "f4001",
+   "b": "f12930",
+   "type": "same",
+   "note": "Identical PSNR sequence across zero, one, two and four-meter lateral shifts."
+  },
+  {
+   "a": "f4001",
+   "b": "f14774",
+   "type": "same",
+   "note": "Glossary rounds the recorded-path and four-meter-shift PSNR values."
+  },
+  {
+   "a": "f3758",
+   "b": "f3821",
+   "type": "same",
+   "note": "Duplicate 2026 Waymo generative novel-view PSNR range."
+  },
+  {
+   "a": "f3821",
+   "b": "f4243",
+   "type": "same",
+   "note": "Both repeat the 13.19–20.82 dB Waymo result."
+  },
+  {
+   "a": "f7071",
+   "b": "f12902",
+   "type": "same",
+   "note": "Glossary restates Chapter 9's unreliable correspondence between image quality and behavior."
+  },
+  {
+   "a": "f14704",
+   "b": "f14776",
+   "type": "same",
+   "note": "Both describe improved radar similarity without successful real-trained detector transfer."
+  },
+  {
+   "a": "f4802",
+   "b": "f14773",
+   "type": "elaborates",
+   "note": "Glossary adds distribution-level FID to the matched-pair requirement."
+  },
+  {
+   "a": "f3708",
+   "b": "f4005",
+   "type": "elaborates",
+   "note": "Adds rotation and combined-shift losses to EUVS's translation loss."
+  },
+  {
+   "a": "f3822",
+   "b": "f14775",
+   "type": "same",
+   "note": "Both interpret the reported generative PSNR range as inadequate fidelity."
+  },
+  {
+   "a": "f4824",
+   "b": "f14776",
+   "type": "elaborates",
+   "note": "Adds detector-transfer failure to RadaRays' similarity improvements."
+  },
+  {
+   "a": "f4819",
+   "b": "f14777",
+   "type": "supports",
+   "note": "FID's lack of algorithm specificity supports the warning against inferring safety."
+  },
+  {
+   "a": "f7071",
+   "b": "f4827",
+   "type": "supports",
+   "note": "Unreliable visual-quality correspondence supports requiring task-level validation."
+  },
+  {
+   "a": "f4827",
+   "b": "f14778",
+   "type": "elaborates",
+   "note": "Glossary adds closed-loop validation and the dusty-pit example."
+  },
+  {
+   "a": "f4828",
+   "b": "f14797",
+   "type": "supports",
+   "note": "SwRI's visual-odometry assessment exemplifies checking beyond image statistics."
+  }
+ ]
+}

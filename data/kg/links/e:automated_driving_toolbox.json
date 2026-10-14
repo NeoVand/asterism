@@ -1,0 +1,55 @@
+{
+ "key": "e:automated driving toolbox",
+ "hash": "d415e7364bd176c1",
+ "synopsis": "Chapter 11 and the glossary identify RoadRunner with Automated Driving Toolbox as tools for reconstructing and replaying recorded scenarios, categorized under data replay and hardware-in-the-loop [f8366, f16039]. Reconstruction uses camera, lidar, GPS and IMU logs, but reconstruction and replay quality is bounded by tracking and map reconstruction accuracy [f8656, f8657]. The tools are commercial, listed as adaptable for off-road use, and expose a MATLAB interface; pricing requires a quote, and the latest release found was R2026b [f9250, f9251, f9252, f9253, f9254]. Automated Driving Toolbox also appears in the middle-cost model-based engineering stack alongside MATLAB/Simulink R2026b, the Offroad Autonomy Library, RoadRunner, RoadRunner Scenario, Unreal, and Radar and sensor toolboxes [f9285].",
+ "relations": [
+  {
+   "a": "f8366",
+   "b": "f16039",
+   "type": "same",
+   "note": "Both identify the paired tools for scenario reconstruction and replay."
+  },
+  {
+   "a": "f8656",
+   "b": "f16039",
+   "type": "elaborates",
+   "note": "Specifies sensor logs used to reconstruct recorded scenarios."
+  },
+  {
+   "a": "f8657",
+   "b": "f16039",
+   "type": "elaborates",
+   "note": "Qualifies reconstruction and replay with tracking and map accuracy limits."
+  },
+  {
+   "a": "f8656",
+   "b": "f8366",
+   "type": "elaborates",
+   "note": "Adds input modalities and saved-scenario replay to the category description."
+  },
+  {
+   "a": "f8657",
+   "b": "f8656",
+   "type": "elaborates",
+   "note": "Identifies accuracy limits on the described reconstruction and replay method."
+  },
+  {
+   "a": "f9253",
+   "b": "f9250",
+   "type": "elaborates",
+   "note": "Commercial pricing is quote-based rather than a stated price."
+  },
+  {
+   "a": "f9252",
+   "b": "f9285",
+   "type": "supports",
+   "note": "MATLAB interface supports inclusion in the MATLAB/Simulink engineering stack."
+  },
+  {
+   "a": "f9254",
+   "b": "f9285",
+   "type": "supports",
+   "note": "Latest replay release matches the stack's R2026b version designation."
+  }
+ ]
+}

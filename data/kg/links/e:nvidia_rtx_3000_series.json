@@ -1,0 +1,25 @@
+{
+ "key": "e:nvidia rtx 3000 series",
+ "hash": "2a5841b19094195f",
+ "synopsis": "The corpus consistently specifies an NVIDIA RTX 3000-series GPU or better with at least 16 GB of VRAM for CARLA on Unreal Engine 5 [f8469, f16195, f8850]. Chapter 11 additionally requires 130 GB of disk space [f8469, f8850]. One Chapter 11 entry specifies Ubuntu 22.04 or Windows 11, while the glossary restates only the GPU and VRAM requirement; these entries are complementary, not conflicting [f8469, f16195, f8850].",
+ "relations": [
+  {
+   "a": "f8469",
+   "b": "f16195",
+   "type": "same",
+   "note": "Both specify an RTX 3000-series GPU minimum with 16 GB VRAM."
+  },
+  {
+   "a": "f8850",
+   "b": "f16195",
+   "type": "same",
+   "note": "Both state the same GPU generation and minimum VRAM requirement."
+  },
+  {
+   "a": "f8469",
+   "b": "f8850",
+   "type": "same",
+   "note": "Duplicate hardware requirements; f8469 also specifies supported operating systems."
+  }
+ ]
+}

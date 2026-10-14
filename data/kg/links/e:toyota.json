@@ -1,0 +1,25 @@
+{
+ "key": "e:toyota",
+ "hash": "0f14950a855d2cb3",
+ "synopsis": "Toyota’s SEnS+ (August 2021) uses a rear stereo camera to distinguish people from objects and slows the forklift by cutting power, rather than using the brake to decelerate and automatically stop [f15785, f1407, f15786]. This distinction limits its relevance as a precedent for automatic braking: the reported intervention is power reduction, not brake-based stopping [f1407, f15786]. In the on-road regulatory context, Toyota joined the Alliance for Automotive Innovation and Volkswagen in petitioning for reconsideration of FMVSS 127, raising false-positive risk among other concerns [f1517]. Separately, the planning chapter cites Toyota cases and modelling as evidence supporting set-based design and parallel paths, although the supplied fact does not specify those cases or modelling results [f10087].",
+ "relations": [
+  {
+   "a": "f1407",
+   "b": "f15786",
+   "type": "same",
+   "note": "Both state SEnS+ does not use brakes to decelerate and automatically stop."
+  },
+  {
+   "a": "f1407",
+   "b": "f15785",
+   "type": "elaborates",
+   "note": "Glossary adds the August 2021 date and rear stereo-camera detection to power-cut deceleration."
+  },
+  {
+   "a": "f15785",
+   "b": "f15786",
+   "type": "elaborates",
+   "note": "Power-cut slowing specifies the alternative to brake-based deceleration and automatic stopping."
+  }
+ ]
+}

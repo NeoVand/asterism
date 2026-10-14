@@ -16,7 +16,12 @@ interface StreamEvent {
 	data: { input?: unknown; output?: unknown; chunk?: unknown };
 }
 
-type ContentBlock = { type: string; text?: string; reasoning?: string; summary?: { text?: string }[] };
+type ContentBlock = {
+	type: string;
+	text?: string;
+	reasoning?: string;
+	summary?: { text?: string }[];
+};
 
 function textOf(content: unknown): { text: string; reasoning: string } {
 	if (typeof content === 'string') return { text: content, reasoning: '' };
@@ -41,7 +46,9 @@ function toolOutputText(out: unknown): string {
 	if (typeof content === 'string') return content;
 	if (Array.isArray(content)) return content.map((c: ContentBlock) => c.text ?? '').join('');
 	if (o?.update) {
-		const msgs = (o.update as { messages?: { content?: unknown; kwargs?: { content?: unknown } }[] }).messages;
+		const msgs = (
+			o.update as { messages?: { content?: unknown; kwargs?: { content?: unknown } }[] }
+		).messages;
 		const last = msgs?.[msgs.length - 1];
 		const c = last?.content ?? last?.kwargs?.content;
 		if (typeof c === 'string') return c;
@@ -58,7 +65,10 @@ function summarize(name: string, out: string): string {
 	return first.slice(0, 160);
 }
 
-export async function* runTurn(req: ChatRequest, opts: { apiKey: string; model: string; signal?: AbortSignal }): AsyncGenerator<ChatEvent> {
+export async function* runTurn(
+	req: ChatRequest,
+	opts: { apiKey: string; model: string; signal?: AbortSignal }
+): AsyncGenerator<ChatEvent> {
 	const t0 = Date.now();
 	const agent = await getAgent({
 		apiKey: opts.apiKey,
@@ -77,9 +87,13 @@ export async function* runTurn(req: ChatRequest, opts: { apiKey: string; model: 
 	if (req.resume) {
 		input = new Command({ resume: req.resume });
 	} else {
-		const state = (await agent.getState({ configurable: { thread_id: req.threadId } })) as { values?: unknown } | undefined;
+		const state = (await agent.getState({ configurable: { thread_id: req.threadId } })) as
+			{ values?: unknown } | undefined;
 		const known = ((state?.values as { messages?: unknown[] })?.messages ?? []).length > 0;
-		const prior = !known && req.history?.length ? req.history.map((m) => ({ role: m.role, content: m.content })) : [];
+		const prior =
+			!known && req.history?.length
+				? req.history.map((m) => ({ role: m.role, content: m.content }))
+				: [];
 		input = { messages: [...prior, { role: 'user', content: req.message ?? '' }] };
 	}
 
@@ -95,80 +109,122 @@ export async function* runTurn(req: ChatRequest, opts: { apiKey: string; model: 
 		return 'main';
 	};
 
+	let tail = '';
+	let nudged = false;
 	try {
-		const stream = agent.streamEvents(input as never, config) as AsyncIterable<StreamEvent>;
-		for await (const ev of stream) {
-			const who = agentOf(ev);
-			switch (ev.event) {
-				case 'on_chat_model_stream': {
-					const chunk = ev.data.chunk as { content?: unknown; kwargs?: { content?: unknown } };
-					const { text, reasoning } = textOf(chunk?.content ?? chunk?.kwargs?.content);
-					if (reasoning) yield { t: 'reasoning', delta: reasoning, agent: who };
-					if (text && who === 'main') yield { t: 'text', delta: text };
-					break;
-				}
-				case 'on_chat_model_end': {
-					const out = ev.data.output as { usage_metadata?: { input_tokens?: number; output_tokens?: number } };
-					usage.input += out?.usage_metadata?.input_tokens ?? 0;
-					usage.output += out?.usage_metadata?.output_tokens ?? 0;
-					break;
-				}
-				case 'on_tool_start': {
-					const args = (ev.data.input ?? {}) as Record<string, unknown>;
-					if (ev.name === 'task') {
-						const id = `task-${ev.run_id.slice(0, 8)}`;
-						tasks.set(ev.run_id, id);
+		for (let pass = 0; pass < 2; pass++) {
+			const stream = agent.streamEvents(input as never, config) as AsyncIterable<StreamEvent>;
+			for await (const ev of stream) {
+				const who = agentOf(ev);
+				switch (ev.event) {
+					case 'on_chat_model_stream': {
+						const chunk = ev.data.chunk as { content?: unknown; kwargs?: { content?: unknown } };
+						const { text, reasoning } = textOf(chunk?.content ?? chunk?.kwargs?.content);
+						if (reasoning) yield { t: 'reasoning', delta: reasoning, agent: who };
+						if (text && who === 'main') {
+							tail = (tail + text).slice(-200);
+							yield { t: 'text', delta: text };
+						}
+						break;
+					}
+					case 'on_chat_model_end': {
+						const out = ev.data.output as {
+							usage_metadata?: { input_tokens?: number; output_tokens?: number };
+						};
+						usage.input += out?.usage_metadata?.input_tokens ?? 0;
+						usage.output += out?.usage_metadata?.output_tokens ?? 0;
+						break;
+					}
+					case 'on_tool_start': {
+						if (who === 'main') tail = '';
+						const args = (ev.data.input ?? {}) as Record<string, unknown>;
+						if (ev.name === 'task') {
+							const id = `task-${ev.run_id}`;
+							tasks.set(ev.run_id, id);
+							yield {
+								t: 'task',
+								id,
+								status: 'start',
+								description: String(args.description ?? ''),
+								agentName: String(args.subagent_type ?? 'researcher')
+							};
+							break;
+						}
+						if (ev.name === 'write_todos') {
+							const items = (args.todos ?? []) as {
+								content: string;
+								status: 'pending' | 'in_progress' | 'completed';
+							}[];
+							yield { t: 'todos', items };
+						}
+						yield { t: 'tool', id: ev.run_id, name: ev.name, args, agent: who };
+						break;
+					}
+					case 'on_tool_end': {
+						const out = toolOutputText(ev.data.output);
+						if (ev.name === 'task') {
+							const id = tasks.get(ev.run_id) ?? ev.run_id;
+							const args = (ev.data.input ?? {}) as Record<string, unknown>;
+							yield {
+								t: 'task',
+								id,
+								status: 'end',
+								description: String(args.description ?? ''),
+								agentName: String(args.subagent_type ?? 'researcher')
+							};
+							break;
+						}
 						yield {
-							t: 'task',
-							id,
-							status: 'start',
-							description: String(args.description ?? ''),
-							agentName: String(args.subagent_type ?? 'researcher')
+							t: 'tool_end',
+							id: ev.run_id,
+							name: ev.name,
+							summary: summarize(ev.name, out),
+							agent: who,
+							error: /^(Block rejected|Form rejected|Unknown id|Error)/.test(out)
 						};
 						break;
 					}
-					if (ev.name === 'write_todos') {
-						const items = (args.todos ?? []) as { content: string; status: 'pending' | 'in_progress' | 'completed' }[];
-						yield { t: 'todos', items };
-					}
-					yield { t: 'tool', id: ev.run_id, name: ev.name, args, agent: who };
-					break;
-				}
-				case 'on_tool_end': {
-					const out = toolOutputText(ev.data.output);
-					if (ev.name === 'task') {
-						const id = tasks.get(ev.run_id) ?? ev.run_id;
-						const args = (ev.data.input ?? {}) as Record<string, unknown>;
-						yield { t: 'task', id, status: 'end', description: String(args.description ?? ''), agentName: String(args.subagent_type ?? 'researcher') };
+					case 'on_custom_event': {
+						if (ev.name === 'graph') {
+							const d = ev.data as unknown as { mode: 'touch' | 'read'; ids: string[] };
+							yield { t: 'graph', mode: d.mode, ids: d.ids, agent: who };
+						} else if (ev.name === 'ui' && who === 'main') {
+							const parsed = Block.safeParse((ev.data as unknown as { block?: unknown }).block);
+							if (parsed.success) yield { t: 'ui', id: ev.run_id, block: parsed.data };
+						}
 						break;
 					}
-					if (ev.name === 'show_ui' && out.startsWith('Rendered')) {
-						const args = ev.data.input as { block?: unknown } | undefined;
-						const parsed = Block.safeParse(args?.block);
-						if (parsed.success) yield { t: 'ui', id: ev.run_id, block: parsed.data };
-					}
-					yield {
-						t: 'tool_end',
-						id: ev.run_id,
-						name: ev.name,
-						summary: summarize(ev.name, out),
-						agent: who,
-						error: /^(Block rejected|Form rejected|Unknown id|Error)/.test(out)
-					};
-					break;
-				}
-				case 'on_custom_event': {
-					if (ev.name === 'graph') {
-						const d = ev.data as unknown as { mode: 'touch' | 'read'; ids: string[] };
-						yield { t: 'graph', mode: d.mode, ids: d.ids, agent: who };
-					}
-					break;
 				}
 			}
+			// Safety net: reasoning models sometimes announce a block ("### How the options compare")
+			// and end the turn before calling show_ui. Nudge once to finish.
+			const stopped = /(^|\n)#{1,4} [^\n]*\s*$|:\s*$/.test(
+				tail.trimEnd() + (tail.trimEnd().endsWith(':') ? '' : '')
+			);
+			if (pass === 0 && stopped && !nudged && !opts.signal?.aborted) {
+				nudged = true;
+				input = {
+					messages: [
+						{
+							role: 'user',
+							content:
+								'(system) Your answer stopped right after a heading. Finish now: call show_ui for the block you announced if you intended one, then complete the answer text without repeating what you already wrote.'
+						}
+					]
+				};
+				yield { t: 'text', delta: '\n\n' };
+				continue;
+			}
+			break;
 		}
-		const state = (await agent.getState({ configurable: { thread_id: req.threadId } })) as { tasks?: { interrupts?: { value?: unknown }[] }[] } | undefined;
-		const interrupts = (state?.tasks ?? []).flatMap((t: { interrupts?: { value?: unknown }[] }) => t.interrupts ?? []);
-		const q = interrupts.find((i: { value?: unknown }) => (i.value as { type?: string })?.type === 'questions');
+		const state = (await agent.getState({ configurable: { thread_id: req.threadId } })) as
+			{ tasks?: { interrupts?: { value?: unknown }[] }[] } | undefined;
+		const interrupts = (state?.tasks ?? []).flatMap(
+			(t: { interrupts?: { value?: unknown }[] }) => t.interrupts ?? []
+		);
+		const q = interrupts.find(
+			(i: { value?: unknown }) => (i.value as { type?: string })?.type === 'questions'
+		);
 		if (q) yield { t: 'interrupt', form: (q.value as { form: never }).form };
 	} catch (e) {
 		if (opts.signal?.aborted) return;
@@ -179,8 +235,10 @@ export async function* runTurn(req: ChatRequest, opts: { apiKey: string; model: 
 }
 
 function friendlyError(msg: string): string {
-	if (/401|invalid api key|Incorrect API key/i.test(msg)) return 'The OpenAI API key was rejected. Check it in Settings.';
+	if (/401|invalid api key|Incorrect API key/i.test(msg))
+		return 'The OpenAI API key was rejected. Check it in Settings.';
 	if (/429|rate limit/i.test(msg)) return 'OpenAI rate limit reached. Wait a moment and try again.';
-	if (/model.*(not found|does not exist)/i.test(msg)) return 'That model is not available for this API key. Pick another in Settings.';
+	if (/model.*(not found|does not exist)/i.test(msg))
+		return 'That model is not available for this API key. Pick another in Settings.';
 	return msg.length > 300 ? msg.slice(0, 300) + '…' : msg;
 }

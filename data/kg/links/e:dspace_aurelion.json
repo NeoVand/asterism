@@ -1,0 +1,115 @@
+{
+ "key": "e:dspace aurelion",
+ "hash": "bbecd1ad7a9b7f22",
+ "synopsis": "dSPACE AURELION with SIMPHERA is a commercial simulation platform with on-road-only evidence; the corpus found no public validation of quarry or mining terrain, material or weather fidelity, and terrain physics must come from elsewhere [f8445, f8454, f8455, f15895]. Vendor-described capabilities include real-time camera, ray-traced radar, lidar, infrared and ultrasonic simulation, sensor effects and a material database, available locally or in the cloud for SIL/HIL; however, frame-rate figures were not found [f8446, f4957]. Integration with SCALEXIO, VEOS, ASM and ModelDesk provides a route from SIL to HIL, but sensor injection remains sensor- and ECU-specific rather than a uniform interface task [f8448, f8640, f8641]. The latest AURELION release found was 26.2, dated 15 July 2026; version 25.3 added lidar beam divergence and Hesai models and requires maintenance valid through at least 31 August 2025, while new versions generally require valid maintenance [f9057, f8449, f8450, f16152]. Pricing is quote-only, with no public AURELION/SIMPHERA or full-system price found; the highest-cost example chain combines commercial validation, specialist sensors, external heavy-machine dynamics, benches and cloud execution [f8541, f8453, f8642, f16166, f16167].",
+ "relations": [
+  {
+   "a": "f8454",
+   "b": "f15951",
+   "type": "same",
+   "note": "Both report absent public off-road validation for AURELION."
+  },
+  {
+   "a": "f8997",
+   "b": "f15895",
+   "type": "elaborates",
+   "note": "Glossary adds commercial status and missing public pricing to on-road-only evidence."
+  },
+  {
+   "a": "f8446",
+   "b": "f15945",
+   "type": "elaborates",
+   "note": "Chapter adds sensor effects, real-time operation, deployment and SIL/HIL to glossary capabilities."
+  },
+  {
+   "a": "f8998",
+   "b": "f15896",
+   "type": "elaborates",
+   "note": "Glossary specifies ray-traced radar within the same five sensor modalities."
+  },
+  {
+   "a": "f8448",
+   "b": "f15897",
+   "type": "elaborates",
+   "note": "Chapter names the dSPACE ecosystem components behind glossary bench integration."
+  },
+  {
+   "a": "f8893",
+   "b": "f16152",
+   "type": "same",
+   "note": "Both require valid maintenance for AURELION versions."
+  },
+  {
+   "a": "f8450",
+   "b": "f16152",
+   "type": "elaborates",
+   "note": "Version 25.3 gives a concrete maintenance-validity cutoff."
+  },
+  {
+   "a": "f9303",
+   "b": "f16166",
+   "type": "same",
+   "note": "Both identify the same highest-cost commercial platform examples."
+  },
+  {
+   "a": "f9305",
+   "b": "f16167",
+   "type": "elaborates",
+   "note": "Glossary adds dynamics, benches and cloud around the specialist sensor component."
+  },
+  {
+   "a": "f8455",
+   "b": "f16167",
+   "type": "supports",
+   "note": "External terrain physics motivates adding heavy-machine dynamics tools."
+  },
+  {
+   "a": "f8453",
+   "b": "f9000",
+   "type": "same",
+   "note": "Both report no public AURELION/SIMPHERA pricing."
+  },
+  {
+   "a": "f8451",
+   "b": "f9057",
+   "type": "same",
+   "note": "Both date AURELION 26.2 to 15 July 2026."
+  },
+  {
+   "a": "f8451",
+   "b": "f9001",
+   "type": "elaborates",
+   "note": "Release summary also dates SIMPHERA 26.2 and identifies latest releases found."
+  },
+  {
+   "a": "f8539",
+   "b": "f8998",
+   "type": "same",
+   "note": "Both list camera, radar, lidar, ultrasonic and infrared sensors."
+  },
+  {
+   "a": "f9054",
+   "b": "f15945",
+   "type": "same",
+   "note": "Both list five sensor modalities and a material database."
+  },
+  {
+   "a": "f8642",
+   "b": "f9222",
+   "type": "same",
+   "note": "Both report missing public pricing for the combined dSPACE tools."
+  },
+  {
+   "a": "f8639",
+   "b": "f8640",
+   "type": "supports",
+   "note": "Virtual-sensor ECU/HIL execution supports the claimed SIL-to-HIL testing route."
+  },
+  {
+   "a": "f8446",
+   "b": "f4957",
+   "type": "elaborates",
+   "note": "Real-time capability lacks a publicly found numerical frame-rate benchmark."
+  }
+ ]
+}

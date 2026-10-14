@@ -1,0 +1,85 @@
+{
+ "key": "e:iso 25119",
+ "hash": "8abea5daf5c2a821",
+ "synopsis": "ISO 25119 is presented as the functional-safety standard for control systems on tractors and farm machinery, an agricultural counterpart to ISO 13849 and ISO 19014 that descends from IEC 61508 [f15330, f15339, f15268]. The booklet identifies it as a possible alternative to ISO 19014, but its fit for the heavy off-road program was not verified; applicability through a contract remains only a possibility [f2354, f12054, f15343]. Planning and glossary entries describe its editions as current but not reviewed, while other chapters report that current versions, dates, simulation clauses, and tool-qualification or simulation-evidence acceptance rules were not verified [f9785, f15340, f4335, f5111, f7741, f8942]. Chapter 6 states that ISO 25119 and other off-road standards do not define simulation-credibility acceptance, but that conclusion is in tension with the repeated lack of verification of simulation provisions; those provisions should therefore be checked before reliance [f5110, f7741, f8942, f4335].",
+ "relations": [
+  {
+   "a": "f2354",
+   "b": "f12054",
+   "type": "same",
+   "note": "Both identify the same functional-safety alternatives while leaving their suitability unverified."
+  },
+  {
+   "a": "f9785",
+   "b": "f15340",
+   "type": "same",
+   "note": "Both list ISO 25119 as current but not reviewed."
+  },
+  {
+   "a": "f15330",
+   "b": "f15339",
+   "type": "same",
+   "note": "Both identify ISO 25119 as agricultural control-system functional safety."
+  },
+  {
+   "a": "f15339",
+   "b": "f12054",
+   "type": "supports",
+   "note": "Its agricultural counterpart role explains consideration as an alternative to ISO 19014."
+  },
+  {
+   "a": "f15268",
+   "b": "f15339",
+   "type": "elaborates",
+   "note": "Adds IEC 61508 lineage to the agricultural standard's scope."
+  },
+  {
+   "a": "f15343",
+   "b": "f12054",
+   "type": "elaborates",
+   "note": "Contractual applicability supplies a possible route for using the unverified alternative."
+  },
+  {
+   "a": "f4335",
+   "b": "f5111",
+   "type": "same",
+   "note": "Both report unverified ISO 25119 editions or versions and dates."
+  },
+  {
+   "a": "f7741",
+   "b": "f8942",
+   "type": "elaborates",
+   "note": "Adds full-text review and tool-qualification gaps to unverified simulation details."
+  },
+  {
+   "a": "f5110",
+   "b": "f8942",
+   "type": "contradicts",
+   "note": "Categorical absence of acceptance criteria contrasts with unverified simulation-evidence acceptance rules."
+  },
+  {
+   "a": "f5110",
+   "b": "f7741",
+   "type": "contradicts",
+   "note": "Claimed absence of simulation acceptance contrasts with unverified standard details."
+  },
+  {
+   "a": "f5111",
+   "b": "f4335",
+   "type": "supports",
+   "note": "Unverified versions and dates justify checking editions and application dates before reliance."
+  },
+  {
+   "a": "f8942",
+   "b": "f4335",
+   "type": "supports",
+   "note": "Unverified evidence-acceptance rules reinforce the recommendation to check simulation clauses before reliance."
+  },
+  {
+   "a": "f11198",
+   "b": "f12054",
+   "type": "same",
+   "note": "Both treat ISO 25119 as a relevant but unverified lead."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t180",
+ "hash": "e4a80572f9624047",
+ "synopsis": "Tire–ground behavior is a critical limit on virtual braking validation: simulation alone cannot establish real behavior without correlation, and nonlinear ground shear invalidates the simple assumption that heavy and light machines stop in the same distance [f911, f5954, f5957]. Full-vehicle models require tire parameters fitted for unpaved ground, with the glossary recommending real-machine tests rather than road-car values and a low-speed friction matrix covering hard, loose and wet conditions for each machine family [f6452, f13787, f13789]. Evidence remains narrow: MAVS has validated tire–soil models for sand and clay, and some single-wheel studies report force errors under 10%, but tuning varies with slip angle and the skeptic’s review found no evidence establishing terramechanics fidelity for braking prediction [f3965, f6098, f6099, f11189]. A 2024 AGX wheel-loader digging model needed a friction coefficient of 2.0 to match measurements, characterized as physically implausible in the glossary, with remaining errors attributed to tire-pressure modeling and a flat-ground assumption [f6090, f13775, f6091]. Tool compatibility and computational cost constrain higher-detail modeling: Chrono developers say Pacejka, TMeasy and Fiala handling models do not work with deformable terrain, while one 2024 study adopted rigid tires because deformable tires combined with deformable soil produced unrealistic training times [f8498, f3964]. The recommended role for high-detail DEM or deformable-terrain simulation is to investigate stopping-distance sensitivity to soil, slope, payload and tire or track interaction, not to assume that tool coupling establishes valid physics [f8602, f8725].",
+ "relations": [
+  {
+   "a": "f8339",
+   "b": "f8725",
+   "type": "same",
+   "note": "Both report Chrono handling-tire incompatibility with deformable terrain."
+  },
+  {
+   "a": "f8339",
+   "b": "f13238",
+   "type": "same",
+   "note": "Glossary repeats the warning without naming the engine."
+  },
+  {
+   "a": "f8725",
+   "b": "f15865",
+   "type": "same",
+   "note": "Both warn that coupling tools can silently break tire physics."
+  },
+  {
+   "a": "f8339",
+   "b": "f15970",
+   "type": "same",
+   "note": "Glossary repeats the Chrono deformable-terrain incompatibility warning."
+  },
+  {
+   "a": "f8498",
+   "b": "f13786",
+   "type": "same",
+   "note": "Both identify rigid tires, finite-element tires and tracks as compatible alternatives."
+  },
+  {
+   "a": "f3742",
+   "b": "f3964",
+   "type": "same",
+   "note": "Same computational-cost finding; the latter explains the rigid-tire substitution."
+  },
+  {
+   "a": "f6090",
+   "b": "f13775",
+   "type": "same",
+   "note": "Same wheel-loader calibration example using friction coefficient 2.0."
+  },
+  {
+   "a": "f6022",
+   "b": "f13729",
+   "type": "same",
+   "note": "Both identify slip, wheel load and longitudinal/lateral tire forces as essential."
+  },
+  {
+   "a": "f6008",
+   "b": "f13783",
+   "type": "same",
+   "note": "Glossary restates the 2023 all-slip soil-wheel model’s sand performance."
+  },
+  {
+   "a": "f6099",
+   "b": "f13784",
+   "type": "same",
+   "note": "Both report slip-angle-dependent tuning in the 2023 soil-wheel evidence."
+  },
+  {
+   "a": "f6010",
+   "b": "f13785",
+   "type": "same",
+   "note": "Both describe soil buildup ahead of the braking wheel in a 2026 model."
+  },
+  {
+   "a": "f6462",
+   "b": "f6098",
+   "type": "same",
+   "note": "Both report force errors below 10% in some single-wheel conditions."
+  },
+  {
+   "a": "f6462",
+   "b": "f6099",
+   "type": "elaborates",
+   "note": "The latter isolates the slip-angle tuning limitation in the combined finding."
+  },
+  {
+   "a": "f6032",
+   "b": "f13781",
+   "type": "same",
+   "note": "Glossary repeats the cited articulated-loader studies’ use of Fiala tires."
+  },
+  {
+   "a": "f6447",
+   "b": "f13832",
+   "type": "elaborates",
+   "note": "Glossary adds deceleration-cap applications and weeks of modeling effort."
+  },
+  {
+   "a": "f13787",
+   "b": "f6122",
+   "type": "supports",
+   "note": "Experimental fitting of uncertain unpaved contact parameters supports the real-machine calibration recommendation."
+  },
+  {
+   "a": "f6466",
+   "b": "f13720",
+   "type": "elaborates",
+   "note": "Glossary adds good sand performance and slip-angle-dependent tuning to the limited validation scope."
+  },
+  {
+   "a": "f13782",
+   "b": "f8498",
+   "type": "supports",
+   "note": "Firm-surface assumptions explain incompatibility of these handling models with deformable terrain."
+  }
+ ]
+}

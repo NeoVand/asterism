@@ -1,0 +1,85 @@
+{
+ "key": "e:robotec.ai",
+ "hash": "92a3db8101bf73d0",
+ "synopsis": "Robotec.ai’s Boliden mining digital twin appears in both Chapter 1 and the glossary; Chapter 1 identifies it as vendor evidence for scene, machine-dynamics and sensor simulation [f16087, f400]. The twin supports autonomous fleet-behaviour simulation and advertises replay of recorded system data [f1085, f403, f525]. A vendor claim accessed in October 2026 reports 30% faster validation cycles, and was the only off-road simulation speed-up claim found [f1086, f481]. However, this figure concerns autonomous fleet behaviour, not collision-intervention perception, and has not been independently verified, leaving its real benefit uncertain [f482, f483, f1121].",
+ "relations": [
+  {
+   "a": "f16087",
+   "b": "f400",
+   "type": "elaborates",
+   "note": "Chapter 1 details the glossary example’s simulation scope and vendor-evidence status."
+  },
+  {
+   "a": "f16087",
+   "b": "f1085",
+   "type": "elaborates",
+   "note": "Adds fleet-behaviour simulation and replay capabilities to the glossary’s twin example."
+  },
+  {
+   "a": "f481",
+   "b": "f827",
+   "type": "same",
+   "note": "Both report the vendor’s 30% faster autonomous fleet validation claim."
+  },
+  {
+   "a": "f481",
+   "b": "f1086",
+   "type": "same",
+   "note": "Restates the 30% claim, adding access date and verification caveat."
+  },
+  {
+   "a": "f827",
+   "b": "f1086",
+   "type": "same",
+   "note": "Same speed-up claim; the latter adds October 2026 access and non-verification."
+  },
+  {
+   "a": "f483",
+   "b": "f1086",
+   "type": "same",
+   "note": "Both state that the speed-up claim was not independently verified."
+  },
+  {
+   "a": "f483",
+   "b": "f1121",
+   "type": "same",
+   "note": "Both explicitly identify the absence of independent verification."
+  },
+  {
+   "a": "f1086",
+   "b": "f1121",
+   "type": "same",
+   "note": "Both repeat the 30% claim and its lack of independent verification."
+  },
+  {
+   "a": "f403",
+   "b": "f525",
+   "type": "same",
+   "note": "Both describe advertised replay of recorded system data."
+  },
+  {
+   "a": "f403",
+   "b": "f1085",
+   "type": "elaborates",
+   "note": "Adds autonomous fleet-behaviour simulation alongside replay."
+  },
+  {
+   "a": "f525",
+   "b": "f1085",
+   "type": "elaborates",
+   "note": "Adds fleet-behaviour simulation to the advertised replay capability."
+  },
+  {
+   "a": "f481",
+   "b": "f482",
+   "type": "elaborates",
+   "note": "Limits the reported speed-up to fleet behaviour, excluding collision-intervention perception."
+  },
+  {
+   "a": "f483",
+   "b": "f1121",
+   "type": "supports",
+   "note": "Lack of independent verification supports uncertainty about the real benefit."
+  }
+ ]
+}

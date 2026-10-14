@@ -1,0 +1,115 @@
+{
+ "key": "t316",
+ "hash": "caa48cc80f7caeca",
+ "synopsis": "Pretoria independently verifies mining collision-avoidance systems under South Africa’s MOSH regime through staged laboratory tests followed by representative-mine trials, with brake robots and high-precision GPS used in the protocol [f15795, f1244, f6372]. Across 189 tests, reported pass rates were 62% for detection devices, 42% for machine-side systems and 83% for third-party interfaces; testing ran at 1.6 tests per week with an 18-week lead time as of October 2025, creating a constraint on a four-month schedule [f5178, f5180, f15809]. Hexagon’s Vehicle Intervention System reportedly passed Pretoria TRL4 verification in March 2026 before integrated site testing, but the cited vendor release provides no numbers [f1665, f6373]. Pretoria’s 2024 research links conservative collision-avoidance systems and false interventions to production losses, wear and resistance to adoption; steering-rate sampling aims to reduce those interventions, but its initial results are simulation-only [f15803, f6331]. MineSim, published in April 2025, is an open-source, peer-reviewed simulation system for autonomous open-pit trucks, incorporating scenarios from two real mines and mining-specific features such as unstructured roads and heavy-truck response lag [f464, f465, f466]. It demonstrates that mining-specific closed-loop scenario and planning simulation is feasible, not that sensor physics is validated; the booklet identifies sensor models in dust, snow and fog as an unresolved gap [f15808, f15810].",
+ "relations": [
+  {
+   "a": "f5178",
+   "b": "f15800",
+   "type": "same",
+   "note": "Repeat all three pass rates and the 189-test total."
+  },
+  {
+   "a": "f5180",
+   "b": "f15801",
+   "type": "same",
+   "note": "Repeat testing throughput and lead time; chapter dates the figures."
+  },
+  {
+   "a": "f1244",
+   "b": "f1355",
+   "type": "same",
+   "note": "Both describe laboratory testing followed by representative-mine interaction tests."
+  },
+  {
+   "a": "f1467",
+   "b": "f1942",
+   "type": "same",
+   "note": "Both state progression into representative-mine tests."
+  },
+  {
+   "a": "f1357",
+   "b": "f1727",
+   "type": "same",
+   "note": "Repeat collaboration with mining organizations and an ISO working group."
+  },
+  {
+   "a": "f1245",
+   "b": "f1665",
+   "type": "same",
+   "note": "Repeat March 2026 TRL4 passage before integrated site testing."
+  },
+  {
+   "a": "f845",
+   "b": "f15808",
+   "type": "same",
+   "note": "Both distinguish feasible closed-loop scenarios from validated sensor physics."
+  },
+  {
+   "a": "f15808",
+   "b": "f16092",
+   "type": "same",
+   "note": "Duplicate booklet conclusions about MineSim’s capability and sensor-validation limitation."
+  },
+  {
+   "a": "f5225",
+   "b": "f15803",
+   "type": "same",
+   "note": "Repeat production, wear and adoption consequences of false interventions."
+  },
+  {
+   "a": "f6331",
+   "b": "f14040",
+   "type": "same",
+   "note": "Repeat steering-rate sampling method and simulation-only status."
+  },
+  {
+   "a": "f15646",
+   "b": "f15795",
+   "type": "same",
+   "note": "Both identify Pretoria as MOSH’s independent verifier."
+  },
+  {
+   "a": "f6372",
+   "b": "f1244",
+   "type": "elaborates",
+   "note": "Adds laboratory equipment, mine-like single interactions and underground extension."
+  },
+  {
+   "a": "f5179",
+   "b": "f5178",
+   "type": "elaborates",
+   "note": "Breaks the 189 tests into verification and development shares."
+  },
+  {
+   "a": "f5180",
+   "b": "f15809",
+   "type": "supports",
+   "note": "Low throughput and long lead time substantiate the four-month scheduling risk."
+  },
+  {
+   "a": "f6373",
+   "b": "f1665",
+   "type": "elaborates",
+   "note": "Identifies vendor sourcing and absence of numerical results for the TRL4 claim."
+  },
+  {
+   "a": "f15803",
+   "b": "f6331",
+   "type": "supports",
+   "note": "False-intervention costs motivate research to reduce unnecessary braking."
+  },
+  {
+   "a": "f13072",
+   "b": "f4119",
+   "type": "elaborates",
+   "note": "Adds publication timing, peer review and mining-specific modeled features."
+  },
+  {
+   "a": "f15810",
+   "b": "f845",
+   "type": "elaborates",
+   "note": "Specifies dust, snow and fog as unresolved sensor-model conditions."
+  }
+ ]
+}

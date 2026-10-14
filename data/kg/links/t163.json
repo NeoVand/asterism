@@ -1,0 +1,115 @@
+{
+ "key": "t163",
+ "hash": "3c8e3d6d3bfe3c55",
+ "synopsis": "High-volume model-in-the-loop and software-in-the-loop testing targets thousands of runs per night on cloud or on-premises compute, with logic tests suited to commodity servers or containers and sensor tests assigned to GPU workers [f7138, f16220]. The illustrative budget buys ten single-GPU cloud instances running continuously for 122 days: about USD 54,490 for at most roughly 29,000 GPU-hours, limiting full-sensor-fidelity coverage and motivating tiered testing [f8869, f13548]. Cost per simulated hour depends on the measured real-time factor, so the example is not a quantified workload budget; the required compute remains unquantified and should be budgeted before mid-2027 [f13549, f14511]. Although compute is described as comparatively cheap relative to specialist labor, the skeptic's review flags compute and defect triage as potential bottlenecks, and recommends benchmarking preparation, correlation and triage before scaling infrastructure [f13550, f10789, f16235]. Parallel-execution licensing and intellectual-property rights also require explicit procurement attention: vendor cloud terms were not reviewed, export control and data residency were not researched, and technical access does not necessarily authorize cloud use [f8901, f8907, f8912, f8913, f10813].",
+ "relations": [
+  {
+   "a": "f7138",
+   "b": "f13327",
+   "type": "same",
+   "note": "Both place thousands of nightly runs in the MIL/SIL volume tier."
+  },
+  {
+   "a": "f8869",
+   "b": "f13546",
+   "type": "same",
+   "note": "Same 122-day, ten-GPU budget and capacity example."
+  },
+  {
+   "a": "f8869",
+   "b": "f16226",
+   "type": "same",
+   "note": "Identical instance count, duration, GPU-hours and on-demand cost."
+  },
+  {
+   "a": "f8312",
+   "b": "f16509",
+   "type": "same",
+   "note": "Both summarize four months of ten GPUs as approximately USD 54,000."
+  },
+  {
+   "a": "f8313",
+   "b": "f13606",
+   "type": "same",
+   "note": "Both identify a four-month GPU-hour ceiling on full-fidelity coverage."
+  },
+  {
+   "a": "f13549",
+   "b": "f16223",
+   "type": "same",
+   "note": "Same wall-clock price divided by real-time-factor cost formula."
+  },
+  {
+   "a": "f8901",
+   "b": "f16153",
+   "type": "same",
+   "note": "Both flag separately licensed execution environments and unpublished terms."
+  },
+  {
+   "a": "f8907",
+   "b": "f16154",
+   "type": "same",
+   "note": "Both recommend pricing concurrency and execution rights rather than desktop seats alone."
+  },
+  {
+   "a": "f8912",
+   "b": "f13553",
+   "type": "same",
+   "note": "Both report that cloud terms were not reviewed."
+  },
+  {
+   "a": "f8912",
+   "b": "f9388",
+   "type": "same",
+   "note": "The unreviewed vendor cloud terms include reconstructions and machine models."
+  },
+  {
+   "a": "f8913",
+   "b": "f9387",
+   "type": "same",
+   "note": "Both report export control and data residency were not researched."
+  },
+  {
+   "a": "f10793",
+   "b": "f11083",
+   "type": "same",
+   "note": "Both identify unbudgeted cloud and labeling invoices as early cost warnings."
+  },
+  {
+   "a": "f8369",
+   "b": "f8662",
+   "type": "elaborates",
+   "note": "The broader offering list also includes FalconCloud, VTDx and AURELION cloud."
+  },
+  {
+   "a": "f8313",
+   "b": "f13548",
+   "type": "supports",
+   "note": "Finite GPU-hours explain why combinatorial coverage requires tiered testing."
+  },
+  {
+   "a": "f13548",
+   "b": "f13554",
+   "type": "supports",
+   "note": "Coverage limits motivate distributing tests across multiple simulators."
+  },
+  {
+   "a": "f8840",
+   "b": "f16220",
+   "type": "elaborates",
+   "note": "The architecture extends CPU-based logic testing to sensor, soil and local HIL tiers."
+  },
+  {
+   "a": "f10813",
+   "b": "f8907",
+   "type": "supports",
+   "note": "Access alone does not authorize cloud use, reinforcing explicit rights procurement."
+  },
+  {
+   "a": "f10789",
+   "b": "f16235",
+   "type": "elaborates",
+   "note": "Identifies preparation, correlation and triage risks and recommends end-to-end benchmarking."
+  }
+ ]
+}

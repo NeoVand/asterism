@@ -1,0 +1,115 @@
+{
+ "key": "t113",
+ "hash": "138947eb4e36ee45",
+ "synopsis": "The corpus distinguishes training data for teaching the detector, validation data for choosing settings, and test data for honest scoring; judging data must have played no part in building or tuning the system [f12882, f14471]. For this program, validation and estimation data must be real or physically independent of the training-data generator, with different assets, sites, people and generator documented in a data-lineage record [f7100, f14472]. Studies from 2023–2026 generally support mixing synthetic and real training data in data-poor construction settings, but synthetic data has not been shown to replace real validation, and no peer-reviewed study was found establishing synthetic-only field-level collision-avoidance reliability across the stated heavy-machine conditions [f7412, f6684, f7103]. Practical safeguards include holding out entire sites or scenario families, maintaining separate tuning, validation and audit sets, preallocating physical datasets before prototype testing, and never tuning against final validation data [f6675, f6676, f8226, f11032]. Learned models and automatic labelers inherit training-domain limitations and biases; improving virtual metrics while held-out real performance stalls signals simulator overfitting [f4487, f12785, f12892]. Warning-fleet logs could supply independent replay evidence, but their validation use depends on ground truth, consent and data rights, and customer-site recording permissions were not examined [f7932, f8246, f8247].",
+ "relations": [
+  {
+   "a": "f139",
+   "b": "f10586",
+   "type": "same",
+   "note": "Both reserve real data for validation and synthetic data for training augmentation."
+  },
+  {
+   "a": "f139",
+   "b": "f6684",
+   "type": "same",
+   "note": "Both say synthetic training augmentation does not establish replacement of real validation."
+  },
+  {
+   "a": "f2391",
+   "b": "f12413",
+   "type": "same",
+   "note": "Both require additional ML safety-case subjects beyond existing compliance coverage."
+  },
+  {
+   "a": "f1083",
+   "b": "f820",
+   "type": "same",
+   "note": "Both report Deere's three-plus years of obstacle-detection data collection."
+  },
+  {
+   "a": "f1084",
+   "b": "f821",
+   "type": "same",
+   "note": "Both report conflicting Deere volumes: 200 million image pairs versus 50 million images."
+  },
+  {
+   "a": "f6675",
+   "b": "f14309",
+   "type": "same",
+   "note": "Both recommend grouped holdouts rather than random frame splits."
+  },
+  {
+   "a": "f6676",
+   "b": "f14310",
+   "type": "same",
+   "note": "Both prescribe separate tuning, validation and untouched audit datasets."
+  },
+  {
+   "a": "f8226",
+   "b": "f12887",
+   "type": "same",
+   "note": "Both require preallocating calibration, validation and final confirmation datasets before prototype testing."
+  },
+  {
+   "a": "f7100",
+   "b": "f12885",
+   "type": "same",
+   "note": "Both require physically independent validation data and documented lineage."
+  },
+  {
+   "a": "f12885",
+   "b": "f14472",
+   "type": "same",
+   "note": "Both specify independent assets, sites, people and generator documented in lineage."
+  },
+  {
+   "a": "f7100",
+   "b": "f12414",
+   "type": "same",
+   "note": "Both require validation data to be real or physically independent of training generation."
+  },
+  {
+   "a": "f7102",
+   "b": "f12890",
+   "type": "same",
+   "note": "Both describe real-log anchoring, targeted synthesis, untouched real testing and targeted collection."
+  },
+  {
+   "a": "f11032",
+   "b": "f12893",
+   "type": "same",
+   "note": "Both prescribe withheld physical evidence and prohibit tuning on final validation sets."
+  },
+  {
+   "a": "f4487",
+   "b": "f13094",
+   "type": "elaborates",
+   "note": "The glossary adds weak novel-viewpoint performance to learned sensor models' training-domain dependence."
+  },
+  {
+   "a": "f5380",
+   "b": "f12785",
+   "type": "elaborates",
+   "note": "The glossary adds large-scale silent label contamination to inherited training biases."
+  },
+  {
+   "a": "f7097",
+   "b": "f12906",
+   "type": "elaborates",
+   "note": "The glossary includes shared-generator contamination among broader synthetic-data risks."
+  },
+  {
+   "a": "f4100",
+   "b": "f7412",
+   "type": "supports",
+   "note": "CropCraft's mixed-data generalization finding supports the broader multi-study conclusion."
+  },
+  {
+   "a": "f7932",
+   "b": "f8246",
+   "type": "depends",
+   "note": "Using warning-fleet replay as validation requires adequate ground truth, consent and data rights."
+  }
+ ]
+}

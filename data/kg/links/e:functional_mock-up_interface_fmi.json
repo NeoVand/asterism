@@ -1,0 +1,43 @@
+{
+ "key": "e:functional mock-up interface fmi",
+ "hash": "917e6b28409b3923",
+ "synopsis": "FMI is an open standard for connecting separate simulation programs in co-simulation; an FMU packages a model, while SSP describes how FMUs are wired together [f13230, f13232]. Around 250 tools supported FMI by mid-2025 [f13233]. The booklet’s middle-cost example tool chain depends on FMI coupling between machine physics and controls, with Mevea or AGX Dynamics providing terrain, hydraulics and machine variants [f13239, f9286, f13236]. FMI also appears alongside OpenDRIVE, OpenSCENARIO, OSI and ROS 2 as enabling heterogeneous road-ADAS tool chains, although that finding is explicitly on-road rather than heavy off-road evidence [f9331].",
+ "relations": [
+  {
+   "a": "f9286",
+   "b": "f13239",
+   "type": "elaborates",
+   "note": "Names physics-tool options and modeled domains for the middle-cost FMI coupling."
+  },
+  {
+   "a": "f13239",
+   "b": "f13236",
+   "type": "elaborates",
+   "note": "Identifies the generic physics-to-controls coupling as a dependency of the middle-cost example."
+  },
+  {
+   "a": "f9286",
+   "b": "f13236",
+   "type": "elaborates",
+   "note": "Provides concrete physics tools and simulation scope for coupling to controls."
+  },
+  {
+   "a": "f13232",
+   "b": "f13230",
+   "type": "elaborates",
+   "note": "Details FMU file contents beyond its role as an FMI model package."
+  },
+  {
+   "a": "f13233",
+   "b": "f9331",
+   "type": "supports",
+   "note": "Broad FMI tool support supports the practicality of heterogeneous tool chains."
+  },
+  {
+   "a": "f13230",
+   "b": "f13239",
+   "type": "supports",
+   "note": "Standardized simulation connections explain FMI’s role in linking physics and controls."
+  }
+ ]
+}

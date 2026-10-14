@@ -1,0 +1,49 @@
+{
+ "key": "e:boliden",
+ "hash": "fe7385f07ba7ebe1",
+ "synopsis": "Boliden is the mining company associated with Robotec.ai’s digital twin, also cited in the glossary as an example [f16087, f1086]. The twin supports autonomous fleet behaviour simulation and replay and is presented as vendor evidence for scene, machine-dynamics and sensor simulation [f1085, f400]. Robotec.ai reports 30% faster validation cycles for autonomous fleet behaviours; the corpus identifies this AWS-associated project as the only off-road simulation vendor speed-up claim found [f827, f481]. The claim was accessed in October 2026 but was not independently verified, so the reported improvement should be treated as a vendor claim rather than a validated outcome [f1086].",
+ "relations": [
+  {
+   "a": "f481",
+   "b": "f827",
+   "type": "same",
+   "note": "Both report the same 30% validation-cycle improvement for the Boliden twin."
+  },
+  {
+   "a": "f827",
+   "b": "f1086",
+   "type": "same",
+   "note": "Same speed-up claim; f1086 adds access date and lack of independent verification."
+  },
+  {
+   "a": "f481",
+   "b": "f1086",
+   "type": "same",
+   "note": "Restate the same vendor speed-up claim, with different provenance and qualification details."
+  },
+  {
+   "a": "f1085",
+   "b": "f16087",
+   "type": "elaborates",
+   "note": "Adds autonomous fleet simulation and replay capabilities to the glossary example."
+  },
+  {
+   "a": "f400",
+   "b": "f16087",
+   "type": "elaborates",
+   "note": "Specifies the simulation domains illustrated by the glossary’s digital-twin example."
+  },
+  {
+   "a": "f1086",
+   "b": "f16087",
+   "type": "elaborates",
+   "note": "Adds mining context, reported performance, access date, and verification limitations."
+  },
+  {
+   "a": "f481",
+   "b": "f16087",
+   "type": "elaborates",
+   "note": "Adds AWS involvement and the corpus’s sole identified off-road simulation speed-up claim."
+  }
+ ]
+}

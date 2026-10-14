@@ -1,0 +1,37 @@
+{
+ "key": "e:magic formula tire model",
+ "hash": "ed5d80296dbd76c4",
+ "synopsis": "Magic Formula, also called Pacejka, is an empirical tire model fitted to test data and widely used for road vehicles [f13780]. Chapter 8 identifies it alongside Fiala for rigid full-vehicle multibody models with 3–8 degrees of freedom that predict braking-related roll, yaw, jackknife and pitch stability, plus load transfer [f6447]. Its terrain scope is limited: the glossary says Magic Formula, Fiala and TMeasy assume a firm surface, while Project Chrono developers report that these handling tire models do not work with deformable terrain [f13782, f8498]. For deformable-terrain simulation in Chrono, the reported compatible options are rigid or FEA tires and tracked vehicles, so the braking-model capability should not be read as establishing suitability for deformable off-road ground [f8498, f6447].",
+ "relations": [
+  {
+   "a": "f13780",
+   "b": "f6447",
+   "type": "elaborates",
+   "note": "Defines Magic Formula's empirical basis and road-vehicle use, complementing its braking-dynamics application."
+  },
+  {
+   "a": "f13782",
+   "b": "f6447",
+   "type": "elaborates",
+   "note": "Adds the firm-surface assumption to the tire models used for braking-stability prediction."
+  },
+  {
+   "a": "f8498",
+   "b": "f13782",
+   "type": "supports",
+   "note": "Chrono developers' reported incompatibility with deformable terrain supports the glossary's firm-surface limitation."
+  },
+  {
+   "a": "f8498",
+   "b": "f6447",
+   "type": "elaborates",
+   "note": "Limits applicability in Chrono: handling tires cannot extend these predictions to deformable terrain."
+  },
+  {
+   "a": "f13780",
+   "b": "f8498",
+   "type": "elaborates",
+   "note": "Identifies Pacejka as Magic Formula, connecting Chrono's reported limitation to the named model."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t243",
+ "hash": "67e3617802ccbdc8",
+ "synopsis": "ASME V&V 10 covers structural models, V&V 20 fluid-flow and heat-transfer models, and V&V 40 risk-based credibility for medical-device models; the booklet relies most on V&V 40 (2018), interpreted through FDA guidance dated November 2023 [f14616, f14620, f14624, f8072]. V&V 40 ties credibility to a stated context of use and model risk—model influence combined with decision consequence—with credibility goals set prospectively; it prescribes neither a universal acceptance error nor a universal minimum amount of physical evidence [f14621, f14622, f8075, f7790, f8076]. Across the planning and review chapters, ASME and NASA support validation against the real application, rather than internal consistency or simulation run count alone [f9454, f10755, f10884]. The booklet rates V&V 40 and FDA guidance as the most transferable reasoning framework for off-road automatic braking, but they are not proven for that application, and no direct equivalent framework was found for earth-moving-machine automatic braking [f8077, f8078, f7740]. Their scope is physics-based models: vehicle dynamics and brakes can use this framework, while machine-learned perception needs separate assurance; V&V 10 and V&V 20 were named but not verified in the research [f14627, f14623].",
+ "relations": [
+  {
+   "a": "f7632",
+   "b": "f14623",
+   "type": "same",
+   "note": "Both report that V&V 10 and V&V 20 were not verified."
+  },
+  {
+   "a": "f8077",
+   "b": "f14626",
+   "type": "same",
+   "note": "Both identify V&V 40 as most transferable, limited to physics-based models."
+  },
+  {
+   "a": "f8220",
+   "b": "f14627",
+   "type": "same",
+   "note": "Both exclude machine-learned perception and require separate assurance."
+  },
+  {
+   "a": "f10413",
+   "b": "f10755",
+   "type": "same",
+   "note": "Both require validation against reality for credible model use."
+  },
+  {
+   "a": "f10755",
+   "b": "f10880",
+   "type": "same",
+   "note": "Both require real-world rather than merely internally consistent validation."
+  },
+  {
+   "a": "f10880",
+   "b": "f11005",
+   "type": "same",
+   "note": "Both state NASA and ASME require real-application validation."
+  },
+  {
+   "a": "f10755",
+   "b": "f14615",
+   "type": "same",
+   "note": "Both distinguish real-application validation from internal consistency."
+  },
+  {
+   "a": "f8073",
+   "b": "f14568",
+   "type": "same",
+   "note": "Both define model risk through model influence and decision consequence."
+  },
+  {
+   "a": "f7639",
+   "b": "f14630",
+   "type": "same",
+   "note": "Both state FDA guidance builds on ASME V&V 40."
+  },
+  {
+   "a": "f7639",
+   "b": "f14624",
+   "type": "elaborates",
+   "note": "Identifies the FDA guidance through which the booklet interpreted V&V 40."
+  },
+  {
+   "a": "f14618",
+   "b": "f9748",
+   "type": "elaborates",
+   "note": "Specifies the structural-model scope of the cited 2019 V&V 10 edition."
+  },
+  {
+   "a": "f8075",
+   "b": "f9454",
+   "type": "elaborates",
+   "note": "Adds that changing context of use requires new or stronger evidence."
+  },
+  {
+   "a": "f14621",
+   "b": "f7538",
+   "type": "supports",
+   "note": "The model-risk definition underpins risk-dependent simulation agreement thresholds."
+  },
+  {
+   "a": "f7790",
+   "b": "f7538",
+   "type": "supports",
+   "note": "Absence of universal acceptance error supports risk-based rather than fixed thresholds."
+  },
+  {
+   "a": "f8074",
+   "b": "f14622",
+   "type": "elaborates",
+   "note": "Adds eight evidence categories and physical-data validation to prospective credibility goals."
+  },
+  {
+   "a": "f8078",
+   "b": "f14626",
+   "type": "contradicts",
+   "note": "Transferability is recommended, but effectiveness for off-road braking remains unproven."
+  },
+  {
+   "a": "f10474",
+   "b": "f14615",
+   "type": "elaborates",
+   "note": "Treats the required real-application validation as a project in its own right."
+  },
+  {
+   "a": "f10908",
+   "b": "f10164",
+   "type": "elaborates",
+   "note": "Adds a one-page, seven-reviewer credibility map to the proposed planning presentation."
+  }
+ ]
+}

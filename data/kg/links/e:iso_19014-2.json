@@ -1,0 +1,115 @@
+{
+ "key": "e:iso 19014-2",
+ "hash": "46af61469846eecf",
+ "synopsis": "ISO 19014-2 covers safety-control systems that control machine motion or mitigate hazards, but excludes awareness-only systems; adding a brake command therefore moves collision mitigation into its scope [f2311, f2075, f15175]. The booklet treats automatic braking as a new safety-control function rather than a warning function with a brake added, requiring validation of brake-command integrity, faults, degraded modes, unintended activation and failure to activate—not just perception statistics [f10476, f5223, f5810]. Part 2 addresses hardware, architecture and achieved Machine Performance Level (MPLa), including architecture evaluation, component reliability, fault behaviour and diagnostics; safety-function performance under expected environmental conditions must also be demonstrated and documented [f2318, f2693, f7735]. As of 1 October 2026, the published edition was still 2022, while Edition 2 had been at stage 60.00, “under publication,” since 22 August 2026 and was scheduled for October; Chapter 12 instead describes the revision as being at FDIS, creating a status discrepancy [f2319, f2320, f9771]. The forthcoming editions’ final texts were unavailable for review, so their final content remained uncertain and publication status should be rechecked before design freeze [f2862, f6286].",
+ "relations": [
+  {
+   "a": "f48",
+   "b": "f1158",
+   "type": "same",
+   "note": "Both report Parts 1–5 under publication for October 2026."
+  },
+  {
+   "a": "f2073",
+   "b": "f15178",
+   "type": "same",
+   "note": "Both report August under-publication status and scheduled October publication."
+  },
+  {
+   "a": "f2320",
+   "b": "f2073",
+   "type": "elaborates",
+   "note": "Provides Part 2's exact stage-entry date: 22 August 2026."
+  },
+  {
+   "a": "f10418",
+   "b": "f10518",
+   "type": "same",
+   "note": "Duplicate reports of Edition 2 under publication in October 2026."
+  },
+  {
+   "a": "f9771",
+   "b": "f2320",
+   "type": "contradicts",
+   "note": "FDIS status conflicts with the dated stage 60.00 under-publication report."
+  },
+  {
+   "a": "f2862",
+   "b": "f6286",
+   "type": "supports",
+   "note": "Unavailable final texts reinforce the need to recheck before design freeze."
+  },
+  {
+   "a": "f5222",
+   "b": "f11985",
+   "type": "same",
+   "note": "Both exclude awareness-only cameras and radar detectors."
+  },
+  {
+   "a": "f6283",
+   "b": "f2311",
+   "type": "same",
+   "note": "Same motion-control or hazard-mitigation scope and awareness-only exclusion."
+  },
+  {
+   "a": "f10520",
+   "b": "f11162",
+   "type": "same",
+   "note": "Both state the exclusion of awareness systems that do not affect motion."
+  },
+  {
+   "a": "f112",
+   "b": "f11986",
+   "type": "same",
+   "note": "Brake-command capability brings the system into Part 2 scope."
+  },
+  {
+   "a": "f10521",
+   "b": "f10862",
+   "type": "same",
+   "note": "Warning-only and braking systems occupy opposite sides of the scope boundary."
+  },
+  {
+   "a": "f2075",
+   "b": "f10476",
+   "type": "supports",
+   "note": "The scope boundary supports treating automatic braking as a new safety-control function."
+  },
+  {
+   "a": "f5223",
+   "b": "f5810",
+   "type": "elaborates",
+   "note": "Specifies fault-validation targets: ECU, power, bus, brake interface and diagnostics."
+  },
+  {
+   "a": "f430",
+   "b": "f5810",
+   "type": "supports",
+   "note": "Standards-documented fault injection and robustness testing support fault-oriented validation."
+  },
+  {
+   "a": "f2692",
+   "b": "f2318",
+   "type": "same",
+   "note": "Both identify hardware, architecture, MPLa and the awareness-only exclusion."
+  },
+  {
+   "a": "f12037",
+   "b": "f15171",
+   "type": "same",
+   "note": "Duplicate glossary descriptions of hardware, architecture and achieved Machine Performance Level."
+  },
+  {
+   "a": "f2318",
+   "b": "f15171",
+   "type": "same",
+   "note": "Both identify hardware, architecture and achieved MPLa as Part 2 responsibilities."
+  },
+  {
+   "a": "f2337",
+   "b": "f11996",
+   "type": "elaborates",
+   "note": "Details architecture evaluation, reliability and fault behaviour used to establish achieved MPLa."
+  }
+ ]
+}

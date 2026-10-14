@@ -1,0 +1,115 @@
+{
+ "key": "t202",
+ "hash": "09caa4e1715b5ac9",
+ "synopsis": "Combinatorial testing uses smaller test sets to guarantee that every combination of values of any t discrete factors appears at least once; pairwise testing covers any two factors [f4074, f6817, f14111]. NIST reports fault detection equal to exhaustive testing with 20–700 times fewer tests in software research, where most bugs involve one or two parameters and progressively fewer involve three or more, up to about six [f14113, f6819]. This evidence does not establish that pairwise or 3-way coverage suffices for off-road camera, radar or lidar perception failures, and transfer of the software interaction rule remains unproven [f4075, f6827, f14122]. The booklet therefore recommends covering arrays for machine-by-sensor-by-weather-by-scenario configuration coverage, with safety-critical interactions identified through hazard analysis, field failures and engineering knowledge, and perception tests supplemented by physics-guided hypotheses and failure-seeking search [f7233, f4076, f14123]. Covering arrays cannot establish coverage of continuous regions, interactions above t, or operational failure rates; they belong in the coverage and discovery streams rather than serving as the basis for a release claim [f7235, f14283, f14143].",
+ "relations": [
+  {
+   "a": "f6817",
+   "b": "f14111",
+   "type": "same",
+   "note": "Both define the t-factor coverage guarantee; the glossary additionally explains pairwise testing."
+  },
+  {
+   "a": "f6644",
+   "b": "f6863",
+   "type": "same",
+   "note": "Both state that combinatorial designs guarantee discrete coverage."
+  },
+  {
+   "a": "f6863",
+   "b": "f14091",
+   "type": "same",
+   "note": "The glossary restates discrete coverage and supplies configuration examples."
+  },
+  {
+   "a": "f6820",
+   "b": "f14113",
+   "type": "same",
+   "note": "Both report exhaustive-equivalent fault detection with a 20–700-fold test-set reduction."
+  },
+  {
+   "a": "f6819",
+   "b": "f14112",
+   "type": "same",
+   "note": "Both report NIST's software interaction findings, extending to about six parameters."
+  },
+  {
+   "a": "f7233",
+   "b": "f14120",
+   "type": "same",
+   "note": "Both recommend machine-by-sensor-by-weather-by-scenario configuration coverage."
+  },
+  {
+   "a": "f6827",
+   "b": "f7425",
+   "type": "same",
+   "note": "Both reject assuming pairwise or 3-way sufficiency for coupled perception failures."
+  },
+  {
+   "a": "f3747",
+   "b": "f4075",
+   "type": "same",
+   "note": "Both caution that reduced test combinations do not prove collision-avoidance sufficiency."
+  },
+  {
+   "a": "f6826",
+   "b": "f7236",
+   "type": "same",
+   "note": "Both locate the empirical low-order interaction evidence in software studies."
+  },
+  {
+   "a": "f7235",
+   "b": "f14119",
+   "type": "same",
+   "note": "Both exclude continuous coverage, rate claims and interactions above t."
+  },
+  {
+   "a": "f7426",
+   "b": "f14123",
+   "type": "same",
+   "note": "Both recommend physics-guided interaction hypotheses and supplementary search for perception testing."
+  },
+  {
+   "a": "f6821",
+   "b": "f14114",
+   "type": "same",
+   "note": "Both identify NIST ACTS as public domain."
+  },
+  {
+   "a": "f6822",
+   "b": "f14115",
+   "type": "elaborates",
+   "note": "The glossary identifies PICT specifically as an open-source combinatorial generator."
+  },
+  {
+   "a": "f6936",
+   "b": "f14283",
+   "type": "elaborates",
+   "note": "The glossary adds the prohibition on treating challenge-test failures as operational rates."
+  },
+  {
+   "a": "f7353",
+   "b": "f14143",
+   "type": "elaborates",
+   "note": "The glossary clarifies that the coverage stream cannot underpin the release claim."
+  },
+  {
+   "a": "f4076",
+   "b": "f7426",
+   "type": "elaborates",
+   "note": "Perception-specific physics hypotheses and search complement hazard- and experience-derived interaction identification."
+  },
+  {
+   "a": "f6827",
+   "b": "f14123",
+   "type": "supports",
+   "note": "Unproven transfer to perception motivates supplementing t-way designs with hypotheses and search."
+  },
+  {
+   "a": "f7382",
+   "b": "f14504",
+   "type": "elaborates",
+   "note": "The glossary places broad combinatorial coverage after smoke tests, safety checks and DOE calibration."
+  }
+ ]
+}

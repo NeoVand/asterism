@@ -1,0 +1,49 @@
+{
+ "key": "e:cvpr 2024",
+ "hash": "1b0f4abf156659f4",
+ "synopsis": "The corpus cites two strands of CVPR 2024 on-road research: RadSimReal on radar simulation-to-real transfer and Li et al. on misleading open-loop evaluation [f327, f5244]. RadSimReal provides evidence that physical radar simulation can narrow detection-training gaps, but the reported results are limited to urban datasets and a measurable domain gap remains, especially in adverse weather [f3933, f472, f327]. Li et al. showed that open-loop planning metrics on nuScenes could be matched using the vehicle's own state alone, creating a misleading impression and potentially biased benchmark conclusions [f5518, f5184]. Chapter 7 consequently flags open-loop replay of raw logs as subject to open-loop bias; the supplied evidence is on-road rather than direct validation for heavy off-road machines [f5679, f3933, f5184].",
+ "relations": [
+  {
+   "a": "f3933",
+   "b": "f472",
+   "type": "elaborates",
+   "note": "Adds the urban-dataset limitation to the radar gap-narrowing result."
+  },
+  {
+   "a": "f327",
+   "b": "f3933",
+   "type": "elaborates",
+   "note": "Identifies a remaining domain gap, particularly in adverse weather."
+  },
+  {
+   "a": "f327",
+   "b": "f472",
+   "type": "elaborates",
+   "note": "Qualifies gap narrowing with residual adverse-weather transfer limitations."
+  },
+  {
+   "a": "f5184",
+   "b": "f5518",
+   "type": "same",
+   "note": "Restates state-only metric matching; names nuScenes and potential benchmark bias."
+  },
+  {
+   "a": "f5244",
+   "b": "f5518",
+   "type": "elaborates",
+   "note": "Specifies Li et al.'s open-loop failure mechanism and benchmark consequences."
+  },
+  {
+   "a": "f5184",
+   "b": "f5679",
+   "type": "supports",
+   "note": "State-only metric matching demonstrates why open-loop replay can yield misleading evaluation."
+  },
+  {
+   "a": "f5518",
+   "b": "f5679",
+   "type": "supports",
+   "note": "The nuScenes finding substantiates the warning about open-loop bias."
+  }
+ ]
+}

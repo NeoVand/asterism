@@ -1,0 +1,43 @@
+{
+ "key": "e:ni pxi",
+ "hash": "f60bf1608ebf5d22",
+ "synopsis": "Chapter 11 identifies NI VeriStand with PXI and CompactRIO as commercial offerings for data replay and hardware-in-the-loop testing [f8363, f9224]. The listed capabilities include real-time testing, plant models, logging and hardware-in-the-loop I/O, with plant models and I/O also explicitly listed as interfaces [f8643, f9226]. The PXIe-8842 controller costs about USD 5,200; the glossary clarifies that this price covers only the controller, not a complete HIL bench, while a NI VeriStand/PXI/CompactRIO system requires a quote [f9227, f16035]. The evidence provided is general hardware-in-the-loop evidence, and no latest release was found, leaving the documented evidence scope and release currency limited [f9225, f9228].",
+ "relations": [
+  {
+   "a": "f9227",
+   "b": "f16035",
+   "type": "same",
+   "note": "Both list the PXIe-8842 controller at about USD 5,200."
+  },
+  {
+   "a": "f16035",
+   "b": "f9227",
+   "type": "elaborates",
+   "note": "The glossary clarifies that the listed price excludes a complete HIL bench."
+  },
+  {
+   "a": "f8363",
+   "b": "f16035",
+   "type": "same",
+   "note": "Both name NI VeriStand with PXI and CompactRIO."
+  },
+  {
+   "a": "f8643",
+   "b": "f8363",
+   "type": "elaborates",
+   "note": "Specifies testing capabilities of the listed NI hardware-in-the-loop offering."
+  },
+  {
+   "a": "f9226",
+   "b": "f8643",
+   "type": "elaborates",
+   "note": "Explicitly identifies plant models and I/O as interfaces."
+  },
+  {
+   "a": "f9225",
+   "b": "f8643",
+   "type": "elaborates",
+   "note": "Qualifies the supporting evidence as general hardware-in-the-loop evidence."
+  }
+ ]
+}

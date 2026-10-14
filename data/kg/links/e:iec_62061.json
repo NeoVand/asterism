@@ -1,0 +1,91 @@
+{
+ "key": "e:iec 62061",
+ "hash": "4e85dcd397fd60c0",
+ "synopsis": "IEC 62061 is presented as a machinery control-system safety standard using the Safety Integrity Level (SIL) scale, within a general machine-safety toolkit and linked to the parent standard IEC 61508 [f15260, f15267, f15268]. The booklet recommends ISO 13849 or IEC 62061 for the intervention chain in a safety-case skeleton, specifically where ISO 19014 does not reach [f12031, f15272]. That intervention path needs a performance-level or integrity assignment and fault testing; for a team starting from zero in October 2026, the broader safety-case skeleton is considered realistic by mid-2027 [f7455, f829]. Chapter 12 and the glossary identify IEC 62061:2021 as current but not reviewed, while other chapters leave its status or edition unverified and the glossary leaves its fit as an alternative to ISO 19014 unverified [f9769, f15267, f2354, f7455, f12054].",
+ "relations": [
+  {
+   "a": "f829",
+   "b": "f12031",
+   "type": "same",
+   "note": "Both recommend ISO 13849 or IEC 62061 for the skeleton's intervention chain."
+  },
+  {
+   "a": "f12031",
+   "b": "f15272",
+   "type": "elaborates",
+   "note": "Specifies that intervention-chain mapping covers where ISO 19014 does not reach."
+  },
+  {
+   "a": "f829",
+   "b": "f15272",
+   "type": "elaborates",
+   "note": "Clarifies the scope of IEC 62061 within the proposed safety-case skeleton."
+  },
+  {
+   "a": "f7455",
+   "b": "f829",
+   "type": "elaborates",
+   "note": "Adds integrity assignment and fault testing to the proposed intervention-chain safety work."
+  },
+  {
+   "a": "f7455",
+   "b": "f12031",
+   "type": "elaborates",
+   "note": "Details validation obligations accompanying the recommended intervention-chain standards."
+  },
+  {
+   "a": "f2354",
+   "b": "f12054",
+   "type": "same",
+   "note": "Restates the alternative functional-safety standards and their unresolved suitability or status."
+  },
+  {
+   "a": "f9769",
+   "b": "f15267",
+   "type": "same",
+   "note": "Both identify IEC 62061:2021 as current but not reviewed."
+  },
+  {
+   "a": "f2354",
+   "b": "f9769",
+   "type": "contradicts",
+   "note": "Unverified status contrasts with the later claim that the 2021 edition is current."
+  },
+  {
+   "a": "f7455",
+   "b": "f9769",
+   "type": "contradicts",
+   "note": "Unverified editions contrast with explicit identification of current editions."
+  },
+  {
+   "a": "f15267",
+   "b": "f7455",
+   "type": "elaborates",
+   "note": "Identifies SIL as IEC 62061's integrity scale."
+  },
+  {
+   "a": "f12049",
+   "b": "f15268",
+   "type": "same",
+   "note": "Both describe IEC 61508's cross-industry role and machinery connection through IEC 62061."
+  },
+  {
+   "a": "f15260",
+   "b": "f15268",
+   "type": "elaborates",
+   "note": "Adds seven-part structure and sector-specific descendants to IEC 61508's parent-standard role."
+  },
+  {
+   "a": "f15260",
+   "b": "f15267",
+   "type": "elaborates",
+   "note": "Adds IEC 62061's SIL scale, edition, issuer, and review status."
+  },
+  {
+   "a": "f15260",
+   "b": "f12031",
+   "type": "supports",
+   "note": "Its machinery control-system safety role supports use for the intervention chain."
+  }
+ ]
+}

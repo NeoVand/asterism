@@ -1,0 +1,55 @@
+{
+ "key": "e:komatsu komvision",
+ "hash": "ffadc56532865cb1",
+ "synopsis": "Komatsu KomVision is a human-detection and collision-mitigation product for hydraulic excavators, used in the booklet as a market precedent rather than a simulation tool; it launched on the PC200-11 in Japan in December 2019, followed by the PC200i-12 in December 2024 [f16089, f1641, f1640]. It detects people using cameras and machine learning, while radar on the -12 supports detection of people and objects; false and missed detections depend on weather and surrounding conditions [f1644, f1645]. Its emergency stop operates via the lock lever at travel or swing start, not during an ongoing swing, and the skeptic's review describes operation only at slow travel speeds or motion start [f1642, f11426, f10439]. The travel condition is described as “Low-speed travel,” but numerical speeds and detection ranges were not found, leaving its quantified operating envelope unclear [f1643]. KomVision must be switched off during trailer loading because a rapid stop can destabilize the machine, and Komatsu offered a software update to retrofit existing KomVision machines [f1646, f11427, f10983].",
+ "relations": [
+  {
+   "a": "f1642",
+   "b": "f11426",
+   "type": "same",
+   "note": "Both specify stopping at travel or swing start, excluding ongoing swing."
+  },
+  {
+   "a": "f1646",
+   "b": "f11427",
+   "type": "same",
+   "note": "Both require disabling KomVision during trailer loading because sudden stopping risks instability."
+  },
+  {
+   "a": "f1644",
+   "b": "f11425",
+   "type": "elaborates",
+   "note": "Adds machine learning and -12 radar detection to the camera-based people-detection description."
+  },
+  {
+   "a": "f16089",
+   "b": "f1641",
+   "type": "elaborates",
+   "note": "Clarifies that the excavator product is a market precedent, not a simulation tool."
+  },
+  {
+   "a": "f1640",
+   "b": "f1641",
+   "type": "elaborates",
+   "note": "Identifies excavator models, launch dates, and the initial Japanese market."
+  },
+  {
+   "a": "f1642",
+   "b": "f10439",
+   "type": "elaborates",
+   "note": "Details the stop mechanism and exclusion of ongoing swing."
+  },
+  {
+   "a": "f1643",
+   "b": "f10439",
+   "type": "elaborates",
+   "note": "Confirms low-speed travel wording while identifying missing numerical speeds and detection ranges."
+  },
+  {
+   "a": "f1645",
+   "b": "f11425",
+   "type": "elaborates",
+   "note": "Qualifies people detection with weather- and surroundings-dependent false and missed detections."
+  }
+ ]
+}

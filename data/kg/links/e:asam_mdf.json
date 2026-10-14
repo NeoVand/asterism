@@ -1,0 +1,43 @@
+{
+ "key": "e:asam mdf",
+ "hash": "ed9175844cf1f6b1",
+ "synopsis": "Chapter 9 and the glossary identify ASAM MDF 4.3.0, dated September 2025, as a standardized binary format for measured signals, bus traffic and sensor data, including metadata and synchronization; Chapter 9 also explicitly includes calculated signals [f7115, f13011]. MDF is a neutral format option rather than a mandatory architecture choice: other structured or in-house formats can satisfy the same architecture if provenance and long-term readability are controlled [f7116, f13012]. For test management, the glossary assigns MDF to measured data and ASAM ATX to test metadata, specifications and results, while ISO/IEC/IEEE 29119 covers test documentation [f13537, f16029, f16254]. The resulting planning choice is conditional on data stewardship, not exclusive adoption of MDF [f7116, f13012].",
+ "relations": [
+  {
+   "a": "f7115",
+   "b": "f13011",
+   "type": "same",
+   "note": "Both define MDF 4.3.0 and its date; Chapter 9 additionally names calculated signals."
+  },
+  {
+   "a": "f7116",
+   "b": "f13012",
+   "type": "same",
+   "note": "Both present MDF as a neutral option conditioned on provenance and long-term readability."
+  },
+  {
+   "a": "f7116",
+   "b": "f13012",
+   "type": "elaborates",
+   "note": "Chapter 9 explicitly allows alternative structured or in-house formats under the same controls."
+  },
+  {
+   "a": "f7115",
+   "b": "f16254",
+   "type": "elaborates",
+   "note": "Chapter 9 details the version's date, binary encoding, supported data and synchronization."
+  },
+  {
+   "a": "f13537",
+   "b": "f16029",
+   "type": "elaborates",
+   "note": "Adds ISO/IEC/IEEE 29119 and specifies ATX's role in test specifications and results."
+  },
+  {
+   "a": "f16029",
+   "b": "f16254",
+   "type": "same",
+   "note": "Both pair MDF for measured data with ATX for test metadata; latter specifies MDF version."
+  }
+ ]
+}

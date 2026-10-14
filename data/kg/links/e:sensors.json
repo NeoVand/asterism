@@ -1,0 +1,67 @@
+{
+ "key": "e:sensors",
+ "hash": "1b07d0b2a5053d5e",
+ "synopsis": "Sensors publications provide evidence and methods for lidar simulation: a 2022 stationary dataset spans six months of rain, snow, fog and sunlight for stochastic modeling, calibration and validation, while 2025 mining work combines real and simulated dusty environments in a public database [f4736, f4737, f3953]. A 2022 off-road lidar de-dusting filter reported F1 = 97.55%, but the skeptic’s review qualifies this as performance on its own collected dataset [f7830, f10563]. On-road evidence shows vibration-related lidar position and intensity drift, and strong target-dependent weather effects: aluminium and steel targets were not observed at 20–30 m in specified rain and fog conditions, whereas retroreflective targets retained at least 74% of their clear-weather point count [f4707, f6382, f6383]. The corpus also cites an on-road rain-and-fog simulation model and a credibility-level process, while noting that a 2023 study described earlier degradation demonstrations as simulation-based or limited to sites such as climate chambers [f6381, f8949, f10567]. Beyond lidar modeling, Sensors reports include a 17-participant work-zone VR study with mean wearable-warning responses of approximately 337 ms for vibration, 443 ms for visual cues and 597 ms for audio, plus 2026 examples involving mine non-line-of-sight perception and a vineyard-rover training environment [f3323, f3324, f4121, f4143].",
+ "relations": [
+  {
+   "a": "f7830",
+   "b": "f10563",
+   "type": "same",
+   "note": "Same F1 result; skeptic’s review specifies percent and evaluation on the filter’s own dataset."
+  },
+  {
+   "a": "f10563",
+   "b": "f5396",
+   "type": "elaborates",
+   "note": "Adds reported performance and dataset scope to the off-road dust-filtering example."
+  },
+  {
+   "a": "f7830",
+   "b": "f5396",
+   "type": "elaborates",
+   "note": "Quantifies the performance of the cited 2022 off-road lidar dust-filtering work."
+  },
+  {
+   "a": "f3954",
+   "b": "f3953",
+   "type": "elaborates",
+   "note": "Explains dust synthesis and real-data guidance underlying the real-and-simulated database."
+  },
+  {
+   "a": "f3953",
+   "b": "f3952",
+   "type": "elaborates",
+   "note": "Identifies the database produced by the mining dust-filtering work."
+  },
+  {
+   "a": "f4737",
+   "b": "f4736",
+   "type": "elaborates",
+   "note": "Specifies duration and weather coverage of the calibration and validation dataset."
+  },
+  {
+   "a": "f3324",
+   "b": "f3323",
+   "type": "elaborates",
+   "note": "Adds warning-modality response times to the 17-participant VR study."
+  },
+  {
+   "a": "f6383",
+   "b": "f6382",
+   "type": "elaborates",
+   "note": "Shows contrasting target-dependent detection outcomes under the same adverse weather conditions."
+  },
+  {
+   "a": "f6382",
+   "b": "f10567",
+   "type": "elaborates",
+   "note": "Provides field-measured degradation alongside the study’s account of earlier evidence limitations."
+  },
+  {
+   "a": "f6381",
+   "b": "f10567",
+   "type": "elaborates",
+   "note": "Adds a packaged rain-and-fog modeling method to the discussion of simulation-based evidence."
+  }
+ ]
+}

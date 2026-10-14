@@ -1,0 +1,91 @@
+{
+ "key": "e:mavs",
+ "hash": "07e9ae970b5bb1bb",
+ "synopsis": "MAVS is an open-source university off-road simulation library associated with Mississippi State University and, in military/general off-road examples, ERDC [f15935, f3740, f4508, f4159]. It procedurally generates terrain with controllable roughness, ecosystem, haze and moonlight, provides automatic scene labels, and offers ray-traced lidar, camera and radar interacting with rain, dust, fog and snow [f3786, f3975, f4508]. Its tire-soil model is validated for sand and clay; dense-vegetation lidar validation was qualitative in 2018, and a field-measurement-based vegetation-override resistance model was reported at GVSETS 2025 [f3965, f4160, f3967]. Validation remains qualified: the 2020 paper described ongoing validation, and cited open-source simulator authors identified real-sensor validation as future work, despite claims of validated individual MAVS models [f4509, f3741, f3740]. A 2023 MAVS-based ecosystem study found changed segmentation results outside the training distribution, while a 2023 simulated-versus-real RELLIS-3D comparison found large domain-shift effects; MAVS frame rates were not found in the corpus [f4098, f4741, f4957].",
+ "relations": [
+  {
+   "a": "f15935",
+   "b": "f4508",
+   "type": "elaborates",
+   "note": "Identifies the university, openness and sensor capabilities of the simulation library."
+  },
+  {
+   "a": "f15991",
+   "b": "f3965",
+   "type": "elaborates",
+   "note": "Adds validation status to the sand-and-clay tire-soil model."
+  },
+  {
+   "a": "f16008",
+   "b": "f3786",
+   "type": "elaborates",
+   "note": "Adds automatic generation, ecosystem and moonlight controls."
+  },
+  {
+   "a": "f3955",
+   "b": "f4161",
+   "type": "elaborates",
+   "note": "Specifies lidar simulation as an application of the rain model."
+  },
+  {
+   "a": "f3955",
+   "b": "f4508",
+   "type": "elaborates",
+   "note": "Extends rain-interacting lidar to other sensors and weather conditions."
+  },
+  {
+   "a": "f3975",
+   "b": "f3976",
+   "type": "same",
+   "note": "Repeats the automatic-labeling claim with vendor evidence attached."
+  },
+  {
+   "a": "f3965",
+   "b": "f3740",
+   "type": "supports",
+   "note": "Specifies validated tire-soil interactions underlying the broader validation claim."
+  },
+  {
+   "a": "f4160",
+   "b": "f3740",
+   "type": "supports",
+   "note": "Supplies dated qualitative evidence for the lidar-vegetation validation claim."
+  },
+  {
+   "a": "f3740",
+   "b": "f4509",
+   "type": "elaborates",
+   "note": "Ongoing validation qualifies validated individual models, rather than establishing complete simulator validation."
+  },
+  {
+   "a": "f3741",
+   "b": "f4509",
+   "type": "elaborates",
+   "note": "Identifies real-sensor validation as a remaining task within ongoing validation efforts."
+  },
+  {
+   "a": "f4098",
+   "b": "f4741",
+   "type": "supports",
+   "note": "Ecosystem distribution sensitivity reinforces concerns about simulated-to-real segmentation domain shift."
+  },
+  {
+   "a": "f3786",
+   "b": "f3734",
+   "type": "supports",
+   "note": "Automatic terrain generation substantiates MAVS as a procedural-generation example."
+  },
+  {
+   "a": "f3786",
+   "b": "f4194",
+   "type": "supports",
+   "note": "MAVS terrain-generation capabilities support the broader off-road procedural-generation record."
+  },
+  {
+   "a": "f4508",
+   "b": "f4159",
+   "type": "elaborates",
+   "note": "Adds ERDC association and military/general off-road context to Mississippi State affiliation."
+  }
+ ]
+}

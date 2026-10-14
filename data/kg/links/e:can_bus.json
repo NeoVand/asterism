@@ -1,0 +1,25 @@
+{
+ "key": "e:can bus",
+ "hash": "f23d8c05ca85f744",
+ "synopsis": "CAN or J1939 is a source for recording machine state at adequate rate and precision, covering motion, braking, propulsion, automation, engine state and payload, plus implement positions where relevant [f5634]. Recorded CAN or J1939 traffic can also be used for hardware-in-the-loop data injection alongside camera RAW-data and radar detection-level injection [f5281]. Changes to CAN or J1939 interfaces without impact analysis are identified as early warnings that prototype changes may invalidate the pre-built simulator; one account specifies the second quarter of 2027, while another refers to 2027 generally [f10761, f11028]. The recording requirement does not specify numerical rate or precision thresholds, and the injection method does not establish that recorded traffic alone provides adequate coverage [f5634, f5281].",
+ "relations": [
+  {
+   "a": "f10761",
+   "b": "f11028",
+   "type": "same",
+   "note": "Both flag unassessed CAN/J1939 interface changes as warnings of prototype–simulator mismatch."
+  },
+  {
+   "a": "f5634",
+   "b": "f5281",
+   "type": "supports",
+   "note": "Machine-state recording supplies CAN/J1939 traffic that can be reused for HIL injection."
+  },
+  {
+   "a": "f11028",
+   "b": "f5281",
+   "type": "depends",
+   "note": "CAN/J1939 injection fidelity depends on assessing prototype interface changes."
+  }
+ ]
+}

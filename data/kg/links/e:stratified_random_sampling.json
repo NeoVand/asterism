@@ -1,0 +1,73 @@
+{
+ "key": "e:stratified random sampling",
+ "hash": "7bd5cc8dc9d58c4a",
+ "synopsis": "Chapter 9 and the glossary agree that only a frozen stratified random sample can support a release rate claim [f6648, f6867, f14095]. The proposed campaign implements this through a scenario-catalog-fed estimation stream using a frozen, pre-registered stratified random sample [f7355]. Simple or stratified random sampling is recommended for estimating detection, false-alarm and nuisance-brake rates because it can yield unbiased or known-weight estimates with classical confidence intervals for the declared distribution, backed by established statistics [f7239, f7240, f7246]. However, the operational distribution may be uncertain, and sampling cannot establish validity if the declared distribution is wrong [f7244, f7241]. Rare events require enormous exposure, so these methods cannot legitimately claim efficient discovery of very rare failures; no particular tooling is prescribed [f7243, f7242, f7245].",
+ "relations": [
+  {
+   "a": "f6648",
+   "b": "f14095",
+   "type": "same",
+   "note": "Chapter finding and glossary repeat the exclusive basis for release rate claims."
+  },
+  {
+   "a": "f6867",
+   "b": "f14095",
+   "type": "same",
+   "note": "Chapter requirement and glossary require stratified random sampling on a frozen set."
+  },
+  {
+   "a": "f6648",
+   "b": "f6867",
+   "type": "same",
+   "note": "Finding and requirement state the same frozen-sample restriction."
+  },
+  {
+   "a": "f7355",
+   "b": "f14095",
+   "type": "elaborates",
+   "note": "Campaign architecture adds pre-registration and scenario-catalog input to the glossary requirement."
+  },
+  {
+   "a": "f7240",
+   "b": "f7239",
+   "type": "supports",
+   "note": "Estimator properties and confidence intervals justify using random sampling for release estimation."
+  },
+  {
+   "a": "f7246",
+   "b": "f7240",
+   "type": "supports",
+   "note": "Established statistics provides an independent evidence base for the estimation method."
+  },
+  {
+   "a": "f7244",
+   "b": "f7241",
+   "type": "supports",
+   "note": "Operational-distribution uncertainty makes the wrong-distribution validity limitation relevant."
+  },
+  {
+   "a": "f7241",
+   "b": "f7240",
+   "type": "elaborates",
+   "note": "Clarifies that statistical estimates for a declared distribution do not ensure its validity."
+  },
+  {
+   "a": "f7243",
+   "b": "f7242",
+   "type": "supports",
+   "note": "Enormous exposure requirements explain why efficient very-rare-failure discovery cannot be claimed."
+  },
+  {
+   "a": "f7242",
+   "b": "f7239",
+   "type": "elaborates",
+   "note": "Limits the recommended role to estimation rather than efficient discovery of very rare failures."
+  },
+  {
+   "a": "f7239",
+   "b": "f14095",
+   "type": "elaborates",
+   "note": "Broader estimation recommendation mentions simple sampling; release claims specifically require frozen stratified sampling."
+  }
+ ]
+}

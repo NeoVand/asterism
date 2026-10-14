@@ -1,0 +1,31 @@
+{
+ "key": "e:iso/ts 5083",
+ "hash": "dc28021e349bc8b5",
+ "synopsis": "ISO/TS 5083:2025 covers the design, verification and validation of automated driving systems [f15319]. The glossary also groups it with the ISO 3450x series as road-vehicle standards for describing, sorting and choosing automated-driving test scenarios [f15312]. Chapter 12 identifies ISO/TS 5083:2025, alongside SOTIF (ISO 21448:2022), as applicable to the perception-model gap, while explicitly treating them as on-road evidence [f10339]. For off-road planning, the glossary limits ISO/TS 5083 and the related standards to methodological precedent rather than off-road compliance evidence, citing their road-vehicle and limited-access-highway scope [f15320]. These standards establish no physical-to-virtual testing ratio, so they do not supply that planning parameter [f15321].",
+ "relations": [
+  {
+   "a": "f15320",
+   "b": "f10339",
+   "type": "elaborates",
+   "note": "Clarifies the on-road evidence designation and limits its use for off-road compliance."
+  },
+  {
+   "a": "f15319",
+   "b": "f10339",
+   "type": "supports",
+   "note": "Design, verification and validation coverage supports its relevance to the perception-model gap."
+  },
+  {
+   "a": "f15312",
+   "b": "f15320",
+   "type": "supports",
+   "note": "Road-vehicle scenario scope supports treating the standard as precedent, not off-road compliance evidence."
+  },
+  {
+   "a": "f15321",
+   "b": "f15320",
+   "type": "elaborates",
+   "note": "Adds a specific methodological limitation: no physical-to-virtual testing ratio."
+  }
+ ]
+}

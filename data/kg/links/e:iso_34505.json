@@ -1,0 +1,115 @@
+{
+ "key": "e:iso 34505",
+ "hash": "5fef2e6ecfbbaba5",
+ "synopsis": "ISO 34505 was published in June 2025 and provides methods for evaluating and prioritizing test cases, including frequency, criticality, complexity, operational-domain coverage and optimization of test sets [f7181, f4069, f4070]. Its required test-case attributes are identifiers, objectives, inputs, steps, test platform and expected results; the scenario catalog uses the functional, logical and concrete levels adopted from PEGASUS into ISO 34501–34505 [f6732, f6735, f13258]. Across chapters, the standards’ process and information structure are considered transferable to off-road validation, but their content addresses road vehicles and Level 3 and higher automated driving, not off-road compliance [f6642, f7182, f15320]. Off-road adequacy remains unestablished, including validity for mines, quarries, deformable surfaces, articulation, dust and heavy-machinery vibration or contamination [f6734, f7696]. Although ISO 34505 includes a simulation-validity clause, the corpus characterizes these scenario standards as addressing coverage rather than model credibility, without validation against physical data, risk scaling or a prescribed physical-to-virtual testing ratio [f4071, f7693, f8120, f8119, f7694]. ISO 34505 test-case evaluation contributes to the rationale for separating discovery, population-success estimation and requirement/regression campaigns by purpose, data and governance, while that standards evidence remains on-road [f6934, f6666, f6667, f6668].",
+ "relations": [
+  {
+   "a": "f6732",
+   "b": "f13291",
+   "type": "same",
+   "note": "Both list the same six required test-case attributes."
+  },
+  {
+   "a": "f6732",
+   "b": "f7107",
+   "type": "same",
+   "note": "Both specify identifiers, objectives, inputs, steps, platforms and expected results."
+  },
+  {
+   "a": "f13291",
+   "b": "f7107",
+   "type": "same",
+   "note": "Glossary and chapter repeat the six test-case attributes."
+  },
+  {
+   "a": "f6948",
+   "b": "f7107",
+   "type": "same",
+   "note": "Same attribute requirement, with steps explicit in the fuller statement."
+  },
+  {
+   "a": "f13281",
+   "b": "f13291",
+   "type": "elaborates",
+   "note": "The detailed entry enumerates the attributes the standard defines."
+  },
+  {
+   "a": "f7181",
+   "b": "f6732",
+   "type": "same",
+   "note": "Both date ISO 34505 to June 2025."
+  },
+  {
+   "a": "f7694",
+   "b": "f15321",
+   "type": "same",
+   "note": "Both state that no physical-to-virtual testing ratio is established."
+  },
+  {
+   "a": "f7694",
+   "b": "f8122",
+   "type": "same",
+   "note": "Both report no prescribed ratio of physical evidence to virtual testing."
+  },
+  {
+   "a": "f15321",
+   "b": "f8122",
+   "type": "same",
+   "note": "Both identify the absence of a physical-evidence ratio."
+  },
+  {
+   "a": "f6642",
+   "b": "f7182",
+   "type": "same",
+   "note": "Both distinguish transferable off-road process from on-road standards content."
+  },
+  {
+   "a": "f6733",
+   "b": "f6642",
+   "type": "same",
+   "note": "Both describe transferable information structure, not transferable off-road content."
+  },
+  {
+   "a": "f13258",
+   "b": "f6735",
+   "type": "elaborates",
+   "note": "Chapter applies the glossary's PEGASUS-derived abstraction levels to the scenario catalog."
+  },
+  {
+   "a": "f4069",
+   "b": "f15317",
+   "type": "elaborates",
+   "note": "Adds frequency, criticality and complexity as test-case evaluation criteria."
+  },
+  {
+   "a": "f4071",
+   "b": "f15317",
+   "type": "same",
+   "note": "Both explicitly identify a simulation-validity clause."
+  },
+  {
+   "a": "f7693",
+   "b": "f8120",
+   "type": "same",
+   "note": "Both characterize the standards as coverage-focused rather than credibility-focused."
+  },
+  {
+   "a": "f4071",
+   "b": "f8120",
+   "type": "contradicts",
+   "note": "Simulation-validity clause creates tension with the stated absence of physical-data validation coverage."
+  },
+  {
+   "a": "f7696",
+   "b": "f6734",
+   "type": "elaborates",
+   "note": "Specifies off-road conditions for which validity has not been demonstrated."
+  },
+  {
+   "a": "f4070",
+   "b": "f8121",
+   "type": "elaborates",
+   "note": "Operational-domain coverage is explicitly required to reflect the operational design domain."
+  }
+ ]
+}

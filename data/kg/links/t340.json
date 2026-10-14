@@ -1,0 +1,109 @@
+{
+ "key": "t340",
+ "hash": "9ca79feccc3c23a4",
+ "synopsis": "The booklet presents software interfaces and programming environments as practical integration choices: CARLA offers Python, Prescan offers Python and MATLAB, RoadRunner uses gRPC, and ROS 2 is integrated across several simulators [f16237, f16240]. Version instability is a central planning risk: CARLA changed from UE4 to UE5 with some APIs unsupported, while Isaac Sim 5.0 deprecated camera-prim RTX workflows and removed annotators; evidence may therefore need re-qualification after updates [f8892, f8487, f16247]. Recommended controls are to freeze and containerize the tool chain, archive containers for the safety case, regression-test upgrades, and record the software build or commit in every run [f16241, f16248, f16243]. Open-source delivery avoids license lock-in but brings GPU, library and version dependencies, requiring reproducible builds, internal competence, upstream and security-patch tracking, and DevOps labor [f8898, f8900, f16244]. Acquisition planning should include cloud and continuous-integration skills, partner handover of continuous-integration scripts, and a software bill of materials with asset and license review for mixed licensing [f16245, f16246, f8909].",
+ "relations": [
+  {
+   "a": "f8487",
+   "b": "f8890",
+   "type": "same",
+   "note": "Both report identical Isaac Sim 5.0 deprecations and annotator removals."
+  },
+  {
+   "a": "f8896",
+   "b": "f16241",
+   "type": "elaborates",
+   "note": "Glossary adds version freezing and container archiving for the safety case."
+  },
+  {
+   "a": "f8896",
+   "b": "f16248",
+   "type": "elaborates",
+   "note": "Glossary adds version freezing and regression testing before adopting upgrades."
+  },
+  {
+   "a": "f8470",
+   "b": "f8892",
+   "type": "elaborates",
+   "note": "User report identifies map-layers API and version 0.10.0 as a specific unsupported case."
+  },
+  {
+   "a": "f8473",
+   "b": "f16248",
+   "type": "supports",
+   "note": "Reported installation, content and version friction motivates controlled tool-chain upgrades."
+  },
+  {
+   "a": "f8487",
+   "b": "f16247",
+   "type": "supports",
+   "note": "Workflow deprecation and annotator removal illustrate why updates can require evidence re-qualification."
+  },
+  {
+   "a": "f8892",
+   "b": "f16247",
+   "type": "supports",
+   "note": "Engine changes and unsupported APIs illustrate version-related threats to reusable evidence."
+  },
+  {
+   "a": "f8746",
+   "b": "f8900",
+   "type": "supports",
+   "note": "Key-person dependence and upstream churn motivate internal competence and upstream tracking."
+  },
+  {
+   "a": "f8898",
+   "b": "f8900",
+   "type": "supports",
+   "note": "Open-source dependencies motivate reproducible builds and active dependency management."
+  },
+  {
+   "a": "f8898",
+   "b": "f16241",
+   "type": "supports",
+   "note": "GPU, library and version dependencies motivate freezing and containerizing the tool chain."
+  },
+  {
+   "a": "f8759",
+   "b": "f16237",
+   "type": "elaborates",
+   "note": "Different simulator APIs illustrate the interface diversity behind integration complexity."
+  },
+  {
+   "a": "f8482",
+   "b": "f16240",
+   "type": "elaborates",
+   "note": "Isaac Sim 6.1 specifically includes ROS 2 Control integration."
+  },
+  {
+   "a": "f16247",
+   "b": "f16243",
+   "type": "supports",
+   "note": "Version-sensitive evidence motivates recording the exact build or commit."
+  },
+  {
+   "a": "f16247",
+   "b": "f16248",
+   "type": "supports",
+   "note": "Potential evidence re-qualification motivates freezing versions and regression-testing upgrades."
+  },
+  {
+   "a": "f8900",
+   "b": "f16244",
+   "type": "supports",
+   "note": "Reproducible builds and upstream tracking substantiate the need for internal DevOps labor."
+  },
+  {
+   "a": "f16237",
+   "b": "f16238",
+   "type": "elaborates",
+   "note": "Python use extends beyond simulator APIs to Scenic, CropCraft and Demify."
+  },
+  {
+   "a": "f16239",
+   "b": "f16248",
+   "type": "supports",
+   "note": "Twice-yearly MathWorks releases reinforce the need for controlled version adoption."
+  }
+ ]
+}

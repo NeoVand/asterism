@@ -1,0 +1,79 @@
+{
+ "key": "e:nature",
+ "hash": "0ba228d348f77d81",
+ "synopsis": "The corpus cites Feng et al.’s Nature paper, published on 22 March 2023, as an on-road statistical-validation precedent using dense deep reinforcement learning (D2RL) [f426, f6848]. It reports evaluation accelerated by 10^3 to 10^5 times while remaining unbiased, demonstrated on highway and urban test tracks with an augmented-reality environment [f6848, f14163]. The method trained dense-reinforcement-learning background agents; Chapter 9 also describes the acceleration in terms of naturalistic-adversarial environments and dense RL [f633, f7276]. These results support accelerated automated-road-vehicle validation, but the corpus explicitly identifies a transfer gap: D2RL is proven only on-road, not for off-road testing [f351, f7079].",
+ "relations": [
+  {
+   "a": "f351",
+   "b": "f633",
+   "type": "elaborates",
+   "note": "Adds trained background agents and explicitly identifies the evidence as on-road."
+  },
+  {
+   "a": "f351",
+   "b": "f6848",
+   "type": "elaborates",
+   "note": "Quantifies acceleration and supplies publication date, test settings, and augmented-reality environment."
+  },
+  {
+   "a": "f6848",
+   "b": "f14163",
+   "type": "same",
+   "note": "Restates D2RL's publication timing, acceleration range, and unbiased on-road evaluation."
+  },
+  {
+   "a": "f6848",
+   "b": "f7078",
+   "type": "same",
+   "note": "Repeats the Nature 2023 D2RL acceleration range."
+  },
+  {
+   "a": "f6848",
+   "b": "f7276",
+   "type": "same",
+   "note": "Reports the same acceleration range based on Nature 2023 on-road evidence."
+  },
+  {
+   "a": "f14163",
+   "b": "f7078",
+   "type": "same",
+   "note": "Repeats the D2RL acceleration range attributed to Nature 2023."
+  },
+  {
+   "a": "f14163",
+   "b": "f7276",
+   "type": "same",
+   "note": "Restates Nature 2023's acceleration range and on-road evidence basis."
+  },
+  {
+   "a": "f7078",
+   "b": "f7276",
+   "type": "same",
+   "note": "Duplicates the reported D2RL acceleration range."
+  },
+  {
+   "a": "f426",
+   "b": "f633",
+   "type": "elaborates",
+   "note": "Explains the method and unbiased acceleration behind the listed Feng validation precedent."
+  },
+  {
+   "a": "f633",
+   "b": "f6848",
+   "type": "elaborates",
+   "note": "Adds measured acceleration, precise publication date, and demonstration settings."
+  },
+  {
+   "a": "f633",
+   "b": "f7079",
+   "type": "elaborates",
+   "note": "Makes explicit that the on-road evidence does not establish off-road testing validity."
+  },
+  {
+   "a": "f6848",
+   "b": "f7079",
+   "type": "elaborates",
+   "note": "Limits the reported test-track results to on-road validation, excluding demonstrated off-road applicability."
+  }
+ ]
+}

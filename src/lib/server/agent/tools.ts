@@ -11,6 +11,7 @@ import type { KGNode, NodeType, RelType } from '#lib/kg/types.ts';
 import { Block, QuestionForm, type Answers } from '#lib/blocks/schema.ts';
 import { getStore, type GraphStore } from '../kg/store.ts';
 import { alsoNote, byImportance, chapterName, chapterTag, clip, foldDuplicates, line } from './format.ts';
+import { CHAPTER_TITLES } from '#lib/kg/types.ts';
 
 export type GraphEventMode = 'touch' | 'read';
 
@@ -71,13 +72,21 @@ export function makeTools() {
 			if (!hits.length) {
 				return `No matches for "${query}". Try other wording, a synonym or acronym, fewer filters, or explore a related concept.`;
 			}
-			const lines = hits.map((h) => line(store, h.node, 260) + alsoNote(h.also));
+			let synopses = 0;
+			const lines = hits.map((h) => {
+				let l = line(store, h.node, 260) + alsoNote(h.also);
+				if (h.node.synopsis && synopses < 3 && (h.node.type === 'term' || h.node.type === 'entity')) {
+					synopses++;
+					l += `\n    synopsis: ${clip(h.node.synopsis, 700)}`;
+				}
+				return l;
+			});
 			const chapterSpread = new Set(hits.flatMap((h) => [h.node, ...h.also]).filter((n) => n.type === 'fact').map((n) => chapterTag(n)));
 			return [
 				`${hits.length} matches for "${query}"${chapterSpread.size > 1 ? ` across ${[...chapterSpread].join(', ')}` : ''}:`,
 				...lines,
 				'',
-				'Next: explore hub ids (t…, e…) to see every chapter that discusses them; read_facts for citations and related facts.'
+				'Next: explore hub ids (t…, e…) to see every chapter that discusses them, or a chapter (c0 synthesis, c1…c13) for its key findings, uncertainties and gaps; read_facts for citations and linked facts.'
 			].join('\n');
 		},
 		{
@@ -172,6 +181,46 @@ export function makeTools() {
 				if (n.url) out.push(`URL: ${n.url}`);
 				out.push(`Cited by ${facts.length} facts:`, ...facts.sort(byImportance).slice(0, max).map((f) => `  ${line(store, f, 220)}`));
 				touched.push(...facts.map((f) => f.id));
+			} else if (n.type === 'chapter' && n.chapter != null) {
+				// The chapter's own summary: key findings (or the cross-chapter synthesis), then
+				// what is established, uncertain, disputed and missing.
+				const facts = store.chapterFacts.get(n.chapter) ?? [];
+				const byRole = (roles: string[]) => facts.filter((f) => roles.includes(store.roleOf(f) ?? ''));
+				if (n.chapter === 0) {
+					// The synthesis is the booklet's own top-level answer: show every subsection.
+					const bySection = new Map<string, KGNode[]>();
+					for (const f of byRole(['synthesis'])) {
+						const title = store.section(f.sectionId!)?.title ?? 'Synthesis';
+						if (!bySection.has(title)) bySection.set(title, []);
+						bySection.get(title)!.push(f);
+					}
+					out.push(`Cross-chapter synthesis — ${bySection.size} subsections:`);
+					for (const [title, list] of bySection) {
+						const folded = foldDuplicates(store, list.sort(byImportance), Math.max(3, Math.round(max / 6)));
+						out.push(`  ${title} (${list.length}):`, ...folded.map((f) => `    ${line(store, f.node, 220)}`));
+						touched.push(...folded.map((f) => f.node.id));
+					}
+					out.push('(Search with chapters:[0] to read a subsection in full.)');
+				}
+				const groups: [string, KGNode[], number][] =
+					n.chapter === 0
+						? [['Introduction', byRole(['front']), 8]]
+						: [
+								['Key findings', byRole(['key-findings']), 30],
+								['Well established', byRole(['established']), 10],
+								['Uncertain', byRole(['uncertain']), 8],
+								['Where experts disagree', byRole(['disagree']), 8],
+								['Blind spots (not found / not asked)', byRole(['blind-spots']), 10]
+							];
+				for (const [title, list, cap] of groups) {
+					if (!list.length) continue;
+					const folded = foldDuplicates(store, list, cap);
+					out.push(`${title} (${list.length}):`, ...folded.map((f) => `  ${line(store, f.node, 240)}`));
+					touched.push(...folded.map((f) => f.node.id));
+				}
+				const children = nodesOf(['contains']).filter((x) => nb.find((a) => a.id === x.id)?.out);
+				if (children.length) out.push(`Sections: ${children.slice(0, 40).map((c) => `${c.id} ${c.label}`).join('; ')}`);
+				out.push(`(${facts.length} facts in this chapter; search with chapters:[${n.chapter}] to dig deeper.)`);
 			} else {
 				const children = nodesOf(['contains']).filter((x) => nb.find((a) => a.id === x.id)?.out);
 				const facts = nodesOf(['states']).sort(byImportance);
@@ -186,7 +235,7 @@ export function makeTools() {
 		{
 			name: 'explore',
 			description:
-				'Open one node and walk its neighborhood. For a concept (t…) or entity (e…) it lists EVERY fact linked to it grouped by chapter — the best way to stitch together what different chapters say about one thing. For a fact it shows its quote, sources, linked facts in other chapters (same/supports/contradicts/elaborates) and its section siblings. Also works for sources, sections and chapters.',
+				'Open one node and walk its neighborhood. For a concept (t…) or entity (e…): its cross-chapter synopsis and EVERY linked fact grouped by chapter — the best way to stitch together what different chapters say about one thing. For a chapter (c0 = cross-chapter synthesis, c1…c13): its key findings, what is established, uncertain, disputed and not found. For a fact: its quote, sources, linked facts in other chapters (same/supports/contradicts/elaborates) and section siblings. Also works for sources and sections.',
 			schema: z.object({
 				id: z.string().describe('Node id, e.g. t25, e12, f340, s88, x120, c8'),
 				limit: z.number().int().min(4).max(60).optional().describe('Max listed items (default 24)')
@@ -348,6 +397,11 @@ export function makeTools() {
 			const ids = JSON.stringify(parsed.data).match(/"[fstecx]\d+"/g)?.map((s) => s.slice(1, -1)) ?? [];
 			const unknown = ids.filter((i) => !store.get(i));
 			await emit(config, 'read', ids.filter((i) => store.get(i)));
+			try {
+				await dispatchCustomEvent('ui', { block: parsed.data }, config);
+			} catch {
+				/* not streaming */
+			}
 			return `Rendered the ${parsed.data.type} block in the chat${unknown.length ? ` (ignored unknown ids: ${unknown.join(', ')})` : ''}. The user sees it now: do not repeat its contents in prose — add only what the block cannot say (the reasoning, caveats, the decision you recommend), citing facts inline.`;
 		},
 		{
@@ -379,7 +433,7 @@ export function makeTools() {
 		{
 			name: 'ask_user',
 			description:
-				"Ask the user a few structured questions in an in-chat form (single choice, multiple choice, short text or a numeric scale) and wait for the answers. Use it when a plan or recommendation depends on facts only the user knows (machines, deadline, sensors, team, budget, risk appetite). Ask at most once per request, 2–5 questions, each with good options.",
+				"Ask the user a few structured questions in an in-chat form (single choice, multiple choice, short text or a numeric scale) and wait for the answers. ONLY for building a plan or a tailored recommendation whose shape depends on facts only the user knows (machines in scope, sensors, software reuse, markets, deadline, team) — never for factual, explanatory or general-advice questions, which you answer directly from the graph. Research first, then ask at most once per request, 2–5 questions with good options.",
 			schema: QuestionForm
 		}
 	);

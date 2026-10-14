@@ -180,17 +180,23 @@ export function assemble(): KGraph {
 
 	// Sources --------------------------------------------------------------------
 	const sourceRef = new Map<string, string>(); // `${chapter}:${num}` → source id
+	const sourceMeta: Record<string, { title: string; by: string; year: number | null; kind: string }> = existsSync(`${DATA}/sources.json`)
+		? JSON.parse(readFileSync(`${DATA}/sources.json`, 'utf8'))
+		: {};
 	for (const s of corpus.sources) {
+		const meta = sourceMeta[s.id];
 		add({
 			id: s.id,
 			type: 'source',
-			label: shortSourceLabel(s.authors, s.title, s.year),
+			label: meta ? meta.title : shortSourceLabel(s.authors, s.title, s.year),
+			by: meta?.by,
+			sourceKind: meta?.kind,
 			text: s.text.replace(/\*\*/g, ''),
 			topic: 'H',
 			chapter: s.refs[0]?.chapter ?? null,
 			doc: 'booklet',
 			url: s.url,
-			year: s.year,
+			year: meta?.year ?? s.year,
 			evidence: s.label,
 			onRoad: s.qualifiers.some((q) => /on-road/i.test(q)),
 			qualifiers: s.qualifiers

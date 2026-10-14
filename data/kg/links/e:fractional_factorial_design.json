@@ -1,0 +1,25 @@
+{
+ "key": "e:fractional factorial design",
+ "hash": "f722134a0a46c189",
+ "synopsis": "Fractional factorial design reduces experimental run count by testing only a chosen fraction of combinations, but deliberately introduces aliasing that makes some higher-order effects indistinguishable [f6800, f14102]. A finding of no main effect for fog therefore cannot rule out a localized, non-linear failure involving a particular combination of fog density, glare and sensor contamination [f6809, f14108]. The glossary also cautions that DOE cannot find a narrow failure region hidden between design points, limiting what planners can infer from apparently reassuring results [f14108].",
+ "relations": [
+  {
+   "a": "f6800",
+   "b": "f14102",
+   "type": "same",
+   "note": "Both describe reduced run counts and aliasing of higher-order effects."
+  },
+  {
+   "a": "f6809",
+   "b": "f14108",
+   "type": "same",
+   "note": "Both warn that no fog main effect does not exclude a localized combination-specific failure."
+  },
+  {
+   "a": "f6800",
+   "b": "f14108",
+   "type": "supports",
+   "note": "Aliasing higher-order effects helps explain why absent main effects cannot exclude combination-specific failures."
+  }
+ ]
+}

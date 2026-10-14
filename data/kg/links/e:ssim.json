@@ -1,0 +1,19 @@
+{
+ "key": "e:ssim",
+ "hash": "6cc8457940d88d3e",
+ "synopsis": "SSIM is an image- or field-similarity metric used for sensor-model validation and requires pixel-matched pairs [f4802]. It assesses appearance and structure rather than the behavior of perception and decision software [f14791]. A physics-based radar simulator dramatically improved structural-similarity and mutual-information scores, yet a detector trained only on real radar data failed to detect most cars in the simulated images [f14793]. This result highlights a validation gap: improved similarity scores alone do not establish that simulated sensor data will support successful perception [f14791, f14793].",
+ "relations": [
+  {
+   "a": "f4802",
+   "b": "f14791",
+   "type": "elaborates",
+   "note": "Adds the pixel-matched-pair requirement for SSIM-based sensor-model validation."
+  },
+  {
+   "a": "f14793",
+   "b": "f14791",
+   "type": "supports",
+   "note": "Improved similarity scores alongside detection failures demonstrate the distinction between similarity and perception performance."
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "key": "e:soda",
+ "hash": "bd1ace3ae550fc82",
+ "synopsis": "SODA is a 2022 construction dataset containing 19,846 images across 15 classes [f5847, f12812]. Chapter 13 independently repeats the image count, with no numerical disagreement across the supplied facts [f10825, f5847, f12812]. The glossary describes SODA and MOCS as image-only datasets captured from fixed or aerial viewpoints, rather than from a machine-mounted multi-sensor rig; this limits their match to that sensing configuration [f12813].",
+ "relations": [
+  {
+   "a": "f5847",
+   "b": "f10825",
+   "type": "same",
+   "note": "Both report 19,846 images in the SODA construction dataset."
+  },
+  {
+   "a": "f5847",
+   "b": "f12812",
+   "type": "same",
+   "note": "Both report the 2022 dataset with 19,846 images and 15 classes."
+  },
+  {
+   "a": "f10825",
+   "b": "f12812",
+   "type": "same",
+   "note": "Both report 19,846 images; the glossary also gives year and class count."
+  },
+  {
+   "a": "f12813",
+   "b": "f5847",
+   "type": "elaborates",
+   "note": "Adds image-only modality and fixed or aerial capture viewpoints to the dataset description."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "e:iso 26262",
+ "hash": "c8493e8d36ea2f52",
+ "synopsis": "The booklet consistently identifies ISO 19014, using MPLr, rather than ISO 26262 as the functional-safety framework for the brake-commanding earth-moving-machine function; ISO 26262 and ISO 21448 do not apply by scope to this heavy off-road program [f162, f2071, f11993, f2355, f15293]. ISO 26262 governs road-vehicle electronic functional safety and derives ASIL A–D or QM from severity, exposure and controllability ratings, so ASIL should not be treated as the off-road machine's applicable risk scale [f15291, f12062, f12063, f12060]. The booklet recommends borrowing road-vehicle standards' structure as a method, with machine-learning issues explicit in the safety case; ISO/PAS 8800:2024, dated December 2024, tailors ISO 26262 for AI but remains road-vehicle-only reference material [f15309, f15298, f12069]. It reports a 70% confidence level for ISO 26262 proven-in-use calculations and a higher confidence requirement in IEC 61508 practice [f7935, f7936, f12352, f12353]. These statements have an important verification limitation: the research did not verify ISO 26262 and related on-road frameworks, did not review the listed safety standards in full text, and did not verify explicit simulation-evidence acceptance or tool-qualification rules [f7702, f8942].",
+ "relations": [
+  {
+   "a": "f162",
+   "b": "f2071",
+   "type": "same",
+   "note": "Both identify ISO 19014, not ISO 26262, as governing off-road brake-commanding functional safety."
+  },
+  {
+   "a": "f2071",
+   "b": "f11993",
+   "type": "same",
+   "note": "Glossary restates the applicable earth-moving-machine framework; Chapter 3 additionally specifies MPLr."
+  },
+  {
+   "a": "f11993",
+   "b": "f15168",
+   "type": "same",
+   "note": "Both identify ISO 19014 rather than ISO 26262 for earth-moving machines."
+  },
+  {
+   "a": "f2355",
+   "b": "f12065",
+   "type": "same",
+   "note": "Glossary repeats Chapter 3's exclusion of road standards from the off-road function's scope."
+  },
+  {
+   "a": "f12065",
+   "b": "f15293",
+   "type": "same",
+   "note": "Both exclude ISO 26262 and ISO 21448 from the booklet's off-road program."
+  },
+  {
+   "a": "f2355",
+   "b": "f8945",
+   "type": "supports",
+   "note": "Road-only scope supports the warning against presenting these standards as automatically governing off-road machines."
+  },
+  {
+   "a": "f7702",
+   "b": "f8942",
+   "type": "elaborates",
+   "note": "Chapter 11 specifies missing full-text review and unverified simulation acceptance and tool-qualification rules."
+  },
+  {
+   "a": "f7935",
+   "b": "f12352",
+   "type": "same",
+   "note": "Both report 70% confidence for ISO 26262 proven-in-use calculations."
+  },
+  {
+   "a": "f7936",
+   "b": "f12056",
+   "type": "same",
+   "note": "Both report higher proven-in-use confidence in IEC 61508 than ISO 26262."
+  },
+  {
+   "a": "f7936",
+   "b": "f12353",
+   "type": "same",
+   "note": "Glossary repeats the higher IEC 61508 confidence comparison and ISO 26262's 70% baseline."
+  },
+  {
+   "a": "f12353",
+   "b": "f15270",
+   "type": "elaborates",
+   "note": "Adds field-history credit and strict conditions to the comparative proven-in-use confidence requirement."
+  },
+  {
+   "a": "f2731",
+   "b": "f12411",
+   "type": "same",
+   "note": "Glossary repeats the vendor-described tailoring of ISO 26262 for road-vehicle AI."
+  },
+  {
+   "a": "f12411",
+   "b": "f15298",
+   "type": "same",
+   "note": "Same road-only AI tailoring claim, with December 2024 date added."
+  },
+  {
+   "a": "f12411",
+   "b": "f12069",
+   "type": "same",
+   "note": "Same road-vehicle AI tailoring claim; adds its reference-only role in the booklet."
+  },
+  {
+   "a": "f12061",
+   "b": "f15291",
+   "type": "same",
+   "note": "Both identify ISO 26262 as road-vehicle functional safety; the latter specifies electronics and ASIL."
+  },
+  {
+   "a": "f12062",
+   "b": "f12063",
+   "type": "depends",
+   "note": "Severity, exposure and controllability ratings determine the resulting ASIL or QM classification."
+  },
+  {
+   "a": "f12060",
+   "b": "f2355",
+   "type": "elaborates",
+   "note": "Extends the road-standard scope exclusion specifically to ASIL and explains its A–D scale."
+  },
+  {
+   "a": "f12223",
+   "b": "f15309",
+   "type": "supports",
+   "note": "Shared V-model structure supports borrowing road-standard methods without claiming off-road applicability."
+  }
+ ]
+}

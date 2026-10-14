@@ -1,0 +1,31 @@
+{
+ "key": "e:tartandrive",
+ "hash": "e27fe7a3bba02cbb",
+ "synopsis": "TartanDrive is listed among the machine-mounted off-road datasets considered in Chapter 7, but it was not verified in this research [f5849]. The glossary preserves that qualification, listing TartanDrive and GOOSE without claiming they were verified [f12815]. No validation for off-road collision warning was found for TartanDrive or the other listed datasets; Chapter 7 extends this finding to the listed open-source simulators as well [f12816, f5851]. These are limits of the research findings, not proof that TartanDrive cannot support off-road collision-warning validation [f5849, f5851, f12816].",
+ "relations": [
+  {
+   "a": "f5849",
+   "b": "f12815",
+   "type": "same",
+   "note": "Both state that TartanDrive was listed but not verified in the research."
+  },
+  {
+   "a": "f5851",
+   "b": "f12816",
+   "type": "same",
+   "note": "Both report no off-road collision-warning validation found for the four listed datasets."
+  },
+  {
+   "a": "f5851",
+   "b": "f12816",
+   "type": "elaborates",
+   "note": "Chapter 7 extends the glossary's dataset validation gap to three open-source simulators."
+  },
+  {
+   "a": "f12816",
+   "b": "f5849",
+   "type": "elaborates",
+   "note": "Specifies off-road collision warning as the application for which no validation was found."
+  }
+ ]
+}

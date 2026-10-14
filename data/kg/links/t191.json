@@ -1,0 +1,115 @@
+{
+ "key": "t191",
+ "hash": "ff0221dc713f16a6",
+ "synopsis": "Operator-already-reacting detection avoids adding automatic braking when the operator is already stopping or steering safely away; unnecessary braking can jolt a loaded machine and shift its load [f13960, f13961]. ISO 21815-3:2023 forbids overriding stronger operator braking, while UN R131 and R152 allow conscious driver actions to interrupt automatic braking; these override provisions do not establish validated off-road reaction-detection logic [f5913, f5943, f13971]. The recommended production approach fuses operator commands with machine response, crediting sufficient achieved deceleration or a demonstrably safer evasive trajectory rather than control movement alone [f13967, f13968, f6336, f6342]. Throttle release is particularly weak evidence because a downhill machine can still accelerate, and standing down after a startled operator briefly touches a control can collapse the stopping margin [f13970, f13969]. No off-road validation was found, so the program should define the reaction state machine before hardware arrives and test it in operator-in-the-loop and physical trials [f6332, f13972]. The architecture guidance is not fully aligned: Chapter 8 calls suppression a secondary layer at a_measured ≥ a_required, whereas the glossary calls it a third layer and recommends an additional deceleration margin [f6402, f13884, f13968].",
+ "relations": [
+  {
+   "a": "f5913",
+   "b": "f13964",
+   "type": "same",
+   "note": "Both prohibit overriding operator braking stronger than system demand."
+  },
+  {
+   "a": "f5944",
+   "b": "f13964",
+   "type": "same",
+   "note": "Restates the same ISO stronger-braking protection."
+  },
+  {
+   "a": "f6327",
+   "b": "f13964",
+   "type": "same",
+   "note": "Restates the same ISO stronger-braking protection."
+  },
+  {
+   "a": "f5913",
+   "b": "f5944",
+   "type": "same",
+   "note": "Duplicate stronger-operator-braking requirement within Chapter 8."
+  },
+  {
+   "a": "f5943",
+   "b": "f13962",
+   "type": "same",
+   "note": "Both describe conscious-action interruption under UN R131 and R152."
+  },
+  {
+   "a": "f6323",
+   "b": "f13962",
+   "type": "same",
+   "note": "Same conscious-action override rule, with warnings also specified in Chapter 8."
+  },
+  {
+   "a": "f5945",
+   "b": "f13966",
+   "type": "same",
+   "note": "Both describe mining-truck brake-stroke checking after the second alarm."
+  },
+  {
+   "a": "f6329",
+   "b": "f5945",
+   "type": "same",
+   "note": "Duplicate Hitachi patent example, adding the avoidance-detection purpose."
+  },
+  {
+   "a": "f6332",
+   "b": "f13971",
+   "type": "same",
+   "note": "Both report no off-road validation of reaction-detection logic."
+  },
+  {
+   "a": "f6341",
+   "b": "f13968",
+   "type": "same",
+   "note": "Both require achieved deceleration exceeding required deceleration plus a margin."
+  },
+  {
+   "a": "f5946",
+   "b": "f13968",
+   "type": "elaborates",
+   "note": "Glossary adds an explicit margin to the achieved-deceleration criterion."
+  },
+  {
+   "a": "f6343",
+   "b": "f13969",
+   "type": "same",
+   "note": "Both warn that brief control touches can trigger unsafe stand-down."
+  },
+  {
+   "a": "f6337",
+   "b": "f13970",
+   "type": "same",
+   "note": "Both explain why downhill throttle release does not prove deceleration."
+  },
+  {
+   "a": "f6328",
+   "b": "f13965",
+   "type": "same",
+   "note": "Both describe conditional intentional-operator override under ISO 21815-3."
+  },
+  {
+   "a": "f6325",
+   "b": "f13963",
+   "type": "elaborates",
+   "note": "Chapter 8 identifies AAA's 2024 protocols as the pedal-force monitoring example."
+  },
+  {
+   "a": "f6333",
+   "b": "f13967",
+   "type": "elaborates",
+   "note": "Chapter 8 adds requested brake torque and rejects switch status as sufficient evidence."
+  },
+  {
+   "a": "f6402",
+   "b": "f13884",
+   "type": "contradicts",
+   "note": "Suppression is labeled secondary in Chapter 8 but third-layer in the glossary."
+  },
+  {
+   "a": "f13971",
+   "b": "f13972",
+   "type": "supports",
+   "note": "Missing off-road validation motivates early state-machine definition and operator-in-the-loop and physical testing."
+  }
+ ]
+}

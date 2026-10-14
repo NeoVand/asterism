@@ -1,0 +1,25 @@
+{
+ "key": "e:gaussian splatting",
+ "hash": "20c61e3829755d55",
+ "synopsis": "Gaussian splatting is used to rebuild scenes from recordings, with SplatAD and NVIDIA NuRec named as examples [f15954]. The ISPRS 2024 hybrid pipeline required invisible collision substrates beneath its Gaussian-splatting representation, indicating that this example needed additional geometry for collisions [f3914, f13129]. For sensor simulation, SplatAD (CVPR 2025) models rolling shutter, lidar intensity and ray dropout in real time, but the cited evidence is on-road rather than heavy off-road [f4516]. Whether neural or Gaussian-splatting reconstruction, including NuRec and related methods, can qualify as test evidence rather than training data remains uncertain [f9355].",
+ "relations": [
+  {
+   "a": "f3914",
+   "b": "f13129",
+   "type": "same",
+   "note": "The glossary restates the collision-substrate requirement of the cited pipeline."
+  },
+  {
+   "a": "f4516",
+   "b": "f15954",
+   "type": "elaborates",
+   "note": "Adds SplatAD’s sensor effects, real-time performance, publication date and on-road evidence scope."
+  },
+  {
+   "a": "f9355",
+   "b": "f15954",
+   "type": "elaborates",
+   "note": "Qualifies reconstructed scenes’ potential use as test evidence, including NuRec."
+  }
+ ]
+}

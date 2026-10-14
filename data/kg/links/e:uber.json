@@ -1,0 +1,103 @@
+{
+ "key": "e:uber",
+ "hash": "02155fbe14e6bed6",
+ "synopsis": "The NTSB’s 2019 investigation of Uber’s 18 March 2018 fatal crash in Tempe found that the system detected the pedestrian but failed to classify her or predict her path correctly in time; its design also precluded emergency braking in the relevant condition and relied on operator intervention [f10694, f10695]. The corpus reports emergency recognition 1.2 seconds before impact, a one-second suppression of planned braking, and braking beginning only 0.2 seconds before impact; some chapter accounts explicitly attribute these details to secondary summaries [f15433, f10697, f10698, f10872]. The factory emergency brake was disabled, with a secondary account identifying shared frequencies between Uber’s experimental radar and Volvo’s factory radar as one reason; the booklet raises analogous radio-frequency coexistence questions for multi-OEM sites [f15432, f11255, f11256]. The investigation identified deficient safety risk management, oversight and safety culture, not merely an algorithm error [f10696, f15434, f11270]. The booklet therefore treats intervention timing and organizational oversight as central post-accident evidence, while stressing that the investigation was not a product-liability judgment [f15441, f10699].",
+ "relations": [
+  {
+   "a": "f10696",
+   "b": "f15434",
+   "type": "same",
+   "note": "Both report deficient safety risk management and culture."
+  },
+  {
+   "a": "f10696",
+   "b": "f11270",
+   "type": "same",
+   "note": "Both identify risk management, oversight and safety culture deficiencies."
+  },
+  {
+   "a": "f15434",
+   "b": "f11270",
+   "type": "same",
+   "note": "Both identify organizational safety deficiencies."
+  },
+  {
+   "a": "f10698",
+   "b": "f10872",
+   "type": "same",
+   "note": "Identical emergency-recognition and braking-onset timings, with different source qualifications."
+  },
+  {
+   "a": "f10697",
+   "b": "f10871",
+   "type": "same",
+   "note": "Both describe one-second suppression delaying planned braking."
+  },
+  {
+   "a": "f15433",
+   "b": "f10698",
+   "type": "elaborates",
+   "note": "Adds the one-second suppression explaining the reported recognition-to-braking interval."
+  },
+  {
+   "a": "f10698",
+   "b": "f15433",
+   "type": "elaborates",
+   "note": "Adds braking onset at 0.2 seconds before impact."
+  },
+  {
+   "a": "f10697",
+   "b": "f15433",
+   "type": "elaborates",
+   "note": "Adds false-braking avoidance as the rationale for suppression."
+  },
+  {
+   "a": "f11255",
+   "b": "f15432",
+   "type": "elaborates",
+   "note": "Provides radar frequency sharing as one reason factory AEB was disabled."
+  },
+  {
+   "a": "f15432",
+   "b": "f10695",
+   "type": "elaborates",
+   "note": "Specifies that the factory emergency brake was disabled."
+  },
+  {
+   "a": "f10698",
+   "b": "f15441",
+   "type": "supports",
+   "note": "The recognition-to-braking delay illustrates why intervention timing becomes central evidence."
+  },
+  {
+   "a": "f10696",
+   "b": "f15441",
+   "type": "supports",
+   "note": "Organizational findings substantiate the booklet’s emphasis on oversight evidence."
+  },
+  {
+   "a": "f10699",
+   "b": "f15441",
+   "type": "elaborates",
+   "note": "Broadens evidentiary scope and distinguishes accident investigation from a product-liability judgment."
+  },
+  {
+   "a": "f11255",
+   "b": "f11256",
+   "type": "supports",
+   "note": "The radar coexistence example motivates analogous questions for multi-OEM sites."
+  },
+  {
+   "a": "f10694",
+   "b": "f10699",
+   "type": "supports",
+   "note": "Classification and path-prediction failures illustrate perception choices becoming evidence."
+  },
+  {
+   "a": "f10695",
+   "b": "f10699",
+   "type": "supports",
+   "note": "Emergency-braking restrictions and operator reliance illustrate braking and fallback choices becoming evidence."
+  }
+ ]
+}

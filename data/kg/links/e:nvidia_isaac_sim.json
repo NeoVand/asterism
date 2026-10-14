@@ -1,0 +1,115 @@
+{
+ "key": "e:nvidia isaac sim",
+ "hash": "ab66f38cde6b6f9b",
+ "synopsis": "NVIDIA Isaac Sim is a general robotics simulator, open source under Apache 2.0 since version 5.0, with version 6.1 reaching general availability on 15 September 2026 [f8477, f8478, f8481]. Its capabilities include RTX lidar and radar, cameras, ROS 2 integration and neural rendering; the asset library lists 25 RTX lidar models but only one radar model [f8478, f8479, f8480]. AgriGen demonstrated large agricultural scene generation in September 2026, but the research did not verify Isaac Sim or find construction/mining validation or validation for off-road collision warning [f3788, f5850, f5851, f8491]. Sensor credibility remains a qualification gap: ultrasonic sensing is a PhysX ray-cast range model rather than an acoustic model, while RTX sensor crashes and severe multi-sensor frame-rate losses motivate workload-specific benchmarking [f8548, f8488, f8875]. The core is free for internal R&D, but separate asset/component terms apply and redistribution with Omniverse Kit requires NVIDIA AI Enterprise at an undiscovered price; staff statements describing free use for teams of up to two leave the scope of free use needing clarification [f8483, f8484, f8485, f8486]. An in-house open-source chain offers low license cost but high internal labor, and validated radar and qualification-ready Chrono-to-Isaac heavy-machine coupling still require major work [f16128, f9275, f9280].",
+ "relations": [
+  {
+   "a": "f3788",
+   "b": "f16007",
+   "type": "same",
+   "note": "Both describe AgriGen generating large agricultural scenes in Isaac Sim."
+  },
+  {
+   "a": "f3788",
+   "b": "f4142",
+   "type": "elaborates",
+   "note": "Adds large agricultural scene generation to the September 2026 AgriGen report."
+  },
+  {
+   "a": "f8480",
+   "b": "f15905",
+   "type": "same",
+   "note": "Both list 25 RTX lidar models and one radar model."
+  },
+  {
+   "a": "f8485",
+   "b": "f15937",
+   "type": "same",
+   "note": "Both report staff describing free use for teams of up to two."
+  },
+  {
+   "a": "f8485",
+   "b": "f8903",
+   "type": "same",
+   "note": "Duplicate staff statements about the two-person free-use scope."
+  },
+  {
+   "a": "f8903",
+   "b": "f16151",
+   "type": "same",
+   "note": "Glossary repeats the staff-described two-person free-use scope."
+  },
+  {
+   "a": "f8486",
+   "b": "f8908",
+   "type": "same",
+   "note": "Both identify additional license terms for assets and Omniverse components."
+  },
+  {
+   "a": "f8491",
+   "b": "f15904",
+   "type": "same",
+   "note": "Both record absent construction/mining evidence, with validation explicit in the chapter."
+  },
+  {
+   "a": "f8547",
+   "b": "f15950",
+   "type": "same",
+   "note": "Both report no physics-based ultrasonic simulation found in the listed open-source options."
+  },
+  {
+   "a": "f8489",
+   "b": "f8875",
+   "type": "same",
+   "note": "Both report severe frame-rate loss in multi-sensor scenes."
+  },
+  {
+   "a": "f8902",
+   "b": "f16150",
+   "type": "same",
+   "note": "Both distinguish free internal research from paid redistribution."
+  },
+  {
+   "a": "f8300",
+   "b": "f8891",
+   "type": "same",
+   "note": "Both date version 6.1 to September 2026."
+  },
+  {
+   "a": "f8481",
+   "b": "f8300",
+   "type": "elaborates",
+   "note": "Specifies general availability on 15 September."
+  },
+  {
+   "a": "f8487",
+   "b": "f8890",
+   "type": "same",
+   "note": "Duplicate reports of version 5.0 camera workflow deprecation and annotator removal."
+  },
+  {
+   "a": "f5851",
+   "b": "f8491",
+   "type": "supports",
+   "note": "Absent off-road collision-warning validation reinforces the construction/mining validation gap."
+  },
+  {
+   "a": "f8548",
+   "b": "f15950",
+   "type": "supports",
+   "note": "Ray-cast rather than acoustic modeling explains the ultrasonic physics gap."
+  },
+  {
+   "a": "f8480",
+   "b": "f9275",
+   "type": "supports",
+   "note": "Only one listed radar model supports concern over radar readiness."
+  },
+  {
+   "a": "f9280",
+   "b": "f16128",
+   "type": "supports",
+   "note": "Non-turnkey heavy-machine coupling helps explain high internal labor requirements."
+  }
+ ]
+}

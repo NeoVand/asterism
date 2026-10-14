@@ -1,0 +1,115 @@
+{
+ "key": "t196",
+ "hash": "ea0ae35f02a71d54",
+ "synopsis": "Mixed motion requires predicting both participants’ future positions, with collision decisions based on the machine’s predicted swept volume and the other actor’s trajectory rather than proximity or object labels alone [f14031, f14034, f7021, f7476]. Straight-line time to collision is insufficient for sideways, rotating or initially stationary motion, and turning, articulation or skid steering can create collisions without longitudinal closing speed [f14039, f5920, f13731]. Motion scope must be defined machine by machine: ISO 21815-3:2023 covers forward/reverse intervention, Part 4 excludes automatic braking during rotation, and draft Part 5 reached proof stage on 9 September 2026 for other motion forms [f10906, f10900, f10902, f10904]. Pretoria’s October 2024 steering-rate collision-prediction results were simulation-only; production recommendations treat steering as an avoidance cue, not proof of safety, and require demonstrably safer predicted trajectories before suppressing intervention [f6331, f6367, f6336, f6342]. Recorded replay cannot establish other actors’ reactions after counterfactual braking, so closed-loop simulation needs regenerated observations and reactive agents, while mixed motion also requires controlled whole-machine tests because validated off-road behavioral models were not found [f5525, f14043, f5539, f14041, f14042]. Planning remains constrained by missing accident speed/motion detail and worldwide motion-type collision shares, and the proposed single swept-volume collision logic must be reconciled with concerns about treating swing and rotation as one function [f3256, f3610, f7021, f10899].",
+ "relations": [
+  {
+   "a": "f6027",
+   "b": "f13732",
+   "type": "same",
+   "note": "Both identify differential speed, skid turning and counter-rotation as collision-relevant motions."
+  },
+  {
+   "a": "f1136",
+   "b": "f10904",
+   "type": "elaborates",
+   "note": "The review supplies the exact proof-stage date and stage number."
+  },
+  {
+   "a": "f1531",
+   "b": "f6331",
+   "type": "elaborates",
+   "note": "Adds Gaussian steering-rate sampling, false-intervention objective and simulation-only status."
+  },
+  {
+   "a": "f1849",
+   "b": "f6331",
+   "type": "elaborates",
+   "note": "Adds the prediction method and limits the reported evidence to simulation."
+  },
+  {
+   "a": "f6331",
+   "b": "f6367",
+   "type": "elaborates",
+   "note": "Specifies the publication venue and October 2024 reporting date."
+  },
+  {
+   "a": "f5525",
+   "b": "f14043",
+   "type": "same",
+   "note": "Both identify replay's inability to establish actor behavior after counterfactual braking."
+  },
+  {
+   "a": "f5525",
+   "b": "f5539",
+   "type": "depends",
+   "note": "Counterfactual replay limitations motivate regenerated observations and reactive closed-loop agents."
+  },
+  {
+   "a": "f14041",
+   "b": "f14042",
+   "type": "supports",
+   "note": "Missing validated behavioral models support requiring whole-machine tests rather than model-only validation."
+  },
+  {
+   "a": "f5920",
+   "b": "f14039",
+   "type": "supports",
+   "note": "Collisions without longitudinal closing explain straight-line time-to-collision limitations."
+  },
+  {
+   "a": "f13731",
+   "b": "f5920",
+   "type": "supports",
+   "note": "A stationary crawler turning provides a concrete non-longitudinal collision example."
+  },
+  {
+   "a": "f14034",
+   "b": "f7021",
+   "type": "elaborates",
+   "note": "Specifies predicted swept volume and object trajectory as collision-logic inputs."
+  },
+  {
+   "a": "f7021",
+   "b": "f10899",
+   "type": "contradicts",
+   "note": "Single collision logic is proposed, but one-function treatment of rotating machines is questioned."
+  },
+  {
+   "a": "f2567",
+   "b": "f2568",
+   "type": "supports",
+   "note": "Distinct machine collision kinematics support motion-specific hazard models."
+  },
+  {
+   "a": "f10902",
+   "b": "f10906",
+   "type": "supports",
+   "note": "The rotational automatic-braking exclusion supports defining motion scope machine by machine."
+  },
+  {
+   "a": "f6340",
+   "b": "f6336",
+   "type": "supports",
+   "note": "Predicted movement away cross-checks steering cues before intervention suppression."
+  },
+  {
+   "a": "f6336",
+   "b": "f13967",
+   "type": "elaborates",
+   "note": "The glossary expands steering cues into a multi-signal operator-response detection recommendation."
+  },
+  {
+   "a": "f3559",
+   "b": "f3356",
+   "type": "supports",
+   "note": "Tip-head intention changes illustrate why proximity alone poorly indicates collision risk."
+  },
+  {
+   "a": "f10694",
+   "b": "f14034",
+   "type": "supports",
+   "note": "The Tempe crash illustrates why detection without timely path prediction is insufficient."
+  }
+ ]
+}

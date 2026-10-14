@@ -1,0 +1,43 @@
+{
+ "key": "e:mape",
+ "hash": "3f7ced11cb2af8b2",
+ "synopsis": "MAPE is one of several metrics used to assess simulation agreement, specifically for sensor-signal models; other options include safety-quantity errors, time-history errors and distribution comparisons [f7553]. Sensor-model validation can apply MAPE to time-domain amplitude, point count and intensity, alongside separate checks of range accuracy, RCS correlation, attenuation and SNR [f4793]. Chapters 6 and 10 both report a 1.7% lidar signal-amplitude MAPE from independent on-road evidence published in 2022; Chapter 10 identifies the model as clear-weather automotive lidar [f4728, f7824]. Chapter 6 also reports 8.5% MAPE for point count and 9.3% for mean intensity, so the low amplitude error should not be treated as representative of every lidar output [f4728, f4729]. The cited numerical evidence is on-road, and these facts do not establish corresponding MAPE performance for heavy off-road machines or adverse weather [f4728, f4729, f7824].",
+ "relations": [
+  {
+   "a": "f4728",
+   "b": "f7824",
+   "type": "same",
+   "note": "Both report 1.7% lidar amplitude MAPE from independent on-road evidence published in 2022."
+  },
+  {
+   "a": "f4793",
+   "b": "f7553",
+   "type": "elaborates",
+   "note": "Specifies sensor outputs assessed with MAPE within the broader simulation-agreement metric framework."
+  },
+  {
+   "a": "f7824",
+   "b": "f7553",
+   "type": "supports",
+   "note": "Provides a numerical example of MAPE applied to a sensor-signal model."
+  },
+  {
+   "a": "f4729",
+   "b": "f7553",
+   "type": "elaborates",
+   "note": "Adds reported MAPE values for lidar point count and mean intensity."
+  },
+  {
+   "a": "f4728",
+   "b": "f4793",
+   "type": "supports",
+   "note": "Provides reported evidence of amplitude-based MAPE validation."
+  },
+  {
+   "a": "f4729",
+   "b": "f4793",
+   "type": "supports",
+   "note": "Provides reported evidence of point-count and intensity MAPE validation."
+  }
+ ]
+}

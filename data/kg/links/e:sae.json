@@ -1,0 +1,37 @@
+{
+ "key": "e:sae",
+ "hash": "ab62ed4c9be44d42",
+ "synopsis": "SAE appears as a source for autonomous-tractor training data, off-road digital twins, and on-road AEB validation; its reported 50 million images conflicts with Vision Systems Design's 200 million image pairs for Deere obstacle detection [f821]. A 2026 SAE paper describes a Unity-based multimodal off-road digital twin with procedural terrain, cameras, lidar, GPS, IMU, dynamic weather and lighting, and failure annotations [f3790, f4165]. The booklet includes this simulator alongside MAVS and other examples in its assessment that procedural site generation has a strong off-road record [f3734, f4194]. In a separate SAE paper dated 27 September 2016, Salaani and colleagues used an instrumented Volvo tractor-trailer with Bendix radar and AEB for hardware-in-the-loop simulation, benchmarking physical track tests before comparing equivalent simulated scenarios [f10603, f10604]. That validation example is explicitly on-road, so the supplied facts do not establish equivalent validation results for heavy off-road machines [f10603, f10604].",
+ "relations": [
+  {
+   "a": "f3790",
+   "b": "f4165",
+   "type": "elaborates",
+   "note": "Specifies the platform, sensors, environmental variation, and annotations of the multimodal simulator."
+  },
+  {
+   "a": "f3790",
+   "b": "f3734",
+   "type": "elaborates",
+   "note": "Details the SAE simulator cited as an off-road procedural-generation example."
+  },
+  {
+   "a": "f3734",
+   "b": "f4194",
+   "type": "supports",
+   "note": "MAVS and SAE examples contribute to the claimed strong off-road procedural-generation record."
+  },
+  {
+   "a": "f3790",
+   "b": "f4194",
+   "type": "supports",
+   "note": "Procedural terrain in the SAE simulator supports its inclusion in the off-road record."
+  },
+  {
+   "a": "f10604",
+   "b": "f10603",
+   "type": "elaborates",
+   "note": "Adds the physical-test benchmarking and simulation-comparison method to the hardware-in-the-loop example."
+  }
+ ]
+}

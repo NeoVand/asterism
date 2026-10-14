@@ -1,0 +1,31 @@
+{
+ "key": "e:grpc",
+ "hash": "656565e0a95706c4",
+ "synopsis": "The glossary identifies gRPC as a network protocol for calls between programs and says RoadRunner uses it [f16237]. Chapter 11 corroborates this, listing gRPC among MathWorks stack interfaces and explicitly among RoadRunner Scenario interfaces alongside OpenSCENARIO and MATLAB [f8383, f8961, f9195]. The supplied facts establish interface availability but provide no gRPC-specific performance, cost, version, or integration requirements [f8383, f16237, f8961, f9195].",
+ "relations": [
+  {
+   "a": "f8383",
+   "b": "f8961",
+   "type": "same",
+   "note": "Restate the MathWorks interface list, with additional formats and partner detail in f8383."
+  },
+  {
+   "a": "f16237",
+   "b": "f8383",
+   "type": "same",
+   "note": "Both identify gRPC as an interface used by RoadRunner."
+  },
+  {
+   "a": "f9195",
+   "b": "f16237",
+   "type": "elaborates",
+   "note": "Specifies RoadRunner Scenario and its accompanying OpenSCENARIO and MATLAB interfaces."
+  },
+  {
+   "a": "f16237",
+   "b": "f8961",
+   "type": "elaborates",
+   "note": "Explains gRPC's role as a network protocol and identifies RoadRunner as its user."
+  }
+ ]
+}

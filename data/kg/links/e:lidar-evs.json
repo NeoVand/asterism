@@ -1,0 +1,67 @@
+{
+ "key": "e:lidar-evs",
+ "hash": "e6f88fef8f2577d6",
+ "synopsis": "LiDAR-EVS is a March 2026 neural reconstruction preprint that renders lidar as well as cameras, with cited evidence limited to on-road settings [f3817, f4009]. It claims lidar Chamfer distances 48.6% and 47.2% lower than SplatAD at a 3 m lateral shift, but absolute values were not extracted [f4009]. Across the job-site, sensor-simulation and glossary discussions, moving or extrapolated sensor viewpoints remain a challenge; LiDAR-EVS attributes extrapolation failure to single-traversal training and severe overfitting [f4010, f4023, f4518, f16004]. LiDAR-EVS and VEGS attempt to remedy novel-path reconstruction problems, but the corpus does not establish that those problems have disappeared [f4012]. Reported minimal real-to-sim gaps in NeuroNCAP are therefore in tension with critics’ concerns about weak extrapolation and lack of harsh-weather support in LiHi-GS and LiDAR-EVS; the supplied evidence does not establish off-road applicability [f5076, f3817, f4518].",
+ "relations": [
+  {
+   "a": "f4010",
+   "b": "f4518",
+   "type": "same",
+   "note": "Both identify poor generalisation to novel or extrapolated viewpoints."
+  },
+  {
+   "a": "f4518",
+   "b": "f16004",
+   "type": "same",
+   "note": "The glossary restates LiDAR-EVS's difficulty with moving sensor viewpoints."
+  },
+  {
+   "a": "f4010",
+   "b": "f16004",
+   "type": "same",
+   "note": "Novel-path generalisation failure is restated as difficulty when sensor viewpoints move."
+  },
+  {
+   "a": "f4023",
+   "b": "f4518",
+   "type": "supports",
+   "note": "Single-traversal training provides a cause for the extrapolated-viewpoint challenge."
+  },
+  {
+   "a": "f4010",
+   "b": "f4023",
+   "type": "elaborates",
+   "note": "Severe overfitting details how single-traversal training causes extrapolation failure."
+  },
+  {
+   "a": "f4012",
+   "b": "f4518",
+   "type": "supports",
+   "note": "Unproven remedies reinforce that extrapolated viewpoints remain a significant challenge."
+  },
+  {
+   "a": "f4518",
+   "b": "f5076",
+   "type": "supports",
+   "note": "The viewpoint challenge supports critics' weak-extrapolation concerns."
+  },
+  {
+   "a": "f16004",
+   "b": "f5076",
+   "type": "supports",
+   "note": "Glossary viewpoint limitations corroborate critics' extrapolation concerns."
+  },
+  {
+   "a": "f4009",
+   "b": "f3817",
+   "type": "elaborates",
+   "note": "Adds preprint status and quantified lidar performance to the method description."
+  },
+  {
+   "a": "f4009",
+   "b": "f4012",
+   "type": "elaborates",
+   "note": "Quantifies improvement at one lateral shift without establishing that novel-path problems are eliminated."
+  }
+ ]
+}

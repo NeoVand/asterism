@@ -1,0 +1,115 @@
+{
+ "key": "t192",
+ "hash": "1c2c4eb8756fb902",
+ "synopsis": "Decision-side nuisance braking occurs when sensors detect a real object but the logic incorrectly treats it as a collision; relevant operating situations include loading near piles, berm contact, spotters, and tight-clearance maneuvers [f13973, f13974, f13975]. The booklet identifies nuisance interventions as the main documented field failure of deployed proximity systems and the main reason operators disable them, but suppressing all interventions in loading zones or repeated berm alarms would also conceal genuine hazards [f13982, f13980, f13981]. Context-aware approaches include Volvo’s remembered-slope logic and University of Pretoria’s 2024 steering-trajectory research, although the latter’s initial results are simulation-only [f1384, f6331]. Validation should include dedicated benign-but-dangerous-looking scenarios, drawing on road false-activation tests; millions of benign interactions may occur per imminent collision, making absence of hazardous braking harder to establish than a few successful stops [f1992, f15415, f1994, f1993]. Tuning should minimize nuisance subject to hard safety constraints rather than pursue zero false brakes: evidence for the optimum off-road trade-off is thin, no off-road false-activation rate per operating hour was found, and the program must derive its acceptance threshold from shadow-mode data before enabling braking [f7312, f7460, f6570, f13984, f13985, f14058].",
+ "relations": [
+  {
+   "a": "f1384",
+   "b": "f11520",
+   "type": "same",
+   "note": "Both describe Volvo’s remembered-slope suppression when reversing down a stockpile."
+  },
+  {
+   "a": "f1384",
+   "b": "f13979",
+   "type": "same",
+   "note": "The unnamed commercial example restates Volvo’s specific false-activation mitigation."
+  },
+  {
+   "a": "f11520",
+   "b": "f13979",
+   "type": "same",
+   "note": "Both describe the same loader slope-memory feature."
+  },
+  {
+   "a": "f6331",
+   "b": "f14040",
+   "type": "same",
+   "note": "Both describe Pretoria steering-trajectory prediction and its simulation-only initial evidence."
+  },
+  {
+   "a": "f6331",
+   "b": "f1849",
+   "type": "elaborates",
+   "note": "Adds Gaussian trajectory sampling and the simulation-only qualification to the 2024 research."
+  },
+  {
+   "a": "f7312",
+   "b": "f14398",
+   "type": "same",
+   "note": "Both favor minimizing nuisance subject to a bounded miss rate."
+  },
+  {
+   "a": "f7317",
+   "b": "f14427",
+   "type": "same",
+   "note": "Both match evolutionary tuning to the misses–nuisance–margin trade-off."
+  },
+  {
+   "a": "f6191",
+   "b": "f13978",
+   "type": "elaborates",
+   "note": "Identifies UN R152 as requiring the stationary-vehicle passage test."
+  },
+  {
+   "a": "f13984",
+   "b": "f13985",
+   "type": "depends",
+   "note": "Missing off-road rate benchmarks necessitate deriving acceptance thresholds from program shadow-mode data."
+  },
+  {
+   "a": "f1992",
+   "b": "f15415",
+   "type": "supports",
+   "note": "Investigation evidence motivates adapting road false-reaction tests to off-road benign scenarios."
+  },
+  {
+   "a": "f6569",
+   "b": "f13982",
+   "type": "supports",
+   "note": "Frequent unnecessary braking and productivity loss explain operators disabling deployed systems."
+  },
+  {
+   "a": "f10697",
+   "b": "f7460",
+   "type": "supports",
+   "note": "Reported one-second suppression illustrates how avoiding false braking can delay necessary braking."
+  },
+  {
+   "a": "f6570",
+   "b": "f13985",
+   "type": "supports",
+   "note": "Thin operational trade-off evidence reinforces the need for program-specific nuisance measurements."
+  },
+  {
+   "a": "f14396",
+   "b": "f7312",
+   "type": "supports",
+   "note": "Hidden safety-policy trade-offs in weighted costs motivate explicit miss-rate constraints."
+  },
+  {
+   "a": "f1991",
+   "b": "f1990",
+   "type": "supports",
+   "note": "Obstacle-only testing biases intervention thresholds, motivating a dedicated false-positive campaign."
+  },
+  {
+   "a": "f14014",
+   "b": "f7331",
+   "type": "supports",
+   "note": "Larger protective margins explain why conservative worst-case tuning can increase nuisance stops."
+  },
+  {
+   "a": "f13985",
+   "b": "f14058",
+   "type": "depends",
+   "note": "Shadow-mode threshold derivation requires measuring nuisance rates before enabling braking."
+  },
+  {
+   "a": "f13977",
+   "b": "f6331",
+   "type": "elaborates",
+   "note": "Steering-trajectory sampling provides a concrete implementation of turning-angle and expected-path reasoning."
+  }
+ ]
+}

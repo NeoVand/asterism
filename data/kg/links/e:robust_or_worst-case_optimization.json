@@ -1,0 +1,55 @@
+{
+ "key": "e:robust or worst-case optimization",
+ "hash": "9c2a9d1098ac3ab7",
+ "synopsis": "Chapter 9 and the glossary describe robust or worst-case optimization as targeting the worst stratum or a high percentile rather than average performance, protecting difficult conditions such as dust at night [f6988, f14399]. Chapter 9 specifies min-max optimization over strata and says the approach avoids sacrificing weak-stratum performance while favoring stable operating regions [f7329, f7330]. The trade-off is conservatism and a potentially higher nuisance rate [f7331]. Although the approach is described as having lower over-fitting risk, held-out strata remain necessary, and no off-road evidence for robust or worst-case tuning was found [f7332, f7333].",
+ "relations": [
+  {
+   "a": "f6988",
+   "b": "f14399",
+   "type": "same",
+   "note": "Glossary restates Chapter 9's objective and dust-at-night rationale."
+  },
+  {
+   "a": "f7329",
+   "b": "f14399",
+   "type": "elaborates",
+   "note": "Specifies min-max over strata as the worst-case tuning formulation."
+  },
+  {
+   "a": "f7330",
+   "b": "f14399",
+   "type": "elaborates",
+   "note": "Adds preference for stable operating regions to weak-stratum protection."
+  },
+  {
+   "a": "f7331",
+   "b": "f14399",
+   "type": "elaborates",
+   "note": "Adds conservatism and potentially increased nuisance rates as trade-offs."
+  },
+  {
+   "a": "f7332",
+   "b": "f14399",
+   "type": "elaborates",
+   "note": "Adds lower over-fitting risk and the continuing need for held-out strata."
+  },
+  {
+   "a": "f7333",
+   "b": "f14399",
+   "type": "elaborates",
+   "note": "Qualifies the method description with the absence of found off-road evidence."
+  },
+  {
+   "a": "f7329",
+   "b": "f6988",
+   "type": "elaborates",
+   "note": "Adds the min-max formulation to the worst-stratum optimization description."
+  },
+  {
+   "a": "f7330",
+   "b": "f6988",
+   "type": "elaborates",
+   "note": "Restates weak-stratum protection and adds stable operating-region preference."
+  }
+ ]
+}

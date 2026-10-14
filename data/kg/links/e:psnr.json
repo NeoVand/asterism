@@ -1,0 +1,115 @@
+{
+ "key": "e:psnr",
+ "hash": "fd9acc01676909e9",
+ "synopsis": "PSNR measures image or field similarity using pixel-matched pairs; higher scores mean greater image fidelity, but these metrics assess appearance and structure rather than perception or decision-software behavior [f4802, f12930, f14791]. Viewpoint changes substantially reduce reported fidelity: XLD's synthetic CARLA benchmark drops from 30.87 dB at zero lateral shift to 19.17 dB at 4 m, while Para-Lane's real-data results fall from 22.99 dB in the recorded lane to 17.05 and 16.26 dB in adjacent lanes [f4001, f4003]. EUVS (2025) reports average PSNR reductions of 24.6% for translation, 25.6% for rotation and 30.6% for both; MV²'s August 2026 results show drone-trained scenes falling from 29.13 to 10.36 dB when viewed from a car [f4005, f4008]. Method and evaluation choices matter: EmerNeRF reaches 24.80 dB at XLD's 4 m shift, and MV²'s PVG car-to-scooter scores range from 14.72 dB without masks to 24.29 dB with ground-truth dynamic masks [f4002, f3890, f3891, f3892]. Diffusion repair improves Para-Lane two-lane results to 19.47 dB but still trails roughly 23 dB on the recorded path; generative novel-view methods report only 13.19–20.82 dB on Waymo in a 2026 preprint, which the corpus characterizes as low fidelity for safety testing and in tension with validation 'data machine' claims [f4013, f3821, f3822, f4330]. These benchmarks provide on-road or synthetic CARLA evidence, not a demonstrated heavy off-road validation result, and PSNR alone does not establish perception or decision-system validity [f4001, f4003, f4008, f3821, f14791].",
+ "relations": [
+  {
+   "a": "f3707",
+   "b": "f13573",
+   "type": "same",
+   "note": "Both report the recorded-to-adjacent-lane decline from 22.99 to 17.05 dB."
+  },
+  {
+   "a": "f3709",
+   "b": "f13574",
+   "type": "same",
+   "note": "Both report drone-trained scene quality falling from 29.13 to 10.36 dB."
+  },
+  {
+   "a": "f3709",
+   "b": "f4008",
+   "type": "same",
+   "note": "Both report MV²'s drone-to-car PSNR decline."
+  },
+  {
+   "a": "f13574",
+   "b": "f4008",
+   "type": "same",
+   "note": "Glossary restates the MV² drone-to-car benchmark."
+  },
+  {
+   "a": "f12930",
+   "b": "f4001",
+   "type": "same",
+   "note": "Identical PSNR values for lateral shifts of zero, one, two and four meters."
+  },
+  {
+   "a": "f3758",
+   "b": "f3821",
+   "type": "same",
+   "note": "Identical 2026 Waymo generative novel-view PSNR range."
+  },
+  {
+   "a": "f3758",
+   "b": "f4243",
+   "type": "same",
+   "note": "Both report 13.19–20.82 dB for generative novel views on Waymo."
+  },
+  {
+   "a": "f3821",
+   "b": "f4243",
+   "type": "same",
+   "note": "Same Waymo range, framed around validity at new sensor positions."
+  },
+  {
+   "a": "f13573",
+   "b": "f4003",
+   "type": "elaborates",
+   "note": "Para-Lane adds the second-adjacent-lane score of 16.26 dB."
+  },
+  {
+   "a": "f3707",
+   "b": "f4003",
+   "type": "elaborates",
+   "note": "Detailed Para-Lane results add a second-adjacent lane and venue."
+  },
+  {
+   "a": "f3708",
+   "b": "f4005",
+   "type": "elaborates",
+   "note": "EUVS adds rotation and combined-shift losses to the translation result."
+  },
+  {
+   "a": "f4802",
+   "b": "f14791",
+   "type": "elaborates",
+   "note": "Glossary clarifies that similarity metrics do not measure perception or decision behavior."
+  },
+  {
+   "a": "f3821",
+   "b": "f3822",
+   "type": "supports",
+   "note": "Reported generative PSNR range grounds the low-fidelity safety-testing assessment."
+  },
+  {
+   "a": "f4243",
+   "b": "f4330",
+   "type": "supports",
+   "note": "Waymo fidelity scores ground skepticism about validation data-machine claims."
+  },
+  {
+   "a": "f4003",
+   "b": "f4013",
+   "type": "elaborates",
+   "note": "Repair improves shifted-view quality but does not recover recorded-path fidelity."
+  },
+  {
+   "a": "f4001",
+   "b": "f4002",
+   "type": "elaborates",
+   "note": "Same synthetic benchmark reports better four-meter PSNR for EmerNeRF than 3DGS."
+  },
+  {
+   "a": "f3890",
+   "b": "f3891",
+   "type": "elaborates",
+   "note": "Pseudo-masks raise PVG car-to-scooter PSNR from 14.72 to 21.24 dB."
+  },
+  {
+   "a": "f3891",
+   "b": "f3892",
+   "type": "elaborates",
+   "note": "Ground-truth masks further raise PVG PSNR from 21.24 to 24.29 dB."
+  }
+ ]
+}

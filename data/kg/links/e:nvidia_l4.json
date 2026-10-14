@@ -1,0 +1,67 @@
+{
+ "key": "e:nvidia l4",
+ "hash": "206c7fa0e1514050",
+ "synopsis": "The booklet identifies NVIDIA L4 as the data-center GPU used in Google Cloud G2 instances, alongside AWS G6e instances using NVIDIA L40S, as generic GPU cloud execution options [f16202, f8370]. The quoted 2026 public price for g2-standard-32 is about USD 1.734 per hour; the configuration includes one NVIDIA L4 GPU, 32 vCPUs and 128 GiB of memory, and the glossary repeats the price [f9260, f8861, f16064]. Google Cloud G2 is described as pay-per-use, but the table marks its off-road relevance as not applicable, so these facts do not establish off-road-specific suitability [f9259]. A four-month campaign running ten GPUs of the cited AWS or Google types continuously is estimated to cost on the order of USD 54,000; this is a combined planning estimate rather than an L4-only quotation [f8312].",
+ "relations": [
+  {
+   "a": "f8311",
+   "b": "f16064",
+   "type": "same",
+   "note": "The glossary repeats the one-L4 instance price quoted in Chapter 11."
+  },
+  {
+   "a": "f8311",
+   "b": "f9260",
+   "type": "same",
+   "note": "Both quote USD 1.734 hourly for g2-standard-32; one specifies 2026."
+  },
+  {
+   "a": "f8311",
+   "b": "f8861",
+   "type": "same",
+   "note": "Same instance and price; the latter also specifies CPU and memory capacity."
+  },
+  {
+   "a": "f16064",
+   "b": "f9260",
+   "type": "same",
+   "note": "Glossary and chapter repeat the same Google Cloud instance price."
+  },
+  {
+   "a": "f16064",
+   "b": "f8861",
+   "type": "same",
+   "note": "Same one-L4 configuration and hourly price, with additional specifications in Chapter 11."
+  },
+  {
+   "a": "f9260",
+   "b": "f8861",
+   "type": "same",
+   "note": "Same listed hourly price and instance; complementary date and hardware details."
+  },
+  {
+   "a": "f8370",
+   "b": "f16202",
+   "type": "same",
+   "note": "Both map AWS G6e to L40S and Google Cloud G2 to L4."
+  },
+  {
+   "a": "f8861",
+   "b": "f16202",
+   "type": "elaborates",
+   "note": "Provides the specific Google L4 instance configuration and quoted hourly price."
+  },
+  {
+   "a": "f9259",
+   "b": "f16202",
+   "type": "elaborates",
+   "note": "Adds pay-per-use status and the table's off-road relevance classification for Google G2."
+  },
+  {
+   "a": "f8311",
+   "b": "f8312",
+   "type": "supports",
+   "note": "The quoted Google hourly rate supplies a cost input for the campaign estimate."
+  }
+ ]
+}

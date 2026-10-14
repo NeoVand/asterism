@@ -1,0 +1,67 @@
+{
+ "key": "e:msc/cadence adams",
+ "hash": "c2f707249543bc7f",
+ "synopsis": "MSC/Cadence Adams is a commercial, road-heritage, high-end multibody dynamics tool, rather than an environment or sensor simulator [f9146, f15974, f8597, f9148]. Its stated capabilities include rigid-body contact, flexible bodies and machine-mechanism modeling [f6392, f8596]. Chapter 8 includes Adams among commercial options for full multibody models supporting machine dynamics, actuator and failure analysis, and real-time co-simulation; this describes the modeling approach rather than demonstrating an Adams-specific validation workflow [f6454]. Although Chapter 11 includes Adams among vehicle and machine dynamics, terrain and soil offerings, it reports no off-road evidence or off-road autonomy proof, leaving its suitability for this application unsubstantiated in the supplied facts [f8356, f9147, f8598]. No public price or latest release was found, and the interface listing identifies only the Cadence/MSC ecosystem [f9150, f9151, f9149].",
+ "relations": [
+  {
+   "a": "f8597",
+   "b": "f15974",
+   "type": "same",
+   "note": "Both explicitly exclude environment simulation from Adams's role."
+  },
+  {
+   "a": "f6392",
+   "b": "f8596",
+   "type": "elaborates",
+   "note": "Chapter 11 adds flexible bodies and mechanism modeling to Chapter 8's rigid-body contact description."
+  },
+  {
+   "a": "f15974",
+   "b": "f8596",
+   "type": "elaborates",
+   "note": "Adds contact, flexible bodies and machine mechanisms to the glossary's high-end multibody characterization."
+  },
+  {
+   "a": "f6392",
+   "b": "f6454",
+   "type": "elaborates",
+   "note": "Places Adams's contact modeling within a broader full-machine modeling approach and tool landscape."
+  },
+  {
+   "a": "f9146",
+   "b": "f6454",
+   "type": "same",
+   "note": "Both identify Adams as a commercial option."
+  },
+  {
+   "a": "f8597",
+   "b": "f9148",
+   "type": "same",
+   "note": "Both exclude sensor simulation capabilities from Adams's stated scope."
+  },
+  {
+   "a": "f8598",
+   "b": "f9147",
+   "type": "same",
+   "note": "Both report missing off-road evidence or autonomy proof."
+  },
+  {
+   "a": "f8598",
+   "b": "f9150",
+   "type": "same",
+   "note": "Both report that pricing was not found."
+  },
+  {
+   "a": "f8598",
+   "b": "f9151",
+   "type": "same",
+   "note": "Both report that current or latest release information was not found."
+  },
+  {
+   "a": "f8596",
+   "b": "f8356",
+   "type": "supports",
+   "note": "Machine-mechanism and multibody capabilities support inclusion among vehicle and machine dynamics offerings."
+  }
+ ]
+}

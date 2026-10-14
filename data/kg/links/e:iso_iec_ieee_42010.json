@@ -1,0 +1,31 @@
+{
+ "key": "e:iso/iec/ieee 42010",
+ "hash": "5b524c6ad4624e2d",
+ "synopsis": "ISO/IEC/IEEE 42010:2022 supports architecture descriptions with multiple views tailored to the viewer’s role, rather than one universal diagram [f9886, f15351]. Chapter 12 places it alongside the 4+1 view model, C4 model and SysML as support for this approach [f9886]. The booklet applies the standard to the simulation toolchain by marking elements as real, modeled, emulated or substituted [f15352]. For presenting the plan, Chapter 12 recommends a 2–3-page target capability and architecture section, using ISO/IEC/IEEE 42010 as a template or source [f10160].",
+ "relations": [
+  {
+   "a": "f9886",
+   "b": "f15351",
+   "type": "same",
+   "note": "Both describe role-matched architectural views instead of one universal diagram."
+  },
+  {
+   "a": "f15352",
+   "b": "f15351",
+   "type": "elaborates",
+   "note": "Adds the booklet’s simulation-toolchain application and element classifications."
+  },
+  {
+   "a": "f9886",
+   "b": "f10160",
+   "type": "supports",
+   "note": "Role-matched architectural detail provides a rationale for using the standard in the plan."
+  },
+  {
+   "a": "f15352",
+   "b": "f10160",
+   "type": "elaborates",
+   "note": "Supplies a concrete toolchain application for the recommended architecture source."
+  }
+ ]
+}

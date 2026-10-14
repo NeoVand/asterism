@@ -1,0 +1,115 @@
+{
+ "key": "t257",
+ "hash": "2c55647d8925471b",
+ "synopsis": "Closed-loop agreement is the ultimately relevant validation layer for automatic braking: matched real and simulated runs must agree on brake timing, stopping trajectory or location, clearance, and false or missed interventions—not merely image similarity [f14803, f14804, f14805, f4444]. Existing warning-system history can validate inputs and submodels, but replay cannot establish the consequences of a changed machine trajectory; after the first new brake command, evidence depends on the machine, environment and sensor models [f191, f1102, f14807, f14808]. Separately validated perception and brake models do not establish combined safety, because timing, communications, saturation and operator interactions can produce emergent failures; physical full-system stopping tests should therefore remain at the collision/no-collision boundary [f8196, f8197, f14812]. An on-road IDIADA–MathWorks demonstration recorded on 14 April 2026 correlated a closed-loop AEB simulation with production-vehicle proving-ground tests using ISO 18571 metrics, but no public demonstration was found jointly covering heavy machines, many geometries, more than 100 site types, severe weather and soiling, and closed-loop braking [f1269, f4409].",
+ "relations": [
+  {
+   "a": "f4812",
+   "b": "f14805",
+   "type": "same",
+   "note": "Both specify matched-run timing, trajectory, clearance, and false or missed intervention comparisons."
+  },
+  {
+   "a": "f8196",
+   "b": "f14810",
+   "type": "same",
+   "note": "Separate perception and brake validation does not prove combined safety."
+  },
+  {
+   "a": "f8196",
+   "b": "f14811",
+   "type": "same",
+   "note": "Both identify emergent failures from coupled-system delays, saturation and operator behavior."
+  },
+  {
+   "a": "f7888",
+   "b": "f14812",
+   "type": "same",
+   "note": "Both recommend retaining physical closed-loop tests at the collision boundary."
+  },
+  {
+   "a": "f14812",
+   "b": "f14901",
+   "type": "elaborates",
+   "note": "Adds assessor selection and broader physical end-to-end confirmation runs."
+  },
+  {
+   "a": "f4811",
+   "b": "f14806",
+   "type": "same",
+   "note": "Both describe the 2023 example comparing real and simulated brake values."
+  },
+  {
+   "a": "f4444",
+   "b": "f14778",
+   "type": "same",
+   "note": "Both require task-level and closed-loop validation beyond image similarity."
+  },
+  {
+   "a": "f4813",
+   "b": "f14803",
+   "type": "same",
+   "note": "Both identify closed-loop braking behavior as the ultimately relevant safety-validation layer."
+  },
+  {
+   "a": "f14804",
+   "b": "f14805",
+   "type": "elaborates",
+   "note": "Adds minimum clearance, missed interventions and matched-run trajectory comparisons to the definition."
+  },
+  {
+   "a": "f1102",
+   "b": "f14807",
+   "type": "elaborates",
+   "note": "The first-divergence point explains why replay cannot validate changed-trajectory consequences."
+  },
+  {
+   "a": "f14807",
+   "b": "f14808",
+   "type": "depends",
+   "note": "Divergence requires model takeover, making subsequent evidence model-dependent."
+  },
+  {
+   "a": "f14808",
+   "b": "f14809",
+   "type": "elaborates",
+   "note": "Distinguishes model-dependent post-branch evidence from measured prefixes and real stopping outcomes."
+  },
+  {
+   "a": "f1102",
+   "b": "f191",
+   "type": "supports",
+   "note": "Replay limitations explain why warning-system history cannot validate the new braking chain."
+  },
+  {
+   "a": "f8196",
+   "b": "f8197",
+   "type": "supports",
+   "note": "Emergent coupling failures justify integral tests after submodel validation."
+  },
+  {
+   "a": "f7876",
+   "b": "f14901",
+   "type": "supports",
+   "note": "Physical anchors provide coupled safety-boundary evidence sought in end-to-end confirmation runs."
+  },
+  {
+   "a": "f5084",
+   "b": "f14778",
+   "type": "supports",
+   "note": "Different answers from realism criteria justify checking behavior beyond image similarity."
+  },
+  {
+   "a": "f14797",
+   "b": "f14805",
+   "type": "elaborates",
+   "note": "Specifies the comparisons required at the layered assessment's top validation level."
+  },
+  {
+   "a": "f14716",
+   "b": "f4812",
+   "type": "elaborates",
+   "note": "Broadens closed-loop comparisons to multiple metrics, time histories and repeated-run distributions."
+  }
+ ]
+}

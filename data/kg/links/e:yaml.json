@@ -1,0 +1,19 @@
+{
+ "key": "e:yaml",
+ "hash": "fb6f983777a05add",
+ "synopsis": "The booklet recommends a domain-neutral, version-controlled scenario catalog, using either Scenic or an in-house YAML schema with an OpenODD-style taxonomy [f7198, f14491]. The glossary adds that the catalog should be manufacturer-owned and exported to OpenSCENARIO when required by tools [f14491]. YAML, alongside JSON and XML, is suitable for structured settings, configuration files, scenario descriptions and small tables, but not gigabytes of sensor data [f13009]. YAML is therefore presented as a scenario-description option rather than a mandatory format or a bulk sensor-data format [f7198, f14491, f13009].",
+ "relations": [
+  {
+   "a": "f7198",
+   "b": "f14491",
+   "type": "same",
+   "note": "Restates the catalog recommendation, adding manufacturer ownership and OpenSCENARIO export."
+  },
+  {
+   "a": "f13009",
+   "b": "f7198",
+   "type": "supports",
+   "note": "YAML's suitability for scenario descriptions supports its use for the scenario catalog."
+  }
+ ]
+}

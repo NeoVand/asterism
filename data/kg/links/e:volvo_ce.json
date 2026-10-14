@@ -1,0 +1,115 @@
+{
+ "key": "e:volvo ce",
+ "hash": "adc16e7cdfc4b568",
+ "synopsis": "Volvo CE’s wheel-loader Collision Mitigation System was announced on 11 January 2023, developed in-house and patent-pending; its documented scope was reverse-only operation at 3–15 km/h, with braking lasting 2–3 seconds [f10625, f1379, f1238]. The corpus treats this restricted scope on selected models as a precedent for staged release, while noting that Volvo reports these loaders spend 40–50% of their time reversing and documents conditions for switching intervention off [f10973, f73, f10630, f11167]. The system remembers the last slope climbed to avoid braking when reversing down a stockpile, but no independent performance test was found, and published weather limits, false-intervention rates and validation methods were absent [f11392, f1242, f11394]. An April 2025 announcement covered new-generation L150, L180, L200 High Lift, L220 and L260 wheel loaders [f1385]. For virtual development, an undated MathWorks story describes Volvo CE’s real-time human-in-the-loop excavator simulator built with Simulink and Simscape; such simulators may be needed for warning-then-brake human factors [f8391, f9379]. Volvo reports fewer prototypes and shorter lead time, describing physical prototypes as costing millions of dollars and months, but this evidence is qualitative rather than controlled cross-vendor benchmarking [f8737, f8738, f8315].",
+ "relations": [
+  {
+   "a": "f240",
+   "b": "f355",
+   "type": "same",
+   "note": "Both give the January 2023 reverse operating envelope of 3–15 km/h."
+  },
+  {
+   "a": "f355",
+   "b": "f609",
+   "type": "same",
+   "note": "Both report reverse operation at 3–15 km/h in January 2023."
+  },
+  {
+   "a": "f240",
+   "b": "f10435",
+   "type": "same",
+   "note": "Both describe January 2023 reverse-only operation at 3–15 km/h."
+  },
+  {
+   "a": "f240",
+   "b": "f1063",
+   "type": "same",
+   "note": "Both identify the reverse-only 3–15 km/h operating scope."
+  },
+  {
+   "a": "f813",
+   "b": "f1238",
+   "type": "same",
+   "note": "Both give reverse-only speed limits and 2–3-second braking duration."
+  },
+  {
+   "a": "f1238",
+   "b": "f11391",
+   "type": "same",
+   "note": "The glossary repeats the system date, direction, speed range and braking duration."
+  },
+  {
+   "a": "f1238",
+   "b": "f240",
+   "type": "elaborates",
+   "note": "Adds wheel-loader application and 2–3-second braking duration to the operating envelope."
+  },
+  {
+   "a": "f813",
+   "b": "f610",
+   "type": "elaborates",
+   "note": "Adds reverse direction and speed limits to the same braking-duration claim."
+  },
+  {
+   "a": "f8391",
+   "b": "f16050",
+   "type": "same",
+   "note": "Both describe the real-time excavator simulator built with Simulink and Simscape."
+  },
+  {
+   "a": "f16050",
+   "b": "f15879",
+   "type": "same",
+   "note": "Both identify Volvo’s human-in-the-loop excavator simulator on the MathWorks platform."
+  },
+  {
+   "a": "f8315",
+   "b": "f8737",
+   "type": "same",
+   "note": "Both characterize prototype and lead-time reductions as qualitative, non-controlled vendor evidence."
+  },
+  {
+   "a": "f420",
+   "b": "f981",
+   "type": "same",
+   "note": "Both present Volvo’s reverse-only launch as a staged, limited-domain release precedent."
+  },
+  {
+   "a": "f420",
+   "b": "f73",
+   "type": "supports",
+   "note": "Volvo’s limited operating envelope supplies a precedent for the recommended restricted release."
+  },
+  {
+   "a": "f11166",
+   "b": "f73",
+   "type": "supports",
+   "note": "Narrow documented launches support the restricted-domain release recommendation."
+  },
+  {
+   "a": "f8738",
+   "b": "f8737",
+   "type": "supports",
+   "note": "High prototype costs and durations explain the value of reported prototype reductions."
+  },
+  {
+   "a": "f8959",
+   "b": "f8391",
+   "type": "elaborates",
+   "note": "Places the Volvo simulator within broader MathWorks vendor evidence."
+  },
+  {
+   "a": "f11392",
+   "b": "f1238",
+   "type": "elaborates",
+   "note": "Adds slope-memory behavior that suppresses braking during stockpile reversing."
+  },
+  {
+   "a": "f10630",
+   "b": "f10973",
+   "type": "supports",
+   "note": "Frequent reversing gives practical relevance to the restricted reverse-only intervention scope."
+  }
+ ]
+}

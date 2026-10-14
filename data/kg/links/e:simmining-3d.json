@@ -1,0 +1,67 @@
+{
+ "key": "e:simmining-3d",
+ "hash": "79e6faee9a1b47e2",
+ "synopsis": "SimMining-3D (2024) is a mining-specific synthetic lidar dataset developed because sensor-height and viewpoint changes on mine benches degrade 3D detection [f7036, f14464, f16085]. It varies sensor height to address this viewpoint domain shift in mining 3D detection [f7063, f16085]. Chapter 9 and the glossary consistently describe this motivation and approach, but the supplied facts provide no quantitative detection results or evidence of how much the dataset reduces the degradation [f7036, f7063, f12819, f14464, f16085].",
+ "relations": [
+  {
+   "a": "f7036",
+   "b": "f12819",
+   "type": "same",
+   "note": "Both attribute dataset development to detection degradation from mine-bench sensor-height changes."
+  },
+  {
+   "a": "f7036",
+   "b": "f14464",
+   "type": "same",
+   "note": "Both identify the 2024 mining dataset and its sensor-height-related motivation."
+  },
+  {
+   "a": "f7036",
+   "b": "f16085",
+   "type": "same",
+   "note": "Both describe mine-bench viewpoint changes as the motivation; glossary adds synthetic lidar and height variation."
+  },
+  {
+   "a": "f7063",
+   "b": "f16085",
+   "type": "same",
+   "note": "Both describe synthetic lidar with sensor-height variation addressing viewpoint-related detection degradation."
+  },
+  {
+   "a": "f12819",
+   "b": "f14464",
+   "type": "same",
+   "note": "Glossary entries repeat the sensor-height degradation motivation; one supplies the 2024 date."
+  },
+  {
+   "a": "f12819",
+   "b": "f16085",
+   "type": "same",
+   "note": "Both identify synthetic lidar and the same motivation; one explicitly describes height variation."
+  },
+  {
+   "a": "f14464",
+   "b": "f16085",
+   "type": "same",
+   "note": "Both repeat the dataset's motivation, with complementary date and method details."
+  },
+  {
+   "a": "f7063",
+   "b": "f7036",
+   "type": "elaborates",
+   "note": "Specifies synthetic lidar and sensor-height variation as the response to viewpoint domain shift."
+  },
+  {
+   "a": "f7063",
+   "b": "f12819",
+   "type": "elaborates",
+   "note": "Adds the 2024 date and explicit sensor-height variation to the glossary description."
+  },
+  {
+   "a": "f7063",
+   "b": "f14464",
+   "type": "elaborates",
+   "note": "Explains how synthetic lidar height variation addresses the stated detection problem."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t204",
+ "hash": "8a80a3001cdc846b",
+ "synopsis": "Space-filling designs, including Latin hypercube, Sobol and other quasi-random methods, spread continuous-parameter tests more evenly than naive random draws and are recommended for coverage, exploration and surrogate-model training [f6813, f7227, f14138]. Latin hypercube divides each parameter range into n equal slices and places n points so that every slice of every parameter is used exactly once; applications include exploring detection range under dust, glare and speed and feeding surrogate-guided search [f14136, f14144]. This geometric coverage is not probability sampling and does not represent quarry operating frequencies, where most approaches are slow and most weather is clear; it cannot establish unweighted rates or worst cases [f6815, f14140, f7229]. Unrealistic regions receive equal treatment unless constraints and distributions are added, so the booklet assigns these designs to the coverage stream alongside combinatorial designs, not as a basis for the release claim [f6816, f14143, f7353]. The stated evidence for these methods is generic expert opinion from statistical synthesis, rather than application-specific validation evidence [f7232].",
+ "relations": [
+  {
+   "a": "f6645",
+   "b": "f14092",
+   "type": "same",
+   "note": "Both describe continuous-parameter coverage and surrogate training."
+  },
+  {
+   "a": "f6645",
+   "b": "f6864",
+   "type": "same",
+   "note": "Both assign continuous coverage and surrogate training to space-filling designs."
+  },
+  {
+   "a": "f6806",
+   "b": "f6864",
+   "type": "same",
+   "note": "Both identify space-filling DOE as coverage for surrogate training."
+  },
+  {
+   "a": "f6815",
+   "b": "f14140",
+   "type": "same",
+   "note": "Uniform parameter coverage is not representative quarry probability sampling."
+  },
+  {
+   "a": "f6815",
+   "b": "f14097",
+   "type": "same",
+   "note": "Even spread does not establish real-quarry occurrence frequencies."
+  },
+  {
+   "a": "f6816",
+   "b": "f14141",
+   "type": "same",
+   "note": "Unrealistic regions receive equal treatment without constraints and distributions."
+  },
+  {
+   "a": "f6816",
+   "b": "f7230",
+   "type": "same",
+   "note": "The same unrealistic-region limitation is repeated for named space-filling methods."
+  },
+  {
+   "a": "f7229",
+   "b": "f14142",
+   "type": "same",
+   "note": "Both exclude rate, worst-case and operational-frequency claims from space-filling evidence."
+  },
+  {
+   "a": "f7228",
+   "b": "f14142",
+   "type": "elaborates",
+   "note": "The glossary adds claim limitations to the geometric-spread capability."
+  },
+  {
+   "a": "f6813",
+   "b": "f14138",
+   "type": "same",
+   "note": "Both report more even continuous-parameter coverage than naive random draws."
+  },
+  {
+   "a": "f6814",
+   "b": "f14139",
+   "type": "same",
+   "note": "Both identify exploration and surrogate modelling as useful applications."
+  },
+  {
+   "a": "f7227",
+   "b": "f14139",
+   "type": "supports",
+   "note": "Exploration and surrogate usefulness support the recommended program roles."
+  },
+  {
+   "a": "f7353",
+   "b": "f14143",
+   "type": "elaborates",
+   "note": "The glossary adds the release-claim exclusion to the proposed coverage-stream architecture."
+  },
+  {
+   "a": "f6815",
+   "b": "f14143",
+   "type": "supports",
+   "note": "Nonrepresentative sampling explains why space-filling coverage is not release-claim evidence."
+  },
+  {
+   "a": "f7229",
+   "b": "f14143",
+   "type": "supports",
+   "note": "Limits on rates and worst cases support excluding these designs from release claims."
+  },
+  {
+   "a": "f14136",
+   "b": "f6813",
+   "type": "elaborates",
+   "note": "Latin hypercube's slice rule explains one mechanism for distributing experiments evenly."
+  },
+  {
+   "a": "f14144",
+   "b": "f6814",
+   "type": "elaborates",
+   "note": "Detection-range exploration and surrogate-guided search make the general uses concrete."
+  },
+  {
+   "a": "f7232",
+   "b": "f7227",
+   "type": "elaborates",
+   "note": "Identifies the generic expert-opinion evidence underlying the recommended uses."
+  }
+ ]
+}

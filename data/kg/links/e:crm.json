@@ -1,0 +1,31 @@
+{
+ "key": "e:crm",
+ "hash": "90d27708ea546fd9",
+ "synopsis": "Project Chrono provides SCM, CRM and DEM terrain models [f9123, f15988]. The glossary describes CRM as Chrono’s version of SPH and related continuum methods, which represent flowing soil with particles [f15984]. Developers report that higher-fidelity CRM terrain runs 50–200 times slower than real time, indicating a substantial simulation-time burden [f8499, f15989]. Chapter 11 identifies an NVIDIA GPU requirement and flags this vendor-specific dependency; the glossary repeats the requirement but leaves the maker unnamed [f8500, f15989].",
+ "relations": [
+  {
+   "a": "f9123",
+   "b": "f15988",
+   "type": "same",
+   "note": "Both list SCM, CRM and DEM as Project Chrono terrain models."
+  },
+  {
+   "a": "f8499",
+   "b": "f15989",
+   "type": "same",
+   "note": "Both report developer estimates of CRM running 50–200 times slower than real time."
+  },
+  {
+   "a": "f8500",
+   "b": "f15989",
+   "type": "elaborates",
+   "note": "Chapter 11 names NVIDIA as the GPU maker left unnamed in the glossary."
+  },
+  {
+   "a": "f15984",
+   "b": "f9123",
+   "type": "elaborates",
+   "note": "The glossary explains the particle-based continuum method behind the listed CRM terrain model."
+  }
+ ]
+}

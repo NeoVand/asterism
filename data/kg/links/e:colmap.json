@@ -1,0 +1,79 @@
+{
+ "key": "e:colmap",
+ "hash": "bd993a4b637a6c96",
+ "synopsis": "COLMAP is described as a widely used free, open-source structure-from-motion tool that recovers camera positions and a three-dimensional point cloud from photographs; this is one part of the broader process of producing a usable virtual site [f13144, f13146]. Its reconstruction guidance requires good texture, similar illumination, substantial image overlap, at least three observations of each object, and genuinely different camera positions rather than pure rotation [f3799, f4025, f13147]. Textureless scenes, high dynamic range, glare, shadows and reflective surfaces are identified as reconstruction risks; numerous near-identical video frames cannot substitute for different viewpoints, and video downsampling is suggested [f3800, f4040, f4027, f13149]. An on-road EUVS benchmark required more than 800 hours of COLMAP computation, while the glossary reports more than 300 additional hours of manual selection; these figures are not a direct estimate of job-site digital-twin costs [f3898, f13150]. The booklet also names COLMAP as photogrammetry software and includes quarry drone-survey examples, but the supplied facts provide no quantified quarry reconstruction cost [f16003, f3898].",
+ "relations": [
+  {
+   "a": "f3799",
+   "b": "f4025",
+   "type": "same",
+   "note": "Both state the same reconstruction capture requirements."
+  },
+  {
+   "a": "f3799",
+   "b": "f13147",
+   "type": "same",
+   "note": "Glossary repeats Chapter 5's official reconstruction preconditions."
+  },
+  {
+   "a": "f4025",
+   "b": "f13147",
+   "type": "same",
+   "note": "Both list texture, illumination, overlap, three observations and different camera positions."
+  },
+  {
+   "a": "f3800",
+   "b": "f13148",
+   "type": "same",
+   "note": "Glossary restates warnings about textureless, high-dynamic-range and reflective scenes."
+  },
+  {
+   "a": "f4040",
+   "b": "f3800",
+   "type": "elaborates",
+   "note": "Adds glare and shadow as failure factors to official scene warnings."
+  },
+  {
+   "a": "f4040",
+   "b": "f13148",
+   "type": "elaborates",
+   "note": "Chapter 5 adds glare and shadow to glossary reconstruction warnings."
+  },
+  {
+   "a": "f4027",
+   "b": "f13149",
+   "type": "elaborates",
+   "note": "Adds video downsampling advice to the shared warning about near-identical frames."
+  },
+  {
+   "a": "f4026",
+   "b": "f13147",
+   "type": "supports",
+   "note": "Pure rotation inadequacy explains the requirement for genuinely different camera positions."
+  },
+  {
+   "a": "f13149",
+   "b": "f3799",
+   "type": "supports",
+   "note": "Repeated frames cannot satisfy the need for different camera positions."
+  },
+  {
+   "a": "f13150",
+   "b": "f3898",
+   "type": "elaborates",
+   "note": "Repeats over 800 compute hours and adds over 300 manual-selection hours."
+  },
+  {
+   "a": "f13146",
+   "b": "f13144",
+   "type": "elaborates",
+   "note": "Adds open-source status and citation prominence to the structure-from-motion tool description."
+  },
+  {
+   "a": "f13144",
+   "b": "f16003",
+   "type": "elaborates",
+   "note": "Explains the reconstruction method underlying COLMAP's photogrammetry role."
+  }
+ ]
+}

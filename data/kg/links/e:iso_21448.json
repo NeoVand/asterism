@@ -1,0 +1,115 @@
+{
+ "key": "e:iso 21448",
+ "hash": "fa15bc8133f4c9b3",
+ "synopsis": "ISO 21448:2022 (SOTIF) addresses harm from perception or performance insufficiencies without component failure, but it is a road-vehicle standard and does not apply by scope to the booklet’s heavy off-road collision-mitigation system [f15292, f2355, f12065]. The booklet nevertheless recommends borrowing its triggering-condition logic and assurance structure for perception, scenario engineering and the safety case, rather than presenting it as automatically governing the machine [f654, f12264, f15309, f8945]. Phase 0 should use these concepts when defining the ODD, hazards, scenarios and acceptance metrics; for a team starting in October 2026, a safety-case skeleton using perception concepts from ISO 21448 is considered realistic by mid-2027 [f707, f829]. The glossary explains functional insufficiencies, triggering conditions such as glare and dust, and four situation areas: known safe, known unsafe, unknown unsafe and unknown safe [f12009, f12010, f12011]. Reliance remains qualified: several chapters report that the standard, its simulation provisions and tool-acceptance rules were not verified, while the brake/perception allocation cites draft evidence and Chapter 12 labels its perception-gap reference as on-road evidence [f4336, f8942, f8155, f6580, f10339].",
+ "relations": [
+  {
+   "a": "f2355",
+   "b": "f12065",
+   "type": "same",
+   "note": "Both exclude the heavy off-road collision system from these road standards’ scope."
+  },
+  {
+   "a": "f12065",
+   "b": "f15293",
+   "type": "same",
+   "note": "Duplicate glossary statements exclude the off-road program from scope."
+  },
+  {
+   "a": "f2355",
+   "b": "f12014",
+   "type": "same",
+   "note": "Both state ISO 21448 is road-only and outside off-road scope."
+  },
+  {
+   "a": "f8944",
+   "b": "f9382",
+   "type": "same",
+   "note": "Duplicate statements identify ISO 21448 as a road-vehicle standard."
+  },
+  {
+   "a": "f8944",
+   "b": "f12014",
+   "type": "elaborates",
+   "note": "The glossary adds the consequence that off-road machines fall outside scope."
+  },
+  {
+   "a": "f2355",
+   "b": "f8945",
+   "type": "supports",
+   "note": "Scope exclusion supports not presenting either standard as automatically governing off-road machines."
+  },
+  {
+   "a": "f654",
+   "b": "f12015",
+   "type": "elaborates",
+   "note": "The glossary repeats scenario logic and adds its use for perception limits."
+  },
+  {
+   "a": "f654",
+   "b": "f15295",
+   "type": "elaborates",
+   "note": "The glossary places borrowed triggering-condition logic within the perception safety-case skeleton."
+  },
+  {
+   "a": "f12010",
+   "b": "f654",
+   "type": "elaborates",
+   "note": "Defines triggering conditions and supplies concrete scenario-generation examples."
+  },
+  {
+   "a": "f15292",
+   "b": "f6580",
+   "type": "supports",
+   "note": "SOTIF’s focus on misperception supports assigning it the perception-limits role."
+  },
+  {
+   "a": "f427",
+   "b": "f707",
+   "type": "supports",
+   "note": "Documented scenario and assurance methods support their recommended Phase 0 use."
+  },
+  {
+   "a": "f829",
+   "b": "f12018",
+   "type": "elaborates",
+   "note": "Adds a mid-2027 planning horizon and alternative intervention-chain standards to the conceptual pairing."
+  },
+  {
+   "a": "f427",
+   "b": "f12264",
+   "type": "elaborates",
+   "note": "The glossary specifies machine-learning and autonomous-function assurance uses for the cited sources."
+  },
+  {
+   "a": "f4336",
+   "b": "f5812",
+   "type": "same",
+   "note": "Both report that ISO 21448 was not verified in the research."
+  },
+  {
+   "a": "f5812",
+   "b": "f7702",
+   "type": "same",
+   "note": "Both report the same ISO 21448 verification gap."
+  },
+  {
+   "a": "f7702",
+   "b": "f8942",
+   "type": "elaborates",
+   "note": "Adds missing full-text review and unverified simulation-evidence and tool-qualification rules."
+  },
+  {
+   "a": "f7702",
+   "b": "f8155",
+   "type": "elaborates",
+   "note": "Specifies unverified validation, transfer, physical-evidence requirements and off-road relevance."
+  },
+  {
+   "a": "f10339",
+   "b": "f2355",
+   "type": "contradicts",
+   "note": "Perception-gap applicability language contrasts with scope exclusion, though explicitly identified as on-road evidence."
+  }
+ ]
+}

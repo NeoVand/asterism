@@ -1,0 +1,115 @@
+{
+ "key": "e:gazebo",
+ "hash": "c2d6501692404101",
+ "synopsis": "Gazebo is a free, Apache 2.0 open-source robotics simulator providing physics, rendering, camera, lidar, IMU and plugin-defined sensors, with supported ROS 2 integration [f15915, f8525, f8526, f8708]. Release information lists Jetty LTS from September 2025 with support to 2031, and Gazebo Sim 10.5.0 released on 29 July 2026 [f9051, f8528]. The proposed lowest-cost open-source chain uses Gazebo or alternatives for sensors and environments, Chrono for machine dynamics and SCM terrain, and ROS 2; low license costs come with high internal labor and remaining hardware and cloud costs [f16158, f16128, f8739]. Expert opinion characterizes Gazebo as an integration framework requiring extensions for automotive-grade radar, weather, material modeling and enterprise validation management [f8529]. The research did not verify Gazebo or find off-road collision-warning validation, off-road evidence or heavy-machine automatic-braking proof, so its listed capabilities do not establish suitability for this validation task [f5850, f5851, f9047, f8530]. Despite the stated release-support horizon, project funding, maintenance and security-patch cadence were not examined [f15931, f9392, f9393].",
+ "relations": [
+  {
+   "a": "f15915",
+   "b": "f8525",
+   "type": "same",
+   "note": "Both identify Gazebo as Apache 2.0 open source."
+  },
+  {
+   "a": "f15915",
+   "b": "f9050",
+   "type": "same",
+   "note": "Both state Gazebo is free."
+  },
+  {
+   "a": "f8525",
+   "b": "f9046",
+   "type": "same",
+   "note": "Duplicate Apache 2.0 open-source licensing claims."
+  },
+  {
+   "a": "f15924",
+   "b": "f9046",
+   "type": "same",
+   "note": "Both assign Apache 2.0 to Gazebo."
+  },
+  {
+   "a": "f15916",
+   "b": "f9047",
+   "type": "same",
+   "note": "Both report absent off-road evidence and identify general robotics scope."
+  },
+  {
+   "a": "f15931",
+   "b": "f9051",
+   "type": "elaborates",
+   "note": "Release listing identifies Jetty LTS and its September 2025 start."
+  },
+  {
+   "a": "f8528",
+   "b": "f9051",
+   "type": "same",
+   "note": "Both date Sim 10.5.0 to 29 July 2026."
+  },
+  {
+   "a": "f8526",
+   "b": "f9048",
+   "type": "same",
+   "note": "Both list camera, lidar, IMU and plugin sensors."
+  },
+  {
+   "a": "f8526",
+   "b": "f9049",
+   "type": "same",
+   "note": "Both identify ROS 2 integration or interface."
+  },
+  {
+   "a": "f8708",
+   "b": "f16240",
+   "type": "same",
+   "note": "Both identify Gazebo and ROS 2 as integrated tools."
+  },
+  {
+   "a": "f8708",
+   "b": "f9049",
+   "type": "same",
+   "note": "Both identify the Gazebo–ROS 2 pairing."
+  },
+  {
+   "a": "f16158",
+   "b": "f9263",
+   "type": "elaborates",
+   "note": "Glossary chain adds Chrono dynamics, SCM terrain and ROS 2."
+  },
+  {
+   "a": "f16128",
+   "b": "f8739",
+   "type": "elaborates",
+   "note": "Glossary adds highest internal labor to the low-license-cost in-house approach."
+  },
+  {
+   "a": "f16158",
+   "b": "f8739",
+   "type": "elaborates",
+   "note": "Assigns sensor, environment, dynamics and terrain roles within the proposed open-source stack."
+  },
+  {
+   "a": "f5851",
+   "b": "f9047",
+   "type": "elaborates",
+   "note": "Specifies absent off-road collision-warning validation within the broader off-road evidence gap."
+  },
+  {
+   "a": "f5851",
+   "b": "f8530",
+   "type": "elaborates",
+   "note": "Adds a heavy-machine automatic-braking proof gap to collision-warning validation gaps."
+  },
+  {
+   "a": "f8529",
+   "b": "f16128",
+   "type": "supports",
+   "note": "Required extensions help explain the high internal labor of open-source implementation."
+  },
+  {
+   "a": "f8526",
+   "b": "f16158",
+   "type": "supports",
+   "note": "Listed sensor and rendering capabilities support Gazebo's proposed sensor-and-environment role."
+  }
+ ]
+}

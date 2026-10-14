@@ -1,0 +1,85 @@
+{
+ "key": "e:dem",
+ "hash": "267c37be4964f0ba",
+ "synopsis": "DEM, SPH or FEM terrain coupled with a multibody machine can predict granular flow, rutting and localized soil failure, but Chapter 8 describes this approach as high-fidelity, very slow and research-only for off-road validation [f6468, f6469, f6473]. Chapter 8 and the glossary recommend restricting these models to selected braking limit cases, including berms, deep aggregate and severe track-soil interaction; Chapter 11 additionally recommends high-detail simulation to understand stopping-distance sensitivity to soil, slope, payload and tire or track interaction [f6472, f13835, f8602]. This recommendation is constrained by the absence of evidence that such models are required for threshold prediction, their reported unsuitability for scenario sweeps and the risk that uncertain soil inputs overwhelm their fidelity [f6470, f6474, f6475]. Their computational burden calls for high-performance computing, with Chapter 11 identifying GPU acceleration and dedicated GPU or HPC workers as suitable [f6471, f8846]. Available tools include Project Chrono/Chrono::Vehicle with SCM, CRM and DEM terrain support, and Fraunhofer Demify for heavy-machinery soil DEM; Chapter 8 also reports that SCM's authors described SCM as “comparable” to DEM [f8494, f9123, f9141, f6463].",
+ "relations": [
+  {
+   "a": "f8494",
+   "b": "f9123",
+   "type": "same",
+   "note": "Both identify Project Chrono support for SCM, CRM and DEM terrain models."
+  },
+  {
+   "a": "f6472",
+   "b": "f13835",
+   "type": "same",
+   "note": "Both recommend selected braking limit cases; Chapter 8 specifies examples."
+  },
+  {
+   "a": "f6468",
+   "b": "f8602",
+   "type": "supports",
+   "note": "Detailed soil-failure prediction supports investigating stopping-distance sensitivity to terrain interaction."
+  },
+  {
+   "a": "f6472",
+   "b": "f8602",
+   "type": "elaborates",
+   "note": "Chapter 11 adds sensitivity-study objectives to Chapter 8's selected-limit-case use."
+  },
+  {
+   "a": "f6475",
+   "b": "f8602",
+   "type": "contradicts",
+   "note": "Uncertain soil inputs qualify the usefulness of recommended high-detail sensitivity simulations."
+  },
+  {
+   "a": "f6470",
+   "b": "f13835",
+   "type": "supports",
+   "note": "No demonstrated necessity for threshold prediction supports restricting use to selected cases."
+  },
+  {
+   "a": "f6474",
+   "b": "f13835",
+   "type": "supports",
+   "note": "Unsuitability for scenario sweeps supports selected-case use only."
+  },
+  {
+   "a": "f6469",
+   "b": "f8846",
+   "type": "supports",
+   "note": "Very slow execution supports GPU acceleration and dedicated compute workers."
+  },
+  {
+   "a": "f6471",
+   "b": "f8846",
+   "type": "elaborates",
+   "note": "Chapter 11 specifies GPU acceleration and dedicated workers for the stated HPC requirement."
+  },
+  {
+   "a": "f8846",
+   "b": "f6474",
+   "type": "supports",
+   "note": "High computational intensity helps explain unsuitability for scenario sweeps."
+  },
+  {
+   "a": "f6473",
+   "b": "f13835",
+   "type": "supports",
+   "note": "Research-only validation status supports limited rather than routine deployment."
+  },
+  {
+   "a": "f6468",
+   "b": "f6472",
+   "type": "supports",
+   "note": "Granular flow and localized failure capabilities suit the specified difficult terrain cases."
+  },
+  {
+   "a": "f6469",
+   "b": "f6474",
+   "type": "supports",
+   "note": "Very slow execution explains why scenario sweeps are unsuitable."
+  }
+ ]
+}

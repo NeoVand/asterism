@@ -1,0 +1,79 @@
+{
+ "key": "e:sph",
+ "hash": "e8479eaa290dd23c",
+ "synopsis": "SPH is grouped with DEM and FEM terrain models coupled to a multibody machine: these methods are available in research and commercial ecosystems and can predict granular flow, rutting and localized soil failure [f6101, f6468]. They offer high fidelity but are very slow, require very high effort and high-performance computing, and are considered too costly or unusable for exhaustive scenario sweeps [f6469, f6471, f6103, f6474]. Uncertain soil inputs can overwhelm their fidelity, and evidence that they are required for automatic-braking threshold prediction across production machines was not found [f6104, f6475, f6102, f6470]. Chapter 8 and the glossary therefore recommend restricting their use to selected braking limit cases, with Chapter 8 specifying berms, deep aggregate and severe track-soil interaction [f6472, f13835]. Commercial availability should not be confused with established off-road validation: the stated off-road validation status remains research only [f6101, f6473].",
+ "relations": [
+  {
+   "a": "f6102",
+   "b": "f6470",
+   "type": "same",
+   "note": "Both report no evidence these terrain models are required for threshold prediction."
+  },
+  {
+   "a": "f6103",
+   "b": "f6474",
+   "type": "same",
+   "note": "Both reject these coupled models for scenario sweeps because of computational cost."
+  },
+  {
+   "a": "f6104",
+   "b": "f6475",
+   "type": "same",
+   "note": "Both identify uncertain soil inputs as potentially overwhelming model fidelity."
+  },
+  {
+   "a": "f6472",
+   "b": "f13835",
+   "type": "same",
+   "note": "Both recommend these models for selected braking limit cases."
+  },
+  {
+   "a": "f6468",
+   "b": "f6472",
+   "type": "supports",
+   "note": "Granular flow and soil-failure capabilities explain suitability for severe terrain-interaction limit cases."
+  },
+  {
+   "a": "f6469",
+   "b": "f6103",
+   "type": "supports",
+   "note": "Very slow execution explains prohibitive cost for exhaustive sweeps."
+  },
+  {
+   "a": "f6471",
+   "b": "f6474",
+   "type": "supports",
+   "note": "Very high effort and computing requirements explain unsuitability for scenario sweeps."
+  },
+  {
+   "a": "f6103",
+   "b": "f13835",
+   "type": "supports",
+   "note": "Prohibitive sweep cost supports restricting use to selected limit cases."
+  },
+  {
+   "a": "f6104",
+   "b": "f13835",
+   "type": "supports",
+   "note": "Soil-input uncertainty cautions against broad reliance on high-fidelity terrain models."
+  },
+  {
+   "a": "f6102",
+   "b": "f13835",
+   "type": "supports",
+   "note": "Absent evidence of necessity supports selective rather than universal use."
+  },
+  {
+   "a": "f6472",
+   "b": "f13835",
+   "type": "elaborates",
+   "note": "Chapter 8 specifies berms, deep aggregate and severe track-soil interaction as limit cases."
+  },
+  {
+   "a": "f6473",
+   "b": "f6101",
+   "type": "elaborates",
+   "note": "Research-only off-road validation qualifies availability in research and commercial ecosystems."
+  }
+ ]
+}

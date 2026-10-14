@@ -1,0 +1,85 @@
+{
+ "key": "e:utac",
+ "hash": "b0597679f33e1ebc",
+ "synopsis": "UTAC submitted virtual-testing proposals to the United Nations working group on automatic emergency braking; the detailed evidence supplied here concerns on-road AEBS rather than heavy off-road machines [f16110, f7846]. Its earlier AEBS-12-07 proposal allowed virtual validation within a validity domain and proposed removing 10% of the 10 repeated automotive AEBS runs per scenario [f7860, f7845, f7846]. The later UTAC CERAM document AEBS-16-03 includes a 30% physical-test figure alongside validation using 11 SUT-and-target variables and three metrics: IAPE, Double th, and interval [f7686]. Although one account describes that figure as a minimum, the corpus explicitly says it cannot be reconciled with adopted UN R152 text, which leaves physical confirmatory-test numbers to manufacturer–authority agreement; the adopted text governs [f7547, f8188]. UTAC's curve-comparison approach combines peak time, peak value, curve shape and error, but the supplied facts do not establish its applicability to off-road machines [f7771, f7846].",
+ "relations": [
+  {
+   "a": "f7547",
+   "b": "f7844",
+   "type": "same",
+   "note": "Both report the 30% physical-test figure in AEBS-16-03."
+  },
+  {
+   "a": "f7547",
+   "b": "f7686",
+   "type": "same",
+   "note": "Both report AEBS-16-03's 30% physical-test figure, with differing detail."
+  },
+  {
+   "a": "f7844",
+   "b": "f7686",
+   "type": "same",
+   "note": "Both identify the same document and 30% physical-test figure."
+  },
+  {
+   "a": "f7567",
+   "b": "f7860",
+   "type": "same",
+   "note": "Both describe the proposal to remove 10% of repeated AEBS runs."
+  },
+  {
+   "a": "f7567",
+   "b": "f7845",
+   "type": "same",
+   "note": "Both report the proposed 10% reduction in repeated runs."
+  },
+  {
+   "a": "f7860",
+   "b": "f7845",
+   "type": "same",
+   "note": "Both specify removing 10% of ten repeated tests per scenario in AEBS-12-07."
+  },
+  {
+   "a": "f7860",
+   "b": "f7846",
+   "type": "depends",
+   "note": "The proposed run reduction is restricted to a validity domain."
+  },
+  {
+   "a": "f7547",
+   "b": "f8188",
+   "type": "contradicts",
+   "note": "A fixed 30% minimum conflicts with adopted text requiring agreement on confirmatory-test numbers."
+  },
+  {
+   "a": "f7844",
+   "b": "f8188",
+   "type": "contradicts",
+   "note": "The working-document percentage is not reconciled with the governing adopted text."
+  },
+  {
+   "a": "f7686",
+   "b": "f8188",
+   "type": "contradicts",
+   "note": "The proposed 30% share differs from adopted manufacturer–authority agreement."
+  },
+  {
+   "a": "f7860",
+   "b": "f16110",
+   "type": "supports",
+   "note": "Identifies a specific UTAC virtual-testing proposal associated with UNECE IWG AEBS."
+  },
+  {
+   "a": "f7845",
+   "b": "f16110",
+   "type": "elaborates",
+   "note": "Names an informal virtual-testing document and its proposed reduction in repeated tests."
+  },
+  {
+   "a": "f7771",
+   "b": "f16110",
+   "type": "elaborates",
+   "note": "Details the curve-comparison method in UTAC's AEBS proposal."
+  }
+ ]
+}

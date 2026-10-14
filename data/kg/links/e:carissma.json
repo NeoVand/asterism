@@ -1,0 +1,55 @@
+{
+ "key": "e:carissma",
+ "hash": "2643c52dd30ae808",
+ "synopsis": "CARISSMA in Germany is named alongside CEREMA, NIED and JARI as a main source of ground truth for weather models and, together with proving grounds, for validating sensor models [f16122, f5056, f5119]. The booklet identifies fog chambers at these facilities as sources of sensor-model ground truth; fog is described as the best-reproduced condition for lidar, with CARISSMA, CEREMA and JARI providing on-road evidence [f15594, f4640]. Haider et al. (2023) studied lidar rain and fog at NIED and CARISSMA [f4731]. However, the research did not establish facility booking lead times, capacity or suitability for heavy off-road machines of the relevant size, leaving access questions that directly affect validation before mid-2027 [f16124, f5120].",
+ "relations": [
+  {
+   "a": "f5056",
+   "b": "f16122",
+   "type": "same",
+   "note": "Same main weather-model ground-truth facilities; glossary adds their countries."
+  },
+  {
+   "a": "f5120",
+   "b": "f16124",
+   "type": "same",
+   "note": "Both identify unexamined booking, capacity and machine-size suitability; chapter adds validation timing."
+  },
+  {
+   "a": "f5119",
+   "b": "f5056",
+   "type": "elaborates",
+   "note": "Adds proving grounds and explicitly connects ground truth to sensor-model validation."
+  },
+  {
+   "a": "f15594",
+   "b": "f16122",
+   "type": "elaborates",
+   "note": "Specifies fog chambers and their role in providing sensor-model ground truth."
+  },
+  {
+   "a": "f4640",
+   "b": "f15594",
+   "type": "elaborates",
+   "note": "Adds lidar fog reproduction strength and the on-road scope of three facilities' evidence."
+  },
+  {
+   "a": "f4731",
+   "b": "f5119",
+   "type": "supports",
+   "note": "Documents a lidar rain-and-fog study using two named ground-truth facilities."
+  },
+  {
+   "a": "f4731",
+   "b": "f16122",
+   "type": "supports",
+   "note": "Provides a concrete 2023 study using NIED and CARISSMA for weather research."
+  },
+  {
+   "a": "f5119",
+   "b": "f16124",
+   "type": "depends",
+   "note": "Using these facilities for validation depends on resolving access and machine-size suitability."
+  }
+ ]
+}

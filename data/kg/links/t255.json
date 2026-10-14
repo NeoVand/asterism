@@ -1,0 +1,115 @@
+{
+ "key": "t255",
+ "hash": "130fc07a862cb848",
+ "synopsis": "MAE, MAPE and RMSE summarize simulation-versus-measurement differences as average error figures, but they hide the error distribution and are insufficient on their own for complete validation [f14779, f14785, f14789]. On-road lidar mapping with pose refinement reduced map thickness error from 4.5 cm to 1.3 cm MAE; a separate 2022 physical-lidar study reported 14.65 cm mean depth error at 33 m against an Ouster sensor, using indoor and outdoor objects rather than a job site [f3804, f3929]. A ray-traced lidar model achieved MAPE values of 1.7% for amplitude, 8.5% for point count and 9.3% for mean intensity only when the full processing chain and sensor imperfections were modeled; the cited evidence is on-road [f4417, f12605]. Published lidar applications report MAPE rather than use it as a thresholded acceptance criterion, and MAPE misbehaves near zero measured values [f7766, f14783]. Low average error can coexist with dangerous optimism near the collision boundary, while conventional mean and RMSE errors cannot accommodate both aleatory and epistemic uncertainty in stochastic radar detections [f7816, f4821]. The corpus reports that a validated radar or camera dust model with a published error metric was searched for but not found [f254].",
+ "relations": [
+  {
+   "a": "f3721",
+   "b": "f3858",
+   "type": "same",
+   "note": "Both report 1.3 cm MAE after pose refinement on road scenes."
+  },
+  {
+   "a": "f3721",
+   "b": "f13138",
+   "type": "same",
+   "note": "The glossary repeats the road-scene lidar mapping accuracy."
+  },
+  {
+   "a": "f4209",
+   "b": "f14780",
+   "type": "same",
+   "note": "Both quote 1.3 cm MAE for lidar surveying."
+  },
+  {
+   "a": "f3804",
+   "b": "f3721",
+   "type": "elaborates",
+   "note": "Adds the initial 4.5 cm error and the reduction achieved by pose refinement."
+  },
+  {
+   "a": "f4417",
+   "b": "f12605",
+   "type": "same",
+   "note": "Same three MAPE values and requirement to model processing and sensor imperfections."
+  },
+  {
+   "a": "f4728",
+   "b": "f7824",
+   "type": "same",
+   "note": "Both report the 2022 lidar model's 1.7% amplitude MAPE."
+  },
+  {
+   "a": "f7824",
+   "b": "f14781",
+   "type": "same",
+   "note": "The glossary repeats the clear-weather lidar model's amplitude MAPE."
+  },
+  {
+   "a": "f4729",
+   "b": "f14782",
+   "type": "elaborates",
+   "note": "Adds 9.3% intensity MAPE and independent on-road provenance to the point-count result."
+  },
+  {
+   "a": "f14699",
+   "b": "f7824",
+   "type": "elaborates",
+   "note": "Adds distance error under 2 cm to the amplitude MAPE result."
+  },
+  {
+   "a": "f4417",
+   "b": "f4729",
+   "type": "elaborates",
+   "note": "Adds amplitude error and the full-processing-chain condition to point-count and intensity results."
+  },
+  {
+   "a": "f4821",
+   "b": "f14786",
+   "type": "same",
+   "note": "Both identify mean and RMSE limitations for uncertainty in stochastic radar detections."
+  },
+  {
+   "a": "f4821",
+   "b": "f14835",
+   "type": "same",
+   "note": "The glossary repeats the radar paper's uncertainty limitation."
+  },
+  {
+   "a": "f14786",
+   "b": "f14835",
+   "type": "same",
+   "note": "Random and knowledge-based uncertainty restates aleatory and epistemic uncertainty."
+  },
+  {
+   "a": "f7816",
+   "b": "f14788",
+   "type": "same",
+   "note": "Both warn that low average error can conceal collision-boundary optimism."
+  },
+  {
+   "a": "f7766",
+   "b": "f14787",
+   "type": "same",
+   "note": "Both distinguish reported MAPE from thresholded acceptance criteria."
+  },
+  {
+   "a": "f14785",
+   "b": "f14789",
+   "type": "supports",
+   "note": "Hiding error shape explains why average error alone cannot establish complete validation."
+  },
+  {
+   "a": "f14784",
+   "b": "f14789",
+   "type": "supports",
+   "note": "The importance of a few large braking errors limits reliance on averages."
+  },
+  {
+   "a": "f4793",
+   "b": "f7765",
+   "type": "elaborates",
+   "note": "Specifies amplitude, point-count and intensity MAPE alongside other sensor-validation measures."
+  }
+ ]
+}

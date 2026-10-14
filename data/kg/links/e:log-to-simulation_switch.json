@@ -1,0 +1,25 @@
+{
+ "key": "e:log-to-simulation switch",
+ "hash": "68ca8f5726844dbf",
+ "synopsis": "A log-to-simulation switch uses the historical recorded prefix to supply a realistic initial world state [f5538]. At the intervention point, it branches from that prefix into simulation, where a machine model consumes the brake command and a sensor model regenerates observations [f13437]. Chapter 7 adds that the command is the real brake command, the dynamics model updates speed and pose, and regenerated sensor or environment observations return to the controller, closing the loop with reactive agents [f5539].",
+ "relations": [
+  {
+   "a": "f5539",
+   "b": "f13437",
+   "type": "elaborates",
+   "note": "Adds speed and pose updates, controller feedback, and reactive agents to the glossary mechanism."
+  },
+  {
+   "a": "f5538",
+   "b": "f13437",
+   "type": "elaborates",
+   "note": "Explains why the recorded prefix matters: it supplies a realistic initial world state."
+  },
+  {
+   "a": "f5539",
+   "b": "f5538",
+   "type": "depends",
+   "note": "Intervention-time simulation follows initialization from the historical prefix."
+  }
+ ]
+}

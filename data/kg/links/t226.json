@@ -1,0 +1,115 @@
+{
+ "key": "t226",
+ "hash": "d439b61b48c6ed86",
+ "synopsis": "The corpus frames collision-mitigation tuning as constrained multi-objective optimization: missed or late interventions are hard constraints, while nuisance warnings, unnecessary braking and productivity loss remain visible on a Pareto front for accountable safety-policy selection [f136, f6672, f14442]. Excessive conservatism can create alarm fatigue, productivity loss and intervention-created hazards, and operators switching off nuisance-heavy systems gives unnecessary braking a safety significance rather than merely an economic cost [f6569, f14416, f14441]. Evolutionary methods including NSGA-II, attributed to Deb and colleagues in 2002, expose the frontier and support parallel simulation, while multi-objective Bayesian variants cited in 2024 seek the frontier with sample-efficient selection; the identified evidence is generic engineering rather than specific off-road braking evidence [f6970, f14420, f6975, f7324, f7322]. Evolutionary tuning requires many evaluations and carries over-fitting risk, so the booklet recommends nested validation, pre-declared safety constraints for final-point selection and independent confirmation; operational evidence establishing optimum braking conservatism remains thin [f7319, f7320, f7321, f6570]. In the illustrative zero-miss example, A has 2 unnecessary brakes per 100 hours and a generous stopping margin, whereas B has 0.5 per 100 hours and a thinner margin; selecting between them is a safety-policy decision [f14406, f14407, f14408, f14411]. The example also declares C dominated, but its stated comparisons—less margin than A and more nuisance braking than B—do not alone establish that one alternative is at least as good on every objective, leaving the dominance explanation incomplete [f14404, f14409, f14410].",
+ "relations": [
+  {
+   "a": "f6964",
+   "b": "f14395",
+   "type": "same",
+   "note": "Both require visible Pareto trade-offs for engineers and safety authorities."
+  },
+  {
+   "a": "f6672",
+   "b": "f14414",
+   "type": "same",
+   "note": "Both make Pareto-point selection an explicit safety-policy decision rather than a hidden weight."
+  },
+  {
+   "a": "f6964",
+   "b": "f14412",
+   "type": "same",
+   "note": "Both recommend preserving and displaying the Pareto frontier."
+  },
+  {
+   "a": "f6970",
+   "b": "f7318",
+   "type": "same",
+   "note": "Both identify parallel simulation evaluation as an advantage of evolutionary Pareto methods."
+  },
+  {
+   "a": "f6973",
+   "b": "f7319",
+   "type": "elaborates",
+   "note": "Many evaluations are an additional burden beyond the unresolved Pareto-point policy choice."
+  },
+  {
+   "a": "f6973",
+   "b": "f14413",
+   "type": "elaborates",
+   "note": "Producing the whole frontier in one run still leaves acceptable-point selection to policy."
+  },
+  {
+   "a": "f7317",
+   "b": "f14427",
+   "type": "same",
+   "note": "Both match evolutionary tuning to misses, nuisance braking and stopping-margin trade-offs."
+  },
+  {
+   "a": "f6975",
+   "b": "f14423",
+   "type": "elaborates",
+   "note": "Safe Bayesian variants additionally restrict exploration to settings believed safe."
+  },
+  {
+   "a": "f136",
+   "b": "f14402",
+   "type": "same",
+   "note": "Both recommend constrained optimization with visible safety trade-offs."
+  },
+  {
+   "a": "f6969",
+   "b": "f14396",
+   "type": "supports",
+   "note": "Subjective desirability weights support avoiding hidden safety valuations in a single cost."
+  },
+  {
+   "a": "f6971",
+   "b": "f14412",
+   "type": "supports",
+   "note": "Explicit trade-offs explain why the frontier should remain visible rather than collapsed."
+  },
+  {
+   "a": "f6569",
+   "b": "f7462",
+   "type": "supports",
+   "note": "Conservative-trigger harms justify joint safety and productivity acceptance criteria."
+  },
+  {
+   "a": "f14416",
+   "b": "f14442",
+   "type": "supports",
+   "note": "Operator shutdown evidence supports including human-factors rates in multi-objective tuning."
+  },
+  {
+   "a": "f14014",
+   "b": "f7317",
+   "type": "supports",
+   "note": "Margin-versus-nuisance tension motivates balancing stopping margin and unnecessary braking."
+  },
+  {
+   "a": "f14415",
+   "b": "f14441",
+   "type": "elaborates",
+   "note": "Single-objective failures are explained through shutdown risk and missed hazards."
+  },
+  {
+   "a": "f7320",
+   "b": "f7321",
+   "type": "depends",
+   "note": "Trying many configurations motivates nested validation and independent confirmation."
+  },
+  {
+   "a": "f14411",
+   "b": "f6973",
+   "type": "supports",
+   "note": "Choosing between illustrative frontier settings demonstrates the remaining safety-policy decision."
+  },
+  {
+   "a": "f6970",
+   "b": "f7322",
+   "type": "elaborates",
+   "note": "Generic methodological strengths do not establish specific off-road evidence."
+  }
+ ]
+}

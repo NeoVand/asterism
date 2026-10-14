@@ -1,0 +1,61 @@
+{
+ "key": "e:apache 2.0 license",
+ "hash": "89e4cdee81affcf3",
+ "synopsis": "The corpus identifies Apache 2.0 as the permissive open-source license for NVIDIA Isaac Sim and Gazebo; Isaac Sim is described as open source since version 5.0, with its core free for internal R&D [f15924, f8477, f8483, f8525, f15915]. The glossary says Apache 2.0 allows companies to use, modify and redistribute software, including in commercial products, provided the original copyright notice is retained, and does not require publication of their own changes [f15925, f15927]. It also identifies an explicit patent grant as an Apache 2.0 feature [f15926]. However, Isaac Sim's Apache 2.0 status does not cover every asset or distribution configuration: separate asset terms apply, and redistribution with certain components requires a paid enterprise license, qualifying the broader licensing descriptions in Chapter 11 [f15903, f15936, f8299].",
+ "relations": [
+  {
+   "a": "f8483",
+   "b": "f15936",
+   "type": "elaborates",
+   "note": "Core licensing is supplemented by asset restrictions and paid licensing for certain redistribution."
+  },
+  {
+   "a": "f8299",
+   "b": "f15903",
+   "type": "elaborates",
+   "note": "Glossary qualifies the broad Isaac Sim licensing statement with separate asset terms."
+  },
+  {
+   "a": "f15903",
+   "b": "f15936",
+   "type": "elaborates",
+   "note": "Adds paid enterprise licensing requirements for redistribution with certain components."
+  },
+  {
+   "a": "f15903",
+   "b": "f8477",
+   "type": "elaborates",
+   "note": "Chapter 11 specifies version 5.0 as the start of open-source licensing."
+  },
+  {
+   "a": "f8525",
+   "b": "f15915",
+   "type": "same",
+   "note": "Both identify Gazebo as open source under Apache 2.0."
+  },
+  {
+   "a": "f15924",
+   "b": "f15925",
+   "type": "elaborates",
+   "note": "Explains commercial use, modification, redistribution and copyright-notice retention for the named permissive licenses."
+  },
+  {
+   "a": "f15924",
+   "b": "f15927",
+   "type": "elaborates",
+   "note": "Explains that the named permissive licenses do not require publishing company modifications."
+  },
+  {
+   "a": "f15924",
+   "b": "f15926",
+   "type": "elaborates",
+   "note": "Identifies an explicit patent grant as an Apache 2.0 feature."
+  },
+  {
+   "a": "f15925",
+   "b": "f15936",
+   "type": "elaborates",
+   "note": "General redistribution permission does not override separate Isaac Sim component terms."
+  }
+ ]
+}

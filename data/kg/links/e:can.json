@@ -1,0 +1,19 @@
+{
+ "key": "e:can",
+ "hash": "a7d1e4d6f5e06a85",
+ "synopsis": "CAN appears as a route for injecting radar detections or replaying recorded machine-network traffic in virtual testing [f4545, f13348, f16033]. The glossary describes HIL data injection behind sensor optics or antennas, while its broader data-injection description also includes restbus models of the remaining network [f13348, f16033]. Chapter 6 identifies a fidelity trade-off: over-the-air radar emulation retains far more of the production radar than feeding point detections onto CAN or Ethernet [f4545].",
+ "relations": [
+  {
+   "a": "f13348",
+   "b": "f16033",
+   "type": "same",
+   "note": "Both describe sensor-path data injection using camera data, radar detections, and recorded machine-network traffic."
+  },
+  {
+   "a": "f4545",
+   "b": "f13348",
+   "type": "elaborates",
+   "note": "Adds the production-radar retention trade-off of detection-level injection versus over-the-air emulation."
+  }
+ ]
+}

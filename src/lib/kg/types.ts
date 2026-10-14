@@ -218,6 +218,8 @@ export interface KGNode {
 	importance?: number;
 	sectionId?: string;
 	/* source */
+	by?: string;
+	sourceKind?: string;
 	url?: string | null;
 	year?: number | null;
 	qualifiers?: string[];

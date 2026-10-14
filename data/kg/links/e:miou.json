@@ -1,0 +1,19 @@
+{
+ "key": "e:miou",
+ "hash": "b61059d71584c4d2",
+ "synopsis": "The corpus reports mIoU in two November 2025 simulation-to-real assessments: CropCraft’s agricultural procedural generation and an on-road real-versus-simulated scan comparison [f3731, f4141, f4816]. CropCraft reported an average mIoU simulation-to-real gap of 9.9%, comprising gaps of 10.6% on Real Montoldre and 9.2% on Real Steininger [f4141]. The on-road comparison by the National Research Council Canada, Western University and Transport Canada reported segmentation mIoU of only 21%, alongside an average density-aware Chamfer distance of 0.63 [f4442, f4816]. These results describe different quantities—a simulation-to-real mIoU gap versus a segmentation mIoU score—so the supplied facts do not establish a direct performance comparison between the agricultural and on-road settings [f4141, f4816].",
+ "relations": [
+  {
+   "a": "f3731",
+   "b": "f4141",
+   "type": "same",
+   "note": "Same CropCraft average gap; f4141 adds the date and dataset-specific gaps."
+  },
+  {
+   "a": "f4442",
+   "b": "f4816",
+   "type": "same",
+   "note": "Same November 2025 metrics; f4816 identifies the organizations and on-road scope."
+  }
+ ]
+}

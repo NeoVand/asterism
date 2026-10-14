@@ -1,0 +1,115 @@
+{
+ "key": "t60",
+ "hash": "60518d6b87c45573",
+ "synopsis": "Diagnostic coverage is the proportion of dangerous failures detected by the system itself; dead time includes undetected faults, start-up before self-tests finish, sensor blindness and degraded or switched-off operation [f12124, f12125, f12128]. Achieved Performance Level depends partly on diagnostic coverage, with ISO 13849 bands of none below 60%, low from 60–90%, medium from 90–99%, and high at 99% or above [f12025, f12126]. ISO 16001:2017 requires start-up self-checking and continuous fault monitoring, while off-road contamination makes sensor self-diagnosis and degradation detection particularly important [f2411, f2412, f2002]. MOSH requires disconnection detection within 500 ms, but the booklet's critical-fault wording differs between reaching safety within 500 ms after detection and detecting the failure and reaching safety within 500 ms; planners should resolve that timing distinction [f5284, f12102, f12132]. No published off-road acceptance value for availability or diagnostic coverage was found, so the booklet recommends measuring availability, time in degraded mode and fault-detection coverage rather than relying on detection rates measured only while available [f12133, f2633, f5441, f12129]. HIL data injection can test diagnostics and fail-to-safe behaviour, but treating degraded sensing as a fault can increase stops, and excessive stops or alarms risk operators switching systems off [f5697, f12134, f12135].",
+ "relations": [
+  {
+   "a": "f2067",
+   "b": "f7466",
+   "type": "same",
+   "note": "Both state ISO 16001 requires continuous self-checking."
+  },
+  {
+   "a": "f2067",
+   "b": "f12130",
+   "type": "same",
+   "note": "Glossary repeats the chapter's continuous self-checking requirement."
+  },
+  {
+   "a": "f2681",
+   "b": "f2067",
+   "type": "elaborates",
+   "note": "The continuous requirement specifies the more general self-check requirement."
+  },
+  {
+   "a": "f15213",
+   "b": "f2411",
+   "type": "elaborates",
+   "note": "Start-up requirement additionally specifies automatic activation."
+  },
+  {
+   "a": "f15213",
+   "b": "f2412",
+   "type": "elaborates",
+   "note": "Chapter specifies monitored faults: wire break, short circuit and signal faults."
+  },
+  {
+   "a": "f11091",
+   "b": "f12137",
+   "type": "same",
+   "note": "Both require diagnostic and degraded-state evidence for the functional safety engineer."
+  },
+  {
+   "a": "f2624",
+   "b": "f12133",
+   "type": "same",
+   "note": "Both report missing availability and diagnostic-coverage acceptance values; glossary specifies published off-road values."
+  },
+  {
+   "a": "f2633",
+   "b": "f12129",
+   "type": "same",
+   "note": "Both recommend availability, degraded-mode time and fault-detection coverage as acceptance metrics."
+  },
+  {
+   "a": "f5441",
+   "b": "f12750",
+   "type": "elaborates",
+   "note": "Glossary adds degradation detection and state-duration measurements to the availability warning."
+  },
+  {
+   "a": "f5440",
+   "b": "f12750",
+   "type": "supports",
+   "note": "Baseline state-duration and blockage measurements implement the glossary's monitoring recommendation."
+  },
+  {
+   "a": "f2002",
+   "b": "f1143",
+   "type": "supports",
+   "note": "Contamination explains why validation must address diagnostics, cleaning and degraded behaviour."
+  },
+  {
+   "a": "f12102",
+   "b": "f12132",
+   "type": "contradicts",
+   "note": "Timing differs: 500 ms after detection versus detection and safe-state transition within 500 ms."
+  },
+  {
+   "a": "f2905",
+   "b": "f12134",
+   "type": "depends",
+   "note": "Treating degraded sensing as a fail-to-safe fault leads to more machine stops."
+  },
+  {
+   "a": "f12134",
+   "b": "f12135",
+   "type": "depends",
+   "note": "More stops can trigger operator disabling, undermining protection."
+  },
+  {
+   "a": "f12098",
+   "b": "f12025",
+   "type": "supports",
+   "note": "FMEDA failure classification supplies diagnostic coverage used in Performance Level calculations."
+  },
+  {
+   "a": "f12103",
+   "b": "f12104",
+   "type": "elaborates",
+   "note": "Explains how FMEDA informs injected faults and required diagnostic detection."
+  },
+  {
+   "a": "f12104",
+   "b": "f5697",
+   "type": "supports",
+   "note": "FMEDA identifies faults that HIL injection can use to test diagnostics and fail-to-safe behaviour."
+  },
+  {
+   "a": "f12127",
+   "b": "f12100",
+   "type": "elaborates",
+   "note": "Connector example specifies heartbeat-loss detection within 500 ms followed by fail-to-safe."
+  }
+ ]
+}

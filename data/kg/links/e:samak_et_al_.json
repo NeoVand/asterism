@@ -1,0 +1,31 @@
+{
+ "key": "e:samak et al.",
+ "hash": "d5c87480823a71d8",
+ "synopsis": "Samak et al.’s GVSETS 2024 work is cited as an off-road digital-twin example alongside a separate construction-vehicle twin from 2025 [f399]. At GVSETS in August 2024, they reported running vision-guided AEB across 128 simulated off-road test cases using the open-source AutoDRIVE framework and high-performance computing clusters [f467, f4104]. The cluster-based approach addresses the inability of sequential parameter sweeps to explore large variability spaces under time constraints [f4104]. For virtual-job-site planning, the work supports a scaling methodology rather than prescribing a particular scenario count; the reported 128 cases should therefore not be treated as a required validation target [f4105, f467].",
+ "relations": [
+  {
+   "a": "f467",
+   "b": "f399",
+   "type": "elaborates",
+   "note": "Adds the framework, test count, and computing infrastructure to the cited example."
+  },
+  {
+   "a": "f4104",
+   "b": "f467",
+   "type": "elaborates",
+   "note": "Adds the August date and rationale for using high-performance computing clusters."
+  },
+  {
+   "a": "f4104",
+   "b": "f4105",
+   "type": "supports",
+   "note": "The parameter-sweep limitation explains why the work supports scaling methodology."
+  },
+  {
+   "a": "f4105",
+   "b": "f467",
+   "type": "elaborates",
+   "note": "Clarifies that the reported 128 cases do not prescribe a scenario-count target."
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "key": "e:iso 6165",
+ "hash": "c08c607187587215",
+ "synopsis": "ISO 6165 is a vocabulary and classification standard defining earth-moving machinery, including loaders, excavators, dozers, dumpers and graders; ISO 20474 and EN 474 provide general safety requirements for those machines [f15238, f15239]. For ISO 6165 machines, ISO 16001:2017 addresses object detection and visibility aids rather than braking, while a collision-avoidance function that commands brakes falls within the ISO 19014 functional-safety scope [f2180, f15207, f2312]. ISO 19014 is the sector-specific framework, and ISO 13849 does not itself assign the collision function's required Performance Level [f2196, f15264]. Scope must nevertheless be checked carefully: the glossary presents ISO 6165 inclusion as determining applicability of three standards, but Chapter 3 explicitly extends ISO 21815-1:2022 to underground mining machinery under ISO 19296 and road-construction machinery under ISO 22242 [f15240, f2149]. Projects spanning surface and underground machines should therefore assess applicability machine by machine; outside ISO 6165, ISO 19014 should not be assumed to apply, and ISO 19296 or generic standards may apply by contract or jurisdiction [f15249, f15234, f2353].",
+ "relations": [
+  {
+   "a": "f2149",
+   "b": "f15140",
+   "type": "same",
+   "note": "Both describe ISO 21815 coverage across earth-moving, underground mining and road-construction machinery."
+  },
+  {
+   "a": "f2351",
+   "b": "f15234",
+   "type": "same",
+   "note": "Both caution against assuming ISO 19014 applies outside ISO 6165."
+  },
+  {
+   "a": "f2353",
+   "b": "f15234",
+   "type": "same",
+   "note": "Both identify contractual or jurisdictional applicability of generic standards outside ISO 6165."
+  },
+  {
+   "a": "f2180",
+   "b": "f15207",
+   "type": "same",
+   "note": "Both place ISO 16001 object detection and visibility aids within ISO 6165 machine scope."
+  },
+  {
+   "a": "f2196",
+   "b": "f15264",
+   "type": "same",
+   "note": "Both identify ISO 19014 as the sector functional-safety framework for ISO 6165 machines."
+  },
+  {
+   "a": "f2149",
+   "b": "f15240",
+   "type": "contradicts",
+   "note": "ISO 21815 also covers machine categories outside ISO 6165, qualifying the glossary's scope gate."
+  },
+  {
+   "a": "f15239",
+   "b": "f15238",
+   "type": "elaborates",
+   "note": "Adds vocabulary status and examples of classified earth-moving machines."
+  },
+  {
+   "a": "f2312",
+   "b": "f2196",
+   "type": "elaborates",
+   "note": "Identifies brake-commanding collision avoidance as a function within the sector framework."
+  },
+  {
+   "a": "f15207",
+   "b": "f2312",
+   "type": "supports",
+   "note": "Warning-only scope supports distinguishing brake-commanding functions from awareness systems."
+  },
+  {
+   "a": "f2196",
+   "b": "f15249",
+   "type": "supports",
+   "note": "Machine-dependent functional-safety scope supports checking applicability machine by machine."
+  },
+  {
+   "a": "f2351",
+   "b": "f15249",
+   "type": "supports",
+   "note": "Uncertain applicability outside ISO 6165 motivates machine-specific standards checks."
+  },
+  {
+   "a": "f2149",
+   "b": "f15249",
+   "type": "supports",
+   "note": "Distinct machinery definitions within collision-system scope warrant machine-specific applicability checks."
+  },
+  {
+   "a": "f15264",
+   "b": "f2353",
+   "type": "elaborates",
+   "note": "Identifies ISO 13849 as relevant to machines outside earth-moving scope and generic subsystems."
+  },
+  {
+   "a": "f15140",
+   "b": "f15034",
+   "type": "elaborates",
+   "note": "Adds machinery coverage to the identification of ISO/TC 127 as ISO 21815's source."
+  },
+  {
+   "a": "f2180",
+   "b": "f15240",
+   "type": "supports",
+   "note": "Confirms the ISO 6165 scope gate specifically for ISO 16001."
+  },
+  {
+   "a": "f2196",
+   "b": "f15240",
+   "type": "supports",
+   "note": "Confirms ISO 19014's sector-framework role for ISO 6165 machines."
+  }
+ ]
+}

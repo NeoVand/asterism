@@ -1,0 +1,49 @@
+{
+ "key": "e:radar detect system",
+ "hash": "38ace6112add0180",
+ "synopsis": "Volvo CE’s Collision Mitigation System, dated January 2023, requires the Radar Detect System to be fitted; Chapters 2 and 13 consistently repeat this prerequisite [f1383, f10437, f10628]. Chapter 2 describes the collision mitigation system as targeting any obstacle using radar [f1628]. Chapter 13 identifies Radar Detect as separately fitted and draws out the resulting commissioning dependency, but the supplied facts give no installation duration or commissioning schedule [f10807].",
+ "relations": [
+  {
+   "a": "f1383",
+   "b": "f10437",
+   "type": "same",
+   "note": "Both identify the January 2023 system and its Radar Detect prerequisite."
+  },
+  {
+   "a": "f1383",
+   "b": "f10628",
+   "type": "same",
+   "note": "Both state that the Collision Mitigation System requires Radar Detect."
+  },
+  {
+   "a": "f10437",
+   "b": "f10628",
+   "type": "same",
+   "note": "Repeated Radar Detect fitting requirement; one also specifies January 2023."
+  },
+  {
+   "a": "f1628",
+   "b": "f1383",
+   "type": "elaborates",
+   "note": "Adds radar-based targeting of any obstacle to the shared prerequisite."
+  },
+  {
+   "a": "f1628",
+   "b": "f10437",
+   "type": "elaborates",
+   "note": "Adds obstacle-targeting scope and radar use to the fitting requirement."
+  },
+  {
+   "a": "f10807",
+   "b": "f1383",
+   "type": "elaborates",
+   "note": "Explains separate fitting and the resulting commissioning dependency."
+  },
+  {
+   "a": "f10807",
+   "b": "f1628",
+   "type": "elaborates",
+   "note": "Makes the commissioning implication of the Radar Detect prerequisite explicit."
+  }
+ ]
+}

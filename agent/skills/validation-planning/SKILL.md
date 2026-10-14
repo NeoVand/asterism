@@ -7,9 +7,11 @@ description: How to build a credible, evidence-grounded plan (validation roadmap
 
 Plans must be grounded in the booklet's evidence and honest about what it could not find.
 
-## 1. Know the situation (ask once)
+## 1. Know the situation (ask once, after a first look at the evidence)
 
-If the user has not told you, call `ask_user` with 2–5 questions that change the plan. Good ones:
+Do a quick round of research first (step 2) so your questions are informed. Then, if the user has not
+told you and the plan's shape genuinely depends on it, call `ask_user` with 2–5 questions. Requests
+for general advice ("how should we present a schedule?") need no questions — answer them. Good ones:
 - Which machines/platforms are in scope first? (wheel loaders, articulated haulers, haul trucks, excavators…)
 - Sensor set of the new system? (radar, camera, lidar, ultrasonic, fusion; same as the warning system?)
 - Is the detection software new, modified or reused? Does it use machine learning?

@@ -1,0 +1,115 @@
+{
+ "key": "e:iso/pas 8800",
+ "hash": "c1b5c93b5aac89a9",
+ "synopsis": "ISO/PAS 8800:2024 was published in December 2024 and tailors ISO 26262 for AI safety in road vehicles; its stated scope is road vehicles only, with several descriptions explicitly classified as vendor or on-road evidence [f2730, f2388, f2731, f15298]. For heavy off-road validation, the booklet uses its perception and assurance concepts as reference material: a team starting in October 2026 could realistically prepare a safety-case skeleton by mid-2027 alongside ISO 21815 and ISO 19014 mappings [f12069, f829]. It also identifies ISO/PAS 8800 as a source of assurance structures and as consistent with requiring validation and estimation data to be real or physically independent of the training-data generator, although that consistency claim is labelled independent on-road evidence and expert opinion [f655, f7101, f12264]. Acceptance of machine learning in safety functions remains disputed: one view excludes it in favour of certified deterministic sensors, while another accepts ISO/PAS 8800-style assurance [f1125, f12416]. There is also a terminology tension: one table calls the publication an international standard, whereas the glossary explicitly classifies it as a Publicly Available Specification, not a full standard, and describes the wider ML standardization effort as early and mostly unfinished [f2730, f15052, f15290].",
+ "relations": [
+  {
+   "a": "f1125",
+   "b": "f12416",
+   "type": "same",
+   "note": "Both describe competing deterministic-sensor and ML-assurance positions."
+  },
+  {
+   "a": "f1125",
+   "b": "f15311",
+   "type": "same",
+   "note": "Both present exclusion versus ISO/PAS 8800-style acceptance of machine learning."
+  },
+  {
+   "a": "f12416",
+   "b": "f15311",
+   "type": "same",
+   "note": "Glossary repeats the disagreement over machine learning in safety functions."
+  },
+  {
+   "a": "f2388",
+   "b": "f12411",
+   "type": "same",
+   "note": "Both state ISO 26262 tailoring for AI exclusively in road vehicles."
+  },
+  {
+   "a": "f2388",
+   "b": "f15298",
+   "type": "same",
+   "note": "Both state tailoring and road-only scope; glossary also supplies publication date."
+  },
+  {
+   "a": "f12411",
+   "b": "f15298",
+   "type": "same",
+   "note": "Same tailoring and scope claim, with date added."
+  },
+  {
+   "a": "f12411",
+   "b": "f12069",
+   "type": "same",
+   "note": "Both describe ISO 26262 tailoring for road-vehicle AI."
+  },
+  {
+   "a": "f2387",
+   "b": "f2730",
+   "type": "same",
+   "note": "Both give December 2024 as the publication date."
+  },
+  {
+   "a": "f7101",
+   "b": "f14474",
+   "type": "same",
+   "note": "Glossary restates consistency between data independence and the data-centric lifecycle."
+  },
+  {
+   "a": "f655",
+   "b": "f12264",
+   "type": "same",
+   "note": "Both identify ISO/PAS 8800 and UL 4600 as assurance-structure sources."
+  },
+  {
+   "a": "f2102",
+   "b": "f2388",
+   "type": "supports",
+   "note": "Independent scope finding corroborates the vendor's road-only limitation."
+  },
+  {
+   "a": "f2731",
+   "b": "f2732",
+   "type": "elaborates",
+   "note": "Lifecycle coverage is specified as requiring AI lifecycle verification."
+  },
+  {
+   "a": "f12878",
+   "b": "f7101",
+   "type": "elaborates",
+   "note": "The general data-centric lifecycle reference gains a specific data-independence application."
+  },
+  {
+   "a": "f655",
+   "b": "f829",
+   "type": "supports",
+   "note": "Available assurance structures support using its concepts in a safety-case skeleton."
+  },
+  {
+   "a": "f829",
+   "b": "f12018",
+   "type": "elaborates",
+   "note": "Adds planning dates and alternative intervention-chain standards to the glossary pairing."
+  },
+  {
+   "a": "f427",
+   "b": "f829",
+   "type": "supports",
+   "note": "Documented safety-case methods support the proposed skeleton-building approach."
+  },
+  {
+   "a": "f2730",
+   "b": "f15052",
+   "type": "contradicts",
+   "note": "International-standard terminology conflicts with explicit PAS, not full-standard classification."
+  },
+  {
+   "a": "f2102",
+   "b": "f829",
+   "type": "elaborates",
+   "note": "Road-only scope limits interpretation of the proposed off-road use of perception concepts."
+  }
+ ]
+}

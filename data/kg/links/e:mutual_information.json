@@ -1,0 +1,37 @@
+{
+ "key": "e:mutual information",
+ "hash": "ccdeb50612cf8200",
+ "synopsis": "Mutual information measures how much knowing one image tells you about another and is useful for radar maps [f14772]. Chapter 6 lists it among distribution-level similarity metrics for sensor-model validation, alongside FID, KID, texture and entropy measures [f4803]. RadaRays’ physics-based radar model dramatically improved mutual-information and structural-similarity scores relative to a lidar-like model [f4824]. However, a detector trained only on real radar data still failed to detect most cars in the simulated images, showing that improved similarity scores did not establish successful detector transfer [f14776, f14793].",
+ "relations": [
+  {
+   "a": "f14772",
+   "b": "f4803",
+   "type": "elaborates",
+   "note": "Defines mutual information and identifies radar maps as a useful application."
+  },
+  {
+   "a": "f4824",
+   "b": "f4803",
+   "type": "supports",
+   "note": "Provides a radar-model comparison using mutual information as a validation metric."
+  },
+  {
+   "a": "f14776",
+   "b": "f4824",
+   "type": "elaborates",
+   "note": "Adds detector-transfer failure despite the physics-based model’s improved similarity scores."
+  },
+  {
+   "a": "f14793",
+   "b": "f4824",
+   "type": "elaborates",
+   "note": "Adds that a real-radar-trained detector missed most cars despite improved similarity scores."
+  },
+  {
+   "a": "f14776",
+   "b": "f14793",
+   "type": "same",
+   "note": "Restates improved similarity scores alongside detector failure; specifies training data and missed cars."
+  }
+ ]
+}

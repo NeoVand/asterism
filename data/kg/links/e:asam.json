@@ -1,0 +1,115 @@
+{
+ "key": "e:asam",
+ "hash": "52cc6d55f254a44c",
+ "synopsis": "ASAM is a Germany-based nonprofit industry association whose OpenX family supplies many of the scene-description formats discussed; despite its road-vehicle roots, the booklet rates OSI and FMI as domain-neutral and transferable to off-road work [f13222, f13197, f13224]. OpenMATERIAL 3D 1.0.0 was released on 3 April 2025 to standardize material properties for lidar, radar and camera simulation; version 1.1.0 was planned for October 2026, while volumetric properties remained under development [f3917, f8614, f3923, f3922]. Across chapters, ASAM reports no standardized simulation-quality metrics, particularly for sensors; QSQ was still at proposal stage in September 2025, and both QSQ and the separate sensor-fidelity project remained under way in 2026 [f8327, f5218, f4835]. High-fidelity OSI work addresses inadequate representations of phenomena such as camera spectral irradiance and radar raw waveforms and runs through March 2027, creating interface-versioning risk around the program’s planned first-tool-chain integration [f7081, f8618, f8619, f15870]. Although OpenX was described as in maintenance mode in 2026, an off-road concept project was active in October 2026; missing terrain, vegetation, manipulation and sensor-degradation concepts mean extensions or a manufacturer domain model are needed, and the booklet considers an off-road extension unlikely before mid-2027 [f7170, f7171, f7195, f7434, f13212]. TestSpecification was still developing infrastructure rather than a mature universal solution in October 2026, and ASAM standards were not verified in this research [f7119, f7702].",
+ "relations": [
+  {
+   "a": "f5217",
+   "b": "f8327",
+   "type": "same",
+   "note": "Both report absent standardized sensor-simulation quality metrics."
+  },
+  {
+   "a": "f8327",
+   "b": "f5272",
+   "type": "same",
+   "note": "Both report absent standardized sensor-simulation quality metrics."
+  },
+  {
+   "a": "f5272",
+   "b": "f13225",
+   "type": "same",
+   "note": "Glossary repeats the sensor-quality metrics gap."
+  },
+  {
+   "a": "f13225",
+   "b": "f13343",
+   "type": "same",
+   "note": "Duplicate glossary statements about missing sensor-quality metrics."
+  },
+  {
+   "a": "f13343",
+   "b": "f15958",
+   "type": "same",
+   "note": "Duplicate glossary statements about missing sensor-quality metrics."
+  },
+  {
+   "a": "f8327",
+   "b": "f14598",
+   "type": "same",
+   "note": "Glossary repeats the simulation-quality metrics gap, particularly for sensors."
+  },
+  {
+   "a": "f8919",
+   "b": "f15024",
+   "type": "same",
+   "note": "Both report ASAM's absence of standardized simulation-quality metrics."
+  },
+  {
+   "a": "f14598",
+   "b": "f15024",
+   "type": "elaborates",
+   "note": "Identifies sensor simulation as a particular part of the broader metrics gap."
+  },
+  {
+   "a": "f3917",
+   "b": "f13186",
+   "type": "same",
+   "note": "Same OpenMATERIAL version and release date."
+  },
+  {
+   "a": "f8614",
+   "b": "f3917",
+   "type": "elaborates",
+   "note": "Adds the released standard's material-property scope for three sensor types."
+  },
+  {
+   "a": "f6692",
+   "b": "f13213",
+   "type": "same",
+   "note": "Both identify the same missing off-road OpenX concepts."
+  },
+  {
+   "a": "f7195",
+   "b": "f7434",
+   "type": "supports",
+   "note": "Missing concepts justify extensions or a manufacturer domain model, not rejecting OpenX."
+  },
+  {
+   "a": "f5218",
+   "b": "f13226",
+   "type": "same",
+   "note": "Both place the quality-metrics project at proposal stage in September 2025."
+  },
+  {
+   "a": "f5218",
+   "b": "f5273",
+   "type": "same",
+   "note": "Same QSQ proposal-stage status; one specifies September 2025."
+  },
+  {
+   "a": "f7170",
+   "b": "f13211",
+   "type": "same",
+   "note": "Both describe OpenX as in maintenance mode in 2026."
+  },
+  {
+   "a": "f8618",
+   "b": "f8732",
+   "type": "same",
+   "note": "Both give March 2027 as the high-fidelity OSI project's endpoint."
+  },
+  {
+   "a": "f8618",
+   "b": "f15870",
+   "type": "elaborates",
+   "note": "Adds coincidence with the program's planned first-tool-chain integration."
+  },
+  {
+   "a": "f8619",
+   "b": "f8618",
+   "type": "depends",
+   "note": "Interface-versioning risk arises while high-fidelity OSI extensions remain under standardization."
+  }
+ ]
+}

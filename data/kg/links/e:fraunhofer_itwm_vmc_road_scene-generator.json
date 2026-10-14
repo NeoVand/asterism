@@ -1,0 +1,37 @@
+{
+ "key": "e:fraunhofer itwm vmc road scene-generator",
+ "hash": "11c375bc21f2bcac",
+ "synopsis": "The glossary describes Fraunhofer ITWM VMC Road & Scene-Generator as building scenes from fused real measurements; Chapter 11 specifies 3D scenes for camera, lidar and radar simulation using real data sources and the REDAR measurement vehicle [f16000, f8612, f9173]. Chapter 11 lists it among environment creation and reconstruction offerings and identifies its delivery model as research and service [f8359, f9172]. Heavy-machine deployment detail was not found on the reviewed page, so the documented scene-generation capability does not establish suitability for heavy-machine deployment [f8613, f9174]. Interfaces and standards were not verified, and neither a public price nor a latest release was found, leaving integration, cost and release status unresolved [f9175, f9176, f9177].",
+ "relations": [
+  {
+   "a": "f8612",
+   "b": "f16000",
+   "type": "elaborates",
+   "note": "Adds 3D output, simulated sensor types and the REDAR measurement vehicle."
+  },
+  {
+   "a": "f16000",
+   "b": "f9173",
+   "type": "elaborates",
+   "note": "Specifies that real-data scenes are built from fused measurements."
+  },
+  {
+   "a": "f8612",
+   "b": "f9173",
+   "type": "elaborates",
+   "note": "Details the real-data scene-generation process and sensor simulation scope."
+  },
+  {
+   "a": "f8613",
+   "b": "f9174",
+   "type": "same",
+   "note": "Both report missing heavy-machine deployment detail."
+  },
+  {
+   "a": "f8612",
+   "b": "f8359",
+   "type": "supports",
+   "note": "Scene-generation capabilities support inclusion among environment creation and reconstruction offerings."
+  }
+ ]
+}

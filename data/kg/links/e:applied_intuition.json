@@ -1,0 +1,115 @@
+{
+ "key": "e:applied intuition",
+ "hash": "ab021b03633e67b6",
+ "synopsis": "Applied Intuition is a commercial, road-derived simulation platform adapted for mining, construction and agriculture; its advertised toolchain spans scenario, sensor and vehicle-dynamics simulation, HIL and large-scale cloud execution, while its data platforms ingest logs and manage regression testing [f8964, f8683, f8396, f8658]. It acquired CarSim and TruckSim through Mechanical Simulation in March 2022 and launched an off-road autonomy stack on 17 June 2024 [f8402, f8397]. A multi-year Komatsu partnership announced on 9 September 2025 covers Vehicle OS, autonomous haulage and collision avoidance for staffed sites, including planned EMESRT control level 9 systems; this provides independent evidence of off-road relevance, but independent validation of automatic braking on heavy machines was not found [f8399, f8400, f8684, f8289]. Applied Intuition's R171 blog describes physical tests as expected, with virtual testing permitted for certain difficult-to-reproduce scenarios subject to rigorous toolchain credibility evaluation [f1277, f1278]. Planning gaps include unavailable public pricing, an unverified interface/standards picture, no detailed public sensor matrix and no sensor-model validation evidence for dust, snow or soil; raw-data compatibility must therefore be checked against the eventual sensors [f8405, f8968, f8403, f8407, f8659]. Reported acceleration and productivity gains are marketing rather than independent or controlled cross-vendor benchmarks, and supplying both validation tools and autonomy stacks creates a potential competitive conflict for manufacturers developing their own perception and braking functions [f8406, f8735, f8409].",
+ "relations": [
+  {
+   "a": "f8286",
+   "b": "f15882",
+   "type": "same",
+   "note": "Both report the September 2025 Komatsu partnership covering collision avoidance on staffed sites."
+  },
+  {
+   "a": "f8965",
+   "b": "f15882",
+   "type": "same",
+   "note": "Both identify the September 2025 Komatsu partnership as demonstrated off-road use."
+  },
+  {
+   "a": "f8399",
+   "b": "f8286",
+   "type": "elaborates",
+   "note": "Adds exact announcement date, multi-year duration, Vehicle OS and autonomous haulage scope."
+  },
+  {
+   "a": "f8400",
+   "b": "f8399",
+   "type": "elaborates",
+   "note": "Specifies planned EMESRT control level 9 collision avoidance for fully staffed operations."
+  },
+  {
+   "a": "f8332",
+   "b": "f8885",
+   "type": "same",
+   "note": "Both identify Applied Intuition as Komatsu's tool vendor and autonomy-stack supplier."
+  },
+  {
+   "a": "f8409",
+   "b": "f15883",
+   "type": "same",
+   "note": "Both flag possible conflict from selling tools and an autonomy stack."
+  },
+  {
+   "a": "f8332",
+   "b": "f8409",
+   "type": "supports",
+   "note": "Dual supplier roles substantiate the potential competitive conflict."
+  },
+  {
+   "a": "f8402",
+   "b": "f15884",
+   "type": "elaborates",
+   "note": "Dates ownership to the March 2022 Mechanical Simulation acquisition."
+  },
+  {
+   "a": "f15884",
+   "b": "f15971",
+   "type": "elaborates",
+   "note": "Adds CarSim and TruckSim's road-heritage dynamics role."
+  },
+  {
+   "a": "f8964",
+   "b": "f15881",
+   "type": "elaborates",
+   "note": "Adds simulation-platform classification and missing public price."
+  },
+  {
+   "a": "f8405",
+   "b": "f8969",
+   "type": "same",
+   "note": "Both report unavailable public pricing."
+  },
+  {
+   "a": "f9256",
+   "b": "f16060",
+   "type": "same",
+   "note": "Both report missing prices for the same vendor-cloud offerings."
+  },
+  {
+   "a": "f8662",
+   "b": "f16059",
+   "type": "elaborates",
+   "note": "Glossary clarifies that listed vendor clouds run a specific simulator."
+  },
+  {
+   "a": "f8664",
+   "b": "f16075",
+   "type": "elaborates",
+   "note": "Glossary repeats explicit off-road platform examples and adds Foretellix."
+  },
+  {
+   "a": "f9303",
+   "b": "f16166",
+   "type": "same",
+   "note": "Both place Applied Intuition among highest-cost commercial validation-chain examples."
+  },
+  {
+   "a": "f8403",
+   "b": "f8967",
+   "type": "same",
+   "note": "Both report no public sensor matrix."
+  },
+  {
+   "a": "f8406",
+   "b": "f8735",
+   "type": "supports",
+   "note": "Uncontrolled Komatsu productivity claims reinforce the caution against treating marketing as benchmarks."
+  },
+  {
+   "a": "f1278",
+   "b": "f1277",
+   "type": "elaborates",
+   "note": "Qualified virtual-testing exceptions supplement the expectation of physical tests."
+  }
+ ]
+}

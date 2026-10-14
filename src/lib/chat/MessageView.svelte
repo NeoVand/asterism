@@ -30,6 +30,11 @@
 	});
 
 	const streaming = $derived(msg.status === 'streaming');
+	// Reading order: interim notes, the answer, then its blocks, then any question form.
+	const RANK = { note: 0, text: 1, ui: 2, form: 3 } as const;
+	const ordered = $derived(
+		msg.parts.map((part, i) => ({ part, i })).sort((a, b) => RANK[a.part.k] - RANK[b.part.k] || a.i - b.i)
+	);
 	const lastTextIndex = $derived(msg.parts.findLastIndex((p) => p.k === 'text'));
 
 	function html(text: string, isLast: boolean) {
@@ -92,12 +97,14 @@
 				if (c?.dataset.id) app.select(c.dataset.id);
 			}}
 		>
-			{#each msg.parts as part, i (i)}
+			{#each ordered as { part, i } (i)}
 				{#if part.k === 'text'}
-					<div class="prose-asterism" class:caret={streaming && i === lastTextIndex && i === msg.parts.length - 1}>
+					<div class="prose-asterism" class:caret={streaming && i === lastTextIndex}>
 						<!-- eslint-disable-next-line svelte/no-at-html-tags -- sanitized markdown (raw HTML escaped) -->
 						{@html html(part.text, i === lastTextIndex)}
 					</div>
+				{:else if part.k === 'note'}
+					<p class="border-l border-white/[0.07] pl-3.5 text-[11.5px] leading-relaxed text-fg-3 italic">{part.text.trim().slice(0, 400)}</p>
 				{:else if part.k === 'ui'}
 					<div in:fade={{ duration: 260 }}>
 						<BlockView block={part.block} />

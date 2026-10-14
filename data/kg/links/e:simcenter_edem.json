@@ -1,0 +1,115 @@
+{
+ "key": "e:simcenter edem",
+ "hash": "3a6c3b3bad91ef3b",
+ "synopsis": "EDEM is described as commercial discrete-element modeling software for bulk materials such as soil, ore and coal, with coupling to vehicle and multibody simulation [f8587, f15985, f9134]. Its strongest relevance is mining, quarrying and earth interaction; Chapter 8 gives a concrete tracked-machine soft-soil workflow using Altair MotionSolve/MotionView coupled to EDEM [f8588, f6388]. It is not a perception or ADAS simulator, and its sensor capabilities are listed as not applicable, so its role in collision-mitigation validation is machine–terrain physics rather than sensor simulation [f8590, f9136, f16074]. DEM is computationally expensive, while public pricing and the latest release date were not found, leaving cost and release currency unresolved [f8589, f8591]. The glossary explicitly flags that Chapter 11 calls the tool Siemens Simcenter EDEM whereas Chapter 8 cites an Altair workflow, leaving a naming/vendor-attribution tension to clarify [f15986, f8587, f6388].",
+ "relations": [
+  {
+   "a": "f6015",
+   "b": "f6388",
+   "type": "same",
+   "note": "Both describe Altair tracked-machine soft-soil workflows with EDEM coupling."
+  },
+  {
+   "a": "f8587",
+   "b": "f15985",
+   "type": "same",
+   "note": "Both describe bulk-material DEM and multibody coupling; Chapter 11 adds commercial and vehicle scope."
+  },
+  {
+   "a": "f8587",
+   "b": "f9134",
+   "type": "same",
+   "note": "Both identify EDEM as commercial software."
+  },
+  {
+   "a": "f8587",
+   "b": "f9135",
+   "type": "same",
+   "note": "Both identify soil, ore and coal as modeled bulk materials."
+  },
+  {
+   "a": "f8587",
+   "b": "f9137",
+   "type": "same",
+   "note": "Both state that EDEM couples with multibody tools."
+  },
+  {
+   "a": "f15985",
+   "b": "f9135",
+   "type": "same",
+   "note": "Glossary and Chapter 11 repeat the bulk-material scope and examples."
+  },
+  {
+   "a": "f15985",
+   "b": "f9137",
+   "type": "same",
+   "note": "Glossary and Chapter 11 repeat multibody coupling capability."
+  },
+  {
+   "a": "f8663",
+   "b": "f16074",
+   "type": "same",
+   "note": "Both list the same mobile-machinery physics tools, including EDEM."
+  },
+  {
+   "a": "f8591",
+   "b": "f9138",
+   "type": "same",
+   "note": "Both report that public pricing was not found."
+  },
+  {
+   "a": "f8591",
+   "b": "f9139",
+   "type": "same",
+   "note": "Both report that the latest release was not found."
+  },
+  {
+   "a": "f8588",
+   "b": "f8677",
+   "type": "same",
+   "note": "Both establish mining and quarry relevance; the latter adds bulk-material applications."
+  },
+  {
+   "a": "f6388",
+   "b": "f15985",
+   "type": "elaborates",
+   "note": "Tracked-machine soft-soil coupling exemplifies the glossary's general multibody coupling capability."
+  },
+  {
+   "a": "f6388",
+   "b": "f15986",
+   "type": "supports",
+   "note": "The Altair workflow substantiates the glossary's Chapter 8 attribution."
+  },
+  {
+   "a": "f8587",
+   "b": "f15986",
+   "type": "supports",
+   "note": "The Siemens label substantiates the glossary's Chapter 11 naming observation."
+  },
+  {
+   "a": "f9136",
+   "b": "f8590",
+   "type": "supports",
+   "note": "Non-applicable sensor capabilities reinforce that EDEM is not a perception or ADAS simulator."
+  },
+  {
+   "a": "f8590",
+   "b": "f8283",
+   "type": "supports",
+   "note": "EDEM's non-perception scope supports the broader warning about thin sensor tooling."
+  },
+  {
+   "a": "f6388",
+   "b": "f8663",
+   "type": "supports",
+   "note": "A tracked-machine terrain workflow provides concrete evidence of heavy-machinery relevance."
+  },
+  {
+   "a": "f9334",
+   "b": "f8587",
+   "type": "same",
+   "note": "Both identify EDEM's granular-material simulation scope."
+  }
+ ]
+}

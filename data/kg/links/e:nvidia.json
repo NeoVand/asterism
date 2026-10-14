@@ -1,0 +1,73 @@
+{
+ "key": "e:nvidia",
+ "hash": "e28a26663210357c",
+ "synopsis": "NVIDIA is a significant platform dependency: most graphics cards named in the booklet are NVIDIA models because reviewed simulators rely on its ray-tracing libraries, while Chrono CRM terrain requires an NVIDIA GPU—a community-raised dependency risk, not a recommendation [f16192, f8500, f16193]. For sensor-ready assets, NVIDIA specifies separate non-visual material metadata because material behaviour can vary nonlinearly with wavelength and cannot be inferred from visual materials; its radar schema also models wavelength-dependent responses and indirect paths producing ghost detections [f3835, f3926, f3934, f3935]. Ansys/NVIDIA GTC 2020 vendor figures report 14 workstation CPU hours for a 12-second radar scenario and about 12 ms per frame for a GPU real-time version against a 30 fps target, but the supplied facts do not establish equivalent workloads [f4931, f4932]. Licensing descriptions require component-level care: Isaac Sim is described as Apache 2.0 with NVIDIA asset terms, while staff also described free use for teams of up to two; the relationship between those statements is not resolved here [f9014, f8485, f8903]. NVIDIA NuRec Gaussian splatting is integrated into Isaac Sim and CARLA 0.9.16 under an open-core model, while OpenUSD and Omniverse combine an open standard with NVIDIA components [f8609, f9162, f9167].",
+ "relations": [
+  {
+   "a": "f8485",
+   "b": "f8903",
+   "type": "same",
+   "note": "Both report staff describing free Isaac Sim use for teams of up to two."
+  },
+  {
+   "a": "f8500",
+   "b": "f8851",
+   "type": "same",
+   "note": "Both state that Chrono CRM terrain requires an NVIDIA GPU."
+  },
+  {
+   "a": "f8899",
+   "b": "f16193",
+   "type": "same",
+   "note": "Both identify community-raised NVIDIA dependencies in Chrono high-performance modules."
+  },
+  {
+   "a": "f8500",
+   "b": "f16193",
+   "type": "supports",
+   "note": "CRM's GPU requirement provides a concrete basis for the glossary's dependency warning."
+  },
+  {
+   "a": "f8500",
+   "b": "f8899",
+   "type": "elaborates",
+   "note": "Identifies CRM terrain as a specific NVIDIA-dependent Chrono capability."
+  },
+  {
+   "a": "f3926",
+   "b": "f3835",
+   "type": "supports",
+   "note": "Non-extrapolatable material behaviour explains the need for separate non-visual metadata."
+  },
+  {
+   "a": "f3934",
+   "b": "f3835",
+   "type": "elaborates",
+   "note": "Radar schema specifies wavelength-dependent material response among sensor-ready asset requirements."
+  },
+  {
+   "a": "f3935",
+   "b": "f3934",
+   "type": "elaborates",
+   "note": "Adds indirect-path and ghost-detection capabilities to the radar schema description."
+  },
+  {
+   "a": "f9162",
+   "b": "f8609",
+   "type": "elaborates",
+   "note": "Adds NuRec's open-core licensing model to its simulator integration description."
+  },
+  {
+   "a": "f9014",
+   "b": "f8485",
+   "type": "contradicts",
+   "note": "Apache licensing and team-limited free-use descriptions create unresolved licensing tension."
+  },
+  {
+   "a": "f16194",
+   "b": "f16192",
+   "type": "elaborates",
+   "note": "Identifies dedicated ray-tracing hardware within NVIDIA's graphics-card range."
+  }
+ ]
+}

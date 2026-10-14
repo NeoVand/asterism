@@ -1,0 +1,115 @@
+{
+ "key": "e:iso 13849",
+ "hash": "be70e8c03e1aba42",
+ "synopsis": "ISO 13849 is presented as a generic machinery control-system safety standard, while ISO 19014 is the appropriate sector framework for earth-moving machines; the safety-case skeleton uses ISO 13849 or IEC 62061 where ISO 19014 does not reach [f15007, f15168, f15272]. For a team starting from zero in October 2026, preparing that skeleton by mid-2027 is considered realistic; the intervention path needs a performance-level or integrity assignment and fault testing, although the relevant editions were not verified [f829, f7455]. The glossary describes risk-based Performance Level selection, common-cause-failure defenses, and four diagnostic-coverage bands: below 60%, 60–90%, 90–99%, and at least 99%; it also cautions that ISO 13849 does not itself assign the required level for the collision function [f11972, f12115, f12126, f15264]. For most markets, the booklet identifies the manufacturer's internal safety board working under ISO 19014 and ISO 13849, together with customers, as accepting the evidence [f1613, f12288]. These recommendations remain qualified: ISO 13849 was not reviewed in full text, simulation-evidence acceptance and tool-qualification rules were not verified, and the automatic-brake safety-function claim relies on draft evidence [f8942, f11198, f6580].",
+ "relations": [
+  {
+   "a": "f1613",
+   "b": "f12288",
+   "type": "same",
+   "note": "Both identify internal safety boards and customers as evidence acceptors in most markets."
+  },
+  {
+   "a": "f829",
+   "b": "f12031",
+   "type": "same",
+   "note": "Both recommend ISO 13849 or IEC 62061 for the safety-case intervention chain."
+  },
+  {
+   "a": "f12288",
+   "b": "f12032",
+   "type": "same",
+   "note": "Both place the internal safety board under ISO 19014 and ISO 13849."
+  },
+  {
+   "a": "f12031",
+   "b": "f15272",
+   "type": "elaborates",
+   "note": "Limits the intervention-chain mapping to where ISO 19014 does not reach."
+  },
+  {
+   "a": "f7455",
+   "b": "f12031",
+   "type": "elaborates",
+   "note": "Adds performance-level or integrity assignment and fault testing to the intervention-chain recommendation."
+  },
+  {
+   "a": "f11981",
+   "b": "f6580",
+   "type": "supports",
+   "note": "Defines the safety-function category applied to automatic braking."
+  },
+  {
+   "a": "f15264",
+   "b": "f7455",
+   "type": "elaborates",
+   "note": "Clarifies that ISO 13849 alone does not assign the collision function's required Performance Level."
+  },
+  {
+   "a": "f11972",
+   "b": "f15264",
+   "type": "elaborates",
+   "note": "Describes risk inputs for selecting a level rather than prescribing a collision-specific level."
+  },
+  {
+   "a": "f8942",
+   "b": "f11198",
+   "type": "same",
+   "note": "Both report that ISO 13849 was not verified in the research."
+  },
+  {
+   "a": "f8942",
+   "b": "f1613",
+   "type": "contradicts",
+   "note": "Unverified acceptance rules qualify the broad claim about who accepts validation evidence."
+  },
+  {
+   "a": "f11198",
+   "b": "f7455",
+   "type": "contradicts",
+   "note": "Unverified standards qualify the stated intervention-path requirements."
+  },
+  {
+   "a": "f12376",
+   "b": "f15007",
+   "type": "elaborates",
+   "note": "Places generic control-system coverage within the broader hierarchy of machinery safety standards."
+  },
+  {
+   "a": "f15168",
+   "b": "f15264",
+   "type": "elaborates",
+   "note": "Adds ISO 6165 scope and ISO 13849's role for subsystems and other machines."
+  },
+  {
+   "a": "f15264",
+   "b": "f15272",
+   "type": "supports",
+   "note": "Sector and subsystem boundaries explain the skeleton's conditional use of ISO 13849."
+  },
+  {
+   "a": "f15260",
+   "b": "f15268",
+   "type": "elaborates",
+   "note": "Adds seven-part structure and sector descendants to IEC 61508's parent-standard role."
+  },
+  {
+   "a": "f15268",
+   "b": "f15339",
+   "type": "elaborates",
+   "note": "Explains the agricultural descendant's scope and relationship to machinery functional-safety frameworks."
+  },
+  {
+   "a": "f11972",
+   "b": "f12035",
+   "type": "elaborates",
+   "note": "Connects the Performance Level concept to machine-tailored levels a through e."
+  },
+  {
+   "a": "f7455",
+   "b": "f12115",
+   "type": "elaborates",
+   "note": "Adds a specific common-cause-failure assessment method to intervention-path safety engineering."
+  }
+ ]
+}

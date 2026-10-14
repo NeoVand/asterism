@@ -1,0 +1,67 @@
+{
+ "key": "e:dspace",
+ "hash": "7856de9a78f800d1",
+ "synopsis": "dSPACE’s cited vehicle-in-the-loop evidence is vendor-supplied and on-road: its intended testing chain stimulates camera, radar and ultrasound and observes responses through brakes and steering, while automotive documentation also describes camera-box limitations and downstream raw-image injection [f408, f545, f5252]. Its DARTS blog of 11 September 2019 claims radar simulation from 0.6 to 3,600 meters, 6 cm range resolution and up to five real objects in the radar test bench [f5310, f5311]. dSPACE advertises mining-truck environments with vehicle dynamics and physics-based sensor simulation, but the glossary characterizes AURELION with SIMPHERA specifically as commercial, supported by on-road-only evidence, with no public price found—leaving a gap between advertised off-road capability and the evidence identified for that package [f4126, f15895]. The booklet identifies a supported ASM–AURELION–VEOS–ModelDesk chain, OpenSCENARIO XML and OpenDRIVE support, SIMPHERA’s reliance on dSPACE ecosystem interfaces, bench integration and RoadRunner exports to dSPACE; some legacy integration technology has announced end-of-life schedules [f8704, f8616, f9205, f15897, f15999, f8894]. dSPACE benches feature in the highest-cost example chain and its real-time products are identified as computing hardware; separately, dSPACE reports that UNECE WP.29 added virtual testing to R171 at the end of 2024 [f9306, f16167, f16180, f1276].",
+ "relations": [
+  {
+   "a": "f545",
+   "b": "f408",
+   "type": "elaborates",
+   "note": "Specifies stimulated sensors and observed actuator responses in the vehicle-in-the-loop chain."
+  },
+  {
+   "a": "f5252",
+   "b": "f545",
+   "type": "elaborates",
+   "note": "Adds camera-stimulation limitations and a downstream injection approach."
+  },
+  {
+   "a": "f5310",
+   "b": "f408",
+   "type": "elaborates",
+   "note": "Provides quantitative vendor specifications for radar stimulation."
+  },
+  {
+   "a": "f5311",
+   "b": "f5310",
+   "type": "elaborates",
+   "note": "Adds object-count capacity to the same dated radar test-bench claims."
+  },
+  {
+   "a": "f15895",
+   "b": "f4126",
+   "type": "contradicts",
+   "note": "On-road-only package evidence contrasts with advertised mining-truck capability; scopes differ."
+  },
+  {
+   "a": "f15897",
+   "b": "f9205",
+   "type": "elaborates",
+   "note": "Bench integration specifies one connection within SIMPHERA’s dSPACE ecosystem."
+  },
+  {
+   "a": "f8616",
+   "b": "f8704",
+   "type": "elaborates",
+   "note": "Adds supported scenario and road-description standards to the identified tool chain."
+  },
+  {
+   "a": "f15999",
+   "b": "f8616",
+   "type": "elaborates",
+   "note": "Adds a RoadRunner-to-dSPACE content-transfer route alongside shared format support."
+  },
+  {
+   "a": "f16167",
+   "b": "f9306",
+   "type": "elaborates",
+   "note": "Expands the highest-cost bench example with dynamics, sensor simulation and cloud execution."
+  },
+  {
+   "a": "f16180",
+   "b": "f9306",
+   "type": "elaborates",
+   "note": "Identifies the real-time computing hardware category underlying the bench suppliers."
+  }
+ ]
+}

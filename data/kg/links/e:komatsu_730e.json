@@ -1,0 +1,49 @@
+{
+ "key": "e:komatsu 730e",
+ "hash": "2872e8627358489c",
+ "synopsis": "The Komatsu 730E appears alongside the 860E in Wabtec’s first Level 9 validation with Komatsu, conducted in December 2021 at speeds up to 30 km/h [f817]. Chapter 2 and the glossary report that these tests demonstrated controlled deceleration; the mining case is also described as using Level 9 slow-and-stop functionality [f1345, f15781, f1832, f1833]. Chapter 1 states that Wabtec’s Level 9 Collision Awareness System covers both truck models up to 30 km/h [f1073]. For virtual-validation planning, the important limitation is that physical testing still dominated the integration stage in this case; the supplied facts do not establish a virtual-only validation precedent [f1347].",
+ "relations": [
+  {
+   "a": "f1345",
+   "b": "f15781",
+   "type": "same",
+   "note": "Glossary repeats the date, truck models, speed limit and controlled-deceleration result."
+  },
+  {
+   "a": "f1345",
+   "b": "f1833",
+   "type": "same",
+   "note": "Both report December 2021 validation of controlled deceleration up to 30 km/h."
+  },
+  {
+   "a": "f15781",
+   "b": "f1833",
+   "type": "same",
+   "note": "Both state the same dated controlled-deceleration result; glossary additionally names the trucks."
+  },
+  {
+   "a": "f1345",
+   "b": "f817",
+   "type": "elaborates",
+   "note": "Adds controlled-deceleration results to the dated validation event."
+  },
+  {
+   "a": "f1345",
+   "b": "f1073",
+   "type": "supports",
+   "note": "Test results substantiate stated Level 9 coverage for both models up to 30 km/h."
+  },
+  {
+   "a": "f1832",
+   "b": "f817",
+   "type": "elaborates",
+   "note": "Identifies slow-and-stop functionality used in the December 2021 validation case."
+  },
+  {
+   "a": "f1347",
+   "b": "f817",
+   "type": "elaborates",
+   "note": "Clarifies that physical testing dominated integration in this validation case."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t245",
+ "hash": "9a9578379bd3d1c4",
+ "synopsis": "NRC Regulatory Guide 1.203, issued in December 2005, defines EMDAP as four elements comprising 20 steps; PIRT ranks important physical phenomena, while BEPU reports a best-estimate result with quantified uncertainty rather than stacked conservative assumptions [f7651, f7652, f14640, f14647]. EMDAP grounds model assessment in physical experiments, emphasizes highly ranked phenomena, and requires scaling, applicability justification and uncertainty treatment when extending predictions beyond the assessment matrix or physical scale [f14644, f7836, f7661, f7663]. For automatic braking, the proposed adaptation separates component-level tests from coupled full-machine tests and uses PIRT-ranked phenomena to decide which physical tests to retain; this is expert guidance, not a nuclear requirement or a framework proven for off-road braking [f7669, f14651, f7670, f8094]. Within the validated parameter hull, changes not affecting ranked phenomena may use documented simulation-only evaluation, changes affecting them should trigger targeted physical tests, and departures from the hull or new phenomena warrant full re-validation [f7912, f7913, f7918]. The safety board should distinguish aleatory from epistemic uncertainty, but the booklet did not individually verify BEPU or CSAU, and its descriptions disagree over whether the criticism of subjective PIRT ranking was peer-reviewed [f8219, f7665, f14652, f7667]. No clean case was found in which simulation accepted under the cited nuclear framework directly produced false confidence; nevertheless, nuclear assumptions and models have been revised following operating experience and accidents [f7994, f7993].",
+ "relations": [
+  {
+   "a": "f14642",
+   "b": "f7652",
+   "type": "same",
+   "note": "Both identify EMDAP as four elements comprising 20 steps."
+  },
+  {
+   "a": "f14642",
+   "b": "f7651",
+   "type": "elaborates",
+   "note": "Adds EMDAP structure to the guide's December 2005 issuance."
+  },
+  {
+   "a": "f14643",
+   "b": "f7653",
+   "type": "elaborates",
+   "note": "Explains the PIRT ranking included in Element 1 requirements."
+  },
+  {
+   "a": "f14644",
+   "b": "f7654",
+   "type": "elaborates",
+   "note": "Details experiment types and scaling within the assessment base."
+  },
+  {
+   "a": "f14644",
+   "b": "f7655",
+   "type": "elaborates",
+   "note": "Places separate-effects and integral-effects tests within PIRT selection and scaling."
+  },
+  {
+   "a": "f14645",
+   "b": "f7656",
+   "type": "elaborates",
+   "note": "Also identifies Element 4's adequacy assessment."
+  },
+  {
+   "a": "f14646",
+   "b": "f14890",
+   "type": "same",
+   "note": "Both allocate physical test evidence to highly ranked phenomena."
+  },
+  {
+   "a": "f14646",
+   "b": "f7836",
+   "type": "same",
+   "note": "Both require data for highly ranked phenomena and reduce emphasis on low-ranked phenomena."
+  },
+  {
+   "a": "f14890",
+   "b": "f8092",
+   "type": "same",
+   "note": "Both retain physical evidence for highly ranked phenomena."
+  },
+  {
+   "a": "f14648",
+   "b": "f7665",
+   "type": "same",
+   "note": "Both disclose that BEPU and CSAU were not individually verified."
+  },
+  {
+   "a": "f14649",
+   "b": "f7669",
+   "type": "same",
+   "note": "Both propose component testing followed by fewer coupled full-machine tests."
+  },
+  {
+   "a": "f14650",
+   "b": "f7670",
+   "type": "same",
+   "note": "Nuclear assessment logic is an adaptation, not an earth-moving machinery requirement."
+  },
+  {
+   "a": "f14651",
+   "b": "f8030",
+   "type": "elaborates",
+   "note": "Connects the same ranked phenomena to hazard-traced scenario coverage."
+  },
+  {
+   "a": "f14652",
+   "b": "f7667",
+   "type": "contradicts",
+   "note": "Glossary calls criticism peer-reviewed; chapter says peer-review status is unclear."
+  },
+  {
+   "a": "f14837",
+   "b": "f8219",
+   "type": "same",
+   "note": "Both recommend separating aleatory and epistemic uncertainty."
+  },
+  {
+   "a": "f14625",
+   "b": "f7664",
+   "type": "same",
+   "note": "Both identify VVUQ 30.1-2024 as codifying nuclear scaling methods."
+  },
+  {
+   "a": "f8091",
+   "b": "f7661",
+   "type": "elaborates",
+   "note": "Identifies Step 19 as the mechanism for beyond-matrix scaling and applicability analysis."
+  },
+  {
+   "a": "f7913",
+   "b": "f14646",
+   "type": "depends",
+   "note": "Targeted physical retesting follows the principle that ranked phenomena require test evidence."
+  }
+ ]
+}

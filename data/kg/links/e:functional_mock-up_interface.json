@@ -1,0 +1,85 @@
+{
+ "key": "e:functional mock-up interface",
+ "hash": "1b971b7786de5350",
+ "synopsis": "The booklet treats FMI as a major generic simulation-tool integration mechanism and rates FMI/SSP as domain-neutral and transferable to off-road work [f8712, f7167, f13224]. FMI co-simulation can connect reduced-order in-house models with commercial high-fidelity components; Simulink–Mevea integration over FMI or TCP/IP is explicitly supported [f6395, f8699]. By mid-2025, the Modelica Association reported around 250 FMI-supporting tools, with extensive co-simulation support [f8713, f15863]. Recommendations call for OSI and FMI/SSP interfaces with adapters to simulation, HIL and physical automation, and for simulation-tool RFPs to require open-format export including FMI [f7203, f16487]. Adoption does not eliminate integration work: FMI-linked components are rated medium effort because semantics still require calibration, while Chapter 9 explicitly says the research did not verify FMI/SSP's status [f8729, f7165].",
+ "relations": [
+  {
+   "a": "f8713",
+   "b": "f15863",
+   "type": "same",
+   "note": "Both report about 250 FMI-supporting tools by mid-2025."
+  },
+  {
+   "a": "f7167",
+   "b": "f13224",
+   "type": "same",
+   "note": "Both rate FMI as domain-neutral and transferable to off-road work."
+  },
+  {
+   "a": "f6395",
+   "b": "f8712",
+   "type": "supports",
+   "note": "Reduced-order/high-fidelity coupling illustrates FMI's generic integration role."
+  },
+  {
+   "a": "f8699",
+   "b": "f6395",
+   "type": "supports",
+   "note": "An explicitly supported commercial pairing substantiates practical FMI-based model coupling."
+  },
+  {
+   "a": "f8699",
+   "b": "f8712",
+   "type": "supports",
+   "note": "Supported Simulink–Mevea integration provides a concrete example of FMI's integration role."
+  },
+  {
+   "a": "f8713",
+   "b": "f8712",
+   "type": "supports",
+   "note": "Broad tool adoption supports FMI's importance as an integration mechanism."
+  },
+  {
+   "a": "f8712",
+   "b": "f15862",
+   "type": "elaborates",
+   "note": "Adds an importance assessment to FMI's inclusion among tool-connection standards."
+  },
+  {
+   "a": "f7167",
+   "b": "f7203",
+   "type": "supports",
+   "note": "Off-road suitability and co-simulation capability justify the recommended model interfaces."
+  },
+  {
+   "a": "f7203",
+   "b": "f16487",
+   "type": "elaborates",
+   "note": "Adds adapter and deployment requirements to the open-format procurement recommendation."
+  },
+  {
+   "a": "f8713",
+   "b": "f16487",
+   "type": "supports",
+   "note": "Extensive tool support strengthens the case for requiring FMI export in RFPs."
+  },
+  {
+   "a": "f8729",
+   "b": "f7203",
+   "type": "elaborates",
+   "note": "Interface recommendations still entail semantic calibration and medium integration effort."
+  },
+  {
+   "a": "f8729",
+   "b": "f8699",
+   "type": "elaborates",
+   "note": "Explicit tool compatibility does not remove dynamics and timing calibration work."
+  },
+  {
+   "a": "f7165",
+   "b": "f7167",
+   "type": "contradicts",
+   "note": "Unverified FMI/SSP status qualifies the same chapter's affirmative suitability assessment."
+  }
+ ]
+}

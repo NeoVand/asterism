@@ -1,0 +1,19 @@
+{
+ "key": "e:wilson interval",
+ "hash": "e923632f0a6f4be4",
+ "synopsis": "Chapter 7 identifies Wilson intervals, alongside exact-binomial intervals, as methods provided by NIST for situations where normal approximations fail, including small samples and probabilities near 0 or 1 [f5450]. Chapter 9 describes Wilson intervals as less conservative than Clopper-Pearson and better behaved at moderate sample sizes [f6893]. The glossary retains Clopper-Pearson as the conservative default when misses occur, while naming Wilson as a less conservative alternative at moderate sample sizes [f14211]. The supplied facts give no numerical sample-size threshold for choosing Wilson over Clopper-Pearson [f5450, f6893, f14211].",
+ "relations": [
+  {
+   "a": "f6893",
+   "b": "f14211",
+   "type": "supports",
+   "note": "Wilson’s comparative behavior supports its recommendation as a less conservative alternative."
+  },
+  {
+   "a": "f5450",
+   "b": "f14211",
+   "type": "elaborates",
+   "note": "Adds NIST provenance and situations where normal approximations fail."
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "key": "e:3dgs",
+ "hash": "9422193d7c8bf615",
+ "synopsis": "3DGS provides a log-trained scene representation as an alternative to explicit geometry conversion; neural reconstruction requires multi-camera logs with accurate poses, optional lidar and GPU compute [f3992, f4226]. Chapter 7 positions neural re-simulation as approximately closed-loop near the recorded trajectory, but limited for large viewpoint shifts and new sensor mounting positions, with very low off-road maturity and on-road-only evidence [f5722, f5723, f5725]. Quantitative results reinforce that limitation: XLD’s June 2024 preprint, with a 2025 v3 using synthetic CARLA data, reported PSNR falling from 30.87 dB at zero lateral shift to 19.17 dB at 4 m, while the August 2026 MV² preprint reported drone-trained 3DGS falling from 29.13 to 10.36 dB when switching to car viewpoints [f4001, f4008]. Industry preference for 3DGS editability therefore does not establish superior viewpoint robustness: XLD found two NeRF-based methods held up better than its 3DGS variant at 4 m offsets [f4329]. ISPRS 2024 reported Unreal Engine 5 performance of 60 FPS for a single building and 17 FPS for a 23-million-Gaussian terrain scene, providing hardware-in-the-loop-relevant performance results rather than resolving the generalisation gap [f3893, f3894, f4010].",
+ "relations": [
+  {
+   "a": "f3992",
+   "b": "f5721",
+   "type": "elaborates",
+   "note": "Log-trained scene representations enable re-rendering recorded scenes for neural re-simulation."
+  },
+  {
+   "a": "f4226",
+   "b": "f5721",
+   "type": "elaborates",
+   "note": "Specifies camera, pose and optional lidar requirements behind dense multi-sensor logging."
+  },
+  {
+   "a": "f4001",
+   "b": "f5724",
+   "type": "supports",
+   "note": "Measured quality degradation at 1–4 m supports reported offset artifacts."
+  },
+  {
+   "a": "f4001",
+   "b": "f5723",
+   "type": "supports",
+   "note": "Lateral-shift quality losses substantiate limits on large viewpoint changes."
+  },
+  {
+   "a": "f4003",
+   "b": "f5723",
+   "type": "supports",
+   "note": "Real-data quality losses across lanes substantiate viewpoint-shift limitations."
+  },
+  {
+   "a": "f4007",
+   "b": "f5723",
+   "type": "supports",
+   "note": "Car-to-scooter viewpoint degradation supports concerns about changing sensor mounting positions."
+  },
+  {
+   "a": "f4008",
+   "b": "f5723",
+   "type": "supports",
+   "note": "Drone-to-car viewpoint degradation demonstrates limits of major viewpoint changes."
+  },
+  {
+   "a": "f4010",
+   "b": "f5723",
+   "type": "supports",
+   "note": "Single-traversal overfitting explains poor performance on novel viewpoints and paths."
+  },
+  {
+   "a": "f4010",
+   "b": "f5722",
+   "type": "elaborates",
+   "note": "Poor novel-path generalisation qualifies usefulness near the recorded trajectory."
+  },
+  {
+   "a": "f5723",
+   "b": "f5722",
+   "type": "elaborates",
+   "note": "Defines the viewpoint boundary of approximately closed-loop evaluation."
+  },
+  {
+   "a": "f5724",
+   "b": "f5723",
+   "type": "elaborates",
+   "note": "Identifies 1–4 m offsets as an artifact-producing range."
+  },
+  {
+   "a": "f4003",
+   "b": "f5725",
+   "type": "supports",
+   "note": "Real-data lane evaluation contributes on-road evidence, not off-road validation."
+  },
+  {
+   "a": "f3878",
+   "b": "f4329",
+   "type": "elaborates",
+   "note": "Explains industry's editability preference through NeRF editing and labeling limitations."
+  },
+  {
+   "a": "f4329",
+   "b": "f5723",
+   "type": "supports",
+   "note": "Inferior 4 m robustness reinforces viewpoint limitations despite industry preference."
+  },
+  {
+   "a": "f4011",
+   "b": "f4010",
+   "type": "elaborates",
+   "note": "Identifies VEGS as addressing the single-traversal generalisation problem described by LiDAR-EVS."
+  },
+  {
+   "a": "f3894",
+   "b": "f3893",
+   "type": "elaborates",
+   "note": "Adds a larger-scene performance result: 17 FPS versus 60 FPS for one building."
+  }
+ ]
+}

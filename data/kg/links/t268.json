@@ -1,0 +1,115 @@
+{
+ "key": "t268",
+ "hash": "4b6c7d5b57813e74",
+ "synopsis": "The simulation specialist’s three core objections are an unvalidated model, simulator architecture frozen against assumed hardware, and metrics chosen for convenience after results are known; the hostile review ranks the simulator’s unearned right to replace physical evidence as its strongest objection [f14949, f14525]. Credibility requires a defined validity envelope and evidence beyond internal consistency, because shared simplifying assumptions across the virtual sensor, collision logic and test oracle can produce consistent but misleading results [f10593, f14952, f10606]. The toolchain is built against assumed hardware until mid-2027, while changes to sensors, mounting, controller timing or the brake controller in 2027 can invalidate it without impact analysis; the specialist therefore recommends resolving supplier dependencies before architecture freeze and reserving physical re-correlation tests [f14954, f14955, f14956]. Metrics and thresholds should be declared prospectively, absence of agreed correlation metrics by early 2027 is a warning sign, and physical confirmatory tests should be selected by the assessor or risk analysis rather than convenience [f14957, f14959, f14958]. Before committing to the plan, the specialist recommends a credibility-framework pilot and an evidence package covering independent held-out physical validation, uncertainty and sensitivity analysis, configuration control, revalidation rules and explicitly unsupported claims [f10602, f14961]. The cited European automated-vehicle credibility requirements are explicitly on-road, while the planning guidance calls for recording dissenting technical opinions rather than leaving objections undocumented [f14951, f10234].",
+ "relations": [
+  {
+   "a": "f10593",
+   "b": "f14950",
+   "type": "same",
+   "note": "Both identify an uncalibrated, unvalidated simulator lacking a defined validity envelope."
+  },
+  {
+   "a": "f10606",
+   "b": "f14953",
+   "type": "same",
+   "note": "Both describe misleading consistency caused by shared simplifying assumptions."
+  },
+  {
+   "a": "f10391",
+   "b": "f12446",
+   "type": "same",
+   "note": "Both describe the same seven hostile-review perspectives."
+  },
+  {
+   "a": "f14525",
+   "b": "f210",
+   "type": "elaborates",
+   "note": "The glossary specifies strongest objection; the synthesis places it among the top three."
+  },
+  {
+   "a": "f10593",
+   "b": "f14949",
+   "type": "elaborates",
+   "note": "Explains the unvalidated-model objection as a measurement-instrument credibility problem."
+  },
+  {
+   "a": "f14954",
+   "b": "f14949",
+   "type": "elaborates",
+   "note": "Dates the assumed-hardware problem to mid-2027 and ties credibility to validated configuration."
+  },
+  {
+   "a": "f14957",
+   "b": "f14949",
+   "type": "elaborates",
+   "note": "Specifies prospective metrics and thresholds as protection against retrospective metric selection."
+  },
+  {
+   "a": "f10606",
+   "b": "f210",
+   "type": "supports",
+   "note": "Common-mode errors explain why virtual evidence has not earned substitution rights."
+  },
+  {
+   "a": "f14952",
+   "b": "f10606",
+   "type": "supports",
+   "note": "Real-application validation addresses the insufficiency of internally consistent virtual results."
+  },
+  {
+   "a": "f14951",
+   "b": "f10602",
+   "type": "supports",
+   "note": "The on-road credibility requirements provide a cited rationale for adopting a credibility framework."
+  },
+  {
+   "a": "f14961",
+   "b": "f10602",
+   "type": "elaborates",
+   "note": "Details the evidence package needed to address simulator credibility objections."
+  },
+  {
+   "a": "f14961",
+   "b": "f14839",
+   "type": "elaborates",
+   "note": "Places proof against model-uncertainty dominance within a broader reviewer evidence package."
+  },
+  {
+   "a": "f14955",
+   "b": "f14954",
+   "type": "elaborates",
+   "note": "Identifies specific 2027 hardware changes that threaten configuration-specific simulator credibility."
+  },
+  {
+   "a": "f14956",
+   "b": "f14955",
+   "type": "depends",
+   "note": "Supplier resolution, early sensor freeze and re-correlation respond to hardware-change invalidation risk."
+  },
+  {
+   "a": "f14959",
+   "b": "f14957",
+   "type": "supports",
+   "note": "Missing correlation metrics by early 2027 signals failure to establish prospective acceptance measures."
+  },
+  {
+   "a": "f14960",
+   "b": "f218",
+   "type": "elaborates",
+   "note": "Specifies missing residuals, uncertainty and validity approval behind misleading scenario-count claims."
+  },
+  {
+   "a": "f219",
+   "b": "f210",
+   "type": "depends",
+   "note": "Substitution savings require the simulator first earning the right to replace physical evidence."
+  },
+  {
+   "a": "f10234",
+   "b": "f10391",
+   "type": "supports",
+   "note": "Recording dissent preserves the technical objections elicited through the seven-perspective hostile review."
+  }
+ ]
+}

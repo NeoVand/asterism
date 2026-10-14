@@ -1,0 +1,67 @@
+{
+ "key": "e:asam open simulation interface",
+ "hash": "c0385657113d0ffb",
+ "synopsis": "OSI provides domain-neutral sensor and ground-truth interfaces that the research finds transferable to off-road work, and the glossary lists it among open standards for connecting simulation tools [f7166, f15862]. Chapter 9 recommends OSI and FMI/SSP for sensor and model interfaces, with adapters to simulation, HIL and physical automation; the glossary also recommends requiring OSI export in simulation-tool RFPs [f7203, f16487]. Persival offers a concrete implementation pattern: OSI sensor models packaged as FMUs and correlated against real sensor output, while requesting an OSI-packaged black-box FMU is one of five options when suppliers withhold sensor internals [f15948, f16495]. ASAM's 2025 high-fidelity OSI project extends sensor interfaces and runs until March 2027, coinciding with the program's planned first tool-chain integration [f7169, f15870]. Despite these findings and recommendations, the research explicitly says it did not verify OSI's status, leaving a verification gap relevant to interface planning [f7165].",
+ "relations": [
+  {
+   "a": "f15870",
+   "b": "f7169",
+   "type": "elaborates",
+   "note": "Adds the project's March 2027 end date and integration timing."
+  },
+  {
+   "a": "f7166",
+   "b": "f7203",
+   "type": "supports",
+   "note": "Sensor interfaces and off-road transferability support recommending OSI."
+  },
+  {
+   "a": "f15862",
+   "b": "f7166",
+   "type": "elaborates",
+   "note": "Places OSI's interface role within a broader simulation interoperability standards stack."
+  },
+  {
+   "a": "f15948",
+   "b": "f7203",
+   "type": "supports",
+   "note": "Persival demonstrates OSI sensor models packaged as FMUs and validated against real outputs."
+  },
+  {
+   "a": "f15948",
+   "b": "f16495",
+   "type": "supports",
+   "note": "Demonstrates the OSI-plus-FMU delivery pattern proposed for suppliers withholding internals."
+  },
+  {
+   "a": "f16495",
+   "b": "f7203",
+   "type": "elaborates",
+   "note": "Adds supplier-access contingencies and an OSI/FM U black-box delivery option."
+  },
+  {
+   "a": "f16487",
+   "b": "f7203",
+   "type": "elaborates",
+   "note": "Extends interface recommendations into procurement requirements for open-format exports."
+  },
+  {
+   "a": "f15862",
+   "b": "f16487",
+   "type": "supports",
+   "note": "Identifies tool-connection standards subsequently recommended as mandatory RFP export formats."
+  },
+  {
+   "a": "f7165",
+   "b": "f7203",
+   "type": "contradicts",
+   "note": "OSI is recommended despite its status remaining unverified in the research."
+  },
+  {
+   "a": "f7165",
+   "b": "f7169",
+   "type": "contradicts",
+   "note": "Unverified OSI status sits in tension with a specific ongoing-project finding."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t253",
+ "hash": "90bb65b0377216fc",
+ "synopsis": "Distributional agreement compares the spreads of repeated simulated and measured results, rather than matching individual runs or points, because perception trials and sensor returns legitimately vary [f14749, f14750, f4801, f12621, f7802]. The booklet recommends multi-level, multi-metric validation, including distributions and downstream perception or closed-loop outcomes; sensor-family reports should use withheld real raw data rather than rely on visual realism [f14716, f14797, f10558]. In a November 2025 on-road study, density-aware Chamfer distance correlated best with perception among the metrics compared, but real-versus-simulated scans averaged DCD 0.63 with only 21% segmentation mIoU, and prediction of safety-relevant perception errors remains uncertain [f4815, f4816, f5067]. The area validation metric measures the area between simulated and measured cumulative distributions in the output quantity’s units; the booklet treats it as model-form uncertainty and describes extrapolating it to untested conditions as an additional prediction margin [f7796, f7797, f7798]. Its acceptance role is disputed because greater experimental scatter can make a model appear better, and mixing epistemic and aleatory uncertainty can produce over- or under-compensation [f7799, f7800, f8191]. Rail validation supplies an established distribution-based analogue, using at least 24 comparisons per quantity across at least 12 track sections, with statistics and limits applied to the deviations [f7803, f7804, f7805, f7807].",
+ "relations": [
+  {
+   "a": "f4441",
+   "b": "f4815",
+   "type": "same",
+   "note": "Both report DCD’s strongest correlation with perception in the November 2025 comparison."
+  },
+  {
+   "a": "f4441",
+   "b": "f12622",
+   "type": "same",
+   "note": "Glossary repeats the finding that DCD correlated best with perception."
+  },
+  {
+   "a": "f4442",
+   "b": "f4816",
+   "type": "same",
+   "note": "Same DCD and segmentation results; the latter identifies institutions and on-road scope."
+  },
+  {
+   "a": "f4442",
+   "b": "f12623",
+   "type": "same",
+   "note": "Glossary repeats DCD 0.63 and 21% segmentation agreement."
+  },
+  {
+   "a": "f4816",
+   "b": "f14702",
+   "type": "same",
+   "note": "Both report DCD 0.63 and 21% segmentation performance."
+  },
+  {
+   "a": "f7554",
+   "b": "f7804",
+   "type": "same",
+   "note": "Same rail comparison minimums; the latter adds per-quantity and test-zone scope."
+  },
+  {
+   "a": "f7804",
+   "b": "f14751",
+   "type": "same",
+   "note": "Glossary repeats rail sample minimums and adds deviation limits."
+  },
+  {
+   "a": "f7802",
+   "b": "f14750",
+   "type": "same",
+   "note": "Both require distribution comparison because nominally repeated perception trials vary."
+  },
+  {
+   "a": "f5067",
+   "b": "f14766",
+   "type": "same",
+   "note": "Both retain uncertainty about metrics predicting safety-relevant perception errors."
+  },
+  {
+   "a": "f7799",
+   "b": "f14762",
+   "type": "same",
+   "note": "Glossary repeats the warning that scatter can misleadingly improve apparent validity."
+  },
+  {
+   "a": "f7800",
+   "b": "f14762",
+   "type": "same",
+   "note": "Glossary repeats over- or under-compensation concerns when uncertainty types are mixed."
+  },
+  {
+   "a": "f7768",
+   "b": "f14761",
+   "type": "same",
+   "note": "Both describe adding area-validation results as model-form uncertainty."
+  },
+  {
+   "a": "f4801",
+   "b": "f7802",
+   "type": "supports",
+   "note": "Stochastic sensor returns explain why perception agreement requires distributions rather than single traces."
+  },
+  {
+   "a": "f5057",
+   "b": "f10558",
+   "type": "elaborates",
+   "note": "The skeptic specifies withheld raw data and technology-and-mounting-family reports for layered sensor validation."
+  },
+  {
+   "a": "f7796",
+   "b": "f7797",
+   "type": "elaborates",
+   "note": "Repeated physical and simulated stops operationalize the cumulative-distribution area metric."
+  },
+  {
+   "a": "f7797",
+   "b": "f7798",
+   "type": "depends",
+   "note": "Extrapolated prediction margins depend on estimating model-form uncertainty at validation conditions."
+  },
+  {
+   "a": "f7799",
+   "b": "f8191",
+   "type": "supports",
+   "note": "Scatter-induced apparent improvement explains disagreement over the metric’s acceptance soundness."
+  },
+  {
+   "a": "f4799",
+   "b": "f4822",
+   "type": "contradicts",
+   "note": "Listed radar-validation candidates KL and Jensen-Shannon were dismissed by the cited radar paper."
+  }
+ ]
+}

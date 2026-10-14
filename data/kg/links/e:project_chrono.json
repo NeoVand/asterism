@@ -1,0 +1,115 @@
+{
+ "key": "e:project chrono",
+ "hash": "ac200c00f15cf50e",
+ "synopsis": "Project Chrono is a free, BSD-3 open-source dynamics engine for wheeled, tracked and articulated vehicles, with rigid terrain and SCM, CRM and DEM deformable-terrain models; release 10.0.0 is dated 27 March 2026 [f15907, f8493, f8494, f8496]. Its off-road research relevance includes military and planetary mobility, NATO mobility benchmarks, and listed users including US Army organizations, NREL and JPL [f8675, f4164, f8497]. SCM authors claim empirical-model speed with fidelity comparable to discrete element methods, whereas higher-fidelity CRM runs 50–200 times slower than real time and requires an NVIDIA GPU, motivating selective use to calibrate lower-order models rather than every regression case [f6097, f8499, f8500, f8584]. Developers warn that Pacejka, TMeasy and Fiala handling tire models do not work on deformable terrain, creating a risk that tool coupling silently breaks the physics [f8498, f8725]. Experimental terrain validation is reported, but documented capabilities do not establish machine-specific emergency stopping-distance accuracy; no common production-machine stopping benchmark was found, and the skeptic chapter did not review Chrono validation literature [f8583, f6016, f6561, f10611]. Chrono is not turnkey test management, qualification-ready coupling to Isaac requires major work, and its 2020 sensor framework left real-sensor validation as future work; low-license-cost integration still carries substantial internal labor, while maintenance funding and security-patch cadence were not examined [f8501, f9280, f4341, f16128, f9392, f9393].",
+ "relations": [
+  {
+   "a": "f8492",
+   "b": "f15907",
+   "type": "same",
+   "note": "Both identify Chrono as BSD-3 open source."
+  },
+  {
+   "a": "f9022",
+   "b": "f8492",
+   "type": "same",
+   "note": "Restates Chrono's BSD-3 licensing."
+  },
+  {
+   "a": "f15924",
+   "b": "f8492",
+   "type": "same",
+   "note": "Chrono's BSD-3 license is repeated within a broader license list."
+  },
+  {
+   "a": "f8355",
+   "b": "f15988",
+   "type": "same",
+   "note": "Both list SCM, CRM and DEM terrain models."
+  },
+  {
+   "a": "f8582",
+   "b": "f8355",
+   "type": "same",
+   "note": "Duplicates the three-model terrain capability list."
+  },
+  {
+   "a": "f8494",
+   "b": "f6014",
+   "type": "elaborates",
+   "note": "Names CRM continuum SPH and DEM alongside SCM and rigid terrain."
+  },
+  {
+   "a": "f8499",
+   "b": "f16186",
+   "type": "same",
+   "note": "Both report continuum terrain running 50–200 times slower than real time."
+  },
+  {
+   "a": "f16186",
+   "b": "f16233",
+   "type": "same",
+   "note": "Duplicate continuum-soil simulation slowdown figures."
+  },
+  {
+   "a": "f15989",
+   "b": "f8499",
+   "type": "same",
+   "note": "Repeats CRM slowdown, adding a hardware requirement."
+  },
+  {
+   "a": "f8339",
+   "b": "f15970",
+   "type": "same",
+   "note": "Both warn handling tire models fail on deformable terrain."
+  },
+  {
+   "a": "f8725",
+   "b": "f15865",
+   "type": "same",
+   "note": "Both connect incompatible tire models to silently broken coupled physics."
+  },
+  {
+   "a": "f8498",
+   "b": "f15970",
+   "type": "elaborates",
+   "note": "Names incompatible tire models and compatible tire or tracked alternatives."
+  },
+  {
+   "a": "f8496",
+   "b": "f8301",
+   "type": "same",
+   "note": "Both date release 10.0.0 to 27 March 2026."
+  },
+  {
+   "a": "f8497",
+   "b": "f8676",
+   "type": "same",
+   "note": "Both list US Army, NREL and JPL users."
+  },
+  {
+   "a": "f8500",
+   "b": "f16193",
+   "type": "same",
+   "note": "Both flag community-raised NVIDIA dependency risk."
+  },
+  {
+   "a": "f8583",
+   "b": "f10611",
+   "type": "contradicts",
+   "note": "Validation evidence contrasts with the skeptic's unreviewed literature; broad braking adequacy remains unestablished."
+  },
+  {
+   "a": "f8499",
+   "b": "f8584",
+   "type": "supports",
+   "note": "CRM's severe runtime cost supports selective calibration rather than universal regression use."
+  },
+  {
+   "a": "f4341",
+   "b": "f3741",
+   "type": "supports",
+   "note": "Chrono's sensor-validation deferral provides a specific instance of the broader simulator gap."
+  }
+ ]
+}

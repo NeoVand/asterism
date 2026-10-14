@@ -1,0 +1,25 @@
+{
+ "key": "e:diffusion models",
+ "hash": "8e9c389dadbcdc7c",
+ "synopsis": "Diffusion models are listed among data-learned sensor modelling approaches, alongside GANs, neural rendering, learned noise or measurement models, world models, and learned real-to-synthetic transformations [f4483]. Chapter 6 specifically includes diffusion models among learned camera simulation methods [f4565]. Chapter 9 warns that generative models, including diffusion models, can produce plausible but physically wrong scenes, so visual plausibility alone does not establish physical correctness [f7096]. The supplied facts identify their potential use and this limitation, but provide no diffusion-specific performance figures or validation results [f4483, f4565, f7096].",
+ "relations": [
+  {
+   "a": "f4565",
+   "b": "f4483",
+   "type": "elaborates",
+   "note": "Specifies camera simulation as a use within the broader learned sensor modelling category."
+  },
+  {
+   "a": "f7096",
+   "b": "f4483",
+   "type": "elaborates",
+   "note": "Adds a physical-correctness risk to the listed generative sensor modelling approaches."
+  },
+  {
+   "a": "f7096",
+   "b": "f4565",
+   "type": "elaborates",
+   "note": "Qualifies learned generative camera simulation with the risk of plausible but physically wrong scenes."
+  }
+ ]
+}

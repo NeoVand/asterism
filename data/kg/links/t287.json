@@ -1,0 +1,115 @@
+{
+ "key": "t287",
+ "hash": "9c80b46d77d99a96",
+ "synopsis": "The family provides a layered machine-safety toolkit: ISO 12100 governs risk assessment and reduction, ISO 13849 and IEC 62061 address machinery control-system safety, and IEC 61508 supplies the cross-industry electronic-safety framework; ISO 12100 prioritizes design measures, then safeguards, then information for use [f15260, f15261]. ISO 13849-1:2023 is the generic machinery method, including software, but does not prescribe the collision-braking function's required Performance Level: that assignment must come from application-specific risk analysis or a type-C standard, with ISO 19014 providing the earth-moving sector framework [f2194, f2350, f12029]. The intervention path needs a Performance Level or integrity assignment and fault testing; for a team starting in October 2026, a safety-case skeleton using ISO 13849 or IEC 62061 alongside ISO 19014 is considered realistic by mid-2027 [f7455, f829]. ISO 13849-2:2012 permits simulation, including software simulation of faults, but only among several validation methods; its validation-plan structure is recommended for this project [f9767, f10294, f9986]. The booklet says the 2012 edition remains current, with an Edition 3 draft issued in 2026, but neither that draft nor ISO 13849-1:2023 and IEC 62061:2021 were reviewed, limiting confidence in detailed compliance claims [f9766, f9768, f9769]. IEC 61508-3 tool classes T1–T3 are used as a simulator-qualification reference, yet their provisions and the proven-in-use route were not verified in detail; the fit of IEC 61508 and IEC 62061 as alternatives also remains unverified [f15269, f15271, f12054].",
+ "relations": [
+  {
+   "a": "f2195",
+   "b": "f2350",
+   "type": "same",
+   "note": "Both deny a prescribed collision-function PL; the latter identifies its source."
+  },
+  {
+   "a": "f2195",
+   "b": "f2716",
+   "type": "same",
+   "note": "Both state ISO 13849-1 does not set the collision-braking PL."
+  },
+  {
+   "a": "f2195",
+   "b": "f12029",
+   "type": "same",
+   "note": "Glossary repeats the absence of a prescribed collision-function PL."
+  },
+  {
+   "a": "f2349",
+   "b": "f15264",
+   "type": "same",
+   "note": "Both retain ISO 13849 for generic subsystems and machines outside earth-moving scope."
+  },
+  {
+   "a": "f2194",
+   "b": "f2715",
+   "type": "same",
+   "note": "Both identify the published fourth edition as the generic control-system safety standard."
+  },
+  {
+   "a": "f9458",
+   "b": "f9767",
+   "type": "same",
+   "note": "Both list simulation as validation; the latter specifies software fault simulation."
+  },
+  {
+   "a": "f9767",
+   "b": "f12030",
+   "type": "same",
+   "note": "Glossary repeats simulation and software fault simulation as permitted validation methods."
+  },
+  {
+   "a": "f9767",
+   "b": "f15265",
+   "type": "same",
+   "note": "Both identify simulation and software fault simulation in ISO 13849-2:2012."
+  },
+  {
+   "a": "f9458",
+   "b": "f12214",
+   "type": "same",
+   "note": "Both state ISO 13849-2 lists simulation among validation methods."
+  },
+  {
+   "a": "f1613",
+   "b": "f12288",
+   "type": "same",
+   "note": "Both identify internal safety boards and customers as evidence acceptors in most markets."
+  },
+  {
+   "a": "f7455",
+   "b": "f15273",
+   "type": "same",
+   "note": "Both require intervention-path safety-level assignment and fault testing."
+  },
+  {
+   "a": "f2354",
+   "b": "f12054",
+   "type": "same",
+   "note": "Both flag the same functional-safety alternatives as unverified."
+  },
+  {
+   "a": "f10544",
+   "b": "f11196",
+   "type": "same",
+   "note": "Both flag IEC 61508 tool classes and ISO 26262 qualification as unverified leads."
+  },
+  {
+   "a": "f9759",
+   "b": "f12055",
+   "type": "same",
+   "note": "Both use IEC 61508-3 T1–T3 as a tool-qualification reference."
+  },
+  {
+   "a": "f9759",
+   "b": "f15269",
+   "type": "same",
+   "note": "Glossary adds the 2010 edition and simulator application to the reference regime."
+  },
+  {
+   "a": "f9766",
+   "b": "f15054",
+   "type": "elaborates",
+   "note": "The revision status includes a 2026 draft; the published edition remains current."
+  },
+  {
+   "a": "f10294",
+   "b": "f15265",
+   "type": "elaborates",
+   "note": "Simulation permission does not make simulation the sole validation method."
+  },
+  {
+   "a": "f829",
+   "b": "f15272",
+   "type": "elaborates",
+   "note": "Glossary limits intervention-chain mapping to where ISO 19014 does not reach."
+  }
+ ]
+}

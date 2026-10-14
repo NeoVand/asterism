@@ -1,0 +1,43 @@
+{
+ "key": "e:nied",
+ "hash": "bf838e980ea107bb",
+ "synopsis": "NIED in Japan is named alongside CEREMA, CARISSMA and JARI as a main source of ground truth for weather models [f5056, f16122]. Their weather chambers, including fog chambers, support sensor-model validation, with proving grounds also contributing ground truth [f5119, f15594]. Haider et al. (2023) studied lidar in rain and fog at NIED and CARISSMA, providing a concrete example of facility use [f4731]. However, the booklet did not examine booking lead times, capacity or suitability for heavy off-road machines of the relevant size; these unresolved access questions directly affect model validation before mid-2027 [f16124, f5120].",
+ "relations": [
+  {
+   "a": "f5056",
+   "b": "f16122",
+   "type": "same",
+   "note": "Both identify the same four facilities as main ground truth for weather models."
+  },
+  {
+   "a": "f5120",
+   "b": "f16124",
+   "type": "same",
+   "note": "Both flag unexamined booking, capacity and machine-size suitability."
+  },
+  {
+   "a": "f15594",
+   "b": "f5119",
+   "type": "elaborates",
+   "note": "Specifies fog chambers as sensor-model ground truth at the four named facilities."
+  },
+  {
+   "a": "f5119",
+   "b": "f5056",
+   "type": "elaborates",
+   "note": "Adds sensor-validation scope and proving grounds to the weather ground-truth claim."
+  },
+  {
+   "a": "f4731",
+   "b": "f15594",
+   "type": "supports",
+   "note": "Lidar rain-and-fog research demonstrates use of NIED and CARISSMA for sensor studies."
+  },
+  {
+   "a": "f5119",
+   "b": "f5120",
+   "type": "supports",
+   "note": "Reliance on chambers and proving grounds explains why access gaps affect validation."
+  }
+ ]
+}

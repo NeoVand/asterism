@@ -1,0 +1,19 @@
+{
+ "key": "e:tmeasy",
+ "hash": "b0f25b8788c1160a",
+ "synopsis": "TMeasy is one of the tire-model families named in the booklet, alongside Fiala and Magic Formula (Pacejka) [f13780]. The glossary states that all three assume a firm surface [f13782]. Consistently, Chapter 11 reports the Project Chrono developers’ view that these handling tire models do not work with deformable terrain; only rigid or FEA tires and tracked vehicles do [f8498]. The supplied facts therefore identify a terrain-compatibility constraint for TMeasy, but provide no TMeasy-specific performance results or validation evidence [f8498, f13780, f13782].",
+ "relations": [
+  {
+   "a": "f13782",
+   "b": "f8498",
+   "type": "supports",
+   "note": "Firm-surface assumptions support the reported incompatibility with deformable terrain in Project Chrono."
+  },
+  {
+   "a": "f13782",
+   "b": "f13780",
+   "type": "elaborates",
+   "note": "Adds a shared firm-surface assumption to the listed tire-model families."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t217",
+ "hash": "f05245c9455ba883",
+ "synopsis": "The corpus requires separate purposes, data and governance for failure discovery, performance estimation, and requirement/regression testing; coverage designs support understanding but must not supply the release-rate claim [f133, f6935, f11334, f14143]. Discovery deliberately concentrates on failures, so its failure fraction is not an operational rate; conversely, tuning against estimation cases can understate failures by turning the audit into a measure of fit to those cases [f6842, f14287, f14288]. Performance estimation uses a frozen, pre-registered, stratified random sample from the declared operating-domain distribution, with weighting and estimators fixed before inspecting results; correctly weighted rare-event campaigns require defensible distributions and known likelihood weights [f6939, f6941, f7288, f6951]. Search-found failures should become scenarios or regression tests, with their frequency estimated separately, while the estimation set is reserved for release candidates rather than continuous tuning [f6949, f6950, f13527]. The proposed release claim uses the frozen estimation sample plus physical anchors, and a four-month deadline makes stream separation a governance priority; the glossary's statement that a frozen random sample is the “only basis” needs qualification alongside the allowance for correctly weighted rare-event estimation [f7358, f14295, f14095, f7288].",
+ "relations": [
+  {
+   "a": "f133",
+   "b": "f6665",
+   "type": "same",
+   "note": "Both require separate discovery, estimation, and requirement/regression campaigns."
+  },
+  {
+   "a": "f134",
+   "b": "f6669",
+   "type": "same",
+   "note": "Both prohibit reporting discovery failure fractions as field failure rates."
+  },
+  {
+   "a": "f6842",
+   "b": "f14151",
+   "type": "same",
+   "note": "Failure-seeking selection biases failure proportions, preventing rate estimation."
+  },
+  {
+   "a": "f6866",
+   "b": "f14169",
+   "type": "same",
+   "note": "Importance sampling requires a defensible field distribution; otherwise it is discovery."
+  },
+  {
+   "a": "f6868",
+   "b": "f14098",
+   "type": "same",
+   "note": "One design must not serve coverage, discovery, and statistical estimation."
+  },
+  {
+   "a": "f6938",
+   "b": "f14283",
+   "type": "same",
+   "note": "Discovery pools cannot supply operational rates and require explicit labeling."
+  },
+  {
+   "a": "f6939",
+   "b": "f14284",
+   "type": "same",
+   "note": "Estimation freezes a stratified operating-domain sample before tuning."
+  },
+  {
+   "a": "f7135",
+   "b": "f13527",
+   "type": "same",
+   "note": "Both forbid continuously rerunning and optimizing against the frozen estimation set."
+  },
+  {
+   "a": "f7282",
+   "b": "f14177",
+   "type": "same",
+   "note": "Adaptive selection invalidates naive binomial confidence intervals."
+  },
+  {
+   "a": "f7356",
+   "b": "f14293",
+   "type": "elaborates",
+   "note": "Glossary details tuning sources, physical anchors, and release calculation under data separation."
+  },
+  {
+   "a": "f7358",
+   "b": "f14293",
+   "type": "same",
+   "note": "Both compute release claims only from frozen estimation data plus physical anchors."
+  },
+  {
+   "a": "f6667",
+   "b": "f14284",
+   "type": "elaborates",
+   "note": "Glossary specifies distribution, timing, and nuisance-trigger frequency for the frozen sample."
+  },
+  {
+   "a": "f14287",
+   "b": "f6669",
+   "type": "supports",
+   "note": "Deliberately steering toward failures explains why discovery fractions cannot represent field rates."
+  },
+  {
+   "a": "f14288",
+   "b": "f7135",
+   "type": "supports",
+   "note": "Audit leakage explains the prohibition on tuning against frozen estimation failures."
+  },
+  {
+   "a": "f6951",
+   "b": "f14169",
+   "type": "elaborates",
+   "note": "Known operational and accelerated densities enable the required likelihood weights."
+  },
+  {
+   "a": "f6949",
+   "b": "f14157",
+   "type": "elaborates",
+   "note": "Search discoveries become scenarios or regression tests, while frequency is estimated separately."
+  },
+  {
+   "a": "f7288",
+   "b": "f14095",
+   "type": "contradicts",
+   "note": "Correctly weighted rare-event campaigns qualify, conflicting with the glossary's random-sample-only wording."
+  },
+  {
+   "a": "f14295",
+   "b": "f7356",
+   "type": "supports",
+   "note": "Deadline pressure strengthens the governance case for prohibiting shared stream data."
+  }
+ ]
+}

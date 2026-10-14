@@ -1,0 +1,31 @@
+{
+ "key": "e:liebherr",
+ "hash": "3e92fc0326136414",
+ "synopsis": "Liebherr’s wheel-loader automatic braking is described as reverse-only, within a broader off-road market offering reverse-only, low-speed or tag-dependent systems [f11393, f1239]. Its product descriptions focus on constrained rear and reverse interactions, not arbitrary forward and reverse movement across more than 100 site configurations [f1695]. Liebherr already logs warning events and GPS locations, providing a data path for proposed warning-fleet shadow-mode evaluation and braking validation [f1254, f1603]. However, no independent performance test or published validation method, validation duration or share of physical testing was found for the described Liebherr products; the glossary also reports no published weather limits or false-intervention rates [f1242, f1389, f11394].",
+ "relations": [
+  {
+   "a": "f1254",
+   "b": "f1603",
+   "type": "same",
+   "note": "Both identify existing warning-event location logging as a data path for braking evaluation."
+  },
+  {
+   "a": "f11393",
+   "b": "f1239",
+   "type": "elaborates",
+   "note": "Specifies reverse-only operation for Liebherr wheel loaders within the broader constrained-system finding."
+  },
+  {
+   "a": "f11393",
+   "b": "f1695",
+   "type": "supports",
+   "note": "Reverse-only braking supports the finding that product scope concentrates on rear and reverse interactions."
+  },
+  {
+   "a": "f11394",
+   "b": "f1389",
+   "type": "elaborates",
+   "note": "Adds weather-limit and false-intervention disclosure gaps to the shared validation-method publication gap."
+  }
+ ]
+}

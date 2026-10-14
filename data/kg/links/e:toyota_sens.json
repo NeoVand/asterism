@@ -1,0 +1,109 @@
+{
+ "key": "e:toyota sens",
+ "hash": "76be29ca81307015",
+ "synopsis": "Toyota SEnS+ launched for forklifts in August 2021 and uses a rear stereo camera to distinguish people from objects [f1675, f1405, f15785]. It provides three warning levels, speed control and reverse-start prevention; reverse slowing works by cutting power, not by applying brakes to stop the forklift [f1406, f1676, f1407, f15786]. The Toyota and Linde forklift precedents report validation of pedestrian-versus-object detection with internal evidence acceptance, but published validation methods were unavailable [f1890, f1893, f1891]. The research also found no Toyota operating conditions, capability-building or validation durations, remaining physical-testing requirements, or safety case quantifying reduced physical testing, limiting their usefulness for planning validation effort [f1679, f1892, f1894]. The glossary additionally records that field problems were not found; this is an evidence gap, not evidence that none occurred [f15788].",
+ "relations": [
+  {
+   "a": "f1407",
+   "b": "f15786",
+   "type": "same",
+   "note": "Both state that SEnS+ does not use brakes to decelerate and automatically stop."
+  },
+  {
+   "a": "f1678",
+   "b": "f15786",
+   "type": "same",
+   "note": "Both explicitly rule out braking the forklift to a stop."
+  },
+  {
+   "a": "f1407",
+   "b": "f1678",
+   "type": "same",
+   "note": "Both state the no-braking-to-stop limitation."
+  },
+  {
+   "a": "f1407",
+   "b": "f1676",
+   "type": "same",
+   "note": "Both describe power-cut slowing rather than brake application."
+  },
+  {
+   "a": "f1404",
+   "b": "f1675",
+   "type": "same",
+   "note": "Both date the forklift product to August 2021."
+  },
+  {
+   "a": "f1405",
+   "b": "f1677",
+   "type": "same",
+   "note": "Both describe stereo-camera discrimination between people and objects."
+  },
+  {
+   "a": "f15785",
+   "b": "f1404",
+   "type": "elaborates",
+   "note": "Glossary adds sensing and power-cut slowing to the August 2021 date."
+  },
+  {
+   "a": "f15785",
+   "b": "f1675",
+   "type": "elaborates",
+   "note": "Glossary adds product functionality to the launch date."
+  },
+  {
+   "a": "f15785",
+   "b": "f1405",
+   "type": "elaborates",
+   "note": "Glossary repeats rear-camera discrimination and adds date and slowing mechanism."
+  },
+  {
+   "a": "f15785",
+   "b": "f1677",
+   "type": "elaborates",
+   "note": "Glossary specifies rear placement and adds launch timing and power-cut slowing."
+  },
+  {
+   "a": "f15785",
+   "b": "f1676",
+   "type": "elaborates",
+   "note": "Glossary adds sensing and date to the shared power-cut slowing description."
+  },
+  {
+   "a": "f15788",
+   "b": "f1891",
+   "type": "same",
+   "note": "Both record unavailable validation methods; glossary also records missing field-problem evidence."
+  },
+  {
+   "a": "f1676",
+   "b": "f1406",
+   "type": "elaborates",
+   "note": "Explains how the listed speed-control function slows reverse travel."
+  },
+  {
+   "a": "f1676",
+   "b": "f1889",
+   "type": "elaborates",
+   "note": "Identifies Toyota's mechanism within the paired forklift examples."
+  },
+  {
+   "a": "f1891",
+   "b": "f1890",
+   "type": "elaborates",
+   "note": "Reported detection validation lacks published methods."
+  },
+  {
+   "a": "f1893",
+   "b": "f1890",
+   "type": "elaborates",
+   "note": "Specifies internal acceptance of the reported validation evidence."
+  },
+  {
+   "a": "f1894",
+   "b": "f1892",
+   "type": "elaborates",
+   "note": "Adds missing quantified testing-reduction evidence to missing timing and remaining-testing information."
+  }
+ ]
+}

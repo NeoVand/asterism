@@ -1,0 +1,37 @@
+{
+ "key": "e:autodrive",
+ "hash": "8fcf0762df82c349",
+ "synopsis": "AutoDRIVE is a digital-twin framework used in an off-road braking study; Samak et al. reported at GVSETS 2024 that its open-source framework supported vision-guided AEB across 128 simulated off-road test cases on high-performance computing clusters [f15934, f467]. In 2024, the AutoDRIVE team built an off-road greensward twin from a single lidar run, presented alongside forest MLS as an example of off-road lidar surveying [f3802, f4215]. The team claims a “sub-millimeter-level accurate” twin with a reported mean of 2.28e-4 m [f3860]. That accuracy figure requires caution because it appears to measure self-consistency against the team's own point cloud rather than independent ground truth [f3861].",
+ "relations": [
+  {
+   "a": "f467",
+   "b": "f15934",
+   "type": "elaborates",
+   "note": "Specifies the braking study's scale, computing infrastructure, framework availability, and reporting venue."
+  },
+  {
+   "a": "f3802",
+   "b": "f15934",
+   "type": "elaborates",
+   "note": "Adds a concrete off-road twin construction example and its acquisition method."
+  },
+  {
+   "a": "f3802",
+   "b": "f4215",
+   "type": "supports",
+   "note": "The single lidar run substantiates greensward's inclusion as an off-road lidar surveying example."
+  },
+  {
+   "a": "f3860",
+   "b": "f3802",
+   "type": "elaborates",
+   "note": "Adds the team's claimed accuracy figure for the constructed twin."
+  },
+  {
+   "a": "f3861",
+   "b": "f3860",
+   "type": "contradicts",
+   "note": "Questions claimed accuracy because the apparent reference is self-consistency, not independent ground truth."
+  }
+ ]
+}

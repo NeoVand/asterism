@@ -1,0 +1,31 @@
+{
+ "key": "e:mie theory",
+ "hash": "bf37ff6091452a6a",
+ "synopsis": "Mie theory contributes to lidar weather simulation through scattering-derived coefficients, alongside Beer–Lambert attenuation and probabilistic placement of droplets or flakes that produce false or lost returns [f4507]. Haider et al. extended a ray-traced lidar model with Mie-theory rain and fog backscatter in August 2023; this evidence is on-road [f4506]. The model matched weather-chamber measurements well at low rain rates, but mismatch increased with rain rate and depended strongly on the assumed drop-size distribution [f4413, f4414]. Chapter 8 also describes a Mie-theory rain and fog lidar model packaged as an Open Simulation Interface functional mock-up unit in Sensors work published in 2023, again with on-road evidence rather than demonstrated heavy off-road validation [f6381].",
+ "relations": [
+  {
+   "a": "f6381",
+   "b": "f4506",
+   "type": "elaborates",
+   "note": "Adds a 2023 implementation and packaging example for Mie-based rain and fog lidar simulation."
+  },
+  {
+   "a": "f4413",
+   "b": "f4506",
+   "type": "supports",
+   "note": "Weather-chamber agreement at low rain rates supports the model extension."
+  },
+  {
+   "a": "f4414",
+   "b": "f4413",
+   "type": "elaborates",
+   "note": "Qualifies low-rain agreement with increasing mismatch and drop-size sensitivity at higher rain rates."
+  },
+  {
+   "a": "f4506",
+   "b": "f4507",
+   "type": "elaborates",
+   "note": "Provides a dated implementation example of Mie-based weather effects in lidar simulation."
+  }
+ ]
+}

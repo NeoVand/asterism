@@ -1,0 +1,115 @@
+{
+ "key": "e:asme v v 40",
+ "hash": "85eb542bfc68318e",
+ "synopsis": "ASME V&V 40 (2018) is a medical-device model-credibility standard, paired in the booklet with FDA guidance issued in November 2023; its central principle is to scale credibility evidence to model influence and decision consequence within a defined context of use [f14568, f8072, f8073, f8075]. Credibility goals should be set prospectively: there is no universal acceptance error or minimum amount of remaining physical evidence, and physical testing is retained where model risk is high or validation evidence weakest [f14622, f7790, f8076, f7834, f7835]. The booklet rates this as the most transferable reasoning framework for off-road automatic braking, but it is not proven for that application and no direct earth-moving automatic-braking equivalent was found [f8077, f8078, f7740]. Its applicability is limited to physics-based models, including vehicle dynamics and brakes; machine-learned perception requires separate assurance [f14626, f14627, f8220]. Chapter 12 recommends simulation-credibility frameworks instead of TRL for assessing the validation toolchain, while acknowledging that these frameworks can be largely declarative [f10031, f10029].",
+ "relations": [
+  {
+   "a": "f8077",
+   "b": "f14626",
+   "type": "same",
+   "note": "Both identify the most transferable framework while restricting applicability to physics-based models."
+  },
+  {
+   "a": "f8220",
+   "b": "f14627",
+   "type": "same",
+   "note": "Both exclude machine-learned perception and require separate assurance."
+  },
+  {
+   "a": "f8073",
+   "b": "f14568",
+   "type": "same",
+   "note": "Both define model risk through model influence and decision consequence."
+  },
+  {
+   "a": "f14621",
+   "b": "f14568",
+   "type": "same",
+   "note": "Both define model risk as the combination of influence and consequence."
+  },
+  {
+   "a": "f9454",
+   "b": "f10293",
+   "type": "same",
+   "note": "Both tie credibility to intended use and consequences across the same frameworks."
+  },
+  {
+   "a": "f7639",
+   "b": "f14630",
+   "type": "same",
+   "note": "Both state that FDA guidance builds on ASME V&V 40."
+  },
+  {
+   "a": "f8074",
+   "b": "f14622",
+   "type": "elaborates",
+   "note": "Specifies physical-data validation and eight evidence categories alongside prospective credibility goals."
+  },
+  {
+   "a": "f8075",
+   "b": "f9454",
+   "type": "elaborates",
+   "note": "Adds that changing the context of use requires new or stronger evidence."
+  },
+  {
+   "a": "f7538",
+   "b": "f7790",
+   "type": "supports",
+   "note": "Risk-based thresholds explain why no universal acceptance error is specified."
+  },
+  {
+   "a": "f14622",
+   "b": "f7538",
+   "type": "elaborates",
+   "note": "Adds that risk-matched credibility goals must be set in advance."
+  },
+  {
+   "a": "f7834",
+   "b": "f8076",
+   "type": "elaborates",
+   "note": "Identifies high model risk as a reason to retain physical testing."
+  },
+  {
+   "a": "f7835",
+   "b": "f8076",
+   "type": "elaborates",
+   "note": "Identifies weak validation evidence as another reason to retain physical testing."
+  },
+  {
+   "a": "f8078",
+   "b": "f14626",
+   "type": "contradicts",
+   "note": "Transferability is judged favorably despite an explicit lack of proof for off-road braking."
+  },
+  {
+   "a": "f14627",
+   "b": "f8077",
+   "type": "elaborates",
+   "note": "Clarifies the scope boundary: dynamics and brakes are covered, neural networks are not."
+  },
+  {
+   "a": "f9748",
+   "b": "f14621",
+   "type": "elaborates",
+   "note": "Identifies verification, validation and uncertainty quantification as credibility-assessment means within the context of use."
+  },
+  {
+   "a": "f10028",
+   "b": "f10031",
+   "type": "supports",
+   "note": "Blind-prediction gaps motivate using credibility frameworks to assess the validation toolchain."
+  },
+  {
+   "a": "f8063",
+   "b": "f8026",
+   "type": "supports",
+   "note": "Cross-sector practice requires physical anchors, independent validation and uncertainty evidence beyond simulator results."
+  },
+  {
+   "a": "f14616",
+   "b": "f14620",
+   "type": "elaborates",
+   "note": "Distinguishes the domains of the three ASME standards among which the booklet prioritizes V&V 40."
+  }
+ ]
+}

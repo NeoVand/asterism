@@ -1,0 +1,37 @@
+{
+ "key": "e:robot operating system",
+ "hash": "13ffabcdbab0fdae",
+ "synopsis": "ROS appears across the corpus as an integration and simulation tool: NIOSH evaluated CARLA and ROS for reproducing mine environments, with a planned progression from extensive simulation through small-scale to physical testing [f3488]. TERA provides an off-road example, combining Unity and AGX with configurable excavators, environments, ROS integration and terrain-machine interaction [f4129]. ROS recordings are bags containing every message with its timestamp; ROS and Autoware offer bag-replay and simulation examples, but that evidence is explicitly on-road [f13013, f5607]. ROS 2 is identified as the current generation and is integrated in CARLA, Isaac Sim, Gazebo and BeamNG [f16240]. MathWorks lists ROS among its platform interfaces, but ROS-linked components still require medium relative integration effort because materials, actors, dynamics and timing semantics need calibration despite existing transport and schemas [f8383, f8961, f8729].",
+ "relations": [
+  {
+   "a": "f8383",
+   "b": "f8961",
+   "type": "same",
+   "note": "Both list MathWorks interfaces, with additional format and partner detail in f8383."
+  },
+  {
+   "a": "f13013",
+   "b": "f5607",
+   "type": "supports",
+   "note": "Timestamped message recordings provide the data basis for bag replay."
+  },
+  {
+   "a": "f16240",
+   "b": "f3488",
+   "type": "elaborates",
+   "note": "Identifies ROS 2 integration in CARLA, a tool named in NIOSH simulation research."
+  },
+  {
+   "a": "f8729",
+   "b": "f8383",
+   "type": "elaborates",
+   "note": "Qualifies listed interfaces with integration effort and remaining semantic calibration needs."
+  },
+  {
+   "a": "f8729",
+   "b": "f8961",
+   "type": "elaborates",
+   "note": "Adds integration-effort and calibration qualifications to the platform interface list."
+  }
+ ]
+}

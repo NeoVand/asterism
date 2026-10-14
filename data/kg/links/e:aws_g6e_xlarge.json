@@ -1,0 +1,61 @@
+{
+ "key": "e:aws g6e.xlarge",
+ "hash": "ba41aa51ce216314",
+ "synopsis": "Chapter 11 and the glossary report third-party on-demand pricing of about USD 1.861 per hour for AWS g6e.xlarge with one NVIDIA L40S; Chapter 11 specifies 4 vCPUs, 32 GiB and us-east-1 Linux pricing in 2026 [f8310, f16062, f8855]. At that rate, illustrative compute costs are USD 1,861 for 1,000 GPU-hours, USD 18,610 for 10,000 and USD 186,100 for 100,000 [f8867]. Ten instances running continuously for 122 days cost about USD 54,490 and deliver at most about 29,000 GPU-hours, excluding software licenses, storage, network egress, orchestration and support [f8869, f8868]. A one-year EC2 Instance Savings Plan lowers the quoted rate to about USD 1.17 per hour, while spot pricing is uncertain: two trackers quoted USD 0.427 and USD 1.8348 per hour [f8859, f8860]. The glossary additionally quotes about USD 30.131 per hour for eight such processors, without specifying that configuration [f16062].",
+ "relations": [
+  {
+   "a": "f8310",
+   "b": "f16062",
+   "type": "same",
+   "note": "Both quote USD 1.861 hourly on demand for one L40S in US East."
+  },
+  {
+   "a": "f8310",
+   "b": "f8855",
+   "type": "same",
+   "note": "Same instance and hourly rate; f8855 adds hardware, operating system and year."
+  },
+  {
+   "a": "f8855",
+   "b": "f16062",
+   "type": "same",
+   "note": "Restate the single-GPU rate; glossary also includes an eight-processor price."
+  },
+  {
+   "a": "f16062",
+   "b": "f8867",
+   "type": "supports",
+   "note": "Glossary's single-GPU hourly rate underpins the GPU-hour cost arithmetic."
+  },
+  {
+   "a": "f8855",
+   "b": "f8869",
+   "type": "supports",
+   "note": "Published single-instance rate underpins the ten-instance, 122-day cost estimate."
+  },
+  {
+   "a": "f8868",
+   "b": "f8867",
+   "type": "elaborates",
+   "note": "Identifies excluded costs and clarifies estimates are arithmetic, not comprehensive budgets."
+  },
+  {
+   "a": "f8868",
+   "b": "f8869",
+   "type": "elaborates",
+   "note": "Compute-only exclusions also qualify the continuous-operation budget."
+  },
+  {
+   "a": "f8859",
+   "b": "f8855",
+   "type": "elaborates",
+   "note": "Adds a lower hourly rate conditional on a one-year Savings Plan."
+  },
+  {
+   "a": "f8860",
+   "b": "f8855",
+   "type": "elaborates",
+   "note": "Adds fluctuating spot alternatives to the on-demand pricing baseline."
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "key": "e:slam",
+ "hash": "b1e92f5536abe4fe",
+ "synopsis": "SLAM is one of three approaches presented for measuring real sites in three dimensions, using a moving machine’s own sensors rather than overlapping photographs or laser distance measurements [f13133]. The booklet treats it as a method in its own right because a large installed fleet can supply recordings for site-model acquisition [f13140]. Machine-log reconstruction using classical SLAM, SfM and meshing requires synchronised cameras, lidar, IMU and GNSS, together with calibration [f4216]. A key limitation is visibility bias in forward-facing route logs: they do not observe stockpile backs or upper surfaces that a taller future sensor could see, leaving gaps in the reconstructed site [f13141].",
+ "relations": [
+  {
+   "a": "f4216",
+   "b": "f13140",
+   "type": "elaborates",
+   "note": "Specifies sensor synchronisation and calibration requirements for turning fleet recordings into site models."
+  },
+  {
+   "a": "f13140",
+   "b": "f13133",
+   "type": "elaborates",
+   "note": "Explains the fleet-acquisition rationale for treating SLAM as a distinct site-measurement method."
+  },
+  {
+   "a": "f13141",
+   "b": "f4216",
+   "type": "elaborates",
+   "note": "Adds a route-log visibility limitation to the machine-log reconstruction workflow."
+  },
+  {
+   "a": "f13141",
+   "b": "f13140",
+   "type": "elaborates",
+   "note": "Qualifies fleet-based acquisition: forward-facing recordings leave some site surfaces unobserved."
+  }
+ ]
+}

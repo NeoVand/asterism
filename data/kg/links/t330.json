@@ -1,0 +1,115 @@
+{
+ "key": "t330",
+ "hash": "3a2361ed5c77a08c",
+ "synopsis": "Cloud execution rents computing capacity by the hour for parallel simulations, matching bursty demand that could otherwise leave purchased machines idle; vendor clouds run particular simulators, while generic clouds rent raw machines [f16057, f16058, f16059, f16061]. Quoted 2026 public rates include AWS g6e.xlarge with one L40S at about USD 1.861/hour, eight-L40S capacity at USD 30.131/hour, and Google g2-standard-32 with one L4 at USD 1.734/hour; a one-year AWS commitment lowers the single-L40S rate to about USD 1.17/hour [f8855, f8858, f8861, f8859]. Spot capacity suits checkpointable regression rather than deterministic HIL or irreplaceable long jobs, and its quoted AWS prices vary widely between trackers [f8864, f8860]. Compute is described as cheap relative to engineering labor, but the four-month window limits throughput: ten single-processor instances running continuously for 122 days cost roughly USD 54,000 and provide at most about 29,000 processor-hours [f16070, f16071]. Public prices were not found for the named simulator-vendor clouds, and vendor terms, export controls and data residency were not researched; sensitive site scans, mine layouts and machine CAD motivate an on-premises or private-cloud option [f9256, f16068, f16069]. Procurement should price concurrent workers and cloud rights rather than desktop seats alone, recheck regional prices, and address capacity constraints with multi-region planning, justified reservations and a local fallback [f16486, f8865, f8925, f8926].",
+ "relations": [
+  {
+   "a": "f8310",
+   "b": "f8855",
+   "type": "same",
+   "note": "Same AWS single-L40S hourly price; the latter adds configuration and date."
+  },
+  {
+   "a": "f8311",
+   "b": "f8861",
+   "type": "same",
+   "note": "Same Google instance and hourly price; the latter adds CPU and memory specifications."
+  },
+  {
+   "a": "f9260",
+   "b": "f16064",
+   "type": "same",
+   "note": "Same Google g2-standard-32 single-L4 hourly price."
+  },
+  {
+   "a": "f8311",
+   "b": "f9260",
+   "type": "same",
+   "note": "Restates Google's price with a 2026 date."
+  },
+  {
+   "a": "f9258",
+   "b": "f16062",
+   "type": "same",
+   "note": "Same AWS on-demand price endpoints; glossary identifies corresponding GPU counts."
+  },
+  {
+   "a": "f8859",
+   "b": "f16063",
+   "type": "elaborates",
+   "note": "Identifies the one-year commitment as an EC2 Instance Savings Plan."
+  },
+  {
+   "a": "f8860",
+   "b": "f16063",
+   "type": "elaborates",
+   "note": "Supplies the two tracker prices underlying the reported wide spot-price fluctuation."
+  },
+  {
+   "a": "f8864",
+   "b": "f16065",
+   "type": "same",
+   "note": "Both recommend interruptible capacity for restartable regression, not deterministic HIL or irreplaceable jobs."
+  },
+  {
+   "a": "f9256",
+   "b": "f16060",
+   "type": "same",
+   "note": "Both report missing public prices for the same five vendor-cloud offerings."
+  },
+  {
+   "a": "f8662",
+   "b": "f16059",
+   "type": "same",
+   "note": "Both identify the same five simulator-vendor cloud offerings."
+  },
+  {
+   "a": "f8368",
+   "b": "f8662",
+   "type": "elaborates",
+   "note": "The combined list adds Applied Intuition and MORAI to the three named offerings."
+  },
+  {
+   "a": "f8369",
+   "b": "f16059",
+   "type": "elaborates",
+   "note": "Specifies that Applied Intuition and MORAI offer large-scale cloud simulation."
+  },
+  {
+   "a": "f8427",
+   "b": "f8368",
+   "type": "same",
+   "note": "Both describe VTDx as the cloud variant of Virtual Test Drive."
+  },
+  {
+   "a": "f8862",
+   "b": "f8925",
+   "type": "same",
+   "note": "Both cite Google's location and capacity constraints; the latter also mentions quotas."
+  },
+  {
+   "a": "f8865",
+   "b": "f16066",
+   "type": "same",
+   "note": "Both recommend rechecking regional cloud prices at purchase."
+  },
+  {
+   "a": "f9307",
+   "b": "f16167",
+   "type": "same",
+   "note": "Both include cloud execution in the highest-cost example tool chain."
+  },
+  {
+   "a": "f8925",
+   "b": "f8926",
+   "type": "supports",
+   "note": "Location and quota constraints motivate capacity planning, reservations and a local fallback."
+  },
+  {
+   "a": "f16071",
+   "b": "f16070",
+   "type": "supports",
+   "note": "The 122-day capacity estimate quantifies the program's time-limited simulation throughput."
+  }
+ ]
+}

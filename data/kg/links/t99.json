@@ -1,0 +1,115 @@
+{
+ "key": "t99",
+ "hash": "61bb801bf7390c7d",
+ "synopsis": "Sensor fusion combines measurements into a more reliable scene, aligning outputs in space and time; multi-technology systems are the norm in mining collision avoidance, but both raw-data and object-list fusion require accurate calibration and a shared clock [f12708, f12709, f12710, f680]. Complementary sensing does not eliminate perception validation: the safety argument must cover disagreement and common-cause degradation, supported by physical evidence for environmental contrast, contamination, calibration and correlated failures [f504, f681, f505, f506]. Synthetic scenes must provide consistent geometry and timing across modalities; separately validating sensors does not prove the fused stack correct, and the booklet identifies both cross-sensor consistency and function-level validation as gaps, recommending outcomes such as false and missed brakes [f5101, f5086]. Replay of object lists tests downstream fusion and decisions, not perception, while reliable ground truth should combine complementary sensors, accurate pose estimation and an explicit “truth unavailable” state when all sensors degrade [f5628, f5391, f12715]. A construction RGB–lidar de-dusting study published in December 2024 scored 65.58% in one far, dense-dust case versus 94.85–96.73% in other cases of the same scenario, demonstrating a substantial condition-specific performance gap [f10564]. Bosch's camera–radar tram system and a Daimler presentation dated 29 July 2025 provide relevant precedents, but industry signals do not establish sensor diversity's effectiveness, and the Daimler example concerns on-road rather than heavy-off-road validation [f1417, f1748, f1334, f1822].",
+ "relations": [
+  {
+   "a": "f505",
+   "b": "f12117",
+   "type": "same",
+   "note": "Both require common-cause degradation and modality disagreement in the fusion safety argument."
+  },
+  {
+   "a": "f505",
+   "b": "f12712",
+   "type": "same",
+   "note": "Adding sensing requires fusion validation covering shared degradation and disagreement."
+  },
+  {
+   "a": "f10564",
+   "b": "f12627",
+   "type": "same",
+   "note": "Both report the same dense-dust performance drop."
+  },
+  {
+   "a": "f10564",
+   "b": "f12716",
+   "type": "same",
+   "note": "Both describe the same RGB–lidar dust-removal study and scores."
+  },
+  {
+   "a": "f12627",
+   "b": "f12716",
+   "type": "same",
+   "note": "Duplicate construction fusion performance figures."
+  },
+  {
+   "a": "f680",
+   "b": "f1053",
+   "type": "same",
+   "note": "Identical claim that multi-technology systems are normal in mining collision avoidance."
+  },
+  {
+   "a": "f680",
+   "b": "f12711",
+   "type": "same",
+   "note": "Glossary restates mining's use of multi-technology systems."
+  },
+  {
+   "a": "f1053",
+   "b": "f12711",
+   "type": "same",
+   "note": "Both state the same mining architecture norm."
+  },
+  {
+   "a": "f1417",
+   "b": "f15774",
+   "type": "same",
+   "note": "Identical description of Bosch's camera–radar tram assistance."
+  },
+  {
+   "a": "f442",
+   "b": "f678",
+   "type": "same",
+   "note": "Both identify Epiroc Titan as a multi-technology fusion example."
+  },
+  {
+   "a": "f1334",
+   "b": "f1822",
+   "type": "same",
+   "note": "Both describe the 2025 Daimler on-road fusion and AEB validation precedent."
+  },
+  {
+   "a": "f5631",
+   "b": "f12720",
+   "type": "same",
+   "note": "Both warn that missing transforms prevent later projection into a common frame."
+  },
+  {
+   "a": "f5506",
+   "b": "f5578",
+   "type": "same",
+   "note": "Both describe OSI exchange between environment, sensor, fusion and function models."
+  },
+  {
+   "a": "f5101",
+   "b": "f12713",
+   "type": "same",
+   "note": "Both require mutually consistent synthetic geometry and timing across sensors."
+  },
+  {
+   "a": "f5101",
+   "b": "f12714",
+   "type": "same",
+   "note": "Both identify separate sensor validation as insufficient to establish fused-stack correctness."
+  },
+  {
+   "a": "f5391",
+   "b": "f12715",
+   "type": "elaborates",
+   "note": "Glossary adds an explicit unavailable-truth state to complementary reference sensing."
+  },
+  {
+   "a": "f4309",
+   "b": "f5101",
+   "type": "supports",
+   "note": "Re-weathered imagery may mismatch other modalities, motivating cross-sensor consistency checks."
+  },
+  {
+   "a": "f10564",
+   "b": "f506",
+   "type": "supports",
+   "note": "Dense-dust degradation supports requiring physical evidence under correlated environmental failures."
+  }
+ ]
+}

@@ -29,7 +29,7 @@
 	const items = $derived(
 		block.items.map((it, i) => {
 			const { num, unit } = split(it.value);
-			const long = num.length > (cols === 3 ? 6 : 9);
+			const long = num.length > (cols === 3 ? 5 : 8);
 			return { ...it, key: `${i}:${it.label}`, num, unit, long };
 		})
 	);

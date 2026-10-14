@@ -1,0 +1,115 @@
+{
+ "key": "t239",
+ "hash": "ebf5ebee7575d9e1",
+ "synopsis": "Model risk combines a simulation’s influence on a decision with the consequence of getting that decision wrong, and determines the credibility evidence required; although described as influence multiplied by consequence, it is operationalized as a low/medium/high grid rather than a formula with units [f14567, f7597, f14570]. Across the frameworks reviewed, credibility is conditional on a defined use and operating envelope, with risk-scaled verification, physical-data validation, uncertainty assessment and independent review; the comparisons include ASME V&V 40 (2018), FDA guidance from November 2023, NASA-STD-7009B (2024) and its February 2026 handbook, while NATM evidence is explicitly on-road [f186, f8073, f9454, f9760]. Credibility goals must be agreed before evidence collection, and neither a universal agreement tolerance nor a universal minimum or percentage of physical testing is prescribed [f7642, f7538, f7646, f14577]. For this collision-mitigation program, the physical brake model is judged probably the highest-risk model because of wear, temperature and braking consequences, while sensor models in dust, darkness and glare also carry high risk because validation is weakest there [f14574, f14575]. The resulting planning recommendation is to rate each claim’s risk and retain physical confirmation for high-consequence or weak-model claims; broad procedural scene coverage alone is not adequate if generation rules omit the structures that cause real failures [f14579, f10552, f10990, f3736].",
+ "relations": [
+  {
+   "a": "f186",
+   "b": "f7525",
+   "type": "same",
+   "note": "Both identify the shared core requirements of simulation credibility frameworks."
+  },
+  {
+   "a": "f3736",
+   "b": "f13165",
+   "type": "same",
+   "note": "Broad procedural variety is worthless when generation rules omit real failure structures."
+  },
+  {
+   "a": "f3792",
+   "b": "f13165",
+   "type": "same",
+   "note": "Both warn that broad parameter ranges cannot compensate for missing failure-generating structure."
+  },
+  {
+   "a": "f4193",
+   "b": "f3793",
+   "type": "same",
+   "note": "Both identify omitted failure structures and implausible combinations as procedural-generation risks."
+  },
+  {
+   "a": "f7606",
+   "b": "f14608",
+   "type": "same",
+   "note": "NASA requires credibility effort proportional to decision risk established through criticality assessment."
+  },
+  {
+   "a": "f7646",
+   "b": "f14634",
+   "type": "same",
+   "note": "FDA sets no universal evidence minimum; requirements depend on risk and context."
+  },
+  {
+   "a": "f8209",
+   "b": "f14574",
+   "type": "same",
+   "note": "Both tentatively rank the physical brake model highest-risk because of variability and consequences."
+  },
+  {
+   "a": "f7641",
+   "b": "f14631",
+   "type": "elaborates",
+   "note": "The glossary places FDA's model-risk rating after defining the question and context of use."
+  },
+  {
+   "a": "f8073",
+   "b": "f14568",
+   "type": "same",
+   "note": "Both attribute influence-and-consequence model risk to ASME V&V 40-2018."
+  },
+  {
+   "a": "f7597",
+   "b": "f14570",
+   "type": "elaborates",
+   "note": "The glossary clarifies that multiplication language is implemented through a qualitative risk grid."
+  },
+  {
+   "a": "f7642",
+   "b": "f14622",
+   "type": "supports",
+   "note": "FDA and ASME independently require prospective credibility goals commensurate with model risk."
+  },
+  {
+   "a": "f8065",
+   "b": "f14572",
+   "type": "same",
+   "note": "NASA criticality assessment determines required credibility, paralleling the model-risk grid."
+  },
+  {
+   "a": "f8156",
+   "b": "f9760",
+   "type": "same",
+   "note": "Both make simulation credibility conditional on intended use and the consequence of error."
+  },
+  {
+   "a": "f8168",
+   "b": "f14577",
+   "type": "elaborates",
+   "note": "The glossary explicitly rejects universal physical-test percentages and tolerances under risk-based allocation."
+  },
+  {
+   "a": "f7834",
+   "b": "f14578",
+   "type": "same",
+   "note": "Both retain physical testing where model risk is high."
+  },
+  {
+   "a": "f14575",
+   "b": "f10990",
+   "type": "supports",
+   "note": "Weak sensor validation supports retaining physical tests for poor sensor-environment correlation."
+  },
+  {
+   "a": "f7883",
+   "b": "f10552",
+   "type": "supports",
+   "note": "Braking's highest decision consequence supports physical confirmation of intervention-related safety claims."
+  },
+  {
+   "a": "f8027",
+   "b": "f10277",
+   "type": "elaborates",
+   "note": "The evidence package operationalizes wrong-result cost assessment through explicit decision, context and risk ratings."
+  }
+ ]
+}

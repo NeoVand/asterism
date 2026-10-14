@@ -1,0 +1,43 @@
+{
+ "key": "e:mean absolute error",
+ "hash": "33a3107638521c28",
+ "synopsis": "Chapter 5 reports that Para-Lane lidar mapping achieved 1.3 cm mean absolute error on road scenes after pose refinement or optimisation [f3721, f3858, f3804]. The fuller account describes a reduction in map thickness error from 4.5 cm to 1.3 cm [f3804]. The glossary repeats the 1.3 cm laser-scanning road-scene result, rather than providing separate validation [f13138]. The supplied evidence is on-road; these facts do not establish equivalent accuracy for heavy off-road job sites [f3721, f13138, f3858, f3804].",
+ "relations": [
+  {
+   "a": "f3721",
+   "b": "f13138",
+   "type": "same",
+   "note": "Both report 1.3 cm mean absolute error for road-scene laser mapping."
+  },
+  {
+   "a": "f3858",
+   "b": "f13138",
+   "type": "same",
+   "note": "The glossary restates the road-scene accuracy result attributed to Para-Lane in Chapter 5."
+  },
+  {
+   "a": "f3804",
+   "b": "f13138",
+   "type": "same",
+   "note": "Both cite the same 1.3 cm road-scene result; Chapter 5 includes the baseline."
+  },
+  {
+   "a": "f3721",
+   "b": "f3858",
+   "type": "same",
+   "note": "Matching accuracy, setting and refinement method; one explicitly names Para-Lane."
+  },
+  {
+   "a": "f3804",
+   "b": "f3721",
+   "type": "same",
+   "note": "Same refined lidar mapping result; the fuller statement adds the initial error."
+  },
+  {
+   "a": "f3804",
+   "b": "f3858",
+   "type": "same",
+   "note": "Same Para-Lane result after pose optimisation, with additional baseline and error-measure detail."
+  }
+ ]
+}

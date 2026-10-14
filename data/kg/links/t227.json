@@ -1,0 +1,115 @@
+{
+ "key": "t227",
+ "hash": "c97b3f3f126e2a05",
+ "synopsis": "The booklet presents genetic algorithms, NSGA-II, Bayesian optimization and gradient-free search as ways to tune settings through slow simulations; it matches evolutionary methods to braking trade-offs, Bayesian optimization to expensive HIL or physical evaluations, and response surfaces to a few smooth parameters [f14417, f14427, f14428, f14425]. Evolutionary methods, including NSGA-II attributed to Deb and colleagues in 2002, expose the Pareto frontier and parallelise readily, but require many evaluations and leave the acceptable trade-off to policy [f14420, f6970, f7319]. Bayesian optimization uses surrogate predictions and uncertainty for sample-efficient trial selection, but weakens beyond roughly 20 parameters or around discontinuities and can wrongly extrapolate safety [f6974, f7325, f6979]. Although gradient-free search suits threshold-like braking outcomes, this does not remove Bayesian methods’ discontinuity limitations; evolutionary tuning also needs nested validation and independent confirmation to control over-fitting [f14418, f7325, f7320, f7321]. Transfer methods reuse a tuned machine model and search residual settings, but risk negative transfer, while safe multi-task optimization remains research rather than established heavy-machinery practice [f7031, f7341, f7034]. The evidence is predominantly generic engineering: the booklet identifies no specific off-road evidence for evolutionary or Bayesian tuning and no off-road collision-avoidance application of the discussed transfer methods [f7322, f7328, f7035].",
+ "relations": [
+  {
+   "a": "f6673",
+   "b": "f14425",
+   "type": "same",
+   "note": "Both match response surfaces to a few smooth tuning parameters."
+  },
+  {
+   "a": "f6970",
+   "b": "f14421",
+   "type": "supports",
+   "note": "Chapter evidence supports the glossary’s robustness and parallelisation assessment."
+  },
+  {
+   "a": "f6972",
+   "b": "f14421",
+   "type": "supports",
+   "note": "High evaluation demand supports the glossary’s cost warning."
+  },
+  {
+   "a": "f7319",
+   "b": "f14413",
+   "type": "same",
+   "note": "Both leave selection of an acceptable Pareto point to policy."
+  },
+  {
+   "a": "f7320",
+   "b": "f14317",
+   "type": "same",
+   "note": "Both link evolutionary over-fitting risk to trying many configurations."
+  },
+  {
+   "a": "f6974",
+   "b": "f14422",
+   "type": "same",
+   "note": "Both describe surrogate-and-uncertainty-driven sequential trial selection."
+  },
+  {
+   "a": "f7323",
+   "b": "f14428",
+   "type": "same",
+   "note": "Both recommend Bayesian optimization for expensive HIL or physical evaluations."
+  },
+  {
+   "a": "f6975",
+   "b": "f14423",
+   "type": "elaborates",
+   "note": "Adds named frontier-seeking variants and their 2024 research context."
+  },
+  {
+   "a": "f6976",
+   "b": "f14423",
+   "type": "same",
+   "note": "Both describe safe Bayesian variants as restricting exploration."
+  },
+  {
+   "a": "f6977",
+   "b": "f14424",
+   "type": "supports",
+   "note": "Provides the roughly 20-parameter scaling limit summarized in the glossary."
+  },
+  {
+   "a": "f6978",
+   "b": "f14424",
+   "type": "supports",
+   "note": "Identifies surrogate error, discontinuity difficulties and adaptive bias."
+  },
+  {
+   "a": "f6979",
+   "b": "f14424",
+   "type": "supports",
+   "note": "Supports the warning that apparently safe extrapolation can be wrong."
+  },
+  {
+   "a": "f7325",
+   "b": "f14418",
+   "type": "contradicts",
+   "note": "Gradient-free suitability for threshold outcomes is qualified by Bayesian difficulty with discontinuities."
+  },
+  {
+   "a": "f7317",
+   "b": "f14427",
+   "type": "same",
+   "note": "Both match evolutionary tuning to braking performance trade-offs."
+  },
+  {
+   "a": "f7031",
+   "b": "f14452",
+   "type": "same",
+   "note": "Both describe tuned-model priors and residual-only searches for new machines."
+  },
+  {
+   "a": "f7340",
+   "b": "f7031",
+   "type": "same",
+   "note": "Restates prior reuse and residual-only transfer tuning."
+  },
+  {
+   "a": "f7034",
+   "b": "f7342",
+   "type": "same",
+   "note": "Both identify safe multi-task optimization as research rather than established practice."
+  },
+  {
+   "a": "f7342",
+   "b": "f14454",
+   "type": "same",
+   "note": "Glossary repeats the research status of safe multi-task transfer optimization."
+  }
+ ]
+}

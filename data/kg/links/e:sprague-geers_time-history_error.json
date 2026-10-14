@@ -1,0 +1,43 @@
+{
+ "key": "e:sprague-geers time-history error",
+ "hash": "37cc23786f638af0",
+ "synopsis": "The booklet presents Sprague-Geers time-history error as one of several metrics for assessing simulation agreement; it compares magnitude and phase across a whole time trace [f7553, f7763]. The glossary confirms that the method used for the booklet’s reported comparison figures combines magnitude and phase terms [f14743]. Chapter 10 cites its use in FAA seat certification and gives an example acceptance guideline of 10% [f7764]. In the worked example, measured and simulated load peaks are 1,315 lb and 1,360 lb, respectively; the 3.42% peak error and 7.2% Sprague-Geers error both meet that guideline [f7781, f7782]. The supplied facts establish this threshold for the FAA example, not a general acceptance threshold for heavy off-road machine validation [f7764, f7782].",
+ "relations": [
+  {
+   "a": "f14743",
+   "b": "f7763",
+   "type": "same",
+   "note": "Both describe the metric as combining magnitude and phase comparisons."
+  },
+  {
+   "a": "f7763",
+   "b": "f7553",
+   "type": "elaborates",
+   "note": "Defines the time-history metric listed among simulation-agreement measures."
+  },
+  {
+   "a": "f14743",
+   "b": "f7553",
+   "type": "elaborates",
+   "note": "Specifies the magnitude-and-phase formulation used for reported comparison figures."
+  },
+  {
+   "a": "f7781",
+   "b": "f7764",
+   "type": "elaborates",
+   "note": "Provides measured and simulated peaks and the FAA example’s resulting time-history error."
+  },
+  {
+   "a": "f7782",
+   "b": "f7781",
+   "type": "elaborates",
+   "note": "Adds peak error and confirms both errors meet the example guideline."
+  },
+  {
+   "a": "f7782",
+   "b": "f7764",
+   "type": "depends",
+   "note": "The within-guideline finding relies on the example’s 10% acceptance criterion."
+  }
+ ]
+}

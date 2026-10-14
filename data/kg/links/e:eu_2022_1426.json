@@ -1,0 +1,115 @@
+{
+ "key": "e:eu 2022/1426",
+ "hash": "ad008086dfe34b49",
+ "synopsis": "EU Implementing Regulation 2022/1426 covers automated-driving-system type approval for fully automated road vehicles, not off-road machines; Chapter 10 nevertheless identifies its credibility framework as functionally relevant to off-road automatic braking [f7672, f2214, f8100]. The regulation is dated 5 August 2022, entered into force on 15 September 2022, and is cited in a consolidated version dated 24 March 2026 [f7671]. Annex III Part 4 requires documented model validation, manufacturer-defined acceptance thresholds, ODD-representative data, criticality assessment, characterized variability, and a defined envelope for using the virtual tool; evidence of team competence is also required [f7673, f7674, f7810, f10594, f10596]. Physical tests validate the toolchain and confirm the system, and Part 3 explicitly states that simulation shall not substitute for physical tests, qualifying Chapter 13's language about simulation replacing physical evidence [f7840, f10597, f10473]. Planning guidance recommends an early, two-page credibility-plan dry run against Annex III Part 4 to expose missing elements [f16536, f10922]. There is a cross-chapter scope tension: Chapter 3 says the regulation's contents were not reviewed, whereas later chapters provide detailed requirements and planning uses [f2214, f7674, f10922].",
+ "relations": [
+  {
+   "a": "f7588",
+   "b": "f10594",
+   "type": "same",
+   "note": "Both require the credibility assessment to define the virtual tool's usable envelope."
+  },
+  {
+   "a": "f7588",
+   "b": "f7675",
+   "type": "same",
+   "note": "Both assign envelope definition to the credibility assessment."
+  },
+  {
+   "a": "f7588",
+   "b": "f8003",
+   "type": "same",
+   "note": "Both state the requirement to define the envelope."
+  },
+  {
+   "a": "f7588",
+   "b": "f8098",
+   "type": "same",
+   "note": "Same envelope requirement; the latter identifies Annex III Part 4."
+  },
+  {
+   "a": "f10597",
+   "b": "f15410",
+   "type": "same",
+   "note": "Both state that simulation shall not substitute for physical tests."
+  },
+  {
+   "a": "f7671",
+   "b": "f8095",
+   "type": "same",
+   "note": "Same regulation dates; the former adds exact dates and entry into force."
+  },
+  {
+   "a": "f7674",
+   "b": "f8097",
+   "type": "same",
+   "note": "Restate documented validation, thresholds, ODD-reflective data, and variability requirements."
+  },
+  {
+   "a": "f7674",
+   "b": "f10595",
+   "type": "elaborates",
+   "note": "Specifies what documented model validation must contain."
+  },
+  {
+   "a": "f7674",
+   "b": "f7928",
+   "type": "elaborates",
+   "note": "Places ODD-representative validation data within a broader set of credibility requirements."
+  },
+  {
+   "a": "f7810",
+   "b": "f7674",
+   "type": "elaborates",
+   "note": "Identifies manufacturers as responsible for setting and documenting each model's thresholds."
+  },
+  {
+   "a": "f10922",
+   "b": "f16536",
+   "type": "elaborates",
+   "note": "Turns the recommended dry run into a two-page plan for revealing missing elements."
+  },
+  {
+   "a": "f2214",
+   "b": "f8100",
+   "type": "elaborates",
+   "note": "Adds functional off-road relevance while preserving the on-road-only applicability boundary."
+  },
+  {
+   "a": "f2214",
+   "b": "f7674",
+   "type": "contradicts",
+   "note": "Chapter 3 reports no content review; Chapter 10 presents detailed regulatory requirements."
+  },
+  {
+   "a": "f10473",
+   "b": "f10597",
+   "type": "contradicts",
+   "note": "Replacement language is in tension with the explicit prohibition on substituting simulation for physical tests."
+  },
+  {
+   "a": "f7840",
+   "b": "f10597",
+   "type": "supports",
+   "note": "Physical tests retain both toolchain-validation and system-confirmation roles."
+  },
+  {
+   "a": "f7841",
+   "b": "f10594",
+   "type": "depends",
+   "note": "Virtual ODD coverage is limited by the envelope established through credibility assessment."
+  },
+  {
+   "a": "f9747",
+   "b": "f15410",
+   "type": "elaborates",
+   "note": "Glossary identifies the annex connection as NATM and adds the physical-test limitation."
+  },
+  {
+   "a": "f10596",
+   "b": "f8026",
+   "type": "supports",
+   "note": "Required team-competence evidence illustrates why simulator results alone are insufficient."
+  }
+ ]
+}

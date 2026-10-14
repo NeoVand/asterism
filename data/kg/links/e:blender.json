@@ -1,0 +1,49 @@
+{
+ "key": "e:blender",
+ "hash": "c36905618af41738",
+ "synopsis": "Blender appears as a procedural scene-generation tool for construction, with a 2023 Automation in Construction example scripting scenes using real lighting captured on two dates; CropCraft, an open-source Blender and Python tool dated November 2025, extends its use to agricultural fields [f3733, f3789, f4133, f3787]. Blender pipelines are also listed among systems that automatically provide labels for procedural and simulated scenes, with both independent and vendor evidence attached to that claim [f3975, f3976]. For construction worker detection, a secondary summary in the 2025 Midjourney paper attributes a 50% reduction in required real images and a 16% detector-performance improvement to Kim et al.’s 2023 Blender-rendered synthetic-worker study [f7049, f7050]. In sensor simulation, SynFog (2024) paired a physical fog chamber with a one-to-one Blender virtual twin and found simulated per-channel trends consistently followed real captures as fog density increased, but this evidence is on-road [f4563]. The listed construction and excavation examples, including procedural Blender datasets, are camera-centric, so these facts do not establish equivalent coverage for other sensor modalities or heavy off-road automatic-braking validation [f4137, f4563].",
+ "relations": [
+  {
+   "a": "f3789",
+   "b": "f4133",
+   "type": "same",
+   "note": "Both describe the 2023 Blender construction datasets using real lighting from two dates."
+  },
+  {
+   "a": "f3975",
+   "b": "f3976",
+   "type": "same",
+   "note": "Same automatic-labeling claim, with independent and vendor evidence respectively."
+  },
+  {
+   "a": "f3733",
+   "b": "f3789",
+   "type": "elaborates",
+   "note": "Specifies a dated construction example and its real-lighting inputs."
+  },
+  {
+   "a": "f3733",
+   "b": "f4137",
+   "type": "elaborates",
+   "note": "Clarifies that the listed procedural construction examples are camera-centric."
+  },
+  {
+   "a": "f3733",
+   "b": "f7049",
+   "type": "elaborates",
+   "note": "Quantifies reduced real-image needs for a Blender construction-worker dataset."
+  },
+  {
+   "a": "f3733",
+   "b": "f7050",
+   "type": "elaborates",
+   "note": "Adds a reported detector-performance benefit from Blender-rendered construction workers."
+  },
+  {
+   "a": "f7049",
+   "b": "f7050",
+   "type": "elaborates",
+   "note": "Adds the same study’s performance gain alongside its real-image reduction."
+  }
+ ]
+}

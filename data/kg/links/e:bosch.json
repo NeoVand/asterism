@@ -1,0 +1,91 @@
+{
+ "key": "e:bosch",
+ "hash": "72a4a62252b3cd0a",
+ "synopsis": "Bosch's tram collision assistance combines camera and radar to detect vehicles, pedestrians and cyclists, warn the driver and brake automatically; Bosch says the technology was adapted from automotive systems [f1417, f15774, f1419, f15776]. Approval for public transport was reported by 2016, but the development duration, physical-versus-virtual validation split and approving body's evidence package are not publicly established in the corpus [f1420, f15777, f1421, f1422, f15778, f1423]. Bosch presents radar as improving detection in fog, rain and at night, but this remains a vendor claim rather than independent validation evidence [f1418, f15775, f1746, f1749]. The tram system is therefore an industry signal supporting sensor diversity, not proof of its effectiveness or that radar alone resolves adverse-environment validation [f1748, f1749].",
+ "relations": [
+  {
+   "a": "f1420",
+   "b": "f15777",
+   "type": "same",
+   "note": "Both report public-transport approval by 2016."
+  },
+  {
+   "a": "f1417",
+   "b": "f15774",
+   "type": "same",
+   "note": "Both describe camera-radar detection, driver warning and automatic braking."
+  },
+  {
+   "a": "f1418",
+   "b": "f15775",
+   "type": "same",
+   "note": "Both report radar's claimed detection benefits in fog, rain and darkness."
+  },
+  {
+   "a": "f1419",
+   "b": "f15776",
+   "type": "same",
+   "note": "Both identify automotive systems as the technology's origin."
+  },
+  {
+   "a": "f1421",
+   "b": "f15778",
+   "type": "same",
+   "note": "Both identify missing development-duration information; glossary also includes the validation-split gap."
+  },
+  {
+   "a": "f1422",
+   "b": "f15778",
+   "type": "same",
+   "note": "Both identify an unavailable validation split; glossary also includes the duration gap."
+  },
+  {
+   "a": "f1418",
+   "b": "f1746",
+   "type": "same",
+   "note": "Both present radar's adverse-weather and nighttime benefits as Bosch claims."
+  },
+  {
+   "a": "f15775",
+   "b": "f1746",
+   "type": "same",
+   "note": "Restates radar's detection benefits while explicitly identifying their vendor provenance."
+  },
+  {
+   "a": "f1417",
+   "b": "f1746",
+   "type": "elaborates",
+   "note": "Adds claimed adverse-weather benefits and vendor provenance to the camera-radar configuration."
+  },
+  {
+   "a": "f15774",
+   "b": "f1748",
+   "type": "supports",
+   "note": "Camera-radar pairing supplies the Bosch example underlying the sensor-diversity industry signal."
+  },
+  {
+   "a": "f1749",
+   "b": "f15775",
+   "type": "elaborates",
+   "note": "Qualifies claimed radar benefits: independent proof of adverse-environment validation closure is absent."
+  },
+  {
+   "a": "f1423",
+   "b": "f15777",
+   "type": "elaborates",
+   "note": "Reported approval does not come with a publicly detailed approving-body evidence package."
+  },
+  {
+   "a": "f15778",
+   "b": "f1420",
+   "type": "elaborates",
+   "note": "Approval date is known, but development duration and validation allocation remain unavailable."
+  },
+  {
+   "a": "f1749",
+   "b": "f1748",
+   "type": "elaborates",
+   "note": "Adds the specific lack of independent radar-only proof to broader sensor-diversity uncertainty."
+  }
+ ]
+}

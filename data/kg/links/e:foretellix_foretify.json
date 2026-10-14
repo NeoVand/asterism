@@ -1,0 +1,67 @@
+{
+ "key": "e:foretellix foretify",
+ "hash": "27e63d1ff35825b4",
+ "synopsis": "Foretellix Foretify is a commercial tool for coverage-driven scenario generation, constrained random variation and large-scale validation management [f8620, f16019]. It supports an OpenSCENARIO DSL and integrations with external simulators, but is not itself a machine or soil physics engine [f8622, f8627]. A 2021 partnership with Volvo Autonomous Solutions adapted Foretify for mines and quarries, providing independent evidence of off-road applicability [f16020, f9184]. An integration with NVIDIA DRIVE was announced [f8624]. The corpus found neither a public price nor a version date or latest release, leaving cost and release currency unresolved [f8628, f9186, f8629, f9187].",
+ "relations": [
+  {
+   "a": "f8620",
+   "b": "f9183",
+   "type": "same",
+   "note": "Both identify Foretify as commercial."
+  },
+  {
+   "a": "f8628",
+   "b": "f9186",
+   "type": "same",
+   "note": "Both report no price found; one explicitly specifies public pricing."
+  },
+  {
+   "a": "f8621",
+   "b": "f16019",
+   "type": "same",
+   "note": "Both describe coverage-driven generation with constrained random variation; the glossary also includes management."
+  },
+  {
+   "a": "f8622",
+   "b": "f16019",
+   "type": "elaborates",
+   "note": "Adds OpenSCENARIO DSL and external-simulator integration to the glossary's validation-management description."
+  },
+  {
+   "a": "f8622",
+   "b": "f9185",
+   "type": "same",
+   "note": "Both state OpenSCENARIO DSL support and external-simulator integration."
+  },
+  {
+   "a": "f16020",
+   "b": "f9184",
+   "type": "same",
+   "note": "Both identify the 2021 Volvo partnership as evidence of mines-and-quarries applicability."
+  },
+  {
+   "a": "f9184",
+   "b": "f16020",
+   "type": "elaborates",
+   "note": "Classifies partnership evidence as independent and additionally names Mining V-Suite."
+  },
+  {
+   "a": "f8621",
+   "b": "f8361",
+   "type": "supports",
+   "note": "Scenario-generation capabilities justify inclusion among scenario-generation and test-management offerings."
+  },
+  {
+   "a": "f8624",
+   "b": "f8622",
+   "type": "supports",
+   "note": "The announced NVIDIA DRIVE integration provides a named example of integration capability."
+  },
+  {
+   "a": "f8627",
+   "b": "f16019",
+   "type": "elaborates",
+   "note": "Clarifies that scenario generation and validation management do not include machine or soil physics."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "e:ipg carmaker",
+ "hash": "66d063007a3eb8e2",
+ "synopsis": "CarMaker/TruckMaker and IPG’s off-highway stack are commercial, near-complete simulation offerings targeting construction, agriculture and mining, with closed-loop vehicle, driver, environment and sensor simulation for MIL/SIL/HIL/VIL [f8347, f15894, f8436, f8989]. The stack supports camera, radar, lidar and other environment sensors plus actuator and ECU coupling; it fits rigid-vehicle and system dynamics well, but high-fidelity deformable soil and particle interaction are not its main role [f8440, f8443]. Vendor-claimed off-highway applications include Linde lidar accident prevention and tractor vehicle-in-the-loop, but independent evidence for severe dust, snow or glare on heavy machines was not found [f15893, f8444]. The only ultrasonic simulation validation found was Schmoll et al. (2024), comparing a CarMaker model against a real Continental sensor; although labeled independent on-road evidence, it included IPG and Continental authors, and publicly accessible details do not establish performance across the requested heavy-off-road weather and soiling matrix [f4761, f4575, f4577]. Integration routes include AVxcelerate Sensors co-simulation and RoadRunner environment exports, although RoadRunner’s base editor remains road-oriented [f15946, f15999, f8701]. The latest CarMaker release found was version 15.0, dated 2025; IPG offers consulting and engineering, but public prices and CarMaker frame rates were not found [f8994, f8806, f8993, f4957].",
+ "relations": [
+  {
+   "a": "f4575",
+   "b": "f4761",
+   "type": "same",
+   "note": "Both describe the 2024 CarMaker ultrasonic validation against a real Continental sensor."
+  },
+  {
+   "a": "f4577",
+   "b": "f8444",
+   "type": "supports",
+   "note": "Available ultrasonic study details do not close the heavy-machine adverse-weather evidence gap."
+  },
+  {
+   "a": "f15893",
+   "b": "f8990",
+   "type": "same",
+   "note": "Both cite Linde lidar and tractor VIL as vendor-claimed off-highway applications."
+  },
+  {
+   "a": "f8440",
+   "b": "f8991",
+   "type": "same",
+   "note": "Both list camera, radar, lidar and other environment sensors."
+  },
+  {
+   "a": "f8436",
+   "b": "f8992",
+   "type": "elaborates",
+   "note": "Interface listing adds ECU coupling and FMI to the simulation-stage coverage."
+  },
+  {
+   "a": "f8441",
+   "b": "f8994",
+   "type": "same",
+   "note": "Both identify CarMaker version 15.0 in 2025."
+  },
+  {
+   "a": "f16100",
+   "b": "f8806",
+   "type": "same",
+   "note": "Both describe IPG consulting around CarMaker, TruckMaker and the off-highway stack."
+  },
+  {
+   "a": "f15892",
+   "b": "f8989",
+   "type": "same",
+   "note": "Both identify the IPG offerings as commercial."
+  },
+  {
+   "a": "f15892",
+   "b": "f8993",
+   "type": "same",
+   "note": "Both report that public prices were not found."
+  },
+  {
+   "a": "f15946",
+   "b": "f8532",
+   "type": "same",
+   "note": "Both document AVxcelerate Sensors co-simulation with CarMaker and CARLA."
+  },
+  {
+   "a": "f15946",
+   "b": "f8705",
+   "type": "same",
+   "note": "Both document AVxcelerate Sensors co-simulation with CarMaker and CARLA."
+  },
+  {
+   "a": "f8532",
+   "b": "f8705",
+   "type": "same",
+   "note": "Duplicate statements of AVxcelerate co-simulation support."
+  },
+  {
+   "a": "f9061",
+   "b": "f15946",
+   "type": "elaborates",
+   "note": "Adds SIL/HIL support to the shared CarMaker and CARLA co-simulation claim."
+  },
+  {
+   "a": "f15999",
+   "b": "f8701",
+   "type": "same",
+   "note": "Both identify RoadRunner environment exports to CARLA, dSPACE and CarMaker."
+  },
+  {
+   "a": "f8606",
+   "b": "f8701",
+   "type": "same",
+   "note": "Both identify RoadRunner exports to CARLA, dSPACE ASM and CarMaker."
+  },
+  {
+   "a": "f15999",
+   "b": "f8606",
+   "type": "same",
+   "note": "Both describe RoadRunner-family exports to CARLA, dSPACE and CarMaker, with different additional details."
+  },
+  {
+   "a": "f8711",
+   "b": "f8436",
+   "type": "supports",
+   "note": "Industry demonstration combines CarMaker vehicle simulation with HIL radar emulation."
+  },
+  {
+   "a": "f8443",
+   "b": "f8347",
+   "type": "elaborates",
+   "note": "Qualifies near-complete platform status with limits on deformable soil and particle interaction."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "e:iec 61508",
+ "hash": "8a3c2c3b3b243aa2",
+ "synopsis": "IEC 61508 is described as the seven-part parent standard for electrical, electronic and programmable safety systems across industries, defining functional safety through correct responses to inputs and faults [f15268, f11991]. Its Safety Integrity Levels range from SIL 1 to SIL 4; for frequently acting functions, SIL 1 permits a dangerous-failure probability band of one per 100,000 to one per million hours [f12050, f12051]. Chapter 10 presents proven in use as a compliance route for reused elements, requiring identical or highly similar elements and use conditions plus justified service history; the glossary adds sufficiently few failures to support a statistical claim [f7933, f7934, f12351]. IEC 61508 practice reportedly demands higher confidence than the 70% used in the ISO 26262 formula, but proven in use does not validate a simulator, and adding automatic braking changes the item relative to the fielded warning system [f7936, f14926]. For planning, IEC 61508 remains an alternative whose status and fit were not verified, and neither its off-line tool classes T1–T3 nor its proven-in-use provisions were verified in detail [f2354, f12054, f10544, f15271].",
+ "relations": [
+  {
+   "a": "f2354",
+   "b": "f12054",
+   "type": "same",
+   "note": "Both identify the same general alternatives while leaving their suitability or status unverified."
+  },
+  {
+   "a": "f10544",
+   "b": "f11196",
+   "type": "same",
+   "note": "Both flag tool-confidence standards as relevant but unverified."
+  },
+  {
+   "a": "f10544",
+   "b": "f15271",
+   "type": "elaborates",
+   "note": "Specifies T1–T3 within the glossary's unverified software-tool provisions."
+  },
+  {
+   "a": "f7933",
+   "b": "f14925",
+   "type": "same",
+   "note": "Both define proven in use as a route for reusing fielded elements."
+  },
+  {
+   "a": "f7934",
+   "b": "f12351",
+   "type": "elaborates",
+   "note": "Glossary adds sufficiently few failures and statistical justification to Chapter 10's acceptance conditions."
+  },
+  {
+   "a": "f7934",
+   "b": "f7933",
+   "type": "elaborates",
+   "note": "Sets acceptance conditions for the reused-element compliance route."
+  },
+  {
+   "a": "f7936",
+   "b": "f12353",
+   "type": "same",
+   "note": "Both contrast IEC 61508 confidence with ISO 26262's 70 percent."
+  },
+  {
+   "a": "f7936",
+   "b": "f12056",
+   "type": "same",
+   "note": "Both report higher confidence requirements in IEC 61508 proven-in-use practice."
+  },
+  {
+   "a": "f12056",
+   "b": "f12353",
+   "type": "same",
+   "note": "Same confidence comparison; the latter specifies the ISO 26262 percentage."
+  },
+  {
+   "a": "f15270",
+   "b": "f7936",
+   "type": "same",
+   "note": "Both state that IEC 61508 proven-in-use practice demands higher confidence."
+  },
+  {
+   "a": "f15270",
+   "b": "f12056",
+   "type": "same",
+   "note": "Both describe the higher confidence demanded for IEC 61508 proven-in-use claims."
+  },
+  {
+   "a": "f15270",
+   "b": "f12353",
+   "type": "same",
+   "note": "Restates the higher-confidence comparison without specifying 70 percent."
+  },
+  {
+   "a": "f7934",
+   "b": "f14926",
+   "type": "supports",
+   "note": "Required similarity explains why adding automatic braking limits credit from a fielded warning system."
+  },
+  {
+   "a": "f15271",
+   "b": "f7933",
+   "type": "elaborates",
+   "note": "Qualifies the identified compliance route: its IEC 61508 provisions were not verified in detail."
+  },
+  {
+   "a": "f12048",
+   "b": "f12050",
+   "type": "same",
+   "note": "Both define the four-level safety-integrity grading scale."
+  },
+  {
+   "a": "f12051",
+   "b": "f12050",
+   "type": "elaborates",
+   "note": "Adds the dangerous-failure-per-hour interpretation and SIL 1 numerical band."
+  },
+  {
+   "a": "f12049",
+   "b": "f15268",
+   "type": "same",
+   "note": "Both describe IEC 61508 as the cross-industry standard for electronic safety systems."
+  },
+  {
+   "a": "f15260",
+   "b": "f15268",
+   "type": "same",
+   "note": "Both identify IEC 61508 as the cross-industry parent for electronic safety systems."
+  }
+ ]
+}

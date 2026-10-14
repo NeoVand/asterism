@@ -1,0 +1,49 @@
+{
+ "key": "e:soil contact model",
+ "hash": "0593461afcd3ecfd",
+ "synopsis": "The Soil Contact Model (SCM) is a semi-empirical terramechanics approach used to represent braking force and sinkage on soft ground [f6096, f6461, f13834]. Chapters 5 and 8 place SCM within Chrono's terrain capabilities, describing Bekker-Wong pressure-sinkage modelling alongside rigid terrain and more computationally expensive granular or deformable alternatives; Chapter 8 also identifies shear parameters [f3961, f6014]. The SCM authors claim in a peer-reviewed paper that their open-source model runs as fast as empirical models while offering fidelity “comparable” to discrete-element methods [f6097, f6463]. That performance comparison is an attributed author claim: the supplied facts provide no quantitative benchmark or independent confirmation [f6097, f6463].",
+ "relations": [
+  {
+   "a": "f3961",
+   "b": "f6014",
+   "type": "same",
+   "note": "Both describe Chrono's terrain options, including SCM with Bekker-Wong pressure-sinkage."
+  },
+  {
+   "a": "f13834",
+   "b": "f6461",
+   "type": "same",
+   "note": "Both identify semi-empirical terramechanics as representing soft-soil braking force and sinkage."
+  },
+  {
+   "a": "f6097",
+   "b": "f6463",
+   "type": "same",
+   "note": "Both attribute DEM-comparable fidelity to SCM's authors."
+  },
+  {
+   "a": "f6461",
+   "b": "f13834",
+   "type": "elaborates",
+   "note": "Adds Bekker-Wong and Altair soft soil as alternative models."
+  },
+  {
+   "a": "f6096",
+   "b": "f13834",
+   "type": "elaborates",
+   "note": "Identifies Bekker-Wong alongside SCM within the semi-empirical model class."
+  },
+  {
+   "a": "f6014",
+   "b": "f3961",
+   "type": "elaborates",
+   "note": "Adds shear parameters and the higher cost of granular or deformable alternatives."
+  },
+  {
+   "a": "f6097",
+   "b": "f6463",
+   "type": "elaborates",
+   "note": "Adds empirical-model speed, open-source status, and peer-reviewed provenance to the fidelity claim."
+  }
+ ]
+}

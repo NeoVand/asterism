@@ -1,0 +1,115 @@
+{
+ "key": "e:mevea",
+ "hash": "f999e6605ae4b231",
+ "synopsis": "Mevea is a commercial Lappeenranta University spin-off founded in 2005, positioned for mobile machinery across construction, mining, ports, forestry and tractor research [f8560, f9100, f8667]. Its vendor-described capabilities include real-time multibody dynamics, hydraulics, powertrain, sensors, HIL I/O and dynamic soil interaction with buckets, tracks and tires; however, the booklet assesses heavy-machine physics tools as having thin sensor and scenario tooling and explicitly labels Mevea's sensor capabilities as vendor claims [f8561, f8283, f9102]. Documented applications include Siemens SIMOCRANE crane-automation twins in 2023, an academic tractor digital twin with CAN control in 2026, and mining training simulators; Mevea claims over 100 simulator models supplied to more than 50 customers [f8564, f8565, f8567, f8563]. Simulink co-simulation through FMI or TCP/IP is explicitly supported, and the example middle- and highest-cost chains use Mevea for terrain, hydraulics, machine variants or heavy-machine dynamics [f8562, f8699, f9286, f9304]. Its October 2026 seminar covers verification and validation cases from Prinoth, Oamk and IAAPS, while human-in-the-loop simulators such as Mevea may be needed for warning-then-brake human factors; public pricing and the latest release were not found [f8566, f9379, f9104, f9105].",
+ "relations": [
+  {
+   "a": "f15964",
+   "b": "f8563",
+   "type": "same",
+   "note": "Both report the vendor claim of over 100 models and more than 50 customers."
+  },
+  {
+   "a": "f16074",
+   "b": "f8663",
+   "type": "same",
+   "note": "Both identify the same mobile-machinery physics tool group."
+  },
+  {
+   "a": "f16162",
+   "b": "f9286",
+   "type": "elaborates",
+   "note": "Glossary supplies the surrounding software stack for the same middle-cost FMI coupling."
+  },
+  {
+   "a": "f16167",
+   "b": "f9304",
+   "type": "elaborates",
+   "note": "Glossary adds specialist sensors, benches and cloud execution to the highest-cost dynamics chain."
+  },
+  {
+   "a": "f8562",
+   "b": "f8699",
+   "type": "same",
+   "note": "Both explicitly confirm Simulink co-simulation through FMI or TCP/IP."
+  },
+  {
+   "a": "f8293",
+   "b": "f8564",
+   "type": "elaborates",
+   "note": "Identifies Siemens SIMOCRANE and dates the crane-automation twins to 2023."
+  },
+  {
+   "a": "f8668",
+   "b": "f8564",
+   "type": "elaborates",
+   "note": "Adds SIMOCRANE, crane automation and the 2023 date to Siemens crane evidence."
+  },
+  {
+   "a": "f8294",
+   "b": "f8565",
+   "type": "elaborates",
+   "note": "Adds academic provenance and CAN control to the documented 2026 tractor twin."
+  },
+  {
+   "a": "f8669",
+   "b": "f8565",
+   "type": "elaborates",
+   "note": "Specifies the tractor paper's digital twin and CAN control."
+  },
+  {
+   "a": "f15963",
+   "b": "f8561",
+   "type": "elaborates",
+   "note": "Adds powertrain, sensors, HIL I/O and specific soil-contact mechanisms."
+  },
+  {
+   "a": "f15990",
+   "b": "f8561",
+   "type": "elaborates",
+   "note": "Details Mevea soil simulation through bucket, track and tire interactions."
+  },
+  {
+   "a": "f16049",
+   "b": "f8567",
+   "type": "elaborates",
+   "note": "Classifies mining training simulators as operator-in-the-loop options."
+  },
+  {
+   "a": "f16102",
+   "b": "f8810",
+   "type": "elaborates",
+   "note": "Adds simulators and sector evidence to modeling services and digital twins."
+  },
+  {
+   "a": "f16038",
+   "b": "f8365",
+   "type": "elaborates",
+   "note": "Explicitly categorizes Mevea's offering as data replay and hardware-in-the-loop."
+  },
+  {
+   "a": "f8568",
+   "b": "f9104",
+   "type": "same",
+   "note": "Both report missing Mevea pricing; the latter specifies public pricing."
+  },
+  {
+   "a": "f8568",
+   "b": "f9105",
+   "type": "same",
+   "note": "Both report that Mevea's latest release was not found."
+  },
+  {
+   "a": "f8562",
+   "b": "f16162",
+   "type": "supports",
+   "note": "Supported FMI co-simulation grounds the proposed middle-cost Simulink integration."
+  },
+  {
+   "a": "f9102",
+   "b": "f8561",
+   "type": "elaborates",
+   "note": "Clarifies that the listed sensor capabilities are vendor claims."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t90",
+ "hash": "4c06bb327c3e3f03",
+ "synopsis": "MTF, PSF, noise and SNR describe image sharpness and cleanliness; the booklet recommends matching virtual and real camera component responses before simulating scenes or trusting virtual detections [f12588, f12589, f12594]. Higher-fidelity camera simulation includes calibrated optical blur, shot and read noise, exposure, saturation and image processing, while thermal-camera validation uses MTF and noise equivalent temperature difference [f4554, f12590]. Darkness modelling requires calibrated noise, exposure and image processing, and signal-level validation should check SNR against rain rate or visibility [f4691, f12591]. Visual realism alone is insufficient: generated images can violate sensor-verification quantities, synthetic scenes can lack real sensor noise, and detectors trained on clean images can fail on noisy or blurred ones [f4904, f3756, f12593]. The evidence includes both a precedent gap—sensor noise was not assessed in the encounter-model comparison discussed at the March 2022 RTCA SC-147 meeting—and a concrete validation example, TaCOS (2024), which checked a simulator noise model against a FLIR camera [f1437, f4755].",
+ "relations": [
+  {
+   "a": "f1437",
+   "b": "f15755",
+   "type": "same",
+   "note": "Both report the March 2022 aircraft collision-avoidance discussion's unassessed sensor noise."
+  },
+  {
+   "a": "f4560",
+   "b": "f12577",
+   "type": "same",
+   "note": "Both identify gain, noise and HDR as determinants of camera behaviour in darkness."
+  },
+  {
+   "a": "f4787",
+   "b": "f12589",
+   "type": "elaborates",
+   "note": "Glossary places the component-response checks before scene simulation in the validation ladder."
+  },
+  {
+   "a": "f4791",
+   "b": "f12590",
+   "type": "elaborates",
+   "note": "Glossary makes thermal MTF and NETD matching a prerequisite to scene simulation."
+  },
+  {
+   "a": "f4793",
+   "b": "f12591",
+   "type": "same",
+   "note": "Glossary restates the SNR-versus-rain-or-visibility portion of signal-level validation."
+  },
+  {
+   "a": "f4845",
+   "b": "f12592",
+   "type": "same",
+   "note": "Both recommend obtaining PSF or MTF information from camera suppliers."
+  },
+  {
+   "a": "f4554",
+   "b": "f12589",
+   "type": "supports",
+   "note": "Calibrated optical, noise and processing effects implement the recommended camera-matching checks."
+  },
+  {
+   "a": "f12594",
+   "b": "f12588",
+   "type": "elaborates",
+   "note": "Matching the defined image-quality measures establishes realism before trusting detections."
+  },
+  {
+   "a": "f3756",
+   "b": "f7091",
+   "type": "supports",
+   "note": "Missing real sensor noise in synthetic scenes substantiates the training-data noise risk."
+  },
+  {
+   "a": "f7091",
+   "b": "f12593",
+   "type": "supports",
+   "note": "Incorrect training noise provides a mechanism for failure on noisy real images."
+  },
+  {
+   "a": "f4904",
+   "b": "f12589",
+   "type": "supports",
+   "note": "Photorealism can violate sensor quantities, motivating component matching before scene simulation."
+  },
+  {
+   "a": "f4691",
+   "b": "f12577",
+   "type": "elaborates",
+   "note": "Adds calibration requirements for physically based simulation of darkness-dependent camera behaviour."
+  },
+  {
+   "a": "f12494",
+   "b": "f12587",
+   "type": "elaborates",
+   "note": "Exposure and gain adjustments trade increased brightness against darkness-related noise."
+  },
+  {
+   "a": "f4755",
+   "b": "f12594",
+   "type": "supports",
+   "note": "TaCOS provides a concrete simulator-to-real-camera noise validation example."
+  },
+  {
+   "a": "f4847",
+   "b": "f12590",
+   "type": "supports",
+   "note": "Recommended thermal supplier data include MTF and NETD needed for matching."
+  },
+  {
+   "a": "f4845",
+   "b": "f12589",
+   "type": "supports",
+   "note": "Supplier optical, noise, HDR and response data enable first-layer camera matching."
+  },
+  {
+   "a": "f4554",
+   "b": "f3939",
+   "type": "elaborates",
+   "note": "Adds calibrated optical response, specific noise mechanisms and image processing to camera-model requirements."
+  },
+  {
+   "a": "f4904",
+   "b": "f12591",
+   "type": "supports",
+   "note": "Risk of incorrect weather-to-SNR causality motivates checking SNR against weather severity."
+  }
+ ]
+}

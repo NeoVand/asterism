@@ -1,0 +1,43 @@
+{
+ "key": "e:haider et al.",
+ "hash": "eefdf702f56cf554",
+ "synopsis": "Haider et al. built a tool-independent, ray-traced lidar model incorporating the scan pattern and full signal-processing chain, packaged as an ASAM OSI/FMI unit [f4504]. Chapter 6 dates validation at both time-domain and point-cloud levels to October 2022, and the rain and fog extension using Mie-theory backscatter to August 2023 [f4505, f4506]. Chapter 10 identifies a peer-reviewed rain and fog model published in Sensors 23(15):6891 in August 2023, also validated at time-domain and point-cloud levels [f7819]. All cited validation evidence is on-road; these facts do not establish validation for heavy off-road machines or clarify whether the October 2022 validation covered the later weather extension [f4505, f4506, f7819].",
+ "relations": [
+  {
+   "a": "f4505",
+   "b": "f7819",
+   "type": "same",
+   "note": "Both report time-domain and point-cloud validation using on-road evidence."
+  },
+  {
+   "a": "f4506",
+   "b": "f7819",
+   "type": "elaborates",
+   "note": "Specifies Mie-theory backscatter for the rain and fog model described in Chapter 10."
+  },
+  {
+   "a": "f7819",
+   "b": "f4506",
+   "type": "elaborates",
+   "note": "Adds peer-reviewed publication details and validation levels for the August 2023 weather model."
+  },
+  {
+   "a": "f4504",
+   "b": "f7819",
+   "type": "elaborates",
+   "note": "Adds model architecture, signal-processing scope, and OSI/FMI packaging to Chapter 10's account."
+  },
+  {
+   "a": "f4505",
+   "b": "f4504",
+   "type": "elaborates",
+   "note": "Adds the October 2022 validation date, validation levels, and on-road evidence scope."
+  },
+  {
+   "a": "f4506",
+   "b": "f4504",
+   "type": "elaborates",
+   "note": "Adds the August 2023 rain and fog backscatter extension to the base model."
+  }
+ ]
+}

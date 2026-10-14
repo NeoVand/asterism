@@ -1,0 +1,79 @@
+{
+ "key": "e:idiada",
+ "hash": "4956ee7d677a8517",
+ "synopsis": "IDIADA provides vehicle-in-the-loop services, including injecting virtual hazards into a real vehicle’s ECU on a track through sensor stimulation [f16108, f406, f540]. With MathWorks, it demonstrated virtual-to-physical correlation of frontal automatic emergency braking for on-road cars on 14 April 2026, using closed-loop virtual sensors, vehicle dynamics and an AEB controller, with production-vehicle proving-ground tests and ISO 18571 correlation metrics [f1761, f1269, f1762]. The demonstration included far more scenario variants than earlier protocol generations but retained proving-ground correlation [f1270, f1764]. This establishes a demonstrated capability, not evidence that a specific vehicle received a rating: the acceptance evidence involved a test house and tool vendor, and no vehicle rating was shown [f1271, f1765]. Capability-building time was not found, and validation time was reported only as a demonstration, leaving the implementation timeline unresolved [f1763].",
+ "relations": [
+  {
+   "a": "f406",
+   "b": "f540",
+   "type": "same",
+   "note": "Both describe virtual-hazard injection into a real vehicle ECU for vehicle-in-the-loop testing."
+  },
+  {
+   "a": "f540",
+   "b": "f16108",
+   "type": "elaborates",
+   "note": "Track-based ECU hazard injection specifies an example of IDIADA’s vehicle-in-the-loop services."
+  },
+  {
+   "a": "f406",
+   "b": "f16108",
+   "type": "elaborates",
+   "note": "Sensor stimulation details how IDIADA performs vehicle-in-the-loop testing."
+  },
+  {
+   "a": "f16109",
+   "b": "f1761",
+   "type": "same",
+   "note": "Both identify the 2026 MathWorks collaboration demonstrating simulated-to-physical automatic-braking correlation."
+  },
+  {
+   "a": "f1269",
+   "b": "f1762",
+   "type": "same",
+   "note": "Both describe closed-loop simulation, proving-ground testing and ISO 18571 correlation."
+  },
+  {
+   "a": "f1269",
+   "b": "f1761",
+   "type": "elaborates",
+   "note": "Adds simulation components, production-vehicle tests and correlation metrics to the dated demonstration."
+  },
+  {
+   "a": "f1269",
+   "b": "f16109",
+   "type": "elaborates",
+   "note": "Adds the recording date, closed-loop components and ISO 18571 metrics."
+  },
+  {
+   "a": "f1762",
+   "b": "f1764",
+   "type": "elaborates",
+   "note": "Specifies the simulation components and metrics used alongside retained proving-ground correlation."
+  },
+  {
+   "a": "f1270",
+   "b": "f1269",
+   "type": "elaborates",
+   "note": "Adds broader scenario coverage relative to earlier protocol generations."
+  },
+  {
+   "a": "f1271",
+   "b": "f1765",
+   "type": "same",
+   "note": "Both state that the demonstration did not show a vehicle receiving a rating."
+  },
+  {
+   "a": "f1765",
+   "b": "f1271",
+   "type": "supports",
+   "note": "Test-house and tool-vendor involvement without a shown rating supports the evidentiary limitation."
+  },
+  {
+   "a": "f1763",
+   "b": "f1761",
+   "type": "elaborates",
+   "note": "Qualifies the dated event with missing capability-building time and demonstration-only validation timing."
+  }
+ ]
+}

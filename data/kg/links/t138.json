@@ -1,0 +1,115 @@
+{
+ "key": "t138",
+ "hash": "d6c714ac63ec164e",
+ "synopsis": "ASAM OSI is the message standard published by ASAM for connecting environment, sensor, fusion and function models, including time-stamped ground truth, sensor views, sensor data and detected objects [f13218, f5260, f13219]. The booklet rates OSI as domain-neutral and transferable to off-road work, but stresses that its road-vehicle heritage and cited on-road evidence do not constitute proof for quarry machines [f13224, f5507]. OSI supports portable, sealed sensor-model delivery; recommendations include requesting an OSI/OSMP-packaged FMI 2.0 FMU when suppliers withhold internals and fixing supplier-independent object, warning and brake-request semantics before hardware [f13220, f13221, f4857, f13228]. Existing abstractions leave gaps in camera spectral irradiance, radar raw waveforms and bidirectional sensor–ECU behaviour; ASAM's high-fidelity extension runs from April 2025 to March 2027, overlapping planned first-tool-chain integration and creating versioning risk [f7081, f5093, f13227, f15870, f8619]. ASAM also reports no standardized sensor-simulation quality metrics, with the metrics project still at proposal stage in September 2025; separately, the research did not verify OSI's status [f13225, f13226, f7165].",
+ "relations": [
+  {
+   "a": "f5260",
+   "b": "f5506",
+   "type": "same",
+   "note": "Both describe exchange between environment, sensor, fusion and function models."
+  },
+  {
+   "a": "f13464",
+   "b": "f5260",
+   "type": "elaborates",
+   "note": "Adds ground-truth interfaces and semantic replay use."
+  },
+  {
+   "a": "f13219",
+   "b": "f5261",
+   "type": "elaborates",
+   "note": "Specifies ground truth alongside sensor views, sensor data, detected objects and timestamps."
+  },
+  {
+   "a": "f7166",
+   "b": "f13224",
+   "type": "same",
+   "note": "Both rate OSI domain-neutral and transferable to off-road work."
+  },
+  {
+   "a": "f5507",
+   "b": "f13224",
+   "type": "elaborates",
+   "note": "Qualifies transferability: quarry adaptation is not off-road proof."
+  },
+  {
+   "a": "f5262",
+   "b": "f9215",
+   "type": "same",
+   "note": "Both identify OSI's road-vehicle heritage."
+  },
+  {
+   "a": "f13221",
+   "b": "f4857",
+   "type": "supports",
+   "note": "Sealed delivery protects supplier intellectual property, supporting the black-box FMU recommendation."
+  },
+  {
+   "a": "f16495",
+   "b": "f4857",
+   "type": "elaborates",
+   "note": "Adds four alternatives when suppliers refuse to disclose internals."
+  },
+  {
+   "a": "f4504",
+   "b": "f4857",
+   "type": "supports",
+   "note": "Published tool-independent lidar packaging demonstrates the OSI/FMI delivery approach."
+  },
+  {
+   "a": "f8706",
+   "b": "f13220",
+   "type": "supports",
+   "note": "Vendor support for OSI FMUs across co-simulation hosts illustrates portability."
+  },
+  {
+   "a": "f7081",
+   "b": "f7421",
+   "type": "elaborates",
+   "note": "Identifies spectral irradiance and raw radar waveforms as missing physical representations."
+  },
+  {
+   "a": "f8326",
+   "b": "f8618",
+   "type": "same",
+   "note": "Both give April 2025–March 2027 for high-fidelity OSI development."
+  },
+  {
+   "a": "f13227",
+   "b": "f8326",
+   "type": "same",
+   "note": "Glossary repeats the project's April 2025–March 2027 schedule."
+  },
+  {
+   "a": "f8732",
+   "b": "f9216",
+   "type": "same",
+   "note": "Both state the high-fidelity OSI project ends in March 2027."
+  },
+  {
+   "a": "f15870",
+   "b": "f8733",
+   "type": "elaborates",
+   "note": "Dates the overlap between interface refinement and first-tool-chain integration."
+  },
+  {
+   "a": "f8619",
+   "b": "f8618",
+   "type": "depends",
+   "note": "Ongoing standardization creates interface-versioning risk."
+  },
+  {
+   "a": "f13226",
+   "b": "f13225",
+   "type": "elaborates",
+   "note": "Dates the proposed effort to address missing standardized sensor-simulation quality metrics."
+  },
+  {
+   "a": "f9055",
+   "b": "f8999",
+   "type": "same",
+   "note": "Both list AURELION's OSI chain and SIL/HIL interfaces."
+  }
+ ]
+}

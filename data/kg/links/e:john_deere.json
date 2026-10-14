@@ -1,0 +1,61 @@
+{
+ "key": "e:john deere",
+ "hash": "2ef0819847365885",
+ "synopsis": "John Deere launched camera-based autonomous tractor obstacle detection for agricultural tractors in 2022, following more than three years of data collection [f1082, f820]. Reported collection volumes conflict: Vision Systems Design gives 200 million image pairs, while SAE gives 50 million images; the supplied facts do not resolve that discrepancy [f821]. Deere refers generally to virtual, simulation and physical testing, but the review found neither a published validation method, validation duration or physical-testing share nor an independent performance test for its off-road automatic braking products [f822, f1389, f1242]. Chapter 2 groups Deere among suppliers describing reverse-only, low-speed or tag-dependent braking systems; SmartDetect Assist was shown in March 2023 and described as available on select Utility Loaders in a release dated 18 February 2026 [f1239, f1651]. Deere already logs warning events and GPS locations, providing an existing data path for proposed warning-fleet shadow-mode evaluation, rather than evidence that braking validation has been completed [f1603].",
+ "relations": [
+  {
+   "a": "f373",
+   "b": "f1083",
+   "type": "same",
+   "note": "Both report more than three years of Deere data collection."
+  },
+  {
+   "a": "f373",
+   "b": "f820",
+   "type": "same",
+   "note": "The 2022 account specifies the same three-plus-year collection period."
+  },
+  {
+   "a": "f1083",
+   "b": "f820",
+   "type": "same",
+   "note": "Both describe the collection period for autonomous tractor obstacle detection."
+  },
+  {
+   "a": "f1084",
+   "b": "f821",
+   "type": "same",
+   "note": "Both identify conflicting data volumes; f821 names the reporting sources."
+  },
+  {
+   "a": "f1254",
+   "b": "f1603",
+   "type": "same",
+   "note": "Both identify existing warning-event location logging as a usable validation data path."
+  },
+  {
+   "a": "f820",
+   "b": "f1082",
+   "type": "elaborates",
+   "note": "Adds the data-collection lead time preceding the 2022 launch."
+  },
+  {
+   "a": "f822",
+   "b": "f1389",
+   "type": "elaborates",
+   "note": "General testing references do not supply the published validation specifics missing from the review."
+  },
+  {
+   "a": "f1242",
+   "b": "f1389",
+   "type": "elaborates",
+   "note": "Adds missing validation-method and testing-allocation disclosures to the independent-test evidence gap."
+  },
+  {
+   "a": "f1651",
+   "b": "f1239",
+   "type": "elaborates",
+   "note": "Adds Deere product demonstration and availability milestones to the supplier-level braking overview."
+  }
+ ]
+}

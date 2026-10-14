@@ -1,0 +1,25 @@
+{
+ "key": "e:stratified sampling",
+ "hash": "888bb3c03d6eb684",
+ "synopsis": "Exhaustive field coverage of more than 7,000 testing strata is infeasible, so the corpus treats stratified sampling combined with simulation as unavoidable [f132]. Stratified sampling forces coverage across weather, site, machine and scenario strata, preventing easy, common conditions from dominating testing [f639]. The strata must represent the real domain; forced coverage alone does not satisfy that requirement [f640, f639]. The supplied facts do not specify how to establish representativeness or allocate tests among strata [f640, f639].",
+ "relations": [
+  {
+   "a": "f639",
+   "b": "f132",
+   "type": "elaborates",
+   "note": "Explains how stratified sampling broadens coverage when exhaustive field testing is infeasible."
+  },
+  {
+   "a": "f132",
+   "b": "f640",
+   "type": "depends",
+   "note": "Reliance on stratified sampling requires strata representative of the real domain."
+  },
+  {
+   "a": "f640",
+   "b": "f639",
+   "type": "elaborates",
+   "note": "Adds representativeness as a requirement beyond forcing coverage across named dimensions."
+  }
+ ]
+}

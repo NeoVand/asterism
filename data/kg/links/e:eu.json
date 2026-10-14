@@ -1,0 +1,31 @@
+{
+ "key": "e:eu",
+ "hash": "b641fee9bb79f591",
+ "synopsis": "The EU Machinery Directive 2006/42/EC applies until 19 January 2027, and Machinery Regulation 2023/1230, adopted on 14 June 2023, applies from 20 January 2027 [f2744, f2747]. For products sold in the EU after 20 January 2027 whose safety function is performed by machine learning, expert advice is to plan for notified-body engagement under Annex I Part A unless legal advice concludes otherwise [f2643]. For those products, expert advice also anticipates machinery-specific AI requirements by 2 August 2028 [f2644]. Separately, the glossary warns that simulation traceability and archived safety-case records may be disclosed in court under the new EU product liability rules, making record retention relevant beyond regulatory acceptance [f12201].",
+ "relations": [
+  {
+   "a": "f2747",
+   "b": "f2744",
+   "type": "elaborates",
+   "note": "Regulation commencement completes the timeline established by the Directive's final applicability date."
+  },
+  {
+   "a": "f2643",
+   "b": "f2747",
+   "type": "depends",
+   "note": "Notified-body planning uses the Regulation's applicability date as its sales threshold."
+  },
+  {
+   "a": "f2644",
+   "b": "f2747",
+   "type": "depends",
+   "note": "AI requirements advice targets products sold after the Regulation becomes applicable."
+  },
+  {
+   "a": "f2644",
+   "b": "f2643",
+   "type": "elaborates",
+   "note": "Adds a later AI requirements milestone for the same machine-learning safety-function products."
+  }
+ ]
+}

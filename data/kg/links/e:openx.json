@@ -1,0 +1,55 @@
+{
+ "key": "e:openx",
+ "hash": "ebfeedbbf053dae7",
+ "synopsis": "ASAM publishes OpenX scene and scenario formats, which help support a mature scenario-based structure for road vehicles, including scenario abstractions, catalogs and parameterised generation [f13223, f7410]. ASAM describes OpenX as in maintenance mode in 2026; the assessment anticipates slower core-format evolution and considers off-road extensions unlikely before mid-2027, though that timing remains uncertain [f7170, f13211, f7172]. ASAM's off-road workshop identified missing concepts for deformable and particle terrain, vegetation, heavy-machine manipulation and sensor degradation [f13213]. These gaps do not make OpenX unusable, but off-road work will require extensions or a manufacturer-owned domain model [f7196, f7434]. OpenX-linked components are assessed as requiring medium relative integration effort: existing transport and schemas help, but material, actor, dynamics and timing semantics still need calibration [f8729].",
+ "relations": [
+  {
+   "a": "f7170",
+   "b": "f13211",
+   "type": "same",
+   "note": "Both report ASAM's maintenance-mode description for OpenX in 2026."
+  },
+  {
+   "a": "f7196",
+   "b": "f7434",
+   "type": "same",
+   "note": "Both require off-road extensions or a manufacturer domain model without declaring OpenX unusable."
+  },
+  {
+   "a": "f7170",
+   "b": "f7172",
+   "type": "supports",
+   "note": "Maintenance status supports the forecast of slower evolution and delayed off-road extensions."
+  },
+  {
+   "a": "f13213",
+   "b": "f7196",
+   "type": "supports",
+   "note": "Missing off-road concepts explain the need for extensions or a manufacturer-owned domain model."
+  },
+  {
+   "a": "f13213",
+   "b": "f7434",
+   "type": "supports",
+   "note": "Workshop gaps substantiate the proposed off-road adaptation requirement."
+  },
+  {
+   "a": "f13213",
+   "b": "f8729",
+   "type": "supports",
+   "note": "Missing terrain and machine concepts help explain calibration effort despite standard schemas."
+  },
+  {
+   "a": "f7410",
+   "b": "f8729",
+   "type": "supports",
+   "note": "Mature road scenario specifications support the availability of standard schemas for integration."
+  },
+  {
+   "a": "f13213",
+   "b": "f7410",
+   "type": "elaborates",
+   "note": "Off-road concept gaps qualify the scope of the reported on-road maturity."
+  }
+ ]
+}

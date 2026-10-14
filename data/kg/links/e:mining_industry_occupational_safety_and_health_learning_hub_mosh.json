@@ -1,0 +1,37 @@
+{
+ "key": "e:mining industry occupational safety and health learning hub mosh",
+ "hash": "80a533cebc12dc54",
+ "synopsis": "MOSH verification progresses from laboratory testing to Gerotek proving-ground tests and then to a cordoned mine area [f5350]. Under Verification Regime Rev 1 dated 11 October 2025, the controller test evaluates automatic slowdown and stopping effectiveness using light vehicles in a controlled proving-ground environment; the supplied facts do not establish equivalent testing on heavy machines [f5351, f5352]. Bench requirements include detecting a detection-device–machine disconnection within 500 ms and receiving a machine reply within 50 ms [f13351, f13352]. Warning-zone extension uses an operator reaction time of 2.5–3.0 seconds before intervention [f13902]. Specified stop gaps are 1.0–4.0 meters at speeds of 10 km/h or less, and 15 ± 5 meters above 10 km/h [f13907].",
+ "relations": [
+  {
+   "a": "f5352",
+   "b": "f5350",
+   "type": "elaborates",
+   "note": "Specifies light vehicles and controlled conditions for the controller's proving-ground test."
+  },
+  {
+   "a": "f5352",
+   "b": "f5351",
+   "type": "elaborates",
+   "note": "Adds vehicle type and test environment to the controller effectiveness evaluation."
+  },
+  {
+   "a": "f13351",
+   "b": "f5350",
+   "type": "elaborates",
+   "note": "Adds a bench-tested disconnection-detection requirement to the staged verification regime."
+  },
+  {
+   "a": "f13352",
+   "b": "f5350",
+   "type": "elaborates",
+   "note": "Adds a bench-tested machine-response deadline to the staged verification regime."
+  },
+  {
+   "a": "f13907",
+   "b": "f5351",
+   "type": "elaborates",
+   "note": "Provides speed-dependent stop-gap requirements relevant to evaluating automatic stopping effectiveness."
+  }
+ ]
+}

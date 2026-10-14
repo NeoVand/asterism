@@ -1,0 +1,115 @@
+{
+ "key": "e:ros 2",
+ "hash": "1cd847ef438826b6",
+ "synopsis": "ROS 2 is the current generation of Robot Operating System, common in robotics software, and part of the open-standard integration glue connecting heterogeneous simulation tools [f16240, f8715, f8335]. The corpus identifies integrations with CARLA, Isaac Sim, Gazebo and BeamNG; CARLA 0.10.0 added native support, whereas BeamNG.tech's Autoware/ROS 2 integration is community-provided and dated 2026 [f16240, f8465, f8506, f9031]. Gazebo with ROS 2 is explicitly supported, and Isaac Sim exposes ROS 2 alongside OpenUSD, including for its RTX sensors [f8708, f9018, f9073]. A lowest-cost example combines CARLA, Isaac Sim or Gazebo with Chrono and ROS 2, but low licensing costs come with the highest internal labor requirement and do not eliminate hardware or cloud costs [f16158, f16128, f8739].",
+ "relations": [
+  {
+   "a": "f8335",
+   "b": "f15862",
+   "type": "same",
+   "note": "Both identify the same standards as simulation integration glue."
+  },
+  {
+   "a": "f8715",
+   "b": "f13014",
+   "type": "same",
+   "note": "Both state ROS 2 is common in robotics software."
+  },
+  {
+   "a": "f16240",
+   "b": "f13014",
+   "type": "elaborates",
+   "note": "Names four simulators connected to ROS 2."
+  },
+  {
+   "a": "f8465",
+   "b": "f16240",
+   "type": "elaborates",
+   "note": "Specifies CARLA's native ROS 2 support arrived in version 0.10.0."
+  },
+  {
+   "a": "f8479",
+   "b": "f16240",
+   "type": "supports",
+   "note": "Vendor capabilities substantiate Isaac Sim's ROS 2 integration."
+  },
+  {
+   "a": "f8526",
+   "b": "f16240",
+   "type": "supports",
+   "note": "Gazebo capabilities substantiate its ROS 2 integration."
+  },
+  {
+   "a": "f8506",
+   "b": "f16240",
+   "type": "elaborates",
+   "note": "Qualifies BeamNG integration as community-provided with Autoware in 2026."
+  },
+  {
+   "a": "f8739",
+   "b": "f16128",
+   "type": "elaborates",
+   "note": "Adds remaining hardware and cloud costs to the low-license-cost, high-labor assessment."
+  },
+  {
+   "a": "f16158",
+   "b": "f8739",
+   "type": "elaborates",
+   "note": "Assigns sensor, environment, machine-dynamics and terrain roles within the open-source chain."
+  },
+  {
+   "a": "f9265",
+   "b": "f16158",
+   "type": "same",
+   "note": "Both place ROS 2 in the lowest-cost example tool chain."
+  },
+  {
+   "a": "f9031",
+   "b": "f8506",
+   "type": "same",
+   "note": "Both identify BeamNG.tech's ROS 2 integration as community-provided."
+  },
+  {
+   "a": "f8709",
+   "b": "f8506",
+   "type": "elaborates",
+   "note": "Describes the community integration as an explicitly supported tool combination."
+  },
+  {
+   "a": "f9049",
+   "b": "f8708",
+   "type": "same",
+   "note": "Both identify Gazebo and ROS 2 as an available interface pairing."
+  },
+  {
+   "a": "f9018",
+   "b": "f9073",
+   "type": "elaborates",
+   "note": "The same Isaac Sim interfaces are explicitly listed for RTX sensors."
+  },
+  {
+   "a": "f9085",
+   "b": "f9011",
+   "type": "elaborates",
+   "note": "Identifies Python and ROS 2 specifically as CARLA sensor interfaces."
+  },
+  {
+   "a": "f9018",
+   "b": "f8479",
+   "type": "same",
+   "note": "Both identify OpenUSD and ROS 2 integration in Isaac Sim."
+  },
+  {
+   "a": "f9331",
+   "b": "f8335",
+   "type": "supports",
+   "note": "Road ADAS findings support the integration-glue role, within an explicitly on-road scope."
+  },
+  {
+   "a": "f16158",
+   "b": "f16128",
+   "type": "elaborates",
+   "note": "Details component roles and SCM terrain in the lowest-license-cost open-source approach."
+  }
+ ]
+}

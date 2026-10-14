@@ -1,0 +1,115 @@
+{
+ "key": "t135",
+ "hash": "92e9ccd7186b57c2",
+ "synopsis": "Game engines provide reusable real-time visual worlds, making virtual job sites affordable and fast enough for the program’s four-month window, but machine and sensor models must be added separately [f13172, f13181]. Reported Unreal Engine 5 terrain-rendering results range from 60 FPS for a single building to 17 FPS for a 23-million-Gaussian scene, so demonstrated performance depends on scene scale [f3893, f3894]. CARLA 0.10.0 moved to Unreal Engine 5.5 with Chaos physics on 19 December 2024 and includes a mining earth-mover asset; the separate UE4 release 0.9.16 followed on 16 September 2025, making a frozen, qualified build advisable [f8464, f8297, f8466, f15938]. CARLA’s UE5 hardware requirements include an RTX 3000-series GPU or better, at least 16 GB VRAM and 130 GB disk space [f8850]. Visual realism is not validated sensor or braking physics: specialized machine behavior requires coupled physics tools, wavelength-specific sensor materials are absent from ordinary visual textures, and a 2026 study found photometric divergence in Unity construction scenes despite extensive domain randomization [f13178, f13179, f13182, f10584].",
+ "relations": [
+  {
+   "a": "f3764",
+   "b": "f3894",
+   "type": "same",
+   "note": "Both report 17 FPS for a 23-million-Gaussian terrain scene in Unreal Engine 5."
+  },
+  {
+   "a": "f9025",
+   "b": "f9125",
+   "type": "same",
+   "note": "Both list Python, C#, and Unity interfaces for Project Chrono."
+  },
+  {
+   "a": "f8358",
+   "b": "f8608",
+   "type": "elaborates",
+   "note": "Adds RoadRunner offerings to the same Unreal environment-creation ecosystem list."
+  },
+  {
+   "a": "f8374",
+   "b": "f13174",
+   "type": "same",
+   "note": "Both describe Unreal scenes supplied through the off-road autonomy library."
+  },
+  {
+   "a": "f8571",
+   "b": "f13176",
+   "type": "same",
+   "note": "Both identify heavy-machine physics plugins for Unity and Unreal."
+  },
+  {
+   "a": "f8571",
+   "b": "f9109",
+   "type": "elaborates",
+   "note": "Adds plugin availability and documentation version to the listed engine interfaces."
+  },
+  {
+   "a": "f8850",
+   "b": "f16195",
+   "type": "same",
+   "note": "Both specify RTX 3000-series or better and at least 16 GB VRAM."
+  },
+  {
+   "a": "f8850",
+   "b": "f13180",
+   "type": "same",
+   "note": "The glossary restates CARLA's GPU memory and disk requirements without naming it."
+  },
+  {
+   "a": "f8297",
+   "b": "f13173",
+   "type": "same",
+   "note": "Both identify the December 2024 UE5.5 release and mining earth-mover asset."
+  },
+  {
+   "a": "f8297",
+   "b": "f15928",
+   "type": "same",
+   "note": "Both date CARLA's mining earth-mover asset to December 2024."
+  },
+  {
+   "a": "f8464",
+   "b": "f9013",
+   "type": "elaborates",
+   "note": "Adds Unreal Engine 5.5 and Chaos physics to the recorded 0.10.0 release."
+  },
+  {
+   "a": "f8466",
+   "b": "f9013",
+   "type": "elaborates",
+   "note": "Identifies the UE4 engine line for the recorded September 2025 release."
+  },
+  {
+   "a": "f8608",
+   "b": "f16002",
+   "type": "same",
+   "note": "Both identify Falcon, CARLA, and MathWorks as Unreal editor ecosystems."
+  },
+  {
+   "a": "f8892",
+   "b": "f15938",
+   "type": "supports",
+   "note": "Engine migration and unsupported APIs justify freezing and qualifying the selected build."
+  },
+  {
+   "a": "f10584",
+   "b": "f13182",
+   "type": "supports",
+   "note": "Measured photometric divergence reinforces the warning against equating appearance with validated simulation."
+  },
+  {
+   "a": "f4129",
+   "b": "f13178",
+   "type": "supports",
+   "note": "TERA exemplifies coupling Unity with AGX for excavator and terrain-machine simulation."
+  },
+  {
+   "a": "f3894",
+   "b": "f3893",
+   "type": "elaborates",
+   "note": "The larger terrain scene achieves substantially lower frame rate than the single-building example."
+  },
+  {
+   "a": "f8744",
+   "b": "f13181",
+   "type": "elaborates",
+   "note": "Affordable reusable engines still require multidisciplinary expertise for an in-house simulation capability."
+  }
+ ]
+}

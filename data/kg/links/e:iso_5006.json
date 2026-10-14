@@ -1,0 +1,55 @@
+{
+ "key": "e:iso 5006",
+ "hash": "c2d5f50108312bcd",
+ "synopsis": "ISO 5006 is described as defining how to measure the machine operator’s field of view from the cab and map blind areas, distinct from ISO 16001’s requirements and tests for detection and visibility aids [f11547, f15204, f15219]. Chapter 7 uses ISO 5006 and ISO 16001 visibility-type methods to illustrate geometric computation of machine coverage and blind zones, with expert opinion supporting this approach [f5602, f5604]. The glossary proposes reproducing these methods, alongside UN R159’s small-cylinder method, in a digital twin of each machine to compute coverage and blind zones before hardware arrives [f11549, f15220]. However, Chapter 3 reports that ISO 5006 was not verified and evidence was not found, a gap repeated in the glossary; the proposed use therefore should not be mistaken for verified application of the standard [f2197, f15219, f15220].",
+ "relations": [
+  {
+   "a": "f2197",
+   "b": "f15219",
+   "type": "same",
+   "note": "Both report that ISO 5006 was not verified."
+  },
+  {
+   "a": "f11547",
+   "b": "f15204",
+   "type": "same",
+   "note": "Both define ISO 5006 as measuring the operator's own field of view."
+  },
+  {
+   "a": "f11547",
+   "b": "f15219",
+   "type": "elaborates",
+   "note": "Adds the cab viewpoint, blind-area mapping, and unverified status."
+  },
+  {
+   "a": "f5602",
+   "b": "f11549",
+   "type": "elaborates",
+   "note": "Adds model-specific geometry and computation before hardware arrives."
+  },
+  {
+   "a": "f5602",
+   "b": "f15220",
+   "type": "elaborates",
+   "note": "Adds digital-twin implementation, UN R159's method, and pre-hardware timing."
+  },
+  {
+   "a": "f5604",
+   "b": "f5602",
+   "type": "supports",
+   "note": "Expert opinion supports visibility-type methods as geometric coverage illustrations."
+  },
+  {
+   "a": "f5604",
+   "b": "f15220",
+   "type": "supports",
+   "note": "Expert opinion supports the geometric methods proposed for digital-twin reproduction."
+  },
+  {
+   "a": "f11549",
+   "b": "f15220",
+   "type": "elaborates",
+   "note": "Specifies digital-twin reproduction and adds UN R159's small-cylinder method."
+  }
+ ]
+}

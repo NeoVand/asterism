@@ -1,0 +1,49 @@
+{
+ "key": "e:do-178c",
+ "hash": "699131a0519a69ee",
+ "synopsis": "The booklet identifies DO-178C as the software standard for airborne systems, placing it within aerospace practice that accepts validated simulation and prior evidence under strict similarity rules [f14660, f14653]. DO-330 is its tool-qualification supplement or companion, addressing tools whose output is relied on without further checking [f14661, f15367]. However, Chapter 10 reports that the research did not verify DO-178C with DO-330 tool qualification, and the glossary likewise lists both standards as unverified [f7633, f15369]. The glossary extends that verification gap to MIL-STD-3022, so the standards are described as reference frameworks rather than verified foundations for this research [f14664, f14653].",
+ "relations": [
+  {
+   "a": "f7633",
+   "b": "f15369",
+   "type": "same",
+   "note": "Both report that DO-178C and DO-330 were not verified."
+  },
+  {
+   "a": "f7633",
+   "b": "f14664",
+   "type": "elaborates",
+   "note": "The glossary extends the reported verification gap to MIL-STD-3022."
+  },
+  {
+   "a": "f15369",
+   "b": "f14664",
+   "type": "elaborates",
+   "note": "Adds MIL-STD-3022 to the list of unverified standards."
+  },
+  {
+   "a": "f14660",
+   "b": "f15367",
+   "type": "same",
+   "note": "Both define DO-178C as the software standard for airborne systems."
+  },
+  {
+   "a": "f14661",
+   "b": "f15367",
+   "type": "same",
+   "note": "Both describe DO-330 qualification of tools whose outputs receive no further checking."
+  },
+  {
+   "a": "f14660",
+   "b": "f14653",
+   "type": "elaborates",
+   "note": "Places the airborne software standard within broader aerospace simulation and evidence practices."
+  },
+  {
+   "a": "f14653",
+   "b": "f14661",
+   "type": "elaborates",
+   "note": "Specifies DO-330’s relationship to DO-178C and the trigger for tool qualification."
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "key": "e:motional",
+ "hash": "ca0541cf58451a8c",
+ "synopsis": "Motional is an on-road autonomy vendor whose published methods provide evidence for layered validation, not verified sign-off for heavy off-road machines [f15718, f15728]. Its documented progression moves from complementary synthetic simulation and re-simulation of recorded data through closed-course and public-road testing to deployment [f517, f695, f15725]. Its 2026 safety material describes daily testing and shadow-mode feature deployment before broader roll-out; in shadow mode, software produces decisions that vehicle actuators do not execute [f586, f15726, f15727]. The booklet uses Motional and Waymo to support simulation, replay and shadow mode as filters before scarce physical testing—not substitutes for it—and staged release within a limited operating domain [f15729, f15730]. Neither company discloses validation durations or physical-test shares that would count as verified sign-off, leaving those planning quantities unresolved [f15728].",
+ "relations": [
+  {
+   "a": "f586",
+   "b": "f15726",
+   "type": "same",
+   "note": "Both describe daily testing with shadow deployment before broader roll-out."
+  },
+  {
+   "a": "f695",
+   "b": "f15725",
+   "type": "same",
+   "note": "Both describe progression from simulation and replay through physical tests to deployment."
+  },
+  {
+   "a": "f15726",
+   "b": "f417",
+   "type": "elaborates",
+   "note": "Adds daily testing and pre-roll-out timing to the 2026 shadow-mode example."
+  },
+  {
+   "a": "f15727",
+   "b": "f417",
+   "type": "elaborates",
+   "note": "Explains how shadow software decisions are measured without actuator execution."
+  },
+  {
+   "a": "f517",
+   "b": "f15725",
+   "type": "supports",
+   "note": "Complementary synthetic simulation and re-simulation underpin the described validation progression."
+  },
+  {
+   "a": "f402",
+   "b": "f15725",
+   "type": "supports",
+   "note": "Recorded-data replay evidence supports the re-simulation stage."
+  },
+  {
+   "a": "f695",
+   "b": "f15718",
+   "type": "supports",
+   "note": "Motional's progression substantiates the glossary's layered on-road validation description."
+  },
+  {
+   "a": "f695",
+   "b": "f15729",
+   "type": "supports",
+   "note": "Physical testing after simulation and replay supports their role as filters, not substitutes."
+  },
+  {
+   "a": "f586",
+   "b": "f15730",
+   "type": "supports",
+   "note": "Shadow deployment before broader roll-out supports staged release, though not the operating-domain limitation."
+  },
+  {
+   "a": "f15728",
+   "b": "f695",
+   "type": "elaborates",
+   "note": "Identifies missing durations and physical-test shares in the documented validation progression."
+  },
+  {
+   "a": "f15727",
+   "b": "f15726",
+   "type": "elaborates",
+   "note": "Defines the non-actuating mechanism of the reported shadow deployment."
+  }
+ ]
+}

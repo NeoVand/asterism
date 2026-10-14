@@ -1,0 +1,115 @@
+{
+ "key": "t244",
+ "hash": "62e0027fad4ebe9d",
+ "synopsis": "The FDA’s final guidance on computational-model credibility in medical-device submissions was published in November 2023, with a Federal Register notice dated 17 November 2023; it builds on ASME V&V 40-2018 and is identified as the booklet’s clearest regulator-level statement of decision-first credibility assessment [f14628, f7638, f7639, f14629]. Its approach starts with the question of interest and context of use—including the decision, model output and permitted role of that output—then scales credibility by model risk, defined as model influence multiplied by decision consequence [f7640, f8002, f8073]. The framework uses a nine-step process and eight evidence categories, with credibility goals set prospectively and evidence adequacy assessed afterward; neither acceptance error nor the minimum amount of physical evidence is universal [f7643, f7642, f14637, f7646]. Credibility is limited to the stated context of use, so new uses require new or stronger evidence, and a new medical-device variant requires an applicability argument [f7647, f8075, f7903]. The booklet rates FDA/V&V 40 reasoning as highly transferable to off-road automatic braking but not proven there: its physics-based scope can cover vehicle dynamics and brakes, while machine-learned perception needs separate assurance [f8077, f8078, f7645, f8220]. For planning, this supports splitting “simulation validates automatic braking” into separate testable claims and stating credibility relative to intended use, operating envelope and consequences of error [f14638, f10293].",
+ "relations": [
+  {
+   "a": "f14628",
+   "b": "f7638",
+   "type": "same",
+   "note": "Both identify final November 2023 guidance; Chapter 10 supplies notice date and docket."
+  },
+  {
+   "a": "f14630",
+   "b": "f7639",
+   "type": "same",
+   "note": "Both identify ASME V&V 40 as the guidance’s foundation."
+  },
+  {
+   "a": "f14631",
+   "b": "f7640",
+   "type": "elaborates",
+   "note": "Glossary adds model-risk rating to the decision-first starting steps."
+  },
+  {
+   "a": "f14631",
+   "b": "f7641",
+   "type": "same",
+   "note": "Both combine model influence and decision consequence to rate risk."
+  },
+  {
+   "a": "f14632",
+   "b": "f7642",
+   "type": "same",
+   "note": "Both prescribe prospective goals, evidence collection and subsequent adequacy assessment."
+  },
+  {
+   "a": "f14633",
+   "b": "f7643",
+   "type": "same",
+   "note": "Both specify nine process steps and eight evidence categories."
+  },
+  {
+   "a": "f14634",
+   "b": "f7646",
+   "type": "same",
+   "note": "Both reject universal minimum evidence amounts in favor of risk and context."
+  },
+  {
+   "a": "f14635",
+   "b": "f7647",
+   "type": "same",
+   "note": "Both restrict credibility to the stated context of use."
+  },
+  {
+   "a": "f14636",
+   "b": "f7644",
+   "type": "same",
+   "note": "Both exclude data-driven models from the physics-based and mechanistic scope."
+  },
+  {
+   "a": "f14637",
+   "b": "f7789",
+   "type": "same",
+   "note": "Both require validation thresholds justified for the decision."
+  },
+  {
+   "a": "f14639",
+   "b": "f8039",
+   "type": "elaborates",
+   "note": "Glossary explains prospective goals prevent changing metrics after inconvenient results."
+  },
+  {
+   "a": "f7647",
+   "b": "f10293",
+   "type": "supports",
+   "note": "Context-limited credibility supports planning around intended use, envelope and error consequences."
+  },
+  {
+   "a": "f7645",
+   "b": "f14638",
+   "type": "supports",
+   "note": "Different assurance scope for brakes and neural perception supports splitting the braking claim."
+  },
+  {
+   "a": "f14636",
+   "b": "f8220",
+   "type": "depends",
+   "note": "Excluding data-driven models necessitates separate assurance for machine-learned perception."
+  },
+  {
+   "a": "f8077",
+   "b": "f8078",
+   "type": "contradicts",
+   "note": "High transferability is qualified by lack of proof for off-road automatic braking."
+  },
+  {
+   "a": "f14635",
+   "b": "f7903",
+   "type": "depends",
+   "note": "Context-specific credibility makes variant applicability arguments necessary."
+  },
+  {
+   "a": "f9912",
+   "b": "f9913",
+   "type": "supports",
+   "note": "Useful findings despite an unvalidated concept demonstrate that pilots need not succeed."
+  },
+  {
+   "a": "f7640",
+   "b": "f14629",
+   "type": "supports",
+   "note": "Decision-first procedural steps substantiate the glossary’s characterization of the guidance."
+  }
+ ]
+}

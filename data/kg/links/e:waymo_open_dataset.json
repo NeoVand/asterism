@@ -1,0 +1,37 @@
+{
+ "key": "e:waymo open dataset",
+ "hash": "27662cfc2b18a3b1",
+ "synopsis": "The Waymo Open Dataset serves as an on-road example of reproducible reference practice in both Chapter 7 and the glossary [f5360, f12821, f15722]. The reference elements include synchronized lidar and camera data, calibration, vehicle poses and tracked labels, with Chapter 7 and one glossary entry explicitly specifying 3D labels [f5360, f12821, f15722]. Chapter 7 additionally identifies refined object poses as a reference element [f5360]. This example is not off-road certification evidence, so its role in the corpus is illustrative rather than proof of off-road certification [f5361].",
+ "relations": [
+  {
+   "a": "f5360",
+   "b": "f12821",
+   "type": "same",
+   "note": "Both identify the same reproducible reference elements, with Chapter 7 adding detail."
+  },
+  {
+   "a": "f5360",
+   "b": "f15722",
+   "type": "same",
+   "note": "Both list synchronized sensors, calibration, vehicle poses and tracked 3D labels."
+  },
+  {
+   "a": "f12821",
+   "b": "f15722",
+   "type": "same",
+   "note": "Glossary entries restate the reference requirements; one specifies 3D labels."
+  },
+  {
+   "a": "f5361",
+   "b": "f12821",
+   "type": "elaborates",
+   "note": "Clarifies that the on-road reference example is not off-road certification evidence."
+  },
+  {
+   "a": "f5361",
+   "b": "f15722",
+   "type": "elaborates",
+   "note": "Limits the certification relevance of the reproducible reference example."
+  }
+ ]
+}

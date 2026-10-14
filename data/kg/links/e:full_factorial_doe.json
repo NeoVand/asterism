@@ -1,0 +1,37 @@
+{
+ "key": "e:full factorial doe",
+ "hash": "4a3206eb832e9697",
+ "synopsis": "Full factorial DOE tests every combination of selected factors and levels, allowing main effects and interactions to be established over those tested levels without aliasing [f14101, f7208]. Its run count grows exponentially, so Chapter 9 recommends using it for a small number of important factors and levels and for physical confirmation [f14101, f7210, f7207]. Results cannot establish real-world prevalence unless tested levels are weighted to operational frequency [f7209]. The independent evidence base is NIST methodology; no off-road collision-avoidance study was found, leaving a domain-specific evidence gap [f7212]. Typical tooling includes commercial and open-source statistics packages [f7211].",
+ "relations": [
+  {
+   "a": "f14101",
+   "b": "f7210",
+   "type": "same",
+   "note": "Both state that full factorial run counts grow exponentially."
+  },
+  {
+   "a": "f14101",
+   "b": "f7208",
+   "type": "supports",
+   "note": "Testing every combination supports estimating main effects and interactions without aliasing."
+  },
+  {
+   "a": "f14101",
+   "b": "f7207",
+   "type": "supports",
+   "note": "Exponential run growth supports limiting the number of factors and levels."
+  },
+  {
+   "a": "f7210",
+   "b": "f7207",
+   "type": "supports",
+   "note": "Exponential run growth motivates a small-factor, small-level design."
+  },
+  {
+   "a": "f7209",
+   "b": "f7208",
+   "type": "elaborates",
+   "note": "Limits inference: unaliased tested-level effects do not establish operational prevalence without frequency weighting."
+  }
+ ]
+}

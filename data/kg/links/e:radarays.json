@@ -1,0 +1,115 @@
+{
+ "key": "e:radarays",
+ "hash": "c997322c8248c947",
+ "synopsis": "RadaRays, published in IEEE Robotics and Automation Letters in 2025, is a real-time radar ray tracer tested with a Navtech CIR radar on a wheel loader in a hall; the booklet identifies this as its most directly relevant heavy-machine radar evidence [f4531, f4532, f15952]. Material-aware reflection modelling substantially improved synthetic-image agreement over a lidar-like model, but the hall required hand-built geometry and tuned materials, and some real double reflections remained missing [f4531, f4824, f4716, f4717, f4962]. Improved image similarity did not deliver a comparable odometry improvement, and an R-CNN trained on real RADIATE data missed most cars in simulated images, partly because target material properties had to be guessed [f5082, f4747, f4855]. These results support evaluating fidelity against the intended downstream function rather than treating image similarity as sufficient evidence of detection or closed-loop intervention performance [f5083, f5084]. Runtime was 7.8–18.8 ms per polar image on an RTX 2070 Super versus 25.8–78.5 ms on a Ryzen 7 3800X CPU over 80,000–400,000 initial rays, limited to the tested radar, model and scene; automatic mesh reconstruction also introduced scanner-occluding artifacts and meshes too large to clean manually [f4936, f4937, f4963, f4964].",
+ "relations": [
+  {
+   "a": "f15952",
+   "b": "f4532",
+   "type": "same",
+   "note": "Both identify the wheel-loader experiment as the most directly relevant heavy-machine radar result."
+  },
+  {
+   "a": "f15952",
+   "b": "f4746",
+   "type": "elaborates",
+   "note": "Glossary adds real-time operation and relevance to the wheel-loader hall experiment."
+  },
+  {
+   "a": "f16196",
+   "b": "f4936",
+   "type": "elaborates",
+   "note": "Chapter specifies GPU ray counts and limits the timing result's applicability."
+  },
+  {
+   "a": "f16196",
+   "b": "f4937",
+   "type": "elaborates",
+   "note": "Chapter identifies the CPU, ray counts, and applicability limits."
+  },
+  {
+   "a": "f4938",
+   "b": "f16196",
+   "type": "elaborates",
+   "note": "Adds GPU and CPU timings at a specific ray count."
+  },
+  {
+   "a": "f4532",
+   "b": "f4714",
+   "type": "same",
+   "note": "Both rank the wheel-loader experiment as the strongest direct heavy-machine evidence."
+  },
+  {
+   "a": "f4531",
+   "b": "f4824",
+   "type": "same",
+   "note": "Both report improved image agreement from physics-based modelling over a lidar-like model."
+  },
+  {
+   "a": "f4747",
+   "b": "f4826",
+   "type": "same",
+   "note": "Both report failure of a real-data-trained detector to transfer to simulated images."
+  },
+  {
+   "a": "f4855",
+   "b": "f4747",
+   "type": "supports",
+   "note": "Guessed target materials partly explain detector-transfer failure."
+  },
+  {
+   "a": "f4855",
+   "b": "f4856",
+   "type": "supports",
+   "note": "Material guessing demonstrates consequential gaps from plausible default parameters."
+  },
+  {
+   "a": "f4962",
+   "b": "f4716",
+   "type": "elaborates",
+   "note": "Specifies the hand-built geometry and material choices behind close image resemblance."
+  },
+  {
+   "a": "f4715",
+   "b": "f4962",
+   "type": "supports",
+   "note": "Different pillar and wall responses explain the need for distinct material assignments."
+  },
+  {
+   "a": "f4717",
+   "b": "f4716",
+   "type": "elaborates",
+   "note": "Qualifies close resemblance with remaining missing double reflections."
+  },
+  {
+   "a": "f4744",
+   "b": "f4824",
+   "type": "elaborates",
+   "note": "Identifies the metrics used to establish improved image similarity."
+  },
+  {
+   "a": "f4745",
+   "b": "f4825",
+   "type": "supports",
+   "note": "Real-baseline comparisons underpin the realistic-odometry finding."
+  },
+  {
+   "a": "f5082",
+   "b": "f5083",
+   "type": "supports",
+   "note": "Unequal image and odometry gains support function-specific fidelity choices."
+  },
+  {
+   "a": "f4826",
+   "b": "f5084",
+   "type": "supports",
+   "note": "Detector failure despite image and odometry success demonstrates divergent evaluation criteria."
+  },
+  {
+   "a": "f4963",
+   "b": "f4964",
+   "type": "elaborates",
+   "note": "Adds consequential occlusion artifacts to the automatic-mesh cleanup limitation."
+  }
+ ]
+}

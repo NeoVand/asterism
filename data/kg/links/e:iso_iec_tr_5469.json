@@ -1,0 +1,109 @@
+{
+ "key": "e:iso/iec tr 5469",
+ "hash": "9d540c478f7db1fc",
+ "synopsis": "Chapter 3 and the glossary consistently describe ISO/IEC TR 5469:2024 as guidance on AI and functional safety, not a requirements document or a machine-learning safety requirement [f2100, f2383, f15053, f15299]. It was published in January 2024, and Chapter 3 explicitly says it imposes no testing requirements [f2382, f2726, f2727]. The glossary further distinguishes Technical Reports from full standards and explains that the ISO/IEC designation names the two participating bodies [f15053, f15019]. However, Chapter 13 lists this document among relevant leads that were not verified in the research, creating an unresolved verification gap despite the definite descriptions elsewhere [f11198, f2383, f15299].",
+ "relations": [
+  {
+   "a": "f2100",
+   "b": "f12410",
+   "type": "same",
+   "note": "Both distinguish guidance from requirements."
+  },
+  {
+   "a": "f2100",
+   "b": "f2383",
+   "type": "same",
+   "note": "Both reject requirements status; one specifically addresses machine-learning safety."
+  },
+  {
+   "a": "f2383",
+   "b": "f12410",
+   "type": "same",
+   "note": "Both describe guidance rather than a requirements document."
+  },
+  {
+   "a": "f2383",
+   "b": "f15053",
+   "type": "same",
+   "note": "Both describe AI and functional safety guidance, not requirements."
+  },
+  {
+   "a": "f2383",
+   "b": "f15299",
+   "type": "same",
+   "note": "Same guidance-versus-requirements claim; glossary also supplies the date."
+  },
+  {
+   "a": "f12410",
+   "b": "f15053",
+   "type": "same",
+   "note": "Both say guidance, not requirements; the latter adds Technical Report status."
+  },
+  {
+   "a": "f12410",
+   "b": "f15299",
+   "type": "same",
+   "note": "Both say guidance rather than requirements."
+  },
+  {
+   "a": "f15053",
+   "b": "f15299",
+   "type": "same",
+   "note": "Both describe AI and functional safety guidance rather than requirements."
+  },
+  {
+   "a": "f2382",
+   "b": "f2726",
+   "type": "same",
+   "note": "Both give January 2024 as the publication date."
+  },
+  {
+   "a": "f2382",
+   "b": "f15299",
+   "type": "same",
+   "note": "Both date the document to January 2024."
+  },
+  {
+   "a": "f2726",
+   "b": "f15299",
+   "type": "same",
+   "note": "Both identify January 2024 AI and functional safety guidance."
+  },
+  {
+   "a": "f2727",
+   "b": "f2383",
+   "type": "elaborates",
+   "note": "Specifies that non-requirements guidance imposes no testing requirements."
+  },
+  {
+   "a": "f2727",
+   "b": "f15053",
+   "type": "elaborates",
+   "note": "Makes the absence of testing requirements explicit."
+  },
+  {
+   "a": "f15053",
+   "b": "f2100",
+   "type": "elaborates",
+   "note": "Adds that Technical Reports are not full standards."
+  },
+  {
+   "a": "f11198",
+   "b": "f2383",
+   "type": "contradicts",
+   "note": "Unverified-lead assessment qualifies Chapter 3's definite characterization."
+  },
+  {
+   "a": "f11198",
+   "b": "f15299",
+   "type": "contradicts",
+   "note": "Research verification gap contrasts with the glossary's definite scope and date."
+  },
+  {
+   "a": "f11198",
+   "b": "f2727",
+   "type": "contradicts",
+   "note": "Unverified status creates tension with the categorical absence of testing requirements."
+  }
+ ]
+}

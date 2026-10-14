@@ -1,0 +1,115 @@
+{
+ "key": "t223",
+ "hash": "4a8b18ecf71e8cf2",
+ "synopsis": "Regression testing reruns previously passing cases after software or settings changes to detect newly broken required behaviour; the proposed campaign requires automatic regression on every change and makes captured, synthesised and search-discovered cases permanent tests [f14365, f6944, f7359, f1031, f14368]. Updates have materially changed field behaviour in on-road precedents, while changes to perception, sensors, mounting, braking or calibration can invalidate prior validation; every post-release software change therefore requires reassessment against accumulated safety evidence [f2013, f2940, f1156]. The proposed execution strategy combines smoke tests on every code change, mandatory safety tests on eligible builds, larger overnight or release-gate campaigns, and risk-selected hardware-in-the-loop and physical confirmation [f14369, f14370, f14371, f14372]. Within the four-month validation window, an existing automated pipeline is described as the only affordable way to check late tuning changes against earlier results, although demonstrating unchanged expected output remains a difficult simulation-tool integration task [f13531, f8723]. Regression volume does not establish operating-domain representativeness: the frozen estimation set must remain separate from continuous tuning, and late safety-relevant threshold changes require new independent statistical confirmation for affected claims [f14377, f14374, f14375].",
+ "relations": [
+  {
+   "a": "f1031",
+   "b": "f669",
+   "type": "same",
+   "note": "Both make captured or synthesised scenarios permanent automated regression tests."
+  },
+  {
+   "a": "f6668",
+   "b": "f6944",
+   "type": "same",
+   "note": "Both define regression testing as checking changes for broken required behaviour."
+  },
+  {
+   "a": "f13522",
+   "b": "f14365",
+   "type": "same",
+   "note": "Both define rerunning previously passing tests to detect failures after changes."
+  },
+  {
+   "a": "f14367",
+   "b": "f6668",
+   "type": "elaborates",
+   "note": "Adds continual reruns, requirement-linked pass-or-fail cases, and placement among three campaign classes."
+  },
+  {
+   "a": "f2013",
+   "b": "f1156",
+   "type": "supports",
+   "note": "Observed field changes after updates support reassessing post-release changes."
+  },
+  {
+   "a": "f2940",
+   "b": "f1156",
+   "type": "supports",
+   "note": "Changes that invalidate prior validation justify reassessment against accumulated safety evidence."
+  },
+  {
+   "a": "f5236",
+   "b": "f7359",
+   "type": "supports",
+   "note": "Open-loop replay provides a means of checking software and perception regressions."
+  },
+  {
+   "a": "f13531",
+   "b": "f7359",
+   "type": "supports",
+   "note": "Four-month affordability constraints reinforce the need for an existing automated regression pipeline."
+  },
+  {
+   "a": "f8723",
+   "b": "f13531",
+   "type": "supports",
+   "note": "Integration difficulty reinforces reliance on an already-existing pipeline within the short window."
+  },
+  {
+   "a": "f14376",
+   "b": "f7359",
+   "type": "supports",
+   "note": "Frequent late corrections create cross-stratum risks that automatic regression addresses."
+  },
+  {
+   "a": "f14369",
+   "b": "f7359",
+   "type": "elaborates",
+   "note": "Specifies a fast software-in-the-loop smoke subset for every code change."
+  },
+  {
+   "a": "f14370",
+   "b": "f7359",
+   "type": "elaborates",
+   "note": "Specifies mandatory safety regression coverage on every eligible build."
+  },
+  {
+   "a": "f14371",
+   "b": "f7359",
+   "type": "elaborates",
+   "note": "Schedules larger virtual campaigns overnight or at release gates."
+  },
+  {
+   "a": "f14368",
+   "b": "f1031",
+   "type": "elaborates",
+   "note": "Explicitly includes every search-discovered failure in the permanent regression suite."
+  },
+  {
+   "a": "f14373",
+   "b": "f2940",
+   "type": "elaborates",
+   "note": "Maps brake and perception changes to scenarios needing renewed testing."
+  },
+  {
+   "a": "f14366",
+   "b": "f14376",
+   "type": "supports",
+   "note": "Threshold tuning illustrates how fixing one behaviour can break another."
+  },
+  {
+   "a": "f14377",
+   "b": "f14374",
+   "type": "supports",
+   "note": "Regression volume cannot establish representativeness, motivating a separately protected estimation set."
+  },
+  {
+   "a": "f14375",
+   "b": "f7359",
+   "type": "elaborates",
+   "note": "Safety-threshold changes require independent statistical confirmation beyond automatic regression."
+  }
+ ]
+}

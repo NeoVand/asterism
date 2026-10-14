@@ -1,0 +1,115 @@
+{
+ "key": "t328",
+ "hash": "78b271a6aafa574f",
+ "synopsis": "Data replay feeds recorded sensor data into braking software, while HIL runs a real control unit against a simulated machine; the glossary identifies HIL as the only way to test ECU timing and interfaces before the machine exists [f16032, f16042]. The booklet recommends an ISO/TS 21815-2-interface HIL bench for mid-2027, but keeping it off the critical path unless interfaces stabilize early; sensor injection is sensor- and ECU-specific, with raw-signal benches requiring the most integration effort [f16044, f16043]. Commercial alternatives span dSPACE, NI, Speedgoat and OPAL-RT, but the cited on-road replay/HIL evidence establishes architectural feasibility rather than suitability for this off-road manufacturer; OPAL-RT separately names off-highway and defense users [f8363, f8364, f5610, f9235]. An NI PXIe-8842 controller is listed at about USD 5,200, not a complete bench price; the NI system requires a quote, and no full-system dSPACE price was found [f8644, f9227, f8642].",
+ "relations": [
+  {
+   "a": "f8644",
+   "b": "f16035",
+   "type": "same",
+   "note": "Both give the controller price and explicitly exclude a complete HIL bench."
+  },
+  {
+   "a": "f8644",
+   "b": "f9227",
+   "type": "same",
+   "note": "Both price the PXIe-8842 controller around USD 5,200; the latter adds system quotation requirements."
+  },
+  {
+   "a": "f8644",
+   "b": "f8307",
+   "type": "same",
+   "note": "Both report a listed NI controller price around USD 5,200."
+  },
+  {
+   "a": "f8644",
+   "b": "f16147",
+   "type": "same",
+   "note": "Both report the PXIe-8842 controller price around USD 5,200."
+  },
+  {
+   "a": "f8646",
+   "b": "f9233",
+   "type": "same",
+   "note": "Both date Speedgoat Pulse to 15 May 2025."
+  },
+  {
+   "a": "f8650",
+   "b": "f9236",
+   "type": "same",
+   "note": "Both identify OPAL-RT CPU/FPGA real-time capability."
+  },
+  {
+   "a": "f8366",
+   "b": "f16039",
+   "type": "same",
+   "note": "Both identify RoadRunner and Automated Driving Toolbox for recorded-scenario reconstruction and replay."
+  },
+  {
+   "a": "f8364",
+   "b": "f16036",
+   "type": "elaborates",
+   "note": "The glossary identifies the Speedgoat pairing specifically as HIL hardware and software."
+  },
+  {
+   "a": "f16034",
+   "b": "f8363",
+   "type": "elaborates",
+   "note": "The glossary distinguishes SCALEXIO real-time HIL from VEOS PC-based virtual ECU simulation."
+  },
+  {
+   "a": "f16037",
+   "b": "f8364",
+   "type": "elaborates",
+   "note": "The glossary adds OP5707XG2 CPU/FPGA architecture and off-highway and defense users."
+  },
+  {
+   "a": "f8649",
+   "b": "f9235",
+   "type": "supports",
+   "note": "Named users substantiate the summarized user evidence."
+  },
+  {
+   "a": "f9220",
+   "b": "f5610",
+   "type": "supports",
+   "note": "On-road-only dSPACE evidence supports caution against assuming off-road product suitability."
+  },
+  {
+   "a": "f16040",
+   "b": "f9221",
+   "type": "elaborates",
+   "note": "The glossary specifies stop, slow down, and motion inhibit commands for the emulated interface."
+  },
+  {
+   "a": "f16044",
+   "b": "f16043",
+   "type": "depends",
+   "note": "Interface stabilization and injection complexity condition the proposed bench schedule."
+  },
+  {
+   "a": "f16042",
+   "b": "f16044",
+   "type": "supports",
+   "note": "Pre-machine ECU timing and interface testing provides a reason to plan a HIL bench."
+  },
+  {
+   "a": "f16033",
+   "b": "f16032",
+   "type": "elaborates",
+   "note": "Injection details extend the replay definition to sensor paths, bus traffic, and restbus models."
+  },
+  {
+   "a": "f8643",
+   "b": "f9226",
+   "type": "elaborates",
+   "note": "NI capabilities add real-time testing and logging to the plant-model and I/O interface summary."
+  },
+  {
+   "a": "f9251",
+   "b": "f16039",
+   "type": "elaborates",
+   "note": "The tools chapter adds off-road adaptability to the glossary's scenario-replay description."
+  }
+ ]
+}

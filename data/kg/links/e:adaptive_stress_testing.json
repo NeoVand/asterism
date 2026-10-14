@@ -1,0 +1,67 @@
+{
+ "key": "e:adaptive stress testing",
+ "hash": "c6e4053cdc0d8f6a",
+ "synopsis": "The booklet presents adaptive stress testing (AST) as both an option for shortening validation and a failure-discovery method within the broader falsification and adversarial-search family [f425, f6936, f14148]. AST treats test selection as optimisation toward failures; the cited Stanford work uses dynamic programming and scene decomposition, and automated-driving simulations have demonstrated searches for the most likely failure trajectories [f6835, f634, f6838]. For this program, AST and reinforcement-learning adversaries are recommended primarily for sequential multi-agent failures, with academic toolkits and in-house tools identified as typical tooling [f7255, f7259]. Their results cannot establish failure rates unless re-weighted, and their effectiveness depends on the agent and environment model [f7257, f7258]. The cited independent evidence includes on-road and aviation applications; the supplied facts do not establish heavy off-road performance or quantify validation savings [f425, f634, f7260].",
+ "relations": [
+  {
+   "a": "f6838",
+   "b": "f7256",
+   "type": "same",
+   "note": "Both describe identifying the most likely failure trajectories or paths."
+  },
+  {
+   "a": "f634",
+   "b": "f6838",
+   "type": "supports",
+   "note": "The Stanford simulation-search example supports demonstrated automated-driving failure discovery."
+  },
+  {
+   "a": "f634",
+   "b": "f6835",
+   "type": "elaborates",
+   "note": "Adds dynamic programming and scene decomposition to the optimisation-search description."
+  },
+  {
+   "a": "f14148",
+   "b": "f6835",
+   "type": "elaborates",
+   "note": "Adds named falsification tools and related search methods to the optimisation family."
+  },
+  {
+   "a": "f6936",
+   "b": "f425",
+   "type": "elaborates",
+   "note": "Clarifies AST's discovery-testing role within the broader validation-shortening options."
+  },
+  {
+   "a": "f7257",
+   "b": "f425",
+   "type": "elaborates",
+   "note": "Qualifies validation-shortening use: failure-rate estimation requires re-weighting."
+  },
+  {
+   "a": "f7256",
+   "b": "f7255",
+   "type": "supports",
+   "note": "Failure-path identification supports the recommendation for sequential multi-agent failures."
+  },
+  {
+   "a": "f7257",
+   "b": "f7256",
+   "type": "elaborates",
+   "note": "Distinguishes finding likely failure paths from establishing failure rates."
+  },
+  {
+   "a": "f7258",
+   "b": "f7256",
+   "type": "elaborates",
+   "note": "Qualifies failure-path identification with dependence on agent and environment models."
+  },
+  {
+   "a": "f7260",
+   "b": "f634",
+   "type": "elaborates",
+   "note": "Broadens the cited evidence base beyond on-road applications to aviation."
+  }
+ ]
+}

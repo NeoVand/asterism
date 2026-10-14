@@ -1,0 +1,115 @@
+{
+ "key": "t123",
+ "hash": "3978bf4feaa3c9db",
+ "synopsis": "EMC means electronics must operate amid electrical noise without disturbing other equipment; ISO 16001:2017 requires EMC to ISO 13766 for object detection systems on earth-moving machines [f13021, f2414, f15254]. Field evidence includes variable-frequency-drive nuisance shutdowns documented in 2010, cross-zone interference reported in 2017, and interference involving dust monitors, computers, survey lasers and steel-braided water lines [f3371, f3372, f3373]. The booklet identifies EMC and multi-radar/lidar interference as simulation blind spots, so complete-machine EMC remains a physical-test requirement; MOSH includes EMC in its TRL4 laboratory phase [f5100, f13030, f13031, f493, f5595]. Acceptance criteria must address electromagnetic false triggers, and simultaneous sensor-suite mounting must be tested when it changes electromagnetic or optical behaviour [f13032, f5511]. The skeptic's review rates site-system interoperability and radar interference Medium to High risk and recommends ISO/TS 21815-2 interface tests and radio-frequency coexistence tests; an on-road example illustrates the concern but is reported through a secondary summary [f11076, f11078, f11255].",
+ "relations": [
+  {
+   "a": "f2414",
+   "b": "f13023",
+   "type": "same",
+   "note": "Both state ISO 16001 requires EMC compliance with ISO 13766."
+  },
+  {
+   "a": "f13023",
+   "b": "f15255",
+   "type": "same",
+   "note": "Duplicate ISO 16001 EMC requirement."
+  },
+  {
+   "a": "f15255",
+   "b": "f15215",
+   "type": "same",
+   "note": "Duplicate ISO 16001 EMC requirement."
+  },
+  {
+   "a": "f3371",
+   "b": "f13024",
+   "type": "same",
+   "note": "Both report variable-frequency-drive nuisance shutdowns; chapter adds the 2010 source."
+  },
+  {
+   "a": "f3372",
+   "b": "f13025",
+   "type": "same",
+   "note": "Both report interference between machines' zones; chapter adds MSHA and 2017."
+  },
+  {
+   "a": "f3373",
+   "b": "f3435",
+   "type": "same",
+   "note": "Restates the same reported interference sources."
+  },
+  {
+   "a": "f3373",
+   "b": "f13026",
+   "type": "same",
+   "note": "Glossary repeats the reported interference sources, omitting variable-frequency drives."
+  },
+  {
+   "a": "f3375",
+   "b": "f13027",
+   "type": "same",
+   "note": "Both repeat Queensland's question about interference with other electronics."
+  },
+  {
+   "a": "f5595",
+   "b": "f15256",
+   "type": "same",
+   "note": "Both place EMC testing in MOSH's TRL4 laboratory phase."
+  },
+  {
+   "a": "f5100",
+   "b": "f13029",
+   "type": "same",
+   "note": "Both identify EMC and multi-sensor interference as simulation blind spots."
+  },
+  {
+   "a": "f11255",
+   "b": "f15259",
+   "type": "same",
+   "note": "Glossary condenses the on-road radar-coexistence example."
+  },
+  {
+   "a": "f13021",
+   "b": "f15254",
+   "type": "elaborates",
+   "note": "ISO 13766 requirements express the definition's two-way interference protection."
+  },
+  {
+   "a": "f13030",
+   "b": "f13031",
+   "type": "depends",
+   "note": "Absent simulator representation makes EMC a physical-test item."
+  },
+  {
+   "a": "f13031",
+   "b": "f493",
+   "type": "supports",
+   "note": "Simulation limitations support requiring physical complete-machine EMC evidence."
+  },
+  {
+   "a": "f3371",
+   "b": "f13032",
+   "type": "supports",
+   "note": "Documented nuisance shutdowns justify acceptance criteria addressing electromagnetic false triggers."
+  },
+  {
+   "a": "f11076",
+   "b": "f11078",
+   "type": "depends",
+   "note": "Identified interoperability and radar risks drive recommended interface and coexistence tests."
+  },
+  {
+   "a": "f11255",
+   "b": "f11256",
+   "type": "supports",
+   "note": "The on-road radar conflict illustrates analogous multi-OEM site coexistence concerns."
+  },
+  {
+   "a": "f5511",
+   "b": "f493",
+   "type": "elaborates",
+   "note": "Adds simultaneous candidate-suite mounting interference to the physical validation scope."
+  }
+ ]
+}

@@ -5,7 +5,8 @@ description: Catalog and JSON shapes of the interactive blocks show_ui can rende
 
 # UI blocks
 
-`show_ui({ block })` renders one block in the chat. Items carry `cites`: graph ids that light up
+`show_ui({ block })` renders one block in the chat. Call it after your research and BEFORE you write
+your answer text; the chat displays your answer above the blocks, so refer to them as "below". Items carry `cites`: graph ids that light up
 in the 3D view when the user hovers the item. Every item that states a fact should cite it.
 Keep text short (blocks are compact cards, not essays). After a block, add only the reasoning and
 caveats the block cannot carry. One or two blocks per answer is usually right.

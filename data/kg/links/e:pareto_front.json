@@ -1,0 +1,49 @@
+{
+ "key": "e:pareto front",
+ "hash": "04b7da01e8e6f73b",
+ "synopsis": "The booklet frames collision-mitigation tuning as constrained multi-objective optimization: missed or late interventions are a hard constraint, while false warnings, unnecessary braking and productivity loss are optimized with the Pareto front visible [f136]. The glossary further recommends putting the human-factors rate on one axis of that front [f14442]. Chapter 9 recommends preserving visibility so trade-offs become documented safety-policy decisions rather than hidden weights; evolutionary methods make trade-offs explicit but do not determine which Pareto point is acceptable [f6672, f6971, f6973]. Pareto-front, NSGA-II and other evolutionary methods, referenced to Deb et al. (2002), are described as robust and simple to parallelise over simulation, but they require many evaluations [f6970, f6972].",
+ "relations": [
+  {
+   "a": "f14442",
+   "b": "f136",
+   "type": "elaborates",
+   "note": "Adds the human-factors rate as a Pareto-front axis to the constrained tuning formulation."
+  },
+  {
+   "a": "f6672",
+   "b": "f136",
+   "type": "elaborates",
+   "note": "Explains why the Pareto front should remain visible: documented safety-policy trade-offs."
+  },
+  {
+   "a": "f6971",
+   "b": "f6672",
+   "type": "supports",
+   "note": "Explicit trade-offs support visible, documented decisions rather than hidden weights."
+  },
+  {
+   "a": "f6973",
+   "b": "f6672",
+   "type": "supports",
+   "note": "Selecting an acceptable Pareto point remains a policy decision."
+  },
+  {
+   "a": "f6973",
+   "b": "f136",
+   "type": "elaborates",
+   "note": "The constrained optimization framework still requires policy selection of an acceptable Pareto point."
+  },
+  {
+   "a": "f6971",
+   "b": "f136",
+   "type": "supports",
+   "note": "Explicit trade-offs justify keeping the Pareto front visible during tuning."
+  },
+  {
+   "a": "f6972",
+   "b": "f6970",
+   "type": "elaborates",
+   "note": "Adds evaluation-cost limitations to the methods' robustness and simulation parallelisability."
+  }
+ ]
+}

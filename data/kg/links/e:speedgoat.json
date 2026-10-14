@@ -1,0 +1,61 @@
+{
+ "key": "e:speedgoat",
+ "hash": "ef7283a1cc282e66",
+ "synopsis": "The booklet identifies Speedgoat with Simulink Real-Time as a commercial HIL hardware/software offering, providing turnkey real-time targets tightly coupled to Simulink [f16036, f9229, f8645, f9231]. Speedgoat engineering services also provides real-time and HIL integration, but the cited evidence is general HIL rather than off-road-specific, leaving application-specific validation unestablished [f8814, f9230, f16103]. The middle-cost example stack places Speedgoat or NI in later HIL testing, alongside an externally validated sensor model packaged as an OSI FMU and cloud GPUs for batch runs [f9288, f16163]. No public price was found, so the corpus does not establish Speedgoat's actual cost within that example stack [f8647, f9232, f9288]. The latest release found for the combined Speedgoat and Simulink Real-Time entry was Pulse, dated 15 May 2025 [f9233].",
+ "relations": [
+  {
+   "a": "f8364",
+   "b": "f16036",
+   "type": "same",
+   "note": "Both identify Speedgoat with Simulink Real-Time as a HIL offering."
+  },
+  {
+   "a": "f16036",
+   "b": "f8645",
+   "type": "elaborates",
+   "note": "Adds turnkey real-time targets and tight Simulink coupling to the HIL identification."
+  },
+  {
+   "a": "f16036",
+   "b": "f16180",
+   "type": "elaborates",
+   "note": "Classifies Speedgoat's hardware as real-time computing hardware."
+  },
+  {
+   "a": "f8645",
+   "b": "f9231",
+   "type": "supports",
+   "note": "Tight Simulink coupling supports the listed Simulink interface."
+  },
+  {
+   "a": "f8647",
+   "b": "f9232",
+   "type": "same",
+   "note": "Both report that no price was found."
+  },
+  {
+   "a": "f8814",
+   "b": "f16103",
+   "type": "elaborates",
+   "note": "Specifies the integration services offered by the named engineering service provider."
+  },
+  {
+   "a": "f8814",
+   "b": "f9230",
+   "type": "same",
+   "note": "Both characterize the evidence as general HIL, not off-road-specific."
+  },
+  {
+   "a": "f9288",
+   "b": "f16163",
+   "type": "elaborates",
+   "note": "Adds sensor-model packaging and cloud batch computing to the same middle-cost stack."
+  },
+  {
+   "a": "f8645",
+   "b": "f9288",
+   "type": "supports",
+   "note": "Real-time target capabilities support Speedgoat's proposed role in later HIL testing."
+  }
+ ]
+}

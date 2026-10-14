@@ -1,0 +1,97 @@
+{
+ "key": "e:mean average precision",
+ "hash": "8f699e2b36e0be6c",
+ "synopsis": "Chapter 6 and the glossary warn that mean average precision (mAP) can be misleading: broader synthetic coverage can raise detector scores even when synthetic and real domains differ, a concern attributed to the 2024 Instance Performance Difference paper [f4818, f12842, f14795]. In the cited on-road Clear2Fog evidence, synthetic-fog pre-training followed by real-fog fine-tuning improved mAP by at most 0.0117 over a real-only baseline [f4448, f4896, f12843, f12917, f14705]. For generative editing as test evidence, vision-language-model jury studies report that edited images match real images, while training-transfer studies report a remaining gap; the corpus cites Clear2Fog’s small gain alongside this tension [f5079].",
+ "relations": [
+  {
+   "a": "f4818",
+   "b": "f12842",
+   "type": "same",
+   "note": "Both warn that broader synthetic coverage can inflate mAP despite domain differences."
+  },
+  {
+   "a": "f4818",
+   "b": "f14795",
+   "type": "same",
+   "note": "Both attribute the same mAP warning to a 2024 paper."
+  },
+  {
+   "a": "f12842",
+   "b": "f14795",
+   "type": "same",
+   "note": "Glossary entries repeat the warning about coverage-driven mAP gains despite domain differences."
+  },
+  {
+   "a": "f4448",
+   "b": "f4896",
+   "type": "same",
+   "note": "Same maximum gain; Clear2Fog entry specifies subsequent real-fog fine-tuning."
+  },
+  {
+   "a": "f4448",
+   "b": "f12843",
+   "type": "same",
+   "note": "Both report at most 0.0117 mAP improvement over a real-only baseline."
+  },
+  {
+   "a": "f4448",
+   "b": "f12917",
+   "type": "same",
+   "note": "Both report the same synthetic-fog pre-training gain ceiling."
+  },
+  {
+   "a": "f4448",
+   "b": "f14705",
+   "type": "same",
+   "note": "Same reported gain; glossary specifies real-fog fine-tuning."
+  },
+  {
+   "a": "f4896",
+   "b": "f12843",
+   "type": "same",
+   "note": "Glossary restates the Clear2Fog gain without naming the study or fine-tuning step."
+  },
+  {
+   "a": "f4896",
+   "b": "f12917",
+   "type": "same",
+   "note": "Both report the same maximum improvement from synthetic-fog pre-training."
+  },
+  {
+   "a": "f4896",
+   "b": "f14705",
+   "type": "same",
+   "note": "Both describe synthetic-fog pre-training, real-fog fine-tuning, and the 0.0117 baseline improvement."
+  },
+  {
+   "a": "f12843",
+   "b": "f12917",
+   "type": "same",
+   "note": "Duplicate glossary statements of the synthetic-fog gain ceiling."
+  },
+  {
+   "a": "f12843",
+   "b": "f14705",
+   "type": "same",
+   "note": "Same gain over real-only training; one entry adds the fine-tuning step."
+  },
+  {
+   "a": "f12917",
+   "b": "f14705",
+   "type": "same",
+   "note": "Same detector improvement; one entry explicitly includes real-fog fine-tuning."
+  },
+  {
+   "a": "f5079",
+   "b": "f4896",
+   "type": "elaborates",
+   "note": "Places the Clear2Fog gain within conflicting image-realism and training-transfer findings."
+  },
+  {
+   "a": "f5079",
+   "b": "f14705",
+   "type": "elaborates",
+   "note": "Adds the test-evidence disagreement surrounding the glossary’s reported detector improvement."
+  }
+ ]
+}

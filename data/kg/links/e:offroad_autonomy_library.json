@@ -1,0 +1,115 @@
+{
+ "key": "e:offroad autonomy library",
+ "hash": "548b602ab739257a",
+ "synopsis": "The Offroad Autonomy Library is a commercial MathWorks support package for construction, mining and agriculture using Unreal Engine scenes; MATLAB/Simulink, the library and RoadRunner have per-product annual or perpetual licensing [f8374, f8958, f15877]. Its documented capabilities span an MPPI off-road planner available since R2024b, articulated-steering kinematics since R2025a, a vehicle-library loader since R2026b, and traversability analysis; R2026b is the second release of 2026 [f8375, f8376, f8377, f8378, f16239]. Vendor evidence includes shipped autonomous-excavator, backhoe truck-loading and open-pit haul-truck examples, but independent validation for automatic braking on heavy machines was not found [f15878, f8680, f8289]. The package exposes camera, lidar and INS, while radar and ultrasonic are listed in the wider stack rather than confirmed specifically inside the off-road package [f8380, f8960, f8382]. The proposed middle-cost engineering chain combines the MathWorks tools with Unreal and sensor toolboxes, with Mevea or AGX Dynamics coupled through FMI for terrain, hydraulics and machine variants [f9285, f16162].",
+ "relations": [
+  {
+   "a": "f15877",
+   "b": "f8958",
+   "type": "same",
+   "note": "Both specify commercial, per-product annual or perpetual licensing."
+  },
+  {
+   "a": "f8373",
+   "b": "f15877",
+   "type": "elaborates",
+   "note": "Glossary adds annual or perpetual per-product licensing to commercial status."
+  },
+  {
+   "a": "f8285",
+   "b": "f15878",
+   "type": "same",
+   "note": "Both report shipped excavator, backhoe and haul-truck examples in R2026b."
+  },
+  {
+   "a": "f8379",
+   "b": "f15878",
+   "type": "same",
+   "note": "Both describe autonomous excavation, truck loading and open-pit haul-truck examples."
+  },
+  {
+   "a": "f8285",
+   "b": "f8379",
+   "type": "same",
+   "note": "Documentation identifies the same three shipped machine examples in greater detail."
+  },
+  {
+   "a": "f8664",
+   "b": "f16075",
+   "type": "elaborates",
+   "note": "Glossary expands the explicit off-road platform list to include Foretellix."
+  },
+  {
+   "a": "f8374",
+   "b": "f8679",
+   "type": "elaborates",
+   "note": "Adds adapted-package classification and listed release range to the same application scope."
+  },
+  {
+   "a": "f8374",
+   "b": "f8700",
+   "type": "supports",
+   "note": "Use of Unreal scenes supports the explicitly supported Simulink–Unreal pairing."
+  },
+  {
+   "a": "f8380",
+   "b": "f8960",
+   "type": "elaborates",
+   "note": "Adds wider-stack sensors while retaining the package's camera, lidar and INS list."
+  },
+  {
+   "a": "f8382",
+   "b": "f8960",
+   "type": "elaborates",
+   "note": "Distinguishes unconfirmed package-specific radar and ultrasonic support from wider-stack availability."
+  },
+  {
+   "a": "f9285",
+   "b": "f16162",
+   "type": "elaborates",
+   "note": "Adds FMI-coupled Mevea or AGX Dynamics for terrain, hydraulics and machine variants."
+  },
+  {
+   "a": "f8375",
+   "b": "f8679",
+   "type": "supports",
+   "note": "Planner availability since R2024b supports the stated release-range starting point."
+  },
+  {
+   "a": "f8377",
+   "b": "f8679",
+   "type": "supports",
+   "note": "Loader availability in R2026b supports the stated release-range endpoint."
+  },
+  {
+   "a": "f16239",
+   "b": "f8377",
+   "type": "elaborates",
+   "note": "Explains that the loader's R2026b introduction falls in the second 2026 release."
+  },
+  {
+   "a": "f8379",
+   "b": "f8680",
+   "type": "supports",
+   "note": "Named machine examples substantiate the characterization of vendor evidence as shipped examples."
+  },
+  {
+   "a": "f8680",
+   "b": "f8811",
+   "type": "elaborates",
+   "note": "Adds consulting services while identifying the same examples-based off-road evidence."
+  },
+  {
+   "a": "f8289",
+   "b": "f8680",
+   "type": "elaborates",
+   "note": "Qualifies vendor example evidence with the absence of found independent automatic-braking validation."
+  },
+  {
+   "a": "f8346",
+   "b": "f9285",
+   "type": "elaborates",
+   "note": "Details the MathWorks toolchain included among complete or near-complete simulation platforms."
+  }
+ ]
+}

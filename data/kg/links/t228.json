@@ -1,0 +1,103 @@
+{
+ "key": "t228",
+ "hash": "2a1dfc20fb870075",
+ "synopsis": "The booklet treats nuisance warnings and unnecessary braking as safety objectives: frequent interruptions can undermine trust and lead operators to ignore or disable the system [f7000, f14430, f14437]. After hard safety constraints are satisfied, tuning should balance nuisance rates, comfort, productivity loss and braking timing through constrained multi-objective optimisation, rather than pursue zero misses or zero nuisance alone [f6963, f14441, f14442]. In a seven-day NIOSH radar trial on a Caterpillar 793B, 580 alarms occurred in 618 reversals; 18% were false, 42% concerned objects already known to the driver, and 41% warranted action, with researchers finding the audible warning disabled after shifts [f14431, f14432, f14433]. Another trial reported false alarms infrequent enough that the system was not ignored, but no study defines an acceptable false-alarm rate for off-road operators [f14434, f14439]. The proposed way to establish practical limits is an operator clinic measuring acceptance thresholds by scenario, with escalation or stopping if the design cannot meet those thresholds; useful tuning measures include unnecessary warnings or interventions per operating hour, loading cycle and reverse maneuver [f10966, f10967, f10968, f14440].",
+ "relations": [
+  {
+   "a": "f7000",
+   "b": "f14430",
+   "type": "same",
+   "note": "Both identify nuisance-induced disabling as the reason human factors are a safety objective."
+  },
+  {
+   "a": "f7000",
+   "b": "f14437",
+   "type": "same",
+   "note": "Both explicitly classify nuisance rate as a safety objective, not merely comfort."
+  },
+  {
+   "a": "f6963",
+   "b": "f14394",
+   "type": "same",
+   "note": "Both prioritise hard safety constraints before optimising nuisance, comfort and productivity."
+  },
+  {
+   "a": "f14442",
+   "b": "f6963",
+   "type": "elaborates",
+   "note": "Adds a constrained multi-objective formulation and human-factors Pareto axis."
+  },
+  {
+   "a": "f14385",
+   "b": "f6963",
+   "type": "supports",
+   "note": "Production disruption from detection-only optimisation supports including productivity and nuisance objectives."
+  },
+  {
+   "a": "f14441",
+   "b": "f6963",
+   "type": "supports",
+   "note": "Opposing failure modes justify balancing objectives within hard safety constraints."
+  },
+  {
+   "a": "f14433",
+   "b": "f7000",
+   "type": "supports",
+   "note": "Observed warning disabling provides evidence for the nuisance-related safety concern."
+  },
+  {
+   "a": "f14432",
+   "b": "f14431",
+   "type": "elaborates",
+   "note": "Breaks down the alarms recorded in the same seven-day trial."
+  },
+  {
+   "a": "f14434",
+   "b": "f14433",
+   "type": "contradicts",
+   "note": "Different trials contrast tolerable false alarms with observed warning disabling."
+  },
+  {
+   "a": "f14435",
+   "b": "f14385",
+   "type": "supports",
+   "note": "Reported vehicle shutdown frequencies illustrate the potential for production disruption."
+  },
+  {
+   "a": "f14439",
+   "b": "f10966",
+   "type": "supports",
+   "note": "Missing acceptance-rate evidence motivates direct operator testing."
+  },
+  {
+   "a": "f10967",
+   "b": "f10966",
+   "type": "elaborates",
+   "note": "Specifies scenario-level measured thresholds as the clinic's output."
+  },
+  {
+   "a": "f10968",
+   "b": "f10967",
+   "type": "depends",
+   "note": "Stopping or escalation requires comparing measured acceptance thresholds with deliverable nuisance rates."
+  },
+  {
+   "a": "f14440",
+   "b": "f6963",
+   "type": "elaborates",
+   "note": "Supplies operational denominators for measuring nuisance-related tuning objectives."
+  },
+  {
+   "a": "f14438",
+   "b": "f7000",
+   "type": "elaborates",
+   "note": "Adds a standard's single-action disabling restriction to the warning-disablement risk."
+  },
+  {
+   "a": "f14441",
+   "b": "f14442",
+   "type": "supports",
+   "note": "Competing zero-miss and zero-nuisance risks motivate constrained Pareto optimisation."
+  }
+ ]
+}

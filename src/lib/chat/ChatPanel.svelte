@@ -36,7 +36,7 @@
 	$effect(() => {
 		// track content growth
 		void JSON.stringify(messages.map((m) => [m.parts.length, m.steps.length, m.parts.at(-1)]));
-		if (stick && scroller) requestAnimationFrame(() => scroller.scrollTo({ top: scroller.scrollHeight }));
+		if (stick && scroller) requestAnimationFrame(() => scroller?.scrollTo({ top: scroller.scrollHeight }));
 	});
 
 	function onscroll() {

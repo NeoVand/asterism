@@ -1,0 +1,115 @@
+{
+ "key": "e:openscenario",
+ "hash": "b9f8e7161f6a7b8f",
+ "synopsis": "OpenSCENARIO is part of the booklet’s recommended scenario catalogue and integration infrastructure, alongside OpenDRIVE and OSI; usable simulation also requires validated sensor, dynamics and friction models, site models and calibration datasets [f913, f8335, f15862]. It describes actor movement over time: XML version 1.4.0, dated 2026, supports precise synchronized maneuvers, while DSL version 2.2.0, dated March 2026, explicitly represents abstract scenarios, parameter ranges and performance indicators [f13204, f13205]. Both forms retain a road-traffic domain model, and no study was found from the listed industry and standards organizations on applying OpenSCENARIO, ISO 34502 or the UNECE New Assessment/Test Method to off-road machines [f13206, f1698]. The booklet therefore recommends OpenDRIVE only for structured haul roads, OpenUSD and OpenMATERIAL for scenes, and OpenSCENARIO export where tools require it [f13216]. Vendor support includes MathWorks, Prescan and MORAI—the latter listing OpenSCENARIO 1.x—and VTD 2025.2 added a native ScenarioEngine on 1 October 2025; compatibility establishes data exchange, not physical fidelity [f8383, f8458, f8512, f8429, f8921]. Procurement should require OpenSCENARIO, OSI, FMI and OpenUSD exports, with ownership-change exit clauses to mitigate supplier dependence [f16487, f8887].",
+ "relations": [
+  {
+   "a": "f8335",
+   "b": "f15862",
+   "type": "same",
+   "note": "Both identify the same open standards as simulation-tool integration glue."
+  },
+  {
+   "a": "f8383",
+   "b": "f8961",
+   "type": "same",
+   "note": "Both list MathWorks interfaces, including OpenSCENARIO and partner-provided FMI."
+  },
+  {
+   "a": "f8458",
+   "b": "f9005",
+   "type": "same",
+   "note": "Both list Prescan support for OpenSCENARIO, Python and MATLAB APIs."
+  },
+  {
+   "a": "f8512",
+   "b": "f9037",
+   "type": "same",
+   "note": "Both state MORAI supports OpenSCENARIO 1.x; the latter also lists cloud."
+  },
+  {
+   "a": "f8606",
+   "b": "f9154",
+   "type": "same",
+   "note": "Both list the RoadRunner suite’s OpenDRIVE, OpenSCENARIO, USD, FBX and glTF formats."
+  },
+  {
+   "a": "f8887",
+   "b": "f16487",
+   "type": "elaborates",
+   "note": "Adds supplier-dependence rationale and ownership-change exit clauses to the same export requirements."
+  },
+  {
+   "a": "f13206",
+   "b": "f13216",
+   "type": "supports",
+   "note": "Road-traffic scope supports selective use of road-oriented formats for off-road simulation."
+  },
+  {
+   "a": "f13204",
+   "b": "f913",
+   "type": "elaborates",
+   "note": "Explains the actor-motion and synchronized-maneuver capabilities of the recommended scenario format."
+  },
+  {
+   "a": "f13205",
+   "b": "f913",
+   "type": "elaborates",
+   "note": "Adds DSL support for abstract scenarios, parameter ranges and performance indicators."
+  },
+  {
+   "a": "f8921",
+   "b": "f913",
+   "type": "supports",
+   "note": "Exchange compatibility alone cannot replace the validated physical models required as simulation inputs."
+  },
+  {
+   "a": "f8383",
+   "b": "f15862",
+   "type": "supports",
+   "note": "MathWorks interfaces provide a concrete example of standards connecting simulation tools."
+  },
+  {
+   "a": "f8606",
+   "b": "f15862",
+   "type": "supports",
+   "note": "RoadRunner exports illustrate standards-based connections to multiple simulation platforms."
+  },
+  {
+   "a": "f8714",
+   "b": "f15862",
+   "type": "elaborates",
+   "note": "Identifies the environment, scenario and interface axis within the broader integration-standard set."
+  },
+  {
+   "a": "f9331",
+   "b": "f15862",
+   "type": "supports",
+   "note": "Road ADAS experience supports the practicality of standards-based heterogeneous tool chains."
+  },
+  {
+   "a": "f8429",
+   "b": "f8986",
+   "type": "elaborates",
+   "note": "Dates VTD’s addition of a native ScenarioEngine beyond its listed OpenSCENARIO interface."
+  },
+  {
+   "a": "f9067",
+   "b": "f8458",
+   "type": "elaborates",
+   "note": "Specifies that Prescan’s listed interfaces also apply to its sensor models."
+  },
+  {
+   "a": "f13204",
+   "b": "f13206",
+   "type": "elaborates",
+   "note": "Details the XML form’s version and synchronized-maneuver capabilities."
+  },
+  {
+   "a": "f13205",
+   "b": "f13206",
+   "type": "elaborates",
+   "note": "Details the DSL form’s version and abstract-scenario capabilities."
+  }
+ ]
+}

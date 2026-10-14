@@ -1,0 +1,109 @@
+{
+ "key": "e:nsga-ii",
+ "hash": "cecbcfe6bca6c136",
+ "synopsis": "NSGA-II (Non-dominated Sorting Genetic Algorithm II), attributed to Deb and colleagues in 2002, handles multiple objectives by evolving a whole Pareto front; the glossary says evolutionary methods can produce this front in one run [f14420, f14413]. Chapter 9 recommends these methods for balancing misses, false alarms, unnecessary braking and stopping margin because they expose trade-offs rather than hiding them in one score [f7317, f6971]. The booklet describes them as robust and easy to parallelise over simulation, but requiring many evaluations [f6970, f14421, f6972]. Producing a Pareto front does not resolve the policy choice of an acceptable point, and trying many configurations increases over-fitting risk [f6973, f7320]. Recommended safeguards are nested validation, final-point selection using pre-declared safety constraints and independent-set confirmation; generic engineering evidence exists, but no specific off-road evidence is identified [f7321, f7322].",
+ "relations": [
+  {
+   "a": "f6973",
+   "b": "f14413",
+   "type": "same",
+   "note": "Both leave selection of an acceptable Pareto point to policy."
+  },
+  {
+   "a": "f6973",
+   "b": "f7319",
+   "type": "same",
+   "note": "Both identify the unresolved policy choice of an acceptable Pareto point."
+  },
+  {
+   "a": "f6972",
+   "b": "f7319",
+   "type": "same",
+   "note": "Both state that these methods require many evaluations."
+  },
+  {
+   "a": "f6970",
+   "b": "f14421",
+   "type": "same",
+   "note": "Both describe robustness and easy parallel execution."
+  },
+  {
+   "a": "f6972",
+   "b": "f14421",
+   "type": "same",
+   "note": "Both identify high evaluation demand."
+  },
+  {
+   "a": "f6970",
+   "b": "f7318",
+   "type": "same",
+   "note": "Both identify parallel evaluation over simulation."
+  },
+  {
+   "a": "f6971",
+   "b": "f7318",
+   "type": "same",
+   "note": "Both describe an explicit view of trade-offs."
+  },
+  {
+   "a": "f14413",
+   "b": "f7319",
+   "type": "same",
+   "note": "Both retain a policy decision about the acceptable Pareto point."
+  },
+  {
+   "a": "f14420",
+   "b": "f14417",
+   "type": "elaborates",
+   "note": "Specifies NSGA-II's full name, attribution and multi-objective search mechanism."
+  },
+  {
+   "a": "f14413",
+   "b": "f14420",
+   "type": "elaborates",
+   "note": "Adds one-run front production and the remaining policy decision."
+  },
+  {
+   "a": "f6970",
+   "b": "f14420",
+   "type": "elaborates",
+   "note": "Adds robustness and simulation parallelisation to the method description and shared attribution."
+  },
+  {
+   "a": "f14420",
+   "b": "f6971",
+   "type": "supports",
+   "note": "Evolving a whole Pareto front explains how trade-offs become explicit."
+  },
+  {
+   "a": "f6971",
+   "b": "f7317",
+   "type": "supports",
+   "note": "Explicit trade-offs support balancing the four braking-system objectives."
+  },
+  {
+   "a": "f7317",
+   "b": "f14420",
+   "type": "elaborates",
+   "note": "Names the application-specific objectives to balance."
+  },
+  {
+   "a": "f7321",
+   "b": "f6973",
+   "type": "depends",
+   "note": "Pre-declared safety constraints guide the otherwise unresolved final-point choice."
+  },
+  {
+   "a": "f7321",
+   "b": "f7320",
+   "type": "depends",
+   "note": "Validation safeguards respond to over-fitting from trying many configurations."
+  },
+  {
+   "a": "f7322",
+   "b": "f7317",
+   "type": "elaborates",
+   "note": "Qualifies the recommendation: generic evidence exists, but specific off-road evidence is unidentified."
+  }
+ ]
+}

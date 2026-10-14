@@ -1,0 +1,79 @@
+{
+ "key": "e:boreal3d",
+ "hash": "a63c75ff6f9b007a",
+ "synopsis": "Boreal3D is described as an environment-creation tool providing synthetic forest lidar plots through procedural generation [f16005, f15956, f3732]. It contains 1,000 synthetic plots simulated across four laser-scanning platforms: airborne, unmanned, mobile and terrestrial [f4150, f3840]. Its physics-based lidar provides exact structural ground truth, and the booklet cites its forestry work as off-road evidence for statistically matched digital cousins [f4151, f4277]. The preprint dates to January 2025, followed by publication in Remote Sensing of Environment, volume 341, in August 2026 [f4152, f4153]. The glossary groups Boreal3D with CropCraft and AgriGen as supporting agricultural and forest scenes, while the Boreal3D-specific facts describe forest plots [f16086, f16005, f15956].",
+ "relations": [
+  {
+   "a": "f3732",
+   "b": "f4150",
+   "type": "same",
+   "note": "Both report 1,000 synthetic plots across four laser-scanning platforms."
+  },
+  {
+   "a": "f3732",
+   "b": "f3840",
+   "type": "same",
+   "note": "Same plot count and platform coverage; the latter names the platforms."
+  },
+  {
+   "a": "f4150",
+   "b": "f3840",
+   "type": "same",
+   "note": "Same dataset scale, with platform types explicitly listed."
+  },
+  {
+   "a": "f3839",
+   "b": "f4153",
+   "type": "same",
+   "note": "Same journal publication and date; the latter adds volume 341."
+  },
+  {
+   "a": "f3732",
+   "b": "f15956",
+   "type": "elaborates",
+   "note": "Adds procedural generation, dataset size and platform coverage to the glossary example."
+  },
+  {
+   "a": "f3840",
+   "b": "f15956",
+   "type": "elaborates",
+   "note": "Specifies plot count and scanning modalities for the synthetic forest lidar."
+  },
+  {
+   "a": "f4151",
+   "b": "f15956",
+   "type": "elaborates",
+   "note": "Adds physics-based lidar and exact structural ground truth."
+  },
+  {
+   "a": "f3732",
+   "b": "f16005",
+   "type": "elaborates",
+   "note": "Explains the forest environment tool's generation method and scale."
+  },
+  {
+   "a": "f16005",
+   "b": "f16086",
+   "type": "elaborates",
+   "note": "Identifies Boreal3D's forest-specific role within the grouped scene-creation tools."
+  },
+  {
+   "a": "f3839",
+   "b": "f4277",
+   "type": "supports",
+   "note": "Identifies the published forestry digital-cousins approach underlying the table's off-road evidence."
+  },
+  {
+   "a": "f4152",
+   "b": "f4277",
+   "type": "elaborates",
+   "note": "Supplies the January 2025 preprint date for the table's 2025 forestry work."
+  },
+  {
+   "a": "f4153",
+   "b": "f4277",
+   "type": "elaborates",
+   "note": "Supplies journal, volume and publication month for the table's 2026 forestry work."
+  }
+ ]
+}

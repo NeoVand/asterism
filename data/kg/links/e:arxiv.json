@@ -1,0 +1,49 @@
+{
+ "key": "e:arxiv",
+ "hash": "50d5882b45a6c6cc",
+ "synopsis": "The corpus uses arXiv research across operational-domain definition, braking logic, synthetic data and simulation credibility, but publication status and applicability limit its authority: the November 2025 agricultural ODD framework is academic work rather than a standard, the 2025 crash-reconstruction braking study was not peer-reviewed, and the 2020 validation review has unclear peer-review status [f1399, f1400, f6347, f7666]. The agricultural framework borrows ISO 34503 concepts from road vehicles and reviews EMESRT PR-5A as an off-road ODD approach [f1399, f6713]. On-road braking examples include a 2023 staged warning/partial/full-braking study assuming 2.5 seconds of driver reaction time and a 2025 time-to-brake approach with activation gates intended to suppress false positives [f6186, f6187]. For simulation inputs, the corpus cites a vendor-co-authored lidar dust model compared against experiments in 2021 and LiDARDustX, covering mines and quarries, published on 28 May 2025; Duc et al.'s May 2025 on-road study found measurable real–synthetic point-cloud gaps and useful performance with a 50/50 mixture, explicitly not a transferable optimum [f6380, f7064, f7073, f7074, f7075]. The 2020 review describes CSAU and EMDAP as emphasizing scaling to address missing data while criticizing their implicit treatment of subjective evidence as a transparency weakness [f7666, f7667].",
+ "relations": [
+  {
+   "a": "f1400",
+   "b": "f1399",
+   "type": "elaborates",
+   "note": "Clarifies that the proposed agricultural framework is academic work, not a standard."
+  },
+  {
+   "a": "f6713",
+   "b": "f1399",
+   "type": "elaborates",
+   "note": "Adds the framework's review of EMESRT PR-5A as an off-road ODD approach."
+  },
+  {
+   "a": "f6187",
+   "b": "f6347",
+   "type": "elaborates",
+   "note": "Details activation logic and false-positive suppression in the 2025 crash-reconstruction study."
+  },
+  {
+   "a": "f7667",
+   "b": "f7666",
+   "type": "elaborates",
+   "note": "Adds transparency criticisms to the same review's account of scaling-based validation approaches."
+  },
+  {
+   "a": "f7074",
+   "b": "f7073",
+   "type": "elaborates",
+   "note": "Adds a useful real–synthetic mixture result to the study's domain-gap findings."
+  },
+  {
+   "a": "f7075",
+   "b": "f7074",
+   "type": "elaborates",
+   "note": "Limits the 50/50 result to its study context rather than a general optimum."
+  },
+  {
+   "a": "f7073",
+   "b": "f7075",
+   "type": "supports",
+   "note": "Measured domain gaps support caution about transferring mixture proportions to other settings."
+  }
+ ]
+}

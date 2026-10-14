@@ -1,0 +1,115 @@
+{
+ "key": "t149",
+ "hash": "6e9665c9d2f4f1a3",
+ "synopsis": "Raw signal injection feeds simulated or recorded data into sensor electronics at a defined electrical interface; its evidential scope is determined by that boundary, with real downstream hardware tested but upstream components excluded [f13361, f5291, f5247]. Across the synthesis, sensor-testing chapter and glossary, the booklet consistently warns that injection cannot establish lens, imager, antenna or environmental performance, including contamination, vibration and glare; over-the-air stimulation exercises more of the real sensor front end [f96, f4498, f5296, f13037]. Camera injection can test downstream processing, bandwidth, timing, corrupted-frame handling and interface faults, and one vendor argues it avoids camera-box synchronization and field-of-view problems, although that argument is on-road vendor evidence [f13364, f5289]. Integration is sensor- and ECU-specific and ranked highest-effort: it requires the exact electrical/protocol interface, a realistic stream, synchronization and an adapter, making early confirmation of recording-format and data-rate compatibility important [f8641, f8731, f5292, f5669]. Every injection result should state its boundary, production injection ports must not remain open, and no current public heavy off-road standard prescribing an injection architecture for the listed positioning and infrastructure-aided systems was found [f13371, f5834, f5325].",
+ "relations": [
+  {
+   "a": "f96",
+   "b": "f5167",
+   "type": "same",
+   "note": "Both exclude the same upstream components and environmental influences from raw-log replay."
+  },
+  {
+   "a": "f4498",
+   "b": "f13361",
+   "type": "elaborates",
+   "note": "The definition specifies downstream coverage as well as the upstream exclusion."
+  },
+  {
+   "a": "f5286",
+   "b": "f13353",
+   "type": "same",
+   "note": "Both say data-injection HIL cannot prove sensor front-end behavior."
+  },
+  {
+   "a": "f5247",
+   "b": "f13448",
+   "type": "same",
+   "note": "Replay fidelity is defined by the re-injection boundary."
+  },
+  {
+   "a": "f5290",
+   "b": "f13363",
+   "type": "same",
+   "note": "Injection is a distinct method whose value depends on the insertion point."
+  },
+  {
+   "a": "f5249",
+   "b": "f13367",
+   "type": "same",
+   "note": "Both describe image-ECU replay coverage and identical upstream exclusions."
+  },
+  {
+   "a": "f5281",
+   "b": "f13348",
+   "type": "same",
+   "note": "Both list camera RAW, radar detection-level, and CAN/J1939 injection."
+  },
+  {
+   "a": "f5289",
+   "b": "f13369",
+   "type": "same",
+   "note": "Both report the vendor claim about avoiding monitor synchronization and field-of-view problems."
+  },
+  {
+   "a": "f5335",
+   "b": "f13394",
+   "type": "same",
+   "note": "Both require over-the-air stimulation to prove VIL perception of injected objects."
+  },
+  {
+   "a": "f13002",
+   "b": "f13018",
+   "type": "elaborates",
+   "note": "The broader logging warning includes late discovery of injection-format incompatibility."
+  },
+  {
+   "a": "f5669",
+   "b": "f13018",
+   "type": "elaborates",
+   "note": "Adds prototype-arrival timing and target-interface data-rate compatibility."
+  },
+  {
+   "a": "f8731",
+   "b": "f13357",
+   "type": "same",
+   "note": "Both rank raw-signal sensor HIL as the highest-effort integration type."
+  },
+  {
+   "a": "f8641",
+   "b": "f16043",
+   "type": "elaborates",
+   "note": "Names platforms and materially different injection types underlying sensor- and ECU-specific integration."
+  },
+  {
+   "a": "f5293",
+   "b": "f13364",
+   "type": "elaborates",
+   "note": "Camera-specific coverage adds bandwidth, timing, corrupted frames and interface faults."
+  },
+  {
+   "a": "f4569",
+   "b": "f13368",
+   "type": "supports",
+   "note": "Named vendor offerings substantiate commercial implementation of camera image injection."
+  },
+  {
+   "a": "f4545",
+   "b": "f13037",
+   "type": "supports",
+   "note": "Radar comparison illustrates why over-the-air stimulation retains more production sensor components."
+  },
+  {
+   "a": "f5296",
+   "b": "f13371",
+   "type": "depends",
+   "note": "Upstream exclusions motivate explicitly reporting each test's injection boundary."
+  },
+  {
+   "a": "f5292",
+   "b": "f5669",
+   "type": "supports",
+   "note": "Exact interface and stream requirements explain the risk of unusable recordings."
+  }
+ ]
+}

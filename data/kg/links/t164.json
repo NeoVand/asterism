@@ -1,0 +1,91 @@
+{
+ "key": "t164",
+ "hash": "71f46c6d82e5a277",
+ "synopsis": "Across Chapter 5 and the glossary, the four-month validation window makes tests per wall-clock hour more important than real-time rendering [f4350, f13559]. Headless simulation computes only required test quantities without pictures; object-list braking tests can represent the machine and worker as points and calculate stopping distance [f13555, f13556]. These runs use ordinary processors, run far faster than real time, and can scale across thousands of cheap processor cores, supporting the recommendation to run most of the millions of braking-logic combinations headless [f13557, f13561]. Rendering is needed when camera, lidar or radar models require scene views, but GPU ray tracing slows simulation toward real time or below [f13558]. The recommended allocation is therefore broad screening with lower-fidelity models and scarce high-fidelity rendered runs for perception-sensitive cases selected through correlation and sensitivity work; the facts provide no numerical split between these workloads [f13560, f13562].",
+ "relations": [
+  {
+   "a": "f4350",
+   "b": "f13559",
+   "type": "same",
+   "note": "Both prioritize test throughput over real-time rendering within the four-month window."
+  },
+  {
+   "a": "f13557",
+   "b": "f4350",
+   "type": "supports",
+   "note": "Faster-than-real-time runs and cheap parallel cores support prioritizing throughput."
+  },
+  {
+   "a": "f13558",
+   "b": "f4350",
+   "type": "supports",
+   "note": "Rendering slows execution, reinforcing the priority given to test throughput."
+  },
+  {
+   "a": "f13560",
+   "b": "f4350",
+   "type": "elaborates",
+   "note": "Broad screening and selective rendering operationalize the throughput priority."
+  },
+  {
+   "a": "f13561",
+   "b": "f4350",
+   "type": "elaborates",
+   "note": "Running most braking combinations headless specifies how to prioritize throughput."
+  },
+  {
+   "a": "f13562",
+   "b": "f4350",
+   "type": "elaborates",
+   "note": "Selective allocation of expensive rendered runs implements the throughput priority."
+  },
+  {
+   "a": "f13556",
+   "b": "f13555",
+   "type": "elaborates",
+   "note": "Point-based stopping-distance tests illustrate simulation without pictures."
+  },
+  {
+   "a": "f13557",
+   "b": "f13556",
+   "type": "elaborates",
+   "note": "Adds processor requirements, execution speed, and parallel scalability to object-list tests."
+  },
+  {
+   "a": "f13558",
+   "b": "f13555",
+   "type": "elaborates",
+   "note": "Explains sensor-view requirements and the computational mechanism behind rendering costs."
+  },
+  {
+   "a": "f13556",
+   "b": "f13561",
+   "type": "supports",
+   "note": "Braking tests can compute stopping distance without rendering."
+  },
+  {
+   "a": "f13557",
+   "b": "f13561",
+   "type": "supports",
+   "note": "Speed and cheap parallel execution make headless runs suitable for millions of combinations."
+  },
+  {
+   "a": "f13558",
+   "b": "f13560",
+   "type": "supports",
+   "note": "Sensor-view requirements explain why perception-sensitive subsets warrant rendering."
+  },
+  {
+   "a": "f13558",
+   "b": "f13562",
+   "type": "supports",
+   "note": "GPU ray tracing and slow execution explain why rendered runs are scarce and expensive."
+  },
+  {
+   "a": "f13562",
+   "b": "f13560",
+   "type": "elaborates",
+   "note": "Correlation and sensitivity work provide criteria for selecting rendered subsets."
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "key": "e:nvidia rtx",
+ "hash": "c091a67e22dabeb1",
+ "synopsis": "NVIDIA RTX is a consumer and workstation graphics-card line with dedicated ray-tracing cores; vendor RTX sensor-simulation platforms use GPU ray tracing with material interaction [f16194, f4928]. One vendor claims its current RTX lidar implementation accounts for transparent and reflective surfaces, but no neutral benchmark applicable to the collision-mitigation validation program was found [f4510, f4929]. The tools chapter reports vendor claims that open-source platforms combining Unreal Engine 5 rendering and RTX sensors exist and are free for internal use [f9336, f9337]. The lowest-cost example chain uses on-premises RTX GPUs or spot cloud computing, with the glossary additionally describing scenario scripts or Scenic and J1939 emulation to ISO/TS 21815-2 [f9268, f16159]. For this lowest-cost open-source-core chain, the manufacturer must characterize RTX sensor performance issues, leaving validation responsibility with the manufacturer despite the available platforms and vendor capabilities claimed [f9282, f4929, f4510].",
+ "relations": [
+  {
+   "a": "f9268",
+   "b": "f16159",
+   "type": "same",
+   "note": "Both specify on-premises RTX hardware or spot cloud for the lowest-cost chain."
+  },
+  {
+   "a": "f16194",
+   "b": "f4928",
+   "type": "supports",
+   "note": "Dedicated ray-tracing cores underpin the GPU ray tracing used by vendor sensor platforms."
+  },
+  {
+   "a": "f4928",
+   "b": "f4510",
+   "type": "elaborates",
+   "note": "The lidar claim specifies transparent and reflective surfaces within material interaction."
+  },
+  {
+   "a": "f4929",
+   "b": "f9282",
+   "type": "supports",
+   "note": "Absent applicable neutral benchmarks reinforce the need for manufacturer performance characterization."
+  },
+  {
+   "a": "f9268",
+   "b": "f9282",
+   "type": "depends",
+   "note": "Using the lowest-cost RTX chain requires manufacturer characterization of sensor performance issues."
+  },
+  {
+   "a": "f9336",
+   "b": "f9337",
+   "type": "elaborates",
+   "note": "Adds free internal-use terms to the reported availability of these platforms."
+  }
+ ]
+}

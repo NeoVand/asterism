@@ -1,0 +1,49 @@
+{
+ "key": "e:simscape",
+ "hash": "d6c79b58189aac81",
+ "synopsis": "Simscape is listed as a vehicle and machine dynamics offering and as an implementation option for lumped brake hydraulics coupled to a point-mass model, predicting latency, pressure build-up and its spread [f8357, f6393, f6437]. The glossary describes Vehicle Dynamics Blockset and Simscape as road-heritage tools with articulated steering since R2025a; Chapter 11 identifies articulated-steering dynamics and controller models operating closed-loop in Simulink R2026b [f15975, f8599]. R2026b is the second 2026 release of the twice-yearly MATLAB and Simulink family [f16239]. An undated MathWorks user story reports Volvo Construction Equipment's real-time human-in-the-loop excavator simulator built using Simulink and Simscape, providing an application example but no dated milestone [f8391, f16050]. Despite their inclusion in the dynamics, terrain and soil category, high-detail soil deformation is explicitly not a primary strength of these MathWorks tools [f8357, f8600].",
+ "relations": [
+  {
+   "a": "f8391",
+   "b": "f16050",
+   "type": "same",
+   "note": "Both describe Volvo's real-time human-in-the-loop excavator simulator using Simulink and Simscape."
+  },
+  {
+   "a": "f6437",
+   "b": "f6393",
+   "type": "elaborates",
+   "note": "Specifies coupling, predicted brake responses and additional implementation options for lumped hydraulics."
+  },
+  {
+   "a": "f15975",
+   "b": "f8357",
+   "type": "elaborates",
+   "note": "Adds road heritage and articulated-steering availability since R2025a to the tool classification."
+  },
+  {
+   "a": "f8599",
+   "b": "f15975",
+   "type": "elaborates",
+   "note": "Adds off-road kinematics, controller models and closed-loop operation in R2026b."
+  },
+  {
+   "a": "f16239",
+   "b": "f8599",
+   "type": "elaborates",
+   "note": "Identifies R2026b as the second 2026 release within the twice-yearly software family."
+  },
+  {
+   "a": "f8600",
+   "b": "f8357",
+   "type": "elaborates",
+   "note": "Qualifies the terrain and soil category: high-detail soil deformation is not a primary strength."
+  },
+  {
+   "a": "f8391",
+   "b": "f8357",
+   "type": "supports",
+   "note": "An excavator simulator provides a concrete application of Simscape in machine dynamics."
+  }
+ ]
+}

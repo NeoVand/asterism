@@ -1,0 +1,31 @@
+{
+ "key": "e:nested cross-validation",
+ "hash": "195d9e57d0b3033b",
+ "synopsis": "Nested cross-validation is presented as the recognised method for removing optimistic bias caused by repeated machine-learning model and hyperparameter selection [f6993, f14330]. The glossary adds that it validates the choice of method inside the loop [f14330]. Chapter 9 identifies a three-way data split as the engineering analogue for addressing the same bias, and the glossary confirms that the booklet’s three-way tuning split is this equivalent [f6994, f14331]. These facts consistently describe the rationale, but provide no split proportions or measured bias reduction [f6993, f14330, f6994, f14331].",
+ "relations": [
+  {
+   "a": "f6993",
+   "b": "f14330",
+   "type": "same",
+   "note": "Both identify nested cross-validation as removing optimistic bias from repeated model selection."
+  },
+  {
+   "a": "f6994",
+   "b": "f14331",
+   "type": "same",
+   "note": "Both identify the three-way tuning split as the engineering equivalent of nested cross-validation."
+  },
+  {
+   "a": "f6994",
+   "b": "f6993",
+   "type": "elaborates",
+   "note": "Adds an engineering analogue for the bias-removal method."
+  },
+  {
+   "a": "f14331",
+   "b": "f14330",
+   "type": "elaborates",
+   "note": "Connects the glossary method to the booklet’s three-way tuning split."
+  }
+ ]
+}

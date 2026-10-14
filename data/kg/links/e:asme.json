@@ -1,0 +1,115 @@
+{
+ "key": "e:asme",
+ "hash": "058b7cee1b39c3fe",
+ "synopsis": "ASME guidance distinguishes verification of implementation against mathematics, validation against the real application, and uncertainty quantification; these activities assess model credibility relative to its context of use [f14531, f10601, f9748]. Calibration against a test does not establish predictive capability on independent data, and the booklet cites ASME alongside NASA as requiring real-world validation rather than internal consistency alone [f8159, f14535, f14952]. The cited portfolio includes V&V 40-2018, V&V 10 (2019), and VVUQ 30.1-2024, with the latter addressing scaling methodologies, applicability justification, and uncertainty treatment [f9748, f7664]. The planning chapter synthesizes ASME and other frameworks into a proposed safety-claim decomposition, while the review chapter recommends a one-page credibility map for all seven reviewers [f9725, f10908]. The booklet emphasizes credibility and uncertainty over simulation counts and infers that, without an auditable evidence chain for one slice before prototype arrival, more scenarios add questionable evidence rather than assurance [f10884, f10796]. Even if virtual testing cannot replace most final physical evidence by mid-2027, the booklet identifies a useful hybrid role in defect discovery, scenario exploration, and selecting informative physical tests [f10987].",
+ "relations": [
+  {
+   "a": "f8159",
+   "b": "f14535",
+   "type": "same",
+   "note": "Both distinguish calibration from validation or independent predictive evidence."
+  },
+  {
+   "a": "f10601",
+   "b": "f14531",
+   "type": "same",
+   "note": "Both distinguish verification, validation, and uncertainty quantification; the glossary explains the latter."
+  },
+  {
+   "a": "f10413",
+   "b": "f10880",
+   "type": "same",
+   "note": "Both identify real-world validation as required for credible simulation use."
+  },
+  {
+   "a": "f10880",
+   "b": "f11005",
+   "type": "same",
+   "note": "Duplicate requirements for real-world simulation validation."
+  },
+  {
+   "a": "f11005",
+   "b": "f14952",
+   "type": "same",
+   "note": "Both require validation against the real application."
+  },
+  {
+   "a": "f14615",
+   "b": "f14952",
+   "type": "same",
+   "note": "Both reject internal consistency alone as adequate simulator validation."
+  },
+  {
+   "a": "f10413",
+   "b": "f14952",
+   "type": "same",
+   "note": "Both state that credible simulation requires validation against reality."
+  },
+  {
+   "a": "f10880",
+   "b": "f14952",
+   "type": "same",
+   "note": "Glossary restates the real-world validation requirement."
+  },
+  {
+   "a": "f10413",
+   "b": "f11005",
+   "type": "same",
+   "note": "Both attribute the real-world validation prerequisite to NASA and ASME."
+  },
+  {
+   "a": "f14531",
+   "b": "f9748",
+   "type": "elaborates",
+   "note": "Glossary explains the three credibility-assessment activities named in the planning chapter."
+  },
+  {
+   "a": "f10025",
+   "b": "f9748",
+   "type": "elaborates",
+   "note": "Planning method adds V&V 10 and context-of-use assessment to the V&V 40 listing."
+  },
+  {
+   "a": "f7664",
+   "b": "f9748",
+   "type": "elaborates",
+   "note": "Scaling guidance supplies a specific example of the wider ASME VVUQ portfolio."
+  },
+  {
+   "a": "f8159",
+   "b": "f10413",
+   "type": "supports",
+   "note": "Calibration's limitations explain why independent real-world validation is necessary."
+  },
+  {
+   "a": "f11160",
+   "b": "f14952",
+   "type": "elaborates",
+   "note": "Adds toolchain scope and a defined validation envelope to the application-validation requirement."
+  },
+  {
+   "a": "f10884",
+   "b": "f10796",
+   "type": "supports",
+   "note": "Credibility over run count supports the warning against multiplying unauditable scenarios."
+  },
+  {
+   "a": "f9748",
+   "b": "f9725",
+   "type": "supports",
+   "note": "Context-specific credibility assessment underpins the proposed safety-claim decomposition."
+  },
+  {
+   "a": "f9748",
+   "b": "f10908",
+   "type": "supports",
+   "note": "ASME credibility principles provide a basis for the reviewers' credibility map."
+  },
+  {
+   "a": "f10413",
+   "b": "f10987",
+   "type": "supports",
+   "note": "Real-world validation requirements support retaining physical evidence in a hybrid testing strategy."
+  }
+ ]
+}

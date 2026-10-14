@@ -1,0 +1,115 @@
+{
+ "key": "t119",
+ "hash": "a2a3df8ddef0fae5",
+ "synopsis": "Across the booklet, HIL places a real or representative ECU and its I/O against a real-time simulated plant to establish timing, communications, diagnostics, fault response and fail-to-safe behavior; SIL cannot prove the final ECU’s timing, processor or I/O faults [f533, f5279, f13350, f5269]. Expanding the real test boundary from software to ECU, sensor and machine captures more failure modes but reduces speed, scalability and controllability, while ECU-level injection still leaves the sensor front end unproven [f5227, f12970]. HIL requires hard real time, and realistic sensor values alone are insufficient: synchronization, network delays, ECU scheduling and actuator latency can defeat braking, while an offline-accurate renderer may fail deterministic ECU timing [f13418, f5092, f8923]. Most infrastructure can be developed before final hardware arrives using established interfaces and surrogate controllers, but a production-relevant ISO/TS 21815-2 HIL bench is only a possible mid-2027 target and should not become critical-path work unless ECU, bus and actuator interfaces stabilize early [f5568, f5587, f5588, f857]. Sensor stimulation is recommended for final sensor/ECU regression, timing tests and supplier-independent characterization, but injection remains sensor- and ECU-specific and bidirectional sensor–ECU behavior remains an open interface issue [f4500, f8641, f5093]. Brake-request timing and fault behavior require evidence separate from sensor realism; one mining-regime example specifies disconnection detection within 500 ms and a machine reply within 50 ms, rather than establishing universal thresholds [f12975, f12969].",
+ "relations": [
+  {
+   "a": "f406",
+   "b": "f540",
+   "type": "same",
+   "note": "Both describe IDIADA injecting virtual hazards into a real vehicle ECU."
+  },
+  {
+   "a": "f8923",
+   "b": "f13358",
+   "type": "same",
+   "note": "Offline renderer accuracy does not guarantee deterministic HIL ECU timing."
+  },
+  {
+   "a": "f5092",
+   "b": "f12971",
+   "type": "elaborates",
+   "note": "Adds acquisition, networking and actuator latency to the ECU scheduling risk."
+  },
+  {
+   "a": "f5269",
+   "b": "f13339",
+   "type": "elaborates",
+   "note": "Glossary adds real brake hardware to SIL's unproven controller properties."
+  },
+  {
+   "a": "f926",
+   "b": "f5690",
+   "type": "same",
+   "note": "Both identify real ECU timing and sensor behavior as limitations of SIL."
+  },
+  {
+   "a": "f533",
+   "b": "f12968",
+   "type": "same",
+   "note": "Both define real-ECU HIL against a real-time simulator for interface and fault testing."
+  },
+  {
+   "a": "f5697",
+   "b": "f13350",
+   "type": "elaborates",
+   "note": "Glossary adds production software, communications and repeatable decision-logic testing."
+  },
+  {
+   "a": "f7139",
+   "b": "f9326",
+   "type": "same",
+   "note": "Both recommend HIL for timing and real ECU behavior."
+  },
+  {
+   "a": "f4500",
+   "b": "f13387",
+   "type": "same",
+   "note": "Both reserve sensor stimulation for regression, timing and supplier-independent characterization."
+  },
+  {
+   "a": "f8641",
+   "b": "f16043",
+   "type": "elaborates",
+   "note": "Glossary adds highest integration effort for raw-signal benches."
+  },
+  {
+   "a": "f5248",
+   "b": "f13367",
+   "type": "elaborates",
+   "note": "Glossary identifies optical and environmental effects excluded by downstream frame reinjection."
+  },
+  {
+   "a": "f12970",
+   "b": "f13367",
+   "type": "elaborates",
+   "note": "Frame replay illustrates why ECU injection does not retest the sensor front end."
+  },
+  {
+   "a": "f935",
+   "b": "f857",
+   "type": "depends",
+   "note": "The mid-2027 bench target depends on early stabilization of ECU and interfaces."
+  },
+  {
+   "a": "f5568",
+   "b": "f5588",
+   "type": "elaborates",
+   "note": "Lists infrastructure commissioned before production controllers arrive and explains surrogate replacement."
+  },
+  {
+   "a": "f5587",
+   "b": "f5590",
+   "type": "elaborates",
+   "note": "Specifies brake-request and fail-to-safe rehearsal on interim ECUs."
+  },
+  {
+   "a": "f13418",
+   "b": "f8923",
+   "type": "supports",
+   "note": "A real ECU cannot wait, explaining the risk from slow or nondeterministic rendering."
+  },
+  {
+   "a": "f12975",
+   "b": "f12969",
+   "type": "elaborates",
+   "note": "Mining-regime example supplies concrete detection and response timing checks."
+  },
+  {
+   "a": "f5226",
+   "b": "f5227",
+   "type": "elaborates",
+   "note": "Explains failure-mode coverage and test-efficiency tradeoffs along the expanding real-system boundary."
+  }
+ ]
+}

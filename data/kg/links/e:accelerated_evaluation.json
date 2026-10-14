@@ -1,0 +1,109 @@
+{
+ "key": "e:accelerated evaluation",
+ "hash": "d3c14557364d3b8c",
+ "synopsis": "The booklet recommends importance sampling or accelerated evaluation for rare-event evaluation, particularly small-probability estimation, while identifying the independent evidence base as on-road [f10336, f7261, f7268]. Michigan's 2016 research validated a statistical acceleration method for rare crashes and conflicts, reporting acceleration factors of 300–100,000 for car-following and 2,000–20,000 for lane changes; related 2017 published work showed very large lane-change evaluation speed-ups [f1779, f1781, f1782, f6847]. These methods deliberately oversample dangerous conditions and can estimate unbiased naturalistic rates only when likelihood ratios are known and the sampling proposal covers the failure region [f6846, f7262]. Trustworthy rates remain constrained by poorly known naturalistic distributions, high model dependence and potentially huge weight variance; the methods cannot establish high-dimensional robustness or account for unmodelled physics [f7264, f7265, f7266, f7263]. The Michigan precedent reduced simulated exposure but was research rather than a production timeline, did not eliminate model validation or sensor tests, and demonstrated academic—not regulatory acceptance of a production AEB system [f1783, f1784, f1785].",
+ "relations": [
+  {
+   "a": "f1780",
+   "b": "f6846",
+   "type": "elaborates",
+   "note": "Michigan provides a concrete application of importance sampling and reweighting."
+  },
+  {
+   "a": "f6846",
+   "b": "f14161",
+   "type": "elaborates",
+   "note": "Explains the shared oversampling and reweighting mechanism of the glossary's method family."
+  },
+  {
+   "a": "f7261",
+   "b": "f10336",
+   "type": "supports",
+   "note": "Small-probability estimation use supports the planning recommendation for rare-event evaluation."
+  },
+  {
+   "a": "f7262",
+   "b": "f10336",
+   "type": "elaborates",
+   "note": "Adds likelihood-ratio and failure-region coverage conditions to the planning recommendation."
+  },
+  {
+   "a": "f6847",
+   "b": "f14162",
+   "type": "same",
+   "note": "Both describe very large lane-change evaluation speed-ups in 2017."
+  },
+  {
+   "a": "f1782",
+   "b": "f14162",
+   "type": "elaborates",
+   "note": "Provides a numerical range for Michigan's lane-change evaluation acceleration."
+  },
+  {
+   "a": "f1781",
+   "b": "f1783",
+   "type": "supports",
+   "note": "Car-following acceleration quantifies the reduction in simulated exposure."
+  },
+  {
+   "a": "f1782",
+   "b": "f1783",
+   "type": "supports",
+   "note": "Lane-change acceleration quantifies the reduction in simulated exposure."
+  },
+  {
+   "a": "f7262",
+   "b": "f6846",
+   "type": "elaborates",
+   "note": "Adds failure-region coverage as a condition for unbiased rate estimation."
+  },
+  {
+   "a": "f7264",
+   "b": "f6846",
+   "type": "elaborates",
+   "note": "Poor knowledge of the naturalistic distribution limits the reweighting-based rate estimate."
+  },
+  {
+   "a": "f7266",
+   "b": "f6846",
+   "type": "elaborates",
+   "note": "Identifies potentially huge variance in the weights used for rate estimation."
+  },
+  {
+   "a": "f7263",
+   "b": "f1784",
+   "type": "supports",
+   "note": "Unmodelled physics and robustness limits explain why validation and sensor tests remain necessary."
+  },
+  {
+   "a": "f7265",
+   "b": "f1784",
+   "type": "supports",
+   "note": "High model dependence reinforces the continuing need for model validation."
+  },
+  {
+   "a": "f1779",
+   "b": "f7268",
+   "type": "supports",
+   "note": "The Michigan automated-road-vehicle study exemplifies the on-road evidence base."
+  },
+  {
+   "a": "f6847",
+   "b": "f7268",
+   "type": "supports",
+   "note": "Published lane-change conflict research supplies an on-road precedent."
+  },
+  {
+   "a": "f1785",
+   "b": "f1779",
+   "type": "elaborates",
+   "note": "Limits the validation claim to academic acceptance, not production AEB regulatory acceptance."
+  },
+  {
+   "a": "f1783",
+   "b": "f1779",
+   "type": "elaborates",
+   "note": "Clarifies that method validation was research, not a production timeline."
+  }
+ ]
+}

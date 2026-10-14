@@ -1,0 +1,79 @@
+{
+ "key": "t146",
+ "hash": "e198a4934b1bb6db",
+ "synopsis": "MIL tests a model of control logic against modeled machinery and surroundings, without real software or hardware, so rules can be checked before controller code is written [f13324, f13325]. It is the cheapest and earliest testing rung and can catch logical errors, such as warnings failing during articulation, while fixes still take minutes [f13326, f13330]. The recommended pipeline uses MIL and SIL for high-volume validation, targeting thousands of runs per night on cloud or on-premise compute [f7138, f13314, f13327]. Much of the relatively simple warn-then-brake logic can be designed and checked in late 2026 before sensor selection, but MIL provides no knowledge about sensors or real timing [f13332, f13329]. Tool options include a middle-cost chain reusing models across MIL, SIL and HIL, while IPG Automotive is reported to support off-highway testing through vehicle-in-the-loop with real tractors [f13328, f8652, f8807].",
+ "relations": [
+  {
+   "a": "f7138",
+   "b": "f13314",
+   "type": "same",
+   "note": "Both recommend thousands of MIL and SIL cases per night."
+  },
+  {
+   "a": "f7138",
+   "b": "f13327",
+   "type": "same",
+   "note": "Both place MIL and SIL at the high-volume end, using cloud or on-premise compute."
+  },
+  {
+   "a": "f13314",
+   "b": "f13327",
+   "type": "same",
+   "note": "Both specify thousands of nightly MIL and SIL runs."
+  },
+  {
+   "a": "f8652",
+   "b": "f8807",
+   "type": "same",
+   "note": "Both report IPG Automotive's off-highway MIL, SIL, HIL and vehicle-in-the-loop capabilities."
+  },
+  {
+   "a": "f13325",
+   "b": "f13324",
+   "type": "elaborates",
+   "note": "Specifies block-diagram execution against a simple machine model before controller coding."
+  },
+  {
+   "a": "f13324",
+   "b": "f11312",
+   "type": "elaborates",
+   "note": "Clarifies MIL's modeled components and absence of real software or hardware."
+  },
+  {
+   "a": "f13326",
+   "b": "f7138",
+   "type": "supports",
+   "note": "Low cost supports using MIL for high-volume testing."
+  },
+  {
+   "a": "f13330",
+   "b": "f13326",
+   "type": "supports",
+   "note": "Logical errors can be fixed in minutes at this early testing stage."
+  },
+  {
+   "a": "f13331",
+   "b": "f13332",
+   "type": "supports",
+   "note": "Simpler decision logic supports checking much of the function before sensor selection."
+  },
+  {
+   "a": "f13330",
+   "b": "f13332",
+   "type": "supports",
+   "note": "Articulation-related warning failures exemplify decision-logic errors MIL can catch."
+  },
+  {
+   "a": "f13329",
+   "b": "f13332",
+   "type": "elaborates",
+   "note": "Limits pre-sensor checks to logic, excluding sensor knowledge and real timing."
+  },
+  {
+   "a": "f13324",
+   "b": "f13329",
+   "type": "supports",
+   "note": "Entirely modeled execution explains the lack of real sensor and timing knowledge."
+  }
+ ]
+}

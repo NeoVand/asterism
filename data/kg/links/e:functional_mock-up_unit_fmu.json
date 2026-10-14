@@ -1,0 +1,31 @@
+{
+ "key": "e:functional mock-up unit fmu",
+ "hash": "96e7272d0f5baeb2",
+ "synopsis": "An FMU packages a model to the open Functional Mock-up Interface (FMI) standard as a single file containing equations or compiled code and an input/output description [f13230, f13232]. FMI standardizes connections between simulation programs running together in step, while SSP records FMU wiring and parameters so the complete arrangement can be shared and reproduced [f13230, f13234]. Sensor models are delivered as FMUs using the Open Simulation Interface (OSI) message standard [f13235]. The tools-and-vendors chapter identifies Persival as offering credible sensor-model development and validation, including OSI FMUs and weather benches, connecting the glossary's packaging approach to a named supplier [f8812, f13235].",
+ "relations": [
+  {
+   "a": "f13232",
+   "b": "f13230",
+   "type": "elaborates",
+   "note": "Details FMI openness and the contents of an FMU package."
+  },
+  {
+   "a": "f13234",
+   "b": "f13230",
+   "type": "elaborates",
+   "note": "Adds parameter recording and reproducibility to SSP's description of FMU wiring."
+  },
+  {
+   "a": "f13235",
+   "b": "f13230",
+   "type": "elaborates",
+   "note": "Identifies sensor models as an FMU application using OSI messages."
+  },
+  {
+   "a": "f8812",
+   "b": "f13235",
+   "type": "supports",
+   "note": "Names a supplier offering OSI FMUs for sensor-model development and validation."
+  }
+ ]
+}

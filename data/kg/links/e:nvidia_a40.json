@@ -1,0 +1,13 @@
+{
+ "key": "e:nvidia a40",
+ "hash": "b90cb9fd1dbbe919",
+ "synopsis": "The glossary identifies NVIDIA A40 and A100 as data-center graphics cards [f16199]. Chapter 6 reports that WeatherDiffusion (2022/2023) takes 20.52 seconds per 640 × 432 image on one A40, compared with 0.88 seconds for a non-diffusion network [f4950]. The glossary repeats the 20.52-second A40 result, describing the model as a diffusion weather-editing network [f16201]. Chapter 6 uses these weather-removal models as a cost proxy, so the reported runtime is proxy evidence rather than a direct measurement of the target simulation workload [f4950].",
+ "relations": [
+  {
+   "a": "f4950",
+   "b": "f16201",
+   "type": "same",
+   "note": "Both report 20.52 seconds per image on one A40; Chapter 6 adds resolution and comparator."
+  }
+ ]
+}

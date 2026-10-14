@@ -8,6 +8,7 @@ import { settings } from './settings.svelte.ts';
 
 export type Part =
 	| { k: 'text'; text: string }
+	| { k: 'note'; text: string }
 	| { k: 'ui'; id: string; block: Block }
 	| { k: 'form'; form: QuestionForm; answers?: Answers | 'skipped' };
 
@@ -293,7 +294,12 @@ class ChatStore {
 			case 'reasoning':
 				if (ev.agent === 'main') msg.reasoning += ev.delta;
 				break;
-			case 'tool':
+			case 'tool': {
+				// Text written before more research is an interim note, not the answer.
+				const last = msg.parts[msg.parts.length - 1];
+				if (last?.k === 'text' && ev.agent === 'main' && ev.name !== 'show_ui' && ev.name !== 'ask_user') {
+					msg.parts[msg.parts.length - 1] = { k: 'note', text: last.text };
+				}
 				msg.steps.push({
 					id: ev.id,
 					name: ev.name,
@@ -303,6 +309,7 @@ class ChatStore {
 					at: Date.now()
 				});
 				break;
+			}
 			case 'tool_end': {
 				const st = msg.steps.find((s) => s.id === ev.id);
 				if (st) {

@@ -1,0 +1,79 @@
+{
+ "key": "t66",
+ "hash": "2d131c89f2e12bee",
+ "synopsis": "The V-model links decomposition of needs into requirements and designs to matching tests; planning each test when its requirement or design is written establishes requirements-based testing and traceability [f12221, f12222]. IEC 61508 and ISO 26262 explicitly depict it, machinery software standards such as ISO 19014-4 follow its shape, and machine-learning extensions treat training data as a development artifact and SIL as the first closed-loop stage; the Chapter 1 evidence is labelled on-road [f12223, f12224, f532, f404]. The booklet assigns SIL to logic, HIL to timing and interfaces, and whole-machine testing to stopping, within a program of domain and scenario definition, large-scale virtual verification, smaller-scale physical confirmation, and staged release with field monitoring [f12225, f12226]. A generic toolchain can be built before hardware exists, but correlation requires the real sensor and machine, so the validation program must start before prototype arrival even though integrated product validation starts at arrival [f12227, f12228]. The planning conclusion is that four months covers only the top of the testing arm: the entire requirements-and-design arm and most test preparation must be completed before mid-2027 [f12229].",
+ "relations": [
+  {
+   "a": "f404",
+   "b": "f532",
+   "type": "elaborates",
+   "note": "Specifies SIL's position as the first closed-loop stage in machine-learning V-model extensions."
+  },
+  {
+   "a": "f404",
+   "b": "f12224",
+   "type": "supports",
+   "note": "Cited 2025 extensions substantiate the existence of machine-learning V-model extensions."
+  },
+  {
+   "a": "f12224",
+   "b": "f532",
+   "type": "elaborates",
+   "note": "Adds the first closed-loop testing stage to the account of machine-learning extensions."
+  },
+  {
+   "a": "f532",
+   "b": "f12225",
+   "type": "supports",
+   "note": "SIL's first-stage role supports beginning the booklet's testing sequence with logic verification."
+  },
+  {
+   "a": "f12221",
+   "b": "f12222",
+   "type": "elaborates",
+   "note": "Adds when matching tests are planned and how traceability is established."
+  },
+  {
+   "a": "f12221",
+   "b": "f12223",
+   "type": "elaborates",
+   "note": "Identifies standards that depict or follow the defined development structure."
+  },
+  {
+   "a": "f12221",
+   "b": "f12224",
+   "type": "elaborates",
+   "note": "Extends the development-artifact concept to machine-learning training data."
+  },
+  {
+   "a": "f12226",
+   "b": "f12225",
+   "type": "elaborates",
+   "note": "Specifies testing responsibilities and shadow mode within the overall validation and release program."
+  },
+  {
+   "a": "f12227",
+   "b": "f12228",
+   "type": "supports",
+   "note": "Early toolchain construction and hardware-dependent correlation justify separating program start from integrated validation."
+  },
+  {
+   "a": "f12222",
+   "b": "f12229",
+   "type": "supports",
+   "note": "Planning tests alongside requirements supports completing test preparation before the late testing window."
+  },
+  {
+   "a": "f12229",
+   "b": "f12228",
+   "type": "supports",
+   "note": "Limited late-stage testing time reinforces starting the validation program before prototype arrival."
+  },
+  {
+   "a": "f12226",
+   "b": "f12228",
+   "type": "supports",
+   "note": "Domain definition and virtual verification explain why validation work precedes integrated prototype testing."
+  }
+ ]
+}

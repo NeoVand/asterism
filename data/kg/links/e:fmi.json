@@ -1,0 +1,55 @@
+{
+ "key": "e:fmi",
+ "hash": "d67eb651b88a8f19",
+ "synopsis": "FMI is presented as integration glue for simulation tool chains, alongside other standards, with about 250 supporting tools by mid-2025 [f8335, f8336]. A concrete cross-chapter example is Haider et al.’s tool-independent ray-traced lidar model, incorporating scan patterns and the full signal-processing chain and packaged as an ASAM OSI/FMI unit [f4504]. The vendor survey lists FMI for IPG’s CarMaker, TruckMaker and off-highway offerings, while MathWorks provides FMI through partners such as Mevea; Mevea supports Simulink co-simulation through TCP/IP or FMI [f8992, f8383, f8562]. To mitigate supplier dependence and ownership changes, the corpus recommends requiring FMI and other specified export capabilities, plus ownership-change exit clauses [f8887]. Coverage is not fully verified: FMI support for Algoryx AGX Dynamics remains unconfirmed [f9110].",
+ "relations": [
+  {
+   "a": "f8383",
+   "b": "f8961",
+   "type": "same",
+   "note": "Both list MathWorks interfaces and identify FMI access through partners."
+  },
+  {
+   "a": "f4504",
+   "b": "f8335",
+   "type": "supports",
+   "note": "The packaged lidar model exemplifies FMI and OSI as integration glue."
+  },
+  {
+   "a": "f8336",
+   "b": "f8335",
+   "type": "supports",
+   "note": "Broad tool support backs FMI’s integration role."
+  },
+  {
+   "a": "f8562",
+   "b": "f8383",
+   "type": "supports",
+   "note": "Mevea’s Simulink co-simulation capability substantiates MathWorks’ partner-mediated FMI interface."
+  },
+  {
+   "a": "f8562",
+   "b": "f8961",
+   "type": "supports",
+   "note": "Mevea provides a concrete example of FMI integration through MathWorks partners."
+  },
+  {
+   "a": "f8562",
+   "b": "f9103",
+   "type": "elaborates",
+   "note": "Specifies how Mevea uses its listed FMI and TCP/IP interfaces with Simulink."
+  },
+  {
+   "a": "f8992",
+   "b": "f8335",
+   "type": "supports",
+   "note": "IPG’s listed FMI interface provides another example of simulation-chain integration."
+  },
+  {
+   "a": "f8335",
+   "b": "f8887",
+   "type": "supports",
+   "note": "Standards’ integration role supports requiring export capabilities to reduce supplier dependence."
+  }
+ ]
+}

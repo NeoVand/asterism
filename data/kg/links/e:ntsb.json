@@ -1,0 +1,73 @@
+{
+ "key": "e:ntsb",
+ "hash": "980e1323e57a5824",
+ "synopsis": "The corpus uses the NTSB’s 2019 investigation of the 18 March 2018 Uber crash in Tempe as an on-road precedent: pedestrian detection occurred, but classification and path prediction were not correct in time [f10694]. Chapter 2 records that factory forward collision warning and AEB were disabled; Chapter 13 adds that shared radar frequencies were one reason for disabling factory AEB, according to a secondary summary [f1528, f11255]. The investigation also identified a design that precluded emergency braking in the relevant condition and relied on operator intervention; accounts describe a one-second action suppression, with emergency recognition 1.2 seconds before impact and braking beginning only 0.2 seconds before impact [f10695, f10697, f10698, f10871, f10872]. The lessons extend beyond algorithm performance to deficient safety risk management, oversight and safety culture, but the report was an automated-vehicle investigation, not a product-liability judgment [f10696, f11270, f10699]. Source attribution varies: some details are explicitly conveyed through secondary accounts, while parallel statements present the suppression and timing directly as NTSB findings [f10697, f10698, f10871, f10872, f11255].",
+ "relations": [
+  {
+   "a": "f11255",
+   "b": "f1528",
+   "type": "elaborates",
+   "note": "Adds a secondary-reported radar interference reason for disabling factory AEB."
+  },
+  {
+   "a": "f10695",
+   "b": "f1528",
+   "type": "elaborates",
+   "note": "Adds emergency-braking restrictions and operator reliance to the account of disabled factory safeguards."
+  },
+  {
+   "a": "f10697",
+   "b": "f10871",
+   "type": "same",
+   "note": "Both describe one-second suppression delaying braking; attribution differs."
+  },
+  {
+   "a": "f10698",
+   "b": "f10872",
+   "type": "same",
+   "note": "Identical recognition and braking timing, with different source qualification."
+  },
+  {
+   "a": "f10696",
+   "b": "f11270",
+   "type": "same",
+   "note": "Both identify deficiencies in safety risk management, oversight and safety culture."
+  },
+  {
+   "a": "f10698",
+   "b": "f10697",
+   "type": "supports",
+   "note": "The reported timing gap matches the described one-second suppression."
+  },
+  {
+   "a": "f10872",
+   "b": "f10871",
+   "type": "supports",
+   "note": "Recognition-to-braking timing supports the reported suppression delay."
+  },
+  {
+   "a": "f10697",
+   "b": "f10695",
+   "type": "elaborates",
+   "note": "Adds the suppression mechanism and its false-braking rationale."
+  },
+  {
+   "a": "f10694",
+   "b": "f10699",
+   "type": "supports",
+   "note": "Perception failures exemplify the technical choices examined in the investigation."
+  },
+  {
+   "a": "f10695",
+   "b": "f10699",
+   "type": "supports",
+   "note": "Braking restrictions and operator reliance exemplify braking and fallback evidence."
+  },
+  {
+   "a": "f10696",
+   "b": "f10699",
+   "type": "supports",
+   "note": "Organizational findings substantiate the broader evidentiary lesson."
+  }
+ ]
+}

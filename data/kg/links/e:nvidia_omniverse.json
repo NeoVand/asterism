@@ -1,0 +1,49 @@
+{
+ "key": "e:nvidia omniverse",
+ "hash": "06805a34b95f861d",
+ "synopsis": "OpenUSD and Omniverse offer domain-neutral scene, material and asset representation suitable for mines and construction sites, combining an open standard with NVIDIA components [f16001, f8610, f9167]. They can represent sites but are not themselves a validation method; sensor-material semantics and portability between simulators require governance [f9168, f8611]. Omniverse documentation includes an ultrasonic sensor extension, but the corpus did not find frame-rate figures for NVIDIA DRIVE Sim/Omniverse or several other simulators [f3942, f4957]. Licensing also needs review: some Isaac Sim assets, materials and Omniverse components have additional terms, despite the presence of an open-source core [f8486, f8908]. OpenUSD is listed as the interface and standard, while latest-release status is recorded only as “ongoing,” rather than a specific release [f9169, f9171].",
+ "relations": [
+  {
+   "a": "f16001",
+   "b": "f9167",
+   "type": "same",
+   "note": "Both describe the combination of an open standard and vendor components."
+  },
+  {
+   "a": "f16001",
+   "b": "f8610",
+   "type": "same",
+   "note": "Both describe domain-neutral scene representation; Chapter 11 adds materials, assets and site examples."
+  },
+  {
+   "a": "f8486",
+   "b": "f8908",
+   "type": "same",
+   "note": "Both flag additional licensing terms for Isaac Sim assets and Omniverse components."
+  },
+  {
+   "a": "f9169",
+   "b": "f16001",
+   "type": "elaborates",
+   "note": "Identifies OpenUSD as the interface and standard underlying the combined tooling."
+  },
+  {
+   "a": "f9168",
+   "b": "f16001",
+   "type": "elaborates",
+   "note": "Limits scene-representation capability: it does not constitute a validation method."
+  },
+  {
+   "a": "f8610",
+   "b": "f8359",
+   "type": "elaborates",
+   "note": "Explains the representation capabilities of one listed environment-creation offering."
+  },
+  {
+   "a": "f8611",
+   "b": "f8610",
+   "type": "depends",
+   "note": "Using these scene representations requires governance of sensor semantics and simulator portability."
+  }
+ ]
+}

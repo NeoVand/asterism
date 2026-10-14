@@ -1,0 +1,61 @@
+{
+ "key": "e:unreal engine 5",
+ "hash": "5f30dbab9940af7b",
+ "synopsis": "Unreal Engine 5 is available in simulation tooling: CARLA switched from UE4 to UE5, though some APIs are unsupported, and VTD 2025.1 added UE5 rendering [f8892, f8428]. The CARLA release information found includes the 0.10.0 UE5 line dated 19 December 2024 and version 0.9.16 dated 16 September 2025 [f9013]. CARLA on UE5 requires an NVIDIA RTX 3000-series GPU or better, at least 16 GB VRAM and 130 GB disk; the glossary contrasts that VRAM minimum with 48 GB cloud GPUs and 96 GB workstation cards [f8850, f16177, f16195]. ISPRS 2024 reported UE5 3DGS performance of 60 FPS for a single building versus 17 FPS for a 23-million-Gaussian terrain scene, providing scene-dependent performance results relevant to hardware-in-the-loop testing [f3893, f3894, f3764]. Open-source platforms offering UE5 rendering and RTX sensors are reported as free for internal use, but the agriculture examples—including UE5 plant simulation presented at a CVPR 2024 workshop—do not establish applicability to heavy construction-machine braking [f9336, f9337, f4146, f4148].",
+ "relations": [
+  {
+   "a": "f3764",
+   "b": "f3894",
+   "type": "same",
+   "note": "Same 23-million-Gaussian terrain result; f3894 adds provenance and hardware-in-the-loop relevance."
+  },
+  {
+   "a": "f8850",
+   "b": "f16195",
+   "type": "same",
+   "note": "Restates CARLA UE5 GPU and VRAM requirements; f8850 also specifies disk space."
+  },
+  {
+   "a": "f8850",
+   "b": "f16177",
+   "type": "same",
+   "note": "Both report CARLA UE5's 16 GB VRAM minimum."
+  },
+  {
+   "a": "f16177",
+   "b": "f16195",
+   "type": "same",
+   "note": "Both glossary facts report the same 16 GB VRAM minimum."
+  },
+  {
+   "a": "f9013",
+   "b": "f8892",
+   "type": "elaborates",
+   "note": "Dates the UE5 release line associated with CARLA's engine transition."
+  },
+  {
+   "a": "f8850",
+   "b": "f8892",
+   "type": "elaborates",
+   "note": "Adds hardware and storage requirements for CARLA's UE5 platform."
+  },
+  {
+   "a": "f3893",
+   "b": "f3894",
+   "type": "elaborates",
+   "note": "Provides a smaller-scene performance comparison, not a conflicting terrain benchmark."
+  },
+  {
+   "a": "f9337",
+   "b": "f9336",
+   "type": "elaborates",
+   "note": "Adds internal-use pricing terms to the available rendering and sensor capabilities."
+  },
+  {
+   "a": "f4148",
+   "b": "f4146",
+   "type": "elaborates",
+   "note": "Limits what the plant-simulation example establishes about heavy construction-machine braking."
+  }
+ ]
+}

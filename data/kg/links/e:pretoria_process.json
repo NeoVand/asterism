@@ -1,0 +1,37 @@
+{
+ "key": "e:pretoria process",
+ "hash": "77674a3358756464",
+ "synopsis": "The Pretoria process is the University of Pretoria’s step-by-step method for independently verifying mining collision-avoidance systems [f15794]. The Vehicle Dynamics Group’s methodology, described in 2020, progresses from controlled laboratory tests to interaction tests in a representative mine, matching the Chapter 2 account of its progression into a mine [f15796, f1467]. It uses high-precision satellite positioning as surface ground truth and combinations of lidar, cameras and automotive radar underground [f15797]. The booklet concludes that this process leaves off-road validation far more physical than the automotive state of the art, while long queues at independent validation gates directly affect a four-month schedule; the supplied facts do not quantify those queues [f15809].",
+ "relations": [
+  {
+   "a": "f1467",
+   "b": "f15796",
+   "type": "same",
+   "note": "Both describe progression into a representative mine; the glossary specifies preceding laboratory tests."
+  },
+  {
+   "a": "f15796",
+   "b": "f15794",
+   "type": "elaborates",
+   "note": "Specifies the group's identity, methodology date, and stages of the step-by-step verification process."
+  },
+  {
+   "a": "f15797",
+   "b": "f15794",
+   "type": "elaborates",
+   "note": "Adds surface and underground measurement technologies used by the verification methodology."
+  },
+  {
+   "a": "f1467",
+   "b": "f15809",
+   "type": "supports",
+   "note": "Representative-mine testing supports the conclusion that off-road validation remains substantially physical."
+  },
+  {
+   "a": "f15796",
+   "b": "f15809",
+   "type": "supports",
+   "note": "Laboratory and mine interaction stages support the conclusion about physically intensive validation."
+  }
+ ]
+}

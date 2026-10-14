@@ -1,0 +1,91 @@
+{
+ "key": "e:nerf",
+ "hash": "d876833bd880981b",
+ "synopsis": "NeRF learns scene color and density with a neural network to render new viewpoints; the booklet treats it as both a scene-reconstruction method and a learned sensor-model approach [f12925, f3813, f4483]. Reconstruction requires multi-camera logs with accurate poses and GPU compute, optionally using lidar, and offers an alternative to explicit geometry conversion [f4226, f3992]. Log-based neural re-simulation supports closed-loop-like evaluation near the recorded trajectory, but artifacts occur at 1–4 m offsets, height changes degrade results more than sideways shifts, and large viewpoint changes limit testing of new sensor mounting positions [f5722, f5724, f3706, f5723]. Industry preference for 3DGS reflects NeRF’s editing and labeling limitations, yet the cited XLD results found NeRF-based EmerNeRF and UC-NeRF more robust than the 3DGS variant PVG at 4 m offsets [f3878, f4329]. SplatAD at CVPR 2025 claims roughly tenfold faster rendering than NeRF methods; its cited NeRF baselines render 9.7–28.2 megapixels per second after 0.9–2.6 hours of training [f4945, f4946]. For heavy off-road validation, the principal evidence gap is that log-based neural re-simulation has very low off-road maturity and the cited evidence is on-road only [f5725].",
+ "relations": [
+  {
+   "a": "f3813",
+   "b": "f12925",
+   "type": "elaborates",
+   "note": "Adds reconstruction inputs, comparison with meshes, and the on-road evidence scope."
+  },
+  {
+   "a": "f3813",
+   "b": "f4483",
+   "type": "elaborates",
+   "note": "Details the neural-rendering approach included among learned sensor models."
+  },
+  {
+   "a": "f3992",
+   "b": "f5721",
+   "type": "supports",
+   "note": "Training scene representations from logs enables recorded-scene re-rendering."
+  },
+  {
+   "a": "f4226",
+   "b": "f5721",
+   "type": "elaborates",
+   "note": "Specifies camera logs, accurate poses, and optional lidar among reconstruction requirements."
+  },
+  {
+   "a": "f3706",
+   "b": "f5723",
+   "type": "supports",
+   "note": "Degradation away from recorded paths explains limits on new sensor mounting positions."
+  },
+  {
+   "a": "f5724",
+   "b": "f3706",
+   "type": "elaborates",
+   "note": "Quantifies viewpoint-offset artifacts at 1–4 m."
+  },
+  {
+   "a": "f3706",
+   "b": "f5722",
+   "type": "supports",
+   "note": "Path-dependent quality explains why closed-loop-like evaluation is restricted to nearby trajectories."
+  },
+  {
+   "a": "f5724",
+   "b": "f5723",
+   "type": "supports",
+   "note": "Observed offset artifacts substantiate large-viewpoint-shift limitations."
+  },
+  {
+   "a": "f4329",
+   "b": "f3878",
+   "type": "elaborates",
+   "note": "Adds offset-robustness evidence that qualifies industry preference based on editability."
+  },
+  {
+   "a": "f4329",
+   "b": "f3706",
+   "type": "elaborates",
+   "note": "Adds method-specific robustness comparisons at 4 m offsets."
+  },
+  {
+   "a": "f4946",
+   "b": "f4945",
+   "type": "elaborates",
+   "note": "Provides NeRF baseline throughput and training times underlying the rendering-speed comparison."
+  },
+  {
+   "a": "f12927",
+   "b": "f4483",
+   "type": "elaborates",
+   "note": "Extends neural rendering’s sensor-model scope to reproducing lidar scans."
+  },
+  {
+   "a": "f5725",
+   "b": "f5722",
+   "type": "elaborates",
+   "note": "Restricts the near-trajectory evaluation finding to on-road evidence and low off-road maturity."
+  },
+  {
+   "a": "f3813",
+   "b": "f4226",
+   "type": "elaborates",
+   "note": "Explains how the required multi-view inputs train view-dependent scene appearance."
+  }
+ ]
+}

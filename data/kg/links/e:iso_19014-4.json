@@ -1,0 +1,115 @@
+{
+ "key": "e:iso 19014-4",
+ "hash": "db180455b8a9707c",
+ "synopsis": "ISO 19014-4 supplies the off-road safety-related software and data/signal-transmission basis, requiring systematic development and verification for a brake-commanding collision-avoidance function [f2700, f2339, f12180]. As of 1 October 2026, the published edition remained 2020, while Edition 2 had reached stage 60.00 on 22 August 2026 and was scheduled for October 2026 publication; Chapter 10's DIS-stage description is therefore in tension with the later status reported elsewhere [f2325, f2326, f7737]. The final revised texts were unavailable for review, so the booklet recommends an immediate gap analysis against the second editions of Parts 1 and 4 rather than assuming their requirements are settled [f2862, f10541]. The 2020 edition contains normative Annex B on software validation test environments, supporting the recommendation to map each requirement to simulation, hardware-in-the-loop or machine testing [f10532, f12181, f10542]. Although simulation tool confidence is associated with ISO 19014-4 software verification and validation, the research did not establish whether the standard itself requires tool qualification [f8035, f10545, f11191]. Cybersecurity is explicitly outside both the cited 2020 scope and the second-edition abstract, so brake-command networks and sensor/data interfaces need separate security treatment; functional safety must not be assumed to cover it [f10354, f10534, f5832, f11268].",
+ "relations": [
+  {
+   "a": "f48",
+   "b": "f1158",
+   "type": "same",
+   "note": "Both report new editions under publication for October 2026."
+  },
+  {
+   "a": "f48",
+   "b": "f12041",
+   "type": "same",
+   "note": "Glossary repeats the synthesis publication schedule."
+  },
+  {
+   "a": "f2073",
+   "b": "f15178",
+   "type": "same",
+   "note": "Both report August under-publication status and October 2026 scheduling."
+  },
+  {
+   "a": "f2326",
+   "b": "f7737",
+   "type": "contradicts",
+   "note": "August stage 60.00 conflicts with Chapter 10's DIS-stage description."
+  },
+  {
+   "a": "f2326",
+   "b": "f2698",
+   "type": "elaborates",
+   "note": "Adds precise FDIS and under-publication milestone dates."
+  },
+  {
+   "a": "f10541",
+   "b": "f2326",
+   "type": "depends",
+   "note": "Imminent second-edition publication drives the recommended gap analysis."
+  },
+  {
+   "a": "f386",
+   "b": "f5647",
+   "type": "same",
+   "note": "Both describe safety-related software and signal transmission, with revision caveats."
+  },
+  {
+   "a": "f2324",
+   "b": "f2699",
+   "type": "same",
+   "note": "Both define coverage as safety-related software and data transmission."
+  },
+  {
+   "a": "f12039",
+   "b": "f15173",
+   "type": "same",
+   "note": "Duplicate glossary statements of software and data-transmission coverage."
+  },
+  {
+   "a": "f434",
+   "b": "f667",
+   "type": "same",
+   "note": "Both identify Part 4 as the basis for formal or static verification."
+  },
+  {
+   "a": "f2339",
+   "b": "f12180",
+   "type": "elaborates",
+   "note": "Applies systematic development to the brake-commanding lifecycle and data transmission."
+  },
+  {
+   "a": "f12181",
+   "b": "f10532",
+   "type": "elaborates",
+   "note": "Names the environments covered by normative Annex B."
+  },
+  {
+   "a": "f10532",
+   "b": "f10542",
+   "type": "supports",
+   "note": "Normative test-environment annex grounds the requirement-to-environment mapping recommendation."
+  },
+  {
+   "a": "f10545",
+   "b": "f11191",
+   "type": "same",
+   "note": "Both report missing evidence of a tool-qualification requirement."
+  },
+  {
+   "a": "f10545",
+   "b": "f15185",
+   "type": "same",
+   "note": "Glossary repeats the unresolved tool-qualification requirement."
+  },
+  {
+   "a": "f7488",
+   "b": "f5832",
+   "type": "elaborates",
+   "note": "Identifies brake-command networks and sensor/data interfaces needing separate security treatment."
+  },
+  {
+   "a": "f10534",
+   "b": "f10820",
+   "type": "elaborates",
+   "note": "Adds the security-standard reference and consequence of second-edition scope exclusion."
+  },
+  {
+   "a": "f11267",
+   "b": "f11268",
+   "type": "supports",
+   "note": "Explicit cybersecurity exclusion prevents treating functional safety as implicit security coverage."
+  }
+ ]
+}

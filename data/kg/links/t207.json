@@ -1,0 +1,115 @@
+{
+ "key": "t207",
+ "hash": "fbf3ff04aa070eaa",
+ "synopsis": "Adaptive and Bayesian selection uses previous results, a surrogate model and an acquisition rule to choose subsequent tests, distinguishing boundary learning from optimisation for best or worst settings [f14171, f14173, f14174, f14175]. The booklet recommends these methods for efficiently characterising collision-mitigation decision boundaries and places adaptive search in the proposed campaign’s discovery stream [f7280, f7281, f7354]. Multi-objective and safe Bayesian optimisation can reduce expensive HIL or physical evaluations and constrain exploration, but the cited evidence is general engineering methodology rather than off-road braking research [f6974, f6976]. Its efficiency claims depend on the assumed surrogate and acquisition model; surrogate uncertainty can be wrong, and discontinuities and adaptive bias are additional limitations [f7281, f6862, f6978]. Because adaptive sampling deliberately favours interesting regions, its results cannot support naive binomial confidence intervals or population-rate claims: discovery and boundary characterisation must not be treated as rate estimation [f14177, f7282, f14179, f7401].",
+ "relations": [
+  {
+   "a": "f6646",
+   "b": "f14093",
+   "type": "same",
+   "note": "Both identify falsification and adaptive search as failure-discovery methods."
+  },
+  {
+   "a": "f14177",
+   "b": "f6861",
+   "type": "same",
+   "note": "Both invalidate naive binomial intervals because adaptive sampling is intentionally biased."
+  },
+  {
+   "a": "f14294",
+   "b": "f7401",
+   "type": "same",
+   "note": "Both describe the established prohibition on treating adaptive-search results as rate estimates."
+  },
+  {
+   "a": "f6862",
+   "b": "f14178",
+   "type": "same",
+   "note": "Both warn that surrogate uncertainty estimates can be wrong."
+  },
+  {
+   "a": "f7284",
+   "b": "f14178",
+   "type": "same",
+   "note": "Both warn that adaptive-selection surrogate uncertainty can be wrong."
+  },
+  {
+   "a": "f6862",
+   "b": "f7284",
+   "type": "same",
+   "note": "Duplicate warnings about unreliable surrogate uncertainty estimates."
+  },
+  {
+   "a": "f6860",
+   "b": "f7281",
+   "type": "same",
+   "note": "Both qualify efficient characterisation by the assumed surrogate and acquisition model."
+  },
+  {
+   "a": "f14176",
+   "b": "f7280",
+   "type": "supports",
+   "note": "Mapping detection boundaries with fewer runs supports recommending adaptive selection."
+  },
+  {
+   "a": "f14173",
+   "b": "f6974",
+   "type": "elaborates",
+   "note": "Explains how the surrogate predicts untested outcomes and their uncertainty."
+  },
+  {
+   "a": "f14174",
+   "b": "f6860",
+   "type": "elaborates",
+   "note": "Gives a concrete acquisition rule for learning the pass/fail boundary."
+  },
+  {
+   "a": "f14422",
+   "b": "f6974",
+   "type": "elaborates",
+   "note": "Details the repeated fit, select and evaluate cycle underlying sequential Bayesian selection."
+  },
+  {
+   "a": "f14175",
+   "b": "f7324",
+   "type": "elaborates",
+   "note": "Distinguishes optimisation objectives from boundary-learning objectives."
+  },
+  {
+   "a": "f7283",
+   "b": "f14177",
+   "type": "supports",
+   "note": "Intentional sampling bias explains why naive binomial confidence intervals are invalid."
+  },
+  {
+   "a": "f7282",
+   "b": "f14177",
+   "type": "elaborates",
+   "note": "Extends the confidence-interval warning to population prevalence claims."
+  },
+  {
+   "a": "f14179",
+   "b": "f7354",
+   "type": "supports",
+   "note": "The discovery-only interpretation supports placing adaptive search in the discovery stream."
+  },
+  {
+   "a": "f6978",
+   "b": "f7326",
+   "type": "elaborates",
+   "note": "Adds discontinuity difficulties and the general-engineering evidence limitation."
+  },
+  {
+   "a": "f6976",
+   "b": "f6974",
+   "type": "elaborates",
+   "note": "Specifies that safe variants constrain exploration."
+  },
+  {
+   "a": "f14178",
+   "b": "f7281",
+   "type": "elaborates",
+   "note": "Identifies uncertainty-estimation failure as a caveat to model-conditional efficiency claims."
+  }
+ ]
+}

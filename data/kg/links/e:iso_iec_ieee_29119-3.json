@@ -1,0 +1,31 @@
+{
+ "key": "e:iso/iec/ieee 29119-3",
+ "hash": "3e3703fb3d6d51d6",
+ "synopsis": "ISO/IEC/IEEE 29119-3:2021 defines test-documentation structures for test plans, designs, cases and completion reports, consistently described in Chapter 9 and the glossary [f7112, f15348]. Chapter 9 places Part 3 and Part 4 within generic software and systems testing and states that neither contains collision-avoidance content [f7114]. The glossary confirms that limitation while identifying their value as discipline for separating test processes, techniques and documentation, rather than collision-avoidance-specific guidance [f15350].",
+ "relations": [
+  {
+   "a": "f7112",
+   "b": "f15348",
+   "type": "same",
+   "note": "Both describe Part 3's documentation coverage: plans, designs, cases and completion reports."
+  },
+  {
+   "a": "f7114",
+   "b": "f15350",
+   "type": "same",
+   "note": "Both state that Parts 3 and 4 contain no collision-avoidance content."
+  },
+  {
+   "a": "f15350",
+   "b": "f7114",
+   "type": "elaborates",
+   "note": "Glossary adds methodological value despite the absence of collision-avoidance content."
+  },
+  {
+   "a": "f7112",
+   "b": "f15350",
+   "type": "supports",
+   "note": "Defined documentation structures support the glossary's claim of documentation discipline."
+  }
+ ]
+}

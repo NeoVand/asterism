@@ -1,0 +1,115 @@
+{
+ "key": "t346",
+ "hash": "83ab609efcf31569",
+ "synopsis": "The booklet recommends reference class forecasting plus schedule-risk analysis as the primary schedule approach, but the outside view is credible only with genuinely similar historical work; the cited 2016 comparison found reference class forecasting superior to Monte Carlo and earned-value forecasting only under high similarity [f10070, f9606]. Schedule-risk analysis assigns task-duration ranges and risk events, then Monte Carlo simulation follows the dependency network thousands of times to estimate completion-date probabilities; single-date plans are optimistic where parallel paths converge because of merge bias [f16324, f16326, f16327, f9633]. Plans should report P50 and P80 dates and the probability of meeting the fixed deadline, supported by an auditable integrated schedule, range assumptions, critical path, buffers and an S-curve; these confidence figures must come from the program's own model and cannot be inferred from this research [f205, f10171, f9640]. The illustrative cadence calls for a schedule model as exit evidence from October–November 2026 scoping, but prototype-delivery slippage was not treated as a planned branch in the research and should be modeled explicitly with a signpost and hedge [f9652, f10376, f10377]. GAO treats schedule-risk analysis as best practice and NASA requires joint confidence levels, but evidence that NASA's requirement improves program outcomes was not found; the skeptic's review also demands cost and schedule evidence under pessimistic correlation results [f9628, f9630, f9631, f11155].",
+ "relations": [
+  {
+   "a": "f9437",
+   "b": "f16315",
+   "type": "same",
+   "note": "Both limit reference class forecasting's superiority to genuinely similar reference classes."
+  },
+  {
+   "a": "f9606",
+   "b": "f9437",
+   "type": "elaborates",
+   "note": "Identifies the 2016 empirical comparison and its accuracy, stability and timeliness criteria."
+  },
+  {
+   "a": "f9633",
+   "b": "f16290",
+   "type": "same",
+   "note": "Both explain optimistic milestone dates through merge bias at converging parallel paths."
+  },
+  {
+   "a": "f9482",
+   "b": "f16333",
+   "type": "same",
+   "note": "Both report improved decisions from quantile dotplots or cumulative curves in one experiment."
+  },
+  {
+   "a": "f9631",
+   "b": "f16332",
+   "type": "same",
+   "note": "Both report missing evidence of outcomes from NASA's joint-confidence requirement."
+  },
+  {
+   "a": "f9630",
+   "b": "f16331",
+   "type": "same",
+   "note": "Both state NASA requires joint confidence levels for programs."
+  },
+  {
+   "a": "f9628",
+   "b": "f16329",
+   "type": "same",
+   "note": "Both identify schedule-risk analysis as GAO best practice."
+  },
+  {
+   "a": "f15822",
+   "b": "f16433",
+   "type": "same",
+   "note": "Both describe GAO's 2015 guide and its ten best-practice areas."
+  },
+  {
+   "a": "f9632",
+   "b": "f16436",
+   "type": "elaborates",
+   "note": "Adds Monte Carlo simulation of a critical-path model to integrated risk-driver analysis."
+  },
+  {
+   "a": "f16330",
+   "b": "f16436",
+   "type": "elaborates",
+   "note": "Specifies the integrated cost-schedule method described by AACE 57R-09."
+  },
+  {
+   "a": "f9889",
+   "b": "f16479",
+   "type": "same",
+   "note": "Both recommend a P50/P80-marked Monte Carlo S-curve or fan chart."
+  },
+  {
+   "a": "f10377",
+   "b": "f16336",
+   "type": "same",
+   "note": "Both require explicit prototype-delay assumptions, signposts and hedges."
+  },
+  {
+   "a": "f205",
+   "b": "f10243",
+   "type": "same",
+   "note": "Both require P50/P80 dates and deadline probability instead of a single planned date."
+  },
+  {
+   "a": "f9640",
+   "b": "f16320",
+   "type": "supports",
+   "note": "Explains why confidence dates and gate probabilities must come from the program's own model."
+  },
+  {
+   "a": "f9592",
+   "b": "f10070",
+   "type": "same",
+   "note": "Both recommend combining reference class forecasting with schedule-risk analysis for credible timing."
+  },
+  {
+   "a": "f10376",
+   "b": "f10377",
+   "type": "supports",
+   "note": "The missing prototype-slippage branch motivates explicitly modeling that risk."
+  },
+  {
+   "a": "f16327",
+   "b": "f9889",
+   "type": "supports",
+   "note": "Simulation's cumulative completion curve supplies the recommended P50/P80 visualization."
+  },
+  {
+   "a": "f9642",
+   "b": "f16326",
+   "type": "elaborates",
+   "note": "Identifies specific uncertainty sources to represent through duration ranges and risk events."
+  }
+ ]
+}

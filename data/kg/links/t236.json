@@ -1,0 +1,103 @@
+{
+ "key": "t236",
+ "hash": "b251aefad3f8ab00",
+ "synopsis": "The booklet distinguishes code verification, which checks software implementation, from solution verification, which estimates numerical error in a particular run; verification is also distinct from validation against the real application [f14540, f10601]. Code verification uses problems with known exact answers once per software version, while solution verification refines time steps or spatial grids for each kind of run; a stopping-distance change from 41.9 m to 41.2 m after halving the time step illustrates numerical error that belongs in the uncertainty budget [f14541, f14542, f14543]. The credibility frameworks place code and solution verification before comparison with physical data, because unknown numerical artifacts can be mistaken for physics or tuned away [f14545, f14546]. A 2026 on-road round robin reported tool disagreements of 0.033 seconds and 0.314 metres despite prescribed triggering and braking, supporting the warning that a common scenario does not ensure equivalent simulator implementations [f14048, f6352]. Planning should therefore generate code and tool verification evidence, regression tests, solver checks and a verification report, supported by toolchain configuration management; model-verification exercises can begin before prototype arrival [f9727, f11107, f8034, f8238].",
+ "relations": [
+  {
+   "a": "f8034",
+   "b": "f14547",
+   "type": "same",
+   "note": "Both require evidence of correct implementation and solution, not merely post-tuning correlation."
+  },
+  {
+   "a": "f12205",
+   "b": "f14528",
+   "type": "same",
+   "note": "Both define verification as correct software implementation with small numerical errors."
+  },
+  {
+   "a": "f14048",
+   "b": "f6352",
+   "type": "supports",
+   "note": "Measured round-robin disagreements substantiate the recommendation to verify the simulator itself."
+  },
+  {
+   "a": "f14540",
+   "b": "f7599",
+   "type": "elaborates",
+   "note": "Defines the two verification activities included in the credibility workflow."
+  },
+  {
+   "a": "f14541",
+   "b": "f14540",
+   "type": "elaborates",
+   "note": "Adds exact-answer testing and the per-software-version cadence for code verification."
+  },
+  {
+   "a": "f14542",
+   "b": "f14540",
+   "type": "elaborates",
+   "note": "Adds refinement and convergence checks for solution verification."
+  },
+  {
+   "a": "f14543",
+   "b": "f14542",
+   "type": "elaborates",
+   "note": "Provides a stopping-distance example of time-step refinement and uncertainty accounting."
+  },
+  {
+   "a": "f14546",
+   "b": "f14545",
+   "type": "supports",
+   "note": "Risk of mistaking numerical artifacts for physics explains verification preceding physical-data comparison."
+  },
+  {
+   "a": "f14545",
+   "b": "f7599",
+   "type": "elaborates",
+   "note": "Specifies where code and solution verification sit in the credibility workflow."
+  },
+  {
+   "a": "f14544",
+   "b": "f7599",
+   "type": "supports",
+   "note": "The space agency standard independently recognizes implementation and solution verification as credibility factors."
+  },
+  {
+   "a": "f10601",
+   "b": "f12205",
+   "type": "elaborates",
+   "note": "Distinguishes implementation verification from application validation and uncertainty quantification."
+  },
+  {
+   "a": "f9727",
+   "b": "f8034",
+   "type": "elaborates",
+   "note": "Turns verification-package expectations into roadmap activities: regression tests and solver checks."
+  },
+  {
+   "a": "f8034",
+   "b": "f11107",
+   "type": "elaborates",
+   "note": "Details verification evidence and configuration management accompanying the expected report."
+  },
+  {
+   "a": "f8238",
+   "b": "f9727",
+   "type": "elaborates",
+   "note": "Identifies model-verification exercises as work that can start before prototype arrival."
+  },
+  {
+   "a": "f14543",
+   "b": "f14546",
+   "type": "supports",
+   "note": "Demonstrates numerical effects large enough to require explicit uncertainty accounting."
+  },
+  {
+   "a": "f6352",
+   "b": "f8034",
+   "type": "supports",
+   "note": "Scenario-description equivalence alone cannot establish correct simulator implementation, reinforcing the verification package requirement."
+  }
+ ]
+}

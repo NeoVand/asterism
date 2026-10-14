@@ -1,0 +1,37 @@
+{
+ "key": "e:structure from motion",
+ "hash": "9dc75e10f178bd49",
+ "synopsis": "Structure from motion matches points across photographs taken from different positions and solves for camera positions and three-dimensional point locations [f13145, f13144]. In drone or ground photogrammetry, it works with multi-view stereo to turn overlapping, calibrated images into camera poses and sparse geometry, followed by dense point clouds, textured meshes and surfaces [f3794]. The same combination can reconstruct poses, dense points and a textured mesh from a camera-only log [f3988]. Reconstruction from a working machine's recordings can instead combine camera, lidar, IMU and GNSS logs through structure from motion, lidar-inertial SLAM, point-cloud fusion and surfel or mesh generation [f3806]. The glossary identifies COLMAP as a widely used free structure-from-motion program and distinguishes the method from scene reconstruction, the full process of producing a usable virtual site [f13144].",
+ "relations": [
+  {
+   "a": "f13145",
+   "b": "f13144",
+   "type": "elaborates",
+   "note": "Explains point matching and joint estimation behind the glossary's recovery definition."
+  },
+  {
+   "a": "f3794",
+   "b": "f13144",
+   "type": "elaborates",
+   "note": "Places structure from motion within a photogrammetry pipeline producing usable site geometry."
+  },
+  {
+   "a": "f3988",
+   "b": "f3794",
+   "type": "elaborates",
+   "note": "Specifies a camera-only log as input to the structure-from-motion and multi-view-stereo pipeline."
+  },
+  {
+   "a": "f3806",
+   "b": "f13144",
+   "type": "elaborates",
+   "note": "Details the broader scene-reconstruction process using machine recordings and multiple sensor modalities."
+  },
+  {
+   "a": "f3806",
+   "b": "f3988",
+   "type": "elaborates",
+   "note": "Describes a multisensor reconstruction alternative to the camera-only pipeline."
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "key": "t270",
+ "hash": "032c03af7409be51",
+ "synopsis": "Independent test-plan review means reviewers who neither wrote the plan nor need it to succeed examine its scope, methods, metrics and thresholds before testing; thresholds must be fixed before results are seen [f14988, f14992]. Across Chapters 1, 12 and 13, the recommendation is to embed independence early, review the plan before prototype safety testing, and build a measured, independently reviewed credibility envelope before the prototype arrives [f741, f10356, f10466]. Review should cover data separation, physical confirmation, scenario coverage and the validity envelope, while skeptical reviewers challenge assumptions, acceptance thresholds, integration dependencies and evidence independence [f14991, f9962]. Scheduling requires early agreement on the assessment counterpart and review criteria, and a safety/legal dry run should produce written comments on a representative evidence package months before launch; review queues can become the critical path [f8245, f10964, f14998]. The corpus presents independent review as a practice- and standards-supported safeguard, not a proven cure: it cannot rescue incomplete engineering late, and the booklet found no evidence that red teams improve engineering outcomes [f15001, f1056, f15000].",
+ "relations": [
+  {
+   "a": "f741",
+   "b": "f14994",
+   "type": "same",
+   "note": "Both place independent test-body review before prototype safety testing."
+  },
+  {
+   "a": "f10964",
+   "b": "f14996",
+   "type": "same",
+   "note": "Both recommend reviewing a representative evidence package months before launch."
+  },
+  {
+   "a": "f1056",
+   "b": "f14997",
+   "type": "same",
+   "note": "Both warn independent review cannot rescue incomplete engineering late."
+  },
+  {
+   "a": "f742",
+   "b": "f741",
+   "type": "supports",
+   "note": "Early preparation avoids discovering basic problems during expensive machine tests."
+  },
+  {
+   "a": "f14991",
+   "b": "f741",
+   "type": "elaborates",
+   "note": "Specifies the subjects examined in the recommended pre-test review."
+  },
+  {
+   "a": "f14992",
+   "b": "f12174",
+   "type": "supports",
+   "note": "Pre-fixed thresholds answer reviewers' questions about criteria chosen before seeing results."
+  },
+  {
+   "a": "f14989",
+   "b": "f10356",
+   "type": "supports",
+   "note": "Developers' blind spots justify designing independence into validation."
+  },
+  {
+   "a": "f14999",
+   "b": "f10356",
+   "type": "supports",
+   "note": "Assessor requirements reinforce that developers cannot alone judge high-criticality discrepancies."
+  },
+  {
+   "a": "f14990",
+   "b": "f14988",
+   "type": "elaborates",
+   "note": "Identifies possible reviewers who have no stake in the outcome."
+  },
+  {
+   "a": "f14993",
+   "b": "f14991",
+   "type": "elaborates",
+   "note": "Independent reviewers select some of the physical confirmatory tests."
+  },
+  {
+   "a": "f9962",
+   "b": "f14995",
+   "type": "elaborates",
+   "note": "Defines what the proposed independent red team should challenge."
+  },
+  {
+   "a": "f10212",
+   "b": "f15001",
+   "type": "supports",
+   "note": "Practice-derived checklist grounding supports review as a safeguard rather than proven cure."
+  },
+  {
+   "a": "f15000",
+   "b": "f9962",
+   "type": "contradicts",
+   "note": "Red-team recommendation lacks demonstrated engineering-outcome benefits in the booklet."
+  },
+  {
+   "a": "f14998",
+   "b": "f8245",
+   "type": "supports",
+   "note": "Critical-path queue risk reinforces early agreement with the assessment counterpart."
+  },
+  {
+   "a": "f11039",
+   "b": "f10964",
+   "type": "elaborates",
+   "note": "Specifies taxonomy and substitution approvals needed to reduce late virtual-evidence rejection."
+  },
+  {
+   "a": "f11007",
+   "b": "f10466",
+   "type": "elaborates",
+   "note": "Adds named referent tests, acceptance criteria and measured-agreement gates to credibility-envelope planning."
+  },
+  {
+   "a": "f11122",
+   "b": "f14991",
+   "type": "elaborates",
+   "note": "Adds field-expert participation to review of scenario coverage."
+  },
+  {
+   "a": "f1056",
+   "b": "f15001",
+   "type": "supports",
+   "note": "Late engineering limitations explain why independent review is not a cure."
+  }
+ ]
+}

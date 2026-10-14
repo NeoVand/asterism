@@ -1,0 +1,115 @@
+{
+ "key": "t51",
+ "hash": "f10dccce0b995ef2",
+ "synopsis": "Performance Level (PL) grades safety-function reliability from a (lowest) to e (highest), while Categories B, 1, 2, 3 and 4 describe circuit architectures; achieved PL also depends on component MTTFd, diagnostic coverage and common-cause-failure protection [f12022, f12023, f12026, f12025]. ISO 13849-1:2023 supplies the generic machinery method, including software, but does not assign the collision-mitigation function's required PL: that comes from application-specific risk assessment or a type-C standard, with severity, exposure and avoidability informing the assessment [f15263, f2350, f12024, f11972]. ISO 19014 provides the earth-moving-machine framework, using required and achieved Machine Performance Levels (MPLr and MPLa); ISO 13849 remains relevant for generic subsystems and machines outside that sector's scope [f12034, f15264]. The intervention path needs a PL or integrity assignment plus fault testing, and the required level drives architecture and validation effort as much as threshold tuning; however, the Chapter 8 evidence is draft, its motion-and-braking questions omitted functional integrity, and Chapter 9 did not verify standard editions [f7455, f6581, f6579, f12033]. PL a spans approximately one dangerous failure per 10,000–100,000 hours; the glossary gives PL e a band of 10^-8–10^-7 per hour and compares it roughly with SIL 3, although its accompanying 'fewer than one per 10 million hours' wording is stricter than the band's upper endpoint [f12027, f12028, f12052]. Leaving hazard analysis, level allocation, acceptance metrics or applicable editions undecided in 2027 threatens to consume the validation window, described in the glossary as four months [f10766, f11022, f12458].",
+ "relations": [
+  {
+   "a": "f2195",
+   "b": "f2350",
+   "type": "same",
+   "note": "Both deny that ISO 13849-1 assigns the collision function's required PL."
+  },
+  {
+   "a": "f2195",
+   "b": "f2716",
+   "type": "same",
+   "note": "Both distinguish the PL method from assigning the collision function's required level."
+  },
+  {
+   "a": "f2195",
+   "b": "f12029",
+   "type": "same",
+   "note": "Glossary repeats that ISO 13849-1 does not assign the collision function's level."
+  },
+  {
+   "a": "f2195",
+   "b": "f15264",
+   "type": "same",
+   "note": "Both state ISO 13849 does not assign the collision function's required PL."
+  },
+  {
+   "a": "f10766",
+   "b": "f11022",
+   "type": "same",
+   "note": "Duplicate warnings about unresolved requirements consuming the validation window in 2027."
+  },
+  {
+   "a": "f11022",
+   "b": "f12458",
+   "type": "same",
+   "note": "Glossary repeats the unresolved-requirements warning and specifies a four-month window."
+  },
+  {
+   "a": "f6581",
+   "b": "f12033",
+   "type": "same",
+   "note": "Required PL drives architecture and validation effort as much as threshold tuning."
+  },
+  {
+   "a": "f7455",
+   "b": "f15273",
+   "type": "same",
+   "note": "Both require intervention-path level assignment and fault testing."
+  },
+  {
+   "a": "f2350",
+   "b": "f12024",
+   "type": "elaborates",
+   "note": "Chapter identifies application-specific analysis or a type-C standard as sources of required PL."
+  },
+  {
+   "a": "f11972",
+   "b": "f12024",
+   "type": "elaborates",
+   "note": "Specifies severity, exposure and avoidability inputs to the risk assessment."
+  },
+  {
+   "a": "f12029",
+   "b": "f15263",
+   "type": "elaborates",
+   "note": "Adds edition number and safety-related control-system scope to the generic machinery method."
+  },
+  {
+   "a": "f12034",
+   "b": "f15264",
+   "type": "elaborates",
+   "note": "Explains required and achieved MPL within the earth-moving sector framework."
+  },
+  {
+   "a": "f12025",
+   "b": "f6581",
+   "type": "supports",
+   "note": "Architecture, reliability and diagnostics explain why PL allocation affects design and validation effort."
+  },
+  {
+   "a": "f12098",
+   "b": "f12025",
+   "type": "elaborates",
+   "note": "FMEDA supplies failure classifications feeding diagnostic coverage and PL probability calculations."
+  },
+  {
+   "a": "f12030",
+   "b": "f7455",
+   "type": "supports",
+   "note": "Fault simulation is an available validation method for the required fault testing."
+  },
+  {
+   "a": "f6579",
+   "b": "f7455",
+   "type": "contradicts",
+   "note": "Motion-and-braking questions omit integrity topics required for the intervention path."
+  },
+  {
+   "a": "f7455",
+   "b": "f10766",
+   "type": "supports",
+   "note": "Unverified editions exemplify an unresolved issue threatening the validation window."
+  },
+  {
+   "a": "f12052",
+   "b": "f12028",
+   "type": "elaborates",
+   "note": "Adds a rough SIL 3 equivalence using the same dangerous-failure probability band."
+  }
+ ]
+}

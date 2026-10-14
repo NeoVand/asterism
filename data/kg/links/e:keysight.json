@@ -1,0 +1,25 @@
+{
+ "key": "e:keysight",
+ "hash": "2272db17299c9934",
+ "synopsis": "Keysight’s AD1012A product page claims support for up to 512 objects over a range of 1.5–300 m, with a contiguous horizontal field of view of ±70° and vertical field of view of ±15° [f4548, f4549, f4550]. The separate E8719A data sheet lists support for 1 or 3 radar targets; these figures concern different products, not a demonstrated inconsistency [f5312, f4548]. An industry demonstration involving Keysight, ESTECO, IPG and TNO combined scenario simulation, CarMaker vehicle simulation, HIL radar emulation and probabilistic analysis [f8711]. TNO collaborates with AVL and the Keysight–IPG–ESTECO chain, but the evidence is mostly road automotive, leaving its applicability to heavy off-road machines uncertain [f8830].",
+ "relations": [
+  {
+   "a": "f8711",
+   "b": "f8830",
+   "type": "supports",
+   "note": "The joint demonstration provides an example of TNO’s collaboration with the Keysight–IPG–ESTECO chain."
+  },
+  {
+   "a": "f4549",
+   "b": "f4548",
+   "type": "elaborates",
+   "note": "Adds the distance envelope to the AD1012A’s claimed object capacity."
+  },
+  {
+   "a": "f4550",
+   "b": "f4548",
+   "type": "elaborates",
+   "note": "Adds angular coverage to the AD1012A’s claimed object capacity."
+  }
+ ]
+}

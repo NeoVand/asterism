@@ -1,0 +1,115 @@
+{
+ "key": "t5",
+ "hash": "3e04fde0736d0060",
+ "synopsis": "Excavators can strike people or trucks with their counterweight or working equipment during swing without travelling; swing contact can be fatal, but separate agency statistics quantifying its frequency or share of serious collisions were not found [f3377, f3579, f3380, f11424]. Rotation therefore needs distinct detection zones and interventions: ISO 21815-4 was under publication in October 2026 and addresses motion inhibition before rotation starts, expressly excluding avoidance through automatic braking [f11428, f11422, f15153]. Komatsu KomVision launched on the PC200-11 in Japan in December 2019, followed by the PC200i-12 in December 2024; it stops at travel or swing start rather than during ongoing swing, and must be disabled during trailer loading because a rapid stop can destabilize the machine [f1640, f1642, f11427]. Virtual evidence remains limited: the 2019 excavator safety algorithm used kinematic working-area prediction and time-to-collision-based modes but had no field comparison, and comprehensive production-scale excavator vehicle-in-the-loop testing was not found [f6204, f6366, f5342]. TERA couples excavator and terrain mechanics and compares track deformation and velocity with a real excavator, but is not an ISO 21815 braking study; virtual swing scenarios still need upper-structure kinematics [f3968, f3969, f4131, f4361]. Available tools include MathWorks R2026b excavator examples, but rendered excavator images retain a significant reality gap, and transferring braking settings between loaders and excavators requires justified machine similarity rather than assuming exchangeability [f8285, f10582, f7027, f14451].",
+ "relations": [
+  {
+   "a": "f3377",
+   "b": "f11421",
+   "type": "same",
+   "note": "Both describe swing strikes by counterweight or equipment without forward or reverse travel."
+  },
+  {
+   "a": "f3377",
+   "b": "f11870",
+   "type": "same",
+   "note": "Both identify swing collisions without machine travel."
+  },
+  {
+   "a": "f3380",
+   "b": "f11424",
+   "type": "same",
+   "note": "Both report missing agency statistics separately quantifying serious swing collisions."
+  },
+  {
+   "a": "f3580",
+   "b": "f3380",
+   "type": "elaborates",
+   "note": "Adds missing frequency estimates and agencies' failure to distinguish swing events."
+  },
+  {
+   "a": "f3582",
+   "b": "f11423",
+   "type": "same",
+   "note": "Both describe rotation-specific prevention primarily through inhibition before motion starts."
+  },
+  {
+   "a": "f15153",
+   "b": "f3582",
+   "type": "elaborates",
+   "note": "Adds the express exclusion of avoidance by automatic braking."
+  },
+  {
+   "a": "f3581",
+   "b": "f11428",
+   "type": "supports",
+   "note": "Different rotation geometry supports separate detection zones and interventions."
+  },
+  {
+   "a": "f1640",
+   "b": "f10633",
+   "type": "same",
+   "note": "Both date the PC200-11 KomVision launch in Japan to December 2019."
+  },
+  {
+   "a": "f1642",
+   "b": "f11426",
+   "type": "same",
+   "note": "Both limit stopping to travel or swing start, not ongoing swing."
+  },
+  {
+   "a": "f11427",
+   "b": "f11871",
+   "type": "same",
+   "note": "Both require disabling KomVision during trailer loading."
+  },
+  {
+   "a": "f11427",
+   "b": "f11429",
+   "type": "supports",
+   "note": "Trailer-loading instability provides a concrete example of automatic-stop stability hazards."
+  },
+  {
+   "a": "f5950",
+   "b": "f6366",
+   "type": "same",
+   "note": "Both identify the 2019 excavator VR evaluation as simulation-only."
+  },
+  {
+   "a": "f6205",
+   "b": "f6366",
+   "type": "same",
+   "note": "Both report virtual-only evaluation without field evidence."
+  },
+  {
+   "a": "f5342",
+   "b": "f13399",
+   "type": "same",
+   "note": "Both report no production-scale off-road vehicle-in-the-loop evidence."
+  },
+  {
+   "a": "f3969",
+   "b": "f4130",
+   "type": "same",
+   "note": "Both describe TERA comparisons of track deformation and terrain-dependent velocity against a real excavator."
+  },
+  {
+   "a": "f8285",
+   "b": "f8379",
+   "type": "same",
+   "note": "Both identify excavator, backhoe and haul-truck examples in MathWorks R2026b."
+  },
+  {
+   "a": "f7027",
+   "b": "f14451",
+   "type": "same",
+   "note": "Neither knowledge transfer nor partial pooling establishes loader–excavator exchangeability."
+  },
+  {
+   "a": "f4135",
+   "b": "f13588",
+   "type": "same",
+   "note": "Both identify the 2022 excavator pose-estimation study using domain-randomized synthetic images."
+  }
+ ]
+}

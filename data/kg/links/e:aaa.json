@@ -1,0 +1,73 @@
+{
+ "key": "e:aaa",
+ "hash": "9d04143d3088ee41",
+ "synopsis": "AAA supplies independent on-road evidence and a practical measurement method: its 2024 protocols monitor brake-pedal force to confirm driver braking, while its nighttime tests exposed performance cliffs missed by standard daytime protocols [f6325, f7974]. In October 2019, none of four vehicles avoided a pedestrian target at night at 25 mph; a study published 16 October 2025 reported improvement from 0% to 60% nighttime impact avoidance, still leaving roughly 40% failures under ideal conditions [f7975, f7977]. The 2025 study tested four named vehicles at 25 mph (40 km/h), with the Toyota Camry avoiding impact in every nighttime run and the Chevrolet Malibu ranking lowest [f7976, f7978, f7979]. High-visibility clothing caused complete detection loss in some systems, and both clothing and nighttime conditions were under-represented in consumer protocols, illustrating why physical or virtual protocol-based evidence can give false confidence outside its tested envelope [f7980, f7981, f7982]. The skeptic's review separately records that AAA ADAS repair studies were not verified, leaving that evidence stream unresolved [f10812].",
+ "relations": [
+  {
+   "a": "f7975",
+   "b": "f7974",
+   "type": "supports",
+   "note": "Zero nighttime avoidance provides concrete evidence of the reported performance cliff."
+  },
+  {
+   "a": "f7975",
+   "b": "f7977",
+   "type": "elaborates",
+   "note": "Specifies the four-vehicle, 25 mph test underlying the 2019 zero-avoidance baseline."
+  },
+  {
+   "a": "f7976",
+   "b": "f7977",
+   "type": "elaborates",
+   "note": "Identifies vehicles, collaborators, and speed for the 2025 improvement result."
+  },
+  {
+   "a": "f7978",
+   "b": "f7977",
+   "type": "elaborates",
+   "note": "Camry's perfect nighttime result adds vehicle-level detail to aggregate avoidance."
+  },
+  {
+   "a": "f7979",
+   "b": "f7977",
+   "type": "elaborates",
+   "note": "Malibu's lowest ranking adds vehicle-level variation to aggregate performance."
+  },
+  {
+   "a": "f7974",
+   "b": "f7981",
+   "type": "elaborates",
+   "note": "Protocol coverage gaps extend beyond nighttime to high-visibility clothing."
+  },
+  {
+   "a": "f7980",
+   "b": "f7982",
+   "type": "supports",
+   "note": "Detection loss with high-visibility clothing demonstrates failures beyond standard protocol coverage."
+  },
+  {
+   "a": "f7977",
+   "b": "f7982",
+   "type": "supports",
+   "note": "Residual nighttime failures despite improvement substantiate limits of protocol-based confidence."
+  },
+  {
+   "a": "f7981",
+   "b": "f7982",
+   "type": "supports",
+   "note": "Under-represented conditions explain why protocol evidence can miss consequential failures."
+  },
+  {
+   "a": "f7974",
+   "b": "f8170",
+   "type": "supports",
+   "note": "AAA's nighttime performance cliffs exemplify degraded-visibility threshold effects."
+  },
+  {
+   "a": "f8170",
+   "b": "f7982",
+   "type": "supports",
+   "note": "Visibility threshold effects reinforce the danger of extrapolating beyond tested conditions."
+  }
+ ]
+}

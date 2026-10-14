@@ -1,0 +1,109 @@
+{
+ "key": "e:iso 13849-1",
+ "hash": "7339a2eed6a7155c",
+ "synopsis": "ISO 13849-1:2023 is the published fourth edition of the generic machinery functional-safety method for safety-related control systems, including software, using Performance Levels (PL) from a (lowest) to e (highest) [f2715, f2194, f15263, f12023]. It provides the PL method but does not assign the required level for collision-mitigation automatic braking; that must come from application-specific risk analysis or a type-C standard [f2195, f2350, f2716]. ISO 19014 is identified as the sector framework for earth-moving machines, while ISO 13849-1 remains relevant especially outside that scope or for subsystems developed under a generic framework [f12029, f2349]. A planning gap remains: Chapter 12 identifies ISO 13849-1:2023 and IEC 62061:2021 as current editions but reports that neither was reviewed [f9769].",
+ "relations": [
+  {
+   "a": "f2195",
+   "b": "f2350",
+   "type": "same",
+   "note": "Both say the standard does not assign the collision function’s required PL."
+  },
+  {
+   "a": "f2195",
+   "b": "f2716",
+   "type": "same",
+   "note": "Both deny that the standard sets the collision-mitigation function’s required PL."
+  },
+  {
+   "a": "f2350",
+   "b": "f2716",
+   "type": "same",
+   "note": "Both distinguish the PL method from assignment of the required collision-function level."
+  },
+  {
+   "a": "f2195",
+   "b": "f12029",
+   "type": "same",
+   "note": "Glossary repeats that the standard does not assign the required collision-function level."
+  },
+  {
+   "a": "f2350",
+   "b": "f12029",
+   "type": "same",
+   "note": "Both state that the collision function’s required level is not assigned by this standard."
+  },
+  {
+   "a": "f2716",
+   "b": "f12029",
+   "type": "same",
+   "note": "Both identify a generic method that does not set the collision function’s required level."
+  },
+  {
+   "a": "f2194",
+   "b": "f15263",
+   "type": "same",
+   "note": "Both identify edition four as the generic control-system safety method, including software."
+  },
+  {
+   "a": "f2715",
+   "b": "f15263",
+   "type": "same",
+   "note": "Both identify the fourth edition covering generic safety-related control-system parts."
+  },
+  {
+   "a": "f2194",
+   "b": "f2715",
+   "type": "same",
+   "note": "Both identify the fourth edition and its generic safety-related control-system scope."
+  },
+  {
+   "a": "f2194",
+   "b": "f12029",
+   "type": "same",
+   "note": "Both describe the standard as the generic machinery method, including software."
+  },
+  {
+   "a": "f15263",
+   "b": "f12029",
+   "type": "same",
+   "note": "Both describe the generic machinery safety method as including software."
+  },
+  {
+   "a": "f12023",
+   "b": "f15263",
+   "type": "elaborates",
+   "note": "Defines the lowest and highest levels of the stated PL scale."
+  },
+  {
+   "a": "f12023",
+   "b": "f2716",
+   "type": "elaborates",
+   "note": "Adds the endpoints of the PL scale used by the method."
+  },
+  {
+   "a": "f2350",
+   "b": "f2195",
+   "type": "elaborates",
+   "note": "Identifies risk analysis or a type-C standard as the source of the required level."
+  },
+  {
+   "a": "f12029",
+   "b": "f2349",
+   "type": "supports",
+   "note": "Earth-moving sector framework distinction supports using the generic method outside that scope."
+  },
+  {
+   "a": "f15263",
+   "b": "f2349",
+   "type": "supports",
+   "note": "Generic control-system scope supports relevance to subsystems developed under a generic framework."
+  },
+  {
+   "a": "f9769",
+   "b": "f2349",
+   "type": "contradicts",
+   "note": "Reported relevance contrasts with the planning chapter’s lack of review of the current edition."
+  }
+ ]
+}

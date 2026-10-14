@@ -1,0 +1,115 @@
+{
+ "key": "t145",
+ "hash": "d5e9ae0269356702",
+ "synopsis": "X-in-the-loop is a ladder from all-virtual toward all-real testing: expanding the real-system boundary from software to ECU, sensor and complete machine exposes additional failure modes but increases complexity and sacrifices speed, scalability, controllability and test volume [f13311, f5227, f13321]. The recommended allocation is MIL/SIL for high-volume early testing, HIL for real-controller timing, interfaces and faults, selective VIL where added fidelity warrants investment, and real machines for stopping, terrain and environmental effects; these methods complement rather than replace one another [f13313, f13314, f13315, f5743]. The pipeline should operate under continuous integration with automatic pass criteria and proving-ground anchors, with a versioned scenario library, SIL/HIL suite, statistical acceptance plan and correlated machine-dynamics models ideally ready by mid-2027 [f7142, f7141, f5616]. Engineering simulation can find defects and tune thresholds before machines exist, but the cited Daimler Truck India and HCLTech examples demonstrate engineering development rather than external safety acceptance; ISO 19014-4's 2020 edition contains normative Annex B on software validation test environments [f1447, f1449, f10532]. Commercial IPG offerings have direct off-highway MIL/SIL/HIL/VIL relevance, but documented sensor-stimulated VIL is limited to road vehicles, a 2024 road-vehicle survey reports high cost and varying accuracy, and no end-to-end heavy off-road automatic-braking VIL case was found [f8807, f13318, f13319, f13320].",
+ "relations": [
+  {
+   "a": "f5227",
+   "b": "f13312",
+   "type": "same",
+   "note": "Both describe broader real-system boundaries exposing failures while reducing testing efficiency and control."
+  },
+  {
+   "a": "f7142",
+   "b": "f13316",
+   "type": "same",
+   "note": "Both recommend continuous integration and automatic pass criteria across the validation pipeline."
+  },
+  {
+   "a": "f8436",
+   "b": "f8807",
+   "type": "same",
+   "note": "Both identify IPG's off-highway MIL, SIL, HIL and VIL capabilities."
+  },
+  {
+   "a": "f5226",
+   "b": "f11318",
+   "type": "elaborates",
+   "note": "The boundary-based method identifies the specific components progressively replacing simulation."
+  },
+  {
+   "a": "f5228",
+   "b": "f5226",
+   "type": "supports",
+   "note": "Automotive literature supports organizing tests by the real-system boundary."
+  },
+  {
+   "a": "f5744",
+   "b": "f11318",
+   "type": "supports",
+   "note": "Published on-road work illustrates the progression toward increasingly real testing."
+  },
+  {
+   "a": "f5743",
+   "b": "f526",
+   "type": "elaborates",
+   "note": "Different boundaries explain complementary uncertainty reduction and extend the list to replay and sensors."
+  },
+  {
+   "a": "f309",
+   "b": "f5743",
+   "type": "supports",
+   "note": "Documented programmes combine methods, consistent with their complementary roles."
+  },
+  {
+   "a": "f13313",
+   "b": "f13323",
+   "type": "elaborates",
+   "note": "Allocation separates decision correctness, safe execution and perception correctness."
+  },
+  {
+   "a": "f7141",
+   "b": "f13315",
+   "type": "elaborates",
+   "note": "Glossary adds controller checks and closed-loop braking to the proving-ground anchor recommendation."
+  },
+  {
+   "a": "f13314",
+   "b": "f7142",
+   "type": "elaborates",
+   "note": "Thousands of nightly MIL/SIL cases quantify the automated pipeline's intended volume."
+  },
+  {
+   "a": "f5227",
+   "b": "f13313",
+   "type": "supports",
+   "note": "Fidelity-versus-efficiency tradeoffs justify selective VIL and high-volume SIL."
+  },
+  {
+   "a": "f13319",
+   "b": "f13313",
+   "type": "supports",
+   "note": "Reported VIL cost and variable accuracy support requiring investment justification."
+  },
+  {
+   "a": "f1447",
+   "b": "f13322",
+   "type": "supports",
+   "note": "Pre-machine defect detection supports reserving prototype hours for uniquely physical phenomena."
+  },
+  {
+   "a": "f5141",
+   "b": "f1447",
+   "type": "supports",
+   "note": "Engineering simulation addresses testing before final hardware exists."
+  },
+  {
+   "a": "f1580",
+   "b": "f5616",
+   "type": "depends",
+   "note": "Building the planned SIL/HIL capability requires simulation, interface, timing and fault-injection expertise."
+  },
+  {
+   "a": "f8807",
+   "b": "f13320",
+   "type": "contradicts",
+   "note": "Off-highway VIL availability contrasts with absent end-to-end braking evidence; capability is not validation."
+  },
+  {
+   "a": "f13318",
+   "b": "f13320",
+   "type": "supports",
+   "note": "Road-only sensor-stimulation documentation reinforces the heavy off-road VIL evidence gap."
+  }
+ ]
+}

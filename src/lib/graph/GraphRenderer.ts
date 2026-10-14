@@ -643,7 +643,7 @@ export class GraphRenderer {
 		for (const i of indices) box.expandByPoint(this.position(i));
 		const center = box.getCenter(new THREE.Vector3());
 		const size = box.getSize(new THREE.Vector3()).length();
-		const dist = opts.distance ?? Math.max(110, size * 1.35);
+		const dist = opts.distance ?? Math.max(300, size * 1.45);
 		const dir = this.camera.position.clone().sub(this.controls.target).normalize();
 		this.fly = {
 			from: this.camera.position.clone(),

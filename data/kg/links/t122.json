@@ -1,0 +1,115 @@
+{
+ "key": "t122",
+ "hash": "c7021f617daa5c9f",
+ "synopsis": "The corpus treats stable, machine-readable data models and immutable identifiers as more important than tool brands: each run should identify every result-changing component, preferably through content hashes, because results without an exact product state are unusable as safety evidence [f7124, f13015, f13019, f16255]. ASAM MDF 4.3.0, dated September 2025, is a neutral binary option for signals, bus traffic and sensor data with metadata and synchronization; alternative structured or in-house formats are acceptable if provenance and long-term readability are controlled, but no universal off-road event logging format was found [f7115, f7116, f2933]. OpenODD 1.0.0, dated 3 April 2025, represents operating-domain taxonomies in YAML and CSV, while JSON, YAML and XML suit settings and scenarios rather than gigabytes of sensor data; ROS bags retain messages with timestamps [f13208, f13009, f13013]. Replay can be built before new software if recording formats and interfaces are fixed, but discovering late that recordings cannot be injected at the required interface or data rate is a recognized risk; guidance recommends retaining original bytes or packets and adding decoding and injection plugins afterward [f921, f5669, f5606]. Traceability also requires versioned coordinate transforms, interface and message schemas, and checksums; lossy compression can change detector outputs, and evolving sensor-interface standards remain a versioning risk [f5411, f13016, f13017, f13020]. Open standards support heterogeneous simulation tool chains, although the cited road-ADAS integration and ROS/Autoware replay examples are on-road evidence rather than direct off-road validation [f9331, f5607].",
+ "relations": [
+  {
+   "a": "f7115",
+   "b": "f13011",
+   "type": "same",
+   "note": "Both describe MDF 4.3.0, its September 2025 date, and synchronized binary recording."
+  },
+  {
+   "a": "f7116",
+   "b": "f13012",
+   "type": "same",
+   "note": "Both identify MDF as neutral, conditional on provenance and long-term readability."
+  },
+  {
+   "a": "f5669",
+   "b": "f13018",
+   "type": "same",
+   "note": "Both warn against discovering recording injection incompatibility too late."
+  },
+  {
+   "a": "f6708",
+   "b": "f13208",
+   "type": "same",
+   "note": "Both describe OpenODD 1.0.0 taxonomies, YAML/CSV formats, and restrictive/permissive definitions."
+  },
+  {
+   "a": "f16029",
+   "b": "f16254",
+   "type": "same",
+   "note": "Both name ATX for test metadata and MDF for measured data."
+  },
+  {
+   "a": "f13537",
+   "b": "f16029",
+   "type": "same",
+   "note": "Both identify ATX and MDF as neutral test-management formats."
+  },
+  {
+   "a": "f13537",
+   "b": "f16254",
+   "type": "same",
+   "note": "Both assign neutral test-management roles to ATX and MDF."
+  },
+  {
+   "a": "f7124",
+   "b": "f16255",
+   "type": "same",
+   "note": "Both prioritize a stable machine-readable model over implementation choice."
+  },
+  {
+   "a": "f8335",
+   "b": "f9331",
+   "type": "same",
+   "note": "Both identify shared open standards as integration glue for heterogeneous simulation chains."
+  },
+  {
+   "a": "f13019",
+   "b": "f13015",
+   "type": "supports",
+   "note": "Safety-evidence traceability justifies immutable identifiers for every result-changing component."
+  },
+  {
+   "a": "f13015",
+   "b": "f5411",
+   "type": "elaborates",
+   "note": "Coordinate transforms are another result-changing configuration requiring versioned traceability."
+  },
+  {
+   "a": "f13016",
+   "b": "f12982",
+   "type": "elaborates",
+   "note": "Specifies recorded machine signals whose DBC and schema versions must accompany them."
+  },
+  {
+   "a": "f5669",
+   "b": "f921",
+   "type": "supports",
+   "note": "Late injection incompatibility reinforces fixing recording formats and interfaces before early replay."
+  },
+  {
+   "a": "f13017",
+   "b": "f5606",
+   "type": "supports",
+   "note": "Compression-induced detector changes justify retaining original bytes or packets."
+  },
+  {
+   "a": "f5607",
+   "b": "f13013",
+   "type": "elaborates",
+   "note": "Timestamped message bags explain the recording structure underlying ROS replay examples."
+  },
+  {
+   "a": "f13009",
+   "b": "f6708",
+   "type": "elaborates",
+   "note": "OpenODD provides a concrete YAML/CSV application for structured domain descriptions."
+  },
+  {
+   "a": "f8335",
+   "b": "f8383",
+   "type": "elaborates",
+   "note": "MathWorks supplies concrete interfaces implementing several listed integration standards."
+  },
+  {
+   "a": "f13015",
+   "b": "f7124",
+   "type": "elaborates",
+   "note": "Specifies identifier coverage and content hashes for the immutable-ID data model."
+  }
+ ]
+}

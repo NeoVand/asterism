@@ -1,0 +1,67 @@
+{
+ "key": "e:emesrt pr-5a vehicle interaction systems",
+ "hash": "73f0502468f83496",
+ "synopsis": "EMESRT PR-5A addresses vehicle–person collisions and provides the sector-specific scenario list and control vocabulary used by mining customers [f15598, f15609]. Its revision history runs from Rev 1.0 in April 2016 through Rev 2.0 in August 2019 to Rev 3.0 in September 2024; the glossary attributes the latest revision date to a vendor white paper [f2581, f15602]. The nine-layer model places operator awareness at Level 7, warnings at Level 8, and intervention to slow or stop the machine at Level 9, motivating validation that also considers roadway design, segregation, procedures, and advisory controls [f2582, f15604, f15611]. Surface interaction scenarios are presented as storyboards covering road encounters, junctions, congested areas, and light–heavy vehicle interactions; the booklet maps project requirements and scenarios to these storyboards and South African MOSH numbers as concrete acceptance targets [f15606, f15610]. Scenario counts remain unresolved: a search snippet gives 24, while the glossary records 24 in a 2019 trade article versus 17 published surface storyboards in EMESRT's 2024 Activity Report [f2584, f15607]. An agricultural research paper also treats PR-5A as a replicable model for operational design domain definition and validation [f15608].",
+ "relations": [
+  {
+   "a": "f2581",
+   "b": "f15602",
+   "type": "same",
+   "note": "Both give the same three revisions and their month-year dates."
+  },
+  {
+   "a": "f2582",
+   "b": "f15603",
+   "type": "same",
+   "note": "Both identify nine levels and the same meanings for Levels 7–9."
+  },
+  {
+   "a": "f15603",
+   "b": "f15604",
+   "type": "elaborates",
+   "note": "Explains ownership of lower-level defenses and the actions of Levels 8–9."
+  },
+  {
+   "a": "f2583",
+   "b": "f15606",
+   "type": "elaborates",
+   "note": "Adds concrete encounter types to the surface-storyboard description."
+  },
+  {
+   "a": "f2584",
+   "b": "f15607",
+   "type": "contradicts",
+   "note": "The unqualified count of 24 faces an unresolved report of 17 published storyboards."
+  },
+  {
+   "a": "f15598",
+   "b": "f15603",
+   "type": "elaborates",
+   "note": "Lists all nine levels of the control model introduced in the EMESRT definition."
+  },
+  {
+   "a": "f15604",
+   "b": "f15611",
+   "type": "supports",
+   "note": "Site defenses and advisory controls explain why braking should not be validated in isolation."
+  },
+  {
+   "a": "f15609",
+   "b": "f15610",
+   "type": "supports",
+   "note": "Sector-specific scenarios and customer vocabulary justify using PR-5A as an acceptance target."
+  },
+  {
+   "a": "f2583",
+   "b": "f15610",
+   "type": "supports",
+   "note": "The storyboard format supplies concrete scenarios for mapping project requirements."
+  },
+  {
+   "a": "f15606",
+   "b": "f15608",
+   "type": "supports",
+   "note": "Concrete operational encounter types support using PR-5A for ODD definition and validation."
+  }
+ ]
+}

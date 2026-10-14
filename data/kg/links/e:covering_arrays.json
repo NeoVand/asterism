@@ -1,0 +1,67 @@
+{
+ "key": "e:covering arrays",
+ "hash": "1fe8137e2498db4e",
+ "synopsis": "Covering arrays reduce large discrete configuration spaces while retaining interaction coverage; the proposed use is machine-by-sensor-by-weather-by-scenario configuration testing [f4332, f6818, f7233]. They can establish that every t-tuple of discrete values was tested at least once, but cannot establish coverage of interactions above t, continuous regions, or rates [f7234, f7235]. NIST provides an independent evidence base, but evidence that most bugs involve low-order interactions comes from software, and transfer to perception remains unproven [f7238, f7236]. Safety engineers therefore should not assume low-order combinations are sufficient for off-road collision avoidance [f4332]. Available tooling includes NIST ACTS, PICT and commercial test-design tools [f7237].",
+ "relations": [
+  {
+   "a": "f6818",
+   "b": "f4332",
+   "type": "supports",
+   "note": "Discrete-space efficiency supports the general claim of configuration-space reduction."
+  },
+  {
+   "a": "f7234",
+   "b": "f4332",
+   "type": "elaborates",
+   "note": "Defines retained interaction coverage as testing every discrete t-tuple at least once."
+  },
+  {
+   "a": "f7235",
+   "b": "f4332",
+   "type": "supports",
+   "note": "Coverage limitations justify caution about low-order sufficiency for collision avoidance."
+  },
+  {
+   "a": "f7238",
+   "b": "f4332",
+   "type": "elaborates",
+   "note": "Adds the specific uncertainty that transfer of NIST-backed methods to perception is unproven."
+  },
+  {
+   "a": "f7236",
+   "b": "f4332",
+   "type": "supports",
+   "note": "Software origins of low-order bug evidence support caution about off-road safety transfer."
+  },
+  {
+   "a": "f6818",
+   "b": "f7233",
+   "type": "supports",
+   "note": "Efficiency in large discrete spaces motivates the recommended configuration-coverage use."
+  },
+  {
+   "a": "f7234",
+   "b": "f7233",
+   "type": "elaborates",
+   "note": "Specifies the coverage guarantee achievable through the recommended t-way testing."
+  },
+  {
+   "a": "f7235",
+   "b": "f7234",
+   "type": "elaborates",
+   "note": "Bounds the t-tuple guarantee, excluding higher-order interactions, continuous regions and rates."
+  },
+  {
+   "a": "f7236",
+   "b": "f7238",
+   "type": "supports",
+   "note": "The software evidence base helps explain uncertainty about transfer to perception."
+  },
+  {
+   "a": "f7237",
+   "b": "f7233",
+   "type": "elaborates",
+   "note": "Identifies tools available to implement the recommended combinatorial configuration testing."
+  }
+ ]
+}

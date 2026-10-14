@@ -1,0 +1,115 @@
+{
+ "key": "t337",
+ "hash": "3d1762002e40684d",
+ "synopsis": "Graphics-card choice strongly affects sensor-simulation speed and scene capacity: ray-tracing cores accelerate camera, lidar and radar calculations, while VRAM limits scene size; most named cards are NVIDIA models because the reviewed simulators depend on NVIDIA ray-tracing libraries [f16191, f16205, f16206, f16192]. CARLA UE5 requires at least an NVIDIA RTX 3000-series GPU with 16 GB VRAM, alongside Ubuntu 22.04 or Windows 11 and 130 GB of disk; the RTX PRO 6000 Blackwell offers 96 GB of memory, but its server prices were not found [f8469, f8852, f16198]. The booklet's 2026 cloud prices include AWS G6e with L40S GPUs at USD 1.861–30.131 per hour on demand in us-east-1, and Google g2-standard-32 with one L4 at about USD 1.734 per hour; these are generic pay-per-use options, not evidence of off-road suitability [f9258, f9260, f9257, f9259]. Illustrative performance figures include RadaRays at 7.8–18.8 milliseconds per radar image on an RTX 2070 Super versus 25.8–78.5 milliseconds on a desktop CPU, SplatAD scene training in about one hour on an A100, and weather editing at 20.52 seconds per image on an A40 [f16196, f16200, f16201]. No neutral, controlled cross-vendor benchmark was found, and reported multi-sensor frame-rate losses mean every candidate must be timed with the program's own machine geometry and sensors; Chrono's NVIDIA requirement is explicitly a dependency risk rather than a recommendation [f16208, f16207, f16209, f16193].",
+ "relations": [
+  {
+   "a": "f16195",
+   "b": "f8469",
+   "type": "same",
+   "note": "Same CARLA UE5 GPU minimum; chapter also specifies operating systems and disk."
+  },
+  {
+   "a": "f16195",
+   "b": "f8850",
+   "type": "same",
+   "note": "Both specify RTX 3000-series minimum and 16 GB VRAM for CARLA UE5."
+  },
+  {
+   "a": "f8469",
+   "b": "f8850",
+   "type": "same",
+   "note": "Duplicate CARLA GPU, VRAM and disk requirements."
+  },
+  {
+   "a": "f8310",
+   "b": "f16062",
+   "type": "same",
+   "note": "Same single-L40S AWS instance price; glossary additionally gives eight-processor pricing."
+  },
+  {
+   "a": "f9258",
+   "b": "f16062",
+   "type": "same",
+   "note": "Same AWS G6e hourly price endpoints; glossary identifies processor counts."
+  },
+  {
+   "a": "f8310",
+   "b": "f9258",
+   "type": "elaborates",
+   "note": "The G6e range extends the single-instance price to larger configurations."
+  },
+  {
+   "a": "f8311",
+   "b": "f9260",
+   "type": "same",
+   "note": "Same Google g2-standard-32 hourly price."
+  },
+  {
+   "a": "f8311",
+   "b": "f16064",
+   "type": "same",
+   "note": "Same Google instance, single L4 and hourly price."
+  },
+  {
+   "a": "f9260",
+   "b": "f16064",
+   "type": "same",
+   "note": "Same Google Cloud G2 instance price."
+  },
+  {
+   "a": "f8852",
+   "b": "f16197",
+   "type": "same",
+   "note": "Both identify RTX PRO 6000 Blackwell as workstation-class with 96 GB memory."
+  },
+  {
+   "a": "f8370",
+   "b": "f16202",
+   "type": "elaborates",
+   "note": "Glossary adds L40S memory capacity and connects cloud cards to quoted instance prices."
+  },
+  {
+   "a": "f8852",
+   "b": "f16198",
+   "type": "elaborates",
+   "note": "Hardware specification is available, but server pricing remains missing."
+  },
+  {
+   "a": "f16206",
+   "b": "f8469",
+   "type": "supports",
+   "note": "VRAM's scene-capacity role explains why CARLA specifies a minimum memory requirement."
+  },
+  {
+   "a": "f16208",
+   "b": "f16209",
+   "type": "supports",
+   "note": "Missing controlled benchmarks justify timing candidates on the program's own workload."
+  },
+  {
+   "a": "f16207",
+   "b": "f16209",
+   "type": "supports",
+   "note": "Reported multi-sensor slowdowns justify workload-specific performance qualification."
+  },
+  {
+   "a": "f16196",
+   "b": "f16191",
+   "type": "supports",
+   "note": "Measured GPU-versus-CPU radar timings illustrate hardware's impact on sensor-simulation speed."
+  },
+  {
+   "a": "f16194",
+   "b": "f16205",
+   "type": "elaborates",
+   "note": "Explains how RTX's dedicated ray-tracing cores accelerate simulated sensor calculations."
+  },
+  {
+   "a": "f16192",
+   "b": "f16193",
+   "type": "elaborates",
+   "note": "Chrono illustrates NVIDIA dependence explicitly treated as a risk, not an endorsement."
+  }
+ ]
+}

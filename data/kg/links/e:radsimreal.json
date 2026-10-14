@@ -1,0 +1,31 @@
+{
+ "key": "e:radsimreal",
+ "hash": "ed0f3653df2eab70",
+ "synopsis": "RadSimReal is a peer-reviewed radar sim-to-real study presented at CVPR 2024 [f327]. It provides on-road evidence that physical radar simulation can narrow the simulation-to-real gap for detection training, with the reported gap reduction limited to urban datasets [f3933, f472]. Nevertheless, the study shows a measurable domain gap, especially in adverse weather, so narrowing the gap does not mean eliminating it [f327, f472]. The glossary groups RadSimReal with Sim2Radar as research tools addressing the radar simulation-to-reality gap; the supplied evidence does not establish performance for heavy off-road machines [f15953, f3933, f472].",
+ "relations": [
+  {
+   "a": "f472",
+   "b": "f3933",
+   "type": "elaborates",
+   "note": "Adds the urban-dataset limitation to the on-road gap-reduction finding."
+  },
+  {
+   "a": "f327",
+   "b": "f3933",
+   "type": "elaborates",
+   "note": "Identifies a remaining measurable gap, especially in adverse weather, despite reported reduction."
+  },
+  {
+   "a": "f3933",
+   "b": "f15953",
+   "type": "elaborates",
+   "note": "Specifies physical radar simulation and detection training as RadSimReal's contribution."
+  },
+  {
+   "a": "f472",
+   "b": "f15953",
+   "type": "elaborates",
+   "note": "Adds reported gap reduction and its urban-dataset scope to the glossary description."
+  }
+ ]
+}

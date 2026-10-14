@@ -1,0 +1,61 @@
+{
+ "key": "e:chrono sensor",
+ "hash": "19163c96581a7719",
+ "synopsis": "Chrono::Sensor is Project Chrono’s sensor offering, classified as open source under BSD-3 and listed as free; the glossary also includes it among open-source sensor-simulation options [f9124, f9076, f9080, f15949]. It supports camera, lidar, SPAD, GPS and IMU sensors, with OptiX ray tracing and modeled lens distortion, noise and lag reported in the tools chapter [f9078, f8495]. Its listed interface is the Chrono API, and the latest release found was 10.0.0, although the supplied facts give no release date [f9079, f9081]. Independent evidence includes lunar and off-road research, providing relevant application context [f9077]. Both the tools chapter and glossary report that physics-based ultrasonic simulation was not found in Chrono::Sensor or the other listed options; this is a reported evidence gap, not an explicit claim that such capability is impossible [f8547, f15950].",
+ "relations": [
+  {
+   "a": "f8547",
+   "b": "f15950",
+   "type": "same",
+   "note": "Both report no physics-based ultrasonic simulation found in the same three options."
+  },
+  {
+   "a": "f8543",
+   "b": "f15949",
+   "type": "same",
+   "note": "Both classify RTX sensors, Chrono::Sensor and CARLA sensors as open-source options."
+  },
+  {
+   "a": "f8352",
+   "b": "f15949",
+   "type": "elaborates",
+   "note": "The tools list adds rFpro's camera pipeline to the glossary's three options."
+  },
+  {
+   "a": "f9076",
+   "b": "f15949",
+   "type": "supports",
+   "note": "The BSD-3 license supports the glossary's open-source classification for Chrono::Sensor."
+  },
+  {
+   "a": "f9076",
+   "b": "f8543",
+   "type": "elaborates",
+   "note": "Identifies the specific open-source license for Chrono::Sensor."
+  },
+  {
+   "a": "f8495",
+   "b": "f9078",
+   "type": "elaborates",
+   "note": "Adds simulation method and distortion, noise and lag to the same sensor inventory."
+  },
+  {
+   "a": "f8495",
+   "b": "f8545",
+   "type": "elaborates",
+   "note": "Adds GPS, IMU and modeled effects beyond the ray-traced camera, lidar and SPAD listing."
+  },
+  {
+   "a": "f8545",
+   "b": "f9078",
+   "type": "elaborates",
+   "note": "Specifies OptiX ray tracing for three sensors in the broader supported inventory."
+  },
+  {
+   "a": "f15950",
+   "b": "f9078",
+   "type": "elaborates",
+   "note": "Adds an ultrasonic evidence gap to the supported sensor inventory."
+  }
+ ]
+}

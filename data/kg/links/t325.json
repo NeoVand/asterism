@@ -1,0 +1,115 @@
+{
+ "key": "t325",
+ "hash": "18b1960b4134dec6",
+ "synopsis": "Terrain and soil tools model ground deformation, digging and loose-material flow because soft ground changes machine stopping; semi-empirical terramechanics can predict braking force and sinkage [f15981, f6461]. Across the booklet, the market is modular: heavy-machine tools offer strong terrain and hydraulics but thin sensor and scenario tooling, and combining separate renderer, dynamics, soil and HIL tools requires high integration effort [f195, f8283, f15860, f13240]. Available methods range from fast Bekker-Wong SCM to grain-based DEM and continuum SPH/CRM; Project Chrono 10.0.0, dated 27 March 2026, supports wheeled, tracked and articulated vehicles on deformable terrain [f15982, f15983, f15984, f8301]. High fidelity is not suitable for broad scenario sweeps: Chrono continuum soil simulation runs 50–200 times slower than real time, while uncertain soil inputs can overwhelm the benefit of model fidelity [f15992, f16233, f15993]. The recommended approach is to use detailed terrain simulation to characterize stopping-distance sensitivity to soil, slope and payload, fit simpler models for regression testing, and confirm the parameter envelope through targeted physical tests [f15994].",
+ "relations": [
+  {
+   "a": "f195",
+   "b": "f15860",
+   "type": "same",
+   "note": "Both describe complementary strengths and gaps of road and heavy-machine tool chains."
+  },
+  {
+   "a": "f8283",
+   "b": "f15860",
+   "type": "elaborates",
+   "note": "Names heavy-machine products exhibiting the terrain-versus-sensor tooling imbalance."
+  },
+  {
+   "a": "f3961",
+   "b": "f6014",
+   "type": "same",
+   "note": "Both describe Chrono rigid terrain, Bekker-Wong SCM, and granular or deformable alternatives."
+  },
+  {
+   "a": "f6015",
+   "b": "f6388",
+   "type": "same",
+   "note": "Both describe Altair tracked-machine soft-soil workflows coupled to EDEM."
+  },
+  {
+   "a": "f8355",
+   "b": "f8582",
+   "type": "same",
+   "note": "Both list Chrono SCM, CRM and DEM terrain capabilities."
+  },
+  {
+   "a": "f8582",
+   "b": "f15988",
+   "type": "same",
+   "note": "Glossary repeats the three Chrono terrain models."
+  },
+  {
+   "a": "f9123",
+   "b": "f15988",
+   "type": "same",
+   "note": "Both list Chrono SCM, CRM and DEM."
+  },
+  {
+   "a": "f8582",
+   "b": "f9123",
+   "type": "same",
+   "note": "Duplicate Chrono terrain-model lists within Chapter 11."
+  },
+  {
+   "a": "f8494",
+   "b": "f15984",
+   "type": "elaborates",
+   "note": "Glossary explains the continuum SPH method identified as Chrono CRM."
+  },
+  {
+   "a": "f15989",
+   "b": "f16233",
+   "type": "same",
+   "note": "Both report Chrono continuum soil running 50–200 times slower than real time."
+  },
+  {
+   "a": "f16233",
+   "b": "f15992",
+   "type": "supports",
+   "note": "Measured slowdown supports excluding high-detail soil from scenario sweeps."
+  },
+  {
+   "a": "f15992",
+   "b": "f15994",
+   "type": "depends",
+   "note": "Scenario-sweep cost motivates simpler regression models within the multi-fidelity workflow."
+  },
+  {
+   "a": "f15993",
+   "b": "f15994",
+   "type": "supports",
+   "note": "Soil-input uncertainty supports targeted physical confirmation of the parameter envelope."
+  },
+  {
+   "a": "f8592",
+   "b": "f15987",
+   "type": "same",
+   "note": "Both identify Demify as research and service software for heavy-machinery soil-tool DEM."
+  },
+  {
+   "a": "f8663",
+   "b": "f16074",
+   "type": "same",
+   "note": "Both identify the same six mobile-machinery physics tool families."
+  },
+  {
+   "a": "f8588",
+   "b": "f8677",
+   "type": "same",
+   "note": "Both establish EDEM relevance to mining, quarry and earth or bulk-material applications."
+  },
+  {
+   "a": "f9135",
+   "b": "f15985",
+   "type": "elaborates",
+   "note": "Glossary adds DEM methodology and multibody coupling to EDEM's bulk-material scope."
+  },
+  {
+   "a": "f6391",
+   "b": "f8443",
+   "type": "supports",
+   "note": "TruckMaker's road-truck orientation supports the stated limitation on deformable-soil physics."
+  }
+ ]
+}

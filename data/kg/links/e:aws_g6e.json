@@ -1,0 +1,43 @@
+{
+ "key": "e:aws g6e",
+ "hash": "44b1951014d1a0f7",
+ "synopsis": "The booklet presents AWS G6e as a generic, pay-per-use GPU cloud execution option using NVIDIA L40S GPUs, alongside Google Cloud G2 with NVIDIA L4 GPUs [f8370, f9257, f16202]. G6e instances offer up to eight L40S GPUs with 48 GB each, up to 192 vCPUs, 1.536 TB of RAM and 400 Gbps networking [f8854]. The listed 2026 public on-demand price range is USD 1.861–30.131 per hour in us-east-1, based on trackers [f9258]. Although included among cloud execution options, the tools table marks its off-road relevance as not applicable, rather than establishing an off-road-specific role [f8370, f9257].",
+ "relations": [
+  {
+   "a": "f8370",
+   "b": "f16202",
+   "type": "same",
+   "note": "Both identify G6e with L40S and Google Cloud G2 with L4."
+  },
+  {
+   "a": "f8854",
+   "b": "f16202",
+   "type": "elaborates",
+   "note": "Adds G6e GPU count, CPU, RAM and networking limits to the glossary hardware description."
+  },
+  {
+   "a": "f9258",
+   "b": "f16202",
+   "type": "elaborates",
+   "note": "Supplies the G6e hourly price range, year, region and tracker basis."
+  },
+  {
+   "a": "f8854",
+   "b": "f8370",
+   "type": "elaborates",
+   "note": "Quantifies the hardware capacity of the listed G6e cloud execution option."
+  },
+  {
+   "a": "f9258",
+   "b": "f9257",
+   "type": "elaborates",
+   "note": "Quantifies on-demand pricing for the pay-per-use option."
+  },
+  {
+   "a": "f9257",
+   "b": "f8370",
+   "type": "elaborates",
+   "note": "Adds payment model and the table's not-applicable off-road relevance classification."
+  }
+ ]
+}

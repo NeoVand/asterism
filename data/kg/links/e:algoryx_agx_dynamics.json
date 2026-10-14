@@ -1,0 +1,115 @@
+{
+ "key": "e:algoryx agx dynamics",
+ "hash": "51ccb3c690ee2175",
+ "synopsis": "Algoryx AGX Dynamics is a machinery-physics engine covering terrain, tires, tracks, hydraulics and granular material; the booklet positions such tools as strong in terrain and hydraulics but thin in sensor and scenario tooling [f16204, f15965, f8283]. Independent validation evidence includes a 2024 wheel-loader digging model that required a tire-ground friction coefficient of 2.0 to match measurements, with remaining errors attributed to tire-pressure modeling and a flat-ground assumption, and a peer-reviewed 2025 wheel-loader digital-twin calibration including terrain parameters [f6090, f6091, f8292]. Unity and Unreal integration is supported, TERA demonstrates a Unity/AGX excavator simulator with ROS integration, and an April 2025 Unity example added reverse automatic braking with lidar; the latest release found in the comparison was AGXUnity 5.5.1, dated 20 January 2026 [f8703, f4129, f15967, f9112]. The proposed middle-cost stack couples AGX via FMI for terrain, hydraulics and machine variants, but FMI support was explicitly not verified, leaving that integration assumption unresolved [f9286, f9111]. Licensing is commercial, with yearly per-seat Basic, Custom and Premium subscriptions priced on request and separate runtime, OEM and academic licenses [f8575].",
+ "relations": [
+  {
+   "a": "f6090",
+   "b": "f6092",
+   "type": "supports",
+   "note": "The fitted friction coefficient illustrates calibration needed to match measurements."
+  },
+  {
+   "a": "f6091",
+   "b": "f6092",
+   "type": "elaborates",
+   "note": "Residual errors identify limitations remaining after parameter fitting."
+  },
+  {
+   "a": "f8292",
+   "b": "f15966",
+   "type": "same",
+   "note": "Both describe the peer-reviewed 2025 physical-machine calibration."
+  },
+  {
+   "a": "f8292",
+   "b": "f8572",
+   "type": "same",
+   "note": "Duplicate calibration claim, including terrain parameters."
+  },
+  {
+   "a": "f8292",
+   "b": "f8671",
+   "type": "same",
+   "note": "Both identify the 2025 wheel-loader calibration as independent evidence."
+  },
+  {
+   "a": "f8671",
+   "b": "f9107",
+   "type": "same",
+   "note": "Both cite the same 2025 calibration as demonstrated off-road evidence."
+  },
+  {
+   "a": "f15966",
+   "b": "f9332",
+   "type": "supports",
+   "note": "The calibration example supports feasibility of calibrating machine and terrain simulation."
+  },
+  {
+   "a": "f15965",
+   "b": "f8354",
+   "type": "same",
+   "note": "Both list AGX terrain, tire, tracks, hydraulics and granular modules."
+  },
+  {
+   "a": "f8569",
+   "b": "f15965",
+   "type": "elaborates",
+   "note": "Adds soil deformation, supported machine contacts and terrain paging."
+  },
+  {
+   "a": "f16149",
+   "b": "f8575",
+   "type": "same",
+   "note": "Same subscription structure; chapter names the three tiers."
+  },
+  {
+   "a": "f16074",
+   "b": "f8663",
+   "type": "same",
+   "note": "Both identify the same mobile-machinery physics tool group."
+  },
+  {
+   "a": "f16162",
+   "b": "f9286",
+   "type": "same",
+   "note": "Both propose AGX or Mevea coupled through FMI in the middle-cost stack."
+  },
+  {
+   "a": "f9286",
+   "b": "f9110",
+   "type": "contradicts",
+   "note": "Proposed FMI coupling assumes support that the comparison did not verify."
+  },
+  {
+   "a": "f16167",
+   "b": "f9304",
+   "type": "same",
+   "note": "Both list the same heavy-machine dynamics alternatives for the highest-cost chain."
+  },
+  {
+   "a": "f8571",
+   "b": "f9113",
+   "type": "same",
+   "note": "Both report documentation version 2.41."
+  },
+  {
+   "a": "f8703",
+   "b": "f9109",
+   "type": "same",
+   "note": "Both identify Unity and Unreal integration."
+  },
+  {
+   "a": "f15967",
+   "b": "f9108",
+   "type": "elaborates",
+   "note": "Dates the Unity lidar example and identifies its reverse automatic-braking application."
+  },
+  {
+   "a": "f4129",
+   "b": "f8703",
+   "type": "supports",
+   "note": "TERA provides an independent example of Unity and AGX used together."
+  }
+ ]
+}

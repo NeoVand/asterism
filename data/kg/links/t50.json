@@ -1,0 +1,115 @@
+{
+ "key": "t50",
+ "hash": "019ebffe13d6fe3e",
+ "synopsis": "SOTIF concerns unsafe sensing or decision-making despite no broken parts, including both missed people and nuisance braking for harmless objects [f12007, f12013]. ISO 21448:2022 is a road-vehicle standard outside the scope of heavy off-road machines; the booklet nevertheless borrows its triggering-condition logic for scenarios, requirements and the perception safety case [f2355, f12008, f12015, f15295]. The booklet pairs ISO 19014 for the intervention chain with SOTIF-related perception concepts, but functional safety and fault injection alone cannot establish healthy-system perception performance [f12018, f12021, f1009]. Visibility in dust, snow, fog, glare and darkness remains the hardest uncertainty and the least suited to simulation, so perception robustness must rest on physical and recorded-sensor evidence [f12019, f12020]. The research did not verify the on-road ISO 21448 approach, and Chapter 8's evidence linking braking safety and perception limits is draft, limiting the assurance planners can draw from these references [f5812, f6580].",
+ "relations": [
+  {
+   "a": "f659",
+   "b": "f1009",
+   "type": "elaborates",
+   "note": "Adds the limitation that omitted fault-model behaviours also remain unestablished."
+  },
+  {
+   "a": "f12007",
+   "b": "f11959",
+   "type": "same",
+   "note": "Both define unsafe behaviour without component failure."
+  },
+  {
+   "a": "f12007",
+   "b": "f15292",
+   "type": "same",
+   "note": "Restates the definition with the standard reference and glare example."
+  },
+  {
+   "a": "f2355",
+   "b": "f12014",
+   "type": "same",
+   "note": "Both exclude off-road machinery from ISO 21448's scope."
+  },
+  {
+   "a": "f8944",
+   "b": "f9382",
+   "type": "same",
+   "note": "Duplicate statements that ISO 21448 is a road-vehicle standard."
+  },
+  {
+   "a": "f8944",
+   "b": "f12014",
+   "type": "elaborates",
+   "note": "Adds the explicit consequence that off-road machines fall outside scope."
+  },
+  {
+   "a": "f654",
+   "b": "f12015",
+   "type": "same",
+   "note": "Both describe borrowing triggering-condition logic for scenarios and requirements."
+  },
+  {
+   "a": "f654",
+   "b": "f15295",
+   "type": "elaborates",
+   "note": "Places borrowed triggering-condition logic within the perception safety-case skeleton."
+  },
+  {
+   "a": "f6580",
+   "b": "f12018",
+   "type": "same",
+   "note": "Both separate intervention-chain standards from perception-limit concepts, with different additional references."
+  },
+  {
+   "a": "f659",
+   "b": "f12021",
+   "type": "supports",
+   "note": "Fault-injection limitations reinforce that functional safety does not establish seeing capability."
+  },
+  {
+   "a": "f11992",
+   "b": "f12007",
+   "type": "elaborates",
+   "note": "Contrasts functional safety with SOTIF using a healthy camera in dust."
+  },
+  {
+   "a": "f12016",
+   "b": "f12019",
+   "type": "supports",
+   "note": "Concrete weather and contamination insufficiencies substantiate perception uncertainty."
+  },
+  {
+   "a": "f12020",
+   "b": "f12019",
+   "type": "depends",
+   "note": "Physical and recorded evidence is required because simulation poorly resolves visibility uncertainty."
+  },
+  {
+   "a": "f12017",
+   "b": "f12011",
+   "type": "elaborates",
+   "note": "Untested snow conditions illustrate the unknown-unsafe category."
+  },
+  {
+   "a": "f12010",
+   "b": "f654",
+   "type": "elaborates",
+   "note": "Explains triggering conditions and supplies examples for scenario engineering."
+  },
+  {
+   "a": "f12012",
+   "b": "f12011",
+   "type": "elaborates",
+   "note": "Describes how testing and design changes address the four situation areas."
+  },
+  {
+   "a": "f10339",
+   "b": "f5812",
+   "type": "contradicts",
+   "note": "Proposed use for the perception gap remains qualified by lack of research verification."
+  },
+  {
+   "a": "f12009",
+   "b": "f12013",
+   "type": "elaborates",
+   "note": "Worker/sign confusion and radar separation limitations illustrate perception errors covered by SOTIF."
+  }
+ ]
+}
