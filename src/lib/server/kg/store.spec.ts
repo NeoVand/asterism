@@ -91,3 +91,22 @@ describe('duplicate folding', () => {
 		expect(folded.some((f) => f.also.length > 0)).toBe(true);
 	});
 });
+
+describe('graph shape', () => {
+	it('is one connected component with no isolated nodes', () => {
+		const ids = store.nodes.map((n) => n.id);
+		const seen = new Set<string>([ids[0]]);
+		const queue = [ids[0]];
+		while (queue.length) {
+			const id = queue.pop()!;
+			for (const a of store.adj.get(id) ?? []) if (!seen.has(a.id)) (seen.add(a.id), queue.push(a.id));
+		}
+		expect(seen.size).toBe(ids.length);
+	});
+
+	it('links nearly every fact to a concept, entity, source or another fact', () => {
+		const facts = store.nodes.filter((n) => n.type === 'fact');
+		const bare = facts.filter((f) => !(store.adj.get(f.id) ?? []).some((a) => a.r !== 'states' && a.r !== 'contains'));
+		expect(bare.length / facts.length).toBeLessThan(0.001);
+	});
+});

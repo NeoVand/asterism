@@ -61,11 +61,13 @@ npm run build && node build
 | WebGPU constellation (TSL compute layout, bundled edges, bloom) | `src/lib/graph/GraphRenderer.ts` |
 | Chat, generative blocks, node card, search, tour | `src/lib/chat`, `src/lib/blocks`, `src/lib/graph`, `src/lib/app` |
 
-The graph (20.6k nodes, 110k edges): 16.6k atomic facts, 1.2k cited sources, 361 glossary
+The graph (20.6k nodes, 110k edges): 16.6k atomic facts, 1.16k cited sources (duplicates merged), 361 glossary
 concepts, 2k resolved entities and the document structure, plus ~10k cross-chapter fact relations
 (restates, supports, contradicts, elaborates, depends) and a cited synopsis for every concept or
-entity discussed in more than one place. No embeddings: retrieval is full-text search plus graph
-traversal. See `docs/PLAN.md` for the pipeline, `docs/VISION.md` for the intent and `docs/DEMO.md` for a five-minute demo.
+entity discussed in more than one place. It is one connected component; all but one fact link to a
+concept, entity, source or another fact. No embeddings: retrieval is full-text search plus graph
+traversal. See `docs/PLAN.md` for the pipeline, `docs/VISION.md` for the intent and
+`docs/DEMO.md` for a five-minute demo.
 
 Rebuild the graph from the references (≈1 h of `gpt-6.1-sol` calls, cached per chunk):
 
