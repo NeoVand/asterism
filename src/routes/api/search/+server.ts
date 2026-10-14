@@ -10,7 +10,17 @@ export const GET: RequestHandler = ({ url }) => {
 	if (!q) return json({ results: [] });
 	const types = url.searchParams.get('types')?.split(',').filter(Boolean) as NodeType[] | undefined;
 	const store = getStore();
-	const hits = store.search(q, { limit: 24, types: types?.length ? types : ['fact', 'term', 'entity', 'source', 'section'] });
+	const raw = store.search(q, { limit: 32, types: types?.length ? types : ['fact', 'term', 'entity', 'source', 'section'] });
+	// The same press release is often cited from several URLs; show each title once.
+	const seen = new Set<string>();
+	const hits = raw
+		.filter((h) => {
+			const key = `${h.node.type}:${(h.node.type === 'fact' ? h.node.text : h.node.label).toLowerCase().replace(/\W+/g, ' ').trim()}`;
+			if (seen.has(key)) return false;
+			seen.add(key);
+			return true;
+		})
+		.slice(0, 24);
 	return json({
 		results: hits.map((h) => ({
 			id: h.id,

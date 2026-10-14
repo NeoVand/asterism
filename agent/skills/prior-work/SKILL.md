@@ -9,7 +9,9 @@ description: Finding and presenting prior work — papers, standards, regulation
    user wants strong evidence, `excludeOnRoad: true` for off-road-only work.
 2. For precedents (who validated what, how long it took), also `search_graph` with
    `kinds: ["example","event"]` and explore the company/program entities (Volvo CE, Caterpillar,
-   Epiroc, Wabtec, Deere, ACARP, PEGASUS…).
+   Epiroc, Wabtec, Deere, ACARP, PEGASUS…). Precedents are spread across Ch1 (vendor systems
+   and their envelopes), Ch2 (precedents and timelines) and Ch13 (skeptic's review): search
+   without a chapter filter, or with all three.
 3. `explore` the best sources to see which facts cite them; cite those facts in prose.
 4. Present with a `sources` block (ids) and/or a `comparison` block (who, what, scope, date,
    duration, evidence), then 2–4 sentences on what the prior work does and does not show.

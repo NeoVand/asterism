@@ -57,7 +57,7 @@
 		const s = new Set<number>();
 		for (const id of order) {
 			const b = app.brief(id);
-			if (b && b.chapter >= 0) s.add(b.chapter);
+			if (b && b.chapter > 0) s.add(b.chapter);
 		}
 		return s.size;
 	});
@@ -135,7 +135,7 @@
 					use:tip={'Hover to light up the answer’s constellation'}
 				>
 					<span class="size-1.5 rounded-full bg-gold shadow-[0_0_8px_var(--color-gold)]"></span>
-					{order.length} cited · {chapters} {chapters === 1 ? 'chapter' : 'chapters'}
+					{order.length} cited{#if chapters} · {chapters} {chapters === 1 ? 'chapter' : 'chapters'}{/if}
 				</button>
 				<button
 					type="button"

@@ -441,13 +441,22 @@ export class GraphStore {
 			return s ? `${ch} › ${s.path.slice(1).join(' › ') || s.title}` : ch;
 		}
 		if (n.type === 'section') return (n.path ?? []).join(' › ');
-		if (n.type === 'source') return `Source (${this.sourceChapters(n.id).map((c) => `Ch ${c}`).join(', ')})`;
+		if (n.type === 'source') {
+			const chs = this.sourceChapters(n.id);
+			return chs.length ? `Cited in ${chs.map((c) => (c ? `Ch ${c}` : 'the introduction')).join(', ')}` : 'Cited source';
+		}
 		return '';
 	}
 
+	/** Booklet chapters whose facts cite this source, in order. */
 	sourceChapters(id: string): number[] {
-		const s = this.corpus.sources.find((x) => x.id === id);
-		return [...new Set(s?.refs.map((r) => r.chapter) ?? [])];
+		const chs = new Set<number>();
+		for (const a of this.adj.get(id) ?? []) {
+			if (a.r !== 'cites' || a.out) continue;
+			const c = this.byId.get(a.id)?.chapter;
+			if (c != null) chs.add(c);
+		}
+		return [...chs].sort((a, b) => a - b);
 	}
 
 	/** Compact client format; cached until the graph reloads. */

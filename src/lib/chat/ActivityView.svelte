@@ -1,6 +1,6 @@
 <script lang="ts">
 	/** The agent's live work log: skills read, searches, hubs explored, researchers, blocks. */
-	import { slide } from 'svelte/transition';
+	import { fade, slide } from 'svelte/transition';
 	import Icon from '#lib/ui/Icon.svelte';
 	import {
 		AskIcon,
@@ -38,7 +38,17 @@
 			case 'read_file': {
 				const path = String(a.file_path ?? '');
 				const skill = /\/skills\/([^/]+)\//.exec(path)?.[1];
-				return { icon: SkillIcon, text: skill ? `Opened the ${skill.replace(/-/g, ' ')} playbook` : `Read ${path}` };
+				if (skill) return { icon: SkillIcon, text: `Opened the ${skill.replace(/-/g, ' ').replace(/^ui\b/, 'UI')} playbook` };
+				if (path.startsWith('/memories/')) return { icon: MemoryIcon, text: 'Recalled what it knows about you' };
+				return { icon: ReadIcon, text: 'Reread its working notes' };
+			}
+			case 'ls':
+			case 'glob':
+			case 'grep': {
+				const path = String(a.path ?? a.pattern ?? '');
+				if (path.includes('skills')) return { icon: SkillIcon, text: 'Looked through its playbooks' };
+				if (path.includes('memories')) return { icon: MemoryIcon, text: 'Checked its memory' };
+				return { icon: ReadIcon, text: 'Looked through its working notes' };
 			}
 			case 'search_graph':
 				return { icon: GraphSearchIcon, text: `Searched “${a.query}”`, detail: s.summary?.replace(/^\d+ matches for “?"?[^"]*"?”?/, (m) => m.match(/^\d+ matches/)?.[0] ?? m) };
@@ -66,7 +76,7 @@
 			case 'write_file': {
 				const path = String(a.file_path ?? '');
 				if (path.startsWith('/memories/')) return { icon: MemoryIcon, text: 'Remembered this for next time' };
-				return { icon: ReadIcon, text: `Wrote notes to ${path}` };
+				return { icon: ReadIcon, text: 'Wrote working notes' };
 			}
 			case 'write_todos':
 				return { icon: TodoIcon, text: `Planned ${((a.todos as unknown[]) ?? []).length} steps` };
@@ -89,7 +99,7 @@
 	const summary = $derived(
 		[
 			counts.search ? `${counts.search} ${counts.search === 1 ? 'search' : 'searches'}` : '',
-			counts.hubs ? `${counts.hubs} hubs` : '',
+			counts.hubs ? `${counts.hubs} ${counts.hubs === 1 ? 'hub' : 'hubs'}` : '',
 			counts.facts ? `${counts.facts} facts read` : '',
 			msg.tasks.length ? `${msg.tasks.length} researcher${msg.tasks.length > 1 ? 's' : ''}` : ''
 		]
@@ -169,11 +179,19 @@
 								size={13}
 								class="mt-px shrink-0 {t.status === 'run' ? 'text-[#a78bfa]' : 'text-fg-4'}"
 							/>
-							<span class="min-w-0 flex-1 {t.status === 'run' ? 'text-fg-2' : 'text-fg-3'}">
-								<span class="text-fg-2">Researcher</span> · <span class="line-clamp-2 inline">{t.description}</span>
+							<span class="line-clamp-2 min-w-0 flex-1 {t.status === 'run' ? 'text-fg-2' : 'text-fg-3'}" title={t.description}>
+								<span class="text-fg-2">Researcher</span> · {t.description}
 							</span>
-							<span class="shrink-0 font-mono text-[10.5px] text-fg-4">{sub.length} steps</span>
+							{#if sub.length}
+								<span class="shrink-0 font-mono text-[10.5px] text-fg-4">{sub.length} {sub.length === 1 ? 'step' : 'steps'}</span>
+							{/if}
 						</div>
+						{#if t.status === 'run' && sub.length}
+							{@const last = label(sub[sub.length - 1])}
+							{#key sub.length}
+								<div class="mt-0.5 ml-[21px] truncate text-[11px] text-fg-4" in:fade={{ duration: 200 }}>{last.text}</div>
+							{/key}
+						{/if}
 					</div>
 				{/each}
 				{#if msg.todos.length}

@@ -15,6 +15,15 @@ export interface AgentSettings {
 	model: string;
 	systemPrompt?: string;
 	effort?: 'low' | 'medium' | 'high';
+	/** `YYYY-MM-DD` in the user's time zone; defaults to the server's. */
+	today?: string;
+}
+
+/** "Wednesday 14 October 2026" for a `YYYY-MM-DD` date (or the server's today). */
+export function todayLine(today?: string): string {
+	const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(today ?? '');
+	const d = m ? new Date(+m[1], +m[2] - 1, +m[3]) : new Date();
+	return d.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
 }
 
 const ROOT = process.cwd();
@@ -55,7 +64,10 @@ async function build(s: AgentSettings) {
 		name: 'asterism',
 		model,
 		tools: [...graphTools, t.evidenceBrief, t.showUi, t.askUser],
-		systemPrompt: (s.systemPrompt?.trim() || DEFAULT_SYSTEM_PROMPT) + (s.effort === 'medium' ? DEEP_ADDENDUM : ''),
+		systemPrompt:
+			(s.systemPrompt?.trim() || DEFAULT_SYSTEM_PROMPT) +
+			(s.effort === 'medium' ? DEEP_ADDENDUM : '') +
+			`\n\nToday is ${todayLine(s.today)}.`,
 		subagents: [
 			{
 				name: 'researcher',
@@ -80,7 +92,7 @@ async function build(s: AgentSettings) {
 }
 
 export async function getAgent(s: AgentSettings) {
-	const key = JSON.stringify([s.apiKey.slice(-8), s.model, s.systemPrompt ?? '', s.effort ?? 'low']);
+	const key = JSON.stringify([s.apiKey.slice(-8), s.model, s.systemPrompt ?? '', s.effort ?? 'low', todayLine(s.today)]);
 	let agent = cache.get(key);
 	if (!agent) {
 		agent = await build(s);

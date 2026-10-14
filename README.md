@@ -6,6 +6,10 @@ Mitigation System for Heavy Off-Road Machines_ and its _Glossary and Prerequisit
 Deep Agent searches and walks that graph, stitches findings from different chapters together,
 answers with live citations, and helps plan — while the stars it touches light up.
 
+![The constellation: 20.6k facts, concepts, entities and sources in nine topic clusters](docs/screens/01-constellation.jpg)
+
+![An answer: cited stars labelled in the graph, a timeline block and numbered citations in the chat](docs/screens/07-answer.jpg)
+
 ## Run it
 
 ```bash
@@ -78,3 +82,4 @@ npx tsx scripts/kg/parse.ts && npx tsx scripts/kg/extract.ts && npx tsx scripts/
   confused it.
 - `npx vitest run --project server` — unit tests (search, folding, markdown citations, blocks).
 - `npx playwright test` — end-to-end UI tests (`E2E_AGENT=1` adds a live agent run).
+- `npx tsx scripts/dev/screens.ts --ask` — screenshots of key states into `docs/screens/` (dev server running).

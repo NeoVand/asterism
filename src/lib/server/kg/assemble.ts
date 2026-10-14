@@ -194,8 +194,22 @@ export function assemble(): KGraph {
 	const sourceMeta: Record<string, { title: string; by: string; year: number | null; kind: string }> = existsSync(`${DATA}/sources.json`)
 		? JSON.parse(readFileSync(`${DATA}/sources.json`, 'utf8'))
 		: {};
+	// The same work is often cited from several URLs (publisher, PMC, a PDF mirror): merge
+	// entries whose cleaned titles match (4+ words, compatible years) into the first one.
+	const sourceKey = (t: string) => t.toLowerCase().replace(/\W+/g, ' ').trim();
+	const firstByTitle = new Map<string, { id: string; year: number | null }>();
 	for (const s of corpus.sources) {
 		const meta = sourceMeta[s.id];
+		const key = meta ? sourceKey(meta.title) : '';
+		const year = meta?.year ?? s.year;
+		const first = key.split(' ').length >= 4 ? firstByTitle.get(key) : undefined;
+		if (first && (first.year == null || year == null || first.year === year)) {
+			for (const r of s.refs) sourceRef.set(`${r.chapter}:${r.num}`, first.id);
+			const node = byId.get(first.id);
+			if (node && !node.evidence && s.label) node.evidence = s.label;
+			continue;
+		}
+		if (key && !first) firstByTitle.set(key, { id: s.id, year });
 		add({
 			id: s.id,
 			type: 'source',
@@ -248,7 +262,11 @@ export function assemble(): KGraph {
 	}
 	for (const { res, chunk } of pairs) {
 		const entryTerm = chunk.role === 'glossary-entry' ? termOfEntry.get(chunk.sectionId) : undefined;
+		const texts = new Set<string>();
 		for (const x of res.facts) {
+			// The extractor occasionally repeats a fact verbatim within a chunk.
+			if (texts.has(x.text)) continue;
+			texts.add(x.text);
 			const fkey = `${res.chunkId}:${createHash('sha1').update(x.text).digest('hex').slice(0, 12)}`;
 			let id = factIds[fkey];
 			if (!id || usedIds.has(id)) factIds[fkey] = id = `f${++nextId}`;

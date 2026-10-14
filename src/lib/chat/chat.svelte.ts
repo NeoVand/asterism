@@ -234,6 +234,7 @@ class ChatStore {
 				headers: { 'content-type': 'application/json' },
 				body: JSON.stringify({
 					...req,
+					today: localDate(),
 					settings: {
 						apiKey: s.apiKey || undefined,
 						model: s.model,
@@ -369,3 +370,8 @@ class ChatStore {
 }
 
 export const chat = new ChatStore();
+
+/** Local calendar date as `YYYY-MM-DD`. */
+function localDate(d = new Date()): string {
+	return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}

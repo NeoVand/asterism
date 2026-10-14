@@ -5,7 +5,7 @@
 import { tool } from '@langchain/core/tools';
 import { dispatchCustomEvent } from '@langchain/core/callbacks/dispatch';
 import type { RunnableConfig } from '@langchain/core/runnables';
-import { interrupt } from '@langchain/langgraph';
+import { getCurrentTaskInput, interrupt } from '@langchain/langgraph';
 import { z } from 'zod';
 import type { KGNode, NodeType, RelType } from '#lib/kg/types.ts';
 import { Block, QuestionForm, type Answers } from '#lib/blocks/schema.ts';
@@ -96,9 +96,31 @@ export function makeTools() {
 						4
 					)
 				: [];
-			await emit(config, 'touch', [...hits, ...headline].flatMap((h) => [h.node.id, ...h.also.map((a) => a.id)]));
+			// A chapter filter can hide the best evidence (precedents live in Ch1 and Ch2, rules in Ch3
+			// and the glossary…), so point at strong matches the filter left out.
+			const outside = chapters?.length
+				? foldDuplicates(
+						store,
+						store
+							.search(query, { types: types as NodeType[] | undefined, kinds, near, limit: 16 })
+							.map((h) => h.node)
+							.filter((n) => !shownIds.has(n.id) && n.type === 'fact' && !chapters.includes(n.chapter ?? -1)),
+						4
+					)
+				: [];
+			await emit(config, 'touch', [...hits, ...headline, ...outside].flatMap((h) => [h.node.id, ...h.also.map((a) => a.id)]));
+			const outsideLines = outside.length
+				? [
+						'',
+						`Strong matches outside ${chapters!.map((c) => (c ? `Ch${c}` : 'the introduction')).join('/')} (search those chapters too):`,
+						...outside.map((h) => line(store, h.node, 220) + alsoNote(h.also))
+					]
+				: [];
 			if (!hits.length) {
-				return `No matches for "${query}". Try other wording, a synonym or acronym, fewer filters, or explore a related concept.`;
+				return [
+					`No matches for "${query}" with these filters. Try other wording, a synonym or acronym, fewer filters, or explore a related concept.`,
+					...outsideLines
+				].join('\n');
 			}
 			let synopses = 0;
 			const lines = hits.map((h) => {
@@ -116,6 +138,7 @@ export function makeTools() {
 					: []),
 				`${hits.length} matches for "${query}"${chapterSpread.size > 1 ? ` across ${[...chapterSpread].join(', ')}` : ''}:`,
 				...lines,
+				...outsideLines,
 				'',
 				'Next: explore hub ids (t…, e…) to see every chapter that discusses them, or a chapter (c0 synthesis, c1…c13) for its key findings, uncertainties and gaps; read_facts for citations and linked facts.'
 			].join('\n');
@@ -488,14 +511,18 @@ export function makeTools() {
 			const seen = seenByThread.get(threadOf(config));
 			const facts = [...(seen ?? [])].map((id) => store.get(id)).filter((n): n is KGNode => n?.type === 'fact');
 			if (!facts.length) return 'You have not looked at any facts yet in this turn. Research first (search_graph, explore), then call evidence_brief.';
-			const scores = store.scoreWithin(question, new Set(facts.map((f) => f.id)));
+			// Rank against both the agent's restatement and the user's own words: restatements
+			// tend to narrow the question and drop parts of it.
+			const ids = new Set(facts.map((f) => f.id));
+			const asked = lastUserMessage();
+			const scores = blend(store.scoreWithin(question, ids), asked ? store.scoreWithin(asked, ids) : new Map());
 			const ROLE: Record<string, number> = { synthesis: 1.5, 'key-findings': 1.35, disagree: 1.15, uncertain: 1.1, 'blind-spots': 1.05 };
 			const ranked = facts
 				.map((f) => ({ f, score: (scores.get(f.id) ?? 0) * (ROLE[store.roleOf(f) ?? ''] ?? 1) * (0.8 + 0.1 * (f.importance ?? 2)) }))
 				.filter((x) => x.score > 0)
 				.sort((a, b) => b.score - a.score)
 				.map((x) => x.f);
-			const folded = foldDuplicates(store, ranked, Math.min(max ?? 28, 40));
+			const folded = foldDuplicates(store, ranked, Math.min(Math.max(max ?? 28, 20), 40));
 			const isHeadline = (n: KGNode) => ['synthesis', 'key-findings'].includes(store.roleOf(n) ?? '');
 			const isTension = (n: KGNode) =>
 				['gap', 'uncertain', 'disagreement'].includes(n.kind ?? '') || ['disagree', 'uncertain', 'blind-spots'].includes(store.roleOf(n) ?? '');
@@ -527,6 +554,33 @@ export function makeTools() {
 	);
 
 	return { searchGraph, explore, readFacts, connect, readSection, findSources, showUi, askUser, evidenceBrief };
+}
+
+/** Sum of two score maps, each normalized to its best score. */
+function blend(a: Map<string, number>, b: Map<string, number>): Map<string, number> {
+	const out = new Map<string, number>();
+	for (const m of [a, b]) {
+		const top = Math.max(0, ...m.values());
+		if (!top) continue;
+		for (const [id, v] of m) out.set(id, (out.get(id) ?? 0) + v / top);
+	}
+	return out;
+}
+
+/** The latest user message in the running agent's state (empty outside a graph run). */
+function lastUserMessage(): string {
+	try {
+		const msgs = (getCurrentTaskInput() as { messages?: { content: unknown; getType?: () => string; type?: string }[] })?.messages ?? [];
+		for (let i = msgs.length - 1; i >= 0; i--) {
+			const m = msgs[i];
+			if ((m.getType?.() ?? m.type) !== 'human') continue;
+			const c = m.content;
+			return typeof c === 'string' ? c : Array.isArray(c) ? c.map((x: { text?: string }) => x.text ?? '').join(' ') : '';
+		}
+	} catch {
+		// Not inside a graph run (unit tests, scripts).
+	}
+	return '';
 }
 
 export function isNodeId(s: string) {

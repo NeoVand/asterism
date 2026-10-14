@@ -756,6 +756,21 @@ export class GraphRenderer {
 		};
 	}
 
+	/** Back out to the whole constellation (keeping the viewing angle) if zoomed in on a part. */
+	overview() {
+		const target = new THREE.Vector3();
+		const dir = this.camera.position.clone().sub(target);
+		if (dir.length() > 1200 && this.controls.target.length() < 150) return;
+		this.fly = {
+			from: this.camera.position.clone(),
+			to: dir.setLength(1500),
+			tFrom: this.controls.target.clone(),
+			tTo: target,
+			t0: performance.now(),
+			dur: 1300
+		};
+	}
+
 	zoom(factor: number) {
 		const dir = this.camera.position.clone().sub(this.controls.target);
 		const len = THREE.MathUtils.clamp(dir.length() * factor, this.controls.minDistance, this.controls.maxDistance);

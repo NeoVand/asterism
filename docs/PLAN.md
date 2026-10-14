@@ -20,7 +20,7 @@ Read with `docs/VISION.md`. Updated as work lands.
 
 Rebuild the graph: `parse → extract → resolve → sources → assemble → link → assemble`.
 
-## Eval history (20 cases, judge score /5, answer recall, retrieval recall, citation precision)
+## Eval history (20, later 30 cases; judge score /5, answer recall, retrieval recall, citation precision)
 
 - baseline: 3.10 · 48% · 67% · 90%
 - + links/synopses, dedup folding: 3.65 · 57% · 87% · 97%
@@ -28,16 +28,20 @@ Rebuild the graph: `parse → extract → resolve → sources → assemble → l
 - medium effort: 3.65 · 57% · 90% · 99.6% (slower; low stays default)
 - 30 cases (10 added) + headline conclusions in search results: 3.83 · 67% · 84% · 99%
 - + hyphen/spelling-aware tokenizer, blocks graded too: 3.90 · 68% · 86% · 99.5%
+- + probe fixes (scope rule, ask_user only after research, Level-9 aliases, explore focus): 3.93 · 69.5% · 90.5% · 98%
+- + evidence_brief (ranked, folded evidence pack before writing): 4.07 · 68% · 86% · 97.8%
 
 ## Done
 
 - Full pipeline and 20.6k-node / 110k-edge graph (16.6k facts, 2k entities, 1.2k sources, 361 concepts)
 - Agent with skills, subagents, ask_user forms, UI blocks; SSE streaming; settings (BYO key, model, prompt)
 - WebGPU constellation with live lighting, answer asterism trail, numbered cited labels, fly-to
+- Production build (adapter-node), unit tests (search, folding, citations, blocks), Playwright e2e
+- Upload: drop a document → chunk → extract → weave into the graph live (`src/lib/server/kg/ingest.ts`)
+- Probes: multi-turn scenarios ending in the agent's own debrief (`evals/probe.ts`)
+- Screenshots of key states: `npx tsx scripts/dev/screens.ts --ask` → `docs/screens/`
 
 ## Next
 
-- Raise answer recall (synthesis completeness), more eval cases (planning, prior work, concept explanations)
-- Production build check (adapter-node), unit + e2e tests
-- Upload new documents into the graph (same pipeline, incremental)
-- Visual polish passes; probe the agent with varied real conversations and ask it what confused it
+- Raise answer recall: most misses are facts the agent retrieved but left out of the answer
+- More eval cases for planning, prior work and concept explanations

@@ -79,7 +79,8 @@ export async function* runTurn(
 		apiKey: opts.apiKey,
 		model: opts.model,
 		systemPrompt: req.settings?.systemPrompt,
-		effort: req.settings?.effort
+		effort: req.settings?.effort,
+		today: req.today
 	});
 	const config = {
 		configurable: { thread_id: req.threadId },

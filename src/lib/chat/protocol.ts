@@ -31,4 +31,6 @@ export interface ChatRequest {
 	settings?: ChatSettings;
 	/** Plain transcript, used to rebuild a thread the server no longer has (after a restart). */
 	history?: { role: 'user' | 'assistant'; content: string }[];
+	/** The user's local date, `YYYY-MM-DD`, so plans and deadlines are counted from their today. */
+	today?: string;
 }

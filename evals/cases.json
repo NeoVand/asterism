@@ -666,5 +666,67 @@
     "re": "credib"
    }
   ]
+ },
+ {
+  "id": "sotif-concept",
+  "q": "What is SOTIF, and does it apply to our machine?",
+  "must": [
+   {
+    "claim": "SOTIF (ISO 21448:2022, Safety of the Intended Functionality) covers harm when nothing is broken but the system misjudges the world, e.g. perception limits and triggering conditions.",
+    "re": "nothing (is )?broken|triggering|performance limit|insufficien"
+   },
+   {
+    "claim": "ISO 21448 (like ISO 26262) is a road-vehicle standard and does not apply by scope; ISO 19014 is the earth-moving functional-safety reference.",
+    "re": "road.vehicle|ISO 19014"
+   },
+   {
+    "claim": "It is still useful as method: its triggering-condition logic for perception in the safety case, alongside ISO/PAS 8800 or UL 4600 for machine-learning and autonomous functions.",
+    "re": "triggering|8800|UL 4600"
+   }
+  ]
+ },
+ {
+  "id": "detection-range",
+  "q": "If a loader reverses at 15 km/h, how far away must a person be detected for the automatic brake to stop in time, and can today's sensors and simulation show that in dust?",
+  "must": [
+   {
+    "claim": "Off-road deceleration is low: about 0.60 m/s² (NSW in-service minimum) to about 2.94 m/s² (MSHA table), against at least 5.0 m/s² for car AEB.",
+    "re": "2\\.94|0\\.6"
+   },
+   {
+    "claim": "Latency is first-order: at 5–15 km/h the delay term can be half or more of the stopping distance (brake response roughly 0.3 s to 2.5 s by system and weight class).",
+    "re": "half|latency|response time"
+   },
+   {
+    "claim": "MSHA example: equipment up to 36,000 lb must stop within about 10.4 m (34 ft) from 16 km/h (10 mph).",
+    "re": "10\\.4|34 ft"
+   },
+   {
+    "claim": "Dust is the biggest off-road sensor-simulation gap; no validated dust model with an error metric was found.",
+    "re": "dust"
+   }
+  ]
+ },
+ {
+  "id": "proven-in-use",
+  "q": "Can the existing warning system's years of field history count as 'proven in use' evidence for the new braking function?",
+  "must": [
+   {
+    "claim": "Proven in use (ISO 26262-8 clause 14, IEC 61508) is a route for reusing an element whose definition and conditions of use are identical or highly similar, with a justified service period.",
+    "re": "reus|identical|similar"
+   },
+   {
+    "claim": "Adding automatic braking changes the item, so the warning system's history does not transfer to the braking function; it does not validate a simulator either.",
+    "re": "changes the item|does not transfer|not transfer"
+   },
+   {
+    "claim": "Field history can validate inputs and sub-models, not the new closed-loop braking chain; logs are open-loop, censored by operator reactions and biased toward normal operation.",
+    "re": "open.loop|sub.?model|input"
+   },
+   {
+    "claim": "The ISO 26262 proven-in-use formula is based on a 70% confidence level.",
+    "re": "70 ?%|70 per"
+   }
+  ]
  }
 ]

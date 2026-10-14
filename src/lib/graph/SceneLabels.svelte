@@ -48,6 +48,18 @@
 	let citedEls: HTMLButtonElement[] = $state([]);
 	let hoverEl: HTMLElement | null = $state(null);
 	let centroids: THREE.Vector3[] = [];
+	/** Label offsets from the star: right, left, then above and below on either side. */
+	const SLOTS = [
+		[9, -9],
+		[-9, -9],
+		[9, -31],
+		[9, 13],
+		[-9, -31],
+		[-9, 13]
+	];
+	const LABEL_H = 20;
+	const widths = new WeakMap<HTMLElement, number>();
+	const slots = new Map<number, number>();
 	let lastCentroid = 0;
 
 	onMount(() => {
@@ -71,16 +83,38 @@
 				el.style.visibility = p.visible && reveal > 0 ? 'visible' : 'hidden';
 				el.style.setProperty('--reveal', String(reveal));
 			}
-			const placed: [number, number][] = [];
+			// Earlier citations win: each label takes the first free slot around its star (trying
+			// last frame's slot first so labels don't hop), or hides when all slots collide.
+			const placed: number[][] = [];
+			const free = (x: number, y: number, w: number) =>
+				!placed.some(([a, b, c, d]) => x < c && x + w > a && y < d && y + LABEL_H > b);
 			for (let k = 0; k < citedEls.length; k++) {
 				const el = citedEls[k];
 				const c = cited[k];
 				if (!el || !c) continue;
 				renderer.project(c.index, p);
-				const clash = placed.some(([x, y]) => Math.abs(x - p.x) < 70 && Math.abs(y - p.y) < 18);
-				el.style.transform = `translate3d(${p.x + 9}px, ${p.y - 9}px, 0)`;
-				el.style.opacity = p.visible ? (clash ? '0' : '1') : '0';
-				if (!clash) placed.push([p.x, p.y]);
+				let w = widths.get(el);
+				if (!w) widths.set(el, (w = el.offsetWidth + 6));
+				const prev = slots.get(c.index) ?? 0;
+				let at = -1;
+				if (p.visible) {
+					for (let i = 0; i < SLOTS.length && at < 0; i++) {
+						const s = (prev + i) % SLOTS.length;
+						const [sx, sy] = SLOTS[s];
+						if (free(sx < 0 ? p.x + sx - w : p.x + sx, p.y + sy, w)) at = s;
+					}
+				}
+				if (at < 0) {
+					el.style.opacity = '0';
+					continue;
+				}
+				slots.set(c.index, at);
+				const [sx, sy] = SLOTS[at];
+				const x = sx < 0 ? p.x + sx - w : p.x + sx;
+				const y = p.y + sy;
+				el.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+				el.style.opacity = '1';
+				placed.push([x, y, x + w, y + LABEL_H]);
 			}
 			if (hoverEl && hovered != null) {
 				renderer.project(hovered, p);
@@ -116,9 +150,9 @@
 				>
 					<Icon icon={TOPIC_ICONS[i]} size={14} />
 				</span>
-				<span class="text-left leading-tight [text-shadow:0_1px_8px_rgb(0_0_0/0.9)]">
+				<span class="text-left leading-tight [text-shadow:0_0_4px_rgb(0_0_0),0_1px_10px_rgb(0_0_0/0.95)]">
 					<span class="block text-[12.5px] font-medium text-fg">{t.name}</span>
-					<span class="block font-mono text-[10px] text-fg-3">{topicCounts[i].toLocaleString()} nodes</span>
+					<span class="block font-mono text-[10px] text-fg-2">{topicCounts[i].toLocaleString()} nodes</span>
 				</span>
 			</button>
 		{/each}

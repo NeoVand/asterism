@@ -90,6 +90,7 @@
 		turnStart() {
 			litThread = chat.currentId;
 			renderer?.clearLights();
+			renderer?.overview();
 			cited = [];
 			answerIds = [];
 			selected = null;
@@ -365,8 +366,8 @@
 					class="flex items-center gap-2.5 rounded-full border border-gold/20 bg-ink-900/70 py-1.5 pr-1.5 pl-3.5 text-[12px] whitespace-nowrap text-fg-2 backdrop-blur-md"
 				>
 					<span class="size-1.5 rounded-full bg-gold shadow-[0_0_10px_var(--color-gold)]"></span>
-					Answer constellation · {answerIds.length} cited · {answerChapters}
-					{answerChapters === 1 ? 'chapter' : 'chapters'}
+					Answer constellation · {answerIds.length} cited{#if answerChapters}
+						· {answerChapters} {answerChapters === 1 ? 'chapter' : 'chapters'}{/if}
 					<button
 						type="button"
 						class="rounded-full p-1 text-fg-4 transition-colors hover:bg-white/[0.06] hover:text-fg"
