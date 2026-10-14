@@ -42,6 +42,7 @@ Rebuild the graph: `parse → extract → resolve → sources → assemble → l
 - + write_todos (todoListMiddleware, used in 6/33 multi-part cases); last turn's reads carry into
   follow-ups: **4.00 · 74.5% (full 66.0%) · 91.3% · 98.2%**, 44 s per answer
 - Prompt "don't re-read researcher facts": 3.79 · 70.6% · 87.1%, no faster; reverted.
+- v14 configuration re-run: 3.85 · 73.7% (full 64.3%) · 89.1% · 98.0%, 39 s — confirms ≈ 74%.
 
 ## Done
 

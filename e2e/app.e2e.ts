@@ -22,6 +22,20 @@ test('search palette finds a node and opens its card', async ({ page }) => {
 	await expect(page.getByText('Light neighbors')).toBeVisible();
 });
 
+test('a fact card with restatements opens without errors', async ({ page }) => {
+	const errors: string[] = [];
+	page.on('pageerror', (e) => errors.push(e.message));
+	await page.goto('/');
+	await expect(page.getByText(/nodes$/).first()).toBeVisible({ timeout: 30_000 });
+	await page.keyboard.press('Meta+k');
+	await page.getByPlaceholder('Search facts, concepts, standards, sources…').fill('299 independent trials miss rate');
+	await expect(page.getByRole('dialog', { name: 'Search the graph' }).getByRole('button').first()).toBeVisible();
+	await page.keyboard.press('Enter');
+	await expect(page.getByText('Connected elsewhere')).toBeVisible();
+	await expect(page.getByText(/Restated in/).first()).toBeVisible();
+	expect(errors).toEqual([]);
+});
+
 test('settings open with model choices and memory', async ({ page }) => {
 	await page.goto('/');
 	await page.getByRole('button', { name: 'Settings' }).click();
