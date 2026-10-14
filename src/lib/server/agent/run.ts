@@ -144,92 +144,107 @@ export async function* runTurn(
 
 	let tail = '';
 	let nudged = false;
+	let retries = 0;
 	try {
 		for (let pass = 0; pass < 2; pass++) {
-			const stream = agent.streamEvents(input as never, config) as AsyncIterable<StreamEvent>;
-			for await (const ev of stream) {
-				const who = agentOf(ev);
-				switch (ev.event) {
-					case 'on_chat_model_stream': {
-						const chunk = ev.data.chunk as { content?: unknown; kwargs?: { content?: unknown } };
-						const { text, reasoning } = textOf(chunk?.content ?? chunk?.kwargs?.content);
-						if (reasoning) yield { t: 'reasoning', delta: reasoning, agent: who };
-						if (text && who === 'main') {
-							tail = (tail + text).slice(-200);
-							yield { t: 'text', delta: text };
-						}
-						break;
-					}
-					case 'on_chat_model_end': {
-						const out = ev.data.output as {
-							usage_metadata?: { input_tokens?: number; output_tokens?: number };
-						};
-						usage.input += out?.usage_metadata?.input_tokens ?? 0;
-						usage.output += out?.usage_metadata?.output_tokens ?? 0;
-						break;
-					}
-					case 'on_tool_start': {
-						if (who === 'main') tail = '';
-						const args = (ev.data.input ?? {}) as Record<string, unknown>;
-						if (ev.name === 'task') {
-							const id = `task-${ev.run_id}`;
-							tasks.set(ev.run_id, id);
-							const ns = (ev.metadata as { checkpoint_ns?: string } | undefined)?.checkpoint_ns;
-							if (ns) taskNs.set(ns, id);
-							yield {
-								t: 'task',
-								id,
-								status: 'start',
-								description: String(args.description ?? ''),
-								agentName: String(args.subagent_type ?? 'researcher')
-							};
+			try {
+				const stream = agent.streamEvents(input as never, config) as AsyncIterable<StreamEvent>;
+				for await (const ev of stream) {
+					const who = agentOf(ev);
+					switch (ev.event) {
+						case 'on_chat_model_stream': {
+							const chunk = ev.data.chunk as { content?: unknown; kwargs?: { content?: unknown } };
+							const { text, reasoning } = textOf(chunk?.content ?? chunk?.kwargs?.content);
+							if (reasoning) yield { t: 'reasoning', delta: reasoning, agent: who };
+							if (text && who === 'main') {
+								tail = (tail + text).slice(-200);
+								yield { t: 'text', delta: text };
+							}
 							break;
 						}
-						if (ev.name === 'write_todos') {
-							const items = (args.todos ?? []) as {
-								content: string;
-								status: 'pending' | 'in_progress' | 'completed';
-							}[];
-							yield { t: 'todos', items };
+						case 'on_chat_model_end': {
+							const out = ev.data.output as {
+								usage_metadata?: { input_tokens?: number; output_tokens?: number };
+							};
+							usage.input += out?.usage_metadata?.input_tokens ?? 0;
+							usage.output += out?.usage_metadata?.output_tokens ?? 0;
+							break;
 						}
-						yield { t: 'tool', id: ev.run_id, name: ev.name, args, agent: who };
-						break;
-					}
-					case 'on_tool_end': {
-						const out = toolOutputText(ev.data.output);
-						if (ev.name === 'task') {
-							const id = tasks.get(ev.run_id) ?? ev.run_id;
+						case 'on_tool_start': {
+							if (who === 'main') tail = '';
 							const args = (ev.data.input ?? {}) as Record<string, unknown>;
+							if (ev.name === 'task') {
+								const id = `task-${ev.run_id}`;
+								tasks.set(ev.run_id, id);
+								const ns = (ev.metadata as { checkpoint_ns?: string } | undefined)?.checkpoint_ns;
+								if (ns) taskNs.set(ns, id);
+								yield {
+									t: 'task',
+									id,
+									status: 'start',
+									description: String(args.description ?? ''),
+									agentName: String(args.subagent_type ?? 'researcher')
+								};
+								break;
+							}
+							if (ev.name === 'write_todos') {
+								const items = (args.todos ?? []) as {
+									content: string;
+									status: 'pending' | 'in_progress' | 'completed';
+								}[];
+								yield { t: 'todos', items };
+							}
+							yield { t: 'tool', id: ev.run_id, name: ev.name, args, agent: who };
+							break;
+						}
+						case 'on_tool_end': {
+							const out = toolOutputText(ev.data.output);
+							if (ev.name === 'task') {
+								const id = tasks.get(ev.run_id) ?? ev.run_id;
+								const args = (ev.data.input ?? {}) as Record<string, unknown>;
+								yield {
+									t: 'task',
+									id,
+									status: 'end',
+									description: String(args.description ?? ''),
+									agentName: String(args.subagent_type ?? 'researcher')
+								};
+								break;
+							}
 							yield {
-								t: 'task',
-								id,
-								status: 'end',
-								description: String(args.description ?? ''),
-								agentName: String(args.subagent_type ?? 'researcher')
+								t: 'tool_end',
+								id: ev.run_id,
+								name: ev.name,
+								summary: summarize(ev.name, out),
+								agent: who,
+								error: /^(Block rejected|Form rejected|Unknown id|Error)/.test(out)
 							};
 							break;
 						}
-						yield {
-							t: 'tool_end',
-							id: ev.run_id,
-							name: ev.name,
-							summary: summarize(ev.name, out),
-							agent: who,
-							error: /^(Block rejected|Form rejected|Unknown id|Error)/.test(out)
-						};
-						break;
-					}
-					case 'on_custom_event': {
-						if (ev.name === 'graph') {
-							const d = ev.data as unknown as { mode: 'touch' | 'read'; ids: string[] };
-							yield { t: 'graph', mode: d.mode, ids: d.ids, agent: who, step: ev.run_id };
-						} else if (ev.name === 'ui' && who === 'main') {
-							const parsed = Block.safeParse((ev.data as unknown as { block?: unknown }).block);
-							if (parsed.success) yield { t: 'ui', id: ev.run_id, block: parsed.data };
+						case 'on_custom_event': {
+							if (ev.name === 'graph') {
+								const d = ev.data as unknown as { mode: 'touch' | 'read'; ids: string[] };
+								yield { t: 'graph', mode: d.mode, ids: d.ids, agent: who, step: ev.run_id };
+							} else if (ev.name === 'ui' && who === 'main') {
+								const parsed = Block.safeParse((ev.data as unknown as { block?: unknown }).block);
+								if (parsed.success) yield { t: 'ui', id: ev.run_id, block: parsed.data };
+							}
+							break;
 						}
-						break;
 					}
 				}
+			} catch (e) {
+				// A dropped connection or a 5xx mid-run: continue from the last checkpoint (the graph
+				// re-runs only the step that failed), unless answer text already streamed this step.
+				const msg = e instanceof Error ? e.message : String(e);
+				if (!opts.signal?.aborted && retries < 2 && TRANSIENT.test(msg) && !tail.trim()) {
+					retries++;
+					input = null;
+					pass--;
+					await new Promise((r) => setTimeout(r, 1500 * retries));
+					continue;
+				}
+				throw e;
 			}
 			// Safety net: reasoning models sometimes announce a block ("### How the options compare")
 			// and end the turn before calling show_ui. Nudge once to finish.
@@ -269,7 +284,11 @@ export async function* runTurn(
 	yield { t: 'done', usage, ms: Date.now() - t0 };
 }
 
+const TRANSIENT =
+	/terminated|ECONNRESET|ETIMEDOUT|socket hang up|fetch failed|other side closed|\b50[0234]\b|overloaded|timed? ?out/i;
+
 function friendlyError(msg: string): string {
+	if (TRANSIENT.test(msg)) return 'The connection to OpenAI dropped. Try again.';
 	if (/401|invalid api key|Incorrect API key/i.test(msg))
 		return 'The OpenAI API key was rejected. Check it in Settings.';
 	if (/429|rate limit/i.test(msg)) return 'OpenAI rate limit reached. Wait a moment and try again.';
