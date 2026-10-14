@@ -46,6 +46,9 @@ Rebuild the graph: `parse → extract → resolve → sources → assemble → l
 - + chapter / glossary-part nodes carry their opening text: 4.00 · 69.8% and 3.79 · 68.3%; the
   same code on the old graph: 3.88 · 70.6%. Within run-to-run noise, which across these runs is
   closer to ±2–3% than ±1%; kept (overview questions improved in the probes).
+- Final state, two runs: 3.82 · 70.5% (full 62.5%) · 90.6% · 94.8% (one case lost to a dropped
+  OpenAI stream, now retried from the checkpoint) and 3.88 · 71.6% (full 62.9%) · 89.7% · 98.1%,
+  42–47 s per answer.
 
 ## Done
 
