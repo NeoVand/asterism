@@ -227,7 +227,7 @@
 								>
 							</button>
 							{#if s.url}
-								<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- external source URL -->
+								<!-- eslint-disable svelte/no-navigation-without-resolve -- external source URL -->
 								<a
 									href={s.url}
 									target="_blank"
@@ -237,6 +237,7 @@
 								>
 									<Icon icon={ExternalIcon} size={13} />
 								</a>
+								<!-- eslint-enable svelte/no-navigation-without-resolve -->
 							{/if}
 						</div>
 					{/each}
@@ -244,7 +245,7 @@
 			{/if}
 
 			{#if detail.url && detail.type === 'source'}
-				<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- external source URL -->
+				<!-- eslint-disable svelte/no-navigation-without-resolve -- external source URL -->
 				<a
 					href={detail.url}
 					target="_blank"
@@ -253,6 +254,7 @@
 				>
 					Open source <Icon icon={ExternalIcon} size={12} />
 				</a>
+				<!-- eslint-enable svelte/no-navigation-without-resolve -->
 			{/if}
 
 			{#if detail.linked.length}
