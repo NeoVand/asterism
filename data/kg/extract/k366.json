@@ -1,0 +1,203 @@
+{
+ "chunkId": "k366",
+ "hash": "6c35c431151e4b46",
+ "facts": [
+  {
+   "text": "Standards-body technical work indicates that high-fidelity sensor simulation is not a solved problem; this work is not normative.",
+   "quote": "Standards work shows that high-fidelity sensor simulation is not a solved problem.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    62,
+    63
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t323"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM's 2025 high-fidelity Open Simulation Interface (OSI) project states that existing OSI abstractions do not sufficiently represent some physical phenomena, including spectral irradiance for camera simulation and raw waveform data for radar.",
+   "quote": "existing OSI abstractions do not sufficiently represent some physical phenomena, citing spectral irradiance for camera simulation and raw waveform data for radar",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    62,
+    63
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    },
+    {
+     "name": "Open Simulation Interface (OSI)",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t138",
+    "t89",
+    "t94",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM's 2025 high-fidelity Open Simulation Interface (OSI) project explicitly considers camera, radar, lidar and possibly ultrasound.",
+   "quote": "explicitly considers camera, radar, lidar and possibly ultrasound",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    62,
+    63
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    },
+    {
+     "name": "Open Simulation Interface (OSI)",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t138",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenMATERIAL 3D version 1.0.0, dated April 2025, standardises 3D assets and material properties for sensor-perception simulation.",
+   "quote": "ASAM OpenMATERIAL 3D 1.0.0 (April 2025) standardises 3D assets and material properties for sensor-perception simulation",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    62,
+    63
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t136",
+    "t130",
+    "t85"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenMATERIAL 3D version 1.0.0 may help represent off-road objects and materials in sensor-perception simulation.",
+   "quote": "which may help represent off-road objects and materials",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    62,
+    63
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t136",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Published sources did not provide physically based simulation with validated accuracy for radar and ultrasonic sensors in dust, rain and snow amid off-road clutter such as spoil piles, tyres and rock faces.",
+   "quote": "For radar and ultrasonic sensors in dust, rain and snow, physically based simulation of off-road clutter (spoil piles, tyres, rock faces) with validated accuracy was not found in published sources",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t95",
+    "t102",
+    "t104",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Radar and ultrasonic simulation should be treated as low credibility until validated against the company's own measurements.",
+   "quote": "treat radar and ultrasonic simulation as low credibility until validated against the company's own measurements",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t94",
+    "t95",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Lidar simulation work for fog, snow and dust is mostly on-road evidence.",
+   "quote": "For lidar, the fog, snow and dust simulation work is mostly on-road",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    57
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t102",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "LiDARDustX shows that real dust is a gap for off-road lidar simulation.",
+   "quote": "LiDARDustX shows that real dust is the off-road gap [57]",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    57
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "LiDARDustX",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t102",
+    "t165"
+   ],
+   "importance": 3
+  }
+ ]
+}

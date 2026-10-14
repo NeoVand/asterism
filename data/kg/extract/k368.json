@@ -1,0 +1,85 @@
+{
+ "chunkId": "k368",
+ "hash": "da2a61cfe5bcebd1",
+ "facts": [
+  {
+   "text": "Validation and estimation data must be real or physically independent of the training-data generator, using different assets, sites, people and generator, with the independence documented in a data-lineage record.",
+   "quote": "Validation and estimation data must be real or physically independent of the training-data generator: different assets, sites, people and generator, documented in a data-lineage record.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    64,
+    65
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t113",
+    "t231",
+    "t114"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The rule requiring validation and estimation data to be real or physically independent of the training-data generator is consistent with the data-centric lifecycle in ISO/PAS 8800:2024 for road vehicles, dated December 2024, and with recent safety-integrity frameworks for automated driving. The passage labels this support as independent on-road evidence and expert opinion from a third-party summary.",
+   "quote": "This is consistent with the data-centric lifecycle in ISO/PAS 8800:2024 (road vehicles; December 2024) and with recent safety-integrity frameworks for automated driving.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": true,
+   "cites": [
+    64,
+    65
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/PAS 8800",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t289",
+    "t113",
+    "t231"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The recommended real-data-anchored detector-training loop uses real off-road logs to inform environmental and sensor distributions and assets, synthesises targeted gaps, trains or augments the detector, tests the detector on untouched real data, identifies residual domain gaps, and collects targeted real data.",
+   "quote": "real off-road logs feed environmental and sensor distributions and assets; targeted gaps are synthesised; the detector is trained or augmented; it is tested on untouched real data; residual domain gaps are identified; targeted real data are collected.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t113",
+    "t112",
+    "t165",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No peer-reviewed study was found establishing that synthetic-only training or validation provides field-level collision-avoidance reliability across heavy construction and mining machinery, multiple sensor modalities, and adverse off-road conditions.",
+   "quote": "A peer-reviewed study establishing that synthetic-only training or validation provides field-level collision-avoidance reliability across heavy construction and mining machinery, multiple sensor modalities and adverse off-road conditions was not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t113",
+    "t1",
+    "t102",
+    "t23"
+   ],
+   "importance": 3
+  }
+ ]
+}

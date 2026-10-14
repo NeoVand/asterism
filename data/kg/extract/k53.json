@@ -1,0 +1,830 @@
+{
+ "chunkId": "k53",
+ "hash": "f7bac236756d7af7",
+ "facts": [
+  {
+   "text": "No documented from-zero setup duration was found for any of the compared validation approaches applied to heavy-off-road automatic braking; the setup column instead identifies the earliest dependency where available.",
+   "quote": "Setup time is \"not found\" throughout because no documented from-zero duration exists for any approach applied to heavy-off-road automatic braking; the column gives the earliest dependency instead.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t22",
+    "t342"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The relative costs assigned to the validation approaches are expert resource-intensity judgements, not quoted cost figures.",
+   "quote": "Cost is a relative resource-intensity judgement (**Expert opinion**), not a quoted figure.",
+   "kind": "definition",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The maturity ratings in the validation-approach comparison refer to heavy off-road machines, not automotive maturity.",
+   "quote": "Maturity refers to heavy off-road machines, not to automotive maturity.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t1",
+    "t248"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scene, dynamics and sensor simulation can establish logic, timing and braking-envelope correctness across large parameter sweeps, cover combinations of geometry, speed, grade and payload, and support closed-loop counterfactuals and regression testing.",
+   "quote": "Logic, timing and braking-envelope correctness across large parameter sweeps; coverage of geometry, speed, grade and payload combinations; closed-loop counterfactuals; regression",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t126",
+    "t154",
+    "t161",
+    "t199",
+    "t183"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Scene, dynamics and sensor simulation cannot by itself establish real sensor behaviour in dust, snow, fog and glare unless the sensor model is validated.",
+   "quote": "Real sensor behaviour in dust, snow, fog and glare unless the sensor model is validated",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t125",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Scene, dynamics and sensor simulation cannot by itself establish real brake, tyre and ground behaviour unless correlated with reality.",
+   "quote": "real brake, tyre and ground behaviour unless correlated",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t250",
+    "t182",
+    "t180",
+    "t174"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Scene, dynamics and sensor simulation cannot by itself establish rare real artefacts.",
+   "quote": "rare real artefacts",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t126",
+    "t144"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Critical inputs for scene, dynamics and sensor simulation are 3D site models, validated sensor models, machine-dynamics and friction models, an ODD and scenario catalogue using OpenSCENARIO, OpenDRIVE and OSI, and calibration datasets.",
+   "quote": "3D site models, validated sensor models, machine-dynamics and friction models, ODD and scenario catalogue (OpenSCENARIO, OpenDRIVE, OSI), calibration datasets",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "OpenSCENARIO",
+     "kind": "standard"
+    },
+    {
+     "name": "OpenDRIVE",
+     "kind": "standard"
+    },
+    {
+     "name": "ASAM OSI",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t130",
+    "t125",
+    "t140",
+    "t142",
+    "t137"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scenario simulation can start now, but sensor-model calibration cannot precede availability of real sensors.",
+   "quote": "scenario simulation can start now, sensor-model calibration cannot precede real sensors",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t126",
+    "t237",
+    "t84",
+    "t343"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Scene, dynamics and sensor simulation has Medium to High relative resource intensity.",
+   "quote": "Medium to High",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t126",
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scene, dynamics and sensor simulation has Low to Medium heavy-off-road maturity, with MineSim (2025) and a 128-case academic off-road AEB sweep (2024) cited as examples.",
+   "quote": "Low to Medium: MineSim (2025) and a 128-case academic off-road AEB sweep (2024)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    16,
+    50,
+    52
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MineSim",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t126",
+    "t248",
+    "t25",
+    "t316"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The heavy-off-road maturity evidence for scene, dynamics and sensor simulation includes a vendor 30% claim for fleet behaviour; the passage does not specify what the percentage measures.",
+   "quote": "vendor 30% claim for fleet behaviour [16, 50, 52]",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    16,
+    50,
+    52
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t126",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Replay of recorded data can establish detection and false-alarm rates on real data from the real domain, support regression across software versions, and reproduce rare recorded events indefinitely.",
+   "quote": "Detection and false-alarm rates on real data from the real domain; regression across software versions; indefinite reproduction of rare recorded events",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t32",
+    "t86",
+    "t161",
+    "t144"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Replay of recorded data cannot by itself establish closed-loop consequences of a changed braking decision, performance in unrecorded scenarios, or performance at other sensor positions.",
+   "quote": "Closed-loop consequences of a changed braking decision; unrecorded scenarios; other sensor positions",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t154",
+    "t100",
+    "t185"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Critical inputs for replay of recorded data are synchronised raw sensor logs, machine-state bus data, calibration, timestamps, labels and ground truth, and software containers.",
+   "quote": "Synchronised raw sensor logs, machine-state bus data, calibration, timestamps, labels and ground truth, software containers",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t121",
+    "t101",
+    "t105",
+    "t106"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A recorded-data replay capability can be built before new software if recording formats and interfaces are fixed.",
+   "quote": "can be built before new software if recording formats and interfaces are fixed",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t122",
+    "t343"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Replay of recorded data has Low to Medium relative resource intensity, with labelling dominating the cost.",
+   "quote": "Low to Medium (labelling dominates)",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t106",
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Replay of recorded data has Medium heavy-off-road feasibility maturity because existing warning fleets can log data and NIOSH has long recorded field behaviour.",
+   "quote": "Medium for feasibility (existing warning fleets can log; NIOSH has long recorded field behaviour)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    75,
+    18
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t155",
+    "t41",
+    "t121",
+    "t248"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Replay of recorded data has Low to Medium maturity in terms of published off-road evidence.",
+   "quote": "Low to Medium for published off-road evidence [75, 18]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    75,
+    18
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t70",
+    "t248"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Software-in-the-loop (SIL) can establish software integration, requirements regression, fault logic, thresholds, state machines and closed-loop software behaviour at scale.",
+   "quote": "Software integration, requirements regression, fault logic, thresholds, state machines, closed-loop software behaviour at scale",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t63",
+    "t56",
+    "t188",
+    "t154"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Software-in-the-loop (SIL) cannot by itself establish real ECU timing, electrical behaviour, sensor front-end behaviour, actuator behaviour or true dynamics.",
+   "quote": "Real ECU timing, electrical behaviour, sensor front ends, actuators, true dynamics",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t119",
+    "t179"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Critical inputs for software-in-the-loop (SIL) are executable software, plant and environment models, APIs, a deterministic harness and pass or fail metrics.",
+   "quote": "Executable software, plant and environment models, APIs, deterministic harness, pass or fail metrics",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t125",
+    "t62"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Software-in-the-loop (SIL) can start before production hardware once interfaces are stable.",
+   "quote": "can start before production hardware once interfaces are stable",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t343"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Software-in-the-loop (SIL) has Low to Medium relative resource intensity.",
+   "quote": "| Low to Medium | Medium [53] |",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Software-in-the-loop (SIL) has Medium heavy-off-road maturity.",
+   "quote": "Medium [53]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    53
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t248"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hardware-in-the-loop (HIL) can establish real controller, I/O, bus and real-time timing behaviour against a simulated plant, including ECU integration, communications, fault injection and brake-command logic.",
+   "quote": "Real controller, I/O, buses and real-time timing against a simulated plant; ECU integration, communications, fault injection, brake-command logic",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t119",
+    "t120",
+    "t153",
+    "t56"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Hardware-in-the-loop (HIL) cannot by itself establish optical or RF perception unless sensor front ends are stimulated.",
+   "quote": "Optical or RF perception unless front ends are stimulated",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t85",
+    "t150"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Hardware-in-the-loop (HIL) cannot by itself establish every brake and terrain interaction.",
+   "quote": "every brake and terrain interaction",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t182",
+    "t174"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Critical inputs for hardware-in-the-loop (HIL) are a production-like ECU, harness and bus database, real-time plant, I/O boards, fault injection, and a J1939 or ISO/TS 21815-2 interface.",
+   "quote": "Production-like ECU, harness and bus database, real-time plant, I/O boards, fault injection, J1939 or ISO/TS 21815-2 interface",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t148",
+    "t119",
+    "t120",
+    "t56",
+    "t280"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hardware-in-the-loop (HIL) setup depends on stable ECU and I/O definitions.",
+   "quote": "depends on stable ECU and I/O definitions",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t119",
+    "t343"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Hardware-in-the-loop (HIL) has High relative resource intensity.",
+   "quote": "| High | Medium for controls; Low for public end-to-end perception evidence",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hardware-in-the-loop (HIL) has Medium heavy-off-road maturity for controls.",
+   "quote": "Medium for controls",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    23,
+    42
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t248"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hardware-in-the-loop (HIL) has Low heavy-off-road maturity for public end-to-end perception evidence.",
+   "quote": "Low for public end-to-end perception evidence [23, 42]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    23,
+    42
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t85",
+    "t70",
+    "t248"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Vehicle-in-the-loop (VIL) can establish complete-machine behaviour in a controlled virtual scenario with stimulated sensors and real network and actuator responses.",
+   "quote": "Complete machine in a controlled virtual scenario, sensors stimulated, real network and actuator response",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t150",
+    "t120"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Vehicle-in-the-loop (VIL) fidelity is limited by sensor stimulation, testbench dynamics and the gap between simulated and real ground interaction.",
+   "quote": "Fidelity limited by sensor stimulation, testbench dynamics and the gap between simulated and real ground interaction",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t150",
+    "t125",
+    "t165",
+    "t174"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Critical inputs for vehicle-in-the-loop (VIL) are a complete machine, real-time environment, test bench or safe-motion facility, multi-sensor stimulation and precise synchronisation.",
+   "quote": "Complete machine, real-time environment, test bench or safe-motion facility, multi-sensor stimulation, precise synchronisation",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t153",
+    "t150",
+    "t101"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Vehicle-in-the-loop (VIL) has High relative resource intensity.",
+   "quote": "| Not found | High | Low; complete heavy-off-road case not found",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Vehicle-in-the-loop (VIL) has Low heavy-off-road maturity; a complete heavy-off-road case was not found.",
+   "quote": "Low; complete heavy-off-road case not found [24, 26, 25]",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    24,
+    26,
+    25
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t248",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Controlled proving-ground tests can establish real sensor behaviour, actual mounting and occlusion, machine motion and stopping behaviour in repeatable scenarios.",
+   "quote": "Real sensors, actual mounting and occlusion, machine motion and stopping behaviour in repeatable scenarios",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t158",
+    "t84",
+    "t100",
+    "t103",
+    "t170"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Controlled proving-ground tests can establish ISO 21815-3 forward and reverse stopping performance.",
+   "quote": "ISO 21815-3 forward and reverse stopping",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t158",
+    "t280",
+    "t170",
+    "t16"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Controlled proving-ground tests cannot economically sample the combinatorial space of sites, weather and actors.",
+   "quote": "Cannot sample the combinatorial space of sites, weather and actors economically",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t158",
+    "t198",
+    "t45",
+    "t11"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Staged targets in controlled proving-ground tests may not reproduce natural behaviour or materials.",
+   "quote": "staged targets may not reproduce natural behaviour or materials",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t158",
+    "t159"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Critical inputs for controlled proving-ground tests are a prototype machine, calibrated targets, ground truth, a track or site, instrumentation and safety procedures.",
+   "quote": "Prototype machine, calibrated targets, ground truth, track or site, instrumentation, safety procedures",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t158",
+    "t159",
+    "t105"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Controlled proving-ground tests need the prototype machine for execution, but procedures and fixtures can be prepared beforehand.",
+   "quote": "needs the prototype for execution, but procedures and fixtures can be prepared",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t158",
+    "t343"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Controlled proving-ground tests have High relative resource intensity.",
+   "quote": "| High | High: ISO 21815 procedures; MOSH independent verification regime",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t158",
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Controlled proving-ground tests have High heavy-off-road maturity, supported by ISO 21815 procedures and the MOSH independent verification regime.",
+   "quote": "High: ISO 21815 procedures; MOSH independent verification regime [5, 30]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    5,
+    30
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815",
+     "kind": "standard"
+    },
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t158",
+    "t280",
+    "t307",
+    "t71",
+    "t248"
+   ],
+   "importance": 3
+  }
+ ]
+}

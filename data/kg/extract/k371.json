@@ -1,0 +1,54 @@
+{
+ "chunkId": "k371",
+ "hash": "d705e29c4adcdb06",
+ "facts": [
+  {
+   "text": "Every test run should record an immutable identifier for everything that can change its result: software build, parameter or calibration set, machine-learning model weights and training-data manifest, simulator version, sensor-model version, terrain and map assets, scenario file, random seed, and HIL rig configuration.",
+   "quote": "Everything that can change a result gets an immutable identifier recorded with the run:",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t162",
+    "t231",
+    "t341",
+    "t148",
+    "t113"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Content hashes should be used to identify result-affecting artifacts recorded with test runs.",
+   "quote": "Use content hashes, as common data- and model-versioning tools do (open-source or commercial).",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t162",
+    "t341"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Common data- and model-versioning tools, whether open-source or commercial, use content hashes.",
+   "quote": "Use content hashes, as common data- and model-versioning tools do (open-source or commercial).",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t162",
+    "t341"
+   ],
+   "importance": 2
+  }
+ ]
+}

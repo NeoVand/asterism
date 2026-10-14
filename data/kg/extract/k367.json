@@ -1,0 +1,219 @@
+{
+ "chunkId": "k367",
+ "hash": "e6c0c687cd82b6c4",
+ "facts": [
+  {
+   "text": "A machine-learning detection network can learn renderer- or simulator-specific artefacts.",
+   "quote": "The network learns renderer- or simulator-specific artefacts.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t112",
+    "t114",
+    "t165"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simulated weather can fail to match real particle physics, with incorrect dust and fog optics.",
+   "quote": "Simulated weather does not match real particle physics; dust and fog optics, sensor noise, material reflectance and radar cross-section are wrong.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t114",
+    "t165"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simulated sensor noise can be wrong in simulated or generated training data for machine-learning detection.",
+   "quote": "sensor noise, material reflectance and radar cross-section are wrong.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t90",
+    "t114",
+    "t165"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simulated material reflectance and radar cross-section can be wrong in simulated or generated training data for machine-learning detection.",
+   "quote": "material reflectance and radar cross-section are wrong.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t117",
+    "t94",
+    "t114",
+    "t165"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Object geometry can be unrealistically clean in simulated or generated training data for machine-learning detection.",
+   "quote": "Object geometry is unrealistically clean",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t165"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Contamination and vibration can be missing from simulated or generated training data for machine-learning detection.",
+   "quote": "contamination and vibration are missing",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t114",
+    "t165"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Correlations between variables can be unrealistic in simulated or generated training data for machine-learning detection.",
+   "quote": "correlations between variables are unrealistic.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t165"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Generative models, including GAN, diffusion and world models, can produce plausible but physically wrong scenes.",
+   "quote": "Generative models (GAN, diffusion, world models) produce plausible but physically wrong scenes.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "GAN",
+     "kind": "method"
+    },
+    {
+     "name": "Diffusion models",
+     "kind": "method"
+    },
+    {
+     "name": "World models",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t115",
+    "t114",
+    "t165"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Machine-learning detection validation is contaminated when the same generator or assets are used for both training and testing.",
+   "quote": "Validation is contaminated when the same generator or assets are used for both training and testing.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t113",
+    "t231",
+    "t114",
+    "t112"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Camera photorealism alone is insufficient for validating simulated or generated data for machine-learning detection.",
+   "quote": "Camera photorealism alone is insufficient",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t114",
+    "t256"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Radar, lidar and ultrasonic simulation each need modality-appropriate physical correlation.",
+   "quote": "radar, lidar and ultrasonic simulation each need modality-appropriate physical correlation.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t92",
+    "t95",
+    "t250",
+    "t234"
+   ],
+   "importance": 3
+  }
+ ]
+}

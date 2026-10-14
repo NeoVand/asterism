@@ -1,0 +1,885 @@
+{
+ "chunkId": "k215",
+ "hash": "86e30e1f5860ce5f",
+ "facts": [
+  {
+   "text": "Simulation can replace part of physical sensor testing, but not most of it.",
+   "quote": "Simulation can stand in for part of the physical sensor testing, not most of it.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t127",
+    "t84",
+    "t264"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Published sensor-simulation studies validate individual effects on individual sensors, almost all on road vehicles or in laboratories.",
+   "quote": "Published studies validate individual effects on individual sensors, almost all on road vehicles or in laboratories.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t84",
+    "t237",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No public demonstration was found jointly covering a heavy machine, many machine geometries, more than 100 site types, severe weather and soiling, and closed-loop automatic braking.",
+   "quote": "No public demonstration was found that covers a heavy machine, many machine geometries, more than 100 site types, severe weather and soiling, and closed-loop automatic braking together.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t127",
+    "t1",
+    "t44",
+    "t102",
+    "t257"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815 defines what collision warning and avoidance on earth-moving machines must do, including speed reduction and stopping.",
+   "quote": "ISO 21815 defines what collision warning and avoidance on earth-moving machines must do, including speed reduction and stopping",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t23",
+    "t169"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815 does not specify how to prove a simulation credible.",
+   "quote": "but says nothing about how to prove a simulation credible.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Lidar in rain and fog is the best-validated sensor-simulation case, based on on-road evidence.",
+   "quote": "Lidar in rain and fog is the best-validated case.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    6,
+    8
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t102",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A ray-traced lidar model using Mie-theory rain and fog backscatter matched weather-chamber measurements well at low rain rates.",
+   "quote": "A ray-traced lidar model with Mie-theory rain and fog backscatter matched weather-chamber measurements well at low rain rates",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    6,
+    8
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Mie theory",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t118",
+    "t102",
+    "t250"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The mismatch between a ray-traced lidar model using Mie-theory backscatter and weather-chamber measurements increased with rain rate and depended strongly on the assumed drop-size distribution.",
+   "quote": "with the mismatch growing as rain rate increased and depending strongly on the assumed drop-size distribution",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    6,
+    8
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Mie theory",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t102",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A separate 2024 study validated lidar noise distributions in fog and rain.",
+   "quote": "a separate 2024 study validated lidar noise distributions in fog and rain.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    6,
+    8
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t102",
+    "t253"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "High-fidelity sensor models can be very accurate in clear weather, but only when the full signal chain is modeled.",
+   "quote": "High-fidelity models can be very accurate in clear weather, but only with the full signal chain.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    7
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t84",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A ray-traced lidar model achieved mean absolute percentage errors of 1.7% for time-domain amplitude, 8.5% for point count, and 9.3% for mean intensity, only when the complete signal-processing chain and sensor imperfections were modeled.",
+   "quote": "A ray-traced lidar model reached 1.7% mean absolute percentage error on time-domain amplitude and 8.5% and 9.3% on point count and mean intensity, and this held only when the complete signal-processing chain and the sensor's imperfections were modelled.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    7
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Mean absolute percentage error",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t118",
+    "t255",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Radar-simulation realism depends on knowing the materials and the signal chain.",
+   "quote": "Radar realism depends on knowing the materials and the signal chain.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31,
+    32,
+    34
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t136",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ray tracing reproduces radar multipath, Doppler, and material-dependent reflection.",
+   "quote": "Ray tracing reproduces multipath, Doppler and material-dependent reflection",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31,
+    32,
+    34
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t118",
+    "t94",
+    "t117"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Electromagnetic material parameters at 77 GHz often must be estimated from measurements for radar simulation, and the full processing toolchain must be modeled.",
+   "quote": "electromagnetic material parameters at 77 GHz often have to be estimated from measurements and the full processing toolchain must be modelled.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31,
+    32,
+    34
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t136",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The closest heavy-machine radar-simulation evidence was a 2025 wheel-loader study that reproduced a reflective hall only after manual material tuning.",
+   "quote": "The closest heavy-machine evidence, a 2025 study with a radar on a wheel loader, reproduced a reflective hall only after manual material tuning",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31,
+    32,
+    34
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t2",
+    "t136",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The 2025 wheel-loader radar-simulation study still missed real double reflections after manual material tuning.",
+   "quote": "still missed real double reflections",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31,
+    32,
+    34
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t249",
+    "t104"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the 2025 wheel-loader radar study, a detector trained on real radar data failed on most simulated cars, partly because material properties had to be guessed.",
+   "quote": "a detector trained on real radar data failed on most simulated cars partly because material properties had to be guessed.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31,
+    32,
+    34
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t112",
+    "t136",
+    "t256"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Dust is the biggest off-road sensor-simulation gap.",
+   "quote": "Dust is the biggest off-road gap.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    19,
+    20,
+    21
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Lidar dust models exist, including a 2026 open-pit-mine framework tuned to real mining lidar data, but validation is limited.",
+   "quote": "Lidar dust models exist, including a 2026 open-pit-mine framework tuned to real mining lidar data, but validation is limited",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    19,
+    20,
+    21
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t102",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Field work shows that lidar behaves in four distinct ways in dust, which simple attenuation models do not capture.",
+   "quote": "field work shows lidar behaves in four distinct ways in dust, which simple attenuation models do not capture.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    19,
+    20,
+    21
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t102",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Measurements show that radar is largely unaffected by airborne dust.",
+   "quote": "Measurements show radar is largely unaffected by airborne dust.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    19,
+    20,
+    21
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Soiling, vibration, glare, and artificial lighting are simulated using heuristic overlays or not simulated at all, and are rarely checked against measurements.",
+   "quote": "Soiling, vibration, glare and artificial lighting are simulated with heuristic overlays or not at all, and are rarely checked against measurements.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    29,
+    30
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t237",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A tractor-mounted lidar's obstacle-positioning error increased by up to 27% with speed.",
+   "quote": "A tractor-mounted lidar's obstacle-positioning error rose by up to 27% with speed",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    29,
+    30
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t169",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Automotive lidar z-position and intensity drifted under road vibration.",
+   "quote": "automotive lidar z-position and intensity drifted under road vibration",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    29,
+    30
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No validated vibration-to-sensor-output model was found.",
+   "quote": "no validated vibration-to-sensor-output model was found.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    29,
+    30
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t84",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Thermal and ultrasonic simulation have the weakest evidence among the sensor-simulation cases discussed.",
+   "quote": "Thermal and ultrasonic simulation have the weakest evidence.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    70,
+    71,
+    72
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t95",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "One industry-authored ultrasonic model validation from 2024 exists.",
+   "quote": "One 2024 ultrasonic model validation (industry-authored)",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    70,
+    71,
+    72
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t95",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Thermal-simulation evidence includes qualitative or indoor comparisons.",
+   "quote": "qualitative or indoor thermal comparisons exist",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    70,
+    71,
+    72
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No adverse-weather or off-road validation was found for either thermal or ultrasonic simulation.",
+   "quote": "no adverse-weather or off-road validation was found for either.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    70,
+    71,
+    72
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t95",
+    "t102",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Hardware-in-the-loop stimulation tests the real sensor and its firmware.",
+   "quote": "Hardware-in-the-loop stimulation tests the real sensor and its firmware",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    45
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t150",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Hardware-in-the-loop sensor stimulation has physical limits on echo count, minimum target distance, and field of view, with little or no representation of volumetric weather, soiling, or arbitrary multipath.",
+   "quote": "has physical limits: echo count, minimum target distance, field of view, and little or no representation of volumetric weather, soiling or arbitrary multipath.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    45
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t148",
+    "t87",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "One radar scene emulator claims support for 512 objects and a minimum target distance of 1.5 m.",
+   "quote": "One radar scene emulator claims 512 objects and a 1.5 m minimum distance.",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    46
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t150"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "There is no accepted realism score for sensor simulation.",
+   "quote": "There is no accepted realism score.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31,
+    38,
+    78
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t224",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Common point-cloud metrics disagree with each other.",
+   "quote": "Common point-cloud metrics disagree with each other",
+   "kind": "disagreement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31,
+    38,
+    78
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t93",
+    "t224",
+    "t250"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In a November 2025 study, density-aware Chamfer distance correlated best with perception results among the point-cloud metrics compared.",
+   "quote": "in a November 2025 study, density-aware Chamfer distance correlated best with perception results",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31,
+    38,
+    78
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Density-aware Chamfer distance",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t93",
+    "t250",
+    "t256"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the November 2025 study, real-versus-simulated scans averaged a density-aware Chamfer distance (DCD) of 0.63, with only 21% segmentation mIoU.",
+   "quote": "real-versus-simulated scans averaged a DCD of 0.63 with only 21% segmentation mIoU.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31,
+    38,
+    78
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Density-aware Chamfer distance",
+     "kind": "metric"
+    },
+    {
+     "name": "Segmentation mIoU",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t93",
+    "t256",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Image similarity can improve dramatically while a detector trained on real data still fails to transfer to simulation.",
+   "quote": "Image similarity can improve dramatically while a real-trained detector still fails to transfer",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31,
+    38,
+    78
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t254",
+    "t256",
+    "t112"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor-simulation validation must include task-level and closed-loop metrics rather than relying only on image similarity.",
+   "quote": "so validation must include task-level and closed-loop metrics.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31,
+    38,
+    78
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t256",
+    "t257",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM projects on simulation quality and high-fidelity sensor interfaces are still under way.",
+   "quote": "ASAM projects on simulation quality and high-fidelity sensor interfaces are still under way.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    91,
+    92
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t241",
+    "t84",
+    "t234"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,508 @@
+{
+ "chunkId": "k41",
+ "hash": "d4bca4ebda82e35a",
+ "facts": [
+  {
+   "text": "Brute-force field exposure is intrinsically bad at proving rare-event safety.",
+   "quote": "Brute-force field exposure is intrinsically bad at proving rare-event safety.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t144",
+    "t209",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "RAND's 2016 analysis calculated that demonstrating injury and fatality reliability by naturalistic driving alone would require hundreds of millions of miles and sometimes hundreds of billions of miles.",
+   "quote": "RAND's 2016 analysis calculated that demonstrating injury and fatality reliability by naturalistic driving alone would take \"hundreds of millions of miles and sometimes hundreds of billions of miles\".",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    1,
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "RAND Corporation",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t215",
+    "t209",
+    "t19",
+    "t20"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "University of Michigan accelerated-evaluation researchers learned naturalistic driving distributions, deliberately generated more critical interactions, and used importance sampling to recover unbiased estimates for the modelled event class.",
+   "quote": "learned naturalistic driving distributions, deliberately generated far more critical interactions and used importance sampling to recover unbiased estimates for the event class that was modelled",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    32
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "University of Michigan",
+     "kind": "organization"
+    },
+    {
+     "name": "importance sampling",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t206",
+    "t214",
+    "t17"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "University of Michigan accelerated-evaluation researchers reported orders-of-magnitude acceleration in lane-change and car-following cases during 2016 to 2017; the evidence is from on-road vehicles.",
+   "quote": "reporting orders-of-magnitude acceleration in lane-change and car-following cases (2016 to 2017).",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    32
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "University of Michigan",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t206",
+    "t17"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Feng et al., in Nature in 2023, trained dense-reinforcement-learning background agents to validate automated vehicles in an accelerated mode without loss of unbiasedness; the evidence is on-road.",
+   "quote": "Feng et al. (Nature, 2023) trained dense-reinforcement-learning background agents that validate automated vehicles \"in an accelerated mode, without loss of unbiasedness\".",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    33
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Feng et al.",
+     "kind": "other"
+    },
+    {
+     "name": "Nature",
+     "kind": "publication"
+    },
+    {
+     "name": "dense-reinforcement-learning",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t127",
+    "t206"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Adaptive stress testing by Corso et al. at Stanford searches for failures in simulation using dynamic programming and scene decomposition; the evidence is on-road.",
+   "quote": "Adaptive stress testing (Corso et al., Stanford) searches for failures in simulation by dynamic programming and scene decomposition.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    63
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Adaptive stress testing",
+     "kind": "method"
+    },
+    {
+     "name": "Corso et al.",
+     "kind": "other"
+    },
+    {
+     "name": "Stanford",
+     "kind": "organization"
+    },
+    {
+     "name": "dynamic programming",
+     "kind": "method"
+    },
+    {
+     "name": "scene decomposition",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t205",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Liu and Feng's “Curse of rarity,” published in Nature Communications in 2024, explains that safety-critical events are rare and embedded in a very high-dimensional environment, making the distribution tail hard to learn and validate.",
+   "quote": "Liu and Feng's \"Curse of rarity\" (Nature Communications, 2024) explains why safety-critical events are both rare and embedded in a very high-dimensional environment, making the tail hard to learn and validate.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Liu",
+     "kind": "person"
+    },
+    {
+     "name": "Feng",
+     "kind": "person"
+    },
+    {
+     "name": "Curse of rarity",
+     "kind": "publication"
+    },
+    {
+     "name": "Nature Communications",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t144",
+    "t198",
+    "t206"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Acceleration factors from the cited on-road statistical validation research should not be copied into a mining or construction business case.",
+   "quote": "None of those acceleration factors should be copied into a mining or construction business case.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t206",
+    "t1",
+    "t238"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Mine roads, pedestrian behaviour, haul-truck dynamics, berms, loaders, reversing and job-site work rules have different distributions from the on-road acceleration precedents.",
+   "quote": "Mine roads, pedestrian behaviour, haul-truck dynamics, berms, loaders, reversing and job-site work rules have different distributions",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t140",
+    "t1",
+    "t20",
+    "t214"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The off-road exposure dataset needed to reweight the different mining and construction distributions has not been demonstrated.",
+   "quote": "the off-road exposure dataset needed to reweight them has not been demonstrated.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t20",
+    "t214",
+    "t206",
+    "t107"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Stratified sampling forces coverage of weather, site, machine and scenario strata rather than allowing easy, common conditions to dominate testing.",
+   "quote": "Forces coverage of weather, site, machine and scenario strata instead of letting easy, common conditions dominate",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Stratified sampling",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t203",
+    "t45",
+    "t140",
+    "t142"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Strata used in stratified sampling must represent the real domain.",
+   "quote": "Strata must represent the real domain",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Stratified sampling",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t203",
+    "t140"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Importance or rare-event sampling concentrates simulation and controlled tests near critical boundaries.",
+   "quote": "Concentrates simulation and controlled tests near critical boundaries [32, 33]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    32,
+    33
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "importance sampling",
+     "kind": "method"
+    },
+    {
+     "name": "rare-event sampling",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t206",
+    "t126",
+    "t144"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Importance or rare-event sampling requires the original probability distribution to be known well enough to reweight correctly.",
+   "quote": "The original probability distribution must be known well enough to reweight correctly",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "importance sampling",
+     "kind": "method"
+    },
+    {
+     "name": "rare-event sampling",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t206",
+    "t214"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sequential confidence testing allows a test to stop when predefined evidence thresholds are reached rather than at an arbitrary exposure count.",
+   "quote": "Lets a test stop when predefined evidence thresholds are reached rather than at an arbitrary exposure count",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sequential confidence testing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t211",
+    "t209",
+    "t62"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sequential confidence testing requires the acceptance threshold and statistical test to be fixed in advance.",
+   "quote": "Acceptance threshold and statistical test fixed in advance",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sequential confidence testing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t211",
+    "t218",
+    "t62",
+    "t212"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Bayesian or hierarchical pooling across variants shares information among genuinely similar machine families while retaining variant uncertainty.",
+   "quote": "Shares information among genuinely similar machine families while retaining variant uncertainty. **Expert opinion**",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Bayesian pooling",
+     "kind": "method"
+    },
+    {
+     "name": "hierarchical pooling",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t211",
+    "t229",
+    "t230",
+    "t259"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Bayesian or hierarchical pooling across machine variants requires a justified similarity model; otherwise pooling can hide a bad variant.",
+   "quote": "The similarity model must be justified, otherwise pooling hides a bad variant",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Bayesian pooling",
+     "kind": "method"
+    },
+    {
+     "name": "hierarchical pooling",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t229",
+    "t230",
+    "t211",
+    "t76"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Coverage statistics and confidence bounds quantify observed miss and intervention rates and prevent a large amount of driving alone from masquerading as evidence.",
+   "quote": "Coverage statistics and confidence bounds quantify observed miss and intervention rates and stop \"we drove a lot\" from masquerading as evidence",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t108",
+    "t28",
+    "t70",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Coverage statistics and confidence bounds require a clearly defined denominator, representative sampling, event labelling and a statistical test plan written before testing.",
+   "quote": "they require a clearly defined denominator, representative sampling, event labelling and a statistical test plan written before testing.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t213",
+    "t203",
+    "t106",
+    "t218"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Absence of failures is not proof of zero risk.",
+   "quote": "Absence of failures is not proof of zero risk",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t46",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No statistical method compensates for an incorrect exposure model, missing hazard classes, unknown unknowns or an unvalidated simulator.",
+   "quote": "no statistical method compensates for an incorrect exposure model, missing hazard classes, unknown unknowns or an unvalidated simulator.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t20",
+    "t47",
+    "t347",
+    "t234",
+    "t267"
+   ],
+   "importance": 3
+  }
+ ]
+}

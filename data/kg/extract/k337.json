@@ -1,0 +1,292 @@
+{
+ "chunkId": "k337",
+ "hash": "90242bdd81740a3f",
+ "facts": [
+  {
+   "text": "A parameterised scenario catalog stores one logical family rather than 10,000 copies of \"reverse toward worker\"; an example family is a machine reversing toward an initially visible or occluded human-shaped object while the operator does not brake.",
+   "quote": "Instead of storing 10,000 copies of \"reverse toward worker\", the catalog stores one logical family",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": true,
+   "cites": [
+    19,
+    20
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t199",
+    "t16"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The example reversing scenario family varies speed, initial distance, lateral offset, person trajectory, machine yaw or articulation, slope, load, sensor installation, illumination, visibility, detection confidence, system latency, braking friction and random seed.",
+   "quote": "Its variables include speed, initial distance, lateral offset, person trajectory, machine yaw or articulation, slope, load, sensor installation, illumination, visibility, detection confidence, system latency, braking friction and random seed.",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": true,
+   "cites": [
+    19,
+    20
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t199",
+    "t142"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A concrete scenario test is one chosen vector of the scenario family's parameter values.",
+   "quote": "A concrete test is one chosen vector of these values.",
+   "kind": "definition",
+   "evidence": "Expert opinion",
+   "onRoad": true,
+   "cites": [
+    19,
+    20
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t141",
+    "t199"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Each parameterised scenario family carries a parameter space and a probability distribution derived from field data or expert estimates; the distribution enables later rate estimation.",
+   "quote": "Each family carries a parameter space plus a probability distribution over it, taken from field data or expert estimates; that distribution is what makes rate estimation possible later.",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": true,
+   "cites": [
+    19,
+    20
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t199",
+    "t203",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Scenario families should encode constraints and conditional factors explicitly because many combinations in the full Cartesian product are impossible or meaningless.",
+   "quote": "Encode constraints and conditional factors explicitly, because many combinations of the full Cartesian product are impossible or meaningless.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t198",
+    "t199"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Underground operation has no direct-sun glare, illustrating a constraint on scenario parameter combinations.",
+   "quote": "Underground operation has no direct-sun glare",
+   "kind": "example",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t199",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A skid-steer and an articulated hauler have different kinematic variables that must be reflected in scenario parameterisation.",
+   "quote": "a skid-steer and an articulated hauler have different kinematic variables",
+   "kind": "example",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t199",
+    "t4",
+    "t176"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An ultrasonic-only sensor configuration should not inherit camera exposure parameters in scenario families.",
+   "quote": "an ultrasonic-only configuration should not inherit camera exposure parameters.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t199",
+    "t95",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scenario families should preserve sensor independence by separating a common phenomenological layer of object geometry, material, relative motion and environmental visibility from modality-specific nuisance variables.",
+   "quote": "Keep sensor independence by separating a common phenomenological layer (object geometry, material, relative motion, environmental visibility) from modality-specific nuisance variables.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    23,
+    24
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t199",
+    "t84",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Recent reviews confirm that camera, lidar, radar and ultrasonic sensors have different failure mechanisms.",
+   "quote": "Recent reviews confirm that camera, lidar, radar and ultrasonic sensors have different failure mechanisms",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    23,
+    24
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t92",
+    "t94",
+    "t95",
+    "t56"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Recent reviews confirm that adverse weather does not affect camera, lidar, radar and ultrasonic sensors uniformly.",
+   "quote": "adverse weather does not affect them uniformly",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    23,
+    24
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t89",
+    "t92",
+    "t94",
+    "t95"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The reviews of sensor failure mechanisms and adverse-weather effects mostly concern road vehicles and unmanned ground vehicles rather than production heavy machinery.",
+   "quote": "the reviews are mostly road-vehicle and unmanned-ground-vehicle work rather than production heavy machinery.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    23,
+    24
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t70",
+    "t1",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Scenario families should encode ISO 21815 risk-area definitions as geometric parameters that scale per machine model: forward and reverse in Part 3, swing in Part 4, and articulation and other motions in Part 5.",
+   "quote": "Encode the ISO 21815 risk-area definitions (forward and reverse in Part 3, swing in Part 4, articulation and other motions in Part 5) as geometric parameters of each family, so that they scale per machine model",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    2,
+    4,
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 21815-4",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 21815-5",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t199",
+    "t187",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Dust correlates with dry, windy, high-traffic conditions; a scenario probability distribution that ignores these dependencies will misweight the strata.",
+   "quote": "dust correlates with dry, windy, high-traffic conditions, and a distribution that ignores this will misweight the strata.",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    18
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t199",
+    "t102",
+    "t214"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The only off-road scenario library found in the literature was a 2022 paper on off-road testing scenario design with a separate terrain layer; the library was built for intelligent off-road vehicles, not collision avoidance.",
+   "quote": "The only off-road scenario library found in the literature, a 2022 paper on off-road testing scenario design with a separate terrain layer, was built for intelligent off-road vehicles, not for collision avoidance.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    18
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t131",
+    "t23"
+   ],
+   "importance": 3
+  }
+ ]
+}

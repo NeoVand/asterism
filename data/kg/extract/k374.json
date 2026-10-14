@@ -1,0 +1,206 @@
+{
+ "chunkId": "k374",
+ "hash": "5fd82c4b2ec23b6a",
+ "facts": [
+  {
+   "text": "Model-in-the-loop and software-in-the-loop are recommended for high-volume testing, with thousands of runs per night on cloud or on-premise compute.",
+   "quote": "Model-in-the-loop and software-in-the-loop for volume (thousands of runs per night on cloud or on-premise compute)",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t146",
+    "t147",
+    "t163"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hardware-in-the-loop (HIL) is recommended for testing timing and real ECU behaviour.",
+   "quote": "HIL for timing and real ECU behaviour",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t119",
+    "t88"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Machine-in-the-loop or vehicle-in-the-loop with augmented reality is recommended for closed-loop braking tests.",
+   "quote": "machine-in-the-loop or vehicle-in-the-loop with augmented reality for closed-loop braking",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Proving-ground tests are recommended as anchors for the X-in-the-loop testing pipeline.",
+   "quote": "and proving ground for anchors",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t158",
+    "t216",
+    "t145"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The pipeline spanning model-in-the-loop, software-in-the-loop, HIL, machine-in-the-loop or vehicle-in-the-loop, and proving-ground tests is recommended to operate under CI/CD with automatic evaluation against pass criteria.",
+   "quote": "all under CI/CD with automatic evaluation against pass criteria.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t62",
+    "t145"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The 2022 UNECE NATM guidelines, ECE/TRANS/WP.29/2022/58, define a credibility-assessment framework covering management, data and model validation, and team expertise.",
+   "quote": "The UNECE NATM guidelines (ECE/TRANS/WP.29/2022/58, 2022) define a credibility-assessment framework covering management, data and model validation, and the expertise of the team.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    39,
+    40,
+    42
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "UNECE",
+     "kind": "organization"
+    },
+    {
+     "name": "NATM",
+     "kind": "method"
+    },
+    {
+     "name": "ECE/TRANS/WP.29/2022/58",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t234",
+    "t240",
+    "t295"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The January 2024 UNECE GRVA paper on virtual testing for UN Regulation 152, concerning automatic emergency braking, argued that the R152 proposal did not address all aspects of a credible virtual testing capability.",
+   "quote": "The UNECE GRVA paper on virtual testing for UN Regulation 152 (automatic emergency braking, January 2024) argued that the R152 proposal \"does not address all the above aspects of a credible virtual testing capability\"",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    39,
+    40,
+    42
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "UNECE GRVA",
+     "kind": "organization"
+    },
+    {
+     "name": "UN R152",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t234",
+    "t295",
+    "t25",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The critique in the January 2024 UNECE GRVA paper on virtual testing for UN Regulation 152 warns that even on-road regulators have not settled the details of credible virtual testing.",
+   "quote": "a warning that even on-road regulators have not settled the details.",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    39,
+    40,
+    42
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "UNECE GRVA",
+     "kind": "organization"
+    },
+    {
+     "name": "UN R152",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t234",
+    "t295",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2025 scenario-based safety-assurance framework demonstration by Skoglund et al., published in Vehicles, shows how such a framework is applied in practice.",
+   "quote": "A 2025 scenario-based safety-assurance framework demonstration (Skoglund et al., Vehicles) shows how such a framework is applied in practice.",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    39,
+    40,
+    42
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Skoglund",
+     "kind": "person"
+    },
+    {
+     "name": "Vehicles",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t141",
+    "t67",
+    "t234"
+   ],
+   "importance": 2
+  }
+ ]
+}

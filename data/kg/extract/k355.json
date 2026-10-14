@@ -1,0 +1,444 @@
+{
+ "chunkId": "k355",
+ "hash": "9f792ec16eb536f0",
+ "facts": [
+  {
+   "text": "ISO 34505:2025 test-case evaluation, the NATM multi-pillar approach and academic falsification literature provide established practice supporting separation of test campaigns by purpose, data and governance; the standards evidence is on-road evidence.",
+   "quote": "Established practice in ISO 34505:2025 test-case evaluation, the NATM multi-pillar approach and the academic falsification literature converges on three campaign classes",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    12,
+    38,
+    39
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 34505",
+     "kind": "standard"
+    },
+    {
+     "name": "NATM",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t217",
+    "t290",
+    "t295",
+    "t205"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The campaign synthesis recommends three classes—discovery or challenge testing, performance-estimation testing, and requirement and regression testing—with separate purposes, separate data and separate governance.",
+   "quote": "three campaign classes with separate purposes, separate data and separate governance.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    12,
+    38,
+    39
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t217",
+    "t233"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Discovery or challenge testing includes combinatorial designs, DOE screening, boundary testing, adversarial perturbations, falsification, Adaptive Stress Testing, corner-case replay and searches around known failures.",
+   "quote": "contains combinatorial designs, DOE screening, boundary testing, adversarial perturbations, falsification, Adaptive Stress Testing, corner-case replay and searches around known failures.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Adaptive Stress Testing",
+     "kind": "method"
+    },
+    {
+     "name": "falsification",
+     "kind": "method"
+    },
+    {
+     "name": "DOE screening",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t205",
+    "t202",
+    "t201",
+    "t144",
+    "t217"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Discovery or challenge testing seeks to determine whether the system can be broken and where its weak regions are.",
+   "quote": "It answers \"can we break it, and where are the weak regions?\"",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t205",
+    "t217"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A discovery or challenge testing failure percentage must never be reported as an operational failure rate; the test pool must be labeled \"not for rate estimation\".",
+   "quote": "Its failure percentage must never be reported as an operational failure rate; label the pool \"not for rate estimation\".",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t217",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Performance-estimation testing uses a frozen, stratified random sample drawn from the declared operating-domain distribution before tuning starts.",
+   "quote": "Performance-estimation testing** is a frozen, stratified random sample drawn from the declared operating-domain distribution before tuning starts",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t203",
+    "t140",
+    "t217",
+    "t220"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Performance-estimation testing stores a fixed seed and content hash in the test-management system.",
+   "quote": "with a fixed seed and content hash stored in the test-management system.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t162",
+    "t217"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Performance-estimation testing freezes weighting and estimators before results are inspected.",
+   "quote": "The weighting and estimators are frozen before results are inspected.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t214",
+    "t218",
+    "t217"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Performance-estimation testing estimates how often the system succeeds or nuisance-triggers in a defined operational population.",
+   "quote": "It answers \"how often does it succeed or nuisance-trigger in a defined operational population?\"",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t217",
+    "t31",
+    "t140"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Requirement and regression testing contains deterministic pass/fail cases tied to individual safety and functional requirements.",
+   "quote": "Requirement and regression testing** contains deterministic pass/fail cases tied to individual safety and functional requirements.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t63",
+    "t161",
+    "t62"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Requirement and regression testing determines whether a software or calibration change has broken required behaviour.",
+   "quote": "It answers \"did this software or calibration change break a required behaviour?\"",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t223",
+    "t63"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Requirement and regression testing is rerun continually.",
+   "quote": "It is rerun continually",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t161"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Requirement and regression testing is neither a random population estimate nor a failure-seeking sample.",
+   "quote": "is neither a random population estimate nor a failure-seeking sample.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t217",
+    "t161"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO/IEC/IEEE 29119 separates test processes, design techniques and documentation.",
+   "quote": "ISO/IEC/IEEE 29119 separates test processes, design techniques and documentation",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    12,
+    43
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/IEC/IEEE 29119",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t292",
+    "t279"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 34505 requires structured test-case identifiers, objectives, inputs, platform and expected results.",
+   "quote": "ISO 34505 requires structured test-case identifiers, objectives, inputs, platform and expected results.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    12,
+    43
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 34505",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t290",
+    "t143",
+    "t162"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A failure found by search should become a new logical scenario or a permanent regression test, rather than a data point for performance estimation.",
+   "quote": "Found failures become scenario knowledge, not data points.** A failure found by search becomes a new logical scenario or a permanent regression test.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t217",
+    "t141",
+    "t161",
+    "t205"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The frequency of a failure found by search is estimated separately, using sampling or importance sampling with known weights.",
+   "quote": "Its frequency is estimated separately, by sampling or by importance sampling with known weights.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "importance sampling",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t217",
+    "t206",
+    "t203"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An importance-sampled campaign qualifies as performance-estimation testing only when both operational and accelerated densities are known well enough to compute correct likelihood weights; otherwise the campaign is discovery testing.",
+   "quote": "An importance-sampled campaign belongs in the estimation lane only when the operational density and the accelerated density are both known well enough to compute correct likelihood weights; otherwise it is discovery.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "importance sampling",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t206",
+    "t217"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Inspecting a final audit-set failure and changing a threshold in response leaks information from the audit set into development.",
+   "quote": "Every time engineers inspect a final-set failure and change a threshold in response, information leaks from the audit set into development.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t219",
+    "t188",
+    "t231"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "To prevent the audit set from becoming another tuning set, keep a genuinely untouched reserve or retire and replace contaminated audit cases.",
+   "quote": "Either keep a genuinely untouched reserve or retire and replace contaminated audit cases.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t231",
+    "t219"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Access control should allow the tuning team to see only aggregate pass/fail at release gates, not per-case performance-estimation results.",
+   "quote": "The tuning team sees only aggregate pass/fail at release gates, not per-case estimation results.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    44
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t217",
+    "t349"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Restricting the tuning team's access to aggregate pass/fail results implements the reusable holdout principle in adaptive data analysis described by Dwork et al. in Science in 2015.",
+   "quote": "This is the principle of the reusable holdout in adaptive data analysis (Dwork et al., Science, 2015).",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    44
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Dwork et al.",
+     "kind": "person"
+    },
+    {
+     "name": "Science",
+     "kind": "publication"
+    },
+    {
+     "name": "reusable holdout",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t220",
+    "t231"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Pre-registration should fix acceptance criteria, strata, confidence levels and stopping rules in the test plan before hardware arrives.",
+   "quote": "Acceptance criteria, strata, confidence levels and stopping rules are fixed in the test plan before hardware arrives.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t218",
+    "t62",
+    "t209",
+    "t203"
+   ],
+   "importance": 3
+  }
+ ]
+}

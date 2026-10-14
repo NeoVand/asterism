@@ -1,0 +1,237 @@
+{
+ "chunkId": "k40",
+ "hash": "6086cc601ca72564",
+ "facts": [
+  {
+   "text": "Reuse of evidence across machine models may be the single most important lever for a product family, but only if designed in from the start.",
+   "quote": "For a product family this may be the single most important lever, but only if designed in from the start.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t76",
+    "t230",
+    "t75"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Reusable evidence across machine models can plausibly include unchanged safety software, common ECU hardware, communication interfaces, sensor intrinsic qualification, diagnostic logic, common scenario definitions and common requirements.",
+   "quote": "Reusable evidence can plausibly include unchanged safety software, common ECU hardware, communication interfaces, sensor intrinsic qualification, diagnostic logic, common scenario definitions and common requirements.",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    42,
+    43
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t76",
+    "t75",
+    "t230"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Product-line safety research has developed reusable assurance-case structures to support reuse of evidence across machine models.",
+   "quote": "Product-line safety research has developed reusable assurance-case structures for exactly this purpose.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    42,
+    43
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t67",
+    "t76",
+    "t230"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The standard J1939 intervention interface in ISO/TS 21815-2 is an off-road precedent for reuse of evidence across machine models.",
+   "quote": "The standard J1939 intervention interface (ISO/TS 21815-2)",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    42,
+    43
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t76",
+    "t120",
+    "t280"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MSHA's PIL I12-V-19 provides a route for adding a proximity detection system to an already approved machine through an extension of approval or RAMP, and is an off-road precedent for evidence reuse.",
+   "quote": "MSHA's PIL I12-V-19 route for adding a proximity detection system to an already approved machine (extension of approval or RAMP) are the off-road precedents.",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    42,
+    43
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MSHA",
+     "kind": "organization"
+    },
+    {
+     "name": "PIL I12-V-19",
+     "kind": "publication"
+    },
+    {
+     "name": "RAMP",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t76",
+    "t24",
+    "t300"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Automatic collision braking is unusually sensitive to the boundary between machine variants.",
+   "quote": "Automatic collision braking is unusually sensitive to the variant boundary.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t25",
+    "t230",
+    "t76"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Changing machine variants can change sensor height, pitch, yaw and occlusion; machine width, length and swept envelope; articulation or swing; maximum speed; gross mass and payload; brake and retarder architecture; stopping response and latency; tyre or track to ground behaviour; visibility around attachments; vibration; and power and network integration.",
+   "quote": "A different machine can change sensor height, pitch, yaw and occlusion; machine width, length and swept envelope; articulation or swing; maximum speed; gross mass and payload; brake and retarder architecture; stopping response and latency;",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t230",
+    "t76",
+    "t100",
+    "t179",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A defensible evidence-reuse model for automatic collision braking uses common-core evidence plus explicit delta evidence, rather than blanket family qualification.",
+   "quote": "The defensible model is common-core evidence plus explicit delta evidence, not blanket family qualification.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t76",
+    "t230",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A rigorous machine-variant validation strategy identifies equivalence classes and selects physical representatives at credible worst cases.",
+   "quote": "A rigorous variant strategy identifies equivalence classes and selects physical representatives at credible worst cases;",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t76",
+    "t230",
+    "t158"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Several physical machine representatives may be needed for variant validation because the machine with the worst stopping distance is not necessarily the machine with the worst sensor occlusion.",
+   "quote": "the machine with the worst stopping distance is not necessarily the one with the worst sensor occlusion, so several representatives may be needed.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t76",
+    "t170",
+    "t103",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No published method was found for transferring perception evidence across sensor mounting positions.",
+   "quote": "No published method was found for transferring perception evidence across sensor mounting positions",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t85",
+    "t100",
+    "t76"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No case was found in which evidence inheritance reduced validation of a large heavy-machine family from years to months.",
+   "quote": "no case was found in which such inheritance reduced validation of a large heavy-machine family from years to months.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t76",
+    "t230",
+    "t43",
+    "t1"
+   ],
+   "importance": 3
+  }
+ ]
+}

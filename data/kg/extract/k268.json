@@ -1,0 +1,232 @@
+{
+ "chunkId": "k268",
+ "hash": "bcfa689fec148ef8",
+ "facts": [
+  {
+   "text": "Hardware-in-the-loop (HIL) with data injection uses a real final or representative ECU and its I/O, often running production software.",
+   "quote": "**What is real:** the final or representative ECU and its I/O, often running production software.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t119"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hardware-in-the-loop (HIL) with data injection needs a real-time simulator with deterministic timing, a machine-dynamics model, electrical I/O and sensor-interface emulation, restbus models for the rest of the machine network, and the ISO/TS 21815-2 brake-request interface.",
+   "quote": "restbus models for the rest of the machine network; and the ISO/TS 21815-2 brake-request interface. **Independent** [3].",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t148",
+    "t153",
+    "t179",
+    "t280",
+    "t120"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor-interface and electrical I/O emulation for HIL data injection can use camera RAW-data injection behind the imager, radar detection-level injection, and recorded J1939 or CAN traffic.",
+   "quote": "electrical I/O and sensor-interface emulation (camera RAW-data injection behind the imager, radar detection-level injection, recorded J1939 or CAN traffic)",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    },
+    {
+     "name": "CAN bus",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t148",
+    "t149",
+    "t120",
+    "t89",
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hardware-in-the-loop with data injection is closed-loop when actuator outputs feed the simulation.",
+   "quote": "Closed-loop when actuator outputs feed the simulation.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hardware-in-the-loop with data injection proves real-time behaviour of the production ECU and target binary, communications and interface timing, diagnostic and fault behaviour, fail-to-safe behaviour, and decision and control logic under repeatable scenarios.",
+   "quote": "**Proves:** real-time behaviour of the production ECU, the target binary, communications and interface timing, diagnostic and fault behaviour, fail-to-safe behaviour, and decision and control logic under repeatable scenarios.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    17
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t153",
+    "t56",
+    "t55",
+    "t185"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "MOSH requires a disconnection between the detection device and the machine to be detected within 500 ms.",
+   "quote": "MOSH requires, for example, that a disconnection between the detection device and the machine be detected within 500 ms",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    17
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t307",
+    "t56",
+    "t60"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "MOSH requires the machine to reply within 50 ms.",
+   "quote": "and that the machine reply within 50 ms. **Independent** [17].",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    17
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t307",
+    "t88"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Hardware-in-the-loop with data injection cannot prove sensor front-end behaviour because injection bypasses the optics, lens, imager and possibly the image signal processor.",
+   "quote": "**Cannot prove:** sensor front-end behaviour, because injection bypasses the optics, lens, imager and possibly the image signal processor",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t149",
+    "t89"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Hardware-in-the-loop with data injection cannot prove true machine and brake behaviour when the machine and brakes are entirely modeled.",
+   "quote": "true machine and brake behaviour when these are entirely modeled.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t179",
+    "t182",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Vendor systems demonstrate multi-I/O, synchronized, closed-loop HIL with synthetic camera input and fault injection for automotive driver assistance; this is vendor on-road evidence.",
+   "quote": "vendor systems demonstrate multi-I/O, synchronized, closed-loop HIL with synthetic camera input and fault injection for automotive driver assistance. **Vendor (on-road evidence)** [41].",
+   "kind": "example",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    41
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t154",
+    "t56",
+    "t101",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In a vendor interview, IPG Automotive argues that RAW injection avoids the monitor-sync and field-of-view problems of camera boxes; this is vendor on-road evidence.",
+   "quote": "A vendor interview with IPG Automotive argues that RAW injection avoids the monitor-sync and field-of-view problems of camera boxes. **Vendor (on-road evidence)** [25].",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "IPG Automotive",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t149",
+    "t150",
+    "t87",
+    "t101"
+   ],
+   "importance": 2
+  }
+ ]
+}

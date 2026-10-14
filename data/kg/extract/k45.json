@@ -1,0 +1,651 @@
+{
+ "chunkId": "k45",
+ "hash": "c29050849eb5212a",
+ "facts": [
+  {
+   "text": "Before sensor and prototype freeze, starting in October 2026, validation planning should cover hazard analysis, ISO 21815 and ISO 19014 mapping, machine and use-case taxonomy, scenario vocabulary, safety case, acceptance metrics, data format, and a variant and equivalence plan.",
+   "quote": "Before sensor and prototype freeze (from October 2026)",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    5,
+    9,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 19014",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t42",
+    "t47",
+    "t63",
+    "t67",
+    "t76"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Pre-freeze validation planning does not need a production-intent brake controller and prevents prototype arrival from becoming the start of validation planning.",
+   "quote": "None of this needs a production-intent brake controller; it stops the prototype from becoming the point where validation planning begins [5, 9, 3]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    5,
+    9,
+    3
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t42",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The pre-freeze planning phase should produce traceable mapping from claim to requirement to scenario to test.",
+   "quote": "Traceable claim to requirement to scenario to test mapping",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t64",
+    "t63",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Existing warning-system fleets should immediately be instrumented where technically possible to capture raw sensors and machine buses, collect positive, negative and nuisance-warning cases, and record environmental and site metadata, including through winter 2026 to 2027.",
+   "quote": "Instrument current warning systems where technically possible; capture raw sensors and machine buses; collect positive, negative and nuisance-warning cases; record environmental and site metadata, including through winter 2026 to 2027",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t41",
+    "t121",
+    "t45",
+    "t32",
+    "t120"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Immediate data collection on the existing warning-system fleet creates reality-derived scenarios and exposure distributions before braking software exists.",
+   "quote": "Creates reality-derived scenarios and exposure distributions before the braking software exists",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t266",
+    "t141",
+    "t20"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Immediate data collection on the existing fleet should produce a searchable field-event corpus and an exposure model.",
+   "quote": "Searchable field-event corpus; exposure model",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t20",
+    "t266"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Software-in-the-loop, abstract closed-loop simulation, a replay framework, continuous regression and fault injection should be developed in parallel.",
+   "quote": "In parallel | SIL, abstract closed-loop simulation, replay framework, continuous regression and fault injection",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t154",
+    "t155",
+    "t161",
+    "t56"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The parallel software-in-the-loop, abstract closed-loop simulation, replay, regression and fault-injection phase provides the highest test throughput and earliest defect removal.",
+   "quote": "Highest test throughput and earliest defect removal",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    16
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t161",
+    "t56"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MineSim shows that mine-specific scenario simulation is feasible.",
+   "quote": "MineSim shows mine-specific scenario simulation is feasible [16]",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    16
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MineSim",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t316",
+    "t141",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The parallel simulation, replay, regression and fault-injection phase should produce an executable scenario library with pass or fail metrics.",
+   "quote": "Executable scenario library with pass or fail metrics",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t62",
+    "t147"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "After sensor candidates exist, validation should include sensor-model correlation, bench and chamber testing, mounting characterisation and high-fidelity sensor simulation.",
+   "quote": "After sensor candidates exist | Sensor-model correlation; bench and chamber testing; mounting characterisation; high-fidelity sensor simulation",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t160",
+    "t100",
+    "t323",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Real sensor hardware is needed to judge whether virtual outputs are credible; sim-to-real gaps make hardware-based sensor assessment essential.",
+   "quote": "Real hardware is needed to judge whether virtual outputs are credible; the sim-to-real gaps make this essential [15, 12]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    15,
+    12
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t165",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The sensor-candidate assessment phase should establish validated parameter ranges and known model limits.",
+   "quote": "Validated parameter ranges, known model limits",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t262",
+    "t160"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hardware-in-the-loop testing and selective sensor stimulation should begin after the ECU and interfaces stabilise.",
+   "quote": "After ECU and interfaces stabilise | HIL and, selectively, sensor stimulation",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t150",
+    "t119"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hardware-in-the-loop testing and selective sensor stimulation find real-time, bus and integration faults without occupying a machine.",
+   "quote": "Finds real-time, bus and integration faults without occupying a machine [42]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    42
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t150",
+    "t153",
+    "t120",
+    "t56"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The hardware-in-the-loop phase should produce ECU, communications and fault evidence.",
+   "quote": "ECU, communications and fault evidence",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t119",
+    "t56",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Before prototype safety testing, preparation should include an operator simulator, robotic and soft-target procedures, independent test-body review of the plan, and ground-truth qualification.",
+   "quote": "Before prototype safety testing | Operator simulator; robotic and soft-target procedures; independent test-body review of the plan; ground-truth qualification",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t152",
+    "t159",
+    "t270",
+    "t105"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Operator simulation, target procedures, independent plan review and ground-truth qualification before prototype safety testing avoid discovering basic HMI or instrumentation problems during expensive machine tests.",
+   "quote": "Avoids learning basic HMI or instrumentation problems during expensive machine tests [55, 30]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    55,
+    30
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t37",
+    "t158",
+    "t152",
+    "t270"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Preparation before prototype safety testing should produce human-factor thresholds and track-ready procedures.",
+   "quote": "Human-factor thresholds; track-ready procedures",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t36",
+    "t188",
+    "t158"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "When the prototype arrives in mid-2027, correlation tests should precede the whole scenario matrix and measure end-to-end latency, detection range, brake-command timing, stopping dynamics, repeatability and model error on each representative variant.",
+   "quote": "Correlation tests first, not the whole scenario matrix: measured end-to-end latency, detection range, brake-command timing, stopping dynamics, repeatability and model error on each representative variant",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t160",
+    "t172",
+    "t193",
+    "t230",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "If virtual and bench models are wrong, millions of virtual scenarios produce false confidence.",
+   "quote": "If the virtual and bench models are wrong, millions of virtual scenarios produce false confidence",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t267",
+    "t125",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Prototype correlation testing should produce correlation bounds and an approved virtual-test envelope.",
+   "quote": "Correlation bounds; approved virtual-test envelope",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t160",
+    "t258",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "After prototype correlation, high-throughput virtual and bench regression should re-run the now-correlated scenario matrix, critical boundaries, variant sweeps and faults.",
+   "quote": "Then high-throughput virtual and bench regression | Re-run the now-correlated scenario matrix, critical boundaries, variant sweeps and faults",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t143",
+    "t230",
+    "t56",
+    "t160"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Physical tests anchor the evidence while simulation multiplies coverage; post-correlation virtual and bench regression should produce a large coverage body linked to physical anchors.",
+   "quote": "Physical tests anchor, simulation multiplies coverage | Large coverage body linked to physical anchors",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t216",
+    "t127",
+    "t158"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Controlled whole-machine tests should follow high-throughput regression and cover worst-case stopping, grades and load states, target classes, nuisance braking, mixed motion, sensor obstruction, and generated adverse environments where feasible, in ACARP Tier 1 and Tier 2 style.",
+   "quote": "Worst-case stopping, grades and load states, target classes, nuisance braking, mixed motion, sensor obstruction, generated adverse environment where feasible (ACARP Tier 1 and Tier 2 style)",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    29,
+    6
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Australian Coal Association Research Program",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t158",
+    "t306",
+    "t170",
+    "t31",
+    "t103"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Claims covered by controlled whole-machine testing cannot be delegated to an unvalidated model.",
+   "quote": "These claims cannot be delegated to an unvalidated model [29, 6]",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    29,
+    6
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t264",
+    "t237",
+    "t158"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Controlled whole-machine tests should produce end-to-end evidence.",
+   "quote": "Then controlled whole-machine tests",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t158",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "After controlled whole-machine tests, live field operation should start without brake authority and progress to tightly bounded intervention release only if the safety case permits.",
+   "quote": "Live environment with no brake authority first; then tightly bounded intervention release if the safety case permits",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t73",
+    "t67",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Shadow mode and limited field operation discover unanticipated site combinations before operating scope is widened.",
+   "quote": "Discovers unanticipated site combinations before widening scope [22, 37]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    22,
+    37
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t73",
+    "t140"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Shadow mode and limited field operation should produce real exposure, false-positive and miss data.",
+   "quote": "Real exposure; false-positive and miss data",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t20",
+    "t108"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Expansion to new sites, models, speed ranges and environmental conditions should occur only through an evidence gate.",
+   "quote": "Widen only by evidence gate | New sites, models, speed ranges, environmental conditions",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    62
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t72",
+    "t140",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Evidence-gated expansion prevents evidence from a narrow domain being silently generalised and produces controlled, auditable scope growth.",
+   "quote": "Prevents evidence from a narrow domain being silently generalised [62] | Controlled, auditable scope growth",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    62
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t72",
+    "t261",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Replay and sensor-model correlation must precede trusting simulation results.",
+   "quote": "Replay and sensor-model correlation must come before simulation results can be trusted.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t160",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Track tests should confirm simulation predictions rather than serve as exploratory tests.",
+   "quote": "Track tests should confirm predictions from simulation rather than explore.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t158",
+    "t160",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Shadow mode should run before braking is enabled so that the nuisance-brake rate is measured while braking remains disabled.",
+   "quote": "Shadow mode should run before braking is enabled, so the nuisance-brake rate is measured while braking is still disabled.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t31",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The proposed validation sequence uses the prototype as a model-correlation and end-to-end evidence asset rather than the only place to exercise thousands of scenario variants.",
+   "quote": "The sequence turns the prototype into a model-correlation and end-to-end evidence asset rather than the only place where thousands of scenario variants can be exercised.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t160",
+    "t216",
+    "t142",
+    "t158"
+   ],
+   "importance": 3
+  }
+ ]
+}

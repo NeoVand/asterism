@@ -1,0 +1,456 @@
+{
+ "chunkId": "k84",
+ "hash": "0e4b0247463924ce",
+ "facts": [
+  {
+   "text": "Each sensor type—camera, radar, lidar, ultrasonic, GNSS, UWB, thermal or tag-based alternatives—needs a separate credibility argument for virtual validation.",
+   "quote": "camera, radar, lidar, ultrasonic and any GNSS, UWB, thermal or tag-based alternative each need a separate credibility argument",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    10,
+    11
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t84",
+    "t359"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "PEGASUS used sensor and environment simulation vendors IPG and VIRES.",
+   "quote": "PEGASUS used sensor and environment simulation vendors (IPG, VIRES) [10, 11]",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    10,
+    11
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "PEGASUS",
+     "kind": "program"
+    },
+    {
+     "name": "IPG",
+     "kind": "company"
+    },
+    {
+     "name": "VIRES",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t310",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Virtual validation capability needs vehicle or machine dynamics and braking expertise covering mass and loading, tire-to-ground interaction, slopes, articulation, implements, hydraulic retarder and service-brake response, and actuator latency.",
+   "quote": "Vehicle or machine dynamics and braking: mass and loading, tire-to-ground interaction, slopes, articulation, implements, hydraulic retarder and service-brake response, actuator latency.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t359",
+    "t179",
+    "t182",
+    "t171",
+    "t180"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Virtual validation capability needs simulation and model-, software- and hardware-in-the-loop engineering expertise covering closed-loop environments, controller interfaces, deterministic execution, fault injection and hardware timing.",
+   "quote": "Simulation, model-, software- and hardware-in-the-loop engineering: closed-loop environment, controller interfaces, deterministic execution, fault injection, hardware timing.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t359",
+    "t145",
+    "t154",
+    "t56"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Virtual validation capability needs test automation and data engineering expertise covering scenario parameterization, parallel execution, result oracles, reproducibility, regression management and configuration traceability.",
+   "quote": "Test automation and data engineering: scenario parameterization, parallel execution, result oracles, reproducibility, regression management, configuration traceability.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t359",
+    "t162",
+    "t199",
+    "t161"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Virtual validation capability needs physical-test and ground-truth engineering expertise covering synchronized truth sensors, soft targets, instrumentation, environmental characterization and virtual-to-physical correlation.",
+   "quote": "Physical-test and ground-truth engineering: synchronized truth sensors, soft targets, instrumentation, environmental characterization, virtual-to-physical correlation",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    10
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t359",
+    "t105",
+    "t159",
+    "t160"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Test laboratories such as TÜV SÜD provided physical-test and ground-truth engineering in PEGASUS.",
+   "quote": "test labs such as TÜV SÜD played this role in PEGASUS [10]",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    10
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "TÜV SÜD",
+     "kind": "organization"
+    },
+    {
+     "name": "PEGASUS",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t310",
+    "t105",
+    "t158"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Virtual validation capability needs statistics and model credibility expertise covering uncertainty quantification, equivalence and correlation metrics, accelerated sampling and limits on extrapolation.",
+   "quote": "Statistics and model credibility: uncertainty quantification, equivalence and correlation metrics, accelerated sampling, limits on extrapolation.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t359",
+    "t234",
+    "t235",
+    "t250",
+    "t261"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Virtual validation capability needs functional-safety and safety-argument specialists, plus OEM and supplier integration.",
+   "quote": "Functional-safety and safety-argument specialists, plus OEM and supplier integration [10, 11].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    10,
+    11
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t359",
+    "t49",
+    "t67"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Virtual validation governance needs an independent safety or acceptance authority organizationally able to reject evidence when model credibility or coverage is insufficient.",
+   "quote": "An independent safety or acceptance authority: someone organizationally able to reject the evidence when model credibility or coverage is insufficient.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t71",
+    "t234",
+    "t72"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Euro NCAP's 2026 workflow provides a governance-split template: the developer qualifies and predicts, while an independent organization selects verification cases and checks correlation.",
+   "quote": "Euro NCAP's 2026 workflow is a template for the governance split: the developer qualifies and predicts; an independent organization selects verification cases and checks correlation [1].",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    1
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Euro NCAP",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t297",
+    "t71",
+    "t250"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Expert judgment recommends treating a four-month period as a final validation window rather than a capability-construction window.",
+   "quote": "A four-month period should be treated as a final validation window, not a capability-construction window.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t342"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Among the cases found, there is no close public precedent for building the entire scenario system, sensor models, correlation methodology and test automation only after hardware arrives.",
+   "quote": "Building the entire scenario system, sensor models, correlation methodology and test automation only after hardware arrives has no close public precedent among the cases found.",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t320",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Expert judgment concludes that a newcomer cannot build a fully credible toolchain covering more than 100 site types, all weather conditions and every sensor type by mid-2027.",
+   "quote": "A newcomer cannot build a fully credible toolchain covering more than 100 site types, all weather conditions and every sensor type by mid-2027.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t44",
+    "t45",
+    "t320",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Expert judgment concludes that a newcomer can build a narrow virtual-validation toolchain scoped to the first release's envelope if work starts in October 2026 and commercial or open-source simulators are reused rather than written from scratch.",
+   "quote": "It can build a narrow one, scoped to the first release's envelope, if it starts in October 2026 and reuses commercial or open-source simulators rather than writing its own.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t73",
+    "t320",
+    "t333",
+    "t322"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Expert judgment recommends building sensor-selection-independent foundations now: machine and site scenario taxonomy, parameterized job-site geometry, object classes, motion and operator-response models, test-oracle definitions, and failure and nuisance-braking metrics.",
+   "quote": "machine and site scenario taxonomy; parameterized job-site geometry; object classes; motion and operator-response models; test-oracle definitions; failure and nuisance-braking metrics;",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t130",
+    "t35",
+    "t31",
+    "t224"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Expert judgment recommends building sensor-selection-independent infrastructure now: simulation execution and continuous integration, vehicle-dynamics interfaces, sensor-independent perception interfaces, data-logging schemas, and the physical-to-virtual correlation procedure.",
+   "quote": "simulation execution and continuous integration; vehicle-dynamics interfaces; sensor-independent perception interfaces; data-logging schemas; and the physical-to-virtual correlation procedure.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t179",
+    "t85",
+    "t121",
+    "t160"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Expert judgment recommends a sensor-interface-neutral but not sensor-physics-neutral architecture, with final sensor models and correlation datasets as replaceable modules.",
+   "quote": "The architecture should be sensor-interface-neutral but not sensor-physics-neutral: final sensor models and correlation datasets become replaceable modules",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    1
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t84",
+    "t160"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Euro NCAP requires documentation of simulation setup and sensor details before relying on virtual predictions.",
+   "quote": "Euro NCAP's requirement to document simulation setup and sensor details before relying on virtual predictions [1]",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    1
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Euro NCAP",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t297",
+    "t234",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Expert judgment recommends using the four months after hardware arrival to correlate actual sensors and braking hardware, discover model discrepancies, execute the already-defined virtual campaign, physically spot-check high-risk cells, investigate disagreements and assemble safety evidence.",
+   "quote": "The four months after hardware arrival then become: correlate actual sensors and braking hardware; discover model discrepancies; execute the already-defined virtual campaign; physically spot-check high-risk cells; investigate disagreements; assemble the safety evidence.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t160",
+    "t233",
+    "t216",
+    "t67"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Expert judgment drawn from precedents recommends narrowing the first release's envelope now to reverse travel, low speed, a brief brake pulse returning control to the operator, and exclusions for stockpiles, trailer loading and slopes; this is not a published schedule.",
+   "quote": "Narrow the first release's envelope now, following the market precedent: reverse travel, low speed (Volvo publishes 3 to 15 km/h), a brief brake pulse that hands control back to the operator, and exclusions for known false-activation situations (stockpiles, trailer loading, slopes) [43, 52].",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    43,
+    52
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Volvo",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t73",
+    "t16",
+    "t28",
+    "t39",
+    "t31"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Volvo publishes a low-speed range of 3 to 15 km/h for the market precedent used to scope the first collision-mitigation release.",
+   "quote": "low speed (Volvo publishes 3 to 15 km/h)",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    43,
+    52
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Volvo",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t169",
+    "t22",
+    "t73"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Expert judgment states that removing each dimension from the first release's envelope reduces the validation burden more than any tool will.",
+   "quote": "Every dimension removed cuts the validation burden more than any tool will.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t198",
+    "t73",
+    "t140"
+   ],
+   "importance": 3
+  }
+ ]
+}

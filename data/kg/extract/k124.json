@@ -1,0 +1,216 @@
+{
+ "chunkId": "k124",
+ "hash": "99fc3659a84dc535",
+ "facts": [
+  {
+   "text": "The Euro NCAP virtual-testing protocol version 1.00 is dated March 2025.",
+   "quote": "Euro NCAP virtual-testing protocol (version 1.00, March 2025)",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Euro NCAP",
+     "kind": "organization"
+    },
+    {
+     "name": "Euro NCAP virtual-testing protocol",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t297"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The Euro NCAP virtual-testing protocol is an on-road consumer protocol.",
+   "quote": "It is an on-road consumer protocol",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Euro NCAP virtual-testing protocol",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t297",
+    "t127"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No off-road body has adopted an equivalent of the Euro NCAP virtual-testing protocol.",
+   "quote": "no off-road body has adopted an equivalent.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Euro NCAP virtual-testing protocol",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t297",
+    "t127",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The Euro NCAP virtual-testing acceptance flow starts with an OEM simulation dossier containing vehicle, sensor, target and environment models.",
+   "quote": "OEM simulation dossier: vehicle, sensor, target and environment models",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Euro NCAP virtual-testing protocol",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t297",
+    "t125",
+    "t269"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In the Euro NCAP virtual-testing acceptance flow, the OEM simulation dossier undergoes in-house qualification using virtual versus physical tests, an ISO score and KPIs.",
+   "quote": "In-house qualification: virtual versus physical tests, ISO score and KPIs",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Euro NCAP virtual-testing protocol",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t297",
+    "t160",
+    "t224"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "After in-house qualification, the Euro NCAP virtual-testing acceptance flow produces virtual predictions for the full scenario grid.",
+   "quote": "B --> C[Virtual predictions for the full scenario grid]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Euro NCAP virtual-testing protocol",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t297",
+    "t143",
+    "t127"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Euro NCAP physically tests randomly selected cells from the scenario grid to verify virtual predictions.",
+   "quote": "Euro NCAP runs randomly selected grid cells physically",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Euro NCAP",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t297",
+    "t203",
+    "t143",
+    "t160"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Under the Euro NCAP virtual-testing acceptance flow, virtual results are accepted for a cluster if at least 75% of its verification tests pass.",
+   "quote": "E{At least 75% of verification tests in the cluster pass?}\n    E -- yes --> F[Virtual results accepted for that cluster]",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Euro NCAP virtual-testing protocol",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t297",
+    "t62",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Under the Euro NCAP virtual-testing acceptance flow, failure to meet the 75% verification-test pass threshold causes rejection of the dossier for that cluster, requiring re-simulation or physical testing.",
+   "quote": "E -- no --> G[Dossier rejected for the cluster: re-simulate or test physically]",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Euro NCAP virtual-testing protocol",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t297",
+    "t62",
+    "t127",
+    "t158"
+   ],
+   "importance": 3
+  }
+ ]
+}

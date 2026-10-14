@@ -1,0 +1,196 @@
+{
+ "chunkId": "k198",
+ "hash": "1aa8d9f1a3f8273b",
+ "facts": [
+  {
+   "text": "Turning field recordings into test environments starts with machine logs containing camera, lidar, IMU and GNSS data, followed by calibration and synchronization.",
+   "quote": "A[Machine logs: camera, lidar, IMU, GNSS] --> B[Calibrate and synchronise]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t100",
+    "t101",
+    "t98"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The field-recording reconstruction workflow reconstructs static geometry after calibration and synchronization, then registers the geometry to site coordinates.",
+   "quote": "B --> C[Reconstruct static geometry]\n    C --> D[Register to site coordinates]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t132"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The field-recording reconstruction workflow removes dynamic and transient objects after registration to site coordinates.",
+   "quote": "D --> E[Remove dynamic and transient objects]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t132"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The field-recording reconstruction workflow classifies terrain and objects after removing dynamic and transient objects.",
+   "quote": "E --> F[Classify terrain and objects]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t131"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The field-recording reconstruction workflow repairs occlusions with explicit geometry after classifying terrain and objects.",
+   "quote": "F --> G[Repair occlusions with explicit geometry]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t103",
+    "t130",
+    "t131"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The field-recording reconstruction workflow creates collision proxies after repairing occlusions with explicit geometry.",
+   "quote": "G --> H[Create collision proxies]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t131",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The field-recording reconstruction workflow assigns physical and sensor materials after creating collision proxies.",
+   "quote": "H --> I[Assign physical and sensor materials]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t136",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The field-recording reconstruction workflow replaces moving objects with controllable agents after assigning physical and sensor materials.",
+   "quote": "I --> J[Replace moving objects with controllable agents]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The field-recording reconstruction workflow qualifies geometry and sensors against held-out real measurements after replacing moving objects with controllable agents.",
+   "quote": "J --> K[Qualify geometry and sensors against held-out real measurements]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t263",
+    "t237",
+    "t130",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The field-recording reconstruction workflow parameterises variants after qualifying geometry and sensors against held-out real measurements.",
+   "quote": "K --> L[Parameterise variants]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t199",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Given the 2027 schedule, reconstruction-quality machine logs should be collected now, before the final sensor suite is confirmed.",
+   "quote": "One strategic consequence follows from the 2027 schedule: reconstruction-quality machine logs should be collected now, before the final sensor suite is confirmed.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t132",
+    "t42",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Cameras plus pose data and, where available, lidar create geometric site assets that can later be rendered through whichever 2027 sensor models are chosen.",
+   "quote": "Cameras plus pose data and, where available, lidar create geometric site assets that can later be rendered through whichever 2027 sensor models are chosen.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t130",
+    "t89",
+    "t92",
+    "t125"
+   ],
+   "importance": 3
+  }
+ ]
+}

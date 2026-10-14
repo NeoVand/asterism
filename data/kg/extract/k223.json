@@ -1,0 +1,230 @@
+{
+ "chunkId": "k223",
+ "hash": "049120863e95e3c1",
+ "facts": [
+  {
+   "text": "RFID, UWB tag and GNSS or V2X proximity systems are common in mining collision avoidance.",
+   "quote": "RFID, UWB tag and GNSS or V2X proximity systems are common in mining collision avoidance",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    3
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t97",
+    "t98",
+    "t23"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO/TS 21815-2:2021, confirmed in 2024, defines the on-board J1939 interface for RFID, UWB tag and GNSS or V2X proximity-detection devices.",
+   "quote": "ISO/TS 21815-2:2021 (confirmed 2024) defines the on-board J1939 interface for such proximity-detection devices",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    },
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t120",
+    "t24"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "RFID, UWB tag and GNSS or V2X proximity systems can be modelled using propagation and multipath models.",
+   "quote": "They can be modelled with propagation and multipath models",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t97",
+    "t98",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "RFID, UWB tag and GNSS or V2X proximity systems require tagged objects or people and address a different sensing problem from general obstacle perception.",
+   "quote": "require tagged objects or people and answer a different sensing problem from general obstacle perception",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t97",
+    "t98",
+    "t85"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "RFID, UWB tag and GNSS or V2X proximity systems are typically simulated at the message or object-list level.",
+   "quote": "They are typically simulated at the message or object-list level",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t97",
+    "t98",
+    "t156"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No simulation-fidelity studies were found for RFID, UWB tag and GNSS or V2X proximity systems.",
+   "quote": "no simulation-fidelity studies were found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t97",
+    "t98",
+    "t125",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Radio propagation around large metal machines is not validated in the sources found for proximity-system simulation.",
+   "quote": "radio propagation around large metal machines is not validated in the sources found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t97",
+    "t125",
+    "t234",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Event cameras can be simulated by rendering temporal irradiance and applying event thresholds, noise and refractory behaviour.",
+   "quote": "Event cameras can be simulated by rendering temporal irradiance and applying event thresholds, noise and refractory behaviour",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Recent sim-to-real work on event cameras still reports a meaningful domain gap.",
+   "quote": "recent sim-to-real work still reports a meaningful domain gap **Expert opinion**",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t165",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Flash or indirect time-of-flight depth cameras combine camera-like optics with active ranging.",
+   "quote": "Flash or indirect time-of-flight depth cameras combine camera-like optics with active ranging",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t91",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simulating flash or indirect time-of-flight depth cameras requires multipath and sensor-specific depth-noise models.",
+   "quote": "need multipath and sensor-specific depth-noise models",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t91",
+    "t125",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Public validation evidence in heavy construction or mining automatic braking was not found for RFID, UWB tag and GNSS or V2X proximity systems, event cameras, or flash or indirect time-of-flight depth cameras.",
+   "quote": "For all these alternatives, public validation evidence in heavy construction or mining automatic braking was not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t70",
+    "t25",
+    "t97",
+    "t91",
+    "t89"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A neutral cross-technology benchmark comparing all hardware-in-the-loop stimulus methods—radar OTA, lidar echo generation, camera or infrared projection, and acoustic stimulation—was not found.",
+   "quote": "A neutral cross-technology benchmark comparing all hardware-in-the-loop stimulus methods (radar OTA, lidar echo generation, camera or infrared projection, acoustic stimulation) was not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t148",
+    "t94",
+    "t92",
+    "t89"
+   ],
+   "importance": 3
+  }
+ ]
+}

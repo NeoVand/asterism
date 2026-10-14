@@ -1,0 +1,764 @@
+{
+ "chunkId": "k327",
+ "hash": "d33ba2e7acd3aa65",
+ "facts": [
+  {
+   "text": "The eight machine-motion and brake-timing questions did not address functional safety and integrity level.",
+   "quote": "Issues the eight questions did not ask about:\n\n**Functional safety and integrity level.**",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t49",
+    "t51"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An automatic brake is a safety function under the ISO 19014 series and ISO 13849, with ISO 21448 addressing perception limits; the cited evidence is draft.",
+   "quote": "An automatic brake is a safety function under the ISO 19014 series and ISO 13849, with ISO 21448 for perception limits.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    75,
+    76,
+    14
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014 series",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 13849",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 21448",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t48",
+    "t281",
+    "t287",
+    "t50"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The required performance level for an automatic brake drives architecture and validation effort as much as threshold tuning does; the cited evidence is draft.",
+   "quote": "The required performance level drives architecture and validation effort as much as threshold tuning does.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    75,
+    76,
+    14
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t51",
+    "t63",
+    "t188"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO/TS 21815-2 places the collision-avoidance device outside the machine controller and states that the device is not plug-and-play; the cited evidence is draft.",
+   "quote": "ISO/TS 21815-2 places the collision-avoidance device outside the machine controller and states that it is not plug-and-play.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    75,
+    76,
+    14
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t23"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Perception performance may dominate braking-model accuracy, an issue not addressed by the eight machine-motion and brake-timing questions.",
+   "quote": "**Perception performance may dominate braking-model accuracy.**",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t85",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO's distance budget starts at detection.",
+   "quote": "ISO's distance budget starts at detection.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "ISO",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t193",
+    "t170"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "If dust, fog, darkness, glare, mud on a sensor, self-occlusion, vibration or poor mounting reduce reliable detection range below required stopping distance, no brake model can recover the lost margin.",
+   "quote": "If dust, fog, darkness, glare, mud on a sensor, self-occlusion, vibration or poor mounting cut reliable detection range below the required stopping distance, no brake model can recover the lost margin.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t193",
+    "t102",
+    "t103",
+    "t170",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor position and machine geometry need a geometric model rather than just recalibration, an issue omitted from the eight machine-motion and brake-timing questions.",
+   "quote": "**Sensor position and machine geometry need a geometric model, not just recalibration.**",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t265",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Different machine lengths, widths, articulation centers, body structures and blind zones alter both detection coverage and the collision envelope; a transferable system needs machine geometry as configuration data.",
+   "quote": "Different lengths, widths, articulation centers, body structures and blind zones alter both detection coverage and the collision envelope; a transferable system needs machine geometry as configuration data.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t176",
+    "t15",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Buckets, forks, blades, booms, dump bodies and trailers change swept volume and center of gravity, an attachment-geometry issue omitted from the eight questions.",
+   "quote": "**Attachments and changing geometry.** Buckets, forks, blades, booms, dump bodies and trailers change swept volume and center of gravity.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t178",
+    "t179"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-4's 2026 scope has limitations related to machine and tool height, so the collision standard does not cover every attachment hazard; the cited evidence is draft.",
+   "quote": "ISO 21815-4's 2026 scope has limitations related to machine and tool height, so not every attachment hazard is covered by the collision standard.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    16
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t46"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Braking policy should not treat a person, another haul truck, a cone, a berm, a rock pile and vegetation identically because false-positive costs and required clearances differ.",
+   "quote": "Braking policy should not treat a person, another haul truck, a cone, a berm, a rock pile and vegetation identically; the false-positive cost and required clearance differ",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t108",
+    "t194"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Permissible object-class semantics for braking policy need safety requirements before threshold tuning begins.",
+   "quote": "the permissible semantics need safety requirements before threshold tuning begins.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t63",
+    "t185",
+    "t197"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Avoiding the nearest detected object can create a second conflict, especially during steering or articulation; a scalar nearest-range trigger is inadequate in crowded work zones.",
+   "quote": "Avoiding the nearest detected object can create a second conflict, especially during steering or articulation; a scalar nearest-range trigger is inadequate in crowded work zones.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t195",
+    "t185",
+    "t176",
+    "t17"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Brake fade, wear, faults and stored-energy state were omitted from the eight machine-motion and brake-timing questions.",
+   "quote": "**Brake fade, wear, faults and stored-energy state.**",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Heat, wear and accumulator charge change braking deceleration and latency over a shift.",
+   "quote": "Heat, wear and accumulator charge change deceleration and latency over a shift",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    28,
+    29
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t169",
+    "t171",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NIOSH's roadmap found fatal accidents in which vehicles failed to stop despite some combination of brakes being available.",
+   "quote": "NIOSH's roadmap found fatal accidents where vehicles failed to stop \"despite there being some combination of brakes available\".",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    28,
+    29
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t19",
+    "t56",
+    "t177"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 3450 includes service-brake, secondary-brake and stored-energy provisions.",
+   "quote": "ISO 3450 includes service, secondary and stored-energy provisions",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    28,
+    29
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "ISO 3450",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t282",
+    "t177"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An automatic braking system should not assume nominal service-brake performance after detected degradation.",
+   "quote": "the automatic system should not assume nominal service-brake performance after a detected degradation",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    28,
+    29
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t182",
+    "t74"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In-service monitoring of accumulator charge time, as described in US patent 10210676, is one approach to monitoring brake-system degradation.",
+   "quote": "in-service monitoring such as accumulator charge time (US patent 10210676) is one approach.",
+   "kind": "method",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    89
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "US patent 10210676",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t74",
+    "t182",
+    "t56"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Downhill and loss-of-control cases where the hazard is not an object in the path deserve their own hazard analysis and were omitted from the eight questions.",
+   "quote": "**Downhill and loss-of-control cases**, where the hazard is not an object in the path",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    15,
+    28
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t173",
+    "t47"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Post-stop behavior deserves its own hazard analysis, including rollaway, automatic restart, operator override, direction change and loss of object detection after the machine pitches under braking.",
+   "quote": "post-stop behavior (rollaway, automatic restart, operator override, direction change, loss of object detection after the machine pitches under braking), which deserve their own hazard analysis.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    15,
+    28
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t195",
+    "t47",
+    "t55"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Interaction with following traffic and site traffic rules belongs to EMESRT Levels 1 to 6 and was omitted from the eight machine-motion and brake-timing questions.",
+   "quote": "**Interaction with following traffic and site traffic rules**, which belong to EMESRT Levels 1 to 6.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    20
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t304",
+    "t30",
+    "t17"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Operators may come to rely on the automatic braking system through risk compensation, a human-factors issue omitted from the eight questions.",
+   "quote": "**Human factors.** Operators may come to rely on the system (risk compensation)",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t38",
+    "t36"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Alarm fatigue can lead operators to tamper with or disable the system.",
+   "quote": "alarm fatigue can lead to tampering or disabling.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t33",
+    "t34"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The MSHA surface mobile equipment rule became effective on 19 January 2024 and was enforced from 17 July 2024.",
+   "quote": "The MSHA surface mobile equipment rule (effective 19 January 2024, enforced from 17 July 2024)",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    90,
+    91
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "MSHA",
+     "kind": "organization"
+    },
+    {
+     "name": "MSHA surface mobile equipment rule",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t300",
+    "t275"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The MSHA surface mobile equipment rule requires written safety programs but does not mandate collision avoidance.",
+   "quote": "requires written safety programs but does not mandate collision avoidance",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    90,
+    91
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "MSHA surface mobile equipment rule",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t300",
+    "t23"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Australian and South African requirements differ in the regulatory context of collision avoidance.",
+   "quote": "Australian and South African requirements differ.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    90,
+    91
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "Australia",
+     "kind": "place"
+    },
+    {
+     "name": "South Africa",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t301",
+    "t302",
+    "t275"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Cybersecurity and integrity of the J1939 interface were omitted from the eight machine-motion and brake-timing questions.",
+   "quote": "**Cybersecurity and integrity of the J1939 interface.** [14]",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    14
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t120"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Simulation traceability is itself a validation item, an issue omitted from the eight machine-motion and brake-timing questions.",
+   "quote": "**Simulation traceability is itself a validation item.**",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    11
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t64",
+    "t162",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The 2026 round robin showed divergent outcomes under a common scenario specification; this is on-road evidence.",
+   "quote": "The 2026 round robin showed divergent outcomes under a common scenario specification",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    11
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t141",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Every virtual test needs versioned machine parameters, coordinate definitions, object reference points, initial conditions, time-step and solver assumptions, and trigger definitions; the supporting evidence is on-road.",
+   "quote": "every virtual test needs versioned machine parameters, coordinate definitions, object reference points, initial conditions, time-step and solver assumptions and trigger definitions.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    11
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t162",
+    "t64",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Data logging from fielded warning systems is the cheapest source of real scenario distributions, including approach speeds and false-alarm rates, for the 100-plus site types.",
+   "quote": "**Data logging from fielded warning systems** is the cheapest source of real scenario distributions (approach speeds, false-alarm rates) for the 100-plus site types.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t266",
+    "t44",
+    "t32",
+    "t169"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The research did not examine how a machine-family model is re-qualified when a supplier changes a brake valve, pump or control software mid-programme.",
+   "quote": "the research did not examine how a family model is re-qualified when a supplier changes a brake valve, pump or control software mid-programme",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t230",
+    "t76",
+    "t182",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The validation test-count question reappears at every mid-programme supplier change to a brake valve, pump or control software within a machine family.",
+   "quote": "when a supplier changes a brake valve, pump or control software mid-programme; the test-count question reappears at every such change.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t230",
+    "t143",
+    "t65"
+   ],
+   "importance": 3
+  }
+ ]
+}

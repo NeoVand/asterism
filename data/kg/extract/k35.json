@@ -1,0 +1,491 @@
+{
+ "chunkId": "k35",
+ "hash": "9c2740ea94015098",
+ "facts": [
+  {
+   "text": "Software-in-the-loop (SIL), hardware-in-the-loop (HIL) and vehicle-in-the-loop (VIL) remove different classes of uncertainty.",
+   "quote": "The three loops remove different classes of uncertainty.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t145"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Software-in-the-loop (SIL) is the most economical stage for very large test volumes.",
+   "quote": "**SIL** is where very large test volume is most economical.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    53
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Software-in-the-loop (SIL) exercises software requirements, decision thresholds, timing logic, state transitions, threat metrics, degradations and regression across thousands or millions of scenarios.",
+   "quote": "It exercises software requirements, decision thresholds, timing logic, state transitions, threat metrics, degradations and regression across thousands or millions of scenarios.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    53
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t63",
+    "t188",
+    "t161",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Software-in-the-loop (SIL) cannot show whether the production processor misses deadlines.",
+   "quote": "It cannot show whether the production processor misses deadlines",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    53
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t153"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Software-in-the-loop (SIL) cannot show whether the CAN or J1939 interface has unexpected timing behaviour.",
+   "quote": "whether the CAN or J1939 interface has unexpected timing behaviour",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    53
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t147",
+    "t120",
+    "t88"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Software-in-the-loop (SIL) cannot show whether the hydraulic and mechanical brake chain behaves as modelled.",
+   "quote": "whether the hydraulic and mechanical brake chain behaves as modelled.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    53
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t182",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Extensions of the V-model for systems incorporating machine learning treat software-in-the-loop (SIL) as the first closed-loop stage.",
+   "quote": "Extensions of the V-model for systems that incorporate machine learning treat SIL as the first closed-loop stage.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    53
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "V-model",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t147",
+    "t66",
+    "t154",
+    "t79"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hardware-in-the-loop (HIL) connects a real ECU and its real interfaces to a deterministic real-time plant simulation driving physical or emulated I/O, exercising communications, timing and faults before full-machine testing.",
+   "quote": "a real ECU is connected to a deterministic real-time plant simulation that drives physical or emulated I/O, so communications, timing and faults are exercised before full-machine testing.",
+   "kind": "method",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    23
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t119",
+    "t153",
+    "t56"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Hardware-in-the-loop (HIL) is established across automotive, aerospace and industrial controls, including an older independent heavy-truck controller precedent.",
+   "quote": "It is established across automotive, aerospace and industrial controls, with older independent heavy-truck controller precedent",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    23
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No off-road perception-AEB end-to-end hardware-in-the-loop (HIL) case was found.",
+   "quote": "no off-road perception-AEB end-to-end HIL case was found.",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    23
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t85",
+    "t25"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Conventional hardware-in-the-loop (HIL) does not prove optical or RF perception unless real sensor front ends are physically stimulated.",
+   "quote": "Conventional HIL does not prove optical or RF perception unless real sensor front ends are physically stimulated",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    23
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t150",
+    "t85"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Radar and lidar target simulators have limited fidelity.",
+   "quote": "radar or lidar target simulators have limited fidelity.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    23
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t94",
+    "t92",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The natural hardware-in-the-loop (HIL) interface for the heavy off-road collision mitigation programme is the ISO/TS 21815-2 J1939 intervention interface.",
+   "quote": "For this programme the natural HIL interface is the ISO/TS 21815-2 J1939 intervention interface.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    42
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    },
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t148",
+    "t280",
+    "t120",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Vehicle-in-the-loop (VIL) adds the actual vehicle or machine to testing.",
+   "quote": "**VIL** adds the actual vehicle or machine.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "IDIADA injects virtual hazards into a real vehicle's ECU on a track for vehicle-in-the-loop testing.",
+   "quote": "IDIADA injects virtual hazards into a real vehicle's ECU on a track",
+   "kind": "example",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    26,
+    25
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "IDIADA",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t151",
+    "t119",
+    "t158"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An augmented-reality proving-ground vehicle-in-the-loop (VIL) platform was published in 2024.",
+   "quote": "an augmented-reality proving-ground VIL platform was published in 2024",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    54,
+    24
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t158"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2024 survey of testbench vehicle-in-the-loop (VIL) describes physical sensor stimulation and whole-vehicle testing as a bridge between simulation and road tests.",
+   "quote": "a 2024 survey of testbench VIL describes physical sensor stimulation and whole-vehicle testing as a bridge between simulation and road tests",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    54,
+    24
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t150",
+    "t216"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2024 survey of testbench vehicle-in-the-loop (VIL) identifies different accuracies among stimulation and testbench approaches.",
+   "quote": "identifying different accuracies among stimulation and testbench approaches",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    54,
+    24
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t150",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2024 survey of testbench vehicle-in-the-loop (VIL) identifies substantial equipment cost.",
+   "quote": "and substantial equipment cost.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    54,
+    24
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "dSPACE material shows an intended road-vehicle testing chain that stimulates camera, radar and ultrasound while observing the response through to brakes and steering.",
+   "quote": "dSPACE material shows the intended road-vehicle chain: stimulate camera, radar and ultrasound while observing the response all the way to brakes and steering.",
+   "kind": "example",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    26,
+    25
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "dSPACE",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t151",
+    "t150",
+    "t89",
+    "t94",
+    "t95"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Nothing beyond research was found for off-road vehicle-in-the-loop (VIL).",
+   "quote": "For off-road VIL, nothing beyond research was found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No public, independent case was found of complete vehicle-in-the-loop (VIL) validation of camera, radar, lidar or ultrasonic automatic braking on mining, quarrying or construction equipment.",
+   "quote": "a public, independent case of complete VIL validation of camera, radar, lidar or ultrasonic automatic braking on mining, quarrying or construction equipment was **not found**.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t25",
+    "t1",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The recommended testing hierarchy uses software-in-the-loop (SIL) for test volume.",
+   "quote": "The sensible hierarchy is SIL for volume",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t233"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The recommended testing hierarchy uses hardware-in-the-loop (HIL) for timing, interfaces and faults.",
+   "quote": "HIL for timing, interfaces and faults",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t56"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Vehicle-in-the-loop (VIL) is recommended only where its extra physical fidelity justifies the investment.",
+   "quote": "VIL only where its extra physical fidelity justifies the investment",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t125",
+    "t358"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The recommended testing hierarchy uses the real machine for actual stopping, terrain and environment.",
+   "quote": "the real machine for actual stopping, terrain and environment.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t158",
+    "t170",
+    "t174",
+    "t264"
+   ],
+   "importance": 3
+  }
+ ]
+}

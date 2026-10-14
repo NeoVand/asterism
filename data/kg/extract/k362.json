@@ -1,0 +1,229 @@
+{
+ "chunkId": "k362",
+ "hash": "737c57b4dcb41d04",
+ "facts": [
+  {
+   "text": "The mining-specific synthetic dataset SimMining-3D (2024) was built because sensor height and viewpoint changes on mine benches degrade 3D detection.",
+   "quote": "The mining-specific synthetic dataset SimMining-3D (2024) was built because sensor height and viewpoint changes on mine benches degrade 3D detection.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    50
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "SimMining-3D",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t114",
+    "t100",
+    "t86"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "New sensor mounting heights should be expected to require retraining or adaptation, not only threshold changes.",
+   "quote": "Expect retraining or adaptation for new mounting heights, not only threshold changes.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    50
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t229",
+    "t112",
+    "t188"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor coverage, including blind-spot maps, should be simulated for each machine model before building.",
+   "quote": "Simulate coverage (blind-spot maps) per model before building.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    22
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t15",
+    "t126",
+    "t230"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NIOSH (Ruff) found that a single rear radar missed people near the rear tyres of a haul truck.",
+   "quote": "NIOSH (Ruff) found that a single rear radar missed people near the rear tyres of a haul truck",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    22
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    },
+    {
+     "name": "Ruff",
+     "kind": "person"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t3",
+    "t14",
+    "t108",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NIOSH (Ruff) found that two radar antennas mounted about 1.8 m apart, with beams crossed at an inward angle of about 20 degrees, improved detection near the rear tyres of a haul truck.",
+   "quote": "two antennas mounted about 1.8 m apart with beams crossed at an inward angle of about 20 degrees improved detection near the tyres.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    22
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    },
+    {
+     "name": "Ruff",
+     "kind": "person"
+    }
+   ],
+   "terms": [
+    "t100",
+    "t94",
+    "t3",
+    "t86"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor placement is a primary source of model-to-model difference between machines.",
+   "quote": "Placement is a primary source of model-to-model difference.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    22
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t230",
+    "t229"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Product-line and variant management should maintain a common core plus a per-model calibration dataset under configuration control, using feature-model or variant tools that may be commercial, open-source or in-house.",
+   "quote": "Manage a common core plus a per-model calibration dataset under configuration control, with feature-model or variant tools (commercial, open-source or in-house).",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t230",
+    "t229",
+    "t162"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Every machine-model calibration value needs a trace to its measurement or derivation.",
+   "quote": "Every calibration value needs a trace to its measurement or derivation.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t64",
+    "t230",
+    "t229"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A published ISO rule stating that testing N representative machines statistically validates all models in an earth-moving-machine family was not found.",
+   "quote": "A published ISO rule saying that \"testing these N representative machines statistically validates all models in an earth-moving-machine family\" was not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t76",
+    "t230",
+    "t271",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A product-family argument must explicitly document why shared evidence is valid across machine models.",
+   "quote": "A product-family argument must therefore document explicitly why shared evidence is valid",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t76",
+    "t75",
+    "t67",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A product-family argument must preserve some confirmation evidence for every safety-relevant hardware or configuration variant.",
+   "quote": "preserve some confirmation evidence for every safety-relevant hardware or configuration variant.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t230",
+    "t76",
+    "t70"
+   ],
+   "importance": 3
+  }
+ ]
+}

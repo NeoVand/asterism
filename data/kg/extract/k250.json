@@ -1,0 +1,924 @@
+{
+ "chunkId": "k250",
+ "hash": "31a10b32a25e546a",
+ "facts": [
+  {
+   "text": "There is no universal GPUs-per-sensor requirement: sensor-simulation runtime varies with geometry, ray count, resolution, reflections, weather particle count, sensor interface and hardware.",
+   "quote": "There is no universal \"GPUs per sensor\" answer, because runtime varies with geometry, ray count, resolution, reflections, weather particle count, sensor interface and hardware",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t336",
+    "t323"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A neutral cross-vendor sensor-simulation benchmark holding geometry, ray count, resolution, reflections, weather particle count, sensor interface and hardware constant was not found.",
+   "quote": "a neutral cross-vendor benchmark that holds those variables constant was not found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t323"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Published sensor-simulation compute figures should be treated as examples, not planning constants.",
+   "quote": "Published figures are examples, not planning constants.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t339",
+    "t323"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ideal, object-level and statistical sensors have low computational complexity, using geometry queries plus random-error and detection models, and are suited to very large scenario sweeps.",
+   "quote": "Low; geometry queries plus random-error and detection models. Suited to very large scenario sweeps.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t323",
+    "t125",
+    "t233",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A comparable cross-tool benchmark for ideal, object-level and statistical sensors was not found; their compute advantage follows from much lower complexity rather than a published speed ratio.",
+   "quote": "Comparable cross-tool benchmark not found; the advantage follows from much lower complexity, not a published speed ratio.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t323",
+    "t339",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Raster or PBR camera simulation and basic ray-based lidar simulation are GPU-friendly and often run in real time or faster, depending on resolution and scene complexity.",
+   "quote": "GPU-friendly; often real time or faster, depending on resolution and scene complexity.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t92",
+    "t117",
+    "t153",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The FGGS-LiDAR 2025 preprint reports GPU lidar ray casting exceeding 10^8 points per second on light meshes.",
+   "quote": "GPU lidar ray casting exceeds 10^8 points/s on light meshes (FGGS-LiDAR, 2025 preprint) [27].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    27
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "FGGS-LiDAR",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t118",
+    "t336",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Vendor RTX platforms use GPU ray tracing with material interaction.",
+   "quote": "Vendor RTX platforms use GPU ray tracing with material interaction [48]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    48
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "RTX",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t118",
+    "t136",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No neutral benchmark for vendor RTX sensor-simulation platforms applicable to the collision-mitigation validation program was found.",
+   "quote": "Vendor RTX platforms use GPU ray tracing with material interaction [48], but no neutral benchmark applicable to this program was found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    48
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "RTX",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t323",
+    "t339",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "GPU acceleration allows high-fidelity radar ray tracing with multipath and material simulation to run in real time for some sensors and scenes.",
+   "quote": "GPU acceleration makes multipath and material simulation real time for some sensors and scenes.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t118",
+    "t153",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Ansys/NVIDIA GTC 2020 vendor figures report a CPU SBR solver taking 14 hours on a workstation for a 12-second scenario.",
+   "quote": "A CPU SBR solver took 14 hours on a workstation for a 12-second scenario;",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    40
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Ansys",
+     "kind": "company"
+    },
+    {
+     "name": "NVIDIA",
+     "kind": "company"
+    },
+    {
+     "name": "GTC 2020",
+     "kind": "other"
+    },
+    {
+     "name": "Shooting-and-bouncing rays (SBR)",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t118",
+    "t94",
+    "t339",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Ansys/NVIDIA GTC 2020 vendor figures report a GPU real-time radar SBR version taking about 12 ms per frame against a 30 fps target.",
+   "quote": "the GPU real-time version takes about 12 ms per frame against a 30 fps target (Ansys/NVIDIA GTC 2020) **Vendor** [40].",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    40
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Ansys",
+     "kind": "company"
+    },
+    {
+     "name": "NVIDIA",
+     "kind": "company"
+    },
+    {
+     "name": "GTC 2020",
+     "kind": "other"
+    },
+    {
+     "name": "Shooting-and-bouncing rays (SBR)",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t118",
+    "t339",
+    "t153"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Decker et al. (2021), a peer-reviewed publication with vendor authors, reports GPU SBR running above 160 fps for one single-channel radar and in real time for five radars or one 20-channel radar.",
+   "quote": "GPU SBR runs above 160 fps for one single-channel radar and in real time for five radars or one 20-channel radar;",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    39
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Decker et al. (2021)",
+     "kind": "publication"
+    },
+    {
+     "name": "Shooting-and-bouncing rays (SBR)",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t118",
+    "t339",
+    "t153"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Decker et al. (2021), a peer-reviewed publication with vendor authors, reports that general-purpose high-fidelity solvers can take minutes or hours per measurement cycle.",
+   "quote": "general-purpose high-fidelity solvers \"can take minutes or hours\" per measurement cycle (Decker et al., 2021, peer-reviewed, vendor authors) [39].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    39
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Decker et al. (2021)",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t339",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Ansys AVxcelerate claims radar frame rates greater than 30 frames per second, without stating the hardware.",
+   "quote": "Ansys AVxcelerate claims radar frame rates \"greater than 30 frames per second\" with no hardware stated **Vendor** [58].",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    58
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Ansys AVxcelerate",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t339",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "RadaRays measured 7.8–18.8 ms per polar image on an RTX 2070 Super as initial rays increased from 80,000 to 400,000; the measurements apply only to the tested radar, model and scene.",
+   "quote": "RadaRays measured 7.8 to 18.8 ms per polar image on an RTX 2070 Super as initial rays rose from 80,000 to 400,000",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "RadaRays",
+     "kind": "tool"
+    },
+    {
+     "name": "RTX 2070 Super",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t118",
+    "t339",
+    "t336",
+    "t261"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "RadaRays measured 25.8–78.5 ms per polar image on a Ryzen 7 3800X CPU over the 80,000–400,000 initial-ray range; the measurements apply only to the tested radar, model and scene.",
+   "quote": "against 25.8 to 78.5 ms on a Ryzen 7 3800X CPU",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "RadaRays",
+     "kind": "tool"
+    },
+    {
+     "name": "Ryzen 7 3800X",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t118",
+    "t339",
+    "t336",
+    "t261"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "At 160,000 initial rays, RadaRays measured 10.2 ms per polar image on an RTX 2070 Super and 39.3 ms on a Ryzen 7 3800X CPU; the results apply only to the tested radar, model and scene.",
+   "quote": "(10.2 ms and 39.3 ms at 160,000 rays); these hold for that radar, model and scene only **Independent** [31].",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "RadaRays",
+     "kind": "tool"
+    },
+    {
+     "name": "RTX 2070 Super",
+     "kind": "product"
+    },
+    {
+     "name": "Ryzen 7 3800X",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t118",
+    "t339",
+    "t336",
+    "t261"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Full-wave or high-detail electromagnetic and acoustic simulation is much more expensive than real-time geometric models and is suited to component and material characterization or reduced scenes.",
+   "quote": "Much more expensive than real-time geometric models; suited to component and material characterization or reduced scenes.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t323",
+    "t125",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2026 preprint reports physical-optics radar-signature computation taking about 616 ms per angular position on eight supercomputer nodes with four AMD MI250X GPUs each, for an aircraft rather than a vehicle.",
+   "quote": "Physical-optics radar signature: about 616 ms per angular position on 8 supercomputer nodes with 4 AMD MI250X GPUs each, for an aircraft, not a vehicle (2026 preprint) [41].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    41
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "AMD MI250X",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t338",
+    "t336",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A scene-scale off-road runtime benchmark for full-wave or high-detail electromagnetic and acoustic simulation was not found.",
+   "quote": "Scene-scale off-road runtime benchmark not found;",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t323",
+    "t339",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Full-wave electromagnetic simulation runtimes for automotive scenes were not found.",
+   "quote": "full-wave EM runtimes for automotive scenes not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t323",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Neural rendering and learned sensor surrogates have fast inference once trained, but training and dataset construction move computational cost earlier.",
+   "quote": "Inference is fast once trained; training and dataset construction move cost earlier.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t323",
+    "t339",
+    "t112"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "SplatAD at CVPR 2025 reports training in about one hour per scene on one A100.",
+   "quote": "SplatAD trains in about 1 hour per scene on one A100",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    24
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "SplatAD",
+     "kind": "tool"
+    },
+    {
+     "name": "A100",
+     "kind": "product"
+    },
+    {
+     "name": "CVPR 2025",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t339",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "SplatAD at CVPR 2025 claims rendering about an order of magnitude faster than NeRF methods.",
+   "quote": "claims about an order of magnitude faster rendering than NeRF methods",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    24
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "SplatAD",
+     "kind": "tool"
+    },
+    {
+     "name": "NeRF",
+     "kind": "method"
+    },
+    {
+     "name": "CVPR 2025",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The NeRF baselines cited for SplatAD at CVPR 2025 render 9.7–28.2 megapixels per second after 0.9–2.6 hours of training.",
+   "quote": "whose baselines render 9.7 to 28.2 megapixels/s after 0.9 to 2.6 hours of training (CVPR 2025) [24].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    24
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "NeRF",
+     "kind": "method"
+    },
+    {
+     "name": "CVPR 2025",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2025 point-cloud recombination result reports about 1.8 seconds per point cloud on an RTX 4090.",
+   "quote": "Point-cloud recombination: about 1.8 s per point cloud on an RTX 4090 (2025) [101].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    101
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "RTX 4090",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t93",
+    "t339",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The reported neural-rendering and learned-sensor-surrogate compute evidence is mostly preprints using on-road data and is insufficient for program-level hardware sizing.",
+   "quote": "Mostly preprints on on-road data; not sufficient for program-level hardware sizing.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t323",
+    "t336",
+    "t339",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Diffusion-based weather editing is slow per image.",
+   "quote": "Diffusion-based weather editing | Slow per image.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t102",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "WeatherDiffusion (2022/2023) takes 20.52 seconds per 640 by 432 image on one A40, compared with 0.88 seconds for a non-diffusion network; these weather-removal models are used as a cost proxy.",
+   "quote": "20.52 s per 640 by 432 image on one A40, against 0.88 s for a non-diffusion network (WeatherDiffusion, 2022/2023); these are weather-removal models used as a cost proxy [100].",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    100
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "WeatherDiffusion",
+     "kind": "tool"
+    },
+    {
+     "name": "A40",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t115",
+    "t102",
+    "t339",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The cited 2025 survey lists high compute cost as a limitation of diffusion-based weather editing.",
+   "quote": "The 2025 survey lists high compute cost as a limitation [99].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    99
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Thermal scene and heat-transfer simulation combines slow thermal-state calculation with radiometric rendering; rendering may be fast while establishing correct temperatures is expensive.",
+   "quote": "Slow thermal-state calculation plus radiometric rendering; rendering may be fast while establishing correct temperatures is expensive.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t323",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A cross-tool runtime benchmark for thermal scene and heat-transfer simulation was not found.",
+   "quote": "Cross-tool runtime benchmark not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t323",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Real-sensor OTA and HIL closed-loop stimulus must meet real sensor and ECU timing; scene computation may be precomputed or run in real time.",
+   "quote": "Closed-loop stimulus must meet real sensor and ECU timing; scene computation may be precomputed or real time.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t148",
+    "t119",
+    "t153",
+    "t154"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Vendors offer real-time closed-loop radar HIL.",
+   "quote": "Vendors offer real-time closed-loop radar HIL [46, 47]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    46,
+    47
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t148",
+    "t153",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Neutral latency and scene-complexity benchmarks for real-sensor OTA and HIL were not found.",
+   "quote": "neutral latency and scene-complexity benchmarks not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t148",
+    "t88",
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Frame rates were not found for IPG CarMaker, NVIDIA DRIVE Sim/Omniverse, dSPACE AURELION, CARLA or MAVS.",
+   "quote": "Not found: frame rates for IPG CarMaker, NVIDIA DRIVE Sim/Omniverse, dSPACE AURELION, CARLA and MAVS;",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "IPG CarMaker",
+     "kind": "tool"
+    },
+    {
+     "name": "NVIDIA DRIVE Sim",
+     "kind": "tool"
+    },
+    {
+     "name": "NVIDIA Omniverse",
+     "kind": "tool"
+    },
+    {
+     "name": "dSPACE AURELION",
+     "kind": "tool"
+    },
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    },
+    {
+     "name": "MAVS",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t321",
+    "t323",
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Prices of any simulation tool were not found.",
+   "quote": "prices of any tool.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t334",
+    "t320",
+    "t358"
+   ],
+   "importance": 3
+  }
+ ]
+}

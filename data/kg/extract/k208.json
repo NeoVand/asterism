@@ -1,0 +1,480 @@
+{
+ "chunkId": "k208",
+ "hash": "b5f2035a4eea9a3c",
+ "facts": [
+  {
+   "text": "Whether radar and ultrasonic simulation in cluttered, dusty, metallic job sites is sufficiently accurate to provide validation evidence remains uncertain.",
+   "quote": "Whether radar and ultrasonic simulation in cluttered, dusty, metallic job sites is good enough for validation evidence.",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    12
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t95",
+    "t104",
+    "t102",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sim2Radar (2026) reported that ray-traced radar reached about 12% of real point density in indoor scenes.",
+   "quote": "Ray-traced radar reached about 12% of real point density in indoor scenes (Sim2Radar, 2026)",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    12
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Sim2Radar",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t118",
+    "t93",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Evidence of ultrasonic simulation material fidelity for off-road sites was not found.",
+   "quote": "ultrasonic material fidelity for off-road sites was not found.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    12
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t95",
+    "t136",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Evidence of braking-distance fidelity on loose and wet surfaces for heavy machines was not found.",
+   "quote": "Braking-distance fidelity on loose and wet surfaces for heavy machines: not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t174",
+    "t1",
+    "t183"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Whether generative weather augmentation preserves the physics a sensor would see remains uncertain.",
+   "quote": "Whether generative weather augmentation preserves the physics a sensor would see",
+   "kind": "uncertain",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t114",
+    "t102",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A re-weathered camera image need not match what lidar or radar would measure.",
+   "quote": "a \"re-weathered\" camera image need not match what lidar or radar would measure.",
+   "kind": "uncertain",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t89",
+    "t92",
+    "t94",
+    "t99"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The magnitude of sensor-placement change that neural reconstruction can support remains uncertain; the cited evidence is on-road.",
+   "quote": "How large a sensor-placement change neural reconstruction can support.",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    17,
+    75
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t100",
+    "t265",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Neural reconstruction is improving quickly, and recent papers target extrapolation because extrapolation is a known weakness; the evidence is on-road.",
+   "quote": "The field is improving quickly and recent papers target extrapolation precisely because it is a known weakness, but the evidence is on-road.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    17,
+    75
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t261"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Whether generative world models can ever serve as safety ground truth remains uncertain; the cited vendor evidence is on-road.",
+   "quote": "Whether generative world models can ever serve as safety ground truth.",
+   "kind": "uncertain",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    30
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t105",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No off-road qualification was found showing that generated scenes preserve metric geometry, radar response, acoustics, surface mechanics and braking dynamics simultaneously.",
+   "quote": "No off-road qualification shows that generated scenes preserve metric geometry, radar response, acoustics, surface mechanics and braking dynamics at once: **not found**.",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    30
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t105",
+    "t234",
+    "t179",
+    "t174"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "How much virtual testing can replace physical testing for the earth-moving collision-avoidance function remains uncertain; the cited evidence is on-road.",
+   "quote": "How much virtual testing can replace physical testing for this function, and whether the road-vehicle ISO 3450x methods would be accepted for an earth-moving collision-avoidance function.",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    25,
+    26
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t264",
+    "t127",
+    "t23",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Whether road-vehicle ISO 3450x methods would be accepted for an earth-moving collision-avoidance function remains uncertain.",
+   "quote": "whether the road-vehicle ISO 3450x methods would be accepted for an earth-moving collision-avoidance function.",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    25,
+    26
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "ISO 3450x",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t290",
+    "t23",
+    "t1",
+    "t279"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No rule assigns a proportion of validation evidence to simulation for the earth-moving collision-avoidance function.",
+   "quote": "No rule assigns a proportion of validation evidence to simulation.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    25,
+    26
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t216",
+    "t264",
+    "t70",
+    "t23"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The required simulation fidelity depends on the assertion a test makes.",
+   "quote": "The required fidelity depends on the assertion a test makes",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t238",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An ideal geometric sensor may suffice to check a state-machine transition but be useless for assessing detection probability in rain.",
+   "quote": "an ideal geometric sensor may suffice to check a state-machine transition and be useless for detection probability in rain",
+   "kind": "example",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t86",
+    "t102",
+    "t185",
+    "t238"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A single simulator fidelity score is misleading because required fidelity depends on the assertion a test makes.",
+   "quote": "The required fidelity depends on the assertion a test makes: an ideal geometric sensor may suffice to check a state-machine transition and be useless for detection probability in rain, so a single \"simulator fidelity\" score is misleading.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t234",
+    "t238"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The number of exact sites needed to claim broad job-site coverage was not found in any relevant standard.",
+   "quote": "The number of exact sites needed to claim broad job-site coverage: **not found** in any relevant standard.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t44",
+    "t11",
+    "t271"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The current edition of EMESRT PR-5A remains uncertain.",
+   "quote": "The current edition of EMESRT PR-5A.",
+   "kind": "uncertain",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    82
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    },
+    {
+     "name": "EMESRT PR-5A",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t304",
+    "t271"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The dated EMESRT PR-5A document found is version 2, dated 2 September 2019.",
+   "quote": "The dated document found is version 2 of 2 September 2019",
+   "kind": "number",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    82
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "EMESRT PR-5A",
+     "kind": "standard"
+    },
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t304",
+    "t271"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "EMESRT's 2024 Activity Report states that PR-5A was reviewed and updated in September 2024.",
+   "quote": "EMESRT's 2024 Activity Report states that PR-5A was \"reviewed and updated\" in September 2024",
+   "kind": "event",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    82
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    },
+    {
+     "name": "EMESRT PR-5A",
+     "kind": "standard"
+    },
+    {
+     "name": "EMESRT 2024 Activity Report",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t304"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "EMESRT's 2024 Activity Report gives no revision number for the PR-5A update reported in September 2024.",
+   "quote": "EMESRT's 2024 Activity Report states that PR-5A was \"reviewed and updated\" in September 2024 but gives no revision number.",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    82
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    },
+    {
+     "name": "EMESRT PR-5A",
+     "kind": "standard"
+    },
+    {
+     "name": "EMESRT 2024 Activity Report",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t304",
+    "t271"
+   ],
+   "importance": 3
+  }
+ ]
+}

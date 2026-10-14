@@ -1,0 +1,211 @@
+{
+ "chunkId": "k373",
+ "hash": "e2ef5133efe8c945",
+ "facts": [
+  {
+   "text": "Build a change-impact graph to select regression scenarios after changes.",
+   "quote": "Build a change-impact graph.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t162"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A change to sensor extrinsics should select scenarios covering that sensor's field boundaries and occlusions.",
+   "quote": "A change to sensor extrinsics selects scenarios covering that sensor's field boundaries and occlusions",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t87",
+    "t103",
+    "t161"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A brake-model change should select stopping-margin scenarios for regression testing.",
+   "quote": "a brake-model change selects stopping-margin scenarios",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t182",
+    "t194",
+    "t161"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A perception-model change should select perception regressions and all downstream braking scenarios that depend on detections.",
+   "quote": "a perception-model change selects perception regressions and all downstream braking scenarios that depend on detections",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t85",
+    "t86",
+    "t161"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A radar-filter change should trigger regression testing of all radar-dominant strata.",
+   "quote": "a radar-filter change triggers all radar-dominant strata.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t188",
+    "t161"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Run a fast smoke subset of software-in-the-loop runs on every commit.",
+   "quote": "Run a fast \"smoke\" subset of software-in-the-loop runs on every commit",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t161"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Run a small mandatory safety regression set on every eligible build.",
+   "quote": "a small mandatory safety regression set on every eligible build",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t161"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Run larger virtual test campaigns overnight or at release gates.",
+   "quote": "larger virtual campaigns overnight or at release gates",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t233",
+    "t127",
+    "t349",
+    "t161"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Select hardware-in-the-loop (HIL) and physical confirmation tests according to risk.",
+   "quote": "HIL and physical confirmation selected by risk.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t46",
+    "t216",
+    "t161"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Run the full frozen estimation set only at release candidates.",
+   "quote": "Run the full frozen estimation set only at release candidates",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t161",
+    "t218"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Never continuously rerun the full frozen estimation set and optimise to its failures.",
+   "quote": "never continuously rerun it and optimise to its failures.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t219",
+    "t220",
+    "t217"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Regression datasets and audit datasets have different governance roles.",
+   "quote": "Regression and audit datasets have different governance roles.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t231",
+    "t220"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Keep all previously found failures as permanent regression tests.",
+   "quote": "Keep all past found failures as permanent regression tests.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t161"
+   ],
+   "importance": 3
+  }
+ ]
+}

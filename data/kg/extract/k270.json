@@ -1,0 +1,696 @@
+{
+ "chunkId": "k270",
+ "hash": "20ae1d1535a0d79b",
+ "facts": [
+  {
+   "text": "Over-the-air sensor stimulation uses a real camera, radar, lidar, ultrasonic or GNSS sensor and its real downstream system, presenting a controllable optical, RF or acoustic stimulus generated from a virtual scene to the physical aperture.",
+   "quote": "the actual camera, radar, lidar, ultrasonic or GNSS sensor plus the downstream system is real, and a controllable optical, RF or acoustic stimulus generated from the virtual scene is presented to the physical aperture.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Over-the-air sensor stimulation needs an anechoic or shielded setup or calibrated bench geometry, a target generator, path-loss calibration and real-time synchronisation with the scene.",
+   "quote": "an anechoic or shielded setup or calibrated bench geometry, a target generator, calibration of the path loss, and real-time synchronisation with the scene.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t100",
+    "t101",
+    "t153"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Over-the-air sensor stimulation is usually closed-loop.",
+   "quote": "Usually closed-loop.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Over-the-air sensor stimulation tests whether the complete real sensor, including its front end and firmware, responds correctly to controlled targets.",
+   "quote": "that the complete real sensor, including front end and firmware, responds correctly to controlled targets.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Over-the-air sensor stimulation is useful for HIL regression and fault injection.",
+   "quote": "Useful for HIL regression and fault injection",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t148",
+    "t161",
+    "t56"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Over-the-air sensor stimulation includes more of the real sensing chain than injection.",
+   "quote": "it includes more of the real sensing chain than injection.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t149"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Digital radar target simulators have a minimum simulated range determined by processing latency; every 6.67 ns of latency adds 1 m of apparent range.",
+   "quote": "Digital target simulators have a minimum simulated range set by processing latency: each 6.67 ns of latency adds 1 m of apparent range.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    22
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t94",
+    "t88"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Diewald, Kurz, Kannan et al. of KIT, IPG Automotive and PKTEC reported a typical minimum simulated range of about 20 to 30 m for digital radar simulators in Vehicles on 19 May 2021.",
+   "quote": "Diewald, Kurz, Kannan et al. (KIT, IPG Automotive and PKTEC; Vehicles, 19 May 2021) give a typical minimum of about 20 to 30 m for digital systems",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    23
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "Diewald",
+     "kind": "person"
+    },
+    {
+     "name": "Kurz",
+     "kind": "person"
+    },
+    {
+     "name": "Kannan",
+     "kind": "person"
+    },
+    {
+     "name": "KIT",
+     "kind": "organization"
+    },
+    {
+     "name": "IPG Automotive",
+     "kind": "company"
+    },
+    {
+     "name": "PKTEC",
+     "kind": "company"
+    },
+    {
+     "name": "Vehicles",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t150",
+    "t94"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Diewald, Kurz, Kannan et al. reported that digital radar simulators typically support a single-digit number of targets.",
+   "quote": "a \"single digit number of targets\"",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    23
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "Diewald",
+     "kind": "person"
+    },
+    {
+     "name": "Kurz",
+     "kind": "person"
+    },
+    {
+     "name": "Kannan",
+     "kind": "person"
+    }
+   ],
+   "terms": [
+    "t150",
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Diewald, Kurz, Kannan et al. reported digital radar simulator costs of hundreds of thousands of dollars.",
+   "quote": "at a cost of \"hundreds of thousands of dollars\"",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    23
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "Diewald",
+     "kind": "person"
+    },
+    {
+     "name": "Kurz",
+     "kind": "person"
+    },
+    {
+     "name": "Kannan",
+     "kind": "person"
+    }
+   ],
+   "terms": [
+    "t150",
+    "t94",
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Diewald, Kurz, Kannan et al. noted that analog radar simulators allow a very low minimum simulatable target range.",
+   "quote": "they note that analog simulators allow \"a very low minimum simulatable target range\".",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    23
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "Diewald",
+     "kind": "person"
+    },
+    {
+     "name": "Kurz",
+     "kind": "person"
+    },
+    {
+     "name": "Kannan",
+     "kind": "person"
+    }
+   ],
+   "terms": [
+    "t150",
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In its DARTS blog dated 11 September 2019, dSPACE claims a radar simulation range of 0.6 to 3,600 meters with 6 cm range resolution.",
+   "quote": "dSPACE's DARTS blog (11 September 2019) claims \"0.6 meters to 3,600 meters\" with 6 cm range resolution",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    24,
+    42
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "dSPACE",
+     "kind": "company"
+    },
+    {
+     "name": "DARTS",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t150",
+    "t94",
+    "t87"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "dSPACE's DARTS blog dated 11 September 2019 claims up to five real objects in its radar test bench.",
+   "quote": "\"up to five real objects\" in its test bench",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    24,
+    42
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "dSPACE",
+     "kind": "company"
+    },
+    {
+     "name": "DARTS",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t150",
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Keysight's E8719A data sheet lists support for 1 or 3 radar targets.",
+   "quote": "Keysight's E8719A data sheet lists 1 or 3 targets.",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    24,
+    42
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "Keysight",
+     "kind": "company"
+    },
+    {
+     "name": "E8719A",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t150",
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Rohde & Schwarz advertise closed-loop radar HIL and VIL operation with controllable range, angle and Doppler and multi-object generation.",
+   "quote": "Rohde & Schwarz advertise closed-loop HIL and VIL operation with controllable range, angle and Doppler and multi-object generation.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    43
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "Rohde & Schwarz",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t150",
+    "t94",
+    "t148",
+    "t151",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Radar angle simulation is often discrete, and small angular errors matter.",
+   "quote": "Angle simulation is often discrete, and small angular errors matter.",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    44,
+    45
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t94",
+    "t259"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Radar simulator vendor statements establish commercial capability claims, not independently verified fidelity among rock faces, metal structures, haul roads, dust, multipath-heavy tunnels or large-machine geometries.",
+   "quote": "These vendor statements establish commercial capability claims, not independently verified fidelity among rock faces, metal structures, haul roads, dust, multipath-heavy tunnels or large-machine geometries.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t94",
+    "t234",
+    "t165",
+    "t104"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In camera over-the-air stimulation, the display frame rate and phase of a monitor or projector are not synchronised with the camera.",
+   "quote": "The display frame rate and phase of a monitor or projector are not synchronised with the camera",
+   "kind": "risk",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    25,
+    12
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t89",
+    "t101"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Wide-field-of-view or 4K cameras are hard to cover with over-the-air stimulation displays.",
+   "quote": "wide field-of-view or 4K cameras are hard to cover.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    25,
+    12
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t89",
+    "t87"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The 2024 peer-reviewed vehicle-in-the-loop survey identifies physical lidar signal generation, particularly for solid-state lidar, as a remaining gap.",
+   "quote": "The 2024 peer-reviewed vehicle-in-the-loop survey identifies physical lidar signal generation, particularly for solid-state lidar, as a remaining gap",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    20
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t92",
+    "t151"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The 2024 peer-reviewed vehicle-in-the-loop survey describes implementing physical lidar signal generation as difficult and costly.",
+   "quote": "describes implementation as difficult and costly.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    20
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t92",
+    "t151"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Specific lidar target-simulator limits were not found.",
+   "quote": "Specific lidar target-simulator limits: not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t92"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Commercial over-the-air acoustic stimulation exists for automotive parking functions.",
+   "quote": "Commercial over-the-air acoustic stimulation exists for automotive parking functions.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    46
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t95"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Independent evidence of ultrasonic HIL or VIL covering heavy off-road machinery was not found.",
+   "quote": "Independent evidence of ultrasonic HIL or VIL covering heavy off-road machinery: not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t95",
+    "t148",
+    "t151",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For GNSS/INS, UWB or RF tags, RFID-like proximity systems, and magnetic or infrastructure-aided systems, sensor testing stimulates the physical radio or interface; testing only fusion and decision software instead injects position, range or tag measurements downstream.",
+   "quote": "stimulate the physical radio or interface when testing the sensor, or inject position, range or tag measurements downstream when testing only fusion and decision software.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t149",
+    "t98",
+    "t97",
+    "t99"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NIOSH documents a history of evaluating radar and tag-based proximity systems on construction and mining equipment.",
+   "quote": "NIOSH documents a history of evaluating radar and tag-based proximity systems on construction and mining equipment",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    47
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t97",
+    "t24",
+    "t1"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No current public heavy off-road standard prescribing a laboratory-injection architecture for GNSS/INS, UWB or RF tags, RFID-like proximity systems, or magnetic or infrastructure-aided systems was found.",
+   "quote": "no current public heavy off-road standard prescribing a laboratory-injection architecture for these modalities was found.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    47
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t149",
+    "t98",
+    "t97",
+    "t271",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An over-the-air sensor stimulator becomes part of test uncertainty because the stimulator has its own limited field of view, dynamic range, target count, spectrum, angular accuracy and environmental fidelity.",
+   "quote": "the stimulator itself becomes part of the test uncertainty, with its own limited field of view, dynamic range, target count, spectrum, angular accuracy and environmental fidelity.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t259",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "None of the discussed over-the-air stimulation devices reproduces terrain clutter, berms, dust plumes or multipath from steel structures at realistic fidelity.",
+   "quote": "None of these devices reproduces terrain clutter, berms, dust plumes or multipath from steel structures at realistic fidelity.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t165",
+    "t104",
+    "t102",
+    "t12"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Close-range off-road hazards, such as workers 0.5 to 5 m behind a machine, occur exactly where digital radar simulators are weakest.",
+   "quote": "close-range hazards, such as workers at 0.5 to 5 m behind a machine, are exactly where digital radar simulators are weakest.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t94",
+    "t14",
+    "t16",
+    "t1"
+   ],
+   "importance": 3
+  }
+ ]
+}

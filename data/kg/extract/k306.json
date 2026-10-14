@@ -1,0 +1,797 @@
+{
+ "chunkId": "k306",
+ "hash": "d3f12a414d780ec5",
+ "facts": [
+  {
+   "text": "Stopping distance at off-road speeds is dominated by latency multiplied by speed plus v²/(2a), with an additional grade term.",
+   "quote": "Stopping distance at off-road speeds is dominated by latency × speed plus v²/(2a) with a grade term.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t171",
+    "t173",
+    "t169"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A calibrated point-mass model with time-varying brake build-up represented by a first-order lag or ramp captures most stopping-distance variance, provided its deceleration input is a worst-case distribution across payload, grade and friction.",
+   "quote": "A calibrated point-mass model with a time-varying brake build-up (first-order lag or ramp) captures most of the variance, provided the deceleration input is a worst-case distribution across payload, grade and friction.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t171",
+    "t168",
+    "t173",
+    "t174"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 3450, MSHA Table M-1 and the New South Wales guidance express stopping performance as kinematic formulas.",
+   "quote": "ISO 3450, MSHA Table M-1 and the New South Wales guidance all write stopping performance as kinematic formulas",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    29,
+    2,
+    1
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 3450",
+     "kind": "standard"
+    },
+    {
+     "name": "MSHA Table M-1",
+     "kind": "other"
+    },
+    {
+     "name": "New South Wales",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t282",
+    "t170",
+    "t300",
+    "t301"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 3450 uses mean deceleration derived from v²/(2s) as its stopping-performance summary metric.",
+   "quote": "ISO 3450's own use of mean deceleration derived from v²/(2s) as its summary metric.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    29,
+    2,
+    1
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 3450",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t282",
+    "t169",
+    "t170",
+    "t224"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A universal off-road prediction error for kinematic stopping-distance equations was not found.",
+   "quote": "A universal off-road prediction error for such equations: not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t249",
+    "t183"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An important engineering distinction is between a model used to decide when to brake and a model used to prove that the braking decision is safe.",
+   "quote": "The important engineering distinction is between a model used to decide when to brake and a model used to prove the decision is safe.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t183",
+    "t238"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The runtime model used to decide when to brake should be small, identifiable and conservative.",
+   "quote": "The runtime model should be small, identifiable and conservative.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t183"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A richer offline model should challenge the runtime braking model where lateral stability, articulation, individual axle or track loading, or deformable terrain matters.",
+   "quote": "A richer offline model should challenge it where lateral stability, articulation, individual axle or track loading or deformable terrain matters.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t178",
+    "t176",
+    "t175",
+    "t181"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Higher model fidelity pays off in brake-actuation hydraulics because these hydraulics set braking latency and its spread.",
+   "quote": "the brake-actuation hydraulics, which set latency and its spread;",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t182",
+    "t171"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Articulated and high-center-of-gravity stability during hard braking on side slopes needs a multibody model.",
+   "quote": "articulated and high-center-of-gravity stability during hard braking on side slopes, which needs a multibody model;",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t179",
+    "t178",
+    "t176",
+    "t173",
+    "t183"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Higher model fidelity pays off for hydrostatic drive because its braking capacity varies with operating state.",
+   "quote": "the hydrostatic drive, whose braking capacity varies with operating state;",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t177",
+    "t182",
+    "t183"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Modeling soft or deformable ground needs terramechanics.",
+   "quote": "soft or deformable ground, which needs terramechanics.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t174",
+    "t183"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NIOSH implemented point-mass transient models with measured delay and deceleration maps for underground haulage.",
+   "quote": "**Point-mass transient models with measured delay and deceleration maps.** NIOSH implemented this class for underground haulage",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t183",
+    "t171",
+    "t182"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NIOSH's point-mass transient modeling for underground haulage found strong sensitivity to brake force, grade, initial speed, lag and rolling resistance.",
+   "quote": "NIOSH implemented this class for underground haulage and found strong sensitivity to brake force, grade, initial speed, lag and rolling resistance",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t260",
+    "t182",
+    "t173",
+    "t169",
+    "t171"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NIOSH's 2018 paper on point-mass transient models for underground haulage said validation was still needed, so no error figure exists.",
+   "quote": "its 2018 paper said validation was still needed, so no error figure exists.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t183",
+    "t237",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2026 lumped hydraulic brake digital model for a tracked vehicle matched brake pressure to more than 96% at 40% to 100% braking, with each condition repeated three times.",
+   "quote": "A 2026 digital model of a tracked vehicle's hydraulic braking system matched brake pressure to more than 96% and response time to more than 95% at 40% to 100% braking, each condition repeated three times.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    6
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t182",
+    "t250",
+    "t175",
+    "t183"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2026 lumped hydraulic brake digital model for a tracked vehicle matched response time to more than 95% at 40% to 100% braking, with each condition repeated three times.",
+   "quote": "A 2026 digital model of a tracked vehicle's hydraulic braking system matched brake pressure to more than 96% and response time to more than 95% at 40% to 100% braking, each condition repeated three times.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    6
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t182",
+    "t171",
+    "t250",
+    "t183"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The validation sample for the 2026 tracked-vehicle hydraulic braking digital model was small and came from one machine.",
+   "quote": "The sample is small and from one machine;",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    6
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t209",
+    "t182"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Temperature and wear effects were not shown for the 2026 tracked-vehicle hydraulic braking digital model.",
+   "quote": "temperature and wear effects were not shown.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    6
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t182",
+    "t262"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Rigid full-vehicle articulated-loader models with 3 to 8 degrees of freedom were reported to \"reasonably agree\" with scaled-model tests in 2013 and 2016.",
+   "quote": "**Rigid full-vehicle models (3 to 8 degrees of freedom).** The articulated-loader models \"reasonably agree\" with scaled-model tests (2013, 2016).",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    47,
+    30
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t179",
+    "t176",
+    "t250",
+    "t183"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2021 Birmingham PhD on integrated control of articulated heavy vehicles omitted the brake system from its model and implemented brake torque simply as negative torque.",
+   "quote": "One Birmingham PhD (2021) on integrated control of articulated heavy vehicles left the brake system out of the model, implementing brake torque simply as a negative torque.",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    56
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Birmingham",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t182",
+    "t179",
+    "t176",
+    "t262"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Published cross-platform off-road emergency-brake error for rigid full-vehicle models with 3 to 8 degrees of freedom was not found.",
+   "quote": "Published cross-platform off-road emergency-brake error for this class: not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t179",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A wheel-loader digging model in AGX Dynamics, published in Multibody System Dynamics in 2024 and co-funded by Komatsu and Algoryx, needed a tire-ground friction coefficient of 2.0 to close the gap to measurement.",
+   "quote": "A wheel-loader digging model in AGX Dynamics (Multibody System Dynamics, 2024; co-funded by Komatsu and Algoryx) had to use a tire-ground friction coefficient of 2.0 to close the gap to measurement",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    12
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "AGX Dynamics",
+     "kind": "tool"
+    },
+    {
+     "name": "Multibody System Dynamics",
+     "kind": "publication"
+    },
+    {
+     "name": "Komatsu",
+     "kind": "company"
+    },
+    {
+     "name": "Algoryx",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t180",
+    "t237",
+    "t249",
+    "t2",
+    "t179"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Remaining errors in the 2024 AGX Dynamics wheel-loader digging model were attributed to tire-pressure modeling and the flat-ground assumption.",
+   "quote": "with remaining errors attributed to tire-pressure modeling and the flat-ground assumption.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    12
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "AGX Dynamics",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t180",
+    "t262",
+    "t249",
+    "t2"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The 2024 AGX Dynamics wheel-loader digging example demonstrates the parameter fitting needed to make simulation match reality.",
+   "quote": "This shows the parameter fitting needed to make simulation match reality.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    12
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "AGX Dynamics",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t237",
+    "t249",
+    "t2"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Commercial tools support full multibody models with contact and detailed hydraulic or hydrostatic plant.",
+   "quote": "Commercial tools support these components",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t324",
+    "t179",
+    "t182",
+    "t177"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A validated generic earthmover stopping-error benchmark across vendors was not found for full multibody models with contact and detailed hydraulic or hydrostatic plant.",
+   "quote": "a validated generic earthmover stopping-error benchmark across vendors: not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t249",
+    "t170",
+    "t179"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Greater model complexity can introduce more disagreement rather than greater accuracy.",
+   "quote": "More complexity can introduce more disagreement, not more accuracy.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t125",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Bekker-Wong and Soil Contact Model are examples of semi-empirical terramechanics models.",
+   "quote": "**Semi-empirical terramechanics (Bekker-Wong, Soil Contact Model).**",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Bekker-Wong",
+     "kind": "method"
+    },
+    {
+     "name": "Soil Contact Model",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The authors of Project Chrono's open-source Soil Contact Model claim in a peer-reviewed paper that the model is as fast as empirical models while providing fidelity \"comparable\" to discrete element methods.",
+   "quote": "Project Chrono's Soil Contact Model is described by its authors as fast as empirical models while giving fidelity \"comparable\" to discrete element methods (open-source; authors' claim in a peer-reviewed paper).",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    57,
+    44
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Project Chrono",
+     "kind": "tool"
+    },
+    {
+     "name": "Soil Contact Model",
+     "kind": "method"
+    },
+    {
+     "name": "discrete element methods",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t183",
+    "t339",
+    "t322"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Single-wheel terramechanics studies report force errors under 10% in some conditions.",
+   "quote": "Single-wheel studies report force errors under 10% in some conditions",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    42
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t180",
+    "t249"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Single-wheel terramechanics studies reported in 2023 that tuning parameters vary with slip angle.",
+   "quote": "but tuning parameters vary with slip angle (2023).",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    42
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t180",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Universal brake-distance accuracy across wet and loose job-site soils was not found for semi-empirical terramechanics models.",
+   "quote": "Universal brake-distance accuracy across wet and loose job-site soils: not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t170",
+    "t249",
+    "t174"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Discrete element, SPH or finite-element terrain models coupled to a multibody machine are available in research and commercial ecosystems.",
+   "quote": "**Discrete element, SPH or finite-element terrain with a multibody machine.** Available in research and commercial ecosystems",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "discrete element",
+     "kind": "method"
+    },
+    {
+     "name": "SPH",
+     "kind": "method"
+    },
+    {
+     "name": "finite-element",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t179",
+    "t325"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Evidence that discrete element, SPH or finite-element terrain with a multibody machine is required for automatic-braking threshold prediction across production machines was not found.",
+   "quote": "evidence that this level is required for automatic-braking threshold prediction across production machines: not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "discrete element",
+     "kind": "method"
+    },
+    {
+     "name": "SPH",
+     "kind": "method"
+    },
+    {
+     "name": "finite-element",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t183",
+    "t181",
+    "t188",
+    "t185"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Discrete element, SPH or finite-element terrain modeling with a multibody machine is far too costly for exhaustive scenario sweeps.",
+   "quote": "It is far too costly for exhaustive scenario sweeps",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "discrete element",
+     "kind": "method"
+    },
+    {
+     "name": "SPH",
+     "kind": "method"
+    },
+    {
+     "name": "finite-element",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t339",
+    "t198",
+    "t183"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Uncertain soil inputs can overwhelm the fidelity of discrete element, SPH or finite-element terrain models coupled to a multibody machine.",
+   "quote": "uncertain soil inputs can overwhelm the fidelity.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "discrete element",
+     "kind": "method"
+    },
+    {
+     "name": "SPH",
+     "kind": "method"
+    },
+    {
+     "name": "finite-element",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t259",
+    "t183"
+   ],
+   "importance": 3
+  }
+ ]
+}

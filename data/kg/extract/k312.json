@@ -1,0 +1,461 @@
+{
+ "chunkId": "k312",
+ "hash": "76584131acdbb232",
+ "facts": [
+  {
+   "text": "A practical implementation of the ISO structure calculates margin as M = R − (D_perception + D_decision + D_action + D_stop,pred + D_safe), where R is the predicted path distance to the collision point.",
+   "quote": "A practical implementation of the ISO structure is a margin M = R − (D_perception + D_decision + D_action + D_stop,pred + D_safe), where R is the predicted path distance to the collision point.",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t194",
+    "t172",
+    "t170"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the ISO-structure margin calculation, positive M means margin remains; a progressively negative or rapidly falling margin raises the collision-risk level.",
+   "quote": "Positive M means margin remains; a progressively negative or rapidly falling margin raises the collision-risk level.",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t46"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Predicted stopping distance D_stop,pred should be an uncertainty-bounded prediction rather than v²/(2µg).",
+   "quote": "D_stop,pred should be an uncertainty-bounded prediction, not v²/(2µg)",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t259",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Inputs to the uncertainty-bounded stopping-distance prediction should include grade, current speed, estimated load state, surface or traction state, brake and drive state, brake temperature or degraded state where available, direction, and steering or articulation state where it limits usable deceleration.",
+   "quote": "inputs including grade, current speed, estimated load state, surface or traction state, brake and drive state, brake temperature or degraded state where available, direction, and steering or articulation state where it limits usable deceleration.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t173",
+    "t174",
+    "t168",
+    "t176"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Time to collision is relative distance divided by closing speed.",
+   "quote": "Time to collision (relative distance divided by closing speed)",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t186"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Time to collision works for simple constant-velocity road scenarios, and many research systems use time to collision.",
+   "quote": "Time to collision (relative distance divided by closing speed) works for simple constant-velocity road scenarios and many research systems use it.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t186"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Near zero relative speed, time to collision becomes very large or numerically unstable even when a heavy off-road machine is centimeters from a person or structure.",
+   "quote": "Near zero relative speed it becomes very large or numerically unstable even when the machine is centimeters from a person or structure",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t186",
+    "t14",
+    "t18"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Time to collision jumps to infinity and back during heavy off-road machine maneuvering, stop-start loading, and reversing.",
+   "quote": "it jumps to infinity and back during maneuvering, stop-start loading and reversing.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t186",
+    "t16"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Two heavy off-road machines at the same time to collision can need radically different stopping distances because of grade or surface.",
+   "quote": "Two machines at the same time to collision can need radically different distances because of grade or surface.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t186",
+    "t170",
+    "t173",
+    "t174"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Detection and actuator delays are time terms, whereas physical braking distance has a strong v² component.",
+   "quote": "Detection and actuator delays are time terms while physical braking distance has a strong v² component.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t172",
+    "t170",
+    "t169"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Heavy off-road machine articulation, swing, and counter-rotation of tracks can create a collision without longitudinal closing speed, because machine motion is not straight-line.",
+   "quote": "Machine motion is not straight-line: articulation, swing, and counter-rotation of tracks can create a collision without longitudinal closing speed.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t186",
+    "t176",
+    "t175",
+    "t18"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A stationary heavy off-road machine presents a start-up collision hazard for which time to collision is undefined.",
+   "quote": "A stationary machine presents a start-up collision hazard for which time to collision is undefined.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t186",
+    "t18",
+    "t46"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Pedestrians are often legitimately close to heavy off-road machines.",
+   "quote": "Pedestrians are often legitimately close to the machine.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t14",
+    "t39"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO's choice of distance and risk areas, and inclusion of motion inhibit, align with the physical and mathematical limitations of time to collision for heavy off-road machines.",
+   "quote": "These are physical and mathematical consequences; ISO's choice of distance and risk areas, and its inclusion of motion inhibit, aligns with them.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "ISO",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t186",
+    "t187",
+    "t185",
+    "t280"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Distance-and-zone logic based on predicted swept volume and stopping envelope is more robust for heavy off-road machines than time to collision alone.",
+   "quote": "Distance-and-zone logic based on predicted swept volume and stopping envelope is therefore more robust than time to collision alone",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t187",
+    "t186",
+    "t170"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Time to collision should be retained for faster haul traffic and as a diagnostic input in heavy off-road collision decision logic.",
+   "quote": "with time to collision retained for faster haul traffic and as a diagnostic input.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t186",
+    "t185",
+    "t3"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No head-to-head off-road study comparing distance-and-zone logic with time to collision alone was found.",
+   "quote": "No head-to-head off-road study was found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t186",
+    "t187",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "At 3 km/h to 15 km/h, the v² braking-distance term is small, but sensor-confirmation time, controller delay, hydraulic or pneumatic response, brake build-up, object-localization error, safe clearance, and start-up blind-zone hazards remain; fixed-distance terms therefore dominate the braking trigger.",
+   "quote": "At 3 km/h to 15 km/h the v² term is small, but sensor-confirmation time, controller delay, hydraulic or pneumatic response, brake build-up, object-localization error, safe clearance and start-up blind-zone hazards remain, so fixed-distance terms dominate the trigger.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t170",
+    "t172",
+    "t171",
+    "t194"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Very low-speed heavy off-road work may need a comparatively large warning zone measured in stopping distances while still having a short absolute zone in meters, particularly around blind corners, while reversing, at start-up, and when people enter the path from the side.",
+   "quote": "very low-speed work may need a comparatively large warning zone in units of stopping distances while still having a short absolute zone in meters, particularly around the machine's blind corners, while reversing, at start-up, and when people enter the path from the side.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t187",
+    "t170",
+    "t15",
+    "t16",
+    "t14"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3 permits risk-area reduction when real-time kinematics and expected path are known, rather than prescribing one large static box around every machine.",
+   "quote": "ISO 21815-3 therefore permits risk-area reduction when real-time kinematics and expected path are known, instead of prescribing one large static box around every machine.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t187",
+    "t185"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Assumed reaction times vary widely across the cited sources: 0.5 s in Griffith (2005); about 1 s in CSIRO (2007) and the MSHA Table M-1 operator term; 1 s to 3 s margins in a Hitachi patent; about 2 s in historic US Bureau of Mines haulage work; and 2.5 s in AASHTO and MUTCD road design and the 2023 openpilot study. The passage labels this collection as both Independent and Vendor evidence.",
+   "quote": "0.5 s (Griffith, 2005); about 1 s (CSIRO, 2007; the MSHA Table M-1 operator term); 1 s to 3 s margins (Hitachi patent); about 2 s (historic US Bureau of Mines haulage work); 2.5 s (AASHTO and MUTCD for road design, and the 2023 openpilot study).",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    68,
+    69,
+    2,
+    19,
+    9,
+    70,
+    63
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "Griffith",
+     "kind": "person"
+    },
+    {
+     "name": "CSIRO",
+     "kind": "organization"
+    },
+    {
+     "name": "MSHA",
+     "kind": "organization"
+    },
+    {
+     "name": "Hitachi",
+     "kind": "company"
+    },
+    {
+     "name": "US Bureau of Mines",
+     "kind": "organization"
+    },
+    {
+     "name": "AASHTO",
+     "kind": "organization"
+    },
+    {
+     "name": "MUTCD",
+     "kind": "publication"
+    },
+    {
+     "name": "openpilot",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t35",
+    "t170",
+    "t185"
+   ],
+   "importance": 3
+  }
+ ]
+}

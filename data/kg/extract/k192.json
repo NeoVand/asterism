@@ -1,0 +1,552 @@
+{
+ "chunkId": "k192",
+ "hash": "0584a701242a2365",
+ "facts": [
+  {
+   "text": "Procedural, hand-built and asset-based scenes support scripted actors with controllable position, velocity, acceleration, orientation, shape, visibility, collision body and behaviour, as needed for deterministic boundary-condition tests.",
+   "quote": "Procedural, hand-built and asset-based scenes support any scripted actor with controllable position, velocity, acceleration, orientation, shape, visibility, collision body and behaviour, which is what deterministic boundary-condition tests need.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t134",
+    "t143"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Photogrammetry, lidar survey and classical log reconstruction do not supply controllable actors.",
+   "quote": "Photogrammetry, lidar survey and classical log reconstruction do not supply controllable actors",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t130",
+    "t155"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Moving objects in captured scenes are a reconstruction problem, and captured motion is not editable actor motion.",
+   "quote": "moving objects in the capture are a reconstruction problem, and captured motion is not editable actor motion.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Captured moving objects should be removed from static reconstructions and replaced by separately controllable agents to avoid baked-in \"ghost\" people or vehicles.",
+   "quote": "Captured moving objects should be removed from the static reconstruction and replaced by separately controllable agents, otherwise the scene contains baked-in \"ghost\" people or vehicles.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t132"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Neural methods IDSplat (November 2025), OmniRe (2024) and SaLF decompose dynamic actors; the supporting evidence is on-road.",
+   "quote": "Neural methods decompose dynamic actors (IDSplat, November 2025; OmniRe, 2024; SaLF)",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    58,
+    49,
+    5,
+    7
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "IDSplat",
+     "kind": "method"
+    },
+    {
+     "name": "OmniRe",
+     "kind": "method"
+    },
+    {
+     "name": "SaLF",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Most cross-lane benchmarks, including Para-Lane and EUVS, mask moving objects out of evaluation; the supporting evidence is on-road.",
+   "quote": "most cross-lane benchmarks mask moving objects out of the evaluation (Para-Lane, EUVS)",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    58,
+    49,
+    5,
+    7
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Para-Lane",
+     "kind": "dataset"
+    },
+    {
+     "name": "EUVS",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t107",
+    "t116"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Dynamic-actor fidelity under viewpoint change is under-tested in neural scene reconstruction, because most cross-lane benchmarks mask moving objects out of evaluation; this is an on-road evidence gap.",
+   "quote": "most cross-lane benchmarks mask moving objects out of the evaluation (Para-Lane, EUVS), so dynamic-actor fidelity under viewpoint change is under-tested.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    58,
+    49,
+    5,
+    7
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Para-Lane",
+     "kind": "dataset"
+    },
+    {
+     "name": "EUVS",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t125",
+    "t107"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "MV² shows that handling dynamic objects dominates quality in its on-road evaluation.",
+   "quote": "MV² shows that the handling of dynamic objects dominates quality",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    8
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "MV²",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t254"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In MV²'s August 2026 on-road results, PVG car-to-scooter PSNR is 14.72 dB without masks.",
+   "quote": "PVG car-to-scooter PSNR is 14.72 dB without masks, 21.24 dB with pseudo-masks and 24.29 dB with ground-truth dynamic masks (August 2026).",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    8
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "MV²",
+     "kind": "publication"
+    },
+    {
+     "name": "PVG",
+     "kind": "method"
+    },
+    {
+     "name": "PSNR",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254",
+    "t116"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In MV²'s August 2026 on-road results, PVG car-to-scooter PSNR is 21.24 dB with pseudo-masks.",
+   "quote": "PVG car-to-scooter PSNR is 14.72 dB without masks, 21.24 dB with pseudo-masks and 24.29 dB with ground-truth dynamic masks (August 2026).",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    8
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "MV²",
+     "kind": "publication"
+    },
+    {
+     "name": "PVG",
+     "kind": "method"
+    },
+    {
+     "name": "PSNR",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254",
+    "t116"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In MV²'s August 2026 on-road results, PVG car-to-scooter PSNR is 24.29 dB with ground-truth dynamic masks.",
+   "quote": "PVG car-to-scooter PSNR is 14.72 dB without masks, 21.24 dB with pseudo-masks and 24.29 dB with ground-truth dynamic masks (August 2026).",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    8
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "MV²",
+     "kind": "publication"
+    },
+    {
+     "name": "PVG",
+     "kind": "method"
+    },
+    {
+     "name": "PSNR",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254",
+    "t116",
+    "t105"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISPRS 2024 reported that a 3DGS terrain scene in Unreal Engine 5 ran at 60 FPS for a single building, a real-time performance result relevant to hardware-in-the-loop testing.",
+   "quote": "A 3DGS terrain scene in Unreal Engine 5 ran at 60 FPS for a single building but 17 FPS for a 23-million-Gaussian scene (ISPRS 2024).",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Unreal Engine 5",
+     "kind": "tool"
+    },
+    {
+     "name": "3DGS",
+     "kind": "method"
+    },
+    {
+     "name": "ISPRS",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t135",
+    "t153",
+    "t148"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISPRS 2024 reported that a 23-million-Gaussian 3DGS terrain scene in Unreal Engine 5 ran at 17 FPS, a real-time performance result relevant to hardware-in-the-loop testing.",
+   "quote": "A 3DGS terrain scene in Unreal Engine 5 ran at 60 FPS for a single building but 17 FPS for a 23-million-Gaussian scene (ISPRS 2024).",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Unreal Engine 5",
+     "kind": "tool"
+    },
+    {
+     "name": "3DGS",
+     "kind": "method"
+    },
+    {
+     "name": "ISPRS",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t135",
+    "t153",
+    "t148"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "AgriGen (2026) describes simulating fields with thousands of vegetation assets as \"computationally intractable on consumer grade hardware\".",
+   "quote": "AgriGen calls simulating fields with thousands of vegetation assets \"computationally intractable on consumer grade hardware\" (2026).",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    37
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "AgriGen",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t130",
+    "t339",
+    "t336"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The effort and cost figures found for creating virtual job sites are only indirect.",
+   "quote": "The only figures found are indirect.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t358"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Building the EUVS benchmark required more than 300 hours of manual selection; this is on-road evidence rather than a direct job-site digital-twin cost estimate.",
+   "quote": "Building the EUVS benchmark took \"300+ hours\" of manual selection and \"800+ hours\" of COLMAP compute.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    7
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "EUVS",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t107",
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Building the EUVS benchmark required more than 800 hours of COLMAP compute; this is on-road evidence rather than a direct job-site digital-twin cost estimate.",
+   "quote": "Building the EUVS benchmark took \"300+ hours\" of manual selection and \"800+ hours\" of COLMAP compute.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    7
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "EUVS",
+     "kind": "dataset"
+    },
+    {
+     "name": "COLMAP",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t133",
+    "t339",
+    "t107"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MV² reports that per-scene Gaussian training takes up to 4 hours; the supporting evidence is on-road.",
+   "quote": "Per-scene Gaussian training takes \"up to 4 hours\" (MV²).",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    8
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "MV²",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Procedural generation has a high one-time setup cost and a low incremental cost per variant.",
+   "quote": "Procedural generation has a high one-time setup and a low incremental cost per variant",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t134",
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hybrid twins have the highest integration setup cost and often the lowest incremental cost afterwards.",
+   "quote": "hybrid twins have the highest integration setup and often the lowest incremental cost afterwards",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t129",
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Machine-log reconstruction has a low marginal capture cost where logging already exists, but moderate to high processing and cleanup costs.",
+   "quote": "machine-log reconstruction has a low marginal capture cost where logging already exists but moderate to high processing and cleanup.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t130",
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No person-day or price figures for job-site digital twins were found.",
+   "quote": "No person-day or price figures for job-site digital twins were found.",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t129",
+    "t130",
+    "t358"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,710 @@
+{
+ "chunkId": "k291",
+ "hash": "3f09bcb4cad8f5d6",
+ "facts": [
+  {
+   "text": "Sensor soiling, damage and calibration drift deserve their own test family for collision mitigation testing.",
+   "quote": "Sensor soiling, damage and calibration drift deserve their own test family.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    56,
+    57
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t100",
+    "t142"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Dust deposited on a sensor lens differs from airborne dust and should not be treated as the same test condition.",
+   "quote": "Dust deposited on a lens differs from airborne dust",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    56,
+    57
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A displaced sensor mount differs from algorithm noise.",
+   "quote": "a displaced mount differs from algorithm noise.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    56,
+    57
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t56"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Service replacement and calibration errors can dominate mature-field reliability.",
+   "quote": "Service replacement and calibration errors can dominate mature-field reliability",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    56,
+    57
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t56",
+    "t74"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Service replacement and calibration errors will not appear in pristine replay logs unless deliberately injected.",
+   "quote": "Service replacement and calibration errors can dominate mature-field reliability and will not appear in pristine replay logs unless deliberately injected.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    56,
+    57
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t56",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The passage also cites on-road evidence for the sensor-soiling, damage, calibration-drift and service-error testing concerns.",
+   "quote": "**Independent** [56, 57]; **Independent (on-road evidence)** [58].",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    58
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t100",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 19014-4 states that cybersecurity is outside its scope; brake-command networks and sensor or data interfaces therefore need separate security treatment. The cited independent evidence is marked as under revision.",
+   "quote": "ISO 19014-4 states that cybersecurity is out of its scope, so brake-command networks and sensor or data interfaces need separate security treatment",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    65
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t120",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "EU Machinery Regulation 2023/1230 requires protection against corruption in Annex III clause 1.1.9.",
+   "quote": "the EU Machinery Regulation adds protection against corruption (Annex III clause 1.1.9)",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    65
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "EU Machinery Regulation 2023/1230",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t298"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "HIL injection ports must not remain open in production.",
+   "quote": "HIL injection ports must not remain open in production.",
+   "kind": "recommendation",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    69
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t149"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Human interaction remains relevant with automatic braking: warning interpretation, operator override, habituation, reaction before intervention, recovery after an automatic stop and trust in a system producing nuisance alarms all change real-world risk.",
+   "quote": "Warning interpretation, operator override, habituation, reaction before intervention, recovery after an automatic stop and trust in a system that produces nuisance alarms all change real-world risk.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    70
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t36",
+    "t25",
+    "t33",
+    "t35",
+    "t31"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815 describes collision warning and avoidance as operator assistance that does not replace operator responsibility.",
+   "quote": "ISO 21815 describes the system as operator assistance that does not replace operator responsibility",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    1
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t10",
+    "t23"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 16001 says that more study is needed to determine the effectiveness of a haptic signal.",
+   "quote": "ISO 16001 itself says \"More study is needed to determine the effectiveness of a haptic signal\"",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    1
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t283",
+    "t37",
+    "t36"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "EMESRT PR-5A (2019) identifies mental overload from warnings and alarms being overlooked, ignored or not heard.",
+   "quote": "EMESRT PR-5A (2019) names \"mental overload, from warnings and alarms being overlooked, ignored or not heard\".",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    70
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    },
+    {
+     "name": "EMESRT PR-5A",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t304",
+    "t33",
+    "t36"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "MOSH requires operator override to be prevented from abuse and monitored, with override limited to under 5 minutes and under 10 km/h.",
+   "quote": "MOSH requires override to be \"prevented from abuse\" and monitored, limited to under 5 minutes and under 10 km/h.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    17
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t34",
+    "t307",
+    "t169"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Field data on disabling collision mitigation systems were not found in this research.",
+   "quote": "Field data on disabling were not found.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    17
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t34",
+    "t74",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "MOSH reports that interoperability between detection devices from different suppliers did not exist and still does not exist.",
+   "quote": "MOSH reports that interoperability between detection devices from different suppliers \"did not exist (and still do not)\".",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    71
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t307",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "MSHA's surface mobile equipment rule became effective on 19 January 2024 and was enforced from 17 July 2024.",
+   "quote": "MSHA's surface mobile equipment rule (effective 19 January 2024, enforced from 17 July 2024)",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    72,
+    73
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "MSHA",
+     "kind": "organization"
+    },
+    {
+     "name": "MSHA surface mobile equipment rule",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t300",
+    "t275"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "MSHA's surface mobile equipment rule requires written safety programmes that consider technology but does not mandate collision avoidance.",
+   "quote": "requires written safety programmes that consider technology but does not mandate collision avoidance",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    72,
+    73
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "MSHA",
+     "kind": "organization"
+    },
+    {
+     "name": "MSHA surface mobile equipment rule",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t300",
+    "t23",
+    "t275"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "MSHA issued 863 citations under its surface mobile equipment rule from July 2024 to April 2026.",
+   "quote": "MSHA issued 863 citations under it from July 2024 to April 2026.",
+   "kind": "number",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    74,
+    75
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "MSHA",
+     "kind": "organization"
+    },
+    {
+     "name": "MSHA surface mobile equipment rule",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t300"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Public construction datasets exist, but the datasets discussed are image-only and use fixed or aerial viewpoints rather than machine-mounted multi-sensor rigs.",
+   "quote": "Public construction datasets exist but are image-only and from fixed or aerial viewpoints, not machine-mounted multi-sensor rigs",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    76,
+    77,
+    78
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t107",
+    "t89",
+    "t99"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The MOCS construction dataset has 41,668 images from 174 sites and 13 classes (2021).",
+   "quote": "MOCS has 41,668 images, 174 sites and 13 classes (2021)",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    76,
+    77,
+    78
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "MOCS",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t107"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The SODA construction dataset has 19,846 images and 15 classes (2022).",
+   "quote": "SODA has 19,846 images and 15 classes (2022)",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    76,
+    77,
+    78
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "SODA",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t107"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "AIDCON is an aerial construction dataset (2024).",
+   "quote": "AIDCON is aerial (2024).",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    76,
+    77,
+    78
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "AIDCON",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t107"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The machine-mounted off-road datasets RELLIS-3D, RUGD, GOOSE and TartanDrive were not verified in this research.",
+   "quote": "Machine-mounted off-road datasets (RELLIS-3D, RUGD, GOOSE, TartanDrive) and open-source simulators (CARLA, Gazebo, Isaac Sim) were not verified in this research",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "RELLIS-3D",
+     "kind": "dataset"
+    },
+    {
+     "name": "RUGD",
+     "kind": "dataset"
+    },
+    {
+     "name": "GOOSE",
+     "kind": "dataset"
+    },
+    {
+     "name": "TartanDrive",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t107",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The open-source simulators CARLA, Gazebo and Isaac Sim were not verified in this research.",
+   "quote": "open-source simulators (CARLA, Gazebo, Isaac Sim) were not verified in this research",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    },
+    {
+     "name": "Gazebo",
+     "kind": "tool"
+    },
+    {
+     "name": "Isaac Sim",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t322",
+    "t126",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "None of the listed machine-mounted off-road datasets or open-source simulators was found validated for off-road collision warning: RELLIS-3D, RUGD, GOOSE, TartanDrive, CARLA, Gazebo and Isaac Sim.",
+   "quote": "and none was found validated for off-road collision warning.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "RELLIS-3D",
+     "kind": "dataset"
+    },
+    {
+     "name": "RUGD",
+     "kind": "dataset"
+    },
+    {
+     "name": "GOOSE",
+     "kind": "dataset"
+    },
+    {
+     "name": "TartanDrive",
+     "kind": "dataset"
+    },
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    },
+    {
+     "name": "Gazebo",
+     "kind": "tool"
+    },
+    {
+     "name": "Isaac Sim",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t23",
+    "t107",
+    "t322",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 34502:2022 offers a scenario-based evaluation framework, but its scope is road vehicles on limited-access highways rather than off-road machines.",
+   "quote": "ISO 34502:2022 offers a scenario-based evaluation framework, but its scope is road vehicles on limited-access highways.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    79
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "ISO 34502",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t290",
+    "t141",
+    "t140"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The programme-level recommendation is to use the old fleet now as a data-generation and test-infrastructure asset, so prototype arrival in mid-2027 substitutes real hardware into an already existing evidence pipeline.",
+   "quote": "use the old fleet now as a data-generation and test-infrastructure asset, so that prototype arrival in mid-2027 substitutes real hardware into an evidence pipeline that already exists.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t41",
+    "t43",
+    "t121",
+    "t233",
+    "t70"
+   ],
+   "importance": 3
+  }
+ ]
+}

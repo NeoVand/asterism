@@ -1,0 +1,355 @@
+{
+ "chunkId": "k10",
+ "hash": "0c4c201f797640df",
+ "facts": [
+  {
+   "text": "No single method produces valid environments for camera, radar, lidar and ultrasonic testing across 100 or more site types in the time available.",
+   "quote": "No single method produces valid environments for camera, radar, lidar and ultrasonic testing across 100 or more site types in the time available.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t44",
+    "t323"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The evidence points to a hybrid environment factory: parameterized representative site types built with procedural rules and asset libraries, anchored to a small number of surveyed real sites that measure the simulation-to-reality gap.",
+   "quote": "a library of parameterized representative site types, built with procedural rules and asset libraries, anchored to a small number of surveyed real sites that measure the gap between simulation and reality (Chapter 5)",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t134",
+    "t249",
+    "t142"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Procedural generation has the strongest off-road track record among environment-creation methods.",
+   "quote": "Procedural generation has the strongest off-road track record",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Procedural generation",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t134",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Survey capture is the only environment-creation method whose geometric accuracy can be measured against a published standard.",
+   "quote": "survey capture is the only method whose geometric accuracy can be measured against a published standard.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t130",
+    "t271"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Field recordings from machines can become test environments, but usually do not become validation-ready environments in one step.",
+   "quote": "Field recordings from the machines can become test environments, but usually not validation-ready ones in one step.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t130",
+    "t127"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Camera and lidar logs with accurate poses support replay and near-path novel-view simulation.",
+   "quote": "Camera and lidar logs with accurate poses support replay and near-path novel-view simulation",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t89",
+    "t92",
+    "t116"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Neural reconstruction degrades sharply when the viewpoint moves 1 to 4 m from the recorded path.",
+   "quote": "neural reconstruction degrades sharply once the viewpoint moves 1 to 4 m from the recorded path",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Height changes degrade neural reconstruction more than sideways viewpoint shifts, which matters when sensors move between machine models.",
+   "quote": "height changes are worse than sideways shifts, which matters when sensors move between machine models.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t265",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Re-simulating a sensor type that was never recorded has no validated evidence.",
+   "quote": "Re-simulating a sensor type that was never recorded has no validated evidence",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t323",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Radar and ultrasonic responses cannot be recovered from camera logs.",
+   "quote": "radar and ultrasonic cannot be recovered from camera logs (Chapters 5, 7).",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t95",
+    "t89",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A photorealistic scene is not a valid sensor simulation.",
+   "quote": "A photorealistic scene is not a valid sensor simulation.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t323",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Camera appearance, lidar response, radar propagation, ultrasonic response, ground mechanics, collision geometry and labels are separate simulation layers, each needing its own material data.",
+   "quote": "Camera appearance, lidar response, radar propagation, ultrasonic response, ground mechanics, collision geometry and labels are separate layers, each needing its own material data (Chapter 5).",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t136",
+    "t323",
+    "t130",
+    "t181",
+    "t106"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Lidar simulation in rain and fog is the best-validated sensor-simulation case.",
+   "quote": "Lidar in rain and fog is the best-validated case",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t102",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Radar realism depends on knowing material properties at 77 GHz, which usually have to be measured.",
+   "quote": "radar realism depends on knowing material properties at 77 GHz, which usually have to be measured",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t136",
+    "t323"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Dust is the biggest off-road sensor-simulation gap.",
+   "quote": "dust is the biggest off-road gap",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t323"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Soiling, vibration, glare and artificial lighting are simulated with heuristics or not simulated at all.",
+   "quote": "soiling, vibration, glare and artificial lighting are simulated with heuristics or not at all",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t323"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Thermal and ultrasonic simulation have the weakest evidence among the sensor-simulation cases discussed.",
+   "quote": "thermal and ultrasonic simulation have the weakest evidence",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t95",
+    "t323",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "There is no accepted realism score for sensor simulation.",
+   "quote": "there is no accepted realism score (Chapter 6).",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t224",
+    "t323"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Generative weather and lighting edits look convincing but are not yet trustworthy as test evidence.",
+   "quote": "Generative weather and lighting edits look convincing but are not yet trustworthy as test evidence (Chapters 5, 6).",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5,
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t70",
+    "t102",
+    "t267"
+   ],
+   "importance": 3
+  }
+ ]
+}

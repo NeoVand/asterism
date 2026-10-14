@@ -1,0 +1,840 @@
+{
+ "chunkId": "k42",
+ "hash": "bf434014de8bb0ba",
+ "facts": [
+  {
+   "text": "Scenario and requirements engineering plus the safety case defines what must be tested and links hazards, use cases, conditions, requirements and evidence.",
+   "quote": "Defines what must be tested and links hazards, use cases, conditions, requirements and evidence",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    5,
+    64,
+    65
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t63",
+    "t64",
+    "t67",
+    "t141",
+    "t47"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Scenario and requirements engineering plus the safety case exposes missing test coverage before hardware arrives.",
+   "quote": "exposes missing coverage before hardware arrives.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    5,
+    64,
+    65
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t63",
+    "t67",
+    "t142"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815 supplies the collision-avoidance structure for scenario and requirements engineering.",
+   "quote": "ISO 21815 supplies the collision-avoidance structure",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    5,
+    64,
+    65
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815 series",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t63",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21448 supplies triggering-condition logic for scenario and requirements engineering.",
+   "quote": "ISO 21448 the triggering-condition logic",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    5,
+    64,
+    65
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "ISO 21448",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t50",
+    "t289",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO/PAS 8800, dated December 2024, and UL 4600 give assurance structures for machine-learning-based and autonomous safety functions.",
+   "quote": "ISO/PAS 8800 (December 2024) and UL 4600 give assurance structures for machine-learning-based and autonomous safety functions.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    5,
+    64,
+    65
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "ISO/PAS 8800",
+     "kind": "standard"
+    },
+    {
+     "name": "UL 4600",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t79",
+    "t67",
+    "t289",
+    "t294"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A complete scenario spreadsheet is not physical evidence for a safety case.",
+   "quote": "A complete scenario spreadsheet is not physical evidence.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    5,
+    64,
+    65
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t70",
+    "t67",
+    "t142"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Fault injection and robustness testing exercises sensor drop-outs, stale messages, bus faults, disagreement, bad calibration, corrupted data, actuator faults and degraded modes far faster and more safely than waiting for natural faults.",
+   "quote": "Exercises sensor drop-outs, stale messages, bus faults, disagreement, bad calibration, corrupted data, actuator faults and degraded modes far faster and more safely than waiting for natural faults",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    9,
+    47
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t49",
+    "t100",
+    "t120"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Functional-safety standards make the failure behaviours exercised by fault injection and robustness testing central; the passage marks the supporting independent evidence as under revision.",
+   "quote": "functional-safety standards make these failure behaviours central.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    9,
+    47
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t49",
+    "t56",
+    "t274"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Fault injection and robustness testing does not establish intended-function perception performance when all hardware works.",
+   "quote": "It does not establish intended-function perception performance when all hardware works",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    9,
+    47
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t85",
+    "t50"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Fault models used in fault injection and robustness testing may omit real failures.",
+   "quote": "fault models may omit real failures.",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    9,
+    47
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Environmental and component laboratory testing accelerates temperature, vibration, shock, electrical and moisture stresses without waiting for seasons.",
+   "quote": "Accelerates temperature, vibration, shock, electrical and moisture stresses without waiting for seasons",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    48
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t45",
+    "t279"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 19014-3 specifies minimum environmental tests for safety-related electrical/electronic components; the passage marks the supporting independent evidence as under revision.",
+   "quote": "ISO 19014-3 specifies minimum environmental tests for safety-related E/E components.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    48
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t49",
+    "t102",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Component qualification does not prove whole-system perception in a dusty snowstorm or with a dirty lens or radome.",
+   "quote": "Component qualification does not prove whole-system perception in a dusty snowstorm or with a dirty lens or radome.",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    48
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t85",
+    "t102",
+    "t103"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Weather-chamber sensor testing is common in automotive practice.",
+   "quote": "Weather-chamber sensor testing is common in automotive practice",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    48
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t84",
+    "t102",
+    "t279"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A specific off-road facility for weather-chamber sensor testing was not found.",
+   "quote": "Weather-chamber sensor testing is common in automotive practice; a specific off-road facility was **not found**.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    48
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t84",
+    "t102",
+    "t279"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Formal or static verification finds deterministic logic errors, interface violations, unreachable or unsafe states, timing and data-contract problems and traceability gaps without field exposure.",
+   "quote": "Finds deterministic logic errors, interface violations, unreachable or unsafe states, timing and data-contract problems and traceability gaps without field exposure",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    47
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t65",
+    "t64",
+    "t49"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 19014-4 supplies the off-road software-safety basis for formal or static verification; the passage marks the supporting independent evidence as under revision.",
+   "quote": "ISO 19014-4 supplies the off-road software-safety basis.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    47
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t49",
+    "t65",
+    "t274"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Formal or static verification cannot prove that a machine-learning perception model recognises arbitrary real scenes.",
+   "quote": "It cannot prove that a machine-learning perception model recognises arbitrary real scenes.",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    47
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t65",
+    "t112",
+    "t85"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Continuous automated regression turns every captured or synthesised scenario into a permanent test so regressions are caught as software changes.",
+   "quote": "Turns every captured or synthesised scenario into a permanent test so regressions are caught as software changes",
+   "kind": "method",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    22
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t223",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Road-autonomy programmes run continuous simulation, replay and closed-course loops, according to vendor on-road evidence.",
+   "quote": "road-autonomy programmes run continuous simulation, replay and closed-course loops.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    22
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t126",
+    "t155",
+    "t158"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Running millions of tests does not show that the test set represents the real operating domain.",
+   "quote": "Running millions of tests does not show that the test set represents the real operating domain.",
+   "kind": "risk",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    22
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t140",
+    "t161",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "IEC TS 61496-5:2023 gives radar protective devices an established certification basis.",
+   "quote": "IEC TS 61496-5:2023 gives radar protective devices an established certification basis",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    66
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "IEC TS 61496-5",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t78",
+    "t94",
+    "t288",
+    "t277"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "IEC TS 61496-5:2023 does not consider the aspects of a moving radar protective device application.",
+   "quote": "it \"does not consider the aspects of a moving RPD application\".",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    66
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "IEC TS 61496-5",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t78",
+    "t94",
+    "t288"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Inxpect states that IEC TS 62998-1 was used to analyse its second-generation safety radar when the sensor is used in mobile applications and outdoors.",
+   "quote": "Inxpect states it used IEC TS 62998-1 to analyse its second-generation safety radar \"when the sensor is used in mobile applications and outdoors\".",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    67
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "Inxpect",
+     "kind": "company"
+    },
+    {
+     "name": "IEC TS 62998-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t78",
+    "t94",
+    "t288"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Component certification of safety-rated sensors does not deliver system-level performance on a moving outdoor machine.",
+   "quote": "Component certification does not deliver system-level performance on a moving outdoor machine.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t78",
+    "t277",
+    "t85",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A deterministic radar or cooperative channel can bound what a machine-learning channel must prove.",
+   "quote": "A deterministic radar or cooperative channel can bound what a machine-learning channel must prove",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    43,
+    68,
+    45,
+    79,
+    69
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t79",
+    "t99"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "MSHA's proximity rules rely on wearable components.",
+   "quote": "MSHA's proximity rules rely on wearable components",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    43,
+    68,
+    45,
+    79,
+    69
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "MSHA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t300",
+    "t24",
+    "t97"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Epiroc's Titan fuses several technologies.",
+   "quote": "Epiroc's Titan fuses several technologies",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    45,
+    79,
+    69
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "Epiroc",
+     "kind": "company"
+    },
+    {
+     "name": "Titan",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t99",
+    "t23"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 18497-2:2024 defines failure categories for obstacle-protection systems.",
+   "quote": "ISO 18497-2:2024 defines failure categories for obstacle-protection systems.",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    43,
+    68
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "ISO 18497-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t288",
+    "t56"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Multi-technology systems are the norm in mining collision avoidance.",
+   "quote": "Multi-technology systems are the norm in mining collision avoidance.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    43,
+    68,
+    45,
+    79,
+    69
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t99",
+    "t23"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Architecture choices reduce the scope of proof for collision-avoidance systems but do not remove the need for perception validation.",
+   "quote": "Architecture reduces the scope of proof; it does not remove the need for perception validation.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t85",
+    "t65",
+    "t99"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ACARP C26028, the Mining3 PDS toolkit, NIOSH evaluations of commercial proximity systems and the MOSH verification regime give comparability and credible independent evidence.",
+   "quote": "ACARP C26028 and the Mining3 PDS toolkit, NIOSH evaluations of commercial proximity systems, and the MOSH verification regime give comparability and credible independent evidence",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    29,
+    70,
+    62,
+    49,
+    80
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [
+    {
+     "name": "ACARP C26028",
+     "kind": "program"
+    },
+    {
+     "name": "Mining3 PDS toolkit",
+     "kind": "tool"
+    },
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    },
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t71",
+    "t70",
+    "t306",
+    "t307",
+    "t24"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Independent-review queues and retesting can become the critical path for a collision-mitigation validation project.",
+   "quote": "review queues and retesting can become the critical path",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    29,
+    70,
+    62,
+    49,
+    80
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t71",
+    "t344",
+    "t343"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Independent review cannot rescue incomplete engineering late in a project.",
+   "quote": "independent review cannot rescue incomplete engineering late in a project.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    29,
+    70,
+    62,
+    49,
+    80
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t71",
+    "t82",
+    "t342"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Scheduling lead time for shared frameworks and independent review was not found.",
+   "quote": "Scheduling lead time was **not found**.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    29,
+    70,
+    62,
+    49,
+    80
+   ],
+   "chapters": [
+    1
+   ],
+   "entities": [],
+   "terms": [
+    "t71",
+    "t343",
+    "t344"
+   ],
+   "importance": 3
+  }
+ ]
+}

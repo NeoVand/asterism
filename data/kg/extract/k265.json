@@ -1,0 +1,451 @@
+{
+ "chunkId": "k265",
+ "hash": "8313e21553983803",
+ "facts": [
+  {
+   "text": "Open-loop replay of recorded sensor data uses the real production software and optionally the original sensor-processing ECU.",
+   "quote": "**What is real:** the production software and, optionally, the original sensor-processing ECU.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t119"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Open-loop replay needs raw or near-raw sensor streams: camera frames before lossy compression, radar detections or ideally ADC or radar-cube data, lidar point clouds, and ultrasonic echo data.",
+   "quote": "raw or near-raw sensor streams (camera frames before lossy compression, radar detections or ideally ADC or radar-cube data, lidar point clouds, ultrasonic echo data)",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t121",
+    "t89",
+    "t94",
+    "t93"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Open-loop replay needs machine-state buses, exact original timing and time synchronisation, calibration and configuration, and independent ground truth or an expected output for scoring.",
+   "quote": "machine-state buses, exact original timing and time synchronisation, calibration and configuration, and an independent ground truth or expected output to score against.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t101",
+    "t100",
+    "t105",
+    "t120"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Commercial automotive replay documentation stresses original data interfaces, synchronisation and timing.",
+   "quote": "Commercial replay documentation stresses original data interfaces, synchronisation and timing. **Vendor (on-road evidence)** [11].",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    11
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t101"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Open-loop replay can establish detection rate, false-alarm rate and warning timing for the recorded sensor configuration in the recorded situations.",
+   "quote": "**Proves:** detection rate, false-alarm rate and warning timing of the recorded sensor configuration in the recorded situations",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t109",
+    "t32",
+    "t26"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Open-loop replay can establish repeatability.",
+   "quote": "repeatability",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Open-loop replay can establish software and perception regression across versions.",
+   "quote": "software and perception regression across versions",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t223",
+    "t85",
+    "t161"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Open-loop replay can establish the old-system baseline and is the natural method for baselining the existing system.",
+   "quote": "the old-system baseline; and an old-versus-new comparison when both systems accept genuinely equivalent inputs. It is the natural method for baselining the existing system.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t221",
+    "t266"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Open-loop replay can support an old-versus-new system comparison when both systems accept genuinely equivalent inputs.",
+   "quote": "an old-versus-new comparison when both systems accept genuinely equivalent inputs.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t222"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Open-loop replay cannot prove the effect of an action, such as braking, steering or an operator reaction, that differs from the recording.",
+   "quote": "**Cannot prove:** the effect of any action, such as braking, steering or an operator reaction that differs from the recording",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t154",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Open-loop replay cannot prove anything about sensor types or positions that were not recorded.",
+   "quote": "anything about sensor types or positions that were not recorded",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t84",
+    "t100",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Open-loop replay cannot prove performance under new environmental conditions or failures absent from the logs.",
+   "quote": "new environmental conditions or failures that are not in the logs",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t102",
+    "t56",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Open-loop replay cannot prove physical sensor effects when re-injection occurs downstream of the sensor.",
+   "quote": "physical sensor effects when re-injection happens downstream of the sensor.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t149",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Open-loop replay is standard practice in automotive development.",
+   "quote": "**Evidence:** standard practice in automotive development.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    18
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Li et al. documented the open-loop failure mode for systems that act in CVPR 2024.",
+   "quote": "The open-loop failure mode for systems that act is documented by Li et al. (CVPR 2024). **Independent (on-road evidence)** [18].",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    18
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "Li et al.",
+     "kind": "person"
+    },
+    {
+     "name": "CVPR 2024",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t155",
+    "t154",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Vendor implementation evidence for replay is mature in automotive development.",
+   "quote": "Vendor implementation evidence is mature in automotive",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Direct heavy off-road replay evidence is sparse.",
+   "quote": "direct heavy off-road replay evidence is sparse.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t1",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Replay fidelity is defined by the injection boundary.",
+   "quote": "**replay fidelity is defined by the injection boundary**",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t149",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "If an old camera produces a serialized image stream over a GMSL link and those frames are recorded, re-injecting the frames into the image ECU tests everything downstream of that injection point.",
+   "quote": "Suppose the old camera produces a serialized image stream over a GMSL link and the recording captures those frames. Re-injecting them into the image ECU tests everything downstream of that point",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "GMSL",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t155",
+    "t149",
+    "t89",
+    "t119"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Re-injecting recorded camera frames into the image ECU does not retest the old lens, exposure control, imager, lens contamination, vibration or sun-glare response.",
+   "quote": "it does not retest the old lens, exposure control, imager, lens contamination, vibration or sun-glare response.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t149",
+    "t89",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Putting the real camera back in the replay loop with a monitor, called a camera box, includes the optics again.",
+   "quote": "Putting the real camera back in the loop with a monitor (\"camera box\") includes the optics again",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t150",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Camera-box replay is limited by monitor contrast, optics and multi-camera geometry.",
+   "quote": "monitor contrast, optics and multi-camera geometry then become test limitations.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t150",
+    "t89",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "dSPACE describes camera-box limitations and downstream raw-image injection in automotive vendor documentation.",
+   "quote": "dSPACE describes both the camera-box limitations and downstream raw-image injection. **Vendor (on-road evidence)** [12].",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    12
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "dSPACE",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t155",
+    "t149",
+    "t150",
+    "t89"
+   ],
+   "importance": 2
+  }
+ ]
+}

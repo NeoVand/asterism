@@ -1,0 +1,482 @@
+{
+ "chunkId": "k276",
+ "hash": "64860bdd1b740ff5",
+ "facts": [
+  {
+   "text": "With zero misses, demonstrating a detection probability of at least p at 95% confidence requires at least ln(0.05) / ln(p) consecutive successful encounters per stratum: 59 for 95%, 299 for 99%, and 2,995 for 99.9%.",
+   "quote": "n at least ln(0.05) / ln(p) consecutive successful encounters: 59 for 95%, 299 for 99% and 2,995 for 99.9%, per stratum.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    30
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t210"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "When detection trials include some misses, Clopper-Pearson exact binomial intervals apply.",
+   "quote": "With some misses, Clopper-Pearson (exact) binomial intervals apply.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    30
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Clopper-Pearson exact binomial intervals",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t209",
+    "t210"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For a detection test that must distinguish an acceptable probability from an unacceptable probability, standard binomial sample-size formulas determine n from the chosen significance, power, and required separation.",
+   "quote": "standard binomial sample-size formulas make n a function of those quantities and the required separation.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    30
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t212",
+    "t210"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Detection reporting should provide the per-cell detection probability—successful encounters divided by valid opportunities—with a binomial confidence interval for every safety-critical cell or grouping, rather than one aggregate.",
+   "quote": "the per-cell detection probability (successful encounters divided by valid opportunities in the cell) with a binomial confidence interval for every safety-critical cell or grouping, not one aggregate.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    30
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t210",
+    "t143"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The exposure denominator for false-alarm rates is time or an operational exposure measure.",
+   "quote": "The exposure denominator is time or an operational exposure measure.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t213",
+    "t32"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Assuming false alarms form a homogeneous Poisson process, zero false alarms over T hours gives a one-sided upper rate bound of −ln(alpha) / T, approximately 3 / T at 95% confidence.",
+   "quote": "observing zero false alarms over T hours gives a one-sided upper bound on the rate of minus ln(alpha) divided by T; at 95% confidence that is about 3 / T",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Homogeneous Poisson process",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t213",
+    "t209",
+    "t32"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Under the homogeneous Poisson assumption at 95% confidence, showing a false-alarm rate below 0.1 per hour requires at least 30 failure-free hours, and below 0.01 per hour requires 300 hours, per condition claimed.",
+   "quote": "showing fewer than 0.1 false alarms per hour needs at least 30 failure-free hours and fewer than 0.01 per hour needs 300 hours, per condition claimed.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t213",
+    "t209",
+    "t32"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Observing zero failures provides little evidence without substantial exposure.",
+   "quote": "\"We saw zero failures\" means little without substantial exposure.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t20",
+    "t70",
+    "t209"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The homogeneous Poisson assumption for false alarms must be checked because false alarms cluster by site, weather, machine, repeated obstacle geometry, and sensor contamination.",
+   "quote": "The Poisson assumption must itself be checked: false alarms cluster by site, weather, machine, repeated obstacle geometry and sensor contamination.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Homogeneous Poisson process",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t32",
+    "t213",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A ten-second encounter produces hundreds of highly correlated frames but is essentially one encounter for most safety claims.",
+   "quote": "A ten-second encounter yields hundreds of highly correlated frames but is essentially one encounter for most safety claims.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    30
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Treating correlated frames as independent trials makes confidence intervals artificially narrow.",
+   "quote": "Treating frames as independent trials makes confidence intervals artificially narrow.",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    30
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Independent encounters, runs, shifts, and sites should be the sampling units or clusters for safety claims; frame-level timing and trajectory measurements must not inflate effective sample size.",
+   "quote": "Independent encounters, runs, shifts and sites should be the sampling units or clusters; frame-level measurements remain useful for timing and trajectories but must not inflate the effective sample size.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    30
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t203"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NIST treats randomness and autocorrelation as conditions for the validity of ordinary uncertainty formulas.",
+   "quote": "NIST treats randomness and autocorrelation as conditions for ordinary uncertainty formulas to be valid.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    30
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIST",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t209",
+    "t259"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Kalra and Paddock's RAND report Driving to Safety, RR-1478, is dated 12 April 2016.",
+   "quote": "Kalra and Paddock's RAND report \"Driving to Safety\" (RR-1478, 12 April 2016)",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    31,
+    32
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Kalra",
+     "kind": "person"
+    },
+    {
+     "name": "Paddock",
+     "kind": "person"
+    },
+    {
+     "name": "RAND Corporation",
+     "kind": "organization"
+    },
+    {
+     "name": "Driving to Safety (RR-1478)",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t215",
+    "t317"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The on-road RAND report Driving to Safety found that clear statistical evidence of autonomous vehicle safety would require hundreds of millions, and sometimes hundreds of billions, of test-driving miles.",
+   "quote": "would take hundreds of millions of miles and sometimes hundreds of billions of miles of test-driving to provide clear statistical evidence of autonomous vehicle safety",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    31,
+    32
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "RAND Corporation",
+     "kind": "organization"
+    },
+    {
+     "name": "Driving to Safety (RR-1478)",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t215",
+    "t20",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The on-road RAND report Driving to Safety found that existing fleets would need tens, and sometimes hundreds, of years to accumulate the required safety-evidence mileage.",
+   "quote": "existing fleets would need \"tens and sometimes hundreds of years\" to drive them.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    31,
+    32
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "RAND Corporation",
+     "kind": "organization"
+    },
+    {
+     "name": "Driving to Safety (RR-1478)",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t215",
+    "t20"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The passage's equivalent off-road conclusion is that rare-event safety cannot be demonstrated by exposure alone and must be argued through stratified testing, simulation, and safety analysis.",
+   "quote": "The equivalent off-road conclusion is that rare-event safety cannot be shown by exposure; it must be argued through stratified testing, simulation and safety analysis.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t144",
+    "t203",
+    "t216",
+    "t67"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The programme's target strata of 100+ site types, 10+ scenarios, about seven weather and light conditions, and N machine models easily exceed 7,000 cells.",
+   "quote": "The target strata (100+ site types, 10+ scenarios, about seven weather and light conditions, N machine models) easily exceed 7,000 cells",
+   "kind": "number",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t198",
+    "t44",
+    "t45",
+    "t143"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Filling every target cell with 59 to 299 physical trials is beyond the programme's practical capacity; a full Cartesian product is not practical.",
+   "quote": "no programme can fill each with 59 to 299 physical trials. A full Cartesian product is not practical.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t198",
+    "t209",
+    "t143"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The defensible alternative to a full Cartesian test product is a predefined coverage model in which safety-critical scenario classes receive direct statistical claims.",
+   "quote": "The defensible alternative is a predefined coverage model: safety-critical scenario classes get direct statistical claims",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t200",
+    "t142",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Less critical test combinations should be covered through justified equivalence, machine families or archetypes, parameter sweeps, and simulation, followed by targeted physical confirmation at model boundaries.",
+   "quote": "less critical combinations are covered by justified equivalence, machine families or archetypes, parameter sweeps and simulation, followed by targeted physical confirmation at model boundaries.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t76",
+    "t229",
+    "t216",
+    "t261",
+    "t264"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Field testing should measure natural-exposure false-alarm rates in representative site classes using continuous, untriggered recording.",
+   "quote": "natural-exposure false-alarm rates in representative site classes, which requires continuous, untriggered recording",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t213",
+    "t32",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Field testing should include staged detection trials in the highest-risk cells.",
+   "quote": "(b) staged detection trials in the highest-risk cells.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t143",
+    "t158",
+    "t86"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The number of equivalence classes cannot responsibly be chosen before machine families, hazard analysis, and performance claims are defined.",
+   "quote": "The number of equivalence classes cannot responsibly be chosen before the machine families, hazard analysis and performance claims are defined.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t76",
+    "t229",
+    "t47",
+    "t63"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No universal off-road prescription for the programme's testing coverage was found.",
+   "quote": "no universal off-road prescription was found.",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t200",
+    "t143",
+    "t76"
+   ],
+   "importance": 3
+  }
+ ]
+}

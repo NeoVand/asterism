@@ -1,0 +1,1005 @@
+{
+ "chunkId": "k186",
+ "hash": "8c319007435d86e3",
+ "facts": [
+  {
+   "text": "No single environment-creation method can produce valid camera, radar, lidar and ultrasonic testing environments across 100+ site types in the time available.",
+   "quote": "No single method can produce valid environments for camera, radar, lidar and ultrasonic testing across 100+ site types in the time available",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t44",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The evidence supports a hybrid \"environment factory\" for creating virtual job sites.",
+   "quote": "the evidence points to a hybrid \"environment factory\"",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t326"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Reality capture through photogrammetry, lidar survey and machine-log reconstruction is strongest for reproducing real geometry and clutter in virtual environments.",
+   "quote": "Reality capture (photogrammetry, lidar survey, machine-log reconstruction) is strongest for real geometry and clutter",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t130",
+    "t104"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Hand-built and procedural environment-creation methods are strongest for editability and systematic variation.",
+   "quote": "hand-built and procedural methods are strongest for editability and systematic variation",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t134",
+    "t130"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Neural reconstruction is strongest for reproducing appearance near the recorded viewpoints.",
+   "quote": "neural reconstruction is strongest for appearance near the recorded viewpoints",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t130"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Existing site plans and asset libraries are the fastest environment-creation resources for building a broad portfolio of virtual job sites.",
+   "quote": "existing site plans and asset libraries are fastest for building a broad portfolio",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t326"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A practical virtual-job-site programme builds a library of parameterised representative site types anchored to a small number of surveyed real sites that measure the simulation-to-reality gap.",
+   "quote": "A practical programme builds a library of parameterised representative site types and anchors it to a small number of surveyed real sites that measure the simulation-to-reality gap.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t249",
+    "t132",
+    "t44"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Neural reconstruction using NeRF or 3D Gaussian Splatting degrades sharply away from the recorded path, with height changes causing worse degradation than sideways shifts.",
+   "quote": "Neural reconstruction (NeRF, 3D Gaussian Splatting) degrades sharply away from the recorded path, and height changes are worse than sideways shifts.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "NeRF",
+     "kind": "method"
+    },
+    {
+     "name": "3D Gaussian Splatting",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "On real on-road data, Para-Lane (2025) reports that 3D Gaussian Splatting PSNR falls from 22.99 dB in the recorded lane to 17.05 dB in the adjacent lane.",
+   "quote": "On real on-road data, 3DGS falls from 22.99 dB PSNR in the recorded lane to 17.05 dB in the adjacent lane (Para-Lane, 2025)",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Para-Lane",
+     "kind": "publication"
+    },
+    {
+     "name": "3D Gaussian Splatting",
+     "kind": "method"
+    },
+    {
+     "name": "PSNR",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t254",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "EUVS (ICCV 2025) reports an average PSNR loss of 24.6% for translation-type viewpoint shifts in on-road evidence.",
+   "quote": "EUVS (ICCV 2025) reports an average PSNR loss of 24.6% for translation-type shifts",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "EUVS",
+     "kind": "publication"
+    },
+    {
+     "name": "ICCV 2025",
+     "kind": "other"
+    },
+    {
+     "name": "PSNR",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t254",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In MV² (August 2026), 3D Gaussian Splatting trained on drone imagery scores 29.13 dB PSNR at drone height but 10.36 dB from a car.",
+   "quote": "in MV² (August 2026), 3DGS trained on drone imagery scores 29.13 dB at drone height but 10.36 dB from a car",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "MV²",
+     "kind": "publication"
+    },
+    {
+     "name": "3D Gaussian Splatting",
+     "kind": "method"
+    },
+    {
+     "name": "PSNR",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t254",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Off-road preprints from 2026 report additional neural-reconstruction degradation from fine-detail terrain, vibration-induced calibration drift and moving vegetation.",
+   "quote": "Off-road preprints (2026) report extra degradation from fine-detail terrain, vibration-induced calibration drift and moving vegetation.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    9,
+    10
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t100",
+    "t102",
+    "t131"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A photorealistic scene is not sufficient to constitute a valid sensor simulation.",
+   "quote": "A photorealistic scene is not a valid sensor simulation.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    11,
+    12,
+    13,
+    14
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t234",
+    "t256"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Camera appearance, lidar response, radar propagation, ultrasonic response, ground mechanics, collision geometry, machine dynamics, weather and labels are separate simulation layers.",
+   "quote": "Camera appearance, lidar response, radar propagation, ultrasonic response, ground mechanics, collision geometry, machine dynamics, weather and labels are separate layers of the simulation.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    11,
+    12,
+    13,
+    14
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t125",
+    "t84",
+    "t179",
+    "t105"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Non-visual material response cannot be derived from an RGB texture.",
+   "quote": "Non-visual material response cannot be derived from an RGB texture",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    11,
+    12,
+    13,
+    14
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t136",
+    "t117"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM OpenMATERIAL 3D 1.0.0 was released on 3 April 2025.",
+   "quote": "ASAM OpenMATERIAL 3D 1.0.0 (released 3 April 2025)",
+   "kind": "event",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    11,
+    12,
+    13,
+    14
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t136"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM OpenMATERIAL 3D 1.0.0 and simulator asset specifications require separate wavelength-specific material data for lidar, radar and camera.",
+   "quote": "ASAM OpenMATERIAL 3D 1.0.0 (released 3 April 2025) and simulator asset specifications therefore require separate wavelength-specific material data for lidar, radar and camera.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    11,
+    12,
+    13,
+    14
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t136",
+    "t92",
+    "t94",
+    "t89"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ray-traced radar in one 2026 study produced about 12% of the real point density.",
+   "quote": "Ray-traced radar in one 2026 study produced about 12% of the real point density.",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    11,
+    12,
+    13,
+    14
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t118",
+    "t94",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ultrasonic and thermal material datasets for job-site materials were not found.",
+   "quote": "Ultrasonic and thermal material datasets for job-site materials were not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    11,
+    12,
+    13,
+    14
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t136",
+    "t95",
+    "t96",
+    "t107"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Survey capture is the only environment-creation family whose geometric accuracy can be measured against a standard.",
+   "quote": "Survey capture is the only family whose geometric accuracy can be measured against a standard.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4,
+    15,
+    16
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t131",
+    "t271"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASPRS Positional Accuracy Standards, Edition 2, Version 2 (2024), cover photogrammetry, lidar, UAS and field survey.",
+   "quote": "ASPRS Positional Accuracy Standards (Edition 2, Version 2, 2024) cover photogrammetry, lidar, UAS and field survey",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4,
+    15,
+    16
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "ASPRS Positional Accuracy Standards",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t132",
+    "t271"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The USGS Lidar Base Specification 2025 rev. A requires positional-accuracy reporting.",
+   "quote": "the USGS Lidar Base Specification 2025 rev. A requires positional-accuracy reporting",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4,
+    15,
+    16
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "USGS Lidar Base Specification",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t132",
+    "t92",
+    "t271"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Lidar mapping with pose refinement reached 1.3 cm mean absolute error on road scenes.",
+   "quote": "lidar mapping with pose refinement reached 1.3 cm mean absolute error on road scenes",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "mean absolute error",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t132",
+    "t255"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Photogrammetry fails predictably on textureless soil, reflections, glare, moving objects and pure camera rotation.",
+   "quote": "Photogrammetry fails predictably on textureless soil, reflections, glare, moving objects and pure camera rotation",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4,
+    15,
+    16
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t104",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Any site capture records the site at only one moment.",
+   "quote": "any capture records the site at one moment",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4,
+    15,
+    16
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Field recordings can become test environments, but usually do not become validation-ready environments in one step and do not provide that route for radar or ultrasonic testing.",
+   "quote": "Field recordings can become test environments, but usually not validation-ready ones in one step, and not for radar or ultrasonic.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    8,
+    5,
+    17
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t130",
+    "t94",
+    "t95",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Camera and lidar logs with accurate poses support replay and near-path novel-view simulation.",
+   "quote": "Camera and lidar logs with accurate poses support replay and near-path novel-view simulation",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    8,
+    5,
+    17
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t116",
+    "t89",
+    "t92"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Closed-loop braking environments built from field recordings require additional explicit geometry, collision proxies, sensor materials, controllable actors and machine dynamics.",
+   "quote": "closed-loop braking environments need explicit geometry, collision proxies, sensor materials, controllable actors and machine dynamics on top.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    8,
+    5,
+    17
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t154",
+    "t131",
+    "t136",
+    "t179",
+    "t130"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Only 50 of 200 recorded MV² sequences passed pose-quality checks.",
+   "quote": "Only 50 of 200 recorded MV² sequences passed pose-quality checks",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    8,
+    5,
+    17
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "MV²",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t155",
+    "t116",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Para-Lane found RTK/INS trajectories alone insufficient and added lidar mapping.",
+   "quote": "Para-Lane found RTK/INS trajectories alone \"insufficient\" and added lidar mapping.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    8,
+    5,
+    17
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Para-Lane",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t98",
+    "t132",
+    "t155"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "There is no validated evidence for re-simulating a sensor type that was not recorded.",
+   "quote": "Re-simulating a sensor type that was not recorded has no validated evidence.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    8,
+    5,
+    17
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t84",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Rule-based procedural generation has the strongest off-road track record among environment-creation methods.",
+   "quote": "Rule-based (procedural) generation has the strongest off-road track record.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    18,
+    19,
+    3,
+    20
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t134",
+    "t130"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "CropCraft uses procedural generation in agriculture and reports a 9.9% average mIoU simulation-to-real gap.",
+   "quote": "It is used in agriculture (CropCraft: 9.9% average mIoU simulation-to-real gap)",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    18,
+    19,
+    3,
+    20
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "CropCraft",
+     "kind": "tool"
+    },
+    {
+     "name": "mIoU",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t134",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Boreal3D uses procedural generation in forestry, with 1,000 synthetic plots across four laser-scanning platforms.",
+   "quote": "forestry (Boreal3D: 1,000 synthetic plots across four laser-scanning platforms)",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    18,
+    19,
+    3,
+    20
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Boreal3D",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t134",
+    "t107",
+    "t92"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Procedural Blender and Unity datasets are examples of procedural generation used in construction.",
+   "quote": "construction (procedural Blender and Unity datasets)",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    18,
+    19,
+    3,
+    20
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Blender",
+     "kind": "tool"
+    },
+    {
+     "name": "Unity",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t134",
+    "t107",
+    "t135"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MAVS and a 2026 SAE digital-twin simulator are examples of procedural generation used in general off-road autonomy.",
+   "quote": "general off-road autonomy (MAVS; a 2026 SAE digital-twin simulator)",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    18,
+    19,
+    3,
+    20
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "MAVS",
+     "kind": "tool"
+    },
+    {
+     "name": "SAE",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t134",
+    "t129",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Procedural generation is used in military mobility.",
+   "quote": "and military mobility",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    18,
+    19,
+    3,
+    20
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t134"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Procedural generation has a model-risk weakness: rules that omit the real failure-generating structure produce broad-looking but worthless variety.",
+   "quote": "Its weakness is \"model risk\": rules that omit the real failure-generating structure produce broad-looking but worthless variety",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    18,
+    19,
+    3,
+    20
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t134",
+    "t239",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Procedural generation remains weak at reproducing long-tail appearance.",
+   "quote": "long-tail appearance stays weak",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    18,
+    19,
+    3,
+    20
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t134",
+    "t144"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,451 @@
+{
+ "chunkId": "k248",
+ "hash": "4ea0cae6a3d445cd",
+ "facts": [
+  {
+   "text": "The Advai study used 40 images to assess generative image edits.",
+   "quote": "The Advai study used 40 images",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    93
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Advai",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t115"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The Advai study judged realism with vision-language models rather than humans and identified validation against human studies as an important future direction.",
+   "quote": "judged realism with vision-language models rather than humans (\"validation against human studies remains an important direction\")",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    93
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Advai",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t115",
+    "t234"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The Advai study did not evaluate control.",
+   "quote": "did not evaluate control",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    93
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Advai",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t115",
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The Advai study found night edits remained challenging: Flux Kontext night edits were accepted only 17.6% of the time, compared with 15.8% for rule-based imgaug edits and 12.5% for rule-based albumentations edits.",
+   "quote": "found night \"remain[s] challenging\": Flux Kontext's night edits were accepted only 17.6% of the time, and rule-based night edits 15.8% (imgaug) and 12.5% (albumentations) [93]",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    93
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Advai",
+     "kind": "organization"
+    },
+    {
+     "name": "Flux Kontext",
+     "kind": "tool"
+    },
+    {
+     "name": "imgaug",
+     "kind": "tool"
+    },
+    {
+     "name": "albumentations",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t115",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Clear2Fog found that detectors trained only on synthetic fog do not close the sim-to-real gap; this is independent on-road evidence.",
+   "quote": "Detectors trained only on synthetic fog do not close the sim-to-real gap",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    94
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Clear2Fog",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t114",
+    "t165",
+    "t112",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Clear2Fog found that pre-training on synthetic fog followed by fine-tuning on real fog gained only up to 0.0117 mAP beyond the real-only baseline.",
+   "quote": "even pre-training on synthetic fog and then fine-tuning on real fog gained only \"up to 0.0117 mAP beyond the real-only baseline\"",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    94
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Clear2Fog",
+     "kind": "publication"
+    },
+    {
+     "name": "mAP",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t114",
+    "t221",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The August 2026 Clear2Fog study by Mohamed and Huang at the University of Liverpool used 270,000 Waymo images.",
+   "quote": "(Clear2Fog, Mohamed and Huang, University of Liverpool, 270,000 Waymo images, August 2026)",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    94
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Clear2Fog",
+     "kind": "publication"
+    },
+    {
+     "name": "Mohamed",
+     "kind": "person"
+    },
+    {
+     "name": "Huang",
+     "kind": "person"
+    },
+    {
+     "name": "University of Liverpool",
+     "kind": "organization"
+    },
+    {
+     "name": "Waymo",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t107",
+    "t114"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2025 systematic survey covered 91 studies on generative methods for testing automated driving systems and described the field as early-stage.",
+   "quote": "A 2025 systematic survey of 91 studies on generative methods for testing automated driving systems describes the field as early-stage",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    99
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t127"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2025 systematic survey of generative methods for testing automated driving systems reported suboptimal generations, poor generalization for underrepresented data, difficulty with complex or domain-specific tasks, and high compute cost.",
+   "quote": "reports suboptimal generations, poor generalization for underrepresented data, difficulty with complex or domain-specific tasks and high compute cost",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    99
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2025 systematic survey found that most generative-method applications for automated-driving testing focus on scenario generation, transformation, reconstruction, or augmentation rather than proving that a changed sensor stream equals what the physical sensor would have measured.",
+   "quote": "most applications centre on scenario generation, transformation, reconstruction or augmentation rather than proving that a changed sensor stream equals what the physical sensor would have measured",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    99
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t114",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The 2024 diffusion-testing study identified limited models and tasks as a threat to generalizability.",
+   "quote": "The 2024 diffusion-testing study flags limited models and tasks as a threat to generalizability [95].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    95
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t261"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The Gaussian-splatting simulator LiHi-GS does not support harsh weather.",
+   "quote": "Gaussian-splatting simulators do not support harsh weather (LiHi-GS) [25].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "LiHi-GS",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t102",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2026 paper argues that world-model simulators require explicit admissibility checks before their verdicts can be trusted.",
+   "quote": "A 2026 paper argues that world-model simulators need explicit \"admissibility\" checks before their verdicts can be trusted [97].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    97
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t115",
+    "t126"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A photorealistic generated image can violate sensor-verification quantities: absolute radiance, depth and occlusion geometry, glare energy, exposure and saturation behaviour, temporal consistency, raindrop trajectories, camera–lidar–radar relationships, material reflectance, and the causal relationship between weather severity and sensor SNR.",
+   "quote": "A photorealistic generated image can violate exactly the quantities that sensor verification needs:",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t84",
+    "t102",
+    "t90",
+    "t99"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Physics-informed generation reduces, but does not eliminate, the risk that generated images violate quantities needed for sensor verification.",
+   "quote": "Physics-informed generation reduces this problem but does not eliminate it **Expert opinion**.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t234",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "PICWGAN is a preprint.",
+   "quote": "PICWGAN is a preprint",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    98
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "PICWGAN",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t115",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "PICWGAN does not establish paired physical equivalence for an exact scene and weather event.",
+   "quote": "PICWGAN is a preprint and does not establish paired physical equivalence for an exact scene and weather event [98].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    98
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "PICWGAN",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t115",
+    "t160",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No study was found showing that generative edits reproduce sensor-physical effects such as lidar backscatter, radar clutter, and real optical attenuation.",
+   "quote": "No study was found that shows generative edits reproduce sensor-physical effects (lidar backscatter, radar clutter, real optical attenuation)",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t92",
+    "t94",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No study was found showing that generatively edited data predict real detection rates at the confidence needed for a braking-function safety argument.",
+   "quote": "or that edited data predict real detection rates at the confidence needed for a braking-function safety argument.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t209",
+    "t67",
+    "t25"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "As of October 2026, no standard, regulator-endorsed method, or broad independent evidence was found treating ordinary GAN or diffusion weather or illumination editing as physically equivalent to matched real sensor measurements for safety-critical automatic-braking approval.",
+   "quote": "No standard, regulator-endorsed method or broad independent evidence as of October 2026 treats ordinary GAN or diffusion weather or illumination editing as physically equivalent to matched real sensor measurements for safety-critical automatic-braking approval.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t25",
+    "t271",
+    "t277",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No off-road evidence was found for the validity of generative weather or lighting edits for testing.",
+   "quote": "No off-road evidence was found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t1",
+    "t70"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,258 @@
+{
+ "chunkId": "k344",
+ "hash": "00fe26b312e5fb37",
+ "facts": [
+  {
+   "text": "Falsification, evolutionary search, Bayesian optimisation, fuzzing and Adaptive Stress Testing treat test selection as an optimisation problem, minimising time-to-collision, stopping margin, detection confidence or another robustness measure until failures appear.",
+   "quote": "Falsification, evolutionary search, Bayesian optimisation, fuzzing and Adaptive Stress Testing turn test selection into an optimisation problem: minimise time-to-collision, stopping margin, detection confidence or another robustness measure until failures appear.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    27,
+    28,
+    29
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Adaptive Stress Testing",
+     "kind": "method"
+    },
+    {
+     "name": "Bayesian optimisation",
+     "kind": "method"
+    },
+    {
+     "name": "falsification",
+     "kind": "method"
+    },
+    {
+     "name": "evolutionary search",
+     "kind": "method"
+    },
+    {
+     "name": "fuzzing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t205",
+    "t200",
+    "t227",
+    "t111",
+    "t194"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "S-TaLiRo, Breach and VerifAI are tools for failure-seeking search.",
+   "quote": "Tools include S-TaLiRo, Breach and VerifAI",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    27,
+    28,
+    29
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "S-TaLiRo",
+     "kind": "tool"
+    },
+    {
+     "name": "Breach",
+     "kind": "tool"
+    },
+    {
+     "name": "VerifAI",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t205",
+    "t327"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Surrogate-guided search and reinforcement-learning adversaries belong to the failure-seeking search family.",
+   "quote": "surrogate-guided search and reinforcement-learning adversaries belong to the same family.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    27,
+    28,
+    29
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "surrogate-guided search",
+     "kind": "method"
+    },
+    {
+     "name": "reinforcement-learning adversaries",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t205",
+    "t200"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Adaptive Stress Testing has demonstrated failure-seeking search in automated-driving simulations by seeking the most likely failure trajectories.",
+   "quote": "Adaptive Stress Testing has demonstrated the idea in automated-driving simulations by seeking the most likely failure trajectories.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    27,
+    28,
+    29
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Adaptive Stress Testing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t205",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "VerifAI with Scenic reported up to a 5 times speed-up from parallel multi-objective falsification in 2021.",
+   "quote": "VerifAI with Scenic reported up to a 5 times speed-up from parallel multi-objective falsification (2021).",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    27,
+    28,
+    29
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "VerifAI",
+     "kind": "tool"
+    },
+    {
+     "name": "Scenic",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t205",
+    "t225",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The cited evidence for failure-seeking search includes aerospace benchmarks in falsification tools, alongside independent on-road evidence.",
+   "quote": "**Independent (on-road evidence)**, with aerospace benchmarks in the falsification tools [27, 28, 29].",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    27,
+    28,
+    29
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t205",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Failure-seeking search can support claims about the existence and reproducibility of counterexamples, failure boundaries and worst cases inside the simulated parameter space.",
+   "quote": "Can claim: existence and reproducibility of counterexamples, failure boundaries and worst cases inside the simulated parameter space.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t205",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Failure-seeking search cannot establish failure rates because search concentrates on failures, making the counts biased by design.",
+   "quote": "Cannot claim: failure rates. Search concentrates on failures, so the counts are biased by design",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t205",
+    "t217",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Not finding a failure during failure-seeking search is not proof that failures are absent.",
+   "quote": "not finding a failure is not proof of absence.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t205",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Failure-seeking search can exploit simulator artefacts.",
+   "quote": "Search can also exploit simulator artefacts",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t205",
+    "t165",
+    "t234"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A failure-seeking search objective tuned to one failure type may miss a qualitatively different failure type.",
+   "quote": "an objective tuned to one failure type may miss a qualitatively different one.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t205",
+    "t200"
+   ],
+   "importance": 3
+  }
+ ]
+}

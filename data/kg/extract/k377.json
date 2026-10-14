@@ -1,0 +1,190 @@
+{
+ "chunkId": "k377",
+ "hash": "0fb624bf71c26ef3",
+ "facts": [
+  {
+   "text": "The scenario catalog should be encoded in a domain-neutral, version-controlled form, using Scenic or an in-house YAML schema with an OpenODD-style taxonomy.",
+   "quote": "Encode the catalog in a domain-neutral, version-controlled form: Scenic, or an in-house YAML schema with an OpenODD-style taxonomy",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Scenic",
+     "kind": "tool"
+    },
+    {
+     "name": "YAML",
+     "kind": "other"
+    },
+    {
+     "name": "ASAM OpenODD",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t232",
+    "t142",
+    "t162",
+    "t140"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The manufacturer should own and govern the domain-neutral, version-controlled scenario catalog.",
+   "quote": "owned and governed by the manufacturer",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t162"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scenario behaviour should be represented using a parameterised scenario DSL or an equivalent internal schema.",
+   "quote": "Use a parameterised scenario DSL or equivalent internal schema for behaviour",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t232",
+    "t199"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Site geometry should use suitable 3D terrain and material formats, including OpenMATERIAL 3D where it helps.",
+   "quote": "suitable 3D terrain and material formats for site geometry (OpenMATERIAL 3D where it helps)",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t131",
+    "t136",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "OpenDRIVE should be used for structured haul-road elements where useful.",
+   "quote": "OpenDRIVE for structured haul-road elements where useful",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenDRIVE",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t12"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor and model interfaces should use OSI and FMI/SSP, with adapter layers to simulation, HIL and physical automation.",
+   "quote": "OSI and FMI/SSP for sensor and model interfaces, with adapter layers to simulation, HIL and physical automation",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM Open Simulation Interface",
+     "kind": "standard"
+    },
+    {
+     "name": "Functional Mock-up Interface",
+     "kind": "standard"
+    },
+    {
+     "name": "System Structure and Parameterization",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t138",
+    "t139",
+    "t148",
+    "t320"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The scenario catalog should be exported to OpenSCENARIO for tools that require OpenSCENARIO.",
+   "quote": "Export to OpenSCENARIO for tools that need it.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenSCENARIO",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t232",
+    "t137",
+    "t320"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Off-road scenario-standard planning should not depend on an off-road standard arriving before mid-2027.",
+   "quote": "Do not bet on an off-road standard arriving before mid-2027",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t232",
+    "t271",
+    "t347"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No off-road scenario standard in development was found that could arrive before mid-2027.",
+   "quote": "Do not bet on an off-road standard arriving before mid-2027; none was found in development that could.",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t232",
+    "t271",
+    "t274"
+   ],
+   "importance": 3
+  }
+ ]
+}

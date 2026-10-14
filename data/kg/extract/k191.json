@@ -1,0 +1,675 @@
+{
+ "chunkId": "k191",
+ "hash": "2cd30b9146c99212",
+ "facts": [
+  {
+   "text": "Numeric effort and cost per site were not found for any virtual job-site creation method; the effort and cost ratings are relative engineering judgements, not market prices.",
+   "quote": "Numeric effort and cost per site were not found for any method; the effort and cost ratings are relative engineering judgements, not market prices.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t358"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Hand-built virtual job-site models require measurements, drawings, photographs, CAD and modellers.",
+   "quote": "Hand-built models need measurements, drawings, photographs, CAD and modellers.",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Procedural generation of virtual job sites requires a site grammar, parameter distributions and an asset library.",
+   "quote": "Procedural generation needs a site grammar, parameter distributions and an asset library.",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t134",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Photogrammetry requires many overlapping calibrated images, preferably with surveyed control or check points.",
+   "quote": "Photogrammetry needs many overlapping calibrated images, preferably with surveyed control or check points.",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t100"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Lidar survey requires scanner stations or trajectories, positioning and control.",
+   "quote": "Lidar survey needs scanner stations or trajectories, positioning and control.",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Machine-log reconstruction requires synchronised cameras, lidar, IMU, odometry or GNSS and their calibration.",
+   "quote": "Machine-log reconstruction needs synchronised cameras, lidar, IMU, odometry or GNSS and their calibration.",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t101",
+    "t100",
+    "t98",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Neural reconstruction requires multi-view imagery with accurate poses, optionally lidar, and training compute.",
+   "quote": "Neural reconstruction needs multi-view imagery with accurate poses, optionally lidar, and training compute.",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Generative models for virtual job sites require prompts, seed scenes and a trained foundation model.",
+   "quote": "Generative models need prompts, seed scenes and a trained foundation model.",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Reuse for virtual job-site creation requires existing surfaces, alignments, IFC, CAD, GIS or elevation rasters.",
+   "quote": "Reuse needs existing surfaces, alignments, IFC, CAD, GIS or elevation rasters.",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t131"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Using asset libraries to create virtual job sites requires the assets and their licences.",
+   "quote": "Asset libraries need the assets and their licences.",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t334"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Lidar survey is the strongest virtual job-site creation family for geometric accuracy and the only family directly assessable against survey standards.",
+   "quote": "Lidar survey is the strongest and the only family that is directly assessable against survey standards.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t92",
+    "t271"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Para-Lane reports 1.3 cm mean absolute error after pose optimisation on road scenes.",
+   "quote": "Para-Lane reports 1.3 cm mean absolute error after pose optimisation on road scenes.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Para-Lane",
+     "kind": "publication"
+    },
+    {
+     "name": "mean absolute error",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t255",
+    "t116"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASPRS Edition 2 Version 2 (2024) and the USGS 2025 specification define how to report lidar survey geometric accuracy.",
+   "quote": "ASPRS Edition 2 Version 2 (2024) and the USGS 2025 specification define how to report that accuracy.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4,
+    15
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "ASPRS Edition 2 Version 2 (2024)",
+     "kind": "standard"
+    },
+    {
+     "name": "USGS 2025 specification",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t132",
+    "t271"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The AutoDRIVE team claims a \"sub-millimeter-level accurate\" twin with a mean of 2.28e-4 m.",
+   "quote": "The AutoDRIVE team claims a \"sub-millimeter-level accurate\" twin (mean 2.28e-4 m).",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    43
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "AutoDRIVE",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t129",
+    "t250"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "AutoDRIVE's reported twin accuracy appears to measure self-consistency against its own point cloud rather than independent ground truth, so the figure should be treated with caution.",
+   "quote": "That figure appears to be self-consistency against its own point cloud, not independent ground truth, so it should be treated with caution.",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    43
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "AutoDRIVE",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t105",
+    "t93",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Photogrammetry can provide high and measurable geometric accuracy, but that accuracy depends heavily on capture and control.",
+   "quote": "Photogrammetry can be high and measurable, but it depends heavily on capture and control;",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    39
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "One quarry photogrammetry study used non-RTK UAV imagery.",
+   "quote": "one quarry study used non-RTK UAV imagery.",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    39
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t98"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Photogrammetry provides poor geometry for occluded or sparsely observed surfaces.",
+   "quote": "Occluded or sparsely observed surfaces are poor.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t103"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hand-built, procedural and reused-plan geometry is internally exact, but its fidelity to a real site is limited by its source measurements.",
+   "quote": "Hand-built, procedural and reused-plan geometry is internally exact but only as true to a real site as its source measurements;",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t134",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Design data used for virtual job-site geometry may describe the intended state rather than the as-built state.",
+   "quote": "design data may describe the intended rather than the as-built state.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t165"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Neural representations should not automatically be treated as survey geometry.",
+   "quote": "Neural representations should not automatically be treated as survey geometry;",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t132"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Machine-log geometry has high accuracy along well-observed trajectories and variable accuracy elsewhere.",
+   "quote": "machine-log geometry is high along well-observed trajectories and variable elsewhere.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t261"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Neural methods are the most visually realistic virtual job-site creation methods on the recorded trajectory and the least robust away from that trajectory.",
+   "quote": "Neural methods are the most realistic on the recorded trajectory and the least robust off it.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t261",
+    "t130"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Procedural, hand-built and reused-plan scenes retain exact geometry from any viewpoint because their geometry is explicit.",
+   "quote": "Procedural, hand-built and reused-plan scenes keep geometry exact from any viewpoint because the geometry is explicit,",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t134"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Procedural, hand-built and reused-plan scenes are less photo-realistic, and their realism depends on asset and material quality.",
+   "quote": "but they are less photo-realistic and their realism depends on asset and material quality.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t136"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Photogrammetry gives very high visual realism for visible surfaces.",
+   "quote": "Photogrammetry gives very high realism for visible surfaces,",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Photogrammetry bakes lighting into textures, making the appearance wrong under a new sun position or weather.",
+   "quote": "but lighting is baked into the texture, so a new sun position or weather is wrong.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t130",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Lidar alone provides low visual realism and needs texturing.",
+   "quote": "Lidar alone gives low realism and needs texturing.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Explicit meshes in hand-built, procedural, survey-derived, reused-plan and asset-based scenes are fully editable.",
+   "quote": "Explicit meshes (hand-built, procedural, survey-derived meshes, reused plans, asset-based scenes) are fully editable,",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t131"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Procedural scenes can be edited by parameter.",
+   "quote": "and procedural scenes are editable by parameter.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t134",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Point clouds are less convenient to edit than meshes derived from the point clouds.",
+   "quote": "Point clouds are less convenient than the meshes derived from them.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t93",
+    "t131"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Industry teams prefer 3DGS over NeRF partly because implicit NeRF representations lack flexibility for editing and labeling, according to Para-Lane (2025).",
+   "quote": "Industry teams prefer 3DGS over NeRF partly because implicit NeRF representations \"lack of flexibility of editing and labeling\" (Para-Lane, 2025).",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "3DGS",
+     "kind": "method"
+    },
+    {
+     "name": "NeRF",
+     "kind": "method"
+    },
+    {
+     "name": "Para-Lane",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t106"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Editing frameworks for Gaussian scenes exist, including an industrial-grade Gaussian-splatting sensor-simulation framework from March 2025.",
+   "quote": "Editing frameworks for Gaussian scenes exist (an industrial-grade Gaussian-splatting sensor-simulation framework, March 2025),",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    57
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Editing terrain shape in Gaussian scenes, such as cutting a new bench, has not been demonstrated.",
+   "quote": "but editing terrain shape, for example cutting a new bench, has not been demonstrated.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    57
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t131",
+    "t12"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Generative scenes are edited through prompts, which is less direct than editing explicit meshes.",
+   "quote": "Generative scenes are edited through prompts, which is less direct than explicit meshes.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t130",
+    "t131"
+   ],
+   "importance": 2
+  }
+ ]
+}

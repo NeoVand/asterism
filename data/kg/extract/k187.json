@@ -1,0 +1,780 @@
+{
+ "chunkId": "k187",
+ "hash": "2540de8e6cd68b2c",
+ "facts": [
+  {
+   "text": "Physics for the ground and sensors, rather than visual appearance, is the critical path for creating virtual job sites.",
+   "quote": "Physics for the ground and the sensors is the critical path, not appearance.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    21,
+    22,
+    23,
+    3
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t125",
+    "t344"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Project Chrono is an open-source off-road simulator with deformable Bekker-Wong and granular soil models.",
+   "quote": "Project Chrono with deformable Bekker-Wong and granular soil",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    21,
+    22,
+    23,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Project Chrono",
+     "kind": "tool"
+    },
+    {
+     "name": "Bekker-Wong",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t322",
+    "t181"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MAVS is an open-source off-road simulator with validated tire-soil and lidar-vegetation models.",
+   "quote": "MAVS with validated tire-soil and lidar-vegetation models",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    21,
+    22,
+    23,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MAVS",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t322",
+    "t180",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The authors of the cited open-source off-road simulators list sensor-model validation against real sensors as future work.",
+   "quote": "their own authors list sensor-model validation against real sensors as future work",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    21,
+    22,
+    23,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Project Chrono",
+     "kind": "tool"
+    },
+    {
+     "name": "MAVS",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t237",
+    "t84",
+    "t323"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Combining deformable soil with deformable tires produced \"unrealistic training times\" in one study.",
+   "quote": "deformable soil plus deformable tires produced \"unrealistic training times\" in one study",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    21,
+    22,
+    23,
+    3
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t180",
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No validation of simulated braking distance on gravel, mud, ice or slopes for heavy machines was found.",
+   "quote": "no validation of simulated braking distance on gravel, mud, ice or slopes for heavy machines was found",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    21,
+    22,
+    23,
+    3
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t174",
+    "t173",
+    "t237",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No published method or standard sets a required number of virtual environments.",
+   "quote": "No published method or standard sets a number of environments.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t44",
+    "t271"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sufficiency of virtual environments is argued through coverage of a defined operating domain and its parameters.",
+   "quote": "Sufficiency is argued through coverage of a defined operating domain and its parameters.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t140",
+    "t199",
+    "t130"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The ISO 3450x scenario standards ISO 34502:2022, ISO 34503:2023, ISO 34504:2024 and ISO 34505:2025, and draft ISO/PAS 34506 on qualification of virtual test environments, are road-vehicle standards.",
+   "quote": "The ISO 3450x scenario standards (ISO 34502:2022, 34503:2023, 34504:2024, 34505:2025) and the draft ISO/PAS 34506 on qualification of virtual test environments are road-vehicle standards",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    24,
+    25,
+    26
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 34502",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 34503",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 34504",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 34505",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO/PAS 34506",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t290",
+    "t274",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NIST combinatorial testing reduces parameter combinations but does not prove that low-order coverage suffices for collision avoidance.",
+   "quote": "NIST combinatorial testing reduces parameter combinations but does not prove that low-order coverage suffices for collision avoidance",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    27
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIST",
+     "kind": "organization"
+    },
+    {
+     "name": "combinatorial testing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t202",
+    "t198",
+    "t23"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "EMESRT PR-5A surface vehicle-interaction scenarios give the mining industry a scenario list.",
+   "quote": "EMESRT PR-5A's surface vehicle-interaction scenarios (24 according to a 2019 trade article; 17 published surface storyboards according to EMESRT's 2024 Activity Report) give the mining industry a scenario list.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    28
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    },
+    {
+     "name": "EMESRT PR-5A",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t304",
+    "t142",
+    "t17"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2019 trade article reports 24 EMESRT PR-5A surface vehicle-interaction scenarios.",
+   "quote": "24 according to a 2019 trade article",
+   "kind": "number",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    28
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMESRT PR-5A",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t304",
+    "t142"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "EMESRT's 2024 Activity Report reports 17 published surface vehicle-interaction storyboards.",
+   "quote": "17 published surface storyboards according to EMESRT's 2024 Activity Report",
+   "kind": "number",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    28
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    },
+    {
+     "name": "EMESRT 2024 Activity Report",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t304",
+    "t142"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Exact copies of real job sites and parameterised \"digital cousins\" serve different purposes, and the evidence supports using both.",
+   "quote": "Exact copies and parameterised \"digital cousins\" serve different purposes and the evidence supports using both.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t129",
+    "t130",
+    "t134"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No head-to-head study comparing exact copies and parameterised digital cousins for perception or collision avoidance was found.",
+   "quote": "No head-to-head study for perception or collision avoidance was found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t129",
+    "t130",
+    "t85",
+    "t23"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Real job-site captures preserve clutter, correlations and unknown unknowns and serve as reality anchors, regression sites and incident reconstructions.",
+   "quote": "Real captures preserve clutter, correlations and unknown unknowns and serve as reality anchors, regression sites and incident reconstructions",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t104",
+    "t161",
+    "t132"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Parameterised job-site archetypes enable rapid variation, new sensor poses and deliberate edge cases.",
+   "quote": "parameterised archetypes give rapid variation, new sensor poses and deliberate edge cases",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t134",
+    "t130",
+    "t100",
+    "t144"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Forestry researchers argue that relying solely on digital twins is insufficient.",
+   "quote": "Forestry researchers argue that \"relying solely on digital twins is insufficient\"",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t129",
+    "t130"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "On-road reconstruction researchers call real recordings indispensable because synthetic scenes lack real sensor noise.",
+   "quote": "on-road reconstruction researchers call real recordings \"indispensable\" because synthetic scenes lack real sensor noise",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t165",
+    "t90"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Generative world models are the least established option for validation ground truth.",
+   "quote": "Generative world models are the least established option for validation ground truth.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t105",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Generative novel-view methods scored 13.19 to 20.82 dB PSNR on Waymo data in a 2026 preprint.",
+   "quote": "Generative novel-view methods scored 13.19 to 20.82 dB PSNR on Waymo data in a 2026 preprint",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    29
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Waymo",
+     "kind": "company"
+    },
+    {
+     "name": "PSNR",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t115",
+    "t254"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The Waymo World Model, dated 6 February 2026, is a vendor claim for on-road driving.",
+   "quote": "the Waymo World Model (6 February 2026) is a vendor claim for on-road driving",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    30
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Waymo World Model",
+     "kind": "product"
+    },
+    {
+     "name": "Waymo",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t115",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No off-road qualification of generative world models for metric geometry, radar, ultrasonic, soil or braking physics was found.",
+   "quote": "no off-road qualification for metric geometry, radar, ultrasonic, soil or braking physics was found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t234",
+    "t94",
+    "t95",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Direct effort and cost figures for building job-site environments were not found; no person-day or price figures exist for any method.",
+   "quote": "No person-day or price figures exist for any method.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7,
+    8,
+    31
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t358",
+    "t342"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "EUVS took more than 300 hours of manual selection and more than 800 hours of compute; these are indirect figures rather than direct job-site environment building costs.",
+   "quote": "EUVS took \"300+ hours\" of manual selection and \"800+ hours\" of compute",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7,
+    8,
+    31
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EUVS",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t339",
+    "t130"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Per-scene Gaussian training takes up to 4 hours, an indirect figure for the effort of building job-site environments.",
+   "quote": "per-scene Gaussian training takes \"up to 4 hours\"",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7,
+    8,
+    31
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A terrain scene containing 23 million Gaussians ran at 17 FPS in Unreal Engine 5.",
+   "quote": "a 23-million-Gaussian terrain scene ran at 17 FPS in Unreal Engine 5",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7,
+    8,
+    31
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Unreal Engine 5",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t135",
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Standards for the collision avoidance function are maturing, but none sets rules for simulation evidence.",
+   "quote": "The standards for the function itself are maturing, but none sets rules for simulation evidence.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t280",
+    "t70",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-1:2022 covers collision avoidance with test procedures.",
+   "quote": "ISO 21815-1:2022 covers collision avoidance with test procedures",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    32,
+    33,
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t279"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO/TS 21815-2:2021 covers the J1939 braking interface.",
+   "quote": "ISO/TS 21815-2:2021 the J1939 braking interface",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    32,
+    33,
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    },
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t120"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3:2023 covers forward and reverse risk areas.",
+   "quote": "ISO 21815-3:2023 forward and reverse risk areas",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    32,
+    33,
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t187",
+    "t16"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815 Part 4, covering swing and rotation, is under publication for October 2026; this is draft-status evidence.",
+   "quote": "Part 4 (swing and rotation) is under publication for October 2026",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    35,
+    36
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815 Part 5, covering other forms of motion, is at proof stage for November 2026; this is draft-status evidence.",
+   "quote": "Part 5 (other forms of motion) is at proof stage for November 2026",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    35,
+    36
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-5",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The project schedule argues for building the environment and sensor-model pipeline from October 2026, before the prototype exists.",
+   "quote": "The schedule therefore argues for building the environment and sensor-model pipeline from October 2026, before the prototype exists",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t323",
+    "t343",
+    "t42"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The project schedule argues for using the final four months to calibrate models and run test campaigns.",
+   "quote": "using the final four months to calibrate and run campaigns",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t237",
+    "t233",
+    "t343"
+   ],
+   "importance": 3
+  }
+ ]
+}

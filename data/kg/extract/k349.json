@@ -1,0 +1,450 @@
+{
+ "chunkId": "k349",
+ "hash": "a63df243429b450c",
+ "facts": [
+  {
+   "text": "A detection-testing trial should be defined as one independent approach event, not one camera frame.",
+   "quote": "Define a trial as one independent approach event, not one frame.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 10-second encounter producing 300 camera frames is one correlated encounter, not 300 independent detection opportunities.",
+   "quote": "A 10-second encounter producing 300 camera frames is one correlated encounter, not 300 detection opportunities",
+   "kind": "example",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scoring detection by frame inflates the apparent sample size and makes confidence intervals grossly overconfident.",
+   "quote": "scoring by frame inflates the apparent sample size and makes confidence intervals grossly overconfident.",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t210"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For independent Bernoulli detection opportunities with zero misses, an exact one-sided claim follows from (1 - q)^n <= alpha, where q is the maximum miss probability, 1 - alpha is the desired confidence, and n is the number of independent opportunities.",
+   "quote": "For an independent Bernoulli detection opportunity with zero misses, an exact one-sided claim follows from (1 - q)^n <= alpha, where q is the maximum miss probability, 1 - alpha the desired confidence and n the number of independent opportunities.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The zero-failure special case of exact binomial inference gives the required number of independent detection opportunities as n = ln(alpha) / ln(1 - q), where alpha is one minus the desired confidence and q is the maximum miss probability.",
+   "quote": "Solving gives n = ln(alpha) / ln(1 - q), the zero-failure special case of exact binomial inference.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Demonstrating a miss rate at most 5% (detection at least 95%) with zero failures requires 59 independent trials at 95% one-sided confidence or 90 at 99% one-sided confidence.",
+   "quote": "| Miss rate at most 5% (detection at least 95%) | 0 | 59 | 90 |",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Demonstrating a miss rate at most 1% (detection at least 99%) with zero failures requires 299 independent trials at 95% one-sided confidence (about 300 by the rule of three) or 459 at 99% one-sided confidence.",
+   "quote": "| Miss rate at most 1% (detection at least 99%) | 0 | 299 (rule of three: about 300) | 459 |",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Demonstrating a miss rate at most 1% with one allowed failure requires about 474 independent trials at 95% one-sided confidence; the passage gives no trial count for 99% one-sided confidence.",
+   "quote": "| Miss rate at most 1% | 1 | about 474 | not given |",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Demonstrating a miss rate at most 1% with two allowed failures requires about 630 independent trials at 95% one-sided confidence; the passage gives no trial count for 99% one-sided confidence.",
+   "quote": "| Miss rate at most 1% | 2 | about 630 | not given |",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Demonstrating a miss rate at most 0.1% (detection at least 99.9%) with zero failures requires 2,995 independent trials at 95% one-sided confidence or 4,603 at 99% one-sided confidence.",
+   "quote": "| Miss rate at most 0.1% (detection at least 99.9%) | 0 | 2,995 | 4,603 |",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Demonstrating a miss rate at most 0.01% (detection at least 99.99%) with zero failures requires 29,956 independent trials at 95% one-sided confidence or 46,050 at 99% one-sided confidence.",
+   "quote": "| Miss rate at most 0.01% (detection at least 99.99%) | 0 | 29,956 | 46,050 |",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The detection sample-size table's zero-failure rows use exact binomial values.",
+   "quote": "Rows with zero failures are exact binomial values",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t210"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The detection sample-size table's rows allowing one or two failures use the Poisson or Clopper-Pearson approximation.",
+   "quote": "the rows with one or two failures use the Poisson or Clopper-Pearson approximation.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Clopper-Pearson interval",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t210",
+    "t209"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A total of 2,995 physical runs does not establish sufficient evidence for an entire product family; 2,995 independent opportunities drawn from one clearly defined target population with zero misses support only an aggregate detection-at-least-99.9% claim at 95% confidence.",
+   "quote": "They mean that 2,995 independent opportunities drawn from one clearly defined target population with zero misses support that one aggregate 99.9%/95% statement.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "If a contractual or safety requirement demands separate 99.9% detection claims for rain, darkness, dust, each machine family and each scenario type, each claim needs adequate evidence of its own or a justified statistical pooling model.",
+   "quote": "If a contractual or safety requirement demands separate 99.9% claims for rain, darkness, dust, each machine family and each scenario type, each claim needs its own adequate evidence or a justified statistical pooling model.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t210",
+    "t102",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A claim of at most 1% misses in each of 20 critical strata needs about 6,000 independent zero-miss trials.",
+   "quote": "A claim of at most 1% misses in each of 20 critical strata needs about 6,000 independent zero-miss trials",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209",
+    "t203"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The allocation assessment considers about 6,000 independent zero-miss trials for 20 critical strata feasible only in simulation or hardware-in-the-loop.",
+   "quote": "about 6,000 independent zero-miss trials, which is only feasible in simulation or hardware-in-the-loop",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t126",
+    "t148",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "When simulation or hardware-in-the-loop supplies the large stratified detection trial count, physical tests should validate the simulation in each stratum and provide an independent, smaller-sample confirmation.",
+   "quote": "physical tests then serve to validate the simulation in each stratum and to give an independent, smaller-sample confirmation",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t216",
+    "t263",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An example smaller-sample physical confirmation uses 59 trials per stratum for a detection bound of at least 95%.",
+   "quote": "for example 59 trials per stratum for a detection bound of at least 95%.",
+   "kind": "example",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t210",
+    "t216"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "If detection misses occur, use an exact binomial (Clopper-Pearson) interval or another pre-declared binomial interval rather than continuing testing until a desirable percentage appears.",
+   "quote": "If misses occur, use an exact binomial (Clopper-Pearson) interval or another pre-declared binomial interval rather than continuing until a desirable percentage appears.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Clopper-Pearson interval",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t209",
+    "t210",
+    "t218"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The Clopper-Pearson interval is exact and conservative and is the safe default for regulators.",
+   "quote": "Clopper-Pearson is exact and conservative and is the safe default for regulators",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Clopper-Pearson interval",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t209",
+    "t210"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The Wilson interval is less conservative than Clopper-Pearson and better behaved at moderate sample sizes.",
+   "quote": "the Wilson interval is less conservative and better behaved at moderate n.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Wilson interval",
+     "kind": "method"
+    },
+    {
+     "name": "Clopper-Pearson interval",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t209"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Estimation precision is distinct from demonstrating a detection-performance threshold.",
+   "quote": "A second distinction is estimation precision versus demonstrating a threshold.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t62"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A generic 95% proportion estimate using worst-case variance needs about 9,604 independent observations for precision of plus or minus 1 percentage point.",
+   "quote": "A generic 95% proportion estimate with worst-case variance needs about 9,604 independent observations for plus or minus 1 percentage point",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A generic 95% proportion estimate using worst-case variance needs about 38,415 independent observations for precision of plus or minus 0.5 percentage point.",
+   "quote": "about 38,415 for plus or minus 0.5 point.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Near a proportion of 99%, variance is smaller than the worst-case variance, and exact interval design should replace the worst-case sample-size approximation.",
+   "quote": "Near 99% the variance is smaller, and exact interval design should be used instead of the worst-case approximation.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t210"
+   ],
+   "importance": 2
+  }
+ ]
+}

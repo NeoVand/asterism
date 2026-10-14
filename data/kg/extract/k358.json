@@ -1,0 +1,185 @@
+{
+ "chunkId": "k358",
+ "hash": "1b8bc01605f67642",
+ "facts": [
+  {
+   "text": "Threshold, zone and filter tuning should use grouped data partitions rather than random frame splits, holding out entire sites, weather episodes, machine IDs or scenario families.",
+   "quote": "Use grouped data partitions, not random frame splits. Hold out entire sites, weather episodes, machine IDs or scenario families.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t231",
+    "t219"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Adjacent frames from the same run appearing in both tuning and validation sets create severe data leakage.",
+   "quote": "Adjacent frames from the same run appearing in both tuning and validation sets create severe leakage.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t231",
+    "t220",
+    "t219"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Threshold, zone and filter tuning should maintain a three-way data split: a development or tuning set, a validation or confirmation set, and an untouched audit (frozen test) set.",
+   "quote": "Keep a three-way split: development or tuning set, validation or confirmation set, and an untouched audit (frozen test) set.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    44
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t219",
+    "t231"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For machine-learning model and hyperparameter selection, nested cross-validation is the recognised way to remove the optimistic bias of repeated model selection.",
+   "quote": "For machine-learning model and hyperparameter selection, nested cross-validation is the recognised way to remove the optimistic bias of repeated model selection",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    44
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "nested cross-validation",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t220",
+    "t219",
+    "t112"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A three-way data split is the engineering analogue of nested cross-validation for removing the optimistic bias of repeated model selection.",
+   "quote": "nested cross-validation is the recognised way to remove the optimistic bias of repeated model selection; the engineering analogue is the three-way split.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    44
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "nested cross-validation",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t220",
+    "t219"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Threshold, zone and filter tuning should use nested validation across site types (leave-one-site-type-out) to test generalisation to unseen sites.",
+   "quote": "Use nested validation across site types (leave-one-site-type-out) to test generalisation to unseen sites.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "leave-one-site-type-out",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t220",
+    "t44",
+    "t219"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The frequency of queries to the frozen test set should be limited.",
+   "quote": "Limit how often the frozen test set is queried",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t219"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The frozen test set should be frozen at a version and refreshed only for a new release with a new frozen set.",
+   "quote": "freeze it at a version and refresh it only for a new release with a new frozen set.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t162",
+    "t219"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Tuned-set and frozen-set performance should be reported side by side.",
+   "quote": "Report tuned-set and frozen-set performance side by side",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t219",
+    "t224"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A large gap between tuned-set and frozen-set performance signals over-fitting.",
+   "quote": "Report tuned-set and frozen-set performance side by side; a large gap signals over-fitting.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t219",
+    "t220",
+    "t224"
+   ],
+   "importance": 3
+  }
+ ]
+}

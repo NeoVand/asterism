@@ -1,0 +1,612 @@
+{
+ "chunkId": "k194",
+ "hash": "f06aa52acb1e012d",
+ "facts": [
+  {
+   "text": "Radar simulation needs permittivity and conductivity, conductive surfaces and coatings, roughness, moving-object velocity, multipath and higher-order reflections.",
+   "quote": "Radar needs permittivity and conductivity, conductive surfaces and coatings, roughness, moving-object velocity, multipath and higher-order reflections.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t136",
+    "t118"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sim2Radar (February 2026) mapped materials to ITU-R P.2040-4 values at 77 GHz using a Fresnel ray tracer in Mitsuba 3 on five indoor scenes.",
+   "quote": "Sim2Radar (February 2026) mapped materials to ITU-R P.2040-4 values at 77 GHz with a Fresnel ray tracer in Mitsuba 3 on five indoor scenes",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    12
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sim2Radar",
+     "kind": "tool"
+    },
+    {
+     "name": "ITU-R P.2040-4",
+     "kind": "standard"
+    },
+    {
+     "name": "Mitsuba 3",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t118",
+    "t136"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sim2Radar produced about 12% of real radar point density on five indoor scenes: an average of 251 simulated versus 2,057 real points per frame. The passage attributes the gap to real radar's diffuse scattering and higher-order multipath.",
+   "quote": "still produced about 12% of the real point density (251 against 2,057 points per frame on average), because real radar includes diffuse scattering and higher-order multipath.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    12
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sim2Radar",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t249",
+    "t93"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "RadSimReal (CVPR 2024) provides on-road evidence that physical radar simulation can narrow the simulation-to-real gap for detection training.",
+   "quote": "Physical radar simulation can narrow the gap for detection training (RadSimReal, CVPR 2024), on road data.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    62
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "RadSimReal",
+     "kind": "tool"
+    },
+    {
+     "name": "CVPR 2024",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t165",
+    "t112"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NVIDIA's radar schema uses operating wavelength in propagation, antenna response and material response.",
+   "quote": "NVIDIA's radar schema uses operating wavelength in propagation, antenna and material response",
+   "kind": "method",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    63
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NVIDIA",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t136"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NVIDIA's radar schema allows deeper propagation trees that generate indirect paths and ghost detections.",
+   "quote": "allows deeper propagation trees that generate indirect paths and ghost detections.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    63
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NVIDIA",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t118"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Around off-road machinery, large metal bodies, bucket surfaces, structures and guardrails produce radar behaviour that a \"ray hits mesh equals detection\" abstraction will not reproduce.",
+   "quote": "Around off-road machinery, large metal bodies, bucket surfaces, structures and guardrails produce behaviour that a \"ray hits mesh equals detection\" abstraction will not reproduce.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t125",
+    "t104",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Radar simulation evidence from dusty or wet off-road settings was not found.",
+   "quote": "Evidence from dusty or wet off-road settings was not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t102",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Camera simulation needs physically based materials, spectral and optical response, roughness and specularity, transparent and retroreflective components, HDR sky and sun for glare and dusk, shadowing and atmospheric scattering.",
+   "quote": "Camera needs physically based materials, spectral and optical response, roughness and specularity, transparent and retroreflective components, HDR sky and sun for glare and dusk, shadowing and atmospheric scattering",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t117",
+    "t136",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "At sensor level, camera simulation needs focal length, distortion, aperture, exposure, gain, noise, dynamic range, shutter type, motion blur, frame timing and contamination.",
+   "quote": "at sensor level focal length, distortion, aperture, exposure, gain, noise, dynamic range, shutter type, motion blur, frame timing and contamination.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t90",
+    "t101",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Ansys requires physical sky and lights and surface optical properties for camera simulation; these requirements establish inputs, not independent proof of simulation accuracy.",
+   "quote": "Ansys requires physical sky and lights and surface optical properties for camera simulation; this establishes required inputs, not independent proof of accuracy.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    60
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Ansys",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t89",
+    "t136",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ultrasonic simulation needs acoustic propagation rather than optical appearance, including sound speed, surface absorption, reflection and scattering, transducer directivity, time of flight, multipath and environmental conditions.",
+   "quote": "Ultrasonic needs acoustic propagation rather than optical appearance: sound speed, surface absorption, reflection and scattering, transducer directivity, time of flight, multipath and environmental conditions.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t95",
+    "t136"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Omniverse documentation includes an ultrasonic sensor extension.",
+   "quote": "Omniverse documentation includes an ultrasonic sensor extension.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    63
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Omniverse",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t95",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No published ultrasonic material datasets for job-site materials—rock, wet clay, gravel, steel buckets and high-visibility clothing—were found.",
+   "quote": "No published material datasets for job-site materials (rock, wet clay, gravel, steel buckets, high-visibility clothing)",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t95",
+    "t136",
+    "t107"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No off-road study establishing the material fidelity needed for ultrasonic validation was found.",
+   "quote": "no off-road study establishing the material fidelity needed for ultrasonic validation were found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t95",
+    "t125",
+    "t136",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Thermal camera simulation adds emissivity, temperature and heat state to the required scene properties.",
+   "quote": "Thermal cameras add emissivity, temperature and heat state",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t136"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No job-site emissivity dataset was found.",
+   "quote": "no job-site emissivity dataset was found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t107",
+    "t136"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "GNSS models may need satellite visibility and multipath.",
+   "quote": "GNSS models may need satellite visibility and multipath",
+   "kind": "uncertain",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "GNSS",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t98",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Event camera simulation needs illumination-change timing.",
+   "quote": "event cameras need illumination-change timing.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t84",
+    "t101"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor contamination from mud, water, ice, dust, scratches and partial obstruction is an independent state variable, not a scene texture.",
+   "quote": "Sensor contamination (mud, water, ice, dust, scratches, partial obstruction) is an independent state variable, not a scene texture.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t103",
+    "t130"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Rain cannot be represented by one visual particle effect: cameras experience contrast loss, droplets and glare; lidar receives scatter returns and attenuation; radar behaves differently; and the ground becomes more slippery.",
+   "quote": "\"Rain\" is not one visual particle effect. A camera sees contrast loss, droplets and glare; lidar receives scatter returns and attenuation; radar behaves differently again; the ground becomes more slippery.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t89",
+    "t92",
+    "t94",
+    "t174"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Dust simultaneously acts as a volumetric optical phenomenon, a source of lidar clutter, a sensor-cover contaminant and a change in surface mechanics.",
+   "quote": "Dust is a volumetric optical phenomenon, a source of lidar clutter, a sensor-cover contaminant and a change in surface mechanics at the same time.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t92",
+    "t104",
+    "t174"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Mining lidar dust-filtering work published in MDPI Sensors in 2025 provides evidence that dust measurably affects lidar.",
+   "quote": "Dust affects lidar measurably: mining lidar dust-filtering work (MDPI Sensors, 2025)",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    64
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MDPI Sensors",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Mining lidar dust-filtering work published in MDPI Sensors in 2025 built a public database from real and simulated dusty environments.",
+   "quote": "mining lidar dust-filtering work (MDPI Sensors, 2025) built a public database from real and simulated dusty environments",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    64
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MDPI Sensors",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t102",
+    "t107"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Mining lidar dust-filtering work published in MDPI Sensors in 2025 synthesises dust from a parameterized dust blueprint, with intensity post-processing guided by real mining lidar data.",
+   "quote": "synthesises dust from \"a parameterized dust blueprint\" with intensity post-processing guided by real mining lidar data.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    64
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MDPI Sensors",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t102",
+    "t128"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MAVS models lidar in rain.",
+   "quote": "MAVS models lidar in rain.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    65,
+    66
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MAVS",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t102",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The 2026 SAE off-road simulator models dynamic weather and light and weather-induced sensor blockage as sequence-level factors.",
+   "quote": "The 2026 SAE off-road simulator models dynamic weather and light and weather-induced sensor blockage as sequence-level factors",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    20
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "2026 SAE off-road simulator",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t102",
+    "t103",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The 2026 SAE off-road simulator does not demonstrate that every sensor modality is validated against a production sensor.",
+   "quote": "without demonstrating that every modality is validated against a production sensor.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    20
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "2026 SAE off-road simulator",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t234",
+    "t65",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Validated radar or camera models for dust, snow and fog on off-road machines were not found.",
+   "quote": "Validated radar or camera models for dust, snow and fog on off-road machines were not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t89",
+    "t102",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For a braking function, the ground is a mechanical system as well as scenery: ground properties change stopping distance and machine attitude, and changes in machine attitude change sensor pose.",
+   "quote": "For a braking function the ground is a mechanical system as well as scenery: it changes stopping distance and machine attitude, which changes sensor pose.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t174",
+    "t170",
+    "t179",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A ground model can need friction, sinkage, cohesion, shear behaviour, compaction, rutting, moisture and local roughness.",
+   "quote": "A ground model can need friction, sinkage, cohesion, shear behaviour, compaction, rutting, moisture and local roughness.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t174",
+    "t181",
+    "t131"
+   ],
+   "importance": 2
+  }
+ ]
+}

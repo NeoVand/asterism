@@ -1,0 +1,318 @@
+{
+ "chunkId": "k379",
+ "hash": "a6461efda4062cf1",
+ "facts": [
+  {
+   "text": "Naturalistic-adversarial environments and dense RL (D2RL) are suited to accelerated unbiased evaluation in the collision-mitigation test program.",
+   "quote": "Naturalistic-adversarial environments and dense RL (D2RL) | Accelerated unbiased evaluation",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    30,
+    31,
+    32,
+    33
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "D2RL",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t200",
+    "t206"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Naturalistic-adversarial environments and dense RL (D2RL) have reported evaluation acceleration of 10^3 to 10^5 times, based on on-road evidence identified as Nature 2023.",
+   "quote": "10^3 to 10^5 times acceleration (reported)",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    30,
+    31,
+    32,
+    33
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "D2RL",
+     "kind": "method"
+    },
+    {
+     "name": "Nature",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t200",
+    "t206"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Naturalistic-adversarial environments and dense RL (D2RL) cannot legitimately make evaluation claims without a large naturalistic dataset.",
+   "quote": "Anything without a large naturalistic dataset",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    30,
+    31,
+    32,
+    33
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "D2RL",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t200",
+    "t107"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Naturalistic-adversarial environments and dense RL (D2RL) need a learned naturalistic behaviour model.",
+   "quote": "Needs a learned naturalistic behaviour model",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    30,
+    31,
+    32,
+    33
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "D2RL",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t200",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Academic open-source code is typical tooling for naturalistic-adversarial environments and dense RL (D2RL).",
+   "quote": "Academic open-source code",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    30,
+    31,
+    32,
+    33
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "D2RL",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t200",
+    "t320"
+   ],
+   "importance": 1
+  },
+  {
+   "text": "Adaptive or active-learning and Bayesian test selection are suited to learning decision boundaries efficiently in the collision-mitigation test program.",
+   "quote": "Adaptive or active-learning and Bayesian test selection | Learn decision boundaries efficiently",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    28
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t207"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Adaptive or active-learning and Bayesian test selection can legitimately claim efficient characterisation under the assumed surrogate and acquisition model; the evidence base is general methodology.",
+   "quote": "Efficient characterisation under the assumed surrogate and acquisition model",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    28
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t207"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Adaptively selected tests do not legitimately support naive binomial confidence intervals or population prevalence claims.",
+   "quote": "Naive binomial confidence intervals from adaptively selected tests; population prevalence",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    28
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t207",
+    "t209",
+    "t210",
+    "t217"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sampling in adaptive or active-learning and Bayesian test selection is intentionally biased.",
+   "quote": "Sampling is intentionally biased",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    28
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t207",
+    "t217"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Surrogate uncertainty in adaptive or active-learning and Bayesian test selection can be wrong.",
+   "quote": "surrogate uncertainty can be wrong",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    28
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t207",
+    "t259"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Open-source optimisation libraries are typical tooling for adaptive or active-learning and Bayesian test selection.",
+   "quote": "Open-source optimisation libraries",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    28
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t207",
+    "t320"
+   ],
+   "importance": 1
+  },
+  {
+   "text": "Collision-mitigation test selection should use combinatorial and design of experiments (DOE) designs for coverage and understanding.",
+   "quote": "combinatorial and DOE designs for coverage and understanding",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Design of experiments",
+     "kind": "method"
+    },
+    {
+     "name": "Combinatorial testing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t202",
+    "t201",
+    "t200"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Collision-mitigation test selection should use falsification and adversarial search for discovery.",
+   "quote": "falsification and adversarial search for discovery",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Falsification",
+     "kind": "method"
+    },
+    {
+     "name": "Adversarial search",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t205",
+    "t200"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A statistical field-performance claim for collision mitigation should use a separate random or stratified sample, or a correctly weighted rare-event campaign.",
+   "quote": "a separate random or stratified sample, or a correctly weighted rare-event campaign, for the statistical field-performance claim",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t217",
+    "t203",
+    "t206",
+    "t214"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "One test-selection design cannot provide coverage and understanding, failure discovery, and a statistical field-performance claim for collision mitigation.",
+   "quote": "One design cannot perform all three jobs.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t200",
+    "t217"
+   ],
+   "importance": 3
+  }
+ ]
+}

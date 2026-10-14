@@ -1,0 +1,516 @@
+{
+ "chunkId": "k190",
+ "hash": "64a4bd1387e049d7",
+ "facts": [
+  {
+   "text": "Reusing mine plans, design surfaces, pit shells, bench lines, digital terrain models, LandXML, IFC or BIM models, plant CAD, GIS layers, block models and forest inventories provides an explicit, editable, coordinate-correct virtual-site skeleton far faster than visual recreation.",
+   "quote": "give an explicit, editable, coordinate-correct skeleton far faster than visual recreation.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "LandXML",
+     "kind": "other"
+    },
+    {
+     "name": "IFC",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t130",
+    "t131"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2026 systematic review of surface-mining perception lists Hexagon, Trimble and Bentley iTwin digital-twin platforms as operational in some tier-1 mines.",
+   "quote": "A systematic review of surface-mining perception (2026) lists Hexagon, Trimble and Bentley iTwin digital-twin platforms as \"operational in some tier-1 mines\"",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    50
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Hexagon",
+     "kind": "company"
+    },
+    {
+     "name": "Trimble",
+     "kind": "company"
+    },
+    {
+     "name": "Bentley iTwin",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t129"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The 2026 systematic review of surface-mining perception notes that Hexagon, Trimble and Bentley iTwin digital-twin platforms update at operational timescales rather than perception timescales.",
+   "quote": "but notes that they update \"at operational timescales rather than perception timescales\".",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    50
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Hexagon",
+     "kind": "company"
+    },
+    {
+     "name": "Trimble",
+     "kind": "company"
+    },
+    {
+     "name": "Bentley iTwin",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t129",
+    "t85"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A forest digital twin built on the Cesium engine from remote sensing and inventory data was published in 2023.",
+   "quote": "A forest digital twin built on the Cesium engine from remote sensing and inventory data is published (2023).",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    44
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Cesium",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t129",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Public repositories such as OpenTopography distribute lidar, digital elevation model (DEM) and structure-from-motion terrain data.",
+   "quote": "Public repositories such as OpenTopography distribute lidar, DEM and structure-from-motion terrain data.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    51
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "OpenTopography",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t131",
+    "t132",
+    "t133"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A key configuration caveat when reusing site design models for braking validation is that a design model represents what was intended, while the braking system encounters what is physically present now.",
+   "quote": "The key caveat is configuration: a design model says what was intended, and the braking system meets what is physically there now.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t165",
+    "t162"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ready-made asset libraries—including commercial marketplaces, Unity prefabs, Epic's Fab, simulator-bundled assets and NVIDIA's SimReady packs—supply rocks, vegetation, cones, containers, buildings, barriers, machines and rigged people.",
+   "quote": "engine stores (Unity prefabs; Epic's Fab), simulator-bundled assets and NVIDIA's \"SimReady\" packs supply rocks, vegetation, cones, containers, buildings, barriers, machines and rigged people.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    53,
+    54,
+    13
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Unity",
+     "kind": "tool"
+    },
+    {
+     "name": "Epic Games Fab",
+     "kind": "product"
+    },
+    {
+     "name": "NVIDIA SimReady",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t130",
+    "t326"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "CGTrader assets were used in academic Unreal Engine 4 work.",
+   "quote": "Commercial marketplaces (CGTrader was used in academic Unreal Engine 4 work)",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    52
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "CGTrader",
+     "kind": "company"
+    },
+    {
+     "name": "Unreal Engine 4",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t130",
+    "t135"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Visual assets are not automatically simulation-ready because collision proxies, semantic labels and radar, lidar or acoustic properties may be absent.",
+   "quote": "Visual assets are not automatically simulation-ready: collision proxies, semantic labels and radar, lidar or acoustic properties can be absent",
+   "kind": "risk",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    13
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t131",
+    "t136",
+    "t323"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NVIDIA separately specifies non-visual material metadata for sensor-ready assets.",
+   "quote": "NVIDIA separately specifies non-visual material metadata for sensor-ready assets.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    13
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "NVIDIA",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t136",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Forestry researchers argue that relying solely on digital twins is insufficient.",
+   "quote": "Forestry researchers argue that \"relying solely on digital twins is insufficient\"",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    18
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t129"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Forestry 'digital cousins' are statistically matched synthetic plots that reproduce the statistical structure of real stands rather than copying the stands exactly.",
+   "quote": "generate synthetic plots that reproduce the statistical structure of real stands rather than copying them.",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    18
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "digital cousins",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t130",
+    "t134",
+    "t129"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The forestry digital-cousins approach was introduced in a January 2025 preprint.",
+   "quote": "The approach, introduced in a January 2025 preprint",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    18
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "digital cousins",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t130",
+    "t134"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The forestry digital-cousins approach was published as Boreal3D in Remote Sensing of Environment in August 2026.",
+   "quote": "published in Remote Sensing of Environment in August 2026 as Boreal3D",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    18
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Boreal3D",
+     "kind": "dataset"
+    },
+    {
+     "name": "Remote Sensing of Environment",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t107",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Boreal3D includes 1,000 plots simulated for airborne, unmanned, mobile and terrestrial laser scanning.",
+   "quote": "Boreal3D (1,000 plots simulated for airborne, unmanned, mobile and terrestrial laser scanning)",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    18
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Boreal3D",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t107",
+    "t92",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The forestry digital-cousins approach sits between exact digital twins and pure procedural generation.",
+   "quote": "sits between exact twins and pure procedural generation.",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    18
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "digital cousins",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t129",
+    "t134"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Construction literature from 2020 to 2025 describes hybrid construction of images by compositing rendered or cut-out machines and workers onto real construction images.",
+   "quote": "The first composites rendered or cut-out machines and workers onto real construction images (construction literature, 2020 to 2025).",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    55,
+    56
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Multi-source digital-twin construction combines terrain anchored by lidar, drone-photogrammetry textures, engineering-CAD fixed plant, library clutter, parameterised people and truck agents, manually cleaned-up hidden geometry and hundreds of procedurally generated variants.",
+   "quote": "anchor terrain from lidar, textures from drone photogrammetry, fixed plant from engineering CAD, clutter from libraries, people and trucks from parameterised agents, hidden geometry from manual cleanup, and hundreds of variants from procedural rules",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    31
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t129",
+    "t130",
+    "t132",
+    "t134"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Multi-source digital twins can use Gaussians for appearance over invisible collision meshes where neural appearance is wanted; the passage supports this construction with independent evidence and expert opinion.",
+   "quote": "with Gaussians for appearance over invisible collision meshes where neural appearance is wanted. **Independent** [31]; **Expert opinion**.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    31
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t131",
+    "t129"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hybrid and multi-source virtual-site construction incurs data-engineering work to manage common coordinates, semantic identifiers, materials, collision definitions, versioning and provenance.",
+   "quote": "The cost is data engineering: common coordinates, semantic identifiers, materials, collision definitions, versioning and provenance",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t162",
+    "t341"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Registration errors, duplicate geometry and inconsistent levels of detail in hybrid and multi-source virtual-site construction become configuration-management problems.",
+   "quote": "registration errors, duplicate geometry and inconsistent levels of detail become configuration-management problems.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t162",
+    "t125"
+   ],
+   "importance": 3
+  }
+ ]
+}

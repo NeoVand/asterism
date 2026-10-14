@@ -1,0 +1,473 @@
+{
+ "chunkId": "k90",
+ "hash": "a993ae9233a34686",
+ "facts": [
+  {
+   "text": "MineSim is a scenario-based simulation test system and benchmark for autonomous trucks in open-pit mines, reported in 2025; the cited work is academic simulation work only.",
+   "quote": "Academic simulation work only: MineSim, a scenario-based simulation test system and benchmark for autonomous trucks in open-pit mines (2025) [99]",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    99
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MineSim",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t316",
+    "t141",
+    "t3",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The University of Pretoria chapter models South African mining collision-avoidance scenarios in RoadRunner and investigates collision prediction using steering-rate information; the cited work is academic simulation work only.",
+   "quote": "the University of Pretoria chapter that models South African mining collision-avoidance scenarios (in RoadRunner) and investigates collision prediction with steering-rate information [36]",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    36
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "University of Pretoria",
+     "kind": "organization"
+    },
+    {
+     "name": "RoadRunner",
+     "kind": "tool"
+    },
+    {
+     "name": "South Africa",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t316",
+    "t196",
+    "t141",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Expert synthesis consistent with Euro NCAP, VaViM and broader work identifies transferable validation methods: scenario-based requirements, parameterized test generation, closed-loop software- and hardware-in-the-loop, deterministic replay, risk-based sampling, regression automation, configuration management, model-credibility arguments, virtual-to-physical correlation and independent spot-checking.",
+   "quote": "Methods transfer: scenario-based requirements, parameterized test generation, closed-loop software- and hardware-in-the-loop, deterministic replay, risk-based sampling, regression automation, configuration management, model-credibility arguments",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Euro NCAP",
+     "kind": "organization"
+    },
+    {
+     "name": "VaViM",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t127",
+    "t145",
+    "t234",
+    "t160",
+    "t162"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The physical content of on-road simulation models does not transfer to off-road machines: machine dynamics, ground interaction, brake response, sensor location and occlusion, target signatures, site geometry and environmental phenomena.",
+   "quote": "The physical content of the models does not transfer: machine dynamics, ground interaction, brake response, sensor location and occlusion, target signatures, site geometry and environmental phenomena.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t165",
+    "t179",
+    "t182",
+    "t102",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NHTSA's heavy-truck experience shows that moving from light road vehicles to heavy road vehicles already required test adaptations for stopping distance and equipment.",
+   "quote": "NHTSA's heavy-truck experience is the empirical warning: moving from light road vehicles to heavy road vehicles already required test adaptations for stopping distance and equipment [20]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    20
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NHTSA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t170",
+    "t279",
+    "t296"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Moving from roads to deformable quarry surfaces, slopes, berms, piles, articulated frames, implements and airborne contamination is a larger validation change than moving from light road vehicles to heavy road vehicles.",
+   "quote": "moving from roads to deformable quarry surfaces, slopes, berms, piles, articulated frames, implements and airborne contamination is a larger change.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t165",
+    "t174",
+    "t173",
+    "t176",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor choice changes the virtual-validation credibility plan; because the program's sensors are undecided, the program must be sensor-interface-neutral but not sensor-physics-neutral.",
+   "quote": "**Sensor choice changes the credibility plan.** Because the sensors are undecided, the program must be sensor-interface-neutral but not sensor-physics-neutral.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t84",
+    "t234",
+    "t320"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The sensor-option guidance specifies what virtual testing and physical correlation must demonstrate, not capabilities that any vendor has already demonstrated.",
+   "quote": "The table states what must be demonstrated, not what any vendor can already do.",
+   "kind": "uncertain",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t160",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For cameras, virtual testing is particularly good for geometry, object and pose diversity, occlusion, illumination sweeps, algorithm regression and large synthetic scene sets.",
+   "quote": "| Camera | Geometry, object and pose diversity, occlusion, illumination sweeps, algorithm regression, large synthetic scene sets",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t127",
+    "t114",
+    "t103",
+    "t161"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Camera virtual testing still requires critical physical correlation for photometric realism, glare, darkness, precipitation, dust or mud on the lens, motion blur, machine vibration and actual object appearance.",
+   "quote": "Photometric realism; glare; darkness; precipitation; dust or mud on the lens; motion blur; machine vibration; actual object appearance",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t160",
+    "t102",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For radar and 4D radar, virtual testing is particularly good for range and range-rate geometry, target trajectories, fusion logic and extensive nuisance-object sweeps.",
+   "quote": "| Radar and 4D radar | Range and range-rate geometry, target trajectories, fusion logic, extensive nuisance-object sweeps",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t127",
+    "t99",
+    "t32"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Radar and 4D radar virtual testing still requires critical physical correlation for target radar signatures, multipath, material and geometry effects, close-range behavior, installation effects and environmental clutter.",
+   "quote": "Target radar signatures, multipath, material and geometry effects, close-range behavior, installation effects, environmental clutter",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t160",
+    "t104",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For lidar, virtual testing is particularly good for geometry, point-cloud algorithms, occlusion and object-placement combinatorics.",
+   "quote": "| Lidar | Geometry, point-cloud algorithms, occlusion, object-placement combinatorics",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t93",
+    "t103",
+    "t127"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Lidar virtual testing still requires critical physical correlation for surface reflectivity, rain, fog and dust attenuation, dirty optical windows, multipath and ghost returns, and real scanner timing.",
+   "quote": "Surface reflectivity, rain, fog and dust attenuation, dirty optical windows, multipath and ghost returns, real scanner timing",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t160",
+    "t102",
+    "t103"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For ultrasonic sensors, virtual testing is particularly good for low-speed near-field geometry and control logic.",
+   "quote": "| Ultrasonic | Low-speed near-field geometry and control logic",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t95",
+    "t127",
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Ultrasonic virtual testing still requires critical physical correlation for acoustic reflections from irregular materials, ground and implement reflections, temperature, wind and installation effects, and transducer contamination.",
+   "quote": "Acoustic reflections from irregular materials, ground and implement reflections, temperature, wind and installation effects, transducer contamination",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t95",
+    "t160",
+    "t102",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For thermal, UWB, GNSS or tag-based, infrastructure-assisted sensor options, virtual testing is particularly good for sensor fusion and deterministic location and identity scenarios.",
+   "quote": "| Thermal, UWB, GNSS or tag-based, infrastructure-assisted | Sensor fusion, deterministic location and identity scenarios",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t97",
+    "t98",
+    "t99",
+    "t127"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Thermal, UWB, GNSS or tag-based, infrastructure-assisted sensor options still require critical physical correlation for site infrastructure failure modes, tag coverage, non-equipped objects, and installation and maintenance assumptions.",
+   "quote": "Site infrastructure failure modes, tag coverage, non-equipped objects, installation and maintenance assumptions",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t160",
+    "t97",
+    "t98",
+    "t96",
+    "t56"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Bosch's tram system pairs camera with radar and presents radar as adding detection in fog, rain and at night; this is a vendor claim.",
+   "quote": "Bosch's tram system pairs camera with radar and presents radar as adding detection in fog, rain and at night [66]",
+   "kind": "example",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    66
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Bosch",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t89",
+    "t102",
+    "t315"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hexagon's mining system moved to 4D radar in 2024, according to vendor evidence.",
+   "quote": "Hexagon's mining system moved to 4D radar in 2024 [37]",
+   "kind": "event",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    37
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Hexagon",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Bosch's camera-and-radar tram system and Hexagon's move to 4D radar are industry signals supporting sensor diversity, but do not prove sensor diversity's effectiveness.",
+   "quote": "Two industry signals support sensor diversity without proving it:",
+   "kind": "uncertain",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    37,
+    66
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Bosch",
+     "kind": "company"
+    },
+    {
+     "name": "Hexagon",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t84",
+    "t99",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Neither Bosch's tram system nor Hexagon's mining system provides independent proof that radar alone closes the adverse-environment validation problem.",
+   "quote": "Neither is independent proof that radar alone closes the adverse-environment validation problem.",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    37,
+    66
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Bosch",
+     "kind": "company"
+    },
+    {
+     "name": "Hexagon",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t102",
+    "t70",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Underground Level 9 systems that rely on everyone wearing a tag pose a different validation problem from camera, radar or lidar perception.",
+   "quote": "Underground Level 9 systems that rely on everyone wearing a tag [25] pose a different validation problem from camera, radar or lidar perception.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t30",
+    "t97",
+    "t85",
+    "t127"
+   ],
+   "importance": 3
+  }
+ ]
+}

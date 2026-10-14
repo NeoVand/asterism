@@ -1,0 +1,299 @@
+{
+ "chunkId": "k253",
+ "hash": "a11cd4a982a287c0",
+ "facts": [
+  {
+   "text": "Physics-based lidar models with a full signal chain closely match real sensors in clear weather and in fog or light-to-moderate rain, according to multiple independent studies from 2021 to 2024. The evidence comes from on-road applications.",
+   "quote": "Physics-based lidar models with a full signal chain match real sensors closely in clear weather and in fog or light-to-moderate rain (multiple independent studies, 2021 to 2024)",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    6,
+    7,
+    8,
+    9,
+    11
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t125",
+    "t102",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Radar is far less affected by fog and airborne dust than lidar or cameras, according to measurements from 2009 to 2019.",
+   "quote": "Radar is far less affected than lidar or cameras by fog and airborne dust (measurements, 2009 to 2019)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    21,
+    22,
+    76,
+    77
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t102",
+    "t92",
+    "t89"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor model fidelity depends on modelling sensor-specific signal processing and imperfections.",
+   "quote": "Model fidelity depends on modelling sensor-specific signal processing and imperfections",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    7,
+    33,
+    36
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An ideal object-level sensor model can hide large gaps between simulated and real raw data.",
+   "quote": "an ideal object-level model can hide large raw-data gaps",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    7,
+    33,
+    36
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t165",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Modelling radar material interaction and multipath substantially improves sim-to-real behaviour compared with simple one-hit ray casting.",
+   "quote": "Radar material interaction and multipath modelling substantially improve sim-to-real behaviour over simple one-hit ray casting",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    31,
+    32,
+    90
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t117",
+    "t118",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Scene materials affect sensor simulation enough that standardization now encodes sensor-relevant physical properties.",
+   "quote": "scene materials matter enough that standardization now encodes sensor-relevant physical properties",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    31,
+    32,
+    90
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t136",
+    "t117",
+    "t271"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Weather facilities at CEREMA, CARISSMA, NIED and JARI are the main ground truth for weather models.",
+   "quote": "Weather facilities (CEREMA, CARISSMA, NIED, JARI) are the main ground truth for weather models",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    6,
+    11,
+    76
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "CEREMA",
+     "kind": "organization"
+    },
+    {
+     "name": "CARISSMA",
+     "kind": "organization"
+    },
+    {
+     "name": "NIED",
+     "kind": "organization"
+    },
+    {
+     "name": "JARI",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t105",
+    "t102",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Real and synthetic sensor output must be compared at several levels, including distributions and downstream tasks, rather than judged visually.",
+   "quote": "Real and synthetic output must be compared at several levels, including distributions and downstream tasks, rather than judged visually",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    31,
+    36,
+    38,
+    78
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t253",
+    "t256",
+    "t249",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Real-hardware hardware-in-the-loop (HIL) is a mature and important complement to software simulation.",
+   "quote": "Real-hardware HIL is a mature and important complement to software simulation",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    45,
+    46,
+    47
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t126"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Real-hardware hardware-in-the-loop (HIL) has known physical limits.",
+   "quote": "Real-hardware HIL is a mature and important complement to software simulation, with known physical limits",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    45,
+    46,
+    47
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t262"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815 is the direct off-road standard framework and applies to earth-moving, mobile underground-mining and road-construction machines.",
+   "quote": "ISO 21815 is the direct off-road standard framework: it applies to earth-moving, mobile underground-mining and road-construction machines",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    1,
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815 covers collision avoidance by reducing speed, stopping or inhibiting motion.",
+   "quote": "covers collision avoidance by reducing speed, stopping or inhibiting motion",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    1,
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t23",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815 is more relevant to the heavy off-road collision mitigation function than on-road automated-driving standards.",
+   "quote": "which is more relevant to this function than on-road automated-driving standards",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    1,
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t22",
+    "t1"
+   ],
+   "importance": 3
+  }
+ ]
+}

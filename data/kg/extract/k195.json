@@ -1,0 +1,556 @@
+{
+ "chunkId": "k195",
+ "hash": "467d9c79d7beef47",
+ "facts": [
+  {
+   "text": "Chrono::Vehicle provides rigid and deformable terrain, including the semi-empirical Soil Contact Model with Bekker-Wong pressure-sinkage, granular discrete-element models and continuum models.",
+   "quote": "Chrono::Vehicle provides rigid and deformable terrain (the semi-empirical Soil Contact Model with Bekker-Wong pressure-sinkage), granular discrete-element and continuum models",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    21,
+    67,
+    68
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Chrono::Vehicle",
+     "kind": "tool"
+    },
+    {
+     "name": "Soil Contact Model",
+     "kind": "method"
+    },
+    {
+     "name": "Bekker-Wong pressure-sinkage",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t325"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Chrono::Vehicle documentation says deformable terrain relies on collision and contact rather than a friction value painted onto a visual surface.",
+   "quote": "its documentation notes that deformable terrain relies on collision and contact rather than a friction value painted onto a visual surface.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    21,
+    67,
+    68
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Chrono::Vehicle",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t174",
+    "t131"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2024 study parameterised harder granular soil and cohesive clay-like soil.",
+   "quote": "One 2024 study parameterised harder granular soil and cohesive clay-like soil",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    23
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t181"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The authors of a 2024 study assumed rigid tires because running deformable soil and deformable tires together yielded unrealistic training times.",
+   "quote": "running deformable soil and deformable tires together \"yielded unrealistic training times\", so the authors assumed rigid tires.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    23
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t180",
+    "t181",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MAVS uses a validated tire-soil interaction model for sand and clay.",
+   "quote": "MAVS uses \"a validated tire-soil interaction model for sand and clay\".",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MAVS",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t180",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Vegetation is not a rigid obstacle.",
+   "quote": "Vegetation is not a rigid obstacle",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    69
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t179"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MAVS added a fast vegetation-override resistance model based on field measurements, reported at GVSETS 2025.",
+   "quote": "MAVS added a fast vegetation-override resistance model from field measurements (GVSETS 2025).",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    69
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MAVS",
+     "kind": "tool"
+    },
+    {
+     "name": "GVSETS 2025",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t179",
+    "t130",
+    "t263"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "TERA, reported at IEEE SIMPAR 2025, couples soil and terrain mechanics to an excavator model.",
+   "quote": "TERA (IEEE SIMPAR 2025) couples soil and terrain mechanics to an excavator model",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    70
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "TERA",
+     "kind": "tool"
+    },
+    {
+     "name": "IEEE SIMPAR 2025",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t179",
+    "t5"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "TERA compares track deformation and velocity on different terrains with a real excavator, illustrating calibration rather than assumption of machine dynamics.",
+   "quote": "compares track deformation and velocity on different terrains with a real excavator.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    70
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "TERA",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t237",
+    "t179",
+    "t175",
+    "t5"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Validation of simulated braking distance on gravel, mud, ice or slopes for heavy machines was not found; this gap matters directly for an automatic-braking function.",
+   "quote": "Validation of simulated braking distance on gravel, mud, ice or slopes for heavy machines was **not found**. This matters directly for an automatic-braking function.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t174",
+    "t173",
+    "t25",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A machine-environment test loop needs the machine's dimensions, sensor mounting transforms, articulation and swing state, mass and inertia, powertrain, brake actuation delays and capability, tires or tracks, suspension and terrain interaction.",
+   "quote": "The test loop needs the machine's dimensions, sensor mounting transforms, articulation and swing state, mass and inertia, powertrain, brake actuation delays and capability, tires or tracks, suspension and terrain interaction.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t179",
+    "t100",
+    "t182",
+    "t171",
+    "t181"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor-only simulation cannot establish collision avoidance if the virtual machine's deceleration and pitch on the relevant terrain are wrong.",
+   "quote": "A sensor-only simulation cannot establish collision avoidance if the virtual machine's deceleration and pitch on the relevant terrain are wrong",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t179",
+    "t169",
+    "t174",
+    "t127",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A simulated pedestrian or haul truck needs controllable position, velocity, acceleration, orientation, shape, visibility, collision body and behaviour.",
+   "quote": "A pedestrian or haul truck needs controllable position, velocity, acceleration, orientation, shape, visibility, collision body and behaviour",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t141",
+    "t14",
+    "t3",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A simulated pedestrian or haul truck must be placeable at an exact boundary condition and reproducible deterministically.",
+   "quote": "it must be possible to place it at an exact boundary condition and reproduce that deterministically.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t141",
+    "t143",
+    "t14",
+    "t3"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Procedural and simulated scenes provide labels automatically through MAVS, Isaac Sim Replicator, Unity Perception and Blender pipelines.",
+   "quote": "Procedural and simulated scenes provide labels \"automatically\" (MAVS, Isaac Sim Replicator, Unity Perception, Blender pipelines)",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    3,
+    71,
+    72,
+    1
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MAVS",
+     "kind": "tool"
+    },
+    {
+     "name": "Isaac Sim Replicator",
+     "kind": "tool"
+    },
+    {
+     "name": "Unity Perception",
+     "kind": "tool"
+    },
+    {
+     "name": "Blender",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t106",
+    "t134",
+    "t105"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The passage also attaches vendor evidence to its claim that procedural and simulated scenes provide labels automatically through MAVS, Isaac Sim Replicator, Unity Perception and Blender pipelines.",
+   "quote": "Procedural and simulated scenes provide labels \"automatically\" (MAVS, Isaac Sim Replicator, Unity Perception, Blender pipelines)",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    38
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MAVS",
+     "kind": "tool"
+    },
+    {
+     "name": "Isaac Sim Replicator",
+     "kind": "tool"
+    },
+    {
+     "name": "Unity Perception",
+     "kind": "tool"
+    },
+    {
+     "name": "Blender",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t106",
+    "t105"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Forestry authors stress that simulated annotations are “100% accurate annotations”.",
+   "quote": "forestry authors stress \"100% accurate annotations\".",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    3,
+    71,
+    72,
+    1
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t105"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Useful simulated-scene ground-truth channels include semantic and instance identifiers, per-pixel segmentation, depth, normals, 2D and 3D boxes, object poses, velocities, trajectories, visibility and occlusion, terrain class, material identifier, sensor mounting pose, contact, time-to-collision, braking trigger state and ISO 21815 risk-area classification.",
+   "quote": "Useful truth channels include semantic and instance identifiers, per-pixel segmentation, depth, normals, 2D and 3D boxes, object poses, velocities, trajectories, visibility and occlusion, terrain class, material identifier, sensor mounting pose, contact, time-to-collision, braking trigger state",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t105",
+    "t106",
+    "t111",
+    "t185",
+    "t280"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Automatic labels are not automatically the right labels; the labeling ontology must be designed from the safety requirements.",
+   "quote": "Automatic labels are not automatically the right labels; the ontology has to be designed from the safety requirements.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t63",
+    "t105"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Reconstructed scenes need segmentation; Para-Lane uses SAM followed by manual quality checks as an on-road example.",
+   "quote": "Reconstructed scenes need segmentation, for example SAM followed by manual quality checks in Para-Lane.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "SAM",
+     "kind": "tool"
+    },
+    {
+     "name": "Para-Lane",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t106",
+    "t133"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An open co-simulation demo uses ASAM OpenSCENARIO and OSI with OpenMATERIAL 3D and a physical lidar model.",
+   "quote": "ASAM OpenSCENARIO and OSI with OpenMATERIAL 3D are used in an open co-simulation demo with a physical lidar model.",
+   "kind": "example",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    73
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenSCENARIO",
+     "kind": "standard"
+    },
+    {
+     "name": "ASAM OSI",
+     "kind": "standard"
+    },
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t138",
+    "t136",
+    "t139",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenDRIVE assumes road networks, and its suitability for haul roads without lanes is a known gap.",
+   "quote": "ASAM OpenDRIVE assumes road networks; its suitability for haul roads without lanes is a known gap",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    74
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenDRIVE",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t137",
+    "t12",
+    "t130"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "MineSim notes that urban simulators lack coverage of unstructured road environments in open-pit mining.",
+   "quote": "MineSim notes that urban simulators \"lack coverage of unstructured road environments in open-pit mining\".",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    74
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MineSim",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t316",
+    "t126",
+    "t12"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A proposed environment acceptance concept defines environment validity as geometric validity plus sensor-response validity plus dynamic and ground validity plus scenario validity plus label and timing validity; this is expert opinion, not a formal standard.",
+   "quote": "environment validity equals geometric validity plus sensor-response validity plus dynamic and ground validity plus scenario validity plus label and timing validity. This equation is **Expert opinion**, not a formal standard.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t62",
+    "t130",
+    "t105",
+    "t179"
+   ],
+   "importance": 3
+  }
+ ]
+}

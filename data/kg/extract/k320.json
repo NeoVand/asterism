@@ -1,0 +1,446 @@
+{
+ "chunkId": "k320",
+ "hash": "9735852d1fe0c02d",
+ "facts": [
+  {
+   "text": "Freeze the collision-mitigation decision architecture before hardware arrives, during the period from now to the first quarter of 2027.",
+   "quote": "Before the hardware arrives (now to the first quarter of 2027), freeze the decision architecture.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t42"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Use predicted swept volume against a stopping-distance envelope as the primary braking trigger, with s = v·(t_sense + t_actuate) + v²/(2·a_worst), where a_worst depends on grade, payload and surface.",
+   "quote": "Primary trigger: predicted swept volume against a stopping-distance envelope, s = v·(t_sense + t_actuate) + v²/(2·a_worst), with a_worst depending on grade, payload and surface.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t170",
+    "t172",
+    "t173",
+    "t174"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Use time to collision as a secondary decision layer for haul-speed traffic.",
+   "quote": "Secondary layers: time to collision for haul-speed traffic",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t186",
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Use operator-reaction suppression as a secondary decision layer when a_measured ≥ a_required.",
+   "quote": "operator-reaction suppression when a_measured ≥ a_required.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Map collision-mitigation intervention stages to ISO/TS 21815-2 commands.",
+   "quote": "Map the stages to ISO/TS 21815-2 commands.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t189",
+    "t280"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Before prototype testing, define acceptance metrics, the machine-family schema, scenario taxonomy, parameter database, instrumentation and validation metrics, synthetic terrain and grade matrix, operator-reaction state machine, perception-error interface, automated test execution, Monte Carlo engine and traceability framework. These preparations should make prototype testing identify and confirm parameters rather than start model development.",
+   "quote": "the Monte Carlo engine and the traceability framework, so that prototype testing identifies and confirms parameters rather than starting model development.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Monte Carlo methods",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t62",
+    "t162",
+    "t208",
+    "t142",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Use existing machines before 2027 to learn distributions of grade response, rolling resistance, brake delays, load effects and stability limits as priors, even when their brake hardware differs.",
+   "quote": "Use existing machines before 2027 to learn distributions of grade response, rolling resistance, brake delays, load effects and stability limits as priors, even where their brake hardware differs.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t184",
+    "t171",
+    "t173",
+    "t178",
+    "t211"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Build layered models per machine family rather than one ultimate digital twin.",
+   "quote": "Build layered models per machine family rather than one \"ultimate\" digital twin",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t129",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Use a fast threshold model comprising longitudinal motion, delay, empirical braking and terrain for very large parameter sweeps.",
+   "quote": "a fast threshold model (longitudinal plus delay plus empirical brake and terrain) for very large parameter sweeps",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t182",
+    "t199"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Use a stability challenge model covering yaw, roll, wheel or track loads and articulation to derive dynamic deceleration caps.",
+   "quote": "a stability challenge model (yaw, roll, wheel or track loads, articulation) to derive dynamic deceleration caps",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t179",
+    "t178",
+    "t176",
+    "t190"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Use a high-fidelity selected-case model covering multibody, hydraulic, hydrostatic and, where justified, soft-soil behavior for edge cases that invalidate the simpler model.",
+   "quote": "a high-fidelity selected-case model (multibody, hydraulic, hydrostatic and, where justified, soft soil) for the edge cases that invalidate the simpler model",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t183",
+    "t144",
+    "t181",
+    "t177"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Run perception and sensor simulation separately from braking simulation, while feeding detection-delay, range and error distributions into braking simulation.",
+   "quote": "perception and sensor simulation run separately but feeding detection delay, range and error distributions into the braking simulation",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t167",
+    "t85",
+    "t88",
+    "t87",
+    "t182"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "After the layered simulation models, use hardware- and software-in-the-loop testing to progressively replace simulated decision and machine interfaces with production hardware.",
+   "quote": "then hardware- and software-in-the-loop, replacing simulated decision and machine interfaces progressively with production hardware.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t147",
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Do not physically model the 100-plus sites; instead factor sites into stopping-relevant variables: longitudinal and cross slope, surface class and state, sinkage and shear strength, payload and center of gravity, speed, turn or articulation state, brake temperature and health, propulsion state, visibility and perception latency, and object geometry and path.",
+   "quote": "Do not model the 100-plus sites physically; factor them into the variables that change stopping",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t44",
+    "t199",
+    "t170",
+    "t174",
+    "t173"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Parameterize soil by friction class in the machine-family braking models.",
+   "quote": "parameterize soil by friction class.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t174",
+    "t199"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Pre-book a physical anchor campaign for the first six weeks after hardware delivery, using the test matrix in question 3.",
+   "quote": "Pre-book the physical anchor campaign for the first six weeks after hardware delivery* using the test matrix in question 3",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t184",
+    "t143",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "During the physical anchor campaign, measure latency to 10% g and stop on grades where the ISO 3450 and New South Wales methods apply.",
+   "quote": "measure latency to 10% g and stop on grades where the ISO 3450 and New South Wales methods apply.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 3450",
+     "kind": "standard"
+    },
+    {
+     "name": "New South Wales",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t184",
+    "t88",
+    "t173",
+    "t282",
+    "t301"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The physical anchor campaign should determine whether the tested machine's parameters fall inside the family model, whether predicted bounds are conservative, and where the model fails.",
+   "quote": "The campaign answers three questions: are this machine's parameters inside the family model, are the predicted bounds conservative, and where does the model fail.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t262",
+    "t184"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Run scenario sweeps across site class × scenario × weather and light × model variant, injecting sensor degradation from validated models where such models exist.",
+   "quote": "Run scenario sweeps* across site class × scenario × weather and light × model variant, with sensor degradation injected from validated models where they exist",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t143",
+    "t102",
+    "t230",
+    "t45"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Report missed-intervention and nuisance-intervention rates together as acceptance metrics for scenario sweeps.",
+   "quote": "report missed-intervention and nuisance-intervention rates together as acceptance metrics.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t62",
+    "t108",
+    "t31",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Use shadow-mode field validation during the remaining weeks to log would-be interventions without actuating and measure nuisance rates before enabling braking.",
+   "quote": "Shadow-mode field validation for the remaining weeks:* log would-be interventions without actuating",
+   "kind": "recommendation",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    22
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t31",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The Epiroc Titan product page suggests running evaluation before enforcing Level 9.",
+   "quote": "the Epiroc Titan product page suggests running evaluation before enforcing Level 9",
+   "kind": "recommendation",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    22
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Epiroc Titan",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t30",
+    "t157"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sim-to-field transfer remains unproven.",
+   "quote": "Accept that sim-to-field transfer is unproven.",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t165",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Set explicit pass criteria for model calibration and stop to recalibrate if those criteria fail; an example criterion is predicted versus measured stopping distance within a stated margin on all anchor runs.",
+   "quote": "Set explicit pass criteria for model calibration (for example predicted versus measured stopping distance within a stated margin on all anchor runs) and stop to recalibrate if they fail.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t62",
+    "t170",
+    "t258"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Treat the virtual model as a tool for test selection and uncertainty propagation, not as proof by itself.",
+   "quote": "Treat the virtual model as a test-selection and uncertainty-propagation machine, not as proof by itself.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t200",
+    "t259",
+    "t267",
+    "t216"
+   ],
+   "importance": 3
+  }
+ ]
+}

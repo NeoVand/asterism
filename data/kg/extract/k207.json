@@ -1,0 +1,350 @@
+{
+ "chunkId": "k207",
+ "hash": "b8f541dc98de4c05",
+ "facts": [
+  {
+   "text": "Neural reconstructions degrade with lateral viewpoint change and collapse with large vertical change.",
+   "quote": "Neural reconstructions degrade with lateral viewpoint change and collapse with large vertical change.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    6,
+    5,
+    7,
+    8
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The finding that neural reconstructions degrade with lateral viewpoint change and collapse with large vertical change is consistent across XLD, Para-Lane, EUVS and MV², including peer-reviewed and preprint evidence, but all of this evidence is on-road or urban.",
+   "quote": "The result is consistent across XLD, Para-Lane, EUVS and MV² (peer-reviewed and preprint), but all of it is on-road or urban.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    6,
+    5,
+    7,
+    8
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "XLD",
+     "kind": "other"
+    },
+    {
+     "name": "Para-Lane",
+     "kind": "other"
+    },
+    {
+     "name": "EUVS",
+     "kind": "other"
+    },
+    {
+     "name": "MV²",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t70",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Accurate camera-to-lidar calibration and accurate poses are preconditions for any reconstruction.",
+   "quote": "Accurate camera-to-lidar calibration and accurate poses are preconditions for any reconstruction",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    16,
+    9
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t132",
+    "t133"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Camera-only reconstruction needs overlap, texture and baseline.",
+   "quote": "camera-only reconstruction needs overlap, texture and baseline",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t133",
+    "t132",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Camera-only reconstruction fails systematically in known imaging conditions.",
+   "quote": "camera-only reconstruction needs overlap, texture and baseline and fails systematically in known imaging conditions.",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t133",
+    "t89"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Reality capture produces metrically useful environments when acquisition and accuracy control are rigorous.",
+   "quote": "Reality capture produces metrically useful environments when acquisition and accuracy control are rigorous",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4,
+    15
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t130",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Photogrammetry and lidar both have mature accuracy frameworks, identified as ASPRS 2024 and USGS 2025.",
+   "quote": "photogrammetry and lidar both have mature accuracy frameworks (ASPRS 2024, USGS 2025).",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4,
+    15
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASPRS",
+     "kind": "organization"
+    },
+    {
+     "name": "USGS",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t132",
+    "t92",
+    "t271"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Procedural simulation gives perfect labels and full editability.",
+   "quote": "Procedural simulation gives perfect labels and full editability",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    19,
+    1
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t134",
+    "t106",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Mixing small amounts of real data improves transfer for procedural simulation in agriculture and construction.",
+   "quote": "Procedural simulation gives perfect labels and full editability, and mixing small amounts of real data improves transfer (agriculture, construction).",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    19,
+    1
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t165",
+    "t134"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Non-visual sensor behaviour cannot be inferred from visible colour.",
+   "quote": "Non-visual sensor behaviour cannot be inferred from visible colour",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    11,
+    12
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t136",
+    "t92",
+    "t94"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Material properties for lidar and radar must be wavelength- and band-specific; independent evidence references ASAM OpenMATERIAL 3D and Sim2Radar.",
+   "quote": "material properties must be wavelength- and band-specific for lidar and radar (ASAM OpenMATERIAL 3D, Sim2Radar, simulator asset specifications).",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    11,
+    12
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    },
+    {
+     "name": "Sim2Radar",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t136",
+    "t92",
+    "t94",
+    "t117"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Vendor evidence from simulator asset specifications supports the need for wavelength- and band-specific material properties for lidar and radar.",
+   "quote": "material properties must be wavelength- and band-specific for lidar and radar (ASAM OpenMATERIAL 3D, Sim2Radar, simulator asset specifications). **Independent** [11, 12]; **Vendor** [13].",
+   "kind": "requirement",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    13
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t136",
+    "t92",
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Off-road physics needs more than rigid visual terrain.",
+   "quote": "Off-road physics needs more than rigid visual terrain",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    21,
+    70
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t131"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Mature open frameworks support deformable and granular terrain and contact for off-road physics.",
+   "quote": "mature open frameworks support deformable and granular terrain and contact",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    21,
+    70
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t325"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Excavation research couples frameworks for deformable and granular terrain and contact to machine dynamics.",
+   "quote": "mature open frameworks support deformable and granular terrain and contact, and excavation research couples them to machine dynamics.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    21,
+    70
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t179",
+    "t5"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-3:2023 provides a directly relevant framework for off-road collision avoidance, covering forward and reverse warning and avoidance through speed reduction, stopping and motion inhibition.",
+   "quote": "Off-road collision avoidance has a directly relevant ISO framework: ISO 21815-3:2023 covers forward and reverse warning and avoidance through speed reduction, stopping and motion inhibition.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t23",
+    "t28",
+    "t16"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,308 @@
+{
+ "chunkId": "k267",
+ "hash": "5232f0898a9a1a36",
+ "facts": [
+  {
+   "text": "In software-in-the-loop (SIL), the target algorithms and software are real, usually compiled for a host PC rather than the final controller.",
+   "quote": "the target algorithms and software, usually compiled for a host PC rather than the final controller.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Software-in-the-loop (SIL) needs a scenario or world model, an environment simulation with ideal, phenomenological or physics-based sensor models or semantic inputs, a machine dynamics model including braking, articulation and load, and a test oracle.",
+   "quote": "a scenario or world model, an environment simulation with sensor models (ideal, phenomenological or physics-based) or semantic inputs, a machine dynamics model that includes braking, articulation and load, and a test oracle.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t125",
+    "t179",
+    "t84"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Software-in-the-loop (SIL) control tests are usually closed-loop.",
+   "quote": "Usually closed-loop for control tests.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Software-in-the-loop (SIL) can establish logic correctness, timing in simulated time, boundary exploration, requirements tests, very high-volume regression, and coverage of large scenario sets in closed loop, where the machine reacts and the scene evolves.",
+   "quote": "logic correctness, timing in simulated time, boundary exploration, requirements tests, very high-volume regression, and coverage of large scenario sets in closed loop (the machine reacts and the scene evolves).",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t63",
+    "t161",
+    "t154",
+    "t142"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Software-in-the-loop (SIL) is recommended for parametrically sweeping the 100+ site types and 10+ scenarios.",
+   "quote": "It is the right tool for sweeping the 100+ site types and 10+ scenarios parametrically.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t44",
+    "t199"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Software-in-the-loop (SIL) cannot prove real sensor physics in dust, snow or glare unless the sensor models are validated.",
+   "quote": "real sensor physics in dust, snow or glare unless the sensor models are validated",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t102",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Software-in-the-loop (SIL) cannot prove timing, processor and I/O faults of the final ECU.",
+   "quote": "timing, processor and I/O faults of the final ECU",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t119",
+    "t56"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Software-in-the-loop (SIL) cannot prove actual brake hardware.",
+   "quote": "**Cannot prove:** real sensor physics in dust, snow or glare unless the sensor models are validated; timing, processor and I/O faults of the final ECU; actual brake hardware.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t184"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Software-in-the-loop (SIL) is only as credible as its models.",
+   "quote": "It is only as credible as its models.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t234",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM states that no standardized metrics exist to assess sensor-simulation quality.",
+   "quote": "ASAM states that \"no standardized metrics exist\" to assess sensor-simulation quality",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    35
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t241",
+    "t84",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM's QSQ (Quantifying Simulation Quality) project was still at proposal stage.",
+   "quote": "its QSQ (\"Quantifying Simulation Quality\") project was still at proposal stage",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    35
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    },
+    {
+     "name": "QSQ (Quantifying Simulation Quality)",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t241"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The proposal workshop for ASAM's QSQ (Quantifying Simulation Quality) project was held on 11 September 2025.",
+   "quote": "with the proposal workshop held on 11 September 2025.",
+   "kind": "event",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    35
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    },
+    {
+     "name": "QSQ (Quantifying Simulation Quality)",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t241"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 18497-4:2024, covering agricultural machinery, explicitly lists simulation alongside measurement, test and analysis as verification methods.",
+   "quote": "ISO 18497-4:2024 (agricultural machinery) explicitly lists \"Simulation\" alongside measurement, test and analysis as verification methods",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    40
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 18497-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t288",
+    "t65",
+    "t126"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Annex C of ISO 18497-4:2024 provides test objects for simulation.",
+   "quote": "gives test objects for simulation in its Annex C",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    40
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 18497-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t288",
+    "t279",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 18497-4:2024 was the closest off-road standard support found for simulation as a verification method.",
+   "quote": "that is the closest off-road standard support found.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    40
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 18497-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t288",
+    "t127",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Independent on-road vehicle-in-the-loop literature places software-in-the-loop (SIL) early in development as a virtual method for evaluating functions.",
+   "quote": "The independent vehicle-in-the-loop literature places SIL early in development as a virtual method for evaluating functions.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    20
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t151"
+   ],
+   "importance": 2
+  }
+ ]
+}

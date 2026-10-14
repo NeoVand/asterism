@@ -1,0 +1,223 @@
+{
+ "chunkId": "k351",
+ "hash": "c8549475fd9dba81",
+ "facts": [
+  {
+   "text": "Suitable denominators for false alarms and unnecessary braking are false warnings per operating hour, unnecessary automatic brakes per operating hour, false interventions per mission or work cycle, and false alarms per object-free encounter.",
+   "quote": "Good choices are false warnings per operating hour, unnecessary automatic brakes per operating hour, false interventions per mission or work cycle, and false alarms per object-free encounter.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t213",
+    "t32",
+    "t31"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For a homogeneous Poisson process with zero events over exposure T, the one-sided upper bound on the event rate is lambda_U = -ln(alpha) / T.",
+   "quote": "For a homogeneous Poisson process with zero events in exposure T, the one-sided upper bound on the rate is lambda_U = -ln(alpha) / T.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "homogeneous Poisson process",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t213",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For a homogeneous Poisson process with zero events, the 95% confidence upper rate bound is approximately 3/T because -ln(0.05) = 2.996.",
+   "quote": "At 95% confidence, -ln(0.05) = 2.996, so the bound is about 3/T",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "homogeneous Poisson process",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t209",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Under the homogeneous-Poisson assumption, zero unnecessary automatic brakes in about 300 representative operating hours supports a rate below 1 per 100 hours at 95% confidence.",
+   "quote": "zero unnecessary brakes in about 300 representative operating hours supports a rate below 1 per 100 hours",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "homogeneous Poisson process",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t31",
+    "t213",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Under the homogeneous-Poisson assumption, zero unnecessary automatic brakes in about 3,000 representative operating hours supports a rate below 1 per 1,000 hours at 95% confidence.",
+   "quote": "zero in about 3,000 hours supports below 1 per 1,000 hours.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "homogeneous Poisson process",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t31",
+    "t213",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For a homogeneous Poisson process with two events in T hours, the 95% upper bound on the event rate is about 6.3/T.",
+   "quote": "With two events in T hours the 95% bound becomes about 6.3/T.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "homogeneous Poisson process",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t213",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Operating hours used to support unnecessary-braking rate bounds must represent actual operation rather than staged tests; shadow mode on customer sites is the usual route.",
+   "quote": "These hours must be representative operation (shadow mode on customer sites is the usual route), not staged tests.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t213",
+    "t157",
+    "t31"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Mining and construction false alarms often cluster and are non-stationary: repeated alarms from each bucket pass or dust cloud can violate the homogeneous-Poisson assumption.",
+   "quote": "Mining and construction false alarms often cluster and are non-stationary: every bucket pass or dust cloud may generate repeated alarms, which violates the homogeneous-Poisson assumption.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "homogeneous Poisson process",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t32",
+    "t213",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "When mining and construction false alarms cluster or are non-stationary, use work-cycle or site blocks, overdispersed count models, hierarchical models or block bootstrap methods.",
+   "quote": "In that case use work-cycle or site blocks, overdispersed count models, hierarchical models or block bootstrap methods",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "overdispersed count models",
+     "kind": "method"
+    },
+    {
+     "name": "hierarchical models",
+     "kind": "method"
+    },
+    {
+     "name": "block bootstrap",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t32",
+    "t213",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Check the homogeneous-Poisson assumption before relying on the approximate 95% upper event-rate bound of 3/T for zero observed events.",
+   "quote": "check the Poisson assumption before relying on 3/T.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "homogeneous Poisson process",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t213",
+    "t209",
+    "t32"
+   ],
+   "importance": 3
+  }
+ ]
+}

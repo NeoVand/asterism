@@ -1,0 +1,402 @@
+{
+ "chunkId": "k85",
+ "hash": "060eb35a234aed17",
+ "facts": [
+  {
+   "text": "Start shadow-mode evaluation on the warning-only fleet immediately, during October 2026 to mid-2027.",
+   "quote": "Start shadow-mode evaluation on the warning-only fleet immediately (October 2026 to mid-2027)",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t41",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Shadow-mode evaluation should log every warning with sensor data and context, then replay warnings through candidate braking logic to estimate unnecessary braking per operating hour, broken down by site type and weather.",
+   "quote": "log every warning with sensor data and context, and replay them through candidate braking logic to estimate how often it would have braked unnecessarily per operating hour, by site type and by weather.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t155",
+    "t121",
+    "t213",
+    "t31"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No public case of an off-road maker using the proposed warning-fleet shadow-mode evaluation was found.",
+   "quote": "No public case of an off-road maker doing this was found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    48,
+    50,
+    54
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t41"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Liebherr, Caterpillar and John Deere already log warning events and GPS locations, so the data path for the proposed warning-fleet shadow-mode evaluation exists.",
+   "quote": "Liebherr, Caterpillar and John Deere already log warning events and GPS locations, so the data path exists [48, 50, 54].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    48,
+    50,
+    54
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Liebherr",
+     "kind": "company"
+    },
+    {
+     "name": "Caterpillar",
+     "kind": "company"
+    },
+    {
+     "name": "John Deere",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t121",
+    "t98",
+    "t157",
+    "t41"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Warning-fleet shadow-mode evaluation is the only way to have field-representative false-positive evidence before the prototype arrives.",
+   "quote": "It is the only way to hold field-representative false-positive evidence before the prototype arrives.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t32",
+    "t70",
+    "t41"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Build the scenario catalogue around ISO 21815-3 risk areas and ISO 18497-2's four failure categories.",
+   "quote": "Build the scenario catalogue around ISO 21815-3 risk areas and ISO 18497-2's four failure categories",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    59,
+    96
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 18497-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t142",
+    "t280",
+    "t288"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Use an open format for the scenario catalogue so the simulator can be swapped.",
+   "quote": "in an open format so the simulator can be swapped",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    59,
+    96
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t232",
+    "t320"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Treat simulation as coverage of variants and combinations of machine model, sensor position and weather, rather than as the sole evidence.",
+   "quote": "treat simulation as coverage of variants and combinations (machine model, sensor position, weather), not as the sole evidence [59, 96].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    59,
+    96
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t127",
+    "t216",
+    "t230",
+    "t143"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Keep a deliberate physical campaign of false-positive tests involving steel plates, dust clouds, berms, and rain and snow on sensors.",
+   "quote": "Keep a deliberate physical campaign: false-positive tests (steel plates, dust clouds, berms, rain and snow on sensors)",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    20,
+    86
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t158",
+    "t32",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The physical validation campaign should include sensor-model correlation for each sensor type.",
+   "quote": "sensor-model correlation for each sensor type",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    20,
+    86
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t160",
+    "t84",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The physical validation campaign should test brake dynamics at maximum payload and on slopes.",
+   "quote": "brake dynamics at maximum payload and on slopes",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    20,
+    86
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t184",
+    "t168",
+    "t173"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Plan the four-month physical campaign around confirming a prediction already made by shadow mode and simulation, not around tuning.",
+   "quote": "Plan the four months around confirming a prediction already made by shadow mode and simulation, not around tuning [20, 86].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    20,
+    86
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t216",
+    "t157",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Decide early who will accept the validation evidence.",
+   "quote": "Decide early who accepts the evidence.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t71",
+    "t70",
+    "t72"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For most markets, the internal safety board under ISO 19014 and ISO 13849, plus customers, accepts the validation evidence.",
+   "quote": "For most markets that is the internal safety board under ISO 19014 and ISO 13849, plus customers",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    29,
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 13849",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t71",
+    "t281",
+    "t287",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In South Africa, mines check validation evidence against Regulation 8.10 and MOSH requirements.",
+   "quote": "for South Africa, mines check against Regulation 8.10 and the MOSH requirements [29, 34].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    29,
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "South Africa",
+     "kind": "place"
+    },
+    {
+     "name": "Regulation 8.10",
+     "kind": "regulation"
+    },
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t302",
+    "t307",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Aligning validation with ISO 21815 lets customers audit the evidence.",
+   "quote": "Aligning with ISO 21815 lets customers audit the evidence [94].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    94
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Lock the sensor choice by early 2027.",
+   "quote": "Lock the sensor choice by early 2027.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t42",
+    "t84",
+    "t344"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor models, shadow-mode data and false-positive behavior are all specific to the sensor.",
+   "quote": "Sensor models, shadow-mode data and false-positive behavior are all specific to the sensor",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t84",
+    "t125",
+    "t157",
+    "t32"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An unconfirmed sensor choice is the single largest schedule risk for building the virtual validation capability.",
+   "quote": "an unconfirmed sensor is the single largest schedule risk.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t42",
+    "t344",
+    "t347"
+   ],
+   "importance": 3
+  }
+ ]
+}

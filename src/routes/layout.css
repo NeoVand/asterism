@@ -1,2 +1,97 @@
 @import 'tailwindcss';
+@import '@fontsource-variable/geist';
+@import '@fontsource-variable/geist-mono';
 @plugin '@tailwindcss/typography';
+
+@theme {
+	--font-sans: 'Geist Variable', ui-sans-serif, system-ui, sans-serif;
+	--font-mono: 'Geist Mono Variable', ui-monospace, monospace;
+
+	--color-ink-950: #03050a;
+	--color-ink-900: #070a12;
+	--color-ink-850: #0a0e18;
+	--color-ink-800: #0e1320;
+	--color-ink-750: #131929;
+	--color-ink-700: #1a2133;
+	--color-ink-600: #252d42;
+	--color-ink-500: #3a4359;
+
+	--color-fg: #e8ecf5;
+	--color-fg-2: #a3acc0;
+	--color-fg-3: #6b7489;
+	--color-fg-4: #475066;
+
+	--color-glow: #6fe3ff;
+	--color-gold: #ffc96b;
+	--color-ok: #4be3a4;
+	--color-warn: #ffb054;
+	--color-bad: #ff6b81;
+
+	--ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root {
+	color-scheme: dark;
+	--panel: rgb(10 14 24 / 0.78);
+	--panel-strong: rgb(10 14 24 / 0.92);
+	--hairline: rgb(160 175 210 / 0.09);
+	--hairline-2: rgb(160 175 210 / 0.14);
+	--shadow-panel: 0 18px 60px -20px rgb(0 0 0 / 0.75), 0 2px 10px -4px rgb(0 0 0 / 0.5);
+}
+
+html,
+body {
+	height: 100%;
+	overflow: hidden;
+	background: var(--color-ink-950);
+	color: var(--color-fg);
+	font-family: var(--font-sans);
+	font-feature-settings: 'ss01', 'cv11';
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+::selection {
+	background: rgb(111 227 255 / 0.25);
+}
+
+/* Quiet scrollbars for the few places that scroll (the chat transcript). */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: rgb(160 175 210 / 0.14) transparent;
+}
+
+.glass {
+	background: var(--panel);
+	backdrop-filter: blur(22px) saturate(140%);
+	-webkit-backdrop-filter: blur(22px) saturate(140%);
+	border: 1px solid var(--hairline);
+	box-shadow: var(--shadow-panel);
+}
+
+.glass-strong {
+	background: var(--panel-strong);
+	backdrop-filter: blur(26px) saturate(150%);
+	-webkit-backdrop-filter: blur(26px) saturate(150%);
+	border: 1px solid var(--hairline-2);
+	box-shadow: var(--shadow-panel);
+}
+
+@keyframes breathe {
+	0%,
+	100% {
+		opacity: 0.45;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.001ms !important;
+		transition-duration: 0.001ms !important;
+	}
+}

@@ -1,0 +1,356 @@
+{
+ "chunkId": "k244",
+ "hash": "7bae7008e6d1fa6c",
+ "facts": [
+  {
+   "text": "Supplier data determine whether a sensor simulation model represents a generic sensor, such as \"a radar\", or the actual production sensor.",
+   "quote": "Supplier data determine whether a model represents \"a radar\" or the actual production sensor.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t84",
+    "t357"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The most valuable lidar supplier information comprises scan pattern, beam geometry and timing; beam divergence; wavelength; transmit power and pulse shape; receiver aperture, filter bandwidth and detector model; detection threshold and dynamic range; the complete signal-processing chain including multi-echo logic; intensity calibration; range bias and noise versus signal level; ambient-light handling; interference suppression; noise and imperfection characteristics; and protective-window properties.",
+   "quote": "Scan pattern and beam geometry, timing; beam divergence; wavelength; transmit power and pulse shape; receiver aperture, filter bandwidth and detector model; detection threshold and dynamic range;",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    6,
+    7
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t357",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The most valuable radar supplier information comprises carrier band; waveform, chirp schedules and bandwidth; TX and RX element geometry and MIMO array layout; antenna patterns and polarization; receiver sensitivity, noise figure, dynamic range and AGC; phase noise and nonlinearity; ADC properties; beamforming; FFT, CFAR, detection and tracking logic; sensor-specific impairments; radome RF properties; temperature and contamination effects; and precise timing.",
+   "quote": "Carrier band; waveform and chirp schedules and bandwidth; TX and RX element geometry and MIMO array layout; antenna patterns and polarization; receiver sensitivity, noise figure, dynamic range and AGC;",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    33
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t357",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The most valuable camera supplier information comprises lens geometry and distortion; PSF or MTF; aperture; optical and window transmission and coatings; spectral response, colour filter array and quantum efficiency; shutter and readout timing; pixel response and noise versus gain and temperature; HDR and exposure behaviour; saturation; auto-exposure and auto-white-balance; ISP functions such as denoising, sharpening and tone mapping; compression; and flare and stray-light characterization.",
+   "quote": "Lens geometry and distortion; PSF or MTF; aperture; optical and window transmission and coatings; spectral response, colour filter array and quantum efficiency; shutter and readout timing;",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t90",
+    "t357",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The most valuable ultrasonic sensor supplier information comprises centre frequency and bandwidth; transmit burst; transducer directivity; ring-down and dead time; sensitivity and receiver thresholds; variable gain; cross-echo coding and scheduling; temperature compensation; and housing and acoustic coupling.",
+   "quote": "Centre frequency and bandwidth; transmit burst; transducer directivity; ring-down and dead time; sensitivity and receiver thresholds; variable gain; cross-echo coding and scheduling; temperature compensation; housing and acoustic coupling.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t95",
+    "t357",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The most valuable thermal sensor supplier information comprises spectral band and response; lens and window transmission; f-number, PSF or MTF; detector pixel and integration behaviour; NETD and noise; non-uniformity correction and calibration; gain modes; bad-pixel processing; and the radiometric versus non-radiometric output pipeline.",
+   "quote": "lens and window transmission; f-number, PSF or MTF; detector pixel and integration behaviour; NETD and noise; non-uniformity correction and calibration; gain modes; bad-pixel processing; radiometric versus non-radiometric output pipeline.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    71
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t90",
+    "t357",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The absence of spectral band and response information explicitly limited the 2026 LWIR validation.",
+   "quote": "Spectral band and response (its absence explicitly limited the 2026 LWIR validation [71])",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    71
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t357",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For all sensors, valuable supplier information includes exact mounting pose and tolerances, mount stiffness, the machine's vibration transfer function, housing or cover materials, clock, synchronization and latency behaviour, heater, washer or air-knife state, firmware version, diagnostic and degradation modes, and environmental qualification data.",
+   "quote": "Exact mounting pose and tolerances, mount stiffness and the machine's vibration transfer function; housing or cover materials, which matter for soiling and multipath; clock, synchronization and latency behaviour;",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t357",
+    "t100",
+    "t101",
+    "t102",
+    "t88"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor housing or cover materials matter for soiling and multipath.",
+   "quote": "housing or cover materials, which matter for soiling and multipath",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t84",
+    "t102",
+    "t104"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The supplier-information requirements for sensor models are expert synthesis from the physics determining sensor output, anchored in information used by validated lidar and radar models.",
+   "quote": "These requirements are expert synthesis from the physics that determine sensor output, anchored in what the validated lidar and radar models used **Expert opinion** [6, 7, 33].",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    6,
+    7,
+    33
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t357",
+    "t92",
+    "t94",
+    "t125",
+    "t234"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OSI's SensorView configuration anticipates technology-specific configuration of ray-tracing engines and camera or lens generation.",
+   "quote": "ASAM OSI's SensorView configuration anticipates technology-specific configuration of ray-tracing engines and camera or lens generation",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    87,
+    90,
+    91
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OSI",
+     "kind": "standard"
+    },
+    {
+     "name": "SensorView",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t138",
+    "t118",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The high-fidelity project is decomposing camera, radar and lidar models into required physical subcomponents.",
+   "quote": "the high-fidelity project is decomposing camera, radar and lidar models into required physical subcomponents",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    87,
+    90,
+    91
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t89",
+    "t94",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "OpenMATERIAL addresses the physical properties of the scene on the other side of the sensor-model interface.",
+   "quote": "OpenMATERIAL addresses the other side of the interface, the physical properties of the scene [87, 90, 91].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    87,
+    90,
+    91
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t136",
+    "t130",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The RadaRays detector failure occurred partly because the authors could not extract target material properties from the dataset and had to guess those properties.",
+   "quote": "The RadaRays detector failure occurred partly because the authors could not extract target material properties from the dataset and had to guess them;",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    31
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "RadaRays",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t136",
+    "t165",
+    "t94"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The RadaRays example concerns scene materials rather than confidential sensor parameters, but demonstrates that plausible default parameters can leave a consequential sim-to-real gap.",
+   "quote": "that example concerns scene materials rather than confidential sensor parameters, but it demonstrates the general principle that plausible default parameters can leave a consequential sim-to-real gap [31].",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    31
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "RadaRays",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t165",
+    "t136",
+    "t267",
+    "t357"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "If a sensor supplier will not share internals, request an ASAM OSI/OSMP-packaged FMU using FMI 2.0 that hides the supplier's intellectual property.",
+   "quote": "Request an ASAM OSI/OSMP-packaged FMU (FMI 2.0) that hides the supplier's intellectual property [88].",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    88
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OSI",
+     "kind": "standard"
+    },
+    {
+     "name": "OSMP",
+     "kind": "other"
+    },
+    {
+     "name": "FMI 2.0",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t357",
+    "t139",
+    "t138",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Secure-exchange approaches for black-box FMUs in industrial settings existed in 2024.",
+   "quote": "Secure-exchange approaches for black-box FMUs in industrial settings exist (2024) [89].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    89
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t139",
+    "t357"
+   ],
+   "importance": 2
+  }
+ ]
+}

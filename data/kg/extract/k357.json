@@ -1,0 +1,595 @@
+{
+ "chunkId": "k357",
+ "hash": "07a573da2511e77a",
+ "facts": [
+  {
+   "text": "DOE followed by response-surface methodology suits a modest number of continuous settings, including warning distance offsets, persistence times, confidence thresholds and filter constants.",
+   "quote": "**DOE followed by response-surface methodology** suits a modest number of continuous settings (warning distance offsets, persistence times, confidence thresholds, filter constants).",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "DOE",
+     "kind": "method"
+    },
+    {
+     "name": "response-surface methodology",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t201",
+    "t197",
+    "t188"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "DOE followed by response-surface methodology provides interpretable main effects, interactions and curvature.",
+   "quote": "It gives interpretable main effects, interactions and curvature.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "DOE",
+     "kind": "method"
+    },
+    {
+     "name": "response-surface methodology",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t201"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The NIST handbook describes response-surface designs as tools for fitting local models and optimising a process after influential factors have been identified.",
+   "quote": "The NIST handbook describes response-surface designs as tools for fitting local models and optimising a process after influential factors have been identified",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIST handbook",
+     "kind": "publication"
+    },
+    {
+     "name": "response-surface methodology",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t201"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The NIST handbook documents desirability functions for combining several responses.",
+   "quote": "and documents desirability functions for combining several responses",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIST handbook",
+     "kind": "publication"
+    },
+    {
+     "name": "desirability functions",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t225"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The apparent optimum of a desirability function depends on subjective weight choices.",
+   "quote": "the apparent optimum of a desirability function depends on subjective weight choices.",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "desirability functions",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t225",
+    "t226"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Pareto-front, NSGA-II and other evolutionary methods, referenced to Deb et al. (2002), are robust and simple to parallelise over simulation.",
+   "quote": "**Pareto front, NSGA-II and other evolutionary methods** (Deb et al., 2002) are robust and simple to parallelise over simulation",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    45
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NSGA-II",
+     "kind": "method"
+    },
+    {
+     "name": "Pareto front",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t227",
+    "t226",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Pareto-front, NSGA-II and other evolutionary methods make trade-offs explicit instead of hiding trade-offs in one score.",
+   "quote": "make trade-offs explicit instead of hiding them in one score",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    45
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NSGA-II",
+     "kind": "method"
+    },
+    {
+     "name": "Pareto front",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t226",
+    "t225",
+    "t227"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Pareto-front, NSGA-II and other evolutionary methods need many evaluations.",
+   "quote": "but need many evaluations",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    45
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NSGA-II",
+     "kind": "method"
+    },
+    {
+     "name": "Pareto front",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t227",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Pareto-front, NSGA-II and other evolutionary methods leave a policy decision about which Pareto point is acceptable.",
+   "quote": "leave a policy decision over which Pareto point is acceptable.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    45
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NSGA-II",
+     "kind": "method"
+    },
+    {
+     "name": "Pareto front",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t226",
+    "t62"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Multi-objective and safe Bayesian optimisation select the next trial using a surrogate model and its uncertainty; this is sample-efficient when each evaluation is expensive, such as HIL or physical evaluation. The cited evidence is peer-reviewed general-engineering optimisation research rather than off-road braking research.",
+   "quote": "selects the next trial from a surrogate model and its uncertainty, which is sample-efficient when each evaluation is expensive (HIL, physical).",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    46
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Bayesian optimisation",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t227",
+    "t207",
+    "t148",
+    "t225"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Multi-objective Bayesian optimisation variants, including hypervolume-improvement and Pareto-front batch methods (2024), seek the frontier rather than one point. The cited evidence concerns general engineering rather than off-road braking.",
+   "quote": "Multi-objective variants (for example hypervolume-improvement and Pareto-front batch methods, 2024) seek the frontier rather than one point",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    46
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Bayesian optimisation",
+     "kind": "method"
+    },
+    {
+     "name": "hypervolume-improvement",
+     "kind": "method"
+    },
+    {
+     "name": "Pareto-front batch methods",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t225",
+    "t226",
+    "t227"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Safe Bayesian optimisation variants constrain exploration; the cited research concerns general engineering rather than off-road braking.",
+   "quote": "safe variants constrain exploration.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    46
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "safe Bayesian optimisation",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t227",
+    "t207"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Multi-objective and safe Bayesian optimisation scale poorly beyond roughly 20 parameters; the cited research concerns general engineering rather than off-road braking.",
+   "quote": "poor scaling beyond roughly 20 parameters",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    46
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Bayesian optimisation",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t227",
+    "t199"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Weaknesses of multi-objective and safe Bayesian optimisation include surrogate-model error, difficulty around discontinuities and adaptive bias; the cited research concerns general engineering rather than off-road braking.",
+   "quote": "Weaknesses are surrogate-model error, poor scaling beyond roughly 20 parameters, difficulty around discontinuities, adaptive bias",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    46
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Bayesian optimisation",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t227",
+    "t207",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An apparently safe surrogate extrapolation in multi-objective or safe Bayesian optimisation may be wrong; the cited research concerns general engineering rather than off-road braking.",
+   "quote": "the danger that an apparently safe surrogate extrapolation is wrong.",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    46
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Bayesian optimisation",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t227",
+    "t261",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ROC, DET or precision-recall operating-point selection is appropriate for the detector threshold alone at the perception layer.",
+   "quote": "**ROC, DET or precision-recall operating-point selection** is right for the detector threshold alone, at the perception layer.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ROC curve",
+     "kind": "metric"
+    },
+    {
+     "name": "DET curve",
+     "kind": "metric"
+    },
+    {
+     "name": "precision-recall",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t110",
+    "t109",
+    "t188",
+    "t85"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ROC, DET or precision-recall operating-point selection ignores downstream braking logic and timing.",
+   "quote": "It ignores the downstream braking logic and timing",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ROC curve",
+     "kind": "metric"
+    },
+    {
+     "name": "DET curve",
+     "kind": "metric"
+    },
+    {
+     "name": "precision-recall",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t110",
+    "t185",
+    "t172"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Detector operating-point selection must be followed by closed-loop evaluation of whether the machine detects, decides, intervenes and stops with adequate margin, and of the unnecessary interventions produced by the selected operating point.",
+   "quote": "it must be followed by closed-loop evaluation: did the machine detect, decide, intervene and stop with adequate margin, and what unnecessary interventions did that choice produce?",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t154",
+    "t194",
+    "t31",
+    "t185",
+    "t85"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3's collision-avoidance distance spans detection, decision and action time, stopping distance and safety distance, supporting a system-level evaluation of detector operating points.",
+   "quote": "ISO 21815-3's collision-avoidance distance explicitly spans detection, decision and action time, stopping distance and safety distance, which supports this system-level view.",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t172",
+    "t170",
+    "t194"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Cost-weighted single objectives need explicit costs for a miss versus a nuisance brake.",
+   "quote": "**Cost-weighted single objectives** need explicit costs for a miss against a nuisance brake.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t225",
+    "t108",
+    "t31"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Choosing costs for misses versus nuisance brakes is a safety-policy decision that should be documented rather than hidden in weights.",
+   "quote": "That is a safety-policy decision and should be documented, not hidden in weights",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t225",
+    "t31",
+    "t108",
+    "t62"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensitivity analysis on the weights of cost-weighted single objectives is mandatory according to the passage's expert recommendation.",
+   "quote": "sensitivity analysis on the weights is mandatory.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t260",
+    "t225"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Constraint-based formulations, such as minimising nuisance interventions subject to a bounded miss rate, are easier to defend than cost-weighted single objectives.",
+   "quote": "Constraint-based formulations (\"minimise nuisance subject to miss rate at most the bound\") are easier to defend.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t225",
+    "t31",
+    "t108",
+    "t62"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Robust or worst-case optimisation optimises the worst stratum or a high percentile rather than the average, preventing good average performance from being traded for weak performance in a dust-at-night stratum.",
+   "quote": "**Robust or worst-case optimisation** optimises the worst stratum or a high percentile rather than the average, so that a setting does not trade good average performance for a weak dust-at-night stratum.",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Robust optimisation",
+     "kind": "method"
+    },
+    {
+     "name": "worst-case optimisation",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t225",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "When several settings perform similarly, prefer a setting in a broad stable operating region over a knife-edge optimum that fails after a small sensor misalignment, brake-temperature shift or dust change.",
+   "quote": "If several settings perform similarly, prefer the one in a broad stable operating region over a knife-edge optimum that fails after a small sensor misalignment, brake-temperature shift or dust change.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t197",
+    "t100",
+    "t102",
+    "t182",
+    "t260"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,674 @@
+{
+ "chunkId": "k274",
+ "hash": "8f7ad7bb5168e69a",
+ "facts": [
+  {
+   "text": "Reference sensing should combine complementary modalities and accurate pose estimation rather than treating one sensor as infallible.",
+   "quote": "Reference sensing should combine complementary modalities and accurate pose estimation rather than declaring one sensor infallible.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t99",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A reference camera and reference lidar may both degrade in a dust cloud.",
+   "quote": "In a dust cloud the reference camera and reference lidar may both degrade",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t102",
+    "t89",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Reference radar can be imperfect in highly reflective or multipath environments.",
+   "quote": "in highly reflective or multipath environments radar can be imperfect too.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t94",
+    "t104"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A reference sensing system needs its own uncertainty budget and an explicit “truth unavailable or ambiguous” state to avoid forcing dust, occlusion and reference-sensor failure into wrong labels.",
+   "quote": "The reference system therefore needs its own uncertainty budget and an explicit \"truth unavailable or ambiguous\" state, so that dust, occlusion and reference-sensor failure are not forced into wrong labels.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t106",
+    "t259",
+    "t103",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Dust remains an active research topic for reference sensing.",
+   "quote": "Dust remains active research",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    56,
+    57
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t105"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Peer-reviewed work in Sensors in 2022 covers dust filtering for lidar on off-road vehicles.",
+   "quote": "dust filtering for lidar on off-road vehicles (Sensors, 2022)",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    56,
+    57
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sensors",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t102",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Peer-reviewed work in Automation in Construction in 2024 covers RGB-lidar fusion for de-dusting point clouds in construction.",
+   "quote": "RGB-lidar fusion for de-dusting point clouds in construction (Automation in Construction, 2024)",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    56,
+    57
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Automation in Construction",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t99",
+    "t93",
+    "t102",
+    "t92",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Peer-reviewed on-road work in Sensors in 2023 covers lidar blockage and cleaning evaluation.",
+   "quote": "lidar blockage and cleaning evaluation (Sensors, 2023, on-road)",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    58
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sensors",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t103"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Published validation of a reference stack across the full set of quarry and mining dust, snow, mud, darkness and large-machine occlusion conditions was not found.",
+   "quote": "Published validation of a reference stack across the full set of quarry and mining dust, snow, mud, darkness and large-machine occlusion conditions: not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t102",
+    "t103",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Manual labeling should not be limited to drawing boxes on video.",
+   "quote": "Manual labeling should not mean drawing boxes on a video.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A manual label specification should define object taxonomy, each object's reference point, visibility and occlusion state, whether a partially hidden person counts as a detection opportunity, temporal continuity rules, uncertainty and adjudication of labeler disagreements.",
+   "quote": "The label specification should define the object taxonomy, the reference point on each object, visibility and occlusion state, whether a partially hidden person counts as a detection opportunity, temporal continuity rules, uncertainty, and how disagreements between labelers are adjudicated.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t105",
+    "t103",
+    "t14",
+    "t259"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "When 3D distance or time-to-collision matters, labels should use calibrated 3D reference data rather than unaided monocular judgement.",
+   "quote": "Whenever 3D distance or time-to-collision matters, labels should be based on calibrated 3D reference data rather than unaided monocular judgement.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t105",
+    "t111",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Automatic labeling is useful but should not automatically be treated as ground truth.",
+   "quote": "Automatic labeling is useful but should not be promoted automatically to \"truth\".",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t105"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The 2024 radar auto-labeling result provides encouraging evidence that auto-labels can scale a dataset, but comes from one on-road research setting and does not establish error-free auto-labels.",
+   "quote": "The 2024 radar auto-labeling result is encouraging evidence that auto-labels can scale a dataset, but it is one on-road research setting and does not show that auto-labels are error-free.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    28
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t94",
+    "t105",
+    "t107"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The on-road offboard detectors 3DAL, DetZero and CTRL all depend on human-labeled training data.",
+   "quote": "The on-road offboard detectors (3DAL, DetZero, CTRL) all depend on human-labeled training data",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    26,
+    27,
+    53
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "3DAL",
+     "kind": "tool"
+    },
+    {
+     "name": "DetZero",
+     "kind": "tool"
+    },
+    {
+     "name": "CTRL",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t106",
+    "t113"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Off-road transfer of the on-road offboard detectors 3DAL, DetZero and CTRL to workers in PPE, machines and partially buried objects has not been demonstrated.",
+   "quote": "their off-road transfer to workers in PPE, machines and partially buried objects has not been demonstrated.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    26,
+    27,
+    53
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "3DAL",
+     "kind": "tool"
+    },
+    {
+     "name": "DetZero",
+     "kind": "tool"
+    },
+    {
+     "name": "CTRL",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t106",
+    "t14",
+    "t103",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Surveyed targets are particularly valuable for checking the physical distance of a warning boundary and calibrating the whole measurement chain.",
+   "quote": "Surveyed targets are particularly valuable for checking that a warning boundary sits at the correct physical distance and for calibrating the whole measurement chain.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    4
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t187",
+    "t100",
+    "t279"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-1 includes test procedures.",
+   "quote": "ISO 21815-1 includes test procedures",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t279"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-3 defines forward and reverse risk areas.",
+   "quote": "ISO 21815-3 defines forward and reverse risk areas",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t187",
+    "t16"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Public ISO abstracts do not expose detailed procedures for every target geometry, machine and application; universal target dimensions or test counts were not found and should not be invented.",
+   "quote": "detailed procedures for every target geometry and every machine and application are not exposed in the public ISO abstracts, so universal target dimensions or test counts are not found and should not be invented.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO",
+     "kind": "organization"
+    },
+    {
+     "name": "ISO 21815-1",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t279"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A common coordinate system is essential: sensors have individual frames, the machine has a body frame and the test site or reference system has a world frame; all transforms must be versioned with the data.",
+   "quote": "Each sensor has its own frame, the machine has a body frame and the test site or reference system has a world frame; all transforms must be versioned with the data.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": true,
+   "cites": [
+    59
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t105",
+    "t121",
+    "t122"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Autoware documentation provides a concrete open-source implementation of world, vehicle and per-sensor frames.",
+   "quote": "Autoware's documentation gives a concrete open-source implementation of world, vehicle and per-sensor frames",
+   "kind": "example",
+   "evidence": "Expert opinion",
+   "onRoad": true,
+   "cites": [
+    59
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Autoware",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t100"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Autoware documentation states that accurate sensor-to-vehicle installation relationships are required to correlate sensors.",
+   "quote": "states that accurate sensor-to-vehicle installation relationships are required to correlate sensors.",
+   "kind": "requirement",
+   "evidence": "Expert opinion",
+   "onRoad": true,
+   "cites": [
+    59
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Autoware",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t100",
+    "t99"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Autoware's coordinate-frame documentation is generic robotics and on-road implementation evidence, not an off-road standard.",
+   "quote": "That is generic robotics and on-road implementation evidence, not an off-road standard.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": true,
+   "cites": [
+    59
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Autoware",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t100",
+    "t271",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A recommended hybrid ground-truth approach uses surveyed targets to anchor accuracy and calibrate other labeling methods.",
+   "quote": "Surveyed targets anchor accuracy and calibrate the other methods.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t100",
+    "t106"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A recommended hybrid ground-truth approach uses reference lidar plus GNSS for continuous distance and timing truth.",
+   "quote": "A reference lidar plus GNSS gives continuous truth for distance and timing.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t92",
+    "t98"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A recommended hybrid ground-truth approach uses auto-labeling with human review to cover labeling volume.",
+   "quote": "Auto-labeling with human review covers volume.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t105"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A recommended hybrid ground-truth approach uses a human-audited subset to measure label error.",
+   "quote": "A human-audited subset measures label error.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t105"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ground-truth error propagates directly into measured metrics.",
+   "quote": "Ground-truth error propagates directly into measured metrics",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A labeler that misses distant workers inflates apparent false alarms.",
+   "quote": "a labeler that misses distant workers inflates apparent false alarms",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t14",
+    "t32",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Position error in ground truth shifts measured warning distance.",
+   "quote": "position error shifts measured warning distance.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t187",
+    "t224"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Label precision and recall measured on a human-audited subset should be reported alongside every metric.",
+   "quote": "Label precision and recall from the audited subset should be reported alongside every metric.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t109",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A known-geometry reference object can provide an annotation-free sanity check, as illustrated by the reference vehicle used in “Drones as Annotators” (2026).",
+   "quote": "A known-geometry reference object, such as the reference vehicle used in \"Drones as Annotators\" (2026), gives an annotation-free sanity check.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    60
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Drones as Annotators",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t105",
+    "t106"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Published cost and throughput figures for off-road labeling were not found.",
+   "quote": "Published cost and throughput figures for off-road labeling: not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t358"
+   ],
+   "importance": 3
+  }
+ ]
+}

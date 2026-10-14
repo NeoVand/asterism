@@ -1,0 +1,570 @@
+{
+ "chunkId": "k193",
+ "hash": "da691fd2e8084e26",
+ "facts": [
+  {
+   "text": "A useful automatic-braking virtual environment requires connected models that let each sensor see the correct physical quantity and let the machine interact correctly with the ground and objects, rather than merely a 3D picture.",
+   "quote": "A useful automatic-braking environment is a stack of connected models, not a 3D picture. Each sensor has to \"see\" the right physical quantity, and the machine has to interact with the ground and objects correctly.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t125",
+    "t25"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3:2023 applies to forward and reverse collision warning and avoidance on earth-moving, mobile underground-mining and road-construction machinery, including reducing speed, stopping and inhibiting motion.",
+   "quote": "ISO 21815-3:2023 applies to forward and reverse collision warning and avoidance on earth-moving, mobile underground-mining and road-construction machinery and includes reducing speed, stopping and inhibiting motion",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t23",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815 Part 4, covering swing and rotation, is under publication for October 2026.",
+   "quote": "Part 4 (swing and rotation) is under publication for October 2026",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    35,
+    36
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815 Part 5, covering other forms of motion, is at proof stage for November 2026.",
+   "quote": "Part 5 (other forms of motion) is at proof stage for November 2026",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    35,
+    36
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-5",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "None of the reviewed excerpts of the ISO 21815 parts or ISO 17757:2019, confirmed in 2024, sets rules for simulation-based evidence.",
+   "quote": "In the excerpts reviewed, none of the ISO 21815 parts or ISO 17757:2019 (confirmed 2024) sets rules for simulation-based evidence.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    32,
+    59
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815 series",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 17757",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t284",
+    "t127",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A virtual automatic-braking scene needs a stable world frame, a terrain surface, object meshes, collision proxies, traversable and non-traversable regions, and controlled geometric tolerances.",
+   "quote": "The scene needs a stable world frame, a terrain surface, object meshes, collision proxies, traversable and non-traversable regions and controlled geometric tolerances.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t131",
+    "t258"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A visually smooth virtual reconstruction that places a berm edge tens of centimetres from its intended position can corrupt a stopping-distance test.",
+   "quote": "A visually smooth reconstruction that places a berm edge tens of centimetres from its intended position can corrupt a stopping-distance test.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t131",
+    "t170",
+    "t12"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Geometric acceptance of a virtual scene should use independent check points or source-control data wherever a test needs metric truth.",
+   "quote": "Geometric acceptance should use independent check points or source-control data wherever the test needs metric truth",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t105",
+    "t258"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASPRS provides a formal framework for evaluating geometric acceptance where virtual-scene tests need metric truth.",
+   "quote": "Geometric acceptance should use independent check points or source-control data wherever the test needs metric truth; ASPRS provides the formal framework for that evaluation.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASPRS",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t130",
+    "t258",
+    "t105"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Neural scenes have no native collision surface.",
+   "quote": "Neural scenes have no native collision surface.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t131"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The ISPRS 2024 hybrid pipeline required invisible collision substrates beneath the Gaussian Splatting.",
+   "quote": "The ISPRS 2024 hybrid pipeline needed \"invisible collision substrates beneath the Gaussian Splatting\".",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISPRS",
+     "kind": "organization"
+    },
+    {
+     "name": "Gaussian Splatting",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t131"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Procedural, hand-built and mesh scenes provide collision meshes directly.",
+   "quote": "Procedural, hand-built and mesh scenes provide collision meshes directly.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t130",
+    "t131",
+    "t134"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Lidar simulation needs wavelength-specific reflectance and bidirectional reflectance (BRDF), incidence-angle behaviour, absorption and scattering, retroreflection, beam layout, divergence, pulse and receiver properties, range limits, scan timing and atmosphere.",
+   "quote": "Lidar needs wavelength-specific reflectance and bidirectional reflectance (BRDF), incidence-angle behaviour, absorption and scattering, retroreflection, plus beam layout, divergence, pulse and receiver properties, range limits, scan timing and atmosphere.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t117",
+    "t125",
+    "t87"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM OpenMATERIAL 3D version 1.0.0 was released on 3 April 2025.",
+   "quote": "ASAM OpenMATERIAL 3D 1.0.0 (released 3 April 2025)",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    11
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    },
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t136"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenMATERIAL 3D 1.0.0 standardises surface material properties such as refractive index, roughness and permeability for lidar, radar and camera, using wavelength-dependent lookup tables.",
+   "quote": "standardises surface material properties such as refractive index, roughness and permeability for lidar, radar and camera, with wavelength-dependent lookup tables",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    11
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t136",
+    "t92",
+    "t94",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The ASAM OpenMATERIAL 3D page states that weather, lighting and other environmental conditions are outside its scope for now.",
+   "quote": "its page states that weather, lighting and other environmental conditions are \"outside the scope for now\".",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    11
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t136",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A vendor tutorial states that different lidar wavelengths, including 1550 nm as an example, require distinct material definitions.",
+   "quote": "A vendor tutorial notes that different lidar wavelengths (for example 1550 nm) need distinct material definitions",
+   "kind": "requirement",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    14
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t136"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A vendor tutorial states that the ASAM OpenMATERIAL format carries licence metadata for each material.",
+   "quote": "the format carries licence metadata per material.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    14
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t136",
+    "t334"
+   ],
+   "importance": 1
+  },
+  {
+   "text": "An ASAM progress update states that volumetric properties for OpenMATERIAL are still under work.",
+   "quote": "An ASAM progress update states that volumetric properties are still under work",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    11
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    },
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t136"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An ASAM progress update lists OpenMATERIAL version 1.1.0 under project P_2025_07, with a release planned for October 2026.",
+   "quote": "lists a version 1.1.0 under project P_2025_07 with a release planned for October 2026",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    11
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    },
+    {
+     "name": "P_2025_07",
+     "kind": "program"
+    },
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t136",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The planned ASAM OpenMATERIAL version 1.1.0 covers better support for conductivity modeling and converting measured reflectance into BRDF.",
+   "quote": "covering \"better support for conductivity modeling and converting measured reflectance into BRDF\"",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    11
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t136",
+    "t117"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The ASAM OpenMATERIAL main page, accessed in October 2026, lists only version 1.0.0 despite the progress update's planned October 2026 release of version 1.1.0.",
+   "quote": "the standard's main page (accessed October 2026) lists only version 1.0.0.",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    11
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t136",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NVIDIA's asset requirements state that non-visual material behaviour can be nonlinear in wavelength and cannot be extrapolated from a visual material.",
+   "quote": "NVIDIA's asset requirements state directly that non-visual material behaviour can be nonlinear in wavelength and cannot be extrapolated from a visual material.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    13
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NVIDIA",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t136",
+    "t117",
+    "t92"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ansys exposes lidar material, BRDF and atmospheric parameters in its 2025 R1 release.",
+   "quote": "Ansys likewise exposes lidar material, BRDF and atmospheric parameters (2025 R1).",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    60
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Ansys",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t117",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2022 physical-lidar study used the ECOSTRESS spectral library at 850 nm.",
+   "quote": "A 2022 physical-lidar study used the ECOSTRESS spectral library at 850 nm",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    61
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ECOSTRESS spectral library",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t136"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2022 physical-lidar study reported a mean depth error of 14.65 cm at 33 m against a real Ouster sensor; the evaluation used indoor and outdoor objects rather than a job site.",
+   "quote": "reported a mean depth error of 14.65 cm at 33 m against a real Ouster sensor, on indoor and outdoor objects rather than a job site.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    61
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Ouster",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t249",
+    "t255",
+    "t11"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,460 @@
+{
+ "chunkId": "k317",
+ "hash": "03f2a3715a4e06ac",
+ "facts": [
+  {
+   "text": "UN R131 and UN R152 allow the driver to interrupt warnings and emergency braking through a conscious action such as accelerator kick-down or swerving.",
+   "quote": "UN R131 and UN R152 let the driver interrupt the warning and the emergency braking by \"a conscious action like an accelerator kick-down or a swerving\".",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    32,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "UN R131",
+     "kind": "regulation"
+    },
+    {
+     "name": "UN R152",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t191",
+    "t295",
+    "t25"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "On-road braking logic delays braking until the last possible moment to reduce false positives.",
+   "quote": "On-road logic also delays braking until the \"last possible moment\" to cut false positives.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    64
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t192",
+    "t108"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "AAA test protocols from 2024 monitor brake-pedal force to confirm whether the driver applied the brakes.",
+   "quote": "Test protocols monitor brake-pedal force to confirm whether the driver applied the brakes (AAA, 2024).",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    78
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "AAA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t191",
+    "t279"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "On-road logic described in US patent 11427166 delays braking until steering avoidance is no longer possible, or brakes earlier when steering avoidance is blocked.",
+   "quote": "Some logic delays braking until steering avoidance is no longer possible, or brakes earlier when steering avoidance is blocked (US patent 11427166).",
+   "kind": "method",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    79
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "US patent 11427166",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t191",
+    "t185",
+    "t196"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-3 requires a collision-avoidance system not to override operator braking when the operator's braking exceeds the system's braking demand.",
+   "quote": "the collision-avoidance system must not override operator braking when the operator's braking is greater than the system's braking demand",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t191",
+    "t280",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3 permits intentional operator control to override an automatic intervention where appropriate.",
+   "quote": "intentional operator control may be permitted to override an automatic intervention where appropriate.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t191",
+    "t280",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The Hitachi mining-truck patent checks brake-pedal stroke after the second alarm to determine that an avoidance action has been performed.",
+   "quote": "The Hitachi mining-truck patent checks brake-pedal stroke after the second alarm to decide that \"an avoidance action has been performed\"",
+   "kind": "method",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    19
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Hitachi",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t191",
+    "t3",
+    "t29"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The Hitachi mining-truck patent switches off the first alarm once time to collision recovers above the first limit.",
+   "quote": "its first alarm switches off once time to collision recovers above the first limit.",
+   "kind": "method",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    19
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Hitachi",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t186",
+    "t188",
+    "t29"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "University of Pretoria work from 2024 samples plausible Gaussian steering-rate trajectories to predict collisions and reduce false brake interventions on mining vehicles; the reported initial results are simulation-only.",
+   "quote": "University of Pretoria work (2024) samples plausible steering-rate trajectories (Gaussian) to predict collisions and cut false brake interventions on mining vehicles, with simulation-only \"initial results\".",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "University of Pretoria",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t196",
+    "t192",
+    "t126",
+    "t316"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No off-road validation was found for the recommended fusion of operator and machine signals to recognize that the operator is already reacting.",
+   "quote": "**Signals a production system should fuse** (**Expert opinion**; no off-road validation found)",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t65",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A production collision-mitigation system should fuse brake pedal or lever demand, brake pressure, and requested brake torque as direct braking cues, crediting actual achieved or predicted deceleration rather than switch status.",
+   "quote": "| Brake pedal or lever demand, brake pressure, requested brake torque | Direct braking action | Credit according to actual achieved or predicted deceleration, not switch status |",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t169",
+    "t185"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A production collision-mitigation system should treat a hydrostatic swashplate, propel lever, or travel lever moving toward neutral as a slowing request, but credit the request only if the machine is actually losing speed fast enough.",
+   "quote": "| Hydrostatic swashplate, propel or travel lever returned toward neutral | Operator requesting slowing | Credit only if the machine is actually losing speed fast enough |",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t177",
+    "t169"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A production collision-mitigation system should treat retarder or inching-pedal requests as active deceleration cues and include measured retarder response and delay.",
+   "quote": "| Retarder or inching pedal request | Active deceleration | Include the measured retarder response and delay |",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t177",
+    "t171"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A production collision-mitigation system should use steering or articulation command and rate as possible evasive-path cues, suppressing braking only when predicted collision risk is demonstrably falling; steering alone is not proof of safety.",
+   "quote": "| Steering or articulation command and rate | Possible evasive path change | Suppress braking only if predicted collision risk is demonstrably falling; steering alone is not proof of safety |",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t176",
+    "t196"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Releasing accelerator or propel demand is weak evidence of an early operator reaction because a downhill machine can accelerate after throttle release.",
+   "quote": "| Accelerator or propel demand released | Early reaction | Weak evidence; a downhill machine can accelerate after throttle release |",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t173",
+    "t169"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A production collision-mitigation system should treat direction-lever changes or reversal requests as potential avoidance cues while accounting for hydrostatic or transmission delay and the danger of a new collision in the opposite direction.",
+   "quote": "| Direction-lever change or reversal request | Potential avoidance | Account for hydrostatic or transmission delay and the danger of a new collision in the opposite direction |",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t177",
+    "t195",
+    "t16"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Measured longitudinal deceleration is a strong physical confirmation of operator response, but is delayed relative to operator intent.",
+   "quote": "| Measured longitudinal deceleration | Physical confirmation of response | Strong signal, but delayed relative to intent |",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t169",
+    "t88"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A predicted path moving away from an object indicates effective avoidance and provides a strong cross-check for steering or articulation responses.",
+   "quote": "| Predicted path moving away from the object | Avoidance becoming effective | Strong cross-check for steering or articulation responses |",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t196",
+    "t176"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Measured deceleration is the most physically meaningful braking cue; automatic intervention should be suppressed if a_measured ≥ a_required plus a margin.",
+   "quote": "The last of the braking cues is the most physically meaningful: if a_measured ≥ a_required plus a margin, suppress the intervention.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t169",
+    "t185"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Automatic intervention should not be suppressed merely because an operator control moved; suppression or reduction should require the operator's action to produce a collision-avoidance trajectory at least as safe as the automatic action.",
+   "quote": "do not suppress automatic intervention merely because an operator control moved; suppress or reduce it when the operator's action produces a collision-avoidance trajectory at least as safe as the automatic action.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t185",
+    "t196"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A common failure occurs when a startled operator briefly releases the accelerator or touches the brake, causing the automatic system to stand down while the remaining stopping margin continues collapsing.",
+   "quote": "a common failure in which a startled operator briefly releases the accelerator or touches the brake, the automatic system stands down, and the remaining stopping margin keeps collapsing.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t191",
+    "t194",
+    "t36"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "After an automatic stop, the control state should use hysteresis and an explicit release condition; this expert recommendation is anchored in ISO 21815-3's rollaway provision.",
+   "quote": "After an automatic stop, the control state should use hysteresis and an explicit release condition",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t185",
+    "t188",
+    "t280",
+    "t195"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "On slopes, collision-system braking should not be released merely because the detected object disappears for one sensor frame; this expert recommendation is anchored in ISO 21815-3's rollaway provision.",
+   "quote": "on slopes, do not release collision-system braking because the detected object disappears for one sensor frame.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t173",
+    "t185",
+    "t195",
+    "t280"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,480 @@
+{
+ "chunkId": "k283",
+ "hash": "e00eddff2e0b953e",
+ "facts": [
+  {
+   "text": "Machine recordings must contain enough information to reproduce the input at the intended test boundary and enough external information to score the result independently; recording every convenient CAN signal is not the recording requirement.",
+   "quote": "record enough information to reproduce the input at the boundary you intend to test, plus enough external information to score the result independently.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t105",
+    "t155"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Automotive replay platforms require recorded data to be fed back as acquired, with tight timing and synchronisation.",
+   "quote": "Automotive replay platforms require data to be fed back as acquired with tight timing and synchronisation",
+   "kind": "requirement",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    11,
+    29
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t101"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Modern automotive reference datasets preserve synchronized sensors, calibration and vehicle pose to support faithful replay.",
+   "quote": "modern reference datasets preserve synchronized sensors, calibration and vehicle pose for the same reason.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    11,
+    29
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t107",
+    "t101",
+    "t100",
+    "t155"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The minimum machine recording set must capture sensor input at the earliest practical replayable interface for every existing and candidate sensor.",
+   "quote": "Sensor input at the earliest practical replayable interface, for every existing and candidate sensor.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t84",
+    "t155"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Camera recordings must include frames at native or lossless encoding, resolution, format, bit depth, exposure, gain, HDR state, frame sequence and sensor health.",
+   "quote": "Cameras: frames at native or lossless encoding, with resolution, format, bit depth, exposure, gain, HDR state, frame sequence and sensor health.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Radar recordings must capture the lowest level exposed by the supplier: raw samples if technically and contractually accessible, otherwise detections, point cloud or object list, together with configuration and antenna or sensor mode.",
+   "quote": "Radar: the lowest level the supplier exposes (raw samples if technically and contractually accessible, otherwise detections, point cloud or object list), with configuration and antenna or sensor mode.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t94",
+    "t149",
+    "t156"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Lidar recordings must include packets or returns with scan timing, intensity, multi-return and sensor configuration.",
+   "quote": "Lidar: packets or returns with scan timing, intensity, multi-return and sensor configuration.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Ultrasonic sensor recordings must include range or echo information, or waveforms if available.",
+   "quote": "Ultrasonic: range or echo information, or waveforms if available.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t95"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Tag, GNSS or UWB system recordings must include measurements, tag identities, channel and status information and synchronisation.",
+   "quote": "Tag, GNSS or UWB systems: measurements, tag identities, channel and status information and synchronisation.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t97",
+    "t98",
+    "t101"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Recording only an object list allows later replay to test downstream fusion and decision software, but cannot retrospectively test perception.",
+   "quote": "If only an object list is recorded, later replay can test downstream fusion and decision software but cannot retrospectively test perception.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t156",
+    "t85",
+    "t99",
+    "t185",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Machine recordings must preserve a common time base and synchronisation-quality evidence: hardware timestamps on a common clock such as PTP, source and acquisition timestamps if different, clock domain, time-sync status, clock offsets, sequence counters, dropped-frame and dropped-packet counters, and resynchronisation events.",
+   "quote": "Hardware timestamps on a common clock (for example PTP), source timestamps and acquisition timestamps if different, clock domain, time-sync status and logged clock offsets, sequence counters, dropped-frame and dropped-packet counters, and resynchronisation events.",
+   "kind": "requirement",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    11
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "PTP",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t101",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Machine recordings must preserve intrinsic and extrinsic calibration per run with drift checks, mounting revision, machine dimensions, articulation and reference-frame conventions, calibration version and date, and any online calibration state.",
+   "quote": "Intrinsic and extrinsic calibration per run with checks for drift, mounting revision, machine dimensions, articulation and reference-frame conventions, calibration version and date, and any online calibration state.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t121",
+    "t176"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Without recorded transforms, sensor measurements cannot later be projected into a common frame.",
+   "quote": "Without the transforms, sensors cannot be projected into a common frame later.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t99",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Vibration and enclosures distort sensor measurements.",
+   "quote": "Vibration and enclosures distort measurements",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t84"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2026 lidar-camera system for underground longwall monitoring had to address time offsets and enclosure-induced measurement distortions.",
+   "quote": "a 2026 lidar-camera system for underground longwall monitoring had to address \"time offsets and enclosure-induced measurement distortions\".",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    63
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t89",
+    "t101",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Machine state must be recorded from CAN or J1939 at adequate rate and precision, including speed, direction, gear, wheel or track speeds, steering or articulation angle, yaw rate, IMU, brake command, measured brake or hydraulic pressure, propulsion and traction commands, automation mode, engine state and payload. Where relevant, boom, bucket, bed, forks, attachment or upper-structure swing position must also be recorded.",
+   "quote": "Speed, direction and gear, wheel or track speeds, steering or articulation angle, yaw rate, IMU, brake command and measured brake or hydraulic pressure, propulsion and traction commands, automation mode, engine state, payload, and where relevant boom, bucket, bed, forks, attachment or upper-structure swing position.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    },
+    {
+     "name": "CAN bus",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t121",
+    "t120",
+    "t179",
+    "t168"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The exact machine-state recording set depends on the machine because configuration changes the swept volume and braking dynamics.",
+   "quote": "The exact set is machine-dependent because the swept volume and braking dynamics change with configuration.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t179",
+    "t182"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Machine recordings must include operator throttle, brake and steering inputs, and every warning's level, timestamp, audio, visual or haptic state and acknowledgement.",
+   "quote": "Throttle, brake and steering inputs; every warning with its level, timestamp, audio, visual or haptic state and acknowledgement.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t37",
+    "t36"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Without recorded operator inputs and HMI outputs, determining whether a warning was useful is impossible.",
+   "quote": "Without these it is impossible to tell whether a warning was useful.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t37",
+    "t36"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Machine recordings must preserve every system output needed to reconstruct behaviour: detections and tracks if exposed, confidence and class, warning stage and warning-command timestamp, brake request, intervention state, inhibition, override, diagnostic and degraded state, and internal watchdog or fault information.",
+   "quote": "Detections and tracks if exposed, confidence and class, warning stage, warning-command timestamp, brake request, intervention state, inhibition, override, diagnostic and degraded state, and internal watchdog or fault information.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t86",
+    "t28",
+    "t56"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Recordings for the new collision mitigation system must include ISO/TS 21815-2 messages.",
+   "quote": "For the new system, the ISO/TS 21815-2 messages.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    3
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t121",
+    "t280",
+    "t22"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "System outputs must be recorded both at software-command level and close to the physical effect, including brake request and measured brake response.",
+   "quote": "Record outputs close to the physical effect as well as at software command level: brake request and measured brake response.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    3
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t182",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The minimum machine recording set includes RTK-GNSS/INS pose, applicable reference lidar, cameras or radar, survey-system data, and instrumented target positions, trajectories and IDs.",
+   "quote": "RTK-GNSS/INS pose; reference lidar, cameras or radar as applicable; survey-system data; instrumented target positions, trajectories and IDs.",
+   "kind": "requirement",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    29
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t98",
+    "t121",
+    "t159"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Calibrations, clocks and uncertainty estimates for machine pose and independent reference streams are required parts of the ground-truth record, not optional metadata.",
+   "quote": "Their calibrations, clocks and uncertainty estimates are part of the ground-truth record, not optional metadata.",
+   "kind": "requirement",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    29
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t100",
+    "t101",
+    "t259",
+    "t121"
+   ],
+   "importance": 3
+  }
+ ]
+}

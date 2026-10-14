@@ -1,0 +1,274 @@
+{
+ "chunkId": "k282",
+ "hash": "2facb56b4d81b92b",
+ "facts": [
+  {
+   "text": "Replay adapters should be prepared before sensor selection is final.",
+   "quote": "Prepare the replay adapters before sensor selection is final.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": true,
+   "cites": [
+    59
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t42"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An internal canonical recording format should retain the original bytes or packets plus metadata, with sensor-specific decoding and injection plugins implemented afterward.",
+   "quote": "Build an internal canonical recording format that retains the original bytes or packets plus metadata, then implement sensor-specific decoding and injection plugins.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": true,
+   "cites": [
+    59
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t122",
+    "t121",
+    "t149",
+    "t155"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ROS and Autoware provide open-source examples of bag replay and simulation; this is on-road evidence.",
+   "quote": "ROS and Autoware provide open-source examples of bag replay and simulation",
+   "kind": "example",
+   "evidence": "Expert opinion",
+   "onRoad": true,
+   "cites": [
+    59
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ROS",
+     "kind": "tool"
+    },
+    {
+     "name": "Autoware",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t155",
+    "t122",
+    "t126",
+    "t322"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Commercial platforms offer alternative replay and hardware-in-the-loop (HIL) architectures; this is vendor on-road evidence.",
+   "quote": "commercial platforms offer alternative replay and HIL architectures",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    11
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t148",
+    "t328"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An in-house replay system can implement the same recording, decoding and injection principles as existing replay and simulation architectures.",
+   "quote": "an in-house system can implement the same principles.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": true,
+   "cites": [
+    59
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t333",
+    "t149"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The cited on-road replay and HIL evidence demonstrates architectural feasibility, not the suitability of any one product for the manufacturer developing the off-road braking system.",
+   "quote": "The evidence demonstrates architectural feasibility, not the suitability of any one product for this manufacturer.",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    59,
+    11
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t70",
+    "t328",
+    "t333"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Pre-hardware test results do not transfer automatically to final hardware.",
+   "quote": "Pre-hardware results do not transfer automatically.",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    16
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t42",
+    "t65",
+    "t265"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Final optics, radome or window materials, mounting vibration and firmware can change system performance relative to pre-hardware testing.",
+   "quote": "Final optics, radome or window materials, mounting vibration and firmware can change performance.",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    16
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t84",
+    "t100",
+    "t102",
+    "t42"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MOSH explicitly requires independent verification of every trackless mobile machinery (TMM) type, model and serial number where similar models have different braking characteristics.",
+   "quote": "MOSH explicitly requires independent verification of \"every TMM Type, Model and serial number where similar models have different braking characteristics\".",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    16
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t307",
+    "t8",
+    "t71",
+    "t76",
+    "t170"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The sub-four-month period after prototype arrival should confirm existing validation preparations, rather than be used to invent recording formats, ground truth, scenario definitions, HIL interfaces and metrics.",
+   "quote": "The sub-four-month period after prototype arrival should be a confirmation period, not the point at which recording formats, ground truth, scenario definitions, HIL interfaces and metrics are invented.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t42",
+    "t105",
+    "t148",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Credibly compressing the historical three-to-four-year validation process requires most scenario development, baseline measurement, tool qualification and model preparation to happen before prototype arrival.",
+   "quote": "The historical three-to-four-year process can be compressed credibly only if most scenario development, baseline measurement, tool qualification and model preparation happen beforehand.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t142",
+    "t221",
+    "t234",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "By mid-2027, the company should ideally already have a versioned scenario library, an independent ground-truth pipeline, the old-system baseline, replay adapters, a SIL and HIL test suite, a statistical acceptance plan and correlated machine-dynamics models.",
+   "quote": "By mid-2027 the company should ideally already hold a versioned scenario library, an independent ground-truth pipeline, the old-system baseline, replay adapters, a SIL and HIL test suite, a statistical acceptance plan and correlated machine-dynamics models",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t105",
+    "t221",
+    "t145",
+    "t62"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Prototype arrival should mainly substitute real new hardware into an existing validation evidence pipeline.",
+   "quote": "so that prototype arrival mainly substitutes real new hardware into an existing evidence pipeline.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t42",
+    "t70",
+    "t233"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No published evidence was found that off-road automatic-braking validation has been compressed from years to months.",
+   "quote": "No published evidence was found that off-road auto-braking validation has been compressed from years to months.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t25",
+    "t65",
+    "t43",
+    "t70"
+   ],
+   "importance": 3
+  }
+ ]
+}

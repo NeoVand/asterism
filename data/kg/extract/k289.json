@@ -1,0 +1,223 @@
+{
+ "chunkId": "k289",
+ "hash": "b8a97e17d485e790",
+ "facts": [
+  {
+   "text": "For camera hardware-in-the-loop testing, RAW-data injection advocates cite monitor synchronization and field-of-view problems, whereas projector-stimulation advocates claim the gap is closing. Both positions are vendor views based on on-road evidence.",
+   "quote": "Injection advocates cite monitor sync and field-of-view problems; projector advocates claim the gap is closing. Both positions are vendor views.",
+   "kind": "disagreement",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    25,
+    12
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t149",
+    "t150",
+    "t89",
+    "t87"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For radar minimum simulated range, a 2021 peer-reviewed review reports about 20 to 30 m for digital target simulators, whereas vendors claim 0.6 m. The disagreement is partly attributable to digital versus analog or hybrid architectures; the review notes that analog simulators reach very low minimum ranges.",
+   "quote": "The 2021 peer-reviewed review gives about 20 to 30 m for digital target simulators; vendors claim 0.6 m.",
+   "kind": "disagreement",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    23,
+    24
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t150",
+    "t87"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "DetZero and CTRL claim that auto-labels surpass average human labels, whereas other authors stress dependence on human-labeled training data and the risk of silent systematic error. These positions are presented as independent on-road evidence.",
+   "quote": "DetZero and CTRL claim to surpass average human labels, while other authors stress dependence on human-labeled training data and the risk of silent systematic error.",
+   "kind": "disagreement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    27,
+    53,
+    26
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "DetZero",
+     "kind": "tool"
+    },
+    {
+     "name": "CTRL",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t106",
+    "t113",
+    "t105"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Physical or raw sensor simulation catches perception errors but is expensive, whereas semantic object injection enables huge coverage but assumes perception succeeded. Neither test approach dominates.",
+   "quote": "Physical or raw sensor simulation catches perception errors but is expensive; semantic object injection enables huge coverage but assumes perception succeeded. Neither dominates.",
+   "kind": "disagreement",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t156",
+    "t85",
+    "t126",
+    "t200"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "To resolve the trade-off between raw-sensor realism and scalable semantic simulation, the defensible approach is to allocate each safety requirement to the lowest-cost test level containing its failure mechanisms, then correlate those models using higher-fidelity levels.",
+   "quote": "The defensible approach is to allocate each safety requirement to the lowest-cost test level that contains its failure mechanisms, then use higher-fidelity levels to correlate those models.",
+   "kind": "disagreement",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t63",
+    "t200",
+    "t125",
+    "t250"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "On how conservative intervention should be, regulators require fail-to-safe, whereas the University of Pretoria and industry report production losses and resistance caused by false interventions.",
+   "quote": "Regulators require fail-to-safe; the University of Pretoria and the industry report production losses and resistance due to false interventions.",
+   "kind": "disagreement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    8,
+    39
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "University of Pretoria",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t55",
+    "t28",
+    "t31",
+    "t36"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "On field time needed after extensive simulation, statistical planning supports claim-driven sample sizes rather than mileage folklore. No fixed field-time number applies independently of required detection rate, tolerated false-alarm rate, scenario distribution and confidence target.",
+   "quote": "No fixed number applies independently of the required detection rate, tolerated false-alarm rate, scenario distribution and confidence target; statistical planning supports claim-driven sample sizes rather than mileage folklore.",
+   "kind": "disagreement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    30
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t109",
+    "t32",
+    "t141",
+    "t216"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Simulation and common software encourage grouping machine variants into equivalence classes, whereas differences in sensor mounting, machine envelope, payload, brake dynamics, articulation and occlusion can defeat those equivalence claims.",
+   "quote": "Simulation and common software encourage equivalence classes; sensor mounting, machine envelope, payload, brake dynamics, articulation and occlusion can defeat them.",
+   "kind": "disagreement",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t76",
+    "t230",
+    "t100",
+    "t182",
+    "t103"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the disagreement over grouping machine variants into families, a family claim should identify invariant parameters and parameters bounded by worst-case physical confirmation.",
+   "quote": "A family claim should state which parameters are invariant and which are bounded by worst-case physical confirmation.",
+   "kind": "disagreement",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t76",
+    "t230",
+    "t265",
+    "t262"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "HUGSIM and pseudo-simulation proponents favor neural re-simulation, whereas XLD benchmark authors find large gaps for off-trajectory views. The disagreement is supported by independent on-road evidence.",
+   "quote": "Proponents (HUGSIM, pseudo-simulation) versus benchmark authors (XLD) who find large gaps for off-trajectory views.",
+   "kind": "disagreement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    62,
+    19,
+    33
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "HUGSIM",
+     "kind": "tool"
+    },
+    {
+     "name": "pseudo-simulation",
+     "kind": "method"
+    },
+    {
+     "name": "XLD",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t155",
+    "t165",
+    "t107"
+   ],
+   "importance": 3
+  }
+ ]
+}

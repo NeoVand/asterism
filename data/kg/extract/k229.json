@@ -1,0 +1,195 @@
+{
+ "chunkId": "k229",
+ "hash": "a4cb60faf156da7e",
+ "facts": [
+  {
+   "text": "Camera-soiling simulation methods include GAN-generated soiling learned from WoodScape (2019 onwards) and deterministic or rule-based overlays associated with WACV 2025 and Occluded nuScenes (2025).",
+   "quote": "GAN-generated soiling learned from WoodScape (2019 onwards) and deterministic or rule-based overlays (WACV 2025; Occluded nuScenes, 2025) exist",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    60,
+    61,
+    62,
+    63
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "WoodScape",
+     "kind": "dataset"
+    },
+    {
+     "name": "WACV 2025",
+     "kind": "other"
+    },
+    {
+     "name": "Occluded nuScenes",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t89",
+    "t102",
+    "t115"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The realism of the cited camera-soiling simulations is judged visually rather than against measured optical transmission; the evidence is from on-road applications.",
+   "quote": "their realism is judged visually, not against measured optical transmission **Independent (on-road evidence)** [60, 61, 62, 63]",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    60,
+    61,
+    62,
+    63
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t102",
+    "t234",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For camera-soiling simulation, physical soiling films, scattering and cleaning state are poorly validated.",
+   "quote": "Physical soiling films, scattering and cleaning state are poorly validated.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t102",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Mud on a lidar cover was physically tested using a 2023 dynamic test method.",
+   "quote": "Lidar: mud on the cover was physically tested in a 2023 dynamic test method [29]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    29
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t102",
+    "t279"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No validated simulation model for mud on a lidar cover was found.",
+   "quote": "Lidar: mud on the cover was physically tested in a 2023 dynamic test method [29], but no validated simulation model was found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    29
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t102",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Lidar beam blockage and transmission through a mud-soiled cover can be modelled in principle.",
+   "quote": "beam blockage and transmission can be modelled in principle.",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t102",
+    "t103",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Modelling mud or dirt on radar is difficult because of layer permittivity, thickness and radome interaction.",
+   "quote": "Radar: layer permittivity, thickness and radome interaction are hard",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t102",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Evidence for simulating mud or dirt on radar was not found.",
+   "quote": "Radar: layer permittivity, thickness and radome interaction are hard; not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t102",
+    "t126"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Quantitative simulation evidence for mud on an ultrasonic transducer was not found.",
+   "quote": "Ultrasonic: quantitative mud-on-transducer simulation evidence not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t95",
+    "t102",
+    "t126"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Evidence for simulating mud or dirt on a thermal sensor was not found.",
+   "quote": "Thermal: not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t102",
+    "t126"
+   ],
+   "importance": 3
+  }
+ ]
+}

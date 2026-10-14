@@ -1,0 +1,761 @@
+{
+ "chunkId": "k313",
+ "hash": "1a3ef19e7ab9f842",
+ "facts": [
+  {
+   "text": "EMESRT's Vehicle Interaction nine-layer control model defines Level 7 as operator awareness, Level 8 as advisory controls, and Level 9 as intervention controls that automatically slow down and stop the vehicle.",
+   "quote": "defines Level 7 (operator awareness), Level 8 (advisory controls) and Level 9 (intervention controls that \"automatically slow down and stop the vehicle\")",
+   "kind": "definition",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    20,
+    21
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t30",
+    "t304",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "EMESRT stresses that the upper levels of its Vehicle Interaction control model depend on a strong Level 1 to 7 baseline for normal operations and on real-time human decision making.",
+   "quote": "stresses that the upper levels depend on a strong Level 1 to 7 baseline for normal operations and on real-time human decision making",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    20,
+    21
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t30",
+    "t304",
+    "t36"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "EMESRT's performance requirement PR-5A is at Rev 3.0, dated September 2024, as cited in a Wabtec white paper.",
+   "quote": "Its performance requirement PR-5A is at Rev 3.0, dated September 2024 (as cited in a Wabtec white paper).",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    },
+    {
+     "name": "PR-5A",
+     "kind": "other"
+    },
+    {
+     "name": "Wabtec",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t304"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2019 trade article describing PR-5A reports 24 surface vehicle-interaction scenarios.",
+   "quote": "The number of surface vehicle-interaction scenarios is reported as 24 in a 2019 trade article describing PR-5A",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "PR-5A",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t304",
+    "t142"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "EMESRT's 2024 activity report counts 17 surface scenario storyboards published in 2019.",
+   "quote": "EMESRT's own 2024 activity report counts 17 surface scenario storyboards published in 2019",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t304",
+    "t142"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The reported counts of 24 PR-5A surface scenarios and 17 surface storyboards measure different things: scenarios defined in PR-5A versus published storyboards.",
+   "quote": "the two figures count different things (scenarios defined in PR-5A against published storyboards)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "PR-5A",
+     "kind": "other"
+    },
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t304",
+    "t142"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "EMESRT's 2024 activity report confirms that PR-5A was reviewed and updated in September 2024 but does not state a revision number.",
+   "quote": "The same report confirms that PR-5A was reviewed and updated in September 2024 without stating a revision number.",
+   "kind": "event",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    },
+    {
+     "name": "PR-5A",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t304"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-1:2022 limits interventions to speed reduction, stopping or motion inhibit; steering is excluded.",
+   "quote": "ISO 21815-1:2022 limits interventions to speed reduction, stopping or motion inhibit, not steering.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    13
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO/TS 21815-2:2021 defines J1939 commands to slow down, stop or prevent machine motion, including prevention of movement from standstill.",
+   "quote": "ISO/TS 21815-2:2021 defines J1939 commands to \"slow down, stop or prevent motion of the machine\", including prevention of movement from standstill",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    14
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    },
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t120",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO/TS 21815-2:2021 allows a machine to report that an action may be overridden.",
+   "quote": "allows the machine to report that an action \"may be overridden\"",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    14
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t28"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO/TS 21815-2:2021 explicitly states that it is not plug-and-play and requires additional machine and collision-system integration details.",
+   "quote": "it states explicitly that it is not plug-and-play and that additional machine and collision-system integration details are required",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    14
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t120"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3 requires distinguishable warning levels.",
+   "quote": "ISO 21815-3 requires distinguishable warning levels",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t29",
+    "t37"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-3 accounts for operator action time.",
+   "quote": "accounts for operator action time",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t35"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-3 permits slowing and braking and places collision-system action at collision-risk level 4 or above.",
+   "quote": "permits slowing and braking, and places collision-system action at collision-risk level 4 or above",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t28",
+    "t189"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Forthcoming draft ISO 21815 Parts 4 and 5 extend the intervention ladder to swing and rotation, articulation, four-wheel steer, trailers, skid steer and counter-rotation, and telescopic and vertical motion.",
+   "quote": "The forthcoming Parts 4 and 5 extend the same ladder to swing and rotation and to articulation, four-wheel steer, trailers, skid steer and counter-rotation, telescopic and vertical motion.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    16,
+    17
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-4",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 21815-5",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t274",
+    "t29"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NIOSH's intelligent proximity detection selectively disables only motions that could pin a worker rather than shutting the machine down.",
+   "quote": "NIOSH's intelligent proximity detection adds selective function disablement: it blocks only the motions that could pin a worker rather than shutting the machine down",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    23,
+    72,
+    73,
+    74
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t24",
+    "t28",
+    "t14"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NIOSH's selective motion disablement gives workers greater freedom to position themselves to see visual cues or avoid other hazards.",
+   "quote": "so that workers keep \"greater freedom to position themselves to see visual cues or avoid other hazards\"",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    23,
+    72,
+    73,
+    74
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t24",
+    "t14",
+    "t40"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "On-road automatic emergency braking stages warning, then a haptic brake jerk, then partial braking, then full braking.",
+   "quote": "On-road automatic emergency braking stages warning, then a haptic brake jerk, then partial braking, then full braking.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    24
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t25",
+    "t29",
+    "t189"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The UNECE heavy-vehicle discussion notes that warning-phase decelerations above 4 m/s² are not prohibited for very short durations as a haptic cue.",
+   "quote": "The UNECE heavy-vehicle discussion notes that decelerations above 4 m/s² during the warning phase are not prohibited \"for very short durations\", as a haptic cue.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    24
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "UNECE",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t190",
+    "t29",
+    "t37"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the proposed earth-moving-machine intervention ladder, monitoring advances to information when an object is in the risk area and the stopping margin is healthy.",
+   "quote": "Monitoring --> Information: object in risk area, margin healthy",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t189",
+    "t194"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In the earth-moving-machine intervention ladder, information advances to urgent warning when the margin is falling but the operator still has time to act.",
+   "quote": "Information --> UrgentWarning: margin falling, operator has time",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t189",
+    "t35",
+    "t194"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In the earth-moving-machine intervention ladder, urgent warning advances to slowing when there is no operator response and the margin remains positive.",
+   "quote": "UrgentWarning --> Slowing: no operator response, margin still positive",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t189",
+    "t194"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In the earth-moving-machine intervention ladder, slowing advances to partial braking when the margin approaches its minimum.",
+   "quote": "Slowing --> PartialBraking: margin approaching minimum",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t189",
+    "t194"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In the earth-moving-machine intervention ladder, partial braking advances to maximum safe braking when collision would otherwise be unavoidable.",
+   "quote": "PartialBraking --> MaximumSafeBraking: collision otherwise unavoidable",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t189",
+    "t18"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the earth-moving-machine intervention ladder, maximum safe braking advances to hold when speed reaches zero and the hazard remains.",
+   "quote": "MaximumSafeBraking --> Hold: speed zero, hazard remains",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t189",
+    "t55"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In the earth-moving-machine intervention ladder, hold returns to monitoring with operator action, the parking brake set, and the path clear.",
+   "quote": "Hold --> Monitoring: operator action, parking brake set, path clear",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t189",
+    "t55"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In the earth-moving-machine intervention ladder, monitoring advances to motion inhibit when an object is in the projected path at standstill; motion inhibit returns to monitoring when the path is clear.",
+   "quote": "Monitoring --> MotionInhibit: object in projected path at standstill\n    MotionInhibit --> Monitoring: path clear",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t189",
+    "t28"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For earth-moving machines, information or low-level warning uses visual or spatial indication when an object is present and the stopping margin is healthy.",
+   "quote": "*Information or low-level warning:* object present, stopping margin healthy; visual or spatial indication",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t29",
+    "t37",
+    "t194"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Information or low-level warning has low nuisance cost but can overload an earth-moving-machine operator if frequent.",
+   "quote": "low nuisance cost but can overload the operator if frequent",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t36",
+    "t33"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For earth-moving machines, urgent warning provides a distinct audible, visual or haptic warning when collision risk is rising and operator action still has adequate margin.",
+   "quote": "*Urgent warning:* collision risk rising while operator action still has adequate margin; distinct audible, visual or haptic warning",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t29",
+    "t37",
+    "t35"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Urgent warning preserves earth-moving-machine operator authority, but human reaction is variable and warning fatigue is a real risk.",
+   "quote": "preserves operator authority, but human reaction is variable and warning fatigue is real",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t35",
+    "t33",
+    "t36"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For earth-moving machines, automatic slowing applies when the operator does not reduce risk and substantial margin remains; options include reducing propel request, retarder or hydrostatic slowing, or light braking.",
+   "quote": "*Automatic slowing:* operator does not reduce risk, substantial margin remains; reduce propel request, retarder or hydrostatic slowing, or light brake",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t189",
+    "t177",
+    "t194"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Automatic slowing of earth-moving machines is smooth and reduces energy before the emergency phase.",
+   "quote": "smooth and reduces energy before the emergency phase",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t189",
+    "t169"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Automatic slowing of earth-moving machines may provide insufficient deceleration downhill.",
+   "quote": "may give insufficient deceleration downhill",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t173",
+    "t169",
+    "t189"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Earth-moving-machine drivetrain response varies during automatic slowing.",
+   "quote": "the drivetrain response varies",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t177",
+    "t189"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For earth-moving machines, partial service braking applies when the predicted safe margin approaches its minimum and uses controlled deceleration below stability and traction limits.",
+   "quote": "*Partial service braking:* predicted safe margin approaching minimum; controlled deceleration below stability and traction limits",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t189",
+    "t194",
+    "t174",
+    "t178"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Partial service braking gives the earth-moving-machine operator time and reduces abrupt load transfer.",
+   "quote": "gives the operator time and reduces abrupt load transfer",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t189",
+    "t178",
+    "t35"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Partial service braking of earth-moving machines may extend time inside the hazard zone.",
+   "quote": "may extend time inside the hazard zone",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t189",
+    "t20",
+    "t40"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Partial service braking of earth-moving machines may create conflict with following machines.",
+   "quote": "create conflict with following machines",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t189",
+    "t17",
+    "t195"
+   ],
+   "importance": 3
+  }
+ ]
+}

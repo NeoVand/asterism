@@ -1,0 +1,515 @@
+{
+ "chunkId": "k275",
+ "hash": "2d94517f4b84daaa",
+ "facts": [
+  {
+   "text": "The recommended unit of analysis for collision-system performance is the encounter, not the frame.",
+   "quote": "The unit of analysis is the encounter, not the frame.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t221",
+    "t141"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An encounter means machine A approached object B under scenario C while the object occupied or approached a defined risk region.",
+   "quote": "An encounter is \"machine A approached object B under scenario C while the object occupied or approached a defined risk region\".",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t141",
+    "t187"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Each collision-system encounter should record machine model and configuration, sensor mounting, object class, relative direction, speed, grade, surface, attachment and load state, weather, light, dust or visibility, and site archetype.",
+   "quote": "Each encounter should carry its scenario factors: machine model and configuration, sensor mounting, object class, relative direction, speed, grade, surface, attachment and load state, weather, light, dust or visibility, and site archetype.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t121",
+    "t199"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-3 provides the strongest directly relevant normative anchor for defining forward and reverse risk areas instead of arbitrary sensor-centric range thresholds.",
+   "quote": "ISO 21815-3 provides the strongest directly relevant normative anchor for defining forward and reverse risk areas, rather than choosing arbitrary sensor-centric range thresholds.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t187",
+    "t188"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The recommended detection baseline for an existing warning function measures probability of detection per independent encounter (recall), stratified by object class: workers standing, crouching or lying; light vehicles; other machines; and static infrastructure.",
+   "quote": "probability of detection per independent encounter (recall) by object class (worker standing, crouching or lying; light vehicle; other machine; static infrastructure)",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t109",
+    "t221",
+    "t23"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Detection recall for an existing warning function should be stratified by distance band inside the ISO 21815-3 risk area, bearing or zone around the machine, and conditions including dust, rain, snow, fog, dusk, dark and glare.",
+   "quote": "by distance band inside the ISO 21815-3 risk area, by bearing or zone around the machine, and by condition (dust, rain, snow, fog, dusk, dark, glare)",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t109",
+    "t187",
+    "t102",
+    "t280"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The recommended detection baseline for an existing warning function also measures first-detection distance and time, missed encounters, track persistence and, where available, range and position error.",
+   "quote": "first-detection distance and time; missed encounters; track persistence; and, where available, range and position error.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t221",
+    "t86",
+    "t108"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Detection performance for an existing warning function should be reported as curves or bins rather than a single fleet-wide average that hides weak conditions.",
+   "quote": "Report curves or bins, not a single fleet-wide average that hides weak conditions.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t221",
+    "t224"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "False and nuisance warnings from an existing warning function should be measured per machine operating hour and per meaningful exposure unit, stratified by condition, and split into false, nuisance and correct warnings.",
+   "quote": "False and nuisance warnings per machine operating hour and per meaningful exposure unit, stratified by condition, and split into false",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t32",
+    "t213",
+    "t221"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A false warning has no object present; a nuisance warning involves a real object but no collision risk, such as the machine's own tyres, berms or material piles. False and nuisance warnings are different engineering problems.",
+   "quote": "false (no object), nuisance (a real object but no collision risk, for example the machine's own tyres, berms or material piles) and correct. These are different engineering problems.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t32",
+    "t39"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NIOSH RI 9672 (2007) found false alarms caused by a truck's own tyres and protruding structures.",
+   "quote": "NIOSH found false alarms from the truck's own tyres and protruding structures (NIOSH RI 9672, 2007).",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    61
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    },
+    {
+     "name": "NIOSH RI 9672",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t32",
+    "t3"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Ruff's 2006 study recorded 580 alarms during a 7-day test with 618 reversals: 102 false alarms, 243 nuisance alarms and only 235 actionable alarms (41%).",
+   "quote": "In Ruff's 2006 study, 580 alarms over a 7-day, 618-reversal test split into 102 false, 243 nuisance and only 235 (41%) actionable.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    14
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Ruff",
+     "kind": "person"
+    }
+   ],
+   "terms": [
+    "t32",
+    "t16",
+    "t221"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Recommended warning-timing measures for an existing warning function include time-to-collision (TTC) or distance-to-collision at first warning and time to risk-boundary entry.",
+   "quote": "Warning timing: time-to-collision (TTC) or distance-to-collision at first warning, time to risk-boundary entry",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t186",
+    "t187",
+    "t221"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Recommended warning-timing measures include detection latency from reference opportunity to system output, termed 'detection time' in ISO 16001, and warning latency to the operator interface.",
+   "quote": "detection latency from reference opportunity to system output (ISO 16001 \"detection time\"), warning latency to the operator interface",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t88",
+    "t37",
+    "t283"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Recommended warning-timing measures include warning duration, chattering or repeated warnings, and the fractions of warnings that are late, early or absent.",
+   "quote": "warning duration, chattering or repeated warnings, and the fractions that are late, early or absent.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t32",
+    "t221",
+    "t224"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The existing warning-function baseline should measure time in normal, degraded, inhibited and fault states, plus self-diagnosis and blockage-detection rate.",
+   "quote": "Availability and degradation: time in normal, degraded, inhibited and fault states, self-diagnosis and blockage-detection rate.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t221",
+    "t56",
+    "t103",
+    "t60"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An impressive warning-system detection rate measured only while the system is available can hide operational unavailability.",
+   "quote": "An impressive detection rate measured only while \"available\" can hide operational unavailability.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t109",
+    "t221",
+    "t60"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Recommended measures for a future braking function include intervention rate and false-intervention rate per hour, brake-request time, actual hydraulic or electromechanical response time, deceleration onset and achieved deceleration.",
+   "quote": "Intervention rate and false-intervention rate per hour; brake-request time; actual hydraulic or electromechanical response time; deceleration onset and achieved deceleration",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t28",
+    "t31",
+    "t171",
+    "t169",
+    "t213"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The future braking function should measure stopping distance against the ISO 3450 or MOSH requirement.",
+   "quote": "stopping distance versus the ISO 3450 or MOSH requirement",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 3450",
+     "kind": "standard"
+    },
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t170",
+    "t282",
+    "t307",
+    "t62"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Recommended measures for the future braking function include residual speed if contact would occur, minimum clearance, brake release behaviour, failures and undesired braking.",
+   "quote": "residual speed if contact would occur; minimum clearance; brake release behaviour; failures and undesired braking.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t194",
+    "t169",
+    "t56",
+    "t31"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Braking-function measures cannot be measured on the old warning-only system and should therefore be evaluated against new safety requirements rather than treated as old-versus-new metrics.",
+   "quote": "These cannot be measured on the old warning-only system, so they should be evaluated against new safety requirements rather than treated as old-versus-new metrics.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t63",
+    "t25",
+    "t23"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Automatic intervention is within the scope of ISO 21815-1.",
+   "quote": "automatic intervention is within the scope of ISO 21815-1.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t28"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No current ISO, NIOSH or public research result was found giving a fixed number of hours, objects or encounters sufficient to validate collision systems across heavy-machine applications.",
+   "quote": "No current ISO, NIOSH or public research result was found that gives a fixed number of hours, objects or encounters sufficient to validate collision systems across heavy-machine applications.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO",
+     "kind": "organization"
+    },
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t209",
+    "t65",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sample size for collision-system validation must follow the claim: binomial confidence or power for detection and miss probabilities, exposure-based rates for false alarms, and uncertainty bounds on warning and intervention timing.",
+   "quote": "Sample size has to follow the claim: binomial confidence or power for detection and miss probabilities, exposure-based rates for false alarms, and uncertainty bounds on warning and intervention timing.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t210",
+    "t213",
+    "t212",
+    "t88"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NIST's statistical handbook makes sample size a function of the performance difference or confidence precision that must be resolved.",
+   "quote": "NIST's statistical handbook makes sample size a function of the performance difference or confidence precision that must be resolved",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    30
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIST",
+     "kind": "organization"
+    },
+    {
+     "name": "NIST's statistical handbook",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t209",
+    "t212"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NIST's statistical handbook provides exact-binomial and Wilson intervals for cases where normal approximations fail, including probabilities near 0 or 1 and small samples.",
+   "quote": "provides exact-binomial and Wilson intervals for cases where normal approximations fail (near 0 or 1, or with small samples).",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    30
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIST's statistical handbook",
+     "kind": "publication"
+    },
+    {
+     "name": "exact-binomial intervals",
+     "kind": "method"
+    },
+    {
+     "name": "Wilson intervals",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t209",
+    "t210"
+   ],
+   "importance": 2
+  }
+ ]
+}

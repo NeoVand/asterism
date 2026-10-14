@@ -1,0 +1,428 @@
+{
+ "chunkId": "k360",
+ "hash": "820aa61265953655",
+ "facts": [
+  {
+   "text": "The strongest transfer mechanism found for transferring collision-system settings across machine models is parameterisation in physical coordinates and normalised quantities rather than copying raw threshold numbers.",
+   "quote": "The strongest transfer mechanism found is to parameterise the system in physical coordinates and normalised quantities rather than copying raw threshold numbers.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t229"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3:2023 states that collision-risk regions depend on physical kinematics: speed, turning radius, angle and machine dimensions.",
+   "quote": "ISO 21815-3:2023 states that collision-risk regions depend on physical kinematics (speed, turning radius, angle and machine dimensions)",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t187",
+    "t229"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-3:2023 states that real-time machine kinematics can refine collision-risk regions.",
+   "quote": "that real-time machine kinematics can refine them",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t187"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-3:2023 states that collision-avoidance distance comprises detection, determination and action time, machine stopping distance and a safety distance.",
+   "quote": "the collision-avoidance distance comprises detection, determination and action time, machine stopping distance and a safety distance.",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t193",
+    "t170",
+    "t172",
+    "t194"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3:2023 treats configurable assumptions such as machine model, velocity and slope as information that must be controlled and communicated.",
+   "quote": "It also treats configurable assumptions such as machine model, velocity and slope as information that must be controlled and communicated",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t230",
+    "t229"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-3:2023's treatment of configurable assumptions supports versioned machine-specific configuration rather than hidden calibration edits.",
+   "quote": "which supports versioned machine-specific configuration over hidden calibration edits.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t229",
+    "t230",
+    "t162"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A common engineering model calculates required detection distance as v × (t_detect + t_decision + t_actuation) + v² / (2 × a_brake(mass, slope, surface)) + machine-envelope offset + margin. The model is consistent with the standard's component structure but is not a verbatim ISO equation.",
+   "quote": "required detection distance = v (t_detect + t_decision + t_actuation) + v^2 / (2 a_brake(mass, slope, surface)) + machine-envelope offset + margin,",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    2,
+    3
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t193",
+    "t172",
+    "t170",
+    "t229",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 16001 caps t_detect in the required-detection-distance model at 300 ms.",
+   "quote": "where t_detect is capped at 300 ms by ISO 16001 [3]",
+   "kind": "requirement",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t283",
+    "t88",
+    "t193"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The braking deceleration a_brake in the required-detection-distance model comes from braking tests such as those defined in ISO 3450.",
+   "quote": "a_brake comes from braking tests such as those defined in ISO 3450 (current edition not verified)",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    2,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 3450",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t184",
+    "t282",
+    "t169",
+    "t193"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The current edition of ISO 3450 was not verified in the discussion of braking tests used to obtain a_brake.",
+   "quote": "ISO 3450 (current edition not verified)",
+   "kind": "uncertain",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    2,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 3450",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t282"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In the common engineering model for required detection distance, the sensor field of view is projected from the mounting pose to the ground plane.",
+   "quote": "the sensor field of view is projected from the mounting pose to the ground plane.",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    2,
+    3
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t87",
+    "t100",
+    "t193"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For physics- and geometry-based transfer of collision-system settings, each machine model supplies footprint and swept-volume configuration data against steering, articulation and swing state instead of tuned constants.",
+   "quote": "footprint and swept volume against steering, articulation and swing state;",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t176",
+    "t230"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For physics- and geometry-based transfer of collision-system settings, each machine model supplies sensor-to-machine coordinate transforms and field-of-view and occlusion maps instead of tuned constants.",
+   "quote": "sensor-to-machine coordinate transforms and field-of-view and occlusion maps;",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t100",
+    "t87",
+    "t103"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For physics- and geometry-based transfer of collision-system settings, each machine model supplies speed-dependent stopping curves by grade, load and surface class instead of tuned constants.",
+   "quote": "speed-dependent stopping curves by grade, load and surface class;",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t170",
+    "t173",
+    "t168",
+    "t174"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For physics- and geometry-based transfer of collision-system settings, each machine model supplies sensing, control and actuation latency distributions instead of tuned constants.",
+   "quote": "sensing, control and actuation latency distributions;",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t172",
+    "t88"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For physics- and geometry-based transfer of collision-system settings, each machine model supplies uncertainty margins for sensor error, calibration and brake variability instead of tuned constants.",
+   "quote": "uncertainty margins for sensor error, calibration and brake variability.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t259",
+    "t100",
+    "t182"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In physics- and geometry-based transfer of collision-system settings, sensor observations are transformed to a common machine coordinate frame.",
+   "quote": "Sensor observations are transformed to a common machine coordinate frame",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    2
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t100"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In physics- and geometry-based transfer of collision-system settings, a single collision logic operates on the predicted swept volume and the object trajectory.",
+   "quote": "a single collision logic operates on the predicted swept volume and the object trajectory.",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    2
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t185",
+    "t196"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "With physics- and geometry-based transfer of collision-system settings, changes between machine models are primarily physical configuration rather than dozens of manually re-tuned constants.",
+   "quote": "What changes per model is primarily physical configuration, not dozens of manually re-tuned constants",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    2
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t230",
+    "t188"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "With physics- and geometry-based transfer of collision-system settings, per-model work becomes measurement of mass, brake deceleration, sensor pose and machine envelope.",
+   "quote": "the per-model work becomes measurement (mass, brake deceleration, sensor pose, machine envelope).",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    2
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t168",
+    "t169",
+    "t100",
+    "t184"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815 risk-area concepts are already defined relative to machine motion.",
+   "quote": "The ISO 21815 risk-area concepts are already defined relative to machine motion.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815 series",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t187",
+    "t229"
+   ],
+   "importance": 2
+  }
+ ]
+}

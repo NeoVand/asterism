@@ -1,0 +1,216 @@
+{
+ "chunkId": "k222",
+ "hash": "4bf6297af2eb872c",
+ "facts": [
+  {
+   "text": "Physically based thermal simulation must predict both the scene's radiance and the camera's response.",
+   "quote": "A physically based thermal simulation has two problems rather than one: it must predict the scene's radiance and the camera's response.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t128",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Predicting scene radiance in physically based thermal simulation requires material emissivity and reflectivity, temperatures, solar loading, convection, thermal inertia, atmospheric absorption and emission, and often time history.",
+   "quote": "The first needs material emissivity and reflectivity, temperatures, solar loading, convection, thermal inertia, atmospheric absorption and emission and often time history;",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t128",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Predicting the camera's response in physically based thermal simulation requires bandpass, optics, detector response, NETD and noise, non-uniformity correction, integration and gain, and processing.",
+   "quote": "the second needs bandpass, optics, detector response, NETD and noise, non-uniformity correction, integration and gain, and processing.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Automotive thermal-modelling work (SPIE, 2023) applies atmospheric effects, imaging geometry and sensor response; the passage labels this independent on-road evidence.",
+   "quote": "Automotive thermal-modelling work (SPIE, 2023) applies atmospheric effects, imaging geometry and sensor response **Independent (on-road evidence)** [74].",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    74
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "SPIE",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t96",
+    "t102",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Commercial signature tools such as MuSES describe themselves as \"industry-standard\"; this is a vendor claim.",
+   "quote": "Commercial signature tools such as MuSES describe themselves as \"industry-standard\" **Vendor** [73].",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    73
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MuSES",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t96",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2026 complex-Fresnel model was compared with a real LWIR camera only qualitatively.",
+   "quote": "A 2026 complex-Fresnel model was compared with a real LWIR camera only qualitatively",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    71
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "complex-Fresnel model",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t96",
+    "t237",
+    "t250"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The authors of a 2026 complex-Fresnel model attributed remaining differences from a real LWIR camera to the camera's \"unknown spectral response\".",
+   "quote": "with the authors attributing remaining differences to \"the unknown spectral response\" of the camera **Independent** [71].",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    71
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "complex-Fresnel model",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t96",
+    "t165",
+    "t259"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A low-resolution thermal sensor simulator was validated against real data indoors (PeerJ, circa 2025).",
+   "quote": "A low-resolution thermal sensor simulator was validated against real data, but indoors (PeerJ, c. 2025) **Independent** [72].",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    72
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "PeerJ",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t96",
+    "t237",
+    "t261"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Thermal scene simulation has a long aerospace and defence heritage.",
+   "quote": "Thermal scene simulation has a long aerospace and defence heritage",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No public 2023–2026 study was found validating an automotive or off-road thermal-camera model against matched real data over rain, snow, fog, dust, mud on the window, solar loading, darkness, site lights and reflective machinery.",
+   "quote": "no public 2023 to 2026 study was found that validates an automotive or off-road thermal-camera model against matched real data over rain, snow, fog, dust, mud on the window, solar loading, darkness, site lights and reflective machinery.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t102",
+    "t237",
+    "t104",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The absence of a public 2023–2026 study validating automotive or off-road thermal-camera models across the listed environmental conditions is an evidence gap, not evidence that the physics cannot be modelled.",
+   "quote": "That absence is an evidence gap, not evidence that the physics cannot be modelled.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t70",
+    "t128"
+   ],
+   "importance": 3
+  }
+ ]
+}

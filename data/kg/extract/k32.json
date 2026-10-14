@@ -1,0 +1,565 @@
+{
+ "chunkId": "k32",
+ "hash": "91f68cb2af800182",
+ "facts": [
+  {
+   "text": "Treating behavioural or scenario simulation, sensor simulation and closed-loop simulation as one kind of simulation is a common source of over-claiming.",
+   "quote": "There are three different kinds of \"simulation\", and treating them as one is a common source of over-claiming.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t126",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Behavioural or scenario simulation models objects, roads, grades, machine motions, speeds, traffic interactions and control responses.",
+   "quote": "**Behavioural or scenario simulation** models objects, roads, grades, machine motions, speeds, traffic interactions and control responses.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t126",
+    "t141",
+    "t179"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MineSim, published in Accident Analysis & Prevention in April 2025, is an open-source, peer-reviewed, scenario-based simulation test system built for autonomous trucks in open-pit mines.",
+   "quote": "MineSim (Accident Analysis & Prevention, April 2025) is unusually relevant: it is an open-source, peer-reviewed, scenario-based simulation test system built for autonomous trucks in open-pit mines",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    16
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MineSim",
+     "kind": "tool"
+    },
+    {
+     "name": "Accident Analysis & Prevention",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t316",
+    "t322",
+    "t3",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MineSim incorporates scenarios from two real mines.",
+   "quote": "incorporates scenarios from two real mines",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    16
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MineSim",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t316",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MineSim represents mining-specific characteristics including unstructured roads, irregular intersections and heavy-truck response lag.",
+   "quote": "represents mining-specific characteristics such as unstructured roads, irregular intersections and heavy-truck response lag.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    16
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MineSim",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t316",
+    "t12",
+    "t3",
+    "t88"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Samak et al. reported at GVSETS 2024 that they ran vision-guided AEB across 128 simulated off-road test cases on high-performance computing clusters using the open-source AutoDRIVE framework.",
+   "quote": "Samak et al. (GVSETS 2024) ran vision-guided AEB across 128 simulated off-road test cases on high-performance computing clusters using the open-source AutoDRIVE framework.",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    50,
+    73
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Samak et al.",
+     "kind": "person"
+    },
+    {
+     "name": "GVSETS 2024",
+     "kind": "other"
+    },
+    {
+     "name": "AutoDRIVE",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t25",
+    "t338",
+    "t322",
+    "t143"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Calibrated physics-based digital twins of construction vehicles existed in 2025, but focused on dynamics and digging rather than perception.",
+   "quote": "Calibrated physics-based digital twins of construction vehicles exist (2025), but they focus on dynamics and digging, not perception.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    51
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t129",
+    "t128",
+    "t179",
+    "t85"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor simulation generates synthetic photons, radar returns, lidar point clouds or other signals to sweep rain, fog, darkness, glare, and object and material combinations cheaply at scale.",
+   "quote": "**Sensor simulation** generates synthetic photons, radar returns, lidar point clouds or other signals so that rain, fog, darkness, glare, object and material combinations can be swept cheaply at scale.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t323",
+    "t102",
+    "t94",
+    "t93"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor simulation introduces an additional model that must itself be validated.",
+   "quote": "It introduces another model that must itself be validated.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t323",
+    "t237",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A sim-to-real gap is documented for every sensor type in the cited on-road evidence.",
+   "quote": "The sim-to-real gap is documented for every sensor type",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    12,
+    13,
+    14,
+    15,
+    17
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t165",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "RadSimReal, presented at CVPR 2024, narrows radar detection gaps between simulation and reality, but only on urban datasets.",
+   "quote": "RadSimReal (CVPR 2024) narrows radar detection gaps but only on urban datasets",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    12,
+    13,
+    14,
+    15,
+    17
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "RadSimReal",
+     "kind": "tool"
+    },
+    {
+     "name": "CVPR 2024",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t165",
+    "t94",
+    "t86"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Lidar domain-adaptation work from 2023 shows detection accuracy shifting between simulated and real point clouds.",
+   "quote": "lidar domain-adaptation work (2023) shows detection accuracy shifting between simulated and real point clouds",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    12,
+    13,
+    14,
+    15,
+    17
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t165",
+    "t92",
+    "t93",
+    "t86"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "UniSim (2023) is a neural closed-loop camera and lidar simulator built from logs.",
+   "quote": "UniSim (2023) is a neural closed-loop camera and lidar simulator built from logs",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    12,
+    13,
+    14,
+    15,
+    17
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "UniSim",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t323",
+    "t154",
+    "t89",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "S2R-Bench, published in Scientific Data on 4 December 2025, was motivated by the mismatch between entirely simulated perception benchmarks and real behaviour under extreme weather and sensor anomalies.",
+   "quote": "S2R-Bench (Scientific Data, 4 December 2025) was motivated precisely by the mismatch between entirely simulated perception benchmarks and real behaviour under extreme weather and sensor anomalies",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    12,
+    13,
+    14,
+    15,
+    17
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "S2R-Bench",
+     "kind": "dataset"
+    },
+    {
+     "name": "Scientific Data",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t107",
+    "t165",
+    "t102",
+    "t85"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The 2025 study “Mind the Domain Gap” is still developing metrics for measuring the sim-to-real gap; there is not yet consensus on how to quantify the gap.",
+   "quote": "a 2025 study (\"Mind the Domain Gap\") is still developing the metrics for measuring the gap, which means there is no consensus yet on how to quantify it.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    12,
+    13,
+    14,
+    15,
+    17
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Mind the Domain Gap",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t249",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No accepted method was found for qualifying sensor models in dust, snow or fog on off-road sites.",
+   "quote": "No accepted method was found for qualifying sensor models in dust, snow or fog on off-road sites.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t323",
+    "t102",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Closed-loop simulation allows the virtual environment to react to changes in machine motion.",
+   "quote": "**Closed-loop simulation** lets the virtual environment react to the machine's changed motion.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t154",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "When software brakes earlier or harder, subsequent positions and collision geometry differ from the recorded case, so ordinary log playback cannot represent that counterfactual.",
+   "quote": "Once software brakes earlier or harder, every later position and the collision geometry differ from the recorded case, and ordinary log playback cannot represent that counterfactual.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    20,
+    21,
+    22
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t154",
+    "t28",
+    "t18"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Road-autonomy programmes distinguish replay and re-simulation from fully interactive simulation.",
+   "quote": "Road-autonomy programmes therefore distinguish replay and re-simulation from fully interactive simulation.",
+   "kind": "method",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    20,
+    21,
+    22
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The only vendor speed-up claim found for off-road simulation was Robotec.ai's Boliden mining digital twin with AWS, reporting 30% faster validation cycles for autonomous fleet behaviours.",
+   "quote": "The one vendor speed-up claim found for off-road simulation is Robotec.ai's Boliden mining digital twin (with AWS), which reports \"30% faster validation cycles for autonomous fleet behaviors\".",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    52
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Robotec.ai",
+     "kind": "company"
+    },
+    {
+     "name": "Boliden",
+     "kind": "company"
+    },
+    {
+     "name": "AWS",
+     "kind": "company"
+    },
+    {
+     "name": "Boliden mining digital twin",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t129",
+    "t127",
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The reported speed-up for Robotec.ai's Boliden mining digital twin concerns fleet behaviour, not collision-intervention perception.",
+   "quote": "That concerns fleet behaviour, not collision-intervention perception",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    52
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Robotec.ai",
+     "kind": "company"
+    },
+    {
+     "name": "Boliden mining digital twin",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t129",
+    "t85",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The speed-up claim for Robotec.ai's Boliden mining digital twin has not been independently verified.",
+   "quote": "it has not been independently verified.",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    52
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Robotec.ai",
+     "kind": "company"
+    },
+    {
+     "name": "Boliden mining digital twin",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t70",
+    "t129"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The appropriate claim for the off-road collision-mitigation validation programme is that simulation selects physical tests deserving scarce prototype time and provides broad regression around limited physical anchor points, not that simulation replaces tracks.",
+   "quote": "not \"simulation replaces tracks\" but \"simulation determines which physical tests deserve scarce prototype time and supplies broad regression around a limited number of physical anchor points\"",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t264",
+    "t216",
+    "t161",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The validation architecture should remain sensor-agnostic until sensor selection is frozen.",
+   "quote": "The validation architecture should stay sensor-agnostic until selection is frozen",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t42",
+    "t84",
+    "t320"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The amount of transferable virtual evidence differs by sensor.",
+   "quote": "the amount of transferable virtual evidence differs by sensor.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t84",
+    "t70",
+    "t127"
+   ],
+   "importance": 2
+  }
+ ]
+}

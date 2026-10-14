@@ -1,0 +1,235 @@
+{
+ "chunkId": "k304",
+ "hash": "ff602d56cc87db36",
+ "facts": [
+  {
+   "text": "Hydrostatic transmissions brake dynamically: when the swashplate returns toward neutral, the motor acts as a pump and slows the wheels, as described in US patent 12157443.",
+   "quote": "Hydrostatic transmissions brake dynamically. When the swashplate returns toward neutral, the motor acts as a pump and slows the wheels (US patent 12157443)",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    50,
+    51
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "US patent 12157443",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t177",
+    "t182"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Some compact loaders formally list hydrostatic dynamic braking as the auxiliary brake; the 2017 Yanmar V10 specification is an example.",
+   "quote": "some compact loaders list this formally as the auxiliary brake (Yanmar V10 specification, 2017).",
+   "kind": "example",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    50,
+    51
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Yanmar V10",
+     "kind": "machine"
+    },
+    {
+     "name": "Yanmar V10 specification, 2017",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t177",
+    "t2"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "US patent 12157443 notes that stopping distance increases beyond the dynamic-braking value when the parking brake must act as backup.",
+   "quote": "The same patent notes that when the parking brake has to act as backup, stopping distance grows beyond the dynamic-braking value.",
+   "kind": "risk",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    50,
+    51
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "US patent 12157443",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t170",
+    "t177"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 3450 defines a hydrostatic drive as a hydraulic drive to wheels or tracks that both propels and slows the machine.",
+   "quote": "ISO 3450 defines a hydrostatic drive as a hydraulic drive to wheels or tracks that both propels and slows the machine",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    29
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 3450",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t177",
+    "t282",
+    "t175"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 3450 allows the service-brake function to involve the propel control.",
+   "quote": "allows the service-brake function to involve the propel control",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    29
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 3450",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t177",
+    "t282"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 3450 distinguishes hydrostatic slowing from parking-brake capability: continuous \"back throttling\" is not a substitute for a parking brake.",
+   "quote": "distinguishes this from parking-brake capability: continuous \"back throttling\" is not a substitute for a parking brake.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    29
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 3450",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t177",
+    "t282"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Tracked-vehicle hydrostatic studies identify fluid viscosity, system pressure, pump speed and displacement, engine braking torque, and torque and volumetric efficiencies as determinants of hydrostatic braking capacity.",
+   "quote": "Hydrostatic braking capacity depends on fluid viscosity, system pressure, pump speed and displacement, engine braking torque, and torque and volumetric efficiencies (tracked-vehicle hydrostatic studies).",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    52,
+    53
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t177",
+    "t182",
+    "t175"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Bosch Rexroth-type patents regulate the hydrostatic motor per axle using dynamic axle-load estimation to prevent wheel lock.",
+   "quote": "Bosch Rexroth-type patents regulate the hydrostatic motor per axle with dynamic axle-load estimation to prevent wheel lock.",
+   "kind": "method",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    54
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Bosch Rexroth",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t177",
+    "t182"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The relationship between brake command and deceleration is not one actuator transfer function; it is a state-dependent blend of hydrostatic retarding, driveline effects, friction-brake application, engine or electric retardation, and anti-lock or traction behavior that changes with temperature and operating state.",
+   "quote": "It is a state-dependent blend of hydrostatic retarding, driveline effects, friction-brake application, engine or electric retardation and anti-lock or traction behavior, which changes with temperature and operating state.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t182",
+    "t177",
+    "t169"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A hydrostatic braking model needs pump and motor displacement, pressure limits, engine and pump speed, and controller transitions rather than a pedal-to-torque gain.",
+   "quote": "A hydrostatic model therefore needs pump and motor displacement, pressure limits, engine and pump speed and controller transitions rather than a pedal-to-torque gain",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t182",
+    "t177",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Hydrostatic braking capacity must be modeled as a function rather than a constant.",
+   "quote": "the braking capacity must be modeled as a function, not a constant.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t182",
+    "t177",
+    "t125"
+   ],
+   "importance": 3
+  }
+ ]
+}

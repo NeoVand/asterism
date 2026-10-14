@@ -1,0 +1,729 @@
+{
+ "chunkId": "k336",
+ "hash": "9445449a063d7b86",
+ "facts": [
+  {
+   "text": "A scenario catalog is a traceable inventory whose entries identify the hazardous interaction, requirement or hazard source, applicable domain tags, expected behaviour and parameter-family ID.",
+   "quote": "Each entry identifies the hazardous interaction, its requirement or hazard source, the applicable domain tags, the expected behaviour and the ID of the parameter family it belongs to.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t64"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 34504:2024 formalises scenario categorisation using tags.",
+   "quote": "ISO 34504:2024 formalises scenario categorisation with tags",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    11,
+    12
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 34504",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t290",
+    "t142"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 34505:2025, dated June 2025, specifies that resulting test cases carry identifiers, objectives, inputs, steps, test platform and expected results.",
+   "quote": "ISO 34505:2025 (June 2025) specifies that the resulting test cases carry identifiers, objectives, inputs, steps, test platform and expected results.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    11,
+    12
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 34505",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t290",
+    "t143",
+    "t64"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 34504:2024 and ISO 34505:2025 are road-vehicle standards whose information structure transfers to off-road scenario catalogs.",
+   "quote": "Both are road-vehicle standards whose information structure transfers",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    11,
+    12
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 34504",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 34505",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t290",
+    "t142"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The off-road adequacy of ISO 34504:2024 and ISO 34505:2025 has not been established.",
+   "quote": "their off-road adequacy has not been established.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    11,
+    12
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 34504",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 34505",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t290",
+    "t142",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The scenario catalog follows the three-level abstraction adopted from the PEGASUS project into ISO 34501 to ISO 34505: functional, logical and concrete scenarios.",
+   "quote": "The catalog follows the three-level abstraction adopted from the PEGASUS project into ISO 34501 to 34505",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    19,
+    20
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "PEGASUS",
+     "kind": "program"
+    },
+    {
+     "name": "ISO 34501",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 34502",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 34503",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 34504",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 34505",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t141",
+    "t310",
+    "t290"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Functional scenarios describe interactions in words; an example is the EMESRT storyboard “vehicle reversing towards a person”.",
+   "quote": "functional scenarios in words (for example the EMESRT storyboard \"vehicle reversing towards a person\")",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    19,
+    20
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t141",
+    "t16",
+    "t14",
+    "t304"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Logical scenarios specify parameter ranges; the passage's example includes person distance from 0 to 30 m, approach angle, machine speed from 0 to 15 km/h and dust density.",
+   "quote": "logical scenarios with parameter ranges (person distance 0 to 30 m, approach angle, machine speed 0 to 15 km/h, dust density)",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    19,
+    20
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t141",
+    "t199",
+    "t169",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Concrete scenarios specify fixed parameter values.",
+   "quote": "concrete scenarios with fixed values.",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    19,
+    20
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t141",
+    "t199"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The functional–logical–concrete scenario hierarchy is well established in automated-driving research, but the original work and most validation experience are on-road.",
+   "quote": "The hierarchy is well established in automated-driving research, although the original work and most validation experience are on-road.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    19,
+    20
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t141",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Directly applicable safety standards anchor the off-road content of the scenario catalog.",
+   "quote": "For the off-road content, the directly applicable safety standards anchor the catalog.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t271",
+    "t1"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-1:2022, dated January 2022, applies to earth-moving machinery, mobile underground mining machinery and road-construction machinery.",
+   "quote": "ISO 21815-1:2022 (January 2022) applies to earth-moving machinery, mobile underground mining machinery and road-construction machinery",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-1:2022 explicitly includes object detection, warning and automatic intervention through speed reduction or motion inhibition.",
+   "quote": "explicitly includes object detection, warning and automatic intervention through speed reduction or motion inhibition.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t86",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3:2023, dated August 2023, defines the risk area and risk level for forward and reverse motion.",
+   "quote": "ISO 21815-3:2023 (August 2023) defines the risk area and risk level for forward and reverse motion.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t187",
+    "t16"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 16001:2017, dated November 2017 and confirmed in 2023, sets performance and test requirements for object-detection systems and visibility aids.",
+   "quote": "ISO 16001:2017 (November 2017, confirmed 2023) sets performance and test requirements for object-detection systems and visibility aids",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t283",
+    "t86",
+    "t279"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 16001:2017 requires a detection time of at most 300 ms for object-detection systems and visibility aids.",
+   "quote": "including a detection time of at most 300 ms.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t283",
+    "t88",
+    "t86"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Draft ISO 21815 Part 4 covers swing and rotation and is “under publication”, with an expected publication date of October 2026.",
+   "quote": "Part 4 (swing and rotation) is \"under publication\" with an expected date of October 2026",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Draft ISO 21815 Part 5 covers other motions such as articulation and reversing trailers and is at the final proof stage, with publication planned for November 2026.",
+   "quote": "Part 5 (other motions such as articulation and reversing trailers) is at the final proof stage with planned publication in November 2026",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-5",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t274",
+    "t176",
+    "t16"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Draft ISO 21815 Parts 4 and 5 define risk areas for motions performed by off-road machines and should be tracked during the project.",
+   "quote": "both define risk areas for motions these machines have and should be tracked during the project.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-4",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 21815-5",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t187",
+    "t274"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815 Parts 1, 3, 4 and 5 and ISO 16001 do not set statistical sample sizes or simulation-credibility rules.",
+   "quote": "None of these standards sets statistical sample sizes or simulation-credibility rules.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-1",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 21815-4",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 21815-5",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t209",
+    "t234",
+    "t280",
+    "t283"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The EMESRT PR-5A performance requirement, Revision 3.0 dated September 2024, and its scenario storyboards supply the scenario catalog's mining hazard content.",
+   "quote": "The EMESRT PR-5A performance requirement (Revision 3.0, September 2024) and its scenario storyboards supply the mining hazard content.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    6,
+    7,
+    8
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    },
+    {
+     "name": "EMESRT PR-5A",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t304",
+    "t142",
+    "t46"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "EMESRT surface scenario storyboards were first developed in 2019 by a member company.",
+   "quote": "Surface storyboards were first developed in 2019 by a member company",
+   "kind": "event",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    6,
+    7,
+    8
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t304",
+    "t142"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "EMESRT underground scenario storyboards were launched in May 2024.",
+   "quote": "underground storyboards were launched in May 2024.",
+   "kind": "event",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    6,
+    7,
+    8
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t304",
+    "t142"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "EMESRT scenario storyboards are traceable to known fatal-accident patterns.",
+   "quote": "They are traceable to known fatal-accident patterns",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    6,
+    7,
+    8
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t304",
+    "t64",
+    "t19",
+    "t142"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "EMESRT scenario storyboards are easy for regulators and customers to understand.",
+   "quote": "easy for regulators and customers to understand",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    6,
+    7,
+    8
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t304",
+    "t142"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "EMESRT scenario storyboard coverage is limited to scenarios that experts thought of.",
+   "quote": "their coverage is limited to what experts thought of",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    6,
+    7,
+    8
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t304",
+    "t142",
+    "t198"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "EMESRT scenario storyboards provide no information about scenario frequency.",
+   "quote": "they say nothing about frequency",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    6,
+    7,
+    8
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t304",
+    "t142",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "EMESRT scenario storyboards are not machine-readable.",
+   "quote": "they are not machine-readable.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    6,
+    7,
+    8
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t304",
+    "t142",
+    "t232"
+   ],
+   "importance": 2
+  }
+ ]
+}

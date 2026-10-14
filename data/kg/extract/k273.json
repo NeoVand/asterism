@@ -1,0 +1,628 @@
+{
+ "chunkId": "k273",
+ "hash": "6958126e832353fc",
+ "facts": [
+  {
+   "text": "Ground truth must estimate the external physical scene independently of the system being evaluated, including required object identity and class, 3D position and trajectory in a common world or machine frame, machine pose and velocity, and timestamps for distances, risk-area transitions and warning timing.",
+   "quote": "Ground truth is an estimate of the external physical scene that is independent of the system being evaluated",
+   "kind": "definition",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t101",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Using a production detector's own output as ground truth creates circular validation: missed objects disappear from both prediction and truth, making the baseline look deceptively good.",
+   "quote": "Reusing the production detector's own output as truth creates circular validation: objects the detector missed disappear from both the prediction and the \"truth\", and the baseline looks deceptively good.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t221",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The Waymo Open Dataset illustrates reproducible reference elements: synchronized lidar and camera data, calibration, vehicle poses, tracked 3D labels and refined object poses.",
+   "quote": "The Waymo Open Dataset illustrates the elements a reproducible reference needs: synchronized lidar and camera data, calibration, vehicle poses, tracked 3D labels and refined object poses.",
+   "kind": "example",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    29
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Waymo Open Dataset",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t105",
+    "t107",
+    "t100",
+    "t101"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The Waymo Open Dataset reference practice is on-road dataset practice, not off-road certification evidence.",
+   "quote": "That is on-road dataset practice, not off-road certification evidence.",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    29
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Waymo Open Dataset",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t105",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Reference sensors for field-data ground truth can comprise high-resolution lidar plus RTK-GNSS/INS on the machine and tags or GNSS on targets.",
+   "quote": "**Reference sensors** (high-resolution lidar plus RTK-GNSS/INS on the machine; tags or GNSS on targets)",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t92",
+    "t98",
+    "t97"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Reference sensors provide continuous, scalable ground truth with objective range, position and velocity for timing metrics, independence from the sensor under test, and coverage of natural encounters.",
+   "quote": "Continuous and scalable; objective range, position and velocity for timing metrics; independent of the sensor under test; covers natural encounters",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t84"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Ground-truth reference sensors must be more accurate and robust than the system under test.",
+   "quote": "Must be more accurate and robust than the system under test",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Reference sensors have their own blind spots and adverse-weather failures: dust affects lidar and camera, and multipath affects radar.",
+   "quote": "has its own blind spots and adverse-weather failures (dust affects lidar and camera, multipath affects radar)",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t92",
+    "t89",
+    "t94",
+    "t105"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Ground-truth reference sensors need intrinsic, extrinsic and time calibration.",
+   "quote": "needs intrinsic, extrinsic and time calibration",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t101",
+    "t105"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Unequipped objects, including members of the public and animals, need another ground-truth method when reference sensors rely on target equipment.",
+   "quote": "unequipped objects (public, animals) need another method",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t97",
+    "t98"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Reference sensors, ideally multimodal, are recommended as the primary ground truth for the programme's large real-world corpus.",
+   "quote": "Primary truth for the large real-world corpus, ideally multimodal",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t99"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2023 agricultural study built a lidar benchmark with error less than 0.03 m and greater than 80% perception coverage in dusty environments.",
+   "quote": "A 2023 agricultural study built a lidar benchmark with error \"less than 0.03 m\" and \">80% perception coverage in dusty environments\".",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    52
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t92",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Manual labeling handles any object class, including workers in PPE and partially occluded people, and allows humans to resolve context and semantic ambiguity.",
+   "quote": "Handles any object class, including workers in PPE and partially occluded people; humans resolve context and semantic ambiguity",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    26
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t103",
+    "t14"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Manual labeling is slow and costly.",
+   "quote": "Slow and costly",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    26
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Waymo's 3DAL study found that human labels lack the consistency one might expect.",
+   "quote": "Waymo's 3DAL study found \"human labels do not have the consistency one may expect\"",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    26
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Waymo",
+     "kind": "company"
+    },
+    {
+     "name": "3DAL",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t106",
+    "t105"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Manual labeling has difficulty determining 3D depth from camera data alone, and dust and occlusion create genuine ambiguity.",
+   "quote": "3D depth is hard from camera alone; dust and occlusion create genuine ambiguity",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    26
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t89",
+    "t102",
+    "t103"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Manual labeling is recommended for human verification, rare classes, ambiguous cases and quality audits in the programme.",
+   "quote": "Human verification, rare classes, ambiguous cases, quality audit",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    26
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t105"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Automatic or offboard labeling uses whole sequences, including past and future frames, and large offline models to scale to large datasets.",
+   "quote": "Uses the whole sequence (past and future frames) and large offline models; scales to large datasets",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    27,
+    53,
+    54,
+    28
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t112"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "DetZero (2023) and CTRL (2023) report automatic labels matching or exceeding average human labels for lidar vehicles.",
+   "quote": "DetZero (2023) and CTRL (2023) report auto-labels matching or exceeding average human labels for lidar vehicles",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    27,
+    53,
+    54,
+    28
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "DetZero",
+     "kind": "tool"
+    },
+    {
+     "name": "CTRL",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t106",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2023 result found that pre-annotation reduced curb-labeling time by 50.99%.",
+   "quote": "pre-annotation cut curb-labeling time by 50.99% (2023)",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    27,
+    53,
+    54,
+    28
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2024 result found that lidar-derived labels trained a 4D radar network to performance comparable with manual labels.",
+   "quote": "lidar-derived labels trained a 4D radar network to performance comparable with manual labels (2024)",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    27,
+    53,
+    54,
+    28
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t92",
+    "t94",
+    "t112"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Automatic or offboard labeling needs human-labeled training data, creating a chicken-or-egg problem.",
+   "quote": "Needs human-labeled training data (\"chicken-or-egg\")",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t113"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Automatic or offboard labeling is biased toward the classes and conditions on which the labeler was trained.",
+   "quote": "biased toward the classes and conditions it was trained on",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t113"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Systematic mistakes in automatic or offboard labeling can silently contaminate thousands of labels.",
+   "quote": "systematic mistakes silently contaminate thousands of labels",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t105"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2026 foundation-model labeler achieved recall of 0.88 to 0.98 but precision of only 0.52 in crowded indoor scenes.",
+   "quote": "a 2026 foundation-model labeler reached recall 0.88 to 0.98 but precision only 0.52 in crowded indoor scenes",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    55
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t109"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Automatic or offboard labeling should be used for pre-labeling followed by stratified human audits and uncertainty flags, never as an unaudited safety oracle.",
+   "quote": "Pre-labeling followed by stratified human audit and uncertainty flags; never an unaudited safety oracle",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t105",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The automatic or offboard labeling evidence described in the passage has not been validated off-road.",
+   "quote": "not validated off-road",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t70",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Surveyed or instrumented test targets for ground truth include total-station or RTK positions, dummies, the ISO 16001 test body, ISO 18497-4 test objects and UNECE R159 targets.",
+   "quote": "**Surveyed or instrumented test targets** (total station or RTK positions, dummies, ISO 16001 test body, ISO 18497-4 test objects, UNECE R159 targets)",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 18497-4",
+     "kind": "standard"
+    },
+    {
+     "name": "UN R159",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t105",
+    "t159",
+    "t98"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Surveyed or instrumented test targets offer the highest accuracy and control over geometry and nominal trajectory, repeatability, and an excellent timing and range reference.",
+   "quote": "Highest accuracy and control over geometry and nominal trajectory; repeatable; excellent timing and range reference",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    1,
+    40,
+    50,
+    51
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t159"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Surveyed or instrumented test targets are accepted by standards and regulators.",
+   "quote": "accepted by standards and regulators",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    1,
+    40,
+    50,
+    51
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t159",
+    "t271",
+    "t275"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Surveyed or instrumented test targets cover only staged scenarios, permit few tests per day, have low ecological diversity and do not reproduce natural behaviour.",
+   "quote": "Covers only staged scenarios; few per day; low ecological diversity; no natural behaviour",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    1,
+    40,
+    50,
+    51
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t159",
+    "t158",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Dummies may not reproduce the radar cross-section or thermal signature of real workers, rocks, machinery, piles or vegetation.",
+   "quote": "dummies may not reproduce the radar cross-section or thermal signature of real workers, rocks, machinery, piles or vegetation",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    1,
+    40,
+    50,
+    51
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t159",
+    "t94",
+    "t96"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Surveyed or instrumented test targets are recommended for calibrating the whole measurement setup, boundary testing, range and timing accuracy, and final controlled confirmation.",
+   "quote": "Calibration of the whole measurement setup, boundary testing, range and timing accuracy, final controlled confirmation",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    1,
+    40,
+    50,
+    51
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t159",
+    "t100",
+    "t158"
+   ],
+   "importance": 3
+  }
+ ]
+}

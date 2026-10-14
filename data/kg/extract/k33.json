@@ -1,0 +1,400 @@
+{
+ "chunkId": "k33",
+ "hash": "5b4a0a866f0b54c2",
+ "facts": [
+  {
+   "text": "Synthetic scenes efficiently sweep geometry, lighting and object combinations for visible-imaging camera validation.",
+   "quote": "Synthetic scenes sweep geometry, lighting and object combinations efficiently",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    15,
+    14
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t130",
+    "t127"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Adverse weather, glare, darkness, contamination and image-pipeline behaviour make sim-to-real correlation critical for visible-imaging cameras.",
+   "quote": "adverse weather, glare, darkness, contamination and image-pipeline behaviour make sim-to-real correlation critical",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    15,
+    14
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t102",
+    "t250",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Real-versus-simulated camera perception gaps under weather are independently documented in on-road evidence.",
+   "quote": "real-versus-simulated perception gaps under weather are independently documented. **Independent (on-road evidence)** [15, 14]",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    15,
+    14
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t85",
+    "t249",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Visible-imaging camera validation still needs physical evidence for actual optics, sensor processing, mounting, cleaning and contamination, and real dust, rain, snow, fog, dusk, night and glare.",
+   "quote": "Actual optics, sensor processing, mounting, cleaning and contamination, real dust, rain, snow, fog, dusk, night and glare",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t100",
+    "t102",
+    "t216"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Radar RF stimulation and object simulation are compatible with HIL and VIL concepts, making radar potentially suitable for bench testing; the cited VIL evidence is on-road evidence.",
+   "quote": "RF stimulation and object simulation are compatible with HIL and VIL concepts, so radar is potentially suitable for bench testing",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": true,
+   "cites": [
+    25,
+    12
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t148",
+    "t151",
+    "t150"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Radar simulation of off-road metal structures, irregular terrain and material interactions still needs real correlation.",
+   "quote": "off-road metal structures, irregular terrain and material interactions still need real correlation.",
+   "kind": "requirement",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    25,
+    12
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t250",
+    "t104"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Radar validation still needs physical evidence for real mounting, machinery clutter, terrain and site structures, actual target signatures, interference and complete-machine EMC.",
+   "quote": "Real mounting, machinery clutter, terrain and site structures, actual target signatures, interference, complete-machine EMC",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t123",
+    "t104",
+    "t100",
+    "t216"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Synthetic point clouds and scene replay provide large coverage for lidar validation.",
+   "quote": "Synthetic point clouds and scene replay give large coverage",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    13,
+    17
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t93",
+    "t155"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Atmospheric obscuration and real target and surface behaviour remain sim-to-real issues for lidar.",
+   "quote": "atmospheric obscuration and real target and surface behaviour remain sim-to-real issues. **Independent (on-road evidence)** [13, 17]",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    13,
+    17
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t165",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Lidar validation still needs physical evidence for real dust, fog, rain and snow, contamination, and representative people, machines and materials.",
+   "quote": "Real dust, fog, rain and snow, contamination, representative people, machines and materials",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t102",
+    "t216"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ultrasonic sensors can be stimulated in VIL and HIL setups and are relevant at close range, according to vendor on-road evidence.",
+   "quote": "Can be stimulated in VIL and HIL set-ups and is relevant at close range",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t95",
+    "t151",
+    "t148",
+    "t150"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Public evidence for comprehensive heavy-off-road virtual validation of ultrasonic sensors is sparse.",
+   "quote": "public evidence for comprehensive heavy-off-road virtual validation is sparse. **Vendor (on-road evidence)** [25]",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t95",
+    "t127",
+    "t1",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ultrasonic sensor validation still needs physical evidence for machine-body reflections, near-field geometry, installation variability and real object surfaces.",
+   "quote": "Machine-body reflections, near-field geometry, installation variability, real object surfaces",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t95",
+    "t100",
+    "t216"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Position and message paths for UWB, RFID, GNSS, V2X and cooperative detection are comparatively easy to emulate and fault-inject.",
+   "quote": "Position and message paths are comparatively easy to emulate and fault-inject",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    74
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t97",
+    "t98",
+    "t56"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "UWB, RFID, GNSS, V2X and cooperative detection technologies appear throughout the mining collision-avoidance literature.",
+   "quote": "such technologies appear throughout the mining collision-avoidance literature. **Independent** [2, 74]",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    74
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t97",
+    "t98",
+    "t23"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Validation of UWB, RFID, GNSS, V2X and cooperative detection still needs physical evidence for coverage, radio propagation, synchronisation and tag failure.",
+   "quote": "Coverage, radio propagation, synchronisation, tag failure",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t97",
+    "t98",
+    "t101",
+    "t56"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An untagged person or object is outside the cooperative sensing principle, a limitation that still needs physical evidence in cooperative detection validation.",
+   "quote": "the fact that an untagged person or object is outside the cooperative sensing principle",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t97",
+    "t14"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Thermal or infrared sensing and sensor fusion add complementary observability.",
+   "quote": "Adds complementary observability",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t99"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Validation of thermal or infrared sensing and sensor fusion becomes a fusion problem: the safety argument must include common-cause degradation and disagreement between modalities.",
+   "quote": "validation becomes a fusion problem: the safety argument must include common-cause degradation and disagreement between modalities. **Expert opinion**",
+   "kind": "requirement",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t99",
+    "t59",
+    "t67",
+    "t96"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Thermal or infrared sensing and sensor fusion validation still needs physical evidence for real environmental contrast, contamination, calibration and correlated multi-sensor failure conditions.",
+   "quote": "Real environmental contrast, contamination, calibration, correlated multi-sensor failure conditions",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t99",
+    "t100",
+    "t59",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The October 2026 plan should build the scenario and test architecture independently of sensor physics.",
+   "quote": "The practical implication for the October 2026 plan: build the scenario and test architecture independently of sensor physics",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t233",
+    "t141",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The October 2026 plan should not claim a validated sensor digital twin before sensor hardware and mounting are frozen and correlated.",
+   "quote": "do not claim a validated sensor digital twin before sensor hardware and mounting are frozen and correlated.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t129",
+    "t42",
+    "t100",
+    "t250"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,350 @@
+{
+ "chunkId": "k345",
+ "hash": "329ce8161f04da77",
+ "facts": [
+  {
+   "text": "Importance sampling, cross-entropy methods, subset simulation, multilevel splitting, accelerated evaluation and naturalistic-and-adversarial environments deliberately oversample dangerous conditions while estimating the naturalistic rate, provided each observation can be reweighted by the ratio of the real-world distribution to the accelerated sampling distribution.",
+   "quote": "provided each observation can be reweighted by the ratio between the real-world distribution and the accelerated sampling distribution.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "importance sampling",
+     "kind": "method"
+    },
+    {
+     "name": "cross-entropy methods",
+     "kind": "method"
+    },
+    {
+     "name": "subset simulation",
+     "kind": "method"
+    },
+    {
+     "name": "multilevel splitting",
+     "kind": "method"
+    },
+    {
+     "name": "accelerated evaluation",
+     "kind": "method"
+    },
+    {
+     "name": "naturalistic-and-adversarial environments",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t206",
+    "t214"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The accelerated-evaluation work of Zhao, Huang, Peng and colleagues, published in IEEE Transactions on Intelligent Transportation Systems in 2017, showed very large acceleration for lane-change conflict estimation.",
+   "quote": "The accelerated-evaluation work of Zhao, Huang, Peng and colleagues (IEEE Transactions on Intelligent Transportation Systems, 2017) showed very large acceleration for lane-change conflict estimation.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Zhao",
+     "kind": "person"
+    },
+    {
+     "name": "Huang",
+     "kind": "person"
+    },
+    {
+     "name": "Peng",
+     "kind": "person"
+    },
+    {
+     "name": "IEEE Transactions on Intelligent Transportation Systems",
+     "kind": "publication"
+    },
+    {
+     "name": "accelerated evaluation",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t206",
+    "t17"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Dense deep reinforcement learning (D2RL), reported by Feng et al. in Nature on 22 March 2023, achieved evaluation reported as 10^3 to 10^5 times faster while remaining unbiased, on highway and urban test tracks with an augmented-reality environment.",
+   "quote": "Dense deep reinforcement learning (D2RL; Feng et al., Nature, 22 March 2023) reported evaluation \"10^3 to 10^5 times faster\" while remaining unbiased, on highway and urban test tracks with an augmented-reality environment;",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Dense deep reinforcement learning (D2RL)",
+     "kind": "method"
+    },
+    {
+     "name": "Feng",
+     "kind": "person"
+    },
+    {
+     "name": "Nature",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t206",
+    "t151",
+    "t158"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2026 Nature Communications paper from the dense deep reinforcement learning line of work applies dense learning to break through safety-performance stagnation.",
+   "quote": "a 2026 Nature Communications paper from the same line of work applies dense learning to break through safety-performance stagnation.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Nature Communications",
+     "kind": "publication"
+    },
+    {
+     "name": "Dense deep reinforcement learning (D2RL)",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t206"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The rare-event acceleration methods and reported results depend on a naturalistic behaviour model learned from large on-road datasets.",
+   "quote": "All of this depends on a naturalistic behaviour model learned from large on-road datasets.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    30,
+    31,
+    32,
+    33,
+    34
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t206",
+    "t125",
+    "t107"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Rare-event methods can support unbiased estimates of small failure probabilities with far fewer runs if the likelihood ratio between the proposal and true distributions is known and the proposal covers the failure region.",
+   "quote": "Can claim: unbiased estimates of small failure probabilities with far fewer runs, if the likelihood ratio between proposal and true distribution is known and the proposal covers the failure region.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t206",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Rare-event methods cannot support robust claims when the naturalistic distribution is unknown or high-dimensional, because the reweighting weights become unstable and their variance can be huge.",
+   "quote": "Cannot claim: anything robust when the naturalistic distribution is unknown or high-dimensional (the weights become unstable and their variance can be huge)",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t206",
+    "t259"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Rare-event methods cannot support claims about failure modes outside the simulation's scope, such as sensor physics that the simulation does not reproduce.",
+   "quote": "nothing about failure modes outside the simulation's scope, for example sensor physics that the simulation does not reproduce.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t206",
+    "t261",
+    "t84",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Importance sampling cannot mathematically compensate for a poorly modelled quarry operation.",
+   "quote": "A poorly modelled quarry operation cannot be rescued mathematically by importance sampling.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "importance sampling",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t206",
+    "t125",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Subset simulation and multilevel splitting originate in structural reliability.",
+   "quote": "Subset simulation and multilevel splitting come from structural reliability",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "subset simulation",
+     "kind": "method"
+    },
+    {
+     "name": "multilevel splitting",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t206"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Subset simulation and multilevel splitting are weak for discontinuous perception responses.",
+   "quote": "Subset simulation and multilevel splitting come from structural reliability and are weak for discontinuous perception responses",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "subset simulation",
+     "kind": "method"
+    },
+    {
+     "name": "multilevel splitting",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t206",
+    "t85"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No collision-avoidance application of subset simulation or multilevel splitting was found.",
+   "quote": "Subset simulation and multilevel splitting come from structural reliability and are weak for discontinuous perception responses; no collision-avoidance application was found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "subset simulation",
+     "kind": "method"
+    },
+    {
+     "name": "multilevel splitting",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t206",
+    "t23"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The rare-event methods discussed are proven only on-road, not off-road.",
+   "quote": "Off-road status: proven on-road only.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t206",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No off-road naturalistic interaction dataset comparable in scale to the large on-road datasets supporting rare-event methods was found.",
+   "quote": "No off-road naturalistic interaction dataset of comparable scale was found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t107",
+    "t17",
+    "t206"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,729 @@
+{
+ "chunkId": "k243",
+ "hash": "36a68d3a2f8e327e",
+ "facts": [
+  {
+   "text": "Findings on sensor-model realism show that different assessment layers can disagree with one another.",
+   "quote": "Several findings show that the layers disagree with each other.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t256"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A November 2025 comparison by the National Research Council Canada, Western University and Transport Canada found density-aware Chamfer distance to be the metric most correlated with perception methods among the metrics compared.",
+   "quote": "density-aware Chamfer distance \"was found to be the most correlated among the metrics with perception methods\"",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    78
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "National Research Council Canada",
+     "kind": "organization"
+    },
+    {
+     "name": "Western University",
+     "kind": "organization"
+    },
+    {
+     "name": "Transport Canada",
+     "kind": "organization"
+    },
+    {
+     "name": "density-aware Chamfer distance",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t249",
+    "t85"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The November 2025 on-road comparison by the National Research Council Canada, Western University and Transport Canada reported an average density-aware Chamfer distance (DCD) of 0.63 between real and simulated scans, with a segmentation mIoU of 21%.",
+   "quote": "real and simulated scans averaged a DCD of 0.63 with a segmentation mIoU of 21%",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    78
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "National Research Council Canada",
+     "kind": "organization"
+    },
+    {
+     "name": "Western University",
+     "kind": "organization"
+    },
+    {
+     "name": "Transport Canada",
+     "kind": "organization"
+    },
+    {
+     "name": "density-aware Chamfer distance",
+     "kind": "metric"
+    },
+    {
+     "name": "segmentation mIoU",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t249",
+    "t85"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Graph-based structural metrics were proposed in 2026 because scan-level metrics miss topology.",
+   "quote": "Graph-based structural metrics were proposed in 2026 because scan-level metrics miss topology [80].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    80
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t249",
+    "t93"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The 2024 Instance Performance Difference paper warns that mAP can mislead because broader synthetic coverage can raise mAP even when the real and synthetic domains differ.",
+   "quote": "The 2024 Instance Performance Difference paper warns that mAP can mislead, because broader synthetic coverage can raise mAP even when the domains differ",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    64
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Instance Performance Difference",
+     "kind": "publication"
+    },
+    {
+     "name": "mAP",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t256",
+    "t165",
+    "t114"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The 2024 Instance Performance Difference paper warns that FID does not target any specific perception algorithm.",
+   "quote": "and that FID does not target any specific perception algorithm [64].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    64
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Instance Performance Difference",
+     "kind": "publication"
+    },
+    {
+     "name": "FID",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254",
+    "t256"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2025 Scientific Reports study assessed the fidelity of synthetic adverse-weather images.",
+   "quote": "A 2025 Scientific Reports study assessed the fidelity of synthetic adverse-weather images [65].",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    65
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Scientific Reports",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t102",
+    "t114",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The radar double validation metric paper notes that conventional mean and RMSE errors alone do not accommodate the aleatory and epistemic uncertainty of stochastic radar detections.",
+   "quote": "The radar double validation metric paper notes that conventional mean and RMSE errors do not by themselves accommodate the aleatory and epistemic uncertainty of stochastic radar detections",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    38
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "radar double validation metric paper",
+     "kind": "publication"
+    },
+    {
+     "name": "RMSE",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t259",
+    "t255",
+    "t94"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The radar double validation metric paper evaluated KL divergence and Jensen-Shannon distance but dismissed both metrics.",
+   "quote": "it evaluated KL divergence and Jensen-Shannon distance but dismissed them",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    38
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "radar double validation metric paper",
+     "kind": "publication"
+    },
+    {
+     "name": "KL divergence",
+     "kind": "metric"
+    },
+    {
+     "name": "Jensen-Shannon distance",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t253",
+    "t94"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The radar double validation metric paper's DVM Map separates errors attributable to the environment model, propagation and signal processing rather than collapsing all errors into one number.",
+   "quote": "its \"DVM Map\" separates errors attributable to the environment model, propagation and signal processing rather than collapsing everything into one number [38].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    38
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "radar double validation metric paper",
+     "kind": "publication"
+    },
+    {
+     "name": "DVM Map",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t249",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "RadaRays' physics-based radar model dramatically improved mutual-information and structural-similarity scores relative to a lidar-like model.",
+   "quote": "the physics-based radar model improved mutual-information and structural-similarity scores dramatically relative to a lidar-like model",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "RadaRays",
+     "kind": "tool"
+    },
+    {
+     "name": "mutual information",
+     "kind": "metric"
+    },
+    {
+     "name": "structural similarity",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t128",
+    "t254"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "RadaRays' physics-based radar model supported realistic odometry.",
+   "quote": "and supported realistic odometry",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "RadaRays",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t256"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Despite RadaRays' improved image-similarity scores and realistic odometry, a detector trained on real data failed to transfer to RadaRays' simulated images.",
+   "quote": "yet a detector trained on real data still failed to transfer to the simulated images **Independent** [31].",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "RadaRays",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t256",
+    "t165",
+    "t112"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Task-level validation must accompany image similarity when assessing sensor-model realism because different realism metrics answer different questions.",
+   "quote": "Different realism metrics answer different questions, so task-level validation must accompany image similarity.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t256",
+    "t234",
+    "t254"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "SwRI's camera work assessed both image statistics and a visual-odometry application rather than stopping at visual appearance.",
+   "quote": "The SwRI camera work likewise used both image statistics and a visual-odometry application rather than stopping at visual appearance [55].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    55
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "SwRI",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t89",
+    "t256",
+    "t254"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "UNECE's New Assessment/Test Method (NATM) credibility assessment framework was introduced for virtual testing under UN R152.",
+   "quote": "UNECE's New Assessment/Test Method (NATM) credibility assessment framework, introduced for virtual testing under UN R152",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    82,
+    84
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "UNECE",
+     "kind": "organization"
+    },
+    {
+     "name": "New Assessment/Test Method (NATM)",
+     "kind": "method"
+    },
+    {
+     "name": "UN R152",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t295",
+    "t234",
+    "t127"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "UNECE's NATM credibility assessment framework for virtual testing under UN R152 requires evidence of accuracy, robustness, documentation, verification and validation, calibration and sensitivity analysis.",
+   "quote": "requires evidence of accuracy, robustness, documentation, verification and validation, calibration and sensitivity analysis **Independent (on-road evidence)** [82, 84].",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    82,
+    84
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "UNECE",
+     "kind": "organization"
+    },
+    {
+     "name": "New Assessment/Test Method (NATM)",
+     "kind": "method"
+    },
+    {
+     "name": "UN R152",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t234",
+    "t235",
+    "t260",
+    "t295"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The UNECE DCAS regulation, ECE/TRANS/WP.29/2024/37, includes credibility principles for virtual toolchains; this is an on-road framework.",
+   "quote": "The UNECE DCAS regulation (ECE/TRANS/WP.29/2024/37) includes credibility principles for virtual toolchains [83].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    83
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "UNECE",
+     "kind": "organization"
+    },
+    {
+     "name": "UNECE DCAS regulation (ECE/TRANS/WP.29/2024/37)",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t234",
+    "t320",
+    "t295"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2026 proposal adapts NASA-STD-7009 to automated-driving simulation as an on-road credibility framework.",
+   "quote": "A 2026 proposal adapts NASA-STD-7009 to automated-driving simulation [85]. These are on-road frameworks.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    85
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "NASA-STD-7009",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t242",
+    "t234"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM began the QSQ (Quantifying Simulation Quality) project to standardize machine-readable simulation-quality metrics with use-case-specific weighting.",
+   "quote": "ASAM began the QSQ (Quantifying Simulation Quality) project to standardize machine-readable simulation-quality metrics with use-case-specific weighting [92]",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    92
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    },
+    {
+     "name": "QSQ (Quantifying Simulation Quality)",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t241",
+    "t238",
+    "t224"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A separate ASAM project is defining what high fidelity means for camera, radar and lidar by decomposing each sensor into physical subcomponents.",
+   "quote": "a separate ASAM project is defining what \"high fidelity\" means for camera, radar and lidar by decomposing each into physical subcomponents [91]",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    91
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t125",
+    "t89",
+    "t94",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM's QSQ project and its separate project defining high fidelity for camera, radar and lidar were both still under way in 2026.",
+   "quote": "both were still under way in 2026 **Expert opinion**.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    92,
+    91
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    },
+    {
+     "name": "QSQ (Quantifying Simulation Quality)",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t241",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Publications on sensor-model realism have no common reporting format.",
+   "quote": "Reporting practice has no common format across publications.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t269"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor-model realism results are reported per metric and per scenario.",
+   "quote": "Results are reported per metric and per scenario",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t224",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Few studies of sensor-model realism report uncertainty bands.",
+   "quote": "few studies report uncertainty bands",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t235",
+    "t259"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Few studies of sensor-model realism define acceptance thresholds before testing.",
+   "quote": "few define acceptance thresholds before testing.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t258",
+    "t218",
+    "t62"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For the heavy off-road collision-mitigation validation program, the credibility file should record at least the sensor and firmware version; machine and mounting configuration; calibration conditions and conditions held out for validation; reference instrumentation and its uncertainty; weather, lighting and material parameters; metric and acceptance threshold; error and confidence intervals; known invalid regions; and any parameter tuning performed with validation data.",
+   "quote": "For this program, the credibility file should record at least:",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t269",
+    "t234",
+    "t263",
+    "t258",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The recommended sensor-model credibility-file methodology is consistent with the published application-domain approach and prevents an apparently accurate model from being silently extrapolated to a different machine or sensor position.",
+   "quote": "This is expert methodology, consistent with the published application-domain approach, and it prevents an apparently accurate model from being silently extrapolated to a different machine or sensor position **Expert opinion**.",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t261",
+    "t269",
+    "t267"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,229 @@
+{
+ "chunkId": "k700",
+ "hash": "5c7075e8c3195480",
+ "facts": [
+  {
+   "text": "Structure from motion recovers camera positions and a three-dimensional point cloud from ordinary photographs; COLMAP is a widely used free program for this method, while scene reconstruction is the full process of turning recordings into a usable virtual site.",
+   "quote": "Structure from motion is the mathematical method that recovers camera positions and a three-dimensional point cloud from ordinary photographs, COLMAP is a widely used free program that does it, and scene reconstruction is the whole process of turning recordings into a usable virtual site.",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "COLMAP",
+     "kind": "tool"
+    },
+    {
+     "name": "Structure from motion",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t133",
+    "t93",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Structure from motion matches points across photographs of the same place taken from different positions and solves for both camera positions and the three-dimensional position of each point.",
+   "quote": "given many photographs of the same place from different positions, it finds matching points between images and solves for both the camera positions (the \"motion\") and the three-dimensional position of each point (the \"structure\").",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Structure from motion",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t133"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "COLMAP is the open-source tool most often cited for structure from motion.",
+   "quote": "COLMAP is the open-source tool most often cited for this.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "COLMAP",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t133"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "COLMAP's official guidance lists reconstruction preconditions: good texture, similar illumination, substantial overlap, every object visible in at least three images, and genuinely different camera positions rather than pure rotation.",
+   "quote": "lists the preconditions: good texture, similar illumination, substantial overlap, every object visible in at least three images, and genuinely different camera positions rather than pure rotation",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "COLMAP",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t133"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "COLMAP's official guidance warns against textureless, high-dynamic-range and reflective scenes for reconstruction.",
+   "quote": "it warns against textureless, high-dynamic-range and reflective scenes",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "COLMAP",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t133",
+    "t104"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "COLMAP's official guidance notes that many near-identical video frames do not replace different viewpoints for reconstruction.",
+   "quote": "notes that many near-identical video frames do not replace viewpoints",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "COLMAP",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t133"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "One scene-reconstruction benchmark took more than 800 hours of COLMAP compute and more than 300 hours of manual selection.",
+   "quote": "one benchmark took \"800+ hours\" of COLMAP compute and \"300+ hours\" of manual selection",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "COLMAP",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t133",
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The scene-reconstruction pipeline includes calibrating and synchronizing logs, reconstructing static geometry, registering geometry to site coordinates, removing moving and transient objects, classifying terrain and objects, repairing unseen areas with explicit geometry, adding collision proxies and sensor materials, replacing recorded people with controllable agents, and qualifying the result against held-out measurements.",
+   "quote": "calibrate and synchronize the logs, reconstruct static geometry, register it to site coordinates, remove moving and transient objects, classify terrain and objects, repair unseen areas with explicit geometry, add collision proxies and sensor materials",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t133",
+    "t130",
+    "t131",
+    "t136",
+    "t263"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Pose quality is the usual point of failure in scene reconstruction; in one dataset, only 50 of 200 recorded sequences passed the pose check.",
+   "quote": "Pose quality is the usual point of failure: in one dataset only 50 of 200 recorded sequences passed the pose check",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t133"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Reconstruction from existing machine recordings is the cheapest route to real site geometry.",
+   "quote": "Reconstruction from existing machine recordings is the cheapest route to real site geometry",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t133",
+    "t130",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The booklet concludes that reconstruction makes existing machine recordings replay-ready or near-path simulation-ready in one step, but not braking-validation-ready and not ready for radar or ultrasonic sensors.",
+   "quote": "recordings become replay-ready or near-path simulation-ready in one step, not braking-validation-ready, and not for radar or ultrasonic sensors",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t133",
+    "t155",
+    "t127",
+    "t94",
+    "t95"
+   ],
+   "importance": 3
+  }
+ ]
+}

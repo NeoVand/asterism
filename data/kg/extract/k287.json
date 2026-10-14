@@ -1,0 +1,418 @@
+{
+ "chunkId": "k287",
+ "hash": "48ddfec456134661",
+ "facts": [
+  {
+   "text": "ISO 21815-1 applies to earth-moving machinery, mobile underground mining machinery and road-construction machinery and covers object detection, warning, automatic intervention and testing.",
+   "quote": "ISO 21815-1 applies to earth-moving machinery, mobile underground mining machinery and road-construction machinery and covers object detection, warning, automatic intervention and testing",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    4,
+    1
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t28",
+    "t63"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3 applies risk areas and risk levels to forward and reverse motion and includes speed reduction, stopping and motion inhibition.",
+   "quote": "ISO 21815-3 applies risk areas and risk levels to forward and reverse motion and includes speed reduction, stopping and motion inhibition",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    4,
+    1
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t16",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 16001 defines test body, detection zone and detection time.",
+   "quote": "ISO 16001 defines test body, detection zone and detection time.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    4,
+    1
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t283",
+    "t279"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The directly relevant off-road standards ISO 21815-1, ISO 21815-3 and ISO 16001 provide materially stronger evidence for the target off-road application than borrowed passenger-car emergency-braking protocols.",
+   "quote": "This is materially stronger evidence for the target application than borrowing passenger-car emergency-braking protocols.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    4,
+    1
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-1",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t283",
+    "t70",
+    "t25"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Replay, software-in-the-loop (SIL), hardware-in-the-loop (HIL), sensor-in-the-loop and vehicle-in-the-loop (VIL) test different system boundaries and are complements rather than substitutes.",
+   "quote": "Replay, SIL, HIL, sensor-in-the-loop and VIL test different system boundaries and are complements, not substitutes.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    20
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t145",
+    "t155",
+    "t148",
+    "t150",
+    "t151"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Published on-road vehicle-in-the-loop (VIL) work describes a progression through replay, SIL, HIL, sensor-in-the-loop and VIL testing.",
+   "quote": "Published VIL work describes exactly this progression.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    20
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t145",
+    "t151"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Open-loop metrics cannot validate systems that act.",
+   "quote": "Open-loop metrics cannot validate systems that act",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    18,
+    20,
+    21
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t154",
+    "t65",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Closed-loop HIL and VIL update the simulated environment from the controller and machine response.",
+   "quote": "closed-loop HIL and VIL explicitly update the simulated environment from the controller and machine response.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    18,
+    20,
+    21
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t154",
+    "t148",
+    "t151"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Technology-neutral comparison requires a common independent truth layer; the passage supports this with vendor and expert-opinion on-road evidence.",
+   "quote": "A common independent truth layer is required for technology-neutral comparison.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    29,
+    59
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t222"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "When the sensor changes, using the same raw input is no longer a valid end-to-end comparison test; external object trajectories, risk geometry and exposure become the fair denominator. The supporting evidence is vendor and expert-opinion on-road evidence.",
+   "quote": "Once the sensor changes, \"same raw input\" ceases to be a valid end-to-end test; external object trajectories, risk geometry and exposure become the fair denominator.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    29,
+    59
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t105",
+    "t20",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Synchronized reference sensors, calibration and common coordinate transforms are established multi-sensor practice, supported here by vendor and expert-opinion on-road evidence.",
+   "quote": "Synchronized reference sensors, calibration and common coordinate transforms are established multi-sensor practice.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    29,
+    59
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t101",
+    "t100",
+    "t105"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "False and nuisance alarms undermine operator trust.",
+   "quote": "False and nuisance alarms undermine operator trust.",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    14,
+    61,
+    39,
+    67,
+    68
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t32",
+    "t33",
+    "t36"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NIOSH documented 59% false or nuisance alarms in 2006 and 2007.",
+   "quote": "NIOSH documented 59% false or nuisance alarms in 2006 and 2007",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    14,
+    61,
+    39,
+    67,
+    68
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t32",
+    "t308"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In 2024, the University of Pretoria reported production losses and resistance to adoption caused by false interventions.",
+   "quote": "the University of Pretoria reports production losses and resistance to adoption from false interventions in 2024",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    14,
+    61,
+    39,
+    67,
+    68
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "University of Pretoria",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t31",
+    "t28",
+    "t316"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Queensland's regulator warns that idealised “clover leaf” detection zones can create a “false sense of protection.”",
+   "quote": "Queensland's regulator warns of a \"false sense of protection\" from idealised \"clover leaf\" detection zones.",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    14,
+    61,
+    39,
+    67,
+    68
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Queensland",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t187",
+    "t301"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "MOSH requires braking verification per machine braking class in its 2025 guidance.",
+   "quote": "Braking verification must be per machine braking class (MOSH, 2025).",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    16
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t307",
+    "t184",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "RAND's 2016 on-road evidence indicates that exposure-based demonstration of rare-event safety is infeasible.",
+   "quote": "Exposure-based demonstration of rare-event safety is infeasible (RAND, 2016, on-road)",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    31
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "RAND Corporation",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t215",
+    "t20",
+    "t144",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NIST states that sample size must follow the claim being demonstrated.",
+   "quote": "sample size must follow the claim (NIST).",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    30
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIST",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t209",
+    "t62"
+   ],
+   "importance": 3
+  }
+ ]
+}

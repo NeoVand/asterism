@@ -1,0 +1,488 @@
+{
+ "chunkId": "k141",
+ "hash": "c034330bad3555ea",
+ "facts": [
+  {
+   "text": "MOSH requires event recording with 10 Hz intervention logs, operator ID, firmware version and tamper resistance.",
+   "quote": "MOSH requires 10 Hz intervention logs, operator ID, firmware version and tamper resistance",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    35
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t121",
+    "t307"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No universal off-road event logging format was found.",
+   "quote": "no universal off-road logging format was found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    35
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t122"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The safety case should define which signals are retained around warnings and interventions: detections, tracks, confidence, time-to-collision, speed, brake command, actual deceleration, overrides, faults and environmental state. Retention should support both proving field KPIs and reconstructing incidents.",
+   "quote": "which signals are retained around warnings and interventions (detections, tracks, confidence, time-to-collision, speed, brake command, actual deceleration, overrides, faults, environmental state), both to prove field KPIs and to reconstruct incidents.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    35
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t67",
+    "t224",
+    "t74"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A brake request on J1939 is a safety and security interface.",
+   "quote": "a brake request on J1939 is a safety and security interface",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    21,
+    35,
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t120",
+    "t48"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Spoofing, stale messages, bus faults and incompatible third-party implementations must not create unsafe brake commands on the J1939 brake-request interface.",
+   "quote": "spoofing, stale messages, bus faults and incompatible third-party implementations must not create unsafe brake commands",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    21,
+    35,
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t120",
+    "t56",
+    "t48"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The EU Machinery Regulation requires protection against corruption.",
+   "quote": "The Machinery Regulation requires protection against corruption",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    21,
+    35,
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EU Machinery Regulation 2023/1230",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t298"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "MOSH's ISO/TS 21815-2 negotiation includes optional authentication.",
+   "quote": "MOSH's ISO/TS 21815-2 negotiation includes optional authentication",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    21,
+    35,
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    },
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t307",
+    "t120"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The Cyber Resilience Act (EU) 2024/2847 and IEC 62443 were not reviewed.",
+   "quote": "the Cyber Resilience Act (EU) 2024/2847 and IEC 62443 were not reviewed",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    21,
+    35,
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Cyber Resilience Act (EU) 2024/2847",
+     "kind": "regulation"
+    },
+    {
+     "name": "IEC 62443",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t271",
+    "t275"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A retrained perception network, new sensor firmware, a changed lens, a new radar mount, an altered brake controller or revised calibration can invalidate prior validation.",
+   "quote": "a retrained perception network, new sensor firmware, a changed lens, a new radar mount, an altered brake controller or revised calibration can invalidate prior validation",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    26,
+    73
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t65",
+    "t112",
+    "t100",
+    "t230",
+    "t223"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The risk that software, sensor or brake-control changes invalidate prior validation matters more as EU AI and machinery requirements mature toward 2028.",
+   "quote": "this matters more as EU AI and machinery requirements mature toward 2028",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    26,
+    73
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t298",
+    "t65",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The only sourced basis for similarity and machine-variant arguments combines ISO 19014-5 tabulated MPLr (October 2026), ISO 21815-3 calculation-based CxS distances with machine-specific brake and footprint parameters, and Euro NCAP-style predicted-performance submission with sampled physical verification.",
+   "quote": "ISO 19014-5 tabulated MPLr (October 2026), ISO 21815-3 calculation-based CxS distances with machine-specific brake and footprint parameters, and Euro NCAP-style predicted-performance submission with sampled physical verification",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    11,
+    48,
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-5",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    },
+    {
+     "name": "Euro NCAP",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t76",
+    "t52",
+    "t280",
+    "t297",
+    "t265"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No off-road regulator was found that formally accepts similarity and machine-variant arguments.",
+   "quote": "No off-road regulator was found that formally accepts such arguments.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    11,
+    48,
+    34
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t76",
+    "t277",
+    "t265"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "All five ISO 19014 parts change in October 2026.",
+   "quote": "five ISO 19014 parts in October 2026",
+   "kind": "event",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014 series",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-4 changes in October 2026.",
+   "quote": "ISO 21815-4 in October 2026",
+   "kind": "event",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-5 changes in November 2026.",
+   "quote": "ISO 21815-5 in November 2026",
+   "kind": "event",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-5",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The research questions did not ask how changes to standard editions during the project should be handled.",
+   "quote": "The research questions did not ask how edition changes during the project should be handled",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t271",
+    "t347"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A standards-watch and re-baselining step is needed before design freeze.",
+   "quote": "a standards-watch and re-baselining step before design freeze is needed",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t271",
+    "t42",
+    "t342"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The research questions covered on-road regulation but did not cover the EU proposal to regulate non-road mobile machinery circulating on public roads.",
+   "quote": "The research questions covered on-road regulation but not the EU proposal to regulate non-road mobile machinery circulating on public roads",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "European Union",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t275",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The status of the EU proposal to regulate non-road mobile machinery circulating on public roads was not found.",
+   "quote": "the EU proposal to regulate non-road mobile machinery circulating on public roads, whose status was not found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "European Union",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t275",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Machines that travel on public roads between sites may face a second regulatory regime.",
+   "quote": "machines that travel on public roads between sites may face a second regime",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t275",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "None of the sources addresses how a product subject simultaneously to the South African intervention mandate, the EU Machinery Regulation and US warning-only rules should resolve conflicting default behaviours.",
+   "quote": "None of the sources addresses how a product that must satisfy the South African intervention mandate, the EU Machinery Regulation and US warning-only rules at once should resolve conflicting default behaviours",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "South Africa",
+     "kind": "place"
+    },
+    {
+     "name": "EU Machinery Regulation 2023/1230",
+     "kind": "regulation"
+    },
+    {
+     "name": "United States",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t302",
+    "t298",
+    "t300",
+    "t28",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The sources do not address whether automatic braking can be disabled by configuration in a market that does not require automatic braking, or what disabling automatic braking would do to the EU safety case.",
+   "quote": "whether automatic braking can be disabled by configuration in a market that does not require it, and what that does to the EU safety case",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "European Union",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t34",
+    "t25",
+    "t67",
+    "t298",
+    "t230"
+   ],
+   "importance": 3
+  }
+ ]
+}

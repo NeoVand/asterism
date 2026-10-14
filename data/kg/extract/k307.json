@@ -1,0 +1,343 @@
+{
+ "chunkId": "k307",
+ "hash": "864590ab808f45d1",
+ "facts": [
+  {
+   "text": "Reduced-order or surrogate models fitted to high-fidelity simulation plus tests are common practice and extremely fast.",
+   "quote": "Reduced-order or surrogate models fitted to high-fidelity simulation plus tests.** Common practice, extremely fast",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t128",
+    "t183"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Reduced-order or surrogate models fitted to high-fidelity simulation plus tests are unsafe to extrapolate outside their trained validity domain.",
+   "quote": "unsafe to extrapolate outside the trained validity domain",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t125",
+    "t183"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A published earth-moving benchmark proving transfer of reduced-order or surrogate models across a machine range was not found.",
+   "quote": "a published earth-moving benchmark proving transfer across a machine range: not found.",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t229",
+    "t183"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2026 ESV simulation round robin by Wimmer et al. had several teams model an on-road cyclist automatic-braking case.",
+   "quote": "A 2026 ESV simulation round robin (Wimmer et al.) had several teams model an on-road cyclist automatic-braking case",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    11
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "2026 ESV simulation round robin",
+     "kind": "program"
+    },
+    {
+     "name": "Wimmer et al.",
+     "kind": "person"
+    }
+   ],
+   "terms": [
+    "t25",
+    "t179",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The on-road cyclist automatic-braking case in the 2026 ESV simulation round robin prescribed a 1.0 s time-to-collision trigger, 0.2 s actuator delay, 0.4 s build-up, 1 g nominal maximum deceleration and 0.9 tire-road friction.",
+   "quote": "with a prescribed 1.0 s time-to-collision trigger, 0.2 s actuator delay, 0.4 s build-up, 1 g nominal maximum deceleration and 0.9 tire-road friction.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    11
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "2026 ESV simulation round robin",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t186",
+    "t171",
+    "t169",
+    "t174",
+    "t183"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Three of five implementations in the 2026 ESV simulation round robin used point-mass dynamics and reproduced the imposed deceleration profile by construction.",
+   "quote": "Three of five implementations used point-mass dynamics and reproduced the imposed deceleration profile by construction",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    11
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "2026 ESV simulation round robin",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t179",
+    "t183",
+    "t169"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The more complex vehicle models in the 2026 ESV simulation round robin formed the extremes of a 0.033 s and 0.314 m spread in the brake-only test.",
+   "quote": "the more complex vehicle models formed the extremes of a 0.033 s and 0.314 m spread in the brake-only test",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    11
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "2026 ESV simulation round robin",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t183",
+    "t179",
+    "t250"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Baseline positional differences in the 2026 ESV simulation round robin were substantially larger before the setup was harmonized.",
+   "quote": "baseline positional differences were substantially larger before the setup was harmonized.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    11
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "2026 ESV simulation round robin",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t250",
+    "t179",
+    "t183"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In the 2026 ESV simulation round robin, model complexity introduced physically meaningful differences rather than making the implementations agree.",
+   "quote": "Complexity introduced physically meaningful differences rather than making the implementations agree.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    11
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "2026 ESV simulation round robin",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t183",
+    "t250",
+    "t179"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The ISO 21815-3 brake-trigger distance structure can be written as D_trigger = D_detect/determine + v·T_machine-action + D_stop + D_safety.",
+   "quote": "D_trigger = D_detect/determine + v·T_machine-action + D_stop(v, m, θ, surface, T_brake, drive state, steering or articulation) + D_safety,",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t186",
+    "t170",
+    "t172",
+    "t194",
+    "t280"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The proposed parameterization of the ISO 21815-3 brake-trigger distance structure supplies D_stop from a correlated machine model rather than one fixed deceleration, with inputs v, m, θ, surface, T_brake, drive state, and steering or articulation.",
+   "quote": "D_stop(v, m, θ, surface, T_brake, drive state, steering or articulation) + D_safety,\n\nwhich is the ISO 21815-3 structure with D_stop supplied by a correlated machine model rather than one fixed deceleration.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t182",
+    "t179",
+    "t170",
+    "t250",
+    "t183"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The collision-system distance budget includes mandatory and optional components using the same quantities as the proposed brake-trigger distance equation.",
+   "quote": "The same quantities appear in the mandatory and optional components of a collision-system distance budget:",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t186",
+    "t172",
+    "t193"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The collision-system distance-budget sequence runs from object detection through confirmation and risk determination, intervention command and machine interface, brake and drivetrain response, physical stopping, residual safe distance, and required detection range.",
+   "quote": "A[Object detection] --> B[Confirmation and risk determination]\n    B --> C[Intervention command and machine interface]\n    C --> D[Brake and drivetrain response: dead time and build-up]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t172",
+    "t185",
+    "t193",
+    "t194",
+    "t170"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The brake and drivetrain response component of the collision-system distance budget includes dead time and build-up.",
+   "quote": "Brake and drivetrain response: dead time and build-up",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t171",
+    "t182",
+    "t172"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The physical stopping component of the collision-system distance budget uses v squared over 2a with grade, payload and surface.",
+   "quote": "Physical stopping: v squared over 2a with grade, payload and surface",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    8
+   ],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t173",
+    "t168",
+    "t174"
+   ],
+   "importance": 2
+  }
+ ]
+}

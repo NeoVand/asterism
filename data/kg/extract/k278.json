@@ -1,0 +1,178 @@
+{
+ "chunkId": "k278",
+ "hash": "b6ab80ebe1ffb2ad",
+ "facts": [
+  {
+   "text": "Simultaneous collection from both candidate sensor suites is the strongest end-to-end experiment for comparing the old and new systems.",
+   "quote": "Simultaneous collection is the strongest end-to-end experiment.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An end-to-end comparison should place both candidate sensor suites on the same machine, preserve their intended mounting geometry as far as practical, and evaluate both against the same independent reference trajectory.",
+   "quote": "Place both candidate sensor suites on the same machine, preserve their intended mounting geometry as far as practical, and evaluate both against the same independent reference trajectory.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t100",
+    "t105"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Simultaneous collection from both candidate sensor suites on the same machine removes weather, actor behaviour and site state as confounders in the comparison.",
+   "quote": "That removes weather, actor behaviour and site state as confounders.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Where simultaneous mounting of candidate sensor suites materially alters visibility or electromagnetic or optical behaviour, the mounting interference must itself be tested.",
+   "quote": "Where simultaneous mounting materially alters visibility or electromagnetic or optical behaviour, that interference must itself be tested.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t222",
+    "t123"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Replaying old logs through new software is valid only if the new software uses the same sensors at the same positions.",
+   "quote": "Replaying old logs through new software is valid only if the new software uses the same sensors at the same positions.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t100",
+    "t222"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "When a new system uses new sensor types or positions, old logs cannot be replayed into the new system without synthesising data.",
+   "quote": "With new sensor types or positions, old logs cannot be replayed into the new system without synthesising data.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t114",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "On-road evidence indicates that neural reconstruction of recorded scenes degrades as the viewpoint offset grows.",
+   "quote": "Neural reconstruction of recorded scenes degrades as the viewpoint offset grows",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    33,
+    34
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t165"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The XLD benchmark (2024), an on-road precedent, found a \"significant gap\" in neural reconstruction for cross-lane views at viewpoint offsets of 1 to 4 m.",
+   "quote": "the XLD benchmark (2024) found a \"significant gap\" for cross-lane views at 1 to 4 m offsets",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    33,
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "XLD benchmark",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t165",
+    "t107"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2025 review cited as on-road evidence notes low quality of novel view rendering when the camera offset is large.",
+   "quote": "a 2025 review notes \"low quality of novel view rendering when the camera offset is large\"",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    33,
+    34
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t89",
+    "t165"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Re-rendered data for new sensor mounting positions should be treated as a development aid, not validation evidence.",
+   "quote": "Re-rendered data for new mounting positions should be treated as a development aid, not validation evidence.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t100",
+    "t70",
+    "t65"
+   ],
+   "importance": 3
+  }
+ ]
+}

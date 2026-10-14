@@ -1,0 +1,650 @@
+{
+ "chunkId": "k242",
+ "hash": "5947a9d85f64274f",
+ "facts": [
+  {
+   "text": "A sensor model should not receive a single global “validated” label; a defensible validation statement identifies the model version, metrics and uncertainties, reproduced sensor outputs, specified domain, and specified test purpose.",
+   "quote": "this version of this model has been shown, with these metrics and uncertainties, to reproduce these outputs of this sensor over this specified domain for this specified test purpose.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t238",
+    "t261",
+    "t259"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The 2024 double validation metric paper describes sensor-model validation as comparison of synthetic and real sensor data over a specific region of the application parameter space; the passage labels this independent on-road evidence.",
+   "quote": "The 2024 double validation metric paper describes sensor-model validation as comparison of synthetic and real sensor data over a specific region of the application parameter space",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    38
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "2024 double validation metric paper",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t237",
+    "t261",
+    "t249"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM's high-fidelity and simulation-quality projects support use-case-specific sensor-model validation.",
+   "quote": "ASAM's high-fidelity and simulation-quality projects point in the same use-case-specific direction [91, 92].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    91,
+    92
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t241",
+    "t238",
+    "t234"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor-model realism is measured in layers: component response, output accuracy, distributional agreement, image or field similarity, task-level gap, and closed-loop agreement.",
+   "quote": "Realism is therefore measured in layers.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t249",
+    "t250"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Component-response validation of sensor models includes camera distortion, MTF or PSF, vignetting, radiometric response, noise, and HDR.",
+   "quote": "Camera distortion, MTF or PSF, vignetting, radiometric response, noise and HDR",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t90",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Component-response validation of radar models includes range, Doppler, angle, RCS response, and antenna pattern.",
+   "quote": "Component response: MTF, noise, antenna pattern, range and intensity response",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Component-response validation of lidar models includes range, intensity, and return probability.",
+   "quote": "lidar range, intensity and return probability",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Component-response validation of ultrasonic sensor models includes time of flight and amplitude.",
+   "quote": "ultrasonic time of flight and amplitude",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t95",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Component-response validation of thermal sensor models includes thermal MTF, NETD, and radiometric response.",
+   "quote": "thermal MTF, NETD and radiometric response.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t96",
+    "t90",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Intrinsic or component-response validation tests whether a simulated instrument behaves like the real instrument before scene complexity is added.",
+   "quote": "Tests whether the simulated instrument behaves like the real one before scene complexity is added.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Signal- or detection-level sensor-model validation can measure MAPE of time-domain amplitude, point count and intensity, range error against specified sensor accuracy, RCS correlation, and attenuation and SNR against rain rate or visibility.",
+   "quote": "MAPE of time-domain amplitude, point count and intensity; range error against the sensor's specified accuracy; RCS correlation; attenuation and SNR against rain rate or visibility [6, 7].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    6,
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MAPE",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t255",
+    "t102",
+    "t90",
+    "t250",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Signal- or detection-level sensor-model validation can measure range and angle bias, false and missed returns, detection probability, and point density.",
+   "quote": "Range and angle bias, false and missed returns, detection probability, point density.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t108",
+    "t86",
+    "t93",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Signal- or detection-level sensor-model validation directly tests the interface consumed by perception.",
+   "quote": "Directly tests the interface that perception consumes.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t85",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Distribution-level validation of simulated point clouds can use Chamfer, Hausdorff, Earth Mover's, Maximum Mean Discrepancy, and Frechet distances.",
+   "quote": "Point clouds: Chamfer, Hausdorff, Earth Mover's, Maximum Mean Discrepancy and Frechet distances [79]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    79
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Chamfer distance",
+     "kind": "metric"
+    },
+    {
+     "name": "Hausdorff distance",
+     "kind": "metric"
+    },
+    {
+     "name": "Earth Mover's distance",
+     "kind": "metric"
+    },
+    {
+     "name": "Maximum Mean Discrepancy",
+     "kind": "metric"
+    },
+    {
+     "name": "Frechet distance",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t253",
+    "t93"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Distribution-level validation of simulated point clouds can use density-aware Chamfer distance.",
+   "quote": "density-aware Chamfer distance [78]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    78
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "density-aware Chamfer distance",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t253",
+    "t93"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Distribution-level validation of simulated point clouds can use graph-based structural metrics.",
+   "quote": "graph-based structural metrics [80].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    80
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t253",
+    "t93"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Distribution-level radar-model validation can use KL divergence, Jensen-Shannon distance, Wasserstein distance, Kolmogorov-Smirnov tests, area validation metric, and empirical CDFs with confidence intervals.",
+   "quote": "Radar: KL divergence, Jensen-Shannon distance, Wasserstein distance, Kolmogorov-Smirnov tests, area validation metric, empirical CDFs with confidence intervals [38].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    38
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "KL divergence",
+     "kind": "metric"
+    },
+    {
+     "name": "Jensen-Shannon distance",
+     "kind": "metric"
+    },
+    {
+     "name": "Wasserstein distance",
+     "kind": "metric"
+    },
+    {
+     "name": "Kolmogorov-Smirnov tests",
+     "kind": "method"
+    },
+    {
+     "name": "area validation metric",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t253",
+    "t94",
+    "t209"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Learned evaluation metrics for radar from 2021 are an example of distribution-level sensor-model validation.",
+   "quote": "Learned evaluation metrics for radar (2021).",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t253",
+    "t94"
+   ],
+   "importance": 1
+  },
+  {
+   "text": "Distribution-level sensor-model validation is needed when individual returns are stochastic and one-to-one sample matching is inappropriate.",
+   "quote": "Needed where individual returns are stochastic and one-to-one sample matching is inappropriate.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t253",
+    "t259",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "PSNR, SSIM, and LPIPS are image- or field-similarity metrics for sensor-model validation that require pixel-matched pairs.",
+   "quote": "PSNR, SSIM and LPIPS (need pixel-matched pairs)",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    55,
+    64,
+    65
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "PSNR",
+     "kind": "metric"
+    },
+    {
+     "name": "SSIM",
+     "kind": "metric"
+    },
+    {
+     "name": "LPIPS",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "FID and KID are distribution-level image- or field-similarity metrics for sensor-model validation; other examples include mutual information and texture and entropy measures.",
+   "quote": "FID and KID (distribution level); mutual information; texture and entropy measures [55, 64, 65].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    55,
+    64,
+    65
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FID",
+     "kind": "metric"
+    },
+    {
+     "name": "KID",
+     "kind": "metric"
+    },
+    {
+     "name": "mutual information",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254",
+    "t253"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Image- or field-similarity metrics measure scene structure but can disagree with downstream task performance.",
+   "quote": "Measures scene structure but can disagree with downstream task performance.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t256",
+    "t254"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the NeuroNCAP example, VAD achieved 0.449 NDS with real inputs versus 0.413 NDS with simulated inputs.",
+   "quote": "NeuroNCAP: VAD 0.449 NDS real versus 0.413 simulated",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    57
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NeuroNCAP",
+     "kind": "tool"
+    },
+    {
+     "name": "VAD",
+     "kind": "product"
+    },
+    {
+     "name": "NDS",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t256",
+    "t249",
+    "t85"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In the NeuroNCAP example, UniAD achieved 0.490 NDS with real inputs versus 0.489 NDS with simulated inputs.",
+   "quote": "UniAD 0.490 versus 0.489) [57]",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    57
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NeuroNCAP",
+     "kind": "tool"
+    },
+    {
+     "name": "UniAD",
+     "kind": "product"
+    },
+    {
+     "name": "NDS",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t256",
+    "t249",
+    "t85"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Perception- and task-level sensor-model validation can aggregate multiple layers into an overall gap.",
+   "quote": "multi-layer aggregation into an overall gap [36]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    36
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t249",
+    "t256"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The Instance Performance Difference metric is an example of perception- and task-level sensor-model validation.",
+   "quote": "the Instance Performance Difference metric [64]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    64
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Instance Performance Difference",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t256",
+    "t249"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Perception- and task-level sensor-model validation can measure detection or tracking gaps between real and simulated inputs, odometry error, time-to-collision estimates, and warning or braking trigger distance.",
+   "quote": "odometry error; time-to-collision estimates; warning or braking trigger distance.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t256",
+    "t86",
+    "t111",
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Perception- and task-level sensor-model validation determines whether simulation preserves the outputs that matter to the function.",
+   "quote": "Determines whether simulation preserves what matters to the function.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t256",
+    "t238",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sim-on-Wheels (2023) provides an example of behaviour or action similarity evaluation by matching brake values.",
+   "quote": "Behaviour or action similarity, for example matching brake values (Sim-on-Wheels, 2023) [81]",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    81
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Sim-on-Wheels",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t257",
+    "t250"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Behaviour- and closed-loop sensor-model validation compares brake trigger timing, stopping trajectory, minimum clearance, and false and missed interventions under matched real and simulated runs.",
+   "quote": "brake trigger timing, stopping trajectory, minimum clearance, false and missed interventions under matched real and simulated runs.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t257",
+    "t28",
+    "t170",
+    "t194"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Behaviour- and closed-loop agreement is ultimately relevant to the automatic-braking safety claim.",
+   "quote": "Ultimately relevant to the automatic-braking safety claim.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t257",
+    "t25",
+    "t67"
+   ],
+   "importance": 3
+  }
+ ]
+}

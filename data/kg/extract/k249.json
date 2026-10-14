@@ -1,0 +1,150 @@
+{
+ "chunkId": "k249",
+ "hash": "732d8f31cd9ac12d",
+ "facts": [
+  {
+   "text": "Training augmentation is the strongest current case for using generated data because generated training data need only improve generalization; physical identity is not required.",
+   "quote": "Training augmentation | Strongest case. It need only improve generalization; physical identity is not required.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t114"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Generated-data robustness or metamorphic tests are useful now if the transformation has documented constraints and the test claim explicitly concerns robustness to that transformation.",
+   "quote": "Useful now, provided the transformation has documented constraints and the test claim is explicitly robustness to that transformation.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t63"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A robustness or metamorphic test can ask whether a detector remains stable when visibility or light is systematically degraded.",
+   "quote": "does the detector remain stable when visibility or light is systematically degraded?",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t86",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Physical-equivalence testing using generated data is not generally established; separate calibration and validation must show that the transformation reproduces the particular real sensor under the tested condition.",
+   "quote": "Not established generally. Requires separate calibration and validation showing that the transformation reproduces the particular real sensor under that condition.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t237",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An example of a physical-equivalence test claim is that a synthetic fog frame with 40 m visibility proves that the real camera and braking function meet the requirement at 40 m visibility.",
+   "quote": "this synthetic 40 m visibility fog frame proves the real camera and braking function meet the requirement at 40 m visibility",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t89",
+    "t102",
+    "t63"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Generative editing is credible for training, finding failures and widening test coverage.",
+   "quote": "generative editing is credible for training, for finding failures and for widening coverage.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t114",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Generative editing is not yet credible as stand-alone pass/fail validation evidence, especially for lidar and radar, at night and in dust.",
+   "quote": "It is not yet credible as stand-alone pass/fail validation evidence, especially for lidar and radar, at night and in dust.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t62",
+    "t92",
+    "t94",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The most defensible hybrid uses generative methods to propose or diversify tests while anchoring important physical dimensions with a physics model and real measurements.",
+   "quote": "The most defensible hybrid uses generative methods to propose or diversify tests while anchoring the important physical dimensions with a physics model and real measurements.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t128",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Generated rain, fog or dust should carry explicit physical labels such as \"20 mm/h rain\" or \"50 m visibility\" only when those labels have been calibrated against actual sensor data; otherwise the generated conditions are better described as a domain perturbation.",
+   "quote": "Generated rain, fog or dust should carry explicit physical labels such as \"20 mm/h rain\" or \"50 m visibility\" only when those labels have been calibrated against actual sensor data; otherwise it is better described as a domain perturbation **Expert opinion**.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t102",
+    "t237"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,563 @@
+{
+ "chunkId": "k277",
+ "hash": "fc55b4d252a2746a",
+ "facts": [
+  {
+   "text": "Old and new systems should be compared at the highest common layer that still answers the safety question.",
+   "quote": "compare at the highest common layer that still answers the safety question.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "When sensor modality or placement differs between old and new systems, the appropriate common comparison layer is usually an independently measured external encounter rather than the raw sensor stream.",
+   "quote": "When sensor modality or placement differs, that layer is usually an independently measured external encounter, not the raw sensor stream.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t105",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Directly comparable system-level outputs against the same ground truth include warnings and interventions per hazard, missed hazards, false and nuisance alarms per hour under the same exposure, and warning timing relative to hazard entry, TTC or distance.",
+   "quote": "System-level outputs against the same ground truth: warnings and interventions per hazard, missed hazards, false and nuisance alarms per hour under the same exposure, and warning timing relative to hazard entry, TTC or distance.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t105",
+    "t213",
+    "t224",
+    "t111"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Old-versus-new system comparisons should use a common evaluation zone, such as the ISO 21815-3 risk area or a zone derived from machine stopping distance, rather than each sensor's native field of view.",
+   "quote": "Comparisons restricted to a common evaluation zone, such as the ISO 21815-3 risk area or a zone derived from the machine's stopping distance, not each sensor's native field of view.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t222",
+    "t187",
+    "t170",
+    "t280",
+    "t87"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Parallel shadow recording with both systems on the same machine at the same time produces paired results because every hazard is seen by both systems.",
+   "quote": "Paired results from parallel (shadow) recording: both systems on the same machine at the same time, so every hazard is seen by both.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t222"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Paired tests such as McNemar's test on hazard-level hit-or-miss pairs are valid when both systems record hazards on the same machine at the same time.",
+   "quote": "Paired tests such as McNemar's test on hazard-level hit-or-miss pairs are then valid.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "McNemar's test",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t212",
+    "t222",
+    "t108"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Comparing old and new systems using separate deployments confounds site, operator and weather.",
+   "quote": "Separate deployments confound site, operator and weather.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t45"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Raw detection internals are not directly comparable across incompatible representations: radar detections versus camera boxes, confidence scores, resolution, per-sensor range accuracy, and per-frame precision and recall.",
+   "quote": "Raw detection internals: radar detections versus camera boxes, confidence scores, resolution, per-sensor range accuracy, or per-frame precision and recall at incompatible representations.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t86",
+    "t94",
+    "t89",
+    "t109"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Coverage outside the overlap of the old and new systems' fields of view is not directly comparable.",
+   "quote": "Coverage outside the overlap of the two fields of view.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t87"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Old and new system behaviour is not directly comparable in conditions in which only one system was recorded.",
+   "quote": "Behaviour in conditions only one system was recorded in.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Proprietary internal risk scores are not directly comparable unless semantically calibrated.",
+   "quote": "Proprietary internal risk scores, unless semantically calibrated.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For software changes with the same sensors, positions and interface, valid direct comparisons run the same recorded raw or interface data through both software versions and compare paired detection and warning results.",
+   "quote": "Same recorded raw or interface data through both software versions; paired detection and warning results",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t155",
+    "t86"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For software changes with the same sensors, positions and interface, internal implementation details that changed meaning are not directly comparable.",
+   "quote": "Internal implementation details that changed meaning",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Exact paired replay is the preferred experiment for software changes with the same sensors, positions and interface.",
+   "quote": "Exact paired replay",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t222"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For the same sensor technology with different mounting or field of view, end-to-end detection and warning against common world ground truth are directly comparable.",
+   "quote": "End-to-end detection and warning against common world ground truth",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t105",
+    "t100",
+    "t87"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For the same sensor technology with different mounting or field of view, treating the old raw recording as if it came from the new position, or comparing raw range and field-of-view statistics, is not directly valid.",
+   "quote": "The old raw recording as if it came from the new position; raw range and field-of-view statistics",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t100",
+    "t87",
+    "t155"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For the same sensor technology with different mounting or field of view, the preferred experiment is simultaneous co-instrumented collection or validated scene reconstruction plus position-specific sensor models.",
+   "quote": "Simultaneous co-instrumented collection, or validated scene reconstruction plus position-specific sensor models",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t100",
+    "t133",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For different sensor modalities, directly comparable outputs are detection-opportunity outcome, first detection in world or risk coordinates, warning timing, and false-alarm exposure.",
+   "quote": "Detection-opportunity outcome, first detection in world or risk coordinates, warning timing, false-alarm exposure",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t86",
+    "t32",
+    "t20"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For different sensor modalities, raw measurements, confidence scales, resolution and per-frame metrics are not directly comparable.",
+   "quote": "Raw measurements, confidence scales, resolution, per-frame metrics",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t84",
+    "t87",
+    "t224"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For different sensor modalities, the preferred experiment uses independent common ground truth, ideally with old and new systems recorded simultaneously.",
+   "quote": "Independent common ground truth; ideally old and new recorded simultaneously",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t105",
+    "t157"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "When perception stays the same but warning logic changes, warning triggers relative to common risk geometry or TTC are directly comparable.",
+   "quote": "Warning trigger relative to common risk geometry or TTC",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t185",
+    "t186"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "When perception stays the same but warning logic changes, the preferred experiment is semantic or object-list replay plus paired end-to-end replay.",
+   "quote": "Semantic or object-list replay plus paired end-to-end replay",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t156",
+    "t155",
+    "t222",
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For a warning-only old system versus a warning-plus-brake new system, detection and common warning-stage metrics are directly comparable.",
+   "quote": "Detection and the common warning-stage metrics",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t23",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Braking and stopping outcomes of a warning-plus-brake new system are not directly comparable to a warning-only old system because the old system has no corresponding function.",
+   "quote": "Braking and stopping outcome: the old system has no corresponding function",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t170",
+    "t22",
+    "t23"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For a warning-only old system versus a warning-plus-brake new system, compare common stages to the old baseline and assess the brake stage against requirements in closed loop.",
+   "quote": "Compare common stages to the old baseline; assess the brake stage against requirements in closed loop",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t221",
+    "t63",
+    "t154"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For machines differing in length, width, articulation geometry or sensor location, range should be expressed as separation from the relevant machine swept envelope or entry into a standardized risk region, not metres from the sensor origin.",
+   "quote": "range should be expressed as separation from the relevant machine swept envelope or as entry into a standardized risk region, not \"metres from the sensor origin\".",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t187",
+    "t100",
+    "t176"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A sensor mounted 3 m farther forward can appear to have a different warning range even when the actual safety margin is identical.",
+   "quote": "Otherwise a sensor mounted 3 m farther forward appears to have a different warning range while the actual safety margin is identical.",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t222",
+    "t194"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-3's risk-area and risk-level framework applies directly to earth-moving and underground mining machines.",
+   "quote": "ISO 21815-3's risk-area and risk-level framework applies directly to earth-moving and underground mining machines.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t187",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Perception should be separated from decision logic using a common semantic interface.",
+   "quote": "Separate perception from decision logic with a common semantic interface.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    21
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t85",
+    "t185",
+    "t156"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Old and new threat-assessment logic can be fed identical objects with known positions and velocities to determine whether warning or brake decisions differ.",
+   "quote": "Both the old and the new threat-assessment logic can be fed identical objects with known positions and velocities to see whether their warning or brake decisions differ.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    21
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t185",
+    "t156"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OSI supports exchange between environment, sensor, fusion and function models.",
+   "quote": "ASAM OSI exists for exactly this exchange between environment, sensor, fusion and function models",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    21
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OSI",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t138",
+    "t99",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The ASAM OSI ecosystem originates in road-vehicle simulation; using ASAM OSI on a quarry machine is an engineering adaptation, not off-road proof.",
+   "quote": "its ecosystem originates in road-vehicle simulation; using it on a quarry machine is an engineering adaptation, not off-road proof.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    21
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OSI",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t138",
+    "t70",
+    "t1"
+   ],
+   "importance": 3
+  }
+ ]
+}

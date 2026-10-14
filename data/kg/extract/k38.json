@@ -1,0 +1,343 @@
+{
+ "chunkId": "k38",
+ "hash": "0f49b00abc3a918a",
+ "facts": [
+  {
+   "text": "In shadow mode, a candidate algorithm processes live site data while physically prevented from actuating the brakes; logged hypothetical brake events are reviewed against ground truth and operator behaviour.",
+   "quote": "A candidate algorithm processes live site data while physically prevented from actuating the brakes; logged hypothetical brake events are reviewed against ground truth and operator behaviour.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t105",
+    "t38"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Automotive literature treats silent testing as open-loop because candidate software produces setpoints that are not executed by the actuator system.",
+   "quote": "Automotive literature treats silent testing as open-loop: the candidate software produces setpoints \"which are not executed by the actuator system\".",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    19
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Patent literature presents shadow testing as a validation method.",
+   "quote": "Patent literature presents it as a validation method",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    58,
+    59
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t65"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Patent literature warns that shadow testing becomes greatly inefficient or even infeasible when many software candidates must be evaluated at once.",
+   "quote": "shadow testing becomes \"greatly inefficient, or even infeasible\" when many software candidates must be evaluated at once.",
+   "kind": "risk",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    58,
+    59
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Motional's 2026 safety material describes daily testing that includes shadow-mode feature deployment before broader roll-out.",
+   "quote": "Motional's 2026 safety material describes daily testing that includes shadow-mode feature deployment before broader roll-out.",
+   "kind": "example",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    22
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Motional",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t157",
+    "t311",
+    "t73"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Epiroc states that its system can run system evaluation and traffic management on-site without immediately enforcing level-9 intervention; this is identified as the nearest off-road analogue to shadow mode.",
+   "quote": "The nearest off-road analogue is Epiroc's statement that its system can run \"system evaluation and traffic management on-site without immediately enforcing level-9 intervention\".",
+   "kind": "example",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    37,
+    76
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Epiroc",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t157",
+    "t30",
+    "t28"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A publicly documented heavy-off-road shadow-mode validation programme was not found.",
+   "quote": "A publicly documented heavy-off-road shadow-mode validation programme was **not found**.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t1",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Shadow mode can produce evidence about false hypothetical interventions, including the nuisance-brake rate at large volume.",
+   "quote": "Shadow mode can produce evidence about false hypothetical interventions (the nuisance-brake rate at large volume)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t31",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Shadow mode can produce evidence about missed threats.",
+   "quote": "missed threats",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t108"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Shadow mode can produce evidence about detection range under real dust, light and weather.",
+   "quote": "detection range under real dust, light and weather",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t87",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Shadow mode can produce evidence about geometry and mounting differences.",
+   "quote": "geometry and mounting differences",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t100"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Shadow mode can produce evidence about previously unknown scenario classes.",
+   "quote": "previously unknown scenario classes",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t142"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Shadow mode can produce evidence about site-specific exposure frequencies.",
+   "quote": "site-specific exposure frequencies",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t20",
+    "t213"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Shadow mode cannot establish whether a real automatic stop stays stable on a wet decline with full payload.",
+   "quote": "It cannot establish whether a real automatic stop stays stable on a wet decline with full payload",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t178",
+    "t173",
+    "t174",
+    "t168"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Shadow mode cannot establish whether a false stop causes a following haul truck to collide.",
+   "quote": "whether a false stop causes a following haul truck to collide",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t195",
+    "t3",
+    "t18",
+    "t31"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Shadow mode cannot establish whether the load shifts during a real automatic stop.",
+   "quote": "whether the load shifts",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t178"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Shadow mode cannot establish whether an operator counteracts the brake.",
+   "quote": "whether an operator counteracts the brake",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t36",
+    "t38"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Shadow mode cannot establish whether the actuator has an integration fault.",
+   "quote": "whether the actuator has an integration fault",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t56"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the context of shadow-mode testing, effectiveness in true near-misses is rare by definition.",
+   "quote": "Effectiveness in true near-misses is rare by definition",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t21"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Behaviour changes once braking is active, limiting what shadow-mode testing can establish about active braking.",
+   "quote": "behaviour changes once braking is active.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t38",
+    "t28"
+   ],
+   "importance": 3
+  }
+ ]
+}

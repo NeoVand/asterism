@@ -1,0 +1,199 @@
+{
+ "chunkId": "k245",
+ "hash": "05887cbfe3c4e085",
+ "facts": [
+  {
+   "text": "Black-box sensor system identification can use controlled facilities and long-term stationary set-ups, following the 2022 Sensors method, to sweep calibrated targets, ranges, angles, velocities, reflectances or RCS values, lighting, temperature, and selected weather and contamination conditions.",
+   "quote": "A campaign in controlled facilities and long-term stationary set-ups (the 2022 Sensors method [13]) can sweep calibrated targets, ranges, angles, velocities, reflectances or RCS values, lighting, temperature and selected weather and contamination conditions",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    13
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "2022 Sensors method",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t84",
+    "t102",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Black-box sensor system identification can fit empirical or probabilistic response models while reserving conditions for independent validation rather than fitting.",
+   "quote": "fit empirical or probabilistic response models, and reserve conditions for independent validation rather than fitting.",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    13
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t263",
+    "t128"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A sensor model resulting from black-box system identification must be declared valid only over the measured envelope.",
+   "quote": "The resulting model must be declared valid only over the measured envelope **Expert opinion**.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t262",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor-model parameters can be estimated inversely from measurements, as demonstrated for 77 GHz material parameters.",
+   "quote": "**Estimate parameters inversely** from measurements, as was done for 77 GHz material parameters [34].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    34
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t94",
+    "t136"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Putting the real sensor in the loop through HIL or over-the-air stimulation exercises the sensor's proprietary processing directly.",
+   "quote": "**Put the real sensor in the loop** (HIL or over-the-air) so its proprietary processing is exercised directly [45, 46, 47].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    45,
+    46,
+    47
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t150",
+    "t84"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Using a real sensor in the loop does not remove the need to validate the stimulation equipment itself.",
+   "quote": "This does not remove the need to validate the stimulation equipment itself",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t148",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Using a real sensor in the loop does not remove the need to reproduce contamination and weather separately.",
+   "quote": "This does not remove the need to validate the stimulation equipment itself or to reproduce contamination and weather separately.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t150",
+    "t148"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor sourcing contracts should include model-delivery and validation-data requirements now.",
+   "quote": "**Write model-delivery and validation-data requirements into the sourcing contract now.**",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t357",
+    "t263",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Because the sensor type is still open, model-delivery and validation-data requirements can serve as a sensor selection criterion.",
+   "quote": "The sensor type is still open, so this can be a selection criterion **Expert opinion**.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t357",
+    "t84",
+    "t263"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "When a supplier provides only object lists, validating a phenomenological sensor model at the same object-list interface is more defensible than inventing an unidentifiable raw-signal model.",
+   "quote": "For a supplier that provides only object lists, it is more defensible to validate a phenomenological model at that same object-list interface than to invent an unidentifiable raw-signal model.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t156",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "If a braking function's perception consumes images, point clouds or radar cubes, validating only the supplier's final object list is insufficient; validation must be tied to the sensor-model interface the function actually uses.",
+   "quote": "if the braking function's perception consumes images, point clouds or radar cubes, validating only the supplier's final object list is insufficient; validation must be tied to the sensor-model interface the function actually uses **Expert opinion**.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t85",
+    "t125",
+    "t65",
+    "t93",
+    "t94"
+   ],
+   "importance": 3
+  }
+ ]
+}

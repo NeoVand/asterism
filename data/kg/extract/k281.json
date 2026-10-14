@@ -1,0 +1,814 @@
+{
+ "chunkId": "k281",
+ "hash": "d4c3a1f37f4430a9",
+ "facts": [
+  {
+   "text": "Most validation infrastructure can be developed without the final sensor or ECU, provided the interfaces are established early.",
+   "quote": "Most of the validation infrastructure does not need the final sensor or ECU, provided the interfaces are established early.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t119",
+    "t84",
+    "t42"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Existing machines should be instrumented with synchronized logging of the production warning system and independent reference sensors, collecting normal operations rather than only staged hazards.",
+   "quote": "Instrument existing machines with synchronized logging of the production warning system plus independent reference sensors, and collect normal operations, not just staged hazards.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    47,
+    2
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t101",
+    "t266",
+    "t105"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Development sensors of candidate types should be mounted at candidate positions on current machines alongside the existing warning system, with recording continuing from now until mid-2027.",
+   "quote": "Mount development sensors of the candidate types at the candidate positions on current machines, alongside the existing system, and record from now until mid-2027.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    47,
+    2
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t84",
+    "t100",
+    "t121",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Recording candidate development sensors alongside the existing warning system produces logs with the new geometry before the prototype arrives.",
+   "quote": "This produces logs with the new geometry before the prototype arrives",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    47,
+    2
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t100",
+    "t42"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Recording candidate development sensors alongside the existing warning system establishes the old-system baseline.",
+   "quote": "establishes the old-system baseline",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    47,
+    2
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t221",
+    "t266",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Recording candidate development sensors alongside the existing warning system until mid-2027 captures the environmental distribution, including a winter.",
+   "quote": "captures the environmental distribution (including a winter)",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    47,
+    2
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t45",
+    "t121",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Building a reference corpus with surrogate sensors is identified as the single most valuable pre-hardware action, based on parallel-recording logic.",
+   "quote": "It is the single most valuable pre-hardware action and follows from the parallel-recording logic in section 4.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    47,
+    2
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t360",
+    "t266",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NIOSH's heavy-equipment work shows that collision-warning and proximity technology has long required equipment-specific evaluation.",
+   "quote": "NIOSH's body of heavy-equipment work shows that collision-warning and proximity technology has long required equipment-specific evaluation",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    47,
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t23",
+    "t24",
+    "t1",
+    "t65"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815 supplies the system framework for collision-warning and proximity technology.",
+   "quote": "ISO 21815 now supplies the system framework.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    47,
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t23",
+    "t24"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Semantic and electrical interface contracts should be frozen early, defining detected objects, warning states, brake requests, diagnostic states and time references independently of any sensor supplier.",
+   "quote": "Define what a \"detected object\", warning state, brake request, diagnostic state and time reference mean independently of any sensor supplier.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t42",
+    "t86",
+    "t101",
+    "t185"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM OSI illustrates the value of exchangeable interfaces between environment, sensor, fusion and function models, but is road-vehicle-centric.",
+   "quote": "ASAM OSI illustrates the value of exchangeable interfaces between environment, sensor, fusion and function models, although it is road-vehicle-centric.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    21
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OSI",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t138",
+    "t99",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The ISO/TS 21815-2 J1939 interface is the off-road anchor for the brake request.",
+   "quote": "The ISO/TS 21815-2 J1939 interface is the off-road anchor for the brake request.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    },
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t120",
+    "t185"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Software-in-the-loop testing should use the intended production logic or continuously replaceable prototypes.",
+   "quote": "Run SIL with the intended production logic or continuously replaceable prototypes.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    37,
+    36,
+    35
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t185"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Software-in-the-loop testing should first use ideal or semantic sensors to debug threat assessment and braking-state logic, then progressively add realistic error models for each candidate sensor type validated against surrogate recordings.",
+   "quote": "Use ideal or semantic sensors first to debug threat assessment and braking-state logic, then progressively add realistic sensor error models for each candidate sensor type, validated against the surrogate recordings.",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    37,
+    36,
+    35
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t185",
+    "t125",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Software-in-the-loop development should follow a documented simulation credibility process.",
+   "quote": "Follow a documented credibility process",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    37,
+    36,
+    35
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t234",
+    "t241"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The prostep ivip Simulation Credibility paper dates from 2024.",
+   "quote": "the prostep ivip Simulation Credibility paper (2024)",
+   "kind": "number",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    37,
+    36,
+    35
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "prostep ivip",
+     "kind": "organization"
+    },
+    {
+     "name": "Simulation Credibility",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t234",
+    "t241"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The SET Level Credible Simulation Process dates from 2021.",
+   "quote": "the SET Level Credible Simulation Process (2021) exist",
+   "kind": "number",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    37,
+    36,
+    35
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "SET Level",
+     "kind": "program"
+    },
+    {
+     "name": "Credible Simulation Process",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t241",
+    "t310"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM QSQ is still emerging.",
+   "quote": "ASAM QSQ is still emerging.",
+   "kind": "uncertain",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    37,
+    36,
+    35
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM QSQ",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t241"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The vehicle-in-the-loop literature places software-in-the-loop testing early in development; this is on-road evidence.",
+   "quote": "The VIL literature places SIL early in development.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    20
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t147"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A virtual ECU, development ECU or hardware-in-the-loop surrogate should be used while the final processor is absent.",
+   "quote": "Use a virtual ECU, development ECU or HIL surrogate while the final processor is absent.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t119",
+    "t148",
+    "t42"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The HIL rig, restbus simulation, power and I/O interfaces, fault-injection scripts and real-time plant models can be commissioned before production controllers arrive; only the surrogate boundary is replaced when real ECUs arrive.",
+   "quote": "The HIL rig, restbus simulation, power and I/O interfaces, fault-injection scripts and real-time plant models can be commissioned before production controllers arrive; when real ECUs arrive, only the surrogate boundary is replaced.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t119",
+    "t56",
+    "t153",
+    "t120"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Commercial HIL implementations demonstrate synthetic camera input, fault injection and synchronized multi-sensor and bus interfaces; the evidence is vendor-provided and on-road.",
+   "quote": "Commercial HIL implementations demonstrate synthetic camera input, fault injection and synchronized multi-sensor and bus interfaces.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    41
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t89",
+    "t56",
+    "t101",
+    "t120"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Brake-request and fail-to-safe logic should be rehearsed over ISO/TS 21815-2 on interim ECUs.",
+   "quote": "Rehearse the brake request and fail-to-safe logic over ISO/TS 21815-2 on interim ECUs.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    16,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t119",
+    "t55",
+    "t185"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "MOSH's TRL4 laboratory phase includes a CxD Interface test using the ISO/TS 21815-2:2021 bench test.",
+   "quote": "MOSH's TRL4 laboratory phase tests exactly this set: \"CxD Interface test - The ISO/TS 21815-2:2021 bench test.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    16,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    },
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t307",
+    "t248",
+    "t280",
+    "t279"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MOSH's TRL4 laboratory phase includes the CxD Log Keeping Test.",
+   "quote": "CxD Log Keeping Test.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    16,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    },
+    {
+     "name": "CxD Log Keeping Test",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t307",
+    "t248",
+    "t121"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MOSH's TRL4 laboratory phase includes the CxD Self-Diagnostic Test (FTSWHI).",
+   "quote": "CxD Self-Diagnostic Test (FTSWHI).",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    16,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    },
+    {
+     "name": "CxD Self-Diagnostic Test (FTSWHI)",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t307",
+    "t248",
+    "t60"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MOSH's TRL4 laboratory phase includes an ICASA Type Approval or Spectrum License demonstration.",
+   "quote": "ICASA Type Approval or Spectrum License demonstration.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    16,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    },
+    {
+     "name": "ICASA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t307",
+    "t248",
+    "t277"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MOSH's TRL4 laboratory phase includes EMC testing.",
+   "quote": "EMC testing",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    16,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t307",
+    "t248",
+    "t123"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor models should be developed before final hardware exists, but should not be confused with proof of sensor performance.",
+   "quote": "Develop sensor models, but do not confuse them with proof of sensor performance.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t84",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Supplier specifications, earlier-generation hardware and laboratory measurements can seed camera, radar, lidar and ultrasonic models.",
+   "quote": "Supplier specifications, earlier-generation hardware and laboratory measurements can seed camera, radar, lidar and ultrasonic models.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t89",
+    "t94",
+    "t92",
+    "t95"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "After prototype sensors arrive, sensor models must be calibrated and challenged against real measurements, especially under adverse weather, light and contamination conditions that drive safety risk.",
+   "quote": "After prototype sensors arrive, those models must be calibrated and challenged against real measurements, especially in the adverse weather, light and contamination conditions that drive safety risk.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t102",
+    "t84",
+    "t125",
+    "t46"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Vehicle-in-the-loop research warns that sensor-model and physical-stimulator fidelity determine results; this is on-road evidence.",
+   "quote": "VIL research warns that sensor-model and physical-stimulator fidelity determine results.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    20
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t125",
+    "t150",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Digital twins of machines should be built before final hardware exists.",
+   "quote": "Build digital twins of the machines.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t129",
+    "t1"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Machine geometry, self-occlusion by bucket, boom or body, and the braking model allow sensor coverage and blind zones to be computed for each machine model before hardware arrives.",
+   "quote": "Machine geometry, self-occlusion by bucket, boom or body, and the braking model allow coverage and blind zones per model to be computed before hardware arrives.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t129",
+    "t103",
+    "t87",
+    "t182",
+    "t15"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 5006 and ISO 16001 visibility-type methods illustrate the geometric approach to computing machine coverage and blind zones.",
+   "quote": "ISO 5006 and ISO 16001 visibility-type methods",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 5006",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t283",
+    "t15",
+    "t87"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "UNECE R159's small-cylinder method illustrates the geometric approach to coverage and blind zones, using on-road evidence.",
+   "quote": "UNECE R159's small-cylinder method illustrate the geometric approach.",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    50
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "UN R159",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t295",
+    "t15",
+    "t87",
+    "t279"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Expert opinion supports using visibility-type and small-cylinder methods as illustrations of a geometric approach to machine coverage and blind zones.",
+   "quote": "ISO 5006 and ISO 16001 visibility-type methods and UNECE R159's small-cylinder method illustrate the geometric approach.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    51
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 5006",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    },
+    {
+     "name": "UN R159",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t283",
+    "t295",
+    "t15",
+    "t87"
+   ],
+   "importance": 2
+  }
+ ]
+}

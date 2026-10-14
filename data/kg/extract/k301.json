@@ -1,0 +1,344 @@
+{
+ "chunkId": "k301",
+ "hash": "5850ea11edec7268",
+ "facts": [
+  {
+   "text": "Road-car automatic braking assumes a well-characterized tire-road interface.",
+   "quote": "Road-car automatic braking assumes a well-characterized tire-road interface.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t25",
+    "t174"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Earth-moving machines routinely operate on loose aggregate, mud, soft soil, snow, wet clay and deep material, where the ground interface changes shear capacity, sinkage, rolling resistance, slip and directional response.",
+   "quote": "loose aggregate, mud, soft soil, snow, wet clay and deep material change shear capacity, sinkage, rolling resistance, slip and directional response.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t174",
+    "t181",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Bekker and Wong terramechanics, summarized in a US Army report, shows that tractive and braking force depend on soil type, contact area, load and slip.",
+   "quote": "Bekker and Wong terramechanics, summarized in a US Army report, shows that tractive and braking force depend on soil type, contact area, load and slip",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    41
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Bekker and Wong terramechanics",
+     "kind": "method"
+    },
+    {
+     "name": "US Army",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t174",
+    "t168"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Bekker and Wong terramechanics, summarized in a US Army report, shows that tracks keep more shear force than tires in soft soil.",
+   "quote": "tracks keep more shear force than tires in soft soil.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    41
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Bekker and Wong terramechanics",
+     "kind": "method"
+    },
+    {
+     "name": "US Army",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t175",
+    "t181",
+    "t174"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2023 Journal of Terramechanics model covering all slip and skid states, with slip ratio −1 to 0.9 and slip angle 0° to 60°, predicted forces well in sand.",
+   "quote": "A 2023 Journal of Terramechanics model covering all slip and skid states (slip ratio −1 to 0.9, slip angle 0° to 60°) predicted forces well in sand",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    42
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Journal of Terramechanics",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t180",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Some tuning parameters in the 2023 Journal of Terramechanics model depend on slip angle, so the parameters do not transfer cleanly between conditions.",
+   "quote": "\"a dependence of some tuning parameters on slip angle is observed\", so the parameters do not transfer cleanly between conditions.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    42
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Journal of Terramechanics",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t262",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2026 terrain-deformation model shows soil building up in front of the wheel during braking.",
+   "quote": "A 2026 terrain-deformation model shows soil building up in front of the wheel during braking",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    43
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t180",
+    "t182"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2026 terrain-deformation model shows drawbar pull growing more negative as slip becomes more negative during braking.",
+   "quote": "with drawbar pull growing more negative as slip becomes more negative.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    43
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t181",
+    "t180",
+    "t182"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The cited terramechanics and terrain-deformation findings were tested on single-wheel rigs and sand, not full machines.",
+   "quote": "All of this was tested on single-wheel rigs and sand, not full machines.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t184",
+    "t181",
+    "t262"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Open-source and commercial frameworks expose deformable-terrain models to address ground-interface dynamics.",
+   "quote": "Open-source and commercial frameworks expose deformable-terrain models for this reason.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t325",
+    "t181"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Project Chrono supports rigid terrain, the semi-empirical Soil Contact Model with Bekker-Wong pressure-sinkage and shear parameters, and more expensive granular or deformable approaches.",
+   "quote": "Project Chrono supports rigid terrain, the semi-empirical Soil Contact Model (Bekker-Wong pressure-sinkage and shear parameters) and more expensive granular or deformable approaches",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    44,
+    45
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Project Chrono",
+     "kind": "tool"
+    },
+    {
+     "name": "Soil Contact Model",
+     "kind": "method"
+    },
+    {
+     "name": "Bekker-Wong",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t325",
+    "t322"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Altair's tracked-vehicle workflow models tracked machines over soft soil and can couple multibody simulation to granular EDEM models.",
+   "quote": "Altair's tracked-vehicle workflow models tracked machines over soft soil and can couple multibody simulation to granular EDEM models.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    44,
+    45
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Altair",
+     "kind": "company"
+    },
+    {
+     "name": "EDEM",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t181",
+    "t175",
+    "t325",
+    "t179"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The documented terrain-model capabilities of Project Chrono and Altair do not prove that either predicts a specific machine's emergency stopping distance to a stated error.",
+   "quote": "These are tool capabilities, not proof that either predicts a specific machine's emergency stopping distance to a stated error.",
+   "kind": "gap",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    44,
+    45
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Project Chrono",
+     "kind": "tool"
+    },
+    {
+     "name": "Altair",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t170",
+    "t234",
+    "t258",
+    "t181"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A generally applicable table of friction values for wet dirt, gravel or mud reliable enough to set automatic-braking thresholds across the earth-moving-machine product range was not found.",
+   "quote": "A generally applicable table of friction values for wet dirt, gravel or mud reliable enough to set automatic-braking thresholds across this product range: not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t174",
+    "t188",
+    "t25",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Published full-machine braking distance on wet clay or loose gravel was not found.",
+   "quote": "Published full-machine braking distance on wet clay or loose gravel: not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t174",
+    "t184"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Effective braking capability for earth-moving machines has to be measured or estimated as a machine, terrain and state distribution rather than selected from a handbook coefficient.",
+   "quote": "Effective braking capability therefore has to be measured or estimated as a machine, terrain and state distribution rather than selected from a handbook coefficient.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t174",
+    "t182",
+    "t184",
+    "t259"
+   ],
+   "importance": 3
+  }
+ ]
+}

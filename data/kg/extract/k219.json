@@ -1,0 +1,681 @@
+{
+ "chunkId": "k219",
+ "hash": "c3c1576e227c6cf8",
+ "facts": [
+  {
+   "text": "Low-fidelity radar models ray-cast from the sensor to geometry and return range and velocity with statistical noise.",
+   "quote": "Low-fidelity radar models ray-cast from the sensor to geometry and return range and velocity plus statistical noise.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    32,
+    33
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t125",
+    "t118"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "More advanced radar simulation methods trace broad beams with material-dependent reflection and transmission, multipath and Doppler.",
+   "quote": "More advanced methods trace broad beams with material-dependent reflection and transmission, multipath and Doppler",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    32,
+    33
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t118",
+    "t117",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Still higher-fidelity radar simulation models chirps, baseband signals or radar cubes and parts of the real signal-processing chain.",
+   "quote": "still higher fidelity simulates chirps or baseband signals or radar cubes and parts of the real signal-processing chain.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    32,
+    33
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Radar simulation methods include ray tracing, shooting-and-bouncing-rays (SBR), Fourier tracing described by Holder et al. (2019), and full-wave solvers for small scenes.",
+   "quote": "Methods include ray tracing and shooting-and-bouncing-rays (SBR), Fourier tracing (Holder et al., 2019), and full-wave solvers for small scenes",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    32,
+    33
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "ray tracing",
+     "kind": "method"
+    },
+    {
+     "name": "shooting-and-bouncing-rays (SBR)",
+     "kind": "method"
+    },
+    {
+     "name": "Fourier tracing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t118"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An on-road study of a ray-tracing radar model concluded that the complete signal-processing toolchain and sensor-specific radar impairments must be considered.",
+   "quote": "One study of a ray-tracing radar model concluded that \"the complete signal processing toolchain and sensor-specific impairments of the RADAR sensor must be considered\"",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    33,
+    37
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "ray tracing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t118",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 77 GHz on-road channel-measurement study estimated electromagnetic material parameters from measurements because reliable values for ray tracing at 77 GHz were lacking.",
+   "quote": "A 77 GHz channel-measurement study had to estimate electromagnetic material parameters from measurements because reliable values for ray tracing at 77 GHz were lacking",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    34
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "ray tracing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t117",
+    "t118",
+    "t136"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "RadaRays, published in IEEE Robotics and Automation Letters in 2025, found that a lidar-like one-hit radar model omitted multipath and material behaviour, whereas ray-traced material models produced much closer agreement between real and synthetic radar images.",
+   "quote": "RadaRays (IEEE Robotics and Automation Letters, 2025) shows why the fidelity distinction matters: a lidar-like one-hit radar model omitted multipath and material behaviour, whereas ray-traced material models produced far closer real and synthetic radar images.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "RadaRays",
+     "kind": "publication"
+    },
+    {
+     "name": "IEEE Robotics and Automation Letters",
+     "kind": "publication"
+    },
+    {
+     "name": "ray tracing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t125",
+    "t118",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The RadaRays paper mounted a Navtech CIR radar on a wheel loader; the passage identifies this as the most directly relevant heavy-machine radar result found.",
+   "quote": "The same paper mounted a Navtech CIR radar on a wheel loader, which makes it the most directly relevant heavy-machine result found",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    31
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "RadaRays",
+     "kind": "publication"
+    },
+    {
+     "name": "Navtech CIR",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t2",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A vendor's current RTX radar uses material-dependent sensor properties.",
+   "quote": "A vendor's current RTX radar also uses material-dependent sensor properties",
+   "kind": "method",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    49
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "RTX radar",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t136",
+    "t117"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A vendor's current RTX radar requires time-aware motion data for Doppler calculation.",
+   "quote": "requires time-aware motion data for Doppler calculation",
+   "kind": "requirement",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    49
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "RTX radar",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t101"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Full electromagnetic solvers capture radar physics that geometrical ray models approximate poorly.",
+   "quote": "Full electromagnetic solvers capture physics that a geometrical ray model approximates poorly",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t125",
+    "t118"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Full-wave radar simulation over an entire quarry or mine scene is impractical, so engineering simulators combine approximations, ray tracing and statistical electronics models.",
+   "quote": "full-wave simulation over an entire quarry or mine scene is impractical, so engineering simulators combine approximations, ray tracing and statistical electronics models",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "ray tracing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t126",
+    "t118",
+    "t339"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A published scene-scale compute benchmark comparing full-wave electromagnetic simulation with modern real-time radar ray tracers was not found.",
+   "quote": "a published scene-scale compute benchmark between full-wave EM and modern real-time radar ray tracers was not found.",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t339",
+    "t118"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In on-road evidence, data-driven radar measurement models learned with variational Gaussian mixtures outperformed a hand-designed model.",
+   "quote": "Data-driven radar models exist: measurement models learned with variational Gaussian mixtures beat a hand-designed model",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    35
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "variational Gaussian mixtures",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t128"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Ngo et al. (2021) compared an ideal radar model, a data-driven radar model and a ray-tracing radar model across several fidelity levels.",
+   "quote": "Ngo et al. (2021) compared an ideal model, a data-driven model and a ray-tracing model across several fidelity levels.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    36
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Ngo et al. (2021)",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t125",
+    "t128",
+    "t118"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In Ngo et al. (2021), the ideal radar model gave deceptively realistic tracking output but had the highest overall gap when its raw point cloud was compared.",
+   "quote": "The ideal model gave a deceptively realistic tracking output but \"the highest overall gap\" once its raw point cloud was compared",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    36
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Ngo et al. (2021)",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t93",
+    "t249",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Checking only a radar model's final output can hide large errors at the raw-data level.",
+   "quote": "The lesson is that checking only the final output can hide large errors at the raw-data level.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t267",
+    "t256"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Radar is identified as the clearest mature case for hardware-in-the-loop testing.",
+   "quote": "Radar is the clearest mature case for hardware-in-the-loop.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t148",
+    "t150"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Over-the-air radar target and scene emulators receive the sensor's transmitted signal and return controlled echoes with range, Doppler, attenuation or radar cross section (RCS), and angle.",
+   "quote": "Over-the-air target and scene emulators receive the sensor's transmitted signal and return controlled echoes with range, Doppler, attenuation or RCS and angle",
+   "kind": "method",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    46,
+    47
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t150"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Commercial over-the-air radar target and scene emulation systems support multiple dynamic targets and closed-loop hardware-in-the-loop testing.",
+   "quote": "commercial systems support multiple dynamic targets and closed-loop HIL",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    46,
+    47
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t150",
+    "t148",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Over-the-air radar emulation retains far more of the production radar than feeding point detections onto CAN or Ethernet.",
+   "quote": "This retains far more of the production radar than feeding point detections onto CAN or Ethernet.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "CAN",
+     "kind": "other"
+    },
+    {
+     "name": "Ethernet",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t150",
+    "t149",
+    "t120"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2021 MDPI Vehicles paper notes that a radar target simulator is physically limited by the number of echoes it can generate.",
+   "quote": "The MDPI Vehicles paper (2021) notes that a target simulator \"is physically limited by the number of echoes it can generate\"",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    45
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "MDPI Vehicles paper (2021)",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t150"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2021 MDPI Vehicles paper identifies long minimum distances as a problem for radar target simulators because a simulator cannot simulate a target in proximity of a car.",
+   "quote": "long minimum distances are a problem because such a simulator \"cannot simulate the target in proximity of a car\"",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    45
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "MDPI Vehicles paper (2021)",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t150"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Keysight's AD1012A product page claims support for up to 512 objects.",
+   "quote": "Keysight's AD1012A product page claims up to 512 objects",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    46
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Keysight",
+     "kind": "company"
+    },
+    {
+     "name": "AD1012A",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t150"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Keysight's AD1012A product page claims a 1.5 m minimum distance and a range of 1.5 m to 300 m.",
+   "quote": "a 1.5 m minimum distance, a contiguous horizontal field of view of plus or minus 70 degrees and vertical plus or minus 15 degrees, and ranges of 1.5 m to 300 m",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    46
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Keysight",
+     "kind": "company"
+    },
+    {
+     "name": "AD1012A",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t150",
+    "t87"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Keysight's AD1012A product page claims a contiguous horizontal field of view of ±70 degrees and a vertical field of view of ±15 degrees.",
+   "quote": "a contiguous horizontal field of view of plus or minus 70 degrees and vertical plus or minus 15 degrees",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    46
+   ],
+   "chapters": [
+    6
+   ],
+   "entities": [
+    {
+     "name": "Keysight",
+     "kind": "company"
+    },
+    {
+     "name": "AD1012A",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t94",
+    "t150",
+    "t87"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A short minimum range for radar target emulation matters for slow, close-range machine braking.",
+   "quote": "Short minimum range matters for slow, close-range machine braking.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t150",
+    "t1",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Vendor statements that radar emulation systems produce realistic or full-scene environments do not prove equivalence to every mine or quarry multipath or weather condition.",
+   "quote": "Vendor statements that such systems produce \"realistic\" or \"full-scene\" environments are vendor claims, not proof of equivalence to every mine or quarry multipath or weather condition.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    6
+   ],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t150",
+    "t234",
+    "t102",
+    "t267"
+   ],
+   "importance": 3
+  }
+ ]
+}

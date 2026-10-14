@@ -1,0 +1,622 @@
+{
+ "chunkId": "k279",
+ "hash": "b2be640eefd0a6fe",
+ "facts": [
+  {
+   "text": "Li et al. (CVPR 2024) showed that open-loop planning metrics on the nuScenes benchmark could be matched using the vehicle's own state alone, producing a misleading impression and potentially biased benchmark conclusions.",
+   "quote": "Li et al. (CVPR 2024) showed that open-loop planning metrics on the nuScenes benchmark could be matched using the vehicle's own state alone, giving a \"misleading impression\" and \"potentially biased conclusions drawn from existing benchmarks\".",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    18
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "nuScenes",
+     "kind": "dataset"
+    },
+    {
+     "name": "CVPR 2024",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t154",
+    "t267",
+    "t107"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "After a braking command, the recorded future of the scene and operator is no longer valid for the braking counterfactual.",
+   "quote": "After a braking command, the recorded future of the scene and of the operator is no longer valid.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t154",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Before the new system commands braking during replay, recorded machine pose, object poses and sensor measurements are valid historical evidence.",
+   "quote": "Before the new system commands braking, the recorded machine pose, object poses and sensor measurements are valid historical evidence.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    20
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The counterfactual machine first diverges from the recorded machine at the first brake command that did not occur in the original run.",
+   "quote": "At the first brake command that did not occur in the original run, the counterfactual machine begins to differ from the recorded one.",
+   "kind": "definition",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    20
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t154",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "After a brake command absent from the original run, feeding original sensor records while pretending the virtual machine has slowed is physically inconsistent.",
+   "quote": "After that instant, feeding the original sensor record while pretending the virtual machine has slowed is physically inconsistent.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    20
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t154",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Recorded data can validly establish whether a new system would have detected an object and requested intervention before time t on the historical trajectory.",
+   "quote": "Recorded data can therefore validly answer \"would the new system have detected the object and requested intervention before time t on this historical trajectory?\".",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    20
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t86",
+    "t185"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Recorded data alone cannot establish whether the counterfactual machine would actually have stopped safely.",
+   "quote": "They cannot answer \"would the machine actually have stopped safely, what would the subsequent sensor measurements have been, or would another participant have reacted?\".",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    20
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t170",
+    "t154"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Recorded data alone cannot establish subsequent sensor measurements or another participant's reaction after counterfactual braking.",
+   "quote": "They cannot answer \"would the machine actually have stopped safely, what would the subsequent sensor measurements have been, or would another participant have reacted?\".",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    20
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t154",
+    "t196"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The replay-to-simulation workflow starts with recorded sensors, machine state and truth, and checks for the first brake command absent from the old run.",
+   "quote": "A[Recorded log: sensors, machine state, truth] --> B{First brake command the old run did not contain?}",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t105",
+    "t121"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Before a brake command absent from the old run, open-loop replay evaluates detection, false alarms, warning and trigger timing, with evidence classified as measured.",
+   "quote": "B -- No --> C[Open-loop replay: detection, false alarms, warning and trigger timing]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t32",
+    "t185",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "At a brake command absent from the old run, the replay workflow branches to a machine model that consumes the brake command, followed by sensor and environment models that regenerate observations.",
+   "quote": "B -- Yes --> D[Branch: machine model consumes brake command]\n    D --> E[Sensor and environment model regenerates observations]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t154",
+    "t179",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "After branching from replay, closed-loop SIL or HIL evaluates stopping distance, clearance and secondary hazards.",
+   "quote": "E --> F[Closed-loop SIL or HIL: stopping distance, clearance, secondary hazards]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t148",
+    "t170",
+    "t195"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Evidence from the branched closed-loop SIL or HIL stage is classified as model-dependent.",
+   "quote": "F --> I[Evidence status: model-dependent]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t70",
+    "t125",
+    "t154"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The replay-to-simulation workflow sends selected cases to VIL or proving-ground stopping tests per braking class.",
+   "quote": "F --> G[Selected cases: VIL or proving-ground stop per braking class]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t158",
+    "t216"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Selected VIL or proving-ground stopping tests provide measured evidence for only a few cases in the replay-to-simulation workflow.",
+   "quote": "G --> J[Evidence status: measured, few cases]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t158",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A documented on-road method evaluates perception and warning open-loop on logs only up to the decision point.",
+   "quote": "Perception and warning are evaluated open-loop on logs up to the decision point.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t154",
+    "t155",
+    "t85"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A documented on-road method evaluates braking decisions on logs as counterfactual trigger analysis: whether the system would have intervened at time t.",
+   "quote": "The decision to brake is evaluated as \"would have intervened at time t\" on logs (counterfactual trigger analysis).",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "counterfactual trigger analysis",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t185",
+    "t155"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Documented on-road practice evaluates braking consequences in closed-loop simulation or physical tests rather than open-loop logs.",
+   "quote": "Braking consequences are evaluated in closed-loop simulation or physical tests.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t154",
+    "t216",
+    "t170"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NAVSIM is a non-reactive benchmark that scores short planned trajectories.",
+   "quote": "NAVSIM is \"non-reactive\" and scores short planned trajectories;",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    19
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "NAVSIM",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t154",
+    "t107"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Cao et al.'s pseudo-simulation (CoRL 2025) uses pre-generated 3D Gaussian Splatting views to approximate closed-loop evaluation.",
+   "quote": "\"pseudo-simulation\" (Cao et al., CoRL 2025) uses pre-generated 3D Gaussian Splatting views to approximate closed-loop evaluation.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    19
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "pseudo-simulation",
+     "kind": "method"
+    },
+    {
+     "name": "3D Gaussian Splatting",
+     "kind": "method"
+    },
+    {
+     "name": "CoRL 2025",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In a log-to-simulation switch, the historical prefix supplies a realistic initial world state.",
+   "quote": "The historical prefix supplies a realistic initial world state.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    21
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "log-to-simulation switch",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t155",
+    "t154",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "At the intervention point in a log-to-simulation switch, a machine-dynamics model consumes the real brake command and updates speed and pose; regenerated sensor or environment observations feed the controller again, closing the loop with reactive agents.",
+   "quote": "At the intervention point a machine-dynamics model consumes the real brake command and updates speed and pose, a sensor or environment model regenerates the next observations for the new state, and the new outputs feed the controller again, closing the loop with reactive agents.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    21
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "log-to-simulation switch",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t154",
+    "t179",
+    "t185",
+    "t196"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM OSI interfaces are intended for model interconnection of the kind needed to branch from replay into closed-loop simulation.",
+   "quote": "ASAM OSI's interfaces are intended for this class of model interconnection",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    21
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "ASAM OSI",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t138",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Automotive HIL products implement the real-time ECU and I/O portion of replay-to-simulation model interconnection, according to vendor evidence.",
+   "quote": "automotive HIL products implement the real-time ECU and I/O part.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    41
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t119",
+    "t153"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "HUGSIM (December 2024) is an example of a neural closed-loop simulator.",
+   "quote": "*Neural closed-loop simulators* such as HUGSIM (December 2024).",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    62
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "HUGSIM",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t126",
+    "t154",
+    "t116"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "HUGSIM's authors document lane distortion in extrapolated views.",
+   "quote": "Their authors document lane distortion in extrapolated views.",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    62
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "HUGSIM",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t261",
+    "t165",
+    "t116"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "After branching from replay into simulation, evidence trustworthiness depends on the machine, terrain, target-behaviour and sensor models.",
+   "quote": "Once the branch is taken, the evidence is only as trustworthy as the machine, terrain, target-behaviour and sensor models.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t125",
+    "t154"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The 2024 VIL survey identifies virtual-scenario and sensor-model fidelity, along with physical stimulus or testbench error, as determinants of test accuracy.",
+   "quote": "The 2024 VIL survey identifies virtual-scenario and sensor-model fidelity and physical stimulus or testbench error as determinants of test accuracy.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    20
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "2024 VIL survey",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t151",
+    "t125",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Model-trustworthiness concerns after branching are more serious off-road because tire or track to soil interaction, grade, payload, articulation, loose aggregate and dust are more variable than paved-road dynamics.",
+   "quote": "This warning is more serious off-road, where tire or track to soil interaction, grade, payload, articulation, loose aggregate and dust are more variable than paved-road dynamics.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t180",
+    "t173",
+    "t168",
+    "t102"
+   ],
+   "importance": 3
+  }
+ ]
+}

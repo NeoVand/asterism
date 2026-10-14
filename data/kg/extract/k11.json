@@ -1,0 +1,555 @@
+{
+ "chunkId": "k11",
+ "hash": "fb96fbd6ed1a39b2",
+ "facts": [
+  {
+   "text": "Replay of raw sensor logs against independent ground truth is the established method for baselining an existing warning system without driving the machine.",
+   "quote": "Replay of raw sensor logs against an independent ground truth is the established way to baseline the existing warning system without driving the machine.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    7,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t221",
+    "t105",
+    "t266"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Raw sensor-log replay measures detection, false alarms and warning timing only for the sensors, mounting positions and scenarios actually recorded.",
+   "quote": "It measures detection, false alarms and warning timing only for the sensors, mounting positions and scenarios that were actually recorded",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    7,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t86",
+    "t32",
+    "t100",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Raw sensor-log replay does not retest anything upstream of the re-injection point, including the lens, imager, antenna, contamination, vibration and glare.",
+   "quote": "everything upstream of the re-injection point (lens, imager, antenna, contamination, vibration, glare) is not retested.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    7,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t149",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor-log recording must start in October 2026 and continue through the winter.",
+   "quote": "Recording must start now, in October 2026, including through the winter",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    7,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t45",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The validation window of mid-2027 plus four months contains no northern cold season.",
+   "quote": "the validation window of mid-2027 plus four months contains no northern cold season",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    7,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t45"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ground truth must be independent of the system under test; using the production detector's own output as truth is circular.",
+   "quote": "Ground truth must be independent of the system under test; using the production detector's own output as truth is circular.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t231"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The documented ground-truth approach combines surveyed targets, a reference lidar with RTK-GNSS/INS, and audited auto-labels.",
+   "quote": "A hybrid of surveyed targets, a reference lidar with RTK-GNSS/INS, and audited auto-labels is the documented approach",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t92",
+    "t98",
+    "t106"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Independent off-road field data on warning-system alarms are old and sparse.",
+   "quote": "Independent off-road field data are old and sparse",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    4,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t70",
+    "t32",
+    "t266"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The best hard false-alarm figure cited remains a 2006 NIOSH study on a Caterpillar 793B, in which 18% of alarms were false.",
+   "quote": "the best hard false-alarm figure is still a 2006 NIOSH study on a Caterpillar 793B, where 18% of alarms were false",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    4,
+    7
+   ],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    },
+    {
+     "name": "Caterpillar 793B",
+     "kind": "machine"
+    }
+   ],
+   "terms": [
+    "t32",
+    "t266",
+    "t308"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the 2006 NIOSH study on a Caterpillar 793B, 42% of alarms were nuisance alarms.",
+   "quote": "a 2006 NIOSH study on a Caterpillar 793B, where 18% of alarms were false and 42% were nuisance alarms",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    4,
+    7
+   ],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    },
+    {
+     "name": "Caterpillar 793B",
+     "kind": "machine"
+    }
+   ],
+   "terms": [
+    "t32",
+    "t266",
+    "t308"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the 2006 NIOSH study on a Caterpillar 793B, the audible alarm was found switched off after shifts.",
+   "quote": "and the audible alarm was found switched off after shifts",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    4,
+    7
+   ],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    },
+    {
+     "name": "Caterpillar 793B",
+     "kind": "machine"
+    }
+   ],
+   "terms": [
+    "t34",
+    "t266"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Fair comparison of old and new systems requires comparison at the system-output level in world or risk coordinates, ideally recorded in parallel on the same machine.",
+   "quote": "Old and new systems can be compared fairly only at the system-output level, in world or risk coordinates, ideally recorded in parallel on the same machine",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t221"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Fair system-output comparison uses warnings and interventions per hazard, missed hazards, false and nuisance alarms per hour, and warning time-to-collision against common ground truth and a common hazard zone, such as the ISO 21815-3 risk area.",
+   "quote": "warnings and interventions per hazard, missed hazards, false and nuisance alarms per hour, and warning time-to-collision against a common ground truth and a common hazard zone such as the ISO 21815-3 risk area.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t222",
+    "t224",
+    "t105",
+    "t111",
+    "t187"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Raw detections and per-sensor statistics cannot be compared fairly when sensor modality, mounting or processing changes.",
+   "quote": "Raw detections and per-sensor statistics are not comparable when modality, mounting or processing changes",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t86",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Automatic braking invalidates open-loop replay at the first brake command absent from the old run; after that command, the recorded future no longer represents the future the machine would have experienced.",
+   "quote": "Automatic braking breaks open-loop replay at a definable point: the first brake command the old run did not contain. After it, the recorded future is no longer the future the machine would have experienced.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t154",
+    "t25"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Perception and brake-trigger timing are tested open-loop on recorded logs.",
+   "quote": "Perception and trigger timing are tested open-loop on logs",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t85",
+    "t185",
+    "t155",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Braking consequences are tested using closed-loop simulation, hardware-in-the-loop and proving-ground tests.",
+   "quote": "braking consequences are tested in closed-loop simulation, hardware-in-the-loop and on a proving ground",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    1,
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t154",
+    "t148",
+    "t158",
+    "t25"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Matching the old warning system is the wrong target for an automatic-braking system.",
+   "quote": "\"Match the old system\" is the wrong target.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    2,
+    3,
+    4,
+    8,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t221",
+    "t222",
+    "t25"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Adding a brake command brings a system within the scope of ISO 19014-2.",
+   "quote": "Adding a brake command moves the system into the scope of ISO 19014-2",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    2,
+    3,
+    4,
+    8,
+    13
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t48",
+    "t25"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 19014-2 excludes awareness systems that do not affect machine motion.",
+   "quote": "ISO 19014-2, which excludes awareness systems that do not affect machine motion.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    2,
+    3,
+    4,
+    8,
+    13
+   ],
+   "entities": [
+    {
+     "name": "ISO 19014-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t48",
+    "t23"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Automatic braking is a new safety-control function with its own hazards.",
+   "quote": "Automatic braking is a new safety-control function with its own hazards",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    2,
+    3,
+    4,
+    8,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t25",
+    "t48",
+    "t40"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Unnecessary braking is the dominant documented automatic-braking failure mode on the road, based on NHTSA investigations covering millions of vehicles.",
+   "quote": "unnecessary braking is the dominant documented failure mode on the road (NHTSA investigations covering millions of vehicles)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [
+    2,
+    3,
+    4,
+    8,
+    13
+   ],
+   "entities": [
+    {
+     "name": "NHTSA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t31",
+    "t40",
+    "t296"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Nuisance interventions are the main documented reason deployed proximity systems were disabled in mining.",
+   "quote": "nuisance interventions are the main documented reason deployed proximity systems were disabled in mining",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    2,
+    3,
+    4,
+    8,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t34",
+    "t24",
+    "t28",
+    "t31"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A rapid stop can destabilize a machine on a slope, with a suspended load or while loading a trailer.",
+   "quote": "a rapid stop can destabilize a machine on a slope, with a suspended load or while loading a trailer",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    2,
+    3,
+    4,
+    8,
+    13
+   ],
+   "entities": [],
+   "terms": [
+    "t195",
+    "t178",
+    "t173",
+    "t40"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Automatic-braking safety analysis must separately analyze failure to intervene when needed and intervention when unsafe or unnecessary.",
+   "quote": "Two safety functions must be analyzed separately: failure to intervene when needed, and intervention when it is unsafe or unnecessary",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    3
+   ],
+   "entities": [],
+   "terms": [
+    "t47",
+    "t48",
+    "t25",
+    "t40"
+   ],
+   "importance": 3
+  }
+ ]
+}

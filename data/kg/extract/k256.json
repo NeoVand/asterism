@@ -1,0 +1,573 @@
+{
+ "chunkId": "k256",
+ "hash": "79e0bcfb8ded3b30",
+ "facts": [
+  {
+   "text": "Function-level validity of perception and fusion software was not covered by the seven questions. Sensor realism matters only insofar as it changes detection, tracking and braking decisions, and validation should be judged using function-level outcomes such as false brakes and missed brakes.",
+   "quote": "Sensor realism matters only as far as it changes the decisions of the detection, tracking and braking logic; validation should be judged at the function level, for example false brakes and missed brakes.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t85",
+    "t99",
+    "t256",
+    "t62"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Braking and machine dynamics were not covered by the seven questions: payload, grade, tyre or track interaction with mud, gravel and loose material, hydraulic brake response, drivetrain delay, slip, articulation and brake temperature change stopping distance.",
+   "quote": "Payload, grade, tyre or track interaction with mud, gravel and loose material, hydraulic brake response, drivetrain delay, slip, articulation and brake temperature change stopping distance.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t170",
+    "t179",
+    "t182",
+    "t174",
+    "t168"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815 covers speed reduction, stopping and motion inhibition, but not steering away from objects.",
+   "quote": "ISO 21815 covers speed reduction, stopping and motion inhibition, not steering away from objects [1, 2].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    1,
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815 series",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Even perfect sensor simulation cannot validate a safety function when the braking and machine-dynamics models are wrong.",
+   "quote": "A perfect sensor simulation cannot validate the safety function if these models are wrong.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t48",
+    "t179",
+    "t182",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "False-positive braking was not covered by the seven questions. Unnecessary braking triggered by dust, rain clutter or the machine's own attachments is a safety and productivity issue.",
+   "quote": "False-positive braking. Unnecessary braking triggered by dust, rain clutter or the machine's own attachments is a safety and productivity issue",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t31",
+    "t102",
+    "t104",
+    "t40"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Rain clutter at short range is documented for 77 GHz radar.",
+   "quote": "rain clutter at short range is documented for 77 GHz radar [43].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    43
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t102",
+    "t104"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Time synchronization and latency were not covered by the seven questions. A braking function can fail despite realistic individual sensor values if timestamping, rolling or scanning acquisition, network delays, ECU scheduling or actuator latency are wrong.",
+   "quote": "A braking function can fail even when individual sensor values look realistic if timestamping, rolling or scanning acquisition, network delays, ECU scheduling or actuator latency are wrong",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t101",
+    "t172",
+    "t88",
+    "t119"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM's high-fidelity project identifies bidirectional sensor-ECU behaviour as an open interface issue.",
+   "quote": "ASAM's high-fidelity project names bidirectional sensor-ECU behaviour as an open interface issue [91].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    91
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t119",
+    "t84",
+    "t138"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Self-occlusion and moving attachments were not covered by the seven questions: booms, buckets and dump bodies enter the sensor field of view.",
+   "quote": "Self-occlusion and moving attachments. Booms, buckets and dump bodies enter the field of view",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t103",
+    "t87"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-3 states that machine heights beyond the travel position are out of scope.",
+   "quote": "ISO 21815-3 notes that machine heights beyond the travel position are out of scope [2].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    2
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t103"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The machine's self-generated environment was not covered by the seven questions. A loader, haul truck or excavator creates dust, spray, shadows and vibration, while its payload alters reflections.",
+   "quote": "A loader, haul truck or excavator creates its own dust, spray, shadows and vibration, and its payload alters reflections.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t2",
+    "t3",
+    "t5",
+    "t168"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Host-machine dust is coupled to machine speed, ground material and wind; representing dust as a static fog volume may miss important correlations.",
+   "quote": "Host-machine dust is coupled to machine speed, ground material and wind, so treating \"dust\" as a static fog volume may miss important correlations.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t125",
+    "t169",
+    "t174"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Contamination dynamics and cleaning systems were not covered by the seven questions. Mud and water accumulation, movement, drying and removal by heating, washers, wipers or air knives matter more than a static “20% obscured” sensor state.",
+   "quote": "How mud and water accumulate, move, dry or are removed by heating, washers, wipers or air knives matters more than a static \"20% obscured\" state",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t103",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Quantitative simulator validation of contamination dynamics and cleaning processes for heavy machinery was not found.",
+   "quote": "quantitative simulator validation of these processes for heavy machinery was not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t103",
+    "t234",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The seven questions did not cover sensor ageing, temperature, electromagnetic compatibility or interference between multiple radars or lidars on one machine or at one site.",
+   "quote": "Sensor ageing, temperature, electromagnetic compatibility and interference between multiple radars or lidars on one machine or at one site.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t84",
+    "t123",
+    "t94",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Cross-sensor consistency was not covered by the seven questions. A single synthetic scene must provide mutually consistent geometry and timing for camera, radar, lidar, thermal and ultrasonic sensors; validating sensors separately does not prove the fused stack correct.",
+   "quote": "A single synthetic scene must give camera, radar, lidar, thermal and ultrasonic sensors mutually consistent geometry and timing; validating each sensor separately does not prove the fused stack is correct.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t99",
+    "t101",
+    "t130",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No public mining or construction adverse-weather sensor dataset suited to model validation was found, apart from MINE4DRAD, a 4D radar open-pit dataset, and real-dust lidar sets.",
+   "quote": "No public mining or construction adverse-weather sensor dataset suited to model validation was found, apart from MINE4DRAD (4D radar, open pit) and real-dust lidar sets [23, 50].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    23,
+    50
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MINE4DRAD",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t107",
+    "t102",
+    "t237",
+    "t94",
+    "t92"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Automatically reconstructed meshes contained artifacts severe enough to occlude the virtual radar and produce empty frames, and the meshes were too large to clean manually.",
+   "quote": "Automatically reconstructed meshes contained artifacts severe enough to occlude the virtual radar and produce empty frames, and were too large to clean manually [31].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    31
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t131",
+    "t133",
+    "t94",
+    "t103"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Digital-twin reconstruction error was not covered by the seven questions. Reconstructing hundreds of job sites from scans does not automatically produce simulation-ready truth.",
+   "quote": "Reconstructing hundreds of job sites from scans does not automatically create simulation-ready truth.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t129",
+    "t132",
+    "t105",
+    "t130"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Firmware and model drift were not covered by the seven questions. A supplier can change firmware, thresholds or processing without changing the installation.",
+   "quote": "Firmware and model drift. A supplier can change firmware, thresholds or processing without changing the installation",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t188",
+    "t162",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A calibrated sensor model needs configuration and version traceability and regression tests.",
+   "quote": "a calibrated model needs configuration and version traceability and regression tests.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t64",
+    "t162",
+    "t161"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The seven questions did not cover tool qualification, configuration management or reproducibility of the simulation toolchain itself.",
+   "quote": "Tool qualification, configuration management and reproducibility of the simulation toolchain itself.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t320",
+    "t162",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Scenario coverage was not covered by the seven questions. Even a perfect sensor model does not establish whether tests contain the right pedestrian, vehicle, boulder, berm, structure, drop-off, machine-to-machine and occlusion cases, with the right frequency and severity combinations.",
+   "quote": "Even a perfect model does not answer whether the test set contains the right pedestrian, vehicle, boulder, berm, structure, drop-off, machine-to-machine and occlusion cases and their frequency and severity combinations",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t143",
+    "t198",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The 100-plus site types and 10-plus scenarios per machine create a scenario-coverage problem separate from sensor physics.",
+   "quote": "the 100-plus site types and 10-plus scenarios per machine create a coverage problem separate from sensor physics.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t44",
+    "t142",
+    "t198",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Off-road standards and regulation—ISO 21815 series, ISO 16001, ISO 17757, ISO 19014, ISO 25119 and EU Machinery Regulation 2023/1230—do not define simulation-credibility acceptance.",
+   "quote": "Off-road standards (ISO 21815 series; ISO 16001, ISO 17757, ISO 19014, ISO 25119 and the EU Machinery Regulation 2023/1230) do not define simulation-credibility acceptance",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815 series",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 17757",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 19014 series",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 25119",
+     "kind": "standard"
+    },
+    {
+     "name": "EU Machinery Regulation 2023/1230",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t234",
+    "t62",
+    "t271",
+    "t275"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The research did not verify current versions and dates of ISO 16001, ISO 17757, ISO 19014, ISO 25119 or EU Machinery Regulation 2023/1230; ISO 21815 parts were the exception to the lack of verification.",
+   "quote": "their current versions and dates were not verified in this research except the ISO 21815 parts.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 17757",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 19014 series",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 25119",
+     "kind": "standard"
+    },
+    {
+     "name": "EU Machinery Regulation 2023/1230",
+     "kind": "regulation"
+    },
+    {
+     "name": "ISO 21815 series",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t271",
+    "t275",
+    "t274"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Credibility frameworks NATM and DCAS are on-road frameworks and would require adaptation for off-road use.",
+   "quote": "Credibility frameworks (NATM, DCAS) are on-road and would have to be adapted [82, 83].",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    82,
+    83
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NATM",
+     "kind": "method"
+    },
+    {
+     "name": "DCAS",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t234",
+    "t295"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An ISO lidar test-method draft, ISO/DIS 13228:2026, is cited in 2026 literature.",
+   "quote": "An ISO lidar test-method draft (ISO/DIS 13228:2026) is cited in 2026 literature [86].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    86
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/DIS 13228",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t279",
+    "t274"
+   ],
+   "importance": 2
+  }
+ ]
+}

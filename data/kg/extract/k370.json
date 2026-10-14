@@ -1,0 +1,91 @@
+{
+ "chunkId": "k370",
+ "hash": "a34e16da3bc0f219",
+ "facts": [
+  {
+   "text": "The test traceability chain links a hazard to a safety requirement, a functional performance requirement, a logical scenario, a test case, a run, a result, and an evidence item in the safety case, in that order.",
+   "quote": "Hazard, then safety requirement, then functional performance requirement",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t64",
+    "t162",
+    "t67",
+    "t63",
+    "t141"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An EMESRT PR-5A objective or an ISO 21815 risk level can serve as the functional performance requirement in the test traceability chain.",
+   "quote": "functional performance requirement (for example an EMESRT PR-5A objective or an ISO 21815 risk level)",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMESRT PR-5A",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 21815",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t63",
+    "t64",
+    "t304",
+    "t280"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 34505 defines test-case attributes comprising unified identifiers, objectives, inputs, steps, platforms, and expected results.",
+   "quote": "ISO 34505 defines the test-case attributes (unified identifiers, objectives, inputs, steps, platforms, expected results) [12].",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    12
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 34505",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t143",
+    "t290",
+    "t162"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The minimum manifest stored with each test run includes requirement ID, hazard ID, scenario-family ID and version, concrete parameter vector, operating-domain tags, machine configuration, sensor hardware, extrinsics and calibration, software build or commit, calibration or parameter-set hash, simulator, test-rig or model version, random seed, environmental measurements, execution timestamp, raw-data IDs and checksums, oracle or metric version, verdict, deviations and issues.",
+   "quote": "The minimum manifest stored with each run is:",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t162",
+    "t341",
+    "t64",
+    "t121",
+    "t233"
+   ],
+   "importance": 3
+  }
+ ]
+}

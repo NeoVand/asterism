@@ -1,0 +1,562 @@
+{
+ "chunkId": "k284",
+ "hash": "38ab448071e9fa3b",
+ "facts": [
+  {
+   "text": "Machine recordings should include measurable light, visibility and weather where possible; precipitation and dust state; surface and grade; site type and scenario tag; and machine load and attachment state.",
+   "quote": "Measurable light, visibility and weather where possible, precipitation and dust state, surface, grade, site type and scenario tag, machine load and attachment state.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t102",
+    "t173",
+    "t140",
+    "t168"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A coarse human environmental tag such as \"rain\" is useful but cannot replace measurable context when environmental sensitivity becomes a safety claim.",
+   "quote": "A coarse human tag such as \"rain\" is useful but cannot substitute for measurable context once environmental sensitivity becomes a safety claim.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t102",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 19014-3 recognizes environmental performance testing of safety-related electrical and electronic components; the passage marks the standard as under revision.",
+   "quote": "ISO 19014-3 separately recognizes environmental performance testing of safety-related electrical and electronic components. **Independent (under revision)** [64].",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    64
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t48",
+    "t102",
+    "t274"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Machine recordings should preserve exact software and hardware provenance: software binary, version and commit; configuration and calibration files; ECU and sensor firmware; interface, DBC and message-schema versions; feature flags; machine configuration; checksums; and logging-software version.",
+   "quote": "Software binary, version and commit, configuration and calibration files, ECU and sensor firmware, interface, DBC and message-schema versions, feature flags, machine configuration, checksums and logging-software version.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t162",
+    "t119",
+    "t120",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 19014-4 addresses software and signal-transmission requirements for safety-related machine control; the passage marks the standard as under revision.",
+   "quote": "ISO 19014-4 addresses software and signal-transmission requirements for safety-related machine control",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    65
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t48",
+    "t274"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Reproducible configuration control is more than a convenience once braking affects machine motion, in the context of ISO 19014-4 software and signal-transmission requirements.",
+   "quote": "so reproducible configuration control is more than a convenience once braking affects motion.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    65
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t162",
+    "t28",
+    "t281"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A secondary summary by an engineering consultancy reports that the EU Machinery Regulation requires recording data on safety-related decisions and software versions for some machinery.",
+   "quote": "The EU Machinery Regulation is reported to require recording of data on safety-related decisions and software versions for some machinery (secondary summary by an engineering consultancy).",
+   "kind": "requirement",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    66
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EU Machinery Regulation 2023/1230",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t298",
+    "t121",
+    "t162"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "MOSH tests \"log keeping\" at TRL4.",
+   "quote": "MOSH tests \"log keeping\" at TRL4. **Independent** [16].",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    16
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t307",
+    "t248",
+    "t121"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Machine recordings should include data-loss counters and logging-system health so that damaged logs are not mistaken for field behaviour.",
+   "quote": "**Data-loss counters** and logging-system health, so that a damaged log is not mistaken for field behaviour.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t155"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Recording only object lists or processed detections prevents replay with a new perception algorithm because raw camera, radar or lidar data are no longer available.",
+   "quote": "Recording only object lists or processed detections. A new perception algorithm cannot be run because the raw camera, radar or lidar data are gone.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t155",
+    "t156",
+    "t85"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Missing or stale calibration and mount geometry prevent recorded images and points from being mapped reliably to machine or world coordinates.",
+   "quote": "Missing or stale calibration and mount geometry. The images and points exist but cannot be mapped reliably to machine or world coordinates.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": true,
+   "cites": [
+    59
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t121",
+    "t155"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Unsynchronised clocks can make a timestamp offset appear to be algorithm latency of 100 to 300 ms.",
+   "quote": "Unsynchronised clocks. An apparent \"algorithm latency\" of 100 to 300 ms can be a timestamp offset",
+   "kind": "risk",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    11,
+    29
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t101",
+    "t88",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Clock errors smaller than 100 to 300 ms can still reorder fast approach events and corrupt warning-timing metrics.",
+   "quote": "even smaller errors reorder fast approach events and corrupt warning-timing metrics.",
+   "kind": "risk",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    11,
+    29
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t101",
+    "t224",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Changing or lossy compression or decimation means stored machine data are no longer what the ECU saw.",
+   "quote": "Changing or lossy compression or decimation. The stored data are no longer what the ECU saw",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t119",
+    "t155"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Lossy video compression changes detector outputs.",
+   "quote": "lossy video changes detector outputs.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t86",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Unrecorded packet or frame loss, or logging overload, can cause replay to reproduce a damaged log that engineers mistake for field behaviour.",
+   "quote": "Unrecorded packet or frame loss, or logging overload. Replay faithfully reproduces a damaged log while engineers mistake the damage for field behaviour.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t155"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Event-triggered recording only, or collecting almost exclusively staged hazards, destroys the denominator needed to estimate false alarms per hour.",
+   "quote": "Event-triggered recording only, or collecting almost exclusively staged hazards. This destroys the denominator for false alarms per hour",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t213",
+    "t32"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Event-triggered recording only, or collecting almost exclusively staged hazards, biases the detection rate toward events noticed by the old system.",
+   "quote": "This destroys the denominator for false alarms per hour and biases the detection rate toward events the old system noticed.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t109",
+    "t222"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Selecting machine recordings preferentially from good weather, day shifts and cooperative sites creates selection bias.",
+   "quote": "Selection bias toward good weather, day shifts and cooperative sites.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t45",
+    "t203"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Missing operator and HMI data prevents assessing whether a warning was useful.",
+   "quote": "Missing operator and HMI data, so nobody can tell whether a warning was useful.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t37",
+    "t36"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Without recorded machine and actuator state, detection can be replayed but TTC, risk-zone entry and future braking cannot be reconstructed.",
+   "quote": "Missing machine and actuator state. Detection can be replayed, but TTC, risk-zone entry and future braking cannot be reconstructed.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t155",
+    "t186",
+    "t187",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Missing binary and configuration provenance prevents tying a test result to an exact product state.",
+   "quote": "Missing binary and configuration provenance. A result cannot be tied to an exact product state.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t162",
+    "t64",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Failing to plan ground truth at recording time, including omitting reference sensors or target tags or using the production detector to label itself, allows missed objects to disappear from both predictions and \"truth\".",
+   "quote": "No ground-truth plan at recording time: no reference sensors or target tags, or using the production detector to label itself, so missed objects vanish from both prediction and \"truth\".",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t106",
+    "t108",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Failing to log machine configuration, including attachments and body or bucket position, omits information that changes self-occlusion and swept volume.",
+   "quote": "Not logging machine configuration (attachments, body or bucket position) that changes self-occlusion and the swept volume.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t103",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Treating recorded frames as independent trials overstates statistical confidence.",
+   "quote": "Treating frames as independent trials, so statistical confidence is overstated.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Without an \"unknown truth\" state, dust, occlusion and reference-sensor failure are forced into incorrect labels.",
+   "quote": "No \"unknown truth\" state, so dust, occlusion and reference-sensor failure are forced into wrong labels.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t106",
+    "t102",
+    "t103"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A machine-recording risk is discovering only at prototype arrival that the recorded format cannot be injected at the target interface or data rate.",
+   "quote": "Discovering at prototype arrival that the recorded format cannot be injected at the target interface or data rate.",
+   "kind": "risk",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    11,
+    29
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t149",
+    "t155",
+    "t122"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Commercial replay requirements directly reflect timing, synchronisation and input-interface risks; the cited support is vendor on-road evidence.",
+   "quote": "The timing, synchronisation and input-interface risks are reflected directly in commercial replay requirements",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    11,
+    29
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t101",
+    "t88",
+    "t149"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Current multi-sensor dataset and robotics practice reflects calibration and pose risks; the cited support is expert opinion based on on-road evidence.",
+   "quote": "the calibration and pose risks are reflected in current multi-sensor dataset and robotics practice.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": true,
+   "cites": [
+    59
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t107",
+    "t121"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The listed machine-recording mistakes other than timing, synchronisation, input-interface, calibration and pose risks are expert practice drawn from statistical and systems-engineering implications of replay requirements.",
+   "quote": "The remainder are expert practice drawn from the statistical and systems-engineering implications of those requirements",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t155",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Specific off-road studies quantifying the impact of the listed machine-recording and replay mistakes were not found.",
+   "quote": "specific off-road studies quantifying their impact were not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t155",
+    "t70"
+   ],
+   "importance": 3
+  }
+ ]
+}

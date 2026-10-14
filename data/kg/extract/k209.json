@@ -1,0 +1,221 @@
+{
+ "chunkId": "k209",
+ "hash": "78d61d6710375d56",
+ "facts": [
+  {
+   "text": "Para-Lane's authors call real recordings \"indispensable\" because synthetic scenes lack real sensor noise, whereas forestry researchers call exact twins \"insufficient\" and argue that statistically matched cousins scale better.",
+   "quote": "Para-Lane's authors call real recordings \"indispensable\" because synthetic scenes lack real sensor noise; forestry researchers call exact twins \"insufficient\" and argue statistically matched cousins scale better.",
+   "kind": "disagreement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5,
+    1
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "Para-Lane",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t129",
+    "t130",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Neither the real-replica position nor the statistically matched cousin position proves that procedural diversity captures every real long-tail case; real replicas preserve correlations and unknown clutter that generators cannot invent.",
+   "quote": "Neither proves that procedural diversity captures every real long tail, and real replicas preserve correlations and unknown clutter that generators cannot invent.",
+   "kind": "disagreement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5,
+    1
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t134",
+    "t144",
+    "t129",
+    "t104"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The physics-first realism position wants measured BRDF, dielectric and soil parameters, whereas the data-driven realism position considers a learned sensor model sufficient if it reproduces the observed output distribution.",
+   "quote": "A physics-first position wants measured BRDF, dielectric and soil parameters; a data-driven position argues that a learned sensor model reproducing the observed output distribution is sufficient.",
+   "kind": "disagreement",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t128",
+    "t117",
+    "t125",
+    "t253"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the physical-versus-learned realism debate, learned sensor models are effective near the training distribution, whereas physical models are easier to reason about when geometry and materials change substantially; the cited extrapolation failures show that neither approach has an unconditional advantage.",
+   "quote": "The learned approach is effective near the training distribution; the physical approach is easier to reason about when geometry and materials change substantially. The extrapolation failures above show why neither has an unconditional advantage.",
+   "kind": "disagreement",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t128",
+    "t261",
+    "t113",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Industry teams favour 3DGS for editability, as reported in Para-Lane (2025), whereas the XLD results show that the NeRF-based EmerNeRF and UC-NeRF held up better than the 3DGS variant PVG at 4 m offsets.",
+   "quote": "Industry teams favour 3DGS for editability (Para-Lane, 2025), yet in XLD the NeRF-based EmerNeRF and UC-NeRF held up better than the 3DGS variant PVG at 4 m offsets.",
+   "kind": "disagreement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5,
+    6
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "3DGS",
+     "kind": "method"
+    },
+    {
+     "name": "NeRF",
+     "kind": "method"
+    },
+    {
+     "name": "Para-Lane",
+     "kind": "publication"
+    },
+    {
+     "name": "XLD",
+     "kind": "dataset"
+    },
+    {
+     "name": "EmerNeRF",
+     "kind": "method"
+    },
+    {
+     "name": "UC-NeRF",
+     "kind": "method"
+    },
+    {
+     "name": "PVG",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Proponents present generative world models for validation as \"data machines,\" exemplified by a DriveDreamer4D-style claim, whereas benchmark results of 13.19 to 20.82 dB PSNR suggest that these models are not yet metric-faithful.",
+   "quote": "Proponents present them as \"data machines\" (a DriveDreamer4D-style claim); the benchmark numbers (13.19 to 20.82 dB PSNR) suggest they are not yet metric-faithful.",
+   "kind": "disagreement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    29
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "DriveDreamer4D",
+     "kind": "tool"
+    },
+    {
+     "name": "PSNR",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t115",
+    "t254",
+    "t127",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Photorealism may matter as a fidelity metric for camera perception, whereas photorealism is almost irrelevant for radar, braking dynamics and ultrasonic sensing; fidelity should therefore be decomposed by the tested requirement rather than ranked by how convincing screenshots look.",
+   "quote": "For camera perception it may matter; for radar, braking dynamics and ultrasonic sensing it is almost irrelevant, so fidelity should be decomposed by the tested requirement rather than ranked by how convincing screenshots look.",
+   "kind": "disagreement",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [
+    5
+   ],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t256",
+    "t63",
+    "t89",
+    "t94"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NIST provides strong general evidence that covering arrays shrink configuration spaces while retaining interaction coverage, but safety engineers should not infer that low-order combinations are automatically sufficient for off-road collision avoidance.",
+   "quote": "NIST provides strong general evidence that covering arrays shrink configuration spaces while keeping interaction coverage; safety engineers should not infer that low-order combinations are automatically sufficient for off-road collision avoidance.",
+   "kind": "disagreement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    27
+   ],
+   "chapters": [
+    5
+   ],
+   "entities": [
+    {
+     "name": "NIST",
+     "kind": "organization"
+    },
+    {
+     "name": "covering arrays",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t202",
+    "t198",
+    "t23",
+    "t1"
+   ],
+   "importance": 3
+  }
+ ]
+}

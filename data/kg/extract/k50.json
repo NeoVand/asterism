@@ -1,0 +1,771 @@
+{
+ "chunkId": "k50",
+ "hash": "604ec5c46a8d3705",
+ "facts": [
+  {
+   "text": "For a team starting from zero in October 2026, mapping safety and validation claims to ISO 21815 and ISO 19014 and preparing a safety-case skeleton is realistic by mid-2027. The skeleton can use ISO 13849 or IEC 62061 for the intervention chain and ISO 21448 and ISO/PAS 8800 concepts for perception.",
+   "quote": "Safety and validation claim structure mapped to ISO 21815 and ISO 19014, with a safety-case skeleton (ISO 13849 or IEC 62061 for the intervention chain; ISO 21448 and ISO/PAS 8800 concepts for perception) | Realistic",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    5,
+    9,
+    64
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 19014",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 13849",
+     "kind": "standard"
+    },
+    {
+     "name": "IEC 62061",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 21448",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO/PAS 8800",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t67",
+    "t280",
+    "t281",
+    "t287",
+    "t289"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Existing standards explicitly address collision avoidance, automatic intervention, control-system hardware and software, and environmental qualification.",
+   "quote": "Standards exist and explicitly address collision avoidance, automatic intervention, control-system hardware and software and environmental qualification [5, 9, 64]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    5,
+    9,
+    64
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t271",
+    "t28",
+    "t48"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For a team starting from zero in October 2026, an operating-domain definition and scenario catalogue mapped to ISO 21815-3 risk areas and EMESRT's PR-5A surface vehicle-interaction scenarios is realistic by mid-2027, including a machine-by-scenario-by-environment-by-sensor-condition taxonomy.",
+   "quote": "Operating-domain definition and scenario catalogue mapped to ISO 21815-3 risk areas and EMESRT's PR-5A surface vehicle-interaction scenarios; machine by scenario by environment by sensor-condition taxonomy | Realistic",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    6,
+    7,
+    11,
+    16
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    },
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    },
+    {
+     "name": "PR-5A",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t140",
+    "t142",
+    "t280",
+    "t304"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Mining practice promotes scenario-based functional requirements.",
+   "quote": "Scenario-based functional requirements are promoted in mining practice",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    6,
+    7,
+    11,
+    16
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t63",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 34502 and MineSim demonstrate structured scenario methodology, but ISO 34502 is road-specific.",
+   "quote": "ISO 34502 and MineSim show structured scenario methodology, though ISO 34502 is road-specific [6, 7, 11, 16]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    6,
+    7,
+    11,
+    16
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 34502",
+     "kind": "standard"
+    },
+    {
+     "name": "MineSim",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t141",
+    "t290",
+    "t316"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For a team starting from zero in October 2026, field logging and data architecture on the existing warning-system fleet, including through winter 2026 to 2027, is a realistic but conditional capability by mid-2027.",
+   "quote": "Field logging and data architecture on the existing warning-system fleet, including through winter 2026 to 2027 | Realistic, conditional",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    22,
+    21
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t41",
+    "t45"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Road-vehicle shadow and replay programmes establish the value of collecting real events early.",
+   "quote": "Shadow and replay programmes on the road establish the value of collecting real events early",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    22,
+    21
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t155",
+    "t121"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Whether the existing warning-system machines expose the raw data needed for field logging and replay is unknown.",
+   "quote": "whether the existing machines expose the raw data needed is unknown [22, 21]",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    22,
+    21
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t41",
+    "t155"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For a team starting from zero in October 2026, a replay and event-mining pipeline with labelled data is realistic by mid-2027 if suitable data exist.",
+   "quote": "Replay and event-mining pipeline with labelled data | Realistic if suitable data exist",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    18,
+    20
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t106"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Open-loop replay is technically mature in road autonomy.",
+   "quote": "Open-loop replay is technically mature in road autonomy",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    18,
+    20
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Public heavy-off-road case evidence for open-loop replay is sparse.",
+   "quote": "public heavy-off-road case evidence is sparse [18, 20]",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    18,
+    20
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t70",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For a team starting from zero in October 2026, an executable SIL regression framework with machine-dynamics and braking models, continuous regression, and a fault-injection campaign is realistic by mid-2027 if software interfaces can be defined.",
+   "quote": "Executable SIL regression framework with machine-dynamics and braking models, continuous regression and a fault-injection campaign | Realistic if software interfaces can be defined",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    53,
+    47
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t161",
+    "t179",
+    "t182",
+    "t56"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An executable SIL regression framework does not require the final machine.",
+   "quote": "Does not need the final machine",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    53,
+    47
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t161"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Current autonomy practice relies on virtual regression.",
+   "quote": "current autonomy practice relies on virtual regression",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    53,
+    47
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t127"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Safety-control standards require systematic treatment of failures.",
+   "quote": "safety-control standards require systematic treatment of failures [53, 47]",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    53,
+    47
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t49",
+    "t56",
+    "t271"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For a team starting from zero in October 2026, abstract closed-loop machine and site simulation is realistic by mid-2027.",
+   "quote": "Abstract closed-loop machine and site simulation | Realistic",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    16
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t154",
+    "t126",
+    "t130"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Open-source MineSim demonstrates that mining-specific closed-loop scenario infrastructure is feasible, but that capability should not be confused with validated sensor physics.",
+   "quote": "Open-source MineSim shows mining-specific closed-loop scenario infrastructure is feasible today; not to be confused with validated sensor physics [16]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    16
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MineSim",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t316",
+    "t154",
+    "t323",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For a team starting from zero in October 2026, an initial statistical test plan and coverage metrics are realistic by mid-2027 because the methods are established.",
+   "quote": "Initial statistical test plan and coverage metrics | Realistic | Methods are established",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    1,
+    32
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t200",
+    "t224",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Reliable site-frequency estimates require enough representative field data.",
+   "quote": "reliable site-frequency estimates need enough representative field data [1, 32]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    1,
+    32
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t213",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For a team starting from zero in October 2026, operator-simulator experiment capability is realistic by mid-2027 if a simulator exists or can be procured.",
+   "quote": "Operator-simulator experiment capability | Realistic if a simulator exists or can be procured",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    55
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t152",
+    "t329"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The setup duration for operator-simulator experiment capability is not documented.",
+   "quote": "setup duration not documented",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    55
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t152",
+    "t343"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A haul-truck proximity-interface simulator has been used academically.",
+   "quote": "A haul-truck proximity-interface simulator has been used academically [55]",
+   "kind": "example",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    55
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t3",
+    "t152",
+    "t37"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For a team starting from zero in October 2026, preparing physical-test procedures, a procured or adapted soft-target kit, a ground-truth specification, and independent-test-body engagement is realistic by mid-2027, using an ACARP Tier 1 and Tier 2 style protocol.",
+   "quote": "Physical-test procedures, a procured or adapted soft-target kit, ground-truth specification and engagement of an independent test body (ACARP Tier 1 and Tier 2 style protocol) | Realistic to prepare",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    6,
+    30,
+    29
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ACARP",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t158",
+    "t159",
+    "t105",
+    "t71",
+    "t306"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3 and MOSH independent-verification specifications provide a basis for physical-test preparation before prototypes arrive.",
+   "quote": "ISO 21815-3 and the MOSH independent-verification specifications give a basis before prototypes arrive [6, 30, 29]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    6,
+    30,
+    29
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    },
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t307",
+    "t71",
+    "t158"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For a team starting from zero in October 2026, preparing a machine-family and variant inheritance framework is realistic by mid-2027 because product-line assurance methods exist.",
+   "quote": "Machine-family and variant inheritance framework | Realistic to prepare | Product-line assurance methods exist",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    42,
+    43
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t230",
+    "t76"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Quantitative off-road savings from machine-family and variant inheritance are not established.",
+   "quote": "quantitative off-road savings are not established [42, 43]",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    42,
+    43
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t76",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For a team starting from zero in October 2026, early contact with a notified body is realistic by mid-2027.",
+   "quote": "Early contact with a notified body | Realistic",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    40
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t278"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The regulation cited as the basis for early notified-body contact applies from 20 January 2027.",
+   "quote": "The Regulation applies from 20 January 2027 [40]",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    40
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t275",
+    "t278"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A production-relevant HIL bench on the ISO/TS 21815-2 interface could be a mid-2027 target, but should not be on the critical path unless ECU, bus, and actuator interfaces stabilise early.",
+   "quote": "could be a mid-2027 target but should not be on the critical path unless ECU, bus and actuator interfaces stabilise early.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    23,
+    42
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t148",
+    "t344",
+    "t119",
+    "t120",
+    "t280"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "HIL is mature.",
+   "quote": "HIL is mature",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    23,
+    42
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The time required for a manufacturer with no HIL rig to model a particular machine's plant, build harnesses, implement faults, and qualify a bench is undocumented.",
+   "quote": "what is undocumented is how long a manufacturer with no rig takes to model a particular machine's plant, build harnesses, implement faults and qualify the bench.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    23,
+    42
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t56",
+    "t343"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An initial sensor simulator is achievable as an engineering artefact, and sensor models calibrated for one or two sensor types in clear and dusty conditions are plausible as conditional mid-2027 targets.",
+   "quote": "An initial sensor simulator** is achievable as an engineering artefact, and sensor models calibrated for one or two sensor types in clear and dusty conditions are plausible",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    15,
+    17
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t323",
+    "t100",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A validated production-intent camera, radar, lidar, or ultrasonic model is conditional on sensor selection, mounting, and calibration data.",
+   "quote": "a validated production-intent camera, radar, lidar or ultrasonic model is conditional on sensor selection, mounting and calibration data",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    15,
+    17
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t323",
+    "t100",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The 2025 on-road sim-to-real evidence argues against treating visually plausible synthetic weather as validation.",
+   "quote": "the 2025 sim-to-real evidence argues against treating visually plausible synthetic weather as validation.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    15,
+    17
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t165",
+    "t115",
+    "t256",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Rare-event sampling in simulation can be set up, but its results are only as good as the exposure model behind them.",
+   "quote": "Rare-event sampling in simulation** can be set up, but its results are only as good as the exposure model behind them.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    33,
+    34
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t206",
+    "t20",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Shadow infrastructure comprising fleet logging and the safety isolation mechanism can be designed early.",
+   "quote": "Shadow infrastructure** (fleet logging and the safety isolation mechanism) can be designed early",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t121"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Meaningful shadow results require candidate software and compatible sensor input.",
+   "quote": "meaningful shadow results need candidate software and compatible sensor input.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t84"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,241 @@
+{
+ "chunkId": "k255",
+ "hash": "1c048753b66ac08f",
+ "facts": [
+  {
+   "text": "Neural rendering advocates report minimal real-to-sim gaps in NeuroNCAP (2024), whereas critics cite weak extrapolation and lack of harsh-weather support in LiHi-GS and LiDAR-EVS.",
+   "quote": "Neural rendering advocates report minimal real-to-sim gaps (NeuroNCAP, 2024) [57]. Critics point to weak extrapolation and no harsh-weather support (LiHi-GS, LiDAR-EVS) [25, 26]",
+   "kind": "disagreement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    57,
+    25,
+    26
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NeuroNCAP",
+     "kind": "tool"
+    },
+    {
+     "name": "LiHi-GS",
+     "kind": "tool"
+    },
+    {
+     "name": "LiDAR-EVS",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t165",
+    "t102",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Neural rendering advocates report minimal real-to-sim gaps, while critics call in 2026 for admissibility checks before trusting a world-model verdict.",
+   "quote": "call for admissibility checks before trusting a world-model verdict (2026) [97]",
+   "kind": "disagreement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    57,
+    97
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NeuroNCAP",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t234",
+    "t116",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Physics-informed learning, exemplified by PICWGAN, is an emerging compromise between physics-based and learned simulation; whether hybrids are mature enough for safety credit rather than augmentation remains unresolved.",
+   "quote": "The emerging compromise is physics-informed learning (PICWGAN) [98]; whether such hybrids are mature enough for safety credit rather than augmentation is unresolved.",
+   "kind": "disagreement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    98
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "PICWGAN",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t128",
+    "t114",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "For generative editing as test evidence, vision-language-model jury studies say edited images match real images, whereas training-transfer studies report a remaining gap; Clear2Fog gained at most 0.0117 mAP.",
+   "quote": "Vision-language-model jury studies say it matches real images [93]; training-transfer studies say a gap remains (Clear2Fog: at most 0.0117 mAP gained) [94]",
+   "kind": "disagreement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    93,
+    94
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Clear2Fog",
+     "kind": "method"
+    },
+    {
+     "name": "mAP",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t115",
+    "t114",
+    "t256"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Vision-language-model jury studies say generative editing matches real images, while a systematic survey characterizes the field as early-stage.",
+   "quote": "Vision-language-model jury studies say it matches real images [93]; training-transfer studies say a gap remains (Clear2Fog: at most 0.0117 mAP gained) [94]; the systematic survey calls the field early-stage [99].",
+   "kind": "disagreement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    93,
+    99
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t115",
+    "t234"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Object-list proponents say object lists suffice for function testing, whereas multi-layer studies show that ideal models hide large raw-data gaps.",
+   "quote": "Object-list proponents say object lists suffice for function testing; multi-layer studies show ideal models hide large raw-data gaps [36].",
+   "kind": "disagreement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    36
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t156",
+    "t125",
+    "t149",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Against the assumption that highest physical fidelity is always the most efficient test model, RadaRays found that sophisticated reflection modelling dramatically improved image-level similarity without a similar improvement in radar odometry.",
+   "quote": "sophisticated reflection modelling improved image-level similarity dramatically but did not improve radar odometry by a similar margin",
+   "kind": "disagreement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    31
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "RadaRays",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t256",
+    "t125",
+    "t94"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Against a universal preference for highest physical fidelity, the RadaRays findings suggest that a simpler phenomenological model may suffice for one downstream function but fail for another.",
+   "quote": "a simpler phenomenological model may suffice for one downstream function and fail for another, which argues against assuming that \"highest physical fidelity\" is always the most efficient test model [31]",
+   "kind": "disagreement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    31
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "RadaRays",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t125",
+    "t256",
+    "t238"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Some research judges simulation by pixel or radar-map similarity, while other research judges correct odometry or detection behavior and safety engineering judges correct closed-loop intervention; RadaRays shows that these criteria can give different answers.",
+   "quote": "Some research evaluates pixel or radar-map similarity, some asks whether odometry or detection behaves correctly, and safety engineering ultimately cares whether the closed-loop function intervenes correctly; RadaRays shows these criteria can give different answers [31].",
+   "kind": "disagreement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    31
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "RadaRays",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t256",
+    "t254",
+    "t257",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "On the validity of weather test facilities as ground truth, a 2019 survey says chambers cannot fully replace real weather, while a 2026 paper proposes equivalent-rainfall corrections to nominal chamber intensities.",
+   "quote": "A 2019 survey says chambers cannot fully replace real weather [76]; a 2026 paper proposes equivalent-rainfall corrections to nominal chamber intensities [86].",
+   "kind": "disagreement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    76,
+    86
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t102",
+    "t234"
+   ],
+   "importance": 3
+  }
+ ]
+}

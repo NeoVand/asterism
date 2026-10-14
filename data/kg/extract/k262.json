@@ -1,0 +1,800 @@
+{
+ "chunkId": "k262",
+ "hash": "1f6dd3e0b4bee6f7",
+ "facts": [
+  {
+   "text": "Digital radar target simulators have a latency-dependent minimum simulated range: each 6.67 ns of latency adds 1 m.",
+   "quote": "Digital radar target simulators have a minimum simulated range set by latency (each 6.67 ns adds 1 m)",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    22,
+    23,
+    24,
+    25,
+    12,
+    20
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t94",
+    "t88"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2021 peer-reviewed review reports minimum simulated ranges of about 20 to 30 m and single-digit target counts for digital radar target simulators.",
+   "quote": "a 2021 peer-reviewed review gives about 20 to 30 m and single-digit target counts for digital systems",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    22,
+    23,
+    24,
+    25,
+    12,
+    20
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t94"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Vendors claim radar target simulators can simulate ranges of 0.6 m and up to five objects.",
+   "quote": "vendors claim 0.6 m and up to five objects",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    22,
+    23,
+    24,
+    25,
+    12,
+    20
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t94"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Camera monitor stimulation suffers from frame-sync and field-of-view problems.",
+   "quote": "Camera monitor stimulation suffers from frame-sync and field-of-view problems",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    22,
+    23,
+    24,
+    25,
+    12,
+    20
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t89",
+    "t101",
+    "t87"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Lidar stimulation, especially for solid-state lidar, remains a gap.",
+   "quote": "lidar stimulation, especially for solid-state lidar, is identified as a remaining gap",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    22,
+    23,
+    24,
+    25,
+    12,
+    20
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t92"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ultrasonic stimulation exists only for automotive parking functions.",
+   "quote": "ultrasonic stimulation exists for automotive parking functions only",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    22,
+    23,
+    24,
+    25,
+    12,
+    20
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t95"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The described radar, camera, lidar and ultrasonic stimulation hardware does not reproduce terrain clutter, dust plumes or multipath from steel structures.",
+   "quote": "None of this reproduces terrain clutter, dust plumes or multipath from steel structures",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    22,
+    23,
+    24,
+    25,
+    12,
+    20
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t104",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Workers at 0.5 to 5 m behind a machine occupy the range where digital radar simulators are weakest.",
+   "quote": "workers at 0.5 to 5 m behind a machine are exactly where digital radar simulators are weakest",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    22,
+    23,
+    24,
+    25,
+    12,
+    20
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t14",
+    "t150",
+    "t94",
+    "t16"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Ground truth must be independent of the system under test; using the production detector's own output as truth is circular.",
+   "quote": "Ground truth must be independent of the system under test, and a hybrid is needed.** Using the production detector's own output as truth is circular.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    26,
+    27,
+    28,
+    29
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A hybrid ground-truth approach is needed, using surveyed targets to anchor accuracy, reference lidar plus RTK-GNSS/INS for continuous distance and timing truth, and auto-labeling with human audit to cover volume.",
+   "quote": "Surveyed targets anchor accuracy, a reference lidar plus RTK-GNSS/INS gives continuous distance and timing truth, auto-labeling with human audit covers volume",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    26,
+    27,
+    28,
+    29
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t106",
+    "t92",
+    "t98"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The ground-truth reference system needs its own uncertainty budget and a \"truth unavailable\" state.",
+   "quote": "the reference system needs its own uncertainty budget and a \"truth unavailable\" state",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    26,
+    27,
+    28,
+    29
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t259"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Auto-labels have matched or beaten single-pass human labels for lidar boxes on roads in 3DAL (2021) and DetZero (2023).",
+   "quote": "Auto-labels have matched or beaten single-pass human labels for lidar boxes on roads (3DAL 2021, DetZero 2023)",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    26,
+    27,
+    28,
+    29
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "3DAL",
+     "kind": "method"
+    },
+    {
+     "name": "DetZero",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t106",
+    "t92"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No off-road validation of auto-labeling for workers or machines near heavy equipment was found.",
+   "quote": "but no off-road validation for workers or machines near heavy equipment was found",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    26,
+    27,
+    28,
+    29
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t14",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "There is no universal amount of data required for validation; sample size follows the claim being demonstrated.",
+   "quote": "There is no universal \"how much data\" number; sample size follows the claim",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    30,
+    31,
+    32
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t62"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Demonstrating at least 95% detection with 95% confidence requires at least 59 consecutive successful encounters per stratum.",
+   "quote": "Demonstrating at least 95% detection with 95% confidence needs at least 59 consecutive successful encounters per stratum",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    30,
+    31,
+    32
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t210",
+    "t109"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Demonstrating at least 99% detection with 95% confidence requires at least 299 consecutive successful encounters per stratum.",
+   "quote": "Demonstrating at least 95% detection with 95% confidence needs at least 59 consecutive successful encounters per stratum, 99% needs 299",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    30,
+    31,
+    32
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t210",
+    "t109"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Showing fewer than 0.1 false alarms per hour requires at least 30 failure-free hours per condition.",
+   "quote": "showing fewer than 0.1 false alarms per hour needs at least 30 failure-free hours per condition",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    30,
+    31,
+    32
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t32",
+    "t209",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The unit of analysis for detection validation is the independent encounter, not the sensor frame, because a ten-second encounter yields hundreds of correlated frames.",
+   "quote": "The unit of analysis is the independent encounter, not the sensor frame, because a ten-second encounter yields hundreds of correlated frames.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    30,
+    31,
+    32
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t210"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Across 100+ site types, 10+ scenarios, seven or so conditions and many machine models, validation strata exceed 7,000 cells.",
+   "quote": "Across 100+ site types, 10+ scenarios, seven or so conditions and many models the strata exceed 7,000 cells",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    30,
+    31,
+    32
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t198",
+    "t44",
+    "t143",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Exhaustive field coverage of the more than 7,000 validation cells is infeasible, making stratified sampling plus simulation unavoidable.",
+   "quote": "the strata exceed 7,000 cells, so exhaustive field coverage is infeasible and stratified sampling plus simulation is unavoidable",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    30,
+    31,
+    32
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t198",
+    "t203",
+    "t216"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "RAND reached the same conclusion in 2016 for road vehicles: exhaustive field coverage is infeasible and stratified sampling plus simulation is unavoidable.",
+   "quote": "exhaustive field coverage is infeasible and stratified sampling plus simulation is unavoidable; RAND reached the same conclusion for road vehicles in 2016",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    30,
+    31,
+    32
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "RAND Corporation",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t215",
+    "t203",
+    "t216"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Old and new systems can be compared fairly only at the system-output level in world or risk coordinates, ideally recorded in parallel on the same machine.",
+   "quote": "Old and new systems can be compared fairly only at the system-output level, in world or risk coordinates, ideally recorded in parallel on the same machine.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    4,
+    33,
+    34
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Comparable old-versus-new system metrics are warnings and interventions per hazard, missed hazards, false and nuisance alarms per hour, and warning time-to-collision, measured against common ground truth and a common hazard zone such as the ISO 21815-3 risk area.",
+   "quote": "Warnings and interventions per hazard, missed hazards, false and nuisance alarms per hour and warning time-to-collision against a common ground truth and a common hazard zone (such as the ISO 21815-3 risk area) are comparable",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    4,
+    33,
+    34
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t222",
+    "t224",
+    "t105",
+    "t187",
+    "t111"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Raw detections, confidence scores and per-sensor range statistics are not comparable between old and new systems when sensor modality, mounting or processing changes.",
+   "quote": "raw detections, confidence scores and per-sensor range statistics are not when modality, mounting or processing changes",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    4,
+    33,
+    34
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t222",
+    "t86",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Old logs cannot be replayed into a system with new sensors or sensor positions without synthesising data.",
+   "quote": "Old logs cannot be replayed into a system with new sensors or positions without synthesising data",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    4,
+    33,
+    34
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t100",
+    "t114"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "On-road evidence shows neural re-simulation degrades once the viewpoint moves 1 to 4 m from the recorded path.",
+   "quote": "neural re-simulation degrades once the viewpoint moves 1 to 4 m from the recorded path (on-road evidence)",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    4,
+    33,
+    34
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t155",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Simulation credibility is a process, not a tool feature.",
+   "quote": "Simulation credibility is a process, not a tool feature",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    35,
+    36,
+    37
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t241"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No regulator acceptance of off-road virtual evidence was found.",
+   "quote": "no regulator acceptance for off-road virtual evidence was found",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    35,
+    36,
+    37
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t127",
+    "t70",
+    "t277"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The prostep ivip and SET Level Credible Simulation Process exists, dating from 2021 to 2024.",
+   "quote": "The prostep ivip and SET Level Credible Simulation Process (2021 to 2024) exists",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    35,
+    36,
+    37
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "prostep ivip",
+     "kind": "organization"
+    },
+    {
+     "name": "SET Level",
+     "kind": "program"
+    },
+    {
+     "name": "Credible Simulation Process",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t241",
+    "t310"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM states that no standardized metrics exist for sensor-simulation quality.",
+   "quote": "ASAM states that no standardized metrics exist for sensor-simulation quality",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    35,
+    36,
+    37
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t241",
+    "t323",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM's QSQ project was still at proposal stage in September 2025.",
+   "quote": "its QSQ project was still at proposal stage in September 2025",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    35,
+    36,
+    37
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    },
+    {
+     "name": "ASAM QSQ",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t241"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Adverse-environment sensor models covering dust, snow, glare, wet lenses and tunnel multipath must be experimentally correlated.",
+   "quote": "Adverse-environment sensor models (dust, snow, glare, wet lenses, tunnel multipath) must be experimentally correlated",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    35,
+    36,
+    37
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t160",
+    "t250",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No fidelity thresholds for off-road sensor models were found.",
+   "quote": "no fidelity thresholds for off-road sensor models were found",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    35,
+    36,
+    37
+   ],
+   "chapters": [
+    7
+   ],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t258",
+    "t234"
+   ],
+   "importance": 3
+  }
+ ]
+}

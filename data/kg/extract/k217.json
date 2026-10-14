@@ -1,0 +1,690 @@
+{
+ "chunkId": "k217",
+ "hash": "23474f681841b842",
+ "facts": [
+  {
+   "text": "Four families of sensor model are in use: physics-based signal-level models; simplified, statistical or phenomenological models; models learned from data; and hardware-in-the-loop stimulation.",
+   "quote": "Four families of sensor model are in use.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The four sensor-model families form a continuum rather than competing alternatives; recent sensor-model validation literature and ASAM's project to define fidelity levels by sensor subcomponent use this kind of classification.",
+   "quote": "They form a continuum rather than competing alternatives, and the recent sensor-model validation literature and ASAM's project to define fidelity levels by sensor subcomponent both use this kind of classification [91].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    91
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t125",
+    "t128",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Physics-based, signal-level sensor models use ray tracing or ray launching for lidar, radar and ultrasonic sensors; physically based radiometric rendering for cameras and thermal cameras; full-wave or physical-optics solvers for radar; and acoustic ray tracing for ultrasonic sensors.",
+   "quote": "Ray tracing or ray launching for lidar, radar and ultrasonic; physically based (radiometric) rendering for cameras and thermal cameras; full-wave or physical-optics solvers for radar; acoustic ray tracing for ultrasonic.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ray tracing",
+     "kind": "method"
+    },
+    {
+     "name": "ray launching",
+     "kind": "method"
+    },
+    {
+     "name": "physically based rendering",
+     "kind": "method"
+    },
+    {
+     "name": "acoustic ray tracing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t118",
+    "t117",
+    "t92",
+    "t94",
+    "t95"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Physics-based, signal-level sensor models model material interaction, attenuation, multipath, optics and electronics.",
+   "quote": "Models material interaction, attenuation, multipath, optics and electronics.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t128",
+    "t125",
+    "t84"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Physics-based, signal-level sensor models respond causally to changed geometry, materials, weather and sensor pose, allowing extrapolation to new machines and sensor positions.",
+   "quote": "Responds causally to changed geometry, materials, weather and sensor pose, so it can extrapolate to new machines and sensor positions.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t128",
+    "t265",
+    "t102",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Physics-based, signal-level sensor models are interpretable.",
+   "quote": "Interpretable.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t128",
+    "t125"
+   ],
+   "importance": 1
+  },
+  {
+   "text": "Physics-based, signal-level sensor models have been validated for lidar rain and fog and for radar geometry.",
+   "quote": "Validated for lidar rain and fog and for radar geometry.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t92",
+    "t94",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Physics-based, signal-level sensor models need supplier internals and material data.",
+   "quote": "Needs supplier internals and material data.",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t128",
+    "t136",
+    "t357"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Error in physics-based, signal-level sensor models grows in heavy precipitation.",
+   "quote": "Error grows in heavy precipitation.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t165",
+    "t128"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Physics-based, signal-level sensor models are costly at high fidelity.",
+   "quote": "Costly at high fidelity.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t339",
+    "t128"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Dust and soiling are physically complex effects for physics-based, signal-level sensor models.",
+   "quote": "Dust and soiling are physically complex.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t128"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simplified physics in physics-based, signal-level sensor models can produce plausible but wrong output.",
+   "quote": "Simplified physics can still give plausible but wrong output.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t267",
+    "t128",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The recommended role of physics-based, signal-level sensor models in the collision-mitigation validation program is qualification-quality testing of important sensor effects and selected corner cases.",
+   "quote": "Qualification-quality tests of important sensor effects and selected corner cases.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t127",
+    "t144",
+    "t128",
+    "t323"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Simplified, statistical or phenomenological sensor models start from ideal geometry or detections and add range and angle noise, missed detections, false positives, dropout, analytical attenuation laws or image overlays.",
+   "quote": "Starts from ideal geometry or detections and adds range and angle noise, missed detections, false positives, dropout, analytical attenuation laws (Beer-Lambert, Marshall-Palmer rain distributions, ITU-R attenuation), or image overlays.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Beer-Lambert",
+     "kind": "method"
+    },
+    {
+     "name": "Marshall-Palmer rain distributions",
+     "kind": "method"
+    },
+    {
+     "name": "ITU-R attenuation",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t125",
+    "t108",
+    "t102",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simplified, statistical or phenomenological sensor models can represent object lists with detection probability.",
+   "quote": "Object lists with detection probability.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t86",
+    "t156"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simplified, statistical or phenomenological sensor models are very fast and easy to parameterize from measurements.",
+   "quote": "Very fast; easy to parameterize from measurements.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t237",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simplified, statistical or phenomenological sensor models are good for logic testing and scenario coverage.",
+   "quote": "Good for logic and scenario coverage.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t141",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Simplified, statistical or phenomenological sensor models do not generate emergent effects such as radar ghosts, optical flare or realistic partial occlusion unless those effects are explicitly encoded.",
+   "quote": "Does not generate emergent effects such as radar ghosts, optical flare or realistic partial occlusion unless explicitly encoded.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t94",
+    "t89",
+    "t103"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An ideal sensor model can look realistic at the tracking level yet show \"the highest overall gap\" at the raw-data level.",
+   "quote": "An ideal model can look realistic at the tracking level yet show \"the highest overall gap\" at raw-data level [36].",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    36
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t165",
+    "t86",
+    "t125",
+    "t256"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Simplified, statistical or phenomenological sensor models are weak for edge cases.",
+   "quote": "Weak for edge cases.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t144",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The recommended role of simplified, statistical or phenomenological sensor models in the collision-mitigation validation program is massive scenario sweeps and closed-loop function testing, once the model's validity domain is established.",
+   "quote": "Massive scenario sweeps and closed-loop function testing, once its validity domain is established.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t154",
+    "t127",
+    "t141"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor models learned from data use GANs, diffusion models, neural rendering such as NeRF and 3D Gaussian splatting, learned noise or measurement models, world models, or a learned real-to-synthetic transformation.",
+   "quote": "GANs, diffusion models, neural rendering (NeRF, 3D Gaussian splatting), learned noise or measurement models, world models, or a learned real-to-synthetic transformation.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "GANs",
+     "kind": "method"
+    },
+    {
+     "name": "diffusion models",
+     "kind": "method"
+    },
+    {
+     "name": "NeRF",
+     "kind": "method"
+    },
+    {
+     "name": "3D Gaussian splatting",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t115",
+    "t116",
+    "t128",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor models learned from data can produce photorealistic output.",
+   "quote": "Photorealistic;",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t128",
+    "t114"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor models learned from data can re-simulate real logs.",
+   "quote": "re-simulates real logs;",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t128"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor models learned from data reproduce complex distributions that are hard to hand-model.",
+   "quote": "reproduces complex distributions that are hard to hand-model.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t128",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Sensor models learned from data are tied to their training domain and interpolate correlations without preserving physics.",
+   "quote": "Tied to the training domain; interpolates correlations without preserving physics.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t128",
+    "t113",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Harsh weather is often unsupported by sensor models learned from data.",
+   "quote": "Harsh weather often unsupported.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t128",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Sensor models learned from data have weak extrapolation to new viewpoints.",
+   "quote": "Extrapolation to new viewpoints is weak.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t261",
+    "t128"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The validity domain of sensor models learned from data is hard to prove.",
+   "quote": "Hard to prove where it is valid.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t234",
+    "t128"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The recommended roles of sensor models learned from data in the collision-mitigation validation program are training data generation, replay editing, scenario variation, robustness testing, or a hybrid residual model around physics.",
+   "quote": "Training data, replay editing, scenario variation, robustness testing, or a hybrid residual model around physics.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t155",
+    "t128",
+    "t141"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Hardware-in-the-loop sensor stimulation uses radar target simulators and scene emulators, lidar target emulators, camera video or raw-data injection or screen stimulation, and ultrasonic echo generators.",
+   "quote": "Radar target simulators and scene emulators, lidar target emulators, camera video or raw-data injection or screen stimulation, ultrasonic echo generators.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t149",
+    "t150",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In hardware-in-the-loop sensor stimulation, a real production sensor receives an artificial RF, optical, infrared or acoustic signal, or data are injected at a defined electrical interface.",
+   "quote": "A real production sensor receives an artificial RF, optical, infrared or acoustic signal, or data are injected at a defined electrical interface.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t149",
+    "t150"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hardware-in-the-loop sensor stimulation exercises the real sensor, firmware, electronics and often the physical front end.",
+   "quote": "Exercises the real sensor, firmware, electronics and often the physical front end.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t150",
+    "t84"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hardware-in-the-loop sensor stimulation is useful for proprietary black boxes.",
+   "quote": "Useful for proprietary black boxes.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hardware-in-the-loop sensor stimulation has limits on target count, distance, field of view and dynamics.",
+   "quote": "Limits on target count, distance, field of view and dynamics.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t150",
+    "t87"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Weather and soiling are mostly not reproducible through hardware-in-the-loop sensor stimulation.",
+   "quote": "Weather and soiling mostly not reproducible.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t148",
+    "t150"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Hardware-in-the-loop data injection after the sensor front end bypasses whatever lies upstream of the injection point.",
+   "quote": "Injection after the front end bypasses whatever lies upstream.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t149",
+    "t148",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Hardware-in-the-loop sensor stimulation is expensive and operates on one machine and sensor at a time.",
+   "quote": "Expensive; one machine and sensor at a time.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t339"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The recommended role of hardware-in-the-loop sensor stimulation in the collision-mitigation validation program is final sensor and ECU regression testing, timing tests and supplier-independent characterization.",
+   "quote": "Final sensor and ECU regression, timing tests and supplier-independent characterization.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t119",
+    "t161",
+    "t88"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,726 @@
+{
+ "chunkId": "k47",
+ "hash": "13b734c856943553",
+ "facts": [
+  {
+   "text": "Some evidence-building activities for collision mitigation can be accelerated or run in parallel, but their underlying evidence cannot be removed.",
+   "quote": "several of these items can be accelerated or run in parallel, but the underlying evidence cannot be removed.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t70",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Automatic braking on a real machine depends on actual mass, payload, grade, ground condition, tyres or tracks, brake, retarder and hydraulics, control latency and wear.",
+   "quote": "Automatic braking depends on actual mass, payload, grade, ground condition, tyres or tracks, brake, retarder and hydraulics, control latency and wear",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    6
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t25",
+    "t168",
+    "t173",
+    "t174",
+    "t182"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A virtual stopping model needs a real-machine anchor before the model can carry safety evidence.",
+   "quote": "a real-machine anchor is needed before a virtual stopping model can carry safety evidence",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    6
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t184",
+    "t182",
+    "t234",
+    "t216"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3 makes speed reduction, stopping and inhibition core behaviour.",
+   "quote": "ISO 21815-3 makes speed reduction, stopping and inhibition core behaviour [6]",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    6
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Simulation can narrow the cases needed to establish real-machine stopping physics.",
+   "quote": "Simulation narrows the cases",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t126",
+    "t184",
+    "t264"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hardware-in-the-loop testing validates automatic braking command paths.",
+   "quote": "HIL validates command paths",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t25"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The prototype window should be used for correlation first when establishing real-machine stopping physics.",
+   "quote": "the prototype window is used for correlation first",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t160",
+    "t184"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A sub-four-month validation window starting mid-2027 falls in northern summer and autumn, limiting natural seasonal weather coverage such as snow, freezing fog and low winter sun.",
+   "quote": "A sub-four-month window starting mid-2027 sits in northern summer and autumn",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t45",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "S2R-Bench shows that entirely simulated perception benchmarks can fail to predict real robustness under weather.",
+   "quote": "S2R-Bench shows that entirely simulated perception benchmarks can fail to predict real robustness under weather [15]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "S2R-Bench",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t85",
+    "t165",
+    "t102",
+    "t107"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Weather chambers, dust, fog and rain generation, southern-hemisphere sites, and winter 2026 to 2027 data from the existing warning fleet can partly mitigate limited natural seasonal weather coverage.",
+   "quote": "Weather chambers (specific off-road facility not found), dust, fog and rain generation, southern-hemisphere sites, and data from the existing warning fleet logged during winter 2026 to 2027",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t45",
+    "t102",
+    "t41",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A specific off-road weather-chamber facility was not found.",
+   "quote": "Weather chambers (specific off-road facility not found)",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t45",
+    "t158"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The existing warning fleet should begin logging immediately to collect winter 2026 to 2027 data for seasonal weather validation.",
+   "quote": "data from the existing warning fleet logged during winter 2026 to 2027, which is a strong reason to start logging immediately",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t41",
+    "t45"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Durability, sensor ageing, contamination and vibration validation resist compression because failures take physical time and dust and mud build up on sensors.",
+   "quote": "Physical time to failure; dust and mud build-up on sensors",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t56",
+    "t84"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 19014-3 requires environmental qualification of safety-related electrical/electronic components.",
+   "quote": "ISO 19014-3 already requires environmental qualification of safety-related E/E components [48]",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    48
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t49",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Accelerated life tests can partly mitigate the time required for durability, sensor ageing, contamination and vibration validation, but an acceleration factor is meaningful only when the accelerated stress reproduces the real failure mechanism.",
+   "quote": "Accelerated life tests, but an acceleration factor is only meaningful when the accelerated stress reproduces the real failure mechanism",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t102",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A universal accelerated-life-test conversion for the collision mitigation architecture was not found.",
+   "quote": "a universal conversion for this architecture was not found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t22",
+    "t56",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Field monitoring after release can partly mitigate remaining durability, sensor ageing, contamination and vibration evidence needs.",
+   "quote": "field monitoring after release",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t74",
+    "t102",
+    "t56"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Every simulation-based validation shortcut depends on model correlation.",
+   "quote": "Model correlation | Every simulation-based shortcut depends on it",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t250",
+    "t234",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A model never compared with the production-intent sensor, mounting, dynamics and environment is a hypothesis rather than evidence.",
+   "quote": "a model never compared with the production-intent sensor, mounting, dynamics and environment is a hypothesis, not evidence",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t237",
+    "t250",
+    "t100",
+    "t179",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A late sensor change in 2027 invalidates sensor-model correlation, HIL and VIL stimulation assumptions, detection-range evidence, mounting analysis and parts of the family inheritance case.",
+   "quote": "a late sensor change in 2027 invalidates sensor-model correlation, HIL and VIL stimulation assumptions, detection-range evidence, mounting analysis and parts of the family inheritance case",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t42",
+    "t250",
+    "t148",
+    "t151",
+    "t76"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Rare real-world events and unknown unknowns resist compressed validation; RAND's argument applies, and the \"curse of rarity\" means the tail gets harder as the state space grows.",
+   "quote": "Rare by definition; RAND's argument applies, and the \"curse of rarity\" shows the tail gets harder as the state space grows [1, 34]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    1,
+    34
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "RAND Corporation",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t144",
+    "t215",
+    "t198"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Rare-event simulation can partly address rare real-world events, but only for hazard classes that somebody has conceived and parameterised.",
+   "quote": "Rare-event simulation, but only for hazard classes somebody has conceived and parameterised",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t206",
+    "t144",
+    "t199",
+    "t46"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Shadow data and staged operation remain valuable for rare real-world events and unknown unknowns after large simulation campaigns.",
+   "quote": "shadow data and staged operation stay valuable after large simulation campaigns",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t73",
+    "t144",
+    "t233"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Operator behaviour can change both positively and negatively after technology is introduced.",
+   "quote": "Behaviour changes after introduction; \"Human Performance can change both positively and negatively after technology is introduced\" [3]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    3
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t38",
+    "t36"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Simulator studies of operator adaptation and trust show only first reactions; long-term effects require field time.",
+   "quote": "Simulator studies show first reactions only; long-term effects need field time",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t152",
+    "t38",
+    "t36"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "EU Machinery Regulation 2023/1230 applies from 20 January 2027.",
+   "quote": "EU Machinery Regulation 2023/1230 applies from 20 January 2027",
+   "kind": "event",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    40,
+    41
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EU Machinery Regulation 2023/1230",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t298",
+    "t275"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Annex I Part A of EU Machinery Regulation 2023/1230 lists self-evolving machine-learning safety components.",
+   "quote": "Annex I Part A lists self-evolving machine-learning safety components",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    40,
+    41
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EU Machinery Regulation 2023/1230",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t298",
+    "t79",
+    "t277"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "All Annex I Part A conformity routes under EU Machinery Regulation 2023/1230 involve a notified body.",
+   "quote": "all Part A conformity routes involve a notified body [40, 41]",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    40,
+    41
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EU Machinery Regulation 2023/1230",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t298",
+    "t278",
+    "t277"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Formal collision mitigation approvals include MSHA approvals where applicable.",
+   "quote": "MSHA approvals where they apply [43]",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    43
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MSHA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t300",
+    "t277",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Formal collision mitigation approvals include South African site requirements and MOSH verification.",
+   "quote": "South African site requirements and MOSH verification [38, 62]",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    38,
+    62
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "South Africa",
+     "kind": "place"
+    },
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t302",
+    "t307",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The EU Artificial Intelligence Act's high-risk classification of machine-learning safety components of machinery was noted but not examined.",
+   "quote": "the EU Artificial Intelligence Act's high-risk classification of machine-learning safety components of machinery was noted but not examined",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EU Artificial Intelligence Act",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t298",
+    "t79"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A notified body should be engaged early for formal approvals.",
+   "quote": "Engage a notified body early",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t278",
+    "t277"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Collision mitigation designs should avoid self-evolving machine learning in the safety function where possible to partly mitigate formal approval constraints.",
+   "quote": "design to avoid self-evolving machine learning in the safety function where possible",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t79",
+    "t48",
+    "t277"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Notified-body lead times were not found.",
+   "quote": "notified-body lead times: not found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t278",
+    "t344"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A universal certification lead time was not found.",
+   "quote": "a universal certification lead time: not found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t277",
+    "t344"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ACARP's framework ignores pre-existing site controls and complex, multi-variate dynamic vehicle interactions.",
+   "quote": "ACARP's framework ignores \"pre-existing site controls\" and \"complex, multi-variate dynamic vehicle interactions\" [29]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    29
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ACARP",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t306",
+    "t17",
+    "t11"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The same braking algorithm has different safety results at sites with different traffic separation, intersection rules, maintenance discipline or pedestrian controls.",
+   "quote": "the same braking algorithm has different safety results at sites with different traffic separation, intersection rules, maintenance discipline or pedestrian controls",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t11",
+    "t17",
+    "t14"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Safety Layers 8 and 9 require understanding Layers 1 to 7.",
+   "quote": "Layers 8 and 9 require understanding Layers 1 to 7 [3, 83]",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    3,
+    83
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t30",
+    "t305"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Site acceptance procedures, a staged operating domain and site controls written into the safety case can partly mitigate site-by-site configuration and integration with other site safety layers.",
+   "quote": "Site acceptance procedures; staged domain; site controls written into the safety case",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t62",
+    "t73",
+    "t67",
+    "t11",
+    "t140"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,660 @@
+{
+ "chunkId": "k44",
+ "hash": "2d15350c8b5bec3a",
+ "facts": [
+  {
+   "text": "The best-documented validation programmes use approaches as successive filters rather than substitutes: inexpensive, high-volume techniques find most defects before scarce physical-machine testing.",
+   "quote": "They use them as filters: inexpensive, high-volume techniques find most defects before scarce physical-machine time.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    60,
+    22,
+    29,
+    62,
+    82,
+    80
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t216",
+    "t264",
+    "t233"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Documented automotive validation precedents include Waymo's collision avoidance testing methodology and PEGASUS-style scenario approaches.",
+   "quote": "Documented automotive programmes (Waymo's collision avoidance testing methodology, PEGASUS-style scenario approaches",
+   "kind": "example",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    60,
+    22
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Waymo",
+     "kind": "company"
+    },
+    {
+     "name": "PEGASUS",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t311",
+    "t310",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Motional's documented automotive validation progression runs from simulation and re-simulation through closed-course and public-road testing to deployment, with shadow features evaluated before roll-out.",
+   "quote": "Motional's progression from simulation and re-simulation through closed-course and public-road testing to deployment with shadow features evaluated before roll-out",
+   "kind": "example",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    60,
+    22
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Motional",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t311",
+    "t155",
+    "t158",
+    "t157",
+    "t73"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Mining validation frameworks cited as precedents include EMESRT PR-5A storyboards and MOSH TRL stage gates.",
+   "quote": "mining frameworks (EMESRT PR-5A storyboards; ACARP's two tiers, object detection first and then Level 8 or 9 intervention; the MOSH TRL stage gates)",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    29,
+    62,
+    82
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EMESRT PR-5A",
+     "kind": "publication"
+    },
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t304",
+    "t307",
+    "t248",
+    "t349"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ACARP's two-tier mining validation approach tests object detection first and then Level 8 or 9 intervention.",
+   "quote": "ACARP's two tiers, object detection first and then Level 8 or 9 intervention",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    29,
+    62,
+    82
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ACARP",
+     "kind": "program"
+    }
+   ],
+   "terms": [
+    "t306",
+    "t86",
+    "t30",
+    "t28"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Documented automotive programmes and mining frameworks converge on defining the operating domain and scenarios before subsequent validation steps.",
+   "quote": "define the operating domain and scenarios first;",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    60,
+    22,
+    29,
+    62,
+    82,
+    80
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t140",
+    "t141"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The common validation sequence in documented automotive programmes and mining frameworks calls for verifying logic virtually at scale after defining the operating domain and scenarios.",
+   "quote": "verify the logic virtually at scale;",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    60,
+    22,
+    29,
+    62,
+    82,
+    80
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t127",
+    "t185"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The common validation sequence in documented automotive programmes and mining frameworks calls for confirming virtual results with a smaller set of physical tests.",
+   "quote": "confirm with a smaller set of physical tests;",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    60,
+    22,
+    29,
+    62,
+    82,
+    80
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t216",
+    "t264"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The common validation sequence in documented automotive programmes and mining frameworks ends with staged release and field monitoring.",
+   "quote": "release in stages with field monitoring.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    60,
+    22,
+    29,
+    62,
+    82,
+    80
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t73",
+    "t74"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ICMM and EMESRT state that implementing Level 8 and 9 controls well first requires understanding the effectiveness of the Level 1–7 baseline for normal operations.",
+   "quote": "To implement Level 8 and 9 controls well, you first need to understand the effectiveness of your Level 1 - 7 baseline for normal operations",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    3,
+    83
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ICMM",
+     "kind": "organization"
+    },
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t30",
+    "t305",
+    "t304",
+    "t221"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ICMM and EMESRT call for scenario-based functional-performance requirements for mining intervention technology.",
+   "quote": "They also call for scenario-based functional-performance requirements",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    3,
+    83
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ICMM",
+     "kind": "organization"
+    },
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t63",
+    "t141",
+    "t304",
+    "t305"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ICMM and EMESRT insist that mining intervention technology be integrated with existing site controls.",
+   "quote": "insist that intervention technology be integrated with existing site controls.",
+   "kind": "requirement",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    3,
+    83
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ICMM",
+     "kind": "organization"
+    },
+    {
+     "name": "EMESRT",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t28",
+    "t11",
+    "t304",
+    "t305"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The proposed off-road validation sequence is an assessment grounded in documented programme structures, not a documented off-road case.",
+   "quote": "an assessment grounded in the documented structures above, not a documented off-road case.",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t70",
+    "t233"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Phase 0 of the proposed validation programme starts in October 2026, before sensor and prototype freeze.",
+   "quote": "Phase 0: from October 2026, before sensor and prototype freeze",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t42",
+    "t343"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Phase 0 should define the ODD, hazard analysis and scenario catalogue using ISO 21815-3, EMESRT PR-5A and ISO 21448, together with acceptance metrics and the safety-case structure.",
+   "quote": "ODD, hazard analysis and scenario catalogue (ISO 21815-3, EMESRT PR-5A, ISO 21448); acceptance metrics; safety-case structure",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    },
+    {
+     "name": "EMESRT PR-5A",
+     "kind": "publication"
+    },
+    {
+     "name": "ISO 21448",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t140",
+    "t47",
+    "t142",
+    "t62",
+    "t67"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Phase 0 should log fleet data on existing warning-system machines through winter 2026 to 2027 and build an exposure model from real sites.",
+   "quote": "Fleet data logging on the existing warning-system machines through winter 2026 to 2027; exposure model from real sites",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t121",
+    "t41",
+    "t20",
+    "t266",
+    "t45"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Phase 1 of the proposed validation programme should build and correlate the virtual pipeline before mid-2027.",
+   "quote": "Phase 1: build and correlate the virtual pipeline, before mid-2027",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t250",
+    "t127",
+    "t343"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Phase 1 should use open-loop re-simulation of recorded data and correlate sensor models once sensor candidates exist.",
+   "quote": "Open-loop re-simulation of recorded data; sensor-model correlation once sensor candidates exist",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t154",
+    "t250",
+    "t84",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Phase 1 should use SIL for logic, the braking envelope and rare events, trusting SIL only after correlation.",
+   "quote": "SIL for logic, braking envelope and rare events, trusted only after correlation",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t250",
+    "t185",
+    "t144",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Phase 1 should use HIL for timing, faults and the ISO/TS 21815-2 interface.",
+   "quote": "HIL for timing, faults and the ISO/TS 21815-2 interface",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t148",
+    "t88",
+    "t56",
+    "t280"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Phase 1 should include operator studies in a simulator.",
+   "quote": "Operator studies in a simulator",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t152",
+    "t36"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Phase 1 should establish target and ground-truth procedures.",
+   "quote": "target and ground-truth procedures",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t105",
+    "t159",
+    "t279"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Phase 1 should include independent review of the test plan.",
+   "quote": "independent review of the test plan",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t270"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Phase 2 of the proposed validation programme starts when the prototype arrives in mid-2027 and has under four months available.",
+   "quote": "Phase 2: prototype arrives mid-2027, under four months",
+   "kind": "number",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t43",
+    "t343"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Phase 2 should begin with prototype tests of latency, detection range, brake timing and stopping, establishing model error bounds.",
+   "quote": "Prototype tests of latency, detection range, brake timing and stopping; model error bounds",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t160",
+    "t88",
+    "t193",
+    "t171",
+    "t170"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "After prototype correlation, Phase 2 should re-run the correlated scenario matrix virtually and on the bench.",
+   "quote": "Re-run the correlated scenario matrix virtually and on the bench",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t143",
+    "t250",
+    "t127",
+    "t148"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "After re-running the correlated scenario matrix, Phase 2 should confirm the worst cases through controlled whole-machine track tests.",
+   "quote": "Controlled whole-machine track tests of the worst cases",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t158",
+    "t144"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "After controlled whole-machine track tests, Phase 2 should use shadow mode in live operation with braking disabled to measure the nuisance-brake rate.",
+   "quote": "Live operation with braking disabled; nuisance-brake rate measured",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t31",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Phase 3 should begin with a limited-domain release restricted to reverse operation, low speed and selected machine models, only if the safety case permits.",
+   "quote": "Reverse only, low speed, selected models, if the safety case permits",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t73",
+    "t16",
+    "t140",
+    "t67",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The Phase 3 limited-domain release should include field monitoring of misses and nuisance brakes.",
+   "quote": "field monitoring of misses and nuisance brakes",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t74",
+    "t108",
+    "t31"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Phase 3 should widen release only through an evidence gate, adding new sites, machine models, speed ranges and conditions as evidence arrives.",
+   "quote": "**Widen only by evidence gate**\nNew sites, models, speed ranges and conditions added as evidence arrives",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t72",
+    "t73",
+    "t140",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "New field scenarios encountered during Phase 3 should return to Phase 0 of the proposed validation programme.",
+   "quote": "new field scenarios return to Phase 0",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t74",
+    "t142",
+    "t233"
+   ],
+   "importance": 2
+  }
+ ]
+}

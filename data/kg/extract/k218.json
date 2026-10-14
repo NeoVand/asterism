@@ -1,0 +1,564 @@
+{
+ "chunkId": "k218",
+ "hash": "38ad128cf04e015d",
+ "facts": [
+  {
+   "text": "Physics-based simulation is the most mature simulation family for lidar.",
+   "quote": "Physics-based simulation is the most mature family for lidar.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t128",
+    "t126"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The common core of physics-based lidar simulation is ray tracing with the actual scan pattern, beam divergence and timing, followed by a return-power and detection model.",
+   "quote": "The common core is ray tracing with the actual scan pattern, beam divergence and timing, followed by a return-power and detection model",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ray tracing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t118",
+    "t128"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "High-fidelity physics-based lidar simulation adds wavelength-dependent surface reflectance, multiple returns, receiver threshold and dynamic range, background light, range and intensity noise, and atmospheric propagation.",
+   "quote": "high-fidelity versions add wavelength-dependent surface reflectance, multiple returns, receiver threshold and dynamic range, background light, range and intensity noise and atmospheric propagation.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t125",
+    "t128"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Haider et al. built a tool-independent ray-traced lidar model incorporating the scan pattern and full signal-processing chain, packaged as an ASAM OSI/FMI unit.",
+   "quote": "Haider et al. built a tool-independent ray-traced lidar model with the scan pattern and full signal-processing chain, packaged as an ASAM OSI/FMI unit",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    6,
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Haider et al.",
+     "kind": "person"
+    },
+    {
+     "name": "ASAM OSI",
+     "kind": "standard"
+    },
+    {
+     "name": "FMI",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t118",
+    "t138",
+    "t139"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Haider et al.'s ray-traced lidar model was validated at the time-domain and point-cloud levels in October 2022; the evidence is on-road.",
+   "quote": "validated at the time-domain and point-cloud levels (October 2022)",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    6,
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Haider et al.",
+     "kind": "person"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t93",
+    "t237",
+    "t252"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Haider et al. extended their ray-traced lidar model with Mie-theory rain and fog backscatter in August 2023; the evidence is on-road.",
+   "quote": "later extended it with Mie-theory rain and fog backscatter (August 2023)",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    6,
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Haider et al.",
+     "kind": "person"
+    },
+    {
+     "name": "Mie theory",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t102",
+    "t128"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Rain, snow and fog in lidar simulation are commonly modelled using Beer-Lambert attenuation, Mie-scattering-derived coefficients and probabilistic placement of droplets or flakes that create false or lost returns.",
+   "quote": "Rain, snow and fog are commonly modelled with Beer-Lambert attenuation, Mie-scattering-derived coefficients and probabilistic placement of droplets or flakes that create false or lost returns [6, 10].",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    6,
+    10
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Beer-Lambert attenuation",
+     "kind": "method"
+    },
+    {
+     "name": "Mie scattering",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t102",
+    "t108"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MAVS, from Mississippi State University, is an open off-road simulator with ray-traced lidar, camera and radar that interact with rain, dust, fog and snow.",
+   "quote": "MAVS (Mississippi State University) is an open off-road simulator with ray-traced lidar, camera and radar that interact with rain, dust, fog and snow",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    15,
+    16
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MAVS",
+     "kind": "tool"
+    },
+    {
+     "name": "Mississippi State University",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t126",
+    "t92",
+    "t89",
+    "t94",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MAVS's 2020 paper states that validation efforts for MAVS are ongoing.",
+   "quote": "its 2020 paper states that \"validation efforts for MAVS are ongoing\"",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    15,
+    16
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MAVS",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t234",
+    "t237"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A vendor claims that its current RTX lidar implementation accounts for transparent and reflective surfaces.",
+   "quote": "A vendor's current RTX implementation claims to account for transparent and reflective surfaces **Vendor** [48].",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    48
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "RTX",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t104",
+    "t323"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Physics-based augmentation of real recordings is an approach related to physics-based lidar simulation.",
+   "quote": "Physics-based augmentation of real recordings is a related approach",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t114",
+    "t128"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hahner et al. at ICCV 2021 applied a physically derived fog model to clear-weather lidar scans; the evidence is on-road.",
+   "quote": "Hahner et al. (ICCV 2021) apply a physically derived fog model to clear-weather lidar scans",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    9,
+    10
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Hahner et al.",
+     "kind": "person"
+    },
+    {
+     "name": "ICCV 2021",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t102",
+    "t114",
+    "t128"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "LISA (2021) applies physics-based rain and snow augmentation to clear-weather lidar scans; the evidence is on-road.",
+   "quote": "apply a physically derived fog model to clear-weather lidar scans, and LISA (2021) does the same for rain and snow",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    9,
+    10
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "LISA",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t102",
+    "t114",
+    "t128"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Phenomenological lidar weather models are usually tuned to chamber data.",
+   "quote": "Phenomenological models are usually tuned to chamber data",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    11
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t102",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Teufel et al. at VTC 2022 fitted a lidar fog model by adjusting clear-weather point clouds until they matched recordings from the CEREMA fog chamber; the evidence is on-road.",
+   "quote": "Teufel et al. (VTC 2022) fitted a fog model by adjusting clear-weather point clouds until they matched recordings from the CEREMA fog chamber",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    11
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Teufel et al.",
+     "kind": "person"
+    },
+    {
+     "name": "VTC 2022",
+     "kind": "other"
+    },
+    {
+     "name": "CEREMA fog chamber",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t93",
+    "t102",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Learned lidar simulation methods include Gaussian-splatting simulators such as SplatAD (CVPR 2025), which model rolling shutter, lidar intensity and ray dropout in real time; the evidence is on-road.",
+   "quote": "Learned methods include Gaussian-splatting simulators such as SplatAD (CVPR 2025), which model rolling shutter, lidar intensity and ray dropout in real time [24].",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    24
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Gaussian splatting",
+     "kind": "method"
+    },
+    {
+     "name": "SplatAD",
+     "kind": "tool"
+    },
+    {
+     "name": "CVPR 2025",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t92",
+    "t153",
+    "t128"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "LiHi-GS (December 2024), a method comparable to SplatAD, states that it does not support deformable objects or harsh weather conditions; the evidence is on-road.",
+   "quote": "A comparable method, LiHi-GS (December 2024), states that it \"does not support deformable objects and harsh weather conditions\" [25]",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    25
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "LiHi-GS",
+     "kind": "tool"
+    },
+    {
+     "name": "SplatAD",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t92",
+    "t102",
+    "t262"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "LiDAR-EVS (2026) identifies extrapolated viewpoints as a significant challenge for learned lidar simulation; the evidence is on-road.",
+   "quote": "extrapolated viewpoints remain \"a significant challenge\" (LiDAR-EVS, 2026) [26].",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    26
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "LiDAR-EVS",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t116",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The extrapolated-viewpoint limitation of learned lidar simulation matters directly when sensor positions change between machine models.",
+   "quote": "The viewpoint limit matters directly when sensor positions change between machine models. **Independent (on-road evidence)**",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t100",
+    "t116",
+    "t92"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Lidar hardware-in-the-loop uses target emulators that send delayed optical echoes back to the real sensor; Fraunhofer IMS ATLAS is an example described in concept papers from 2021 to 2022.",
+   "quote": "Hardware-in-the-loop for lidar uses target emulators (for example Fraunhofer IMS ATLAS, concept papers 2021 to 2022) that send delayed optical echoes back to the real sensor",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    28
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Fraunhofer IMS ATLAS",
+     "kind": "tool"
+    },
+    {
+     "name": "Fraunhofer IMS",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t150",
+    "t148"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Published concepts for lidar optical target emulators address background light and interference.",
+   "quote": "published concepts address background light and interference [28].",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    28
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t150"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Optical echo generation in lidar hardware-in-the-loop can exercise actual receiver hardware.",
+   "quote": "Optical echo generation can exercise actual receiver hardware",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    28
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t150",
+    "t148"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Wide-field dynamic scene reproduction using lidar optical echo generation is less straightforward than digital point-cloud injection.",
+   "quote": "wide-field dynamic scene reproduction is less straightforward than digital point-cloud injection",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t150",
+    "t149",
+    "t93"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Representation of dense volumetric weather using lidar optical echo generation was not found.",
+   "quote": "representing dense volumetric weather this way was not found.",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t150",
+    "t102"
+   ],
+   "importance": 3
+  }
+ ]
+}

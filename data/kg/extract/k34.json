@@ -1,0 +1,352 @@
+{
+ "chunkId": "k34",
+ "hash": "706584c65d8c3787",
+ "facts": [
+  {
+   "text": "Replay of recorded field data can establish perception detection rates and false-alarm rates using real data from the real operating domain.",
+   "quote": "Replay can prove perception detection and false-alarm rates on real data from the real operating domain",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    18,
+    19
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t109",
+    "t32",
+    "t140"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Replay of recorded field data supports regression testing across software versions.",
+   "quote": "gives regression across software versions",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    18,
+    19
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t161"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Replay of recorded field data can reproduce a rare recorded event indefinitely.",
+   "quote": "it can reproduce a rare recorded event indefinitely",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    18,
+    19
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t144"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Replay of recorded field data cannot show closed-loop consequences.",
+   "quote": "It cannot show closed-loop consequences",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    18,
+    19
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t154"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Replay of recorded field data cannot show scenarios that were never recorded.",
+   "quote": "scenarios that were never recorded",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    18,
+    19
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t141"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Replay of recorded field data cannot show data from other sensor positions.",
+   "quote": "or data from other sensor positions",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    18,
+    19
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t100",
+    "t265"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The automotive perception-testing review (2021) and the Springer chapter on test concepts for automated driving (2024) treat replay of recorded field data as open-loop evidence.",
+   "quote": "The automotive perception-testing review (2021) and the Springer chapter on test concepts for automated driving (2024) treat it as open-loop evidence.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    18,
+    19
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "automotive perception-testing review (2021)",
+     "kind": "publication"
+    },
+    {
+     "name": "Springer chapter on test concepts for automated driving (2024)",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t155",
+    "t154",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Applied Intuition and Waymo distinguish open-loop from closed-loop testing in current road-autonomy material.",
+   "quote": "Applied Intuition and Waymo make the same open-loop versus closed-loop distinction in current road-autonomy material",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    20,
+    21,
+    22
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Applied Intuition",
+     "kind": "company"
+    },
+    {
+     "name": "Waymo",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t154",
+    "t155"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Motional describes synthetic simulation and re-simulation as complementary methods for road autonomy.",
+   "quote": "Motional describes synthetic simulation and re-simulation as complementary methods.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    20,
+    21,
+    22
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Motional",
+     "kind": "company"
+    }
+   ],
+   "terms": [
+    "t126",
+    "t155"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Replay is likely to have exceptionally high leverage for heavy off-road collision-mitigation validation because the existing warning fleet can start capturing data now; this assessment is conditional on obtaining useful replay data.",
+   "quote": "Replay is likely to have exceptionally high leverage here because the existing warning fleet can start capturing data now. That statement is conditional",
+   "kind": "uncertain",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t41",
+    "t121",
+    "t22"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The existence of a warning system is established, but retention today of raw camera, radar or lidar data, machine-state buses, accurate time synchronisation or useful labels is not established.",
+   "quote": "what is established is that a warning system exists, not that raw camera, radar or lidar data, machine-state buses, accurate time synchronisation or useful labels are retained today.",
+   "kind": "uncertain",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t41",
+    "t121",
+    "t101",
+    "t106",
+    "t155"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A useful replay record needs synchronised sensor streams; machine speed, gear, steering and articulation; brake and retarder state; payload where relevant; calibration; weather and site metadata; accurate geometry; and a defensible ground-truth channel.",
+   "quote": "A useful replay record needs synchronised sensor streams, machine speed, gear, steering and articulation, brake and retarder state, payload where relevant, calibration, weather and site metadata, accurate geometry and a defensible ground-truth channel",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t121",
+    "t101",
+    "t105",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Large volumes of recorded logs can have little validation value without the metadata required for useful replay.",
+   "quote": "without that metadata, large volumes of logs can have little validation value",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t121",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Labelling capacity dominates the cost of replay of recorded field data.",
+   "quote": "Labelling capacity dominates cost.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t155",
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NIOSH field work has long recorded the detection behaviour of proximity systems in the field, establishing this recording practice in mining.",
+   "quote": "NIOSH field work has long recorded detection behaviour of proximity systems in the field, so the practice is established in mining",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    75,
+    70
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t24",
+    "t121",
+    "t86"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Published off-road replay evidence is thin, despite the established mining practice of recording proximity-system detection behaviour.",
+   "quote": "even if the published off-road replay evidence is thin",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    75,
+    70
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t70",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Robotec.ai's mining twin advertises replay of recorded system data.",
+   "quote": "Robotec.ai's mining twin advertises replay of recorded system data.",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    52
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Robotec.ai",
+     "kind": "company"
+    },
+    {
+     "name": "Robotec.ai's mining twin",
+     "kind": "product"
+    }
+   ],
+   "terms": [
+    "t155",
+    "t129",
+    "t331"
+   ],
+   "importance": 2
+  }
+ ]
+}

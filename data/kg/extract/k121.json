@@ -1,0 +1,952 @@
+{
+ "chunkId": "k121",
+ "hash": "7e70b1d10e4b6893",
+ "facts": [
+  {
+   "text": "The ISO 21815 and ISO 16001 style of off-road documents consists of product-performance standards with controlled test procedures, defined risk concepts, object and detection requirements, and specified machine behaviours.",
+   "quote": "The **ISO 21815 and ISO 16001 style** is a product-performance standard with controlled test procedures, defined risk concepts, object and detection requirements and specified machine behaviours.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t283",
+    "t279"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Workplace and mining regulations use an outcome-based style: detect or warn the relevant person in time and reduce the risk.",
+   "quote": "The **workplace and mining regulation style** is outcome based: detect or warn the relevant person in time, reduce the risk",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t275",
+    "t46",
+    "t14"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "South Africa's workplace and mining regulation style requires automatic intervention if the operator fails to react.",
+   "quote": "and (in South Africa) intervene automatically if the operator fails to react.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "South Africa",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t302",
+    "t28",
+    "t10"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Neither the ISO 21815/ISO 16001 product-performance style nor the workplace and mining regulation style supplies the full validation space: 100-plus site types, 10-plus scenarios, rain, snow, fog, dust, dusk, darkness, glare, machine geometry, payload and sensor position.",
+   "quote": "Neither style supplies the full validation space the system must cover (100-plus site types, 10-plus scenarios, rain, snow, fog, dust, dusk, darkness, glare, machine geometry, payload and sensor position).",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t198",
+    "t44",
+    "t102",
+    "t168",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The review of ISO 16001:2017 covered clauses 1 to 6 in preview, but did not cover annex details.",
+   "quote": "**ISO 16001:2017** (clauses 1 to 6 reviewed in preview; annex details not reviewed) [7]",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t283",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 16001:2017 uses a person or a standard measuring unit representative of a person as its test body; dimensions vary by technology annex B to I.",
+   "quote": "Test body: a \"person or a standard measuring unit representative of a person\", with dimensions varying by technology annex (B to I).",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t279",
+    "t283",
+    "t14"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The ISO 16001:2017 detection zone test is performed on the machine or a representative configuration.",
+   "quote": "Detection zone test: performed on the machine or a representative configuration.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t279",
+    "t187"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 16001:2017 requires detection to take place unambiguously with an uninterrupted sequence of the signal.",
+   "quote": "Pass criterion for detection: \"Detection shall take place unambiguously with an uninterrupted sequence of the signal.\"",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t62",
+    "t86",
+    "t283"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 16001:2017 says false signals should be minimized, including signals from fog, snow, rain, wind and dust, but provides no numerical limit for this recommendation.",
+   "quote": "False signals \"should be minimized\", including those \"from weather conditions of fog, snow, rain, wind, dust\"; this is a \"should\" with no number.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t32",
+    "t102",
+    "t62"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 16001:2017 requires ODS detection time not to exceed 300 ms.",
+   "quote": "Timing: \"the ODS detection time shall not exceed 300 ms\".",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t88",
+    "t86"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 16001:2017 requires audible warnings to be at least 3 dB above ambient at maximum governed speed with no load.",
+   "quote": "Warnings: audible at least 3 dB above ambient at maximum governed speed with no load",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t37",
+    "t279"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 16001:2017 prefers audible warning frequencies of 500 to 3,400 Hz.",
+   "quote": "preferably 500 to 3,400 Hz",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t37"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 16001:2017 requires visual warnings within a 120° arc in front of the operator, with the most severe warning being a flashing red light.",
+   "quote": "visual warnings within a 120° arc in front of the operator, the most severe being a flashing red light",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t37",
+    "t10"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 16001:2017 specifies a green status light.",
+   "quote": "a green status light",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t37"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 16001:2017 does not allow haptic-only warnings.",
+   "quote": "haptic-only warnings are not allowed.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t37"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 16001:2017 requires automatic activation and self-check at start-up.",
+   "quote": "Robustness: automatic activation and self-check at start-up",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t60",
+    "t283"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 16001:2017 requires continuous monitoring for wire break, short circuit and signal faults.",
+   "quote": "continuous monitoring for wire break, short circuit and signal faults",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t56",
+    "t60"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 16001:2017 permits deactivation only by two or more separate and distinct actions.",
+   "quote": "deactivation only by \"two or more separate and distinct actions\"",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t34"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 16001:2017 specifies EMC to ISO 13766.",
+   "quote": "EMC to ISO 13766.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 13766",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t123",
+    "t286"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 16001:2017 technology annexes cover CCTV (B), radar (C), ultrasonic (D), ultrasonic transponder (E), electromagnetic transceiver (F), surround view (G), visual ODS (H) and morphological-recognition vision (I).",
+   "quote": "Annexes: CCTV (B), radar (C), ultrasonic (D), ultrasonic transponder (E), electromagnetic transceiver (F), surround view (G), visual ODS (H) and morphological-recognition vision (I).",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t283",
+    "t84",
+    "t89",
+    "t94",
+    "t95"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The 2017 contents of ISO 16001 have no dedicated lidar annex.",
+   "quote": "**Lidar has no dedicated annex** in the 2017 contents.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t283"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Exact target geometry and distances from the full normative ISO 16001:2017 text were not available in free material.",
+   "quote": "Exact target geometry and distances from the full normative text were not available in free material.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t279",
+    "t283"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The review for ISO 21815-3:2023 used the 2022 DIS text; the published text may differ.",
+   "quote": "**ISO 21815-3:2023** (2022 DIS text reviewed; the published text may differ) [48, 3]",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    48,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t274",
+    "t280"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The reviewed 2022 DIS of ISO 21815-3 defines CxS distance as the minimum distance for the system to complete detection, determination and action, plus machine stopping distance and safe distance.",
+   "quote": "**CxS distance:** the \"minimum distance for the system to complete detection, determination, action, and machine stopping distance, plus safe distance\".",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    48,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t193",
+    "t170",
+    "t194",
+    "t172"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The reviewed 2022 DIS of ISO 21815-3 defines safe distance as a safe offset set by an authorised person plus measurement error.",
+   "quote": "**Safe distance:** a safe offset set by an authorised person plus measurement error.",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    48,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t194"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The reviewed 2022 DIS of ISO 21815-3 requires CxS distance to be large enough to allow a machine to stop to avoid a collision with an intended object.",
+   "quote": "\"The CxS distance shall be large enough to allow a machine to stop to avoid a collision with an intended object.\"",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    48,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t193",
+    "t170",
+    "t18"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the reviewed 2022 DIS of ISO 21815-3, machine stopping distance includes braking delay and excludes operator action time.",
+   "quote": "**Stopping distance definition:** machine stopping distance includes braking delay and excludes operator action time.",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    48,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t170",
+    "t171",
+    "t35"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The reviewed 2022 DIS of ISO 21815-3 recommends that the detection zone be the same as or larger than the collision risk area.",
+   "quote": "**Detection zone:** \"should be the same or larger than the collision risk area\"",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    48,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t187",
+    "t280"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The reviewed 2022 DIS of ISO 21815-3 requires a detection zone smaller than the collision risk area to be stated as a limitation in the operator's manual.",
+   "quote": "if smaller, the limitation shall be stated in the operator's manual.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    48,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t187",
+    "t63"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The reviewed 2022 DIS of ISO 21815-3 requires the CxS manufacturer to communicate typical delays in the system.",
+   "quote": "**Delays:** \"The CxS manufacturer shall communicate the typical delays in their system.\"",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    48,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t88",
+    "t172"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The reviewed 2022 DIS of ISO 21815-3 includes worked calculations for surface machines in Annex C and underground machines in Annex D, path estimation in Annex E, configuration in Annex F, and limitations of use in normative Annex B.",
+   "quote": "**Annexes:** worked calculations for surface (Annex C) and underground (Annex D) machines, path estimation (Annex E), configuration (Annex F) and limitations of use (normative Annex B).",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    48,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t196",
+    "t261"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The reviewed draft of ISO 21815-3 notes that false positives could create alarm fatigue.",
+   "quote": "**False positives:** the standard notes that they \"could create alarm fatigue\".",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    48,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t108",
+    "t33"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Test object specifications, speeds and trial counts for ISO 21815-3 were not found in the reviewed 2022 draft.",
+   "quote": "Test object specifications, speeds and trial counts for Part 3 were **not found** in the reviewed draft",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    48,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t279",
+    "t280"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An exact numeric public pass table for ISO 21815-3 was not found.",
+   "quote": "the exact numeric public pass table is **not found**.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    48,
+    3
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t62",
+    "t280"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The abstract of ISO 21815-1:2022 confirms that test procedures exist.",
+   "quote": "**ISO 21815-1:2022.** The abstract confirms test procedures exist",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t279",
+    "t280"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Numerical values for ISO 21815-1:2022 are in the paid text and were not found in freely accessible material.",
+   "quote": "the numerical values sit in the paid text and were **not found** in freely accessible material.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t62",
+    "t279",
+    "t280"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 3450:2011 covers brakes for wheeled and high-speed rubber-tracked earth-moving machines.",
+   "quote": "Scope: wheeled and high-speed rubber-tracked earth-moving machines",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    49,
+    80,
+    81
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 3450",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t282",
+    "t175",
+    "t1"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Purpose-built underground mining machines are outside the scope of ISO 3450:2011, but an annex gives modifications.",
+   "quote": "purpose-built underground mining machines are outside scope, but an annex gives modifications.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    49,
+    80,
+    81
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 3450",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t282",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A Dewesoft technical article reports an ISO 3450:2011 test speed of 32 km/h or 80% of maximum machine speed, whichever applies.",
+   "quote": "Test speed, per a Dewesoft technical article: 32 km/h or 80% of maximum machine speed, whichever applies.",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    49,
+    80,
+    81
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Dewesoft",
+     "kind": "company"
+    },
+    {
+     "name": "ISO 3450",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t279",
+    "t169",
+    "t282"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Vendor-reported ISO 3450:2011 maximum service-brake stopping distances are formula-based by machine type; the example for rigid and articulated dumpers under 32 t is v²/44 + 0.1(32 - v).",
+   "quote": "Maximum service-brake stopping distances are formula-based by machine type, for example v²/44 + 0.1(32 - v) for rigid and articulated dumpers under 32 t.",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    49,
+    80,
+    81
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 3450",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t170",
+    "t282",
+    "t3",
+    "t4",
+    "t168"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The vendor-reported ISO 3450:2011 stopping-distance formulas should be treated as secondary until checked against the standard.",
+   "quote": "Treat these formulas as secondary until checked against the standard.",
+   "kind": "recommendation",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    49,
+    80,
+    81
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 3450",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t70",
+    "t282",
+    "t170"
+   ],
+   "importance": 3
+  }
+ ]
+}

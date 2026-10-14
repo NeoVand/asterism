@@ -1,0 +1,583 @@
+{
+ "chunkId": "k197",
+ "hash": "df7e44e037cf6328",
+ "facts": [
+  {
+   "text": "Field recordings used to reconstruct test environments should include accurate poses from the best available GNSS, INS or odometry; in GNSS-denied mines, the state-estimation inputs and solution should be retained.",
+   "quote": "Accurate poses from the best available GNSS, INS or odometry; in GNSS-denied mines, retain the state-estimation inputs and solution.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t98",
+    "t121",
+    "t132"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Para-Lane states that RTK/INS trajectories alone are insufficient for aligning frames and adds lidar mapping plus camera-to-lidar registration.",
+   "quote": "Para-Lane states that RTK/INS trajectories alone \"are insufficient\" for aligning frames and adds lidar mapping plus camera-to-lidar registration.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Para-Lane",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t98",
+    "t132",
+    "t100"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Recording virtual-site reconstruction data should include multiple passes and lateral coverage, plus multiple positions, directions and heights for future machines with different sensor heights.",
+   "quote": "Multiple passes, lateral coverage and, for future machines with different sensor heights, multiple positions, directions and heights.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5,
+    17
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t100",
+    "t265"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In Para-Lane, training on two lanes and testing between them, called “sandwich,” performed better than extrapolation.",
+   "quote": "Training on two lanes and testing between them (\"sandwich\") beat extrapolation in Para-Lane",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5,
+    17
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Para-Lane",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t261",
+    "t132"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "LiDAR-EVS identifies single-traversal training as the source of extrapolation failure.",
+   "quote": "LiDAR-EVS identifies single-traversal training as the source of extrapolation failure.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5,
+    17
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "LiDAR-EVS",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t261",
+    "t132"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In XLD, three cameras substantially reduced the reported drop compared with one camera.",
+   "quote": "Multiple cameras: in XLD three cameras reduced the drop substantially compared with one.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    6
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "XLD",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t89",
+    "t132"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "COLMAP recommends good texture, similar illumination, high overlap, at least three observations per object and genuinely different camera positions for reconstruction.",
+   "quote": "COLMAP recommends good texture, similar illumination, high overlap, at least three observations per object and genuinely different camera positions",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    16
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "COLMAP",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t133",
+    "t132"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "COLMAP warns that pure camera rotation is inadequate for reconstruction.",
+   "quote": "warns that pure rotation is inadequate",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    16
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "COLMAP",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t133"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "COLMAP notes that many near-identical frames do not replace different viewpoints and suggests downsampling video.",
+   "quote": "notes that many near-identical frames do not replace viewpoints (it suggests downsampling video).",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    16
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "COLMAP",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t133"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Mapping runs should use clear weather; Para-Lane selected clear sunny days with uncongested road conditions.",
+   "quote": "Clear weather for the mapping run: Para-Lane selected \"clear sunny days with uncongested road conditions\".",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Para-Lane",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t132",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Lidar recordings for environment reconstruction should retain the rawest useful representation, including timestamps, point positions, return and intensity, and sensor configuration, rather than a decimated visualisation cloud.",
+   "quote": "The rawest useful lidar representation (timestamps, point positions, return and intensity, sensor configuration) rather than a decimated visualisation cloud",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t93",
+    "t121",
+    "t132"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Radar recordings for environment reconstruction should retain richer detections or raw or intermediate measurements rather than a final tracked-object list, because the final list has already discarded most environment information.",
+   "quote": "for radar, richer detections or raw or intermediate measurements rather than a final tracked-object list, which has already discarded most of the environment information.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t121",
+    "t132"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Incorrect sensor transforms or timestamps can make several accurate sensors produce an inaccurate reconstructed scene.",
+   "quote": "Poor calibration or synchronisation: several accurate sensors build an inaccurate scene if their transforms or timestamps are wrong.",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    9
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t101",
+    "t132"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ECU-GS documented calibration drift from vibration on rough off-road terrain in 2026.",
+   "quote": "Calibration drift from vibration on rough terrain is documented off-road (ECU-GS, 2026).",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    9
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ECU-GS",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t100",
+    "t102",
+    "t132"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Only 50 of 200 recorded MV² scenes met the training-set pose-quality threshold of maximum epipolar error below 30.",
+   "quote": "Pose failures: only 50 of 200 recorded MV² scenes satisfied the training-set threshold (maximum epipolar error below 30).",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    8
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MV²",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t132",
+    "t258"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Single forward-facing passes and insufficient parallax or coverage can cause environment reconstruction to fail.",
+   "quote": "Single forward-facing passes and insufficient parallax or coverage.",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    16
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t133"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Textureless or repetitive terrain, including uniform soil, snow, tunnel walls and crop rows, weakens visual correspondence during reconstruction.",
+   "quote": "Textureless or repetitive terrain: uniform soil, snow, tunnel walls or crop rows weaken visual correspondence",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t133"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Lidar or surveyed control is especially valuable for reconstruction of textureless or repetitive terrain that weakens visual correspondence.",
+   "quote": "uniform soil, snow, tunnel walls or crop rows weaken visual correspondence, which makes lidar or surveyed control especially valuable.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t132",
+    "t105"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Moving objects and dynamic-mask errors can cause workers, machines, swinging booms and vegetation to be reconstructed at incompatible positions unless the static background is separated from dynamic tracks.",
+   "quote": "Moving objects, including dynamic-mask errors: workers, machines, swinging booms and vegetation are reconstructed at incompatible positions unless the static background is separated from dynamic tracks.",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    8
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t86"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Ground4D identifies fine-detail terrain, ego-motion jitter and moving vegetation as reconstruction failure factors in May 2026.",
+   "quote": "Fine-detail terrain, ego-motion jitter and moving vegetation (Ground4D, May 2026).",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    10
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Ground4D",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t132"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "EUVS identifies lighting changes between passes as a reconstruction failure factor, based on on-road evidence.",
+   "quote": "Lighting changes between passes (EUVS)",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EUVS",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t132",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Strong glare, shadow and reflective surfaces are reconstruction failure factors; COLMAP warns against high dynamic range and specularities.",
+   "quote": "strong glare, shadow and reflective surfaces (COLMAP warns against high dynamic range and specularities).",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    16
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "COLMAP",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t133",
+    "t102",
+    "t104"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MV² identifies large height changes as a reconstruction failure factor, based on on-road evidence.",
+   "quote": "Large height changes (MV²).",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    8
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MV²",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t132",
+    "t100"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Dust, snow, rain and fog are desirable test phenomena but undesirable mapping observations because transient returns and obscuration become mixed into the supposedly permanent site model.",
+   "quote": "Dust, snow, rain and fog in the recordings: desirable test phenomena but undesirable mapping observations, because transient returns and obscuration become mixed into the supposedly permanent site model.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t132",
+    "t130"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A workable separation of mapping and adverse-weather testing preserves the raw adverse-weather run for sensor replay and reconstructs the static site from cleaner data.",
+   "quote": "A workable split preserves the raw adverse-weather run for sensor replay and reconstructs the static site from cleaner data.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t132",
+    "t102",
+    "t121"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No off-road study was found quantifying the problem of adverse-weather recordings mixing transient returns and obscuration into a permanent reconstructed site model.",
+   "quote": "No off-road study quantifying this was found.",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t132",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A route-mounted sensor cannot recover surfaces that the sensor never observed.",
+   "quote": "Occlusion: a route-mounted sensor cannot recover surfaces it never saw",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t103",
+    "t132"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Neural synthesis can visually fill unobserved surfaces, but generated content should not silently become geometric truth in a reconstructed environment.",
+   "quote": "neural synthesis can fill them visually, but generated content should not silently become geometric truth.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t103",
+    "t105",
+    "t132"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "RGB footage cannot provide a simulator with the radar or acoustic properties of a surface.",
+   "quote": "Missing material truth: RGB footage cannot tell the simulator the radar or acoustic properties of a surface.",
+   "kind": "risk",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    13
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t136",
+    "t94",
+    "t126"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The proposed conversion pipeline from field recordings to test environments is expert opinion assembled from cited reconstruction, geospatial and simulation sources, not a published standard.",
+   "quote": "It is **Expert opinion** assembled from the cited reconstruction, geospatial and simulation sources, not a published standard.",
+   "kind": "uncertain",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t130",
+    "t271"
+   ],
+   "importance": 2
+  }
+ ]
+}

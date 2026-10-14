@@ -1,0 +1,810 @@
+{
+ "chunkId": "k196",
+ "hash": "158f258ee7eadfbe",
+ "facts": [
+  {
+   "text": "Field recordings support camera and lidar replay and novel-view simulation close to the recorded path, provided the recordings were made with reconstruction in mind.",
+   "quote": "Recordings work for camera and lidar replay and for novel-view simulation close to the recorded path, provided they were recorded with reconstruction in mind.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5,
+    17
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t116",
+    "t132"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Field recordings do not support radar or ultrasonic re-simulation, large viewpoint or height changes, or adding weather.",
+   "quote": "They do not work for radar or ultrasonic re-simulation, for large viewpoint or height changes, or for adding weather",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": true,
+   "cites": [
+    5,
+    17
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t165",
+    "t94",
+    "t95",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A one-pass reconstruction can look excellent but become inaccurate as soon as a sensor moves substantially away from the recording trajectory.",
+   "quote": "a one-pass reconstruction can look excellent while becoming inaccurate as soon as a sensor moves substantially from the recording trajectory.",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5,
+    17
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t165",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Structure from motion and multi-view stereo can convert a camera-only log into poses, dense points and a textured mesh.",
+   "quote": "A camera-only log can be converted by structure from motion and multi-view stereo into poses, dense points and a textured mesh.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    48,
+    45
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "structure from motion",
+     "kind": "method"
+    },
+    {
+     "name": "multi-view stereo",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t133",
+    "t131"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Combining camera recordings with lidar makes metric geometry easier to constrain.",
+   "quote": "Camera plus lidar makes metric geometry easier to constrain.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    48,
+    45
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t132",
+    "t89",
+    "t92"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Lidar combined with IMU or GNSS, or lidar-inertial SLAM, produces a directly mapped point cloud.",
+   "quote": "Lidar plus IMU or GNSS, or lidar-inertial SLAM, gives a directly mapped point cloud.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    48,
+    45
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "lidar-inertial SLAM",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t132",
+    "t93",
+    "t98"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Geometry outputs reconstructed from field recordings can be converted into explicit terrain and objects.",
+   "quote": "These outputs convert to explicit terrain and objects.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    48,
+    45
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t131",
+    "t130",
+    "t132"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Logs and their poses can train a NeRF or 3DGS scene representation as an alternative to explicit geometry conversion.",
+   "quote": "Alternatively, logs and their poses train a NeRF or 3DGS representation",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    48,
+    45
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NeRF",
+     "kind": "method"
+    },
+    {
+     "name": "3DGS",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t116"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Neural lidar models such as GS-LiDAR (ICLR 2025) learn ray-drop and intensity from recordings and reproduce the recorded sensor rather than a new sensor type.",
+   "quote": "neural lidar models learn ray-drop and intensity from the recordings (GS-LiDAR, ICLR 2025), so they reproduce the recorded sensor rather than a new sensor type",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    48,
+    45
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "GS-LiDAR",
+     "kind": "method"
+    },
+    {
+     "name": "ICLR 2025",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t92",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No validated evidence supports re-simulating a different sensor type from recordings, such as radar from camera-only logs.",
+   "quote": "re-simulating a different sensor, for example radar from camera-only logs, has no validated evidence.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    48,
+    45
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t94",
+    "t89",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Replay-quality field recordings provide original video, sensor streams and machine motion.",
+   "quote": "Replay | Original video and sensor streams and machine motion",
+   "kind": "definition",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Replay cannot change machine path, sensor position, actors or site state.",
+   "quote": "Cannot change machine path, sensor position, actors or site state",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t154"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Novel-view or perception simulation provides reconstructed geometry or a neural scene and synthetic camera and lidar outputs from nearby new viewpoints.",
+   "quote": "Reconstructed geometry or neural scene; synthetic camera and lidar from nearby new viewpoints",
+   "kind": "definition",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t116",
+    "t85",
+    "t130"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Novel-view or perception simulation may have incomplete extrapolation accuracy, object editability and sensor-material fidelity.",
+   "quote": "Extrapolation accuracy, object editability and sensor-material fidelity may be incomplete",
+   "kind": "uncertain",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t261",
+    "t136",
+    "t125"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A closed-loop braking environment includes explicit geometry, terrain, objects, a calibrated sensor model, dynamic agents and machine dynamics.",
+   "quote": "Closed-loop braking environment | Explicit geometry, terrain, objects, calibrated sensor model, dynamic agents, machine dynamics",
+   "kind": "definition",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t154",
+    "t179",
+    "t130",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Creating a closed-loop braking environment from recordings requires substantial conversion and calibration beyond ordinary reconstruction.",
+   "quote": "Substantial conversion and calibration beyond ordinary reconstruction",
+   "kind": "requirement",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t154",
+    "t132",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "XLD, a June 2024 preprint with a 2025 v3 using synthetic CARLA data, reported 3DGS PSNR of 30.87, 23.26, 22.01 and 19.17 dB at lateral shifts of 0, 1, 2 and 4 m respectively.",
+   "quote": "XLD (June 2024, v3 2025, preprint, synthetic CARLA) | 0, 1, 2, 4 m lateral | 3DGS: 30.87, 23.26, 22.01, 19.17 dB PSNR",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    6
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "XLD",
+     "kind": "publication"
+    },
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    },
+    {
+     "name": "3DGS",
+     "kind": "method"
+    },
+    {
+     "name": "PSNR",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254",
+    "t116",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the XLD synthetic CARLA benchmark, EmerNeRF had the best PSNR at a 4 m lateral shift, at 24.80 dB.",
+   "quote": "best at 4 m: EmerNeRF 24.80 dB [6]",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    6
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "XLD",
+     "kind": "publication"
+    },
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    },
+    {
+     "name": "EmerNeRF",
+     "kind": "method"
+    },
+    {
+     "name": "PSNR",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254",
+    "t116",
+    "t249"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Para-Lane (3DV 2025), using real data, reported 3DGS PSNR of 22.99, 17.05 and 16.26 dB for the same, adjacent and second-adjacent lanes respectively.",
+   "quote": "Para-Lane (3DV 2025, real) | same, adjacent, second-adjacent lane | 3DGS: 22.99, 17.05, 16.26 dB",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Para-Lane",
+     "kind": "dataset"
+    },
+    {
+     "name": "3DGS",
+     "kind": "method"
+    },
+    {
+     "name": "PSNR",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254",
+    "t116",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In Para-Lane (3DV 2025), the best method, Scaffold-GS, reported PSNR of 22.96, 17.59 and 17.09 dB for the same, adjacent and second-adjacent lanes respectively.",
+   "quote": "same, adjacent, second-adjacent lane | 3DGS: 22.99, 17.05, 16.26 dB; best (Scaffold-GS) 22.96, 17.59, 17.09 dB [5]",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Para-Lane",
+     "kind": "dataset"
+    },
+    {
+     "name": "Scaffold-GS",
+     "kind": "method"
+    },
+    {
+     "name": "PSNR",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254",
+    "t116",
+    "t249"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "EUVS (ICCV 2025), using real data, reported average PSNR reductions of 24.6% for translation, 25.6% for rotation and 30.6% for both.",
+   "quote": "EUVS (ICCV 2025, real) | translation / rotation / both | average PSNR minus 24.6% / minus 25.6% / minus 30.6%",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EUVS",
+     "kind": "publication"
+    },
+    {
+     "name": "PSNR",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "EUVS (ICCV 2025), using real data, reported LPIPS increases of up to 70% under viewpoint changes.",
+   "quote": "LPIPS up to plus 70% [7]",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    7
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EUVS",
+     "kind": "publication"
+    },
+    {
+     "name": "LPIPS",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254",
+    "t249"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "MV², an August 2026 preprint using real data, reported a 3DGS PSNR decrease from 24.22 to 16.78 dB when changing from car to scooter viewpoints.",
+   "quote": "MV² (August 2026, preprint, real) | car to scooter; drone to car | 3DGS 24.22 to 16.78 dB",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    8
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MV²",
+     "kind": "publication"
+    },
+    {
+     "name": "3DGS",
+     "kind": "method"
+    },
+    {
+     "name": "PSNR",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254",
+    "t116",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "MV², an August 2026 preprint using real data, reported drone-trained 3DGS PSNR decreasing from 29.13 to 10.36 dB when changing from drone to car viewpoints.",
+   "quote": "drone-trained 3DGS 29.13 to 10.36 dB [8]",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    8
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MV²",
+     "kind": "publication"
+    },
+    {
+     "name": "3DGS",
+     "kind": "method"
+    },
+    {
+     "name": "PSNR",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t254",
+    "t116",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "LiDAR-EVS, a March 2026 preprint, claims Chamfer distances 48.6% and 47.2% lower than SplatAD for lidar at a 3 m lateral shift; absolute values were not extracted.",
+   "quote": "LiDAR-EVS (March 2026, preprint) | 3 m lateral, lidar | Chamfer distance 48.6% and 47.2% lower than SplatAD (authors' claim; absolute values not extracted) [17]",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    17
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "LiDAR-EVS",
+     "kind": "publication"
+    },
+    {
+     "name": "SplatAD",
+     "kind": "method"
+    },
+    {
+     "name": "Chamfer distance",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t92",
+    "t249",
+    "t116"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "LiDAR-EVS describes single-traversal 3DGS as suffering from severe overfitting and poor generalisation on novel ego paths.",
+   "quote": "LiDAR-EVS describes single-traversal 3DGS as suffering from severe overfitting and poor generalisation on novel ego paths",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    17,
+    75
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "LiDAR-EVS",
+     "kind": "publication"
+    },
+    {
+     "name": "3DGS",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t219",
+    "t116",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "VEGS (July 2024) addresses the problem of severe overfitting and poor generalisation of single-traversal 3DGS on novel ego paths.",
+   "quote": "severe overfitting and poor generalisation on novel ego paths; VEGS (July 2024) exists for the same reason.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    17,
+    75
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "VEGS",
+     "kind": "publication"
+    },
+    {
+     "name": "3DGS",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t219",
+    "t116",
+    "t261"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "LiDAR-EVS and VEGS attempt to remedy novel-path reconstruction problems but do not demonstrate that those problems have disappeared.",
+   "quote": "These papers try to remedy the problem; they are not evidence that it has disappeared.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    17,
+    75
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "LiDAR-EVS",
+     "kind": "publication"
+    },
+    {
+     "name": "VEGS",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t70",
+    "t116",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Diffusion repair methods help but do not close the novel-view gap: for Para-Lane two-lane shifts, the best reported PSNR is 19.47 dB with ViewMorpher3D / SetDiff (January 2026), versus about 23 dB on the recorded path.",
+   "quote": "on Para-Lane two-lane shifts the best reported score is 19.47 dB PSNR (ViewMorpher3D / SetDiff, January 2026) against about 23 dB on the recorded path.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    76,
+    77
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Para-Lane",
+     "kind": "dataset"
+    },
+    {
+     "name": "ViewMorpher3D",
+     "kind": "method"
+    },
+    {
+     "name": "SetDiff",
+     "kind": "method"
+    },
+    {
+     "name": "PSNR",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t115",
+    "t254",
+    "t249"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Viewpoint-height degradation is directly relevant to large machines whose sensors sit well above car height.",
+   "quote": "The height result is directly relevant to large machines whose sensors sit well above car height",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t1",
+    "t100",
+    "t261"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A car-to-truck height study was not found.",
+   "quote": "a car-to-truck height study was not found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t100",
+    "t261",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Field recordings intended for reconstruction need hardware-synchronised timestamps and retained calibration, including camera intrinsics, all sensor-to-machine extrinsics and accurate timing.",
+   "quote": "Hardware-synchronised timestamps and retained calibration: camera intrinsics, all sensor-to-machine extrinsics and accurate timing.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": true,
+   "cites": [
+    5
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t101",
+    "t100",
+    "t121",
+    "t132"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Para-Lane used 10 Hz cameras with 1920 by 1080 resolution and three 32-channel lidars, with sensor data fused after motion compensation.",
+   "quote": "Para-Lane used 10 Hz 1920 by 1080 cameras and three 32-channel lidars, fused after motion compensation.",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Para-Lane",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t87",
+    "t89",
+    "t92",
+    "t99"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "For rolling or scanning sensors, per-frame timestamps may be insufficient if the machine moves significantly during a scan.",
+   "quote": "For rolling or scanning sensors, per-frame timestamps may not suffice if the machine moves significantly during a scan.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": true,
+   "cites": [
+    5
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t101",
+    "t89",
+    "t92"
+   ],
+   "importance": 3
+  }
+ ]
+}

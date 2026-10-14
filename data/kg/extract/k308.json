@@ -1,0 +1,500 @@
+{
+ "chunkId": "k308",
+ "hash": "e4c89bd348b94ed0",
+ "facts": [
+  {
+   "text": "A 2026 tracked brake study built component models of the valve, accumulator and cylinder volume, fitted the models to bench pressure traces, and then checked full-machine behavior.",
+   "quote": "Build component models (valve, accumulator, cylinder volume), fit them to bench pressure traces, then check full-machine behavior (2026 tracked brake study).",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    6
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t182",
+    "t237",
+    "t184"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Wheel-loader studies validated stability models on scaled vehicles.",
+   "quote": "Validate stability models on scaled vehicles (wheel-loader studies).",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    30,
+    47
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t2",
+    "t178",
+    "t237"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2013 slope and obstacle loader model fitted uncertain contact parameters, such as friction or cornering stiffness on unpaved ground, by comparing simulation and experiment.",
+   "quote": "Fit uncertain contact parameters such as friction or cornering stiffness on unpaved ground by comparing simulation and experiment (2013 slope and obstacle loader model).",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    58
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t180",
+    "t237",
+    "t174"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The commercial-vehicle approach in US patent 11104321 compares road-test events with simulation and finely adjusts the virtual brake model until the results match; this is vendor on-road evidence.",
+   "quote": "A patented commercial-vehicle approach compares road-test events with simulation and \"finely adjusts\" the virtual brake model until the two match (US patent 11104321).",
+   "kind": "method",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    59
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "US patent 11104321",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t182",
+    "t237",
+    "t250"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The recommended fastest defensible modeling strategy is to identify a small number of physics-based machine families before the 2027 hardware arrives, rather than build a separate model for every model designation.",
+   "quote": "The fastest defensible strategy is to identify a small number of physics-based machine families before the 2027 hardware arrives rather than build a separate model for every model designation.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t230",
+    "t179"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Wheeled versus crawler machines are a useful discriminator for physics-based machine families because wheeled machines need a tire-force model, crawlers need track, soil and shear dynamics, and the ISO brake standard differs.",
+   "quote": "wheeled versus crawler (tire-force model versus track, soil and shear dynamics; different ISO brake standard)",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t229",
+    "t175",
+    "t180",
+    "t181",
+    "t282"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Rigid versus articulated machines are a useful discriminator for physics-based machine families because articulation adds articulation, yaw and roll states.",
+   "quote": "rigid versus articulated (extra articulation, yaw and roll states)",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t176",
+    "t179"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Friction-brake-dominant versus hydrostatic- or retarder-blended machines are a useful discriminator for physics-based machine families because command-to-deceleration dynamics and failure cases differ.",
+   "quote": "friction-brake dominant versus hydrostatic or retarder blended (different command-to-deceleration dynamics and failure cases)",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t177",
+    "t182",
+    "t56"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Loaded-haul versus nearly fixed-mass machines are a useful discriminator for physics-based machine families because payload and center-of-gravity variability differ.",
+   "quote": "loaded-haul machine versus nearly fixed-mass machine (payload and center-of-gravity variability)",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t168",
+    "t178"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "High-speed haulage versus low-speed work machines are a useful discriminator for physics-based machine families because kinetic-energy braking contrasts with fixed delays and geometry.",
+   "quote": "high-speed haulage versus low-speed work machine (kinetic-energy braking versus fixed delays and geometry)",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t169",
+    "t171",
+    "t182"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hard-surface versus deformable-terrain missions are a useful discriminator for physics-based machine families.",
+   "quote": "hard-surface versus deformable-terrain mission.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t174",
+    "t181"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NIOSH assembled parameters for 145 underground haulage vehicles in five categories, including load-haul-dumps, shuttle cars, roof bolters and haul trucks, and used statistical methods to select representative vehicle parameter sets for dynamic models.",
+   "quote": "it assembled parameters for 145 underground haulage vehicles in five categories (including load-haul-dumps, shuttle cars, roof bolters and haul trucks) and used statistical methods to select representative vehicle parameter sets for dynamic models.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t229",
+    "t179",
+    "t7",
+    "t3"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NIOSH's underground-haulage clustering work does not establish the right number of machine families for any manufacturer, but demonstrates a published alternative of representative parameterized classes to modeling every machine separately.",
+   "quote": "That does not establish the right number of families for any manufacturer, but it shows that representative parameterized classes are a published alternative to modeling every machine separately.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    5
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t229",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "NIOSH's 2015–2018 shuttle-car proximity project plan listed stopping distance, deceleration rate, detection range, environmental effects, detection accuracy and repeatability as field-test metrics, as reported at the 2016 proximity partnership meeting.",
+   "quote": "NIOSH's 2015 to 2018 shuttle-car proximity project plan listed stopping distance, deceleration rate, detection range, environmental effects, detection accuracy and repeatability as metrics",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    60
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t224",
+    "t170",
+    "t169",
+    "t87",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NIOSH's 2015–2018 shuttle-car proximity project plan included dynamic simulations of machine stopping distance, as reported at the 2016 proximity partnership meeting.",
+   "quote": "alongside \"dynamic simulations of machine stopping distance\" (2016 proximity partnership meeting).",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    60
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t170",
+    "t179",
+    "t126"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The modeling work from NIOSH's shuttle-car proximity project was published as Jobes and Carr's dynamic modeling system at ASME IMECE in November 2018, covering rubber-tired shuttle cars, scoops and battery haulers.",
+   "quote": "The modeling side of that work was published as Jobes and Carr's dynamic modeling system (ASME IMECE, November 2018) for rubber-tired shuttle cars, scoops and battery haulers",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NIOSH",
+     "kind": "organization"
+    },
+    {
+     "name": "Jobes",
+     "kind": "person"
+    },
+    {
+     "name": "Carr",
+     "kind": "person"
+    },
+    {
+     "name": "ASME IMECE",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t179",
+    "t170"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Field-validation results for the work published as Jobes and Carr's dynamic modeling system for rubber-tired shuttle cars, scoops and battery haulers were not found.",
+   "quote": "the field-validation results were not found.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    4
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Jobes",
+     "kind": "person"
+    },
+    {
+     "name": "Carr",
+     "kind": "person"
+    }
+   ],
+   "terms": [
+    "t237",
+    "t184",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Prototype tests should aim at parameter identification and independent falsification, rather than replicating every virtual scenario.",
+   "quote": "The objective of prototype tests is parameter identification and independent falsification, not replication of every virtual scenario.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t184",
+    "t237",
+    "t263",
+    "t264"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Physical characterization should measure machine mass, axle or track loads, payload range, center-of-gravity geometry, tire radii or track geometry, brake distribution, articulation geometry and sensor positions, repeating measurements at load configurations that move the center of gravity.",
+   "quote": "Machine mass, axle or track loads, payload range, center-of-gravity geometry, tire radii or track geometry, brake distribution, articulation geometry and sensor positions, repeated at load configurations that move the center of gravity.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    29
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t184",
+    "t168",
+    "t178",
+    "t176",
+    "t100"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 3450's adverse-configuration test-mass provisions are the baseline for physical mass, geometry and load-state characterization.",
+   "quote": "ISO 3450's adverse-configuration test-mass provisions are the baseline.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    29
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 3450",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t282",
+    "t184",
+    "t168"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Brake-actuator identification should use controlled service-brake commands and record time-stamped command, valve, pressure or current response, brake-torque proxy if available, longitudinal acceleration, wheel or track speeds and vehicle speed.",
+   "quote": "Controlled service-brake commands with time-stamped command, valve, pressure or current response, brake-torque proxy if available, longitudinal acceleration, wheel or track speeds and vehicle speed",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    55
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t184",
+    "t182",
+    "t121",
+    "t101"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Controlled service-brake testing should identify brake-actuator dead time, rise time, gain, saturation, hysteresis and release time.",
+   "quote": "to identify dead time, rise time, gain, saturation, hysteresis and release time.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    55
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t184",
+    "t171",
+    "t182"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Brake-actuator identification must test the automated brake path, not just the pedal path.",
+   "quote": "This must be done for the automated brake path, not just the pedal path.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    55
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t184",
+    "t182",
+    "t172",
+    "t25"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Brake-actuator identification should measure latency to 10% g, as specified in the South African guidance.",
+   "quote": "Measure latency to 10% g as in the South African guidance.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    55
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "South Africa",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t171",
+    "t169",
+    "t302",
+    "t184"
+   ],
+   "importance": 3
+  }
+ ]
+}

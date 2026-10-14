@@ -1,0 +1,697 @@
+{
+ "chunkId": "k333",
+ "hash": "5d2d8bc76c71f2c1",
+ "facts": [
+  {
+   "text": "To avoid over-fitting, hold out whole sites, weather episodes, machine models or scenario families rather than random frames.",
+   "quote": "Hold out whole sites, weather episodes, machine models or scenario families rather than random frames",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    44
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t219",
+    "t113"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "To avoid over-fitting, maintain separate tuning, validation and untouched audit splits.",
+   "quote": "keep a tuning, validation and untouched audit split",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    44
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t219",
+    "t113"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Limit queries to the frozen test set to avoid over-fitting.",
+   "quote": "limit queries to the frozen set",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    44
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t219"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Report tuned-set and frozen-set performance side by side.",
+   "quote": "report tuned-set and frozen-set performance side by side",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    44
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t224"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3:2023 links collision-risk areas to machine kinematics and dimensions.",
+   "quote": "ISO 21815-3:2023 links collision-risk areas to machine kinematics and dimensions",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    48,
+    49
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t187",
+    "t229"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3:2023 defines avoidance distance through detection, decision and action time, stopping distance and a safety distance.",
+   "quote": "defines the avoidance distance through detection, decision and action time, stopping distance and a safety distance",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    2,
+    48,
+    49
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t170",
+    "t172",
+    "t194"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Transfer settings across machine models through physics rather than copied constants: express zones as functions of speed, latency, braking deceleration (mass, slope, surface), sensor pose and machine envelope to turn per-model tuning into per-model measurement. The method is expert opinion with independent supporting studies.",
+   "quote": "Expressing zones as functions of speed, latency, braking deceleration (mass, slope, surface), sensor pose and machine envelope turns per-model tuning into per-model measurement",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    2,
+    48,
+    49
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t229",
+    "t187",
+    "t169",
+    "t172",
+    "t230"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Hierarchical (partial-pooling) models and transfer Bayesian optimisation handle residuals when physics-based settings are transferred across machine models. The method is expert opinion with independent supporting studies.",
+   "quote": "hierarchical (partial-pooling) models and transfer Bayesian optimisation handle the residuals",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    2,
+    48,
+    49
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Hierarchical (partial-pooling) models",
+     "kind": "method"
+    },
+    {
+     "name": "Transfer Bayesian optimisation",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t229",
+    "t227"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No published ISO rule stating that testing N representative machines validates the machine family was found.",
+   "quote": "No published ISO rule that \"testing N representative machines validates the family\" was found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    2,
+    48,
+    49
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ISO",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t76",
+    "t230",
+    "t229",
+    "t271"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Synthetic data augments training but has not been shown to replace real validation data.",
+   "quote": "Synthetic data augments training; it has not been shown to replace real validation data.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    52,
+    53,
+    54,
+    57,
+    58,
+    59,
+    60
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t113",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Construction and mining studies from 2023 to 2026 report gains from mixing synthetic and real images.",
+   "quote": "Construction and mining studies (2023 to 2026) report gains from mixing synthetic and real images",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    52,
+    53,
+    54,
+    57,
+    58,
+    59,
+    60
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t112"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Construction and mining studies from 2023 to 2026 report a persistent gap when training on synthetic data alone.",
+   "quote": "Construction and mining studies (2023 to 2026) report gains from mixing synthetic and real images, a persistent gap when training on synthetic data alone",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    52,
+    53,
+    54,
+    57,
+    58,
+    59,
+    60
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t165",
+    "t112"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Construction and mining studies from 2023 to 2026 report a \"materiality gap\" for PPE.",
+   "quote": "a \"materiality gap\" for PPE",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    52,
+    53,
+    54,
+    57,
+    58,
+    59,
+    60
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Construction and mining studies from 2023 to 2026 report degradation of state-of-the-art lidar detectors in real dust.",
+   "quote": "degradation of state-of-the-art lidar detectors in real dust",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    52,
+    53,
+    54,
+    57,
+    58,
+    59,
+    60
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t92",
+    "t102",
+    "t86"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "On-road studies show the same synthetic-data pattern reported in construction and mining studies: gains from mixing synthetic and real images, but a persistent gap with synthetic-only training.",
+   "quote": "On-road studies show the same pattern.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    52,
+    53,
+    54,
+    57,
+    58,
+    59,
+    60
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t165",
+    "t112"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No peer-reviewed demonstration was found that synthetic-only training or validation establishes collision-avoidance reliability for heavy off-road machines.",
+   "quote": "A peer-reviewed demonstration that synthetic-only training or validation establishes collision-avoidance reliability for heavy off-road machines was not found.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    52,
+    53,
+    54,
+    57,
+    58,
+    59,
+    60
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t114",
+    "t1",
+    "t23",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM OpenSCENARIO DSL 2.2.0 (March 2026), OpenSCENARIO XML 1.4.0 and OpenDRIVE 1.9.0 (2026) are built around a road-traffic domain model.",
+   "quote": "ASAM OpenSCENARIO DSL 2.2.0 (March 2026), OpenSCENARIO XML 1.4.0 and OpenDRIVE 1.9.0 (2026) are built around a road-traffic domain model",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    69,
+    70,
+    71,
+    75,
+    78
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ASAM OpenSCENARIO DSL",
+     "kind": "standard"
+    },
+    {
+     "name": "ASAM OpenSCENARIO XML",
+     "kind": "standard"
+    },
+    {
+     "name": "ASAM OpenDRIVE",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t232",
+    "t137",
+    "t140"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ASAM's off-road concept work identified missing concepts for deformable terrain, particles, vegetation, heavy-machine manipulation and sensor degradation.",
+   "quote": "ASAM's own off-road concept work identified missing concepts for deformable terrain, particles, vegetation, heavy-machine manipulation and sensor degradation",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    69,
+    70,
+    71,
+    75,
+    78
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ASAM",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t232",
+    "t131",
+    "t102",
+    "t137"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Scenic is an open-source probabilistic language with native 3D geometry.",
+   "quote": "Scenic (an open-source probabilistic language with native 3D geometry)",
+   "kind": "definition",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    69,
+    70,
+    71,
+    75,
+    78
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Scenic",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t232",
+    "t327"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scenic fits pits, stockpiles and loading areas better than road-oriented scenario languages, but Scenic is not a standard.",
+   "quote": "Scenic (an open-source probabilistic language with native 3D geometry) fits pits, stockpiles and loading areas better but is not a standard.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    69,
+    70,
+    71,
+    75,
+    78
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Scenic",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t232",
+    "t12",
+    "t13",
+    "t271"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No off-road scenario standard was found in development that could arrive before mid-2027.",
+   "quote": "No off-road scenario standard was found in development that could arrive before mid-2027.",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    69,
+    70,
+    71,
+    75,
+    78
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t232",
+    "t271",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The EU Machinery Regulation 2023/1230 applies from 20 January 2027, before the prototype arrives.",
+   "quote": "The EU Machinery Regulation 2023/1230 applies from 20 January 2027, before the prototype arrives",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    81,
+    82,
+    83,
+    84,
+    85
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "EU Machinery Regulation 2023/1230",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t298",
+    "t42",
+    "t275"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The EU Machinery Regulation 2023/1230 lists safety components with self-evolving machine-learning behaviour in Annex I Part A, requiring notified-body assessment.",
+   "quote": "lists safety components with self-evolving machine-learning behaviour in Annex I Part A (notified-body assessment)",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    81,
+    82,
+    83,
+    84,
+    85
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "EU Machinery Regulation 2023/1230",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t298",
+    "t79",
+    "t278",
+    "t277"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The Digital Omnibus on AI, Regulation (EU) 2026/1744, entered into force on 27 July 2026.",
+   "quote": "The Digital Omnibus on AI, Regulation (EU) 2026/1744 (in force 27 July 2026)",
+   "kind": "event",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    81,
+    82,
+    83,
+    84,
+    85
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Digital Omnibus on AI, Regulation (EU) 2026/1744",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t298",
+    "t275"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The Digital Omnibus on AI, Regulation (EU) 2026/1744, moves machinery to a sectoral approach, with AI-specific requirements to follow by delegated act.",
+   "quote": "moves machinery to a sectoral approach with AI-specific requirements to follow by delegated act",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    81,
+    82,
+    83,
+    84,
+    85
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Digital Omnibus on AI, Regulation (EU) 2026/1744",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t298",
+    "t79",
+    "t275"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Whether a trained-then-frozen detector counts as \"self-evolving\" under the EU Machinery Regulation 2023/1230 is disputed.",
+   "quote": "Whether a trained-then-frozen detector counts as \"self-evolving\" is disputed.",
+   "kind": "disagreement",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    81,
+    82,
+    83,
+    84,
+    85
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "EU Machinery Regulation 2023/1230",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t298",
+    "t79",
+    "t112",
+    "t278"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,180 @@
+{
+ "chunkId": "k316",
+ "hash": "4d314f738094f53a",
+ "facts": [
+  {
+   "text": "The published expert recommendation is to set commanded deceleration for each machine at each moment to a_command = min(a_collision-need, a_traction, a_stability, a_machine, a_load/attachment).",
+   "quote": "a_command = min(a_collision-need, a_traction, a_stability, a_machine, a_load/attachment)",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t190",
+    "t185",
+    "t169"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the recommended commanded-deceleration calculation, a_collision-need is the deceleration required to preserve the target clearance.",
+   "quote": "a_collision-need is the deceleration required to preserve the target clearance",
+   "kind": "definition",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t194",
+    "t169"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In the recommended commanded-deceleration calculation, the traction limit is a_traction = µ_min·g·cos θ − g·sin θ, based on the current surface and tire or track capability.",
+   "quote": "a_traction = µ_min·g·cos θ − g·sin θ from the current surface and tire or track capability",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t174",
+    "t173",
+    "t175",
+    "t190"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the recommended commanded-deceleration calculation, a_stability comes from multibody analysis of roll, pitch, yaw and articulation state, including payload.",
+   "quote": "a_stability comes from the roll, pitch, yaw and articulation state, with payload, from the multibody analysis",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t178",
+    "t179",
+    "t176",
+    "t190"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In the recommended commanded-deceleration calculation, a_machine is determined by actual brake and drive capability and thermal state.",
+   "quote": "a_machine from actual brake and drive capability and thermal state",
+   "kind": "definition",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t182",
+    "t190"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In the recommended commanded-deceleration calculation, a_load/attachment is determined by payload-shift or implement constraints, with an operator-restraint limit alongside.",
+   "quote": "a_load/attachment from payload-shift or implement constraints, with an operator-restraint limit alongside",
+   "kind": "definition",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t178",
+    "t190",
+    "t10"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The published expert recommendation is to ramp machine deceleration up gradually using a jerk limit.",
+   "quote": "Ramp the deceleration up gradually (a jerk limit)",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t190",
+    "t169",
+    "t28"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The published expert recommendation is never to release the machine brake on a downgrade.",
+   "quote": "never release the brake on a downgrade",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t173",
+    "t195"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The published expert recommendation is to finish machine braking in a parking-brake or hold state so the machine cannot roll away.",
+   "quote": "finish in a parking-brake or hold state so the machine cannot roll away",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t55",
+    "t195"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "When the deceleration needed to avoid a collision exceeds the safe envelope, the published expert recommendation is still to apply the maximum safe mitigation.",
+   "quote": "when the deceleration needed to avoid the collision exceeds the safe envelope, still apply the maximum safe mitigation",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t22",
+    "t190",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "When the deceleration needed to avoid a collision exceeds the safe envelope, the published expert recommendation is to report that avoidance is no longer physically guaranteed rather than silently assuming commanded deceleration will be achieved.",
+   "quote": "report that avoidance is no longer physically guaranteed rather than silently assuming the commanded deceleration will be achieved",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t22",
+    "t190",
+    "t170"
+   ],
+   "importance": 3
+  }
+ ]
+}

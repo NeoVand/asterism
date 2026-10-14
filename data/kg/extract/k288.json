@@ -1,0 +1,341 @@
+{
+ "chunkId": "k288",
+ "hash": "c8d6018b12163dbc",
+ "facts": [
+  {
+   "text": "How much physical testing can safely be replaced by simulation remains uncertain.",
+   "quote": "How much physical testing can safely be replaced by simulation.",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t264",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Automotive tool vendors emphasize laboratory coverage and repeatability when discussing replacement of physical testing by simulation.",
+   "quote": "Automotive tool vendors emphasize laboratory coverage and repeatability",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t264",
+    "t127"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Independent vehicle-in-the-loop literature identifies sensor-model, signal-generator and testbench errors as direct limitations on replacing physical testing with simulation.",
+   "quote": "the independent VIL literature identifies sensor-model, signal-generator and testbench errors as direct limitations.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t264",
+    "t165"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No independent evidence was found that a purely virtual or hardware-in-the-loop programme can validate 100+ off-road site types, all relevant machines and all dust, weather and light conditions without substantial real-world correlation.",
+   "quote": "No independent evidence was found that a purely virtual or HIL programme can validate 100+ off-road site types, all relevant machines and all dust, weather and light conditions without substantial real-world correlation.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t127",
+    "t148",
+    "t44",
+    "t160",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Whether sensor simulation can be made credible for dust, snow, glare, wet lenses, mud splash, reflective rock, tunnel multipath and terrain clutter remains uncertain.",
+   "quote": "Whether sensor simulation can be made credible for dust, snow, glare, wet lenses, mud splash, reflective rock, tunnel multipath and terrain clutter.",
+   "kind": "uncertain",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    35
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t234",
+    "t102",
+    "t104",
+    "t323"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A virtual “dust = heavy” parameter does not by itself correspond to mine dust particle distributions.",
+   "quote": "A virtual \"dust = heavy\" parameter does not by itself correspond to mine dust particle distributions.",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    35
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t125",
+    "t165"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "No validated off-road sensor models were found.",
+   "quote": "No validated off-road sensor models",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    35
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t323",
+    "t234"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No fidelity thresholds for off-road sensor simulation were found.",
+   "quote": "no fidelity thresholds were found.",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    35
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t125",
+    "t258",
+    "t323"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The maturity of full-scale heavy-machine vehicle-in-the-loop testing remains uncertain.",
+   "quote": "Full-scale heavy-machine VIL maturity.",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    20
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t1",
+    "t248"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Examples of over-the-air camera, radar and ultrasonic stimulation are overwhelmingly road-vehicle systems.",
+   "quote": "Over-the-air camera, radar and ultrasonic stimulation examples are overwhelmingly road-vehicle systems",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    20
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t89",
+    "t94",
+    "t95"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The 2024 survey of over-the-air sensor stimulation still identified significant gaps, especially lidar stimulation and complex target generation.",
+   "quote": "the 2024 survey still identified significant gaps, especially lidar stimulation and complex target generation.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    20
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t92"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Whether auto-labeling transfers to off-road classes—workers in PPE, machines and partially buried objects—remains uncertain.",
+   "quote": "Whether auto-labeling transfers to off-road classes (workers in PPE, machines, partially buried objects)",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    27,
+    28
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t1",
+    "t14"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The proper audit rate and acceptance threshold for off-road auto-labeling remain uncertain.",
+   "quote": "and what audit rate and acceptance threshold are proper.",
+   "kind": "uncertain",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    27,
+    28
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t62"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No universal off-road prescription for auto-labeling transfer, audit rate and acceptance threshold was found.",
+   "quote": "No universal off-road prescription was found.",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    27,
+    28
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t106",
+    "t62"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Whether validation results transfer across machine variants with different sizes and sensor positions remains uncertain.",
+   "quote": "Whether results transfer across machine variants with different sizes and sensor positions.",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t76",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No published method for transferring validation results across machine variants with different sizes and sensor positions was found.",
+   "quote": "Whether results transfer across machine variants with different sizes and sensor positions. No published method was found.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t265",
+    "t76"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "How regulators will accept virtual evidence for off-road machines remains uncertain.",
+   "quote": "How regulators will accept virtual evidence for off-road machines.",
+   "kind": "uncertain",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t127",
+    "t70",
+    "t277"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Information on acceptance of virtual evidence for off-road machines under the EU Machinery Regulation was not found.",
+   "quote": "Not found for the EU Machinery Regulation",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "EU Machinery Regulation 2023/1230",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t298",
+    "t127",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Information on MOSH acceptance of virtual evidence for off-road machines was not found.",
+   "quote": "Not found for the EU Machinery Regulation or for MOSH.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t307",
+    "t127",
+    "t70"
+   ],
+   "importance": 3
+  }
+ ]
+}

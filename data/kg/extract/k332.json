@@ -1,0 +1,1002 @@
+{
+ "chunkId": "k332",
+ "hash": "dc452c151b4a53fb",
+ "facts": [
+  {
+   "text": "Off-road validation should structure the test space in three layers rather than one Cartesian matrix: an operating-domain taxonomy, a scenario catalog, and parameterised scenario families.",
+   "quote": "Structure the space in three layers, not as one Cartesian matrix.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    6,
+    9,
+    10,
+    12
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t140",
+    "t142",
+    "t198"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the recommended three-layer test-space structure, an operating-domain taxonomy sets the boundaries of testing.",
+   "quote": "An operating-domain taxonomy sets the boundaries",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    6,
+    9,
+    10,
+    12
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t140"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "In the recommended three-layer test-space structure, a scenario catalog guarantees that known fatal-accident patterns are always tested.",
+   "quote": "a scenario catalog guarantees that known fatal-accident patterns are always tested",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    6,
+    9,
+    10,
+    12
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t142",
+    "t19"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Parameterised scenario families at functional, logical and concrete levels, with a probability distribution over their parameters, feed sampling, search and estimation.",
+   "quote": "parameterised scenario families (functional, logical, concrete) with a probability distribution over their parameters feed sampling, search and estimation",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    6,
+    9,
+    10,
+    12
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t141",
+    "t199",
+    "t200"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815 and the EMESRT PR-5A storyboards are off-road anchors for structuring the validation test space.",
+   "quote": "The off-road anchors are ISO 21815 and the EMESRT PR-5A storyboards",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    6,
+    9,
+    10,
+    12
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ISO 21815",
+     "kind": "standard"
+    },
+    {
+     "name": "EMESRT PR-5A",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t304",
+    "t142"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 34501 to ISO 34505 and ASAM OpenODD are on-road templates whose structure transfers to off-road validation but whose content does not.",
+   "quote": "ISO 34501 to 34505 and ASAM OpenODD are on-road templates whose structure transfers but whose content does not.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    1,
+    2,
+    6,
+    9,
+    10,
+    12
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ISO 34501",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 34502",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 34503",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 34504",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 34505",
+     "kind": "standard"
+    },
+    {
+     "name": "ASAM OpenODD",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t290",
+    "t137",
+    "t140"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "No single test-selection method serves every validation job.",
+   "quote": "No single selection method does every job.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25,
+    26,
+    29,
+    30,
+    34
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t200"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Combinatorial t-way designs guarantee discrete test coverage.",
+   "quote": "Combinatorial (t-way) designs guarantee discrete coverage",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25,
+    26,
+    29,
+    30,
+    34
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "t-way testing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t202"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Space-filling designs cover continuous parameters and train surrogate models.",
+   "quote": "space-filling designs cover continuous parameters and train surrogates",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25,
+    26,
+    29,
+    30,
+    34
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "space-filling designs",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t204",
+    "t199"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Falsification and adaptive search are test-selection methods for finding failures.",
+   "quote": "falsification and adaptive search find failures",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25,
+    26,
+    29,
+    30,
+    34
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "falsification",
+     "kind": "method"
+    },
+    {
+     "name": "adaptive search",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t205",
+    "t207"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Importance sampling estimates small probabilities only when the field distribution is known.",
+   "quote": "importance sampling estimates small probabilities only when the field distribution is known",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25,
+    26,
+    29,
+    30,
+    34
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "importance sampling",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t206",
+    "t214"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A frozen stratified random sample is the only basis for a release rate claim.",
+   "quote": "a frozen stratified random sample is the only basis for a release rate claim.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25,
+    26,
+    29,
+    30,
+    34
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "stratified random sampling",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t203",
+    "t209",
+    "t218"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Demonstrations of the discussed test-selection methods are mostly on-road evidence, while their methodological basis is statistics and NIST methodology.",
+   "quote": "Independent** (statistics and NIST methodology); demonstrations mostly **(on-road evidence)",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    25,
+    26,
+    29,
+    30,
+    34
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "NIST",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t200",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "With zero misses allowed, demonstrating a miss rate of at most 1% at 95% one-sided confidence requires 299 independent trials per claimed population.",
+   "quote": "With zero misses allowed, demonstrating a miss rate of at most 1% at 95% one-sided confidence needs 299 independent trials per claimed population",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "With zero misses allowed, demonstrating a miss rate of at most 0.1% at 95% one-sided confidence requires 2,995 independent trials per claimed population.",
+   "quote": "at most 0.1% needs 2,995",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "With zero misses allowed, demonstrating a miss rate of at most 0.01% at 95% one-sided confidence requires 29,956 independent trials per claimed population.",
+   "quote": "at most 0.01% needs 29,956.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "With zero misses allowed, demonstrating miss rates of at most 1%, 0.1% and 0.01% at 99% confidence requires respectively 459, 4,603 and 46,050 independent trials per claimed population.",
+   "quote": "At 99% confidence the figures are 459, 4,603 and 46,050.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 1% miss-rate claim in each of 20 critical strata at 95% one-sided confidence requires about 6,000 zero-miss trials; this volume is feasible only in simulation or hardware-in-the-loop.",
+   "quote": "A 1% claim in each of 20 critical strata therefore needs about 6,000 zero-miss trials, which is only feasible in simulation or hardware-in-the-loop.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t210",
+    "t209",
+    "t126",
+    "t148"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Statistical trial requirements are the binding constraint on demonstrating validation performance.",
+   "quote": "The statistics are the binding constraint.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t209",
+    "t210"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "False-alarm validation needs exposure hours rather than staged targets.",
+   "quote": "False alarms need exposure hours, not staged targets.",
+   "kind": "recommendation",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t32",
+    "t213",
+    "t20"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "With zero events in T representative operating hours, the 95% upper bound on the event rate is approximately 3/T, or exactly 2.996/T, under Poisson mathematics.",
+   "quote": "With zero events in T representative operating hours, the 95% upper bound on the event rate is about 3/T (exactly 2.996/T)",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t213",
+    "t209",
+    "t210"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Under the zero-event Poisson calculation, 300 representative operating hours with no unnecessary brake supports a 95% upper-bound claim of fewer than one unnecessary brake per 100 hours.",
+   "quote": "300 hours with no unnecessary brake supports \"fewer than 1 per 100 hours\"",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t31",
+    "t213",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Under the zero-event Poisson calculation, 3,000 representative operating hours with no unnecessary brake supports a 95% upper-bound claim of fewer than one unnecessary brake per 1,000 hours.",
+   "quote": "3,000 hours supports \"fewer than 1 per 1,000 hours\".",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t31",
+    "t213",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Clustered alarms, such as alarms on every bucket pass or every dust cloud, violate the Poisson assumption and need block or overdispersed models.",
+   "quote": "Clustered alarms (every bucket pass, every dust cloud) violate the Poisson assumption and need block or overdispersed models.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    25
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t32",
+    "t213",
+    "t209"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Field exposure alone cannot demonstrate rare-event performance.",
+   "quote": "Field exposure alone cannot demonstrate rare-event performance.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    35,
+    36
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t144",
+    "t20",
+    "t215"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "RAND's Driving to Safety analysis by Kalra and Paddock, dated April 2016, found that 275 million failure-free miles were needed to show at 95% confidence a fatality rate no worse than 1.09 per 100 million miles.",
+   "quote": "RAND's Driving to Safety analysis (Kalra and Paddock, April 2016) found that 275 million failure-free miles were needed to show, at 95% confidence, a fatality rate no worse than 1.09 per 100 million miles",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    35,
+    36
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "RAND Corporation",
+     "kind": "organization"
+    },
+    {
+     "name": "Driving to Safety",
+     "kind": "publication"
+    },
+    {
+     "name": "Kalra",
+     "kind": "person"
+    },
+    {
+     "name": "Paddock",
+     "kind": "person"
+    }
+   ],
+   "terms": [
+    "t215",
+    "t317",
+    "t209",
+    "t19"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "RAND's April 2016 Driving to Safety analysis by Kalra and Paddock found that about 11 billion miles were needed to demonstrate a 20% improvement in fatality rate with 80% power.",
+   "quote": "and about 11 billion miles to show a 20% improvement with 80% power.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    35,
+    36
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "RAND Corporation",
+     "kind": "organization"
+    },
+    {
+     "name": "Driving to Safety",
+     "kind": "publication"
+    },
+    {
+     "name": "Kalra",
+     "kind": "person"
+    },
+    {
+     "name": "Paddock",
+     "kind": "person"
+    }
+   ],
+   "terms": [
+    "t215",
+    "t317",
+    "t212",
+    "t19"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The logic of RAND's road-vehicle exposure analysis transfers to off-road machines, but its numerical mileage requirements do not: off-road claims concern per-encounter detection and intervention, which can be staged and simulated.",
+   "quote": "The logic transfers to off-road machines; the numbers do not, because the off-road claim is about per-encounter detection and intervention, which can be staged and simulated.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    35,
+    36
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "RAND Corporation",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t215",
+    "t1",
+    "t86",
+    "t28",
+    "t127"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Validation governance should keep discovery campaigns, estimation campaigns, and deterministic requirement and regression campaigns separate.",
+   "quote": "Keep three campaign classes apart.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    12,
+    43,
+    44
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t233",
+    "t217",
+    "t63",
+    "t161"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Discovery tests using combinatorial, screening, falsification and adversarial methods answer whether the system can be broken.",
+   "quote": "Discovery tests (combinatorial, screening, falsification, adversarial) answer \"can we break it\"",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    12,
+    43,
+    44
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ISO 34505",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO/IEC/IEEE 29119",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t233",
+    "t202",
+    "t205",
+    "t217"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A frozen, pre-registered, stratified estimation sample answers how often the system succeeds in a defined population.",
+   "quote": "a frozen, pre-registered, stratified estimation sample answers \"how often does it succeed in a defined population\"",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    12,
+    43,
+    44
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ISO 34505",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO/IEC/IEEE 29119",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t218",
+    "t203",
+    "t217",
+    "t233"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Deterministic requirement and regression tests answer whether a change has broken a required behaviour.",
+   "quote": "deterministic requirement and regression tests answer \"did this change break a required behaviour\".",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    12,
+    43,
+    44
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "ISO 34505",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO/IEC/IEEE 29119",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t63",
+    "t161",
+    "t223"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The failure fraction of a discovery campaign must never be reported as a field failure rate.",
+   "quote": "The failure fraction of a discovery campaign must never be reported as a field failure rate",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    12,
+    43,
+    44
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t217",
+    "t233",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A validation audit set must not become another tuning set.",
+   "quote": "the audit set must not become another tuning set.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    12,
+    43,
+    44
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t220",
+    "t219",
+    "t231"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Collision-mitigation tuning should be a constrained multi-objective problem: make missed or late interventions a hard constraint, then optimise false warnings, unnecessary brakes and productivity loss.",
+   "quote": "Make missed or late interventions a hard constraint, then optimise false warnings, unnecessary brakes and productivity loss",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    25,
+    45,
+    46
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [],
+   "terms": [
+    "t225",
+    "t28",
+    "t32",
+    "t31"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Collision-mitigation tuning should keep the Pareto front visible so the trade-off is a documented safety-policy decision rather than a hidden weight.",
+   "quote": "keeping the Pareto front visible so the trade-off is a documented safety-policy decision rather than a hidden weight.",
+   "kind": "recommendation",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [
+    25,
+    45,
+    46
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "Pareto front",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t226",
+    "t225"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Response-surface designs suit tuning problems with a few smooth parameters, according to NIST methodology and peer-reviewed optimisation research.",
+   "quote": "Response-surface designs suit a few smooth parameters",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25,
+    45,
+    46
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "response-surface designs",
+     "kind": "method"
+    },
+    {
+     "name": "NIST",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t201",
+    "t227",
+    "t199"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Evolutionary and Bayesian multi-objective methods suit expensive closed-loop evaluation but weaken beyond about 20 parameters or with discontinuous responses.",
+   "quote": "evolutionary and Bayesian multi-objective methods suit expensive closed-loop evaluation but weaken beyond about 20 parameters or with discontinuous responses.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    25,
+    45,
+    46
+   ],
+   "chapters": [
+    9
+   ],
+   "entities": [
+    {
+     "name": "evolutionary multi-objective methods",
+     "kind": "method"
+    },
+    {
+     "name": "Bayesian multi-objective methods",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t227",
+    "t225",
+    "t154",
+    "t199"
+   ],
+   "importance": 3
+  }
+ ]
+}

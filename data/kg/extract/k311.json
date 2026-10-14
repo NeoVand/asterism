@@ -1,0 +1,585 @@
+{
+ "chunkId": "k311",
+ "hash": "a1023c17b052ae4b",
+ "facts": [
+  {
+   "text": "Modern road regulations and consumer tests specify scenario performance rather than a mandatory internal time-to-collision threshold.",
+   "quote": "Modern road regulations and consumer tests specify scenario performance, not one mandatory internal time-to-collision threshold.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    62
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t185",
+    "t186",
+    "t279"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The US FMVSS No. 127 final rule of May 2024 defines automatic emergency braking as automatic braking when the driver has not braked, or supplementation of insufficient driver braking.",
+   "quote": "The US FMVSS No. 127 final rule (May 2024) defines automatic emergency braking as braking automatically if the driver has not done so, or supplementing insufficient driver braking",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    62
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FMVSS 127",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t25",
+    "t296"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Under the US FMVSS No. 127 final rule, the automatic emergency braking algorithm remains the manufacturer's design choice.",
+   "quote": "the algorithm remains the manufacturer's design choice.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    62
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FMVSS 127",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t185",
+    "t296"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2023 arXiv open-source openpilot-based study used time-to-collision thresholds staged into warning, partial braking and full braking, assuming a 2.5 s driver reaction time.",
+   "quote": "Time-to-collision thresholds staged by phase (warning, partial braking, full braking), for example in an open-source openpilot-based study that assumed a 2.5 s driver reaction time (arXiv, 2023).",
+   "kind": "example",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    63
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "openpilot",
+     "kind": "tool"
+    },
+    {
+     "name": "arXiv",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t186",
+    "t189",
+    "t35"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2025 arXiv study analyzing real crash reconstructions used time-to-brake logic that delays activation until collision distance equals required stopping distance, with “no ego acceleration” and “no time-to-evade” gating conditions to suppress false positives.",
+   "quote": "Time-to-brake logic that delays activation until the distance to collision equals the required stopping distance, with extra gating conditions (\"no ego acceleration\", \"no time-to-evade\") to suppress false positives (arXiv, 2025, analyzing real crash reconstructions).",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    64
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "arXiv",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t185",
+    "t170",
+    "t192"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "US patent 11724673 describes look-up-table time-to-collision thresholds adapted to the target's acceleration.",
+   "quote": "Look-up-table time-to-collision thresholds adapted to the target's acceleration (US patent 11724673).",
+   "kind": "method",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    65
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "US patent 11724673",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t186",
+    "t188"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Haus, Sherony and Gabler (2019) showed that the share of US pedestrian crashes avoided depends on both the time-to-collision trigger and system latency, making avoidance and latency a tuning trade-off.",
+   "quote": "Tuning trades avoidance against latency. Haus, Sherony and Gabler (2019) showed how the share of US pedestrian crashes avoided depends on both the time-to-collision trigger and the system latency.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    33,
+    66
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Haus",
+     "kind": "person"
+    },
+    {
+     "name": "Sherony",
+     "kind": "person"
+    },
+    {
+     "name": "Gabler",
+     "kind": "person"
+    },
+    {
+     "name": "United States",
+     "kind": "place"
+    }
+   ],
+   "terms": [
+    "t186",
+    "t88",
+    "t27",
+    "t197"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Hamberg et al. (2015), as reported in a 2021 review, reported automated braking timing of about 170 ms sensing plus 50 ms detection error, compared with about 700 ms for humans.",
+   "quote": "Automated braking has been reported at about 170 ms sensing plus 50 ms detection error, against about 700 ms for humans (Hamberg et al., 2015, as reported in a 2021 review).",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    66
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Hamberg",
+     "kind": "person"
+    }
+   ],
+   "terms": [
+    "t88",
+    "t35",
+    "t25"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "UN R152 includes false-activation scenarios, including driving between two stationary vehicles without a warning or braking.",
+   "quote": "UN R152 includes false-activation scenarios, such as driving between two stationary vehicles without a warning or braking",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    3,
+    67
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "UN R152",
+     "kind": "regulation"
+    }
+   ],
+   "terms": [
+    "t295",
+    "t192",
+    "t279"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NHTSA's heavy-vehicle test procedures use stationary-vehicle false-positive scenarios.",
+   "quote": "NHTSA's heavy-vehicle test procedures use stationary-vehicle false-positive scenarios",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    3,
+    67
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NHTSA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t296",
+    "t192",
+    "t279"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NHTSA's heavy-vehicle test procedures use a −0.05 g onset threshold to detect when braking begins.",
+   "quote": "a −0.05 g onset threshold to detect when braking begins.",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    3,
+    67
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NHTSA",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t296",
+    "t169",
+    "t279"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2026 round robin standardized a 1.0 s time-to-collision trigger for comparing simulation tools; the trigger was a research test definition, not an appropriate earth-moving threshold.",
+   "quote": "A 2026 round robin standardized a 1.0 s time-to-collision trigger to compare simulation tools; that was a research test definition, not an appropriate earth-moving threshold.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    11
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t186",
+    "t126",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The transferable process from road practice is to simulate and test families of conflict scenarios, tune detection and intervention to maximize avoidance while controlling nuisance interventions, and evaluate the full sensor-to-actuator path.",
+   "quote": "simulate and test a family of conflict scenarios, tune detection and intervention to maximize avoidance while controlling nuisance interventions, and evaluate the full sensor-to-actuator path.",
+   "kind": "recommendation",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t197",
+    "t142",
+    "t192",
+    "t172"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Road-practice braking thresholds cannot be copied to off-road machines because ground, grade, geometry, speeds, articulation and intended close-proximity work differ.",
+   "quote": "The thresholds themselves cannot be copied, because ground, grade, geometry, speeds, articulation and intended close-proximity work differ.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t186",
+    "t174",
+    "t173",
+    "t176",
+    "t39"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3:2023 sizes a collision-risk area from machine kinematics.",
+   "quote": "ISO 21815-3:2023 sizes a collision-risk area from machine kinematics.",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t187",
+    "t179"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-3:2023 requires collision-system distance to cover object detection, confirmation and determination, action, machine stopping and a final safe distance.",
+   "quote": "Its collision-system distance must cover object detection, confirmation and determination, action, machine stopping and a final safe distance",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t193",
+    "t170",
+    "t194"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3:2023 requires detection distance to be large enough to allow a machine to stop.",
+   "quote": "the detection distance \"shall be large enough to allow a machine to stop\"",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t193",
+    "t170"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3:2023 permits reduction of the collision-risk area using current speed, turning angle, physical or virtual barriers and the projected or expected path.",
+   "quote": "the risk area may be reduced using current speed, turning angle, physical or virtual barriers and the projected or expected path.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t187",
+    "t196"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ISO 21815-3:2023 places collision-system action at collision-risk level 4 or above and permits a warning before that action.",
+   "quote": "Collision-system action is placed at collision-risk level 4 or above, with a warning permitted before it.",
+   "kind": "requirement",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t185",
+    "t189"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3:2023 uses a stopping-distance and risk-zone model rather than a pure time-to-collision model.",
+   "quote": "This is a stopping-distance and risk-zone model, not a pure time-to-collision model",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t170",
+    "t187",
+    "t186"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "ISO 21815-3:2023 leaves machine-specific numbers to manufacturer and integrator information.",
+   "quote": "the standard leaves the machine-specific numbers to manufacturer and integrator information.",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    15
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 21815-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t280",
+    "t188"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "An excavator safety algorithm published in the Journal of Mechanical Science and Technology in 2019 predicted the swing-and-boom working area kinematically and used time to collision and a warning index to switch between safe, warning and emergency-braking modes.",
+   "quote": "An excavator safety algorithm predicted the swing-and-boom working area kinematically and used time to collision and a warning index to switch between safe, warning and emergency-braking modes",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    18
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Journal of Mechanical Science and Technology",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t5",
+    "t185",
+    "t186",
+    "t189"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The excavator safety algorithm reported in the Journal of Mechanical Science and Technology in 2019 was evaluated in virtual reality only, with simulation-only evidence.",
+   "quote": "evaluated in virtual reality (Journal of Mechanical Science and Technology, 2019; simulation only).",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    18
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Journal of Mechanical Science and Technology",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t5",
+    "t127",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Hitachi's US patent 10710587 for electric mining trucks uses two time-to-collision limits; the second includes an operator-reaction margin m1 of “1 to 3 seconds or so.”",
+   "quote": "A Hitachi patent for electric mining trucks uses two time-to-collision limits; the second includes a margin m1 of \"1 to 3 seconds or so\" for operator reaction (US patent 10710587).",
+   "kind": "method",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    19
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Hitachi",
+     "kind": "company"
+    },
+    {
+     "name": "US patent 10710587",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t3",
+    "t186",
+    "t35"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A 2005 Griffith University thesis on mine haul trucks derived detection ranges of 15 m to the sides for people, 50 m to the rear and 100 m to the front from a 0.5 s reaction time plus braking.",
+   "quote": "Early mine haul-truck work derived detection ranges of 15 m to the sides (people), 50 m to the rear and 100 m to the front from a 0.5 s reaction time plus braking (Griffith University thesis, 2005).",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    68
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Griffith University",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t193",
+    "t3",
+    "t35",
+    "t170"
+   ],
+   "importance": 2
+  }
+ ]
+}

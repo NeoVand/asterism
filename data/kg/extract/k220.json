@@ -1,0 +1,428 @@
+{
+ "chunkId": "k220",
+ "hash": "12a2afc5d41c77e6",
+ "facts": [
+  {
+   "text": "The simplest camera simulation uses an ideal pinhole camera with distortion and noise.",
+   "quote": "At the simplest level, camera simulation uses an ideal pinhole camera with distortion and noise.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t126",
+    "t90"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Higher-fidelity camera simulation renders physically based materials and lights and adds calibrated lens distortion, point-spread or MTF effects, vignetting, chromatic and spectral response, rolling or global shutter, exposure, gain, shot and read noise, saturation, and the image-signal-processing chain.",
+   "quote": "Higher-fidelity models render physically based materials and lights, then add calibrated lens distortion, point-spread or MTF effects, vignetting, chromatic and spectral response, rolling or global shutter, exposure, gain, shot and read noise, saturation and the image-signal-processing chain.",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t90",
+    "t117",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Path tracing handles indirect light and specular reflection more faithfully than simple raster rendering.",
+   "quote": "Path tracing handles indirect light and specular reflection more faithfully than simple raster rendering.",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Path tracing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t118",
+    "t117"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Camera simulation rendering uses game engines or path tracing, with open-source CARLA and commercial tools from several vendors as examples.",
+   "quote": "Rendering is based on game engines or path tracing (open-source CARLA; commercial tools from several vendors).",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "CARLA",
+     "kind": "tool"
+    },
+    {
+     "name": "Path tracing",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t135",
+    "t118",
+    "t322",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "ASAM OpenMATERIAL 3D version 1.0 (2025) standardizes refractive index, surface roughness, permeability, and measured wavelength- and angle-dependent reflection so a single asset can carry sensor-relevant properties.",
+   "quote": "ASAM OpenMATERIAL 3D (version 1.0, 2025) standardizes properties such as refractive index, surface roughness, permeability and measured wavelength- and angle-dependent reflection so one asset can carry sensor-relevant properties",
+   "kind": "definition",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    90
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ASAM OpenMATERIAL 3D",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t136",
+    "t117"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A visually convincing simulated RGB image can still be physically wrong at the detector.",
+   "quote": "The main camera trap is that a visually convincing RGB image can still be physically wrong at the detector.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t256",
+    "t267"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Camera glare and low-sun effects depend on the lens and cover window, internal ghost paths, coatings, aperture, sensor saturation, and ISP.",
+   "quote": "Glare and low sun depend on the lens and cover window, internal ghost paths, coatings, aperture, sensor saturation and ISP",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Camera behavior in darkness depends on gain, noise, and HDR.",
+   "quote": "darkness depends on gain, noise and HDR",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t90",
+    "t102"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "LED work lights can introduce spectra and temporal flicker that an ordinary RGB renderer does not represent.",
+   "quote": "LED work lights can introduce spectra and temporal flicker that an ordinary RGB renderer does not represent.",
+   "kind": "risk",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t102",
+    "t125"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Public evidence jointly validating glare and low sun, darkness, and LED work-light spectral and flicker effects for construction or mining cameras was not found.",
+   "quote": "Public evidence validating all those effects jointly for construction or mining cameras was not found.",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t89",
+    "t102",
+    "t234",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "SynFog (2024) built a fog chamber and a one-to-one virtual twin in Blender; simulated per-channel trends consistently followed real captures as fog density increased. This is on-road evidence.",
+   "quote": "SynFog (2024) built a fog chamber and a one-to-one virtual twin of it in Blender and showed that simulated per-channel trends \"consistently follow\" real captures as fog density increases",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    51
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "SynFog",
+     "kind": "publication"
+    },
+    {
+     "name": "Blender",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t102",
+    "t129",
+    "t250",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Physics-based rain rendering on real images in Tremblay et al. (2020) degrades detection, segmentation, and depth estimation as a function of rainfall rate. This is on-road evidence.",
+   "quote": "Physics-based rain rendering on real images (Tremblay et al., 2020) degrades detection, segmentation and depth estimation as a function of rainfall rate",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    52
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Tremblay et al. (2020)",
+     "kind": "publication"
+    }
+   ],
+   "terms": [
+    "t102",
+    "t86",
+    "t114"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Learned camera simulation methods include GANs, diffusion models, and neural rendering.",
+   "quote": "Learned methods include GANs, diffusion models and neural rendering",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "GANs",
+     "kind": "method"
+    },
+    {
+     "name": "Diffusion models",
+     "kind": "method"
+    },
+    {
+     "name": "Neural rendering",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t115",
+    "t116",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "NeuroNCAP (2024) reports a minimal real-to-sim gap for neural rendering of nuScenes logs in open loop. This is on-road evidence.",
+   "quote": "NeuroNCAP (2024) reports a \"minimal\" real-to-sim gap for neural rendering of nuScenes logs in open loop",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    57
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NeuroNCAP",
+     "kind": "publication"
+    },
+    {
+     "name": "nuScenes",
+     "kind": "dataset"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t249",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In NeuroNCAP (2024), across 14 sequences, UniAD scored 0.490 NDS on real images and 0.489 NDS on rendered images. This is on-road evidence.",
+   "quote": "across 14 sequences, UniAD scored 0.490 NDS on real and 0.489 on rendered images",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    57
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NeuroNCAP",
+     "kind": "publication"
+    },
+    {
+     "name": "UniAD",
+     "kind": "product"
+    },
+    {
+     "name": "NDS",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t249",
+    "t116",
+    "t224"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "In NeuroNCAP (2024), across 14 sequences, VAD's NDS score dropped from 0.449 on real images to 0.413 on rendered images. This is on-road evidence.",
+   "quote": "across 14 sequences, UniAD scored 0.490 NDS on real and 0.489 on rendered images, while VAD dropped from 0.449 to 0.413",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    57
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NeuroNCAP",
+     "kind": "publication"
+    },
+    {
+     "name": "VAD",
+     "kind": "product"
+    },
+    {
+     "name": "NDS",
+     "kind": "metric"
+    }
+   ],
+   "terms": [
+    "t249",
+    "t116",
+    "t224"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Several vendors offer image injection into a camera's processing unit for hardware-in-the-loop testing, including Ansys AVxcelerate's \"HiL-ready image injection.\"",
+   "quote": "For hardware-in-the-loop, image injection into the camera's processing unit is offered by several vendors (for example Ansys AVxcelerate \"HiL-ready image injection\")",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    58
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Ansys AVxcelerate",
+     "kind": "tool"
+    }
+   ],
+   "terms": [
+    "t148",
+    "t149",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Over-the-air screen or projector stimulation is used for camera hardware-in-the-loop testing.",
+   "quote": "over-the-air screen or projector stimulation is also used [59]",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    59
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Screen or projector stimulation keeps camera optics and imager electronics in the test loop.",
+   "quote": "A screen or projector keeps optics and imager electronics in the loop",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t89"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Digital video injection bypasses real camera optics, so lens flare, soiling on the real lens, and the full high-dynamic-range response are not physically tested.",
+   "quote": "digital video injection bypasses the real optics, so lens flare, soiling on the real lens and the full high-dynamic-range response are not tested physically.",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t149",
+    "t89",
+    "t102",
+    "t148"
+   ],
+   "importance": 3
+  }
+ ]
+}

@@ -1,0 +1,1052 @@
+{
+ "chunkId": "k55",
+ "hash": "9c66b698a3462b7a",
+ "facts": [
+  {
+   "text": "Scenario and requirements engineering and a safety case can establish what must be tested, traceability from hazards to evidence, and missing coverage before hardware is available.",
+   "quote": "What must be tested; traceability from hazards to evidence; missing coverage exposed before hardware",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t63",
+    "t64",
+    "t67"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Scenario and requirements engineering and a safety case cannot by themselves establish that an implementation works; a scenario spreadsheet is not physical evidence.",
+   "quote": "That the implementation works; a scenario spreadsheet is not physical evidence",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t67",
+    "t70",
+    "t141"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Critical inputs for scenario and requirements engineering and a safety case are hazard analysis, use cases, accident and near-miss data, site experts, and acceptance metrics.",
+   "quote": "Hazard analysis, use cases, accident and near-miss data, site experts, acceptance metrics",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t47",
+    "t63",
+    "t67",
+    "t62"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A setup-from-zero duration for scenario and requirements engineering and a safety case was not found.",
+   "quote": "Not found; can begin now",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t67",
+    "t63",
+    "t343"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scenario and requirements engineering and safety-case work can begin now.",
+   "quote": "Not found; can begin now",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t63",
+    "t67"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scenario and requirements engineering and safety-case work have Low to Medium relative cost.",
+   "quote": "Low to Medium",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t63",
+    "t67",
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scenario and requirements engineering and safety cases have High heavy-off-road maturity as methodology.",
+   "quote": "High as methodology [5, 3]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    5,
+    3
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t63",
+    "t67",
+    "t1"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Fault injection and robustness testing can establish behaviour under sensor drop-outs, stale messages, bus faults, disagreement, bad calibration, actuator faults, and degraded modes.",
+   "quote": "Behaviour under sensor drop-outs, stale messages, bus faults, disagreement, bad calibration, actuator faults, degraded modes",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t100",
+    "t120"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Fault injection and robustness testing cannot by themselves establish intended-function perception with healthy hardware or behaviour under faults omitted by the fault model.",
+   "quote": "Intended-function perception with healthy hardware; faults the fault model omits",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t85",
+    "t50"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Critical inputs for fault injection and robustness testing are FMEA or FMEDA, injectable interfaces, SIL and HIL benches, and diagnostic requirements.",
+   "quote": "FMEA or FMEDA, injectable interfaces, SIL and HIL benches, diagnostic requirements",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "FMEA",
+     "kind": "method"
+    },
+    {
+     "name": "FMEDA",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t56",
+    "t57",
+    "t147",
+    "t148"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A setup-from-zero duration for fault injection and robustness testing was not found.",
+   "quote": "Not found; starts in software, matures into HIL",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t343"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Fault injection and robustness testing starts in software and matures into hardware-in-the-loop testing.",
+   "quote": "starts in software, matures into HIL",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t147",
+    "t148"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Fault injection and robustness testing has Low to High relative cost depending on the testing loop.",
+   "quote": "Low to High by loop",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t145",
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Fault injection and robustness testing has High heavy-off-road maturity for safety-control engineering.",
+   "quote": "High for safety-control engineering [9, 47]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    9,
+    47
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t56",
+    "t48",
+    "t1"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Environmental and component laboratory tests can establish responses to temperature, vibration, shock, electrical, and moisture stresses without waiting for seasons.",
+   "quote": "Temperature, vibration, shock, electrical and moisture stresses without waiting for seasons",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t45",
+    "t123"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Environmental and component laboratory tests cannot by themselves establish whole-system perception in a dusty snowstorm, with a dirty lens or radome, or in glare.",
+   "quote": "Whole-system perception in a dusty snowstorm, with a dirty lens or radome, in glare",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t85",
+    "t102",
+    "t103"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Environmental and component laboratory tests cannot by themselves establish lifetime field interactions.",
+   "quote": "lifetime field interactions",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t65",
+    "t74"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Critical inputs for environmental and component laboratory tests are sensors and ECUs, a chamber, shaker and EMC equipment, a mission profile, and applicable standards.",
+   "quote": "Sensors and ECUs, chamber, shaker and EMC equipment, mission profile, applicable standards",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t84",
+    "t119",
+    "t123",
+    "t271"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A setup-from-zero duration for environmental and component laboratory tests was not found.",
+   "quote": "Not found; some work waits for physical components",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t343"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Some environmental and component laboratory testing work must wait for physical components.",
+   "quote": "some work waits for physical components",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t343",
+    "t84",
+    "t119"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Environmental and component laboratory tests have High relative cost.",
+   "quote": "| High | High for components",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Environmental and component laboratory tests have High heavy-off-road maturity for components, with ISO 19014-3 identified as the relevant standard.",
+   "quote": "High for components (ISO 19014-3)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    48
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 19014-3",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t281",
+    "t1"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "An off-road weather-chamber facility was not found.",
+   "quote": "off-road weather-chamber facility not found [48]",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    48
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t102",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Formal and static verification can establish deterministic logic errors, interface violations, unsafe states, timing and data-contract problems, and traceability gaps.",
+   "quote": "Deterministic logic errors, interface violations, unsafe states, timing and data-contract problems, traceability gaps",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t65",
+    "t185",
+    "t64"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Formal and static verification cannot by themselves establish that an ML perception model recognises arbitrary real scenes or establish sensor physics.",
+   "quote": "That an ML perception model recognises arbitrary real scenes; sensor physics",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t79",
+    "t85",
+    "t65",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Critical inputs for formal and static verification are formal requirements, models and contracts, source code, static-analysis and model-checking software, and skilled engineers.",
+   "quote": "Formal requirements, models and contracts, source code, static-analysis and model-checking software, skilled engineers",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t63",
+    "t65",
+    "t359"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A setup-from-zero duration for formal and static verification was not found.",
+   "quote": "Not found; can begin before final hardware",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t65",
+    "t343"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Formal and static verification can begin before final hardware is available.",
+   "quote": "can begin before final hardware",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t65",
+    "t42"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Formal and static verification has Low to Medium relative cost.",
+   "quote": "| Low to Medium | High for conventional safety software",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t65",
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Formal and static verification has High heavy-off-road maturity for conventional safety software, but lower maturity for ML perception claims.",
+   "quote": "High for conventional safety software; lower for ML perception claims [47]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    47
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t65",
+    "t79",
+    "t49"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Continuous automated regression makes every captured or synthesised scenario a permanent test and catches regressions as software changes.",
+   "quote": "Every captured or synthesised scenario becomes a permanent test; regressions caught as software changes",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t223",
+    "t141"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Continuous automated regression cannot by itself establish that the test set represents the real operating domain.",
+   "quote": "That the test set represents the real operating domain",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t140"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Critical inputs for continuous automated regression are CI infrastructure, a scenario database, deterministic builds, metrics, compute, and triage.",
+   "quote": "CI infrastructure, scenario database, deterministic builds, metrics, compute, triage",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t142",
+    "t224"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "A setup-from-zero duration for continuous automated regression was not found.",
+   "quote": "Not found; can begin early",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t343"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Continuous automated regression can begin early.",
+   "quote": "Not found; can begin early",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t161"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Continuous automated regression has Medium relative cost.",
+   "quote": "| Medium | Medium [22]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Continuous automated regression has Medium heavy-off-road maturity.",
+   "quote": "Medium [22]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    22
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t161",
+    "t1"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Safety-rated sensors associated with IEC 61496 and IEC TS 62998 can establish component-level detection capability with an established certification basis.",
+   "quote": "Component-level detection capability with an established certification basis",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "IEC 61496",
+     "kind": "standard"
+    },
+    {
+     "name": "IEC TS 62998",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t78",
+    "t288",
+    "t277"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Safety-rated sensors cannot by themselves establish system-level performance on moving outdoor machines.",
+   "quote": "System-level performance on moving outdoor machines",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t78",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "IEC TS 61496-5 does not consider the aspects of a moving RPD application.",
+   "quote": "IEC TS 61496-5 \"does not consider the aspects of a moving RPD application\"",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "IEC TS 61496-5",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t78",
+    "t288"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Critical inputs for the safety-rated sensor approach are certified sensors and a certification body.",
+   "quote": "Certified sensors, certification body",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t78",
+    "t277"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Setup from zero for the safety-rated sensor approach is rated Low through buy-in.",
+   "quote": "Low (buy-in)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t78",
+    "t333"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The safety-rated sensor approach has Medium relative cost.",
+   "quote": "| Low (buy-in) | Medium |",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t78",
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The safety-rated sensor approach has Low to Medium heavy-off-road maturity.",
+   "quote": "Low to Medium: Inxpect's use of IEC TS 62998-1 for mobile outdoor radar is a vendor claim [66, 67]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    66,
+    67
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t78",
+    "t1"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Inxpect's use of IEC TS 62998-1 for mobile outdoor radar is a vendor claim.",
+   "quote": "Inxpect's use of IEC TS 62998-1 for mobile outdoor radar is a vendor claim [66, 67]",
+   "kind": "finding",
+   "evidence": "Vendor",
+   "onRoad": false,
+   "cites": [
+    66,
+    67
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Inxpect",
+     "kind": "company"
+    },
+    {
+     "name": "IEC TS 62998-1",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t78",
+    "t94",
+    "t288"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Architecture choices can reduce the scope of proof by using a deterministic channel to bound the ML channel or cooperative tags to cover tagged people.",
+   "quote": "Reduces the scope of proof (a deterministic channel bounds the ML channel; cooperative tags cover tagged people)",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t79",
+    "t97",
+    "t67"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Architecture choices do not remove the need for perception validation.",
+   "quote": "Does not remove the need for perception validation",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t85",
+    "t65"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Untagged objects are outside cooperative sensing.",
+   "quote": "untagged objects are outside cooperative sensing",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t97"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Critical inputs for architecture choices are systems engineering and multi-technology fusion design.",
+   "quote": "Systems engineering, multi-technology fusion design",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t99"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Setup-from-zero information for architecture choices was not found.",
+   "quote": "multi-technology fusion design | Not found |",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t343"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Architecture choices have Medium relative cost.",
+   "quote": "| Not found | Medium | Medium: multi-technology systems",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Architecture choices have Medium heavy-off-road maturity.",
+   "quote": "Medium: multi-technology systems are the norm in mining collision avoidance [45, 79, 43]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    45,
+    79,
+    43
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t1",
+    "t99"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Multi-technology systems are the norm in mining collision avoidance.",
+   "quote": "multi-technology systems are the norm in mining collision avoidance [45, 79, 43]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    45,
+    79,
+    43
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t99",
+    "t23"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Shared frameworks, third parties, and independent review can establish comparability, credible independent evidence, and challenges to assumptions.",
+   "quote": "Comparability; credible independent evidence; challenge to assumptions",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t71",
+    "t70",
+    "t270"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Shared frameworks, third parties, and independent review cannot by themselves establish site-specific multi-variable dynamics; this is a stated ACARP limit.",
+   "quote": "Site-specific multi-variable dynamics (stated ACARP limit)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Australian Coal Association Research Program",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t306",
+    "t71",
+    "t179"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Shared frameworks, third parties, and independent review cannot rescue incomplete engineering late.",
+   "quote": "cannot rescue incomplete engineering late",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t71",
+    "t270",
+    "t82"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Critical inputs for shared frameworks, third parties, and independent review are access to ACARP and Mining3 methods, MOSH specifications, test sites, a qualified independent body, and traceability.",
+   "quote": "Access to ACARP and Mining3 methods, MOSH specifications, test sites, qualified independent body, traceability",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "Australian Coal Association Research Program",
+     "kind": "organization"
+    },
+    {
+     "name": "Mining3",
+     "kind": "organization"
+    },
+    {
+     "name": "Mining Industry Occupational Safety and Health learning hub",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t306",
+    "t307",
+    "t71",
+    "t64"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Scheduling lead time for shared frameworks, third parties, and independent review was not found.",
+   "quote": "Scheduling lead time not found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t71",
+    "t343"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Shared frameworks have Low to Medium relative cost, whereas independent testing has Medium to High relative cost.",
+   "quote": "Low to Medium (frameworks); Medium to High (independent testing)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t71",
+    "t358"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Shared frameworks, third parties, and independent review have Medium to High maturity for mining.",
+   "quote": "Medium to High for mining [29, 62, 70]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    29,
+    62,
+    70
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t71",
+    "t270"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "None of the documented off-road collision-intervention products and programmes used as anchors publishes how long validation took.",
+   "quote": "None of these publishes how long validation took or whether simulation shortened it.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t22",
+    "t65",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "None of the documented off-road collision-intervention products and programmes used as anchors publishes whether simulation shortened validation.",
+   "quote": "None of these publishes how long validation took or whether simulation shortened it.",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t22",
+    "t127",
+    "t43"
+   ],
+   "importance": 3
+  }
+ ]
+}

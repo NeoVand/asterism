@@ -1,0 +1,1394 @@
+{
+ "chunkId": "k286",
+ "hash": "28a4a39b627514d3",
+ "facts": [
+  {
+   "text": "Open-loop replay of raw logs runs production software, optionally including the sensor-processing ECU.",
+   "quote": "Production software, optionally sensor-processing ECU",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    18,
+    11
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t119"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Open-loop replay of raw logs needs raw synchronized sensor logs, calibration, machine state, timing and ground truth.",
+   "quote": "Raw synced sensor logs, calibration, machine state, timing, ground truth",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    18,
+    11
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t121",
+    "t100",
+    "t101",
+    "t105"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Replay of raw logs operates in an open loop.",
+   "quote": "| Open |",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    18,
+    11
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Open-loop replay of raw logs can establish detection performance, false alarms and timing for the recorded configuration, support regression testing and establish an old-system baseline.",
+   "quote": "Detection, false alarms, timing of the recorded configuration; regression; old-system baseline",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    18,
+    11
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t221",
+    "t161",
+    "t32"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Open-loop replay of raw logs cannot prove braking effects, new sensor types or positions, conditions absent from the logs, or upstream sensor physics.",
+   "quote": "Effect of braking; new sensor types or positions; conditions not in logs; upstream sensor physics",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    18,
+    11
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t154",
+    "t84",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Open-loop replay of raw logs is subject to open-loop bias, identified in the table with CVPR 2024.",
+   "quote": "open-loop bias (CVPR 2024)",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    18,
+    11
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "CVPR 2024",
+     "kind": "other"
+    }
+   ],
+   "terms": [
+    "t155",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Open-loop replay of raw logs has medium off-road maturity: the method is common in practice, but little off-road evidence is published.",
+   "quote": "Medium: common in practice, little published off-road",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    18,
+    11
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The comparison table supports open-loop replay of raw logs with independent on-road evidence [18] and vendor on-road evidence [11].",
+   "quote": "**Independent (on-road evidence)** [18]; **Vendor (on-road evidence)** [11]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    18,
+    11
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t155",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Semantic or object-list replay uses real decision, warning and brake logic.",
+   "quote": "Decision, warning and brake logic",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    21
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t156",
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Semantic or object-list replay needs object lists in common coordinates and machine state, and can operate in an open or closed loop.",
+   "quote": "Object lists in common coordinates, machine state | Open or closed",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    21
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t156",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Semantic or object-list replay can test thresholds, warning logic and brake-request logic independently of sensor modality.",
+   "quote": "Thresholds, warning logic, brake-request logic independent of modality",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    21
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t156",
+    "t188",
+    "t185"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Semantic or object-list replay cannot prove perception performance and hides latency, occlusion and false detections.",
+   "quote": "Perception; hides latency, occlusion, false detections",
+   "kind": "risk",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    21
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t156",
+    "t85",
+    "t88",
+    "t103",
+    "t108"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Semantic or object-list replay has medium off-road maturity for logic and no off-road maturity for perception.",
+   "quote": "Medium for logic, none for perception",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    21
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t156",
+    "t85",
+    "t185"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Software-in-the-loop runs target software on a host and needs a scenario and world model, sensor and machine models, and an oracle.",
+   "quote": "Target software on a host | Scenario and world model, sensor and machine models, oracle",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    40,
+    35
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t125",
+    "t141"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Software-in-the-loop usually operates in a closed loop.",
+   "quote": "Usually closed",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    40,
+    35
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Software-in-the-loop can test logic and closed-loop behaviour and support large scenario sweeps.",
+   "quote": "Logic, closed-loop behaviour, large scenario sweeps",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    40,
+    35
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t154",
+    "t143"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Software-in-the-loop cannot prove real sensor physics unless its models are validated, and cannot prove ECU timing and I/O.",
+   "quote": "Real sensor physics unless models validated; ECU timing and I/O",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    40,
+    35
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t237",
+    "t119",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The software-in-the-loop comparison identifies a lack of standardized sensor-simulation quality metrics.",
+   "quote": "no standardized sensor-sim quality metrics",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    40,
+    35
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t234",
+    "t224",
+    "t323"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Software-in-the-loop has low-to-medium off-road maturity; agricultural standard ISO 18497-4 lists simulation.",
+   "quote": "Low to medium: ISO 18497-4 lists simulation (agricultural)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    40,
+    35
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 18497-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t147",
+    "t288"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The comparison table supports software-in-the-loop with independent evidence [40] and expert opinion [35].",
+   "quote": "**Independent** [40]; **Expert opinion** [35]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    40,
+    35
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t147",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "HIL with data injection uses a final or representative ECU and I/O.",
+   "quote": "Final or representative ECU and I/O",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    17,
+    16,
+    41,
+    25
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t119"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "HIL with data injection needs a real-time simulator, injection hardware, restbus, J1939 and an ISO/TS 21815-2 bus.",
+   "quote": "Real-time simulator, injection hardware, restbus, J1939 and ISO/TS 21815-2 bus",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    17,
+    16,
+    41,
+    25
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "SAE J1939",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO/TS 21815-2",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t148",
+    "t153",
+    "t120",
+    "t280"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "HIL with data injection operates in a closed loop when actuators feed back.",
+   "quote": "Closed when actuators feed back",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    17,
+    16,
+    41,
+    25
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "HIL with data injection can test ECU timing, interface timing, diagnostics and fail-to-safe behaviour.",
+   "quote": "ECU timing, interface timing, diagnostics, fail-to-safe (500 ms and 50 ms MOSH limits)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    17,
+    16,
+    41,
+    25
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t119",
+    "t55",
+    "t60"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The HIL with data injection comparison identifies MOSH fail-to-safe limits of 500 ms and 50 ms.",
+   "quote": "fail-to-safe (500 ms and 50 ms MOSH limits)",
+   "kind": "requirement",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    17,
+    16,
+    41,
+    25
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t148",
+    "t55",
+    "t307"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "HIL with data injection cannot prove optics, lens, imager or RF front-end performance, or performance in the real environment.",
+   "quote": "Optics, lens, imager, RF front end; real environment",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    17,
+    16,
+    41,
+    25
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t149",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "HIL with data injection has medium off-road maturity for interface tests, associated with the MOSH TRL4 lab phase.",
+   "quote": "Medium for interface tests (MOSH TRL4 lab phase)",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    17,
+    16,
+    41,
+    25
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t148",
+    "t307",
+    "t248"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The comparison table supports HIL with data injection with independent evidence [17, 16] and vendor on-road evidence [41, 25].",
+   "quote": "**Independent** [17, 16]; **Vendor (on-road evidence)** [41, 25]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": false,
+   "cites": [
+    17,
+    16,
+    41,
+    25
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t148",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Over-the-air sensor stimulation uses a real sensor and the downstream system.",
+   "quote": "Real sensor plus downstream system",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    23,
+    22,
+    20,
+    24,
+    43,
+    46
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t84"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Over-the-air sensor stimulation needs target simulators for radar, camera, lidar and ultrasonic sensors, a shielded room and path-loss calibration.",
+   "quote": "Target simulators (radar, camera, lidar, ultrasonic), shielded room, path-loss calibration",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    23,
+    22,
+    20,
+    24,
+    43,
+    46
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t94",
+    "t89",
+    "t92",
+    "t95"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Over-the-air sensor stimulation usually operates in a closed loop.",
+   "quote": "Usually closed",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    23,
+    22,
+    20,
+    24,
+    43,
+    46
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Over-the-air sensor stimulation tests the full real sensor's response to controlled targets and supports fault injection.",
+   "quote": "Full real sensor responds to controlled targets; fault injection",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    23,
+    22,
+    20,
+    24,
+    43,
+    46
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t56",
+    "t84"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Over-the-air sensor stimulation has limitations in representing clutter, dust, multipath and realistic scenes.",
+   "quote": "Clutter, dust, multipath, realistic scenes",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    23,
+    22,
+    20,
+    24,
+    43,
+    46
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t104",
+    "t102"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The review cited in the over-the-air sensor stimulation comparison gives a digital radar minimum range of 20 to 30 m.",
+   "quote": "radar minimum range (20 to 30 m digital per review, 0.6 m vendor claim)",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    23,
+    22,
+    20
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t94",
+    "t87"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A vendor claim cited in the over-the-air sensor stimulation comparison gives a radar minimum range of 0.6 m.",
+   "quote": "radar minimum range (20 to 30 m digital per review, 0.6 m vendor claim)",
+   "kind": "number",
+   "evidence": "Vendor",
+   "onRoad": true,
+   "cites": [
+    24,
+    43,
+    46
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t94",
+    "t87"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Over-the-air sensor stimulation has limitations from few targets, discrete angles, camera synchronization and camera field of view.",
+   "quote": "few targets; discrete angles; camera sync and FOV",
+   "kind": "risk",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    23,
+    22,
+    20,
+    24,
+    43,
+    46
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t89",
+    "t101",
+    "t87"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The over-the-air sensor stimulation comparison identifies a lidar stimulation gap.",
+   "quote": "lidar stimulation gap",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    23,
+    22,
+    20,
+    24,
+    43,
+    46
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t92"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Over-the-air sensor stimulation has low maturity for close-range off-road testing.",
+   "quote": "Low for close-range off-road",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    23,
+    22,
+    20,
+    24,
+    43,
+    46
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t1"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The comparison table supports over-the-air sensor stimulation with independent on-road evidence [23, 22, 20] and vendor on-road evidence [24, 43, 46].",
+   "quote": "**Independent (on-road evidence)** [23, 22, 20]; **Vendor (on-road evidence)** [24, 43, 46]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    23,
+    22,
+    20,
+    24,
+    43,
+    46
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t150",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Vehicle-in-the-loop uses a complete machine or major plant.",
+   "quote": "Complete machine or major plant",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    20,
+    23,
+    48
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Vehicle-in-the-loop needs a safe area or bench, a virtual environment, target injection or stimulation, and state feedback; the method operates in a closed loop.",
+   "quote": "Safe area or bench, virtual environment, target injection or stimulation, state feedback | Closed",
+   "kind": "method",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    20,
+    23,
+    48
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t130",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Vehicle-in-the-loop can test real braking, actuator delays, latency and HMI without putting a physical target at risk.",
+   "quote": "Real braking, actuator delays, latency, HMI, no physical target at risk",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    20,
+    23,
+    48
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t88",
+    "t37",
+    "t170"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Vehicle-in-the-loop cannot prove perception of injected objects unless over-the-air stimulation is used.",
+   "quote": "Perception of injected objects unless OTA",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    20,
+    23,
+    48
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t150",
+    "t85"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Bench-based vehicle-in-the-loop cannot prove effects of soft soil, grade, sinkage, articulation, payload or dust.",
+   "quote": "soft soil, grade, sinkage, articulation, payload, dust on a bench",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    20,
+    23,
+    48
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t174",
+    "t173",
+    "t176",
+    "t168"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Vehicle-in-the-loop has low off-road maturity, and no off-road evaluations were found.",
+   "quote": "Low: no off-road evaluations found",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    20,
+    23,
+    48
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "A 2024 survey reported no full-scale vehicle-in-the-loop platform even for on-road use.",
+   "quote": "no full-scale platform even on-road (2024 survey)",
+   "kind": "gap",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    20,
+    23,
+    48
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The comparison table supports vehicle-in-the-loop with independent on-road evidence [20, 23] and on-road expert opinion [48].",
+   "quote": "**Independent (on-road evidence)** [20, 23]; **Expert opinion (on-road evidence)** [48]",
+   "kind": "finding",
+   "evidence": null,
+   "onRoad": true,
+   "cites": [
+    20,
+    23,
+    48
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t151",
+    "t70"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Neural re-simulation from logs using NeRF or 3DGS re-renders a recorded scene and needs dense multi-sensor logs and GPU compute.",
+   "quote": "Neural re-simulation from logs (NeRF, 3DGS) | Recorded scene, re-rendered | Dense multi-sensor logs, GPU compute",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    33,
+    62,
+    34,
+    19
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NeRF",
+     "kind": "method"
+    },
+    {
+     "name": "3DGS",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t155",
+    "t336"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Neural re-simulation from logs is approximately closed-loop near the recorded path and supports closed-loop-like evaluation near the recorded trajectory.",
+   "quote": "Closed-ish near recorded path | Closed-loop-like evaluation near the recorded trajectory",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    33,
+    62,
+    34,
+    19
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NeRF",
+     "kind": "method"
+    },
+    {
+     "name": "3DGS",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t154"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Neural re-simulation from logs is limited for large viewpoint shifts and therefore for new sensor mounting positions.",
+   "quote": "Large viewpoint shifts, hence new mounting positions",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    33,
+    62,
+    34,
+    19
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NeRF",
+     "kind": "method"
+    },
+    {
+     "name": "3DGS",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t100"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Neural re-simulation from logs exhibits artifacts at offsets of 1 to 4 m.",
+   "quote": "artifacts at 1 to 4 m offset",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    33,
+    62,
+    34,
+    19
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NeRF",
+     "kind": "method"
+    },
+    {
+     "name": "3DGS",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t116"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Neural re-simulation from logs has very low off-road maturity; the evidence is on-road only.",
+   "quote": "Very low: on-road only",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": true,
+   "cites": [
+    33,
+    62,
+    34,
+    19
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "NeRF",
+     "kind": "method"
+    },
+    {
+     "name": "3DGS",
+     "kind": "method"
+    }
+   ],
+   "terms": [
+    "t116",
+    "t70"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Proving-ground testing with surveyed targets uses a complete machine, real sensors and a real environment.",
+   "quote": "Complete machine, real sensors, real environment",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    16,
+    15
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t158",
+    "t84"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Proving-ground testing with surveyed targets needs a test area, survey equipment, dummies or test bodies, and an operator or robot driver; the method operates in a closed loop.",
+   "quote": "Test area, survey equipment, dummies or test bodies, operator or robot driver | Closed",
+   "kind": "method",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    16,
+    15
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t158",
+    "t159",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Proving-ground testing with surveyed targets can establish a standard-conformant detection zone and stopping performance per machine model, providing a reality anchor.",
+   "quote": "Standard-conformant detection zone; stopping per machine model; reality anchor",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    16,
+    15
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t158",
+    "t187",
+    "t170",
+    "t160"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Proving-ground testing with surveyed targets cannot prove natural exposure or rare scenarios, and weather is uncontrolled.",
+   "quote": "Natural exposure, rare scenarios; weather uncontrolled",
+   "kind": "gap",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    16,
+    15
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t158",
+    "t20",
+    "t144",
+    "t45"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The proving-ground comparison notes that light vehicles are used in the MOSH controller test.",
+   "quote": "light vehicles used in MOSH controller test",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    16,
+    15
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    }
+   ],
+   "terms": [
+    "t158",
+    "t9",
+    "t307"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "The proving-ground comparison lists a gradient of 1% or less as a testing limitation.",
+   "quote": "gradient 1% or less",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    16,
+    15
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t158",
+    "t173"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "The proving-ground comparison identifies an 18-week lab queue.",
+   "quote": "18-week lab queue",
+   "kind": "number",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    16,
+    15
+   ],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t158",
+    "t344",
+    "t43"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Proving-ground testing with surveyed targets has high off-road maturity, associated with ISO 16001, ISO 21815-1, MOSH and ISO 18497-4.",
+   "quote": "High: ISO 16001, ISO 21815-1, MOSH, ISO 18497-4",
+   "kind": "finding",
+   "evidence": "Independent",
+   "onRoad": false,
+   "cites": [
+    1,
+    2,
+    16,
+    15
+   ],
+   "chapters": [],
+   "entities": [
+    {
+     "name": "ISO 16001",
+     "kind": "standard"
+    },
+    {
+     "name": "ISO 21815-1",
+     "kind": "standard"
+    },
+    {
+     "name": "MOSH",
+     "kind": "organization"
+    },
+    {
+     "name": "ISO 18497-4",
+     "kind": "standard"
+    }
+   ],
+   "terms": [
+    "t158",
+    "t283",
+    "t280",
+    "t307",
+    "t288"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Shadow or parallel field recording uses both systems on the same machine with continuous logging.",
+   "quote": "Both systems on the same machine, continuous logging",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t222",
+    "t121"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Shadow or parallel field recording needs time on the machine, the new system running passively and common ground truth; the method operates in an open loop.",
+   "quote": "Time on machine, new system running passively, common ground truth | Open",
+   "kind": "method",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t105",
+    "t154"
+   ],
+   "importance": 2
+  },
+  {
+   "text": "Shadow or parallel field recording supports paired old-versus-new comparison and measurement of false-alarm rate per hour.",
+   "quote": "Paired old-versus-new comparison; false-alarm rate per hour",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t222",
+    "t32",
+    "t213"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Shadow or parallel field recording cannot prove braking consequences while the new system is passive.",
+   "quote": "Braking consequences while the new system is passive",
+   "kind": "gap",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t40",
+    "t28"
+   ],
+   "importance": 3
+  },
+  {
+   "text": "Shadow or parallel field recording has medium off-road maturity based on expert practice; the table labels its evidence as expert opinion and statistical method.",
+   "quote": "Medium: expert practice | **Expert opinion**; statistical method",
+   "kind": "finding",
+   "evidence": "Expert opinion",
+   "onRoad": false,
+   "cites": [],
+   "chapters": [],
+   "entities": [],
+   "terms": [
+    "t157",
+    "t70"
+   ],
+   "importance": 2
+  }
+ ]
+}
