@@ -499,6 +499,15 @@ export function makeTools() {
 					.map((i) => `${i.path.join('.')}: ${i.message}`)
 					.join('; ')}`;
 			}
+			// Model-written ids and options can repeat; the form needs them unique.
+			const usedIds = new Set<string>();
+			for (const q of parsed.data.questions) {
+				let id = q.id.trim() || 'q';
+				for (let k = 2; usedIds.has(id); k++) id = `${q.id}_${k}`;
+				usedIds.add(id);
+				q.id = id;
+				if (q.options) q.options = [...new Set(q.options.map((o) => o.trim()).filter(Boolean))];
+			}
 			const answers = interrupt({ type: 'questions', form: parsed.data }) as Answers | { skipped: true };
 			if ('skipped' in answers) return 'The user skipped the questions. Proceed with clearly stated assumptions, and say which ones they should confirm.';
 			const lines = parsed.data.questions.map((q) => {

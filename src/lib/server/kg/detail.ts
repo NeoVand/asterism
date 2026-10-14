@@ -18,8 +18,9 @@ export function nodeDetail(store: GraphStore, id: string): NodeDetail | null {
 		.filter((a) => a.r === 'cites' && a.out)
 		.map((a) => store.get(a.id)!)
 		.map((s) => ({ id: s.id, label: s.label, evidence: s.evidence ?? null, onRoad: !!s.onRoad, url: s.url ?? null, year: s.year ?? null }));
-	const concepts = nb.filter((a) => a.r === 'uses' || a.r === 'related' || a.r === 'is_a').filter((a) => store.get(a.id)?.type === 'term').map((a) => brief(a.id));
-	const entities = nb.filter((a) => a.r === 'about' && store.get(a.id)?.type === 'entity').map((a) => brief(a.id));
+	const once = <T extends { id: string }>(list: T[]) => list.filter((x, i) => list.findIndex((y) => y.id === x.id) === i);
+	const concepts = once(nb.filter((a) => a.r === 'uses' || a.r === 'related' || a.r === 'is_a').filter((a) => store.get(a.id)?.type === 'term').map((a) => brief(a.id)));
+	const entities = once(nb.filter((a) => a.r === 'about' && store.get(a.id)?.type === 'entity').map((a) => brief(a.id)));
 	// A relation can be stored in both directions; show each linked fact once.
 	const seenLink = new Set<string>();
 	const linked = nb

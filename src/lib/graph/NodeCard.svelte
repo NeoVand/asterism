@@ -223,7 +223,7 @@
 
 			{#if detail.concepts.length || detail.entities.length}
 				<div class="flex flex-wrap gap-1">
-					{#each [...detail.concepts, ...detail.entities] as c (c.id)}
+					{#each [...detail.concepts, ...detail.entities] as c, i (`${i}:${c.id}`)}
 						<button
 							type="button"
 							class="max-w-full truncate rounded-md border border-white/[0.07] px-1.5 py-0.5 text-[11px] text-fg-2 transition-colors hover:border-white/20 hover:text-fg"

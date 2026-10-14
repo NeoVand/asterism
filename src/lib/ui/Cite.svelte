@@ -12,7 +12,7 @@
 	const numbering = useCiteNumbering();
 
 	const items = $derived(
-		ids
+		[...new Set(ids)]
 			.map((id) => ({ id, brief: app?.brief(id) ?? null }))
 			.filter((x) => x.brief)
 			.map((x) => ({ ...x, n: numbering?.number(x.id) ?? 0 }))
