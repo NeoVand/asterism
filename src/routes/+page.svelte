@@ -196,16 +196,16 @@
 		// Let the new stars settle in before flying to them.
 		setTimeout(() => showUpload(r.facts), 900);
 		fetch('/api/meta')
-			.then((res) => res.json())
-			.then((m) => (meta = m));
+			.then((res) => (res.ok ? res.json() : null))
+			.then((m) => m && (meta = m));
 	};
 
 	onMount(() => {
 		settings.load();
 		chat.load();
 		fetch('/api/meta')
-			.then((r) => r.json())
-			.then((m) => (meta = m));
+			.then((r) => (r.ok ? r.json() : null))
+			.then((m) => m && (meta = m));
 		fetch('/api/graph')
 			.then((r) => r.json())
 			.then((w: GraphWire) => {
@@ -245,7 +245,7 @@
 	}
 
 	const stats = $derived(
-		meta ? { facts: meta.types.fact ?? 0, sources: meta.types.source ?? 0, concepts: meta.types.term ?? 0 } : null
+		meta?.types ? { facts: meta.types.fact ?? 0, sources: meta.types.source ?? 0, concepts: meta.types.term ?? 0 } : null
 	);
 	const answerChapters = $derived(
 		new Set(answerIds.map((id) => graph?.chapters[index.get(id) ?? -1]).filter((c) => c != null && c > 0)).size

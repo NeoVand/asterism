@@ -204,7 +204,7 @@
 			{#if detail.linked.length}
 				<div class="space-y-1">
 					<div class="text-[10.5px] tracking-wide text-fg-4 uppercase">Connected elsewhere</div>
-					{#each detail.linked as l (l.id + l.rel)}
+					{#each detail.linked as l, i (`${i}:${l.id}`)}
 						<button
 							type="button"
 							class="flex w-full items-start gap-2 rounded-lg px-1.5 py-1 text-left hover:bg-white/[0.035]"
