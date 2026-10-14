@@ -6,14 +6,18 @@
 	import Composer from './Composer.svelte';
 	import EmptyState from './EmptyState.svelte';
 	import MessageView from './MessageView.svelte';
+	import UploadCard from './UploadCard.svelte';
 	import { chat } from './chat.svelte.ts';
+	import { ACCEPT, uploads } from './uploads.svelte.ts';
 
 	interface Props {
 		stats: { facts: number; sources: number; concepts: number } | null;
 		onopensettings: () => void;
+		onshowupload: (ids: string[]) => void;
 	}
 
-	let { stats, onopensettings }: Props = $props();
+	let { stats, onopensettings, onshowupload }: Props = $props();
+	let fileInput: HTMLInputElement;
 
 	let composer: Composer;
 	let scroller: HTMLDivElement;
@@ -166,7 +170,20 @@
 
 	<div class="relative shrink-0 px-3 pb-3">
 		<div class="pointer-events-none absolute -top-8 right-0 left-0 h-8 bg-gradient-to-t from-ink-900/60 to-transparent"></div>
+		<UploadCard onshow={onshowupload} onask={(t) => composer?.fill(t, true)} />
+		<input
+			bind:this={fileInput}
+			type="file"
+			accept={ACCEPT}
+			class="hidden"
+			onchange={(e) => {
+				const f = e.currentTarget.files?.[0];
+				if (f) uploads.upload(f);
+				e.currentTarget.value = '';
+			}}
+		/>
 		<Composer
+			onattach={() => fileInput?.click()}
 			bind:this={composer}
 			busy={chat.busy}
 			{waiting}

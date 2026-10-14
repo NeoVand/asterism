@@ -15,6 +15,8 @@
 	import { provideAsterism, type NodeDetail } from '#lib/app/context.ts';
 	import { chat, citedIds, type Msg } from '#lib/chat/chat.svelte.ts';
 	import { settings } from '#lib/chat/settings.svelte.ts';
+	import { uploads } from '#lib/chat/uploads.svelte.ts';
+	import { UploadIcon } from '#lib/ui/icons.ts';
 
 	const PANEL = 468; // chat panel width + gutters
 
@@ -125,6 +127,32 @@
 		renderer?.setSelected(selected ? (index.get(selected) ?? null) : null);
 	});
 
+	let dragging = $state(false);
+
+	async function reloadGraph() {
+		const w = (await (await fetch('/api/graph')).json()) as GraphWire;
+		const g = decodeGraph(w);
+		index = new Map(g.ids.map((id, i) => [id, i]));
+		adjacency = null;
+		detailCache.clear();
+		graph = g;
+	}
+
+	function showUpload(ids: string[]) {
+		const list = idx(ids);
+		renderer?.light(list, 'cited', true);
+		renderer?.flyTo(list);
+	}
+
+	uploads.onDone = async (r) => {
+		await reloadGraph();
+		// Let the new stars settle in before flying to them.
+		setTimeout(() => showUpload(r.facts), 900);
+		fetch('/api/meta')
+			.then((res) => res.json())
+			.then((m) => (meta = m));
+	};
+
 	onMount(() => {
 		settings.load();
 		chat.load();
@@ -191,7 +219,34 @@
 	}}
 />
 
+<svelte:document
+	ondragover={(e) => {
+		if (e.dataTransfer?.types.includes('Files')) {
+			e.preventDefault();
+			dragging = true;
+		}
+	}}
+	ondragleave={(e) => {
+		if (!e.relatedTarget) dragging = false;
+	}}
+	ondrop={(e) => {
+		if (!e.dataTransfer?.files.length) return;
+		e.preventDefault();
+		dragging = false;
+		uploads.upload(e.dataTransfer.files[0]);
+	}}
+/>
+
 <main class="relative h-screen w-screen overflow-hidden bg-ink-950 select-none">
+	{#if dragging}
+		<div class="pointer-events-none fixed inset-0 z-[60] flex items-center justify-center bg-ink-950/55 backdrop-blur-sm" transition:fade={{ duration: 150 }}>
+			<div class="flex flex-col items-center gap-3 rounded-2xl border border-dashed border-glow/40 bg-ink-900/70 px-10 py-8">
+				<Icon icon={UploadIcon} size={28} class="text-glow" />
+				<div class="text-[14px] font-medium text-fg">Drop to weave it into the graph</div>
+				<div class="text-[12px] text-fg-3">Markdown or plain text · facts are extracted and linked to what the research already knows</div>
+			</div>
+		</div>
+	{/if}
 	<GraphCanvas
 		{graph}
 		onready={(r) => {
@@ -327,7 +382,7 @@
 	</div>
 
 	<div class="absolute top-3 right-3 bottom-3" style:width="{PANEL - 24}px">
-		<ChatPanel bind:this={panel} {stats} onopensettings={() => (settingsOpen = true)} />
+		<ChatPanel bind:this={panel} {stats} onopensettings={() => (settingsOpen = true)} onshowupload={showUpload} />
 	</div>
 
 	<SearchPalette open={paletteOpen} onclose={() => (paletteOpen = false)} />

@@ -41,6 +41,7 @@ export {
 	LibraryIcon as SourcesIcon,
 	Idea01Icon as IdeaIcon,
 	BrainIcon as MemoryIcon,
+	FileUploadIcon as UploadIcon,
 	// Topic icons (Parts A–I)
 	DumpTruckIcon as TopicAIcon,
 	Shield01Icon as TopicBIcon,

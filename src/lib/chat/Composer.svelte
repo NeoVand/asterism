@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Icon from '#lib/ui/Icon.svelte';
-	import { SendIcon, StopIcon, SparklesIcon } from '#lib/ui/icons.ts';
+	import { PlusIcon, SendIcon, StopIcon, SparklesIcon } from '#lib/ui/icons.ts';
 	import { tip } from '#lib/ui/tooltip.ts';
 	import { settings, MODELS } from './settings.svelte.ts';
 
@@ -10,9 +10,10 @@
 		onsend: (text: string) => void;
 		onstop: () => void;
 		onopensettings: () => void;
+		onattach: () => void;
 	}
 
-	let { busy, waiting, onsend, onstop, onopensettings }: Props = $props();
+	let { busy, waiting, onsend, onstop, onopensettings, onattach }: Props = $props();
 	let text = $state('');
 	let area: HTMLTextAreaElement;
 
@@ -64,6 +65,15 @@
 		}}
 	></textarea>
 	<div class="flex items-center gap-1.5 px-2.5 pb-2.5">
+		<button
+			type="button"
+			class="flex size-7 items-center justify-center rounded-lg text-fg-3 transition-colors hover:bg-white/[0.05] hover:text-fg"
+			onclick={onattach}
+			aria-label="Add a document"
+			use:tip={'Weave a document into the graph (.md, .txt) — or drop it anywhere'}
+		>
+			<Icon icon={PlusIcon} size={16} />
+		</button>
 		<button
 			type="button"
 			class="flex items-center gap-1.5 rounded-lg px-2 py-1 text-[11.5px] transition-colors {settings.value.deep

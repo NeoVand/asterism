@@ -9,6 +9,7 @@ import { resolve } from 'node:path';
 import type { KGEdge, KGNode, KGraph, NodeType, ParsedCorpus, ParsedSection, RelType } from '#lib/kg/types.ts';
 import { CHAPTER_TITLES, TOPICS } from '#lib/kg/types.ts';
 import type { GraphWire } from '#lib/graph/types.ts';
+import { listUploads } from './assemble.ts';
 
 export interface Adj {
 	id: string;
@@ -148,6 +149,8 @@ export class GraphStore {
 	private sectionById = new Map<string, ParsedSection>();
 	private raw: Record<string, string[]> = {};
 	private wireCache: GraphWire | null = null;
+	/** Raw text of uploaded documents' sections. */
+	uploadSections = new Map<string, string>();
 	/** Booklet facts per chapter, in document order. */
 	chapterFacts = new Map<number, KGNode[]>();
 	loadedAt = 0;
@@ -192,6 +195,13 @@ export class GraphStore {
 			this.adj.get(e.t)?.push({ id: e.s, r: e.r, out: false, note: e.note });
 		}
 		this.sectionById = new Map(this.corpus.sections.map((s) => [s.id, s]));
+		this.uploadSections.clear();
+		for (const u of listUploads()) {
+			for (const sec of u.sections) {
+				this.uploadSections.set(sec.id, sec.text);
+				this.sectionById.set(sec.id, { id: sec.id, doc: 'upload', level: sec.path.length, title: sec.title, slug: sec.id, parentId: null, chapter: null, part: null, role: 'detailed', path: sec.path, startLine: 0, endLine: 0 });
+			}
+		}
 		this.chapterFacts.clear();
 		for (const n of this.nodes) {
 			if (n.type !== 'fact' || n.doc !== 'booklet' || n.chapter == null) continue;
@@ -405,6 +415,11 @@ export class GraphStore {
 
 	/** Raw markdown of a section (with its subsections), paginated by characters. */
 	sectionText(id: string, offset = 0, max = 6000): { text: string; total: number; next: number | null } {
+		const up = this.uploadSections.get(id);
+		if (up) {
+			const text = up.slice(offset, offset + max);
+			return { text, total: up.length, next: offset + max < up.length ? offset + max : null };
+		}
 		const s = this.sectionById.get(id);
 		if (!s) return { text: '', total: 0, next: null };
 		const lines = this.raw[s.doc].slice(s.startLine - 1, s.endLine);
@@ -415,6 +430,10 @@ export class GraphStore {
 
 	/** Where a node lives, in words. */
 	where(n: KGNode): string {
+		if (n.doc === 'upload') {
+			const sec = n.sectionId ? this.byId.get(n.sectionId) : n.type === 'section' ? n : null;
+			return `Uploaded › ${(sec?.path ?? [n.label]).join(' › ')}`;
+		}
 		if (n.type === 'fact') {
 			const s = n.sectionId ? this.sectionById.get(n.sectionId) : null;
 			if (n.doc === 'glossary') return `Glossary › ${s?.title ?? ''}`;

@@ -11,7 +11,7 @@ import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import type { KGNode, KGraph } from '../../src/lib/kg/types';
 import { CHAPTER_TITLES } from '../../src/lib/kg/types';
-import { entityKey, type LinkResult } from './assemble';
+import { entityKey, type LinkResult } from '../../src/lib/server/kg/assemble.ts';
 import { jsonCall, pool, usage } from './llm';
 
 const ROOT = new URL('../../', import.meta.url).pathname;

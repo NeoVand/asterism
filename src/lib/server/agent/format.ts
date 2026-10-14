@@ -4,6 +4,7 @@ import { CHAPTER_TITLES, TOPICS } from '#lib/kg/types.ts';
 import type { GraphStore } from '../kg/store.ts';
 
 export function chapterTag(n: KGNode): string {
+	if (n.doc === 'upload') return 'Upload';
 	if (n.doc === 'glossary') return n.part ? `Glossary ${n.part}` : 'Glossary';
 	if (n.chapter == null) return '';
 	return n.chapter === 0 ? 'Front' : `Ch${n.chapter}`;

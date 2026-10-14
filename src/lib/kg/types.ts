@@ -3,7 +3,7 @@
  * server-side graph store and the client renderer.
  */
 
-export type DocKey = 'booklet' | 'glossary';
+export type DocKey = 'booklet' | 'glossary' | 'upload';
 
 /** The nine curated themes of the glossary (Parts A–I) double as graph topics. */
 export const TOPICS = [
@@ -241,6 +241,15 @@ export interface KGEdge {
 	r: RelType;
 	/** Optional short note (fact↔fact relations). */
 	note?: string;
+}
+
+/** An uploaded document as stored in data/kg/uploads/<id>/meta.json. */
+export interface UploadMeta {
+	id: string;
+	name: string;
+	createdAt: string;
+	sections: { id: string; title: string; path: string[]; text: string }[];
+	chunks: ParsedChunk[];
 }
 
 export interface KGraph {

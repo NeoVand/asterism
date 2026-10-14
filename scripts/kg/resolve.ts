@@ -8,8 +8,8 @@
  */
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import type { ParsedCorpus } from '../../src/lib/kg/types';
-import { entityKey, type Resolution } from './assemble';
-import type { ExtractResult } from './extract';
+import { entityKey, type Resolution } from '../../src/lib/server/kg/assemble.ts';
+import type { ExtractResult } from '../../src/lib/server/kg/extraction.ts';
 import { jsonCall, pool, usage } from './llm';
 
 const ROOT = new URL('../../', import.meta.url).pathname;

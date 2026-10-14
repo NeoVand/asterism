@@ -215,6 +215,10 @@ export class GraphRenderer {
 	/* ------------------------------------------------------------------ */
 
 	setGraph(g: ClientGraph) {
+		// When the graph grows (an upload), keep every known star where it is.
+		const previous = this.graph && this.positions.length ? { ids: this.graph.ids, pos: this.positions } : null;
+		this.prevTopics = this.graph?.topics ?? new Uint8Array(0);
+		this.centers.clear();
 		this.graph = g;
 		const n = (this.count = g.ids.length);
 
@@ -262,6 +266,26 @@ export class GraphRenderer {
 			info[i * 4 + 1] = type;
 			info[i * 4 + 2] = TYPE_SIZE[type] * (0.75 + 0.25 * g.weights[i]) * (1 + Math.min(1.2, Math.log2(1 + deg[i]) * 0.08));
 			info[i * 4 + 3] = 1 + Math.sqrt(deg[i]) * 0.35;
+		}
+		let kept = 0;
+		if (previous) {
+			const at = new Map(previous.ids.map((id, i) => [id, i]));
+			const placed = new Uint8Array(n);
+			for (let i = 0; i < n; i++) {
+				const j = at.get(g.ids[i]);
+				if (j == null) continue;
+				pos.set(previous.pos.subarray(j * 4, j * 4 + 4), i * 4);
+				placed[i] = 1;
+				kept++;
+			}
+			// New stars are born at the heart of their topic's cluster and settle in from there.
+			for (let i = 0; i < n; i++) {
+				if (placed[i]) continue;
+				const c = this.clusterCenter(previous, g.topics[i]);
+				pos[i * 4] = c.x + rnd() * 30;
+				pos[i * 4 + 1] = c.y + rnd() * 30;
+				pos[i * 4 + 2] = c.z + rnd() * 30;
+			}
 		}
 		this.positions = pos.slice();
 		this.stateArray = new Float32Array(n * 4);
@@ -334,11 +358,35 @@ export class GraphRenderer {
 
 		this.buildNodes(n);
 		this.buildEdges(g, anchorsU);
-		this.uAlpha.value = 1;
-		this.uEdgeFade.value = 0;
+		const warm = previous && kept > n * 0.5;
+		this.uAlpha.value = warm ? 0.3 : 1;
+		this.uEdgeFade.value = warm ? 1 : 0;
 		this.frame = 0;
 		this.settledFired = false;
 	}
+
+	private centers = new Map<number, THREE.Vector3>();
+
+	/** Mean position of a topic in the previous layout (cached per graph swap). */
+	private clusterCenter(prev: { ids: string[]; pos: Float32Array }, topic: number): THREE.Vector3 {
+		const hit = this.centers.get(topic);
+		if (hit) return hit;
+		const old = this.prevTopics;
+		const c = new THREE.Vector3();
+		let k = 0;
+		for (let j = 0; j < prev.ids.length; j++) {
+			if (old[j] !== topic) continue;
+			c.x += prev.pos[j * 4];
+			c.y += prev.pos[j * 4 + 1];
+			c.z += prev.pos[j * 4 + 2];
+			k++;
+		}
+		const v = k ? c.divideScalar(k) : (this.anchors[topic]?.clone() ?? c);
+		this.centers.set(topic, v);
+		return v;
+	}
+
+	private prevTopics: Uint8Array<ArrayBufferLike> = new Uint8Array(0);
 
 	private topicPalette(): N {
 		return uniformArray(
