@@ -163,7 +163,15 @@
 		{:else}
 			<div class="space-y-6 px-4 pt-5 pb-8">
 				{#each messages as m, i (m.id)}
-					<MessageView msg={m} last={i === messages.length - 1} onanswer={(a) => chat.resume(a)} />
+					<svelte:boundary onerror={(e) => console.error('message failed to render', e)}>
+						<MessageView msg={m} last={i === messages.length - 1} onanswer={(a) => chat.resume(a)} />
+						{#snippet failed(_, reset)}
+							<div class="rounded-xl bg-white/[0.02] px-3.5 py-2.5 text-[12px] text-fg-3">
+								This message could not be shown.
+								<button type="button" class="ml-1 text-fg-2 underline-offset-2 hover:underline" onclick={reset}>Try again</button>
+							</div>
+						{/snippet}
+					</svelte:boundary>
 				{/each}
 			</div>
 		{/if}

@@ -356,7 +356,10 @@
 		{#if selected}
 			<div class="absolute top-[68px] bottom-16 left-4 flex items-start">
 				{#key selected}
-					<NodeCard id={selected} onclose={() => (selected = null)} onneighbors={neighbors} />
+					<svelte:boundary onerror={(e) => console.error('node card failed to render', e)}>
+						<NodeCard id={selected} onclose={() => (selected = null)} onneighbors={neighbors} />
+						{#snippet failed()}{/snippet}
+					</svelte:boundary>
 				{/key}
 			</div>
 		{/if}
