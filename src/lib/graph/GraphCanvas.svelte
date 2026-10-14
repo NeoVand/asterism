@@ -6,13 +6,15 @@
 	interface Props {
 		graph: ClientGraph | null;
 		onready?: (r: GraphRenderer) => void;
+		/** The renderer now shows this graph (lights can be applied). */
+		ongraph?: (g: ClientGraph) => void;
 		onhover?: (index: number | null) => void;
 		onselect?: (index: number | null, event: PointerEvent) => void;
 		onsettled?: () => void;
 		onerror?: (message: string) => void;
 	}
 
-	let { graph, onready, onhover, onselect, onsettled, onerror }: Props = $props();
+	let { graph, onready, ongraph, onhover, onselect, onsettled, onerror }: Props = $props();
 
 	let canvas: HTMLCanvasElement;
 	let renderer: GraphRenderer | null = $state(null);
@@ -39,7 +41,9 @@
 	});
 
 	$effect(() => {
-		if (renderer && graph) renderer.setGraph(graph);
+		if (!renderer || !graph) return;
+		renderer.setGraph(graph);
+		ongraph?.(graph);
 	});
 </script>
 

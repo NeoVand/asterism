@@ -23,6 +23,8 @@
 
 	let graph = $state.raw<ClientGraph | null>(null);
 	let renderer = $state.raw<GraphRenderer | null>(null);
+	/** The graph the renderer is actually showing (lights need it). */
+	let shownGraph = $state.raw<ClientGraph | null>(null);
 	let index = new Map<string, number>();
 	let hovered = $state<number | null>(null);
 	let selected = $state<string | null>(null);
@@ -45,8 +47,10 @@
 
 	const ctx = provideAsterism({
 		brief(id) {
+			// Read the graph first so callers' derivations re-run once it loads.
+			if (!graph) return null;
 			const i = index.get(id);
-			if (i == null || !graph) return null;
+			if (i == null) return null;
 			return { id, type: graph.types[i], label: graph.labels[i], topic: graph.topics[i], chapter: graph.chapters[i] };
 		},
 		detail(id) {
@@ -113,7 +117,7 @@
 	// Re-light a conversation's answer when it is opened from history.
 	$effect(() => {
 		const id = chat.currentId;
-		if (!renderer || chat.busy || id === litThread) return;
+		if (!renderer || !shownGraph || chat.busy || id === litThread) return;
 		litThread = id;
 		const last = chat.current?.messages.findLast((m) => m.role === 'assistant');
 		renderer.clearLights();
@@ -121,7 +125,7 @@
 		answerIds = [];
 		if (last) {
 			renderer.light(idx(last.read), 'read');
-			applyCitations(last);
+			applyCitations(last, true);
 		}
 	});
 
@@ -292,6 +296,7 @@
 	{/if}
 	<GraphCanvas
 		{graph}
+		ongraph={(g) => (shownGraph = g)}
 		onready={(r) => {
 			renderer = r;
 			r.setInsetRight(PANEL);

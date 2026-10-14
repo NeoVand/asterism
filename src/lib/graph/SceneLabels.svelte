@@ -86,7 +86,14 @@
 			// Earlier citations win: each label takes the first free slot around its star (trying
 			// last frame's slot first so labels don't hop), or hides when all slots collide.
 			const placed: number[][] = [];
+			// Stay on screen and clear of the chat panel on the right.
+			const maxX = window.innerWidth - 490;
+			const maxY = window.innerHeight - 8;
 			const free = (x: number, y: number, w: number) =>
+				x >= 8 &&
+				x + w <= maxX &&
+				y >= 8 &&
+				y + LABEL_H <= maxY &&
 				!placed.some(([a, b, c, d]) => x < c && x + w > a && y < d && y + LABEL_H > b);
 			for (let k = 0; k < citedEls.length; k++) {
 				const el = citedEls[k];
