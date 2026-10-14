@@ -78,11 +78,15 @@ npx tsx scripts/kg/parse.ts && npx tsx scripts/kg/extract.ts && npx tsx scripts/
 
 ## Quality
 
-- `npx tsx evals/run.ts --tag name` — 30 cross-chapter questions with gold claims from the booklet's
-  synthesis; a judge scores answer recall, retrieval recall, citation precision and an overall grade.
-  Reports in `evals/out/`. History in `docs/PLAN.md`.
-- `npx tsx evals/probe.ts` — multi-turn conversations ending with the agent's own debrief of what
-  confused it.
-- `npx vitest run --project server` — unit tests (search, folding, markdown citations, blocks).
+- `npx tsx evals/run.ts --tag name` — 33 cross-chapter questions with gold claims from the booklet;
+  a judge scores answer recall (partial credit for a claim missing a secondary detail; the strict
+  figure is reported too), retrieval recall, citation precision and an overall grade. Reports in
+  `evals/out/`, history in `docs/PLAN.md`. Current: ≈ 71% answer recall, ≈ 90% retrieval recall,
+  ≈ 98% citation precision; run-to-run noise is ±2–3%.
+- `npx tsx evals/probe.ts` — multi-turn conversations (newcomer, skeptic, numbers, planner with a
+  form…) ending with the agent's own debrief of what confused it.
+- `npx vitest run --project server` — unit tests (search, folding, citations, blocks, every node
+  card, graph connectivity).
 - `npx playwright test` — end-to-end UI tests (`E2E_AGENT=1` adds a live agent run).
-- `npx tsx scripts/dev/screens.ts --ask` — screenshots of key states into `docs/screens/` (dev server running).
+- `npx tsx scripts/dev/screens.ts --ask` — screenshots of key states into `docs/screens/` (dev
+  server running).
