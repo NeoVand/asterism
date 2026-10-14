@@ -20,7 +20,15 @@ function roleTag(store: GraphStore, n: KGNode): string {
 	return chapterTag(n);
 }
 
-function evidenceTag(n: KGNode): string {
+function evidenceTag(n: KGNode, store?: GraphStore): string {
+	if (!n.evidence && !n.onRoad && store && n.type === 'fact') {
+		// Synthesis and key findings often restate a labeled chapter claim: borrow its label.
+		const via = store
+			.neighbors(n.id, { rels: ['same', 'elaborates'] })
+			.map((a) => store.get(a.id)!)
+			.find((m) => m.evidence);
+		if (via) return `${via.evidence!.replace('Expert opinion', 'Expert')}${via.onRoad ? ' on-road' : ''} via ${via.id}`;
+	}
 	if (!n.evidence && !n.onRoad) return '';
 	const ev = n.evidence ? n.evidence.replace('Expert opinion', 'Expert') : '';
 	return [ev, n.onRoad ? 'on-road' : ''].filter(Boolean).join(' ');
@@ -34,7 +42,7 @@ export function clip(s: string, max: number): string {
 export function line(store: GraphStore, n: KGNode, max = 280): string {
 	switch (n.type) {
 		case 'fact': {
-			const tags = [roleTag(store, n), n.kind, evidenceTag(n)].filter(Boolean).join(' · ');
+			const tags = [roleTag(store, n), n.kind, evidenceTag(n, store)].filter(Boolean).join(' · ');
 			return `${n.id} [${tags}] ${clip(n.text, max)}`;
 		}
 		case 'term':

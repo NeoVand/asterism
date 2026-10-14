@@ -16,6 +16,8 @@ export interface Step {
 	id: string;
 	name: string;
 	args: Record<string, unknown>;
+	/** Graph nodes this step touched or read (for hover spotlight). */
+	ids?: string[];
 	summary?: string;
 	agent: string;
 	status: 'run' | 'done' | 'error';
@@ -322,6 +324,8 @@ class ChatStore {
 			case 'graph': {
 				const list = ev.mode === 'read' ? msg.read : msg.touched;
 				for (const id of ev.ids) if (!list.includes(id)) list.push(id);
+				const step = ev.step ? msg.steps.find((s) => s.id === ev.step) : undefined;
+				if (step) step.ids = [...new Set([...(step.ids ?? []), ...ev.ids])].slice(0, 300);
 				this.hooks.graph?.(ev.mode, ev.ids);
 				break;
 			}

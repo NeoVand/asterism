@@ -113,6 +113,18 @@ function tokenize(text: string): string[] {
 	return out;
 }
 
+/** Everyday phrasings the glossary index does not list, mapped to concept titles. */
+const EXTRA_ALIASES: [string, string][] = [
+	['level 8', 'nine levels of control'],
+	['level 9', 'nine levels of control'],
+	['levels of control', 'nine levels of control'],
+	['phantom braking', 'nuisance braking'],
+	['false braking', 'nuisance braking'],
+	['digital twin', 'virtual job site'],
+	['sim-to-real', 'sim-to-real gap'],
+	['domain gap', 'sim-to-real gap']
+];
+
 /** Summary sections carry the booklet's conclusions; surface them a little earlier. */
 const ROLE_BOOST: Record<string, number> = {
 	synthesis: 1.3,
@@ -193,6 +205,10 @@ export class GraphStore {
 
 		// Alias expansion: acronym or alternative name → the concept's title words.
 		this.aliasIndex.clear();
+		for (const [alias, title] of EXTRA_ALIASES) {
+			const t = this.nodes.find((n) => n.type === 'term' && n.label.toLowerCase().startsWith(title));
+			if (t) this.aliasIndex.set(alias, [t.id]);
+		}
 		for (const n of this.nodes) {
 			if (n.type !== 'term') continue;
 			for (const a of n.aliases ?? []) {
@@ -294,6 +310,13 @@ export class GraphStore {
 		});
 		hits.sort((a, b) => b.score - a.score);
 		return hits.slice(0, opts.limit ?? 20);
+	}
+
+	/** BM25 scores of a query restricted to a given set of node ids (question-focused views). */
+	scoreWithin(query: string, ids: Set<string>): Map<string, number> {
+		const out = new Map<string, number>();
+		for (const r of this.mini.search(this.expandQuery(query), { filter: (x) => ids.has(x.id as string) })) out.set(r.id as string, r.score);
+		return out;
 	}
 
 	/** Ids within `depth` hops of any seed. */

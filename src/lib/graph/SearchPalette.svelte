@@ -27,6 +27,8 @@
 	let input: HTMLInputElement | undefined = $state();
 	let timer: ReturnType<typeof setTimeout>;
 	let seq = 0;
+	/** Resolves with the results of the latest query (Enter waits for it). */
+	let pending: Promise<Result[]> | null = null;
 
 	$effect(() => {
 		if (open) requestAnimationFrame(() => input?.focus());
@@ -43,14 +45,17 @@
 			app.spotlight(null);
 			return;
 		}
+		const mine = ++seq;
+		let resolve!: (r: Result[]) => void;
+		pending = new Promise((r) => (resolve = r));
 		timer = setTimeout(async () => {
-			const mine = ++seq;
 			const res = await fetch(`/api/search?q=${encodeURIComponent(query)}`);
 			const data = (await res.json()) as { results: Result[] };
 			if (mine !== seq) return;
 			results = data.results.slice(0, 12);
 			active = 0;
 			app.spotlight(results.map((r) => r.id));
+			resolve(results);
 		}, 140);
 	});
 
@@ -93,8 +98,10 @@
 						if (results[active]) app.spotlight([results[active].id]);
 					} else if (e.key === 'Enter') {
 						e.preventDefault();
-						if (e.metaKey || !results.length) askAgent();
+						if (e.metaKey) askAgent();
 						else if (results[active]) pick(results[active]);
+						else if (pending) pending.then((r) => (r[0] ? pick(r[0]) : askAgent()));
+						else askAgent();
 					} else if (e.key === 'Escape') onclose();
 				}}
 			/>

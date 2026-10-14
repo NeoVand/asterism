@@ -13,6 +13,15 @@
 
 	let { open, defaultPrompt, onclose }: Props = $props();
 	let showKey = $state(false);
+	let memory = $state<{ content: string; empty: boolean } | null>(null);
+
+	async function loadMemory() {
+		memory = await (await fetch('/api/memory')).json();
+	}
+
+	async function forget() {
+		memory = await (await fetch('/api/memory', { method: 'DELETE' })).json();
+	}
 	let tab = $state<'agent' | 'view' | 'data'>('agent');
 	const s = $derived(settings.value);
 </script>
@@ -37,7 +46,7 @@
 		>
 			<nav class="flex w-44 shrink-0 flex-col gap-0.5 border-r border-white/[0.05] p-2.5">
 				<div class="px-2.5 pt-1.5 pb-3 text-[13px] font-semibold text-fg">Settings</div>
-				{#each [['agent', 'Agent'], ['view', 'Graph view'], ['data', 'Data']] as [k, label] (k)}
+				{#each [['agent', 'Agent'], ['view', 'Graph view'], ['data', 'Memory & data']] as [k, label] (k)}
 					<button
 						type="button"
 						class="rounded-lg px-2.5 py-1.5 text-left text-[12.5px] transition-colors {tab === k ? 'bg-white/[0.07] text-fg' : 'text-fg-3 hover:bg-white/[0.03] hover:text-fg-2'}"
@@ -137,6 +146,20 @@
 					</div>
 				{:else}
 					<div class="space-y-3">
+						<div class="rounded-xl border border-white/[0.06] px-4 py-3">
+							<div class="flex items-center">
+								<div class="text-[12.5px] text-fg">Agent memory</div>
+								{#if memory && !memory.empty}
+									<button type="button" class="ml-auto text-[11.5px] text-bad hover:underline" onclick={forget}>Forget everything</button>
+								{/if}
+							</div>
+							<div class="mt-0.5 text-[11.5px] text-fg-3">What Asterism remembers about you and your project across conversations.</div>
+							{#await memory ?? loadMemory()}
+								<div class="mt-3 h-16 animate-pulse rounded-lg bg-white/[0.03]"></div>
+							{:then}
+								<pre class="mt-3 max-h-56 overflow-y-auto rounded-lg bg-ink-900/70 p-3 font-mono text-[11px] leading-relaxed whitespace-pre-wrap text-fg-2">{memory?.content}</pre>
+							{/await}
+						</div>
 						<div class="rounded-xl border border-white/[0.06] px-4 py-3">
 							<div class="text-[12.5px] text-fg">Conversations</div>
 							<div class="mt-0.5 text-[11.5px] text-fg-3">{chat.threads.length} saved in this browser.</div>

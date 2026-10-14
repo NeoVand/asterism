@@ -10,6 +10,7 @@
  *  - unsupported claims in the answer
  * Reports land in evals/out/<timestamp>-<tag>.json and a summary prints to the console.
  */
+process.env.ASTERISM_EVAL = '1';
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { runTurn } from '../src/lib/server/agent/run.ts';
 import { getStore } from '../src/lib/server/kg/store.ts';

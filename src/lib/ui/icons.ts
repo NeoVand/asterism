@@ -40,6 +40,7 @@ export {
 	Target02Icon as TargetIcon,
 	LibraryIcon as SourcesIcon,
 	Idea01Icon as IdeaIcon,
+	BrainIcon as MemoryIcon,
 	// Topic icons (Parts A–I)
 	DumpTruckIcon as TopicAIcon,
 	Shield01Icon as TopicBIcon,

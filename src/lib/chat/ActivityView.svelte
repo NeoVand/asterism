@@ -14,7 +14,8 @@
 		SubagentIcon,
 		ThinkIcon,
 		TodoIcon,
-		CheckIcon
+		CheckIcon,
+		MemoryIcon
 	} from '#lib/ui/icons.ts';
 	import { useAsterism } from '#lib/app/context.ts';
 	import type { Msg, Step } from './chat.svelte.ts';
@@ -59,6 +60,12 @@
 			}
 			case 'ask_user':
 				return { icon: AskIcon, text: `Asked you ${((a.questions as unknown[]) ?? []).length} questions` };
+			case 'edit_file':
+			case 'write_file': {
+				const path = String(a.file_path ?? '');
+				if (path.startsWith('/memories/')) return { icon: MemoryIcon, text: 'Remembered this for next time' };
+				return { icon: ReadIcon, text: `Wrote notes to ${path}` };
+			}
 			case 'write_todos':
 				return { icon: TodoIcon, text: `Planned ${((a.todos as unknown[]) ?? []).length} steps` };
 			default:
@@ -133,7 +140,13 @@
 				{/if}
 				{#each visible as s (s.id)}
 					{@const l = label(s)}
-					<div class="flex items-start gap-2 py-[3px] text-[11.5px] leading-snug" in:slide={{ duration: 160 }}>
+					<!-- svelte-ignore a11y_no_static_element_interactions -->
+					<div
+						class="-mx-1.5 flex items-start gap-2 rounded-md px-1.5 py-[3px] text-[11.5px] leading-snug transition-colors {s.ids?.length ? 'cursor-default hover:bg-white/[0.04]' : ''}"
+						in:slide={{ duration: 160 }}
+						onpointerenter={() => s.ids?.length && app.spotlight(s.ids)}
+						onpointerleave={() => s.ids?.length && app.spotlight(null)}
+					>
 						<Icon
 							icon={l.icon}
 							size={13}

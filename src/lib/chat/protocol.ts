@@ -9,7 +9,7 @@ export type ChatEvent =
 	| { t: 'reasoning'; delta: string; agent: AgentRef }
 	| { t: 'tool'; id: string; name: string; args: unknown; agent: AgentRef }
 	| { t: 'tool_end'; id: string; name: string; summary: string; agent: AgentRef; error?: boolean }
-	| { t: 'graph'; mode: 'touch' | 'read'; ids: string[]; agent: AgentRef }
+	| { t: 'graph'; mode: 'touch' | 'read'; ids: string[]; agent: AgentRef; step?: string }
 	| { t: 'todos'; items: { content: string; status: 'pending' | 'in_progress' | 'completed' }[] }
 	| { t: 'task'; id: string; status: 'start' | 'end'; description: string; agentName: string }
 	| { t: 'ui'; id: string; block: Block }

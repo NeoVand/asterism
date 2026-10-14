@@ -59,7 +59,10 @@ function toolOutputText(out: unknown): string {
 
 function summarize(name: string, out: string): string {
 	const first = out.split('\n')[0] ?? '';
-	if (name === 'search_graph' || name === 'find_sources') return first.replace(/:$/, '');
+	if (name === 'search_graph' || name === 'find_sources') {
+		const line = out.split('\n').find((l) => /^\d+ (matches|sources) for/.test(l)) ?? first;
+		return line.replace(/:$/, '');
+	}
 	if (name === 'read_file') return 'Read a skill';
 	if (name === 'task') return out.slice(0, 600);
 	return first.slice(0, 160);
@@ -187,7 +190,7 @@ export async function* runTurn(
 					case 'on_custom_event': {
 						if (ev.name === 'graph') {
 							const d = ev.data as unknown as { mode: 'touch' | 'read'; ids: string[] };
-							yield { t: 'graph', mode: d.mode, ids: d.ids, agent: who };
+							yield { t: 'graph', mode: d.mode, ids: d.ids, agent: who, step: ev.run_id };
 						} else if (ev.name === 'ui' && who === 'main') {
 							const parsed = Block.safeParse((ev.data as unknown as { block?: unknown }).block);
 							if (parsed.success) yield { t: 'ui', id: ev.run_id, block: parsed.data };

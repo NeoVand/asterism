@@ -5,7 +5,7 @@
 import { ChatOpenAI } from '@langchain/openai';
 import { MemorySaver } from '@langchain/langgraph';
 import { CompositeBackend, FilesystemBackend, StateBackend, createDeepAgent } from 'deepagents';
-import { mkdirSync } from 'node:fs';
+import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { makeTools } from './tools.ts';
 import { DEFAULT_SYSTEM_PROMPT, RESEARCHER_PROMPT } from './prompt.ts';
@@ -19,7 +19,12 @@ export interface AgentSettings {
 
 const ROOT = process.cwd();
 const SKILLS_DIR = resolve(ROOT, 'agent/skills');
-const MEMORY_DIR = resolve(ROOT, 'data/memories');
+export const MEMORY_DIR = resolve(ROOT, 'data/memories');
+export const MEMORY_FILE = resolve(MEMORY_DIR, 'AGENTS.md');
+export const MEMORY_TEMPLATE = `# What I know about this user and their project
+
+(Nothing yet. Keep this short: the user's role, machines and sensors in scope, markets, deadlines, team, and how they like answers.)
+`;
 
 /** Threads survive across requests (and interrupts) for the life of the server. */
 export const checkpointer = new MemorySaver();
@@ -28,6 +33,7 @@ const cache = new Map<string, Awaited<ReturnType<typeof build>>>();
 
 async function build(s: AgentSettings) {
 	mkdirSync(MEMORY_DIR, { recursive: true });
+	if (!existsSync(MEMORY_FILE)) writeFileSync(MEMORY_FILE, MEMORY_TEMPLATE);
 	const model = new ChatOpenAI({
 		model: s.model,
 		apiKey: s.apiKey,
@@ -66,6 +72,8 @@ async function build(s: AgentSettings) {
 				'/memories/': new FilesystemBackend({ rootDir: MEMORY_DIR, virtualMode: true })
 			}),
 		skills: ['/skills/'],
+		// Evals and probes run without the user's memory so results stay comparable.
+		memory: process.env.ASTERISM_EVAL ? [] : ['/memories/AGENTS.md'],
 		permissions: [{ operations: ['write'], paths: ['/skills/**'], mode: 'deny' }],
 		checkpointer
 	});

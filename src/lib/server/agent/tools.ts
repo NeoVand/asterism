@@ -142,7 +142,7 @@ export function makeTools() {
 	);
 
 	const explore = tool(
-		async ({ id, limit }, config) => {
+		async ({ id, limit, focus }, config) => {
 			const store = getStore();
 			const n = store.get(id);
 			if (!n) return `Unknown id ${id}. Ids look like f123 (fact), t12 (concept), e45 (entity), s67 (source), x89 (section), c3 (chapter).`;
@@ -155,9 +155,18 @@ export function makeTools() {
 			if (n.synopsis) out.push(`Synopsis: ${n.synopsis}`);
 
 			if (n.type === 'term' || n.type === 'entity') {
-				const facts = nodesOf(['uses', 'about', 'states']).filter((x) => x.type === 'fact');
-				out.push(`Facts (${facts.length}), by where they appear:`);
-				out.push(...factsByChapter(store, facts, Math.max(2, Math.ceil(max / 8)), max));
+				let facts = nodesOf(['uses', 'about', 'states']).filter((x) => x.type === 'fact');
+				const total = facts.length;
+				if (focus?.trim()) {
+					// Question-focused view: only the hub's facts that match the focus, best first.
+					const scores = store.scoreWithin(focus, new Set(facts.map((f) => f.id)));
+					facts = facts.filter((f) => scores.has(f.id)).sort((a, b) => scores.get(b.id)! - scores.get(a.id)!);
+					out.push(`Facts matching "${focus}" (${facts.length} of ${total}), by where they appear:`);
+					out.push(...factsByChapter(store, facts.slice(0, max * 2), max, max));
+				} else {
+					out.push(`Facts (${total}), by where they appear${total > max ? ` — showing the most important; pass focus to narrow` : ''}:`);
+					out.push(...factsByChapter(store, facts, Math.max(2, Math.ceil(max / 8)), max));
+				}
 				touched.push(...facts.slice(0, 200).map((f) => f.id));
 				const related = nodesOf(['related', 'is_a']);
 				if (related.length) out.push(`Related: ${related.slice(0, 16).map((r) => `${r.id} ${r.label}`).join('; ')}`);
@@ -254,7 +263,11 @@ export function makeTools() {
 				'Open one node and walk its neighborhood. For a concept (t…) or entity (e…): its cross-chapter synopsis and EVERY linked fact grouped by chapter — the best way to stitch together what different chapters say about one thing. For a chapter (c0 = cross-chapter synthesis, c1…c13): its key findings, what is established, uncertain, disputed and not found. For a fact: its quote, sources, linked facts in other chapters (same/supports/contradicts/elaborates) and section siblings. Also works for sources and sections.',
 			schema: z.object({
 				id: z.string().describe('Node id, e.g. t25, e12, f340, s88, x120, c8'),
-				limit: z.number().int().min(4).max(60).optional().describe('Max listed items (default 24)')
+				limit: z.number().int().min(4).max(60).optional().describe('Max listed items (default 24)'),
+				focus: z
+					.string()
+					.optional()
+					.describe('For concepts/entities with many facts: a few words to show only the facts about that aspect, e.g. "winter recording"')
 			})
 		}
 	);
