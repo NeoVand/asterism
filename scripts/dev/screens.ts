@@ -1,13 +1,18 @@
 /**
  * High-resolution screenshots of key states for docs/screens/.
- *   npx tsx scripts/dev/screens.ts [baseUrl] [--ask]
+ *   npx tsx scripts/dev/screens.ts [baseUrl] [--ask] [--flat] [--bundle]
+ * Without flags the app's default view is used; with --flat / --bundle the shots go to
+ * docs/screens/<view>/ (e.g. 2d-bundled/).
  */
 import { chromium } from 'playwright';
 import { mkdirSync } from 'node:fs';
 
 const base = process.argv.find((a) => a.startsWith('http')) ?? 'http://localhost:5273';
 const ask = process.argv.includes('--ask');
-const out = new URL('../../docs/screens/', import.meta.url).pathname;
+const flat = process.argv.includes('--flat');
+const bundle = process.argv.includes('--bundle');
+const view = flat || bundle ? `${flat ? '2d' : '3d'}${bundle ? '-bundled' : ''}/` : '';
+const out = new URL(`../../docs/screens/${view}`, import.meta.url).pathname;
 mkdirSync(out, { recursive: true });
 
 const browser = await chromium.launch({
@@ -19,6 +24,12 @@ const page = await browser.newPage({
 });
 const shot = (name: string) =>
 	page.screenshot({ path: `${out}${name}.jpg`, type: 'jpeg', quality: 86 });
+if (view) {
+	await page.addInitScript((v) => localStorage.setItem('asterism.settings.v1', JSON.stringify(v)), {
+		flat,
+		bundle
+	});
+}
 await page.goto(base);
 await page
 	.getByText(/^\s*WebGPU\s*$|^\s*WebGL\s*$/)

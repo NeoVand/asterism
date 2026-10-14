@@ -7,6 +7,10 @@ export interface Settings {
 	deep: boolean;
 	autoRotate: boolean;
 	labels: boolean;
+	/** Flat 2D map instead of the 3D constellation. */
+	flat: boolean;
+	/** GPU edge bundling. */
+	bundle: boolean;
 }
 
 export const MODELS = [
@@ -24,7 +28,9 @@ const DEFAULTS: Settings = {
 	systemPrompt: '',
 	deep: false,
 	autoRotate: true,
-	labels: true
+	labels: true,
+	flat: false,
+	bundle: true
 };
 
 class SettingsStore {

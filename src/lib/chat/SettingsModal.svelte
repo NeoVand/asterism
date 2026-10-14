@@ -159,8 +159,8 @@
 					</div>
 				{:else if tab === 'view'}
 					<div class="space-y-3">
-						{#each [['autoRotate', 'Drift when idle', 'Slowly orbit the constellation after a few seconds without input.'], ['labels', 'Cluster labels', 'Show topic names over their clusters.']] as [k, label, hint] (k)}
-							{@const on = s[k as 'autoRotate' | 'labels']}
+						{#each [['flat', 'Flat 2D map', 'Lay the graph out on a plane, seen from above; drag to pan.'], ['bundle', 'Bundle edges', 'Gather edges that run the same way into shared paths (computed on the GPU).'], ['autoRotate', 'Drift when idle', 'Slowly orbit the 3D constellation after a few seconds without input.'], ['labels', 'Cluster labels', 'Show topic names over their clusters.']] as [k, label, hint] (k)}
+							{@const on = s[k as 'flat' | 'bundle' | 'autoRotate' | 'labels']}
 							<button
 								type="button"
 								class="flex w-full items-center gap-4 rounded-xl border border-white/[0.06] px-4 py-3 text-left hover:border-white/[0.1]"

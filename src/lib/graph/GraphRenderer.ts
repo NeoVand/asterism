@@ -44,6 +44,7 @@ import {
 } from 'three/tsl';
 import { bloom } from 'three/addons/tsl/display/BloomNode.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { EdgeBundler } from './EdgeBundler';
 import { TOPIC_COLORS, TYPE_INDEX } from './palette';
 import { LIT, type ClientGraph, type LitKind } from './types';
 
@@ -52,6 +53,12 @@ type N = any;
 
 const TYPE_SIZE = [16, 9, 3.2, 2.1, 2.3, 5.2, 3.8]; // doc, chapter, section, fact, source, term, entity
 const EDGE_SEGMENTS = 10;
+/**
+ * Bundled edges overlap almost exactly, and pushing all 1.1M segments through a few highways
+ * overloads the GPU's tile binning (≈2× slower). An even sample draws the same picture; lit
+ * edges are drawn in full by a separate overlay.
+ */
+const BUNDLE_SAMPLE = 0.3;
 
 /** Spring weight per relation (strong for structure, weaker for loose topical links). */
 const REL_SPRING: Record<string, number> = {
@@ -93,6 +100,8 @@ export interface RendererEvents {
 	hover?: (index: number | null) => void;
 	click?: (index: number | null, event: PointerEvent) => void;
 	settled?: () => void;
+	/** The layout started moving again (a view switch or a graph change). */
+	unsettled?: () => void;
 }
 
 export interface Projected {
@@ -131,6 +140,31 @@ export class GraphRenderer {
 	private uHover = uniform(-1);
 	private uBundle = uniform(0.42);
 	private uEdgeAlpha = uniform(0.016);
+	/** 0 = edges follow their anchor curves, 1 = edges follow the GPU-bundled polylines. */
+	private uBundleMix = uniform(0);
+	private bundler: EdgeBundler | null = null;
+	private edgeMaterials: Record<
+		'curve' | 'bundled' | 'blend' | 'bundledLit',
+		THREE.Material
+	> | null = null;
+	/** Vertices of the sampled prefix drawn while bundled. */
+	private edgeSampleVertices = 0;
+	/** Lit edges while bundled (both endpoints lit), rebuilt on the CPU when highlights change. */
+	private litEdges: THREE.LineSegments | null = null;
+	private litDirty = false;
+	private litBuiltAt = 0;
+	/** Bundling kernels and edge materials compiled ahead of the first toggle. */
+	private warmed = false;
+	private settledAt = 0;
+	private bundleWanted = false;
+	/** The bundled polylines match the current layout. */
+	private bundleFresh = false;
+	/** 1 in the flat (2D) view: the layout holds z at 0 and anchors lie in the plane. */
+	private uFlat = uniform(0);
+	/** A brief deterministic z push that restores depth when leaving the flat view. */
+	private uKick = uniform(0);
+	/** Flat (2D) view: top-down camera, panning instead of orbiting. */
+	flat = false;
 	private uEdgeLit = uniform(0);
 	/** Edges fade in as the layout unfolds. */
 	private uEdgeFade = uniform(0);
@@ -190,6 +224,7 @@ export class GraphRenderer {
 		this.controls.maxDistance = 3200;
 		this.controls.autoRotate = true;
 		this.controls.autoRotateSpeed = 0.18;
+		this.applyControls();
 		this.controls.addEventListener('start', () => {
 			this.lastInteraction = performance.now();
 			this.fly = null;
@@ -277,7 +312,7 @@ export class GraphRenderer {
 			const a = this.anchors[g.topics[i]] ?? this.anchors[0];
 			pos[i * 4] = a.x * 0.6 + rnd() * 55;
 			pos[i * 4 + 1] = a.y * 0.6 + rnd() * 55;
-			pos[i * 4 + 2] = a.z * 0.6 + rnd() * 55;
+			pos[i * 4 + 2] = this.flat ? 0 : a.z * 0.6 + rnd() * 55;
 			pos[i * 4 + 3] = 1;
 			const type = TYPE_INDEX[g.types[i]];
 			info[i * 4] = g.topics[i];
@@ -305,7 +340,7 @@ export class GraphRenderer {
 				const c = this.clusterCenter(previous, g.topics[i]);
 				pos[i * 4] = c.x + rnd() * 30;
 				pos[i * 4 + 1] = c.y + rnd() * 30;
-				pos[i * 4 + 2] = c.z + rnd() * 30;
+				pos[i * 4 + 2] = this.flat ? 0 : c.z + rnd() * 30;
 			}
 		}
 		this.positions = pos.slice();
@@ -369,7 +404,11 @@ export class GraphRenderer {
 
 			const nodeInfo = this.infoBuf.element(i);
 			const anchor = anchorsU.element(int(nodeInfo.x));
-			f.addAssign(anchor.sub(p).mul(uGravity.mul(nodeInfo.w)));
+			const home = vec3(anchor.x, anchor.y, anchor.z.mul(this.uFlat.oneMinus()));
+			f.addAssign(home.sub(p).mul(uGravity.mul(nodeInfo.w)));
+			// Flat view: hold z at 0. Leaving it: a small per-node push brings depth back.
+			const jitter = sin(float(i).mul(12.9898)).mul(43758.5453).fract().sub(0.5);
+			f.addAssign(vec3(0, 0, p.z.mul(this.uFlat).mul(-0.5).add(jitter.mul(this.uKick))));
 
 			const v = this.velBuf.element(i);
 			const nv = v.xyz
@@ -382,8 +421,21 @@ export class GraphRenderer {
 
 		this.computeIntegrate = Fn(() => {
 			const p = this.posBuf.element(instanceIndex);
-			p.assign(vec4(p.xyz.add(this.velBuf.element(instanceIndex).xyz), 1));
+			const np = p.xyz.add(this.velBuf.element(instanceIndex).xyz);
+			p.assign(vec4(np.x, np.y, np.z.mul(this.uFlat.mul(-0.2).add(1)), 1));
 		})().compute(n);
+
+		this.bundler?.dispose();
+		this.bundler = new EdgeBundler({
+			posBuf: this.posBuf,
+			edgeSrc: g.edgeSrc,
+			edgeDst: g.edgeDst,
+			points: EDGE_SEGMENTS + 1,
+			curve: (s, t, u) => this.curveAt(s, t, u, this.uBundle, anchorsU)
+		});
+		this.bundleFresh = false;
+		this.uBundleMix.value = 0;
+		this.warmed = false;
 
 		this.buildNodes(n);
 		this.buildEdges(g, anchorsU);
@@ -563,11 +615,20 @@ export class GraphRenderer {
 		this.uSelected.value = i ?? -1;
 	}
 
-	private edgeMaterial(anchorsU: N, opts: { trail?: boolean } = {}) {
+	/**
+	 * `shape`: 'curve' (anchor Béziers), 'bundled' (GPU-bundled polylines) or 'blend' (crossfade
+	 * by uBundleMix). Separate materials keep each state's vertex shader as cheap as it can be.
+	 */
+	private edgeMaterial(
+		anchorsU: N,
+		opts: { trail?: boolean; shape?: 'curve' | 'bundled' | 'blend' | 'bundledLit' } = {}
+	) {
 		const palette = this.topicPalette();
 		const mat = new THREE.LineBasicNodeMaterial({
 			transparent: true,
 			depthWrite: false,
+			// Nothing writes depth (everything is additive), so testing it is wasted bandwidth.
+			depthTest: false,
 			blending: THREE.AdditiveBlending
 		});
 		const e = positionGeometry;
@@ -576,17 +637,21 @@ export class GraphRenderer {
 		const tt = e.z;
 		const iS = this.infoBuf.element(s);
 		const iT = this.infoBuf.element(t);
-		const p0 = this.posBuf.element(s).xyz;
-		const p3 = this.posBuf.element(t).xyz;
-		const bundle = opts.trail ? float(0.12) : this.uBundle;
-		const c1 = mix(p0, anchorsU.element(int(iS.x)), bundle);
-		const c2 = mix(p3, anchorsU.element(int(iT.x)), bundle);
-		const u = tt.oneMinus();
-		mat.positionNode = p0
-			.mul(u.mul(u).mul(u))
-			.add(c1.mul(u.mul(u).mul(tt).mul(3)))
-			.add(c2.mul(u.mul(tt).mul(tt).mul(3)))
-			.add(p3.mul(tt.mul(tt).mul(tt)));
+		const shape = opts.trail || !this.bundler ? 'curve' : (opts.shape ?? 'curve');
+		const curve = () => this.curveAt(s, t, tt, opts.trail ? float(0.12) : this.uBundle, anchorsU);
+		if (shape !== 'curve' && this.bundler) {
+			// The bundled polyline, carried along if its endpoints have moved since bundling.
+			const P = EDGE_SEGMENTS + 1;
+			const pts = this.bundler.points;
+			const base = int(attribute('aEdge', 'float')).mul(P);
+			const at = pts.element(base.add(int(tt.mul(EDGE_SEGMENTS).add(0.5).floor()))).xyz;
+			const dS = this.posBuf.element(s).xyz.sub(pts.element(base).xyz);
+			const dT = this.posBuf.element(t).xyz.sub(pts.element(base.add(P - 1)).xyz);
+			const bundled = at.add(mix(dS, dT, tt));
+			mat.positionNode = shape === 'blend' ? mix(curve(), bundled, this.uBundleMix) : bundled;
+		} else {
+			mat.positionNode = curve();
+		}
 
 		const stS = this.stateBuf.element(s);
 		const stT = this.stateBuf.element(t);
@@ -613,30 +678,65 @@ export class GraphRenderer {
 			const flow = sin(vT.mul(9).sub(this.uTime.mul(2.6)))
 				.mul(0.5)
 				.add(0.5);
+			// Bundles stack many edges on the same pixels: dim each one so the topic colours survive.
+			// The bundled sample stands in for all edges (brighter per edge); its lit edges come
+			// from the overlay ('bundledLit'), which draws only the glow.
+			const bundleDim =
+				shape === 'curve'
+					? float(1)
+					: shape === 'blend'
+						? mix(float(1), float(0.5), this.uBundleMix)
+						: shape === 'bundled'
+							? float(0.5 / BUNDLE_SAMPLE)
+							: float(0);
 			const base = this.uEdgeAlpha
 				.mul(vW)
 				.mul(mix(float(1), float(0.22), this.uDim))
-				.mul(this.uEdgeFade);
-			const litGain = vBoth.mul(flow.mul(0.6).add(0.45)).mul(mix(float(0.55), float(1.25), vCited));
+				.mul(this.uEdgeFade)
+				.mul(bundleDim);
+			const litGain = vBoth
+				.mul(flow.mul(0.6).add(0.45))
+				.mul(mix(float(0.55), float(1.25), vCited))
+				// Lit edges stack along shared bundles too: a softer glow per edge keeps the colour.
+				.mul(shape === 'bundled' ? 0 : shape === 'bundledLit' ? 0.35 : 1);
 			const c = mix(vCol, vec3(1, 0.85, 0.5), vCited.mul(0.5));
 			return vec4(c.mul(base.add(litGain.mul(this.uEdgeLit.mul(0.6).add(0.4)))), 1);
 		})();
 		return mat;
 	}
 
-	private buildEdges(g: ClientGraph, anchorsU: N) {
-		const m = g.edgeSrc.length;
-		const verts = new Float32Array(m * EDGE_SEGMENTS * 2 * 3);
-		const rel = new Float32Array(m * EDGE_SEGMENTS * 2);
+	/**
+	 * An edge's resting shape: a cubic Bézier from s to t bent toward both topics' anchors (cheap
+	 * hierarchical bundling). Shared by the edge shader and the GPU bundler's starting point.
+	 */
+	private curveAt(s: N, t: N, u: N, bend: N, anchorsU: N): N {
+		const p0 = this.posBuf.element(s).xyz;
+		const p3 = this.posBuf.element(t).xyz;
+		const plane = vec3(1, 1, this.uFlat.oneMinus());
+		const c1 = mix(p0, anchorsU.element(int(this.infoBuf.element(s).x)).mul(plane), bend);
+		const c2 = mix(p3, anchorsU.element(int(this.infoBuf.element(t).x)).mul(plane), bend);
+		const v = u.oneMinus();
+		return p0
+			.mul(v.mul(v).mul(v))
+			.add(c1.mul(v.mul(v).mul(u).mul(3)))
+			.add(c2.mul(v.mul(u).mul(u).mul(3)))
+			.add(p3.mul(u.mul(u).mul(u)));
+	}
+
+	/** Line geometry for the given edges (EDGE_SEGMENTS segments each, original edge ids kept). */
+	private edgeGeometry(g: ClientGraph, edges: ArrayLike<number>) {
+		const m = edges.length;
+		const per = EDGE_SEGMENTS * 2;
+		const verts = new Float32Array(m * per * 3);
+		const rel = new Float32Array(m * per);
+		const edgeIndex = new Float32Array(m * per);
 		let o = 0;
-		for (let e = 0; e < m; e++) {
+		for (let j = 0; j < m; j++) {
+			const e = edges[j];
 			const s = g.edgeSrc[e];
 			const t = g.edgeDst[e];
-			rel.fill(
-				REL_VISUAL[g.relNames[g.edgeRel[e]]] ?? 0.6,
-				e * EDGE_SEGMENTS * 2,
-				(e + 1) * EDGE_SEGMENTS * 2
-			);
+			rel.fill(REL_VISUAL[g.relNames[g.edgeRel[e]]] ?? 0.6, j * per, (j + 1) * per);
+			edgeIndex.fill(e, j * per, (j + 1) * per);
 			for (let k = 0; k < EDGE_SEGMENTS; k++) {
 				verts[o++] = s;
 				verts[o++] = t;
@@ -649,12 +749,88 @@ export class GraphRenderer {
 		const geo = new THREE.BufferGeometry();
 		geo.setAttribute('position', new THREE.BufferAttribute(verts, 3));
 		geo.setAttribute('aRel', new THREE.BufferAttribute(rel, 1));
-		const lines = new THREE.LineSegments(geo, this.edgeMaterial(anchorsU));
+		geo.setAttribute('aEdge', new THREE.BufferAttribute(edgeIndex, 1));
+		return geo;
+	}
+
+	private buildEdges(g: ClientGraph, anchorsU: N) {
+		const m = g.edgeSrc.length;
+		// A fixed shuffle, so any prefix is an even sample of all edges (used while bundled).
+		const order = Uint32Array.from({ length: m }, (_, i) => i);
+		let seed = 4242;
+		for (let i = m - 1; i > 0; i--) {
+			seed = (seed * 16807) % 2147483647;
+			const j = seed % (i + 1);
+			[order[i], order[j]] = [order[j], order[i]];
+		}
+		this.edgeSampleVertices = Math.floor(m * BUNDLE_SAMPLE) * EDGE_SEGMENTS * 2;
+		this.edgeMaterials = {
+			curve: this.edgeMaterial(anchorsU),
+			bundled: this.edgeMaterial(anchorsU, { shape: 'bundled' }),
+			blend: this.edgeMaterial(anchorsU, { shape: 'blend' }),
+			bundledLit: this.edgeMaterial(anchorsU, { shape: 'bundledLit' })
+		};
+		const lines = new THREE.LineSegments(this.edgeGeometry(g, order), this.edgeMaterials.curve);
 		lines.frustumCulled = false;
 		lines.renderOrder = 1;
 		this.edges = lines;
 		this.scene.add(lines);
 		(this as N)._anchorsU = anchorsU;
+	}
+
+	/**
+	 * Compile the bundler's kernels and the alternate edge materials while nothing is happening,
+	 * so the first click on "bundle" responds at once instead of stalling on shader compilation.
+	 */
+	private warmUp() {
+		this.warmed = true;
+		const b = this.bundler;
+		const m = this.edgeMaterials;
+		const g = this.graph;
+		if (!b || !m || !g || this.bundleWanted || b.running) return;
+		b.start(
+			this.renderer,
+			new THREE.Box3(new THREE.Vector3(-1, -1, -1), new THREE.Vector3(1, 1, 1)),
+			3
+		);
+		b.step(this.renderer);
+		b.running = false;
+		// One edge per material, drawn for a frame: compiles the exact pipelines in use.
+		const geo = this.edgeGeometry(g, [0]);
+		const probes = [m.bundled, m.blend, m.bundledLit].map((mat) => {
+			const l = new THREE.LineSegments(geo, mat);
+			l.frustumCulled = false;
+			this.scene.add(l);
+			return l;
+		});
+		setTimeout(() => {
+			for (const l of probes) this.scene.remove(l);
+			geo.dispose();
+		}, 250);
+	}
+
+	/** Rebuild the overlay of lit edges (both endpoints lit) for the bundled view. */
+	private buildLitEdges() {
+		this.litDirty = false;
+		this.litBuiltAt = performance.now();
+		const g = this.graph;
+		if (this.litEdges) {
+			this.scene.remove(this.litEdges);
+			this.litEdges.geometry.dispose();
+			this.litEdges = null;
+		}
+		if (!g || !this.litAny || !this.edgeMaterials) return;
+		const lit: number[] = [];
+		for (let e = 0; e < g.edgeSrc.length; e++) {
+			if (this.stateArray[g.edgeSrc[e] * 4] > 0.5 && this.stateArray[g.edgeDst[e] * 4] > 0.5)
+				lit.push(e);
+		}
+		if (!lit.length) return;
+		const lines = new THREE.LineSegments(this.edgeGeometry(g, lit), this.edgeMaterials.bundledLit);
+		lines.frustumCulled = false;
+		lines.renderOrder = 1;
+		this.litEdges = lines;
+		this.scene.add(lines);
 	}
 
 	/** Gold "asterism" polyline through the cited nodes, in citation order. */
@@ -804,6 +980,7 @@ export class GraphRenderer {
 		}
 		this.litAny = any;
 		this.uDimTarget = any ? 1 : 0;
+		this.litDirty = true;
 	}
 
 	/* ------------------------------------------------------------------ */
@@ -948,10 +1125,15 @@ export class GraphRenderer {
 				if (this.frame % 12 === 0) this.readback();
 			} else if (!this.settledFired) {
 				this.settledFired = true;
+				this.settledAt = performance.now();
 				this.readback().then(() => this.events.settled?.());
 			}
 			this.frame++;
 		}
+
+		const kick = this.uKick.value as number;
+		if (kick > 0) this.uKick.value = kick < 0.05 ? 0 : kick * 0.94;
+		this.tickBundling(dt);
 
 		if (this.fly) {
 			const k = Math.min(1, (performance.now() - this.fly.t0) / this.fly.dur);
@@ -961,7 +1143,7 @@ export class GraphRenderer {
 			if (k >= 1) this.fly = null;
 		}
 		this.controls.autoRotate =
-			this.autoRotate && performance.now() - this.lastInteraction > 9000 && !this.fly;
+			this.autoRotate && !this.flat && performance.now() - this.lastInteraction > 9000 && !this.fly;
 		this.controls.update(dt);
 		this.pipeline.render();
 		this.adaptResolution(dt);
@@ -988,7 +1170,89 @@ export class GraphRenderer {
 	/** Reheat the layout (after the graph changes). */
 	reheat(alpha = 0.5) {
 		this.uAlpha.value = Math.max(this.uAlpha.value as number, alpha);
+		if (this.settledFired) this.events.unsettled?.();
 		this.settledFired = false;
+		this.bundleFresh = false;
+	}
+
+	/** Bundle edges on the GPU once the layout rests (fades back to curves while it moves). */
+	setBundled(on: boolean) {
+		this.bundleWanted = on;
+	}
+
+	get bundling() {
+		return this.bundler?.running ?? false;
+	}
+
+	/** Switch between the 3D constellation and a flat, top-down 2D map. */
+	setFlat(flat: boolean) {
+		if (flat === this.flat) return;
+		this.flat = flat;
+		this.uFlat.value = flat ? 1 : 0;
+		if (!flat) this.uKick.value = 26;
+		this.applyControls();
+		if (!this.graph) return;
+		this.reheat(0.45);
+		// Look straight down on the plane (keeping the distance and the point of interest).
+		const target = this.controls.target.clone().setZ(0);
+		const dist = this.camera.position.distanceTo(this.controls.target);
+		const dir = flat ? new THREE.Vector3(0, 0, 1) : new THREE.Vector3(0.25, -0.35, 1).normalize();
+		this.fly = {
+			from: this.camera.position.clone(),
+			to: target.clone().add(dir.multiplyScalar(dist)),
+			tFrom: this.controls.target.clone(),
+			tTo: target,
+			t0: performance.now(),
+			dur: 1100
+		};
+		this.lastInteraction = performance.now();
+	}
+
+	private applyControls() {
+		if (!this.controls) return;
+		this.controls.enableRotate = !this.flat;
+		this.controls.mouseButtons.LEFT = this.flat ? THREE.MOUSE.PAN : THREE.MOUSE.ROTATE;
+		this.controls.touches.ONE = this.flat ? THREE.TOUCH.PAN : THREE.TOUCH.ROTATE;
+	}
+
+	private tickBundling(dt: number) {
+		const b = this.bundler;
+		if (!b) return;
+		if (!this.warmed && this.settledFired && performance.now() - this.settledAt > 1500)
+			this.warmUp();
+		// Nearly still is enough: edges stay attached to their nodes as the last motion fades.
+		const still = this.settledFired || (this.uAlpha.value as number) < 0.03;
+		if (this.bundleWanted && still && !this.bundleFresh && !b.running) {
+			const box = new THREE.Box3();
+			const v = new THREE.Vector3();
+			for (let i = 0; i < this.count; i++) box.expandByPoint(v.fromArray(this.positions, i * 4));
+			// Starts from the curves on screen, so showing it at once is seamless.
+			b.start(this.renderer, box, this.flat ? 2 : 3);
+			this.uBundleMix.value = 1;
+			this.bundleFresh = true;
+		}
+		if (b.running) b.step(this.renderer);
+		const target = this.bundleWanted && this.bundleFresh ? 1 : 0;
+		const now = this.uBundleMix.value as number;
+		if (now !== target)
+			this.uBundleMix.value =
+				Math.abs(target - now) < 0.01 ? target : now + (target - now) * Math.min(1, dt * 4);
+		const mixed = this.uBundleMix.value as number;
+		const m = this.edgeMaterials;
+		if (m && this.edges) {
+			const want = mixed === 0 ? m.curve : mixed === 1 ? m.bundled : m.blend;
+			if (this.edges.material !== want) {
+				this.edges.material = want;
+				this.edges.geometry.setDrawRange(
+					0,
+					want === m.bundled ? this.edgeSampleVertices : Infinity
+				);
+				this.litDirty = true;
+			}
+		}
+		const showLit = mixed === 1;
+		if (showLit && this.litDirty && performance.now() - this.litBuiltAt > 150) this.buildLitEdges();
+		if (this.litEdges) this.litEdges.visible = showLit;
 	}
 
 	private async readback() {
@@ -1095,6 +1359,10 @@ export class GraphRenderer {
 		const h = parent?.clientHeight ?? window.innerHeight;
 		if (!w || !h) return;
 		this.renderer.setSize(w, h, false);
+		// Edges are one device pixel wide: on fewer pixels (1× displays, adaptive resolution) the same
+		// edges cover more of each pixel, so dim them to keep the haze from washing out.
+		this.uEdgeAlpha.value =
+			0.016 * THREE.MathUtils.clamp((w * this.renderer.getPixelRatio()) / 3200, 0.5, 1.2);
 		const inset = Math.min(this.insetRight, w * 0.6);
 		this.camera.aspect = (w + inset) / h;
 		if (inset > 0) this.camera.setViewOffset(w + inset, h, inset, 0, w, h);
@@ -1109,12 +1377,20 @@ export class GraphRenderer {
 			o.geometry?.dispose();
 			(o.material as THREE.Material).dispose();
 		}
+		for (const m of Object.values(this.edgeMaterials ?? {})) m.dispose();
+		this.edgeMaterials = null;
+		if (this.litEdges) {
+			this.scene.remove(this.litEdges);
+			this.litEdges.geometry.dispose();
+			this.litEdges = null;
+		}
 		this.nodes = this.edges = this.trails = this.reticle = null;
 	}
 
 	dispose() {
 		this.disposed = true;
 		this.running = false;
+		this.bundler?.dispose();
 		this.renderer?.setAnimationLoop(null);
 		this.resizeObs?.disconnect();
 		this.disposeGraphObjects();

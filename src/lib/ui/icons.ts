@@ -12,6 +12,7 @@ export {
 	PencilEdit02Icon as NewChatIcon,
 	CenterFocusIcon as FocusIcon,
 	Refresh01Icon as ResetIcon,
+	GitMergeIcon as BundleIcon,
 	Copy01Icon as CopyIcon,
 	Tick02Icon as CheckIcon,
 	ArrowRight01Icon as ChevronRightIcon,

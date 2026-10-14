@@ -16,6 +16,7 @@
 		MinusIcon,
 		PlusIcon,
 		ResetIcon,
+		BundleIcon,
 		SearchIcon
 	} from '#lib/ui/icons.ts';
 	import { tip } from '#lib/ui/tooltip.ts';
@@ -151,6 +152,11 @@
 
 	$effect(() => {
 		if (renderer) renderer.autoRotate = settings.value.autoRotate;
+	});
+
+	$effect(() => {
+		renderer?.setFlat(settings.value.flat);
+		renderer?.setBundled(settings.value.bundle);
 	});
 
 	$effect(() => {
@@ -340,6 +346,9 @@
 			renderer = r;
 			r.setInsetRight(PANEL);
 			r.autoRotate = settings.value.autoRotate;
+			// Before the graph arrives, so the first layout starts in the chosen view.
+			r.setFlat(settings.value.flat);
+			r.setBundled(settings.value.bundle);
 		}}
 		onhover={(i) => (hovered = i)}
 		onselect={(i) => {
@@ -354,6 +363,7 @@
 			}
 		}}
 		onsettled={() => (settled = true)}
+		onunsettled={() => (settled = false)}
 		onerror={(m) => (error = m)}
 	/>
 
@@ -481,6 +491,29 @@
 		<div
 			class="pointer-events-auto absolute right-4 bottom-4 flex flex-col overflow-hidden rounded-xl border border-white/[0.07] bg-ink-900/60 backdrop-blur-md"
 		>
+			<button
+				type="button"
+				class="flex size-8 items-center justify-center font-mono text-[10.5px] font-medium text-fg-3 transition-colors hover:bg-white/[0.06] hover:text-fg"
+				onclick={() => settings.update({ flat: !settings.value.flat })}
+				aria-label={settings.value.flat ? 'Switch to the 3D view' : 'Switch to the flat 2D map'}
+				use:tip={settings.value.flat ? '3D constellation' : 'Flat 2D map'}
+			>
+				{settings.value.flat ? '3D' : '2D'}
+			</button>
+			<button
+				type="button"
+				class="flex size-8 items-center justify-center transition-colors hover:bg-white/[0.06] {settings
+					.value.bundle
+					? 'text-glow'
+					: 'text-fg-3 hover:text-fg'}"
+				onclick={() => settings.update({ bundle: !settings.value.bundle })}
+				aria-label={settings.value.bundle ? 'Unbundle edges' : 'Bundle edges'}
+				aria-pressed={settings.value.bundle}
+				use:tip={settings.value.bundle ? 'Edges bundled' : 'Bundle edges'}
+			>
+				<Icon icon={BundleIcon} size={15} />
+			</button>
+			<div class="mx-2 h-px bg-white/[0.07]"></div>
 			{#each [{ icon: PlusIcon, label: 'Zoom in', go: () => renderer?.zoom(0.7) }, { icon: MinusIcon, label: 'Zoom out', go: () => renderer?.zoom(1.4) }, { icon: ResetIcon, label: 'Reset view', go: () => renderer?.resetView() }] as c (c.label)}
 				<button
 					type="button"

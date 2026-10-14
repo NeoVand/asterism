@@ -11,10 +11,12 @@
 		onhover?: (index: number | null) => void;
 		onselect?: (index: number | null, event: PointerEvent) => void;
 		onsettled?: () => void;
+		onunsettled?: () => void;
 		onerror?: (message: string) => void;
 	}
 
-	let { graph, onready, ongraph, onhover, onselect, onsettled, onerror }: Props = $props();
+	let { graph, onready, ongraph, onhover, onselect, onsettled, onunsettled, onerror }: Props =
+		$props();
 
 	let canvas: HTMLCanvasElement;
 	let renderer: GraphRenderer | null = $state(null);
@@ -28,7 +30,8 @@
 				r.events = {
 					hover: (i) => onhover?.(i),
 					click: (i, e) => onselect?.(i, e),
-					settled: () => onsettled?.()
+					settled: () => onsettled?.(),
+					unsettled: () => onunsettled?.()
 				};
 				renderer = r;
 				onready?.(r);

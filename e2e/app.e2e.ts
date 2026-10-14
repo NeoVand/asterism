@@ -42,6 +42,27 @@ test('a fact card with restatements opens without errors', async ({ page }) => {
 	expect(errors).toEqual([]);
 });
 
+test('the view toggles switch between 3D and the flat map, and bundle edges', async ({ page }) => {
+	const errors: string[] = [];
+	page.on('pageerror', (e) => errors.push(e.message));
+	page.on('console', (m) => m.type() === 'error' && errors.push(m.text()));
+	await page.goto('/');
+	await expect(page.getByText(/nodes$/).first()).toBeVisible({ timeout: 30_000 });
+	const bundle = page.getByRole('button', { name: /bundle edges|unbundle edges/i });
+	await expect(bundle).toHaveAttribute('aria-pressed', 'true');
+	// Let the layout settle so the GPU bundler actually runs (its kernels compile here).
+	await expect(page.getByText(/^\s*WebGPU\s*$/).first()).toBeVisible({ timeout: 90_000 });
+	await page.waitForTimeout(2000);
+	await page.getByRole('button', { name: 'Switch to the flat 2D map' }).click();
+	await expect(page.getByRole('button', { name: 'Switch to the 3D view' })).toBeVisible();
+	await bundle.click();
+	await expect(bundle).toHaveAttribute('aria-pressed', 'false');
+	await page.waitForTimeout(1500);
+	await page.reload();
+	await expect(page.getByRole('button', { name: 'Switch to the 3D view' })).toBeVisible();
+	expect(errors).toEqual([]);
+});
+
 test('settings open with model choices and memory', async ({ page }) => {
 	await page.goto('/');
 	await page.getByRole('button', { name: 'Settings' }).click();
