@@ -85,6 +85,16 @@
 		}
 	}
 
+	/**
+	 * The research question from a researcher's brief, without the plumbing the main agent adds
+	 * for it ("Read facts, return ids…"): the first sentence, minus a leading "Research".
+	 */
+	function researchTopic(description: string): string {
+		const first = description.split(/(?<=[.?!])\s+|\n/)[0] ?? description;
+		const topic = first.replace(/^(please\s+)?(research|investigate|find out|look into)\s*:?\s*/i, '').replace(/[.:;]\s*$/, '');
+		return topic.charAt(0).toUpperCase() + topic.slice(1);
+	}
+
 	/** "12 matches for … across Ch3, Ch9, Ch1, Glossary" → "12 hits · Ch3, Ch9 +2". */
 	function matchDetail(summary: string | undefined): string | undefined {
 		const m = summary?.match(/^(\d+) matches.*?(?: across (.+?))?:?$/);
@@ -187,8 +197,8 @@
 								size={13}
 								class="mt-px shrink-0 {t.status === 'run' ? 'text-[#a78bfa]' : 'text-fg-4'}"
 							/>
-							<span class="line-clamp-2 min-w-0 flex-1 {t.status === 'run' ? 'text-fg-2' : 'text-fg-3'}" title={t.description}>
-								<span class="text-fg-2">Researcher</span> · {t.description}
+							<span class="line-clamp-2 min-w-0 flex-1 {t.status === 'run' ? 'text-fg-2' : 'text-fg-3'}">
+								<span class="text-fg-2">Researcher</span> · {researchTopic(t.description)}
 							</span>
 							{#if sub.length}
 								<span class="shrink-0 font-mono text-[10.5px] text-fg-4">{sub.length} {sub.length === 1 ? 'step' : 'steps'}</span>
