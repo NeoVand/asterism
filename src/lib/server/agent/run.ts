@@ -6,7 +6,9 @@ import { Command } from '@langchain/langgraph';
 import { Block } from '#lib/blocks/schema.ts';
 import type { ChatEvent, ChatRequest } from '#lib/chat/protocol.ts';
 import { getAgent } from './agent.ts';
-import { resetSeen } from './tools.ts';
+import { markSeen, resetSeen } from './tools.ts';
+import { attachmentNote } from './attachments.ts';
+import { getStore } from '../kg/store.ts';
 
 interface StreamEvent {
 	event: string;
@@ -90,6 +92,8 @@ export async function* runTurn(
 	};
 
 	let input: unknown;
+	// Attached nodes travel as a note ahead of the user's own words.
+	const note = attachmentNote(getStore(), req.attachments);
 	const pendingInterrupt = async () => {
 		const st = (await agent.getState({ configurable: { thread_id: req.threadId } })) as
 			{ tasks?: { interrupts?: unknown[] }[] } | undefined;
@@ -118,11 +122,14 @@ export async function* runTurn(
 			!known && req.history?.length
 				? req.history.map((m) => ({ role: m.role, content: m.content }))
 				: [];
-		input = { messages: [...prior, { role: 'user', content: req.message ?? '' }] };
+		const content = note.text ? `${note.text}\n\n${req.message ?? ''}` : (req.message ?? '');
+		input = { messages: [...prior, { role: 'user', content }] };
 	}
 
 	resetSeen(req.threadId);
+	markSeen(req.threadId, note.ids);
 	yield { t: 'start', threadId: req.threadId, runId: `${Date.now()}` };
+	if (note.ids.length) yield { t: 'graph', mode: 'read', ids: note.ids, agent: 'main' };
 
 	const tasks = new Map<string, string>(); // task tool run_id → task id
 	const taskNs = new Map<string, string>(); // task tool checkpoint namespace → task id

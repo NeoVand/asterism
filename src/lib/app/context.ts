@@ -58,6 +58,8 @@ export interface AsterismContext {
 	select(id: string): void;
 	/** Ask the agent something (fills and sends the composer). */
 	ask(text: string): void;
+	/** Put the cursor in the composer (after attaching something to the next message). */
+	compose(): void;
 }
 
 const KEY = Symbol('asterism');

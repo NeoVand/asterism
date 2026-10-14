@@ -208,7 +208,11 @@
 		const fig = el.closest<HTMLElement>('figure.r-diagram');
 		if (fig) {
 			const svg = fig.querySelector('.r-diagram-svg svg');
-			const heading = fig.closest('section')?.querySelector('.r-h')?.textContent?.trim();
+			const heading = fig
+				.closest('section')
+				?.querySelector('.r-h')
+				?.textContent?.trim()
+				.replace(/^\d+\.\s+/, '');
 			if (svg) onexpand(svg.outerHTML, heading ?? unit.title);
 			return;
 		}

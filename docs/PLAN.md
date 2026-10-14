@@ -64,9 +64,23 @@ Rebuild the graph: `parse → extract → resolve → sources → assemble → l
   points splatted into a 512² grid (2D) or 128³ volume (3D), blurred, climbed and smoothed over 26
   iterations (one per frame). Bundled view draws an even 30% sample (same picture; the full set
   overloads the GPU's tile binning) plus an overlay of lit edges: 50–56 fps vs 31–33 unbundled at
-  full Retina resolution. Comparison shots in `docs/screens/views/` (`scripts/dev/views.ts`).
+  full Retina resolution. Unbundled edges are straight single segments (35–36 fps); bundling
+  starts from them. Comparison shots in `docs/screens/views/` (`scripts/dev/views.ts`).
+- Reader (`src/lib/reader`, `src/lib/server/kg/docs.ts`): the booklet and glossary as 35 units
+  with their sections, facts and citation numbers; any node located in the text (facts, concepts,
+  chapters, entities via their top fact, sources via the chapter's bibliography). 99% of fact
+  quotes are matched to their passage in the rendered page (CSS Highlight API, no DOM changes);
+  the rest are quoted from diagrams and belong to the figure. Hover/click passages ↔ stars,
+  answer citations underlined, read-along lighting (soft dim), selection follows into the text.
+  Mermaid (11.17, lazy) draws the 33 diagrams; the agent finds them (`find_diagrams`) and shows
+  them as a `diagram` block.
+- Light layers: selection and neighbours (focus), reading, hover (spot) sit over the lasting
+  answer lights and go out on their own.
+- Composer attachments: stars, a star with its neighbours, or a search's matches as chips; sent as
+  a note ahead of the message (capped ids with labels), lit and marked as seen for the brief.
 - Production build (adapter-node), unit tests (search, folding, citations, blocks, every node
-  card, graph shape), Playwright e2e (incl. a live agent run), lint and format clean
+  card, graph shape, documents and locating, reader markdown, attachments), Playwright e2e (incl.
+  reader and attachments, and a live agent run), lint and format clean
 - Upload: drop a document → chunk → extract → weave into the graph live (`src/lib/server/kg/ingest.ts`)
 - Probes: multi-turn scenarios ending in the agent's own debrief (`evals/probe.ts`), incl. a
   planner that answers the agent's form

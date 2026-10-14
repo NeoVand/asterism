@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
 	import BlockView from '#lib/blocks/BlockView.svelte';
+	import AttachmentChip from './AttachmentChip.svelte';
 	import Icon from '#lib/ui/Icon.svelte';
 	import { AlertIcon, CheckIcon, CopyIcon } from '#lib/ui/icons.ts';
 	import { tip } from '#lib/ui/tooltip.ts';
@@ -68,7 +69,14 @@
 </script>
 
 {#if msg.role === 'user'}
-	<div class="flex justify-end" in:fade={{ duration: 180 }}>
+	<div class="flex flex-col items-end gap-1.5" in:fade={{ duration: 180 }}>
+		{#if msg.attachments?.length}
+			<div class="flex max-w-[86%] flex-wrap justify-end gap-1">
+				{#each msg.attachments as chip, i (i)}
+					<AttachmentChip {chip} />
+				{/each}
+			</div>
+		{/if}
 		<div
 			class="max-w-[86%] rounded-2xl rounded-br-md border border-white/[0.06] bg-white/[0.055] px-3.5 py-2 text-[13.5px] leading-relaxed whitespace-pre-wrap text-fg"
 		>

@@ -11,6 +11,7 @@
 	import Reader from '#lib/reader/Reader.svelte';
 	import DiagramLightbox from '#lib/reader/DiagramLightbox.svelte';
 	import { reader } from '#lib/reader/reader.svelte.ts';
+	import { attachments } from '#lib/chat/attachments.svelte.ts';
 	import Icon from '#lib/ui/Icon.svelte';
 	import {
 		CloseIcon,
@@ -108,6 +109,9 @@
 		},
 		ask(text) {
 			panel?.ask(text, true);
+		},
+		compose() {
+			panel?.focus();
 		}
 	});
 
@@ -497,6 +501,17 @@
 							neighborsLit={neighborsOf === selected}
 							onneighbors={neighbors}
 							onread={(id) => reader.show(id)}
+							onattach={(id) => {
+								const i = index.get(id);
+								const label = graph?.labels[i ?? -1] ?? id;
+								const nb =
+									neighborsOf === id && i != null ? neighborsList(i).map((j) => graph!.ids[j]) : [];
+								attachments.add(
+									nb.length
+										? { kind: 'neighbors', label, ids: [id, ...nb] }
+										: { kind: 'node', label, ids: [id] }
+								);
+							}}
 						/>
 						{#snippet failed()}{/snippet}
 					</svelte:boundary>

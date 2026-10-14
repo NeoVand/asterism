@@ -3,6 +3,10 @@
 	import { PlusIcon, SendIcon, StopIcon, SparklesIcon } from '#lib/ui/icons.ts';
 	import { tip } from '#lib/ui/tooltip.ts';
 	import { settings, MODELS } from './settings.svelte.ts';
+	import { attachments } from './attachments.svelte.ts';
+	import AttachmentChip from './AttachmentChip.svelte';
+	import { flip } from 'svelte/animate';
+	import { fly } from 'svelte/transition';
 
 	interface Props {
 		busy: boolean;
@@ -51,6 +55,19 @@
 <div
 	class="rounded-2xl border border-white/[0.08] bg-ink-850/80 shadow-[0_10px_40px_-18px_rgba(0,0,0,0.9)] transition-[border-color,box-shadow] duration-200 focus-within:border-glow/30 focus-within:shadow-[0_0_0_3px_rgba(111,227,255,0.06),0_10px_40px_-18px_rgba(0,0,0,0.9)]"
 >
+	{#if attachments.list.length}
+		<div class="flex flex-wrap gap-1.5 px-3 pt-3" aria-label="Attached to your message">
+			{#each attachments.list as chip (chip.key)}
+				<div
+					class="max-w-full min-w-0"
+					animate:flip={{ duration: 200 }}
+					in:fly={{ y: 4, duration: 220 }}
+				>
+					<AttachmentChip {chip} onremove={() => attachments.remove(chip.key)} />
+				</div>
+			{/each}
+		</div>
+	{/if}
 	<textarea
 		bind:this={area}
 		bind:value={text}
@@ -58,7 +75,9 @@
 		disabled={waiting}
 		placeholder={waiting
 			? 'Answer the questions above to continue…'
-			: 'Ask, plan, or explore the research…'}
+			: attachments.list.length
+				? 'Ask about what you attached…'
+				: 'Ask, plan, or explore the research…'}
 		class="block max-h-[168px] w-full resize-none bg-transparent px-4 pt-3 pb-1 text-[13.5px] leading-relaxed text-fg outline-none placeholder:text-fg-4 disabled:cursor-not-allowed"
 		oninput={resize}
 		onkeydown={(e) => {

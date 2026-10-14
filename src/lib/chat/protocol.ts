@@ -24,6 +24,15 @@ export interface ChatSettings {
 	effort?: 'low' | 'medium' | 'high';
 }
 
+/** Graph nodes the user attached to a message as context. */
+export interface Attachment {
+	kind: 'node' | 'neighbors' | 'search';
+	/** The node's label, or the search query. */
+	label: string;
+	/** Graph ids; for a node (and its neighbours) the node itself comes first. */
+	ids: string[];
+}
+
 export interface ChatRequest {
 	threadId: string;
 	message?: string;
@@ -33,4 +42,6 @@ export interface ChatRequest {
 	history?: { role: 'user' | 'assistant'; content: string }[];
 	/** The user's local date, `YYYY-MM-DD`, so plans and deadlines are counted from their today. */
 	today?: string;
+	/** Nodes attached to this message as context. */
+	attachments?: Attachment[];
 }

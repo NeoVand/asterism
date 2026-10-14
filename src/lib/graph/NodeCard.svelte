@@ -14,7 +14,9 @@
 		EntityIcon,
 		SectionIcon,
 		ChapterIcon,
-		ReaderIcon
+		ReaderIcon,
+		PlusIcon,
+		CheckIcon
 	} from '#lib/ui/icons.ts';
 	import { tip } from '#lib/ui/tooltip.ts';
 	import { useAsterism, provideCiteNumbering, type NodeDetail } from '#lib/app/context.ts';
@@ -30,9 +32,12 @@
 		neighborsLit?: boolean;
 		/** Open the reader where this node is written. */
 		onread?: (id: string) => void;
+		/** Attach the node (with its lit neighbours) to the next chat message. */
+		onattach?: (id: string) => void;
 	}
 
-	let { id, onclose, onneighbors, neighborsLit = false, onread }: Props = $props();
+	let { id, onclose, onneighbors, neighborsLit = false, onread, onattach }: Props = $props();
+	let added = $state(false);
 	const app = useAsterism();
 	let detail = $state<NodeDetail | null>(null);
 	let loading = $state(true);
@@ -122,9 +127,30 @@
 			<span class="text-[11px] text-fg-4">·</span>
 			<span class="truncate text-[11px]" style:color>{TOPICS[detail.topic]?.name}</span>
 		{/if}
+		{#if onattach && detail}
+			<button
+				type="button"
+				class="ml-auto rounded-md p-1 text-fg-3 transition-colors hover:bg-white/[0.06] hover:text-fg {added
+					? 'text-ok!'
+					: ''}"
+				onclick={() => {
+					onattach(detail!.id);
+					added = true;
+					setTimeout(() => (added = false), 1200);
+				}}
+				aria-label="Add to the chat"
+				use:tip={neighborsLit
+					? 'Add it and its lit neighbours to your next message'
+					: 'Add it to your next message'}
+			>
+				<Icon icon={added ? CheckIcon : PlusIcon} size={14} />
+			</button>
+		{/if}
 		<button
 			type="button"
-			class="ml-auto rounded-md p-1 text-fg-3 hover:bg-white/[0.06] hover:text-fg"
+			class="rounded-md p-1 text-fg-3 hover:bg-white/[0.06] hover:text-fg {onattach && detail
+				? ''
+				: 'ml-auto'}"
 			onclick={onclose}
 			aria-label="Close"
 		>

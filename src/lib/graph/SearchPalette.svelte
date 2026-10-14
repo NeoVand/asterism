@@ -2,7 +2,9 @@
 	/** ⌘K search over the graph; results light up as you type, Enter flies to one. */
 	import { fade, scale } from 'svelte/transition';
 	import Icon from '#lib/ui/Icon.svelte';
-	import { SearchIcon, SparklesIcon } from '#lib/ui/icons.ts';
+	import { PlusIcon, SearchIcon, SparklesIcon } from '#lib/ui/icons.ts';
+	import { tip } from '#lib/ui/tooltip.ts';
+	import { attachments } from '#lib/chat/attachments.svelte.ts';
 	import { useAsterism } from '#lib/app/context.ts';
 	import { TOPIC_COLORS, TYPE_LABEL, type ClientNodeType } from './palette.ts';
 
@@ -64,6 +66,17 @@
 		onclose();
 	}
 
+	/** Attach every match (not only the few shown) to the next message as one chip. */
+	async function attachAll() {
+		const query = q.trim();
+		if (!query) return;
+		const res = await fetch(`/api/search?q=${encodeURIComponent(query)}&limit=60`);
+		const data = (await res.json()) as { results: Result[] };
+		attachments.add({ kind: 'search', label: query, ids: data.results.map((r) => r.id) });
+		onclose();
+		app.compose();
+	}
+
 	function askAgent() {
 		app.ask(q.trim());
 		onclose();
@@ -109,6 +122,17 @@
 					} else if (e.key === 'Escape') onclose();
 				}}
 			/>
+			{#if results.length}
+				<button
+					type="button"
+					class="flex h-7 items-center gap-1 rounded-lg px-2 text-[11.5px] text-fg-3 transition-colors hover:bg-white/[0.06] hover:text-fg"
+					onclick={attachAll}
+					aria-label="Add all matches to the chat"
+					use:tip={'Add all matches to your next message, as one chip'}
+				>
+					<Icon icon={PlusIcon} size={13} /> Add to chat
+				</button>
+			{/if}
 			<kbd class="rounded bg-white/[0.06] px-1.5 py-0.5 font-mono text-[10px] text-fg-4">esc</kbd>
 		</div>
 		{#if q.trim()}

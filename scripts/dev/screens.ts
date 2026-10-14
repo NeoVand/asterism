@@ -62,6 +62,37 @@ await shot('05-node-card');
 await page.keyboard.press('Escape');
 console.log('04–05 search and card');
 
+// The reader: Chapter 1's key findings, a passage under the pointer, then a diagram full size.
+await page.getByRole('button', { name: 'Reset view' }).click();
+await page.waitForTimeout(1500);
+await page.getByRole('button', { name: 'Read', exact: true }).click();
+const reader = page.getByRole('region', { name: 'Reader' });
+await reader.getByRole('heading', { level: 2 }).first().waitFor();
+await page.waitForTimeout(600);
+await reader.getByRole('button', { name: 'Contents' }).first().click();
+await reader
+	.getByRole('navigation', { name: 'Contents' })
+	.getByText('The full range of options')
+	.click();
+await page.waitForTimeout(1500);
+await reader.locator('section[data-sid="x27"]').evaluate((el) => el.scrollIntoView());
+await page.waitForTimeout(1200);
+const bullet = (await reader.locator('section[data-sid="x27"] li').first().boundingBox())!;
+await page.mouse.move(bullet.x + 120, bullet.y + 40, { steps: 4 });
+await page.waitForTimeout(1500);
+await shot('08-reader');
+const fig = reader.locator('figure.r-diagram').first();
+await fig.scrollIntoViewIfNeeded();
+await fig.locator('.r-diagram-svg svg').waitFor({ timeout: 20_000 });
+await page.waitForTimeout(800);
+await fig.click();
+await page.waitForTimeout(900);
+await shot('09-diagram');
+await page.keyboard.press('Escape');
+await reader.getByRole('button', { name: 'Close the reader' }).click();
+await page.waitForTimeout(800);
+console.log('08–09 reader');
+
 if (ask) {
 	const box = page.getByPlaceholder('Ask, plan, or explore the research…');
 	await box.fill(

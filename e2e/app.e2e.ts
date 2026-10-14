@@ -133,3 +133,33 @@ test('a node card opens the reader where the node is written', async ({ page }) 
 	const reader = page.getByRole('region', { name: 'Reader' });
 	await expect(reader.getByRole('heading', { name: /^Time to collision/ })).toBeInViewport();
 });
+
+test('stars and search results can be attached to the next message', async ({ page }) => {
+	await page.goto('/');
+	await expect(page.getByText(/nodes$/).first()).toBeVisible({ timeout: 30_000 });
+	const palette = page.getByPlaceholder('Search facts, concepts, standards, sources…');
+	await page.keyboard.press('Meta+k');
+	await palette.fill('Volvo CE Collision Mitigation System');
+	await expect(
+		page.getByRole('dialog', { name: 'Search the graph' }).getByRole('button').first()
+	).toBeVisible();
+	await page.keyboard.press('Enter');
+	await page.getByRole('button', { name: 'Add to the chat' }).click();
+	const tray = page.getByLabel('Attached to your message');
+	await expect(tray.getByRole('group', { name: /^Attached: Volvo CE/ })).toBeVisible();
+
+	// With its neighbours lit, adding again replaces the chip with the node and its neighbours.
+	await page.getByRole('button', { name: 'Neighbors' }).click();
+	await page.getByRole('button', { name: 'Add to the chat' }).click();
+	await expect(tray.getByRole('group')).toHaveCount(1);
+	await expect(tray.getByRole('group', { name: /neighbours$/ })).toBeVisible();
+
+	await page.keyboard.press('Meta+k');
+	await palette.fill('Nvidia');
+	await page.getByRole('button', { name: 'Add all matches to the chat' }).click();
+	await expect(tray.getByRole('group', { name: /“Nvidia”, \d+ matches/ })).toBeVisible();
+	await expect(page.getByPlaceholder('Ask about what you attached…')).toBeFocused();
+
+	await tray.getByRole('button', { name: 'Remove “Nvidia”' }).click();
+	await expect(tray.getByRole('group')).toHaveCount(1);
+});

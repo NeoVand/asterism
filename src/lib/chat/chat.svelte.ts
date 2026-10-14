@@ -3,8 +3,9 @@
  * the page uses to light up the graph while the agent works.
  */
 import type { Answers, Block, QuestionForm } from '#lib/blocks/schema.ts';
-import type { ChatEvent, ChatRequest } from './protocol.ts';
+import type { Attachment, ChatEvent, ChatRequest } from './protocol.ts';
 import { settings } from './settings.svelte.ts';
+import { attachments as composerAttachments, chipText } from './attachments.svelte.ts';
 
 export type Part =
 	| { k: 'text'; text: string }
@@ -50,6 +51,8 @@ export interface Msg {
 	touched: string[];
 	read: string[];
 	error?: string;
+	/** Context the user attached to this message (user messages). */
+	attachments?: Attachment[];
 	startedAt: number;
 	endedAt?: number;
 	usage?: { input: number; output: number };
@@ -72,6 +75,24 @@ export interface ChatHooks {
 
 const STORE_KEY = 'asterism.threads.v1';
 const uid = () => Math.random().toString(36).slice(2, 10) + Date.now().toString(36).slice(-4);
+
+/** A thread as plain turns (attachments summarised), for rebuilding it on the server. */
+function transcript(thread: Thread) {
+	return thread.messages
+		.filter((m) => m.status !== 'error')
+		.map((m) => {
+			const att = (m.attachments ?? []).map((a) => {
+				const t = chipText(a);
+				return `${t.label}${t.count ? ` (${t.count})` : ''}: ${a.ids.slice(0, 30).join(', ')}`;
+			});
+			const text = messageText(m);
+			return {
+				role: m.role,
+				content: att.length ? `[Attached: ${att.join('; ')}]\n\n${text}` : text
+			};
+		})
+		.filter((m) => m.content);
+}
 
 export function messageText(m: Msg): string {
 	return m.parts
@@ -178,12 +199,17 @@ class ChatStore {
 			this.currentId = thread.id;
 			thread = this.threads[0];
 		}
-		const history = thread.messages
-			.filter((m) => m.status !== 'error')
-			.map((m) => ({ role: m.role, content: messageText(m) }))
-			.filter((m) => m.content);
-		thread.messages.push(this.blank('user', message));
-		await this.run(thread, { threadId: thread.id, message, history });
+		const history = transcript(thread);
+		const attachments = composerAttachments.take();
+		const user = this.blank('user', message);
+		if (attachments.length) user.attachments = attachments;
+		thread.messages.push(user);
+		await this.run(thread, {
+			threadId: thread.id,
+			message,
+			history,
+			...(attachments.length ? { attachments } : {})
+		});
 	}
 
 	async resume(answers: Answers | 'skipped') {
@@ -193,10 +219,7 @@ class ChatStore {
 		const form = last?.parts.findLast((p) => p.k === 'form');
 		if (form && form.k === 'form') form.answers = answers;
 		if (last) last.status = 'done';
-		const history = thread.messages
-			.filter((m) => m.status !== 'error')
-			.map((m) => ({ role: m.role, content: messageText(m) }))
-			.filter((m) => m.content);
+		const history = transcript(thread);
 		await this.run(thread, {
 			threadId: thread.id,
 			resume: answers === 'skipped' ? { skipped: true } : answers,

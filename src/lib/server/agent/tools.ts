@@ -36,6 +36,13 @@ export function resetSeen(threadId: string) {
 	seenByThread.set(threadId, carried);
 }
 
+/** Mark ids as passed by in this turn (e.g. the nodes the user attached). */
+export function markSeen(threadId: string, ids: string[]) {
+	let seen = seenByThread.get(threadId);
+	if (!seen) seenByThread.set(threadId, (seen = new Map()));
+	for (const id of ids) if (!seen.has(id)) seen.set(id, 1);
+}
+
 function threadOf(config: RunnableConfig | undefined): string {
 	return String(
 		(config?.configurable as { thread_id?: string } | undefined)?.thread_id ?? 'default'

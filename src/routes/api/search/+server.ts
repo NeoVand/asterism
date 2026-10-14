@@ -10,8 +10,10 @@ export const GET: RequestHandler = ({ url }) => {
 	if (!q) return json({ results: [] });
 	const types = url.searchParams.get('types')?.split(',').filter(Boolean) as NodeType[] | undefined;
 	const store = getStore();
+	// The palette shows the best few; "add all matches to the chat" asks for more.
+	const want = Math.min(80, Math.max(1, Number(url.searchParams.get('limit')) || 24));
 	const raw = store.search(q, {
-		limit: 32,
+		limit: Math.round(want * 1.35),
 		types: types?.length ? types : ['fact', 'term', 'entity', 'source', 'section']
 	});
 	// The same press release is often cited from several URLs; show each title once.
@@ -23,7 +25,7 @@ export const GET: RequestHandler = ({ url }) => {
 			seen.add(key);
 			return true;
 		})
-		.slice(0, 24);
+		.slice(0, want);
 	return json({
 		results: hits.map((h) => ({
 			id: h.id,

@@ -10,6 +10,8 @@ answers with live citations, and helps plan — while the stars it touches light
 
 ![An answer: cited stars labelled in the graph, a timeline block and numbered citations in the chat](docs/screens/07-answer.jpg)
 
+![The reader: the booklet beside the graph; hovering a passage lights its star](docs/screens/08-reader.jpg)
+
 The four views side by side: [3D](docs/screens/views/3d.jpg) ·
 [3D bundled](docs/screens/views/3d-bundled.jpg) · [2D](docs/screens/views/2d.jpg) ·
 [2D bundled](docs/screens/views/2d-bundled.jpg).
@@ -44,12 +46,22 @@ npm run build && npm start
 - **Watch the agent work**: the activity log shows skills, searches, hubs explored and parallel
   researchers; the graph lights every node they touch. Hover a step to see what it found. The
   finished answer is drawn as a gold _answer constellation_ across the chapters it used.
+- **Read** the booklet and the glossary in a reading pane on the left (Read, top left, or Read on
+  any star's card). The text knows its facts: hover a passage to light its star, click to open it;
+  citation numbers open their sources, glossary chapter references jump into the booklet, the
+  current answer's citations are underlined, and the 33 diagrams are drawn and open full size.
+  With reading-along on, the stars of the page you are reading glow in the graph. While the reader
+  is open it follows whatever you select.
 - **Plan**: ask for a validation plan; the agent researches, asks you a few questions in an in-chat
   form, and returns an interactive plan (gantt strip, phases, gates) and other blocks — timelines,
-  comparisons, risk matrices, metrics, checklists, flows, source lists.
+  comparisons, risk matrices, metrics, checklists, flows, source lists, and the documents' own
+  diagrams (ask "show me the diagram of…").
+- **Set the context yourself**: + on a star's card adds it (with its neighbours, when lit) to your
+  next message; "Add to chat" in ⌘K adds every match of a search as one chip. Write your question
+  around them; the agent reads them first.
 - **Switch views** (bottom right): the 3D constellation or a flat 2D map, with edges bundled on the
   GPU (kernel-density bundling: 110k edges gather into highways between the topics they connect,
-  in under a second) or drawn as individual curves.
+  in under a second) or drawn as plain straight lines.
 - **Explore**: click any star, search with ⌘K, or take the one-minute tour through the nine
   constellations (the glossary's learning path).
 - **Grow the graph**: drop a Markdown or text file anywhere (or use +). Its facts are extracted,
@@ -69,6 +81,8 @@ npm run build && npm start
 | WebGPU constellation (TSL compute layout, 2D/3D views, bloom)                         | `src/lib/graph/GraphRenderer.ts`                                 |
 | GPU edge bundling (kernel density: splat, blur, climb, smooth; 2D grid or 3D volume)  | `src/lib/graph/EdgeBundler.ts`                                   |
 | Chat, generative blocks, node card, search, tour                                      | `src/lib/chat`, `src/lib/blocks`, `src/lib/graph`, `src/lib/app` |
+| Documents as reading units, node → passage, diagram index (`/api/doc/*`)              | `src/lib/server/kg/docs.ts`                                      |
+| Reader (serif page, fact highlights, read-along, mermaid diagrams)                    | `src/lib/reader/*`                                               |
 
 The graph (20.6k nodes, 110k edges): 16.6k atomic facts, 1.16k cited sources (duplicates merged), 361 glossary
 concepts, 2k resolved entities and the document structure, plus ~10k cross-chapter fact relations
@@ -76,7 +90,7 @@ concepts, 2k resolved entities and the document structure, plus ~10k cross-chapt
 entity discussed in more than one place. It is one connected component; all but one fact link to a
 concept, entity, source or another fact. No embeddings: retrieval is full-text search plus graph
 traversal. See `docs/PLAN.md` for the pipeline, `docs/VISION.md` for the intent and
-`docs/DEMO.md` for a six-minute demo.
+`docs/DEMO.md` for a seven-minute demo.
 
 Rebuild the graph from the references (≈1 h of `gpt-6.1-sol` calls, cached per chunk):
 
@@ -94,7 +108,7 @@ npx tsx scripts/kg/parse.ts && npx tsx scripts/kg/extract.ts && npx tsx scripts/
 - `npx tsx evals/probe.ts` — multi-turn conversations (newcomer, skeptic, numbers, planner with a
   form…) ending with the agent's own debrief of what confused it.
 - `npx vitest run --project server` — unit tests (search, folding, citations, blocks, every node
-  card, graph connectivity).
+  card, graph connectivity, the documents as units and every node located in them, attachments).
 - `npx playwright test` — end-to-end UI tests (`E2E_AGENT=1` adds a live agent run).
 - `npx tsx scripts/dev/screens.ts --ask` — screenshots of key states into `docs/screens/` (dev
   server running).
