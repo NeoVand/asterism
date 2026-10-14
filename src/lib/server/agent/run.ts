@@ -122,12 +122,20 @@ export async function* runTurn(
 	yield { t: 'start', threadId: req.threadId, runId: `${Date.now()}` };
 
 	const tasks = new Map<string, string>(); // task tool run_id → task id
+	const taskNs = new Map<string, string>(); // task tool checkpoint namespace → task id
 	const usage = { input: 0, output: 0 };
+	// A subagent runs inside its task tool call, so its events carry that call's checkpoint
+	// namespace as a prefix ("tools:<id>|model_request:…"). parent_ids is empty here.
 	const agentOf = (ev: StreamEvent): string => {
-		for (const p of ev.parent_ids ?? []) if (tasks.has(p)) return tasks.get(p)!;
-		if (ev.event === 'on_tool_start' || ev.event === 'on_tool_end') {
-			if (tasks.has(ev.run_id) && ev.name !== 'task') return tasks.get(ev.run_id)!;
+		const meta = (ev.metadata ?? {}) as { checkpoint_ns?: string; lc_agent_name?: string };
+		const ns = meta.checkpoint_ns ?? '';
+		if (ns.includes('|')) {
+			const task = taskNs.get(ns.slice(0, ns.indexOf('|')));
+			if (task) return task;
 		}
+		for (const p of ev.parent_ids ?? []) if (tasks.has(p)) return tasks.get(p)!;
+		// Never let an unattributed subagent's tokens into the main answer.
+		if (meta.lc_agent_name && meta.lc_agent_name !== 'asterism') return 'sub';
 		return 'main';
 	};
 
@@ -163,6 +171,8 @@ export async function* runTurn(
 						if (ev.name === 'task') {
 							const id = `task-${ev.run_id}`;
 							tasks.set(ev.run_id, id);
+							const ns = (ev.metadata as { checkpoint_ns?: string } | undefined)?.checkpoint_ns;
+							if (ns) taskNs.set(ns, id);
 							yield {
 								t: 'task',
 								id,

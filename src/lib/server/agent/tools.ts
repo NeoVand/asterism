@@ -509,12 +509,22 @@ export function makeTools() {
 		async ({ question, max }, config) => {
 			const store = getStore();
 			const seen = seenByThread.get(threadOf(config));
-			const facts = [...(seen ?? [])].map((id) => store.get(id)).filter((n): n is KGNode => n?.type === 'fact');
-			if (!facts.length) return 'You have not looked at any facts yet in this turn. Research first (search_graph, explore), then call evidence_brief.';
+			const seenFacts = [...(seen ?? [])].map((id) => store.get(id)).filter((n): n is KGNode => n?.type === 'fact');
+			if (!seenFacts.length) return 'You have not looked at any facts yet in this turn. Research first (search_graph, explore), then call evidence_brief.';
+			const legacy = process.env.ASTERISM_BRIEF_LEGACY === '1'; // TEMP A/B
+			const asked = legacy ? '' : lastUserMessage();
+			// The booklet's own conclusions on the question compete for a place even if the
+			// research did not reach them.
+			const conclusions = legacy
+				? []
+				: store
+						.search(`${asked} ${question}`, { types: ['fact'], roles: ['synthesis', 'key-findings'], limit: 10 })
+						.map((h) => h.node)
+						.filter((n) => !seen?.has(n.id));
+			const facts = [...seenFacts, ...conclusions];
 			// Rank against both the agent's restatement and the user's own words: restatements
 			// tend to narrow the question and drop parts of it.
 			const ids = new Set(facts.map((f) => f.id));
-			const asked = lastUserMessage();
 			const scores = blend(store.scoreWithin(question, ids), asked ? store.scoreWithin(asked, ids) : new Map());
 			const ROLE: Record<string, number> = { synthesis: 1.5, 'key-findings': 1.35, disagree: 1.15, uncertain: 1.1, 'blind-spots': 1.05 };
 			const ranked = facts
@@ -522,7 +532,7 @@ export function makeTools() {
 				.filter((x) => x.score > 0)
 				.sort((a, b) => b.score - a.score)
 				.map((x) => x.f);
-			const folded = foldDuplicates(store, ranked, Math.min(Math.max(max ?? 28, 20), 40));
+			const folded = foldDuplicates(store, ranked, Math.min(legacy ? (max ?? 28) : Math.max(max ?? 28, 20), 40));
 			const isHeadline = (n: KGNode) => ['synthesis', 'key-findings'].includes(store.roleOf(n) ?? '');
 			const isTension = (n: KGNode) =>
 				['gap', 'uncertain', 'disagreement'].includes(n.kind ?? '') || ['disagree', 'uncertain', 'blind-spots'].includes(store.roleOf(n) ?? '');
@@ -533,7 +543,7 @@ export function makeTools() {
 			await emit(config, 'read', folded.map((x) => x.node.id));
 			return [
 				`Evidence brief for: ${question}`,
-				`(${folded.length} most relevant of the ${facts.length} facts you saw this turn; restatements folded)`,
+				`(${folded.length} most relevant of the ${seenFacts.length} facts you saw this turn${conclusions.length ? ' and the booklet’s matching conclusions' : ''}; restatements folded)`,
 				headline.length ? `\nBooklet conclusions:\n${headline.map(fmt).join('\n')}` : '',
 				detail.length ? `\nSupporting detail:\n${detail.map(fmt).join('\n')}` : '',
 				tension.length ? `\nGaps, uncertainties and tensions:\n${tension.map(fmt).join('\n')}` : '',

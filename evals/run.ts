@@ -51,7 +51,11 @@ const JUDGE_SCHEMA = {
 				type: 'object',
 				additionalProperties: false,
 				required: ['i', 'in_answer', 'in_retrieved'],
-				properties: { i: { type: 'integer' }, in_answer: { type: 'boolean' }, in_retrieved: { type: 'boolean' } }
+				properties: {
+					i: { type: 'integer' },
+					in_answer: { type: 'string', enum: ['full', 'partial', 'no'] },
+					in_retrieved: { type: 'boolean' }
+				}
 			}
 		},
 		citations: {
@@ -115,14 +119,14 @@ async function main() {
 		// What the agent saw: read facts plus touched facts (search results it looked at).
 		const seen = [...new Set([...read, ...touched])].filter((id) => store.get(id)?.type === 'fact').slice(0, 400);
 		const judge = await jsonCall<{
-			claims: { i: number; in_answer: boolean; in_retrieved: boolean }[];
+			claims: { i: number; in_answer: 'full' | 'partial' | 'no'; in_retrieved: boolean }[];
 			citations: { id: string; supported: boolean }[];
 			unsupported: string[];
 			score: number;
 			notes: string;
 		}>({
 			system: `You grade a research assistant's answer about a booklet on validating a collision mitigation system for heavy off-road machines. Be strict and literal.
-For each gold claim (by index): in_answer = the answer states it (paraphrase OK, numbers must match); in_retrieved = at least one of the RETRIEVED FACTS states it.
+For each gold claim (by index): in_answer = "full" if the answer states the claim's point with its key numbers and names (paraphrase OK, numbers must match), "partial" if it states the main point but leaves out a secondary detail (a date, an edition, one of several examples), "no" otherwise; in_retrieved = at least one of the RETRIEVED FACTS states it.
 For each cited id: supported = the cited fact supports the sentence(s) where the answer cites it.
 unsupported: answer claims (short quotes) that no cited or retrieved fact supports (ignore generic framing).
 score 1–5: overall quality for a planner (completeness on gold claims, correctness, grounding, clarity).`,
@@ -143,7 +147,9 @@ ${seen.map(factText).join('\n') || '(none)'}`,
 			schema: JUDGE_SCHEMA,
 			effort: 'low'
 		});
-		const answerRecall = judge.claims.filter((x) => x.in_answer).length / c.must.length;
+		// Partial coverage earns half credit; `fullRecall` keeps the strict all-or-nothing figure.
+		const answerRecall = judge.claims.reduce((n, x) => n + (x.in_answer === 'full' ? 1 : x.in_answer === 'partial' ? 0.5 : 0), 0) / c.must.length;
+		const fullRecall = judge.claims.filter((x) => x.in_answer === 'full').length / c.must.length;
 		const retrievalRecall = judge.claims.filter((x) => x.in_retrieved).length / c.must.length;
 		const citePrecision = judge.citations.length ? judge.citations.filter((x) => x.supported).length / judge.citations.length : 0;
 		const regexHits = c.must.filter((m) => new RegExp(m.re, 'i').test(text)).length / c.must.length;
@@ -160,7 +166,8 @@ ${seen.map(factText).join('\n') || '(none)'}`,
 			citePrecision,
 			regexHits,
 			score: judge.score,
-			missed: judge.claims.filter((x) => !x.in_answer).map((x) => c.must[x.i]?.claim),
+			fullRecall,
+			missed: judge.claims.filter((x) => x.in_answer !== 'full').map((x) => `${x.in_answer === 'partial' ? '(partial) ' : ''}${c.must[x.i]?.claim}`),
 			notRetrieved: judge.claims.filter((x) => !x.in_retrieved).map((x) => c.must[x.i]?.claim),
 			unsupported: judge.unsupported,
 			badCites: judge.citations.filter((x) => !x.supported).map((x) => x.id),
@@ -182,6 +189,7 @@ ${seen.map(factText).join('\n') || '(none)'}`,
 		n: results.length,
 		score: avg('score'),
 		answerRecall: avg('answerRecall'),
+		fullRecall: avg('fullRecall'),
 		retrievalRecall: avg('retrievalRecall'),
 		citePrecision: avg('citePrecision'),
 		seconds: avg('ms') / 1000,

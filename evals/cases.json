@@ -672,16 +672,24 @@
   "q": "What is SOTIF, and does it apply to our machine?",
   "must": [
    {
-    "claim": "SOTIF (ISO 21448:2022, Safety of the Intended Functionality) covers harm when nothing is broken but the system misjudges the world, e.g. perception limits and triggering conditions.",
-    "re": "nothing (is )?broken|triggering|performance limit|insufficien"
+    "claim": "SOTIF (Safety of the Intended Functionality, ISO 21448) covers harm when nothing is broken but the system's sensing or decisions are inadequate for the situation.",
+    "re": "nothing (is )?broken|insufficien|inadequate"
    },
    {
-    "claim": "ISO 21448 (like ISO 26262) is a road-vehicle standard and does not apply by scope; ISO 19014 is the earth-moving functional-safety reference.",
-    "re": "road.vehicle|ISO 19014"
+    "claim": "ISO 21448 is a road-vehicle standard and does not apply to the off-road machine by scope.",
+    "re": "road.vehicle"
    },
    {
-    "claim": "It is still useful as method: its triggering-condition logic for perception in the safety case, alongside ISO/PAS 8800 or UL 4600 for machine-learning and autonomous functions.",
-    "re": "triggering|8800|UL 4600"
+    "claim": "ISO 19014 is the earth-moving functional-safety reference for the braking chain.",
+    "re": "ISO 19014"
+   },
+   {
+    "claim": "SOTIF remains useful as method: its triggering-condition logic for identifying perception limitations and turning them into scenarios.",
+    "re": "triggering|condition"
+   },
+   {
+    "claim": "ISO/PAS 8800 or UL 4600 give assurance structures for machine-learning-based or autonomous safety functions.",
+    "re": "8800|UL 4600"
    }
   ]
  },
@@ -690,19 +698,23 @@
   "q": "If a loader reverses at 15 km/h, how far away must a person be detected for the automatic brake to stop in time, and can today's sensors and simulation show that in dust?",
   "must": [
    {
-    "claim": "Off-road deceleration is low: about 0.60 m/s² (NSW in-service minimum) to about 2.94 m/s² (MSHA table), against at least 5.0 m/s² for car AEB.",
-    "re": "2\\.94|0\\.6"
+    "claim": "Off-road braking is much weaker than car AEB: regulators specify roughly 0.6–2.94 m/s² against at least 5.0 m/s² for cars.",
+    "re": "2\\.94|0\\.6|5\\.0"
    },
    {
-    "claim": "Latency is first-order: at 5–15 km/h the delay term can be half or more of the stopping distance (brake response roughly 0.3 s to 2.5 s by system and weight class).",
-    "re": "half|latency|response time"
+    "claim": "Latency is first-order at work-site speeds: at 5–15 km/h the delay term can be half or more of the stopping distance.",
+    "re": "half"
    },
    {
-    "claim": "MSHA example: equipment up to 36,000 lb must stop within about 10.4 m (34 ft) from 16 km/h (10 mph).",
-    "re": "10\\.4|34 ft"
+    "claim": "The glossary's worked example (loaded 40 t machine, 15 km/h, 10% downgrade, 1 s delay, about 3.0 m/s² on level ground) needs detection at least about 9.5 m away before sensor error.",
+    "re": "9\\.5"
    },
    {
-    "claim": "Dust is the biggest off-road sensor-simulation gap; no validated dust model with an error metric was found.",
+    "claim": "Grade and payload shift available deceleration by about as much as the deceleration itself.",
+    "re": "grade|slope|payload|downgrade"
+   },
+   {
+    "claim": "Dust is the biggest off-road sensor gap; no validated dust model with an error metric was found, so physical testing is needed.",
     "re": "dust"
    }
   ]

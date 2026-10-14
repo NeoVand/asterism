@@ -51,7 +51,7 @@
 				return { icon: ReadIcon, text: 'Looked through its working notes' };
 			}
 			case 'search_graph':
-				return { icon: GraphSearchIcon, text: `Searched “${a.query}”`, detail: s.summary?.replace(/^\d+ matches for “?"?[^"]*"?”?/, (m) => m.match(/^\d+ matches/)?.[0] ?? m) };
+				return { icon: GraphSearchIcon, text: `Searched “${a.query}”`, detail: matchDetail(s.summary) };
 			case 'find_sources':
 				return { icon: SourcesIcon, text: `Searched prior work “${a.query}”`, detail: s.summary?.match(/^\d+ sources/)?.[0] };
 			case 'explore':
@@ -83,6 +83,14 @@
 			default:
 				return { icon: ReadIcon, text: s.name.replace(/_/g, ' ') };
 		}
+	}
+
+	/** "12 matches for … across Ch3, Ch9, Ch1, Glossary" → "12 hits · Ch3, Ch9 +2". */
+	function matchDetail(summary: string | undefined): string | undefined {
+		const m = summary?.match(/^(\d+) matches.*?(?: across (.+?))?:?$/);
+		if (!m) return undefined;
+		const chs = m[2]?.split(', ') ?? [];
+		return chs.length ? `${m[1]} hits · ${chs.slice(0, 2).join(', ')}${chs.length > 2 ? ` +${chs.length - 2}` : ''}` : `${m[1]} matches`;
 	}
 
 	const mainSteps = $derived(msg.steps.filter((s) => s.agent === 'main' && s.name !== 'task'));

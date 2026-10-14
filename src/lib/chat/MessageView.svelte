@@ -135,7 +135,7 @@
 					use:tip={'Hover to light up the answer’s constellation'}
 				>
 					<span class="size-1.5 rounded-full bg-gold shadow-[0_0_8px_var(--color-gold)]"></span>
-					{order.length} cited{#if chapters} · {chapters} {chapters === 1 ? 'chapter' : 'chapters'}{/if}
+					{order.length} cited{chapters ? ` · ${chapters} ${chapters === 1 ? 'chapter' : 'chapters'}` : ''}
 				</button>
 				<button
 					type="button"
