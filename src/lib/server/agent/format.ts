@@ -105,6 +105,16 @@ export function similarity(a: string, b: string): number {
  * Fold restated facts into the first (best-ranked) one: same-edges or near-identical wording.
  * Returns the kept nodes with the ids folded into each.
  */
+/** Which restatement speaks for a folded group: the booklet's own conclusions beat detail and glossary paraphrase. */
+function authority(store: GraphStore, n: KGNode): number {
+	const role = store.roleOf(n);
+	if (role === 'synthesis') return 4;
+	if (role === 'key-findings') return 3;
+	if (n.doc === 'booklet') return 2;
+	if (n.doc === 'upload') return 1.5;
+	return 1;
+}
+
 export function foldDuplicates(store: GraphStore, nodes: KGNode[], limit: number): { node: KGNode; also: KGNode[] }[] {
 	const kept: { node: KGNode; also: KGNode[] }[] = [];
 	for (const n of nodes) {
@@ -115,7 +125,10 @@ export function foldDuplicates(store: GraphStore, nodes: KGNode[], limit: number
 					(store.edgeBetween(k.node.id, n.id)?.r === 'same' || similarity(k.node.text, n.text) >= 0.72)
 			);
 			if (dup) {
-				dup.also.push(n);
+				if (authority(store, n) > authority(store, dup.node)) {
+					dup.also.unshift(dup.node);
+					dup.node = n;
+				} else dup.also.push(n);
 				continue;
 			}
 		}

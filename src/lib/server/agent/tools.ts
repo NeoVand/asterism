@@ -15,8 +15,23 @@ import { CHAPTER_TITLES } from '#lib/kg/types.ts';
 
 export type GraphEventMode = 'touch' | 'read';
 
+/** Everything the agent has seen in the current turn, per thread (feeds evidence_brief). */
+const seenByThread = new Map<string, Set<string>>();
+
+export function resetSeen(threadId: string) {
+	seenByThread.delete(threadId);
+}
+
+function threadOf(config: RunnableConfig | undefined): string {
+	return String((config?.configurable as { thread_id?: string } | undefined)?.thread_id ?? 'default');
+}
+
 async function emit(config: RunnableConfig | undefined, mode: GraphEventMode, ids: string[]) {
 	if (!ids.length) return;
+	const t = threadOf(config);
+	let seen = seenByThread.get(t);
+	if (!seen) seenByThread.set(t, (seen = new Set()));
+	if (seen.size < 6000) for (const id of ids) seen.add(id);
 	try {
 		await dispatchCustomEvent('graph', { mode, ids: [...new Set(ids)] }, config);
 	} catch {
@@ -467,7 +482,51 @@ export function makeTools() {
 		}
 	);
 
-	return { searchGraph, explore, readFacts, connect, readSection, findSources, showUi, askUser };
+	const evidenceBrief = tool(
+		async ({ question, max }, config) => {
+			const store = getStore();
+			const seen = seenByThread.get(threadOf(config));
+			const facts = [...(seen ?? [])].map((id) => store.get(id)).filter((n): n is KGNode => n?.type === 'fact');
+			if (!facts.length) return 'You have not looked at any facts yet in this turn. Research first (search_graph, explore), then call evidence_brief.';
+			const scores = store.scoreWithin(question, new Set(facts.map((f) => f.id)));
+			const ROLE: Record<string, number> = { synthesis: 1.5, 'key-findings': 1.35, disagree: 1.15, uncertain: 1.1, 'blind-spots': 1.05 };
+			const ranked = facts
+				.map((f) => ({ f, score: (scores.get(f.id) ?? 0) * (ROLE[store.roleOf(f) ?? ''] ?? 1) * (0.8 + 0.1 * (f.importance ?? 2)) }))
+				.filter((x) => x.score > 0)
+				.sort((a, b) => b.score - a.score)
+				.map((x) => x.f);
+			const folded = foldDuplicates(store, ranked, Math.min(max ?? 28, 40));
+			const isHeadline = (n: KGNode) => ['synthesis', 'key-findings'].includes(store.roleOf(n) ?? '');
+			const isTension = (n: KGNode) =>
+				['gap', 'uncertain', 'disagreement'].includes(n.kind ?? '') || ['disagree', 'uncertain', 'blind-spots'].includes(store.roleOf(n) ?? '');
+			const headline = folded.filter((x) => isHeadline(x.node) && !isTension(x.node));
+			const tension = folded.filter((x) => isTension(x.node));
+			const detail = folded.filter((x) => !isHeadline(x.node) && !isTension(x.node));
+			const fmt = (x: { node: KGNode; also: KGNode[] }) => `  ${line(store, x.node, 320)}${alsoNote(x.also)}`;
+			await emit(config, 'read', folded.map((x) => x.node.id));
+			return [
+				`Evidence brief for: ${question}`,
+				`(${folded.length} most relevant of the ${facts.length} facts you saw this turn; restatements folded)`,
+				headline.length ? `\nBooklet conclusions:\n${headline.map(fmt).join('\n')}` : '',
+				detail.length ? `\nSupporting detail:\n${detail.map(fmt).join('\n')}` : '',
+				tension.length ? `\nGaps, uncertainties and tensions:\n${tension.map(fmt).join('\n')}` : '',
+				'\nWrite the answer now from this brief: state every booklet conclusion above that bears on the question (with its exact numbers, dates and names), then the supporting detail, then the gaps. Cite the ids. If something important is missing, research it first.'
+			]
+				.filter(Boolean)
+				.join('\n');
+		},
+		{
+			name: 'evidence_brief',
+			description:
+				'Call once when your research is done, right before writing the answer: returns the most relevant facts you have seen in this turn (search results, explored hubs, read facts), deduplicated and ranked, with the booklet\'s own conclusions first, then detail, then gaps and tensions. Write your answer from it.',
+			schema: z.object({
+				question: z.string().describe('The question you are answering, in your words'),
+				max: z.number().int().min(8).max(40).optional()
+			})
+		}
+	);
+
+	return { searchGraph, explore, readFacts, connect, readSection, findSources, showUi, askUser, evidenceBrief };
 }
 
 export function isNodeId(s: string) {

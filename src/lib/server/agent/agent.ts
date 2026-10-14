@@ -54,7 +54,7 @@ async function build(s: AgentSettings) {
 	return createDeepAgent({
 		name: 'asterism',
 		model,
-		tools: [...graphTools, t.showUi, t.askUser],
+		tools: [...graphTools, t.evidenceBrief, t.showUi, t.askUser],
 		systemPrompt: (s.systemPrompt?.trim() || DEFAULT_SYSTEM_PROMPT) + (s.effort === 'medium' ? DEEP_ADDENDUM : ''),
 		subagents: [
 			{

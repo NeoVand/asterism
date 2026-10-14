@@ -54,6 +54,8 @@
 				return { icon: ConnectIcon, text: `Traced ${name(a.from)} ↔ ${name(a.to)}` };
 			case 'read_section':
 				return { icon: ReadIcon, text: `Read the section of ${name(a.id)}` };
+			case 'evidence_brief':
+				return { icon: TodoIcon, text: 'Gathered the evidence', detail: s.summary?.match(/\((\d+) most relevant/)?.[1] ? `${s.summary.match(/\((\d+) most relevant/)![1]} facts` : undefined };
 			case 'show_ui': {
 				const t = (a.block as { type?: string; title?: string } | undefined) ?? {};
 				return { icon: BlockIcon, text: `Built a ${t.type ?? 'block'}${t.title ? ` · ${t.title}` : ''}` };

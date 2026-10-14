@@ -6,6 +6,7 @@ import { Command } from '@langchain/langgraph';
 import { Block } from '#lib/blocks/schema.ts';
 import type { ChatEvent, ChatRequest } from '#lib/chat/protocol.ts';
 import { getAgent } from './agent.ts';
+import { resetSeen } from './tools.ts';
 
 interface StreamEvent {
 	event: string;
@@ -64,6 +65,7 @@ function summarize(name: string, out: string): string {
 		return line.replace(/:$/, '');
 	}
 	if (name === 'read_file') return 'Read a skill';
+	if (name === 'evidence_brief') return out.split('\n')[1] ?? first;
 	if (name === 'task') return out.slice(0, 600);
 	return first.slice(0, 160);
 }
@@ -115,6 +117,7 @@ export async function* runTurn(
 		input = { messages: [...prior, { role: 'user', content: req.message ?? '' }] };
 	}
 
+	resetSeen(req.threadId);
 	yield { t: 'start', threadId: req.threadId, runId: `${Date.now()}` };
 
 	const tasks = new Map<string, string>(); // task tool run_id → task id
