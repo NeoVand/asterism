@@ -37,6 +37,10 @@ Rebuild the graph: `parse → extract → resolve → sources → assemble → l
 - A/B, same judge: evidence_brief without the 20-fact floor and user-question ranking: 3.91 · 71.3%
   · 88.8% — neutral, kept. Injecting unread synthesis conclusions into the brief: 3.73 · 68.4% ·
   91.7% — retrieval up, answers worse; reverted.
+- + brief favors deliberately read facts, honors its requested size; source results fold
+  restatements; evals no longer see the user's memory: 3.91 · 71.4% (full 63.7%) · 89.4% · 97.8%
+- + write_todos (todoListMiddleware, used in 6/33 multi-part cases); last turn's reads carry into
+  follow-ups: **4.00 · 74.5% (full 66.0%) · 91.3% · 98.2%**, 44 s per answer
 
 ## Done
 

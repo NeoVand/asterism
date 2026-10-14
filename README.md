@@ -65,7 +65,7 @@ The graph (20.6k nodes, 110k edges): 16.6k atomic facts, 1.2k cited sources, 361
 concepts, 2k resolved entities and the document structure, plus ~10k cross-chapter fact relations
 (restates, supports, contradicts, elaborates, depends) and a cited synopsis for every concept or
 entity discussed in more than one place. No embeddings: retrieval is full-text search plus graph
-traversal. See `docs/PLAN.md` for the pipeline and `docs/VISION.md` for the intent.
+traversal. See `docs/PLAN.md` for the pipeline, `docs/VISION.md` for the intent and `docs/DEMO.md` for a five-minute demo.
 
 Rebuild the graph from the references (≈1 h of `gpt-6.1-sol` calls, cached per chunk):
 

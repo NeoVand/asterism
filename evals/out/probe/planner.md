@@ -3,138 +3,124 @@
 ## User
 Help me build a phased plan to validate the new collision mitigation system before the prototype arrives in mid-2027.
 
-<details><summary>40 tool calls · 56s</summary>
+<details><summary>23 tool calls · 55s</summary>
 
 - read_file {"file_path":"/skills/validation-planning/SKILL.md","limit":1000}
-- ls {"path":"/"}
 - read_file {"file_path":"/skills/graph-research/SKILL.md","limit":1000}
 - search_graph {"query":"phase prototype mid-2027 validation","limit":8}
-- explore {"id":"c12","limit":12}
-- ls {"path":"/memories/"}
-- search_graph {"query":"thin slice pilot","chapters":[12],"limit":5}
-- explore {"id":"t42","limit":12}
--   ↳ explore {"id":"c0","limit":45}
--   ↳ explore {"id":"c1","limit":45}
--   ↳ explore {"id":"c9","limit":45}
--   ↳ explore {"id":"c10","limit":45}
--   ↳ search_graph {"query":"regulation standards 2027","chapters":[3,13],"limit":25}
--   ↳ search_graph {"query":"winter prototype reuse assessor","chapters":[3,13],"limit":25}
--   ↳ explore {"id":"c13","limit":35}
--   ↳ explore {"id":"c3","limit":35}
--   ↳ search_graph {"query":"phase gate mid-2027","chapters":[0,1,9,10],"limit":30}
--   ↳ search_graph {"query":"sensor credibility","chapters":[1,10],"types":["term","fact"],"limit":15}
--   ↳ read_section {"id":"x323"}
--   ↳ search_graph {"query":"before prototype gate","chapters":[1,9,10],"limit":20}
--   ↳ search_graph {"query":"software reuse sensors unchanged assessor early","chapters":[3,13],"limit":22}
--   ↳ search_graph {"query":"assessor notified body engage early","chapters":[3,13],"limit":18}
--   ↳ search_graph {"query":"software reuse","types":["term"],"limit":8}
--   ↳ search_graph {"query":"AI Act 2028 2026","chapters":[3],"limit":8}
--   ↳ explore {"id":"t75","focus":"warning software sensor reuse","limit":12}
--   ↳ read_section {"id":"f706"}
--   ↳ search_graph {"query":"validation domain","types":["term"],"limit":5}
--   ↳ search_graph {"query":"gate","chapters":[1,9,10],"limit":18}
--   ↳ read_facts {"ids":["f7592","f7536","f7591","f331","f7419","f7422","f888","f8188","f189","f191","f97","f6650","f6658","f6648"]}
--   ↳ read_facts {"ids":["f2201","f2212","f2073","f2059","f2060","f2061","f2075","f2855","f10431","f10461","f10954","f10892","f2918","f11029","f10960","f1096
--   ↳ explore {"id":"t237","limit":8}
--   ↳ read_facts {"ids":["f706","f709","f725","f735","f741","f372","f857","f7363","f7364","f6637","f6644","f6645","f6646","f6665","f7376","f7380","f977","f75
--   ↳ search_graph {"query":"every released model confirmation","chapters":[9],"limit":5}
--   ↳ search_graph {"query":"correlation bounds approved envelope","chapters":[1],"limit":5}
--   ↳ read_facts {"ids":["f10453","f11224","f2862","f2863","f10410"]}
--   ↳ read_facts {"ids":["f7393","f7395","f746","f65","f70","f8159","f7525","f14467"]}
-- read_file {"file_path":"/memories/AGENTS.md","limit":1000}
-- read_facts {"ids":["f372","f706","f709","f9914","f10461","f10960","f9449","f9439"]}
-- ask_user {"title":"Scope the pre-prototype validation plan","intro":"I have wheel loaders and the EU market noted. The booklet’s realistic mid-2027 g
-- [asked: How settled are the sensors and their mounting positions? | What is being reused from the existing system? | Which validation assets are already available? | What team and supplier support can the plan assume? | What must be achieved by prototype arrival, and when is the release decision due?]
+- explore {"id":"c12","limit":15}
+-   ↳ explore {"id":"c3","limit":50}
+-   ↳ explore {"id":"c10","limit":50}
+-   ↳ explore {"id":"c13","limit":50}
+-   ↳ search_graph {"query":"gate prototype mid-2027 questions","chapters":[13],"limit":30}
+-   ↳ search_graph {"query":"correlation acceptance thresholds holdout","chapters":[10,13],"limit":25}
+-   ↳ search_graph {"query":"2028 2027 AI Regulation","chapters":[3],"limit":15}
+-   ↳ search_graph {"query":"questions user decision scope","chapters":[3,10,13],"limit":25}
+-   ↳ search_graph {"query":"gate G0 G1 G2","chapters":[13],"limit":25}
+-   ↳ search_graph {"query":"correlation","types":["term"],"limit":8}
+-   ↳ read_section {"id":"x462"}
+-   ↳ read_facts {"ids":["f2857","f2094","f2377","f2867","f2071","f2855","f2079","f2081","f10381","f10461","f10954","f10756","f8038","f8159","f8160","f7534",
+-   ↳ explore {"id":"t250","focus":"metrics","limit":10}
+-   ↳ explore {"id":"t360","limit":12}
+-   ↳ search_graph {"query":"G2 G3 G4","chapters":[12],"limit":10}
+-   ↳ read_facts {"ids":["f8195","f8196","f8198","f8200","f8203","f11007","f11075","f10196","f10197","f10761","f10967","f10716","f2862","f2863"]}
+-   ↳ read_facts {"ids":["f10198","f10200","f10201","f8042","f10915","f10925","f10930","f10948","f10918","f11188"]}
+- read_facts {"ids":["f372","f10461","f10327","f10197"]}
+- ask_user {"title":"Scope the pre-prototype validation plan","intro":"The booklet assesses that mid-2027 is a realistic target for a working validatio
+- [asked: Which machines and initial operating conditions must the system cover? | What is known about sensors, software and interfaces? | What resources and evidence are already available? | Which markets or operating jurisdictions are in scope? | What must be ready before prototype arrival, and when is the final release decision?]
 </details>
 
 ## Agent
 
 
 ## User (form)
-{"sensors":"Frozen; representative hardware available now","software":"Existing warning/detection software; new automatic braking","assets":["Recorded sensor data with ground truth","Access to operating loaders for winter 2026–27 logging"],"capacity":"Wheel loaders in quarries; radar and camera; EU and Australia.","deadline":"Wheel loaders in quarries; radar and camera; EU and Australia."}
+{"scope":"Wheel loaders in quarries; radar and camera; EU and Australia.","technology":"Wheel loaders in quarries; radar and camera; EU and Australia.","assets":"Wheel loaders in quarries; radar and camera; EU and Australia.","markets":["EU/EEA","United Kingdom"],"deadline":"Wheel loaders in quarries; radar and camera; EU and Australia."}
 
-<details><summary>8 tool calls · 42s</summary>
+<details><summary>11 tool calls · 44s</summary>
 
-- ask_user {"title":"Scope the pre-prototype validation plan","intro":"I have wheel loaders and the EU market noted. The booklet’s realistic mid-2027 g
+- ask_user {"title":"Scope the pre-prototype validation plan","intro":"The booklet assesses that mid-2027 is a realistic target for a working validatio
 - read_file {"file_path":"/skills/ui-blocks/SKILL.md","limit":1000}
-- search_graph {"query":"Australia quarry regulation braking","chapters":[3],"limit":4}
-- read_facts {"ids":["f725","f735","f741","f857","f7363","f6650","f6658","f7592","f8159","f7536","f2201","f2855","f2127","f2257","f9874","f11188","f97","
-- edit_file {"file_path":"/memories/AGENTS.md","old_string":"- Planning validation for wheel loaders, targeting the EU market.","new_string":"- Planning
-- evidence_brief {"question":"Phased Oct 2026 to mid-2027 pre-prototype validation readiness plan for quarry wheel loaders EU Australia frozen radar camera r
-- show_ui {"block":{"type":"plan","title":"Quarry wheel-loader validation readiness","subtitle":"Proposed dates • October 2026–June 2027 • EU and Aust
+- search_graph {"query":"Phase 0 Phase 1 scenario catalogue","chapters":[1],"limit":12}
+- search_graph {"query":"thin slice pilot stop criteria","chapters":[12],"limit":6}
+- explore {"id":"t42","limit":12}
+- explore {"id":"c0","limit":8}
+- search_graph {"query":"wheel loader articulation bucket load braking","limit":8}
+- read_facts {"ids":["f707","f727","f734","f9914","f10196","f10198","f9439","f9449","f2857","f187","f58","f11397","f5941","f10756","f8038","f8195","f8198
+- evidence_brief {"question":"Phased October 2026 to mid-2027 pre-prototype validation readiness plan for radar/camera wheel loaders in quarries, EU and Aust
+- show_ui {"block":{"type":"plan","title":"Wheel-loader CMS: readiness before prototype arrival","subtitle":"Proposed dates: October 2026–June 2027; e
 - [ui block: plan]
 </details>
 
 ## Agent
-**Target a working, correlated validation pipeline by mid-2027—not completed system validation.** That is the booklet’s realistic assessment; the phased plan below makes prototype arrival the start of confirmation rather than preparation. [f372, f709]
+**Target mid-2027 for a working validation pipeline—not completed system validation.** That is the booklet’s assessment; it found no documented case of a new automatic-braking function moving from first representative hardware to accepted validation in about four months. The phased plan below therefore front-loads scope, data, correlation and acceptance decisions. [f372, f58]
 
-I’ve tailored it to your **quarry wheel loaders, frozen radar/camera hardware, reused detection software, existing ground-truth recordings, and EU/Australian markets**. June 2027 is a planning placeholder for “mid-2027”; team capacity and the final release deadline remain unspecified, so these are proposed gates, not a resource-backed delivery commitment.
+### Planning assumptions
+- **Confirmed:** wheel loaders in quarries, using radar and camera.
+- **Markets:** I have retained EU and Australia from your written answers, with UK applicability provisional because you also selected it.
+- **Still unconfirmed:** team capacity, existing recordings/tools, software reuse or ML, sensor freeze and final release deadline. The dates below are proposed planning targets, not a resource-loaded delivery commitment.
 
-### What drives the plan
+### What determines success
+**Keep the initial domain narrow.** Reverse-only, low-speed wheel-loader braking is the booklet’s recommended starting point—not an assumption that all quarry manoeuvres are covered. Braking itself can introduce articulation instability, sliding, rollover, load spill and secondary collisions, so these belong in the acceptance case alongside collision avoidance. [f11397, f5941]
 
-- **Reuse the evidence, not the safety conclusion.** Existing warning-system history can validate inputs and submodels, but cannot validate the new closed-loop braking chain. Adding a brake command also brings the function into ISO 19014-2’s scope; the brake plant remains independently subject to ISO 3450. [f191, f2075, f2855]
-- **Use the available hardware immediately.** Sensor/mounting correlation and bench/chamber testing can begin now. Capture winter 2026–27 conditions where they fall inside your intended operating domain; this is the last northern snow/cold opportunity before the planned mid-2027 validation window. [f735, f10461]
-- **Make independent prediction the credibility gate.** A simulator matching the data used to calibrate it is insufficient: validate on separate measurements, retain physical anchoring, and reserve physical confirmation for boundaries and influential changes. [f8159, f7536]
-- **Do not let HIL become an uncontrolled dependency.** Production-relevant hardware-in-the-loop is useful, but the booklet advises keeping it off the critical path unless ECU, bus and actuator interfaces stabilize early. [f857]
+**The critical path is representative sensors → real data → blind correlation → credible coverage.** Do not claim a validated sensor twin before hardware and mounting are frozen and correlated. If northern cold/snow conditions are in scope, winter **2026–27** is the last collection opportunity before the proposed prototype campaign. [f508, f10461]
 
-### Settle acceptance before optimizing tools
+**Agree acceptance before scaling tests.** The booklet found no published off-road anchor for the combined site-manager/safety-engineer acceptance threshold; establish scenario-specific criteria with operators and the safety owner. There is also no universal simulation tolerance or physical-test percentage. Large virtual test counts cannot compensate for missing correlation evidence. [f11280, f10967, f187, f10756]
 
-For the **EU**, Machinery Regulation 2023/1230 applies from **20 January 2027**. Obtain early counsel/notified-body positions on classification and acceptable simulation evidence—the booklet found no evidence establishing machinery-conformity acceptance of simulation. [f2201, f10960, f11188]
+**Resolve the evidence route now.** The EU Machinery Regulation applies from **20 January 2027**, before prototype arrival; engage the assessor and settle standards applicability before optimizing tooling. The plan’s market-specific conformity work must separately resolve Australia and, if retained, the UK. [f2857, f10327]
 
-For **Australia**, model WHS regulation 215 requires collision risk to be controlled so far as reasonably practicable, but supplies no automatic-braking, test-speed or stopping-distance prescription. Your acceptance criteria therefore cannot simply be copied from that regulation. [f2127, f2257]
-
-### Make the gates meaningful
-
-Pre-register claims, populations, confidence levels and stopping rules before the prototype arrives. For scale—not as proposed acceptance targets—**299 independent zero-miss trials per claimed population** support a ≤1% miss-rate claim at 95% one-sided confidence; **300 representative hours without an unnecessary brake** support an upper bound below one per 100 hours under the stated Poisson model. [f7363, f6650, f6658]
-
-Assign a named decision-maker and allow **go, restricted go, pivot or stop** at every gate. Once work-package owners and capacity are known, produce **P50/P80 dates and deadline probability**, rather than treating the displayed months as guaranteed. [f9449, f9439]
+Treat every gate as **go, restricted go, pivot or stop**, with sponsor-signed criteria and a named decider. Once capacity and the release deadline are established, publish P50/P80 dates and the probability of meeting that deadline—not a single confident finish date. Prototype arrival should trigger whole-machine correlation, virtual/bench reruns and physical confirmation of worst cases, rather than the start of preparation. [f9449, f9439, f718, f719]
 
 ## User
 Make the first phase more concrete: who does what in the next eight weeks?
 
-<details><summary>7 tool calls · 45s</summary>
+<details><summary>6 tool calls · 46s</summary>
 
-- read_file {"file_path":"/skills/validation-planning/SKILL.md","limit":1000}
-- search_graph {"query":"data logging timestamps calibration provenance","limit":5}
-- explore {"id":"t121","focus":"synchronized calibration","limit":6}
-- read_facts {"ids":["f520","f7589","f725","f9449","f9914","f10960","f7363","f191","f735"]}
-- evidence_brief {"question":"Concrete next eight weeks Oct14 Dec8 2026 phase0 role based assignments deliverables gates quarry loaders frozen radar camera E
-- show_ui {"block":{"type":"plan","title":"First eight weeks: owners, outputs and decisions","subtitle":"14 October–8 December 2026 • proposed role as
+- read_facts {"ids":["f10196","f707","f727","f10327","f10331","f508","f8038","f9914","f10967","f9449","f10461","f9439"]}
+- search_graph {"query":"data room drill supplier access","chapters":[13],"limit":4}
+- read_facts {"ids":["f10915","f10917","f10918"]}
+- evidence_brief {"question":"Concrete proposed role-based eight-week first-phase work allocation from 14 October to 8 December 2026 for quarry wheel loader 
+- show_ui {"block":{"type":"plan","title":"Next eight weeks · accountable owners and outputs","subtitle":"14 October–8 December 2026 · proposed assign
 - [ui block: plan]
 </details>
 
 ## Agent
-**Make the next eight weeks a scope-and-evidence sprint, ending with authorization of a difficult end-to-end pilot—not a system-validation sign-off.** The booklet recommends establishing hazards, scenarios, acceptance metrics and the safety-case structure first, then testing feasibility on a bounded pilot with explicit progression criteria. [f725, f9914]
+**Put one validation lead in charge of an eight-week evidence-and-readiness sprint, with a sponsor-led G0 decision by 30 November.** The goal is an agreed scope, acceptance plan, supplier commitments and executable pilot specification—not completed validation. That matches the booklet’s proposed first gate. [f10196]
 
-The plan below covers **14 October–8 December 2026**. These are my proposed assignments and dates; because staffing is still unspecified, **roles are accountability hats, not assumed additional hires**. One person can cover several roles, but name one accountable owner for each deliverable.
+The allocation below covers **14 October–8 December 2026**. These are proposed responsibilities, not staffing estimates: one person may wear several hats, but each deliverable should have one named accountable owner.
 
-- **Sponsor:** appoint the gate decider and approve resources.
-- **Validation lead:** own the integrated schedule, evidence pack and unresolved dependencies.
-- **Safety lead:** own hazards, operating-domain limits and the claims-to-evidence structure.
-- **Data/replay, sensor/model and brake-controls owners:** own their technical outputs.
-- **Quarry operations and compliance leads:** own field access and market-acceptance work respectively.
+### Who is accountable
+- **Sponsor:** budget, scope trade-offs and the final go/restrict/pivot/stop decision.
+- **Validation lead:** integrated backlog, dependencies, evidence pack and schedule.
+- **Safety/systems lead:** operating domain, hazards, safety claims and acceptance criteria.
+- **Sensor/integration lead:** radar/camera configuration, supplier interfaces and brake/controller dependencies.
+- **Simulation/test lead:** pilot specification, comparators and test traceability.
+- **Field-data lead + quarry operations:** recordings, machine/site access and operator input.
+- **Compliance + procurement:** assessor engagement, applicability questions, data rights and long-lead commitments.
 
-**The immediate critical path is proving that your existing recordings are usable while starting qualified new logging.** Ground truth alone is not enough: replay also needs synchronized radar/camera streams, machine and brake state, calibration, site context and defensible geometry. [f520] Keep calibration, validation and withheld-confirmation data separate from the outset. [f7589]
+This role split is my proposed implementation of the booklet’s work—not a prescribed organizational structure. Its essential governance requirement is **prewritten gate criteria, sponsor sign-off and a named decider**. [f9449]
 
-**Ask suppliers for inputs, not assurances:** the sensor/model owner should obtain what is needed for mounting characterization and bench/chamber correlation; the validation lead should establish whether ECU, bus and actuator interfaces are stable enough to support later HIL work. Do not make production-relevant HIL a critical-path promise without that stability. [f735, f857]
+### Three management rules
+1. **Escalate supplier-access blockers in the first fortnight.** Missing interfaces, timing data, legal usage rights or unresolved OEM approval can invalidate the tooling plan; do not leave these until integration. [f10915, f10918]
+2. **Approve criteria before judging results.** Use the operator clinic to inform scenario-specific acceptance limits, then predeclare metrics and thresholds rather than adjusting them after inconvenient outcomes. [f10967, f8038]
+3. **Protect the data-collection window.** If northern cold/snow is in scope, winter **2026–27** is the last opportunity before the planned prototype campaign. Start capture in parallel with planning, not after G0. [f10461]
 
-At the **8 December gate**, authorize only the scope supported by the evidence. Existing warning-system history can support inputs and submodels, but it cannot establish the safety of the new closed-loop braking chain; unresolved acceptance questions must remain visible rather than being treated as approvals. [f191, f10960]
+By 8 December, require a signed decision and owned next-phase backlog—not simply a report that “Phase 0 is complete.” The detailed assignments, outputs and checkpoints are below.
 
 ## User
 Debrief, honestly and briefly: in this conversation, what confused you or slowed you down? Which tool results were unclear, missing, too long or misleading, and what tool or information would have let you answer better? Do not use tools for this.
 
-<details><summary>0 tool calls · 10s</summary>
+<details><summary>0 tool calls · 8s</summary>
 
 
 </details>
 
 ## Agent
-- **The clarification form left important gaps.** Your answers to team capacity and release deadline repeated the machine/market scope. I should have explicitly said those questions remained unanswered. I used role-based assignments instead, but could not substantiate staffing or delivery feasibility.
+- **The questionnaire returned duplicated answers.** The same machine/sensor/market text appeared under resources and deadlines, leaving staffing, existing tools/data and release timing unknown. Markets also conflicted: written answers said Australia, while selections included the UK. I should have flagged that ambiguity more clearly.
 
-- **Retrieval was sometimes noisy.** Searches returned long cross-chapter lists, and the final evidence brief surfaced tangential logging details while omitting some central planning conclusions. That made synthesis slower and required relying on facts already retrieved.
+- **The research results were often too broad.** Chapter exploration produced long lists of findings, and the evidence brief sometimes surfaced facts I had not fully read. That added verification work and made prioritization harder.
 
-- **Subagent findings needed another verification step.** Their summaries were useful, but I still had to fetch the underlying facts before citing them. A compact result containing verified quotations, evidence labels and planning implications would have reduced duplication.
+- **One planning instruction referenced an unavailable tool:** `write_todos`. I worked around it, but the tool instructions and available tools should agree.
 
-- **I over-specified the calendar.** The fortnightly dates and role assignments were my proposed schedule, not a schedule established by the booklet. I labeled them as proposals, but the precise dates could still imply more confidence than the available capacity information justified.
+- **I blurred evidence and my own planning choices.** The role assignments, fortnightly checkpoints and several deliverables were my proposed implementation—not a staffing model established by the booklet. I labelled this, but could have made the distinction sharper and used fewer citations on managerial choices.
 
-- **What would have helped most:** actual owner availability, supplier commitments, prototype delivery confidence and the release deadline—plus a retrieval tool that returned a short, deduplicated planning evidence pack with dependencies and gaps clearly separated.
+- **What would have helped most:** a reliable constraint summary containing team capacity, software maturity, available recordings/tools, supplier access, exact prototype date and release deadline. A compact evidence result separating **booklet findings, recommendations and unresolved gaps** would also have made the answers faster and cleaner.

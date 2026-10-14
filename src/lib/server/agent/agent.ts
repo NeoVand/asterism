@@ -4,6 +4,7 @@
  */
 import { ChatOpenAI } from '@langchain/openai';
 import { MemorySaver } from '@langchain/langgraph';
+import { todoListMiddleware } from 'langchain';
 import { CompositeBackend, FilesystemBackend, StateBackend, createDeepAgent } from 'deepagents';
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -64,6 +65,8 @@ async function build(s: AgentSettings) {
 		name: 'asterism',
 		model,
 		tools: [...graphTools, t.evidenceBrief, t.showUi, t.askUser],
+		// write_todos: visible step plans for multi-part questions (opt-in in deepagents).
+		middleware: [todoListMiddleware()],
 		systemPrompt:
 			(s.systemPrompt?.trim() || DEFAULT_SYSTEM_PROMPT) +
 			(s.effort === 'medium' ? DEEP_ADDENDUM : '') +

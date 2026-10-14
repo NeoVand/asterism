@@ -3,108 +3,124 @@
 ## User
 My boss says we can validate the new braking system in simulation in four months. Is that realistic?
 
-<details><summary>12 tool calls · 31s</summary>
+<details><summary>14 tool calls · 37s</summary>
 
 - read_file {"file_path":"/skills/skeptic-review/SKILL.md","limit":1000}
 - read_file {"file_path":"/skills/graph-research/SKILL.md","limit":1000}
 - search_graph {"query":"four months","limit":8}
-- search_graph {"query":"16 weeks","limit":8}
-- explore {"id":"c13","limit":15}
-- explore {"id":"c0","limit":12}
+- search_graph {"query":"braking validation simulation","chapters":[13],"limit":8}
+- explore {"id":"c0","limit":15}
 - read_file {"file_path":"/skills/ui-blocks/SKILL.md","limit":1000}
-- search_graph {"query":"credibility before prototype","chapters":[10],"limit":8}
-- read_facts {"ids":["f58","f59","f70","f7591","f10464","f8238","f8239","f8226","f10431","f10424","f10417","f11188","f11192","f11166"]}
-- evidence_brief {"question":"Is validating a new heavy off-road automatic braking system in simulation in four months realistic, and what conditions disting
-- show_ui {"block":{"type":"checklist","title":"What must be true for four months to be credible?","items":[{"text":"Simulation credibility establishe
+- explore {"id":"c10","limit":12}
+- explore {"id":"c13","limit":12}
+- search_graph {"query":"four-month prerequisites acceptance","chapters":[12],"limit":6}
+- read_facts {"ids":["f58","f59","f70","f7591","f10464","f191","f65"]}
+- read_facts {"ids":["f7525","f7536","f7539","f7544","f8159","f8201","f8203","f10424","f2137","f10203","f11269","f10434","f10435"]}
+- evidence_brief {"question":"Is four months realistic to validate a new heavy off-road automatic braking system in simulation, and what conditions make that
+- show_ui {"block":{"type":"checklist","title":"What must be true for a credible four-month commitment","items":[{"text":"Define exactly what is being
 - [ui block: checklist]
 </details>
 
 ## Agent
-**Only under tight conditions—not as a from-scratch, simulation-only validation promise.** For heavy off-road automatic braking, the booklet calls four months **“a target, not a forecast”**: it is feasible only if the simulation-credibility work is finished before the prototype arrives. [f10464, f7591]
+**Not as a start-from-scratch, simulation-only promise.** For heavy off-road automatic braking, the booklet judges four months plausible only if simulation-credibility work is completed **before the prototype arrives**—making those months a confirmation and calibration campaign, not the first attempt to build the validation method. That is a conditional expert judgment, not a demonstrated schedule. [f7591, f70]
 
-### What makes the claim questionable
+### Why the claim needs challenging
 
-- **No demonstrated four-month precedent.** The research found no case in any industry of a new automatic braking function going from first representative hardware to accepted validation in about four months. Every documented reduction in physical testing relied on years of earlier simulation/statistics investment, a deliberately narrow operating envelope, or both. That does not prove impossibility, but it does not support an unconditional promise. [f58, f59]
-- **Simulation cannot replace all physical evidence.** ISO 3450 requires physical brake-performance testing. The booklet also found no evidence establishing whether a regulator or notified body would accept simulation evidence for machinery conformity—acceptance must not be assumed. [f10431, f11188]
-- **A large simulation campaign is not necessarily credible evidence.** Sensor and environment fidelity is the hardest uncertainty, and is weakest precisely where the risk lies. [f10424]
+- **There is no matching precedent.** The research found no case, in any industry, of a new automatic-braking function progressing from first representative hardware to accepted validation in about four months. Documented reductions in physical testing depended on years of earlier simulation investment, a deliberately narrow operating envelope, or both. [f58, f59]
+- **Simulation does not remove the need for physical evidence.** The booklet recommends a safety case supported by targeted physical tests and a documented simulation-credibility framework. It found no off-road standard explicitly accepting simulation instead of physical collision-avoidance or automatic-braking tests—although incomplete access to paid standards means “not found” does not mean “prohibited.” [f2137, f7539, f7544]
+- **A working simulator is not an accepted validation capability.** Credibility requires validation against physical data, quantified uncertainty, a defined operating envelope and independent review. Sensor/environment fidelity is identified as the hardest uncertainty, weakest precisely where risk is highest. [f7525, f10424]
 
-### What four months could realistically mean
+### What could make four months realistic?
 
-The defensible interpretation is **four months of confirmation and calibration**, using models, data pipelines, scenarios and acceptance criteria prepared beforehand—not four months to invent the simulation method, establish its credibility and validate the product. That is the booklet’s recommended strategy, not a demonstrated schedule guarantee. [f70, f7591, f8238, f8239]
+A **narrow, prepared release**, rather than unrestricted validation across machines and conditions. Vendor-documented off-road intervention launches were deliberately limited; for example, Volvo CE’s January 2023 system operated only in reverse at **3–15 km/h**. These are vendor precedents for scope restriction, not proof of a four-month validation schedule. [f10434, f10435]
 
-Narrow scope also matters: the documented Volvo CE, Komatsu and Caterpillar intervention launches were restricted by direction, speed, model or trigger. Those are **vendor-reported precedents**, not proof that a broad release can be validated in four months. [f11166]
+The readiness checklist below identifies what should already exist before committing. The biggest confidence improvements are to **narrow the release envelope, prove predictive accuracy against independent physical tests, and retain targeted physical confirmation**. [f59, f8159, f7536]
 
-The checklist below gives the conditions I would ask your boss to substantiate. **If those foundations are not already in place, treat four months as an aspiration—not a defensible delivery commitment.** [f7591, f10464]
+**My assessment:** treat your boss’s four months as a **target, not a forecast**, until those prerequisites have evidence behind them. The useful question is: “Four months to demonstrate exactly what, within which operating limits, accepted by whom—and what validation capability is already proven today?” [f10464, f10203, f7525]
 
 ## User
 Steelman the opposite view: what would a supporter of heavy simulation say, and what evidence do they have?
 
-<details><summary>11 tool calls · 35s</summary>
+<details><summary>12 tool calls · 39s</summary>
 
+- search_graph {"query":"simulation reduction physical tests precedents","limit":8}
 - read_file {"file_path":"/skills/prior-work/SKILL.md","limit":1000}
-- search_graph {"query":"simulation reduction physical testing","chapters":[2],"limit":12}
-- search_graph {"query":"simulation acceleration importance sampling","limit":8}
-- find_sources {"query":"virtual validation braking simulation physical testing reduction","limit":6}
-- search_graph {"query":"simulation strongest case","limit":8}
-- explore {"id":"t216","limit":16}
-- explore {"id":"t206","limit":12}
-- search_graph {"query":"UTAC 80% 90%","limit":6}
-- search_graph {"query":"simulation off-road Deere millions","chapters":[2],"limit":8}
-- read_facts {"ids":["f311","f5207","f1220","f1221","f1219","f6647","f1215","f1216","f7536","f13557","f13561","f1724","f7563","f70","f59"]}
-- evidence_brief {"question":"Steelman heavy use of simulation for four-month off-road braking validation: strongest arguments, independent precedents and pr
+- explore {"id":"t216","limit":18}
+- search_graph {"query":"physical testing reduction Boeing rail FDA","limit":10}
+- search_graph {"query":"importance sampling acceleration simulation","limit":6}
+- search_graph {"query":"VaViM reduction 60","limit":6}
+- search_graph {"query":"simulation regression before prototype","chapters":[1,2],"limit":6}
+- find_sources {"query":"accelerated evaluation Michigan importance sampling","limit":3}
+- find_sources {"query":"Euro NCAP virtual testing 2026","limit":2}
+- read_facts {"ids":["f311","f5207","f1220","f1221","f350","f1215","f1216","f7546","f7549","f7534","f7563"]}
+- read_facts {"ids":["f484","f731","f747","f1219","f14159","f14160"]}
+- evidence_brief {"question":"Steelman heavy simulation for four-month off-road braking validation: strongest affirmative arguments, independent evidence and
 </details>
 
 ## Agent
-**The strongest pro-simulation case is not “trust the simulator instead of reality.” It is “use reality to qualify the simulator, then use simulation to cover far more cases than physical testing can.”** That is consistent with the booklet’s credibility framework: physical tests establish the model’s validity, simulation fills the validated domain, and physical confirmation remains at boundaries and after influential changes. [f7536]
+**The strongest pro-simulation case is not “we can dispense with reality.” It is “we should use physical tests to establish trust, then let simulation supply the coverage and repetition that physical testing cannot.”** That is close to the booklet’s recommended approach—not a fringe position. [f484, f2137]
 
-A supporter would make four strong arguments.
+A supporter would make five strong arguments.
 
-### 1. Physical testing alone cannot cover the problem
+### 1. “The physical-only alternative cannot cover the problem”
 
-“In the booklet’s worked validation structure, there are **more than 7,000 cells** before exhaustive repetition. Trying to cover all of them in the field is infeasible. Simulation plus stratified sampling is not merely a cheaper alternative—it is necessary for coverage.” [f5207]
+The booklet’s proposed test stratification exceeds **7,000 validation cells**. Exhaustive field coverage is infeasible, so it concludes that stratified sampling plus simulation is unavoidable. The fair comparison is therefore not simulation versus exhaustive real-world proof; exhaustive real-world proof is not an available option. [f5207]
 
-They would also reject the idea that every virtual test needs photorealistic rendering. Braking-logic tests using object lists can run without drawing images, much faster than real time, across thousands of processor cores. The booklet recommends this approach for most of the millions of braking-logic combinations. That supports throughput for **braking logic**, not proof of sensor realism. [f13557, f13561]
+**What this supports:** using simulation heavily to explore combinations, with physical evidence anchoring the results—not simply testing a small physical sample and leaving the rest unexplored. [f484, f5207]
 
-### 2. There is independent evidence of enormous statistical acceleration
+### 2. “There is independent evidence of enormous statistical acceleration”
 
-“The strongest published results are not just vendor marketing.” University of Michigan researchers reported these acceleration factors in **2016**, using importance sampling to concentrate testing on rare dangerous interactions:
+University of Michigan researchers reported importance-sampling acceleration factors of approximately:
 
-- **300–100,000×** for car-following crash evaluation. [f1220]
-- **2,000–20,000×** for lane-change conflicts. [f1221]
+- **300–100,000×** for car-following crash evaluation.
+- **2,000–20,000×** for lane-change conflicts. [f1220, f1221]
 
-These are **independent, on-road results**. A supporter can reasonably argue that waiting for dangerous events to occur naturally is a poor testing strategy when targeted simulation can produce informative encounters much faster. But those numbers describe **statistical exposure reduction**, not equivalent reductions in the full product-validation schedule or safety sign-off. Importance sampling also requires a known real-world exposure distribution. [f1219, f6647]
+The method deliberately samples dangerous situations more frequently, then mathematically reweights the results to estimate normal-operation risk. It is not merely running ordinary scenarios faster. [f14159, f14160]
 
-### 3. Formal assessment already uses qualified virtual evidence
+**Evidence strength:** independent, but **on-road only**. The booklet calls rare-event methods the strongest independent evidence for compressing statistical proof. Crucially, these factors concern statistical exposure—not equivalent reductions in an entire product’s validation schedule or a safety sign-off. [f350, f1219]
 
-“Simulation is not inherently unacceptable evidence.” **Euro NCAP’s 2026 Virtual Testing protocol, version 1.00 dated March 2025**, requires manufacturers to correlate simulation against physical tests before submitting predictions; Euro NCAP then performs randomly selected physical verification tests. This is an independent, formal **on-road assessment precedent** for using simulation with checks against reality. [f1215, f1216]
+### 3. “External assessors already accept qualified virtual evidence”
 
-The supporter’s point is that the right question is **“What evidence makes these predictions trustworthy?”**, not “Are virtual results legitimate at all?” The booklet finds a recurring physical-anchoring approach across NASA, medical-device and aerospace credibility frameworks too. [f7536]
+This is more than a vendor aspiration:
 
-### 4. Four months need not contain four months’ worth of total preparation
+- **Euro NCAP’s 2026 Virtual Testing protocol**, version 1.00 dated March 2025, requires correlation against physical tests before manufacturers submit simulation predictions; Euro NCAP then conducts randomly selected physical verification tests. That provides a concrete model for independently checking predictions. [f1215, f1216]
+- **WP.29 adopted amendments to UN Regulation No. 152 in 2025** permitting virtual testing instead of some physical car-and-van automatic-emergency-braking tests. The 28 August 2025 text leaves the number of physical confirmation tests to agreement between manufacturer and authority. [f7546, f7549]
 
-“The clock should measure the prototype confirmation campaign, not the creation of the entire validation capability.” The booklet itself concludes that the largest calendar saving comes from moving work **before the prototype exists**, rather than removing physical validation. With preparation complete, the final four months become calibration and confirmation. This is the booklet’s **expert judgment**, not an observed four-month success story. [f311, f70]
+**What this supports:** qualified substitution is a real assessment and regulatory practice. **What it does not establish:** acceptance for heavy off-road braking; these are on-road precedents. [f7546, f7539]
 
-### How far does that steelman get your boss?
+### 4. “Four months after hardware arrival need not mean four months of total work”
 
-It makes a strong case for a **simulation-heavy validation strategy**. It does **not** establish the four-month delivery date.
+A supporter’s best schedule argument is to develop software-in-the-loop testing, closed-loop simulation, replay, regression and fault injection **before the prototype is available**. After correlating the models with prototype measurements, the team can rerun the scenario matrix, critical boundaries, variants and faults using virtual and bench testing. [f731, f747]
 
-The remaining evidentiary gap is important: the booklet found **no published, quantified reduction in physical testing for off-road safety functions**. Automotive credibility concepts can inform off-road work, but that does not automatically validate automotive sensor and environment models for off-road conditions. [f7563, f1724]
+The booklet explicitly judges that the **largest calendar saving comes from moving work before prototype availability**, rather than eliminating physical validation. On that interpretation, four months is a final confirmation campaign supported by substantial earlier work—not a miraculous compression of everything into four months. This remains an expert planning judgment, not a demonstrated four-month precedent. [f311, f70, f7591]
 
-So the strongest defensible version of your boss’s position is: **“Four months may be achievable for a tightly bounded confirmation campaign built on an already credible virtual-validation capability.”** It is not: “Simulation lets us compress a new, broad validation programme into four months.” Every documented reduction the booklet found depended on substantial prior investment, narrow scope, or both. [f70, f59]
+### 5. “There is no scientifically mandated physical-test percentage”
+
+None of the credibility frameworks checked prescribes a universal physical-test percentage. A supporter can reasonably reject an arbitrary rule that most tests must be physical: the allocation should follow the evidence needed to establish credibility. [f7534, f275]
+
+That argument cuts both ways. It supports neither a compulsory physical majority nor an unsupported promise that a particular virtual percentage will be accepted. [f7534]
+
+### Where the steelman lands
+
+**Heavy simulation is strongly defensible as the main engine of coverage, regression and statistical testing, supported by targeted physical evidence.** The booklet itself recommends a safety case, targeted physical tests and simulation under a credibility framework. [f484, f2137]
+
+**The four-month commitment is the weaker claim.** No published, quantified reduction in physical testing was found for off-road safety functions, and no case was found of a new automatic-braking function going from first representative hardware to accepted validation in about four months. The evidence supports the strategy much more strongly than it supports that deadline. [f7563, f58]
 
 ## User
 Debrief, honestly and briefly: in this conversation, what confused you or slowed you down? Which tool results were unclear, missing, too long or misleading, and what tool or information would have let you answer better? Do not use tools for this.
 
-<details><summary>0 tool calls · 8s</summary>
+<details><summary>0 tool calls · 9s</summary>
 
 
 </details>
 
 ## Agent
-- **Your wording left one important ambiguity:** “new braking system” could mean brake hardware or automatic collision-mitigation software. I assumed the latter from the booklet’s context; I should have stated that assumption.
-- **The evidence brief was noisy.** It returned more facts than requested, including facts I had not fully read and some peripheral material. Its instruction to include every relevant conclusion could have bloated the answer. I relied instead on the verified facts.
-- **Some searches matched too loosely.** Queries about simulation benefits surfaced gaps, unrelated figures and vendor launch descriptions rather than concrete validation successes. More precise ranking by *demonstrated outcome* would have helped.
-- **The graph summaries were sometimes too large.** Chapter and concept results mixed useful conclusions with dozens of tangential facts. A compact “claim → strongest evidence → limitation” result would have been faster to use.
-- **The decisive missing information was yours:** what already exists—validated models, representative test data, agreed acceptance criteria—and what “validated” means to your boss. Those facts would distinguish a plausible four-month confirmation campaign from an unsupported deadline.
+- **The main ambiguity was scope:** “validate in four months” could mean internal engineering confidence, release approval, or conformity acceptance—and four months from today versus after prototype arrival. I assumed the booklet’s heavy off-road automatic-braking context. Your actual scope and existing simulation maturity would have improved the judgment most.
 
-My main shortcoming: I answered the general evidence question well enough, but the first verdict sounded more specific to your programme than the information justified.
+- **Some tool outputs were too broad.** Chapter and concept explorations returned long lists, often with truncated claims. Useful for discovery, but they required further calls to verify wording and caveats.
+
+- **Search relevance was uneven.** “VaViM reduction 60,” for example, returned several unrelated standards and planning facts rather than a clear precedent. A structured precedent table—scope, preparation time, measured savings, acceptance and evidence quality—would have been much better.
+
+- **The final evidence brief was imperfect.** It surfaced facts I had not fully read and omitted useful quantitative evidence I had verified. I therefore couldn’t safely treat it as a complete, citation-ready summary.
+
+- **I over-researched relative to your questions.** The answers could have been shorter while preserving the key distinction: strong evidence for simulation-heavy validation, weak evidence for this particular four-month deadline.

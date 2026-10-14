@@ -3,106 +3,100 @@
 ## User
 I just joined the project and I am not a safety engineer. What is this booklet about, in plain words?
 
-<details><summary>6 tool calls · 23s</summary>
+<details><summary>6 tool calls · 24s</summary>
 
-- read_file {"file_path":"/skills/explain-concepts/SKILL.md","limit":1000,"offset":0}
-- explore {"id":"c0","limit":24}
-- search_graph {"query":"virtual validation","types":["term"],"limit":5}
+- read_file {"file_path":"/skills/explain-concepts/SKILL.md","limit":1000}
+- explore {"id":"c0","limit":16}
+- search_graph {"query":"virtual validation","types":["term"],"limit":4}
 - explore {"id":"t127","limit":6}
-- read_facts {"ids":["f1","f2","f3","f4","f6","f7","f58","f59","f186","f124","f11322"]}
-- evidence_brief {"question":"Explain the booklet's purpose and central message in plain words to a new project member who is not a safety engineer.","max":8
+- read_facts {"ids":["f1","f2","f3","f4","f6","f7","f58","f59","f186","f11322"]}
+- evidence_brief {"question":"Explain the booklet's purpose, project challenge and main takeaway in plain words for a newcomer who is not a safety engineer."
 </details>
 
 ## Agent
-The booklet asks a practical question: **How can we show that automatic braking on a heavy off-road machine is safe, without spending years testing everything on real machines?** The system being developed warns the operator about a nearby hazard, then brakes automatically if the operator does not respond. [f1, f6]
+The booklet is about **how to show that an automatic braking system for heavy off-road machines is safe enough to use—and how much of that testing can be done with computers rather than real machines.** The system is intended to brake when the operator has not reacted to a warning that something is too close. [f1, f6]
 
 ### Why the project is difficult
-The prototype hardware and software are expected in **mid-2027**, with **less than four months** afterward to complete validation. The manufacturer’s last comparable function took **three to four years** to validate. [f2, f3, f4]
+The prototype hardware and software are expected in **mid-2027**, with **less than four months** afterward to finish validation. The last comparable function took **three to four years** to validate. That is why the project wants to move much of the testing into simulation. [f2, f3, f4, f6]
 
-The proposed shortcut is **virtual validation**: gathering safety evidence through computer simulations and laboratory tests, instead of—or before—testing the complete real machine. [t127]
+### What “virtual validation” means
+It means collecting evidence through computer simulations and laboratory tests before, or instead of, some tests on the complete real machine. Think of it as testing the system in a simulated job site—but still needing to show that the simulation represents reality well enough. [t127, f186]
 
-### What the booklet investigates
-In plain words, it asks:
+For example, once automatic braking starts, the machine’s movement changes. The simulation must follow that changed movement, not simply play back what happened in an old recording. [f11322]
 
-- Can we build realistic virtual work sites and test how the machine responds?
-- How do we know the simulator matches reality closely enough to trust its results?
-- What real-machine evidence must we keep to check those results? The booklet’s central requirement is to compare simulation with physical measurements and document where it can—and cannot—be trusted. [f186]
+### The main message
+**Simulation is useful, but it is not a shortcut around proving safety.** Its results need to be checked against real measurements, its uncertainties understood, and its limits clearly stated. [f186]
 
-There is also a practical complication: **not everything that looks dangerous calls for braking**. Backing toward a rock pile or having ground crew approach under an agreed procedure can be normal work, yet look hazardous to a simple sensor. [f124]
+The booklet found **no documented case** of a new automatic braking function going from first representative hardware to accepted validation in about four months. Successful reductions in physical testing depended on years of earlier preparation, tightly restricted operating conditions, or both. [f58, f59]
 
-### The main takeaway
-**Simulation is not a magic shortcut.** The research found no documented case of a new automatic-braking function going from its first representative hardware to accepted validation in about four months. Successful reductions in physical testing depended on years of earlier preparation, tightly limited operating conditions, or both. [f58, f59]
-
-Think of the booklet as an evidence-based guide to what the project must establish—not proof that this particular system is already safe or that the deadline is achievable. It was written without the manufacturer’s internal recordings, sensor specifications or other internal documents. [f6, f7]
+So read it as an evidence-based guide to **what could make this ambitious project credible—not a promise that the deadline is achievable**. It also has an important limitation: the research used no internal machine recordings, sensor specifications or project documents, so it cannot establish whether this particular system is ready. [f6, f7, f58]
 
 ## User
 What is SOTIF and why should I care?
 
-<details><summary>4 tool calls · 19s</summary>
+<details><summary>3 tool calls · 15s</summary>
 
 - search_graph {"query":"SOTIF","types":["term"],"limit":5}
 - explore {"id":"t50","limit":8}
-- read_facts {"ids":["f12007","f12013","f12015","f12018","f12019","f12020","f2355"]}
-- evidence_brief {"question":"What is SOTIF in plain language and why does it matter to a new non-safety-engineer on the off-road automatic braking project?"
+- read_facts {"ids":["f12007","f12013","f12008","f12015","f12018","f12019","f12020","f12021","f2355"]}
 </details>
 
 ## Agent
-**SOTIF** means **Safety of the Intended Functionality**. In plain words: **nothing is broken, but the system still gets the situation wrong and behaves unsafely.** Its sensing or decision-making is not good enough for the conditions it encounters. [f12007]
+**SOTIF means “Safety of the Intended Functionality.”** In plain words: **nothing is broken, but the system still gets the situation wrong and behaves unsafely.** Its sensors or decision-making may simply not be good enough for the conditions it encounters. [f12007]
 
-For our automatic-braking project, that includes two opposite problems:
-- **Missing a real person**, so the machine fails to react.
-- **Reacting to something harmless**, causing unnecessary braking. [f12013]
+### What that means on this project
+For the automatic braking system, SOTIF covers both:
+- **Missing a real person** and therefore not responding to a hazard.
+- **Reacting to something harmless** and braking unnecessarily. [f12013]
 
-### How it differs from “something failed”
-Testing broken components is important, but it does not establish whether the sensors perform well when everything is working normally. A healthy sensor can still struggle in dust, snow, fog, glare or darkness. That is the SOTIF concern. [f659, f12019]
+Dust, fog, snow, glare and darkness are especially important: the question is not just “Is the sensor working?” but **“Can it actually see what matters in these conditions?”** [f12019]
 
 ### Why you should care
-The booklet identifies sensing in those difficult conditions as **the hardest uncertainty—and the one least suited to simulation**. Its conclusion is that confidence must rest on real physical tests and recorded sensor data, not simulation alone. [f12019, f12020]
+Showing that the electronics handle failures safely does **not** show that the system can reliably detect people. Those are different safety questions, and the project needs evidence for both. [f12021]
 
-For you, the useful question is: **“Even if every component works as designed, what conditions could make the system misunderstand what is happening?”** The booklet uses that thinking to choose test situations and define requirements. [f12007, f12015]
+The booklet identifies sensing in difficult conditions as one of the hardest uncertainties—and one of the least suitable for relying on simulation alone. It concludes that confidence here must rest on **physical tests and recorded sensor data**, not just convincing-looking virtual scenes. [f12019, f12020]
 
-One important qualification: **ISO 21448, the SOTIF standard, is a road-vehicle standard**, not a standard directly applicable by scope to this heavy off-road function. The booklet borrows its way of thinking about perception limits; it does not treat it as an off-road approval rule. [f2355, f12015]
+One important distinction: **ISO 21448:2022**, the standard associated with SOTIF, is for road vehicles; it does **not directly apply by scope** to this heavy off-road function. The booklet borrows its way of identifying conditions that expose sensing limitations, rather than treating it as an off-road approval standard. [f12008, f2355, f12015]
 
 ## User
 And what is the difference between Level 8 and Level 9?
 
-<details><summary>3 tool calls · 14s</summary>
+<details><summary>3 tool calls · 13s</summary>
 
 - search_graph {"query":"Level 8 Level 9","limit":6}
-- explore {"id":"t30","limit":5}
-- read_facts {"ids":["f5924","f11749","f2075","f2141"]}
+- explore {"id":"t30","limit":6}
+- read_facts {"ids":["f5924","f11749","f11750","f11986","f2141"]}
 </details>
 
 ## Agent
-**Level 8 advises the operator; Level 9 intervenes in the machine’s motion.** These are layers in the mining industry’s vehicle-interaction control model. [f5924]
+**Level 8 advises the operator; Level 9 intervenes in the machine’s movement.** These are layers in EMESRT’s mining vehicle-interaction control model. [f5924]
 
-| | Level 8 | Level 9 |
-|---|---|---|
-| **What it does** | Gives advice or warnings so the operator can act. | Automatically slows or stops the machine. |
-| **Who takes the braking action?** | The operator. | The system can intervene itself. |
+- **Level 8 — advisory controls:** the system advises the operator, who must take action.
+- **Level 9 — intervention controls:** the system can automatically slow or stop the vehicle. The project’s Collision Mitigation System is a Level 9 control. [f5924, f11749]
 
-That distinction comes from EMESRT’s nine-layer model; Level 7 is operator awareness, Level 8 is advisory controls, and Level 9 is intervention controls. [f5924]
+### Why the difference matters
+Moving to Level 9 is not just adding a stronger warning. **The system can now command the brakes**, affecting machine motion and bringing the function within ISO 19014-2’s functional-safety requirements. [f11986]
 
-**Our Collision Mitigation System is a Level 9 control** because it can brake automatically. [f11749]
+The booklet therefore recommends proving both sides of the safety question:
+- Does it intervene **when needed**?
+- Does it avoid intervening **when braking would be unsafe or unnecessary**? [f2141]
 
-### Why the distinction matters
-Adding automatic braking is not just adding a stronger warning. It brings the function into the scope of **ISO 19014-2**, which addresses safety-related machine controls; awareness-only systems that do not affect machine motion are excluded. [f2075]
-
-The safety evidence must therefore address both **“Did it brake when needed?”** and **“Did it brake when doing so was unsafe or unnecessary?”** That second question is why the SOTIF discussion matters: an incorrect detection can now cause a physical intervention, not merely an unwanted warning. [f2141, f12013]
+And “Level 9” does not mean the other protections become unnecessary: ICMM and EMESRT stress that higher-level controls do **not replace** the lower-level defenses. [f11750]
 
 ## User
 Debrief, honestly and briefly: in this conversation, what confused you or slowed you down? Which tool results were unclear, missing, too long or misleading, and what tool or information would have let you answer better? Do not use tools for this.
 
-<details><summary>0 tool calls · 7s</summary>
+<details><summary>0 tool calls · 8s</summary>
 
 
 </details>
 
 ## Agent
-- **No major confusion about your questions.** The main challenge was keeping explanations simple without implying that road-vehicle standards directly apply to off-road machines.
-- **The graph results were often too long.** Concept lookups returned extensive cross-chapter detail when I needed a definition, one example and a caveat.
-- **The evidence brief was poorly targeted.** For the booklet overview, it promoted unrelated braking figures and vendor case studies over the purpose and main conclusions I had retrieved. That added noise.
-- **Some evidence labels were hard to interpret.** Broad statements carried mixed source labels, while one SOTIF-related finding relied on draft evidence. The narrower glossary facts were clearer.
-- **My own presentation could improve.** I simplified Level 8 to “advice or warnings,” without clearly distinguishing it from Level 7 operator awareness. The retrieved material named the levels but did not give a crisp operational boundary.
+The questions were clear; the main friction was in the retrieval tools.
 
-A **beginner-summary retrieval mode**, plus a short authoritative Level 7/8/9 comparison with concrete examples, would have helped most.
+- **The evidence brief was poorly matched.** For your introductory question, it returned planning methods, automotive case studies and readiness challenges instead of the purpose and main takeaway I had retrieved. I relied on the directly read facts instead.
+- **Concept results were too broad.** SOTIF and Level 8/9 searches brought back long cross-chapter summaries, regulations and vendor examples. Useful for research, but more than needed for a newcomer’s explanation.
+- **Some evidence labels needed care.** Results mixed definitions, recommendations, road-vehicle evidence and off-road requirements. The SOTIF results particularly required separating “useful ideas borrowed from a road standard” from “a standard that applies to this machine.”
+- **The underlying project information was missing.** The booklet has no internal sensor specifications or machine data. That did not prevent these definitions, but it limits project-specific examples.
+
+A **short, audience-aware retrieval mode**—definition, one documented example, project relevance and applicability caveat—plus a more relevant evidence brief would have helped most.

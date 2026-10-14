@@ -21,8 +21,11 @@ export type GraphEventMode = 'touch' | 'read';
  */
 const seenByThread = new Map<string, Map<string, number>>();
 
+/** A new turn: what the agent read last turn stays available to follow-ups, as if passed by. */
 export function resetSeen(threadId: string) {
-	seenByThread.delete(threadId);
+	const carried = new Map<string, number>();
+	for (const [id, w] of seenByThread.get(threadId) ?? []) if (w === 2) carried.set(id, 1);
+	seenByThread.set(threadId, carried);
 }
 
 function threadOf(config: RunnableConfig | undefined): string {
