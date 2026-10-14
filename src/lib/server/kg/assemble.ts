@@ -101,14 +101,39 @@ export function assemble(): KGraph {
 	};
 
 	// Documents and chapters ---------------------------------------------------
+	// Chapter openings state each chapter's research question and the glossary's part guides say
+	// what each part covers; they hold no facts but make the structure nodes self-describing.
+	const intro = (sectionId: string | undefined) =>
+		sectionId
+			? corpus.chunks
+					.filter((ch) => ch.sectionId === sectionId)
+					.map((ch) => ch.text)
+					.join(' ')
+					.replace(/[_*`]/g, '')
+					.replace(/\s+/g, ' ')
+					.trim()
+					.slice(0, 900)
+			: '';
+	const chapterIntro = new Map<number, string>();
+	const partIntro = new Map<string, string>();
+	for (const sec of corpus.sections) {
+		const ch = /^Chapter (\d+):/.exec(sec.title);
+		if (sec.doc === 'booklet' && ch && !chapterIntro.has(+ch[1])) chapterIntro.set(+ch[1], intro(sec.id));
+		const part = /^Part ([A-I]):/.exec(sec.title);
+		if (sec.doc === 'glossary' && sec.role === 'glossary-guide' && part) partIntro.set(part[1], intro(sec.id));
+	}
+	const glossaryGuide = intro(corpus.sections.find((x) => x.doc === 'glossary' && /How to use this document/i.test(x.title))?.id);
+	const synthesisIntro = intro(corpus.sections.find((x) => x.role === 'synthesis' && /Cross-chapter synthesis/i.test(x.title))?.id);
 	add({ id: 'd1', type: 'doc', label: 'Research booklet', text: 'Virtual Validation of a Collision Mitigation System for Heavy Off-Road Machines — pre-project research: thirteen questions answered from the published evidence (October 2026).', topic: 'I', chapter: null, doc: 'booklet' });
-	add({ id: 'd2', type: 'doc', label: 'Glossary & prerequisites', text: 'Glossary and Prerequisites — a plain-language companion to the research booklet: every term, acronym, standard, tool, method and organization explained from zero.', topic: 'B', chapter: null, doc: 'glossary' });
+	add({ id: 'd2', type: 'doc', label: 'Glossary & prerequisites', text: `Glossary and Prerequisites — a plain-language companion to the research booklet: every term, acronym, standard, tool, method and organization explained from zero. ${glossaryGuide}`.trim(), topic: 'B', chapter: null, doc: 'glossary' });
 	for (let c = 0; c <= 13; c++) {
 		add({
 			id: `c${c}`,
 			type: 'chapter',
 			label: c ? `Chapter ${c}: ${CHAPTER_TITLES[c]}` : 'Introduction & synthesis',
-			text: c ? `Chapter ${c} of the booklet: ${CHAPTER_TITLES[c]}.` : 'Booklet front matter: introduction, research map and cross-chapter synthesis.',
+			text: c
+				? `Chapter ${c} of the booklet: ${CHAPTER_TITLES[c]}. ${chapterIntro.get(c) ?? ''}`.trim()
+				: `Booklet front matter: introduction, research map and cross-chapter synthesis. ${synthesisIntro}`.trim(),
 			topic: CHAPTER_TOPIC[c],
 			chapter: c,
 			doc: 'booklet'
@@ -116,7 +141,7 @@ export function assemble(): KGraph {
 		link('d1', `c${c}`, 'contains');
 	}
 	for (const t of TOPICS) {
-		add({ id: `g${t.key}`, type: 'chapter', label: `Glossary Part ${t.key}: ${t.name}`, text: `Glossary Part ${t.key}: ${t.name}.`, topic: t.key, chapter: null, doc: 'glossary', part: t.key });
+		add({ id: `g${t.key}`, type: 'chapter', label: `Glossary Part ${t.key}: ${t.name}`, text: `Glossary Part ${t.key}: ${t.name}. ${partIntro.get(t.key) ?? ''}`.trim(), topic: t.key, chapter: null, doc: 'glossary', part: t.key });
 		link('d2', `g${t.key}`, 'contains');
 	}
 
