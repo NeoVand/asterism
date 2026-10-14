@@ -49,15 +49,27 @@ Rebuild the graph: `parse → extract → resolve → sources → assemble → l
 
 ## Done
 
-- Full pipeline and 20.6k-node / 110k-edge graph (16.6k facts, 2k entities, 1.2k sources, 361 concepts)
-- Agent with skills, subagents, ask_user forms, UI blocks; SSE streaming; settings (BYO key, model, prompt)
-- WebGPU constellation with live lighting, answer asterism trail, numbered cited labels, fly-to
-- Production build (adapter-node), unit tests (search, folding, citations, blocks), Playwright e2e
+- Full pipeline and 20.6k-node / 110k-edge graph (16.6k facts, 2k entities, 1.16k sources after
+  merging duplicates, 361 concepts); one connected component; every chunk extracted; chapter and
+  glossary-part nodes carry their opening text
+- Agent with skills, researcher subagents (events attributed by checkpoint namespace), write_todos,
+  ask_user forms, UI blocks, evidence_brief, memory; SSE streaming; settings (BYO key, model,
+  prompt, memory)
+- WebGPU constellation with live lighting, answer asterism trail, numbered cited labels that
+  avoid each other, fly-to, adaptive resolution
+- Production build (adapter-node), unit tests (search, folding, citations, blocks, every node
+  card, graph shape), Playwright e2e (incl. a live agent run), lint and format clean
 - Upload: drop a document → chunk → extract → weave into the graph live (`src/lib/server/kg/ingest.ts`)
-- Probes: multi-turn scenarios ending in the agent's own debrief (`evals/probe.ts`)
-- Screenshots of key states: `npx tsx scripts/dev/screens.ts --ask` → `docs/screens/`
+- Probes: multi-turn scenarios ending in the agent's own debrief (`evals/probe.ts`), incl. a
+  planner that answers the agent's form
+- Error boundaries around blocks, messages and the node card
+- Screenshots of key states: `npx tsx scripts/dev/screens.ts --ask` → `docs/screens/`; demo
+  script in `docs/DEMO.md`
 
 ## Next
 
-- Raise answer recall: most misses are facts the agent retrieved but left out of the answer
+- Answer recall: about a third of the misses are facts the agent retrieved but left out; another
+  third are booklet conclusions its searches never reached (vendor precedents in Ch1, NHTSA
+  unnecessary-braking finding)
+- Eval noise is ±2–3% per run: run cases twice when comparing small changes
 - More eval cases for planning, prior work and concept explanations
