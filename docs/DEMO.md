@@ -1,7 +1,7 @@
 # Five-minute demo
 
-Chrome on macOS, window maximized, `npm run dev` (or `npm run build && node build`). Start from a
-new conversation (pencil icon) so the empty state shows.
+Chrome on macOS, window maximized, `npm run dev` (or `npm run build && npm start`, port 3000).
+Start from a new conversation (pencil icon) so the empty state shows.
 
 1. **The constellation (30 s).** Let the layout settle: nine colored clusters are the glossary's
    topic areas; 20.5k stars are facts, concepts, entities and sources, 110k links. Drag to orbit,

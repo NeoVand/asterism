@@ -26,10 +26,11 @@ echo "OPENAI_API_KEY=sk-..." > .env
 npm run dev
 ```
 
-Open http://localhost:5173 in a WebGPU browser (Chrome on macOS). For a production server:
+Open http://localhost:5173 in a WebGPU browser (Chrome on macOS). For a production server
+(http://localhost:3000, reads `.env` if present):
 
 ```bash
-npm run build && node build
+npm run build && npm start
 ```
 
 ## What you can do
