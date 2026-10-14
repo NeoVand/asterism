@@ -53,14 +53,14 @@ npm run build && npm start
 
 ## How it works
 
-| Piece | Where |
-|---|---|
-| Graph build (parse → extract → resolve → sources → assemble → link) | `scripts/kg/*`, shared code in `src/lib/server/kg/` |
-| Graph database (typed property graph, BM25 search with stemming/aliases, paths) | `src/lib/server/kg/store.ts` |
-| Agent (`deepagents`, `gpt-6.1-sol`, graph tools, researcher subagent, skills, memory) | `src/lib/server/agent/*`, `agent/skills/*/SKILL.md` |
-| Streaming chat (SSE) | `src/routes/api/chat`, `src/lib/server/agent/run.ts` |
-| WebGPU constellation (TSL compute layout, bundled edges, bloom) | `src/lib/graph/GraphRenderer.ts` |
-| Chat, generative blocks, node card, search, tour | `src/lib/chat`, `src/lib/blocks`, `src/lib/graph`, `src/lib/app` |
+| Piece                                                                                 | Where                                                            |
+| ------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| Graph build (parse → extract → resolve → sources → assemble → link)                   | `scripts/kg/*`, shared code in `src/lib/server/kg/`              |
+| Graph database (typed property graph, BM25 search with stemming/aliases, paths)       | `src/lib/server/kg/store.ts`                                     |
+| Agent (`deepagents`, `gpt-6.1-sol`, graph tools, researcher subagent, skills, memory) | `src/lib/server/agent/*`, `agent/skills/*/SKILL.md`              |
+| Streaming chat (SSE)                                                                  | `src/routes/api/chat`, `src/lib/server/agent/run.ts`             |
+| WebGPU constellation (TSL compute layout, bundled edges, bloom)                       | `src/lib/graph/GraphRenderer.ts`                                 |
+| Chat, generative blocks, node card, search, tour                                      | `src/lib/chat`, `src/lib/blocks`, `src/lib/graph`, `src/lib/app` |
 
 The graph (20.6k nodes, 110k edges): 16.6k atomic facts, 1.16k cited sources (duplicates merged), 361 glossary
 concepts, 2k resolved entities and the document structure, plus ~10k cross-chapter fact relations
