@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { fade, scale } from 'svelte/transition';
 	import Icon from '#lib/ui/Icon.svelte';
-	import { CloseIcon, EyeIcon, EyeOffIcon, KeyIcon } from '#lib/ui/icons.ts';
+	import { CloseIcon, EyeIcon, EyeOffIcon, KeyIcon, MemoryIcon } from '#lib/ui/icons.ts';
 	import { MODELS, settings } from './settings.svelte.ts';
 	import { chat } from './chat.svelte.ts';
 
@@ -14,6 +14,15 @@
 	let { open, defaultPrompt, onclose }: Props = $props();
 	let showKey = $state(false);
 	let memory = $state<{ content: string; empty: boolean } | null>(null);
+
+	/** The memory file's notes, without its heading and markdown bullets. */
+	function memoryLines(content: string): string[] {
+		return content
+			.split('\n')
+			.map((l) => l.trim())
+			.filter((l) => l && !l.startsWith('#'))
+			.map((l) => l.replace(/^[-*]\s+/, '').replace(/\*\*/g, ''));
+	}
 
 	async function loadMemory() {
 		memory = await (await fetch('/api/memory')).json();
@@ -157,7 +166,21 @@
 							{#await memory ?? loadMemory()}
 								<div class="mt-3 h-16 animate-pulse rounded-lg bg-white/[0.03]"></div>
 							{:then}
-								<pre class="mt-3 max-h-56 overflow-y-auto rounded-lg bg-ink-900/70 p-3 font-mono text-[11px] leading-relaxed whitespace-pre-wrap text-fg-2">{memory?.content}</pre>
+								{#if !memory || memory.empty}
+									<div class="mt-3 flex items-start gap-2.5 rounded-lg bg-white/[0.02] px-3 py-2.5 text-[11.5px] leading-relaxed text-fg-3">
+										<Icon icon={MemoryIcon} size={14} class="mt-px shrink-0 text-fg-4" />
+										Nothing yet. Tell Asterism about your machines, sensors, markets or deadlines and it keeps short notes
+										here, so it does not have to ask again.
+									</div>
+								{:else}
+									<ul class="mt-3 max-h-56 space-y-1.5 overflow-y-auto rounded-lg bg-ink-900/60 px-3 py-2.5">
+										{#each memoryLines(memory.content) as l, i (i)}
+											<li class="flex gap-2 text-[12px] leading-relaxed text-fg-2">
+												<span class="mt-[7px] size-1 shrink-0 rounded-full bg-glow/70"></span>{l}
+											</li>
+										{/each}
+									</ul>
+								{/if}
 							{/await}
 						</div>
 						<div class="rounded-xl border border-white/[0.06] px-4 py-3">
