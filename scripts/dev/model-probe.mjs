@@ -1,7 +1,7 @@
 import OpenAI from 'openai';
 import { readFileSync } from 'node:fs';
 const env = Object.fromEntries(
-	readFileSync('/Users/neo/repos/pandka/.env', 'utf8')
+	readFileSync(new URL('../../.env', import.meta.url), 'utf8')
 		.split('\n')
 		.filter((l) => l.includes('='))
 		.map((l) => [l.slice(0, l.indexOf('=')).trim(), l.slice(l.indexOf('=') + 1).trim()])
