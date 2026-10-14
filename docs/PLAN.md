@@ -60,6 +60,11 @@ Rebuild the graph: `parse → extract → resolve → sources → assemble → l
   prompt, memory)
 - WebGPU constellation with live lighting, answer asterism trail, numbered cited labels that
   avoid each other, fly-to, adaptive resolution
+- 2D/3D views and GPU kernel-density edge bundling (`src/lib/graph/EdgeBundler.ts`): 1.2M edge
+  points splatted into a 512² grid (2D) or 128³ volume (3D), blurred, climbed and smoothed over 26
+  iterations (one per frame). Bundled view draws an even 30% sample (same picture; the full set
+  overloads the GPU's tile binning) plus an overlay of lit edges: 50–56 fps vs 31–33 unbundled at
+  full Retina resolution. Comparison shots in `docs/screens/views/` (`scripts/dev/views.ts`).
 - Production build (adapter-node), unit tests (search, folding, citations, blocks, every node
   card, graph shape), Playwright e2e (incl. a live agent run), lint and format clean
 - Upload: drop a document → chunk → extract → weave into the graph live (`src/lib/server/kg/ingest.ts`)

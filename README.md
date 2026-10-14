@@ -10,6 +10,10 @@ answers with live citations, and helps plan — while the stars it touches light
 
 ![An answer: cited stars labelled in the graph, a timeline block and numbered citations in the chat](docs/screens/07-answer.jpg)
 
+The four views side by side: [3D](docs/screens/views/3d.jpg) ·
+[3D bundled](docs/screens/views/3d-bundled.jpg) · [2D](docs/screens/views/2d.jpg) ·
+[2D bundled](docs/screens/views/2d-bundled.jpg).
+
 ## Run it
 
 ```bash
@@ -43,6 +47,9 @@ npm run build && npm start
 - **Plan**: ask for a validation plan; the agent researches, asks you a few questions in an in-chat
   form, and returns an interactive plan (gantt strip, phases, gates) and other blocks — timelines,
   comparisons, risk matrices, metrics, checklists, flows, source lists.
+- **Switch views** (bottom right): the 3D constellation or a flat 2D map, with edges bundled on the
+  GPU (kernel-density bundling: 110k edges gather into highways between the topics they connect,
+  in under a second) or drawn as individual curves.
 - **Explore**: click any star, search with ⌘K, or take the one-minute tour through the nine
   constellations (the glossary's learning path).
 - **Grow the graph**: drop a Markdown or text file anywhere (or use +). Its facts are extracted,
@@ -59,7 +66,8 @@ npm run build && npm start
 | Graph database (typed property graph, BM25 search with stemming/aliases, paths)       | `src/lib/server/kg/store.ts`                                     |
 | Agent (`deepagents`, `gpt-6.1-sol`, graph tools, researcher subagent, skills, memory) | `src/lib/server/agent/*`, `agent/skills/*/SKILL.md`              |
 | Streaming chat (SSE)                                                                  | `src/routes/api/chat`, `src/lib/server/agent/run.ts`             |
-| WebGPU constellation (TSL compute layout, bundled edges, bloom)                       | `src/lib/graph/GraphRenderer.ts`                                 |
+| WebGPU constellation (TSL compute layout, 2D/3D views, bloom)                         | `src/lib/graph/GraphRenderer.ts`                                 |
+| GPU edge bundling (kernel density: splat, blur, climb, smooth; 2D grid or 3D volume)  | `src/lib/graph/EdgeBundler.ts`                                   |
 | Chat, generative blocks, node card, search, tour                                      | `src/lib/chat`, `src/lib/blocks`, `src/lib/graph`, `src/lib/app` |
 
 The graph (20.6k nodes, 110k edges): 16.6k atomic facts, 1.16k cited sources (duplicates merged), 361 glossary
@@ -68,7 +76,7 @@ concepts, 2k resolved entities and the document structure, plus ~10k cross-chapt
 entity discussed in more than one place. It is one connected component; all but one fact link to a
 concept, entity, source or another fact. No embeddings: retrieval is full-text search plus graph
 traversal. See `docs/PLAN.md` for the pipeline, `docs/VISION.md` for the intent and
-`docs/DEMO.md` for a five-minute demo.
+`docs/DEMO.md` for a six-minute demo.
 
 Rebuild the graph from the references (≈1 h of `gpt-6.1-sol` calls, cached per chunk):
 
