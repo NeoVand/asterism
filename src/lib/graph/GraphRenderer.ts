@@ -12,6 +12,7 @@ import * as THREE from 'three/webgpu';
 import {
 	Fn,
 	attribute,
+	cameraPosition,
 	If,
 	Loop,
 	abs,
@@ -138,6 +139,8 @@ export class GraphRenderer {
 		return 1 - Math.min(1, (this.uAlpha.value as number) / 0.5);
 	}
 	private nodes: THREE.Sprite | null = null;
+	private reticle: THREE.Sprite | null = null;
+	private uSelected = uniform(-1, 'int');
 	private edges: THREE.LineSegments | null = null;
 	private trails: THREE.LineSegments | null = null;
 	private stars: THREE.Sprite | null = null;
@@ -353,7 +356,8 @@ export class GraphRenderer {
 		});
 		const info = this.infoBuf.toAttribute();
 		const state = this.stateBuf.toAttribute();
-		mat.positionNode = this.posBuf.toAttribute().xyz;
+		const nodePos = this.posBuf.toAttribute().xyz;
+		mat.positionNode = nodePos;
 
 		const litKind = state.x;
 		const age = this.uTime.sub(state.y);
@@ -367,7 +371,10 @@ export class GraphRenderer {
 			float(2.1),
 			select(litKind.greaterThan(1.5), float(1.55), select(litKind.greaterThan(0.5), float(1.25), float(1)))
 		));
-		mat.scaleNode = info.z.mul(litScale).mul(flash.mul(0.9).add(1)).mul(isHover.mul(0.8).add(1));
+		// Cap on-screen size when the camera is close, so a close-up stays crisp instead of a wall of bokeh.
+		const camDist = cameraPosition.sub(nodePos).length();
+		const cap = camDist.mul(select(litKind.greaterThan(0.5), float(0.05), float(0.02)));
+		mat.scaleNode = min(info.z.mul(litScale).mul(flash.mul(0.9).add(1)).mul(isHover.mul(0.8).add(1)), cap.max(0.6));
 
 		mat.colorNode = Fn(() => {
 			const type = info.y;
@@ -378,7 +385,8 @@ export class GraphRenderer {
 			const core = smoothstep(float(0.38), float(0), d);
 			// Shapes: sources are rings, entities are diamonds, concepts carry a hot core.
 			const ring = smoothstep(float(0.16), float(0), abs(d.sub(0.58))).mul(0.9).add(soft.mul(0.35));
-			const diamond = smoothstep(float(1), float(0.25), abs(p.x).add(abs(p.y))).pow(1.6);
+			// Entities: a bright core inside a faint halo ring.
+			const diamond = core.mul(0.95).add(smoothstep(float(0.1), float(0), abs(d.sub(0.72))).mul(0.45)).add(soft.mul(0.25));
 			const shapeA = select(
 				type.equal(4),
 				ring,
@@ -417,6 +425,32 @@ export class GraphRenderer {
 		sprite.renderOrder = 2;
 		this.nodes = sprite;
 		this.scene.add(sprite);
+
+		// Selection reticle: a slowly breathing ring around the selected star.
+		const rmat = new THREE.SpriteNodeMaterial({ transparent: true, depthWrite: false, depthTest: false, blending: THREE.AdditiveBlending });
+		const sel = this.posBuf.element((max as N)(this.uSelected, int(0))).xyz;
+		rmat.positionNode = sel;
+		const rDist = cameraPosition.sub(sel).length();
+		rmat.scaleNode = rDist.mul(0.045).mul(sin(this.uTime.mul(2.2)).mul(0.06).add(1));
+		rmat.colorNode = Fn(() => {
+			const q = uv().sub(0.5).mul(2);
+			const d = length(q);
+			const ring = smoothstep(float(0.05), float(0), abs(d.sub(0.82)));
+			const ticks = smoothstep(float(0.18), float(0), abs(q.x)).add(smoothstep(float(0.18), float(0), abs(q.y))).mul(smoothstep(float(0.9), float(0.98), d).mul(smoothstep(float(1.0), float(0.98), d)));
+			const on = select(this.uSelected.greaterThanEqual(0), float(1), float(0));
+			const v = ring.mul(0.9).add(ticks.mul(0.8)).mul(on);
+			return vec4(vec3(0.75, 0.93, 1).mul(v), v);
+		})();
+		const r = new THREE.Sprite(rmat);
+		r.frustumCulled = false;
+		r.renderOrder = 4;
+		this.reticle = r;
+		this.scene.add(r);
+	}
+
+	/** Mark the selected star with a reticle (null hides it). */
+	setSelected(i: number | null) {
+		this.uSelected.value = i ?? -1;
 	}
 
 	private edgeMaterial(anchorsU: N, opts: { trail?: boolean } = {}) {
@@ -884,13 +918,13 @@ export class GraphRenderer {
 	}
 
 	private disposeGraphObjects() {
-		for (const o of [this.nodes, this.edges, this.trails]) {
+		for (const o of [this.nodes, this.edges, this.trails, this.reticle]) {
 			if (!o) continue;
 			this.scene.remove(o);
 			o.geometry?.dispose();
 			(o.material as THREE.Material).dispose();
 		}
-		this.nodes = this.edges = this.trails = null;
+		this.nodes = this.edges = this.trails = this.reticle = null;
 	}
 
 	dispose() {

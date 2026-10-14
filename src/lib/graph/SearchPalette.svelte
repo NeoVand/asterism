@@ -77,6 +77,7 @@
 		<div class="flex items-center gap-2.5 border-b border-white/[0.06] px-4">
 			<Icon icon={SearchIcon} size={16} class="text-fg-3" />
 			<input
+				{@attach (el) => el.focus()}
 				bind:this={input}
 				bind:value={q}
 				class="h-12 flex-1 bg-transparent text-[14px] text-fg outline-none placeholder:text-fg-4"

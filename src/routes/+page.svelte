@@ -59,7 +59,7 @@
 			selected = id;
 			renderer?.spotlight(null);
 			renderer?.light([i], 'read');
-			renderer?.flyTo([i], { distance: 190 });
+			renderer?.flyTo([i], { distance: 300 });
 		},
 		ask(text) {
 			panel?.ask(text, true);
@@ -119,6 +119,10 @@
 
 	$effect(() => {
 		if (renderer) renderer.autoRotate = settings.value.autoRotate;
+	});
+
+	$effect(() => {
+		renderer?.setSelected(selected ? (index.get(selected) ?? null) : null);
 	});
 
 	onMount(() => {

@@ -247,6 +247,8 @@ export class GraphStore {
 				score *= 0.85 + 0.15 * (node.importance ?? 2);
 				const role = node.sectionId ? this.sectionById.get(node.sectionId)?.role : undefined;
 				if (role) score *= ROLE_BOOST[role] ?? 1;
+				// Glossary facts restate the booklet in plain words and carry no sources.
+				if (node.doc === 'glossary') score *= 0.85;
 			}
 			if (node.type === 'section' || node.type === 'chapter') score *= 0.6;
 			return { id: node.id, score, node };
