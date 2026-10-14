@@ -9,6 +9,17 @@ export function chapterTag(n: KGNode): string {
 	return n.chapter === 0 ? 'Front' : `Ch${n.chapter}`;
 }
 
+/** Where a fact sits in the booklet's argument: synthesis, key finding, or plain detail. */
+function roleTag(store: GraphStore, n: KGNode): string {
+	const role = store.roleOf(n);
+	if (role === 'synthesis') return 'Synthesis';
+	if (role === 'key-findings') return `${chapterTag(n)} key finding`;
+	if (role === 'disagree') return `${chapterTag(n)} disagreement`;
+	if (role === 'uncertain') return `${chapterTag(n)} uncertain`;
+	if (role === 'blind-spots') return `${chapterTag(n)} blind spot`;
+	return chapterTag(n);
+}
+
 function evidenceTag(n: KGNode): string {
 	if (!n.evidence && !n.onRoad) return '';
 	const ev = n.evidence ? n.evidence.replace('Expert opinion', 'Expert') : '';
@@ -23,7 +34,7 @@ export function clip(s: string, max: number): string {
 export function line(store: GraphStore, n: KGNode, max = 280): string {
 	switch (n.type) {
 		case 'fact': {
-			const tags = [chapterTag(n), n.kind, evidenceTag(n)].filter(Boolean).join(' · ');
+			const tags = [roleTag(store, n), n.kind, evidenceTag(n)].filter(Boolean).join(' · ');
 			return `${n.id} [${tags}] ${clip(n.text, max)}`;
 		}
 		case 'term':

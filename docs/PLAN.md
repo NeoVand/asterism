@@ -26,6 +26,8 @@ Rebuild the graph: `parse → extract → resolve → sources → assemble → l
 - + links/synopses, dedup folding: 3.65 · 57% · 87% · 97%
 - + chapter/synthesis overviews, completeness prompt (low effort): 3.90 · 65% · 85% · 98%
 - medium effort: 3.65 · 57% · 90% · 99.6% (slower; low stays default)
+- 30 cases (10 added) + headline conclusions in search results: 3.83 · 67% · 84% · 99%
+- + hyphen/spelling-aware tokenizer, blocks graded too: 3.90 · 68% · 86% · 99.5%
 
 ## Done
 

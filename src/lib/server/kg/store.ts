@@ -31,6 +31,8 @@ export interface SearchOptions {
 	limit?: number;
 	/** Restrict results to the neighborhood of these node ids. */
 	near?: string[];
+	/** Restrict facts to these section roles (e.g. synthesis, key-findings). */
+	roles?: string[];
 }
 
 const STOP = new Set(
@@ -72,10 +74,43 @@ export function stem(word: string): string {
 	return w;
 }
 
+/** British → American spelling, so "optimise"/"optimize", "behaviour"/"behavior" meet. */
+function americanize(w: string): string {
+	return w
+		.replace(/isation/g, 'ization')
+		.replace(/is(e|ed|es|ing|er|ers)$/, 'iz$1')
+		.replace(/yse(d|s)?$/, 'yze$1')
+		.replace(/our(s|ed|ing)?$/, 'or$1')
+		.replace(/elling$/, 'eling')
+		.replace(/elled$/, 'eled')
+		.replace(/tre(s)?$/, 'ter$1')
+		.replace(/ogue(s)?$/, 'og$1');
+}
+
 function processTerm(term: string): string | null {
 	const t = term.toLowerCase();
 	if (STOP.has(t) || t.length < 2) return null;
-	return stem(term);
+	return stem(/^[A-Z0-9-]+$/.test(term) ? term : americanize(t));
+}
+
+/**
+ * Words split on spaces and punctuation; hyphenated words also index their joined form
+ * ("over-fitting" → over, fitting, overfitting) and identifiers keep their full form
+ * ("21815-3" → 21815-3, 21815, 3).
+ */
+function tokenize(text: string): string[] {
+	const out: string[] = [];
+	for (const raw of text.split(/[\s,;:!?()[\]{}"“”'‘’«»*_/\\|<>=+]+/)) {
+		const w = raw.replace(/^[.\-–—]+|[.\-–—]+$/g, '');
+		if (!w) continue;
+		if (/[-–]/.test(w)) {
+			const parts = w.split(/[-–]+/).filter(Boolean);
+			out.push(...parts);
+			if (/\d/.test(w)) out.push(w.replace(/–/g, '-'));
+			else out.push(parts.join(''));
+		} else out.push(w.replace(/\.$/, ''));
+	}
+	return out;
 }
 
 /** Summary sections carry the booklet's conclusions; surface them a little earlier. */
@@ -172,6 +207,7 @@ export class GraphStore {
 			fields: ['label', 'text', 'aliasText', 'quote', 'synopsis', 'context'],
 			storeFields: [],
 			processTerm,
+			tokenize,
 			extractField: (doc, field) => {
 				if (field === 'aliasText') return (doc.aliases ?? []).join(' ');
 				if (field === 'context') return this.contextText(doc);
@@ -180,6 +216,8 @@ export class GraphStore {
 				return typeof v === 'string' ? v : '';
 			},
 			searchOptions: {
+				tokenize,
+				processTerm,
 				boost: { label: 3, aliasText: 3, text: 1.2, synopsis: 0.8, quote: 0.4, context: 0.35 },
 				prefix: (t) => t.length > 4,
 				fuzzy: (t) => (t.length > 6 ? 0.15 : false),
@@ -237,6 +275,7 @@ export class GraphStore {
 				if (opts.chapters && (n.chapter == null || !opts.chapters.includes(n.chapter))) return false;
 				if (opts.kinds && (!n.kind || !opts.kinds.includes(n.kind))) return false;
 				if (near && !near.has(n.id)) return false;
+				if (opts.roles && !opts.roles.includes(this.roleOf(n) ?? '')) return false;
 				return true;
 			}
 		});

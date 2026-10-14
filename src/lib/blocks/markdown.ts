@@ -97,3 +97,25 @@ export function flowMd(b: FlowBlock): string {
 		)
 	);
 }
+
+/** Any block as markdown (used by evals and exports; sources render as their ids). */
+export function blockToMarkdown(b: import('./schema.ts').Block): string {
+	switch (b.type) {
+		case 'plan':
+			return planMd(b);
+		case 'timeline':
+			return timelineMd(b);
+		case 'comparison':
+			return comparisonMd(b);
+		case 'metrics':
+			return metricsMd(b);
+		case 'risks':
+			return risksMd(b);
+		case 'checklist':
+			return checklistMd(b, () => false);
+		case 'flow':
+			return flowMd(b);
+		case 'sources':
+			return `**${b.title}**\n\n${b.ids.map((id) => `- [${id}]`).join('\n')}${b.note ? `\n\n${b.note}` : ''}`;
+	}
+}

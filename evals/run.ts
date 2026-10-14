@@ -15,6 +15,7 @@ import { runTurn } from '../src/lib/server/agent/run.ts';
 import { getStore } from '../src/lib/server/kg/store.ts';
 import { jsonCall, pool } from '../scripts/kg/llm.ts';
 import type { ChatEvent } from '../src/lib/chat/protocol.ts';
+import { blockToMarkdown } from '../src/lib/blocks/markdown.ts';
 
 interface Case {
 	id: string;
@@ -84,6 +85,7 @@ async function main() {
 		const touched = new Set<string>();
 		const tools: string[] = [];
 		const steps: string[] = [];
+		const blocks: string[] = [];
 		let error = '';
 		let usage = { input: 0, output: 0 };
 		for await (const ev of runTurn(
@@ -100,8 +102,10 @@ async function main() {
 			else if (ev.t === 'error') error = ev.message;
 			else if (ev.t === 'done') usage = ev.usage;
 			else if (ev.t === 'interrupt') text += '\n[asked the user questions]';
+			else if (ev.t === 'ui') blocks.push(blockToMarkdown(ev.block));
 		}
 		const ms = Date.now() - t0;
+		if (blocks.length) text += `\n\n${blocks.join('\n\n')}`;
 		const cited = [...new Set([...text.matchAll(CITE_RE)].flatMap((m) => m[1].split(/\s*[,;]\s*/)))];
 		const factText = (id: string) => {
 			const n = store.get(id);

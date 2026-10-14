@@ -68,7 +68,20 @@ export function makeTools() {
 				limit: max * 3
 			});
 			const hits = foldDuplicates(store, raw.map((h) => h.node), max);
-			await emit(config, 'touch', hits.flatMap((h) => [h.node.id, ...h.also.map((a) => a.id)]));
+			// The booklet's own conclusions on this topic come first, so answers anchor on them.
+			const wantsFacts = !types || types.includes('fact');
+			const shownIds = new Set(hits.flatMap((h) => [h.node.id, ...h.also.map((a) => a.id)]));
+			const headline = wantsFacts && !chapters?.length && !kinds?.length
+				? foldDuplicates(
+						store,
+						store
+							.search(query, { types: ['fact'], roles: ['synthesis', 'key-findings'], near, limit: 12 })
+							.map((h) => h.node)
+							.filter((n) => !shownIds.has(n.id)),
+						4
+					)
+				: [];
+			await emit(config, 'touch', [...hits, ...headline].flatMap((h) => [h.node.id, ...h.also.map((a) => a.id)]));
 			if (!hits.length) {
 				return `No matches for "${query}". Try other wording, a synonym or acronym, fewer filters, or explore a related concept.`;
 			}
@@ -83,6 +96,9 @@ export function makeTools() {
 			});
 			const chapterSpread = new Set(hits.flatMap((h) => [h.node, ...h.also]).filter((n) => n.type === 'fact').map((n) => chapterTag(n)));
 			return [
+				...(headline.length
+					? ['Booklet conclusions on this (synthesis / key findings):', ...headline.map((h) => line(store, h.node, 300) + alsoNote(h.also)), '']
+					: []),
 				`${hits.length} matches for "${query}"${chapterSpread.size > 1 ? ` across ${[...chapterSpread].join(', ')}` : ''}:`,
 				...lines,
 				'',
