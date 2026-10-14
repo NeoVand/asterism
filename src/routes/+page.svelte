@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onMount, untrack } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
 	import GraphCanvas from '#lib/graph/GraphCanvas.svelte';
 	import SceneLabels from '#lib/graph/SceneLabels.svelte';
@@ -8,6 +8,9 @@
 	import ChatPanel from '#lib/chat/ChatPanel.svelte';
 	import SettingsModal from '#lib/chat/SettingsModal.svelte';
 	import Tour from '#lib/app/Tour.svelte';
+	import Reader from '#lib/reader/Reader.svelte';
+	import DiagramLightbox from '#lib/reader/DiagramLightbox.svelte';
+	import { reader } from '#lib/reader/reader.svelte.ts';
 	import Icon from '#lib/ui/Icon.svelte';
 	import {
 		CloseIcon,
@@ -17,6 +20,7 @@
 		PlusIcon,
 		ResetIcon,
 		BundleIcon,
+		ReaderIcon,
 		SearchIcon
 	} from '#lib/ui/icons.ts';
 	import { tip } from '#lib/ui/tooltip.ts';
@@ -29,6 +33,12 @@
 	import { UploadIcon } from '#lib/ui/icons.ts';
 
 	const PANEL = 468; // chat panel width + gutters
+	let innerWidth = $state(1600);
+	/** The reader's width (with gutters), leaving the graph at least 360 px. */
+	const readerSize = $derived(
+		Math.max(320, Math.min(reader.wide ? 760 : 580, innerWidth - PANEL - 360))
+	);
+	const readerW = $derived(reader.open ? readerSize : 0);
 
 	let graph = $state.raw<ClientGraph | null>(null);
 	let renderer = $state.raw<GraphRenderer | null>(null);
@@ -39,6 +49,8 @@
 	let selected = $state<string | null>(null);
 	/** The star whose neighbours are lit; they go out as soon as the selection moves on. */
 	let neighborsOf = $state<string | null>(null);
+	/** The next selection came from the reader (it is already on screen there). */
+	let pickedInReader = false;
 	let paletteOpen = $state(false);
 	let settingsOpen = $state(false);
 	let cited = $state<{ index: number; n: number }[]>([]);
@@ -155,6 +167,37 @@
 		if (renderer) renderer.autoRotate = settings.value.autoRotate;
 	});
 
+	// The graph centres itself between the reader and the chat.
+	$effect(() => {
+		renderer?.setInsets(readerW, PANEL);
+	});
+
+	// While the reader is open it follows the selection to where the star is written.
+	$effect(() => {
+		const id = selected;
+		if (!id || !untrack(() => reader.open)) return;
+		const gentle = pickedInReader;
+		pickedInReader = false;
+		reader.show(id, gentle);
+	});
+
+	// What is on screen in the reader lights up (when reading along).
+	let readingIds: string[] = [];
+	function onreading(ids: string[]) {
+		readingIds = ids;
+		const on = reader.open && reader.readAlong;
+		renderer?.setLayer('reading', on ? idx(ids).map((i) => [i, 'read'] as [number, 'read']) : null);
+	}
+
+	// Re-apply when reading along is switched, the reader closes, or the graph (re)loads before
+	// the reader reports again.
+	$effect(() => {
+		void shownGraph;
+		void reader.open;
+		void reader.readAlong;
+		untrack(() => onreading(readingIds));
+	});
+
 	$effect(() => {
 		renderer?.setFlat(settings.value.flat);
 		renderer?.setBundled(settings.value.bundle);
@@ -235,6 +278,7 @@
 
 	onMount(() => {
 		settings.load();
+		reader.load();
 		chat.load();
 		fetch('/api/meta')
 			.then((r) => (r.ok ? r.json() : null))
@@ -304,8 +348,13 @@
 </script>
 
 <svelte:window
+	bind:innerWidth
 	onkeydown={(e) => {
-		if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+		if (e.key === 'Escape' && reader.lightbox) {
+			reader.lightbox = null;
+		} else if (e.key === 'Escape' && reader.tocOpen) {
+			reader.tocOpen = false;
+		} else if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
 			e.preventDefault();
 			paletteOpen = !paletteOpen;
 		} else if (e.key === 'Escape' && !paletteOpen && !settingsOpen) {
@@ -357,7 +406,9 @@
 		ongraph={(g) => (shownGraph = g)}
 		onready={(r) => {
 			renderer = r;
-			r.setInsetRight(PANEL);
+			// A handle for the dev probes in scripts/dev (never in production builds).
+			if (import.meta.env.DEV) Object.assign(window, { __asterism: { renderer: r, reader } });
+			r.setInsets(readerW, PANEL, false);
 			r.autoRotate = settings.value.autoRotate;
 			// Before the graph arrives, so the first layout starts in the chosen view.
 			r.setFlat(settings.value.flat);
@@ -387,23 +438,44 @@
 			showTopics={settings.value.labels}
 			dimTopics={cited.length > 0 || chat.busy}
 			ontopic={flyTopic}
+			insetLeft={readerW}
 		/>
+	</div>
 
-		<div
-			class="pointer-events-auto absolute top-4 left-4 flex items-center gap-2.5"
-			in:fade={{ duration: 600 }}
-		>
+	<!-- The graph's own controls live in the space between the reader and the chat. -->
+	<div
+		class="pointer-events-none absolute inset-y-0 transition-[left] duration-500 ease-out-soft"
+		style:left="{readerW}px"
+		style:right="{PANEL}px"
+	>
+		{#if !reader.open}
 			<div
-				class="relative flex size-9 items-center justify-center rounded-xl border border-white/10 bg-ink-900/70 text-glow backdrop-blur-md"
+				class="pointer-events-auto absolute top-4 left-4 flex items-center gap-2.5"
+				in:fade={{ duration: 500 }}
+				out:fade={{ duration: 120 }}
 			>
-				<div class="absolute inset-0 rounded-xl bg-glow/10 blur-md"></div>
-				<Icon icon={LogoIcon} size={19} stroke={1.5} class="relative" />
+				<div
+					class="relative flex size-9 items-center justify-center rounded-xl border border-white/10 bg-ink-900/70 text-glow backdrop-blur-md"
+				>
+					<div class="absolute inset-0 rounded-xl bg-glow/10 blur-md"></div>
+					<Icon icon={LogoIcon} size={19} stroke={1.5} class="relative" />
+				</div>
+				<div class="leading-tight [text-shadow:0_1px_10px_rgb(0_0_0/0.8)]">
+					<div class="text-[14px] font-semibold tracking-tight text-fg">Asterism</div>
+					<div class="text-[11px] text-fg-3">
+						Collision mitigation · virtual validation research
+					</div>
+				</div>
+				<button
+					type="button"
+					class="ml-2 flex h-8 items-center gap-1.5 rounded-lg border border-white/[0.08] bg-ink-900/60 px-2.5 text-[12px] text-fg-3 backdrop-blur-md transition-colors hover:border-white/[0.16] hover:text-fg"
+					onclick={() => reader.toggle()}
+					use:tip={'Read the booklet and the glossary'}
+				>
+					<Icon icon={ReaderIcon} size={14} /> Read
+				</button>
 			</div>
-			<div class="leading-tight [text-shadow:0_1px_10px_rgb(0_0_0/0.8)]">
-				<div class="text-[14px] font-semibold tracking-tight text-fg">Asterism</div>
-				<div class="text-[11px] text-fg-3">Collision mitigation · virtual validation research</div>
-			</div>
-		</div>
+		{/if}
 
 		<button
 			type="button"
@@ -424,6 +496,7 @@
 							onclose={() => (selected = null)}
 							neighborsLit={neighborsOf === selected}
 							onneighbors={neighbors}
+							onread={(id) => reader.show(id)}
 						/>
 						{#snippet failed()}{/snippet}
 					</svelte:boundary>
@@ -543,6 +616,23 @@
 		</div>
 	</div>
 
+	<div
+		class="absolute top-3 bottom-3 left-3 {reader.open ? '' : 'pointer-events-none'}"
+		style:width="{readerSize - 24}px"
+	>
+		{#if reader.open}
+			<Reader
+				cited={answerIds}
+				onspot={(ids) => ctx.spotlight(ids)}
+				onpick={(id) => {
+					pickedInReader = true;
+					ctx.select(id);
+				}}
+				{onreading}
+			/>
+		{/if}
+	</div>
+
 	<div class="absolute top-3 right-3 bottom-3" style:width="{PANEL - 24}px">
 		<ChatPanel
 			bind:this={panel}
@@ -554,6 +644,11 @@
 	</div>
 
 	<SearchPalette open={paletteOpen} onclose={() => (paletteOpen = false)} />
+	<DiagramLightbox
+		svg={reader.lightbox?.svg ?? null}
+		caption={reader.lightbox?.caption}
+		onclose={() => (reader.lightbox = null)}
+	/>
 	<SettingsModal
 		open={settingsOpen}
 		defaultPrompt={meta?.defaultPrompt ?? ''}

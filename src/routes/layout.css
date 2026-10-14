@@ -1,11 +1,14 @@
 @import 'tailwindcss';
 @import '@fontsource-variable/geist';
 @import '@fontsource-variable/geist-mono';
+@import '@fontsource-variable/newsreader/opsz.css';
+@import '@fontsource-variable/newsreader/opsz-italic.css';
 @plugin '@tailwindcss/typography';
 
 @theme {
 	--font-sans: 'Geist Variable', ui-sans-serif, system-ui, sans-serif;
 	--font-mono: 'Geist Mono Variable', ui-monospace, monospace;
+	--font-serif: 'Newsreader Variable', 'Iowan Old Style', Georgia, serif;
 
 	--color-ink-950: #03050a;
 	--color-ink-900: #070a12;
@@ -241,4 +244,414 @@ body {
 	border-radius: 2px;
 	background: var(--color-glow);
 	animation: breathe 1.1s ease-in-out infinite;
+}
+
+/* Reader ------------------------------------------------------------------- */
+/* A quiet serif page on dark glass: a 64-character measure, generous leading, headings that
+   carry the structure, and everything that is not prose (citations, tables, diagrams) in the
+   app's sans so the two voices never blur. */
+.reader-prose {
+	--r-text: rgb(226 231 241 / 0.86);
+	font-family: var(--font-serif);
+	font-optical-sizing: auto;
+	font-size: 17px;
+	line-height: 1.66;
+	color: var(--r-text);
+	max-width: 40rem;
+	margin: 0 auto;
+	hanging-punctuation: first;
+	font-variant-numeric: oldstyle-nums proportional-nums;
+	user-select: text;
+	-webkit-user-select: text;
+}
+.reader-prose.r-wide {
+	max-width: 46rem;
+}
+.reader-prose .r-kicker {
+	font-family: var(--font-sans);
+	font-size: 10.5px;
+	font-weight: 500;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: var(--color-fg-3);
+	margin-bottom: 14px;
+}
+.reader-prose .r-section {
+	scroll-margin-top: 16px;
+}
+.reader-prose .r-h {
+	color: #fff;
+	text-wrap: balance;
+}
+.reader-prose h2.r-h {
+	font-size: 34px;
+	line-height: 1.12;
+	font-weight: 460;
+	letter-spacing: -0.012em;
+	margin: 0 0 0.45em;
+}
+.reader-prose h3.r-h {
+	font-size: 22px;
+	line-height: 1.25;
+	font-weight: 520;
+	letter-spacing: -0.005em;
+	margin: 2.1em 0 0.55em;
+}
+.reader-prose h4.r-h {
+	font-size: 18.5px;
+	line-height: 1.3;
+	font-weight: 560;
+	margin: 1.8em 0 0.5em;
+}
+.reader-prose h5.r-h,
+.reader-prose h6.r-h {
+	font-family: var(--font-sans);
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--color-fg-2);
+	margin: 2em 0 0.6em;
+}
+/* The italic line under a chapter title is its standfirst. */
+.reader-prose .r-section[data-level='2'] > p:first-of-type:has(> em:only-child) {
+	font-size: 19px;
+	line-height: 1.5;
+	color: var(--color-fg-2);
+	margin-bottom: 1.6em;
+}
+.reader-prose p,
+.reader-prose ul,
+.reader-prose ol,
+.reader-prose blockquote,
+.reader-prose .r-table,
+.reader-prose figure,
+.reader-prose pre {
+	margin: 0 0 0.95em;
+}
+.reader-prose strong {
+	color: #fff;
+	font-weight: 600;
+}
+.reader-prose em {
+	font-style: italic;
+}
+.reader-prose ul,
+.reader-prose ol {
+	padding-left: 1.3em;
+}
+.reader-prose ul {
+	list-style: none;
+}
+.reader-prose ul > li {
+	position: relative;
+}
+.reader-prose ul > li::before {
+	content: '';
+	position: absolute;
+	left: -1em;
+	top: 0.74em;
+	width: 4px;
+	height: 4px;
+	border-radius: 9px;
+	background: rgb(111 227 255 / 0.55);
+}
+.reader-prose ol {
+	list-style: decimal;
+}
+.reader-prose ol > li::marker {
+	font-family: var(--font-mono);
+	font-size: 12px;
+	color: var(--color-fg-3);
+}
+.reader-prose li + li {
+	margin-top: 0.4em;
+}
+.reader-prose li > p {
+	margin: 0;
+}
+.reader-prose a {
+	color: var(--color-glow);
+	text-decoration: underline;
+	text-decoration-color: rgb(111 227 255 / 0.3);
+	text-underline-offset: 3px;
+	text-decoration-thickness: 1px;
+	transition: text-decoration-color 150ms;
+	word-break: break-word;
+}
+.reader-prose a:hover {
+	text-decoration-color: rgb(111 227 255 / 0.8);
+}
+.reader-prose a.r-xref {
+	color: inherit;
+	text-decoration-style: dotted;
+	text-decoration-color: rgb(111 227 255 / 0.55);
+}
+.reader-prose blockquote {
+	border-left: 2px solid rgb(255 201 107 / 0.35);
+	padding-left: 1em;
+	font-style: italic;
+	color: var(--color-fg-2);
+}
+.reader-prose hr {
+	border: 0;
+	border-top: 1px solid var(--hairline-2);
+	margin: 2em 0;
+}
+.reader-prose code,
+.reader-prose pre {
+	font-family: var(--font-mono);
+	font-size: 12.5px;
+}
+.reader-prose pre {
+	padding: 12px 14px;
+	border-radius: 12px;
+	background: rgb(255 255 255 / 0.03);
+	border: 1px solid var(--hairline);
+	overflow-x: auto;
+	white-space: pre;
+}
+/* Sources lists at the end of each chapter read as a bibliography. */
+.reader-prose .r-section[data-role='sources'] ol {
+	font-family: var(--font-sans);
+	font-size: 12.5px;
+	line-height: 1.55;
+	color: var(--color-fg-2);
+}
+.reader-prose .r-section[data-role='sources'] li + li {
+	margin-top: 0.55em;
+}
+.reader-prose .r-flash {
+	animation: r-flash 2.6s var(--ease-out-soft);
+	border-radius: 6px;
+}
+@keyframes r-flash {
+	0%,
+	30% {
+		background: rgb(255 201 107 / 0.16);
+		box-shadow: 0 0 0 6px rgb(255 201 107 / 0.16);
+	}
+	100% {
+		background: transparent;
+		box-shadow: 0 0 0 6px transparent;
+	}
+}
+
+/* Evidence labels: small caps in the label's colour, not a badge parade. */
+.reader-prose strong.r-ev {
+	font-family: var(--font-sans);
+	font-size: 0.66em;
+	font-weight: 600;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	vertical-align: 0.08em;
+	color: rgb(75 227 164 / 0.85);
+}
+.reader-prose strong.r-ev[data-ev='vendor'] {
+	color: rgb(255 176 84 / 0.85);
+}
+.reader-prose strong.r-ev[data-ev='expert-opinion'] {
+	color: rgb(176 160 255 / 0.9);
+}
+
+/* Citation chips and chapter references. */
+.reader-prose .r-cites {
+	display: inline-flex;
+	gap: 2px;
+	margin-left: 3px;
+	vertical-align: 0.12em;
+	white-space: nowrap;
+}
+.reader-prose .r-cite,
+.reader-prose .r-chref {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 17px;
+	height: 16px;
+	padding: 0 4px;
+	border-radius: 5px;
+	font-family: var(--font-mono);
+	font-size: 9.5px;
+	font-weight: 500;
+	line-height: 1;
+	font-variant-numeric: normal;
+	color: var(--color-fg-2);
+	background: rgb(255 255 255 / 0.06);
+	transition:
+		background 150ms,
+		color 150ms,
+		box-shadow 200ms;
+}
+.reader-prose button.r-cite:hover,
+.reader-prose button.r-chref:hover {
+	color: var(--color-ink-950);
+	background: var(--color-glow);
+	box-shadow: 0 0 12px -2px var(--color-glow);
+}
+.reader-prose .r-chref {
+	font-family: var(--font-sans);
+	font-size: 10px;
+	letter-spacing: 0.02em;
+	color: rgb(111 227 255 / 0.85);
+	background: rgb(111 227 255 / 0.08);
+}
+.reader-prose .r-cite-off {
+	opacity: 0.5;
+}
+
+/* Tables scroll inside their own frame. */
+.reader-prose .r-table {
+	overflow-x: auto;
+	border: 1px solid var(--hairline);
+	border-radius: 12px;
+	background: rgb(255 255 255 / 0.015);
+}
+.reader-prose table {
+	width: 100%;
+	min-width: 32rem;
+	border-collapse: collapse;
+	font-family: var(--font-sans);
+	font-size: 12.5px;
+	line-height: 1.5;
+	color: var(--color-fg-2);
+	font-variant-numeric: tabular-nums;
+}
+.reader-prose th {
+	text-align: left;
+	font-weight: 500;
+	font-size: 11px;
+	color: var(--color-fg-3);
+	padding: 9px 12px 8px;
+	border-bottom: 1px solid var(--hairline-2);
+	white-space: nowrap;
+}
+.reader-prose td {
+	padding: 8px 12px;
+	border-top: 1px solid var(--hairline);
+	vertical-align: top;
+}
+.reader-prose td:first-child {
+	color: var(--color-fg);
+}
+.reader-prose table strong.r-ev {
+	font-size: 9.5px;
+}
+
+/* Diagrams. */
+.reader-prose figure.r-diagram {
+	position: relative;
+	margin: 1.4em -14px 1.6em;
+	padding: 18px 14px 14px;
+	border: 1px solid var(--hairline);
+	border-radius: 16px;
+	background: rgb(255 255 255 / 0.015);
+	cursor: zoom-in;
+	transition:
+		border-color 200ms,
+		background 200ms;
+}
+.reader-prose figure.r-diagram:hover,
+.reader-prose figure.r-diagram.r-lit {
+	border-color: rgb(111 227 255 / 0.22);
+	background: rgb(111 227 255 / 0.025);
+}
+.reader-prose .r-diagram-svg {
+	display: flex;
+	justify-content: center;
+	min-height: 140px;
+	font-variant-numeric: normal;
+}
+.reader-prose figure.r-diagram:not(.r-ready) .r-diagram-svg {
+	border-radius: 10px;
+	background: linear-gradient(
+		100deg,
+		transparent 30%,
+		rgb(255 255 255 / 0.035) 50%,
+		transparent 70%
+	);
+	background-size: 220% 100%;
+	animation: r-shimmer 1.6s linear infinite;
+}
+@keyframes r-shimmer {
+	from {
+		background-position: 120% 0;
+	}
+	to {
+		background-position: -120% 0;
+	}
+}
+.reader-prose .r-diagram-svg svg {
+	max-width: 100%;
+	height: auto;
+}
+.reader-prose .r-diagram-expand {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	display: flex;
+	padding: 6px;
+	border-radius: 8px;
+	color: var(--color-fg-3);
+	opacity: 0;
+	transition:
+		opacity 150ms,
+		background 150ms,
+		color 150ms;
+}
+.reader-prose figure.r-diagram:hover .r-diagram-expand {
+	opacity: 1;
+}
+.reader-prose .r-diagram-expand:hover {
+	color: var(--color-fg);
+	background: rgb(255 255 255 / 0.06);
+}
+.reader-prose .r-diagram-error {
+	font-family: var(--font-sans);
+	font-size: 12px;
+	color: var(--color-fg-3);
+}
+
+/* Photographs are not bundled with the documents: their captions stand in. */
+.reader-prose .r-photo {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	padding: 12px 14px;
+	border: 1px dashed var(--hairline-2);
+	border-radius: 12px;
+	font-family: var(--font-sans);
+	font-size: 12.5px;
+	line-height: 1.45;
+	color: var(--color-fg-2);
+}
+.reader-prose .r-photo > svg {
+	flex: none;
+	margin-top: 1px;
+	color: var(--color-fg-3);
+}
+.reader-prose .r-photo em {
+	display: block;
+	font-style: normal;
+	font-size: 11px;
+	color: var(--color-fg-4);
+}
+
+/* Facts under the pointer, the one asked for, and the ones the current answer cites. */
+.reader-prose.r-on-fact {
+	cursor: pointer;
+}
+::highlight(r-hover) {
+	background-color: rgb(111 227 255 / 0.11);
+	color: #fff;
+}
+::highlight(r-target) {
+	background-color: rgb(255 201 107 / 0.17);
+	color: #fff;
+}
+::highlight(r-cited) {
+	text-decoration: underline;
+	text-decoration-color: rgb(255 201 107 / 0.6);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 4px;
 }

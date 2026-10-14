@@ -32,9 +32,21 @@
 		dimTopics: boolean;
 		ontopic: (topic: number) => void;
 		onpick: (index: number) => void;
+		/** Pixels covered by the reader on the left (labels stay clear of it). */
+		insetLeft?: number;
 	}
 
-	let { renderer, graph, hovered, cited, showTopics, dimTopics, ontopic, onpick }: Props = $props();
+	let {
+		renderer,
+		graph,
+		hovered,
+		cited,
+		showTopics,
+		dimTopics,
+		ontopic,
+		onpick,
+		insetLeft = 0
+	}: Props = $props();
 
 	const TOPIC_ICONS = [
 		TopicAIcon,
@@ -114,7 +126,9 @@
 				if (!el) continue;
 				renderer.projectPoint(v.copy(centroids[t]), p);
 				el.style.transform = `translate3d(${p.x}px, ${p.y}px, 0) translate(-50%, -50%) scale(${0.92 + 0.08 * reveal})`;
-				el.style.visibility = p.visible && reveal > 0 ? 'visible' : 'hidden';
+				// Not under the reader or the chat panel.
+				const clear = p.x > insetLeft + 40 && p.x < window.innerWidth - 508;
+				el.style.visibility = p.visible && clear && reveal > 0 ? 'visible' : 'hidden';
 				el.style.setProperty('--reveal', String(reveal));
 			}
 			// Earlier citations win: each label takes the first free slot around its star (trying
@@ -123,8 +137,9 @@
 			// Stay on screen and clear of the chat panel on the right.
 			const maxX = window.innerWidth - 490;
 			const maxY = window.innerHeight - 8;
+			const minX = insetLeft + 8;
 			const free = (x: number, y: number, w: number) =>
-				x >= 8 &&
+				x >= minX &&
 				x + w <= maxX &&
 				y >= 8 &&
 				y + LABEL_H <= maxY &&

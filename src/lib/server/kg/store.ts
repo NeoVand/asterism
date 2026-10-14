@@ -454,6 +454,11 @@ export class GraphStore {
 		return this.sectionById.get(id);
 	}
 
+	/** The booklet's and glossary's markdown, line by line. */
+	rawLines(): Record<'booklet' | 'glossary', string[]> {
+		return this.raw as Record<'booklet' | 'glossary', string[]>;
+	}
+
 	roleOf(n: KGNode) {
 		return n.sectionId ? this.sectionById.get(n.sectionId)?.role : undefined;
 	}

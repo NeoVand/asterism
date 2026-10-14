@@ -63,3 +63,11 @@ export const tip: Action<HTMLElement, string | null | undefined> = (node, text) 
 		}
 	};
 };
+
+/** The same tooltip for elements that can't take an action (event delegation in rendered HTML). */
+export function showTip(target: HTMLElement, text: string, delay = 300) {
+	if (timer) clearTimeout(timer);
+	timer = setTimeout(() => show(target, text), delay);
+}
+
+export const hideTip = hide;

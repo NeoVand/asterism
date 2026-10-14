@@ -44,6 +44,13 @@ export {
 	BrainIcon as MemoryIcon,
 	FileUploadIcon as UploadIcon,
 	PlayIcon,
+	BookOpen02Icon as ReaderIcon,
+	LeftToRightListBulletIcon as TocIcon,
+	ArrowLeft01Icon as ChevronLeftIcon,
+	ArrowExpand01Icon as WideIcon,
+	ArrowShrink01Icon as NarrowIcon,
+	Image01Icon as ImageIcon,
+	Maximize01Icon as ExpandIcon,
 	// Topic icons (Parts A–I)
 	DumpTruckIcon as TopicAIcon,
 	Shield01Icon as TopicBIcon,

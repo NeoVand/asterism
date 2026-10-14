@@ -13,7 +13,8 @@
 		TermIcon,
 		EntityIcon,
 		SectionIcon,
-		ChapterIcon
+		ChapterIcon,
+		ReaderIcon
 	} from '#lib/ui/icons.ts';
 	import { tip } from '#lib/ui/tooltip.ts';
 	import { useAsterism, provideCiteNumbering, type NodeDetail } from '#lib/app/context.ts';
@@ -27,9 +28,11 @@
 		onneighbors: (id: string) => void;
 		/** The neighbours are lit (the button toggles them). */
 		neighborsLit?: boolean;
+		/** Open the reader where this node is written. */
+		onread?: (id: string) => void;
 	}
 
-	let { id, onclose, onneighbors, neighborsLit = false }: Props = $props();
+	let { id, onclose, onneighbors, neighborsLit = false, onread }: Props = $props();
 	const app = useAsterism();
 	let detail = $state<NodeDetail | null>(null);
 	let loading = $state(true);
@@ -309,8 +312,9 @@
 				type="button"
 				class="flex items-center gap-1.5 rounded-lg bg-glow/12 px-2.5 py-1.5 text-[12px] text-glow transition-colors hover:bg-glow/20"
 				onclick={() => app.ask(askText(detail!))}
+				use:tip={'Ask the agent about this'}
 			>
-				<Icon icon={SparklesIcon} size={13} /> Ask about this
+				<Icon icon={SparklesIcon} size={13} /> Ask
 			</button>
 			<button
 				type="button"
@@ -319,10 +323,26 @@
 					: 'text-fg-3'}"
 				aria-pressed={neighborsLit}
 				onclick={() => onneighbors(detail!.id)}
+				use:tip={neighborsLit ? 'Put the neighbours out' : 'Light its neighbours in the graph'}
 			>
-				<Icon icon={ConnectIcon} size={13} /> Light neighbors
+				<Icon icon={ConnectIcon} size={13} /> Neighbors
 				<span class="font-mono text-[10.5px] text-fg-4">{detail.degree}</span>
 			</button>
+			{#if onread && detail.type !== 'doc'}
+				<button
+					type="button"
+					class="ml-auto flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-[12px] text-fg-3 transition-colors hover:bg-white/[0.05] hover:text-fg"
+					onclick={() => onread(detail!.id)}
+					aria-label="Read where this is written"
+					use:tip={detail.type === 'source'
+						? 'Find it in the chapter’s sources'
+						: detail.type === 'term'
+							? 'Read its glossary entry'
+							: 'Read it where it is written'}
+				>
+					<Icon icon={ReaderIcon} size={13} /> Read
+				</button>
+			{/if}
 		</div>
 	{/if}
 </div>

@@ -1030,15 +1030,12 @@ export class GraphRenderer {
 		if (!attr) return;
 		(attr.array as Float32Array).set(st);
 		attr.needsUpdate = true;
-		let any = false;
-		for (let i = 0; i < this.count; i++) {
-			if (st[i * 4] > 0.5) {
-				any = true;
-				break;
-			}
-		}
-		this.litAny = any;
-		this.uDimTarget = any ? 1 : 0;
+		// Reading along is ambient: it only half-dims the rest, so the constellation stays in view.
+		let strong = this.layers.focus.size > 0 || this.layers.spot.size > 0;
+		for (let i = 0; i < this.count && !strong; i++) if (base[i * 2] > 0.5) strong = true;
+		const soft = this.layers.reading.size > 0;
+		this.litAny = strong || soft;
+		this.uDimTarget = strong ? 1 : soft ? 0.55 : 0;
 		this.litDirty = true;
 	}
 
@@ -1193,6 +1190,7 @@ export class GraphRenderer {
 		const kick = this.uKick.value as number;
 		if (kick > 0) this.uKick.value = kick < 0.05 ? 0 : kick * 0.94;
 		this.tickBundling(dt);
+		this.tickInsets(dt);
 
 		if (this.fly) {
 			const k = Math.min(1, (performance.now() - this.fly.t0) / this.fly.dur);
@@ -1404,12 +1402,32 @@ export class GraphRenderer {
 
 	/* ------------------------------------------------------------------ */
 
-	/** Pixels on the right covered by UI: the projection centre shifts to the visible area. */
+	/** Pixels covered by UI on each side: the projection centre shifts to the visible area. */
+	insetLeft = 0;
 	insetRight = 0;
+	/** The insets as currently drawn (they ease toward the targets when a panel opens). */
+	private inset = { l: 0, r: 0 };
 
 	setInsetRight(px: number) {
-		this.insetRight = px;
-		this.resize();
+		this.setInsets(this.insetLeft, px);
+	}
+
+	setInsets(left: number, right: number, animate = true) {
+		this.insetLeft = left;
+		this.insetRight = right;
+		if (!animate || !this.graph) {
+			this.inset = { l: left, r: right };
+			this.resize();
+		}
+	}
+
+	private tickInsets(dt: number) {
+		const { l, r } = this.inset;
+		if (l === this.insetLeft && r === this.insetRight) return;
+		const k = Math.min(1, dt * 7);
+		const step = (a: number, b: number) => (Math.abs(b - a) < 0.5 ? b : a + (b - a) * k);
+		this.inset = { l: step(l, this.insetLeft), r: step(r, this.insetRight) };
+		this.updateProjection();
 	}
 
 	resize() {
@@ -1422,9 +1440,22 @@ export class GraphRenderer {
 		// edges cover more of each pixel, so dim them to keep the haze from washing out.
 		this.uEdgeAlpha.value =
 			0.016 * THREE.MathUtils.clamp((w * this.renderer.getPixelRatio()) / 3200, 0.5, 1.2);
-		const inset = Math.min(this.insetRight, w * 0.6);
-		this.camera.aspect = (w + inset) / h;
-		if (inset > 0) this.camera.setViewOffset(w + inset, h, inset, 0, w, h);
+		this.updateProjection();
+	}
+
+	/**
+	 * Centre the projection on the area between the side panels: a wider virtual frustum, viewed
+	 * through a window offset by the difference of the insets.
+	 */
+	private updateProjection() {
+		const parent = this.canvas.parentElement;
+		const w = parent?.clientWidth ?? window.innerWidth;
+		const h = parent?.clientHeight ?? window.innerHeight;
+		if (!w || !h) return;
+		const d = THREE.MathUtils.clamp(this.inset.r - this.inset.l, -w * 0.6, w * 0.6);
+		const full = w + Math.abs(d);
+		this.camera.aspect = full / h;
+		if (Math.abs(d) > 0.5) this.camera.setViewOffset(full, h, Math.max(0, d), 0, w, h);
 		else this.camera.clearViewOffset();
 		this.camera.updateProjectionMatrix();
 	}

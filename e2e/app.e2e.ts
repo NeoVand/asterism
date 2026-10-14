@@ -21,7 +21,7 @@ test('search palette finds a node and opens its card', async ({ page }) => {
 	).toBeVisible();
 	await page.keyboard.press('Enter');
 	await expect(page.getByRole('heading', { name: /Volvo CE/ })).toBeVisible();
-	await expect(page.getByText('Light neighbors')).toBeVisible();
+	await expect(page.getByRole('button', { name: 'Neighbors' })).toBeVisible();
 });
 
 test('a fact card with restatements opens without errors', async ({ page }) => {
@@ -84,4 +84,52 @@ test('a question streams an answer with citations into the chat', async ({ page 
 	await expect(page.locator('.cite-chip').first()).toBeVisible({ timeout: 150_000 });
 	await expect(page.locator('.prose-asterism').last()).toContainText('2027');
 	await expect(page.getByText(/Answer constellation/)).toBeVisible({ timeout: 30_000 });
+});
+
+test('the reader opens the booklet, follows its contents and draws its diagrams', async ({
+	page
+}) => {
+	const errors: string[] = [];
+	page.on('pageerror', (e) => errors.push(e.message));
+	page.on('console', (m) => m.type() === 'error' && errors.push(m.text()));
+	await page.addInitScript(() => localStorage.removeItem('asterism.reader.v1'));
+	await page.goto('/');
+	await expect(page.getByText(/nodes$/).first()).toBeVisible({ timeout: 30_000 });
+	await page.getByRole('button', { name: 'Read', exact: true }).click();
+	const reader = page.getByRole('region', { name: 'Reader' });
+	await expect(reader.getByRole('heading', { level: 2, name: 'Introduction' })).toBeVisible();
+
+	await reader.getByRole('button', { name: 'Contents' }).first().click();
+	await reader
+		.getByRole('navigation', { name: 'Contents' })
+		.getByText('Rules and acceptance criteria')
+		.click();
+	await expect(reader.getByRole('heading', { level: 2, name: /^Chapter 3:/ })).toBeVisible();
+	await expect(reader.locator('.r-cite[data-src]').first()).toBeVisible();
+
+	const fig = reader.locator('figure.r-diagram').first();
+	await fig.scrollIntoViewIfNeeded();
+	await expect(fig.locator('.r-diagram-svg svg')).toBeVisible({ timeout: 20_000 });
+	await fig.click();
+	await expect(page.getByRole('dialog', { name: 'Diagram' })).toBeVisible();
+	await page.keyboard.press('Escape');
+	await expect(page.getByRole('dialog', { name: 'Diagram' })).toBeHidden();
+	expect(errors).toEqual([]);
+});
+
+test('a node card opens the reader where the node is written', async ({ page }) => {
+	await page.addInitScript(() => localStorage.removeItem('asterism.reader.v1'));
+	await page.goto('/');
+	await expect(page.getByText(/nodes$/).first()).toBeVisible({ timeout: 30_000 });
+	await page.keyboard.press('Meta+k');
+	await page
+		.getByPlaceholder('Search facts, concepts, standards, sources…')
+		.fill('Time to collision');
+	await expect(
+		page.getByRole('dialog', { name: 'Search the graph' }).getByRole('button').first()
+	).toBeVisible();
+	await page.keyboard.press('Enter');
+	await page.getByRole('button', { name: 'Read where this is written' }).click();
+	const reader = page.getByRole('region', { name: 'Reader' });
+	await expect(reader.getByRole('heading', { name: /^Time to collision/ })).toBeInViewport();
 });
