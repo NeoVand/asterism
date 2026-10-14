@@ -68,8 +68,10 @@
 				{#each form.questions as q (q.id)}
 					<div class="flex gap-2">
 						<Icon icon={CheckIcon} size={13} class="mt-0.5 shrink-0 text-ok/80" />
-						<span class="text-fg-3">{q.label}</span>
-						<span class="ml-auto shrink-0 text-right text-fg-2">{shown(answers[q.id])}{q.unit && typeof answers[q.id] === 'number' ? ` ${q.unit}` : ''}</span>
+						<div class="min-w-0">
+							<div class="text-[11px] text-fg-3">{q.label}</div>
+							<div class="text-fg">{shown(answers[q.id])}{q.unit && typeof answers[q.id] === 'number' ? ` ${q.unit}` : ''}</div>
+						</div>
 					</div>
 				{/each}
 			{/if}
@@ -88,11 +90,13 @@
 								<button
 									type="button"
 									disabled={!active}
-									class="rounded-lg border px-2.5 py-1 text-[12px] transition-all duration-150 {on
-										? 'border-glow/50 bg-glow/15 text-fg shadow-[0_0_14px_-6px_var(--color-glow)]'
+									class="flex items-center gap-1.5 rounded-lg border px-2.5 py-1 text-[12px] transition-all duration-150 {on
+										? 'border-glow/80 bg-glow/20 text-white shadow-[0_0_16px_-4px_var(--color-glow)]'
 										: 'border-white/[0.08] bg-white/[0.02] text-fg-2 hover:border-white/20 hover:text-fg'}"
+									aria-pressed={on}
 									onclick={() => (q.kind === 'multi' ? toggle(q.id, opt) : (values[q.id] = opt))}
 								>
+									{#if on}<Icon icon={CheckIcon} size={12} stroke={2.2} class="text-glow" />{/if}
 									{opt}
 								</button>
 							{/each}

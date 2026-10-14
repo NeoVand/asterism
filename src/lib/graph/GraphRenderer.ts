@@ -131,6 +131,12 @@ export class GraphRenderer {
 	private uBundle = uniform(0.42);
 	private uEdgeAlpha = uniform(0.016);
 	private uEdgeLit = uniform(0);
+	/** Edges fade in as the layout unfolds. */
+	private uEdgeFade = uniform(0);
+	/** 0 → 1 as the layout settles (drives label reveal). */
+	get layoutProgress() {
+		return 1 - Math.min(1, (this.uAlpha.value as number) / 0.5);
+	}
 	private nodes: THREE.Sprite | null = null;
 	private edges: THREE.LineSegments | null = null;
 	private trails: THREE.LineSegments | null = null;
@@ -244,9 +250,9 @@ export class GraphRenderer {
 		const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647) * 2 - 1;
 		for (let i = 0; i < n; i++) {
 			const a = this.anchors[g.topics[i]] ?? this.anchors[0];
-			pos[i * 4] = a.x * 0.25 + rnd() * 30;
-			pos[i * 4 + 1] = a.y * 0.25 + rnd() * 30;
-			pos[i * 4 + 2] = a.z * 0.25 + rnd() * 30;
+			pos[i * 4] = a.x * 0.6 + rnd() * 55;
+			pos[i * 4 + 1] = a.y * 0.6 + rnd() * 55;
+			pos[i * 4 + 2] = a.z * 0.6 + rnd() * 55;
 			pos[i * 4 + 3] = 1;
 			const type = TYPE_INDEX[g.types[i]];
 			info[i * 4] = g.topics[i];
@@ -326,6 +332,7 @@ export class GraphRenderer {
 		this.buildNodes(n);
 		this.buildEdges(g, anchorsU);
 		this.uAlpha.value = 1;
+		this.uEdgeFade.value = 0;
 		this.frame = 0;
 		this.settledFired = false;
 	}
@@ -457,7 +464,7 @@ export class GraphRenderer {
 				return vec4(gold.mul(flow.mul(1.6).add(0.55)), 1);
 			}
 			const flow = sin(vT.mul(9).sub(this.uTime.mul(2.6))).mul(0.5).add(0.5);
-			const base = this.uEdgeAlpha.mul(vW).mul(mix(float(1), float(0.22), this.uDim));
+			const base = this.uEdgeAlpha.mul(vW).mul(mix(float(1), float(0.22), this.uDim)).mul(this.uEdgeFade);
 			const litGain = vBoth.mul(flow.mul(0.6).add(0.45)).mul(mix(float(0.55), float(1.25), vCited));
 			const c = mix(vCol, vec3(1, 0.85, 0.5), vCited.mul(0.5));
 			return vec4(c.mul(base.add(litGain.mul(this.uEdgeLit.mul(0.6).add(0.4)))), 1);
@@ -722,6 +729,8 @@ export class GraphRenderer {
 		this.uTime.value = (this.uTime.value as number) + dt;
 		const dimNow = this.uDim.value as number;
 		this.uDim.value = dimNow + (this.uDimTarget - dimNow) * Math.min(1, dt * 3);
+		const fade = this.uEdgeFade.value as number;
+		if (fade < 1) this.uEdgeFade.value = Math.min(1, fade + dt * 0.45);
 		const edgeLit = this.uEdgeLit.value as number;
 		this.uEdgeLit.value = edgeLit + ((this.litAny ? 1 : 0) - edgeLit) * Math.min(1, dt * 2);
 
@@ -729,10 +738,14 @@ export class GraphRenderer {
 			const alpha = this.uAlpha.value as number;
 			if (alpha > 0.004) {
 				const stride = (this as N)._stride as number;
-				(this as N)._uPhase.value = this.frame % stride;
-				this.renderer.compute(this.computeForces);
-				this.renderer.compute(this.computeIntegrate);
-				this.uAlpha.value = alpha * 0.988;
+				// Hot phase: two simulation steps per frame so the constellation unfolds quickly.
+				const steps = alpha > 0.2 ? 2 : 1;
+				for (let k = 0; k < steps; k++) {
+					(this as N)._uPhase.value = (this.frame * 2 + k) % stride;
+					this.renderer.compute(this.computeForces);
+					this.renderer.compute(this.computeIntegrate);
+				}
+				this.uAlpha.value = alpha * 0.985;
 				if (this.frame % 12 === 0) this.readback();
 			} else if (!this.settledFired) {
 				this.settledFired = true;

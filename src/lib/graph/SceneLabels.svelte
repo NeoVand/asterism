@@ -61,12 +61,14 @@
 				centroids = Array.from({ length: 9 }, (_, t) => renderer!.topicCentroid(t));
 				lastCentroid = now;
 			}
+			const reveal = Math.max(0, Math.min(1, (renderer.layoutProgress - 0.55) / 0.35));
 			for (let t = 0; t < topicEls.length; t++) {
 				const el = topicEls[t];
 				if (!el) continue;
 				renderer.projectPoint(v.copy(centroids[t]), p);
-				el.style.transform = `translate3d(${p.x}px, ${p.y}px, 0) translate(-50%, -50%)`;
-				el.style.visibility = p.visible ? 'visible' : 'hidden';
+				el.style.transform = `translate3d(${p.x}px, ${p.y}px, 0) translate(-50%, -50%) scale(${0.92 + 0.08 * reveal})`;
+				el.style.visibility = p.visible && reveal > 0 ? 'visible' : 'hidden';
+				el.style.setProperty('--reveal', String(reveal));
 			}
 			const placed: [number, number][] = [];
 			for (let k = 0; k < citedEls.length; k++) {
@@ -102,7 +104,7 @@
 				type="button"
 				bind:this={topicEls[i]}
 				class="pointer-events-auto absolute top-0 left-0 flex items-center gap-2 rounded-full py-1 pr-3 pl-1 transition-opacity duration-500 will-change-transform hover:bg-ink-900/50"
-				style:opacity={dimTopics ? 0.35 : 0.92}
+				style:opacity="calc(var(--reveal, 0) * {dimTopics ? 0.35 : 0.92})"
 				onclick={() => ontopic(i)}
 			>
 				<span

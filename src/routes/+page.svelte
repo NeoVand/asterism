@@ -78,8 +78,10 @@
 	}
 
 	let textTimer: ReturnType<typeof setTimeout> | null = null;
+	let litThread: string | null | undefined = undefined;
 	chat.hooks = {
 		turnStart() {
+			litThread = chat.currentId;
 			renderer?.clearLights();
 			cited = [];
 			answerIds = [];
@@ -101,7 +103,6 @@
 	};
 
 	// Re-light a conversation's answer when it is opened from history.
-	let litThread: string | null | undefined = undefined;
 	$effect(() => {
 		const id = chat.currentId;
 		if (!renderer || chat.busy || id === litThread) return;

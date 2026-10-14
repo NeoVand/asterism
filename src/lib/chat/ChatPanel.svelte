@@ -32,6 +32,16 @@
 	const messages = $derived(thread?.messages ?? []);
 	const waiting = $derived(messages[messages.length - 1]?.status === 'waiting');
 
+	// A new turn (sent or answered) always brings the view back to the stream.
+	let seenTurns = 0;
+	$effect(() => {
+		const turns = messages.length;
+		if (turns !== seenTurns) {
+			seenTurns = turns;
+			stick = true;
+		}
+	});
+
 	// Follow the stream unless the user scrolled up to read.
 	$effect(() => {
 		// track content growth
