@@ -7,6 +7,7 @@
 	import SearchPalette from '#lib/graph/SearchPalette.svelte';
 	import ChatPanel from '#lib/chat/ChatPanel.svelte';
 	import SettingsModal from '#lib/chat/SettingsModal.svelte';
+	import Tour from '#lib/app/Tour.svelte';
 	import Icon from '#lib/ui/Icon.svelte';
 	import { CloseIcon, FocusIcon, LogoIcon, MinusIcon, PlusIcon, ResetIcon, SearchIcon } from '#lib/ui/icons.ts';
 	import { tip } from '#lib/ui/tooltip.ts';
@@ -38,7 +39,11 @@
 	const detailCache = new Map<string, Promise<NodeDetail | null>>();
 	const idx = (ids: string[]) => ids.map((id) => index.get(id)).filter((i): i is number => i != null);
 
-	provideAsterism({
+	function provideSelect(id: string) {
+		ctx.select(id);
+	}
+
+	const ctx = provideAsterism({
 		brief(id) {
 			const i = index.get(id);
 			if (i == null || !graph) return null;
@@ -128,6 +133,43 @@
 	});
 
 	let dragging = $state(false);
+	let touring = $state(false);
+
+	/** The best-connected concepts and entities of a topic: what a tour step lights up. */
+	function topicHubs(t: number, count: number): number[] {
+		if (!graph) return [];
+		const deg = new Map<number, number>();
+		for (let e = 0; e < graph.edgeSrc.length; e++) {
+			const a = graph.edgeSrc[e];
+			const b = graph.edgeDst[e];
+			deg.set(a, (deg.get(a) ?? 0) + 1);
+			deg.set(b, (deg.get(b) ?? 0) + 1);
+		}
+		const list: number[] = [];
+		for (let i = 0; i < graph.ids.length; i++)
+			if (graph.topics[i] === t && (graph.types[i] === 'term' || graph.types[i] === 'entity')) list.push(i);
+		return list.sort((a, b) => (deg.get(b) ?? 0) - (deg.get(a) ?? 0)).slice(0, count);
+	}
+
+	function tourStep(t: number) {
+		if (!renderer) return;
+		selected = null;
+		renderer.clearLights();
+		cited = [];
+		answerIds = [];
+		const hubs = topicHubs(t, 40);
+		renderer.light(hubs, 'read');
+		renderer.light(hubs.slice(0, 8), 'cited');
+		cited = hubs.slice(0, 6).map((index, k) => ({ index, n: k + 1 }));
+		renderer.flyTo(hubs.slice(0, 24), { duration: 1600 });
+	}
+
+	function endTour() {
+		touring = false;
+		renderer?.clearLights();
+		cited = [];
+		renderer?.resetView();
+	}
 
 	async function reloadGraph() {
 		const w = (await (await fetch('/api/graph')).json()) as GraphWire;
@@ -276,6 +318,7 @@
 			{graph}
 			{hovered}
 			{cited}
+			onpick={(i) => graph && provideSelect(graph.ids[i])}
 			showTopics={settings.value.labels}
 			dimTopics={cited.length > 0 || chat.busy}
 			ontopic={flyTopic}
@@ -312,7 +355,11 @@
 			</div>
 		{/if}
 
-		{#if answerIds.length && !chat.busy}
+		{#if touring}
+			<Tour onstep={tourStep} onclose={endTour} />
+		{/if}
+
+		{#if answerIds.length && !chat.busy && !touring}
 			<div class="pointer-events-auto absolute bottom-4 left-1/2 -translate-x-1/2" transition:fly={{ y: 10, duration: 300 }}>
 				<div
 					class="flex items-center gap-2.5 rounded-full border border-gold/20 bg-ink-900/70 py-1.5 pr-1.5 pl-3.5 text-[12px] whitespace-nowrap text-fg-2 backdrop-blur-md"
@@ -382,7 +429,13 @@
 	</div>
 
 	<div class="absolute top-3 right-3 bottom-3" style:width="{PANEL - 24}px">
-		<ChatPanel bind:this={panel} {stats} onopensettings={() => (settingsOpen = true)} onshowupload={showUpload} />
+		<ChatPanel
+			bind:this={panel}
+			{stats}
+			onopensettings={() => (settingsOpen = true)}
+			onshowupload={showUpload}
+			ontour={() => (touring = true)}
+		/>
 	</div>
 
 	<SearchPalette open={paletteOpen} onclose={() => (paletteOpen = false)} />

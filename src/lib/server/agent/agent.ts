@@ -8,7 +8,7 @@ import { CompositeBackend, FilesystemBackend, StateBackend, createDeepAgent } fr
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { makeTools } from './tools.ts';
-import { DEFAULT_SYSTEM_PROMPT, RESEARCHER_PROMPT } from './prompt.ts';
+import { DEEP_ADDENDUM, DEFAULT_SYSTEM_PROMPT, RESEARCHER_PROMPT } from './prompt.ts';
 
 export interface AgentSettings {
 	apiKey: string;
@@ -55,7 +55,7 @@ async function build(s: AgentSettings) {
 		name: 'asterism',
 		model,
 		tools: [...graphTools, t.showUi, t.askUser],
-		systemPrompt: s.systemPrompt?.trim() || DEFAULT_SYSTEM_PROMPT,
+		systemPrompt: (s.systemPrompt?.trim() || DEFAULT_SYSTEM_PROMPT) + (s.effort === 'medium' ? DEEP_ADDENDUM : ''),
 		subagents: [
 			{
 				name: 'researcher',

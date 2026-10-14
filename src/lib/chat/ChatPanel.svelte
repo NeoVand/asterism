@@ -14,9 +14,10 @@
 		stats: { facts: number; sources: number; concepts: number } | null;
 		onopensettings: () => void;
 		onshowupload: (ids: string[]) => void;
+		ontour: () => void;
 	}
 
-	let { stats, onopensettings, onshowupload }: Props = $props();
+	let { stats, onopensettings, onshowupload, ontour }: Props = $props();
 	let fileInput: HTMLInputElement;
 
 	let composer: Composer;
@@ -158,7 +159,7 @@
 
 	<div bind:this={scroller} {onscroll} class="relative min-h-0 flex-1 overflow-y-auto">
 		{#if messages.length === 0}
-			<EmptyState {stats} onpick={(t) => composer?.fill(t, true)} />
+			<EmptyState {stats} onpick={(t) => composer?.fill(t, true)} {ontour} />
 		{:else}
 			<div class="space-y-6 px-4 pt-5 pb-8">
 				{#each messages as m, i (m.id)}

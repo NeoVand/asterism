@@ -31,9 +31,10 @@
 		showTopics: boolean;
 		dimTopics: boolean;
 		ontopic: (topic: number) => void;
+		onpick: (index: number) => void;
 	}
 
-	let { renderer, graph, hovered, cited, showTopics, dimTopics, ontopic }: Props = $props();
+	let { renderer, graph, hovered, cited, showTopics, dimTopics, ontopic, onpick }: Props = $props();
 
 	const TOPIC_ICONS = [TopicAIcon, TopicBIcon, TopicCIcon, TopicDIcon, TopicEIcon, TopicFIcon, TopicGIcon, TopicHIcon, TopicIIcon];
 
@@ -44,7 +45,7 @@
 	});
 
 	let topicEls: HTMLElement[] = $state([]);
-	let citedEls: HTMLElement[] = $state([]);
+	let citedEls: HTMLButtonElement[] = $state([]);
 	let hoverEl: HTMLElement | null = $state(null);
 	let centroids: THREE.Vector3[] = [];
 	let lastCentroid = 0;
@@ -124,16 +125,18 @@
 	{/if}
 
 	{#each cited as c, k (c.index)}
-		<div
+		<button
+			type="button"
 			bind:this={citedEls[k]}
-			class="absolute top-0 left-0 flex max-w-[220px] items-center gap-1.5 rounded-md bg-ink-950/75 py-0.5 pr-2 pl-0.5 text-[11px] text-fg-2 backdrop-blur-sm transition-opacity duration-300 will-change-transform"
+			class="pointer-events-auto absolute top-0 left-0 flex max-w-[220px] items-center gap-1.5 rounded-md bg-ink-950/75 py-0.5 pr-2 pl-0.5 text-[11px] text-fg-2 backdrop-blur-sm transition-[opacity,color] duration-300 will-change-transform hover:text-fg"
+			onclick={() => onpick(c.index)}
 		>
 			<span
 				class="flex h-[15px] min-w-[15px] items-center justify-center rounded-[4px] px-1 font-mono text-[9.5px] font-semibold text-ink-950"
 				style:background={TOPIC_COLORS[graph?.topics[c.index] ?? 0]}>{c.n}</span
 			>
 			<span class="truncate">{clip(graph?.labels[c.index] ?? '', 40)}</span>
-		</div>
+		</button>
 	{/each}
 
 	{#if hovered != null && graph}

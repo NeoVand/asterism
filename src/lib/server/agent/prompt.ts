@@ -26,3 +26,7 @@ Return format:
 - 5–15 findings, one line each, every line ending with the fact ids that support it, e.g. "EU Machinery Regulation 2023/1230 applies from 20 Jan 2027 [f412, f1033]".
 - Then "Tensions:" (contradictions, vendor-only or on-road-only evidence, gaps) and "Also relevant:" (ids worth reading).
 No preamble. Only ids you saw in tool results.`;
+
+export const DEEP_ADDENDUM = `
+
+Deep research mode is on. Unless the question is a quick definition: break it into 3–5 distinct sub-questions, launch a researcher subagent for each in the same step (parallel task calls), read the key facts they return, then write a complete, well-structured answer that covers every sub-question.`;

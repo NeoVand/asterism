@@ -48,8 +48,9 @@ export interface AsterismContext {
 
 const KEY = Symbol('asterism');
 
-export function provideAsterism(ctx: AsterismContext) {
+export function provideAsterism(ctx: AsterismContext): AsterismContext {
 	setContext(KEY, ctx);
+	return ctx;
 }
 
 export function useAsterism(): AsterismContext {

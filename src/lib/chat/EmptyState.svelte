@@ -1,14 +1,15 @@
 <script lang="ts">
 	import { fade, fly } from 'svelte/transition';
 	import Icon from '#lib/ui/Icon.svelte';
-	import { LogoIcon, PlanIcon, TopicCIcon, TopicHIcon, TopicAIcon, IdeaIcon } from '#lib/ui/icons.ts';
+	import { LogoIcon, PlanIcon, PlayIcon, TopicCIcon, TopicHIcon, TopicAIcon, IdeaIcon } from '#lib/ui/icons.ts';
 
 	interface Props {
 		stats: { facts: number; sources: number; concepts: number } | null;
 		onpick: (text: string) => void;
+		ontour: () => void;
 	}
 
-	let { stats, onpick }: Props = $props();
+	let { stats, onpick, ontour }: Props = $props();
 
 	const STARTERS = [
 		{
@@ -70,8 +71,18 @@
 			</button>
 		{/each}
 	</div>
-	<div class="mt-4 flex items-center gap-1.5 text-[11px] text-fg-4">
-		<Icon icon={IdeaIcon} size={12} />
-		Click any star in the graph to read it, or press <kbd class="rounded bg-white/[0.06] px-1 font-mono text-[10px]">⌘K</kbd> to search.
-	</div>
+	<button
+		type="button"
+		class="group mt-4 flex items-center gap-2 rounded-full border border-white/[0.07] py-1.5 pr-3.5 pl-2 text-[12px] text-fg-2 transition-all hover:border-glow/30 hover:text-fg"
+		onclick={ontour}
+	>
+		<span class="flex size-5 items-center justify-center rounded-full bg-glow/15 text-glow transition-transform group-hover:scale-110">
+			<Icon icon={PlayIcon} size={10} stroke={2} />
+		</span>
+		New here? Take the one-minute tour
+	</button>
+	<p class="mt-3 max-w-[330px] text-center text-[11px] leading-relaxed text-fg-4">
+		<Icon icon={IdeaIcon} size={12} class="mr-1 inline -translate-y-px" />Click any star to read it, press
+		<kbd class="rounded bg-white/[0.06] px-1 font-mono text-[10px]">⌘K</kbd> to search, or drop a document to weave it in.
+	</p>
 </div>
