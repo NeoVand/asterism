@@ -117,5 +117,7 @@ export function blockToMarkdown(b: import('./schema.ts').Block): string {
 			return flowMd(b);
 		case 'sources':
 			return `**${b.title}**\n\n${b.ids.map((id) => `- [${id}]`).join('\n')}${b.note ? `\n\n${b.note}` : ''}`;
+		case 'diagram':
+			return `**Diagram ${b.id}** (from the documents)${b.note ? `\n\n${b.note}` : ''}`;
 	}
 }

@@ -8,7 +8,8 @@ import type {
 	RisksBlock as RisksSchema,
 	ChecklistBlock as ChecklistSchema,
 	FlowBlock as FlowSchema,
-	SourcesBlock as SourcesSchema
+	SourcesBlock as SourcesSchema,
+	DiagramBlock as DiagramSchema
 } from './schema.ts';
 
 export type PlanBlock = z.infer<typeof PlanSchema>;
@@ -19,5 +20,6 @@ export type RisksBlock = z.infer<typeof RisksSchema>;
 export type ChecklistBlock = z.infer<typeof ChecklistSchema>;
 export type FlowBlock = z.infer<typeof FlowSchema>;
 export type SourcesBlock = z.infer<typeof SourcesSchema>;
+export type DiagramBlock = z.infer<typeof DiagramSchema>;
 
 export type Tone = 'good' | 'warn' | 'bad' | 'neutral';

@@ -110,6 +110,15 @@ export const SourcesBlock = z.object({
 	note: z.string().optional()
 });
 
+export const DiagramBlock = z.object({
+	type: z.literal('diagram'),
+	id: z
+		.string()
+		.regex(/^m\d+$/)
+		.describe('Diagram id from find_diagrams, e.g. "m4"'),
+	note: z.string().optional().describe('One line on what to look at in it')
+});
+
 export const Block = z.discriminatedUnion('type', [
 	PlanBlock,
 	TimelineBlock,
@@ -118,7 +127,8 @@ export const Block = z.discriminatedUnion('type', [
 	RisksBlock,
 	ChecklistBlock,
 	FlowBlock,
-	SourcesBlock
+	SourcesBlock,
+	DiagramBlock
 ]);
 
 export type Block = z.infer<typeof Block>;

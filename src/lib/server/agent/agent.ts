@@ -76,7 +76,7 @@ async function build(s: AgentSettings) {
 	return createDeepAgent({
 		name: 'asterism',
 		model,
-		tools: [...graphTools, t.evidenceBrief, t.showUi, t.askUser],
+		tools: [...graphTools, t.evidenceBrief, t.findDiagrams, t.showUi, t.askUser],
 		// write_todos: visible step plans for multi-part questions (opt-in in deepagents).
 		middleware: [todoListMiddleware()],
 		systemPrompt:

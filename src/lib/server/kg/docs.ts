@@ -358,7 +358,7 @@ const clean = (s: string) =>
 	s
 		.replace(/\*\*|__|`/g, '')
 		.replace(/^[_*]|[_*]$/g, '')
-		.replace(/\s*\[[\d,\s–-]+\]\s*$/, '')
+		.replace(/\s*\[(?:[\d,\s–-]+|Chapters?[^\]]*|Introduction)\]\s*\.?$/, '')
 		.trim();
 
 /**

@@ -22,3 +22,18 @@ describe('search_graph', () => {
 		expect(outside).toMatch(/Caterpillar/);
 	});
 });
+
+describe('diagrams', () => {
+	it('find_diagrams returns ids with where they sit', async () => {
+		const out: string = await t.findDiagrams.invoke({ query: 'warn or brake decision logic' });
+		expect(out).toMatch(/^\d+ diagrams?/);
+		expect(out).toContain('m26 · Glossary');
+	});
+
+	it('show_ui only accepts diagrams that exist', async () => {
+		const bad: string = await t.showUi.invoke({ block: { type: 'diagram', id: 'm999' } });
+		expect(bad).toMatch(/^Unknown diagram m999/);
+		const ok: string = await t.showUi.invoke({ block: { type: 'diagram', id: 'm26' } });
+		expect(ok).toMatch(/^Rendered the diagram block/);
+	});
+});

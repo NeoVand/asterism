@@ -9,6 +9,7 @@
 	import ChecklistBlock from './ChecklistBlock.svelte';
 	import FlowBlock from './FlowBlock.svelte';
 	import SourcesBlock from './SourcesBlock.svelte';
+	import DiagramBlock from './DiagramBlock.svelte';
 
 	interface Props {
 		block: Block;
@@ -35,6 +36,8 @@
 		<FlowBlock {block} />
 	{:else if block.type === 'sources'}
 		<SourcesBlock {block} />
+	{:else if block.type === 'diagram'}
+		<DiagramBlock {block} />
 	{/if}
 
 	{#snippet failed()}

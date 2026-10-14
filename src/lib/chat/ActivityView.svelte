@@ -68,6 +68,12 @@
 					text: `Searched prior work “${a.query}”`,
 					detail: s.summary?.match(/^\d+ sources/)?.[0]
 				};
+			case 'find_diagrams':
+				return {
+					icon: BlockIcon,
+					text: `Looked for diagrams of “${a.query}”`,
+					detail: s.summary?.match(/^\d+ diagrams?/)?.[0]
+				};
 			case 'explore':
 				return { icon: ConnectIcon, text: `Explored ${name(a.id)}` };
 			case 'read_facts': {
@@ -93,7 +99,10 @@
 				const t = (a.block as { type?: string; title?: string } | undefined) ?? {};
 				return {
 					icon: BlockIcon,
-					text: `Built a ${t.type ?? 'block'}${t.title ? ` · ${t.title}` : ''}`
+					text:
+						t.type === 'diagram'
+							? 'Showed a diagram from the documents'
+							: `Built a ${t.type ?? 'block'}${t.title ? ` · ${t.title}` : ''}`
 				};
 			}
 			case 'ask_user':
@@ -141,7 +150,7 @@
 	const counts = $derived.by(() => {
 		const c = { search: 0, facts: 0, hubs: 0 };
 		for (const s of msg.steps) {
-			if (s.name === 'search_graph' || s.name === 'find_sources') c.search++;
+			if (['search_graph', 'find_sources', 'find_diagrams'].includes(s.name)) c.search++;
 			if (s.name === 'read_facts') c.facts += ((s.args.ids as string[]) ?? []).length;
 			if (s.name === 'explore') c.hubs++;
 		}
@@ -152,7 +161,7 @@
 		[
 			counts.search ? `${counts.search} ${counts.search === 1 ? 'search' : 'searches'}` : '',
 			counts.hubs ? `${counts.hubs} ${counts.hubs === 1 ? 'hub' : 'hubs'}` : '',
-			counts.facts ? `${counts.facts} facts read` : '',
+			counts.facts ? `${counts.facts} ${counts.facts === 1 ? 'fact' : 'facts'} read` : '',
 			msg.tasks.length ? `${msg.tasks.length} researcher${msg.tasks.length > 1 ? 's' : ''}` : ''
 		]
 			.filter(Boolean)
@@ -189,7 +198,10 @@
 				{#if live}
 					{msg.parts.length ? 'Writing' : 'Working'}{summary ? ` · ${summary}` : ''}
 				{:else}
-					{summary || 'Answered from memory'} · {seconds.toFixed(1)}s
+					{summary ||
+						(msg.steps.length
+							? `${msg.steps.length} ${msg.steps.length === 1 ? 'step' : 'steps'}`
+							: 'Answered from memory')} · {seconds.toFixed(1)}s
 				{/if}
 			</span>
 			<span

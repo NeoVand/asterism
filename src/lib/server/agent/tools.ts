@@ -10,6 +10,7 @@ import { z } from 'zod';
 import type { KGNode, NodeType, RelType } from '#lib/kg/types.ts';
 import { Block, QuestionForm, type Answers } from '#lib/blocks/schema.ts';
 import { getStore, type GraphStore } from '../kg/store.ts';
+import { diagram, diagrams, findDiagrams as searchDiagrams } from '../kg/docs.ts';
 import {
 	alsoNote,
 	byImportance,
@@ -617,6 +618,8 @@ export function makeTools() {
 					.join('; ')}. Fix the JSON and call show_ui again.`;
 			}
 			const store = getStore();
+			if (parsed.data.type === 'diagram' && !diagram(store, parsed.data.id))
+				return `Unknown diagram ${parsed.data.id}. Call find_diagrams and use one of its ids.`;
 			const ids =
 				JSON.stringify(parsed.data)
 					.match(/"[fstecx]\d+"/g)
@@ -637,9 +640,45 @@ export function makeTools() {
 		{
 			name: 'show_ui',
 			description:
-				'Render an interactive block in the chat: plan (phases, items, gates), timeline (dated events, deadlines), comparison (table), metrics (key figures), risks (likelihood × impact with mitigations), checklist, flow (steps) or sources (list of source ids). Items carry `cites` (graph ids) that light up on hover. Read the ui-blocks skill before the first use.',
+				'Render an interactive block in the chat: plan (phases, items, gates), timeline (dated events, deadlines), comparison (table), metrics (key figures), risks (likelihood × impact with mitigations), checklist, flow (steps), sources (list of source ids) or diagram (one of the documents’ own diagrams, by id from find_diagrams). Items carry `cites` (graph ids) that light up on hover. Read the ui-blocks skill before the first use.',
 			schema: z.object({
 				block: z.any().describe('One block object; see the ui-blocks skill for shapes')
+			})
+		}
+	);
+
+	const findDiagrams = tool(
+		async ({ query, chapter }, config) => {
+			const store = getStore();
+			const hits = searchDiagrams(store, query, chapter).slice(0, 6);
+			if (!hits.length)
+				return `No diagram matches "${query}"${chapter != null ? ` in Ch${chapter}` : ''}. The documents have ${diagrams(store).length} diagrams; try broader words, or no chapter.`;
+			await emit(
+				config,
+				'read',
+				hits.map((d) => d.section).filter((s) => store.get(s))
+			);
+			return [
+				`${hits.length} diagram${hits.length > 1 ? 's' : ''} (show one with show_ui({ block: { type: "diagram", id } })):`,
+				...hits.map(
+					(d) =>
+						`${d.id} · ${d.where} — ${d.caption} (${d.kind}${d.labels.length ? `: ${d.labels.slice(0, 8).join(' · ')}` : ''}) · section ${d.section}`
+				)
+			].join('\n');
+		},
+		{
+			name: 'find_diagrams',
+			description:
+				'Find the diagrams drawn in the booklet and glossary (flowcharts of processes and decision logic, phase plans, ladders, tool chains; 33 in all) by what they show. Returns ids to display with show_ui (type "diagram") and the section each sits in (read_section gives its surrounding text). Use when the user asks to see a diagram, figure, flowchart, process or plan from the documents, or when one would explain the answer better than prose.',
+			schema: z.object({
+				query: z.string().describe('What the diagram shows, e.g. "warn or brake decision logic"'),
+				chapter: z
+					.number()
+					.int()
+					.min(0)
+					.max(13)
+					.optional()
+					.describe('Booklet chapter to restrict to')
 			})
 		}
 	);
@@ -770,6 +809,7 @@ export function makeTools() {
 		readSection,
 		findSources,
 		showUi,
+		findDiagrams,
 		askUser,
 		evidenceBrief
 	};

@@ -1,6 +1,6 @@
 ---
 name: ui-blocks
-description: Catalog and JSON shapes of the interactive blocks show_ui can render in the chat (plan, timeline, comparison, metrics, risks, checklist, flow, sources) and when to use each. Read before the first show_ui call.
+description: Catalog and JSON shapes of the interactive blocks show_ui can render in the chat (plan, timeline, comparison, metrics, risks, checklist, flow, sources, diagram) and when to use each. Read before the first show_ui call.
 ---
 
 # UI blocks
@@ -65,6 +65,16 @@ tones: good, warn, bad, neutral. Every row has one cell per column.
 {"type":"sources","title":"Key prior work on sensor sim-to-real","ids":["s12","s15"],"note":"All on-road evidence"}
 ```
 The client shows title, year, evidence label and link for each source id.
+
+## diagram — one of the documents' own diagrams
+```json
+{"type":"diagram","id":"m4","note":"Simulation counts only after the physical tests correlate."}
+```
+Get the id from `find_diagrams`. Show the booklet's own diagram when the user asks for a figure,
+flowchart, process or plan from the documents, or when it answers better than prose (decision
+logic, phase plans, ladders, tool chains). Do not redraw those diagrams as flow blocks. The note is
+optional: one line on what to look at. In your text, still say in a few sentences what the diagram
+shows and why, citing the facts behind it (search for them; the diagram itself is not a citation).
 
 ## Rules
 - Only cite ids that appeared in your tool results.

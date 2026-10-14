@@ -356,5 +356,10 @@ export const SAMPLE_BLOCKS: Block[] = [
 		title: 'Key sources',
 		ids: ['s40', 's75', 's35', 's1', 's6', 's3'],
 		note: 'Vendor material describes shipped envelopes, not validation evidence; RAND figures are on-road only.'
+	},
+	{
+		type: 'diagram',
+		id: 'm1',
+		note: 'Phase 0 starts before the sensors are frozen; physical tests only confirm.'
 	}
 ];
