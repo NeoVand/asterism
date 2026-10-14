@@ -78,13 +78,14 @@ async function build(s: AgentSettings) {
 				model: subModel
 			}
 		],
+		// Evals and probes run without the user's memory (not loaded, not written: /memories/
+		// falls through to per-thread state) so results stay comparable and the file stays theirs.
 		backend: (config) =>
 			new CompositeBackend(new StateBackend(config), {
 				'/skills/': new FilesystemBackend({ rootDir: SKILLS_DIR, virtualMode: true }),
-				'/memories/': new FilesystemBackend({ rootDir: MEMORY_DIR, virtualMode: true })
+				...(process.env.ASTERISM_EVAL ? {} : { '/memories/': new FilesystemBackend({ rootDir: MEMORY_DIR, virtualMode: true }) })
 			}),
 		skills: ['/skills/'],
-		// Evals and probes run without the user's memory so results stay comparable.
 		memory: process.env.ASTERISM_EVAL ? [] : ['/memories/AGENTS.md'],
 		permissions: [{ operations: ['write'], paths: ['/skills/**'], mode: 'deny' }],
 		checkpointer

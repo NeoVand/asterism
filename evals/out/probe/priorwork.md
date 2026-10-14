@@ -3,78 +3,82 @@
 ## User
 Find me the strongest independent studies on simulating radar, and tell me what they showed.
 
-<details><summary>16 tool calls · 38s</summary>
+<details><summary>17 tool calls · 40s</summary>
 
-- read_file {"file_path":"/skills/prior-work/SKILL.md","limit":1000,"offset":0}
-- read_file {"file_path":"/skills/graph-research/SKILL.md","limit":1000,"offset":0}
-- find_sources {"query":"radar simulation validation","evidence":["Independent"],"limit":15}
-- find_sources {"query":"radar ray tracing multipath","evidence":["Independent"],"limit":15}
+- read_file {"file_path":"/skills/prior-work/SKILL.md","limit":1000}
+- read_file {"file_path":"/skills/graph-research/SKILL.md","limit":1000}
+- find_sources {"query":"radar simulation validation","evidence":["Independent"],"limit":12}
+- find_sources {"query":"radar ray tracing multipath weather","evidence":["Independent"],"limit":12}
 - search_graph {"query":"radar simulation","limit":25}
 - explore {"id":"s473","limit":60}
-- explore {"id":"s474","limit":30}
-- explore {"id":"s475","limit":30}
-- explore {"id":"s476","limit":30}
-- explore {"id":"t117","limit":40}
-- read_file {"file_path":"/skills/ui-blocks/SKILL.md","limit":1000,"offset":0}
-- read_facts {"ids":["f4418","f4531","f4532","f4714","f4716","f4717","f4747","f4824","f4825","f4855","f4936","f4937","f5082","f5083","f4530","f4751","f45
-- search_graph {"query":"radar simulation","chapters":[0,13],"limit":8}
-- explore {"id":"s481","limit":6}
-- show_ui {"block":{"type":"sources","title":"Independent radar-simulation studies","ids":["s473","s476","s475","s474"],"note":"RadaRays includes a wh
+- explore {"id":"s474","limit":25}
+- explore {"id":"s475","limit":20}
+- explore {"id":"s476","limit":20}
+- read_file {"file_path":"/skills/ui-blocks/SKILL.md","limit":1000}
+- read_facts {"ids":["f4418","f4531","f4532","f4714","f4715","f4716","f4717","f4747","f4855","f4824","f4825","f4936","f4937","f4529","f4752","f4530","f47
+- search_graph {"query":"radar simulation","chapters":[0,13],"limit":10}
+- explore {"id":"t117","focus":"radar","limit":12}
+- explore {"id":"s481","limit":8}
+- evidence_brief {"question":"Which strongest independent radar-simulation studies does the booklet cite, what did each demonstrate, and what are the limitat
+- show_ui {"block":{"type":"sources","title":"Independent radar-simulation reading list","ids":["s473","s476","s475","s474"],"note":"RadaRays includes
 - [ui block: sources]
 </details>
 
 ## Agent
-**RadaRays (2025) is the strongest directly relevant independent study the booklet found**, because it tested radar simulation against a real radar mounted on a wheel loader. The wider evidence supports a clear conclusion: realistic radar simulation requires **material properties, multipath and the sensor’s processing chain**—not just geometry with added noise. [f4714, f4532, f4418]
+**Start with RadaRays (2025): it is the booklet’s strongest direct heavy-machine radar-simulation study.** The broader conclusion is that radar simulation can reproduce important effects, but realism depends on measured material properties and the sensor’s signal-processing chain—not just accurate geometry. [f4714, f4418]
 
-The linked studies are below. This shortlist is drawn from the booklet’s October 2026 literature review, not a fresh exhaustive literature search.
+These are the strongest independent studies identified in the **October 2026 booklet**, rather than an exhaustive literature ranking. Links are in the reading list below.
 
-### 1. RadaRays — Mock, Magnusson & Hertzberg, 2025
-*IEEE Robotics and Automation Letters; independent, with direct heavy-machine evidence.* [s473]
+### 1. RadaRays — Mock, Magnusson and Hertzberg, 2025
+*IEEE Robotics and Automation Letters.* **Best direct off-road evidence.** [s473, f4714]
 
-- **What it showed:** Material-aware ray tracing produced much closer real and synthetic radar images than a lidar-like, single-hit model. It dramatically improved mutual-information and structural-similarity scores and supported realistic radar odometry. [f4531, f4824, f4825]
-- **Physical comparison:** A Navtech CIR radar was mounted on a wheel loader. In a reflective hall, synthetic images closely resembled reality after the geometry was hand-built and materials manually tuned—but some real double reflections were still missing. [f4532, f4716, f4717]
-- **The crucial negative result:** In a separate transfer test, an R-CNN trained on real RADIATE data failed to detect most cars in simulated images, partly because target material properties had to be guessed. Good-looking radar maps therefore did **not** establish detector equivalence. [f4747, f4855]
-- **Speed:** **7.8–18.8 ms per polar image** on an RTX 2070 Super with 80,000–400,000 initial rays; those figures apply only to the tested radar, scene and model. [f4936]
-- **Important nuance:** More sophisticated reflections greatly improved image similarity without a comparable improvement in odometry. The fidelity needed depends on the downstream task. [f5082, f5083]
+- **What they tested:** Real versus simulated radar images, radar odometry, and detector transfer; the heavy-machine experiment used a **Navtech CIR radar mounted on a wheel loader**. [f4532, f4824, f4825, f4747]
+- **What worked:** Modelling material interactions and multiple reflections produced much closer real–synthetic images than a lidar-like, single-hit model. A reflective hall closely resembled reality after its geometry was hand-built and materials tuned. [f4531, f4716]
+- **What did not:** Some real double reflections remained missing. In a separate transfer test, an R-CNN trained on real RADIATE data missed most cars in simulated images, partly because target material properties had to be guessed. **Better-looking radar images did not establish detector equivalence.** [f4717, f4747, f4855]
+- **Speed:** **7.8–18.8 ms per polar image** on an RTX 2070 Super for 80,000–400,000 initial rays; this result applies only to the tested radar, model and scene. [f4936]
+
+**Why it matters:** It demonstrates both the value and the limits of added physics: image similarity improved dramatically, but radar odometry did not improve by a comparable margin. Fidelity must therefore be judged against the intended downstream task. [f5082]
 
 ### 2. *Channel Measurement and Ray-Tracing Simulation for 77 GHz Automotive Radar*
-*Independent, on-road evidence; publication date unconfirmed in the booklet.* [s476]
+**Best evidence here for measurement-based material calibration; on-road only.** The booklet does not confirm its publication date. [s476]
 
-- **What it showed:** The study compared urban channel measurements with ray tracing across **power, range, velocity and angle**, making it a useful physical-validation reference rather than merely a visual demonstration. [f4751]
-- **Key finding:** Reliable material parameters at **77 GHz** were lacking, so the researchers estimated electromagnetic properties from measurements. Its practical lesson is that material calibration is part of building a credible simulator. [f4530]
-- **Limit:** The booklet reports these validation dimensions but supplies no numerical error bounds for this study; it should not be presented as proof of a particular accuracy threshold. [f4751]
+- **What they tested:** Urban 77 GHz measurements against ray-tracing results in **power, range, velocity and angle**. [f4751]
+- **What they showed:** Reliable electromagnetic material values at 77 GHz were lacking, so the researchers estimated them from measurements. This is a concrete demonstration of calibrating simulator inputs against physical observations rather than relying on default materials. [f4530]
+
+**Limit:** The booklet records the validation dimensions, but not a numerical error bound in its summary; it should not be read as proof of off-road accuracy. [f4751, s476]
 
 ### 3. *A Realistic Radar Ray Tracing Simulator for Large MIMO-Arrays in Automotive Environments*
-*IEEE; independent, on-road evidence.* [s475]
+**Most relevant here to sensor-specific signal-chain fidelity; on-road only.** Its publication date is not established by the booklet’s source record. [s475]
 
-- **What it showed:** The simulator was checked against a high-resolution radar in a complex scene. [f4752]
-- **Main conclusion:** The **complete signal-processing toolchain and sensor-specific impairments** must be considered. Modelling propagation alone is insufficient to reproduce the real sensor’s output. [f4529]
-- **Limit:** The booklet records the physical comparison and conclusion, but does not supply quantitative agreement figures. [f4752, f4529]
+- **What they tested:** A MIMO ray-tracing simulator against a high-resolution radar in a complex scene. [f4752]
+- **What they concluded:** The **complete signal-processing toolchain and sensor-specific impairments must be considered**. A propagation model alone is not enough to reproduce the actual sensor. [f4529]
 
-### 4. Holder et al. — *The Fourier Tracing Approach for Modeling Automotive Radar Sensors*, 2019
-*Independent, on-road evidence.* [s474]
+**Limit:** The booklet gives no quantitative accuracy score for this comparison, so its strongest supported contribution here is the validation approach and signal-chain requirement. [f4752, f4529]
 
-- **What it showed:** Fourier tracing can model **multipath-related sensing artifacts**, supporting radar models that go beyond direct line-of-sight returns. [f4712]
-- **Qualification:** Capturing those effects requires material parameters; the cited evidence comes from road vehicles, not heavy off-road machines. [f4712]
+### 4. Holder et al., *The Fourier Tracing Approach for Modeling Automotive Radar Sensors*, 2019
+**Useful methodological foundation; on-road evidence.** [s474]
 
-### What the evidence does—and does not—establish
+- **What it showed:** Fourier tracing can model **multipath-related sensing artifacts**, but it requires material parameters. This supports moving beyond simple single-hit ray casting when reflected paths matter. [f4712]
 
-**Start with RadaRays for the most informative empirical study**, especially its detector-transfer failure. Use the 77 GHz and large-MIMO studies to understand material calibration and signal-chain requirements. Together, they support partial realism—not blanket equivalence between simulation and a real radar. [f4714, f4747, f4530, f4529]
+**Limit:** The booklet does not report a numerical real-versus-simulated accuracy result for this paper; treat it as methodological support, not a demonstrated heavy-machine validation result. [f4712, s474]
 
-For off-road deployment, the major unresolved gap remains: the booklet found **no published, accuracy-validated physics-based radar simulation for dust, rain and snow amid clutter such as spoil piles, tyres and rock faces**. [f7085]
+### What the evidence supports overall
+
+The strongest finding is **conditional realism**, not universal radar fidelity: calibrated materials and the real signal chain matter, and convincing images can still fail a detector-transfer test. [f4418, f4747, f4855] For heavy off-road use specifically, the booklet **found no published physically based radar simulation with validated accuracy in dust, rain and snow amid clutter such as spoil piles, tyres and rock faces**. [f7085]
 
 ## User
 Debrief, honestly and briefly: in this conversation, what confused you or slowed you down? Which tool results were unclear, missing, too long or misleading, and what tool or information would have let you answer better? Do not use tools for this.
 
-<details><summary>0 tool calls · 9s</summary>
+<details><summary>0 tool calls · 8s</summary>
 
 
 </details>
 
 ## Agent
-- **Search ranking was noisy.** Radar queries returned thermal imaging, weather diffusion and unrelated validation papers. More precise topic matching would have shortened the search.
-- **Source-to-fact links were sometimes misleading.** Several radar papers linked to the same wheel-loader findings even though those findings specifically concerned RadaRays. I had to check the full facts to avoid attributing one paper’s results to another.
-- **Metadata was incomplete.** Two promising studies had access dates rather than confirmed publication dates; author details and numerical validation errors were missing. That limited how confidently I could rank them as the “strongest.”
-- **Results were repetitive and long.** The RadaRays source returned 49 linked facts, many restating the same findings. A deduplicated summary separating methods, measured results and limitations would help.
+- **“Strongest independent” was hard to establish.** The graph supplied evidence labels, but little consistent information on experimental scale, error metrics, baselines or author independence. I could identify the booklet’s strongest off-road example, but not rigorously rank all four studies.
+- **Search results were noisy.** Radar queries returned unrelated lidar, thermal and weather papers. Source neighborhoods also mixed direct findings with broad conclusions citing several papers, making attribution slower.
+- **One source neighborhood was especially long.** RadaRays returned 49 facts, many repeating the same findings. Useful evidence was there, but buried in duplication.
+- **Bibliographic details were incomplete.** Two papers had access dates rather than confirmed publication dates; several lacked quantitative validation results.
+- **The final evidence brief was poorly targeted.** It prioritized generic rendering facts and omitted several study-specific findings I needed. I relied on previously read facts instead.
 
-**What would have improved the answer:** direct access to the papers and a structured evidence table containing publication details, author affiliations, experimental setup, baselines, error metrics and limitations. Also, the booklet’s “Independent” label includes peer-reviewed work by vendor authors; that is not necessarily the same as organizational independence, which I should have distinguished more explicitly.
+**What would have helped:** a deduplicated study-comparison tool showing verified citation details, author affiliations, experimental setup, measured errors, baselines, limitations and exact supporting passages. My answer also should have called the list **“the best-supported studies found in this booklet”** more consistently, rather than implying a firm literature-wide ranking.

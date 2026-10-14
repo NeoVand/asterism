@@ -15,8 +15,11 @@ import { CHAPTER_TITLES } from '#lib/kg/types.ts';
 
 export type GraphEventMode = 'touch' | 'read';
 
-/** Everything the agent has seen in the current turn, per thread (feeds evidence_brief). */
-const seenByThread = new Map<string, Set<string>>();
+/**
+ * Everything the agent has seen in the current turn, per thread (feeds evidence_brief):
+ * 1 = passed by in a result list, 2 = deliberately read.
+ */
+const seenByThread = new Map<string, Map<string, number>>();
 
 export function resetSeen(threadId: string) {
 	seenByThread.delete(threadId);
@@ -30,8 +33,9 @@ async function emit(config: RunnableConfig | undefined, mode: GraphEventMode, id
 	if (!ids.length) return;
 	const t = threadOf(config);
 	let seen = seenByThread.get(t);
-	if (!seen) seenByThread.set(t, (seen = new Set()));
-	if (seen.size < 6000) for (const id of ids) seen.add(id);
+	if (!seen) seenByThread.set(t, (seen = new Map()));
+	const weight = mode === 'read' ? 2 : 1;
+	if (seen.size < 6000) for (const id of ids) if ((seen.get(id) ?? 0) < weight) seen.set(id, weight);
 	try {
 		await dispatchCustomEvent('graph', { mode, ids: [...new Set(ids)] }, config);
 	} catch {
@@ -242,7 +246,11 @@ export function makeTools() {
 			} else if (n.type === 'source') {
 				const facts = nodesOf(['cites']);
 				if (n.url) out.push(`URL: ${n.url}`);
-				out.push(`Cited by ${facts.length} facts:`, ...facts.sort(byImportance).slice(0, max).map((f) => `  ${line(store, f, 220)}`));
+				const folded = foldDuplicates(store, facts.sort(byImportance), max);
+				out.push(
+					`Cited by ${facts.length} facts${folded.length < facts.length ? ` (restatements folded)` : ''}:`,
+					...folded.map((x) => `  ${line(store, x.node, 220)}${x.also.length ? ` (+${x.also.length} restatement${x.also.length > 1 ? 's' : ''})` : ''}`)
+				);
 				touched.push(...facts.map((f) => f.id));
 			} else if (n.type === 'chapter' && n.chapter != null) {
 				// The chapter's own summary: key findings (or the cross-chapter synthesis), then
@@ -509,7 +517,7 @@ export function makeTools() {
 		async ({ question, max }, config) => {
 			const store = getStore();
 			const seen = seenByThread.get(threadOf(config));
-			const facts = [...(seen ?? [])].map((id) => store.get(id)).filter((n): n is KGNode => n?.type === 'fact');
+			const facts = [...(seen?.keys() ?? [])].map((id) => store.get(id)).filter((n): n is KGNode => n?.type === 'fact');
 			if (!facts.length) return 'You have not looked at any facts yet in this turn. Research first (search_graph, explore), then call evidence_brief.';
 			// Rank against both the agent's restatement and the user's own words: restatements
 			// tend to narrow the question and drop parts of it.
@@ -517,12 +525,22 @@ export function makeTools() {
 			const ids = new Set(facts.map((f) => f.id));
 			const scores = blend(store.scoreWithin(question, ids), asked ? store.scoreWithin(asked, ids) : new Map());
 			const ROLE: Record<string, number> = { synthesis: 1.5, 'key-findings': 1.35, disagree: 1.15, uncertain: 1.1, 'blind-spots': 1.05 };
+			// What the agent chose to read outranks what merely passed by in a result list, and stays
+			// eligible even without word overlap (broad questions like "what is this about?").
+			const wasRead = (f: KGNode) => seen?.get(f.id) === 2;
 			const ranked = facts
-				.map((f) => ({ f, score: (scores.get(f.id) ?? 0) * (ROLE[store.roleOf(f) ?? ''] ?? 1) * (0.8 + 0.1 * (f.importance ?? 2)) }))
+				.map((f) => ({
+					f,
+					score:
+						((scores.get(f.id) ?? 0) + (wasRead(f) ? 0.3 : 0)) *
+						(ROLE[store.roleOf(f) ?? ''] ?? 1) *
+						(0.8 + 0.1 * (f.importance ?? 2)) *
+						(wasRead(f) ? 1.4 : 1)
+				}))
 				.filter((x) => x.score > 0)
 				.sort((a, b) => b.score - a.score)
 				.map((x) => x.f);
-			const folded = foldDuplicates(store, ranked, Math.min(Math.max(max ?? 28, 20), 40));
+			const folded = foldDuplicates(store, ranked, Math.min(max ?? 24, 40));
 			const isHeadline = (n: KGNode) => ['synthesis', 'key-findings'].includes(store.roleOf(n) ?? '');
 			const isTension = (n: KGNode) =>
 				['gap', 'uncertain', 'disagreement'].includes(n.kind ?? '') || ['disagree', 'uncertain', 'blind-spots'].includes(store.roleOf(n) ?? '');
