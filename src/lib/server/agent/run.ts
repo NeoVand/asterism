@@ -87,8 +87,23 @@ export async function* runTurn(
 	};
 
 	let input: unknown;
-	if (req.resume) {
+	const pendingInterrupt = async () => {
+		const st = (await agent.getState({ configurable: { thread_id: req.threadId } })) as { tasks?: { interrupts?: unknown[] }[] } | undefined;
+		return (st?.tasks ?? []).some((t) => (t.interrupts ?? []).length > 0);
+	};
+	if (req.resume && (await pendingInterrupt())) {
 		input = new Command({ resume: req.resume });
+	} else if (req.resume) {
+		// The server lost the paused run (restart): carry on with the answers as a plain message.
+		const answers = req.resume as Record<string, unknown>;
+		const text =
+			'skipped' in answers
+				? 'I skipped your questions — go ahead with clearly stated assumptions.'
+				: `My answers to your questions:\n${Object.entries(answers)
+						.map(([k, v]) => `- ${k}: ${Array.isArray(v) ? v.join(', ') : String(v)}`)
+						.join('\n')}`;
+		const prior = req.history?.length ? req.history.map((m) => ({ role: m.role, content: m.content })) : [];
+		input = { messages: [...prior, { role: 'user', content: text }] };
 	} else {
 		const state = (await agent.getState({ configurable: { thread_id: req.threadId } })) as
 			{ values?: unknown } | undefined;

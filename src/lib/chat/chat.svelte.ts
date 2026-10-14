@@ -192,9 +192,14 @@ class ChatStore {
 		const form = last?.parts.findLast((p) => p.k === 'form');
 		if (form && form.k === 'form') form.answers = answers;
 		if (last) last.status = 'done';
+		const history = thread.messages
+			.filter((m) => m.status !== 'error')
+			.map((m) => ({ role: m.role, content: messageText(m) }))
+			.filter((m) => m.content);
 		await this.run(thread, {
 			threadId: thread.id,
-			resume: answers === 'skipped' ? { skipped: true } : answers
+			resume: answers === 'skipped' ? { skipped: true } : answers,
+			history
 		});
 	}
 
