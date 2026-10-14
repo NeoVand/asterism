@@ -149,7 +149,6 @@ export class GraphRenderer {
 	private uDim = uniform(0);
 	private uDimTarget = 0;
 	private uHover = uniform(-1);
-	private uBundle = uniform(0.42);
 	private uEdgeAlpha = uniform(0.016);
 	/** 0 = edges follow their anchor curves, 1 = edges follow the GPU-bundled polylines. */
 	private uBundleMix = uniform(0);
@@ -160,6 +159,8 @@ export class GraphRenderer {
 	> | null = null;
 	/** Vertices of the sampled prefix drawn while bundled. */
 	private edgeSampleVertices = 0;
+	private edgeGeos: { straight: THREE.BufferGeometry; polyline: THREE.BufferGeometry } | null =
+		null;
 	/** Lit edges while bundled (both endpoints lit), rebuilt on the CPU when highlights change. */
 	private litEdges: THREE.LineSegments | null = null;
 	private litDirty = false;
@@ -446,7 +447,8 @@ export class GraphRenderer {
 			edgeSrc: g.edgeSrc,
 			edgeDst: g.edgeDst,
 			points: EDGE_SEGMENTS + 1,
-			curve: (s, t, u) => this.curveAt(s, t, u, this.uBundle, anchorsU)
+			// Bundling starts from the straight edges on screen.
+			curve: (s, t, u) => this.straightAt(s, t, u)
 		});
 		this.bundleFresh = false;
 		this.uBundleMix.value = 0;
@@ -653,7 +655,9 @@ export class GraphRenderer {
 		const iS = this.infoBuf.element(s);
 		const iT = this.infoBuf.element(t);
 		const shape = opts.trail || !this.bundler ? 'curve' : (opts.shape ?? 'curve');
-		const curve = () => this.curveAt(s, t, tt, opts.trail ? float(0.12) : this.uBundle, anchorsU);
+		// Unbundled edges are straight (one segment each); only the answer trail keeps a gentle bend.
+		const rest = () =>
+			opts.trail ? this.curveAt(s, t, tt, float(0.12), anchorsU) : this.straightAt(s, t, tt);
 		if (shape !== 'curve' && this.bundler) {
 			// The bundled polyline, carried along if its endpoints have moved since bundling.
 			const P = EDGE_SEGMENTS + 1;
@@ -663,9 +667,9 @@ export class GraphRenderer {
 			const dS = this.posBuf.element(s).xyz.sub(pts.element(base).xyz);
 			const dT = this.posBuf.element(t).xyz.sub(pts.element(base.add(P - 1)).xyz);
 			const bundled = at.add(mix(dS, dT, tt));
-			mat.positionNode = shape === 'blend' ? mix(curve(), bundled, this.uBundleMix) : bundled;
+			mat.positionNode = shape === 'blend' ? mix(rest(), bundled, this.uBundleMix) : bundled;
 		} else {
-			mat.positionNode = curve();
+			mat.positionNode = rest();
 		}
 
 		const stS = this.stateBuf.element(s);
@@ -727,10 +731,12 @@ export class GraphRenderer {
 		return mat;
 	}
 
-	/**
-	 * An edge's resting shape: a cubic Bézier from s to t bent toward both topics' anchors (cheap
-	 * hierarchical bundling). Shared by the edge shader and the GPU bundler's starting point.
-	 */
+	/** A straight edge from s to t at parameter u. */
+	private straightAt(s: N, t: N, u: N): N {
+		return mix(this.posBuf.element(s).xyz, this.posBuf.element(t).xyz, u);
+	}
+
+	/** A cubic Bézier from s to t bent toward both topics' anchors (the answer trail's shape). */
 	private curveAt(s: N, t: N, u: N, bend: N, anchorsU: N): N {
 		const p0 = this.posBuf.element(s).xyz;
 		const p3 = this.posBuf.element(t).xyz;
@@ -745,10 +751,10 @@ export class GraphRenderer {
 			.add(p3.mul(u.mul(u).mul(u)));
 	}
 
-	/** Line geometry for the given edges (EDGE_SEGMENTS segments each, original edge ids kept). */
-	private edgeGeometry(g: ClientGraph, edges: ArrayLike<number>) {
+	/** Line geometry for the given edges (`segments` each, original edge ids kept). */
+	private edgeGeometry(g: ClientGraph, edges: ArrayLike<number>, segments = EDGE_SEGMENTS) {
 		const m = edges.length;
-		const per = EDGE_SEGMENTS * 2;
+		const per = segments * 2;
 		const verts = new Float32Array(m * per * 3);
 		const rel = new Float32Array(m * per);
 		const edgeIndex = new Float32Array(m * per);
@@ -759,13 +765,13 @@ export class GraphRenderer {
 			const t = g.edgeDst[e];
 			rel.fill(REL_VISUAL[g.relNames[g.edgeRel[e]]] ?? 0.6, j * per, (j + 1) * per);
 			edgeIndex.fill(e, j * per, (j + 1) * per);
-			for (let k = 0; k < EDGE_SEGMENTS; k++) {
+			for (let k = 0; k < segments; k++) {
 				verts[o++] = s;
 				verts[o++] = t;
-				verts[o++] = k / EDGE_SEGMENTS;
+				verts[o++] = k / segments;
 				verts[o++] = s;
 				verts[o++] = t;
-				verts[o++] = (k + 1) / EDGE_SEGMENTS;
+				verts[o++] = (k + 1) / segments;
 			}
 		}
 		const geo = new THREE.BufferGeometry();
@@ -792,7 +798,12 @@ export class GraphRenderer {
 			blend: this.edgeMaterial(anchorsU, { shape: 'blend' }),
 			bundledLit: this.edgeMaterial(anchorsU, { shape: 'bundledLit' })
 		};
-		const lines = new THREE.LineSegments(this.edgeGeometry(g, order), this.edgeMaterials.curve);
+		// Straight edges need one segment each (a tenth of the vertices); bundled ones a polyline.
+		this.edgeGeos = {
+			straight: this.edgeGeometry(g, order, 1),
+			polyline: this.edgeGeometry(g, order)
+		};
+		const lines = new THREE.LineSegments(this.edgeGeos.straight, this.edgeMaterials.curve);
 		lines.frustumCulled = false;
 		lines.renderOrder = 1;
 		this.edges = lines;
@@ -1300,6 +1311,8 @@ export class GraphRenderer {
 			const want = mixed === 0 ? m.curve : mixed === 1 ? m.bundled : m.blend;
 			if (this.edges.material !== want) {
 				this.edges.material = want;
+				if (this.edgeGeos)
+					this.edges.geometry = want === m.curve ? this.edgeGeos.straight : this.edgeGeos.polyline;
 				this.edges.geometry.setDrawRange(
 					0,
 					want === m.bundled ? this.edgeSampleVertices : Infinity
@@ -1469,6 +1482,8 @@ export class GraphRenderer {
 		}
 		for (const m of Object.values(this.edgeMaterials ?? {})) m.dispose();
 		this.edgeMaterials = null;
+		for (const geo of Object.values(this.edgeGeos ?? {})) geo.dispose();
+		this.edgeGeos = null;
 		if (this.litEdges) {
 			this.scene.remove(this.litEdges);
 			this.litEdges.geometry.dispose();
