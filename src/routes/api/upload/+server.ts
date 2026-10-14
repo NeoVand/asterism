@@ -6,7 +6,8 @@ import type { RequestHandler } from './$types';
 /** POST { name, text, apiKey? } → SSE stream of ingestion progress. */
 export const POST: RequestHandler = async ({ request }) => {
 	const body = (await request.json()) as { name?: string; text?: string; apiKey?: string; model?: string };
-	if (!body.text || !body.name) error(400, 'name and text are required');
+	if (!body.text?.trim() || !body.name) error(400, 'name and text are required');
+	if (body.text.length > 400_000) error(413, 'This file is too long to weave in at once (limit about 100 pages). Split it into parts.');
 	const apiKey = body.apiKey?.trim() || OPENAI_API_KEY;
 	if (!apiKey) error(401, 'No OpenAI API key. Add yours in Settings.');
 	const encoder = new TextEncoder();

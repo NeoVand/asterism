@@ -13,6 +13,8 @@ export interface UploadState {
 }
 
 export const ACCEPT = '.md,.markdown,.txt,text/markdown,text/plain';
+/** About 100 pages; larger documents should be split. Mirrored on the server. */
+export const MAX_CHARS = 400_000;
 
 class Uploads {
 	current = $state<UploadState | null>(null);
@@ -37,12 +39,23 @@ class Uploads {
 		const state = this.current;
 		try {
 			const text = await file.text();
+			if (!text.trim()) throw new Error('The file is empty.');
+			if (text.length > MAX_CHARS) throw new Error(`This file is too long to weave in at once (about ${Math.round(text.length / 4000)} pages; the limit is about 100). Split it into parts.`);
 			const res = await fetch('/api/upload', {
 				method: 'POST',
 				headers: { 'content-type': 'application/json' },
 				body: JSON.stringify({ name: file.name, text, apiKey: settings.value.apiKey || undefined, model: settings.value.model })
 			});
-			if (!res.ok || !res.body) throw new Error((await res.text()) || `Upload failed (${res.status})`);
+			if (!res.ok || !res.body) {
+				const body = await res.text();
+				let message = body;
+				try {
+					message = (JSON.parse(body) as { message?: string }).message ?? body;
+				} catch {
+					// plain-text error body
+				}
+				throw new Error(message || `Upload failed (${res.status})`);
+			}
 			const reader = res.body.getReader();
 			const decoder = new TextDecoder();
 			let buf = '';
