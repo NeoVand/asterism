@@ -1,5 +1,9 @@
 <script lang="ts">
-	/** Compact comparison table with tone dots; scrolls horizontally (with fading edges) past 4 columns. */
+	/**
+	 * Compact comparison table with tone dots; scrolls horizontally (with fading edges) past 4
+	 * columns. Wordy comparisons with 3+ columns stack instead: one card per row, column/value
+	 * pairs inside, so the narrow chat panel never squeezes prose into slivers.
+	 */
 	import BlockFrame from './BlockFrame.svelte';
 	import Cite from '#lib/ui/Cite.svelte';
 	import { BlockIcon } from '#lib/ui/icons.ts';
@@ -24,6 +28,14 @@
 	/** Label column share: wider when there are few columns. */
 	const labelWidth = $derived(scrolls ? '108px' : n <= 2 ? '30%' : '25%');
 	const minWidth = $derived(scrolls ? `${108 + n * 116}px` : undefined);
+
+	const stacked = $derived.by(() => {
+		if (n < 3) return false;
+		const cells = block.rows.flatMap((r) => r.cells);
+		return (
+			cells.length > 0 && cells.reduce((s, c) => s + (c?.text.length ?? 0), 0) / cells.length > 45
+		);
+	});
 
 	const rows = $derived(
 		block.rows.map((r, i) => ({
@@ -60,47 +72,21 @@
 	title={block.title}
 	markdown={() => comparisonMd(block)}
 >
-	<div
-		class={['-mx-1', scrolls && 'overflow-x-auto overscroll-x-contain pb-1']}
-		style:mask-image={scrolls ? mask : undefined}
-		style:-webkit-mask-image={scrolls ? mask : undefined}
-		onscroll={(e) => measure(e.currentTarget)}
-		{@attach scrolls ? track : undefined}
-	>
-		<table class="w-full table-fixed border-collapse text-left" style:min-width={minWidth}>
-			<!-- fixed layout: the remaining columns share what is left equally -->
-			<colgroup>
-				<col style:width={labelWidth} />
-			</colgroup>
-			<thead>
-				<tr class="border-b border-white/[0.06]">
-					<th scope="col" class="px-1 pb-2"><span class="sr-only">Item</span></th>
-					{#each block.columns as col, c (c)}
-						<th
-							scope="col"
-							class="px-2 pb-2 align-bottom text-[10.5px] leading-tight font-medium tracking-[0.01em] text-fg-3"
-						>
-							{col}
-						</th>
-					{/each}
-				</tr>
-			</thead>
-			<tbody>
-				{#each rows as r, i (r.key)}
-					<tr
-						class="blk-rise border-b border-white/[0.04] transition-colors duration-150 ease-out last:border-b-0 hover:bg-white/[0.035]"
-						style:--i={i}
-						onpointerenter={() => spot(r.cites)}
-						onpointerleave={() => spot(null)}
-					>
-						<th
-							scope="row"
-							class="px-1 py-2 align-top text-[12px] leading-[1.45] font-medium text-fg"
-						>
-							{r.label}
-						</th>
+	{#if stacked}
+		<div class="space-y-1.5">
+			{#each rows as r, i (r.key)}
+				<!-- svelte-ignore a11y_no_static_element_interactions -->
+				<div
+					class="blk-rise rounded-lg bg-white/[0.025] px-3 py-2.5 transition-colors duration-150 ease-out hover:bg-white/[0.045]"
+					style:--i={i}
+					onpointerenter={() => spot(r.cites)}
+					onpointerleave={() => spot(null)}
+				>
+					<div class="mb-1.5 text-[12.5px] leading-snug font-medium text-fg">{r.label}</div>
+					<dl class="grid grid-cols-[minmax(76px,28%)_1fr] gap-x-3 gap-y-1.5">
 						{#each r.cells as cell, c (c)}
-							<td class="px-2 py-2 align-top text-[12px] leading-[1.45] text-fg-2">
+							<dt class="pt-px text-[10.5px] leading-[1.6] text-fg-4">{block.columns[c]}</dt>
+							<dd class="text-[12px] leading-[1.45] text-fg-2">
 								{#if cell}
 									<span class="flex gap-1.5">
 										{#if cell.tone}
@@ -117,13 +103,78 @@
 								{:else}
 									<span class="text-fg-4">—</span>
 								{/if}
-							</td>
+							</dd>
+						{/each}
+					</dl>
+				</div>
+			{/each}
+		</div>
+	{:else}
+		<div
+			class={['-mx-1', scrolls && 'overflow-x-auto overscroll-x-contain pb-1']}
+			style:mask-image={scrolls ? mask : undefined}
+			style:-webkit-mask-image={scrolls ? mask : undefined}
+			onscroll={(e) => measure(e.currentTarget)}
+			{@attach scrolls ? track : undefined}
+		>
+			<table class="w-full table-fixed border-collapse text-left" style:min-width={minWidth}>
+				<!-- fixed layout: the remaining columns share what is left equally -->
+				<colgroup>
+					<col style:width={labelWidth} />
+				</colgroup>
+				<thead>
+					<tr class="border-b border-white/[0.06]">
+						<th scope="col" class="px-1 pb-2"><span class="sr-only">Item</span></th>
+						{#each block.columns as col, c (c)}
+							<th
+								scope="col"
+								class="px-2 pb-2 align-bottom text-[10.5px] leading-tight font-medium tracking-[0.01em] text-fg-3"
+							>
+								{col}
+							</th>
 						{/each}
 					</tr>
-				{/each}
-			</tbody>
-		</table>
-	</div>
+				</thead>
+				<tbody>
+					{#each rows as r, i (r.key)}
+						<tr
+							class="blk-rise border-b border-white/[0.04] transition-colors duration-150 ease-out last:border-b-0 hover:bg-white/[0.035]"
+							style:--i={i}
+							onpointerenter={() => spot(r.cites)}
+							onpointerleave={() => spot(null)}
+						>
+							<th
+								scope="row"
+								class="px-1 py-2 align-top text-[12px] leading-[1.45] font-medium text-fg"
+							>
+								{r.label}
+							</th>
+							{#each r.cells as cell, c (c)}
+								<td class="px-2 py-2 align-top text-[12px] leading-[1.45] text-fg-2">
+									{#if cell}
+										<span class="flex gap-1.5">
+											{#if cell.tone}
+												<span
+													class="mt-[6px] size-1.5 shrink-0 rounded-full {TONE_DOT[cell.tone]}"
+													use:tip={TONE_LABEL[cell.tone]}
+												></span>
+											{/if}
+											<span class="min-w-0 wrap-break-word">
+												{cell.text}
+												<Cite ids={cell.cites} />
+											</span>
+										</span>
+									{:else}
+										<span class="text-fg-4">—</span>
+									{/if}
+								</td>
+							{/each}
+						</tr>
+					{/each}
+				</tbody>
+			</table>
+		</div>
+	{/if}
 
 	{#if block.note}
 		<p class="mt-2.5 border-t border-white/[0.05] pt-2.5 text-[11.5px] leading-[1.5] text-fg-3">

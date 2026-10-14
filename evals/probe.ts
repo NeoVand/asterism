@@ -10,6 +10,7 @@ import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { runTurn } from '../src/lib/server/agent/run.ts';
 import { pool } from '../scripts/kg/llm.ts';
 import type { ChatEvent } from '../src/lib/chat/protocol.ts';
+import type { Answers, QuestionForm } from '../src/lib/blocks/schema.ts';
 
 const ROOT = new URL('../', import.meta.url).pathname;
 const env = Object.fromEntries(
@@ -41,23 +42,47 @@ const SCENARIOS: Record<string, string[]> = {
 		'Is there any tension between what the regulations require and what the vendors claim?'
 	],
 	priorwork: ['Find me the strongest independent studies on simulating radar, and tell me what they showed.'],
+	planner: [
+		'Help me build a phased plan to validate the new collision mitigation system before the prototype arrives in mid-2027.',
+		'Make the first phase more concrete: who does what in the next eight weeks?'
+	],
 	offtopic: ['What is the capital of France?', 'Write me a poem about wheel loaders.']
 };
+
+/** Answers a form the way a hurried user would: first option, a short note, mid-scale. */
+function answerForm(form: QuestionForm): Answers {
+	const a: Answers = {};
+	for (const q of form.questions) {
+		if (q.kind === 'single') a[q.id] = q.options?.[0] ?? '';
+		else if (q.kind === 'multi') a[q.id] = q.options?.slice(0, 2) ?? [];
+		else if (q.kind === 'scale') a[q.id] = Math.round(((q.min ?? 1) + (q.max ?? 5)) / 2);
+		else a[q.id] = 'Wheel loaders in quarries; radar and camera; EU and Australia.';
+	}
+	return a;
+}
 
 async function run(id: string) {
 	const turns = [...SCENARIOS[id], DEBRIEF];
 	const threadId = `probe-${id}-${Date.now()}`;
 	const out: string[] = [`# Probe: ${id}`, ''];
-	for (const msg of turns) {
-		out.push(`## User\n${msg}\n`);
+	const queue = [...turns];
+	let pending: Answers | null = null;
+	while (queue.length || pending) {
+		const msg = pending ? null : queue.shift()!;
+		const req = pending ? { threadId, resume: pending } : { threadId, message: msg! };
+		out.push(pending ? `## User (form)\n${JSON.stringify(pending)}\n` : `## User\n${msg}\n`);
+		pending = null;
 		let text = '';
 		const steps: string[] = [];
 		let ms = 0;
-		for await (const ev of runTurn({ threadId, message: msg }, { apiKey: env.OPENAI_API_KEY, model: 'gpt-6.1-sol' }) as AsyncGenerator<ChatEvent>) {
+		for await (const ev of runTurn(req, { apiKey: env.OPENAI_API_KEY, model: 'gpt-6.1-sol' }) as AsyncGenerator<ChatEvent>) {
 			if (ev.t === 'text') text += ev.delta;
 			else if (ev.t === 'tool') steps.push(`${ev.agent === 'main' ? '' : '  ↳ '}${ev.name} ${JSON.stringify(ev.args).slice(0, 140)}`);
 			else if (ev.t === 'ui') steps.push(`[ui block: ${ev.block.type}]`);
-			else if (ev.t === 'interrupt') steps.push(`[asked: ${ev.form.questions.map((q) => q.label).join(' | ')}]`);
+			else if (ev.t === 'interrupt') {
+				steps.push(`[asked: ${ev.form.questions.map((q) => q.label).join(' | ')}]`);
+				pending = answerForm(ev.form);
+			}
 			else if (ev.t === 'error') text += `\n[ERROR ${ev.message}]`;
 			else if (ev.t === 'done') ms = ev.ms;
 		}
